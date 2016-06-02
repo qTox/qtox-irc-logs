@@ -1,0 +1,613 @@
+[02:06:03] *** Quits: f10 (~flo@ )
+[02:12:12] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[02:12:50] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[02:30:05] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[02:35:07] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[03:05:21] *** Quits: DaSpirit (~DaSpirit@ )
+[03:14:50] *** Quits: SkyzohKey (~skyzohkey@ )
+[03:16:07] *** Joins: SkyzohKey (~skyzohkey@ )
+[03:28:53] *** Joins: sanguisdex (~atg@ )
+[03:29:33] *** Joins: f10 (~flo@ )
+[03:35:27] *** Quits: sanguisdex (~atg@ )
+[03:47:05] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[03:56:55] *** Quits: f10 (~flo@ )
+[04:06:42] *** Quits: dardevelin (~dardeveli@ )
+[04:42:35] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[06:18:08] *** Joins: tdmps (~ray@ )
+[06:18:11] *** Parts: tdmps (~ray@ )
+[06:49:10] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[07:54:28] *** Quits: in1t3r (~LordShiva@ )
+[08:21:34] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[08:22:06] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[08:27:14] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[09:09:40] *** Joins: abbat (~abbat@ )
+[09:30:24] *** Joins: f10 (~flo@ )
+[09:33:42] *** Quits: TheVoid (~thevoid@ )
+[09:36:16] *** Joins: TheVoid (~thevoid@ )
+[09:40:35] *** Joins: in1t3r (~LordShiva@ )
+[10:44:14] <zetok> linuxmodder: sounds like a problem with sqlite / sqlcipher / qtsql
+[11:15:14] *** Quits: abbat (~abbat@ )
+[11:15:40] *** Joins: abbat (~abbat@ )
+[11:18:26] *** Joins: tdmps (~ray@ )
+[11:18:30] *** Parts: tdmps (~ray@ )
+[11:42:41] *** Joins: tux3 (~tux3@ )
+[11:42:41] *** ChanServ sets mode: +o tux3
+[11:44:05] *** Quits: abbat (~abbat@ )
+[11:44:25] *** Joins: abbat (~abbat@ )
+[11:47:51] *** Quits: SkyzohKey (~skyzohkey@ )
+[11:56:24] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:57:00] *** Quits: Yv7trNY (~IUTYVExrY@ )
+[12:02:14] *** Quits: zero-ghost (~0@ )
+[12:04:54] *** Joins: zero-ghost (~0@ )
+[12:44:07] *** Joins: ovalseven8 (~ovalseven@ )
+[13:19:56] *** Quits: zero-ghost (~0@ )
+[13:24:01] *** Joins: zero-ghost (~0@ )
+[13:26:18] *** Joins: beijing (de826450@ )
+[13:29:27] <Chiitoo> Almost ready to give up and ask tux3 or someone else about where the margins for the chat area (including the send button et al.) come from.  :V
+[13:32:22] *** Quits: LittleVulpix (~Miranda@ )
+[13:32:24] <oranges> he mae them up
+[13:32:26] <oranges> absolute madmand
+[13:32:33] <tux3> Chiitoo, in genericchatform.cpp I think
+[13:32:46] *** Joins: LittleVulpix (~Miranda@ )
+[13:32:58] <tux3> The Q*Layout define the margins for the objects inside them
+[13:33:28] <Chiitoo> Thanks, madmand!
+[13:33:43] <tux3> np :)
+[13:34:22] <Chiitoo> (Might have already stared at those but didn't dig in... been a while though, so I may remember wrong.)
+[13:37:01] <tux3> If you're trying to add margins around something, it should be easy; Removing margins can be trickier.
+[13:38:53] <Chiitoo> Mmmh, yeah, I think I played about with those before.  I managed to move them inward, but not outward, which was the goal.  (That is, to make the very outer margin consistent with those on the top of the chat window (see for example start video call VS send message buttons).)
+[13:45:38] <beijing> 有密钥发一下吗
+[13:47:09] <tux3> Hm
+[13:48:19] <tux3> Chiitoo, try contentLayout->setContentsMargins(0,9,0,9);, this should remove the extra left & right margin that the chat form header doesn't have
+[13:52:43] *** Joins: sudden6 (~anonymous@ )
+[13:59:08] *** Quits: beijing (de826450@ )
+[14:18:25] *** Joins: stvlker (~stvlker@ )
+[14:39:24] *** Quits: ovalseven8 (~ovalseven@ )
+[14:41:49] *** Joins: sanguisdex (~atg@ )
+[14:56:12] *** Joins: dardevelin (~dardeveli@ )
+[15:05:39] *** Quits: sudden6 (~anonymous@ )
+[15:10:13] <SkyzohKey> hey tux3 :p
+[15:10:29] <tux3> SkyzohKey, hello there!
+[15:11:37] <Chiitoo> tux3: Many thanks!  That should help a lot when I look into it again.  :]
+[15:11:43] <SkyzohKey> What's up ? :p
+[15:11:57] <tux3> Chiitoo, no problem!
+[15:12:21] <tux3> SkyzohKey, not much going on at the moment, the usual :)
+[15:19:09] <SkyzohKey> ^^
+[15:40:50] *** Joins: shiva (~LordShiva@ )
+[15:43:11] *** Quits: in1t3r (~LordShiva@ )
+[15:49:59] <zetok> tux3: um, when you're going to do https://github.com/tux3/qTox/pull/3340 ?
+[15:51:42] <tux3> zetok, ?
+[15:51:52] <tux3> Sorry I'm not familiar with Travis, what needs to be done?
+[15:52:04] <zetok> deployment key
+[15:52:14] <tux3> Which one?
+[15:52:24] *** Quits: sanguisdex (~atg@ )
+[15:52:48] <zetok> I'd guess that the one that provides an access to making releases/uploading binaries
+[15:52:55] <zetok> dunno though, would need to read docs
+[15:53:09] <zetok> no point in me reading them, since there's no way for me to do it anyway ;)
+[15:53:34] <tux3> As in uploading binaries on Travis?
+[15:53:45] <tux3> That's news to me
+[15:54:33] <zetok> no
+[15:54:36] <zetok> travis → gh
+[15:54:58] <tux3> Oh boy, you want a GitHub oauth token w/ permission to upload files then
+[15:55:17] <zetok> I guess?
+[15:55:25] <zetok> dunno, as I said, docs would need to be read
+[15:56:28] <tux3> Well. I don't think that's going to be possible, because the travis file is public, right?
+[15:56:39] <tux3> So we'd have to make the oauth key public..
+[15:57:03] <zetok> nah
+[15:57:37] <zetok> e.g. https://github.com/zetok/tox/blob/master/scripts/deploy-gh-pages.sh#L13
+[15:58:15] <zetok> tux3: what you want to do, is to add oauth token to travis
+[15:58:48] <zetok> or, encrypt it with travis' tool, and just put it in the file, like Rowen_Stripe did
+[15:59:35] <tux3> Okay, I'll try to add it as $GH_TOKEN, that sounds easier
+[15:59:42] <tux3> As an environment variable
+[16:02:47] <zetok> um, with GH_TOKEN var the deployment script will need to be somehow modified
+[16:03:32] <tux3> If you have a better way, I'm listenning
+[16:03:44] <tux3> I added it as GH_TOKEN already, but I can undo that
+[16:05:00] *** shiva is now known as in1t3r
+[16:06:11] *** Joins: sanguisdex (~atg@ )
+[16:07:27] *** Quits: sanguisdex (~atg@ )
+[16:08:10] <zetok> tux3: https://docs.travis-ci.com/user/deployment/releases :s
+[16:09:41] <tux3> That page wants me to put the oauth key or password in plaintext...
+[16:09:56] <tux3> Or run their magical command without telling you what it does
+[16:09:57] <zetok> um, no, it lists instructions to encrypt it
+[16:10:08] <zetok> that `travis` command encrypts it
+[16:11:06] <tux3> I'll try to encrypt, one sec
+[16:14:39] <tux3> Okay, here's the token
+[16:14:39] <tux3> secure: "BRbzTWRvadALRQSTihMKruOj64ydxusMUS9FQR//qFlS345ZYfYta43W//4LcWWDKtj6IvA6DRqNdabgWnpbpxpnm9gVftGUdOKlU3niPZhwsMkB2M12QHUnAP6DVOfGPvdciBV+6mu73SSxniEcrYjZ1CrRX7mknmehPpVKxNk="
+[16:19:02] <zetok> tux3: you'd want to put it on that line I've commented on + uncomment that section
+[16:19:53] * zetok wonders how it'll work
+[16:22:41] <tux3> Either RowenStipe updates the PR, or we can pull it and commit on top I suppose
+[16:23:18] <tux3> zetok, will the script push a release on every commit, or on every tag?
+[16:23:35] <tux3> And is it going to deploy pull requests too, because I hope not..
+[16:24:18] <zetok> it should deploy every tag
+[16:24:26] <zetok> *on every tag
+[16:24:48] <zetok> >Note that pull request builds skip deployment step altogether.
+[16:25:05] <tux3> Neat
+[16:27:45] *** Joins: sudden6 (~anonymous@ )
+[16:29:24] <zetok> what I'm wondering about though, is whether a new tag should be pushed to make deployment of latest version, and how will it work when e.g. commit will be pushed, and then some time after it tag for that commit
+[16:29:40] <zetok> since AFAIK travis doesn't build tags, and only commits..?
+[16:30:23] <zetok> i.e. from what I understood, it will deploy release only if tag will be pushed with the associated commit at the same time
+[16:31:42] *** Joins: quba42 (~quba42@ )
+[16:32:18] <tux3> IIRC our tags are actually commit-tags, so that should do it
+[16:32:31] *** Quits: quba42 (~quba42@ )
+[16:32:40] *** Quits: cisc (~cisc@ )
+[16:32:43] *** Joins: quba42 (~quba42@ )
+[16:33:10] *** Joins: cisc (~cisc@ )
+[16:33:34] <tux3> For the current version, we could always run the script locally and upload the DMG through the web interface
+[16:33:54] <zetok> uhm
+[16:34:01] <zetok> running locally would require osx
+[16:34:08] <tux3> Aw
+[16:34:12] <tux3> Obviously
+[16:34:53] <tux3> Well, create a temporary branch and have Travis exfiltrate the DMG through SSH?
+[16:35:53] <zetok> >.<
+[16:35:55] <in1t3r> what is the status of qtox project?
+[16:36:00] <zetok> in1t3r: hm?
+[16:36:05] <tux3> Not Dead�
+[16:36:09] <zetok> ↑
+[16:36:21] <in1t3r> hahaha
+[16:36:31] <tux3> :)
+[16:37:23] <tux3> Hm I'm going to delete the GH_TOKEN variable, I wonder if a malicious pull request could output it..
+[16:37:45] <zetok> nah
+[16:38:04] <zetok> hmm
+[16:38:15] *** Quits: cisc (~cisc@ )
+[16:39:09] <zetok> https://travis-ci.org/zetok/tox/jobs/133478657#L145
+[16:40:17] <tux3> Good to know rustox is doing well
+[16:40:29] *** Quits: quba42 (~quba42@ )
+[16:40:59] <tux3> Have a star btw
+[16:41:38] *** Joins: cisc (~cisc@ )
+[16:41:45] <zetok> thanks :)
+[16:43:20] *** Joins: sanguisdex (~atg@ )
+[16:44:08] <in1t3r> I got incredible lag and fragmentation on echobot.
+[16:44:49] <in1t3r> Is it stable. I mean only for audio this is worst than experience I had with other tox users on Audio chat earlier.
+[16:45:13] <zetok> right
+[16:45:18] <zetok> in1t3r: there's a PR for that
+[16:45:42] <zetok> https://github.com/tux3/qTox/pull/3309
+[16:46:28] <zetok> oh wait >.<
+[16:46:56] <zetok> in1t3r: you mean, just the audio in 1v1 conversation, and not in groupchat?
+[16:47:29] <zetok> note that if echobot misbehaves, it might be due to a problem with echobot
+[16:48:13] <in1t3r> I mean test with echobot I didnt try a 1on1 conversation for a while probably like 2 months.
+[16:48:23] <in1t3r> It might be
+[16:48:53] <zetok> https://github.com/tux3/qTox/pull/3311 ← this one might help too then
+[16:49:11] *** Quits: A124 (~Username@ )
+[16:49:14] *** Quits: cisc (~cisc@ )
+[16:51:51] *** Joins: A124 (~Username@ )
+[16:55:32] <in1t3r> zetok, its a echobot issue as the Impyy said. 100% cpu usage.
+[16:56:40] <zetok> tux3: btw, org?
+[16:56:53] <tux3> naaaaaah
+[16:57:07] <zetok> tux3: b-but everyone* thinks that org would be better
+[16:57:12] <tux3> :/
+[16:57:29] <tux3> I'll give you an oauth token if you want
+[16:57:34] <zetok> nah
+[16:57:45] <in1t3r> org as the domain or what zetok?
+[16:57:58] <tux3> Org as in moving the repo to a GitHub organization
+[16:58:06] <in1t3r> ok
+[16:58:41] <zetok> (!)
+[16:59:00] <zetok> ><20iphy18> (in the case of my death, it will be released among various other documents, code, and objects)
+[16:59:19] <zetok> tux3: ↑ do you have something like that in place?
+[16:59:33] <tux3> Yeah, it's set on 2 months if I don't update it
+[16:59:52] <zetok> hum
+[17:00:09] <zetok> ah
+[17:00:24] <zetok> tux3: is it based on that thing provided by botnet?
+[17:00:34] <tux3> Nah it's homemade
+[17:00:50] <tux3> Just uploads various passwords and keys to various sites
+[17:01:03] <zetok> >.<
+[17:01:23] <zetok> tux3: ok, so, I need an org because it would make things easier
+[17:01:38] <tux3> ughhh..
+[17:01:52] <zetok> i.e. putting various things in one place, so that it would be easier for people to find/use
+[17:02:06] <zetok> qTox repo alone just doesn't cut it
+[17:02:16] <tux3> What's wrong with an OAuth token then?
+[17:02:18] <zetok> since there's a need for other repos relevant to qTox
+[17:02:24] <tux3> Other repos?
+[17:02:26] <zetok> yep
+[17:02:36] <tux3> Do tell
+[17:02:42] <zetok> website
+[17:03:28] <zetok> various scripts for qTox users
+[17:03:38] <zetok> possibly packaging stuff
+[17:03:51] <tux3> Well, you can just make a normal repo for these?
+[17:04:10] <tux3> Again unless you want to modify the repo settings, it Just Werks
+[17:04:31] <zetok> except that it doesn't
+[17:05:11] <zetok> ><tux3> What's wrong with an OAuth token then?
+[17:05:23] <zetok> nothing, except that it's not needed unless it's needed
+[17:05:37] <tux3> HUHM, same as the org..
+[17:05:43] <zetok> org is needed
+[17:05:52] <tux3> Then I could say OAuth token is needed
+[17:06:06] <tux3> Except just generating a token is not a huge change like moving the repo
+[17:06:18] <zetok> AFAIK everyone except for you agrees that repo should be moved under an org
+[17:06:44] <tux3> Everyone is like the 3 Tox people still alive...
+[17:06:56] <zetok> no.
+[17:07:11] <tux3> It looks like change for the sake of change to me
+[17:07:37] <zetok> org itself doesn't change much, except that it allows for other changes to take place
+[17:07:47] <tux3> ... what does that mean?
+[17:08:27] <zetok> a way for people to help around qTox, even if they won't really help with qTox codebase itself
+[17:09:02] <tux3> I'm not sure what you're reffering to. 
+[17:09:05] <tux3> The website?
+[17:09:11] <zetok> among things
+[17:09:38] <tux3> Well the first step would be to actually create a website, because you're solving problems that don't exist right now
+[17:10:09] <zetok> no, I'm talking about the problems that prevent improvement & progress
+[17:10:21] <zetok> and they exist already
+[17:10:23] <tux3> Well, be specific, because so far I have a solution to your problems
+[17:10:37] <tux3> One that doesn't involve moving everything
+[17:11:01] <zetok> tux3: ok, how do you feel about tox.chat misleading users about qTox in general, e.g. its availability on $platforms ?
+[17:11:18] <zetok> solution to the problem is simply having own website with correct info
+[17:11:43] <tux3> tox.chat is a Tox Project thing, I don't contribute to it.
+[17:12:12] <tux3> You can always send a PR, no? I'm not against making our own site, that sounds like a good idea, just create a repo if you want.
+[17:12:30] <zetok> and you're profoundly interested in maintaining status quo, where people are directed to tox.chat website, since you're not interested in providing a place for qTox's own website
+[17:12:55] <tux3> I am, in fact, interested in making that website
+[17:13:03] <zetok> ok → org
+[17:13:16] <tux3> That doesn't imply any need for an org, though
+[17:13:18] <tux3> Make A Repo
+[17:13:25] <zetok> Make It Yourself
+[17:13:34] *** Quits: sudden6 (~anonymous@ )
+[17:13:42] <tux3> Will you actually contribute, or is it just for the sake of the argument?
+[17:13:50] <tux3> Because I will make that website
+[17:14:07] <zetok> I will contribute to website under org
+[17:14:24] <tux3> And you will snob me otherwise :) ?
+[17:14:58] <tux3> Just lemme check my calender to see what's the JS framework of the month, and I'm ready
+[17:15:16] <zetok> :)
+[17:15:40] <tux3> Do you like qTox.org or something else?
+[17:15:42] <tux3> qtox.chat?
+[17:15:46] <tux3> qTox.im maybe
+[17:15:50] <zetok> note though that I don't web, and I feel like throwing up from disgust when I look at html/js/web :)
+[17:16:08] <zetok> qtox.im is what I was thinking about, but the tox.im thing..
+[17:16:11] <tux3> Javascript makes me want to puke and PHP is hell. I'll still do it
+[17:16:16] <tux3> Yeah
+[17:16:38] <tux3> React is the hot thing apparently, yay Facebook
+[17:16:49] <zetok> um
+[17:17:10] <zetok> how will you do things to allow i18n ?
+[17:17:52] <tux3> Depends what backend language we use first
+[17:18:02] <zetok> I have a proposal
+[17:18:04] <tux3> I guess there's libraries for i18n
+[17:18:06] <tux3> Sure
+[17:18:18] <zetok> why not use something that was in place, and already had i18n ?
+[17:18:31] <zetok> i.e. old tox.im website, adjusted for qTox needs
+[17:18:36] <tux3> If you say "fork tox.chat" ..
+[17:18:38] <tux3> bingo
+[17:18:54] <zetok> no, tox.chat is horrible
+[17:18:59] <zetok> since it doesn't i18n
+[17:19:14] <tux3> Why not, it might save us some time
+[17:19:31] <tux3> But IIRC the stack and build process they used was absurd
+[17:19:42] <zetok> oh, right
+[17:19:44] <tux3> (Although that might just be web dev in general...)
+[17:21:18] <zetok> tux3: ok, if you don't want to move qTox repo under qTox org, mind adding me to qTox org admins?
+[17:21:53] <tux3> You mean the unused qTox org that was created forever ago?
+[17:21:57] <tux3> Sure, I guess
+[17:22:02] <zetok> yep
+[17:22:08] <tux3> You'll make the website under it, won't you.
+[17:22:08] <zetok> time to make some use of it :)
+[17:22:14] *** Quits: sanguisdex (~atg@ )
+[17:22:22] <zetok> though it'll be a bit sad to have everything aside from qTox under it ;)
+[17:22:26] <tux3> Worst of both worlds...
+[17:22:28] <tux3> Why not
+[17:23:15] <tux3> Lemme make some teams that make sense and I'm adding you, one sec
+[17:26:09] *** Joins: st4ll1 (~st4ll1@ )
+[17:26:26] <tux3> And done, all the collaborators own the unused org
+[17:27:39] <zetok> thanks :)
+[17:29:17] <tux3> Nobody has 2FA enabled :/
+[17:29:34] *** Joins: cisc (~cisc@ )
+[17:29:48] <zetok> 2fa is evil
+[17:29:49] <cisc> in1t3r: no lag from echobot last time I tried
+[17:30:03] <zetok> >Building the site requires Python 2 or Python 3 and the pystache library.  
+[17:30:03] <zetok> >In the main directory run ``python buildsite.py``
+[17:30:10] <zetok> ↑ doesn't sound hard :)
+[17:30:22] <tux3> I made a qTox-website
+[17:30:23] <zetok> tux3: it's probably the new website that has the broken way to build
+[17:30:34] <tux3> Ah, maybe
+[17:32:36] <tux3> zetok, uh wait, which repo are you looking at for tox.im ?
+[17:32:47] <zetok> I don't really
+[17:32:56] * zetok has a local repo copy
+[17:33:10] <tux3> Kay. I found this: https://github.com/Tox-Archive/Tox-Website.old
+[17:33:56] <zetok> oh
+[17:34:02] <zetok> my copy is just old then
+[17:34:14] <zetok> since last commit on it is `Merge pr #9`
+[17:35:05] <zetok> yeah, that's the same repo
+[17:36:25] <tux3> Okay. We could host it on qtox-win.pkg.tox.chat under a new hostname, since I have a shell there
+[17:36:46] <zetok> um
+[17:37:02] <tux3> Unless you want to pay for a server?
+[17:38:37] <zetok> https://pages.github.com/ + eventually https://help.github.com/articles/using-a-custom-domain-with-github-pages/
+[17:39:25] <tux3> We can run arbitrary code on GitHub pages?
+[17:39:31] <zetok> nah
+[17:40:02] <tux3> Isn't tox.im running on Python scripts though? 
+[17:40:13] <zetok> oh well :/
+[17:40:55] <tux3> We can always make our own static thing, but that'll make i18n harder
+[17:41:26] <zetok> not by much
+[17:41:30] <tux3> The client would have to dynamically load the right page in JS..
+[17:41:38] <zetok> um
+[17:41:58] <Chiitoo> tux3: Thanks again.  Your suggestion seems to have done the trick!  I thought I tried something similar, but perhaps in the wrong place(s)... heheh.  Not sure others would want the change, but it should satisfy at least a friend of mine whom I make Windows builds for.  ^^
+[17:42:10] <zetok> from what I remember before such fancy things like JS, websites had handy flags for users to choose language they'd prefer
+[17:42:15] <tux3> Chiitoo, awesome! Feel free to send a PR :)
+[17:42:39] <tux3> zetok, yeah, and then the server backend would send you the right thing
+[17:42:49] <tux3> But if we do a static website, there's no backend
+[17:42:49] <zetok> :)
+[17:42:52] <zetok> err
+[17:43:15] <zetok> website/{,en,de,ru}
+[17:44:01] <tux3> So people would have to choose their language manually everytime they visit the site..
+[17:44:10] <zetok> though if language selection can't be done via some html trick, then web is seriously broken
+[17:44:10] <tux3> That's pretty meh
+[17:44:30] <Chiitoo> tux3: I probably will.  :]
+[17:44:32] <tux3> Usually you do that by checking the User-Agent server side and serving in the right language
+[17:44:35] <tux3> Chiitoo, thanks!
+[17:44:37] <zetok> maybe "meh", but it still would be way better for users what tox.chat provides – i.e. only english version
+[17:44:56] <zetok> than what*
+[17:45:06] <tux3> It would be better. But we might as well use the box at qtox-win.pkg.tox.chat
+[17:45:10] <tux3> Even better :)
+[17:45:38] <tux3> There's the problem of security if the server gets compromised, but I can AppArmor it
+[17:46:27] <zetok> well, if you prefer to use server, then I guess why not
+[17:46:59] <tux3> Just gotta pay for a hostname to go with the LetsEncrypt cert though, but we can probably afford that
+[17:47:42] <zetok> mm
+[17:47:58] <zetok> :s
+[17:48:06] <tux3> Holy fuck .io is $60 bucks ><
+[17:48:09] <tux3> What is wrong with people
+[17:48:13] <zetok> as usual, my bad memory for names isn't helping :s
+[17:48:24] <tux3> ?
+[17:48:31] * zetok can't remember the nick of the person who wanted to donate for domain
+[17:48:59] <zetok> tux3: um, don't .io
+[17:49:09] <tux3> Yeah, no, that's not gonna happen :)
+[17:49:28] <zetok> IIRC .im looked affordable
+[17:49:32] <zetok> ~affordable
+[17:49:53] <zetok> actually, the best would be qtox.null + a few other
+[17:50:07] <in1t3r> hello cisc 
+[17:50:32] <in1t3r> It have a lag and some problem with new version of ubuntu on droplet.
+[17:50:43] <in1t3r> Impyy, is moving it on debian now.
+[17:52:05] <zetok> http://register.neo/ :3
+[17:54:51] <in1t3r> zetok, what with that domain it is not accessible via tor :P
+[17:55:17] <zetok> https://www.opennicproject.org/ ;)
+[17:57:24] <in1t3r> zetok, nice ;)
+[17:58:22] <zetok> btw, what do you think about putting logs from #qtox channel under org?
+[17:59:18] <zetok> `sed '/^\[[0-9][0-9]:[0-9][0-9]:[0-9][0-9]\] \* .*\(.*\) has joined$/s/@.*) /@ ) /'` ← to scrub ~ips from logs
+[18:00:15] <tux3> For what purpose?
+[18:00:32] <zetok> retention of information
+[18:01:39] <zetok> rather than "why?", I would want to know "why not?"
+[18:02:46] <zetok> tux3: i.e. not everyone can afford to be always on irc, and they still might want to follow things up from it
+[18:02:58] <tux3> Why not I guess
+[18:03:09] <tux3> It's not like IRC is private :/
+[18:03:12] <zetok> mm
+[18:03:36] <tux3> qtox.org is parked by name.com, and they don't know they own it...
+[18:03:50] <zetok> :/
+[18:04:02] <tux3> Nobody sells .im (?)
+[18:05:09] <tux3> $13 for qtox.im
+[18:07:39] <tux3> Ooor we could register qtox.tox.chat for free!
+[18:10:18] <Chiitoo> q.tox?  Hehehe.
+[18:10:44] *** Joins: ovalseven8 (~ovalseven@ )
+[18:11:16] <zetok> tux3: ain't nothing free
+[18:22:28] <zetok> tux3: actually, I got the static site for qtox.github.io
+[18:25:56] <tux3> zetok, hey don't call pkg.tox.chat deprecated in the support list.
+[18:26:14] <tux3> We're just moving our linux builds out of it.
+[18:26:58] <zetok> it is being deprecated for linux builds though
+[18:27:20] <tux3> Only for us, but other people still use it. We still use it for Windows builds
+[18:27:25] <tux3> So it's a bit misleading
+[18:29:00] <in1t3r> http://qtox.github.io/ is not alive
+[18:29:11] *** Joins: BiTOk (~BiTOk@ )
+[18:29:35] <tux3> We haven't really decided where to host it yt
+[18:32:34] *** Quits: st4ll1 (~st4ll1@ )
+[18:36:55] <zetok> tux3: https://github.com/Tox/tox.github.io/tree/47bc8cc8c8da526afe1468235a83f7cc51fe628e static one
+[18:56:04] <cisc> in1t3r: o/
+[18:57:33] <in1t3r> oh thats mr hide game with tox :)
+[18:58:24] <in1t3r> So you still searching for a domain?
+[19:00:07] *** Quits: abbat (~abbat@ )
+[19:03:44] <tux3> zetok, want to try copying it to qTox-website and see what happens?
+[19:04:05] <zetok> tux3: ~yep, I'm working on index.html ~now
+[19:04:15] <zetok> tux3: btw, I'll push it to qtox.github.io repo
+[19:04:34] <tux3> Do I need to enable that on the qTox repo?
+[19:04:45] <zetok> nah
+[19:04:47] <tux3> Or can you choose whatever domain you want?
+[19:04:49] <tux3> Ok
+[19:05:28] <zetok> when qtox.github.io repo is created under qTox org, qtox.github.io simply starts displaying its content
+[19:07:52] <zetok> ok, I got the basics stuff down, but there's a problem with a ~missing font
+[19:08:11] <tux3> A web font?
+[19:10:07] <zetok> https://a.uguu.se/hMmvf20lf8Ej.png → https://a.uguu.se/j1b5HkAdJhYx.png
+[19:11:37] <zetok> not sure :S
+[19:11:38] <tux3> Hm, I would just make a PNG for these...
+[19:11:46] <tux3> A whole font for 3 images is weird
+[19:12:04] <zetok> actually 6
+[19:12:15] <Chiitoo> Agreed.  Should also make a new screenshot with my current nick on it (hehehe).
+[19:12:48] <zetok> well, if those things currently missing aren't a problem, I'll push that
+[19:18:08] <zetok> https://qtox.github.io/ :)
+[19:18:33] <zetok> HUH, NOW YOU WORK, YOU DAMNED FONT
+[19:19:17] <zetok> tux3: ↑ could you add that link to qTox repo?
+[19:19:53] <zetok> ok, next thing on a TODO is to change images to say `qTox`
+[19:19:55] <tux3> zetok, too soon :)
+[19:20:01] <tux3> Yeah first change the name to qTox!
+[19:20:37] <tux3> Put a link to tox.chat somewhere, it would be dishonnest if we pretend we're the only Tox client
+[19:20:52] <zetok> ok
+[19:21:33] <tux3> zetok, the 3 images aren't aligned correctly for me
+[19:21:44] <zetok> hm?
+[19:22:15] <tux3> http://storage3.static.itmages.com/i/16/0601/h_1464805341_8898385_09fd25914e.png
+[19:22:39] <zetok> >_>
+[19:22:57] <Chiitoo> They go like that at 1200 of width and higher.
+[19:23:07] <zetok> oh
+[19:23:18] <Chiitoo> Due to the text on the top maybe.
+[19:23:25] <tux3> I have an extra 60px margin-top on feature1
+[19:23:28] <tux3> But not the others
+[19:24:45] <zetok> ok, fixed & added link to tox.chat
+[19:25:45] <zetok> (link to tox.chat under "Developer links")
+[19:25:56] <in1t3r> Is that IRC room on tox zetok? I mean #tox-real-ontopic?
+[19:26:09] <zetok> :|
+[19:26:11] <in1t3r> on qtox I mean
+[19:26:28] <zetok> yes and no
+[19:26:37] <zetok> back in the day it was
+[19:27:02] <zetok> then Jfreegman decided that he doesn't like that, and it was no more
+[19:27:10] <in1t3r> Oh so it is removed now?
+[19:27:38] <zetok> yes and no
+[19:28:15] <zetok> it was just a groupchat anchored by groupbot, named like that after IRC channel & synced to that channel
+[19:28:46] <zetok> after Jfreegman's intervention, there's no sync any longer, and no one would bother to name groupchat like that
+[19:29:03] <tux3> zetok, you didn't push to qTox-website though?
+[19:29:11] <zetok> tux3: nope
+[19:29:38] <zetok> gh pages require specific name for repo in order for repo to be used as website
+[19:30:01] <zetok> and `qTox-website` is just not it
+[19:30:30] <zetok> um, so if we decide to go with a website on a server, then this repo still would be useful
+[19:30:41] <tux3> .. k so the whole org thing was for nothing
+[19:30:48] <tux3> Whatever, as long as it works
+[19:30:54] <zetok> er?
+[19:31:05] <tux3> Well you're not using it, but it works I guess
+[19:31:22] <zetok> >so the whole org thing was for nothing
+[19:31:23] <tux3> Oh you made a second repo?
+[19:31:25] <zetok> b-but I'm using it
+[19:31:26] <tux3> Alright then
+[19:31:28] <zetok> yep :)
+[19:31:34] <tux3> Diddn't see that, my bad :)
+[19:31:46] <tux3> Let's kill qTox-website then, it's useless
+[19:38:26] *** ChanServ sets mode: +o zetok
+[19:38:33] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | User manual: https://github.com/tux3/qTox/blob/master/doc/user_manual_en.md | Testing help: https://github.com/tux3/qTox/wiki/Testing | Homepage: https://qtox.github.io/'
+[19:38:35] <zetok> ↑ ?
+[19:41:45] *** zetok sets mode: -o zetok
+[19:45:14] <tux3> Fair enough :)
+[19:45:28] <tux3> I'd like if the website mentionned tox.chat more prominently tho
+[19:45:35] <tux3> I don't want people to think qTox is Tox
+[19:45:56] <zetok> ok, how?
+[19:46:08] <tux3> Maybe replace the Tox logos by qTox logos?
+[19:46:16] <tux3> Should be a simple GIMP job, I'll do it if you want
+[19:46:28] <zetok> ><tux3> Maybe replace the Tox logos by qTox logos?
+[19:46:31] <tux3> And add a button "learn more about Tox" or something?
+[19:46:34] <zetok> yeah, I'm going to do that
+[19:46:38] <tux3> Thanks
+[19:46:57] <zetok> about the button – I'm not sure if I'll be able to do that, but I can try
+[19:47:02] <tux3> Or a "About tox" button
+[19:47:11] <tux3> Hm, I'll see about it later if you want
+[19:47:17] <tux3> I'm reading through toxcore atm
+[19:47:20] <zetok> link in developer section "About Tox" is not enough?
+[19:47:38] <tux3> I'm not sure, it's a bit hidden away
+[19:47:52] <tux3> People might want to try out other clients, like Antox or uTox
+[19:48:09] <tux3> (And all the others!)
+[20:11:10] <zetok> hmm
+[20:14:18] <zetok> https://a.uguu.se/3affJxk5Ihfi.png ← I guess that should do for time being :|
+[20:15:25] <zetok> should I push it, or is there someone willing to do it better?
+[20:16:16] <tux3> It can do for now, but there's no i18n or anything, and the q in the logo at the top looks a bit weird
+[20:16:30] <tux3> We don't have to rush it
+[20:28:10] *** Quits: ovalseven8 (~ovalseven@ )
+[20:28:39] <zetok> ok, pushed
+[20:29:17] <tux3> Ok, seems to work
+[20:29:48] <zetok> I've made that top logo a little bit less weird
+[20:30:26] <zetok> still, someone who'd know how to do it better would be needed to actually make it look right
+[20:30:57] <zetok> tux3: is it worthy linking for qTox repo yet? :P
+[20:31:05] <zetok> s/for/from/
+[20:31:38] <tux3> Maybe it's a bit early, all the page does for now is send them back to the README anyways :)
+[20:31:57] <zetok> that's what they should read ;)
+[20:32:58] <zetok> dunno about early though – IMO people suffered long enough when using tox.chat
+[20:33:15] *** ChanServ sets mode: +o zetok
+[20:33:37] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | Testing help: https://github.com/tux3/qTox/wiki/Testing | Homepage: https://qtox.github.io/'
+[20:34:57] * zetok wonders about i18n
+[20:36:16] <tux3> Statically, I think the best we can do is add a flag menu, set a cookie, and have javascript set the language depending on that
+[20:36:36] <tux3> Or have a /<lang>/index.html thing, and same thing with Javascript
+[20:48:30] *** Quits: BiTOk (~BiTOk@ )
+[20:49:09] <zetok> https://github.com/Tox-Archive/Tox-Website.old/blob/master/buildsite.py ← this could be adjusted to do what is needed
+[20:50:42] <tux3> Doesn't it still use a .py after you build it? If not, then sure
+[20:51:55] <tux3> Oh wow it's full of tracking javascript, can you remove all the mixpanel crap?
+[20:52:15] <zetok> I removed that from what I've commited
+[20:52:21] <zetok> committed*
+[20:52:26] <tux3> >author: stquism
+[20:52:28] <tux3> Yeah..
+[20:53:46] <tux3> Okay, looks good
+[20:54:31] <zetok> oh well, looks like I'll have to redo stuff ¯\_(ツ)_/¯
+[20:54:52] <zetok> this time on index.mustache ಠ_ಠ
+[20:55:13] <tux3> You're now officially a hipster
+[20:55:29] <tux3> You worked on something with mustache in the name
+[20:55:43] <zetok> :E
+[20:58:49] <zetok> https://youtu.be/HzeZhCt5PVA?t=36 :|
+[20:59:49] <tux3> Heh
+[21:13:37] <zetok> `qtox-irc-logs` as a repo name?
+[21:15:20] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | Logs at: https://github.com/qTox/qtox-irc-logs | Testing help: https://github.com/tux3/qTox/wiki/Testing | Homepage: https://qtox.github.io/'
+[21:15:57] <zetok> and the question – logs should be from now, or since beginning of the year?
+[21:19:20] <tux3> Whichever, from now on is fine I suppose
+[21:19:26] <zetok> ok
+[21:19:28] <tux3> That way other people won't have surprises
+[21:22:05] <linuxmodder> irc-logs would be  of  all channels or  just like mtgs?
+[21:22:09] <linuxmodder> came late sorry
+[21:22:13] <zetok> just #qtox
+[21:25:37] *** Quits: f10 (~flo@ )
+[21:27:17] *** Joins: f10 (~flo@ )
+[21:28:52] <linuxmodder> ah
+[21:29:31] <linuxmodder> and the logic  being  what  transparency or  log  for those without znc or  too lazy to grep theirs?
+[21:29:51] <zetok> ~yep
+[21:29:54] <linuxmodder> not knocking it  merely  asking
+[21:31:33] <linuxmodder> zetok,   what  in rawdatabase.h  would  screw with a compile ?  its happened a shit ton of times  a  clean git pull and  it  still claims  that file is  not  found
+[21:31:49] <linuxmodder> its in makefile  bits but not  pushd src 
+[21:32:12] <zetok> dunno
+[21:32:28] <zetok> it sounds like a problem with compiling sqlcipher..?
+[21:35:23] <zetok> linuxmodder: headers are missing for some reason, perhaps something in fedora has changed?
+[21:35:51] <zetok> does fedora 23 use gcc >=5 ?
+[21:35:51] <linuxmodder> it is  sqlcipher yes 
+[21:36:01] <linuxmodder> I'm using  24  now 
+[21:36:07] <linuxmodder> which uses 6.1.1 
+[21:36:16] *** Joins: abbat (~Anton@ )
+[21:36:16] <linuxmodder> I seem to have fixed it for  23 
+[21:36:33] <linuxmodder> ./simple_make.sh needed some  deps love for 24 
+[21:37:16] <linuxmodder> once I get it ironed out I'll PR a 24 beta / 24 non rpmfusion branch
+[21:37:42] <zetok> oh, now sqlcipher & ffmpeg are included in fedora?
+[21:38:29] <linuxmodder> nope
+[21:38:42] <zetok> >.<
+[21:38:48] <linuxmodder> ffmpeg is  in unitedrpms (which tracks beta/pre-release)
+[21:39:17] <linuxmodder> dnf config-manager --add-repo=https://unitedrpms.github.io/unitedrpms.repo  <<< for  ffmpeg bits
+[21:40:37] <linuxmodder> it won't kill the script to leave rpmfusion atm but it will fail on 'failed to sync'  as its not fully populated yet  but  simply gets disabled and can be used later once that status changes 
+[21:41:14] <linuxmodder> unitedrpms however staying active allows for  beta testers like yours truly to  keep codecs and some extras in line
+[21:41:21] <zetok> when fedora 24 is going to be released?
+[21:54:06] <zetok> tux3: link to website?
+[21:54:26] <tux3> wetok M
+[21:54:32] <tux3> uh qwerty
+[21:54:40] <tux3> zetok, ?
+[21:54:52] <zetok> on top of qTox repo pls
+[21:54:58] <tux3> Ah ok
+[21:55:16] <tux3> There you go
+[21:55:27] <zetok> thanks :)
+[21:55:34] <tux3> Would be good to do i18n soon tho
+[21:55:39] <zetok> yeah
+[21:55:53] <zetok> I'll be doing that tomorrow
+[21:56:09] <tux3> Ok, if you need help with anything, feel free to ask
+[21:56:36] <zetok> sure, thanks! :)
+[21:57:09] *** zetok sets mode: -o zetok
+[21:57:40] <linuxmodder> zetok,  June 14th
+[21:58:08] <linuxmodder> unless the final go/no-go finds a not-undiscovered blocker
+[21:58:20] <linuxmodder> final go/no-go is  10th
+[21:58:20] <zetok> I see
+[21:59:02] <linuxmodder> but  with unitedrpms ffmpeg is not an issue 
+[21:59:12] <linuxmodder> its something with the compile of  sqlcipher 
+[21:59:29] <zetok> how much of delay there might be between release of 24 and ffmpeg getting into rpmfusion repo?
+[21:59:46] <linuxmodder> Uploading (8.7KiB)...
+[21:59:46] <linuxmodder> http://paste.fedoraproject.org/373540/14785146/ -> http://paste.fedoraproject.org/373540/14785146
+[21:59:49] <zetok> linuxmodder: you might want to open an issue on sqlcipher repo
+[22:00:02] <linuxmodder> zetok,  rpmfusion is  HOPING  Release day  
+[22:00:21] <linuxmodder> they have been fast tracking the buildout on new infra the last two weeks
+[22:01:14] <linuxmodder> zetok,  with the mods I had to make to bootstrap ^^ mind taking a look to make sure its not some  PEBKAC
+[22:01:39] <zetok> ok, then there's no point in adding in the build script a temporary repo if rmpfusion will be able to provide working ffmpeg for released fedora?
+[22:01:47] * zetok would kinda prefer a diff
+[22:01:51] <zetok> diff -u
+[22:04:26] <linuxmodder> that is the hope not a promise of yet the NLT they have given is  RD +2 weeks tho
+[22:04:46] <linuxmodder> of the bootstrap ?
+[22:07:35] <zetok> ?
+[22:09:14] <zetok> yep
+[22:10:47] <linuxmodder> the RD + 2weeks is  release day + 2 weeks is the hard date they set for themselves 
+[22:11:50] <zetok> >_>
+[22:12:04] * zetok feels lost
+[22:16:25] <linuxmodder> couldn't get diff -u to work but  git diff bootstrap.sh bootstrap.sh.new http://paste.fedoraproject.org/373544/48157541
+[22:18:23] <zetok> change on lines 30 & 43 seem wrong
+[22:20:03] <zetok> well, night
+[22:20:52] <tux3> nighty night
+[22:26:21] <linuxmodder> what would they be then  it needs a  $BASE_DIR at  least yes?
+[22:42:59] <linuxmodder> tux3,  ^
+[22:43:12] <linuxmodder> re: L30&L43 comment above
+[22:44:12] <linuxmodder> that is pulled from static / dynamic  linkage docs on sqlcipher/sqlcipher/#INSTAL.md   with the addition of the --prefix bit to keep inline with rest of script
+[22:44:37] <tux3> What is BASE_DIR set to?
+[22:44:59] <tux3> If you don't install system-wide, then you could just use ./sqlcipher in the qTox root I guess
+[22:45:03] <tux3> But don't leave it undefined
+[22:45:14] <tux3> Uh, or rather set it to ./libs/
+[22:47:32] <linuxmodder> BASE_DIR == qTox iirc
+[22:47:35] <linuxmodder> one sec
+[22:48:19] <linuxmodder> BASE_DIR=${SCRIPT_DIR}/${INSTALL_DIR}
+[22:48:34] <linuxmodder> INSTALL_DIR=libs
+[22:48:50] <linuxmodder> so ~/Git/qTox  for me
+[22:49:09] <linuxmodder> so ~/Git/qTox/libs rather  for me
+[22:49:24] <tux3> Okay, then in the non system-wide case set --prefix=$BASE_DIR, in the system-wide case don't set prefix at all and it should work
+[22:49:44] <tux3> Or set prefix to /usr/, that works too
+[22:49:57] <linuxmodder> so not setting it in the later case would use /usr/lib?
+[22:50:14] <tux3> I hope, otherwise explicitely set --prefix=/usr/
+[22:50:16] <linuxmodder> or /usr/local/libs
+[22:50:23] <tux3> Or that
+[22:50:43] <linuxmodder> ./usr/local  is  more  default  on Fedora
+[22:50:48] <tux3> Yes, it's better
+[22:50:49] <linuxmodder> for user made shit
+[22:51:05] *** Quits: smaragdus (~omoo@ )
+[22:51:13] <linuxmodder> as path goes  /usr/lib:/usr/local/lib
+[22:51:38] <tux3> Shouldn't it be the contrary?
+[22:52:00] <tux3> We have /usr/local/bin:/usr/bin:<other stuff> on Debian
+[22:52:14] *** Quits: Diadlo (~diadlo@ )
+[22:59:57] *** Joins: DaSpirit (~DaSpirit@ )
+[23:05:32] *** Quits: stvlker (~stvlker@ )
+[23:36:55] *** Joins: smaragdus (~omoo@ )
+[23:57:17] <abbat> qTox for Ubuntu Vivid+ on arm64/armhf/ppc64el architectures https://launchpad.net/~abbat/+archive/ubuntu/tox needs testers :)
