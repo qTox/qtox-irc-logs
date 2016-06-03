@@ -1,0 +1,303 @@
+[00:24:53] *** Quits: abbat (~Anton@ )
+[01:19:37] <tux3> zetok, people are making fun of our website!
+[01:19:43] <tux3> Gotta work on web design
+[01:22:01] <oranges> use oranges.net.nz/tox
+[01:22:47] <tux3> oranges, I was expecting more memes, I'm almost disappointed!
+[01:23:04] <oranges> what are memes?
+[01:23:33] <tux3> >Magical amulets? Fake your own death? Move into a submarine? YOU'RE STILL GONNA BE MOSSAD'ED UPON
+[01:23:34] <tux3> Kek
+[01:25:06] <tux3> oranges, wow there's a form do date you in there?
+[01:25:35] <tux3> It's asking my favorite meme, WHAT DO I SAY?
+[01:25:38] <oranges> my friend made it for me after I criticised him for moving to australia to be with his gf
+[01:26:04] <tux3> That's pretty sweet actually
+[01:26:17] <oranges> you should see the responses
+[01:26:19] <tux3> Pasta without sauce is a dealbreaker tho
+[01:26:24] <oranges> I KNOW RIGHT
+[01:26:26] <oranges> UGH I HATE IT
+[01:26:36] <oranges> he only eats his pasta with nothing but a little cheese
+[01:27:03] <tux3> Absolutely Disgusting.jpg
+[01:27:27] <tux3> Not like I'm a word class cook, but I'm proud of my spaghetti skills..
+[01:27:54] <oranges> I mean at least a simple white sauce
+[01:27:55] <oranges> it's not even hard
+[02:01:28] *** Quits: tux3 (~tux3@ )
+[02:36:48] *** Quits: DaSpirit (~DaSpirit@ )
+[02:53:19] *** Quits: f10 (~flo@ )
+[03:40:13] *** Quits: dardevelin (~dardeveli@ )
+[05:42:38] <Chiitoo> oranges: I still like that design a lot more than many others these days.
+[05:50:56] *** Quits: cisc (~cisc@ )
+[05:51:06] *** Joins: cisc (~cisc@ )
+[05:59:21] *** Quits: cisc (~cisc@ )
+[06:09:57] *** Joins: cisc (~cisc@ )
+[06:23:16] *** Quits: cisc (~cisc@ )
+[06:25:25] *** Joins: cisc (~cisc@ )
+[06:49:42] <nurupo> ><tux3> Ooor we could register qtox.tox.chat for free! <-- we actually do this for clients, there is u.tox.chat already
+[06:53:51] <nurupo> ><zetok> dunno about early though – IMO people suffered long enough when using tox.chat <-- yeah, tox.chat could use quite a bit of improvements design and content-wise, as well as support of different languages
+[06:58:09] <Chiitoo> Heh, the q.tox suggested could become true, almost.
+[07:12:07] <nurupo> i don't think zetok would want q.tox.chat though, it seems like he doesn't want to associate with the tox.chat website
+[07:15:14] <nurupo> ><zetok> tux3: ok, how do you feel about tox.chat misleading users about qTox in general, e.g. its availability on $platforms ? \ <zetok> solution to the problem is simply having own website with correct info
+[07:16:16] <nurupo> zetok: anyway, feel free to ask for a qtox subdomain on tox.chat, that's something we can do
+[07:37:44] *** Joins: sudden6 (~anonymous@ )
+[07:43:30] <in1t3r> q.tox its nice name for a domain. :)
+[07:44:02] *** Quits: sudden6 (~anonymous@ )
+[08:15:02] *** Joins: abbat (~Anton@ )
+[08:58:34] *** Quits: abbat (~Anton@ )
+[09:13:06] *** Joins: dardevelin (~dardeveli@ )
+[09:14:51] *** Quits: sairuk (~sairuk@ )
+[09:38:16] *** Joins: tux3 (~tux3@ )
+[09:38:16] *** ChanServ sets mode: +o tux3
+[10:08:45] *** Joins: f10 (~flo@ )
+[10:11:25] *** Joins: abbat (~abbat@ )
+[11:34:45] *** Quits: abbat (~abbat@ )
+[11:35:13] *** Joins: abbat (~abbat@ )
+[11:35:51] *** Quits: dardevelin (~dardeveli@ )
+[12:20:36] *** Joins: sudden6 (~anonymous@ )
+[12:25:15] <sudden6> tux3: huh, what happened? :D
+[12:25:23] <tux3> sudden6, hey!
+[12:26:56] <sudden6> great you got around to making an org and website :)
+[12:28:03] <tux3> You can  blame zetok :)
+[12:28:20] <tux3> The org is actually a ~year old, we just never used it
+[12:28:27] <sudden6> lol
+[12:31:27] <sudden6> website looks pretty nice, but I think the "q" in the logo could use some bold
+[12:32:17] <tux3> I was thinking the same, it's a shopped TOX logo with a q added in so it looks a bit strange!
+[12:32:53] <zetok> bold
+[12:32:58] <zetok> I knew it was missing something
+[12:33:00] <zetok> >.<
+[12:33:11] <sudden6> mhm, is there a svg source for the tox logo?
+[12:33:20] <zetok> yep
+[12:33:26] * zetok just edited .png
+[12:33:47] <zetok> sudden6: btw, I'll be redoing website
+[12:34:17] <sudden6> a set of logos would be nice I think, maybe someone will want to make some stickers
+[12:34:34] <sudden6> then high quality logos are a win :)
+[12:34:48] <zetok> sudden6: https://github.com/Tox/Tox-Logo
+[12:37:10] <sudden6> thx
+[12:37:32] <sudden6> I'll look if I can make a svg version of your logo
+[12:37:50] <zetok> would be great :)
+[12:38:01] <zetok> um, can just .svg be used on the website?
+[12:38:24] <sudden6> no idea
+[12:39:48] <sudden6> huh, inkscape can't open the file?
+[12:40:17] <sudden6> forget it, I'm an idiot
+[12:54:57] <zetok> https://gist.github.com/zetok/ea8159dd647b866a6a1c099711d84626 ← should perhaps joins/quits be also scrubbed?
+[13:00:04] <zetok> ooh, looks like my regex missed one option
+[13:01:30] <linuxmodder> zetok,  I'd say not 
+[13:01:57] <linuxmodder> and scrub  nick changes or  vice verse
+[13:07:56] <zetok> https://github.com/qTox/qtox-irc-logs/blob/master/2016/06/%23qtox_20160601.log.txt :)
+[13:21:32] <linuxmodder> add a timezone mention in README.md  zetok   or  note they are all UTC or some such
+[13:22:14] <linuxmodder> that way global users can  get a grasp of  timing in their  tz
+[13:26:45] <zetok> done
+[13:27:44] <linuxmodder> side note on github.io :   IRC has irc.freenode.net/qtox shouldn't it  be  #qtox 
+[13:28:24] <zetok> it doesn't work?
+[13:31:48] <linuxmodder> it does but  for someone that has no assocations in their  browser it is likely to be a shit show might consider adding  https://webchat.freenode.net/#qtox
+[13:32:01] <linuxmodder> as well which opens as any  site would
+[13:33:08] <zetok> mm
+[13:33:43] <linuxmodder> belay that  it only  starts  mibbit for web users NOT a connect to channel and  freenode IS not  in that  list
+[13:33:59] <linuxmodder> so its a full stop fail for a unaware user
+[13:57:09] <sudden6> zetok: I couldn't get inkscape to work like I want :(
+[13:57:18] <zetok> :c
+[13:58:21] <sudden6> in theory it should be easy to copy the style of the Tox logo, but that program is driving me nuts
+[13:58:35] * zetok knows the feel
+[13:58:54] <zetok> that's why I've edited .png in krita
+[13:59:43] <zetok> and if (when?) krita's newest kickstarter will be done, it will get real support for editing .svg \o/
+[14:13:27] *** Joins: ovalseven8 (~ovalseven@ )
+[14:14:09] *** Quits: f10 (~flo@ )
+[14:22:14] *** Joins: f10 (~flo@ )
+[14:35:56] *** Joins: stvlker (~stvlker@ )
+[14:40:01] -qtox-git-spam- [13qTox] 15tux3 pushed 1 new commit to 06master: 02https://git.io/vrpmr
+[14:40:01] -qtox-git-spam- 13qTox/06master 145379f66 15tux3: fix(build): Fix jenkins static builds
+[14:49:16] <tux3> zetok, :)
+[14:49:18] *** Quits: abbat (~abbat@ )
+[14:49:50] -qtox-git-spam- [13qTox] 15tux3 04force-pushed 06master from 145379f66 to 14790f9ff: 02https://git.io/vZiYI
+[14:49:50] -qtox-git-spam- 13qTox/06master 14790f9ff 15tux3: fix(build): Fix jenkins static builds
+[14:49:59] *** Joins: abbat (~abbat@ )
+[14:54:15] <zetok> hm.
+[14:56:55] <zetok> >force pushing to master again
+[14:56:57] <tux3> In my defense it's hard to test Jenkins changes before pushing..
+[14:57:10] <zetok> bullshit
+[14:58:11] <zetok> git diff > test.patch; patch -p1 < test.patch
+[14:58:54] <tux3> And then I have to SSH to the build slave, and run the Jenkins script manually..
+[14:58:58] <zetok> add to that `cat`, and you have test.patch on jenkins
+[14:58:59] <tux3> Which is a *pain*
+[14:59:03] <zetok> bullshit ;)
+[14:59:11] <tux3> Heh
+[14:59:27] <zetok> ><tux3> And then I have to SSH to the build slave, and run the Jenkins script manually..
+[14:59:41] <zetok> also, you don't have to test jenkins by using `master`
+[15:00:08] <zetok> unless you have broken builds I've set to test stuff on jenkins
+[15:00:13] <zetok> it used `testing` branch
+[15:00:33] <tux3> You're rigth that I could have made a new job and a new test branch
+[15:00:37] <tux3> Maybe I'll do that next time
+[15:00:53] <tux3> Still a pain tho
+[15:00:55] <zetok> no, you could have just simply not have broken/removed job I've created for testing
+[15:01:06] <zetok> then it would have "just worked"
+[15:01:13] <tux3> ?
+[15:01:57] <tux3> All the jobs have different scripts/dependencies/etc, it's faster to duplicate a job than to manually copy everything into your test job
+[15:02:32] <zetok> yes and no
+[15:02:47] <zetok> depends on use case :)
+[15:02:56] <tux3> Heh
+[15:03:01] <tux3> If you want :)
+[15:04:19] <tux3> >[Hosted Weblate] Merge failure in Tox/qTox
+[15:04:21] <tux3> Oh come on
+[15:04:38] <zetok> hm.
+[15:05:03] <tux3> zetok, does it break because of force push?
+[15:05:09] <zetok> yep
+[15:05:15] <tux3> ...
+[15:05:18] <zetok> tux3: wait, don't break anything
+[15:05:34] <tux3> I'm not touching anything
+[15:05:42] <tux3> Just watching Jenkins crawl along
+[15:05:46] <zetok> ok
+[15:05:56] * zetok goes to get translation from weblate
+[15:07:59] *** Quits: cisc (~cisc@ )
+[15:13:53] -qtox-git-spam- [13qTox] 15zetok opened pull request #3345: Update translations from weblate (06master...06tr) 02https://git.io/vrpnc
+[15:26:38] *** Joins: cisc (~cisc@ )
+[16:00:59] -qtox-git-spam- [13qTox] 15zetok pushed 2 new commits to 06master: 02https://git.io/vrp0p
+[16:00:59] -qtox-git-spam- 13qTox/06master 14d4ff03c 15Diadlo: feat(l10n): Update Russian translation from Weblate
+[16:00:59] -qtox-git-spam- 13qTox/06master 14e19f4c7 15Moo: feat(l10n): Update Lithuanian translation from Weblate
+[16:02:50] <zetok> hmm
+[16:02:59] <zetok> I think that I got website ~done
+[16:11:10] <ovalseven8> zetok: Font is way too big/bold
+[16:30:28] <zetok> \o/
+[16:30:33] * zetok got website to build
+[16:43:18] <zetok> :D
+[16:43:26] <zetok> ok, l10n fixed
+[16:46:13] <zetok> hmm
+[16:46:33] <zetok> ok
+[16:46:39] <zetok> time to deploy it :D
+[16:57:06] <zetok> ha. :3
+[16:57:18] <ovalseven8> zetok: Still little bit too big/bold
+[16:57:26] <zetok> yes, I didn't change that
+[16:58:15] <zetok> tux3: https://github.com/qTox/qTox-Website ← used after all ;)
+[16:58:47] <zetok> tomorrow I'll make deployment `qTox-Website → qtox.github.io` automatic via travis
+[16:59:04] <tux3> >Eventually, this website will be deprecated in favor of the new site (preview available at beta.tox.im).
+[16:59:07] <tux3> I smell copypaste!
+[16:59:25] <tux3> But nice nonetheless
+[16:59:53] <zetok> urgh
+[17:00:07] <zetok> oh, just readme
+[17:00:43] <zetok> anyway, now website supports like dozens of languages
+[17:02:08] <tux3> Hm, you haven't deployed yet?
+[17:02:13] <tux3> I don't see the i18n
+[17:02:19] <zetok> scroll down
+[17:02:27] <tux3> Oh at the bottom, right
+[17:02:58] <zetok> https://qtox.github.io/pr.html ← qTox could make some use of this
+[17:03:13] <tux3> lol
+[17:03:34] * zetok wonders whether to add it for people on weblate
+[17:05:33] <zetok> ovalseven8: though I gotta disagree about the font size – it should be good even for people with worse eyesight
+[17:06:25] *** Quits: abbat (~abbat@ )
+[17:07:14] <ovalseven8> oh, #qtox is being logged now?
+[17:08:15] <zetok> yep
+[17:08:50] <zetok> opinions on `Support` repo?
+[17:11:36] <ovalseven8> I don't want to rant but actually the most important thing is progress in qTox (fixing bugs [most important], new features, ...)
+[17:14:55] <cisc> and the channel is being logged why?
+[17:15:09] <zetok> cisc: "why not."
+[17:15:24] <zetok> retention of knowledge
+[17:16:15] <cisc> because it prevents people from saying certain things, not everyone wants every word in a channel logged
+[17:17:21] <zetok> then they're doing it wrong by using IRC in the first place
+[17:17:33] <zetok> if you're using IRC, it's logged
+[17:17:53] <cisc> on someone's individual machine, yes
+[17:18:28] <zetok> as for making those logs public – that's just a kind gesture for people who can't be on IRC
+[17:18:31] <cisc> there are reasons many channels aren't logged, for the reason I stated above
+[17:18:56] <cisc> oh yeah, I'm sure tons of people are dying to read it
+[17:19:05] <zetok> *there are plenty of channels that people believe that aren't logged
+[17:21:19] *** Quits: f10 (~flo@ )
+[17:31:21] *** Joins: f10 (~flo@ )
+[17:35:54] *** Quits: cisc (~cisc@ )
+[17:36:14] *** Joins: cisc (~cisc@ )
+[18:12:22] *** Joins: abbat (~Anton@ )
+[18:25:05] <zetok> nurupo: is ML broken?
+[19:15:02] -qtox-git-spam- [13qTox] 15tux3 pushed 1 new commit to 06master: 02https://git.io/vrhfm
+[19:15:02] -qtox-git-spam- 13qTox/06master 149de833a 15tux3: fix(build): Jenkins ffmpeg link order
+[19:20:33] *** Joins: hpanago (uid15586@ )
+[19:38:30] <zetok> nurupo: also, could you post on the blog about new qTox website?
+[19:45:29] <zetok> ><ovalseven8> I don't want to rant but actually the most important thing is progress in qTox (fixing bugs [most important], new features, ...)
+[19:45:35] <zetok> ovalseven8: and who would do that?
+[19:47:11] *** Joins: rkzzy (~ishhh@ )
+[19:47:30] <ovalseven8> zetok: That's the question. ;)
+[19:47:42] <zetok> nah
+[19:47:49] <zetok> the answer is simple: people
+[19:48:10] <zetok> guess what attracts people? *shiny website*
+[19:48:20] <zetok> ;)
+[19:49:01] <ovalseven8> Well, there is already tox.chat ;)
+[19:49:11] <zetok> tox.chat is crap
+[19:50:06] <ovalseven8> zetok: The design/layout is ok. But the content not necessarily up-to-date
+[19:50:16] <zetok> → crap
+[19:50:23] <ovalseven8> And translations are missing
+[19:50:33] <ovalseven8> But everything is fixable ;)
+[19:50:37] <zetok> the reason why it's a crap is not the technology, but people
+[19:50:49] <zetok> and no, people behind tox.chat aren't fixable
+[19:50:59] * zetok has already explored that option
+[19:52:30] *** Quits: ovalseven8 (~ovalseven@ )
+[20:03:40] <zetok> tux3: btw, thoughts on https://github.com/tux3/qTox/pull/3316 ? i.e. I don't even know what I'm doing, so..
+[20:03:45] <genesis> tox peoples reminds me linus thought about white hat.
+[20:04:13] <zetok> genesis: hm? link?
+[20:05:17] <tux3> zetok, meh, it's a kludge :/ I'd rather find a real fix than keep increasing the timer up and up
+[20:05:32] <zetok> yeah
+[20:05:36] <tux3> It's just making the but less likely, but the bug is still here
+[20:06:37] <zetok> I wonder – people say that this only happens with qTox
+[20:07:26] <tux3> Maybe we have a bug, it's possible
+[20:07:47] <tux3> I haven't tried debugging this, it almost never happens to me
+[20:07:55] <tux3> So it's hard to repro
+[20:08:40] <zetok> ah.
+[20:08:42] <genesis> zetok  https://www.youtube.com/watch?v=1Mg5_gxNXTo
+[20:09:09] <zetok> tux3: https://github.com/tylertreat/comcast here you go :)
+[20:09:38] <tux3> Haha! Excellent :D
+[20:10:35] <genesis> zetok : 1H06
+[20:44:47] *** Joins: toweI (~toweI@ )
+[20:59:34] *** Quits: rkzzy (~ishhh@ )
+[21:07:51] *** Joins: dardevelin (~dardeveli@ )
+[21:18:24] -qtox-git-spam- [13qTox] 15antis81 closed pull request #3311: feat(audio): add real gain control of the input device (06master...06audio/gain) 02https://git.io/vrnP5
+[21:27:14] <nurupo> zetok: what is wrong with the ml?
+[21:27:39] <zetok> nurupo: doesn't show my reply
+[21:28:34] <nurupo> hm
+[21:28:56] <nurupo> i will check
+[21:29:48] <nurupo> zetok: the website doesn't show it or the ml doesn't send it to anyone?
+[21:30:00] <zetok> I guess both
+[21:30:10] <zetok> i.e. website doesn't show it, and I didn't receive a copy
+[21:31:23] <nurupo> i think i might ahve fixed it
+[21:31:47] <nurupo> where did you post?
+[21:31:54] <zetok> support, now it shows
+[21:32:07] * zetok wonders whether it'll be delivered
+[21:32:15] <nurupo> yeah, i got email just now
+[21:32:19] <zetok> ok, got the copy too
+[21:33:25] <zetok> thanks :)
+[21:34:21] *** Joins: Lugarius (4d165e92@ )
+[21:34:34] <zetok> Lugarius: o/
+[21:34:51] <Lugarius> congrats tux3 , successful build
+[21:34:57] <zetok> Lugarius: https://qtox.github.io/ ← would that be better?
+[21:35:06] <tux3> Lugarius, yay
+[21:36:07] <zetok> Lugarius: btw, since I forgot to ask last time – what software did you use to make that video clip?
+[21:36:16] <nurupo> i forwarded your blog post request to the other guys, will see what they think. i think a twitter post would be more resonable though, given the entire post woudl probably fit in 100 characters
+[21:36:49] <zetok> nurupo: um, if you could, please link to the Pirate language version
+[21:37:39] <Lugarius> Well zetok. .. if the download button links to your github page, I would at least show the users the binary builds
+[21:38:02] <Lugarius> I used openshot ( provides appimage)
+[21:38:13] <zetok> I see :s
+[21:38:28] <zetok> last time I've tried to use openshot, it just kept crashing
+[21:38:40] <Lugarius> 2.x?
+[21:38:58] <zetok> I've tried all versions
+[21:39:02] <zetok> [I] media-video/openshot
+[21:39:02] <zetok>      Available versions:  
+[21:39:02] <zetok>      (0)    (~)1.4.3-r1
+[21:39:02] <zetok>      (1)    (~)2.0.6 ~2.0.7-r1
+[21:40:14] <Lugarius> I don't know...by me it works all fine. .... well, tux3 ... how will this continue?
+[21:42:38] <tux3> Lugarius, if static builds work well for everyone, we can start linking to them
+[21:43:04] <tux3> For distributions that we don't build packages for, it's always easier than building from source
+[21:44:44] <Lugarius> That a word. I can collect much non used distros.... if it works on small no name distros like 4mlinux or slitaz, it should work everywhere
+[21:45:45] <zetok> they probably won't
+[21:46:03] <tux3> Before it would crash for some people because of some Qt/X11 compatibility issue, so it might crash for some people that have an exotic version. If nobody reports a crash, then it's good
+[21:46:17] <Lugarius> I tried to port an egoshooter appimage with no x11, it almost worked...
+[21:46:49] <Lugarius> * to a distro with no x11
+[21:47:27] <Lugarius> I will test,  I will test also Wayland / mir
+[21:48:02] <Lugarius> ( mir should work because mir is build for QT
+[21:49:06] <zetok> err, no
+[21:50:31] <Lugarius> Canonical uses Qt to build software on mir ( ubuntu phone)...But now It have to sleep and let my post as it is. ..tomorrow ill update
+[21:51:37] <zetok> canonical uses custom patches to make qt work under mir, or uses x11 compatibility layer, either option lowering chances of qTox just working™
+[21:55:04] *** Quits: Lugarius (4d165e92@ )
+[22:33:48] *** Quits: cisc (~cisc@ )
+[22:33:58] *** Joins: cisc (~cisc@ )
+[22:50:51] *** Quits: cisc (~cisc@ )
+[23:09:33] *** Quits: zero-ghost (~0@ )
+[23:19:20] *** Joins: zero-ghost (~0@ )
+[23:20:31] *** Joins: cisc (~cisc@ )
+[23:30:23] *** Joins: abbat_ (~Anton@ )
+[23:32:27] *** Quits: abbat (~Anton@ )
+[23:35:22] *** Quits: toweI (~toweI@ )
+[23:46:06] *** Quits: dardevelin (~dardeveli@ )
+[23:49:03] *** Joins: dardevelin (~dardeveli@ )
+[23:52:25] *** Quits: stvlker (~stvlker@ )
+[23:55:02] *** Quits: hpanago (uid15586@ )
