@@ -2,6 +2,8 @@
 
 # script to scrub from znc logs ~IPs when joining/leaving/parting
 #
+# also scrub control characters
+#
 # depends on:
 #   * sed
 #
@@ -10,4 +12,6 @@
 
 set -eu -o pipefail
 
-sed -r '/^\[([0-9]{2}:){2}[0-9]{2}\] \*{3} (Joins|Quits|Parts): .* \(.*@.*\)$/s/@.*\)/@ )/' ${@}
+sed -r -e '/^\[([0-9]{2}:){2}[0-9]{2}\] \*{3} (Joins|Quits|Parts): .* \(.*@.*\)$/s/@[^ ]*\)/@ )/' \
+    -e 's/[[:cntrl:]]([[:digit:]]{2})?//g' \
+    ${@}

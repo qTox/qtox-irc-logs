@@ -1,4 +1,4 @@
-[00:24:53] *** Quits: abbat (~Anton@ )
+[00:24:53] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
 [01:19:37] <tux3> zetok, people are making fun of our website!
 [01:19:43] <tux3> Gotta work on web design
 [01:22:01] <oranges> use oranges.net.nz/tox
@@ -19,16 +19,16 @@
 [01:27:27] <tux3> Not like I'm a word class cook, but I'm proud of my spaghetti skills..
 [01:27:54] <oranges> I mean at least a simple white sauce
 [01:27:55] <oranges> it's not even hard
-[02:01:28] *** Quits: tux3 (~tux3@ )
-[02:36:48] *** Quits: DaSpirit (~DaSpirit@ )
-[02:53:19] *** Quits: f10 (~flo@ )
-[03:40:13] *** Quits: dardevelin (~dardeveli@ )
+[02:01:28] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[02:36:48] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:53:19] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[03:40:13] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
 [05:42:38] <Chiitoo> oranges: I still like that design a lot more than many others these days.
-[05:50:56] *** Quits: cisc (~cisc@ )
+[05:50:56] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
 [05:51:06] *** Joins: cisc (~cisc@ )
-[05:59:21] *** Quits: cisc (~cisc@ )
+[05:59:21] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
 [06:09:57] *** Joins: cisc (~cisc@ )
-[06:23:16] *** Quits: cisc (~cisc@ )
+[06:23:16] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
 [06:25:25] *** Joins: cisc (~cisc@ )
 [06:49:42] <nurupo> ><tux3> Ooor we could register qtox.tox.chat for free! <-- we actually do this for clients, there is u.tox.chat already
 [06:53:51] <nurupo> ><zetok> dunno about early though – IMO people suffered long enough when using tox.chat <-- yeah, tox.chat could use quite a bit of improvements design and content-wise, as well as support of different languages
@@ -38,18 +38,18 @@
 [07:16:16] <nurupo> zetok: anyway, feel free to ask for a qtox subdomain on tox.chat, that's something we can do
 [07:37:44] *** Joins: sudden6 (~anonymous@ )
 [07:43:30] <in1t3r> q.tox its nice name for a domain. :)
-[07:44:02] *** Quits: sudden6 (~anonymous@ )
+[07:44:02] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
 [08:15:02] *** Joins: abbat (~Anton@ )
-[08:58:34] *** Quits: abbat (~Anton@ )
+[08:58:34] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
 [09:13:06] *** Joins: dardevelin (~dardeveli@ )
-[09:14:51] *** Quits: sairuk (~sairuk@ )
+[09:14:51] *** Quits: sairuk (~sairuk@ ) (Ping timeout: 244 seconds)
 [09:38:16] *** Joins: tux3 (~tux3@ )
 [09:38:16] *** ChanServ sets mode: +o tux3
 [10:08:45] *** Joins: f10 (~flo@ )
 [10:11:25] *** Joins: abbat (~abbat@ )
-[11:34:45] *** Quits: abbat (~abbat@ )
+[11:34:45] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
 [11:35:13] *** Joins: abbat (~abbat@ )
-[11:35:51] *** Quits: dardevelin (~dardeveli@ )
+[11:35:51] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 264 seconds)
 [12:20:36] *** Joins: sudden6 (~anonymous@ )
 [12:25:15] <sudden6> tux3: huh, what happened? :D
 [12:25:23] <tux3> sudden6, hey!
@@ -98,15 +98,15 @@
 [13:58:54] <zetok> that's why I've edited .png in krita
 [13:59:43] <zetok> and if (when?) krita's newest kickstarter will be done, it will get real support for editing .svg \o/
 [14:13:27] *** Joins: ovalseven8 (~ovalseven@ )
-[14:14:09] *** Quits: f10 (~flo@ )
+[14:14:09] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
 [14:22:14] *** Joins: f10 (~flo@ )
 [14:35:56] *** Joins: stvlker (~stvlker@ )
-[14:40:01] -qtox-git-spam- [13qTox] 15tux3 pushed 1 new commit to 06master: 02https://git.io/vrpmr
-[14:40:01] -qtox-git-spam- 13qTox/06master 145379f66 15tux3: fix(build): Fix jenkins static builds
+[14:40:01] -qtox-git-spam- [qTox] tux3 pushed 1 new commit to master: https://git.io/vrpmr
+[14:40:01] -qtox-git-spam- qTox/master 5379f66 tux3: fix(build): Fix jenkins static builds
 [14:49:16] <tux3> zetok, :)
-[14:49:18] *** Quits: abbat (~abbat@ )
-[14:49:50] -qtox-git-spam- [13qTox] 15tux3 04force-pushed 06master from 145379f66 to 14790f9ff: 02https://git.io/vZiYI
-[14:49:50] -qtox-git-spam- 13qTox/06master 14790f9ff 15tux3: fix(build): Fix jenkins static builds
+[14:49:18] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:49:50] -qtox-git-spam- [qTox] tux3 force-pushed master from 5379f66 to 790f9ff: https://git.io/vZiYI
+[14:49:50] -qtox-git-spam- qTox/master 790f9ff tux3: fix(build): Fix jenkins static builds
 [14:49:59] *** Joins: abbat (~abbat@ )
 [14:54:15] <zetok> hm.
 [14:56:55] <zetok> >force pushing to master again
@@ -144,12 +144,12 @@
 [15:05:42] <tux3> Just watching Jenkins crawl along
 [15:05:46] <zetok> ok
 [15:05:56] * zetok goes to get translation from weblate
-[15:07:59] *** Quits: cisc (~cisc@ )
-[15:13:53] -qtox-git-spam- [13qTox] 15zetok opened pull request #3345: Update translations from weblate (06master...06tr) 02https://git.io/vrpnc
+[15:07:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:13:53] -qtox-git-spam- [qTox] zetok opened pull request #3345: Update translations from weblate (master...tr) https://git.io/vrpnc
 [15:26:38] *** Joins: cisc (~cisc@ )
-[16:00:59] -qtox-git-spam- [13qTox] 15zetok pushed 2 new commits to 06master: 02https://git.io/vrp0p
-[16:00:59] -qtox-git-spam- 13qTox/06master 14d4ff03c 15Diadlo: feat(l10n): Update Russian translation from Weblate
-[16:00:59] -qtox-git-spam- 13qTox/06master 14e19f4c7 15Moo: feat(l10n): Update Lithuanian translation from Weblate
+[16:00:59] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vrp0p
+[16:00:59] -qtox-git-spam- qTox/master d4ff03c Diadlo: feat(l10n): Update Russian translation from Weblate
+[16:00:59] -qtox-git-spam- qTox/master e19f4c7 Moo: feat(l10n): Update Lithuanian translation from Weblate
 [16:02:50] <zetok> hmm
 [16:02:59] <zetok> I think that I got website ~done
 [16:11:10] <ovalseven8> zetok: Font is way too big/bold
@@ -179,7 +179,7 @@
 [17:03:13] <tux3> lol
 [17:03:34] * zetok wonders whether to add it for people on weblate
 [17:05:33] <zetok> ovalseven8: though I gotta disagree about the font size – it should be good even for people with worse eyesight
-[17:06:25] *** Quits: abbat (~abbat@ )
+[17:06:25] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
 [17:07:14] <ovalseven8> oh, #qtox is being logged now?
 [17:08:15] <zetok> yep
 [17:08:50] <zetok> opinions on `Support` repo?
@@ -195,14 +195,14 @@
 [17:18:31] <cisc> there are reasons many channels aren't logged, for the reason I stated above
 [17:18:56] <cisc> oh yeah, I'm sure tons of people are dying to read it
 [17:19:05] <zetok> *there are plenty of channels that people believe that aren't logged
-[17:21:19] *** Quits: f10 (~flo@ )
+[17:21:19] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
 [17:31:21] *** Joins: f10 (~flo@ )
-[17:35:54] *** Quits: cisc (~cisc@ )
+[17:35:54] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
 [17:36:14] *** Joins: cisc (~cisc@ )
 [18:12:22] *** Joins: abbat (~Anton@ )
 [18:25:05] <zetok> nurupo: is ML broken?
-[19:15:02] -qtox-git-spam- [13qTox] 15tux3 pushed 1 new commit to 06master: 02https://git.io/vrhfm
-[19:15:02] -qtox-git-spam- 13qTox/06master 149de833a 15tux3: fix(build): Jenkins ffmpeg link order
+[19:15:02] -qtox-git-spam- [qTox] tux3 pushed 1 new commit to master: https://git.io/vrhfm
+[19:15:02] -qtox-git-spam- qTox/master 9de833a tux3: fix(build): Jenkins ffmpeg link order
 [19:20:33] *** Joins: hpanago (uid15586@ )
 [19:38:30] <zetok> nurupo: also, could you post on the blog about new qTox website?
 [19:45:29] <zetok> ><ovalseven8> I don't want to rant but actually the most important thing is progress in qTox (fixing bugs [most important], new features, ...)
@@ -222,7 +222,7 @@
 [19:50:37] <zetok> the reason why it's a crap is not the technology, but people
 [19:50:49] <zetok> and no, people behind tox.chat aren't fixable
 [19:50:59] * zetok has already explored that option
-[19:52:30] *** Quits: ovalseven8 (~ovalseven@ )
+[19:52:30] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
 [20:03:40] <zetok> tux3: btw, thoughts on https://github.com/tux3/qTox/pull/3316 ? i.e. I don't even know what I'm doing, so..
 [20:03:45] <genesis> tox peoples reminds me linus thought about white hat.
 [20:04:13] <zetok> genesis: hm? link?
@@ -239,9 +239,9 @@
 [20:09:38] <tux3> Haha! Excellent :D
 [20:10:35] <genesis> zetok : 1H06
 [20:44:47] *** Joins: toweI (~toweI@ )
-[20:59:34] *** Quits: rkzzy (~ishhh@ )
+[20:59:34] *** Quits: rkzzy (~ishhh@ ) (Remote host closed the connection)
 [21:07:51] *** Joins: dardevelin (~dardeveli@ )
-[21:18:24] -qtox-git-spam- [13qTox] 15antis81 closed pull request #3311: feat(audio): add real gain control of the input device (06master...06audio/gain) 02https://git.io/vrnP5
+[21:18:24] -qtox-git-spam- [qTox] antis81 closed pull request #3311: feat(audio): add real gain control of the input device (master...audio/gain) https://git.io/vrnP5
 [21:27:14] <nurupo> zetok: what is wrong with the ml?
 [21:27:39] <zetok> nurupo: doesn't show my reply
 [21:28:34] <nurupo> hm
@@ -287,17 +287,17 @@
 [21:49:06] <zetok> err, no
 [21:50:31] <Lugarius> Canonical uses Qt to build software on mir ( ubuntu phone)...But now It have to sleep and let my post as it is. ..tomorrow ill update
 [21:51:37] <zetok> canonical uses custom patches to make qt work under mir, or uses x11 compatibility layer, either option lowering chances of qTox just working™
-[21:55:04] *** Quits: Lugarius (4d165e92@ )
-[22:33:48] *** Quits: cisc (~cisc@ )
+[21:55:04] *** Quits: Lugarius (4d165e92@ ) (Ping timeout: 250 seconds)
+[22:33:48] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
 [22:33:58] *** Joins: cisc (~cisc@ )
-[22:50:51] *** Quits: cisc (~cisc@ )
-[23:09:33] *** Quits: zero-ghost (~0@ )
+[22:50:51] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[23:09:33] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
 [23:19:20] *** Joins: zero-ghost (~0@ )
 [23:20:31] *** Joins: cisc (~cisc@ )
 [23:30:23] *** Joins: abbat_ (~Anton@ )
-[23:32:27] *** Quits: abbat (~Anton@ )
-[23:35:22] *** Quits: toweI (~toweI@ )
-[23:46:06] *** Quits: dardevelin (~dardeveli@ )
+[23:32:27] *** Quits: abbat (~Anton@ ) (Ping timeout: 276 seconds)
+[23:35:22] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[23:46:06] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
 [23:49:03] *** Joins: dardevelin (~dardeveli@ )
-[23:52:25] *** Quits: stvlker (~stvlker@ )
-[23:55:02] *** Quits: hpanago (uid15586@ )
+[23:52:25] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:55:02] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)

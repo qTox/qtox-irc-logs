@@ -1,50 +1,50 @@
-[02:06:03] *** Quits: f10 (~flo@ )
-[02:12:12] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[02:06:03] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[02:12:12] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 276 seconds)
 [02:12:50] *** Joins: Rowen_Stipe (~rowen_sti@ )
-[02:30:05] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[02:30:05] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 246 seconds)
 [02:35:07] *** Joins: Rowen_Stipe (~rowen_sti@ )
-[03:05:21] *** Quits: DaSpirit (~DaSpirit@ )
-[03:14:50] *** Quits: SkyzohKey (~skyzohkey@ )
+[03:05:21] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:14:50] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
 [03:16:07] *** Joins: SkyzohKey (~skyzohkey@ )
 [03:28:53] *** Joins: sanguisdex (~atg@ )
 [03:29:33] *** Joins: f10 (~flo@ )
-[03:35:27] *** Quits: sanguisdex (~atg@ )
-[03:47:05] *** Quits: Rowen_Stipe (~rowen_sti@ )
-[03:56:55] *** Quits: f10 (~flo@ )
-[04:06:42] *** Quits: dardevelin (~dardeveli@ )
+[03:35:27] *** Quits: sanguisdex (~atg@ ) (Ping timeout: 244 seconds)
+[03:47:05] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 276 seconds)
+[03:56:55] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[04:06:42] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
 [04:42:35] *** Joins: Rowen_Stipe (~rowen_sti@ )
 [06:18:08] *** Joins: tdmps (~ray@ )
-[06:18:11] *** Parts: tdmps (~ray@ )
+[06:18:11] *** Parts: tdmps (~ray@ ) ()
 [06:49:10] *** Joins: Yv7trNY (~IUTYVExrY@ )
-[07:54:28] *** Quits: in1t3r (~LordShiva@ )
-[08:21:34] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[07:54:28] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[08:21:34] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Remote host closed the connection)
 [08:22:06] *** Joins: Rowen_Stipe (~rowen_sti@ )
-[08:27:14] *** Quits: Rowen_Stipe (~rowen_sti@ )
+[08:27:14] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 276 seconds)
 [09:09:40] *** Joins: abbat (~abbat@ )
 [09:30:24] *** Joins: f10 (~flo@ )
-[09:33:42] *** Quits: TheVoid (~thevoid@ )
+[09:33:42] *** Quits: TheVoid (~thevoid@ ) (Read error: Connection reset by peer)
 [09:36:16] *** Joins: TheVoid (~thevoid@ )
 [09:40:35] *** Joins: in1t3r (~LordShiva@ )
 [10:44:14] <zetok> linuxmodder: sounds like a problem with sqlite / sqlcipher / qtsql
-[11:15:14] *** Quits: abbat (~abbat@ )
+[11:15:14] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
 [11:15:40] *** Joins: abbat (~abbat@ )
 [11:18:26] *** Joins: tdmps (~ray@ )
-[11:18:30] *** Parts: tdmps (~ray@ )
+[11:18:30] *** Parts: tdmps (~ray@ ) ()
 [11:42:41] *** Joins: tux3 (~tux3@ )
 [11:42:41] *** ChanServ sets mode: +o tux3
-[11:44:05] *** Quits: abbat (~abbat@ )
+[11:44:05] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
 [11:44:25] *** Joins: abbat (~abbat@ )
-[11:47:51] *** Quits: SkyzohKey (~skyzohkey@ )
+[11:47:51] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 264 seconds)
 [11:56:24] *** Joins: SkyzohKey (~skyzohkey@ )
-[11:57:00] *** Quits: Yv7trNY (~IUTYVExrY@ )
-[12:02:14] *** Quits: zero-ghost (~0@ )
+[11:57:00] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Quit: Leaving)
+[12:02:14] *** Quits: zero-ghost (~0@ ) (Read error: Connection reset by peer)
 [12:04:54] *** Joins: zero-ghost (~0@ )
 [12:44:07] *** Joins: ovalseven8 (~ovalseven@ )
-[13:19:56] *** Quits: zero-ghost (~0@ )
+[13:19:56] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
 [13:24:01] *** Joins: zero-ghost (~0@ )
 [13:26:18] *** Joins: beijing (de826450@ )
 [13:29:27] <Chiitoo> Almost ready to give up and ask tux3 or someone else about where the margins for the chat area (including the send button et al.) come from.  :V
-[13:32:22] *** Quits: LittleVulpix (~Miranda@ )
+[13:32:22] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
 [13:32:24] <oranges> he mae them up
 [13:32:26] <oranges> absolute madmand
 [13:32:33] <tux3> Chiitoo, in genericchatform.cpp I think
@@ -59,12 +59,12 @@
 [13:47:09] <tux3> Hm
 [13:48:19] <tux3> Chiitoo, try contentLayout->setContentsMargins(0,9,0,9);, this should remove the extra left & right margin that the chat form header doesn't have
 [13:52:43] *** Joins: sudden6 (~anonymous@ )
-[13:59:08] *** Quits: beijing (de826450@ )
+[13:59:08] *** Quits: beijing (de826450@ ) (Quit: Page closed)
 [14:18:25] *** Joins: stvlker (~stvlker@ )
-[14:39:24] *** Quits: ovalseven8 (~ovalseven@ )
+[14:39:24] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
 [14:41:49] *** Joins: sanguisdex (~atg@ )
 [14:56:12] *** Joins: dardevelin (~dardeveli@ )
-[15:05:39] *** Quits: sudden6 (~anonymous@ )
+[15:05:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
 [15:10:13] <SkyzohKey> hey tux3 :p
 [15:10:29] <tux3> SkyzohKey, hello there!
 [15:11:37] <Chiitoo> tux3: Many thanks!  That should help a lot when I look into it again.  :]
@@ -73,13 +73,13 @@
 [15:12:21] <tux3> SkyzohKey, not much going on at the moment, the usual :)
 [15:19:09] <SkyzohKey> ^^
 [15:40:50] *** Joins: shiva (~LordShiva@ )
-[15:43:11] *** Quits: in1t3r (~LordShiva@ )
+[15:43:11] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 246 seconds)
 [15:49:59] <zetok> tux3: um, when you're going to do https://github.com/tux3/qTox/pull/3340 ?
 [15:51:42] <tux3> zetok, ?
 [15:51:52] <tux3> Sorry I'm not familiar with Travis, what needs to be done?
 [15:52:04] <zetok> deployment key
 [15:52:14] <tux3> Which one?
-[15:52:24] *** Quits: sanguisdex (~atg@ )
+[15:52:24] *** Quits: sanguisdex (~atg@ ) (Ping timeout: 260 seconds)
 [15:52:48] <zetok> I'd guess that the one that provides an access to making releases/uploading binaries
 [15:52:55] <zetok> dunno though, would need to read docs
 [15:53:09] <zetok> no point in me reading them, since there's no way for me to do it anyway ;)
@@ -103,7 +103,7 @@
 [16:03:44] <tux3> I added it as GH_TOKEN already, but I can undo that
 [16:05:00] *** shiva is now known as in1t3r
 [16:06:11] *** Joins: sanguisdex (~atg@ )
-[16:07:27] *** Quits: sanguisdex (~atg@ )
+[16:07:27] *** Quits: sanguisdex (~atg@ ) (Read error: Connection reset by peer)
 [16:08:10] <zetok> tux3: https://docs.travis-ci.com/user/deployment/releases :s
 [16:09:41] <tux3> That page wants me to put the oauth key or password in plaintext...
 [16:09:56] <tux3> Or run their magical command without telling you what it does
@@ -127,8 +127,8 @@
 [16:30:23] <zetok> i.e. from what I understood, it will deploy release only if tag will be pushed with the associated commit at the same time
 [16:31:42] *** Joins: quba42 (~quba42@ )
 [16:32:18] <tux3> IIRC our tags are actually commit-tags, so that should do it
-[16:32:31] *** Quits: quba42 (~quba42@ )
-[16:32:40] *** Quits: cisc (~cisc@ )
+[16:32:31] *** Quits: quba42 (~quba42@ ) (Client Quit)
+[16:32:40] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
 [16:32:43] *** Joins: quba42 (~quba42@ )
 [16:33:10] *** Joins: cisc (~cisc@ )
 [16:33:34] <tux3> For the current version, we could always run the script locally and upload the DMG through the web interface
@@ -147,10 +147,10 @@
 [16:37:23] <tux3> Hm I'm going to delete the GH_TOKEN variable, I wonder if a malicious pull request could output it..
 [16:37:45] <zetok> nah
 [16:38:04] <zetok> hmm
-[16:38:15] *** Quits: cisc (~cisc@ )
+[16:38:15] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
 [16:39:09] <zetok> https://travis-ci.org/zetok/tox/jobs/133478657#L145
 [16:40:17] <tux3> Good to know rustox is doing well
-[16:40:29] *** Quits: quba42 (~quba42@ )
+[16:40:29] *** Quits: quba42 (~quba42@ ) (Quit: Leaving)
 [16:40:59] <tux3> Have a star btw
 [16:41:38] *** Joins: cisc (~cisc@ )
 [16:41:45] <zetok> thanks :)
@@ -166,8 +166,8 @@
 [16:48:13] <in1t3r> I mean test with echobot I didnt try a 1on1 conversation for a while probably like 2 months.
 [16:48:23] <in1t3r> It might be
 [16:48:53] <zetok> https://github.com/tux3/qTox/pull/3311 ← this one might help too then
-[16:49:11] *** Quits: A124 (~Username@ )
-[16:49:14] *** Quits: cisc (~cisc@ )
+[16:49:11] *** Quits: A124 (~Username@ ) (Ping timeout: 272 seconds)
+[16:49:14] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
 [16:51:51] *** Joins: A124 (~Username@ )
 [16:55:32] <in1t3r> zetok, its a echobot issue as the Impyy said. 100% cpu usage.
 [16:56:40] <zetok> tux3: btw, org?
@@ -180,7 +180,7 @@
 [16:57:58] <tux3> Org as in moving the repo to a GitHub organization
 [16:58:06] <in1t3r> ok
 [16:58:41] <zetok> (!)
-[16:59:00] <zetok> ><20iphy18> (in the case of my death, it will be released among various other documents, code, and objects)
+[16:59:00] <zetok> ><iphy> (in the case of my death, it will be released among various other documents, code, and objects)
 [16:59:19] <zetok> tux3: ↑ do you have something like that in place?
 [16:59:33] <tux3> Yeah, it's set on 2 months if I don't update it
 [16:59:52] <zetok> hum
@@ -235,7 +235,7 @@
 [17:13:16] <tux3> That doesn't imply any need for an org, though
 [17:13:18] <tux3> Make A Repo
 [17:13:25] <zetok> Make It Yourself
-[17:13:34] *** Quits: sudden6 (~anonymous@ )
+[17:13:34] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
 [17:13:42] <tux3> Will you actually contribute, or is it just for the sake of the argument?
 [17:13:50] <tux3> Because I will make that website
 [17:14:07] <zetok> I will contribute to website under org
@@ -272,7 +272,7 @@
 [17:22:02] <zetok> yep
 [17:22:08] <tux3> You'll make the website under it, won't you.
 [17:22:08] <zetok> time to make some use of it :)
-[17:22:14] *** Quits: sanguisdex (~atg@ )
+[17:22:14] *** Quits: sanguisdex (~atg@ ) (Quit: Leaving.)
 [17:22:22] <zetok> though it'll be a bit sad to have everything aside from qTox under it ;)
 [17:22:26] <tux3> Worst of both worlds...
 [17:22:28] <tux3> Why not
@@ -376,12 +376,12 @@
 [18:29:00] <in1t3r> http://qtox.github.io/ is not alive
 [18:29:11] *** Joins: BiTOk (~BiTOk@ )
 [18:29:35] <tux3> We haven't really decided where to host it yt
-[18:32:34] *** Quits: st4ll1 (~st4ll1@ )
+[18:32:34] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
 [18:36:55] <zetok> tux3: https://github.com/Tox/tox.github.io/tree/47bc8cc8c8da526afe1468235a83f7cc51fe628e static one
 [18:56:04] <cisc> in1t3r: o/
 [18:57:33] <in1t3r> oh thats mr hide game with tox :)
 [18:58:24] <in1t3r> So you still searching for a domain?
-[19:00:07] *** Quits: abbat (~abbat@ )
+[19:00:07] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
 [19:03:44] <tux3> zetok, want to try copying it to qTox-website and see what happens?
 [19:04:05] <zetok> tux3: ~yep, I'm working on index.html ~now
 [19:04:15] <zetok> tux3: btw, I'll push it to qtox.github.io repo
@@ -471,7 +471,7 @@
 [20:15:25] <zetok> should I push it, or is there someone willing to do it better?
 [20:16:16] <tux3> It can do for now, but there's no i18n or anything, and the q in the logo at the top looks a bit weird
 [20:16:30] <tux3> We don't have to rush it
-[20:28:10] *** Quits: ovalseven8 (~ovalseven@ )
+[20:28:10] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
 [20:28:39] <zetok> ok, pushed
 [20:29:17] <tux3> Ok, seems to work
 [20:29:48] <zetok> I've made that top logo a little bit less weird
@@ -486,7 +486,7 @@
 [20:34:57] * zetok wonders about i18n
 [20:36:16] <tux3> Statically, I think the best we can do is add a flag menu, set a cookie, and have javascript set the language depending on that
 [20:36:36] <tux3> Or have a /<lang>/index.html thing, and same thing with Javascript
-[20:48:30] *** Quits: BiTOk (~BiTOk@ )
+[20:48:30] *** Quits: BiTOk (~BiTOk@ ) (Quit: KVIrc 4.3.2 Aria http://www.kvirc.net/)
 [20:49:09] <zetok> https://github.com/Tox-Archive/Tox-Website.old/blob/master/buildsite.py ← this could be adjusted to do what is needed
 [20:50:42] <tux3> Doesn't it still use a .py after you build it? If not, then sure
 [20:51:55] <tux3> Oh wow it's full of tracking javascript, can you remove all the mixpanel crap?
@@ -511,7 +511,7 @@
 [21:22:05] <linuxmodder> irc-logs would be  of  all channels or  just like mtgs?
 [21:22:09] <linuxmodder> came late sorry
 [21:22:13] <zetok> just #qtox
-[21:25:37] *** Quits: f10 (~flo@ )
+[21:25:37] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
 [21:27:17] *** Joins: f10 (~flo@ )
 [21:28:52] <linuxmodder> ah
 [21:29:31] <linuxmodder> and the logic  being  what  transparency or  log  for those without znc or  too lazy to grep theirs?
@@ -602,12 +602,12 @@
 [22:50:43] <linuxmodder> ./usr/local  is  more  default  on Fedora
 [22:50:48] <tux3> Yes, it's better
 [22:50:49] <linuxmodder> for user made shit
-[22:51:05] *** Quits: smaragdus (~omoo@ )
+[22:51:05] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
 [22:51:13] <linuxmodder> as path goes  /usr/lib:/usr/local/lib
 [22:51:38] <tux3> Shouldn't it be the contrary?
 [22:52:00] <tux3> We have /usr/local/bin:/usr/bin:<other stuff> on Debian
-[22:52:14] *** Quits: Diadlo (~diadlo@ )
+[22:52:14] *** Quits: Diadlo (~diadlo@ ) (Quit: Leaving)
 [22:59:57] *** Joins: DaSpirit (~DaSpirit@ )
-[23:05:32] *** Quits: stvlker (~stvlker@ )
+[23:05:32] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
 [23:36:55] *** Joins: smaragdus (~omoo@ )
 [23:57:17] <abbat> qTox for Ubuntu Vivid+ on arm64/armhf/ppc64el architectures https://launchpad.net/~abbat/+archive/ubuntu/tox needs testers :)
