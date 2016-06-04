@@ -1,0 +1,375 @@
+[00:11:02] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[00:41:51] *** Joins: in1t3r (~LordShiva@ )
+[01:16:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[01:44:53] *** Quits: abbat_ (~Anton@ ) (Remote host closed the connection)
+[02:47:08] *** Joins: DaSpirit (~DaSpirit@ )
+[02:48:06] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:51:35] *** Joins: cisc (~cisc@ )
+[03:08:09] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[03:17:53] *** Joins: cisc (~cisc@ )
+[03:33:27] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:34:08] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[05:05:25] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[06:16:21] *** Joins: Luga (4d165e92@ )
+[06:16:56] <Luga> Tux3 I updated the blog
+[06:17:06] *** Quits: Luga (4d165e92@ ) (Client Quit)
+[06:41:27] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
+[06:59:45] *** Joins: smaragdus (~omoo@ )
+[08:10:40] *** Joins: abbat (~Anton@ )
+[08:57:41] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[09:37:46] *** Joins: demize- (~kyrias@ )
+[09:38:16] *** Joins: BHR27 (~Bheru27@ )
+[09:39:09] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 264 seconds)
+[09:39:09] *** Quits: demize (kyrias@ ) (Ping timeout: 264 seconds)
+[09:50:05] *** demize- is now known as demize
+[10:03:46] *** Joins: abbat (~abbat@ )
+[10:21:54] -qtox-git-spam- [qTox] a68366 opened pull request #3348: fix(widget): open a chat window instead of contacts list in multi-window mode (master...issue3212) https://git.io/vrjwu
+[10:25:02] <Se7en> qtox seems to render UTF-8 weird. For example, I copy/paste comments from IRC that have color codes
+[10:25:08] <Se7en> And it renders it as music symbols
+[10:33:58] *** Quits: Sephi (~me@ ) (Quit: Si tacuisses, philosophus mansisses!)
+[10:58:57] *** Joins: nurupo_ (~nurupo.ga@ )
+[10:59:52] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 244 seconds)
+[10:59:52] *** nurupo_ is now known as nurupo
+[11:13:24] *** Joins: f10 (~flo@ )
+[11:16:13] *** Quits: BHR27 (~Bheru27@ ) (*.net *.split)
+[11:16:13] *** Quits: cisc (~cisc@ ) (*.net *.split)
+[11:16:13] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[11:16:54] *** Joins: cisc (~cisc@ )
+[11:37:11] *** Joins: jorgelg (~jorge@ )
+[11:49:43] *** Joins: BHR27 (~Bheru27@ )
+[11:54:38] *** Joins: sudden6 (~anonymous@ )
+[12:00:42] *** Joins: stvlker (~stvlker@ )
+[12:02:45] *** Joins: LittleVulpix (~Miranda@ )
+[12:03:49] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[12:05:09] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:20:19] *** Joins: ovalseven8 (~ovalseven@ )
+[12:42:03] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[12:45:54] *** Joins: dardevelin (~dardeveli@ )
+[13:01:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:13:34] *** Joins: abbat (~abbat@ )
+[13:15:59] *** Joins: shiva (~LordShiva@ )
+[13:18:49] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[13:20:34] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:20:57] *** Joins: tux3 (~tux3@ )
+[13:20:57] *** ChanServ sets mode: +o tux3
+[13:22:10] *** Joins: lugarius (4d165e92@ )
+[13:22:14] <lugarius> hey!
+[13:23:15] <lugarius> you are on it tux3 ?
+[13:23:52] <tux3> lugarius, hi, about static builds?
+[13:24:07] <lugarius> yes ^^
+[13:24:57] <tux3> They should be ready! I'm just waiting to see if anyone reports a bug now
+[13:25:08] <tux3> Download here for 64bit: https://build.tox.chat/view/qtox/job/qTox_build_linux_x86-64_release/lastSuccessfulBuild/artifact/qTox_build_linux_x86-64_release.tar.xz and here for 32 bit: https://build.tox.chat/view/qtox/job/qTox_build_linux_x86_release/lastSuccessfulBuild/artifact/qTox_build_linux_x86_release.tar.xz
+[13:25:11] <lugarius> this release is not a big eye catch eh?
+[13:25:20] <tux3> Not until I know it works :)
+[13:25:30] <lugarius> NONE
+[13:25:51] <tux3> For you
+[13:25:59] <lugarius> they are not even working on ubuntu! you didnt read my blog m8?
+[13:26:14] <tux3> Oh no, I must have missed the post, link me to it?
+[13:26:22] <zetok> told ya it won't work
+[13:26:28] <zetok> :d
+[13:26:39] <tux3> Well the question is whether it's fixable
+[13:26:43] <lugarius> error while loading shared libraries: libqrencode.so.3
+[13:27:01] <lugarius> the qr encoder is MISSING
+[13:27:12] <tux3> Oh okay, we just forgot to add that to Jenkins probably, thanks for the info!
+[13:27:13] <zetok> tux3: you could use `ldd`
+[13:27:14] <lugarius> its not even an Qt problem
+[13:27:14] <tux3> I'll try to add it
+[13:27:40] <tux3> zetok, uh you're right, I never though we'd still be having dependencies problem ><
+[13:27:46] <zetok> Please.
+[13:27:53] <tux3> So the good news is it's easy to solve..
+[13:28:11] <zetok> Once you've decided to break static stuff, it was obvious that there'll be dependency problems
+[13:28:21] * zetok shrugs
+[13:28:43] <tux3> Yeah I should probably have though of it
+[13:29:35] <zetok> tux3: um, are you by any chance familiar with how toxencryptsave works?
+[13:29:40] <lugarius> i tested meanwhile uTox on puppy / slitaz and 4Mlinux ... only some laggs in 4Mlinux with desktop share everything else is working
+[13:29:51] <tux3> zetok, somewhat?
+[13:31:19] <lugarius> what  dependencies does qTox have?
+[13:31:33] <zetok> lugarius: read INSTALL.md
+[13:32:19] <lugarius> libXScrnSaver? whats that for?
+[13:32:36] <zetok> feel free to guess
+[13:32:51] <zetok> or use google, whichever you find the best
+[13:33:32] <zetok> but yeah, that could be improved
+[13:33:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[13:34:03] *** Joins: cisc (~cisc@ )
+[13:34:22] <zetok> lugarius: would you mind making a PR that would link dependency names in that table to their websites/repos ?
+[13:35:27] <tux3> We use XScrnSaver to know how long the user has been idle
+[13:35:47] <tux3> And we use that for the auto-away feature
+[13:36:21] <zetok> lugarius: it would be good to keep things clean, so the best would be to use that kind of links: https://github.com/tux3/qTox/blame/master/MAINTAINING.md#L34 https://github.com/tux3/qTox/blame/master/MAINTAINING.md#L92
+[13:37:05] * zetok wonders
+[13:39:25] <zetok> I wonder if that should be documented somewhere
+[13:40:45] <lugarius> im in rush right now, sorry, i cant link the names right now...
+[13:42:09] <lugarius> and im actually supporting uTox more -- maybe later 
+[13:43:59] <lugarius> i have to go/ good luck
+[13:44:03] <tux3> Bye
+[13:44:11] <lugarius> bye
+[13:44:56] <tux3> Okay I got libqrencode statically to work, I'll push it and new builds will be ready in ~30 minutes
+[13:45:58] -qtox-git-spam- [qTox] tux3 pushed 1 new commit to master: https://git.io/vrjpG
+[13:45:58] -qtox-git-spam- qTox/master 0a976c7 tux3: fix(build): Link qrencode statically on Jenkins
+[13:48:24] *** Quits: lugarius (4d165e92@ ) (Ping timeout: 250 seconds)
+[13:58:00] *** Joins: sudden6 (~anonymous@ )
+[14:13:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[14:14:57] *** Joins: sudden6 (~anonymous@ )
+[14:20:49] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[14:26:54] *** Joins: f10 (~flo@ )
+[14:33:08] <zetok> https://lwn.net/Articles/688560/
+[14:35:55] <zetok> > (…) having a public "service level agreement" (SLA) for contributions. The SLA, she explained, means making a pledge that (for example) "we will look at each patch and respond to it within five days." That encourages newcomers by telling them that their effort will not be overlooked, and it sets expectations.
+[14:39:02] <zetok> >qTox still has no `Contributors` file
+[14:41:33] <ovalseven8> zetok: This won't fix problems
+[14:42:11] <zetok> ovalseven8: won't even help with fixing them?
+[14:45:11] <ovalseven8> First step is: https://github.com/tux3/qTox/labels/P-very-high
+[14:45:23] <ovalseven8> Second step is: https://github.com/tux3/qTox/labels/P-high
+[14:45:54] <zetok> ovalseven8: ?
+[14:46:55] <zetok> e.g. someone might want to fix issue `X`, but if that's not possible, they won't do anything
+[14:47:24] <zetok> ovalseven8: would you say to that person that they shouldn't fix `X` because there are more important things that need fixing?
+[14:47:52] <ovalseven8> no
+[14:48:42] <ovalseven8> I just think that contributor files etc. don't bring the desired effect
+[14:49:13] <zetok> and what would be the effect you desire?
+[14:49:33] <ovalseven8> Well, progress in form of bug fixes probably
+[14:49:45] <zetok> and who would fix them?
+[14:50:13] <ovalseven8> Come on, you know what I wanted to say.
+[14:50:32] <zetok> yes, but if you're expecting me to write C++ code then you're looking at the wrong person
+[14:51:16] <ovalseven8> I know that you don't write C++ code
+[14:52:03] <ovalseven8> The qTox project's goal at the moment should be to fix bugs, fix bugs, fix bugs
+[14:52:13] <zetok> given that, I'm just trying to attract to qTox people who would write that C++ code, aka fix bugs
+[14:52:15] *** Joins: sudden6 (~anonymous@ )
+[14:52:27] <zetok> ovalseven8: there are bugs fixed, AFAIK
+[14:52:37] <ovalseven8> For new contributors it looks overwhelming to see so many open issues
+[14:52:52] <zetok> um
+[14:53:01] <zetok> the number of issues is not going to decrease
+[14:53:10] <ovalseven8> That should be the goal though
+[14:53:23] <zetok> goal, yes, but not a realistic expectation
+[14:54:11] <ovalseven8> To wait and let the number of issues grow and grow is one of the worst things a young/unfinished project can do
+[14:54:25] <zetok> IMO it's really awesome that number of issues ~stabilized at ~470 – note that in general amount of bugs had been constantly decreasing, but not so much issue count, given that there have been plenty of new proposals made
+[14:54:59] <ovalseven8> Unfortunately, the most important issues are still open :/
+[14:55:01] <zetok> ovalseven8: ok, what would you propose to do then?
+[14:56:42] <ovalseven8> Fix bugs before introduce new features
+[14:56:59] <zetok> ovalseven8: ok, when a PR from you with bug fixes can be expected?
+[14:58:24] <ovalseven8> It's just a general opinion I have here.
+[14:58:52] <zetok> oh, I'm not disagreeing about opinion – in fact, I too think that fixing bugs is really important :)
+[14:59:31] <zetok> what I want to point out, is that saying that fixing bugs is important doesn't help, and might have effect opposite to the desired one
+[15:00:06] <ovalseven8> Well, ok
+[15:00:17] <zetok> thus, time is better spent on actually improving something, even if not bug fixing, that could result in attracting people who would want to fix bugs
+[15:00:32] *** Quits: demize (~kyrias@ ) (Quit: Do Androids Dream of Electric Sheep?)
+[15:00:40] <ovalseven8> I hope you're successful
+[15:00:59] <zetok> ovalseven8: you could help too :)
+[15:05:53] <ovalseven8> zetok: At the moment toxcore is even a bigger problem :/ And qTox depends on toxcore
+[15:06:07] <zetok> > zetox
+[15:06:30] <zetok> :P
+[15:07:21] <zetok> hmm, lemme check something
+[15:07:56] <ovalseven8> zetox has a far way to go ;)
+[15:10:35] <zetok> I wonder about that
+[15:10:42] <zetok> ~now I'm working on documenting toxencryptsave PR
+[15:11:46] <zetok> and what I'm wondering about is whether I should patch toxcore to make it compile without toxencryptsave, so that I could test how well would qTox work with toxcore + zetox's toxencryptsave
+[15:12:22] <zetok> should just work™, but it would be the best to test
+[15:17:54] *** Joins: demize (kyrias@ )
+[15:19:34] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[15:31:42] *** Joins: abbat (~abbat@ )
+[15:36:25] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:37:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[15:49:04] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 250 seconds)
+[15:56:26] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
+[15:56:31] *** Joins: SkyzohKey_ (~skyzohkey@ )
+[15:56:46] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[16:16:40] *** Joins: sudden6 (~anonymous@ )
+[16:29:57] *** Joins: misiek200m (~miskof@ )
+[16:32:37] *** Joins: cisc (~cisc@ )
+[16:39:20] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[17:01:47] *** Joins: stefan_ (ad26dc3d@ )
+[17:02:57] *** Quits: stefan_ (ad26dc3d@ ) (Client Quit)
+[17:24:13] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 258 seconds)
+[17:31:15] <zetok> >.<
+[17:35:45] <ovalseven8> zetok: The same here >.<
+[17:37:39] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[17:38:11] *** Joins: abbat (~abbat@ )
+[17:38:44] *** Quits: Pharyngeal (~Pharyngea@ ) (Ping timeout: 240 seconds)
+[17:39:20] *** Joins: hexadezimalion (sid85551@ )
+[17:42:39] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[17:43:33] *** Joins: Pharyngeal (~Pharyngea@ )
+[17:50:57] *** Quits: jorgelg (~jorge@ ) (Ping timeout: 276 seconds)
+[17:51:48] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 246 seconds)
+[18:02:27] <zetok> tux3: I guess that I'll push on master that timeout workaround
+[18:02:36] <tux3> zetok, ugh :/
+[18:02:38] <zetok> re: message duplicates
+[18:03:07] <tux3> It's a kludge, at least leave a FIMXE comment
+[18:03:14] <zetok> oh, ok
+[18:03:26] <tux3> Thanks
+[18:04:54] <zetok> np :)
+[18:04:57] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 272 seconds)
+[18:06:56] <zetok> https://github.com/tux3/qTox/pull/3316/commits/9a30b9e2c7d626d82f5a4e62dcda1a9c83d31b71 ?
+[18:07:52] <tux3> Hm, ok
+[18:09:22] <tux3> I'd prefer FIXME, because it might get lost in a sea of small TODOs: http://storage9.static.itmages.com/i/16/0603/h_1464973720_3656458_5070f60bb2.png, but that's not the end of the world
+[18:10:05] <ovalseven8> tux3: Which editor do you use?
+[18:10:11] <tux3> ovalseven8, QtCreator
+[18:10:33] *** Joins: unsreg (2e625bc3@ )
+[18:10:55] <ovalseven8> tux3: Not vim? ^^
+[18:11:25] <tux3> Vim is my second choice :)
+[18:12:18] <ovalseven8> I don't use vim so ... ;)
+[18:12:35] *** SkyzohKey_ is now known as SkyzohKey
+[18:14:02] <tux3> Vim is nice with the right plugins, but doesn't beat a good IDE
+[18:14:03] <tux3> http://storage1.static.itmages.com/i/16/0603/h_1464974010_1883261_8a4ea024e0.png
+[18:16:01] <ovalseven8> tux3: Normally, I just need simple editors if I want to edit configs. And for that purpose I don't want to learn vim because it's too powerful for this task, so I use nano for this
+[18:16:01] <tux3> ovalseven8, what do you use then?
+[18:16:07] <tux3> Oh
+[18:16:12] <ovalseven8> tux3: In case I program something I use Geany, do you know?
+[18:16:19] <tux3> Yep, used it a little
+[18:16:36] <ovalseven8> It's a very lightweight IDE
+[18:16:45] <tux3> Not enough bloat for me :)
+[18:17:23] <ovalseven8> tux3: Well, I guess Geany is not the optimal IDE for every task ;)
+[18:17:47] <tux3> If it's what's optimal for you, that's all that matters :)
+[18:18:05] <ovalseven8> You're right
+[18:18:18] <ovalseven8> or ... why not Leafpad? 
+[18:18:53] <tux3> Well I'm on KDE so I'd use kate for text editing
+[18:19:08] <zetok> ><tux3> Vim is nice with the right plugins, but doesn't beat a good IDE
+[18:19:28] <zetok> tux3: ooh, how do you configure spacemacs to have sane indentation support?
+[18:20:14] <ovalseven8> I know zetok is coming now :D :D :D
+[18:20:18] <ovalseven8> *knew
+[18:20:21] <tux3> Spacemacs, that sounds like advanced heresy!
+[18:23:23] <zetok> ;)
+[18:24:06] <zetok> I'm actually kinda surprised that after >30 years of development emacs still doesn't have sane indentation
+[18:24:30] <zetok> either that, or it's just me who can't figure out how to actually configure it :s
+[18:25:31] <zetok> aside from that, it's actually nice
+[18:25:34] <ovalseven8> By the way: tabs or spaces? 
+[18:25:51] <zetok> spaces, four of them
+[18:26:00] <ovalseven8> I use tabs
+[18:26:04] <zetok> ew
+[18:26:08] <ovalseven8> and spaces
+[18:26:49] *** Quits: unsreg (2e625bc3@ ) (Quit: Page closed)
+[18:27:48] <ovalseven8> https://programmers.stackexchange.com/questions/57/tabs-versus-spaces-what-is-the-proper-indentation-character-for-everything-in-e/267#267
+[18:28:01] <zetok> you sound like you could make some use of emacs
+[18:28:16] <SkyzohKey> spaces > tab
+[18:28:40] <ovalseven8> Personally, I think the post from stackexchange makes sense
+[18:29:20] <ovalseven8> Spaces are very static. With tabs everyone can decide the width
+[18:29:32] <SkyzohKey> That's the point
+[18:29:43] <SkyzohKey> tabs can mess your indentation in other editors
+[18:30:08] <zetok> ovalseven8: those people on stackexchange don't even seem to be able to configure their text editor right
+[18:30:24] <zetok> so yeah, their opinion automatically counts as invalid
+[18:30:34] <SkyzohKey> I personaly used tabs for a while
+[18:30:38] <ovalseven8> SkyzohKey: Why should tabs mess the indendation
+[18:30:46] <tux3> In a perfect world, you'd use Tab+Spaces, but if you have to work with other people, just 4 spaces, you can't mess that up...
+[18:30:50] <SkyzohKey> Cuz not everyone use same tab width
+[18:31:15] <ovalseven8> SkyzohKey: Yeah, but one tab is one tab so I don't know what you mean
+[18:31:21] <SkyzohKey> but using spaces is way better as tabs because it gives other the very same code as you wrote
+[18:31:37] <SkyzohKey> one tab can appear 8 chars in some editors, which is shit
+[18:31:37] <ovalseven8> Yeah that's right
+[18:31:44] <ovalseven8> Then the editor is shit
+[18:32:11] <SkyzohKey> hmm
+[18:32:22] <ovalseven8> tux3 is right. In a perfect world Tab + Spaces is the way to go. But probably it's more comfotable to just use spaces in some projects
+[18:32:23] <SkyzohKey> I won't go in this type of no-end debate
+[18:32:38] <SkyzohKey> that's like "linux vs osx vs windows" 
+[18:32:51] <zetok> >Then the editor is shit
+[18:32:51] <SkyzohKey> except that in this case, everyone knows that Linux > all
+[18:32:52] <ovalseven8> SkyzohKey: Yeah, I know. A never ending story
+[18:32:55] <zetok> what did you say about vim?
+[18:33:00] <SkyzohKey> vim is shit
+[18:33:02] <SkyzohKey> yes
+[18:33:25] <zetok> >says someone using gnome
+[18:33:41] <SkyzohKey> you don't know what "good software" means i guess, zetok$
+[18:33:57] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:34:13] <SkyzohKey> A good software is something that works with a nice UX for average user and is easy to customize for more technical users, in my POV
+[18:34:42] <zetok> well, then according to your definition gnome is not a good software :)
+[18:34:58] <zetok> since it doesn't even meet 1st condition in the definition
+[18:38:54] -qtox-git-spam- [qTox] zetok closed pull request #3316: fix: increase timer for checking offline messages timeout (again) (master...timeout) https://git.io/vrWvi
+[18:39:30] <zetok> ah
+[18:39:55] <zetok> I could have also put in the comment issue number :/
+[18:40:41] <zetok> lets hope that someone will read that commit message for comment
+[18:46:56] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[18:47:07] *** Joins: cisc (~cisc@ )
+[18:52:00] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[18:52:36] *** Joins: cisc (~cisc@ )
+[18:52:54] *** Quits: cisc (~cisc@ ) (Client Quit)
+[19:23:42] *** Joins: cisc (~cisc@ )
+[19:33:09] *** Joins: shiva__ (~LordShiva@ )
+[19:33:30] *** shiva__ is now known as in1t3r
+[19:40:27] *** Joins: Sephi (~me@ )
+[19:54:03] <in1t3r> o/
+[19:55:27] <tux3> in1t3r, hi!
+[19:58:04] *** Joins: abbat (~Anton@ )
+[20:19:31] *** Joins: dardevelin_ (~dardeveli@ )
+[20:21:56] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 246 seconds)
+[20:32:14] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[20:38:15] *** Quits: dardevelin_ (~dardeveli@ ) (Quit: Leaving)
+[20:38:36] *** Joins: dardevelin (~dardeveli@ )
+[20:45:09] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Quit: Leaving)
+[21:34:28] *** Quits: Interject (~RMS@ ) (Quit: Leaving)
+[21:37:16] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[21:50:20] *** Joins: in1t3r (~LordShiva@ )
+[21:50:55] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[21:53:19] *** Joins: travis-ci (~travis-ci@ )
+[21:53:20] <travis-ci> qTox/qTox-Website (858dc6b): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/135134906 / Changes: https://github.com/qTox/qTox-Website/compare/9e0a909a08ef...858dc6b9888f
+[21:53:20] *** Parts: travis-ci (~travis-ci@ ) ()
+[21:54:05] <zetok> \o/
+[21:55:05] <tux3> Nice
+[21:58:27] <zetok> now the only things left are cleaning up translation files & putting them on weblate
+[21:59:18] <zetok> weblate probably doesn't support that custom json thing, so it most likely will have to be somehow worked around :s
+[22:02:38] *** Joins: hpanago (uid15586@ )
+[22:03:10] <tux3> Note to self: Fix libwayland in static builds
+[22:03:36] <zetok> ooh
+[22:03:47] <zetok> weblate does support json \o/
+[22:04:04] <zetok> though files still will need to be adjusted
+[22:05:06] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[22:13:12] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[22:13:27] <abbat> qtox for Ubuntu ARM now Trusty+ and I hope will be Precise+ after few hours. But I can not test it :(
+[22:14:08] <tux3> Nice! I can get you a ARM shell for a few hours if you want?
+[22:15:45] <abbat> tux3, If you have ARM device, you can test it yourself :)
+[22:16:11] <zetok> right, needs to be added to install.md
+[22:16:22] <abbat> Not today, anyway - I'm too tired
+[22:16:32] <tux3> abbat, okay! Thanks for making it work
+[22:17:15] *** Quits: A124 (~Username@ ) (Quit: '')
+[22:17:29] *** Quits: in1t3r (~LordShiva@ ) (Quit: Leaving)
+[22:19:36] *** Joins: f10 (~flo@ )
+[22:29:18] *** Joins: in1t3r (~LordShiva@ )
+[22:33:05] <abbat> qtox for Ubuntu Precise armhf ready. Good night :)
+[22:33:12] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[22:34:14] *** Joins: cisc (~cisc@ )
+[22:35:48] *** Joins: ovalseven8 (~ovalseven@ )
+[22:42:09] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[22:43:04] *** Joins: cisc (~cisc@ )
+[22:44:22] <linuxmodder> tux3, zetok  ideas ?  https://paste.fedoraproject.org/374261/64990241/
+[22:44:54] <linuxmodder> tux3,  I removed --prefix for systemwide and made non system == /usr/local and still no dice
+[22:45:30] <zetok> 'no'
+[22:45:46] <zetok> (without looking, but what you've described sounds wrong)
+[22:46:16] <zetok> i.e. sqlcipher had it set correctly, and for some reason you insist on breaking its prefix
+[22:46:35] <linuxmodder> no I'm not 
+[22:46:36] * zetok shrugs & goes back to breaking website's translations
+[22:46:53] <linuxmodder> it's after you did the optimize  shit to bootstrap
+[22:48:27] <zetok> sure.
+[22:48:48] *** TheVoid is now known as TheVoid_
+[22:49:24] <linuxmodder> even with a  clean pull no modifications it  still fails  dude
+[22:49:35] <zetok> on fedora
+[22:49:43] <linuxmodder> but what the fuck ever I'll figure  it  out without your help if that's how you wanna be
+[22:50:33] <zetok> you're breaking something that *works* and then you're surprised why it doesn't work
+[22:51:10] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[22:51:35] <zetok> now, it's nice that fedora decided to break yet another thing, and I have no idea what they broke – you probably should know that better than me, since you're using this distro
+[22:52:51] <zetok> as I said, it's something related to sqlite, sqlcipher, or qtsql, dunno which part fedora people decided to break
+[22:53:37] <zetok> you're probably missing a dependency, or fedora fucked up some paths for one of things I've mentioned earlier
+[22:53:48] <zetok> >src/persistence/db/rawdatabase.cpp:15:31: fatal error: sqlcipher/sqlite3.h: No such file or directory
+[22:53:51] <zetok> yeah, sqlite
+[22:54:02] <tux3> linuxmodder, do you have /usr/local/include in your search path?
+[22:54:13] *** Joins: f10 (~flo@ )
+[22:54:16] <tux3> If you installed it there and the compiler doesn't find it, I can't see anything else..
+[22:58:25] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[23:00:00] *** Joins: TheVoid (~void@ )
+[23:00:05] <linuxmodder> zetok,   rpm -qa |grep sqlite3\*
+[23:00:05] <linuxmodder> mingw64-libsqlite3x-20071018-22.fc24.noarch
+[23:00:05] <linuxmodder> mingw64-sqlite-3.11.0.0-1.fc24.noarch
+[23:00:05] <linuxmodder> sqlite-tcl-3.12.2-1.fc24.x86_64
+[23:00:05] <linuxmodder> perl-DBD-SQLite-1.50-2.fc24.x86_64
+[23:00:06] <linuxmodder> sqlite-3.12.2-1.fc24.x86_64
+[23:00:08] <linuxmodder> sqlite-doc-3.12.2-1.fc24.noarch
+[23:00:10] <linuxmodder> sqlite2-devel-2.8.17-19.fc24.x86_64
+[23:00:12] <linuxmodder> sqlite-libs-3.12.2-1.fc24.x86_64
+[23:00:16] <linuxmodder> sqlite2-2.8.17-19.fc24.x86_64
+[23:00:18] <linuxmodder> sqlite-devel-3.12.2-1.fc24.x86_64
+[23:00:20] <linuxmodder> sqlite-libs-3.12.2-1.fc24.i686
+[23:00:22] <linuxmodder> sqlite3-dbf-2011.01.24-8.fc24.x86_64
+[23:00:24] <linuxmodder> sqlite2-tcl-2.8.17-19.fc24.x86_64
+[23:00:26] <linuxmodder> its there
+[23:00:31] *** Joins: smaragdus (~omoo@ )
+[23:00:51] <linuxmodder> tux3,  seems not
+[23:02:49] *** Quits: TheVoid_ (~thevoid@ ) (Quit: TheVoid_)
+[23:43:58] *** Joins: DaSpirit (~DaSpirit@ )
+[23:52:48] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[23:53:16] <linuxmodder> tux3,  fedora does not  add that path by default
+[23:53:37] <tux3> Yes, I though I remembered something like this
+[23:53:42] <tux3> There's a file to change to fix it
+[23:53:56] <tux3> Or you can add -I/usr/local/include to the qtox.pro
