@@ -1,0 +1,598 @@
+[00:00:57] *** Joins: cisc (~cisc@ )
+[00:04:30] <linuxmodder> not seeing where tho only includepath I see is for filteraudip
+[00:04:58] <linuxmodder> on L76
+[00:05:44] <tux3> Just add INCLUDEPATH += /usr/local/include in the Linux section
+[00:10:51] <linuxmodder> tux3,  under L76?
+[00:11:33] <tux3> linuxmodder, at L133 of qtox.pro, insert that just above
+[00:11:40] <tux3> That else {} block is for linux
+[00:11:52] <linuxmodder> was just making sure :)
+[00:11:58] <tux3> No problem :)
+[00:12:01] <linuxmodder> around L133 or such right
+[00:12:05] <tux3> Yep
+[00:12:09] <tux3> In that else block
+[00:18:52] <Chiitoo> tux3: While you're here, I probably should ask for tips on where the margins for the left part of the area where we type things comes from, as well as the margins for the line between the header and footer/chatlog area.
+[00:19:54] <tux3> Chiitoo, for the line, if I remember correctly it's horribly complicated and a combination of things, for the left part of the textarea, probably the main layout
+[00:20:31] <Chiitoo> Heh.
+[00:21:17] <Chiitoo> Yeah, I thought the main layout, too, but setting it to 0 didn't move it left at all, oddly, whily it does for the header.  As if something else is still there.
+[00:21:40] <Chiitoo> It's all a bit weird to me still.
+[00:22:11] <Chiitoo> Almost got them all figured out though!
+[00:22:55] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[00:25:25] <Chiitoo> I thought for a moment that I fixed the bug that makes the layout all wrong, but it seems I didn't, after, all.  :|
+[00:25:42] <Chiitoo> It seems it only triggeres when the layout is reloaded, so to speak.
+[00:25:55] <Chiitoo> Triggers too.
+[00:28:18] <tux3> Yeah, layouts can do weird things sometimes
+[00:29:32] <Chiitoo> Especially if using the Qt Designer parts, heh.
+[00:30:33] <Chiitoo> Not sure if it's just me, but the editor is really weird for me on that part.
+[00:33:30] <tux3> Yeah, it works well for simple things, but after that it gets messy..
+[00:37:46] <Chiitoo> So it seems.
+[00:37:47] <linuxmodder> tux3,  even with that includepath  its failing same place
+[00:38:01] <tux3> Weird
+[00:56:46] *** Quits: genesis (~genesis@ ) (Remote host closed the connection)
+[00:59:51] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 264 seconds)
+[01:24:34] *** Joins: sysfu (~sysfu@ )
+[01:27:48] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: This Konversation is over  ! !! !)
+[01:48:01] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[02:26:10] *** Joins: josh98 (~josh98@ )
+[02:38:51] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[02:59:19] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[03:05:30] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 260 seconds)
+[03:15:19] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[03:18:29] <zero-ghost> http://dashpaymagazine.com/index.php/2016/06/02/maidsafe-crypto-part-3/
+[03:19:39] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:29:53] <sysfu> I'm unable to launch qtox after doing an 'apt-get upgrade' on Elementary OS Freya 3.4.2 (based on Ubuntu 14.04).
+[03:29:58] <sysfu> Error message is "qtox: error while loading shared libraries: libqrencode.so.3: cannot open shared object file: No such file or directory"
+[03:30:59] <sysfu> installing qrencode pkg resolves that issue, but then another error occurs on failed launch "qtox: /usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by qtox)"
+[04:26:28] *** Joins: tdmps (~ray@ )
+[04:26:35] *** Parts: tdmps (~ray@ ) ()
+[04:54:30] *** Quits: josh98 (~josh98@ ) (Quit: josh98)
+[05:55:09] *** Quits: sysfu (~sysfu@ ) (Remote host closed the connection)
+[08:14:51] *** Joins: ovalseven8 (~ovalseven@ )
+[08:19:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:32:30] *** Joins: cisc (~cisc@ )
+[09:01:15] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[09:07:20] *** Joins: dardevelin (~dardeveli@ )
+[09:22:20] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:29:46] *** Joins: genesis (~genesis@ )
+[09:55:37] *** Joins: cisc (~cisc@ )
+[10:38:56] *** Joins: tdmps (~ray@ )
+[10:38:58] *** Parts: tdmps (~ray@ ) ()
+[10:46:50] *** Joins: tux3 (~tux3@ )
+[10:46:50] *** ChanServ sets mode: +o tux3
+[10:53:41] *** Joins: f10 (~flo@ )
+[11:08:35] <zetok> :s
+[11:12:30] *** Joins: LittleVulpix (~Miranda@ )
+[11:12:42] <zetok> ok, I hit a problem
+[11:13:11] <zetok> i.e. `buildsite.py` isn't able to handle more fancy json
+[11:14:06] <ovalseven8> And I'm struggling with encoding/decoding problems for a few hours now >.<
+[11:18:23] <travis-ci> qTox/qTox-Website (cbff33a): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/135228031 / Changes: https://github.com/qTox/qTox-Website/commit/cbff33a25fdd
+[11:18:40] <zetok> ↑ this works
+[11:18:52] <zetok> for file in index* build*.py ; do sed -i 's/sect1_description/With the rise of government monitoring programs, qTox provides an easy to use application that allows you to connect with friends and family without anyone else listening in. While other big-name services require you to pay for features, qTox is totally free, and comes without advertising./' $file ; done
+[11:18:57] <zetok> ↑ fails after that
+[11:19:52] <zetok> i.e. rendered version of website simply is missing that part – template text is replaced with nothing
+[11:27:20] <zetok> Great.
+[11:27:59] <zetok> it's not even detected by python
+[11:33:42] <zetok> nvm, I can't read >.<
+[11:34:41] <zetok> ..
+[11:36:12] <zetok> or maybe I can :f
+[11:36:39] * zetok wonders whether to rewrite broken python script in Rust
+[11:58:09] <zetok> tux3: dunno, script can't handle `.` in key value, do you think that you could do something about it?
+[11:58:42] <tux3> zetok, I'm not a python expert, but I can look at it
+[11:58:52] <zetok> >renderer = pystache.renderer.Renderer()
+[11:59:16] <zetok> I *think* that this is the part that can't handle it
+[11:59:28] <tux3> What's the error?
+[11:59:34] <zetok> there isn't one
+[11:59:44] <zetok> the string is just missing in output files
+[12:00:59] <tux3> Do you have an example of input / bad output?
+[12:01:05] <tux3> What am I supposed to look at?
+[12:01:14] <zetok> for file in index* build*.py ; do sed -i 's/sect1_description/With the rise of government monitoring programs, qTox provides an easy to use application that allows you to connect with friends and family without anyone else listening in. While other big-name services require you to pay for features, qTox is totally free, and comes without advertising./' $file ; done
+[12:01:23] <zetok> ↑ that's broken version
+[12:01:42] <zetok> the first bigger portion of text on the website
+[12:03:21] <tux3> Works For Me
+[12:03:46] <tux3> I don't know where your bash script comes from, but when I run ./buildsite.py I don't see any problem
+[12:04:07] <zetok> have you tried to run it after script?
+[12:04:22] <tux3> Why would I do that?
+[12:05:10] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[12:05:34] <zetok> eh
+[12:05:48] <tux3> Your script makes no sense, running that would break everything
+[12:06:08] <tux3> What are you trying to do here?
+[12:06:26] <zetok> use dot in key
+[12:06:33] <tux3> What key?
+[12:06:42] <zetok> whichever one in json file
+[12:06:56] <tux3> So like using sect1.description instead of sect1_description?
+[12:07:04] *** Joins: cisc (~cisc@ )
+[12:07:37] <zetok> eh, I'm trying to do what script does
+[12:07:50] <tux3> The script you posted above makes no sense :/
+[12:07:56] <zetok> it does though
+[12:08:04] <zetok> https://docs.weblate.org/en/latest/formats.html#json-files
+[12:08:18] <tux3> build*.py doesn't contain sect1_description anywhere, why are you trying to replace sect1_description in buildsite.py?
+[12:08:44] <tux3> And if you replace sect1_description with that huge sentence in the json files, you're just breaking all the files
+[12:08:52] <zetok> was useful for `_language`, so I left it there
+[12:09:46] <zetok> Yes.
+[12:09:53] <tux3> Okay now I think I know what you're trying to do, but your script still makes no sense :)
+[12:09:57] <zetok> what I'm trying to figure out is why it breaks
+[12:10:08] <zetok> script works perfectly™
+[12:10:25] <zetok> https://github.com/mustache/spec/blob/master/specs/interpolation.yml ← found why it breaks
+[12:10:53] <tux3> If you're doing all of that for weblate, that's just so much work for so little ...
+[12:11:26] <zetok> except that translations are important
+[12:11:29] <tux3> Probably nobody will use Weblate to translate the website, except you :)
+[12:11:48] * zetok shrugs
+[12:12:05] * tux3 shrugs too
+[12:12:06] <zetok> in process of making it translatable on weblate I'm also cleaning up & updating translation files
+[12:12:17] <tux3> Well I'm not complaining :)
+[12:12:34] <tux3> But that sounds like a lot of effort
+[12:18:54] <zetok> >in version 0.5.2 onwards you are not allowed to have a plain tag/key name with a dot in it
+[12:19:01] <zetok> ...
+[12:32:38] <zetok> hmm.
+[12:33:51] <zetok> the simplest option seems removing shitty pystache dependency and writing a ~custom replacement
+[12:36:20] <tux3> Oh boy
+[12:36:24] <tux3> >simplest
+[12:36:55] <zetok> yeah, mustache is too broken to use, and pystache follows that insanity
+[12:37:21] <zetok> the alternative is using pystache 0.5.1, that was released 4 years ago
+[12:37:56] <zetok> and using 4 years old, not maintained python code is not really appealing
+[12:38:37] <zetok> tux3: dunno, are you feeling up to the task? :D
+[12:39:29] <tux3> zetok, haha hell no! But if you want to dive into the WebDev mustache insanity, go ahead! :)
+[12:39:35] <zetok> what is needed is replacing tags enclosed in `{{{key}}}` from template file with value of `key` from json
+[12:39:55] <zetok> well, not going into that insanity
+[12:40:08] <zetok> I'll just write a bit of Rust code that will just work™
+[12:40:08] <tux3> You can probably edit the buildsite.py to make it generate new json files tbh, but why even bother
+[12:40:13] <tux3> Oh boy
+[12:41:06] <zetok> you know, it could be a bit of simple replacement in python if you wanted – I simply don't know python :)
+[12:42:05] <zetok> not sure why stq used pystache in the first place for simple replacement :s
+[12:42:16] <tux3> stq knows python, you know rust :)
+[12:42:29] <tux3> If you let me I'll write you a web server in ASM :)
+[12:42:50] <tux3> With SSE4 and all.
+[12:42:52] <zetok> err, no, it's not about the language, but about depending on shit you don't need
+[12:43:06] <tux3> Python is about depending on shit you don't need
+[12:43:15] <tux3> You just import the world, and you're done
+[12:43:19] <zetok> D:
+[12:43:48] *** Joins: abbat (~Anton@ )
+[12:44:07] <zetok> I have a feeling that this is where insanity lies
+[12:44:14] <zetok> lets not go there
+[12:45:00] <ovalseven8> I am giving up now :(
+[12:45:10] <ovalseven8> Have one problem and don't find a solution :/
+[12:45:22] <zetok> ovalseven8: um, what problem?
+[12:45:22] <ovalseven8> Or ... I don't understand the error that occurs
+[12:45:35] <ovalseven8> PyNaCl
+[12:46:55] <zetok> hm.
+[12:47:07] <zetok> if that was Rust, I could help you
+[12:51:39] <zetok> hm, is it possible to modify buildsite.py to write out template + appended languages list?
+[12:52:41] <zetok> I'd handle the rest in rust
+[12:53:56] <zetok> or maybe not :s
+[13:03:27] *** Joins: SkyzohKey (~skyzohkey@ )
+[13:22:54] <zetok> :D
+[13:23:23] * zetok wound a workaround
+[13:25:09] <SkyzohKey> heya guys
+[13:25:43] <SkyzohKey> tux3: https://github.com/tux3/qTox/issues/3349#issuecomment-223751889
+[13:26:06] <tux3> SkyzohKey, thanks!
+[13:26:46] <SkyzohKey> :p
+[13:43:26] <zetok> so, if there is really no one who would want to fix python script, I'm just going to write Rust replacer that'll add more insanity into the mix
+[13:44:32] *** Joins: xrow (~xrow@ )
+[13:45:40] <linuxmodder> tux3,  got it to build but  now  back to libtoxcore.so  failed to  load on ./qtox|qtox &    even with sudo ldconfig  
+[13:46:02] <tux3> linuxmodder, what does ldd say?
+[13:46:10] <linuxmodder> echo '/usr/local/libs/' |sudo tee -a /etc/ld.so.conf.d/locallibs.conf  used 
+[13:46:27] <tux3> '/usr/local/libs/ ?
+[13:46:35] <tux3> Try removing the s maybe :)
+[13:46:37] <xrow> hey guys. we just ran into an issue with group calls. seems like if a third person joins the call it completely stutters for everyone while calling a single person or even having a group call with just one person works fine. all i could find to this issue was that: https://github.com/tux3/qTox/issues/2609 but that doesn´t provide any solution
+[13:46:46] <xrow> anyone knows what´s up there?
+[13:47:47] <tux3> xrow, I don't remember seeing that before, you should open a new issue on the qTox bugtracker
+[13:48:20] <linuxmodder> tux3,  simple typo it seems thanks
+[13:48:24] <linuxmodder> fired up now
+[13:48:28] <tux3> Awesome
+[13:48:48] <xrow> tux3, hmm i see. did you have any group calls lately?
+[13:49:06] <tux3> xrow, no, I mostly use text groupchats
+[13:49:36] <xrow> okay, i might file a bug report later. thanks anyway
+[13:49:49] <linuxmodder> tux3,  I will have to branch off the current bootstrap and  simple_make tho for  Fedora deps and a ommission for  that line in the current branch 
+[13:50:07] <tux3> ok
+[13:50:10] <linuxmodder> tux3,  vid chats sure not  any  group vid tho
+[13:50:15] <zetok> tux3, xrow: err, there's PR for this
+[13:50:27] <tux3> zetok, oh there is :|
+[13:51:04] <xrow> sorry PR?
+[13:51:24] <tux3> Pull request, it's code in the making
+[13:51:40] <xrow> oh i see, so it is a known problem?
+[13:51:45] <zetok> ~yep
+[13:51:56] <xrow> alright then. where can i check the status?
+[13:52:21] <zetok> https://github.com/tux3/qTox/pull/3309
+[13:52:24] <xrow> thanks a lot!
+[13:53:22] <linuxmodder> tux3,  'make tox portable' is still fucked up tho :(
+[13:53:31] <tux3> linuxmodder, what's wrong with it?
+[13:53:59] <linuxmodder> even launched from $portable_dir   it  fails to retain settings
+[13:54:11] <zetok> tux3: settings updater fix for windows breaks stuff on linux
+[13:54:12] <linuxmodder> it totally   wipes them 
+[13:54:32] <linuxmodder> zetok,  then tell the windows folks to deal :)
+[13:54:52] <linuxmodder> zetok,  any PR or issue in particular I could look at for  this?
+[13:55:36] <linuxmodder> if some punk ass windows useer can't be bothered to check updates weekly  then fuck em
+[13:56:16] <zetok> https://github.com/tux3/qTox/commit/17e57982dffa0dabffb7839cfd34fb34ef51ec88
+[13:56:24] <linuxmodder> I hate doing it on windows boxes I use don't get me wrong but  its part of the experience and teritory
+[13:57:09] <tux3> zetok, you're sure this is what makes it fail?
+[13:57:37] <zetok> tux3: I'm sure that someone reported this stuff breaking right after you've pushed it
+[13:57:50] <tux3> Damn
+[13:59:10] <tux3> Okay so turns out applicationDirPath() does insane things on Linux, I'm going to need some #ifdefs again..
+[13:59:15] <linuxmodder> that seems a bit  far fetched tho zetok  I'm with tux3 on the skepticism
+[13:59:28] <zetok> linuxmodder: pls.
+[13:59:35] <zetok> ;)
+[13:59:41] <linuxmodder> but it seems that a simple switch would  fix that 
+[13:59:46] <linuxmodder> pls what  zetok 
+[13:59:47] <tux3> linuxmodder, zetok do you have some weird restrictions with /proc/ or something?
+[13:59:57] <tux3> Because in theory it should work :/
+[14:00:00] <zetok> ooh
+[14:00:05] <linuxmodder> tux3,  My system is locked down yes  why
+[14:00:05] <zetok> tux3: SELinux
+[14:00:10] <tux3> >.<
+[14:00:12] <tux3> Welp
+[14:00:21] <linuxmodder> selinux using a  STIG setup
+[14:00:46] <tux3> qTox tries to find its own path by looking into /proc/, then it looks in that directory for the portable settings
+[14:01:20] <tux3> So I'll just use "./" instead on Linux, and if you change the current working directory, then it'll fail and it'll be your fault.
+[14:01:25] <linuxmodder> tux3,  any  particular  dir  in there it wants?
+[14:01:42] <linuxmodder> I can see about  making it  lax  OR a transitional bool
+[14:01:51] <zetok> linuxmodder: every pid dir, I'd guess
+[14:02:04] <tux3> linuxmodder, I imagine it checks /proc/self/cmdline
+[14:02:14] <tux3> Or some other /proc/self/<thing> I don't know about
+[14:02:28] <linuxmodder> those are are locked out to system_u:system_r:kernel_t:s0
+[14:03:13] <tux3> That's some overzealous restrictions :/
+[14:03:28] <linuxmodder> ls -la /proc |grep -i self 
+[14:03:28] <linuxmodder> lrwxrwxrwx.   1 root     root                  11 Jun  4 09:03 mounts -> self/mounts
+[14:03:28] <linuxmodder> lrwxrwxrwx.   1 root     root                   8 Jun  4 09:03 net -> self/net
+[14:03:29] <linuxmodder> lrwxrwxrwx.   1 root     root                   0 Jun  4 07:12 self -> 7830
+[14:03:29] <linuxmodder> lrwxrwxrwx.   1 root     root                   0 Jun  4 07:12 thread-self -> 7830/task/7830
+[14:03:54] <linuxmodder> tux3,  I deal with some creepy fuckers at times sorry
+[14:03:58] <tux3> Aight
+[14:04:02] <tux3> I'll just fall back to "./"
+[14:04:43] <linuxmodder> assuming $user is  in wheel  you could use  sudo for the portable probe no?
+[14:05:05] <linuxmodder> ubuntu and debian default to a wheel user as primary user
+[14:05:36] <linuxmodder> and / or in /etc/sudoers.conf users could ADD a line for qtox specifically
+[14:06:37] <tux3> I don't want to get root without a very good reason
+[14:06:39] <linuxmodder> all /proc/self in particular are system_u:object_r:proc_t:s0
+[14:06:50] <tux3> Getting the current path is not a good reason..
+[14:06:53] <linuxmodder> tux3,  can be session specific
+[14:07:34] <tux3> Let's not even go down that path, I'm not elevating privileges just to get what is basically argv[0]
+[14:07:34] <linuxmodder> ls  /proc  needs no root 
+[14:08:51] <linuxmodder> so you are just gonna go back to  ~/.config/tox OR ./  for  settings dirs?
+[14:09:06] <linuxmodder> as option 1 / 2 
+[14:12:24] <tux3> I'll just check in ./, that works unless you mess with the current working directory
+[14:12:46] <tux3> On windows, shortcut links can mess with the CWD so we can't use ./
+[14:12:55] <tux3> On Linux please don't mess with the cwd
+[14:13:31] <tux3> But really your SELinux setup is broken..
+[14:14:06] *** Joins: josh98 (~josh98@ )
+[14:14:16] <linuxmodder> why cuz its locked down so much?
+[14:14:40] <tux3> /proc/self/ shouldn't be locked down
+[14:14:45] <linuxmodder> why not?
+[14:15:04] <tux3> Because that's not secret information, there's no risk in exposing it
+[14:15:18] <tux3> It's just going to break innocent things
+[14:31:08] <genesis> linus said selinux slows down too much the system, how do you think about that linuxmodder ?
+[14:33:51] <linuxmodder> genesis,  it can in some cases but  slow is fast, secure  in many cases (i.e. brute forcing| probes)
+[14:34:15] <linuxmodder> and often times its neg. delays
+[14:34:59] <linuxmodder> and if you look at it  its really  just a if then elseif   logic 
+[14:36:23] <linuxmodder> if  $user is  in $group_name do allow_access foo ; else  $user -ne $group_name || $wheel ;   deny_access
+[14:36:38] <linuxmodder> but MUCH MUCH more granular
+[14:36:57] <linuxmodder> down to a file even 
+[14:37:40] <genesis> i donno this stuff.
+[14:47:22] <linuxmodder> genesis, https://www.youtube.com/watch?v=cNoVgDqqJmM
+[15:29:26] *** Joins: DaSpirit (~DaSpirit@ )
+[15:47:46] *** Quits: xrow (~xrow@ ) (Quit: Leaving)
+[15:55:24] <genesis> i'm more interessting by grsec btw.
+[15:56:47] <linuxmodder> I use both 
+[15:56:51] <genesis> depend if i do confident in NSA
+[15:56:54] <linuxmodder> grsec kernel and selinux
+[15:57:23] <linuxmodder> NSA has not had  dev hands on it for almost a decade dude
+[16:17:34] *** Joins: sudden6 (~anonymous@ )
+[16:19:39] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[16:20:06] *** Joins: cisc (~cisc@ )
+[16:20:21] *** Quits: cisc (~cisc@ ) (Client Quit)
+[16:22:01] *** Joins: cisc (~cisc@ )
+[16:39:31] <ovalseven8> tux3: Seems like NSIS is really obsolete: http://forums.winamp.com/showpost.php?p=3058775&postcount=31
+[16:40:20] <tux3> ovalseven8, we can move to something else, but someone will have to write the script
+[16:45:20] <ovalseven8> tux3: The only installer that looks good to me is http://www.jrsoftware.org/isinfo.php
+[16:45:21] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[16:45:30] <ovalseven8> But it's, as said on github, windows-only
+[16:46:00] <tux3> Inno is fine yes
+[17:04:28] <zetok> NSIS doesn't work?
+[17:04:46] <zetok> i.e. I've heard that qTox currently does work on windows?
+[17:06:56] <ovalseven8> zetok: Windows 10
+[17:07:11] <ovalseven8> NSIS doesn't support W10 yet
+[17:07:13] <zetok> yes, I've heard that it works on it?
+[17:07:52] <ovalseven8> zetok: Oh, ok. But perhaps that are devices that had W8 and upgraded to Windows 10
+[17:08:04] <ovalseven8> I am not sure. Could be that a clean Windows 10 install then only doesn't work
+[17:08:09] <zetok> hmm
+[17:11:15] <tux3> We'd need to upgrade to NSIS 3.0, but they haven't released a stable yet
+[17:11:25] <tux3> Been in beta for a decade
+[17:13:29] <zetok> sounds like a prefect fit for qTox
+[17:13:41] <ovalseven8> lol
+[17:17:00] <tux3> Can't argue with that :)
+[17:21:08] -qtox-git-spam- [qTox] antis81 opened pull request #3351: remove filter_audio (master...audio/remove-filteraudio) https://git.io/vofGc
+[17:26:49] <zetok> hm, looks like I was wrong about qTox + NSIS working on win10
+[17:28:16] <zetok> sudden6: https://www.kickstarter.com/projects/krita/krita-2016-lets-make-text-and-vector-art-awesome/description ← funded, there'll be sane tool to edit vector graphics \o/
+[17:28:55] <zetok> also, it's a great example of a properly done software kickstarter, just for reference ;)
+[17:29:01] <tux3> Hey inkscape is not *that* bad!
+[17:29:09] <zetok> it's horrible
+[17:29:18] <tux3> It's not InDesign but it's something
+[17:30:36] <zetok> it almost made sudden6 cry :c
+[17:30:48] <zetok> https://github.com/qTox/qtox-irc-logs/blob/01816013260ae91f31e870ec42d669c5ea198958/2016/06/%23qtox_20160602.log.txt#L94 ;D
+[17:31:48] <genesis> gimp has nice plugins feature
+[17:32:00] <genesis> i'll try krita one day.
+[17:32:14] <zetok> and yet, gimp can't even do simple copypaste
+[17:33:11] <linuxmodder> tehn sudden6 is a pussy 
+[17:33:25] <linuxmodder> inkscape is good 
+[17:33:39] <genesis> yes and relatively easy to use
+[17:33:41] <linuxmodder> zetok,  its never been meant for copypasta
+[17:33:55] <zetok> linuxmodder: then it's useless
+[17:33:59] <linuxmodder> its meant (in both cases) for creation 
+[17:34:21] <zetok> ha.
+[17:34:24] <linuxmodder> zetok,  grow a pair and learn to work with  raw files then
+[17:35:00] <genesis> http://files.kde.org/krita/3/linux/krita-3.0-x86_64.appimage
+[17:35:28] <genesis> linuxmodder : the vectorizer plugin is fine too
+[17:36:19] <linuxmodder> in krita or its just a inkscape plugin using krita bits ?
+[17:36:22] <linuxmodder> genesis, ^
+[17:36:33] <linuxmodder> can't say I've used that plugin
+[17:36:52] <zetok> linuxmodder: what raw files?
+[17:38:36] <genesis> linuxmodder https://inkscape.org/en/doc/tutorials/tracing/tutorial-tracing.fr.html
+[17:38:54] <linuxmodder> :]
+[17:38:58] <genesis> inkscape using potrace
+[17:39:10] <genesis>  /en/ ... .fr.html
+[17:39:15] <genesis> bugging site.
+[17:39:52] <genesis> hum krita has g'mic support too
+[17:44:40] *** Joins: sysfu (~sysfu@ )
+[17:46:49] <zetok> sysfu: add the right repo
+[17:48:46] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:48:55] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[17:50:18] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:51:00] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[17:51:21] <SkyzohKey> yeah, nsis is obsolete since about 10 years :3
+[17:52:59] <genesis> SkyzohKey http://flatpak.org/
+[17:54:00] <genesis> https://www.reddit.com/r/linux/comments/4kxbqp/appimage_snaps_flatpak_pros_and_cons_comparison/
+[17:55:19] <SkyzohKey> i can't open firefox right now
+[17:55:32] <SkyzohKey> else my computer will crash (heya windaube in virtualbox)
+[17:57:26] <SkyzohKey> You know why internet explorer is the best app ever ?
+[17:57:31] <SkyzohKey> Cuz it permits to download firefox
+[18:00:43] <nurupo> best app ever? so it's better than firefox? :)
+[18:01:58] <SkyzohKey> nah
+[18:02:13] <SkyzohKey> That's the best app to download firefox, nothing more xD
+[18:02:52] <zetok> >_>
+[18:03:34] <zetok> https://a.uguu.se/w7Mep73B0ZWV.png ha.
+[18:07:04] <SkyzohKey> x')
+[18:19:05] <genesis> https://github.com/probonopd/AppImageKit/blob/master/AppImageUpdate.AppDir/README.md
+[18:20:10] <genesis> shame it's not include in the container itself
+[18:24:08] <genesis> SkyzohKey https://github.com/probonopd/AppImageKit/blob/master/AppImageUpdate.AppDir/README.md#example-how-to-make-your-app-self-updateable
+[18:24:56] <SkyzohKey> x)
+[18:25:39] <SkyzohKey> I still need to find a reliable/secure way to upload .appimages to ricin.im without introducing flaws
+[18:25:40] <genesis> it could be ported on windobe i think
+[18:32:31] <linuxmodder> gpg lock it and decrypt on ricin.im 
+[18:32:32] <linuxmodder> ?
+[18:32:58] <SkyzohKey> Yeah, bpload from travis without exposing any server informations ? x)
+[18:33:04] <SkyzohKey> upload*
+[18:33:11] <SkyzohKey> but how to upload*
+[18:33:15] <SkyzohKey> fucking slow keyboard
+[18:35:08] <linuxmodder> upload over tor ?
+[18:35:15] <linuxmodder> or  scrub the fucking headers 
+[18:35:56] <tux3> Set a password as Travis environment variable, upload by ssh
+[18:36:06] <SkyzohKey> tux3: ah, not stupid!
+[18:36:59] <SkyzohKey> tacos time, brb
+[18:45:32] <zetok> https://i.reddituploads.com/da322b7c969d4bdea0842c2367526df8?fit=max&h=1536&w=1536&s=27fe9f394f25ee33368cd397c8855a00 :3
+[18:45:44] <zetok> https://i.imgur.com/9lc2bjs.png :3
+[18:53:42] <zetok> sudden6: meeting header?
+[18:54:54] <sudden6> <<< Official qTox-dev meeting, logs can be found at https://lists.tox.chat/pipermail/qtox-dev/ >>>
+[18:55:26] <zetok> actually, link to logs is in the topic :P
+[18:55:48] <sudden6> oh that's new ^^
+[19:01:15] <zetok> tux3, DaSpirit: anything against changing meeting time -2h, to 16 UTC?
+[19:04:37] *** Quits: josh98 (~josh98@ ) (Ping timeout: 260 seconds)
+[19:06:45] <DaSpirit> If I'm here then changing the meeting time doesn't matter to me.
+[19:07:34] <tux3> zetok, it's fine by me
+[19:07:41] <zetok> ok
+[19:07:46] <sudden6> nice
+[19:13:01] <zetok> I was wondering about inviting people to qTox org
+[19:13:22] <sudden6> who do you want to invite?
+[19:13:56] <zetok> I had Rowen_Stripe and abbat on mind
+[19:15:44] <zetok> possibly someone who'd want to maintain & develop website, no idea who would that be
+[19:19:16] <sudden6> do you really think maintaining the website will require that much work?
+[19:19:41] <sudden6> most of the relevant stuff really happens on gh
+[19:19:55] <zetok> it will require someone who'd maintain it
+[19:22:08] <sudden6> of course, but I think the expected workload could be handled by our core team in the near future
+[19:22:17] <sudden6> so no need to rush anything
+[19:22:35] <zetok> hmm
+[19:22:57] <sudden6> if someone steps up and wants to do the website I of course wouldn't say no :)
+[19:25:15] <sudden6> as for Rowen_Stripe and abbat I think it would honor their work
+[19:25:42] <zetok> yeah :)
+[19:27:14] <zetok> ok, made invitations
+[19:29:04] * zetok wonders if there's anything else to discuss
+[19:30:32] <zetok> oh, right
+[19:31:27] <sudden6> I think there's https://github.com/tux3/qTox/pull/3351
+[19:32:39] <zetok> on the packaging front, Gentoo users have it disabled
+[19:33:10] <sudden6> I don't know if anybody manually compiles with filteraudio enabled
+[19:33:22] <zetok> probably not
+[19:33:54] <sudden6> mhm
+[19:34:11] <linuxmodder> regarding the site  maintaining it will be  big issue if  its irrregularly checked
+[19:36:11] <sudden6> linuxmodder: how do you mean?
+[19:36:48] <linuxmodder> it can become a chore  fast to update shit
+[19:38:50] <sudden6> I don't think the current website needs much maintaining, because it mostly links to github, which well maintained
+[19:39:34] <linuxmodder> its hsoted where again atm ?
+[19:39:43] <zetok> github
+[19:40:50] <linuxmodder> github.io or  ghpages?
+[19:41:10] <linuxmodder> .com or .io I mean
+[19:41:20] <zetok> both
+[19:43:41] <zetok> https://github.com/tux3/qTox/issues/3314
+[19:43:59] <zetok> sudden6: do you still think that locking wouldn't be useful?
+[19:45:01] <sudden6> pretty much yes
+[19:45:25] <zetok> DaSpirit, tux3: ↑ ?
+[19:46:07] <tux3> zetok, that sounds incredibly useless, use your screen locker or logout
+[19:46:51] <zetok> tux3: screen locker when you're showing something to someone on your screen?
+[19:47:30] <DaSpirit> If someone has access to your computer then having a locked screen wouldn't be the best way of stopping them from getting your stuff.
+[19:48:05] <sudden6> DaSpirit: still better than just locking the application tough
+[19:48:31] <zetok> tux3: also, logging-out is not an option, given that "log-in" is not instantaneous
+[19:48:35] <DaSpirit> I agree with sudden6 on this matter.
+[19:49:24] <linuxmodder> +1 to locking  hook
+[19:50:18] <linuxmodder> and with a locked screen its harder (not impossible tho ) to mine pass / configs 
+[19:50:54] <zetok> DaSpirit: it's not really about preventing someone from getting stuff, but more like providing a curtain that will hide private, possibly nsfw conversations when needed
+[19:50:54] * linuxmodder uses two locks normally  a  gui locker and a full getty lock form tty
+[19:51:24] <zetok> * not limited to conversations
+[19:51:26] <linuxmodder> zetok,  so you invision it more as  a 'Panic button"
+[19:51:43] <zetok> ~kinda
+[19:51:46] * linuxmodder still reading issue thread
+[19:53:28] <zetok> sudden6: um, mind providing a rationale?
+[19:54:18] <zetok> sudden6: i.e. in the issue you've said that it's the job of screensaver/locker, but then Getron provided a good use case that screensaver/locker won't be able to handle
+[19:55:06] <linuxmodder> another idea inactive or keybind  auto min to tray and forces login pass to remax
+[19:56:38] <linuxmodder> similar to both Telegram and skype in omplementation 
+[19:57:46] <linuxmodder> so `on-boarding` those user should be minimal efffort 
+[20:00:24] <zetok> btw, a reflection from yesterday; "a moment ago I was looking at PR that doesn't zero out all the needed memory, and now I'm looking at this bullshit comment in issue claiming that ability to select area of shared desktop helps with security…"
+[20:02:14] <zetok> upon reflecting further, one might realized that the latter is a real issue, while the former isn't – that's IMO quite good example of how programming makes one stop noticing real issues
+[20:02:27] <zetok> realize*
+[20:04:12] <zetok> So I'm just kinda wondering whether you've taken proper correction on your PoV ;)
+[20:05:12] <sudden6> commented
+[20:06:40] <sudden6> well security isn't privacy altough both are used interchangeably in everyday language
+[20:07:32] <sudden6> the first part could be a security issue, but the second part is only a privacy issue
+[20:07:48] <zetok> mm
+[20:07:58] <zetok> but it's important enough to make one make an issue
+[20:09:18] <zetok> >I understand your point clearly, but I'm very much against creating the false security provided by a password
+[20:09:37] <zetok> I wonder about that
+[20:10:33] <zetok> while creating false sense of security is obviously wrong, is it wrong to give users some functionality, but not pretend that given functionality isn't about security?
+[20:10:55] <zetok> s/isn't/is/
+[20:11:44] *** Quits: Pharyngeal (~Pharyngea@ ) (Ping timeout: 240 seconds)
+[20:12:01] *** Joins: Pharyngeal (~Pharyngea@ )
+[20:12:15] <sudden6> how would you ensure users knowing it isn't secure?
+[20:12:19] <zetok> also, while it may feel ~wrong, is it really wrong to provide for users functionality that they think will provide security, but not claiming that it will provide security?
+[20:12:22] <zetok> you don't
+[20:12:55] <zetok> if something may go wrong, it will go wrong
+[20:13:12] <zetok> thus, if there is a chance of users misunderstanding something, they will misunderstand it
+[20:13:32] <sudden6> > thus, if there is a chance of users misunderstanding something, they will misunderstand it
+[20:13:39] <sudden6> so not make it look secure
+[20:13:47] <sysfu> I started getting this error message when launching qtox from the terminal after doing recent 'apt-get upgrade'  error "qtox: error while loading shared libraries: libqrencode.so.3: cannot open shared object file: No such file or directory"
+[20:14:01] <zetok> sysfu: yes, and you might want to learn to read
+[20:14:26] <zetok> >[17:46:48] <zetok> sysfu: add the right repo
+[20:14:29] <sudden6> ie no password, just a single click
+[20:14:40] <sysfu> Well, I installed qrencode but that just changes the error to "qtox: /usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by qtox)"
+[20:15:29] <sysfu> never did that before. Repo in use is 'deb https://pkg.tox.chat/debian nightly release'
+[20:15:49] <sysfu> I had to change it that that to get tox pkg to install on elementary OS Freya 3.4.2.
+[20:16:07] <sysfu> Should it read something else now? I was working fine for about six months that way.
+[20:16:15] <zetok> sysfu: https://qtox.github.io/ ← there's a big "Download" button there, use it
+[20:16:33] <zetok> and proceed from there
+[20:16:44] *** Quits: Pharyngeal (~Pharyngea@ ) (Ping timeout: 240 seconds)
+[20:17:03] <zetok> sudden6: right, qTox kinda guarantees that password actually secures stuff
+[20:17:05] <zetok> hmm :s
+[20:17:18] <zetok> !
+[20:17:40] <sysfu> So repository changed to antonbatenev then?
+[20:17:49] * zetok thinks about something beside password
+[20:17:56] <zetok> sysfu: yes
+[20:18:02] <sysfu> thank you
+[20:19:23] <zetok> you're welcome
+[20:19:52] <zetok> >.<
+[20:20:36] * zetok wonders if that took care of the qTox *buntu users
+[20:23:30] * zetok can't think of something beside password that wouldn't be outright misleading
+[20:24:03] <zetok> I guess that woudl be it for the meeting.
+[20:24:06] <zetok> would*
+[20:24:14] <sudden6> ok
+[20:25:03] <zetok> https://i.imgur.com/adXnS5Q.jpg :3
+[20:25:42] <sysfu> zetok: sorry if you already responded to my same last night and I missed it. I do not have an IRC bouncer setup at the moment.
+[20:26:09] <zetok> sysfu: read the topic, logs are provided ;)
+[20:26:18] <zetok> and no, I didn't manage to respond yesterday :)
+[20:26:37] <sysfu> OK, nice.
+[20:27:04] <sudden6> <<< Official qTox-dev meeting ended, logs can be found at https://lists.tox.chat/pipermail/qtox-dev/ >>>
+[20:28:44] <zetok> sudden6: btw, wouldn't linking in email to repo with logs be enough?
+[20:29:31] <sudden6> personally I would prefer having the log included, because then you get everything at once
+[20:30:27] <zetok> I see
+[20:46:57] *** Quits: LittleVulpix (~Miranda@ ) ()
+[20:47:29] *** Joins: LittleVulpix (~Miranda@ )
+[21:06:30] -qtox-git-spam- [qTox] zetok opened pull request #3352: docs(README.md): update meeting time & point to better build badge (master...time) https://git.io/vof01
+[21:13:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[21:24:11] <sysfu> zetok: I was re-reading issue 3072 today (https://github.com/tux3/qTox/issues/3072) and noticed the bit about integrating messaging app indicators into the existing 'messaging' menu in Ubuntu/Elementary OS
+[21:24:38] <sysfu> should I create a new feature request to add support for the 'messaging' menu, or re-open the existing issue for context?
+[21:25:27] <sysfu> https://wiki.ubuntu.com/MessagingMenu
+[21:26:59] <sysfu> Looks like it might have already been requested here https://github.com/tux3/qTox/issues/2471
+[21:28:13] <zetok> right, I should go over issues with no responses and close them >.<
+[21:28:19] <zetok> thanks for reminding
+[21:29:01] <zetok> sysfu: and you probably should open a new issue for it – dunno, if it's os-specific then it probably won't happen
+[21:30:28] <sysfu> I don't believe it's OS specific in the singular sense, maybe 'group of distro' specific would be more accurate. 
+[21:30:50] <zetok> hm.
+[21:30:51] <sysfu> If it's added for Ubuntu, it should work for most distros based on that I would imagine.
+[21:31:01] <zetok> then it's os-specific
+[21:31:13] <zetok> and supporting shit that *buntu does isn't really good
+[21:32:01] <sysfu> Would it be up whoever is packaging the app for a specific distribution to add support then?
+[21:32:21] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 240 seconds)
+[21:32:51] <zetok> not really
+[21:32:58] <zetok> more like, *buntu should fix their shit
+[21:34:19] <zetok> the problem with *buntu is that it does NIH as much as possible
+[21:34:31] <zetok> instead of using what is already out there
+[21:35:25] <zetok> e.g. their whole unity crap is stupid as hell case of NIH
+[21:36:30] <zetok> *buntu has made some crap by custom-patching GTK, and after this shit they decided to redo the same using Qt
+[21:36:46] <sysfu> I hear you screamin', makes it a headache for app designers I'm sure.
+[21:36:51] <zetok> all this crap for nothing, since e.g. I've reproduced same UI using KDE <5 min
+[21:37:08] <zetok> FFS
+[21:37:28] *** Joins: ovalseven8 (~ovalseven@ )
+[21:37:30] <genesis> thug life :(
+[21:37:42] <sysfu> My ideal OS would be Arch linux with Elementary OS Pantheon UI and design standards.
+[21:37:59] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[21:38:12] <sysfu> I get tired of dealing with Ubuntu annoyances while maintaining the system as well.
+[21:38:46] * genesis uses gentoo since 12+ years 
+[21:39:52] <genesis> ubuntu full of promesses, nothing clean and reliable.
+[21:41:00] <genesis> what was the interest to create arch instead of work on an official gentoo binhost ?
+[21:41:37] <zetok> someone couldn't into Gentoo, I'd assume
+[21:42:12] <zetok> but yeah, I'm also wondering
+[21:42:28] <genesis> for openembedded, it was really different, but now, we perharps could have some convergence on packaging
+[21:42:45] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 276 seconds)
+[21:43:06] <genesis> what this world miss, is peole make bridge between peoples
+[21:43:40] <sysfu> I think the Arch wiki was in much better shape than Gentoo when I got fed up with Ubuntu and went looking for another distro, although I like the idea of building everything from source a la Gentoo.
+[21:44:03] <genesis> gentoo wiki was the greatest wiki at its time
+[21:44:10] <zetok> genesis: b-but one doesn't make bridges between lone islands on the ocean
+[21:44:14] <genesis> arch is now a great wiki i confess
+[21:44:52] <genesis> in politics i often claim that discourse too, we have 2017 presidential here 
+[21:45:55] <genesis> +election, people are not able to short their programm to essential and make strong party, we'll have perharps 15 candidates (but since we're not in democracy , it should be less)
+[21:46:22] <zetok> genesis: um, do you have pirate party or its equivalent there?
+[21:46:23] <genesis> generation ego :)
+[21:46:23] <ovalseven8> abbat: Great repository!
+[21:46:37] <genesis> yes but i'm opposite to their idea
+[21:46:43] <zetok> oh?
+[21:46:46] <genesis> and i dont like tech-washing
+[21:46:54] <genesis> this is an mondialistic party
+[21:47:16] <genesis> destroy nation, make internatiooooonaaal union , progress progress ...
+[21:47:39] <zetok> in other words, optimize things
+[21:47:49] <genesis> no history conscientiousness
+[21:48:20] <genesis> same programm everywhere for everyone
+[21:48:33] <genesis> since it's all know we're all the same for such people
+[21:49:08] <zetok> I don't think that this is their goal
+[21:50:05] <genesis> anyway i'm pro-sovereignty
+[21:50:19] <zetok> rather, would other parties even try to tackle problems that are affecting everyone on global scale?
+[21:51:22] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[21:51:32] <genesis> hum too difficult to speak about politic in english for me
+[21:52:07] <genesis> global problem are made to force people to think we need unified politic to solve them
+[21:52:17] <genesis> we have united nation to do that already
+[21:52:44] <zetok> ><genesis> global problem are made to force people to think we need unified politic to solve them
+[21:53:03] <zetok> I wonder about that.
+[21:53:15] <genesis> globalism is opposite to democracy, concentrate power far from citizen
+[21:53:53] <genesis> which problem , global warming ? 
+[21:54:42] <zetok> that problem is being made by people not cooperating globally :)
+[21:55:26] <genesis> i don't have job , no money, i don't care about that, i want frontier to protect my citizen from product made by underpaid childrens and people comes to bomb us
+[21:55:51] <genesis> that's a clear point, if too much co2, don't care, plants grow faster and better.
+[21:56:24] <genesis> (that's why we increase co2 by 3 in cultivation room)
+[21:56:28] <zetok> heh, you might find that some plants are hard to grow underwater
+[21:57:20] <genesis> true :) you've to eat algae
+[21:58:38] <genesis> anyway, all global warming forum are pointless and already happens without shitty anti-democratic stuff as european union.
+[21:59:39] <genesis> european union that allow roundup and GMO
+[22:00:32] <zetok> roundup ?
+[22:00:37] <genesis> glyphosate
+[22:00:46] <genesis> famous herbicid by monsanto
+[22:01:30] <genesis> new fashion of cultivation : kill all by herbicide roundup, then use resistant-gmo sells by same vendor
+[22:02:37] <genesis> if you searsh a mass source of CO2, kill soil and let fermentation by anaerobic bacteria instead of soil decomposer worm and mushroom .
+[22:03:00] <genesis> cultivation that took 12 calories for 1 calories of food
+[22:03:21] <genesis> (oil calories)
+[22:04:26] <genesis> enforce cooperation between states so people buy tomatoes that have make 2000km from portugal/maroc to france, france cereal to tunisia, ...
+[22:04:51] <genesis> no frontier, GMO cereal from bresilia to france for farming
+[22:07:05] <genesis> progress makes by capitalism will never make people happier.
+[22:08:21] <zetok> mm
+[22:08:54] <genesis> i'm specialist in soil and mycology, and hard ecologist 
+[22:09:37] <genesis> the greatest thing in pirate party is that they want more democraty
+[22:09:56] <genesis> do you know 90% of votation in the world are swiss votation ?
+[22:10:06] <zetok> yeah
+[22:10:13] <genesis> 90% for one little land
+[22:10:19] <genesis> that's democraty
+[22:10:47] <genesis> petition 100K people => institution helps you to write the text and there is votation
+[22:11:14] <genesis> curiously, they never get into this EU thing ^^
+[22:15:34] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:34:09] *** Joins: sudden6 (~anonymous@ )
+[22:38:34] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[23:29:12] <zetok> fuck
+[23:29:41] <zetok> tux3: I think that I found where problem is with qTox's sending duplicate messages
+[23:29:58] <zetok> tux3: to reproduce you just need to repeatedly send messages
+[23:30:06] <zetok> repeatedly, and quickly
+[23:31:14] <zetok> i.e. qTox either doesn't save all sent message's ID, or doesn't send back all IDs of received messages, but only "latest" one
+[23:31:50] <tux3> zetok, it's possible the read receipt code is fucked, last I checked it was during the database upgrade and it was a complete mess
+[23:33:11] <zetok> no wonder that it's a qTox-only problem :F
+[23:33:55] <zetok> https://a.uguu.se/FoYD82AQ3HZp.png -.-"
+[23:38:23] <tux3> Ugh :/
+[23:56:25] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
