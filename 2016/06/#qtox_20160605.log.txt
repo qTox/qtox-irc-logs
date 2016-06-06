@@ -1,0 +1,327 @@
+[00:04:03] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[00:04:21] *** Joins: cisc (~cisc@ )
+[00:48:04] <cisc> on this PR: https://github.com/tux3/qTox/pull/3311 my USB Mic's gain has just about no input volume when the slider is moved from 0-60%, and from 75-100% is where it starts to register
+[00:49:32] <cisc> maybe I should try another mic & see..
+[00:58:05] -qtox-git-spam- [qTox] tux3 opened pull request #3353: [WIP] Initial multi-device support (master...multi-device) https://git.io/vofou
+[01:02:24] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[01:14:52] <genesis> zetok : utox has same pb this days, hum tux could check with greyhater
+[01:23:42] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:24:03] *** Joins: jorgelg (~jorge@ )
+[01:24:26] *** Joins: cisc (~cisc@ )
+[01:58:17] *** Quits: jorgelg (~jorge@ ) (Quit: Leaving.)
+[02:08:03] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:09:23] *** Joins: cisc (~cisc@ )
+[02:11:13] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[02:34:59] *** Quits: Sephi (~me@ ) (Ping timeout: 244 seconds)
+[02:42:45] *** Joins: Sephi (~me@ )
+[03:44:19] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[03:44:23] <zero-ghost> just tried a group call after a while of not using it
+[03:44:28] <zero-ghost> 2 friends on latest qtox on windows
+[03:44:42] <zero-ghost> me latest install on linux
+[03:44:57] <zero-ghost> when a 3rd person calls the group its just choppy and unuseable
+[03:45:02] <zero-ghost> same problem as months ago
+[03:51:25] *** Joins: cisc (~cisc@ )
+[04:21:03] <genesis> it seems softwares do not autoimprove ? :)
+[04:56:35] <zero-ghost> damn right
+[04:56:38] <zero-ghost> they de-prove
+[04:56:47] <zero-ghost> cause group calls worked great at one point
+[05:38:37] <zetok> cisc: could you make an issue for it?
+[05:40:53] <cisc> zetok: yeah but I first want to see if it's my mic or not
+[05:41:10] <zetok> yes and no
+[05:41:11] <cisc> and if anybody else experienced similar behaviour
+[05:41:47] <zetok> i.e. PR did change behaviour, and if it's a change for worse (like it seems to be) it should be reported
+[05:42:21] <zetok> as for mic – yep, it's partially due to your mic, but then again, qTox should be able to handle it correctly
+[05:42:32] <cisc> for me with my USB mic with that PR, the slider from 0-100 should be what 75-100 currently does, if that makes sense
+[05:43:09] <zetok> yep, would be good if you put all that info in the issue :)
+[05:46:27] <zetok> zero-ghost: you might want to comment on https://github.com/tux3/qTox/pull/3309
+[05:48:17] <cisc> yep
+[05:57:12] <zetok> ><genesis> zetok : utox has same pb this days, hum tux could check with greyhater
+[05:57:19] <zetok> genesis: could you report that somewhere?
+[08:16:02] *** Joins: tdmps (~ray@ )
+[08:21:42] <tdmps> could anyone connect to the groupbot 56A1ADE4B65B86BCD51CC73E2CD4E542179F47959FE3E0E21B4B0ACDADE51855D34D34D37CB5 today?
+[08:22:04] <zetok> ?
+[08:22:38] <tdmps> i cant connect to it
+[08:22:56] <tdmps> seems it is not on line
+[08:26:59] -qtox-git-spam- [qTox] antis81 closed pull request #3351: remove filter_audio (master...audio/remove-filteraudio) https://git.io/vofGc
+[08:32:02] <linuxmodder> zetok,  looking over the wiki page and was curious what  remaining  tox registration servers are active ?  is it only  toxme.io 
+[08:33:10] <linuxmodder> Confirmed showing Offline here too
+[08:33:28] <linuxmodder> grayhatter that is your baby yes?
+[08:33:43] <linuxmodder> cisc,  morning fool
+[08:47:52] *** Joins: ovalseven8 (~ovalseven@ )
+[08:56:23] <linuxmodder> can anyone of the devs confirm current  / active toxme reg servers?
+[08:57:11] <ovalseven8> linuxmodder: toxme.io?
+[08:57:22] <cisc> yep https://toxme.io/
+[08:57:43] <linuxmodder> that the only active one ovalseven8 
+[08:58:19] <ovalseven8> At least it's the only one that's known
+[08:58:24] <cisc> http://register.utox.org/
+[08:58:24] <linuxmodder> the toxme  registration bit  is  oddly  missing from Users:  section of  the wiki 
+[08:59:16] <linuxmodder> any others even if less known ovalseven8  (for the wiki as toxme register function allows user defined server (not drop down)
+[08:59:51] <linuxmodder> other than  toxme.io that is for  qtox 
+[09:00:20] <linuxmodder> nvm might just check that the other clients  wikis have  valid  companion info :)
+[09:05:22] <zetok> cisc: but it's not toxme ?
+[09:06:55] <cisc> i dont know if the utox one even works.
+[09:07:24] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:08:33] <linuxmodder> lol
+[09:08:45] <linuxmodder> zetok,  so its solely  toxme.io for qtox ?
+[09:09:02] <zetok> linuxmodder: whatever that supports toxme
+[09:09:56] <linuxmodder> zetok,  https://github.com/tux3/qTox/wiki/Profile/   editing to add that  bit  for new users
+[09:12:08] <zetok> linuxmodder: user_manual.md ?
+[09:14:42] <linuxmodder> jsut saw that  now (no I was on Profile not  /user_manual  )  why the duplication could  but the 3 sentence  backup shit in user_manual/#profile
+[09:17:37] *** Parts: tdmps (~ray@ ) ()
+[10:05:52] *** Joins: tdmps (~ray@ )
+[10:06:01] *** Parts: tdmps (~ray@ ) ()
+[10:30:32] *** Joins: LittleVulpix (~Miranda@ )
+[10:38:17] *** Joins: f10 (~flo@ )
+[10:43:05] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[10:44:51] *** Joins: f10 (~flo@ )
+[10:48:02] *** Joins: sudden6 (~anonymous@ )
+[10:55:33] *** Joins: abbat (~Anton@ )
+[11:11:42] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[11:12:46] *** Joins: LittleVulpix (~Miranda@ )
+[11:25:39] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[11:26:05] *** Joins: cisc (~cisc@ )
+[12:00:14] *** Joins: zetok (~zetok@ )
+[12:02:48] *** Joins: genesis_ (~genesis@ )
+[12:02:48] *** genesis_ is now known as genesis
+[12:03:31] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[12:04:53] *** Joins: hexadezimalion (sid85551@ )
+[12:17:24] *** Joins: linuxmodder (~linuxmodd@ )
+[12:19:39] *** Quits: linuxmodder (~linuxmodd@ ) (Changing host)
+[12:19:39] *** Joins: linuxmodder (~linuxmodd@ )
+[12:23:03] *** Joins: linuxmodder- (linuxmodde@ )
+[13:45:24] *** Quits: linuxmodder (~linuxmodd@ ) (Ping timeout: 276 seconds)
+[14:16:27] *** Joins: sudden6 (~anonymous@ )
+[14:33:21] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[14:57:56] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:05:14] *** Joins: cisc (~cisc@ )
+[15:30:52] *** Joins: tux3 (~tux3@ )
+[15:30:52] *** ChanServ sets mode: +o tux3
+[16:32:10] *** Joins: TheLugarius (02f1a765@ )
+[16:32:54] <TheLugarius> hey^^
+[16:33:27] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[16:47:44] *** TheLugarius is now known as aLugarius
+[16:54:01] *** Joins: josh98 (~josh98@ )
+[17:01:27] *** Quits: josh98 (~josh98@ ) (Quit: josh98)
+[17:07:06] *** Joins: DaSpirit (~DaSpirit@ )
+[17:19:36] *** Joins: josh98 (~josh98@ )
+[17:19:38] *** Quits: sysfu (~sysfu@ ) (Quit: Relay, an IRC client for the modern desktop)
+[17:22:58] <ovalseven8> tux3: Very cool! https://github.com/tux3/qTox/pull/3353
+[17:23:24] <tux3> ovalseven8, thanks! It's a work in progress :)
+[17:28:29] <aLugarius> what is EXACTLY meand by multidevice? Accounts?
+[17:28:40] <zetok> ..
+[17:30:40] <tux3> Multiples Tox profiles that are synchronised together.
+[17:30:54] <tux3> So they look like a single profile
+[17:31:49] <zetok> compatibility?
+[17:32:33] <tux3> It breaks the API, but I don't think it breaks the protocol
+[17:32:54] <zetok> well, API breakage is expected
+[17:33:15] <zetok> aside from protocol, I was wondering about save format
+[17:33:27] <tux3> No breakage here unless I fucked up
+[17:33:52] <zetok> i.e. it would be *bad* if someone upgraded, and then they used older toxcore with the save, resulting in erased data
+[17:34:41] <tux3> That would be a disaster, and it will not happen because I'll review & test things carefully before actually using them
+[17:35:01] <zetok> sounds almost too good to be true
+[17:35:06] <tux3> Right now I'm 95% sure the save code is correct, but I haven't reviewed it carefully, so there could be a surprise
+[17:35:18] * zetok has already started mentally preparing for data loss during testing
+[17:36:29] <tux3> During testing, sure. If you run my toxcore straight from trunk expect the worst :)
+[17:36:49] <zetok> I'll start testing when you'll say that it's ready ;)
+[17:37:17] <tux3> It's not that bad :) Since the save is separated into sections, the worst that can reasonnably happen is your device list being blanked 
+[17:37:46] <tux3> But yeah, better wait until it's ready!
+[17:40:41] <zetok> tux3: what do you think about download mirrors?
+[17:42:32] <tux3> zetok, I don't pay for the bandwith, why should I start worrying about mirrors :) ?
+[17:42:43] <linuxmodder-> zetok,  for ?
+[17:42:46] <linuxmodder-> the binaries or everythng
+[17:43:40] <zetok> tux3: a bit of redundancy
+[17:44:10] <zetok> I'm wondering though whether effort would be worth it
+[17:44:17] <tux3> zetok, sounds like gratuitous complexity, we're not a power plant :)
+[17:44:33] <tux3> If we have 5 minutes of downtime a year we'll survive
+[17:45:25] <linuxmodder-> zetok,  on that note how do you plan to ensure security of mirror hosts?
+[17:45:37] <linuxmodder-> do you have a planned / ready sop for that 
+[17:45:48] *** Quits: aLugarius (02f1a765@ ) (Ping timeout: 250 seconds)
+[17:45:53] <linuxmodder-> i.e. forced use of  key(s) on master 
+[17:52:45] <zetok> that's why it's not worth the effort
+[18:10:27] *** Joins: dardevelin (~dardeveli@ )
+[18:17:37] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[18:36:50] *** Joins: luganuma (02f1a765@ )
+[18:37:37] <luganuma> Hey... did someone contacted probono?
+[18:37:40] <luganuma> https://bintray.com/probono/AppImages/qTox/view#
+[18:37:59] <luganuma> he prepared an place for qtox!
+[18:39:33] *** Quits: tux3 (~tux3@ ) (Ping timeout: 272 seconds)
+[18:40:40] *** Joins: tux3 (~tux3@ )
+[18:40:40] *** ChanServ sets mode: +o tux3
+[18:43:20] <luganuma> welcome back operator
+[19:11:01] *** Joins: stvlker (~stvlker@ )
+[19:18:26] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[19:22:02] *** Quits: luganuma (02f1a765@ ) (Quit: Page closed)
+[19:57:54] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[20:22:03] *** Joins: f10_ (~flo@ )
+[20:23:00] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:24:45] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:38:02] <zetok> ..
+[20:58:45] *** Joins: toweI (~toweI@ )
+[21:13:40] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 260 seconds)
+[21:26:59] *** Joins: misiek200m (~miskof@ )
+[21:27:20] *** misiek200m is now known as Guest1733
+[21:27:25] *** Guest1733 is now known as misiek200
+[21:49:39] *** Quits: misiek200 (~miskof@ ) (Ping timeout: 264 seconds)
+[22:26:38] *** Joins: sudden6 (~anonymous@ )
+[22:33:17] *** Joins: misiek200m (~miskof@ )
+[22:48:05] <nurupo> zetok: were you invited to the meeting ovalseven8 made yesterday?
+[22:48:25] <zetok> nope
+[22:48:46] <nurupo> he brought up the issue that tox doesn't have a pr person
+[22:49:47] <nurupo> the meeting ended with grayhatter nominating himself to post things on our blog/twitter and tux3, LittleVulpix, ovalseven8, stal, Jfreegman and others agreeing
+[22:50:21] <zetok> lol
+[22:51:00] <nurupo> so you see, we now have better organization :)
+[22:51:29] <zetok> yes, I see that you're keen on making things worse
+[22:51:47] <nurupo> i was keeping saying that we also need a website person, but unfortunately no one was willing to help with that :\
+[22:53:59] * zetok wonders
+[22:54:25] <zetok> nurupo: are you really no able to see that grayhatter is the worst person for that position?
+[22:54:35] <zetok> s/no /not /
+[22:55:38] <nurupo> he doesn't have direct access to publish things, whatever he writes has to go through a review before it gets published
+[22:56:15] <zetok> that doesn't change anything
+[22:56:44] <zetok> i.e. what does that have to do with grayhatter being the worst kind of person for the position?
+[22:57:18] <nurupo> oh well, you probably know grayhatter better than we all do
+[22:57:37] <zetok> as if that was needed
+[22:57:41] <nurupo> ask ovalseven8 to invite you to the next meeting
+[22:57:50] <nurupo> there is also #tox-meeting for that
+[22:57:53] <zetok> I don't see the point
+[22:58:18] <zetok> i.e. people are free to waste their time and in process of doing so make tox.chat worse
+[22:58:51] <genesis> https://steampunkopera.files.wordpress.com/2014/12/s4.jpg 
+[22:59:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[22:59:59] <zetok> nurupo: also, you sound like "knowing" someone would suddenly make your judgement superior
+[23:00:56] <zetok> right, that's probably not really clear
+[23:01:24] <zetok> nurupo: you might find it interesting that "knowing" someone does cloud one's judgement of the person in question
+[23:03:05] <LittleVulpix> zetok: I'm actually curious, what's your beef with grayhatter?
+[23:03:43] <zetok> circumstances
+[23:04:11] <LittleVulpix> Elaborate?
+[23:04:31] <zetok> i.e. I wouldn't care about grayhatter if not for the position that he insists on being in, and other supporting crap he does there
+[23:05:28] <LittleVulpix> Why do you hate him? Legit question
+[23:05:39] <zetok> :3
+[23:05:43] <zetok> aw, no
+[23:06:01] <zetok> I wouldn't waste something so precious as my hate on grayhatter
+[23:06:16] <LittleVulpix> Okay, let me rephrase... what is it that he does that irks you so much?
+[23:06:36] <zetok> being limited in his position
+[23:06:46] <LittleVulpix> I don't follow
+[23:06:47] <zetok> actually
+[23:07:15] <zetok> being limited is normal, what is the problem is his outright refusal to even think of possibility of not being limited
+[23:07:53] <LittleVulpix> Too metaphysical for me. Can you be more concrete? :o
+[23:09:08] <zetok> and what would that be?
+[23:09:30] <LittleVulpix> What makes grayhatter the worst person for PR possible?
+[23:09:49] <zetok> oh, right, I thought that it was clear
+[23:10:03] <zetok> his refusal to think
+[23:10:46] <LittleVulpix> He seems to think a lot, after all he's writing stuff for toxcore (his own branch, granted, but he's doing it). He also writes stuff for uTox
+[23:10:56] <zetok> so?
+[23:11:05] <LittleVulpix> So he clearly doesn't refuse to think
+[23:11:12] <zetok> bullshit
+[23:11:42] <zetok> just because person thinks about a) doesn't mean that they don't refuse thinking about b)
+[23:12:01] <LittleVulpix> So... his refusal to think about <things that a PR person should think about> ?
+[23:12:44] <zetok> yes and no
+[23:13:24] <zetok> I've just noticed a general trend for grayhatter to refuse to think about himself
+[23:14:06] <zetok> the problem with that is that if there is a problem with person, if they refuse to think about themselves, there's no way to "fix" the problem
+[23:14:27] <LittleVulpix> Hmm... I assume you mean something other than "being selfless" ? I don't know grayhatter much. But I helped him debug some stuff for uTox on winXP a while back, and I know he writes a lot for toxcore... and he is maintaining uTox
+[23:14:36] <LittleVulpix> He was at the meeting and he was one of the 3 people that actually bothered to speak
+[23:15:00] <zetok> again: so?
+[23:15:02] <LittleVulpix> And he volunteered for the PR position as no-one else did, even knowing he'd have to have his posts reviewed
+[23:15:30] <LittleVulpix> So my point is... I see nothing wrong with him. Clearly you've been involved with him in a situation where something happened that he did that you strongly disagreed with
+[23:15:39] <LittleVulpix> And you have not gotten over it (perhaps it was that bad?)
+[23:15:54] <LittleVulpix> But I don't know what that was, and you aren't being helpful
+[23:16:10] <LittleVulpix> So I have no reason to think grayhatter is any less good than anyone else here
+[23:16:12] <zetok> :D
+[23:16:26] <zetok> I'm just pointing out at the root of the problem, not the symptoms
+[23:16:59] <zetok> if you want symptoms, look at the logs
+[23:17:11] <LittleVulpix> Maybe I'm just slow, but I haven't figured out what you're pointing at. All you're saying is that he doesn't see himself as the problem where you believe him to be.
+[23:17:14] <LittleVulpix> See that's what I mean
+[23:17:15] <LittleVulpix> I wasn't here
+[23:17:18] <LittleVulpix> I haven't seen the logs
+[23:17:55] <LittleVulpix> And from what I've seen and from how I've interfaced with grayhatter (and the rest of you); he may be a bit hot-headed but he means well, and he's in touch with gentoo about stuff + he's trying to be helpful in chat / on github.
+[23:18:25] <zetok> >he may be a bit hot-headed but he means well
+[23:18:29] <zetok> you've missed the poin
+[23:18:32] <zetok> point*
+[23:18:59] <zetok> >All you're saying is that he doesn't see himself as the problem where you believe him to be.
+[23:19:16] <zetok> I'm saying that given how he is, he's problematic in position he's in
+[23:19:38] <LittleVulpix> Hmm. Give him/it time. Maybe you'll be surprised?
+[23:19:49] <zetok> I did :3
+[23:19:57] <LittleVulpix> I feel like we're talking about two different people
+[23:20:07] <zetok> and no, I wasn't surprised, he didn't improve, exactly as I was expecting
+[23:20:13] <LittleVulpix> because the hotheadedness etc - it's only what I heard from others
+[23:20:16] <LittleVulpix> I've never "seen" it
+[23:20:58] <LittleVulpix> zetok you should definitely come to the next meeting, maybe sort it out with grayhatter ? I mean you're both adults no
+[23:21:12] <zetok> LittleVulpix: you've missed the point :)
+[23:21:21] <LittleVulpix> No I didn't, you've missed the meeting
+[23:22:10] <zetok> err, from what I understand, I didn't waste my time
+[23:22:37] <LittleVulpix> Yeah but you see how if everyone said that, nothing would ever happen...
+[23:23:18] <LittleVulpix> Really just if there is a next one, or if you dislike how grayhatter does things, just... I dunno. Talk to him. I mean, talk to him _again_ ... without maybe being so condescending and such
+[23:23:25] <LittleVulpix> Maybe I dunno, really
+[23:23:32] <zetok> LittleVulpix: and the point was that I don't have particular business with grayhatter – you might want to note that he's in the position only because of other people being fine with it
+[23:23:51] <cisc> zetok send him a flower bouquet
+[23:24:06] <zetok> cisc: c-can I send cat pics instead?
+[23:24:11] <LittleVulpix> zetok: we'll see how it goes. So far the world's not on fire yet :p
+[23:24:37] <zetok> pls.
+[23:24:44] <LittleVulpix> I'm serious
+[23:25:24] <LittleVulpix> Give it / him a chance. AGAIN, if that's required :p if he blows it then we'll just not post his stuff and he won't get to be the PR person
+[23:25:28] <zetok> If that wasn't a joke, I'd say that your standards are pretty off, to the point where you'd let something to die in order to acknowledge that something isn't right.
+[23:25:43] <cisc> grayhatter=it now? lol
+[23:25:46] <LittleVulpix> The world thing? It was a joke
+[23:25:56] <LittleVulpix> :p no, grayhatter=him, it=pr position
+[23:26:44] <zetok> LittleVulpix: um, I'm not speaking only about PR
+[23:27:13] <zetok> and regarding chances – he had plenty given
+[23:27:18] <LittleVulpix> zetok: but I was... wasn't that your whole problem? Nah it's too late for me to be delving deeper into this, I need sleep :p but really just go talk to him right now
+[23:27:43] <LittleVulpix> Tell him how you feel about what's going on and ask him what his plan is, maybe
+[23:27:48] <zetok> LittleVulpix: you're forgetting about the point where he refuses to think
+[23:28:11] <LittleVulpix> x3 I dunno but it's you stuck in a while loop right now, not him.
+[23:28:17] <zetok> LittleVulpix: talking with someone who refuses to think about the conversation topic is a waste of time
+[23:28:26] <LittleVulpix> Make him think then
+[23:28:32] <LittleVulpix> waste a bit of your time if necessary
+[23:28:33] <zetok> waste of my time
+[23:28:36] <LittleVulpix> do it
+[23:28:39] <zetok> I'm not here to make people think
+[23:28:47] <zetok> that's their own job to do
+[23:29:08] <zetok> also, refusing to think is a natural defence mechanism
+[23:29:16] <LittleVulpix> :p I dunno... well anyway
+[23:29:52] <zetok> I don't feel good about breaking people :/
+[23:30:10] <LittleVulpix> I mean no harm. I just don't understand. I get your point but I have no evidence to support it, cause I don't know grayhatter well enough; but I also don't know you well enough to just believe what you say without seeing it myself. I mean
+[23:30:11] <LittleVulpix> You know.
+[23:30:14] <LittleVulpix> The internet and all
+[23:30:42] <zetok> sure ;)
+[23:30:45] <LittleVulpix> :)
+[23:30:53] <zetok> that's why I said to read the logs if you want symptoms :)
+[23:31:42] <zetok> LittleVulpix: anyway, as you said, you probably should go to sleep :)
+[23:31:51] <zetok> sleep well ;D
+[23:32:17] <LittleVulpix> zetok: I was up 27 hours fixing a big bad broken system; up until 3hrs ago
+[23:32:20] <LittleVulpix> ~2 hrs actually
+[23:32:22] <LittleVulpix> So yes
+[23:32:33] <LittleVulpix> nite
+[23:33:17] *** linuxmodder- is now known as linuxmodder
+[23:35:38] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[23:36:04] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[23:41:50] *** Joins: dardevelin (~dardeveli@ )
+[23:43:30] <cisc> I can't find a decent app in F-Droid for encrypted messaging that doesn't rely on SMS
+[23:43:48] <cisc> and there's Signal but that deps on Google Play
+[23:46:45] <zetok> just use Antox
+[23:46:49] <zetok> ;D
+[23:47:13] <cisc> but how is that going to work with offline messaging
+[23:47:40] <zetok> ¯\_(ツ)_/¯
+[23:48:09] <cisc> is the antox repo getting any commits is the question
+[23:48:21] <cisc> I haven't seen any activity on IRC From the new dev in months
+[23:48:27] <zetok> valid question
+[23:48:37] <zetok> I'm afraid that I don't know the answer though
+[23:48:51] <cisc> ever since sublin dumped it
+[23:48:56] <zetok> >tfw my Antox didn't receive a single update since months
+[23:49:03] <zetok> sounds about right
+[23:49:15] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 272 seconds)
+[23:49:18] <zetok> :(
+[23:49:37] <cisc> well that is why I was looking for an alternate, you could say "when antox is ready" but it doesn't look like it may ever be ready
+[23:49:53] <cisc> when 3 devs dumped it in a row
+[23:50:03] <zetok> >.<
+[23:51:36] <cisc> ok found it https://github.com/Antox/Antox/commits/master
+[23:51:39] <zetok> (!)
+[23:51:58] <zetok> I remember hearing about an encrypted IM for android
+[23:52:11] <cisc> okay so it is getting commits, I guess he's just not on IRC Much
+[23:52:39] <zetok> kontalk is its name
+[23:52:45] <cisc> yeah I saw that..
+[23:53:03] <cisc> but I dont think its available for iPhone, so that is limiting for people that you know that only use ithings
+[23:54:14] <zetok> um
+[23:54:28] <zetok> iphone users can just use some other xmpp supporting app
+[23:54:41] <zetok> its not like they can expect security using iphone anyway
+[23:55:09] <zetok> eh.
+[23:55:18] <zetok> well, night
+[23:55:20] <cisc> better than SMS, clear text
+[23:55:21] <cisc> night
