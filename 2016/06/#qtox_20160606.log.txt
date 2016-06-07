@@ -1,0 +1,162 @@
+[00:08:15] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[00:14:30] *** Joins: GhostDivision (59deeb49@ )
+[00:18:29] *** Parts: GhostDivision (59deeb49@ ) ()
+[01:10:22] <nurupo> zetok: so, about the blog post regarding new qtox website
+[01:10:50] *** Joins: stal (~j@ )
+[01:10:57] <nurupo> it would be better if tux3 has asked this
+[01:11:09] <nurupo> it sounds like no one takes you seriously anymore
+[01:11:23] <stal> what are the correct linux install instructions for qtox?
+[01:11:40] <stal> tox.chat will be updated in a few weeks
+[01:22:29] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[05:13:39] *** Joins: tdmps (~ray@ )
+[05:13:41] *** Parts: tdmps (~ray@ ) ()
+[06:40:45] *** Joins: ccsdss (~ray@ )
+[06:40:48] *** Parts: ccsdss (~ray@ ) ()
+[08:02:53] *** Joins: ovalseven8 (~ovalseven@ )
+[08:36:32] *** Joins: f10_ (~flo@ )
+[08:36:38] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:37:03] *** Joins: LittleVulpix (~Miranda@ )
+[08:39:28] <zetok> stal: instructions are on qtox.github.io
+[08:40:14] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:43:34] <zetok> ><nurupo> it sounds like no one takes you seriously anymore
+[08:44:08] <zetok> err, AFAIK that's limited to tox.chat people
+[08:45:06] <nurupo> also grayhatter
+[08:45:16] <nurupo> i asked him to write a blog post about qtox website
+[08:45:27] <nurupo> he replied with a huge pile of profanity
+[08:46:17] <nurupo> people don't seem to like you much
+[08:46:18] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[08:47:00] <nurupo> on the other hand, they like and respect tux3, so just use tux3 as a proxy to ask for things
+[08:48:02] <zetok> lol
+[08:48:25] <zetok> I told you that grayhatter is the worst person for PR
+[08:51:46] <zetok> LittleVulpix: ↑ there you go, you might want to ask grayhatter to fix his shitty attitude – as I said yesterday though, you'll fail, given reasons :)
+[08:54:59] *** Joins: f10 (~flo@ )
+[09:04:34] *** Joins: sudden6 (~anonymous@ )
+[09:12:17] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[09:39:47] *** Joins: dardevelin (~dardeveli@ )
+[10:03:45] *** Joins: Chiitoo (~Chiitoo@ )
+[10:09:41] *** Joins: abbat (~abbat@ )
+[10:36:27] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[10:56:54] *** Joins: cisc (~cisc@ )
+[12:13:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[12:13:46] *** Joins: abbat (~abbat@ )
+[12:44:36] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[12:46:59] *** Joins: cisc (~cisc@ )
+[13:09:00] *** Joins: f10 (~flo@ )
+[13:19:14] *** Joins: fazotron (59deeb49@ )
+[13:20:11] *** Parts: fazotron (59deeb49@ ) ()
+[13:25:31] *** Joins: sudden6 (~anonymous@ )
+[14:04:00] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:04:39] *** Joins: abbat (~abbat@ )
+[14:18:39] *** Joins: stvlker (~stvlker@ )
+[15:53:41] <SkyzohKey> zetok: Would you like to use some cool changelog generator for qTox ?
+[15:53:43] <SkyzohKey> + hi :p
+[15:53:50] <SkyzohKey> Results in: https://github.com/RicinApp/Ricin/blob/master/docs/CHANGELOG.md
+[15:54:00] <SkyzohKey> And here is the tool: https://github.com/skywinder/github-changelog-generator
+[15:55:00] <zetok> > ruby
+[15:55:07] * zetok throws it into the trash
+[15:55:18] <SkyzohKey> don't care about ruby lel
+[15:55:26] <SkyzohKey> that's a tool like another one
+[15:55:42] <SkyzohKey> and it does the job pretty well
+[15:55:42] <zetok> you might want to note that qTox already has support for changelog generateor
+[15:55:45] <zetok> generator*
+[15:55:49] <SkyzohKey> yes, it uses clog
+[15:55:54] <SkyzohKey> Ricin also was using clog
+[15:56:04] <SkyzohKey> but this generator is far more powerful ^^
+[16:03:06] <zetok> I don't see that much of benefit
+[16:03:15] <zetok> on the other side, I see quite a few downside
+[16:03:20] <zetok> downsides*
+[16:11:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[16:50:42] <SkyzohKey> which ones ?
+[17:09:21] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:22:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:27:05] *** Joins: abbat (~abbat@ )
+[18:20:10] *** Joins: Chiitoo (~Chiitoo@ )
+[19:02:38] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 244 seconds)
+[19:03:04] *** Joins: SkyzohKey (~skyzohkey@ )
+[19:19:56] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:23:12] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[19:28:22] *** Quits: ovalseven8 (~ovalseven@ ) (Remote host closed the connection)
+[19:35:43] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[19:39:44] *** Joins: ovalseven8 (~ovalseven@ )
+[20:13:39] *** Quits: josh98 (~josh98@ ) (Ping timeout: 264 seconds)
+[20:27:06] *** Joins: josh98 (~josh98@ )
+[20:57:48] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:58:11] *** Joins: LittleVulpix (~Miranda@ )
+[20:58:20] -qtox-git-spam- [qTox] fazotron opened pull request #3360: add "Quote selected text" feature to chat window (master...master) https://git.io/voTKV
+[21:08:54] *** Joins: ccsdss (~ray@ )
+[21:08:57] *** Parts: ccsdss (~ray@ ) ()
+[21:17:00] *** Joins: tux3 (~tux3@ )
+[21:17:00] *** ChanServ sets mode: +o tux3
+[21:37:32] <linuxmodder> zetok,  he is better than you 
+[21:37:38] <linuxmodder> you are toxic 
+[21:38:43] <linuxmodder> zetok,  downsides?  please do elaborate
+[21:41:34] <zetok> formatting & depending on github
+[21:44:45] <zetok> linuxmodder: mind elaborating on toxicity?
+[21:54:03] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 240 seconds)
+[21:54:16] <linuxmodder> sure if you also elaborate on your last one 
+[21:55:13] <zetok> which part of depending on a proprietary, closed service that one day will be gone is not bad?
+[21:55:15] <linuxmodder> toxicity is the fact even other devs consider you a  shitbag and  you are hostile to damn near everyone that wants to help non dev minded folks that wish to help or  wish to comment / document things for those in part one of my statement
+[21:55:44] <zetok> Right.
+[21:55:44] <linuxmodder> zetok,  then use pagure / obs or gitlab  fucker the port over would be rather trivial overall
+[21:59:00] <zetok> linuxmodder: AFAIK only tox.chat people consider me to be hostile – as for their exact opinion on me, I have only your words
+[21:59:22] <zetok> as for people who would want to help – mind giving example of me being hostile?
+[22:01:36] <zetok> linuxmodder: you might want to ponder on how in similar situation grayhatter would have you banned already :)
+[22:20:31] <zetok> Hm.
+[22:23:37] <zetok> Makes one wonder though, whether accusations of hostility didn't arise from simple lack of knowledge how real hostility would look like.
+[22:29:36] <linuxmodder> zetok,  grayhatter woul dhave banned me for what?
+[22:30:50] <zetok> linuxmodder: you don't remember?
+[22:31:04] <linuxmodder> apparently not
+[22:31:31] <zetok> well, grep your logs
+[22:32:24] <linuxmodder> for ?
+[22:32:45] <zetok> yourself being banned :)
+[22:33:18] <linuxmodder> he was in a shitty mood that day and so was I you are chronicly  shitty mood
+[22:34:42] <zetok> >you are chronicly  shitty mood
+[22:35:22] <zetok> you know, if that sentence was about grayhatter it would fit perfectly
+[22:35:49] <zetok> sadly(?), I don't fit there :3
+[22:36:48] <zetok> "if you don't have what you like, like what you have"
+[22:37:45] * zetok pulls out bat clue
+[22:37:52] <zetok> go figure, linuxmodder ;)
+[22:37:59] <linuxmodder> zetok,  being  totally frank you seem to be trying to derail qtox into your own baby and I personally  think its deplorable
+[22:38:33] <zetok> linuxmodder: I'm trying to help qTox become something that everyone can use to communicate securely
+[22:39:18] <linuxmodder> ever since you joined qtox it seems all you care about it ubuntu and  also seem to not give two fucks about anyone that is non-dev type or trying to help lower the jargon bar for non-dev types
+[22:39:23] <zetok> linuxmodder: if you (or someone else) know how to do that better than me, please do so
+[22:41:35] <zetok> lol
+[22:41:41] <linuxmodder> zetok,  I have little time but seems you are more abbrassive then helpful for most 
+[22:43:14] <zetok> linuxmodder: if by "helpful" you mean "get fucked over by tox.chat" then yes, I'm not interested in that
+[22:43:25] <oranges> absolute madman
+[22:43:38] <linuxmodder> zetok,  tox.caht people being ?
+[22:43:44] <linuxmodder> oranges,  who?
+[22:43:51] <zetok> everyone ^^
+[22:44:07] <linuxmodder> zetok,  so its world against zetok then?
+[22:44:12] <linuxmodder> is that how you see it 
+[22:44:16] <zetok> eh.
+[22:44:33] <zetok> no.
+[22:45:04] <linuxmodder> that's how it came across 
+[22:45:15] <zetok> right, I shouldn't try to joke
+[22:45:17] <zetok> my bad
+[22:45:21] <linuxmodder> oranges,  who are you calling an absolute madamn
+[22:45:41] <linuxmodder> jokes are fine but yours seem to be  dull 
+[22:45:50] <zetok> might be
+[22:46:07] <linuxmodder> i used to be dull in the joke dept too that can be  fixed :)
+[22:46:11] <oranges> you, zetok, me, irungentoo
+[22:46:12] <oranges> the feds
+[22:46:31] <zetok> everyone ^^
+[22:47:21] <zetok> aw, I have a good song for that, but it's not in English :c
+[22:48:17] <linuxmodder> zetok,  language is merely a construct 
+[22:48:32] <linuxmodder> oranges,  madman nah more liek progressive 
+[22:50:24] <zetok> "We all are riding on the same cart, from fear only brain defect shields us" ♪
+[22:51:15] <zetok> linuxmodder: as for your question regarding tox.chat – shouldn't you know that better?
+[22:52:39] <zetok> I don't care about tox.chat, so I don't really follow what they do
+[22:52:56] <zetok> and of whom it's currently composed of
+[22:53:41] <zetok> I care about the crap they do that negatively affects qTox, and their refusal to take responsibility for it
+[22:57:35] <linuxmodder> tox.chat is an abysss tto me 
+[22:58:18] <zetok> Hm.
+[22:58:27] <linuxmodder> I don't  try to link nicks to any  sub project(s) like that  main devs and those I see /hear about regularly  for good | bad |indifferent 
+[22:58:51] <linuxmodder> involved in two many things elsewhere including IRL to bother with that crap
+[23:15:26] *** Joins: ovalseven8 (~ovalseven@ )
+[23:16:58] *** Joins: cisc (~cisc@ )
+[23:25:29] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[23:31:23] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[23:39:23] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 246 seconds)
+[23:39:58] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[23:43:21] *** Joins: f10 (~flo@ )
