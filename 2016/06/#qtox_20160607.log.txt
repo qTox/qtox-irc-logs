@@ -1,0 +1,140 @@
+[00:08:14] *** Joins: sudden6 (~anonymous@ )
+[00:30:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[01:14:22] *** Joins: vindelschtuffen (~vindelsch@ )
+[01:36:30] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[05:15:23] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 246 seconds)
+[07:53:36] *** Joins: ovalseven8 (~ovalseven@ )
+[07:56:20] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:57:29] *** Joins: f10 (~flo@ )
+[08:12:06] *** Joins: abbat (~Anton@ )
+[08:12:39] *** Joins: ccsdss (~ray@ )
+[08:12:54] *** Parts: ccsdss (~ray@ ) ()
+[09:03:16] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:10:56] *** Joins: st4ll1 (~st4ll1@ )
+[09:14:23] <SkyzohKey> zetok: https://github.com/qTox/qtox-irc-logs
+[09:14:27] <SkyzohKey> is that automatic ?
+[09:15:04] <zetok> ~yep
+[09:15:09] <SkyzohKey> cool
+[09:15:31] <zetok> powered by systemd™
+[09:15:49] <SkyzohKey> x)
+[09:16:36] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vokHv
+[09:16:36] -qtox-git-spam- qTox/master 8cf5b79 Zetok Zalbavar: docs(README.md): update meeting time & point to better build badge
+[09:17:11] *** Joins: dardevelin (~dardeveli@ )
+[09:29:33] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[09:35:03] *** Joins: zero-ghost (~0@ )
+[09:44:32] *** Joins: sudden6 (~anonymous@ )
+[09:56:41] *** Joins: smaragdus (~omoo@ )
+[10:08:55] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[10:14:12] *** Joins: abbat (~abbat@ )
+[10:17:43] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[10:20:33] *** Joins: Chiitoo (~Chiitoo@ )
+[10:25:06] *** Joins: sudden6 (~anonymous@ )
+[11:21:37] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[11:25:07] *** Quits: BHR27 (~Bheru27@ ) (Remote host closed the connection)
+[11:27:55] *** Joins: cisc (~cisc@ )
+[11:28:33] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[11:29:39] *** Joins: cisc (~cisc@ )
+[12:07:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[12:32:12] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[12:43:04] *** Joins: f10 (~flo@ )
+[14:19:21] *** Joins: stvlker (~stvlker@ )
+[14:22:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:28:22] *** Joins: abbat (~abbat@ )
+[14:30:51] *** Joins: sudden6 (~anonymous@ )
+[14:36:14] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 250 seconds)
+[14:40:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[14:56:51] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:57:42] *** Joins: abbat (~abbat@ )
+[15:58:03] *** Joins: Bheru27 (~Bheru27@ )
+[16:01:53] *** Joins: LittleVulpix (~Miranda@ )
+[16:07:40] *** Quits: Bheru27 (~Bheru27@ ) (Quit: o/)
+[16:08:56] *** Joins: Bheru27 (~Bheru27@ )
+[16:38:36] *** Joins: sudden6 (~anonymous@ )
+[16:59:06] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[17:04:23] *** Parts: stal (~j@ ) ("homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu homu ")
+[17:07:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[17:09:45] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:21:07] <LittleVulpix> zetok: something broken with qtox updating again. Starting from desktop starts qtox from \Program Files\qTox\bin\qtox.exe , qtox then prompts for update to 1.4.1, but the update downloads itself to \Program Files\qTox\ and when it finishes updating, it launches that one and it works and loads version 1.4.1, but the next time you launch your qtox (from the desktop or autostart), you'll again launch the one from \Program Files\qTo
+[17:21:07] <LittleVulpix> x\bin\ and it'll again prompt you for an update... and so on and so forth
+[17:22:09] <LittleVulpix> zetok: something with https://github.com/tux3/qTox/pull/3279
+[17:22:37] <zetok> >.<
+[17:23:08] <LittleVulpix> It's the path issue again. For whatever reason it downloads and updates itself into just qTox\ folder....
+[17:23:54] <zetok> that stuff was supposed to fix problem with portable mode on windows
+[17:24:05] <zetok> and updater
+[17:24:43] <LittleVulpix> hmm, well it's still broken, my dad just told me why does it keep asking for update every time, so I checked and indeed it does, but it updates to 1.4.1. so I checked and I have two qtoxes installed, each in different subfolder due to this weirdness
+[17:24:52] <LittleVulpix> I reproduced it on my VM so
+[17:24:58] <LittleVulpix> Yeah :/
+[17:25:10] <zetok> LittleVulpix: mind opening an issue?
+[17:25:16] <LittleVulpix> Will do
+[17:25:20] <zetok> and sorry for all the problems with it :(
+[17:25:58] <LittleVulpix> Eh, :p at least it starts somehow :p but it could be skewing my results with the duplicate message sending fix because it's possible people whom I've thought were on 1.4.1 were in fact on 1.3.0 because it reverted after I personally checked it updated :p
+[17:26:00] <LittleVulpix> due to this :D
+[17:26:35] <zetok> uuh
+[17:37:20] <LittleVulpix> zetok: https://github.com/tux3/qTox/issues/3362
+[17:37:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:38:27] <zetok> LittleVulpix: thanks :)
+[17:39:23] <LittleVulpix> What a strange issue, hehe.
+[17:53:48] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[18:18:53] *** Joins: Chiitoo (~Chiitoo@ )
+[18:21:19] -qtox-git-spam- [qTox] zetok opened pull request #3363: Translations from weblate (master...tr) https://git.io/voLtD
+[18:22:20] *** Joins: dardevelin (~dardeveli@ )
+[18:22:38] *** Joins: ccsdss (~ray@ )
+[18:22:41] *** Parts: ccsdss (~ray@ ) ()
+[18:26:09] <ovalseven8> https://blog.tox.chat/2016/06/update-new-group-chats-multi-device-and-more/
+[18:43:34] *** Joins: st4ll1 (~st4ll1@ )
+[18:58:33] *** Joins: rkzzy (~ishhh@ )
+[19:19:16] *** Quits: rkzzy (~ishhh@ ) (Remote host closed the connection)
+[19:29:47] -qtox-git-spam- [qTox] zetok pushed 3 new commits to master: https://git.io/voLWB
+[19:29:47] -qtox-git-spam- qTox/master 8a0a8f1 Nils Grundmann: feat(l10n): Update German translation from Weblate
+[19:29:47] -qtox-git-spam- qTox/master 91af5c9 Abdu: feat(l10n): Update Arabic translation from Weblate
+[19:29:47] -qtox-git-spam- qTox/master 1594b70 qTox translations: chore(i18n): update translation files for weblate
+[19:37:32] <zetok> :f
+[19:58:28] *** Joins: abbat (~Anton@ )
+[20:00:53] *** Joins: sudden6 (~anonymous@ )
+[20:05:33] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[20:15:54] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:32:38] *** Joins: f10 (~flo@ )
+[20:35:50] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[20:37:10] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[20:37:49] *** Joins: sudden6 (~anonymous@ )
+[20:44:48] *** Joins: ovalseven8 (~ovalseven@ )
+[20:58:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:00:08] *** Joins: LittleVulpix (~Miranda@ )
+[21:07:35] *** Joins: toweI (~toweI@ )
+[21:24:56] -qtox-git-spam- [qTox] sudden6 opened pull request #3364: feat(smileys): add emojione emoji-pack and make it the default (master...new_emoji) https://git.io/voLig
+[21:38:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[22:02:22] *** Joins: sudden6 (~anonymous@ )
+[22:05:24] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[22:22:33] *** Joins: dardevelin (~dardeveli@ )
+[22:31:24] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[22:36:44] *** Joins: dardevelin (~dardeveli@ )
+[23:14:20] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[23:18:51] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 276 seconds)
+[23:34:10] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:35:18] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[23:42:25] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[23:46:09] <zetok> Rowen_Stipe: o/
+[23:46:57] <Rowen_Stipe> zetok: \o
+[23:47:44] <zetok> Rowen_Stipe: https://github.com/qTox/qtox-irc-logs/blob/01816013260ae91f31e870ec42d669c5ea198958/2016/06/%23qtox_20160601.log.txt#L125,L127 ?
+[23:47:56] <zetok> Rowen_Stipe: also, could you update PR?
+[23:50:35] <Rowen_Stipe> The way I have it set up, it will only make a deploy build when a tag is applied to the stable branch commit.
+[23:50:52] <Rowen_Stipe> Also will update the PR
+[23:51:16] <zetok> >it will only make a deploy build when a tag is applied to the stable branch commit.
+[23:51:19] <zetok> err, no
+[23:51:39] <zetok> `branch` option is ignored if you're building on tag
+[23:51:49] <zetok> s/building/deploying/
+[23:52:07] <zetok> (at least according to docs)
+[23:52:59] <Rowen_Stipe> Hrmmm
+[23:53:34] <zetok> um, it worked for you, right?
+[23:54:06] <Rowen_Stipe> It worked when I tested doing a commit with out a tag.
+[23:54:32] <Rowen_Stipe> Meaning no deployment was made
+[23:55:00] <zetok> and adding tag later-on to given commit deployed binary, right?
+[23:55:42] <Rowen_Stipe> That, I didn't test but give me a moment and I can do that.
+[23:56:13] <zetok> uh
+[23:56:36] <Rowen_Stipe> I'm jsut gonna make another branch seperate from my PR
+[23:56:50] <zetok> mm
+[23:57:00] <zetok> time though
+[23:57:25] *** Joins: Rowen_Stipe-Alt (~rowen@ )
+[23:57:28] <zetok> it'll take almost half of an hour to get it done
+[23:58:14] <zetok> ok, I'll be back in ~30 min
+[23:58:20] * zetok afk &
