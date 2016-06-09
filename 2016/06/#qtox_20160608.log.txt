@@ -1,0 +1,356 @@
+[00:11:42] <oranges> &
+[00:11:45] <Rowen_Stipe> After testing, you are correct; branch is ignored and when ever a tag is appliede to any branch a deployment will be created
+[00:12:55] <Rowen_Stipe> zetok: ^
+[00:13:31] <zetok> oh, so you don't have to push tag & commit at the same time?
+[00:13:43] <Rowen_Stipe> Correct
+[00:13:48] <zetok> ok
+[00:14:23] <zetok> PR update?
+[00:14:32] <Rowen_Stipe> I'm gonna update my other PR to include tux3's API key and uncomment everything else involved with deployment.
+[00:14:49] <Rowen_Stipe> And then yes, PR update
+[00:14:54] <zetok> thanks :)
+[00:16:39] <zetok> looks like it'll be time for 1.4.2, special osx release, after special 1.4.1 windows release >.<
+[00:16:51] <Rowen_Stipe> xD
+[00:19:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[00:19:53] <Rowen_Stipe> PR updated
+[00:31:15] <Rowen_Stipe> I'm kinda sad now because the running joke I've had going for the qTox OS X releases about it not making waffles will be dead.
+[00:36:48] <zetok> :c
+[00:37:05] <Rowen_Stipe> That is unless someone edits the release tag.
+[00:37:16] <zetok> Rowen_Stipe: could you squash that last commit?
+[00:38:08] <Rowen_Stipe> Yeah.
+[00:40:34] * zetok wonders
+[00:40:58] <zetok> 1.4.2 probably isn't a good idea, since it doesn't actually change any code :s
+[00:41:08] <zetok> i.e. qTox code
+[00:41:28] <Rowen_Stipe> what about 1.4.1.2 ?
+[00:41:38] <zetok> 1.4.1.1 ?
+[00:41:44] <Rowen_Stipe> Sure
+[00:42:08] * zetok wonders about 1.4.1.0
+[00:43:33] <Rowen_Stipe> would just be 1.4.1 it's self then.
+[00:46:52] -qtox-git-spam- [qTox] zetok pushed 1 new commit to stable: https://git.io/votIu
+[00:46:52] -qtox-git-spam- qTox/stable 06d78dc RowenStipe: chore(travis): Allow for Travis deployment...
+[00:47:52] <zetok> Rowen_Stipe: um, is squashing a problem?
+[00:48:04] <Rowen_Stipe> I forgot how to force push
+[00:48:10] <zetok> oh >.<
+[00:50:25] <Rowen_Stipe-Alt> rowen@Alien-MATE:~/gits/Forks/qTox$ git push orgin +OSX-Travis-Build --force
+[00:50:26] <Rowen_Stipe-Alt> fatal: 'orgin' does not appear to be a git repository
+[00:50:26] <Rowen_Stipe-Alt> fatal: Could not read from remote repository.
+[00:50:26] <Rowen_Stipe-Alt> Please make sure you have the correct access rights
+[00:50:26] <Rowen_Stipe-Alt> and the repository exists.
+[00:50:38] <Rowen_Stipe-Alt> Somedays git frustrates me
+[00:51:05] <zetok> > +
+[00:51:05] <zetok> ?
+[00:51:15] <zetok> >orgin
+[00:51:50] <zetok> Rowen_Stipe-Alt: add `i`
+[00:52:30] <Rowen_Stipe-Alt> >.<
+[00:53:00] <Rowen_Stipe-Alt> commit squashed
+[00:53:41] <zetok> \o/
+[00:54:07] *** Quits: Rowen_Stipe-Alt (~rowen@ ) (Remote host closed the connection)
+[00:54:24] <Rowen_Stipe> Somedays
+[00:54:38] <Rowen_Stipe> they're just better than others
+[00:55:40] <zetok> mm
+[00:56:12] <Rowen_Stipe> I need to clean up my macbook one of these days now that I can just have it as a testing machine.
+[00:57:09] <zetok> huh, didn't notice before that travis builds tags https://travis-ci.org/tux3/qTox/builds/136016375
+[00:58:43] <Rowen_Stipe> hopefully, all goes well
+[00:59:17] <zetok> >.<
+[01:00:25] <Rowen_Stipe> it's deploying \o/
+[01:00:42] <zetok> https://www.youtube.com/watch?v=lDK9QqIzhwk
+[01:01:04] <Rowen_Stipe> And food is ready for dinner \o/
+[01:15:08] -qtox-git-spam- [qTox] zetok closed pull request #3340: Travis OSX Builds (master...OSX-Travis-Build) https://git.io/vrHLW
+[01:17:12] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:17:34] <zetok> well, released & merged, now I can go to sleep
+[01:17:37] <zetok> night ;)
+[01:38:23] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[02:40:31] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[06:42:33] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[06:53:51] *** Joins: ovalseven8 (~ovalseven@ )
+[07:14:29] *** Joins: LittleVulpix (~Miranda@ )
+[07:45:06] *** Joins: f10 (~flo@ )
+[08:05:16] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[08:31:00] *** Joins: Random (5a666b39@ )
+[08:36:30] *** Quits: Random (5a666b39@ ) (Quit: Page closed)
+[09:05:20] *** Joins: sudden6 (~anonymous@ )
+[09:12:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[09:30:37] *** Joins: dardevelin (~dardeveli@ )
+[09:35:15] *** Quits: linuxmodder (linuxmodde@ ) (Ping timeout: 264 seconds)
+[09:43:27] *** Joins: linuxmodder (linuxmodde@ )
+[09:48:54] *** Joins: abbat (~abbat@ )
+[11:15:44] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[11:21:39] *** Joins: ccsdss (~ray@ )
+[11:22:10] *** Parts: ccsdss (~ray@ ) ()
+[11:22:43] *** Joins: Chiitoo (~Chiitoo@ )
+[11:51:46] *** Joins: sudden6 (~anonymous@ )
+[12:06:40] <zetok> ovalseven8: now number of issues is decreasing ;)
+[12:16:20] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 246 seconds)
+[12:19:02] <sudden6> :)
+[12:21:29] *** Joins: LittleVulpix (~Miranda@ )
+[12:45:04] *** Joins: dardevelin (~dardeveli@ )
+[12:51:02] *** Joins: SkyzohKey (~skyzohkey@ )
+[13:09:49] *** Joins: Rowen_St_ (~rowen_sti@ )
+[13:09:49] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Read error: Connection reset by peer)
+[13:11:01] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[13:19:59] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[13:58:05] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[14:07:27] *** Joins: st4ll1 (~st4ll1@ )
+[14:14:07] *** Joins: dardevelin (~dardeveli@ )
+[14:29:10] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[15:08:43] *** Joins: dardevelin (~dardeveli@ )
+[15:28:30] *** Joins: sudden6 (~anonymous@ )
+[15:31:05] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[15:32:33] *** Quits: josh98 (~josh98@ ) (Ping timeout: 276 seconds)
+[15:37:59] *** Joins: f10 (~flo@ )
+[15:53:11] *** Joins: josh98 (~josh98@ )
+[16:03:06] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[16:24:37] *** Joins: ccsdss (~ray@ )
+[16:24:40] *** Parts: ccsdss (~ray@ ) ()
+[16:24:49] *** Joins: ccsdss (~ray@ )
+[16:24:53] *** Parts: ccsdss (~ray@ ) ()
+[16:48:17] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[16:48:49] *** Joins: abbat (~abbat@ )
+[16:50:51] *** Joins: sudden6 (~anonymous@ )
+[16:57:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[17:06:48] *** Joins: stal (~j@ )
+[17:07:06] *** Parts: stal (~j@ ) ("Palaver https://palaverapp.com/")
+[17:28:56] *** Joins: dardevelin (~dardeveli@ )
+[17:35:03] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[17:50:08] *** Joins: sudden6 (~anonymous@ )
+[18:03:46] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:04:41] <SkyzohKey> zetok: u arround ?
+[18:04:49] <zetok> sa.
+[18:05:00] <SkyzohKey> Do you know how the selection works ? https://a.uguu.se/jnjtTaaZ1ADt.webm
+[18:05:14] <SkyzohKey> If i understand well, qTox uses a ListBox to displays messages, right ?
+[18:06:04] <zetok> SkyzohKey: https://q3k.org/magic.gif
+[18:06:07] <cisc> that text selection bug I've ran into before
+[18:07:09] <SkyzohKey> >bug
+[18:07:11] <SkyzohKey> not a bug
+[18:07:31] <zetok> cisc: it's actually caused by input field
+[18:07:31] <SkyzohKey> I'm trying to accomplish something like that to allow multiple messages selection in Ricin, but I'm stuck 
+[18:08:10] *** Quits: sudden6 (~anonymous@ ) (Read error: Connection reset by peer)
+[18:08:20] *** Joins: sudden6 (~anonymous@ )
+[18:10:43] <cisc> well the padding to where the mouse pointer changes to a cursor could be increased
+[18:11:02] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[18:11:06] <zetok> err
+[18:11:07] <cisc> the way it is behaviour-wise usually I don't want to select the entire message with the time stamp, I only want part of it
+[18:11:22] <zetok> that is not a bug
+[18:11:38] <zetok> and probably can't be done differently
+[18:11:52] <zetok> dunno though, that might be just a baseless assumption
+[18:12:07] <cisc> yeah not when the lead developer disappears for weeks at a time
+[18:13:19] <cisc> which looks like now multi-device is hitting a roadblock
+[18:16:57] <zetok> hm.
+[18:17:19] <zetok> cisc: um, would you mind helping then?
+[18:17:23] <LittleVulpix> Fox, 08.06.2016 19:14:55:
+[18:17:24] <LittleVulpix> Oh my god. Since I had qTox I had this new version download prompt every time I turned the app on. And it was finally gone two weeks ago. And now it prompts me to a new version again. Meh. Skype is less annoying than this I swear.
+[18:17:28] <LittleVulpix> :<
+[18:17:32] <LittleVulpix> <- my friend
+[18:19:37] <zetok> right, sorry, osx release did that
+[18:22:34] <zetok> I think
+[18:22:36] <zetok> :s
+[18:22:56] <zetok> LittleVulpix: to be precise, it started ~17h ago for your friend, right?
+[18:23:54] <zetok> as a work-around, your friend could try portable builds, they might have updates ~disabled
+[18:24:03] <zetok> (not really disabled)
+[18:33:27] <LittleVulpix> zetok: Hard to say, maybe it started earlier and he just complained about it today :p
+[18:33:32] <LittleVulpix> but it was working fine
+[18:33:36] <LittleVulpix> even on my VM
+[18:33:38] <LittleVulpix> for a while
+[18:33:54] <LittleVulpix> For like a week or so, zetok
+[18:34:05] <LittleVulpix> Since the fix  by tux
+[18:36:11] <zetok> :/
+[18:36:37] <zetok> I assume that your friend can't use better os..
+[18:39:42] <LittleVulpix> zetok: he's using vista lol, but this is happening on my dad's pc as well (windows 7) and on my virtual machine for testing (windows 10)
+[18:52:37] * zetok had a better os in mind though ;_;
+[18:53:03] <zetok> i.e. one that doesn't need broken updater in the first place
+[18:56:15] *** Joins: Oxodao (4ed9d108@ )
+[18:56:25] <Oxodao> i
+[18:56:27] <Oxodao> Hi *
+[18:56:31] <zetok> hello Oxodao :)
+[18:56:37] <Oxodao> How are you?
+[18:56:40] *** Joins: st4ll1 (~st4ll1@ )
+[18:57:52] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[18:57:55] <zetok> fine, I'd guess
+[18:59:11] <zetok> Oxodao: do you happen to know languages?
+[18:59:30] <Oxodao> Which one?
+[19:00:04] <zetok> any beside English :)
+[19:00:37] <cisc> ive seen that update loop
+[19:00:54] <Oxodao> I am French
+[19:00:58] <cisc> erased the config folder in %appdata% and reinstalled, problem went away
+[19:01:03] <cisc> *re: Win 7
+[19:01:08] <Oxodao> I speak a little bit of spanish but not much
+[19:01:19] <Oxodao> And I also speak Java 8 :p
+[19:01:27] <zetok> :D
+[19:01:49] <zetok> Oxodao: mind helping with https://github.com/tux3/qTox/tree/master/translations#translating ?
+[19:02:11] <Oxodao> Getting on it :)
+[19:02:17] <zetok> thanks :)
+[19:03:35] <Oxodao> brb
+[19:05:54] *** Joins: abbat (~Anton@ )
+[19:10:40] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[19:18:01] -qtox-git-spam- [qTox] PafXUS opened pull request #3365: fix(widget): (master...master) https://git.io/vomOX
+[19:41:25] *** Quits: Oxodao (4ed9d108@ ) (Quit: Page closed)
+[19:49:06] *** Joins: PafXUS (8044de3b@ )
+[19:49:46] <zetok> PafXUS: o/
+[19:49:51] <PafXUS> 0/
+[19:50:16] <zetok> PafXUS: um, do you know how to rebase PR?
+[19:50:35] <PafXUS> not really
+[19:50:40] <zetok> I see
+[19:52:26] <zetok> ok
+[19:52:39] <zetok> PafXUS: `git rebase -i 7b34625`
+[19:53:06] <zetok> before that, you might want to make a backup branch
+[19:53:14] <zetok> `git branch backup`
+[19:53:46] <zetok> PafXUS: once editor with rebase will show up, save what you see and close it
+[19:54:11] <zetok> after that, commits should be rebased, and there should be no merge commit in `git log`
+[19:54:36] <zetok> PafXUS: um, if something isn't clear, please say so
+[19:54:55] <PafXUS> just started to use git, so thats all new stuff for me. What rebase will give?
+[19:55:18] <zetok> depending on the kind of rebase you're doing
+[19:55:37] <zetok> generally, rebase applies some commits on top of other commits
+[19:55:56] <zetok> but with interactive rebase `-i` you can do a lot more, e.g. rewrite history
+[19:56:33] *** Joins: Chiitoo (~Chiitoo@ )
+[19:58:17] <zetok> so simple rebase in this case when all commits are picked will simply remove unneeded merge commit
+[19:58:40] <PafXUS> so it shows 4 picks and commented out help text
+[19:58:56] <zetok> yep, save that & exit from editor
+[20:00:47] <zetok> now merge commit should be gone from `git log`
+[20:00:53] <zetok> is that the case?
+[20:04:09] <PafXUS> hmm i can still se it in git log, what i've done wrong?
+[20:04:45] <zetok> is there `Rebasing (4/4)` in terminal output?
+[20:05:06] <zetok> oh
+[20:05:25] <PafXUS> it asked my gpg key 4 times, and yea it showed 4/4
+[20:06:21] <zetok> `git log --oneline | head -n5` ?
+[20:07:20] <PafXUS> 8ca089c Merge pull request #1 from tux3/master - last one
+[20:07:38] <PafXUS> before - 4 fix messages
+[20:07:45] <zetok> that's weird
+[20:08:38] <PafXUS> one thing to know - i've merged pull request in github, and all other commits using git
+[20:08:42] *** Joins: ArunC (2d1a773d@ )
+[20:08:58] *** Parts: ArunC (2d1a773d@ ) ()
+[20:09:26] <zetok> PafXUS: 7b34625 is shown in `git log`, right?
+[20:10:08] <PafXUS> yes: commit 8ca089cc0ec8c7eb37b5ea59ab147efda87c3873 Merge: 8cf5b79 7b34625
+[20:10:44] <zetok> hmm, that's weird, `rebase -i 7b34625` works for me
+[20:11:36] * zetok wonders if it could be due to git version
+[20:11:54] <zetok> oh well, the hard way then
+[20:12:17] <PafXUS> one sec
+[20:12:31] <PafXUS> how can i know that it finished rebasing?
+[20:12:58] <zetok> >Successfully rebased and updated detached HEAD.
+[20:13:15] <zetok> ah
+[20:13:28] <zetok> PafXUS: did you do `git log master` by any chance?
+[20:13:48] <PafXUS> when i've tried git rebase for second time - it wrote: It seems that there is already a rebase-merge directory, and
+[20:15:41] <PafXUS> no i did git branch backup -> git rebase -i 7b34625 -> :wq -> passwords -> git log -> git log --online | head -n5 
+[20:16:03] <zetok> `git branch` ?
+[20:16:54] <PafXUS>   backup * master
+[20:17:01] <PafXUS> master in green color
+[20:18:12] <zetok> PafXUS: could you provide full error message?
+[20:18:54] <PafXUS> which one? when i try to run git rebase another time?
+[20:18:57] <zetok> yep
+[20:19:40] <PafXUS> It seems that there is already a rebase-merge directory, and I wonder if you are in the middle of another rebase.  If that is the case, please try git rebase (--continue | --abort | --skip) If that is not the case, please rm -fr "/home/user/work/qTox/.git/rebase-merge" and run me again.  I am stopping in case you still have something valuable there.
+[20:20:13] <zetok> `git rebase --continue`
+[20:20:51] <PafXUS> The previous cherry-pick is now empty, possibly due to conflict resolution. If you wish to commit it anyway, use:      git commit --allow-empty  Otherwise, please use 'git reset' On branch master Your branch is up-to-date with 'origin/master'. You are currently rebasing branch 'master' on '7b34625'.  nothing to commit, working directory clean Could not apply 2dff5f5... fix(widget): delete icon in destructor
+[20:21:19] <zetok> :s
+[20:21:26] <zetok> oh well
+[20:21:34] <zetok> PafXUS: do you have upstream added?
+[20:21:48] <zetok> i.e. upstream remote
+[20:21:49] <PafXUS> don't know really
+[20:22:02] <zetok> git remote add upstream git@github.com:tux3/qTox.git
+[20:22:06] <zetok> git fetch upstream
+[20:22:29] <zetok> git checkout upstream/master -b new-master
+[20:23:21] <PafXUS> Branch new-master set up to track remote branch master from upstream by rebasing. Switched to a new branch 'new-master'
+[20:24:10] <zetok> git cherry-pick 2dff5f5..94d0323
+[20:25:27] <PafXUS> it asked passwd for rsa key 4 times
+[20:26:01] <zetok> is `git log` now right?
+[20:27:07] <PafXUS> how can i saw more log? because i can see now only 3 of my commits
+[20:28:05] <zetok> :S
+[20:28:23] <zetok> sorry, look like I didn't read git docs carefully enough
+[20:28:59] <zetok> ok
+[20:30:06] <zetok> git checkout master && git branch -D new-master && git checkout upstream/master -b new-master && git cherry-pick 8ca089c..94d0323
+[20:30:18] <PafXUS> lol
+[20:30:24] <PafXUS> so we missed 1 commit?
+[20:30:29] <zetok> yeah
+[20:30:39] <zetok> looks like range is ( ]
+[20:30:45] <zetok> :/
+[20:31:30] <PafXUS> okay, now i see all 4 of them
+[20:31:39] <zetok> ok
+[20:31:49] <zetok> git branch -D master && git branch master && git push origin master -f
+[20:33:37] <PafXUS> that's some kind of magic xD
+[20:34:11] <zetok> :P
+[20:34:16] <genesis> bab bidi boum
+[20:34:17] <PafXUS> i've really asked myself how to be up to date with forked repo, but google didn't gave me right solution
+[20:34:20] <zetok> https://q3k.org/magic.gif
+[20:35:04] <zetok> PafXUS: use branches other than `master` for PRs
+[20:35:10] <zetok> as for getting changes
+[20:35:35] <zetok> git fetch upstream && git checkout master && git rebase -i upstream/master master
+[20:36:07] <zetok> though you'd want to postpone running that until PR that uses `master` branch gets merged
+[20:36:31] <zetok> oh, right, now you can remove `backup` branch: `git branch -D backup`
+[20:37:11] <zetok> and since you'll need a new branch to work on stuff, to create a local branch based on upstream master: `git checkout upstream/master -b local_branch`
+[20:37:36] <PafXUS> i have a problem)
+[20:38:01] <PafXUS> It seems that there is already a rebase-merge directory, and I wonder if you are in the middle of another rebase.  If that is the case, please try git rebase (--continue | --abort | --skip) If that is not the case, please rm -fr "/home/user/work/qTox/.git/rebase-merge" and run me again.  I am stopping in case you still have something valuable there.
+[20:38:12] <PafXUS> after  git fetch upstream && git checkout master && git rebase -i upstream/master master
+[20:38:23] <zetok> uh
+[20:39:14] <PafXUS> i really should take some book on git, and read it) because now that's look like some spells 
+[20:39:29] <zetok> what you need is `man git`
+[20:40:00] <zetok> + other git-command manuals
+[20:40:04] <zetok> + practice
+[20:40:40] <PafXUS> yea, you right) but for now, what is other rebase is happening? should i abort it?
+[20:40:46] <zetok> yeah
+[20:40:52] * zetok wonders if it would work
+[20:41:12] <zetok> btw, after you do that, manually remove /home/user/work/qTox/.git/rebase-merge
+[20:41:44] <zetok> are commits on your local `master` intact?
+[20:42:09] <PafXUS> there is no such thing
+[20:42:43] <zetok> file or commits?
+[20:43:29] <PafXUS> inside .git no rebase-merge
+[20:43:45] <zetok> that's fine
+[20:44:03] <PafXUS> sorry, i must go now for like 10-20 min, thanks alot for your help
+[20:44:18] <zetok> you're welcome :)
+[20:46:46] <PafXUS> btw why travis build failed on my pull request?
+[20:47:26] <zetok> https://github.com/tux3/qTox/blob/master/.travis.yml#L8
+[20:47:35] <zetok> i.e. commits have to conform
+[20:47:58] <zetok> https://github.com/tux3/qTox/blob/master/verify-commit-messages.sh#L32 ;)
+[20:52:57] <zetok> um, if the question was about why exactly, then it's because merge commits made by github don't conform to commit message format used by qTox
+[21:17:25] <zetok> PafXUS: btw, you might want to add `default-cache-ttl 360` in ~/.gnupg/gpg-agent.conf
+[21:17:52] <zetok> + set other things needed, since constantly typing password is meh
+[21:18:40] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[21:23:40] *** Quits: PafXUS (8044de3b@ ) (Ping timeout: 250 seconds)
+[21:24:46] *** Quits: oranges (oranges@ ) (Ping timeout: 252 seconds)
+[21:24:54] *** Joins: oranges (oranges@ )
+[21:56:11] -qtox-git-spam- [qTox] sudden6 closed pull request #3348: fix(widget): open a chat window instead of contacts list in multi-window mode (master...issue3212) https://git.io/vrjwu
+[22:25:02] -qtox-git-spam- [qTox] sudden6 opened pull request #3366: feat(systemtray): add "Activate" action to context menu (master...unity_tray_activate2) https://git.io/vomyX
+[22:28:13] <sudden6> zetok: is there a file describing our markdown syntax anywhere?
+[22:28:25] <zetok> ~nope
+[22:28:30] <zetok> oh wait
+[22:28:44] <zetok> IIRC there should be something in user manual..?
+[22:28:59] <zetok> https://github.com/tux3/qTox/blob/master/doc/user_manual_en.md#message-styling
+[22:29:06] <sudden6> no I mean the markdown style we use to write things like the user manual
+[22:29:35] <zetok> >.<
+[22:29:44] <zetok> ok, that's what my first sentence was about
+[22:29:58] <zetok> but then I thought that you meant qTox's "markdown"
+[22:30:21] <sudden6> ok, but I remember some discussion about this
+[22:30:41] <zetok> yeah
+[22:30:44] <sudden6> and I'd like not to break already established formating^^
+[22:31:47] <zetok> spaces, 4 of them, 80 chars per line
+[22:32:32] <sudden6> thx
+[22:33:09] <zetok> https://raw.githubusercontent.com/tux3/qTox/master/CONTRIBUTING.md ← not really a guideline, but..
+[22:34:06] <sudden6> maybe add it to the rules?
+[22:34:35] <zetok> I can add it to TODO
+[22:34:59] <sudden6> mhm
+[22:35:01] <zetok> right after website, zetox, testing PRs & some other random stuff
+[22:36:05] <zetok> >51 files changed, 2115 insertions(+), 1790 deletions(-)
+[22:36:08] <zetok> website so far
+[22:36:09] <sudden6> ^^ I got you a few PRs to test ;)
+[22:37:40] <sudden6> where are you working at the website? I wanna take a look :)
+[22:38:00] <zetok> sec, gonna push what I have
+[22:38:37] <zetok> https://github.com/qTox/qTox-Website/tree/translations
+[22:38:50] <zetok> note that commit will be amended
+[22:39:47] <travis-ci> qTox/qTox-Website (223fbcd): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136277556 / Changes: https://github.com/qTox/qTox-Website/compare/cbff33a25fdd...223fbcd92051
+[22:40:18] * zetok adds turning off travis notifications for non-master branch to TODO
+[22:42:06] <sudden6> https://github.com/qTox/qTox-Website/issues/1 huh, since when are we using bountysource?
+[22:42:26] <zetok> :|
+[22:43:28] <zetok> tux3 created it, since he was asked to do so
+[22:43:39] <zetok> as for usage.. yeah, no.
+[22:43:49] <sudden6> oh, ok
+[22:43:55] <sudden6> who asked?
+[22:44:09] * zetok might have had
+[22:44:29] <zetok> along with a few other people, IIRC
+[22:45:08] <zetok> been' so long since then that I'm starting to forget the details :f
+[22:45:13] <sudden6> "11 months ago"
+[22:49:56] <ovalseven8> Hey sudden. Everything fine?
+[22:50:52] <sudden6> ovalseven8: yes, thx
+[22:59:56] -qtox-git-spam- [qTox] sudden6 closed pull request #3360: feat(genericchatform): add "Quote selected text" feature to chat window (master...master) https://git.io/voTKV
+[23:00:23] <zetok> \o/
+[23:15:13] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: This Konversation is over  ! !! !)
+[23:28:52] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[23:30:24] -qtox-git-spam- [qTox] sudden6 opened pull request #3367: [WIP]docs(usermanual): add documentation about new features (master...usermanual_update) https://git.io/vomNc
+[23:33:07] <sudden6> bye
+[23:33:12] <zetok> bai
+[23:38:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
