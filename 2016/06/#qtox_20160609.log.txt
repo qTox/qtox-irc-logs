@@ -1,0 +1,106 @@
+[00:21:11] -qtox-git-spam- [qTox] Plinz opened pull request #3368: Update french traduction (master...master) https://git.io/voYvt
+[00:22:21] <genesis> \o/ 
+[01:13:01] *** Quits: TheVoid (~void@ ) (Ping timeout: 240 seconds)
+[01:28:53] *** Joins: TheVoid (~void@ )
+[01:49:46] *** Joins: f10_ (~flo@ )
+[04:43:21] *** Joins: vindelschtuffen (~vindelsch@ )
+[06:23:22] *** Quits: hpanago (uid15586@ ) (Ping timeout: 250 seconds)
+[06:33:17] *** Joins: hpanago (uid15586@ )
+[07:29:34] *** Joins: ovalseven8 (~ovalseven@ )
+[07:40:07] *** Joins: sudden6 (~anonymous@ )
+[07:46:02] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[08:05:37] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:06:03] *** Joins: LittleVulpix (~Miranda@ )
+[08:11:09] *** Joins: abbat (~Anton@ )
+[08:54:01] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:51:04] *** Joins: dardevelin (~dardeveli@ )
+[10:11:16] *** Joins: abbat (~abbat@ )
+[10:14:55] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[10:15:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[11:26:46] *** Joins: ccsdss (~ray@ )
+[11:26:53] *** Parts: ccsdss (~ray@ ) ()
+[11:32:41] *** Joins: stvlker (~stvlker@ )
+[12:06:12] <travis-ci> qTox/qTox-Website (fdb18b7): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136398632 / Changes: https://github.com/qTox/qTox-Website/compare/858dc6b9888f...fdb18b7c2185
+[12:12:37] <travis-ci> qTox/qTox-Website (234efd2): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136399840 / Changes: https://github.com/qTox/qTox-Website/compare/fdb18b7c2185...234efd26cd5c
+[12:15:03] *** Joins: irccrawler (59deeb49@ )
+[12:18:33] *** Joins: irccrawler_2312 (59deeb49@ )
+[12:18:55] *** Quits: irccrawler (59deeb49@ ) (Client Quit)
+[12:18:58] *** Quits: irccrawler_2312 (59deeb49@ ) (Client Quit)
+[12:19:38] *** Joins: icrcrawler_2313 (9e453944@ )
+[12:26:56] *** Quits: icrcrawler_2313 (9e453944@ ) (Quit: Page closed)
+[12:41:35] *** Joins: st4ll1 (~st4ll1@ )
+[13:04:42] *** Joins: f10 (~flo@ )
+[14:08:11] *** Joins: ovalseven8_ (~ovalseven@ )
+[14:08:38] *** Joins: f10_ (~flo@ )
+[14:10:10] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 252 seconds)
+[14:24:05] *** Joins: sudden6 (~anonymous@ )
+[14:31:11] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[14:34:19] *** Joins: f10 (~flo@ )
+[14:36:57] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[15:08:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[15:19:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[15:19:47] *** Joins: abbat (~abbat@ )
+[15:23:05] *** Joins: f10_ (~flo@ )
+[15:28:24] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[15:50:35] <genesis> <genesis> concerning tox gentoo overlay 
+[15:50:35] <genesis> <genesis> it seems easier this days to push directly on the official git overlay ( see https://github.com/gentoo/gentoo/pulls )
+[15:50:51] <genesis> would zetok test that pushing qtox 1.4.1 ?
+[15:51:48] <zetok> genesis: ?
+[15:54:15] * genesis reads https://wiki.gentoo.org/wiki/Gentoo_git_workflow
+[15:56:00] <zetok> genesis: um, not sure what you mean, but updating to 1.4.1 is a waste of time
+[15:57:19] <zetok> if you really want to get something newer, use -9999
+[15:57:40] <zetok> if not, 1.4.0
+[16:08:49] <zetok> genesis: um, you know that 1.4.1 has no improvements for Linux, and only a regression?
+[16:11:10] <genesis> i donno, bad news :)
+[16:11:36] <genesis> was to test the process, not i need this version, i still compile from git.
+[16:11:48] <zetok> >.<
+[16:12:01] <zetok> genesis: if you want to update something, you might want to do net-libs/tox
+[16:12:02] <zetok> sec
+[16:12:19] <genesis> sure 
+[16:12:29] <genesis> i'd updated version in my overlay
+[16:14:50] <zetok> https://github.com/zetok/gentoo/commit/7cc62282dda138833cb9079523b2c89d80de38a2 ← still needs a few things to be done, e.g. updating to EAPI 6
+[16:15:22] * zetok goes back to breaking translations
+[16:23:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[16:23:40] *** Joins: abbat (~abbat@ )
+[17:24:27] -qtox-git-spam- [qTox] zetok opened pull request #3370: Translations update & add file for Esperanto (master...tr) https://git.io/voOQV
+[17:26:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:33:31] *** Joins: abbat (~abbat@ )
+[17:41:21] <travis-ci> qTox/qTox-Website (fc8153d): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136480406 / Changes: https://github.com/qTox/qTox-Website/compare/234efd26cd5c...fc8153d8db3b
+[17:43:47] *** Joins: dardevelin (~dardeveli@ )
+[17:49:41] -qtox-git-spam- [qTox] zetok pushed 3 new commits to master: https://git.io/voOF0
+[17:49:41] -qtox-git-spam- qTox/master 2a36843 Plinz: feat(l10n): update French translation
+[17:49:41] -qtox-git-spam- qTox/master 402f9eb Nathan JANCZEWSKI: feat(l10n): Update French translation
+[17:49:41] -qtox-git-spam- qTox/master 76239aa Zetok Zalbavar: chore(l18n): update translation files for Weblate...
+[18:00:40] * zetok wonders
+[18:02:12] <zetok> given that weblate doesn't support adding .ts files upon user request, should perhaps files for all the languages be added?
+[18:05:01] *** Quits: TheVoid (~void@ ) (Ping timeout: 252 seconds)
+[18:08:38] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:09:16] -qtox-git-spam- [qTox] zetok closed pull request #3368: Update french traduction (master...master) https://git.io/voYvt
+[18:14:12] *** Joins: TheVoid (~void@ )
+[18:34:08] <SkyzohKey> zetok: http://i.imgur.com/5SOrXyV.png :)
+[18:34:42] <SkyzohKey> also on white theme: http://i.imgur.com/bZUs6xw.png
+[18:57:48] *** Parts: ovalseven8_ (~ovalseven@ ) ("Leaving")
+[18:58:16] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[18:59:54] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[19:01:05] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 260 seconds)
+[19:02:38] *** Joins: dardevelin (~dardeveli@ )
+[19:03:33] *** Joins: nurupo (~nurupo.ga@ )
+[19:13:57] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[19:30:03] *** Joins: sudden6 (~anonymous@ )
+[19:42:29] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[19:57:35] *** Joins: cisc (~cisc@ )
+[20:04:27] *** Joins: st4ll1 (~st4ll1@ )
+[20:20:24] *** Joins: vindelschtuffen (~vindelsch@ )
+[20:45:59] *** Joins: misiek200m (~miskof@ )
+[21:00:11] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[21:24:54] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:26:10] *** Joins: f10 (~flo@ )
+[21:50:19] *** Joins: Chiitoo (~Chiitoo@ )
+[22:07:30] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[22:15:49] *** Joins: abbat (~Anton@ )
+[22:27:42] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 260 seconds)
+[22:45:00] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:56:06] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[23:05:55] *** Joins: f10_ (~flo@ )
+[23:29:48] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:50:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
