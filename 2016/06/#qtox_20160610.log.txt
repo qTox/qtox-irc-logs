@@ -1,0 +1,137 @@
+[00:15:04] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[00:51:14] -qtox-git-spam- [qTox] b4n opened pull request #3371: fix(video): fix video resolution setting (master...video/prefs/fix-resolution) https://git.io/vo3jV
+[01:24:21] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[01:44:10] *** Joins: f10_ (~flo@ )
+[02:23:22] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[02:40:59] *** Joins: f10_ (~flo@ )
+[02:47:42] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[02:51:17] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[03:43:03] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[06:22:26] *** Joins: smaragdus (~omoo@ )
+[07:16:23] *** Joins: f10 (~flo@ )
+[07:31:42] *** Joins: f10_ (~flo@ )
+[08:09:56] *** Joins: abbat (~Anton@ )
+[08:28:28] *** Joins: dardevelin (~dardeveli@ )
+[08:30:53] *** Joins: dardevelin_ (~dardeveli@ )
+[08:33:32] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 246 seconds)
+[09:03:45] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:10:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 264 seconds)
+[09:11:00] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:13:33] *** Joins: f10 (~flo@ )
+[09:13:46] *** Joins: f10_ (~flo@ )
+[09:27:26] <zetok> :D
+[09:30:20] <SkyzohKey> x)
+[09:30:38] <SkyzohKey> zetok: https://github.com/SkyzohKey/toxcore/commits/docs-multi-device?author=SkyzohKey
+[09:30:50] <SkyzohKey> forward that to tux3 when he get online plz, i want opinions
+[09:31:07] <SkyzohKey> (cuz i'll probably be afk when he'll get online)
+[09:38:00] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[09:43:04] <zetok> how to name tool for replacing strings in website?
+[09:43:18] <oranges> sterminator 
+[09:43:20] <oranges> string terminator
+[09:43:36] <zetok> good one :D
+[09:43:42] <zetok> thanks
+[09:43:59] <SkyzohKey> sed ?
+[09:47:30] <zetok> >Compiling sterminator v0.1.0
+[09:47:31] <zetok> :3
+[09:48:02] <zetok> soon™ qTox's website will gain a new dep that'll do what pystache couldn't
+[10:02:52] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[10:08:11] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[10:10:24] *** Joins: abbat (~abbat@ )
+[10:10:44] <SkyzohKey> just use twig ?
+[10:11:17] <zetok> >PHP templating engine with syntax similar to Django
+[10:11:22] <zetok> ↑ this?
+[10:20:10] *** Joins: sudden6 (~anonymous@ )
+[10:23:33] *** Joins: st4ll1 (~st4ll1@ )
+[10:27:43] <zetok> oranges: um, how do you want to be credited in README.md for name?
+[10:28:32] <oranges> nah it's cool
+[10:28:34] <oranges> I'm like a ghost
+[10:28:51] <zetok> don't be like that
+[10:28:55] <zetok> don't refuse the fame
+[10:29:13] <oranges> today you, tomorrow me
+[10:29:52] <zetok> I'll just put "Name thanks to `oranges`."
+[10:30:30] * zetok would prefer something better
+[10:30:52] <zetok> oranges: how about I link to your website?
+[10:31:10] <Rowen_St_> `<oranges> on FreeNode` ?
+[10:31:46] *** Rowen_St_ is now known as Rowen_Stipe
+[10:32:03] <oranges> never do not credit me I am teh invisible hand behind everything
+[10:32:21] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[10:32:36] <Rowen_Stipe> okay Illuminati Representative
+[10:35:03] <zetok> eh, ok
+[10:35:11] <zetok> if you change your mind, please say so
+[10:39:03] <genesis> invisible hand is a troll, i understand more :s
+[11:12:48] *** Quits: josh98 (~josh98@ ) (Ping timeout: 272 seconds)
+[11:16:32] *** Joins: smaragdus (~omoo@ )
+[11:22:16] *** Joins: stvlker (~stvlker@ )
+[11:47:39] <SkyzohKey> >↑ this?
+[11:47:40] <SkyzohKey> yes
+[11:48:21] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[11:56:23] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:56:30] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[12:02:59] *** Joins: SkyzohKey (~skyzohkey@ )
+[12:11:41] *** Joins: f10 (~flo@ )
+[12:13:16] <zetok> SkyzohKey: why would I ever want to use disgusting php?
+[12:13:27] *** Joins: f10_ (~flo@ )
+[12:25:53] <travis-ci> qTox/qTox-Website (64b2af6): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136671620 / Changes: https://github.com/qTox/qTox-Website/commit/64b2af61b71d
+[13:01:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:02:24] *** Quits: dardevelin_ (~dardeveli@ ) (Quit: Leaving)
+[13:02:42] *** Joins: dardevelin (~dardeveli@ )
+[13:11:24] *** Joins: abbat (~abbat@ )
+[14:03:56] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[14:04:57] *** Joins: sudden6 (~anonymous@ )
+[14:44:18] <SkyzohKey> zetok: twig is a templating engine, not only exists in php
+[14:44:40] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:45:13] *** Joins: abbat (~abbat@ )
+[14:45:57] *** Quits: TheVoid (~void@ ) (Ping timeout: 260 seconds)
+[14:47:47] *** Joins: TheVoid (~void@ )
+[14:50:08] *** Joins: f10__ (~flo@ )
+[14:52:24] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:52:36] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[14:53:00] *** Joins: sudden6 (~anonymous@ )
+[14:58:27] <zetok> SkyzohKey: https://github.com/zetok/sterminator ← works for me
+[15:01:25] <sudden6> zetok: how's zetox going?
+[15:01:50] <zetok> slowly forward
+[15:02:14] <zetok> not so much lately, given that I'm mostly getting website's translations into shape
+[15:02:57] <sudden6> mhm, I saw your github history and suspecting you're a bot ^^
+[15:03:21] <zetok> if it's about #qtox logs, then yeah, that's automated
+[15:04:05] <zetok> + there's some other stuff that is automated
+[15:04:07] <zetok> :3
+[15:11:43] <zetok> http://interestingengineering.com/programmer-automates-job-6-years-boss-fires-finds/ ← the hero (except for the waste of time; sadly he deleted his reddit account & post)
+[15:25:30] <sudden6> we should hire him for qTox
+[15:29:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:33:40] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[15:34:22] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[15:52:51] *** Joins: test (1fa4764c@ )
+[15:53:00] *** Quits: test (1fa4764c@ ) (Client Quit)
+[15:53:35] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[16:13:45] *** Joins: f10 (~flo@ )
+[16:22:21] *** Joins: cisc (~cisc@ )
+[16:25:42] <travis-ci> qTox/qTox-Website (64b2af6): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136671620 / Changes: https://github.com/qTox/qTox-Website/commit/64b2af61b71d
+[16:26:08] <zetok> :D
+[16:26:29] <zetok> though it's a bit sad that I had to resort to using musl :f
+[17:07:05] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:07:48] *** Joins: f10 (~flo@ )
+[17:33:48] <travis-ci> qTox/qTox-Website (3948920): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136746571 / Changes: https://github.com/qTox/qTox-Website/compare/64b2af61b71d...3948920dc044
+[17:39:09] *** Joins: f10_ (~flo@ )
+[18:02:18] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[18:05:28] *** Joins: f10_ (~flo@ )
+[18:14:56] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:32:34] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[18:34:07] *** Joins: f10_ (~flo@ )
+[18:34:30] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[19:24:13] *** Joins: abbat (~Anton@ )
+[19:37:17] *** Joins: f10 (~flo@ )
+[19:41:14] <travis-ci> qTox/qTox-Website (60a81b4): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/136780012 / Changes: https://github.com/qTox/qTox-Website/compare/3948920dc044...60a81b4bf4ae
+[19:46:54] <zetok> :3
+[19:56:58] *** Quits: dardevelin (~dardeveli@ ) (Read error: Connection timed out)
+[19:57:31] *** Joins: dardevelin (~dardeveli@ )
+[20:38:35] *** Joins: LittleVulpix|Gho (~Miranda@ )
+[20:41:20] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 250 seconds)
+[22:22:17] *** Quits: abbat (~Anton@ ) (Ping timeout: 250 seconds)
+[22:26:01] *** Joins: abbat (~Anton@ )
+[22:45:26] *** Joins: sudden6 (~anonymous@ )
+[23:42:21] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Remote host closed the connection)
+[23:43:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[23:45:45] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[23:46:19] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[23:46:30] *** Joins: f10_ (~flo@ )
+[23:48:47] *** Joins: f10 (~flo@ )
