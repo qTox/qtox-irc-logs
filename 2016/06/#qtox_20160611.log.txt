@@ -1,0 +1,328 @@
+[00:17:11] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:02:01] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[01:02:12] *** Joins: f10 (~flo@ )
+[01:08:06] *** Joins: f10__ (~flo@ )
+[01:10:12] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:15:27] *** Joins: f10 (~flo@ )
+[01:17:35] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[01:19:59] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:22:05] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[01:25:52] *** Joins: f10 (~flo@ )
+[01:26:23] *** Joins: f10_ (~flo@ )
+[01:38:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[01:40:33] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[01:40:41] *** Joins: SkyzohKey (~skyzohkey@ )
+[01:40:55] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[01:48:43] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[03:52:05] *** Joins: ccsdss (~ray@ )
+[03:52:12] *** Parts: ccsdss (~ray@ ) ()
+[04:11:33] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[08:13:00] *** Joins: tux3 (~tux3@ )
+[08:13:00] *** ChanServ sets mode: +o tux3
+[08:17:58] <zetok> tux3: o/
+[08:18:05] <tux3> hi!
+[08:18:47] <zetok> website's files are ready for weblate, I've sent them request yesterday
+[08:19:12] <zetok> + there are few minor visual changes :)
+[08:20:42] <zetok> https://github.com/qTox/qTox-Website/issues/1 ← what do you think?
+[08:21:18] <tux3> Eeeerhghrh
+[08:25:45] <zetok> btw, it would be nice to post qTox website across internets, but sadly qTox's video is ~broken, so.. :s
+[08:26:15] <zetok> there's PR that fixes most of video problems, but it also introduces a problem
+[08:26:52] <zetok> https://github.com/tux3/qTox/pull/3185
+[08:29:07] *** Joins: in1t3r (~LordShiva@ )
+[08:30:04] <tux3> zetok, yeah the whole VideoFrame and video sending code is a fine piece of intricate locking and threading that could break horribly if you look at it funny
+[08:30:26] <tux3> It's not trivial to fix because of the way toxcore sends us a callback on the wrong thread...
+[08:31:07] <zetok> mm
+[08:31:16] *** Joins: f10_ (~flo@ )
+[08:31:39] <zetok> do you think that users would mind if the video conversation that they think they've ended would still be on?
+[08:33:14] <zetok> as opposed to video not working in the first place
+[08:33:50] *** Joins: f10 (~flo@ )
+[08:40:50] <tux3> No shit they would mind. 
+[08:41:12] <tux3> Some guy might be watching you on video without you knowing about it.
+[08:41:26] <tux3> I will not merge that ever unless this is fixed.
+[08:43:52] <zetok> mm, thought that this would be an issue
+[08:44:32] <zetok> it makes me wonder though – could it be that this bug isn't triggered on master qTox only because video is too broken for it to happen..
+[08:46:09] <tux3> I've tested master's video pretty relentlessly for this kind of things
+[08:46:47] <zetok> ok
+[08:46:59] <zetok> tux3: um, could you then write comment about that in the PR?
+[08:47:19] <tux3> About threading being hard and the horrors we have to do to avoid deadlocking with toxcore?
+[08:47:37] <zetok> >Regarding the timing issue, I too observe some funky behaviour with race conditions from calling. However, I don't think my PR is the source, rather, it uncovered some underlying issue with thread synchronization between CameraSource and ToxAV.
+[08:48:44] <linuxmodder> race conditions  calling what ?
+[08:49:57] <tux3> I'd need more details. It's possible I missed something, but with 60 frames per second CameraSource is already constantly fuzzing the system, so I'd be surprised if this is an old race we just never saw before, and not new code breaking old assumptions
+[08:50:56] *** Joins: sudden6 (~anonymous@ )
+[08:51:41] <zetok> ↑ this would be nice to post in the PR
+[08:52:23] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[08:52:35] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[08:53:52] <linuxmodder> which PR is this?
+[09:23:28] *** Joins: hpanago (uid15586@ )
+[09:29:03] *** Quits: LittleVulpix|Gho (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:29:19] *** Joins: LittleVulpix (~Miranda@ )
+[09:54:25] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[10:46:02] *** Joins: abbat (~Anton@ )
+[10:55:18] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:57:25] <zetok> linuxmodder: http://www.dailywritingtips.com/the-difference-between-eg-and-ie/
+[11:01:56] <linuxmodder> jsut curious what the point of that link was ?  kinda behind on emails atm  
+[11:07:35] <zetok> linuxmodder: you've been getting those wrong, so you might be interested in reading on it
+[11:09:20] <linuxmodder> where have I been getting it wrong and secondly  when the fuck did you become a grammar teacher?
+[11:10:47] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[11:11:31] <zetok> https://github.com/tux3/qTox/wiki/Profile/_compare/67ad280ad99c674347a4ca041c668d0cd534b579...cd264bea41a6c07450ca644e2740599f9c2fdbbd there you go
+[11:17:09] <linuxmodder> so what the fuck is your deal with me mother fucker ?
+[11:17:43] <linuxmodder> you seem to outright hate anything I say or  try to do ...personally you suck balls at anything other than  majorette work
+[11:22:52] <genesis> it seems i confond too (ie/eg)
+[11:23:45] <genesis> zetok : what shoud i use to quote 
+[11:25:42] *** Joins: f10_ (~flo@ )
+[11:27:47] <zetok> linuxmodder: what is your fucking problem?
+[11:28:25] <linuxmodder> you 
+[11:29:03] <zetok> linuxmodder: I've sent you a link that seems to explain something that you are getting wrong, so that you could improve yourself, and you've starting to throw shit?
+[11:29:23] <zetok> s/'ve/'re/
+[11:30:04] <zetok> genesis: the easiest way to remember is `eg – example`
+[11:30:09] <linuxmodder> zetok,  I 'm hardly the only one and the fact of how it came out  implies you are  singling me out  fucker
+[11:30:18] <zetok> genesis: and the other one used to elaborate on stuff ;D
+[11:30:42] <zetok> linuxmodder: you are the only one
+[11:30:53] <genesis> cf for confere works in english ?
+[11:30:54] <linuxmodder> also you seem to be throwing many ideas out lately  for 'why the fuck would i use that shit`  maybe you should learn to use more stuff and be less its all me  punk
+[11:31:15] <linuxmodder> genesis,  in some circles its not as common tho
+[11:31:29] <zetok> genesis: I haven't seen `cf` being used
+[11:31:46] <linuxmodder> case and point ^  genesis 
+[11:31:53] <genesis> i've studied latin at school, but this locution is perharps not used in english, i'll searsh
+[11:32:07] <zetok> linuxmodder: because it is about me
+[11:32:09] <linuxmodder> its more so used in english circles in tech medical or  science papers
+[11:32:25] <linuxmodder> zetok,  no 
+[11:32:31] <zetok> linuxmodder: when someone asks me to invest *my* time, it's very clear to me that I should judge well whether I should spend my time on it
+[11:32:34] <linuxmodder> but think that if it helps you sleep 
+[11:32:57] <genesis> « cf. » or « see »
+[11:32:58] <zetok> generally, there's lots of things that aren't worth spending time on
+[11:33:10] <genesis> so in good english : cf.
+[11:33:20] <linuxmodder> its everyone's time  most of the examples I was alluding to were they wanted to do it  and merely wanted a review
+[11:33:48] <zetok> linuxmodder: I thought that you were speaking about me refusing to use PHP stuff?
+[11:33:49] <linuxmodder> in the more ivy league  english ( aka british english) its more common  genesis 
+[11:34:01] <linuxmodder> that was only one of the times 
+[11:34:19] <linuxmodder> while php is not graceful it has its uses like it or hate it
+[11:34:21] <genesis> `see` in more common so.
+[11:34:45] <zetok> linuxmodder: you mean, not worth spending my time on
+[11:35:05] <linuxmodder> zetok,  again what part of  community  work and review are you not getting 
+[11:35:26] <linuxmodder> it doesn't have to be you ..you just happened to be known and in channel
+[11:35:41] <linuxmodder> that is yet another example of when I say you are hostile 
+[11:35:52] <zetok> linuxmodder: what community work?
+[11:35:55] <linuxmodder> if you don't know or like it  fuck it is how its coming off
+[11:36:06] <zetok> linuxmodder: so far, I've been the only one working on the website
+[11:36:06] <linuxmodder> the entirety of  *tox 
+[11:36:23] *** Joins: f10 (~flo@ )
+[11:36:30] <linuxmodder> zetok,  I have offered but everyone else says ah its not needed its all github linkage
+[11:36:44] <zetok> as soon as someone will start helping with website, I'll start considering their opinion on what I should use for website
+[11:36:52] <linuxmodder> and tbh I NOT gonna  be begging to help you 
+[11:37:08] <linuxmodder> its still github.io right?
+[11:37:15] <linuxmodder> based at least
+[11:37:18] <zetok> it can be hosted anywhere
+[11:37:36] <linuxmodder> rather its github pages based atm yes?
+[11:37:44] <zetok> >everyone else says ah its not needed its all github linkage
+[11:37:54] <zetok> "everyone" can be dumb as hell sometimes
+[11:38:07] <linuxmodder> oranges,  and sudden6 for example have said that numerous times
+[11:38:26] <zetok> I mean, they got the point that hosting on github.io is suboptimal, but didn't get the memo that it can be easily hosted elsewhere
+[11:38:41] <zetok> linuxmodder: haven't seen them saying so
+[11:39:04] <linuxmodder> have you looked at possibly  a  wordpress or  jekyll hosting ?
+[11:39:19] <linuxmodder> self hosted to ensure  security of site
+[11:39:28] <zetok> are you fucking kidding me?
+[11:40:03] <linuxmodder> why?
+[11:40:09] <zetok> how did you fit in wordpress and security into one claim where they're not antagonistic?
+[11:41:04] <zetok> also, you've missed the point where website already exists
+[11:41:40] <linuxmodder> zetok,  which is where then?
+[11:42:01] <zetok> wherever
+[11:42:09] <zetok> there's just no domain
+[11:42:38] <zetok> which hosting on github.io conveniently provides + takes care of managing the servers
+[11:43:59] <zetok> also, the sweet, sweet automatic deployment on push
+[11:45:24] <zetok> linuxmodder: in other words, if there was a domain for qTox, website could be hosted under it
+[11:46:06] <zetok> + someone to manage the server
+[11:46:20] <linuxmodder> zetok,  tbh the auto deploy  seems to have security concerns  if used in default setup 
+[11:46:51] <zetok> like?
+[11:48:07] <linuxmodder> excessively open ports 
+[11:48:27] <linuxmodder> unconfined pushing (it  allows non-ff pushes by default )
+[11:48:55] <linuxmodder> someone new accidentally  force pushes well bye bye  site
+[11:49:00] <zetok> lol
+[12:04:33] <linuxmodder> what you plan to limit by  signed pushes?  fuck half the devs aren't signing with valid  gpg commits atm
+[12:05:15] <linuxmodder> sudden6  for example never has a verified  commit
+[12:05:54] <zetok> lol
+[12:10:16] <linuxmodder> very serious points what's so funny
+[12:18:17] <zetok> well, stuff you've mentioned is mostly irrelevant with the current setup, but on the other hand, if a server was to be used like you've suggested points would apply
+[12:35:18] *** Joins: LittleVulpix (~Miranda@ )
+[12:48:53] *** Joins: f10__ (~flo@ )
+[12:49:37] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[13:26:28] *** Joins: st4ll1 (~st4ll1@ )
+[13:34:20] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[13:45:09] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[14:20:50] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 250 seconds)
+[14:38:41] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[14:52:07] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[14:52:08] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[15:40:44] *** Joins: sudden6 (~anonymous@ )
+[17:01:20] *** Joins: Diadlo (~Diadlo@ )
+[17:02:07] *** Joins: Diadl0 (~Diadlo@ )
+[17:05:28] *** Quits: Diadlo (~Diadlo@ ) (Ping timeout: 250 seconds)
+[17:07:27] <zetok> hm.
+[17:07:35] <sudden6> hey ho
+[17:08:12] <Diadl0> hello
+[17:09:36] <sudden6> <<< official qTox-dev meeting, logs can be found at https://github.com/qTox/qtox-irc-logs >>>
+[17:09:51] <sudden6> well, not many around today tough
+[17:09:57] <zetok> yeah
+[17:10:40] <zetok> so, website's translations are cleaned up, I've sent request to weblate, so hopefully they'll host translations there
+[17:10:58] <sudden6> nice
+[17:11:35] <zetok> I'm wondering about https://github.com/qTox/qTox-Website/issues/1
+[17:11:48] <sudden6> I'll fix the doc PR in a few minutes and then probably push
+[17:11:59] <zetok> ><tux3> Eeeerhghrh
+[17:12:13] <zetok> ↑ that was tux3's response to that issue >.<
+[17:12:32] <zetok> so, I still am not sure what to do :s
+[17:12:48] <sudden6> idk about #1, last I checked bountysource they had 10% of fees, sounds like a ripp-off to me...
+[17:13:15] <zetok> you probably should comment about that on the issue
+[17:16:42] <zetok> btw, I was wondering whether there should be blog made, and if there would be people interested in posting on it
+[17:18:57] <zetok> posting would be as simple as making a PR
+[17:19:47] <sudden6> I think if, people really want to donate something, we should put up BTC addresses of every dev
+[17:20:10] <sudden6> blog, would be overkill IMHO
+[17:20:17] <zetok> why?
+[17:20:31] <zetok> there's no other place to post project updates to
+[17:20:59] <zetok> posting to ML is a cheap work-around, and only handful of people feel comfortable with it
+[17:21:02] <sudden6> I can't really think of enough articles to fill one
+[17:21:11] <Diadl0> I agree with zetok. Blog can be good place to poste some news
+[17:21:35] <sudden6> I know you won't like this, but why don't we put up posts on blog.tox.chat?
+[17:21:38] <Diadl0> *post
+[17:21:56] <zetok> sudden6: sec, it's in logs ;)
+[17:22:45] <zetok> sudden6: https://github.com/qTox/qtox-irc-logs/blob/75d829a2da7d3aad55a12f4e4c2e50ce6bf162f6/2016/06/%23qtox_20160606.log.txt#L23,L25 here you go :)
+[17:23:44] <zetok> as you can see from logs, tox isn't interested in qTox's blog posts
+[17:24:02] <sudden6> mhmm
+[17:24:09] <sudden6> :/
+[17:25:40] *** Joins: f10_ (~flo@ )
+[17:26:00] <zetok> and sorry for not providing more logs for the problems with tox.chat I talk about, but it would seem like asshole move to just drop my logs of stuff with no prior words that stuff is logged :/
+[17:27:40] <zetok> sudden6: dunno, are you still not convinced that blog is needed?
+[17:28:16] <sudden6> I don't need to be convinced, but I see not much possible content
+[17:28:20] <zetok> it's not like it has to be posted to constantly, but once in a while there are things that would be good to announce, and that's where blog would come in handy
+[17:28:30] <sudden6> and a half empty blog is worse than an empty one
+[17:28:52] <zetok> even half empty glass is IMO better than empty glass
+[17:28:56] <sudden6> I would put that stuff on the frontpage of our website
+[17:29:08] <zetok> err
+[17:29:24] <zetok> so, here's the thing with frontpage – it's translated
+[17:29:37] <zetok> and all the stuff on it should be translated
+[17:29:59] <sudden6> a half empty glass is twice as big as it needs to be /smartass off ;)
+[17:30:00] <zetok> as for blog posts – I don't think that it would be a good idea to burden translators with lengthy posts
+[17:30:23] <zetok> + site formatting
+[17:30:54] <zetok> i.e. the most important thing on the website is the download button
+[17:31:00] *** Joins: f10__ (~flo@ )
+[17:31:37] <Diadl0> May be make one page on site like blog?
+[17:32:31] <zetok> Diadl0: um, the idea that I have is to have `Blog` link on front page, that would redirect to `blog/` subdirectory where blog would be located
+[17:33:25] <sudden6> ok, assume we have a blog, who would write stuff?
+[17:35:04] <zetok> anyone who would feel like
+[17:35:21] <zetok> if no one would feel like, I could, but I'm not good at writing stuff
+[17:35:54] <Diadl0> What should be content of the blog? Most important features can be translated and posted on "news page
+[17:36:54] <Diadl0> Changelog is more dev part of qtox
+[17:36:59] <sudden6> hmm, if you really want to do it as "your" project for qTox I won't stand in your way, but I think time is better invested in improving qTox
+[17:39:45] <zetok> the way I see it, there has to be a place where news about stuff related to project could be posted to
+[17:39:45] <Diadl0> sudden6: some peoples want help qtox. They can't wirte the code. Or don't want do any dev thins. But can write blog post if they want
+[17:39:58] <zetok> ↑ :)
+[17:41:15] <sudden6> maybe, I've yet to see someone :)
+[17:42:29] <sudden6> I'm still, not fully convinced this is a good idea, maybe additionally ask some other people?
+[17:43:14] <zetok> well, there were people in the past that wanted to do that sort of stuff, there will be in the future
+[17:43:50] <zetok> question is not "whether", but how to make things as easy as possible for those people to participate
+[17:44:57] <sudden6> Question, how will "non programmer" people react to git and PRs for the blog?
+[17:45:07] <Diadl0> I think, that we can try it. We always can delete it
+[17:45:37] <Diadl0> It can be part of blog UI
+[17:46:09] <Diadl0> "Article request" or something like that
+[17:47:01] <sudden6> ok, let's make a blog and see how it goes
+[17:47:02] <Diadl0> Or email to sending article
+[17:47:17] <sudden6> maybe we can even invent "user stories"
+[17:47:29] <sudden6> where people describe their usage of qTox
+[17:47:41] <sudden6> and experiences (hopefully good)
+[17:47:53] <zetok> sounds great
+[17:48:26] <Diadl0> It may be free style of bug reports :)
+[17:48:33] <zetok> :D
+[17:48:36] <Diadl0> And feature requests
+[17:48:49] <sudden6> I'd rather have conventional bug reports^^
+[17:49:48] <sudden6> Diadl0: did you have time for https://github.com/tux3/qTox/pull/3257 ?
+[17:49:59] <Diadl0> ¯ \ _ (ツ) _ / ¯
+[17:50:11] <Diadl0> Oh..
+[17:50:18] <sudden6> timing xD
+[17:51:21] <zetok> ( ͡° ͜ʖ ͡°)
+[17:51:22] <Diadl0> I am not sure :(
+[17:52:16] <sudden6> not sure about what?
+[17:52:44] <Diadl0> About my time
+[17:52:50] <sudden6> ok
+[17:53:16] <Diadl0> Ok. I try to fix it today
+[17:53:36] <sudden6> :D
+[18:01:51] <sudden6> zetok: do you think it's possible to configure travis to make one check only for commit syntax?
+[18:02:11] <zetok> -.-
+[18:02:14] <sudden6> i.e one instance only checks the commit titles
+[18:02:20] <zetok> ah, this way
+[18:02:45] <zetok> err
+[18:02:54] <zetok> sudden6: but that's the current setup?
+[18:03:11] <zetok> i.e. only Linux one checks commit formatting
+[18:03:27] <zetok> since osx's grep cannot into extended regexp
+[18:03:39] <sudden6> yeah, but I meant decouple the commit formatting from compiling so you get faster results
+[18:03:58] <sudden6> because compiling takes ~10min
+[18:04:10] <zetok> might be doable
+[18:04:33] <zetok> probably doable, but I'd have to check travis docs to make sure
+[18:04:54] <zetok> i.e. what would be needed, is creating a matrix for builds
+[18:04:55] <sudden6> also is there a limit how many travis instances we can have?
+[18:05:14] <sudden6> matrix for builds???
+[18:05:30] * zetok looks his rust projects which spin up 6 travis instances on every push
+[18:05:42] <zetok> I wouldn't worry about number of instances too much
+[18:07:21] <zetok> https://docs.travis-ci.com/user/multi-os/
+[18:07:58] <zetok> actually
+[18:08:23] <zetok> sudden6: would it be better if build failed as soon as check for commit message fails?
+[18:08:57] <sudden6> I also wondered about that, but it may lead to a misinterpretation by the PR maker
+[18:09:31] <sudden6> on the otherside, I think nobody is checking travis logs anyway...
+[18:09:42] * zetok noticed that too :/
+[18:10:32] <sudden6> maybe it will make them check if it fails after a few secs?
+[18:10:59] <zetok> hum
+[18:11:20] <zetok> except that build isn't marked as "failed" as long as there are builds going on
+[18:11:30] <zetok> even if one of instances already failed
+[18:12:17] <sudden6> maybe we should chain it: commit check -> linux build -> osx build
+[18:12:32] <sudden6> if one fails the others aren't even started
+[18:12:39] <zetok> that's probably not doable :f
+[18:12:49] <zetok> unless you'd use custom thing for it
+[18:12:53] <sudden6> -_-
+[18:13:33] <sudden6> we should write travis makers for this feature, would greatly reduce their server load^^
+[18:20:28] <zetok> https://github.com/travis-ci/travis-ci
+[18:20:38] <zetok> dunno, perhaps they have an issue for it
+[18:32:17] *** Joins: Chiitoo (~Chiitoo@ )
+[18:32:17] <sudden6> anybody still has questions to ask?
+[18:43:55] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 272 seconds)
+[18:46:28] *** Joins: Diadlo (~Diadlo@ )
+[18:47:07] *** Quits: Diadlo (~Diadlo@ ) (Client Quit)
+[18:48:19] <sudden6> <<< official qTox-dev meeting ended, logs can be found at https://github.com/qTox/qtox-irc-logs >>>
+[19:26:13] *** Quits: GGMethos (~methos@ ) (Quit: WeeChat 1.1.1)
+[19:42:03] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vonkB
+[19:42:04] -qtox-git-spam- qTox/master b4df3c8 Colomban Wendling: fix(video): fix video resolution setting...
+[19:42:04] -qtox-git-spam- qTox/master ed886f8 sudden6: Merge pull request #3371...
+[20:01:04] -qtox-git-spam- [qTox] sudden6 closed pull request #3365: fix(widget): memory issues (master...master) https://git.io/vomOX
+[20:04:59] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 272 seconds)
+[20:33:33] <linuxmodder> the usr/....include needed is waht path again 
+[20:33:42] <linuxmodder> in qtox.pro
+[20:48:01] -qtox-git-spam- [qTox] b4n opened pull request #3375: feat(video): add setting for 120p very-low-res video (master...video/prefs/extra-lower-res) https://git.io/vontC
+[20:50:50] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[20:53:31] *** Joins: abbat (~Anton@ )
+[20:56:47] -qtox-git-spam- [qTox] b4n opened pull request #3376: fix(video): do not list the same mode twice (master...video/prefs/no-duplicate-modes) https://git.io/vont5
+[20:58:17] *** Joins: Chiitoo (~Chiitoo@ )
+[21:19:08] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[21:19:08] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[21:50:52] *** Joins: dardevelin (~dardeveli@ )
+[21:56:18] *** Joins: tux3 (~tux3@ )
+[21:56:18] *** ChanServ sets mode: +o tux3
+[21:58:59] *** Joins: f10_ (~flo@ )
+[22:15:36] *** Joins: f10__ (~flo@ )
+[22:42:16] *** Joins: peace (cc664af8@ )
+[22:42:39] *** peace is now known as Guest22517
+[22:47:45] *** Joins: pea_ (cc664af8@ )
+[22:47:50] <pea_> hey
+[22:48:08] <pea_> habee 
+[22:48:14] <pea_> have a question
+[22:48:56] *** Quits: Guest22517 (cc664af8@ ) (Ping timeout: 250 seconds)
+[22:49:07] *** Quits: pea_ (cc664af8@ ) (Client Quit)
+[23:17:07] <zetok> uh, almost forgot
+[23:17:31] <zetok> [09:30:38] <SkyzohKey> zetok: https://github.com/SkyzohKey/toxcore/commits/docs-multi-device?author=SkyzohKey
+[23:17:31] <zetok> [09:30:50] <SkyzohKey> forward that to tux3 when he get online plz, i want opinions
+[23:17:37] <zetok> tux3: ↑
+[23:17:41] <tux3> Thanks
+[23:18:04] <sudden6> late night qTox meeting?^^
+[23:18:12] <zetok> night ;)
+[23:18:48] <tux3> Well grayhatter's comments are pretty much spot on so I have nothing to add, LGTM
+[23:36:27] -qtox-git-spam- [qTox] sudden6 pushed  new commits to master: https://git.io/vonZe
+[23:36:27] -qtox-git-spam- qTox/master 97f95e7 Diadlo: feat(capslock): Added caps lock checker
+[23:36:27] -qtox-git-spam- qTox/master cbe8fb8 Diadlo: feat(loginform): Added caps lock indicator to newPass
+[23:36:27] -qtox-git-spam- qTox/master fb7fcaa Diadlo: feat(loginscreen): Created new CapsLockIndicator class
+[23:53:47] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
