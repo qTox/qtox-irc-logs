@@ -1,0 +1,228 @@
+[00:22:53] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[01:08:28] *** Quits: f10__ (~flo@ ) (Quit: Konversation terminated!)
+[01:09:27] *** Joins: f10 (~flo@ )
+[01:15:52] *** Quits: f10 (~flo@ ) (Quit: Konversation terminated!)
+[01:19:44] *** Joins: f10 (~flo@ )
+[01:24:01] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[01:24:15] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[01:27:21] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:27:54] <cisc> there's another place the CapsLock indicator could be added: User Profile > Profile > Set default password
+[03:59:54] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[06:20:11] *** Joins: PafXUS (4fb15443@ )
+[07:01:23] <PafXUS> Hello! Can somebody help me with one thing. I wounder why in qTox code alot of large non POD, non trivial constructed classes, such as Qt types QString, QByteArray, custom types like ToxFile are passed by value and not by const ref? Is there some reason behind this?
+[07:58:58] <zetok> cisc: mind making an issue for it?
+[08:15:27] -qtox-git-spam- [qTox] zetok closed pull request #3367: docs(usermanual): add documentation about new features (master...usermanual_update) https://git.io/vomNc
+[10:16:52] *** Joins: f10_ (~flo@ )
+[10:27:48] *** Joins: f10 (~flo@ )
+[10:45:12] *** Joins: f10__ (~flo@ )
+[10:45:45] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[10:45:47] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[10:46:08] *** Joins: f10 (~flo@ )
+[11:46:37] *** Joins: sudden6 (~anonymous@ )
+[11:48:22] *** Joins: sudd3n6 (~anonymous@ )
+[11:56:45] <PafXUS> Hello! Can somebody help me with one thing. I wounder why in qTox code alot of large non POD, non trivial constructed classes, such as Qt types QString, QByteArray, custom types like ToxFile are passed by value and not by const ref? Is there some reason behind this?
+[11:57:40] <sudden6> PafXUS: I don't think there's a specific reason, besides it is the easiest way to code
+[11:58:15] <sudden6> also I thought nearly all Qt types are passed by reference by default?
+[12:00:59] * zetok wonders about emoticons
+[12:01:33] <PafXUS> what you mean "Qt types are passed by reference by ->Default<-"? 
+[12:03:41] <sudden6> I may be very wrong here, but I thought if I write something like `print(QString abc);` the data of QString isn't copied for the function
+[12:04:04] <sudden6> zetok: what exactly
+[12:04:05] <PafXUS> if you talking about method signatures in Qt types - yes they are wrote that way, so they accept constant references to types they want to use or copy inside, but in qTox codebase - there are alot of places where objects passed by value inside methods
+[12:05:01] <sudden6> can you link to a specific case?
+[12:05:41] <zetok> sudden6: about "better" being an enemy of "good enough" reciprocally
+[12:05:46] <zetok> i.e. the PR
+[12:06:49] <zetok> sudden6: i.e. it's "good enough" to merge, but "better" would be with all stuff "included" and picker "fixed"
+[12:07:33] <zetok> then again, "good enough" works for most people, so chances of picker being fixed if no one really sees a problem are a bit low
+[12:08:00] <zetok> I mean, /eventually/ it would be fixed
+[12:08:02] <zetok> :s
+[12:08:22] <sudden6> now you're talking bussiness ;) of course it would be better, but I think also a small step is a sucess
+[12:09:04] <zetok> well, good enough for merge ;)
+[12:09:49] <zetok> sudden6: oh wait
+[12:10:31] <zetok> actually, nvm
+[12:11:32] <PafXUS> examples are: rawdatabase.h Query constructor, Text.h Constructor (QString by ref, but QFont by value), filetransferwidget.cpp fileTransferRemotePausedUnpaused(ToxFile)
+[12:11:40] <zetok> https://gist.github.com/zetok/794e5383315dd4e0fa0b0ed82dc8c0cf ← something to add/change ?
+[12:13:05] <sudden6> Maybe add: "Contributors present: Diadlo" ?
+[12:13:18] <zetok> um
+[12:13:47] <sudden6> ok, wait
+[12:14:00] <zetok> I'd have to add like most of people present, given that most of them do/did contribute to qTox in one way or another
+[12:14:01] <sudden6> actually this can be seen in the logs
+[12:14:10] <zetok> + ↑ yeah
+[12:14:59] <sudden6> then it's ok for me
+[12:15:04] <zetok> ok
+[12:19:35] <sudden6> PafXUS: I see what you mean now
+[12:20:32] <sudden6> I think it's just that the code didn't get reviewed very toroughly
+[12:21:51] <sudden6> If you think it improves things when using const ref feel free to submit a PR
+[12:22:01] <PafXUS> In my case what question is all about - should i invest my time fixing this problem (i think this IS important) - and will it agreed as PR, or this will be rejected as non-relevant.
+[12:22:43] <PafXUS> Okay, next question - how large should it be? for example - project now have like 500-1000 places where this problem occure, how should i split it?
+[12:25:38] *** Joins: anoadragon (~rainbow@ )
+[12:25:46] <sudden6> PafXUS: maybe start with a small PR under [WIP] tags describing your idea/goal and if everybody agrees, expand it
+[12:26:15] <PafXUS> okay, thanks alot
+[12:26:49] <sudden6> I'd like to hear opinions from more experienced C++ programmers on this tough
+[12:27:55] <zero-ghost> https://www.vice.com/en_uk/read/startup-offers-to-provide-social-media-surveillance-for-landlords-vgtrn
+[12:34:01] <PafXUS> sudden6: For me logic is based upon 2 things, first have nothing to do with Qt, and apply to c++ types in general (I bet Bjarne Stroustrup is expirienced enough): https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-in  ,next thing - okay there is Qt magick world with implicit sharing, if it works nice for this kind of situations, Qt library should pass parameters by value itself all ower the place.Which it don
+[12:36:51] <sudden6> well, I actually meant more experienced than me, which is probably everyone in qTox ;)
+[12:38:11] <PafXUS> okay) i'll choose some part of qTox - and make PR as you suggested
+[12:38:31] <sudden6> ok :)
+[12:39:36] <cisc> better if the problem (if there is one) got fixed now then later down the road..
+[12:42:40] *** Quits: PafXUS (4fb15443@ ) (Ping timeout: 250 seconds)
+[12:55:27] *** Joins: abbat (~Anton@ )
+[12:59:26] <zetok> >tfw gwenview cannot into svg thumbnails
+[12:59:49] <zetok> is there something that can do that?
+[13:01:19] <sudden6> cannot what? zoom? works for me
+[13:01:33] <sudden6> takes some time but works
+[13:02:10] <zetok> no, thumbnails
+[13:02:52] <sudden6> also works for me
+[13:03:17] <zetok> https://a.uguu.se/1wjWL6AH3ykp.png
+[13:03:19] <zetok> :|
+[13:04:45] <zetok> >kipi             : Support for the KDE Image Plugin Interface
+[13:04:47] <zetok> is that it?
+[13:05:10] <zetok> or maybe "raw"
+[13:05:14] <sudden6> https://imgur.com/OJlTz8a
+[13:05:27] <sudden6> Version 16.07.70
+[13:05:50] <zetok> ah
+[13:05:56] * zetok has 15.12.3
+[13:06:10] * sudden6 uses KDE-git ;)
+[13:06:46] * zetok uses Gentoo stable
+[13:07:21] * sudden6 uses openSUSE Tumbleweed
+[13:09:33] <cisc> sudden6: did you get the pam-config update breakage? :)
+[13:09:46] <zetok> >update breakage
+[13:09:48] <zetok> >_>
+[13:09:56] <sudden6> no, never heard of that^^
+[13:10:28] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[13:10:47] <cisc> https://lists.opensuse.org/opensuse-factory/2016-06/msg00165.html
+[13:11:04] <zetok> hm, 16.04.1 also doesn't work
+[13:12:05] <sudden6> lucky me does updates only on friday/saturday^^
+[13:13:11] <cisc> was fairly easy to fix, but left a lot of users not being able to login
+[13:13:18] <cisc> or no network, no sound
+[13:14:24] <zetok> lol
+[13:15:05] <sudden6> no network is always a pain, I usually have to download the fixes over my phone then ...
+[13:21:56] <cisc> you just had to add pam_systemd.so back in /etc/pam.d/common-session-pc and reinstall systemd, once you added that string back in common-session-pc you had network. but if you just ran pam-config --add --systemd and then updated to the fixed snapshot (0607), it creates a common-session-pc.rpmsave file as to not wipe out custom entries in there..
+[13:22:16] *** Joins: f10 (~flo@ )
+[13:22:51] <cisc> I did update on a machine that had xfce and it wasn't affected, other people on KDE were affected so..yeah
+[13:23:09] <zetok> you know, system that completely breaks because of updates is laughable
+[13:23:47] * sudden6 looks at svgs in thumbnails
+[13:23:49] <cisc> It can happen with any system, does and will, just a matter of time
+[13:24:29] <cisc> but looks as though they've added some new OpenQA checks to simulate a full snapshot upgrade so that technically shouldn't happen again
+[13:25:08] *** Joins: f10_ (~flo@ )
+[13:25:08] <zetok> as if
+[13:25:43] <zetok> sudden6: can't help that kde5 is broken, but my system doesn't break so badly because of mere update
+[13:25:53] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[13:26:39] <cisc> that much is true, Plasma 5 was released as not even Alpha software
+[13:26:56] <sudden6> I break my system much more often than updates do, so I don't really care
+[13:27:06] <zetok> ah, scratch it, someone else can go through 1.8k svgs without thumbnails
+[13:27:21] <sudden6> what do you want from the svgs?
+[13:27:39] <zetok> look at them
+[13:27:59] <sudden6> and then? ;)
+[13:28:15] <zetok> if I like what I see, merge
+[13:28:35] <sudden6> http://emojione.com/releases/
+[13:28:40] <sudden6> there you go
+[13:28:47] <zetok> >_>
+[13:30:33] <zetok> that's not what I have locally
+[13:30:41] <sudden6> I'm still waiting for an emoji gender modificator and the ensuing rage
+[13:30:58] <sudden6> huh? I thing I downloaded the 2.2 release
+[13:32:20] *** Quits: genesis (~genesis@ ) (Remote host closed the connection)
+[13:36:44] <sudden6> zetok: http://emojione.com/ scroll down, there are the ones I used
+[13:38:29] <zetok> sudden6: the problem is that it tells me nothing of what I have locally
+[13:38:54] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[13:40:06] <sudden6> compile branch and look at it?
+[13:40:15] <zetok> and it doesn't look like there's anything other than gwenview that is supposed to support both svg & thumbnails
+[13:40:36] <zetok> as you know, not all emoticons are shown
+[13:42:00] <sudden6> get some svg to png converter and look at pngs with gwenview?
+[13:42:48] *** Joins: f10_ (~flo@ )
+[13:43:01] <cisc> imagemagick will do it
+[13:43:41] <oranges> imagetragic
+[13:43:55] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[13:45:36] *** Joins: f10 (~flo@ )
+[13:47:32] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[13:50:18] <cisc> for f in *.tiff; do  echo "Converting $f"; convert "$f"  "$(basename "$f" .tiff).png"; done
+[13:50:21] <cisc> not sure that will work..
+[13:54:16] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[14:14:08] <linuxmodder> that would change names nto attributes cisc 
+[14:14:34] <linuxmodder> if your viewer  blindly uses extensions for associations sure it MIGHT
+[14:15:26] *** Joins: f10 (~flo@ )
+[14:16:44] <cisc> no, the convert command is part of imagemagick
+[14:42:48] <zetok> sudden6: if that's good, just rebase it on master, push to PR, and merge --ff-only
+[14:45:17] *** Joins: stvlker (~stvlker@ )
+[14:49:52] <sudden6> zetok: ok
+[14:51:53] *** Joins: in1t3r (~LordShiva@ )
+[14:52:39] -qtox-git-spam- [qTox] antis81 opened pull request #3380: fix some serious type conversion warnings in settings (master...refactor/settings) https://git.io/vonXP
+[14:53:31] -qtox-git-spam- [qTox] Twyz opened pull request #3381: Update italian translation (master...Twyz-patch-1) https://git.io/vonX1
+[14:54:32] -qtox-git-spam- [qTox] sudden6 closed pull request #3364: feat(smileys): add emojione emoji-pack and make it the default (master...new_emoji) https://git.io/voLig
+[15:51:11] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:59:44] *** Joins: f10 (~flo@ )
+[15:59:56] *** Joins: f10_ (~flo@ )
+[16:09:35] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[16:12:00] <zetok> sudden6: https://github.com/tux3/qTox/pull/3366 ?
+[16:48:42] <sudden6> will be merged with the next batch
+[16:50:52] <zetok> :D
+[16:55:41] <sudden6> how came qTox now has a four digit version number?^^
+[16:56:14] <zetok> there was needed tag for osx release
+[16:58:06] <zetok> and since no code in qTox itself was changed IMO 1.4.2 wouldn't be a good thing
+[16:59:30] <cisc> so since Ubuntu is a piece of trash the qTox window doesn't show up
+[16:59:39] <zetok> :D
+[16:59:55] <zetok> cisc: we've just talked about sudden6 merging PR that would work around it :D
+[17:01:16] <cisc> well I wanted two ways all along to open qTox
+[17:01:48] <cisc> looks like Ubuntu users will have only 1 for the time being though, after the PR gets merged
+[17:01:57] <cisc> (from the tray)
+[17:02:52] <zetok> um, mind reminding what was the other one?
+[17:03:45] <cisc> left-clicking on the tray icon opens it on KDE for me
+[17:04:58] <sudden6> zetok: I'd still prefer to stick to three digits, even if nothing really changed
+[17:05:43] <sudden6> cisc: did you try on newest Ubuntu? I tested it there with Unity and it worked normally, older versions not so much
+[17:06:22] <cisc> sudden6: no.. not yet
+[17:06:30] <zetok> sudden6: would "bugfix" release really be good to be used for something that doesn't even touch qTox code?
+[17:08:05] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[17:11:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[17:21:12] *** Joins: f10 (~flo@ )
+[17:23:35] *** Joins: f10_ (~flo@ )
+[17:30:01] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[19:15:10] *** Joins: PafXUS (2ea6baf6@ )
+[19:17:31] *** Joins: f10_ (~flo@ )
+[19:24:04] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[19:28:40] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[19:29:23] *** Joins: LittleVulpix (~Miranda@ )
+[20:01:52] *** Joins: vindelschtuffen (~vindelsch@ )
+[20:27:02] *** Joins: Chiitoo (~Chiitoo@ )
+[20:33:06] *** Joins: abbat_ (~Anton@ )
+[20:34:33] *** Quits: abbat (~Anton@ ) (Ping timeout: 240 seconds)
+[21:05:51] *** Joins: f10_ (~flo@ )
+[21:13:52] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[21:19:10] -qtox-git-spam- [qTox] sudden6 closed pull request #3375: feat(video): add setting for 120p very-low-res video (master...video/prefs/extra-lower-res) https://git.io/vontC
+[21:20:30] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vonxO
+[21:20:30] -qtox-git-spam- qTox/master 03c3923 Colomban Wendling: fix(video): do not list the same mode twice...
+[21:20:30] -qtox-git-spam- qTox/master f74ba91 sudden6: Merge pull request #3376...
+[21:29:19] *** Quits: PafXUS (2ea6baf6@ ) (Quit: Page closed)
+[21:31:22] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vonxX
+[21:31:22] -qtox-git-spam- qTox/master a851a5b sudden6: feat(systemtray): add "Show" action to context menu...
+[21:32:06] -qtox-git-spam- [qTox] sudden6 closed pull request #3366: feat(systemtray): add "Show" action to context menu (master...unity_tray_activate2) https://git.io/vomyX
+[21:44:18] *** Joins: f10_ (~flo@ )
+[21:44:32] <zetok> sudd3n6: btw, pushing commit to PR first closes PR automatically when it gets pushed to master
+[21:45:10] <sudd3n6> I know, just forgot
+[21:45:22] <sudd3n6> also it seems to work the other way round too
+[21:45:32] <zetok> hmm
+[21:45:32] <sudd3n6> or did you close the PR?
+[21:45:35] <zetok> nah
+[21:45:43] <sudd3n6> me neither :)
+[21:45:49] <zetok> >.<
+[21:45:51] <zetok> magic
+[21:46:16] <sudd3n6> good programming on GH side I guess
+[21:51:09] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[21:57:35] *** Joins: dardevelin (~dardeveli@ )
+[21:58:36] *** Quits: dardevelin (~dardeveli@ ) (Remote host closed the connection)
+[21:59:38] *** Joins: dardevelin (~dardeveli@ )
+[22:04:18] *** Joins: f10__ (~flo@ )
+[22:04:28] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[22:09:57] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[22:13:09] *** Joins: f10_ (~flo@ )
+[22:17:31] *** Joins: f10__ (~flo@ )
+[22:19:00] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[22:37:31] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[22:41:39] *** Joins: f10_ (~flo@ )
+[22:53:58] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:57:58] *** Joins: rkzzy (~ishhh@ )
+[23:12:33] -qtox-git-spam- [qTox] b4n opened pull request #3383: fix(capslockindicator): fix altering the line edit height (master...widget/capslockindicator/fix-height) https://git.io/voceH
+[23:18:19] *** Quits: rkzzy (~ishhh@ ) (Remote host closed the connection)
+[23:24:56] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:31:02] <zetok> SkyzohKey: what chars do you use for what which text formatting?
+[23:31:12] <zetok> (do you have some doc?)
+[23:34:37] *** Joins: LittleVulpix|Gho (~Miranda@ )
+[23:36:33] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 240 seconds)
