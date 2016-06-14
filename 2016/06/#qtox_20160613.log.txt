@@ -1,0 +1,153 @@
+[00:05:22] *** Quits: LittleVulpix|Gho (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:09:28] <linuxmodder> so anyone else seeing  33445 over http on recent builds?
+[00:11:34] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[00:15:15] *** Joins: f10_ (~flo@ )
+[01:02:29] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[01:02:51] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[01:29:00] <SkyzohKey> zetok: Yeah ofc, i have these: http://i.imgur.com/RxfliqE.png
+[01:41:58] *** Quits: abbat_ (~Anton@ ) (Remote host closed the connection)
+[04:00:42] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:30:29] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[08:00:42] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:17:27] *** Joins: LittleVulpix (~Miranda@ )
+[08:20:44] *** Joins: f10 (~flo@ )
+[08:27:38] *** Joins: cisc (~cisc@ )
+[08:31:27] *** Joins: f10_ (~flo@ )
+[08:38:44] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:46:07] *** Joins: cisc (~cisc@ )
+[09:22:50] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[09:23:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[09:42:28] *** Joins: f10 (~flo@ )
+[09:45:29] *** Joins: f10_ (~flo@ )
+[10:29:59] *** Joins: abbat (~Anton@ )
+[11:04:06] *** Joins: Chiitoo (~Chiitoo@ )
+[11:04:27] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[11:24:10] *** Quits: TheVoid (~void@ ) (Ping timeout: 260 seconds)
+[11:25:14] *** Joins: TheVoid (~void@ )
+[11:32:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[11:32:37] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:00:38] *** Joins: st4ll1 (~st4ll1@ )
+[12:01:01] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:02:46] *** Joins: Chiitoo (~Chiitoo@ )
+[12:45:27] *** Quits: anoadragon (~rainbow@ ) (Ping timeout: 258 seconds)
+[12:48:21] *** Joins: genesis (~genesis@ )
+[13:06:36] -qtox-git-spam- [qTox] Twyz closed pull request #3381: Update italian translation (master...Twyz-patch-1) https://git.io/vonX1
+[13:33:01] *** Joins: sudd3n6 (~anonymous@ )
+[13:40:22] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[13:49:25] *** Joins: f10 (~flo@ )
+[13:49:48] -qtox-git-spam- [qTox] Twyz opened pull request #3385: feat(l10n): update Italian translation (master...Twyz-patch-1) https://git.io/vocAT
+[13:51:41] <zetok> sudd3n6: apparently for some people travis logs don't load
+[13:51:46] <zetok> :/
+[13:52:55] <zetok> :|
+[13:53:54] <zetok> btw, is wiki page with a name "Crappy antiviruses" still too blunt?
+[13:58:49] *** Joins: f10_ (~flo@ )
+[13:59:49] <sudd3n6> zetok: maybe a browser issue?
+[14:00:24] <sudd3n6> "Crappy antiviruses" may be right, I still wouldn't word it that way...
+[14:00:34] <zetok> :s
+[14:00:36] <zetok> https://github.com/tux3/qTox/wiki/Problematic-antiviruses
+[14:01:35] *** Quits: Nean (~elouin@ ) (Remote host closed the connection)
+[14:05:45] <sudd3n6> seems ok
+[14:06:07] <sudd3n6> tough I wonder why qTox gets so many false positives
+[14:06:15] *** sudd3n6 is now known as sudden6
+[14:08:00] <zetok> p2p, clickbaiting people to report issues on gh, uses encryption & verifies that updates are actually signed – all the reasons to rise red flag
+[14:09:16] <zetok> + it uses a few dirty tricks that play with windows' permission stuff to install & update – antiviruses don't like that
+[14:23:28] <zetok> oh wait
+[14:29:27] *** Joins: dardevelin (~dardeveli@ )
+[14:36:51] <zetok> …
+[14:37:01] <zetok> >tfw konsole just killed itself
+[14:40:20] <zetok> >kernel: konsole[2452]: segfault at 5598af5f82de ip 00007fb0b5521420 sp 00007ffeed556500 error 4 in libkonsoleprivate.so.15.12.3[7fb0b5458000+12e000]
+[14:40:33] * zetok goes back to xfce4-terminal
+[14:46:10] *** Joins: stvlker (~stvlker@ )
+[14:47:45] <sudden6> gentoo -> unstable ;P
+[14:47:56] <zetok> nah, that's just konsole being broken
+[14:48:25] <zetok> I had hopes, since they at least seemed to have fixed the scrolling regression bug
+[14:59:14] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[15:03:26] *** Joins: dardevelin (~dardeveli@ )
+[15:08:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[15:17:41] <zetok> sudden6: how did "Show" turn into "Activate" ?
+[15:19:16] *** Joins: lugaboi_dat (4d165e92@ )
+[15:19:25] <lugaboi_dat> hex ^^
+[15:22:49] <sudden6> zetok: git branch mixup -_-
+[15:23:27] * sudden6 notes not to use 2 suffix for branch names
+[15:23:52] <zetok> >.<
+[15:24:14] <zetok> yeah, don't take example from me
+[15:24:34] <genesis> < xfce4-terminal
+[15:24:40] <lugaboi_dat> hello zetok
+[15:24:45] <zetok> hai lugaboi_dat
+[15:25:16] <lugaboi_dat> any new information about the portable topic?
+[15:29:46] <sudden6> zetok: should I --amend?
+[15:29:54] <zetok> sudden6: no
+[15:30:07] <sudden6> ok new commit then
+[15:30:35] <zetok> lugaboi_dat: I haven't heard anything new
+[15:30:55] <lugaboi_dat> ok, and else some news?
+[15:31:09] <zetok> lugaboi_dat: do you know languages?
+[15:31:34] <lugaboi_dat> languages itself ...yes
+[15:32:15] <zetok> lugaboi_dat: mind helping with https://hosted.weblate.org/projects/tox/qtox/ ?
+[15:35:43] <zetok> >_>
+[15:35:48] <zetok> we have a problem
+[15:36:56] <zetok> I'm unable to open contact in qTox, and that's happening on master(!)
+[15:39:17] <lugaboi_dat> im done translating in german
+[15:40:26] <zetok> lugaboi_dat: um, suggestions aren't actually used when compiling qTox
+[15:40:40] <zetok> and thanks :)
+[15:41:08] <lugaboi_dat> sure... i saw... you have a problem?
+[15:48:06] <sudden6> zetok: fixed
+[15:48:14] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/voCmj
+[15:48:14] -qtox-git-spam- qTox/master 6173199 sudden6: fix(widget): rename "Activate" to "Show"
+[15:48:25] <zetok> sudden6: thanks
+[16:09:18] <zetok> lugaboi_dat: https://github.com/tux3/qTox/issues/3386
+[16:11:08] <lugaboi_dat> ah, you are one of thease i3 fans, now i can categorize you ^^
+[16:13:59] <zetok> I'm afraid that I don't have wind affinity
+[16:18:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[16:19:52] <lugaboi_dat> wind affinity? whats that?
+[16:28:56] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[16:29:40] <zetok> http://naruto.wikia.com/wiki/Wind_Release ← slightly touches on the topic
+[16:30:09] <lugaboi_dat> ah
+[16:34:29] *** Joins: f10_ (~flo@ )
+[16:35:46] <lugaboi_dat> i never used i3, why is it so special?
+[16:36:14] <zetok> it works
+[16:37:06] <zetok> + it helps get the job done
+[16:44:12] <nurupo> kde5 was a bit crashy for me too when i tried it earlier this year :\
+[16:44:27] <genesis> try lxqt
+[16:46:46] <lugaboi_dat> i am using unity, happily
+[16:50:39] <lugaboi_dat> it also works and helps the job done... but i think the difference is how all this DEs are dooing it ^^
+[16:51:47] <zetok> >it also works and helps the job done
+[16:51:48] <zetok> nope
+[16:51:55] <zetok> and that's the real difference
+[16:57:27] <lugaboi_dat> i just saw salad fingers.....
+[16:57:43] <lugaboi_dat> its too ..... idk
+[17:19:12] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[17:37:05] *** Quits: lugaboi_dat (4d165e92@ ) (Quit: Page closed)
+[17:58:00] *** Joins: dardevelin (~dardeveli@ )
+[18:08:56] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[18:33:13] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[18:33:31] *** Joins: f10_ (~flo@ )
+[18:44:00] *** Joins: f10__ (~flo@ )
+[18:45:14] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[18:51:09] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[19:54:05] *** Joins: sudden6 (~anonymous@ )
+[20:01:00] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:03:52] *** Joins: Chiitoo (~Chiitoo@ )
+[20:07:24] *** Joins: f10 (~flo@ )
+[20:08:40] *** Joins: anoadragon (~rainbow@ )
+[20:17:01] *** Quits: anoadragon (~rainbow@ ) (Ping timeout: 240 seconds)
+[21:01:27] *** Joins: abbat (~Anton@ )
+[21:32:09] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:33:23] *** Joins: f10 (~flo@ )
+[21:55:23] -qtox-git-spam- [qTox] zetok pushed 3 new commits to master: https://git.io/voWY5
+[21:55:23] -qtox-git-spam- qTox/master e7089a3 Twyz™: feat(l10n): update Italian translation
+[21:55:23] -qtox-git-spam- qTox/master 7d308f9 Twyz™: feat(l10n): update Italian translation
+[21:55:23] -qtox-git-spam- qTox/master d0743a5 Zetok Zalbavar: Merge pull request #3385...
+[22:18:03] -qtox-git-spam- [qTox] a68366 opened pull request #3388: fix(widget): properly open chat window (master...issue3386) https://git.io/voWGS
+[22:30:07] -qtox-git-spam- [qTox] zetok opened pull request #3389: Update translations from weblate (master...tr) https://git.io/voWna
+[22:42:03] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[22:48:12] -qtox-git-spam- [qTox] zetok closed pull request #3389: Update translations from weblate (master...tr) https://git.io/voWna
+[22:49:39] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/voWlq
+[22:49:39] -qtox-git-spam- qTox/master c17c340 a68366: fix(widget): properly open chat window...
+[22:49:39] -qtox-git-spam- qTox/master eb743b4 Zetok Zalbavar: Merge pull request #3388...
+[23:08:15] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[23:08:22] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[23:08:59] *** Joins: f10 (~flo@ )
+[23:09:00] *** Joins: f10__ (~flo@ )
+[23:50:23] *** Joins: abbat_ (~Anton@ )
+[23:53:00] *** Quits: abbat (~Anton@ ) (Ping timeout: 240 seconds)
+[23:55:57] *** Quits: abbat_ (~Anton@ ) (Remote host closed the connection)
