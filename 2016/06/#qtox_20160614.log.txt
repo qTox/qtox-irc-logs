@@ -1,0 +1,130 @@
+[00:07:57] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[00:29:43] -qtox-git-spam- [qTox] b4n opened pull request #3390: Fix SystemTrayIcon GTK implementation critical warning (master...widget/systemtrayicon/fix-initial-gtk-icon) https://git.io/voWwO
+[00:44:13] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[00:46:16] *** Joins: f10__ (~flo@ )
+[01:00:58] *** Quits: f10__ (~flo@ ) (Ping timeout: 252 seconds)
+[01:29:59] *** Quits: Dragofix (Dragofix@ ) (Quit: Game over. Continue?)
+[01:36:24] *** Joins: Dragofix (Dragofix@ )
+[04:01:04] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:03:44] *** Joins: Chiitoo (~Chiitoo@ )
+[05:27:09] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[05:33:59] *** Joins: cisc (~cisc@ )
+[05:38:10] *** Joins: anoadragon (~rainbow@ )
+[06:48:00] *** Joins: f10__ (~flo@ )
+[07:35:43] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 272 seconds)
+[07:43:39] *** Quits: anoadragon (~rainbow@ ) (Remote host closed the connection)
+[08:15:21] *** Joins: abbat (~Anton@ )
+[08:32:37] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:33:15] *** Joins: LittleVulpix (~Miranda@ )
+[09:04:28] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:07:50] *** Joins: ccsdss (~ray@ )
+[09:07:53] *** Parts: ccsdss (~ray@ ) ()
+[09:23:47] *** Quits: Se7en (~Se7en@ ) (Ping timeout: 260 seconds)
+[09:36:59] *** Quits: f10__ (~flo@ ) (Ping timeout: 244 seconds)
+[09:37:12] *** Joins: f10__ (~flo@ )
+[10:02:14] *** Joins: sudden6 (~anonymous@ )
+[10:06:34] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[10:08:00] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[10:08:26] *** Joins: f10__ (~flo@ )
+[10:21:50] *** Joins: abbat (~abbat@ )
+[10:24:11] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[10:28:49] *** Joins: f10_ (~flo@ )
+[10:38:59] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[10:39:14] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[10:40:05] *** Joins: f10 (~flo@ )
+[10:40:23] *** Joins: sudden6 (~anonymous@ )
+[10:42:21] *** Joins: f10_ (~flo@ )
+[10:49:52] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[10:54:05] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:23:22] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[11:23:37] *** Joins: abbat (~abbat@ )
+[12:01:26] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:01:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[12:23:57] *** Joins: f10 (~flo@ )
+[12:27:01] *** Joins: f10_ (~flo@ )
+[12:33:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[12:33:23] *** Joins: f10_ (~flo@ )
+[12:38:26] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:40:31] *** Joins: sudden6 (~anonymous@ )
+[12:43:53] *** Joins: Chiitoo (~Chiitoo@ )
+[12:46:07] *** Joins: f10 (~flo@ )
+[13:23:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:27:53] *** Joins: abbat (~abbat@ )
+[13:43:15] *** Joins: stvlker (~stvlker@ )
+[14:02:46] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:10:21] *** Joins: f10_ (~flo@ )
+[14:19:48] *** Quits: sudden6 (~anonymous@ ) (Read error: Connection reset by peer)
+[14:19:54] *** Joins: sudd3n6 (~anonymous@ )
+[14:32:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:36:28] *** Joins: abbat (~abbat@ )
+[14:44:21] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[15:20:31] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[16:50:58] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:56:02] *** Joins: f10 (~flo@ )
+[16:57:28] *** Joins: f10_ (~flo@ )
+[17:05:51] *** Joins: f10__ (~flo@ )
+[17:07:03] *** Quits: f10_ (~flo@ ) (Ping timeout: 264 seconds)
+[17:16:23] *** Joins: vindelschtuffen (~vindelsch@ )
+[17:20:33] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[17:43:33] *** Joins: smaragdus (~omoo@ )
+[18:09:33] *** Joins: dardevelin (~dardeveli@ )
+[18:34:16] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:37:32] *** Joins: LittleVulpix (~Miranda@ )
+[18:51:28] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:52:17] *** Joins: LittleVulpix (~Miranda@ )
+[19:27:42] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[19:28:26] *** Joins: f10 (~flo@ )
+[19:38:00] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:51:19] *** Joins: pie_ (bc8f2a63@ )
+[19:57:48] *** Quits: pie_ (bc8f2a63@ ) (Quit: Page closed)
+[20:01:45] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:07:55] *** Joins: Chiitoo (~Chiitoo@ )
+[20:15:54] *** Joins: Sam____ (587d2b5e@ )
+[20:16:05] <Sam____> Hello everyone
+[20:17:33] <zetok> hi Sam____
+[20:17:43] <Sam____> o/
+[20:18:45] <Sam____> I'm a new user of qTox - just installed it today
+[20:19:24] <Sam____> (I'm getting really fed up with all MS bullshit, if you see what I mean) ;)
+[20:19:41] * zetok gets
+[20:19:48] <Sam____> Everything works fine so far
+[20:19:57] <zetok> that's great to hear :)
+[20:20:50] <Sam____> But I would like to make some proposals somewhere. Because yeah, the next step for me is to convince people around to use qTox
+[20:21:27] <zetok> mm
+[20:22:13] <Sam____> And there's like 2-3 things that could help people installing it and using it. It's only a proposal, of course. I put the subject on the table, and if some people doesn't disagree with me, maybe there are (good)things to do
+[20:23:06] <Sam____> I've seen some "issues topics" on github, but I don't know if this is where I should do those proposals... ? :3
+[20:23:35] <zetok> probably
+[20:23:58] <zetok> i.e. if it's about qTox itself, then yes
+[20:24:09] <zetok> if it's about tox.chat repo, then no
+[20:24:11] <Sam____> It's about qTox itself
+[20:25:00] <Sam____> As I have a bunch of ideas, should I open 1 issue topic per idea, or can I put all the ideas in only 1 topic (like a general feedback) ?
+[20:25:32] <zetok> note that you might want to do a quick search to see if someone could have proposed something like your ideas already :)
+[20:25:38] <zetok> that depends
+[20:25:45] <Sam____> Yep, I started to do that ;)
+[20:25:56] <zetok> generally, you'd want to put things in separate issues
+[20:26:14] <Sam____> That's okay
+[20:26:24] <zetok> though sometimes when functionality depends on other things you might want to group it
+[20:27:15] <Sam____> Hum... yeah, I see what you mean... To tell the truth, I don't even know if what I want to propose is technically possible, so...
+[20:27:27] <Sam____> Well, I'm gonna give a try. Thank you for the advices
+[20:27:33] <zetok> you're welcome :)
+[20:27:48] <Sam____> And thank you for your contributions, as I've seen you are a lot engaged into this project ;)
+[20:28:54] <Sam____> Oh, by the way... If it is about not the software, but about qTox website? Where should I put the suggestions? 
+[20:29:12] <zetok> https://github.com/qTox/qTox-Website
+[20:29:34] <Sam____> Yup, but I meant... improvements about the website ;)
+[20:29:40] <zetok> issues there :)
+[20:30:16] <Sam____> Oh, right, my bad. I'm not quite familiar with Github, even if it's not the first project I see there...
+[20:32:48] <zetok> lucky day, eh :P https://xkcd.com/1053/
+[20:42:49] <Sam____> X)
+[20:43:05] <Sam____> Oh, last question
+[20:44:47] <Sam____> is there a special target for the use of qTox? I mean, is is meant to be used by anyone, or is it meant to be used only by people who have an "opensource software" mind?
+[20:46:16] <Sam____> (like Linux comunity, etc.)
+[20:46:29] <zetok> "Security & Ease of Use"
+[20:47:01] <Sam____> Ease of use, okay, it includes anybody who owns a computer
+[20:47:06] <Sam____> It's perfect
+[21:02:04] <Sam____> 1st friend I convince to install the software. I'm writing down all she says to me (the things that should be improved)... 
+[21:02:05] <Sam____> ^^
+[21:02:30] <zetok> mm :)
+[21:03:34] *** Joins: Bleh (~Bleh@ )
+[21:04:22] *** Bleh is now known as se7en
+[21:13:23] *** Joins: abbat (~Anton@ )
+[22:42:14] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[22:43:56] *** Joins: cisc (~cisc@ )
