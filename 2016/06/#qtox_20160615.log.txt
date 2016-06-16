@@ -1,0 +1,188 @@
+[00:18:30] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[00:18:55] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[00:28:34] -qtox-git-spam- [qTox] Diadlo closed pull request #3336: feat(icons): Icons was updated (master...newIcon) https://git.io/vr1FE
+[00:32:19] -qtox-git-spam- [qTox] Diadlo opened pull request #3392: [WIP] Multi screen settings (master...multiScreenSettings) https://git.io/vo4Za
+[00:42:05] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[00:42:27] *** Joins: smaragdus (~omoo@ )
+[00:45:55] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[00:56:38] *** Quits: Sam____ (587d2b5e@ ) (Quit: Page closed)
+[01:07:04] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 272 seconds)
+[01:10:21] *** Joins: dardevelin (~dardeveli@ )
+[01:20:33] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[01:23:28] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[02:02:22] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[02:06:59] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 246 seconds)
+[04:01:44] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:40:41] *** Quits: se7en (~Bleh@ ) (Quit: My ZNC went bye bye!)
+[05:04:37] *** Joins: Se7en (~Bleh@ )
+[08:06:21] *** Joins: abbat (~Anton@ )
+[08:26:19] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:26:40] *** Joins: LittleVulpix (~Miranda@ )
+[09:03:16] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:23:20] *** Joins: f10 (~flo@ )
+[09:24:59] *** Joins: Ssaamm (587d2b5e@ )
+[09:25:10] <Ssaamm> Hello everyone o/
+[09:39:44] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[09:42:34] *** Joins: f10__ (~flo@ )
+[10:09:19] *** Joins: abbat (~abbat@ )
+[10:19:45] *** Joins: Diadlo (~diadlo@ )
+[10:53:32] *** Joins: Chiitoo (~Chiitoo@ )
+[10:54:09] <Ssaamm> By chance, UI stands for User Interface?
+[10:57:25] <zetok> yep
+[11:00:41] <Ssaamm> Thank you ;)
+[11:02:26] <Ssaamm> Hum... before adding a new issue, I have a little question
+[11:03:16] <Ssaamm> I do not know how qTox is built, I don't know its infrastructure, and I can't know by myself as I don't code C/C++/etc.
+[11:04:42] <Ssaamm> But in a vision where the user could personnalize the interface
+[11:05:23] <Ssaamm> Is it complicated to put, for example, background colors as a variable which can be easily change by the user?
+[11:06:07] <Ssaamm> For now, it is possible to choose 5 different backgrounds, but let's imagine a user wants a different tone of blue...
+[11:07:16] <Ssaamm> Would it be technically really difficult to write, according on how the software is currently written, or it's not this difficult and requires only a bit amount of time? :3
+[11:07:23] <Chiitoo> Ssaamm: See for example(s) perhaps https://github.com/tux3/qTox/pull/1882
+[11:08:18] <Ssaamm> Thanks, I'm reading it
+[11:09:42] <Chiitoo> Sadly things are hard-coded currently, so a user needs to change the colours in the code and rebuild qTox to change them, so quite a bit more than a bit of coding needs to be done to make it possible via settings.
+[11:10:05] <Chiitoo> And as can be seen there, lots of effort was already put into it, but it never got merged in the end.
+[11:11:44] <Ssaamm> Hum, I see
+[11:13:35] <Ssaamm> They are talking about CSS
+[11:13:59] <Ssaamm> I didn't know CSS could be used for softwares, I only use it for webpages... Oô
+[11:14:12] <Chiitoo> Hehe.
+[11:15:16] <Chiitoo> Indeed Qt makes use of a similar approach: http://doc.qt.io/qt-4.8/stylesheet.html
+[11:17:35] <Ssaamm> By chance, do you know where are the folders of the different themes? 
+[11:20:19] <Chiitoo> The current ones?  I never actually looked into that (I only changed the hard-coded values), but I believe they make use of the colours in 'style.cpp' ( https://github.com/tux3/qTox/blob/master/src/widget/style.cpp ).  I'm not entirely sure though.
+[11:21:48] <Chiitoo> The css-files are under 'ui' ( https://github.com/tux3/qTox/tree/master/ui ).
+[11:38:12] <Ssaamm> Well... it sucks because I do have some ideas to personnalize qTox... and I don't know HOW to do it 8)
+[11:39:07] <Ssaamm> I've seen a bunch of the css files
+[11:39:21] <Ssaamm> But I don't know to what they are related...
+[11:39:35] <Ssaamm> I'm gonna keep searching 
+[11:57:12] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[12:02:27] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:04:12] *** Joins: f10__ (~flo@ )
+[12:05:35] *** Joins: st4ll1 (~st4ll1@ )
+[12:08:34] *** Joins: f10_ (~flo@ )
+[12:08:54] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[12:14:24] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[12:17:19] *** Joins: f10_ (~flo@ )
+[12:36:56] *** Joins: Chiitoo (~Chiitoo@ )
+[12:38:32] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[12:44:40] *** Joins: f10_ (~flo@ )
+[12:47:02] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[12:51:53] *** Joins: smaragdus (~omoo@ )
+[13:01:33] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[13:01:55] *** Joins: st4ll1 (~st4ll1@ )
+[13:34:32] *** Joins: f10_ (~flo@ )
+[14:17:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:18:44] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[14:21:15] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[14:21:40] *** Joins: abbat (~abbat@ )
+[14:22:05] *** Joins: f10 (~flo@ )
+[14:22:32] *** Joins: f10_ (~flo@ )
+[14:26:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:28:43] *** Joins: abbat (~abbat@ )
+[14:44:38] *** Joins: stvlker (~stvlker@ )
+[15:00:37] *** Joins: f10__ (~flo@ )
+[15:00:54] *** Quits: f10_ (~flo@ ) (Ping timeout: 276 seconds)
+[15:10:04] *** Joins: sudd3n6 (~anonymous@ )
+[15:47:48] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[15:49:50] *** Joins: sudden6 (~anonymous@ )
+[16:37:42] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[16:40:12] *** Joins: f10__ (~flo@ )
+[16:46:09] *** Quits: Ssaamm (587d2b5e@ ) (Quit: Page closed)
+[16:51:28] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[16:52:12] *** Joins: abbat (~abbat@ )
+[16:55:47] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[17:03:00] *** Joins: f10__ (~flo@ )
+[17:10:51] *** Joins: misiek200m (~miskof@ )
+[17:15:13] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[17:15:32] *** Joins: sudden6 (~anonymous@ )
+[17:27:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[17:39:02] *** Joins: sudden6 (~anonymous@ )
+[17:45:21] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[18:26:02] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[18:26:17] *** Joins: abbat (~abbat@ )
+[18:28:28] <cisc> friend on Windows can't send me a file or screenshot to my Linux qtox, it just hangs but I can send them files/screenshots
+[18:28:54] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 258 seconds)
+[18:29:01] <cisc> it will hang, then friend goes offline for a sec, reappears then box turns from green to red
+[18:31:41] <zetok> huh
+[18:31:45] <zetok> when exactly it hangs?
+[18:34:52] <cisc> they send me a screenie and it doesn't even send 1 byte, sits there for 15~ seconds, then friend goes offline & comes back on
+[18:35:42] <zetok> on qTox >= 1.4 ?
+[18:35:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[18:36:18] *** Joins: abbat (~abbat@ )
+[18:43:14] <cisc> 1.2.16
+[18:43:41] <cisc> nm
+[18:44:26] <cisc> my friend is getting mixed up.. its 1.4.1-1
+[18:45:34] <zetok> does your friend mind making an issue?
+[18:47:01] <cisc> ill ask
+[18:47:24] <cisc> strange though b/c this seems to be a new issue, before it was fine
+[18:51:25] <zetok> mm
+[18:54:07] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:59:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:18:47] *** Joins: zetok (~zetok@ )
+[19:22:03] <cisc> VPN is a factor it seems
+[19:22:19] <cisc> but only with 1 person on Windows
+[19:25:20] <zetok> >_>
+[19:25:29] <zetok> how come so?
+[19:29:20] <cisc> 1 min
+[19:29:41] *** Joins: st4ll1 (~st4ll1@ )
+[19:30:33] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:32:16] *** Joins: in1t3r (~LordShiva@ )
+[19:33:46] *** Joins: cisc (~cisc@ )
+[19:46:16] <cisc> 1 person can send me files while on VPN w/o issue on qtox, the other can't. When I drop the VPN they can send files so I don't know if it's qtox or the VPN causing it
+[19:47:45] <cisc> im going to try going over TCP instead
+[19:49:38] <zetok> if it works without vpn, it's vpn
+[19:49:50] <cisc> ok so it's UDP+VPN that doesn't work
+[19:49:59] <cisc> but TCP mode does work
+[19:50:01] <zetok> no, it's your vpn being broken
+[19:50:07] <cisc> lol
+[19:50:25] <cisc> i'll have to find out why
+[19:50:39] <zetok> it cannot into UDP
+[19:51:09] <cisc> then why would Mumble work
+[19:51:19] <zetok> or rather, it starts dropping too many UDP packets when there's more data transfer, which results in what you had
+[19:51:22] <cisc> and voice calls over UDP
+[19:51:31] <cisc> via qtox
+[19:52:04] <cisc> im going to try a different VPN provider now and see
+[19:52:58] <cisc> brb
+[19:53:00] <zetok> with that being said, qTox could make some use of resuming file transfers
+[19:53:01] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:54:00] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[19:54:46] *** Joins: abbat (~abbat@ )
+[19:58:24] *** Joins: cisc (~cisc@ )
+[20:01:23] <cisc> so NM, the VPN provider appears to block UDP port 33445
+[20:01:33] <cisc> wonder why though
+[20:02:30] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:04:36] *** Joins: Chiitoo (~Chiitoo@ )
+[20:11:35] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 244 seconds)
+[20:14:56] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[20:28:36] *** Joins: SkyzohKey (~skyzohkey@ )
+[20:31:35] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[20:31:52] *** Joins: cisc (~cisc@ )
+[20:31:55] *** Joins: vindelschtuffen (~vindelsch@ )
+[20:36:29] *** Quits: cisc (~cisc@ ) (Client Quit)
+[20:40:39] *** Joins: mitfree (~mit@ )
+[21:07:21] *** Joins: VVD (~VVD@ )
+[21:08:05] <VVD> hi
+[21:08:18] <VVD> qtox: /usr/lib/i386-linux-gnu/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by qtox)
+[21:08:31] <VVD> it's Ubuntu 14.04.4 i386
+[21:08:46] <VVD> grep -v ^# /etc/apt/sources.list.d/tox.list
+[21:08:58] <VVD> deb https://pkg.tox.chat/debian nightly release
+[21:09:59] <zetok> VVD: https://github.com/tux3/qTox/issues/3358
+[21:10:03] *** Joins: cisc (~cisc@ )
+[22:09:19] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[22:12:29] *** Joins: f10__ (~flo@ )
+[22:16:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:17:17] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[22:21:47] *** Joins: f10__ (~flo@ )
+[22:27:59] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[22:28:37] *** Joins: f10_ (~flo@ )
+[22:38:00] *** Joins: cisc (~cisc@ )
+[22:47:20] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[22:48:02] *** Joins: f10_ (~flo@ )
+[22:52:03] *** Quits: f10_ (~flo@ ) (Excess Flood)
+[22:52:26] *** Joins: f10_ (~flo@ )
+[22:57:12] <zero-ghost> https://boingboing.net/2016/06/15/intel-x86-processors-ship-with.html
+[23:32:39] *** Joins: abbat (~abbat@ )
+[23:44:26] <VVD> zetok, thanks, it work now
+[23:44:45] <VVD> zero-ghost, old news
+[23:45:21] <zero-ghost> always relevent
+[23:45:39] <zero-ghost> not everyone in the world hears all news at the same time
+[23:45:42] <zero-ghost> and then remembers it all
+[23:46:08] <VVD> :-]
+[23:57:43] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
