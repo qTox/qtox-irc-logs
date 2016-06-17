@@ -1,0 +1,240 @@
+[00:04:19] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:05:42] *** Joins: rysiekpl (~quassel@ )
+[00:11:57] *** Joins: chain` (~BoB@ )
+[00:12:51] *** Joins: f10__ (~flo@ )
+[00:12:55] *** Quits: rysiek|pl (~quassel@ ) (*.net *.split)
+[00:12:58] *** Quits: chain (~BoB@ ) (*.net *.split)
+[00:12:58] *** Quits: Andrew7 (~ziltro@ ) (*.net *.split)
+[00:16:34] *** Joins: f10_ (~flo@ )
+[00:17:43] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[00:19:26] *** Joins: Andrew7 (~ziltro@ )
+[00:21:34] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:22:41] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[00:22:42] *** Joins: f10_ (~flo@ )
+[00:35:16] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[00:47:20] *** Joins: f10__ (~flo@ )
+[00:47:38] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:51:26] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[00:54:24] *** Joins: f10 (~flo@ )
+[01:05:09] *** Joins: f10_ (~flo@ )
+[01:05:21] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[01:17:55] *** Joins: f10 (~flo@ )
+[01:18:42] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[01:28:03] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[02:52:20] *** Quits: f10__ (~flo@ ) (Ping timeout: 244 seconds)
+[02:53:01] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[04:02:31] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[05:12:45] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[05:50:08] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:07:36] *** Joins: cisc (~cisc@ )
+[06:22:56] *** Quits: oranges (oranges@ ) (Quit: leaving)
+[06:40:20] *** Joins: oranges (oranges@ )
+[06:43:38] *** Joins: dardevelin (~dardeveli@ )
+[08:12:39] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:15:15] *** Joins: LittleVulpix (~Miranda@ )
+[08:20:51] *** Joins: st4ll1 (~st4ll1@ )
+[09:45:30] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[09:51:55] *** Joins: abbat (~abbat@ )
+[10:03:52] *** rysiekpl is now known as rysiek|pl
+[10:06:34] *** Joins: f10__ (~flo@ )
+[10:20:26] *** Joins: f10 (~flo@ )
+[10:29:57] *** Joins: smaragdus2 (~omoo@ )
+[10:30:01] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 252 seconds)
+[10:31:01] *** Joins: st4ll1 (~st4ll1@ )
+[10:54:00] *** Joins: Saam (587d2b5e@ )
+[10:54:16] <Saam> Hello everyone ! o/
+[11:08:02] <Saam> I was wondering: can you know how many peopele downloaded qTox & how many people are using it daily?
+[11:08:39] <zetok> simple answer is that I don't
+[11:08:47] <zetok> and you can't really know that
+[11:09:27] <zetok> unless there would be a phone-home "functionality", which would be something that I'd be against
+[11:10:38] <zetok> with that being said, over a week there's >2k unique visitors on gh page, and >8k views of it
+[11:10:55] <zetok> no, wait, over 2 weeks
+[11:13:07] <Saam> I understand
+[11:15:22] <Saam> >2k unique visitors < that's already good. I hope there's more to come
+[11:16:40] <zetok> well, spreading word about qTox would help with that ;)
+[11:17:27] <Saam> Yup, that's what I will do
+[11:17:46] <Saam> I convince 3 friends around me to try it
+[11:17:51] <Saam> convinced*
+[11:18:36] <Saam> There are little improvements to do, but in general there's a good feeling around
+[11:19:04] <Saam> Anyway, I asked if you know how many people downloaded it, because I saw this : https://github.com/qTox/qTox-Website/blob/master/resources/Tox-Celebration.png
+[11:20:12] <zetok> oh >.<
+[11:20:12] <Saam> And it could be a good idea to say to people "okay, this software has been downloaded x times", maybe a little chart displaying the number of downloads for the last months or years
+[11:20:29] <Saam> I would be like "this is a successful software"
+[11:21:12] <Saam> I know it sounds just communication, but it could add a bit of confidence from people who don't know qTox yet
+[11:21:28] <zetok> yeah, "sadly" there's no tracking what users do
+[11:21:38] * zetok gets that
+[11:22:53] <Saam> But yeah, having a sentence like "qTox have been downloaded x10 000 !", "x50 000", "x100 000"... like different milestones...
+[11:23:10] <zetok> mm, not achievable though without data
+[11:23:11] <Saam> I see what you mean ;)
+[11:23:37] <zetok> as for number of users, it's in thousands
+[11:24:29] <Saam> :)
+[11:24:46] <Saam> It's a good start
+[11:24:51] <Saam> And there's more to come
+[11:38:55] <Saam> How can I *propose* a change in the code?
+[11:39:28] <Saam> (I insist on the word *propose*, I don't want to edit a file for good, just propose a new version of it)
+[11:41:10] <Saam> (brb)
+[11:43:08] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[11:43:35] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[11:51:11] <zetok> Saam: make an issue
+[11:53:26] *** Joins: f10 (~flo@ )
+[11:53:28] *** Joins: f10__ (~flo@ )
+[11:54:45] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[11:55:00] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[11:56:30] *** Joins: f10__ (~flo@ )
+[11:57:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[11:58:05] *** Joins: abbat (~abbat@ )
+[11:58:33] *** Joins: f10 (~flo@ )
+[12:01:46] <Saam> Done
+[12:02:56] *** Joins: f10_ (~flo@ )
+[12:04:37] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[12:08:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[12:08:40] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[12:09:05] *** Joins: f10_ (~flo@ )
+[12:09:14] *** Joins: f10__ (~flo@ )
+[12:14:55] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[12:58:08] *** Quits: Saam (587d2b5e@ ) (Ping timeout: 250 seconds)
+[13:12:19] <zetok> >_>
+[13:15:57] *** Joins: stvlker (~stvlker@ )
+[13:21:54] <travis-ci> qTox/qTox-Website (fc3a95b): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/138066476 / Changes: https://github.com/qTox/qTox-Website/compare/146b54b9323f...fc3a95bd1bca
+[13:24:51] *** Joins: sudden6 (~anonymous@ )
+[14:06:33] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[14:08:31] *** Joins: SkyzohKey (~skyzohkey@ )
+[14:23:57] *** Joins: Chiitoo (~Chiitoo@ )
+[15:45:10] -qtox-git-spam- [qTox] sudden6 opened pull request #3402: chore(simple_make): Fix build for Fedora (master...fix_fedora_build) https://git.io/voECr
+[15:54:03] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[15:54:21] *** Joins: sudden6 (~anonymous@ )
+[15:54:58] <sudden6> zetok: o/
+[15:55:10] <zetok> sudden6: \o
+[15:55:27] <sudden6> you once mentioned having a "testPR" script
+[15:55:38] <sudden6> mind including that into the repo?
+[15:56:45] <zetok> um
+[15:56:57] <zetok> it's just a slightly modified `merge-pr.sh`
+[15:57:36] <zetok> i.e. renamed `merge → test` and added `--no-gpg-sign` to merge command, so that it won't bother me with GPG password when I just want to test
+[15:58:43] <sudden6> It would be handy to have it inside the repo, to speed up testing in vms
+[15:58:55] <zetok> I see
+[15:59:10] <sudden6> also usefull would be replacing git over ssh with git over https
+[15:59:12] <zetok> hmm
+[15:59:41] <zetok> in the script?
+[16:00:00] <sudden6> yes, in the testPR script
+[16:00:58] *** Joins: Saaaam (587d2b5e@ )
+[16:01:11] <Saaaam> Hello everyone o/
+[16:01:32] <zetok> sudden6: ok, I'll think about doing all that in a nice way
+[16:01:43] <sudden6> zetok: nice
+[16:01:48] <sudden6> Saaaam: hi
+[16:03:54] <Saaaam> By the way : https://github.com/qTox/qTox-Website/issues/2  < this will be done next week. Bootstrap can be used, that's good.
+[16:04:35] <zetok> sudden6: sorry, looks like it's going to the bottom of my TODO
+[16:05:24] <sudden6> zetok: no problem, I just got aware of it and wanted to tell you
+[16:05:28] <zetok> ok
+[16:05:46] <zetok> for time being, you might want to just copypaste & edit merge → test
+[16:06:05] <zetok> when I'll have time I'd improve that
+[16:15:47] <cisc> is qtox not generating log files anymore with the latest version?
+[16:17:27] <zetok> cisc: location changed
+[16:17:39] <zetok> more details should be available on wiki
+[16:19:44] <cisc> which wiki, this one? https://wiki.tox.chat/clients/qtox
+[16:20:29] <zetok> nah
+[16:20:36] <zetok> gh/tux3/qTox/wiki
+[16:22:26] <cisc> there's nothing about logs in there
+[16:23:39] <cisc> I looked in ~/.local/share/Tox/qTox and nothing is in there, neither ~/.config/tox
+[16:25:31] <zetok> right, sorry
+[16:25:40] <zetok> .cache/Tox/qTox/
+[16:25:48] *** Joins: STvLKER_ (~stvlker@ )
+[16:26:08] <zetok> looks like I've added to wiki `.cache/qTox`
+[16:26:12] * zetok goes to fix that
+[16:26:27] <cisc> yeah I found it, I remembered it in the past not being in .cache
+[16:26:32] <cisc> but maybe not.. I forget
+[16:27:07] <zetok> yeah, its location was ~recently changed to .cache
+[16:29:15] *** Quits: stvlker (~stvlker@ ) (Ping timeout: 264 seconds)
+[16:31:36] <cisc> zetok: do you have any suggestions to see if a file transfer is going via UDP or TCP, thats what I'm trying to debug atm. Wireshark?
+[16:34:26] <zetok> I guess
+[16:34:39] <zetok> you could use toxcore logging
+[16:35:07] *** Joins: stvlker (~stvlker@ )
+[16:35:15] <cisc> but you would have to compile that in?
+[16:35:19] <zetok> yep
+[16:36:27] *** Quits: STvLKER_ (~stvlker@ ) (Ping timeout: 264 seconds)
+[16:37:06] <cisc> k thx
+[16:37:31] *** Joins: STvLKER_ (~stvlker@ )
+[16:40:39] *** Quits: stvlker (~stvlker@ ) (Ping timeout: 264 seconds)
+[16:42:27] *** Quits: STvLKER_ (~stvlker@ ) (Ping timeout: 264 seconds)
+[17:07:03] *** Joins: stvlker (~stvlker@ )
+[17:10:05] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[17:15:01] *** smaragdus2 is now known as smaragdus
+[17:29:03] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 240 seconds)
+[18:27:45] <zetok> sudden6: https://github.com/tux3/qTox/pull/3383#issuecomment-226466789 ← what do you think?
+[18:38:33] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[18:39:44] <zetok> Saaaam: awesome :)
+[18:39:55] <zetok> Saaaam: btw, how well will it work with js disabled?
+[18:40:48] <Saaaam> Well, I didn't planned to put some Js into it
+[18:41:02] <zetok> that's great :D
+[18:41:50] <Saaaam> Hum... wait, because at first, I was thinking of a simple select button. But that's not the best thing to do at all
+[18:42:07] <Saaaam> I'll think of something better, without Js of course
+[18:43:55] <Saaaam> Because there must be like a little window which gonna be open when the user click on the US flag (default), with all flags and the label next to them. As there are many languages, the best thing to do so is to create a div with several columns. That's what I'll work on
+[18:44:48] <Saaaam> I've a friend who's coming over tonight for 4/5 days (we haven't seen each other for 6 months), I only be able to code after that
+[18:45:06] <Saaaam> only will be able to*
+[18:45:08] <zetok> no problem, take your time :)
+[18:45:46] <Saaaam> By the way
+[18:46:16] <Saaaam> Are we limited to only 1 page? Or can it be like any website and having more than 1?
+[18:47:30] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[18:47:48] *** Joins: f10_ (~flo@ )
+[18:56:44] <zetok> Saaaam: as many as you want
+[18:57:09] <zetok> Saaaam: the only problem that I see is how to make many pages work with internationalization stuff
+[18:57:48] <Saaaam> 2 solutions
+[18:58:16] <Saaaam> The first one is a cookie where the language preference is set
+[18:58:46] <zetok> the other one where languages would be set in separate dirs, right?
+[18:59:08] <Saaaam> The second one is the creation of a variable $_SESSION['lang']
+[19:00:07] <zetok> hmm
+[19:00:10] <Saaaam> Hum... why not... I wasn't really seeing it like this but why not
+[19:00:22] <Saaaam> $_SESSION['lang'] => PHP ;)
+[19:00:35] <zetok> :)
+[19:00:50] <Saaaam> I don't know if it's possible as the website is hosted on github
+[19:01:13] <zetok> nah, PHP can't be used
+[19:01:33] * zetok wouldn't want to use it regardless of where website would be hosted
+[19:02:03] <zetok> btw, about https://github.com/qTox/qTox-Website/issues/4
+[19:02:36] <zetok> translating user_manual_en.md into other languages would do, right?
+[19:03:11] <zetok> and from `.md` static website could be generated
+[19:03:16] <Saaaam> Here is how I see this : when the user asked the page displayed on another language, a $_SESSION is created where its choice is placed. Then, when he comes in another page, the $_SESSION can be used to automatically set the language
+[19:03:46] <Saaaam> Yu^p
+[19:03:50] <Saaaam> I think so
+[19:04:06] <zetok> e.g. https://github.com/zetok/tox-spec/blob/master/spec.md → https://zetok.github.io/tox-spec/
+[19:04:29] <Saaaam> I won't lie, it's the first time I see this system of translations with a json file. But I find it quite interesting, so it could be used for the different pages of course
+[19:05:21] <Saaaam> Ohhh, nice
+[19:07:09] <Saaaam> That's perfect
+[19:07:17] <Saaaam> That's what needs to be done :)
+[19:08:21] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[19:09:08] <zetok> https://github.com/zetok/tox-spec/blob/master/Makefile#L7,L8 ← generating .html
+[19:10:31] <zetok> https://github.com/zetok/tox-spec/commit/11cebe6ad74ccad9f1ec99b75711c9fe579c77f9
+[19:11:38] <zetok> dunno, I can't really into CSS, so I just took the one Rust uses for the Rust spec & adjusted it slightly
+[19:12:18] <zetok> hmm
+[19:12:28] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:12:41] <zetok> Saaaam: well, if something about using rustdoc isn't clear, please say so :)
+[19:12:42] <Saaaam> Hum... at the opposite, I'm used to create websites from scratch. GH is really new to me, so I'll have to get properly how things work
+[19:13:12] <zetok> https://www.rust-lang.org/ ← to get rustdoc
+[19:13:14] <Saaaam> Yup, in a few days when I'll focus back on this, I'll may have some questions for you
+[19:13:17] <Saaaam> Thank you :)
+[19:13:30] <Saaaam> That's gonna be helpful
+[19:14:15] <Saaaam> (Btw, I apologize for the possible mistakes I could do... English is not my mother tongue) ;)
+[19:15:20] <zetok> no problem, it isn't mine either ;)
+[19:32:22] *** Joins: f10 (~flo@ )
+[19:34:14] *** Joins: st4ll1 (~st4ll1@ )
+[20:21:06] -qtox-git-spam- [qTox] zetok opened pull request #3406: feat(emoticons): add ASCII-less version of emojione emoticons (master...ascii) https://git.io/voutH
+[20:42:50] -qtox-git-spam- [qTox] antis81 closed pull request #3390: Fix SystemTrayIcon GTK implementation critical warning (master...widget/systemtrayicon/fix-initial-gtk-icon) https://git.io/voWwO
+[20:44:49] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:47:12] *** Joins: Chiitoo (~Chiitoo@ )
+[20:56:35] <zetok> …
+[20:58:47] <zetok> ffs.
+[21:03:55] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vouZX
+[21:03:55] -qtox-git-spam- qTox/master e327885 Zetok Zalbavar: Merge pull request #3390...
+[21:12:37] *** Joins: f10_ (~flo@ )
+[21:13:31] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[21:25:07] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[21:26:31] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[21:47:54] *** Joins: hpanago (uid15586@ )
+[22:05:59] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[22:06:17] *** Joins: f10__ (~flo@ )
+[22:06:44] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[22:07:04] *** Joins: f10_ (~flo@ )
+[22:41:10] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[22:42:24] *** Joins: cisc (~cisc@ )
+[22:43:55] *** Joins: smaragdus (~omoo@ )
+[23:10:07] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[23:29:03] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:55:08] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
