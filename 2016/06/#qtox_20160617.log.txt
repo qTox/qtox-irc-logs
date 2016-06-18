@@ -1,0 +1,125 @@
+[00:09:36] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[00:13:03] *** Joins: f10_ (~flo@ )
+[00:30:05] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[00:30:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[00:53:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[02:00:16] *** Joins: f10_ (~flo@ )
+[02:01:49] *** Joins: f10__ (~flo@ )
+[02:47:06] *** Quits: Saaaam (587d2b5e@ ) (Ping timeout: 250 seconds)
+[02:59:20] *** Joins: Dragofix- (Dragofix@ )
+[03:02:16] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 250 seconds)
+[03:02:17] *** Dragofix- is now known as Dragofix
+[03:05:50] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[03:06:31] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[04:44:52] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:50:16] *** Quits: mitfree (~mit@ ) (Ping timeout: 244 seconds)
+[04:56:34] *** Joins: mitfree (~mit@ )
+[06:36:21] *** Joins: f10__ (~flo@ )
+[06:40:14] *** Joins: f10_ (~flo@ )
+[08:04:24] *** Quits: demize (kyrias@ ) (Quit: Do Androids Dream of Electric Sheep?)
+[08:10:00] *** Joins: demize (kyrias@ )
+[08:22:19] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:22:46] *** Joins: LittleVulpix (~Miranda@ )
+[08:51:51] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[09:00:08] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Read error: No route to host)
+[09:17:44] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[09:18:22] *** Joins: sudden6 (~anonymous@ )
+[09:27:11] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[09:35:45] *** Joins: Impyy_ (~impy@ )
+[09:36:51] *** Quits: VVD (~VVD@ ) (Ping timeout: 244 seconds)
+[09:39:30] *** Joins: VVD (~VVD@ )
+[09:39:47] *** Quits: Impyy (~impy@ ) (Ping timeout: 252 seconds)
+[09:42:33] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 276 seconds)
+[09:43:32] *** Joins: Curlybear (~Curlybear@ )
+[10:00:49] *** Joins: Saaam_ (587d2b5e@ )
+[10:01:06] *** Joins: abbat (~abbat@ )
+[10:01:53] <Saaam_> Hello everyone ^^  I have this friend who installed qTox on her computer, and she asked me if there was a mobile version (androïd) ?
+[10:02:09] <oranges> no there is not a mobile qtox version
+[10:02:21] <oranges> at least I don't think so
+[10:02:46] <oranges> there is another client called Antox
+[10:02:52] <oranges> that works with qtox and other tox clients
+[10:03:07] <oranges> you have to get it on google play beta or somethign though
+[10:05:26] <Saaam_> Thank you  ;)
+[10:07:30] *** Quits: Saaam_ (587d2b5e@ ) (Quit: Page closed)
+[10:15:10] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[10:15:17] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[11:04:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[11:23:11] *** Joins: lugarius5467 (9e451997@ )
+[11:36:03] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 240 seconds)
+[11:42:09] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
+[11:46:35] *** Joins: stvlker (~stvlker@ )
+[11:51:22] *** Quits: lugarius5467 (9e451997@ ) (Ping timeout: 250 seconds)
+[11:51:47] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[12:00:33] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 240 seconds)
+[12:19:29] *** Joins: f10__ (~flo@ )
+[12:20:01] *** Joins: f10_ (~flo@ )
+[12:25:36] *** Joins: smaragdus (~omoo@ )
+[12:51:24] *** Joins: abbat (~abbat@ )
+[13:04:34] *** Joins: abbat_ (~abbat@ )
+[13:04:43] *** Quits: abbat_ (~abbat@ ) (Remote host closed the connection)
+[13:04:59] *** Joins: abbat_ (~abbat@ )
+[13:05:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:05:30] *** Quits: abbat_ (~abbat@ ) (Client Quit)
+[13:06:44] *** Joins: abbat (~abbat@ )
+[13:14:33] *** Joins: sudden6 (~anonymous@ )
+[13:20:24] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[13:22:24] *** Joins: sudden6 (~anonymous@ )
+[13:41:41] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[14:32:17] *** Joins: Chiitoo (~Chiitoo@ )
+[14:35:02] *** Joins: Diadlo (~diadlo@ )
+[14:35:18] <Diadlo> Hello
+[14:35:30] <Diadlo> I have some problem with new build
+[14:36:19] <Diadlo> g++ ... qrc_smileys.cpp    virtual memory exhausted: Unable to allocate memory
+[14:36:40] <Diadlo> du -h qrc_smileys.cpp     =>    32M qrc_smileys.cpp
+[14:37:00] <Diadlo> For old builds is 9.6M
+[14:37:38] <zetok> huh
+[14:39:51] <zetok> oh
+[14:39:53] <zetok> right
+[14:40:11] <zetok> thanks for making me look at htop, I didn't notice the memleak
+[14:42:30] <zetok> Diadlo: posted, could that memleak have something to do with it?
+[14:43:46] <zetok> Diadlo: how much memory does it want to use?
+[14:45:04] <Diadlo> ~800M
+[14:45:29] <zetok> :s
+[14:46:56] <zetok> Diadlo: as a workaround you could add swap
+[14:47:05] <zetok> how much RAM do you have?
+[14:48:31] <zetok> # `fallocate -l 2G ./swapfile && chmod 600 ./swapfile && mkswap ./swapfile && swapon ./swapfile` IIRC
+[14:48:32] <Diadlo> 2G
+[14:48:53] <zetok> Diadlo: also, it would be good if you opened an issue
+[14:49:03] *** Joins: Diadl0 (~Diadlo@ )
+[14:49:13] <zetok> AFAIK that's an upstream problem, but still..
+[14:49:44] <Diadlo> I will test it later
+[14:50:06] <Diadlo> Now my solution is close all application :)
+[14:51:56] <zetok> http://lists.qt-project.org/pipermail/interest/2016-March/021579.html
+[14:54:00] *** Joins: Diadlo2 (~Diadlo@ )
+[14:55:52] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 260 seconds)
+[15:08:46] *** Quits: Diadlo2 (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[15:09:21] *** Joins: Diadl0 (~Diadlo@ )
+[15:14:12] *** Quits: Diadl0 (~Diadlo@ ) (Client Quit)
+[15:25:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[16:06:19] *** Joins: sudden6 (~anonymous@ )
+[16:30:13] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[16:39:20] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[17:16:44] *** Joins: f10 (~flo@ )
+[17:55:19] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[17:59:09] *** Joins: f10_ (~flo@ )
+[17:59:22] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[18:07:39] *** Joins: abbat (~abbat@ )
+[18:22:40] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:26:31] *** Joins: LittleVulpix (~Miranda@ )
+[18:35:29] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:46:34] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:47:02] *** Joins: cisc (~cisc@ )
+[19:51:11] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[19:52:48] *** Joins: cisc (~cisc@ )
+[20:36:58] *** Joins: abbat (~abbat@ )
+[20:49:54] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:57:56] <abbat> Hi! I'm testing build qTox with with gcc 6.1 (Ubuntu Precise & Debian 7). If something will be wrong, please ping me.
+[21:52:41] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:06:41] *** Joins: jorgelg (~jorge@ )
+[22:30:11] *** Joins: sudden6 (~anonymous@ )
+[22:36:55] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[22:48:52] *** Quits: jorgelg (~jorge@ ) (Quit: Leaving.)
+[22:50:07] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[22:53:10] *** Joins: jorgelg (~jorge@ )
+[23:15:34] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 250 seconds)
+[23:20:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
