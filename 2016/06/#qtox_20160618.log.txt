@@ -1,0 +1,317 @@
+[00:19:53] *** Joins: smaragdus (~omoo@ )
+[00:20:45] *** Joins: in1t3r (~LordShiva@ )
+[00:24:28] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[00:25:26] *** Joins: dardevelin (~dardeveli@ )
+[00:32:18] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[00:44:44] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[01:31:39] *** Joins: zero-ghost (~0@ )
+[01:37:32] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[02:28:48] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[03:46:38] *** Joins: ccsdss (~ray@ )
+[03:46:43] *** Parts: ccsdss (~ray@ ) ()
+[04:01:05] *** Quits: jorgelg (~jorge@ ) (Quit: Leaving.)
+[04:07:07] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[04:09:52] *** Joins: f10_ (~flo@ )
+[04:18:06] *** Joins: cisc (~cisc@ )
+[04:54:27] *** Joins: Chiitoo (~Chiitoo@ )
+[04:59:55] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[05:16:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[05:17:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[05:19:12] *** Joins: f10_ (~flo@ )
+[06:24:00] *** Joins: sudden6 (~anonymous@ )
+[06:33:37] -qtox-git-spam- [qTox] PafXUS opened pull request #3411: fix(persistence): pass by reference to const (master...performance_improvements) https://git.io/vo2aK
+[06:35:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[06:38:18] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[06:44:18] *** Joins: zero-ghost (~0@ )
+[07:43:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[08:48:20] *** Joins: dardevelin (~dardeveli@ )
+[10:32:03] *** Joins: sudden6 (~anonymous@ )
+[10:38:19] <zetok> :3
+[10:38:28] <sudden6> o/
+[10:46:53] <zetok> hmm, where I could put file to source from it bash functions for {test,merge}-pr.sh ?
+[10:47:14] *** Joins: LittleVulpix (~Miranda@ )
+[10:47:58] <zetok> tools/ just doesn't feel right :s
+[10:48:11] <zetok> (since it wouldn't work by itself
+[10:48:12] <zetok> )
+[10:48:34] <sudden6> wat?, please reword your first sentence^^
+[10:50:03] <zetok> merge & test pr.sh use ~same functions, so they could just `source fns` and just execute needed subset of functions from the ones in `fns`
+[10:50:39] <zetok> `fns` itself isn't an executable, so I'm not sure where to put it
+[10:51:26] <sudden6> "/tools/lib/ ?
+[10:51:31] <zetok> >.<
+[10:51:32] <zetok> right
+[10:51:36] <zetok> thanks
+[10:51:43] <sudden6> np^^
+[11:05:41] *** Joins: hpanago (uid15586@ )
+[11:42:52] *** Joins: sudd3n6 (~anonymous@ )
+[11:51:47] *** Joins: f10__ (~flo@ )
+[12:10:31] *** Joins: in1t3r (~LordShiva@ )
+[12:11:09] *** Joins: nwx_ (~nwx_@ )
+[12:18:42] *** Joins: f10 (~flo@ )
+[12:19:03] *** Quits: f10_ (~flo@ ) (Ping timeout: 264 seconds)
+[12:31:22] *** Joins: wdna (~alkavan@ )
+[12:32:38] <wdna> I have question, does tox use decentralized protocol?
+[12:37:41] <zetok> distributed
+[12:40:00] <zetok> wdna: https://zetok.github.io/tox-spec/
+[12:42:00] <wdna> thanks.
+[12:42:28] *** Quits: wdna (~alkavan@ ) (Quit: bye)
+[12:50:09] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:59:04] *** Joins: abbat (~abbat@ )
+[13:11:04] *** Joins: f10_ (~flo@ )
+[13:11:46] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[13:11:55] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[13:15:08] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[13:45:01] -qtox-git-spam- [qTox] zetok opened pull request #3412: docs(INSTALL.md): add ubuntu PPA for archs other than x86{,_64} (master...install) https://git.io/vo2yB
+[13:46:25] *** Joins: f10 (~flo@ )
+[13:46:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[14:08:26] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[14:26:24] *** Quits: nwx_ (~nwx_@ ) (Quit: WeeChat 1.5)
+[14:33:20] <zetok> sudden6: emojione ascii-less seems good to go, right?
+[14:33:27] <sudden6> yep
+[14:34:17] <zetok> https://github.com/qTox/qtox-irc-logs/blob/master/2016/06/%23qtox_20160617.log.txt#L70,L87 ← there's a slight problem
+[14:37:13] <sudden6> huh? Is that the compiler running out of memory?
+[14:37:45] <zetok> yep
+[14:38:55] <zetok> due to all stuff being made into byte arrays to compile them in
+[14:39:26] <sudden6> the svgs are compiled in?!
+[14:41:48] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[14:42:17] <zetok> the wonders of Qt \o/
+[14:42:31] <zetok> sudden6: below in log I've linked to some stuff
+[14:46:38] *** Joins: f10 (~flo@ )
+[14:46:44] *** Joins: abbat (~abbat@ )
+[14:50:30] *** Joins: f10_ (~flo@ )
+[14:57:31] <sudden6> interesting system qt uses there, but we brought it to it's limits...
+[14:57:41] <zetok> \o/
+[14:57:44] <zetok> oh wait
+[14:57:51] <zetok>  /o\
+[14:58:20] <sudden6> Maximum resident set size (kbytes): 1243652
+[14:58:23] <sudden6> nice
+[14:59:28] <zetok> since Diadlo didn't open an issue, it would be good to make one
+[14:59:41] <zetok> s/an/the/
+[15:00:02] *** Joins: f10__ (~flo@ )
+[15:00:06] <sudden6> we could work around this by splitting the smileys.qrc by packs
+[15:00:23] <zetok> I wonder about linking stage
+[15:00:40] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[15:00:51] <zetok> wouldn't the end result be the same?
+[15:00:58] <zetok> if not, then why not
+[15:01:06] <sudden6> maybe, idk
+[15:01:35] <zetok> the downside of new hardware is that I even don't notice 10GB memleaks in qTox when testing :f
+[15:01:46] <sudden6> on the other hand, 1,4G to compile doesn't sound to much for me
+[15:01:59] <zetok> this is actually a lot
+[15:02:28] <zetok> preferably qTox should compile just fine on 512MB
+[15:02:37] <zetok> currently that's impossible, and not for good reasons
+[15:02:42] <sudden6> I'm used to much more
+[15:03:16] <sudden6> > not for good reasons -> yep, I strongly agree with this one
+[15:07:41] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[15:07:42] <sudden6> <zetok> I wonder about linking stage -> shouldn't be a problem, since the object file is only a few MB actually
+[15:07:54] <zetok> ok
+[15:11:07] <sudden6> after some reading, splitting smileys.qrc doesn't sound that bad. We need the files compiled in anyways and splitting would decrease memory requirements during compilation
+[15:14:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[15:40:34] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 252 seconds)
+[15:51:29] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vo27T
+[15:51:29] -qtox-git-spam- qTox/master 64cbddd Zetok Zalbavar: docs(INSTALL.md): add ubuntu PPA for archs other than x86{,_64}...
+[15:52:54] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[15:54:54] <zetok> sudden6: ok, I'll be doing the splitting & push to the emojione PR
+[16:11:04] <zetok> or maybe that's not the best idea & PR is good as it is
+[16:13:43] *** Joins: LittleVulpix (~Miranda@ )
+[16:19:55] -qtox-git-spam- [qTox] zetok closed pull request #3406: feat(emoticons): add ASCII-less version of emojione emoticons (master...ascii) https://git.io/voutH
+[16:30:19] *** Joins: Diadlo (~diadlo@ )
+[16:34:26] *** Joins: sudd3n6 (~anonymous@ )
+[16:37:06] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[16:38:05] *** Joins: Diadlo (~diadlo@ )
+[16:42:26] <zetok> sudden6: um, what did you use to check top ram usage?
+[16:42:44] <sudden6> "/usr/bin/time -v make"
+[16:42:49] <sudden6> path is important
+[16:43:50] <zetok> oh >.<
+[16:43:55] <sudden6> about your locallib.conf grep stuff, why do we need to check if this line already exists?
+[16:44:07] * zetok already had `time` in his `build.sh`, but without `-v`
+[16:44:14] <sudden6> file is overwritten anyway?
+[16:44:26] <zetok> err, right
+[16:44:30] <sudden6> path "usr/bin" is also important
+[16:44:40] <sudden6> because else it uses shell builtin
+[16:44:40] * zetok goes to fix PR to not overwrite file, but to append
+[16:44:53] <sudden6> your PR does already append
+[16:44:59] <sudden6> mine doesn't
+[16:45:04] <zetok> wait, it does?
+[16:45:36] <sudden6> tee -a appends
+[16:45:38] <zetok> right
+[16:46:03] <zetok> uh, you got me confused there for a moment
+[16:47:29] <zetok> >Maximum resident set size (kbytes): 1075328
+[16:47:32] <zetok> didn't help that much
+[16:47:42] <zetok> :f
+[16:49:26] <sudden6> hmm, would be interesting to run the time command for every compiler invocation
+[16:49:37] * zetok does
+[16:50:03] * sudden6 is currently testing fedora stuff
+[16:50:10] <Diadlo> Hello
+[16:50:13] <sudden6> hi
+[16:50:30] <zetok> oh, right, time
+[16:50:39] <zetok> https://i.reddituploads.com/6175c51784914154ad3d1850db4c722a?fit=max&h=1536&w=1536&s=6792747ca3446b86949a21f52090e8af :3
+[16:50:48] <sudden6> oh, already
+[16:50:49] <Diadlo> What you think about adding rule "0 warning" to code style?
+[16:51:10] <Diadlo> Or in CONTRIBUTING.md
+[16:51:11] <zetok> https://media.giphy.com/media/3oEjI2Y1uIgJhY6sRa/giphy.gif :3
+[16:51:23] <zetok> Diadlo: good idea
+[16:51:46] <sudden6> not that much
+[16:52:00] <zetok> oh, are warnings in C++ useless?
+[16:52:12] * zetok is used to Rust where warnings are useful
+[16:52:30] <sudden6> no, but they can be ignored/circumvented without fixing the real problem
+[16:52:31] <Diadlo> I don't think, that it's useless
+[16:52:58] <zetok> sudden6: D:
+[16:54:15] <Diadlo> I don't think, that some g++ contributor says "Hmm.. We should add some useless warning for developers"
+[16:55:04] <zetok> should I still make PR with split .qrc, even though it doesn't help much?
+[16:55:28] <sudden6> zetok: yes, still makes sense to split them
+[16:55:32] <zetok> ok
+[16:57:13] <sudden6> zetok: your PR somehow broke the fedora build
+[16:57:45] <zetok> sudden6: as expected
+[16:57:45] <sudden6> it says no package <rpmfusion-link> available
+[16:57:49] -qtox-git-spam- [qTox] zetok opened pull request #3413: refactor(.qrc): split emoticon resource files into separate ones (master...emoticons) https://git.io/vo2Fz
+[16:59:02] <zetok> oh wait
+[16:59:12] * zetok didn't expect that part to break
+[16:59:25] <sudden6> what about maintainers who don't attend meetings but are active on github?
+[16:59:41] <zetok> dunno :(
+[17:01:25] <sudden6> me neither, on the initial setup of the new organization we said 2months, agilob and antis81 are near that, but both are pretty active on GH
+[17:02:09] <zetok> mm
+[17:02:36] <zetok> I think that I might have an idea
+[17:02:40] <zetok> or maybe not :/
+[17:02:58] <sudden6> tell me more
+[17:03:05] <zetok> nvm my idea
+[17:03:41] <zetok> although since current system doesn't appear to work, switch to what nurupo talked about probably will need to happen
+[17:04:02] <sudden6> what did nurupo talk about?
+[17:04:23] <zetok> i.e. absent people have their vote counted as "refrained from vote" during the meeting
+[17:05:05] <sudden6> mhm, I can't think of something better atm
+[17:10:28] *** Joins: ccsdss (~ray@ )
+[17:10:32] *** Parts: ccsdss (~ray@ ) ()
+[17:13:20] <sudden6> zetok: when changing quotes to ( in line 57 it works
+[17:13:34] <sudden6> (fedora build script)
+[17:16:04] <zetok> :|
+[17:16:45] <zetok> ok, will amend
+[17:17:13] <sudden6> wait there are more problems
+[17:17:18] <zetok> aha!
+[17:17:32] <sudden6> you seem to be using arrays, is this intentional?
+[17:17:41] <zetok> kinda
+[17:17:55] <sudden6> because then you have to acces them differently
+[17:18:00] <sudden6> http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_10_02.html
+[17:18:24] <sudden6> i think
+[17:18:47] <zetok> hm?
+[17:19:26] <sudden6> I always get ffmpeg-devel[@] not found
+[17:19:35] <sudden6> (notice the @)
+[17:20:48] <zetok> and without `[@]` and changed `()` → `""` ?
+[17:23:25] <sudden6> nope, but ${dnf_packages[*]} works
+[17:24:00] <zetok> s/*/@/ ?
+[17:24:24] <zetok> yeah, forgot about {}
+[17:24:24] <zetok> :s
+[17:24:27] <sudden6> and remove "" around dnf_packages
+[17:24:37] <sudden6> written exactly like above
+[17:24:56] <zetok> err
+[17:26:49] <zetok> ok
+[17:26:59] <sudden6> full line: sudo dnf install ${dnf_packages[*]}
+[17:28:22] <zetok> missing ""
+[17:29:35] <sudden6> doesn't work with ""
+[17:29:45] <zetok> https://gist.github.com/zetok/d90dbf6e97e3a3f1fd8dafd6eaf81709
+[17:36:20] <sudden6> zetok: hangs again at sudo dnf install <rpmfusion-url>
+[17:36:28] <sudden6> rpmfusion-url is correct tough
+[17:37:39] <zetok> oh well
+[17:38:13] * zetok doesn't get it
+[17:39:30] <sudden6> if I remove the quotes around L60 it works again
+[17:39:41] <sudden6> https://github.com/sudden6/qTox/pull/1/files in this file
+[17:40:19] <zetok> mm
+[17:40:25] <zetok> aside from that, other changes work?
+[17:40:44] <sudden6> yes
+[17:41:49] <zetok> pushed squashed
+[17:49:45] *** Joins: in1t3r (~LordShiva@ )
+[17:57:33] <sudden6> zetok: works
+[17:57:47] <zetok> \o/
+[17:59:06] *** Joins: f10 (~flo@ )
+[17:59:39] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[17:59:49] *** Joins: f10__ (~flo@ )
+[17:59:50] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[18:02:15] <zetok> sudden6: `merge --ff-only` && merge ?
+[18:02:28] <sudden6> yep
+[18:02:39] <sudden6> still reviewing Diadlos PR
+[18:07:34] <zetok> actually, it doesn't look like RAM usage was affected
+[18:08:11] <zetok> Maximum resident set size (kbytes): 1075728  ← ~same before refactoring
+[18:10:51] <sudden6> zetok: is the Fedora PR ok?
+[18:11:37] <sudden6> zetok: did you succeed in modifying the Makefile to run every gcc invocation with memory stats?
+[18:12:12] <zetok> >_>
+[18:12:16] <zetok> PR is ok
+[18:14:12] <zetok> no idea about Makefile..?
+[18:15:34] <sudden6> [17:48] <sudden6> hmm, would be interesting to run the time command for every compiler invocation
+[18:15:36] <sudden6> [17:48] * zetok does
+[18:15:51] <zetok> oh, that
+[18:16:34] <zetok> https://gist.github.com/zetok/f5b1428d349d38e26542aa7ebbd50b37
+[18:19:00] <sudden6> ahm, I meant actually every invocation of gcc made by make
+[18:19:11] <sudden6> you'd have to mod Makefile for that I think
+[18:19:33] <sudden6> or create a bash alias for gcc to /usr/bin/time -v gcc
+[18:19:40] <sudden6> or something like that
+[18:20:02] <zetok> seems easy
+[18:22:38] -qtox-git-spam- [qTox] sudden6 closed pull request #3402: chore(simple_make): Fix build for Fedora (master...fix_fedora_build) https://git.io/voECr
+[18:23:22] <sudden6> I nearly made a fatal mistake, didn't know that git rebase causes signed commits by you, become signed by me then
+[18:23:40] <sudden6> then -> afterwards
+[18:25:11] -qtox-git-spam- [qTox] sudden6 closed pull request #3308: fix(bootstrap.sh):Re-add /usr/local/locallibs--spacing should be fixed now) (master...master) https://git.io/vrGuL
+[18:25:45] <zetok> uh
+[18:25:49] <zetok> >.<
+[18:26:04] <zetok> sudden6: sorry, looks like I've made a mistake in commit name
+[18:26:46] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[18:26:58] *** Joins: Diadlo (~diadlo@ )
+[18:27:12] <sudden6> huh, where?
+[18:27:52] <zetok> https://github.com/tux3/qTox/commit/099bb439ce4e240d06d0368f6ca73ad750c0d095
+[18:27:57] <zetok> >boostrap.sh
+[18:28:27] <zetok> (back in the day I've already refactored bootstrap.sh)
+[18:28:31] <sudden6> ah, well, we can't change history, can't we? (better, should we?)
+[18:29:27] <zetok> no
+[18:29:59] <sudden6> well, then we'll have to life with it
+[18:31:53] <zetok> https://gist.github.com/zetok/f5b1428d349d38e26542aa7ebbd50b37 ← every gcc call with time
+[18:33:04] <zetok> + `./build.sh 2>&1 | grep 'Maximum resident set size'`
+[18:33:51] <sudden6> can you also get the corresponding gcc invocation? or give the full output?
+[18:34:19] <zetok> already there ^^
+[18:34:47] <sudden6> I don't see it
+[18:35:02] <sudden6> I mean the lines with gcc -o blabla
+[18:35:14] <zetok> oh, this
+[18:35:55] <zetok> https://gist.github.com/zetok/9d9770f4d7c138208cad1b6328aa1ac6
+[18:37:39] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 264 seconds)
+[18:37:52] <zetok> (that's without split .qrc)
+[18:40:39] <sudden6> well, main.cpp already needs 1G to compile
+[18:41:43] <zetok> :/
+[18:42:28] <sudden6> and the linker again 1G
+[18:44:43] <sudden6> smileys cause only ~300M, so they aren't the source of the huge memory consumption
+[18:45:54] <sudden6> also next time you do this, you may want to disable ccache and use make -j1
+[18:46:11] <zetok> `-j1` is too slow
+[18:46:27] <sudden6> but make -j4 mixes the outputs
+[18:47:20] <zetok> that'll take time
+[18:47:34] <sudden6> I don't think we need that data now
+[18:48:15] <sudden6> seems  like the smiley changes are just a symptom not the source
+[18:49:09] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[18:49:26] *** Joins: f10__ (~flo@ )
+[18:50:59] <sudden6> Only other test I could think of would be to compare a commit before merging emojione
+[18:51:18] * sudden6 goes to run this
+[19:06:49] <sudden6> hmm seems emojione has a big impact
+[19:07:03] <sudden6>         Maximum resident set size (kbytes): 427140
+[19:07:17] <sudden6> on 645e950
+[19:07:45] <sudden6> seems like qrc bloats main.cpp compiling
+[19:08:23] <sudden6> https://gcc.gnu.org/bugzilla/show_bug.cgi?id=44563 could be intersting
+[19:17:36] <zetok> >So ... too late for GCC 6 I guess.
+[19:17:37] <zetok> aw
+[19:17:58] * zetok looks at his gcc 4.9
+[19:21:00] <zetok> sudden6: you only need https for remote with test-pr.sh, and ssh is fine for merge-pr.sh, right?
+[19:21:23] <sudden6> yep
+[19:21:34] <zetok> ok
+[19:26:29] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[19:53:51] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 244 seconds)
+[20:08:00] *** Joins: ccsdss (~ray@ )
+[20:08:03] *** Parts: ccsdss (~ray@ ) ()
+[20:13:30] *** Joins: smaragdus (~omoo@ )
+[20:18:25] -qtox-git-spam- [qTox] zetok opened pull request #3414: chore(test-pr.sh): add test-pr.sh script as requested (master...test-script) https://git.io/voafo
+[20:31:30] *** Joins: Diadlo (~diadlo@ )
+[20:35:04] <Diadlo> What you have decided about "0 warnings" rule?
+[20:35:56] <zetok> um, nothing actually
+[20:36:06] <Diadlo> Ok
+[20:41:02] *** Joins: Bheru27 (~Bheru27@ )
+[21:00:27] *** Joins: stvlker (~stvlker@ )
+[21:06:53] *** Joins: Diadl0 (~diadlo@ )
+[21:08:03] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 276 seconds)
+[21:21:46] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[22:46:45] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[22:54:20] *** Quits: mitfree (~mit@ ) (Ping timeout: 260 seconds)
+[22:57:14] *** Joins: mitfree (~mit@ )
+[23:03:39] *** Joins: hpanago (uid15586@ )
+[23:05:19] *** Joins: abbat (~Anton@ )
+[23:17:49] *** Joins: ccsdss (~ray@ )
+[23:17:52] *** Parts: ccsdss (~ray@ ) ()
