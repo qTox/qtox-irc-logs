@@ -1,0 +1,306 @@
+[00:53:08] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:15:08] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[01:20:29] *** Joins: f10_ (~flo@ )
+[01:21:17] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[01:36:47] *** Joins: sudden6 (~anonymous@ )
+[01:37:48] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 276 seconds)
+[01:40:22] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[01:45:57] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[02:17:08] *** Joins: f10__ (~flo@ )
+[02:17:13] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[02:32:54] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[02:32:57] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[02:33:37] *** Joins: f10__ (~flo@ )
+[02:33:55] *** Joins: f10 (~flo@ )
+[05:03:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[05:03:35] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[05:42:05] *** Joins: ccsdss (~ray@ )
+[05:42:08] *** Parts: ccsdss (~ray@ ) ()
+[07:17:11] *** Joins: dardevelin (~dardeveli@ )
+[07:59:09] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[08:25:46] *** Joins: zero-ghost (~0@ )
+[09:42:02] *** Joins: Diadl0 (~diadlo@ )
+[09:56:56] *** Joins: sudden6 (~anonymous@ )
+[10:04:44] *** Joins: abbat (~Anton@ )
+[10:20:09] <zetok> sudden6: um, don't merge yet test-pr script
+[10:20:24] <sudden6> I wasn't going to
+[10:20:30] * zetok forgot to add stuff copyright stuff
+[10:23:41] <zetok> ok, now it's good
+[10:23:58] <zetok> >Maximum resident set size (kbytes): 1781200
+[10:24:04] <zetok> we have a winner :f
+[10:24:34] <sudden6> I have a theory why it eats that much memory
+[10:27:12] <zetok> do tell
+[10:28:22] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[10:28:41] <sudden6> since qt is creating an array for every file and theres ~2000 of them only in emojione, I think it's the sheer number of arrays that causes the huge memory usage
+[10:32:47] <zetok> :s
+[10:36:49] <sudden6> I'm currently experimenting with using compression for ressources, but I don't have any hopes
+[10:41:18] <sudden6> zetok: Success! Maximum resident set size (kbytes): 431824
+[10:41:36] <zetok> ooh?
+[10:41:57] <Diadl0> Wow. Now we have real winner?)
+[10:42:05] <zetok> :D
+[10:42:10] <sudden6> I'll make a PR
+[10:43:19] <sudden6> AAARGH, false positive, compiled wrong branch
+[10:43:28] <sudden6> *headdesk*
+[10:43:46] <Diadl0> :(
+[10:50:30] <sudden6> meh, compression only gives Maximum resident set size (kbytes): 1240896
+[11:32:59] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 244 seconds)
+[11:40:57] *** Joins: Diadl0 (~diadlo@ )
+[11:48:35] <sudden6>  Maximum resident set size (kbytes): 612080
+[11:48:42] <sudden6> :)
+[11:49:04] <sudden6> also qtox binary size is down to 6MB
+[11:53:08] <Diadl0> What do you change?
+[11:53:19] <sudden6> force compression for every file
+[11:54:08] <sudden6> I'll make a PR, please test :)
+[11:54:55] <Diadl0> Let's go)
+[11:58:54] -qtox-git-spam- [qTox] sudden6 opened pull request #3415: chore(qtox.pro): enable maximum ressource compression (master...reduce_memory) https://git.io/voaVY
+[11:59:26] *** Joins: Diadlo (~diadlo@ )
+[11:59:30] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 260 seconds)
+[12:02:36] *** Joins: f10 (~flo@ )
+[12:02:47] <linuxmodder> sudden6,  what compression algo used 
+[12:02:58] <sudden6> I think qt uses zlib
+[12:03:30] <linuxmodder> sudden6,  also is this a distro centric or  straight git version if the later link the PR and I'll test too
+[12:04:33] <sudden6> https://github.com/tux3/qTox/pull/3415
+[12:04:57] <sudden6> I used "/usr/bin/time -v make" to measure peak memory usage
+[12:05:22] <sudden6> linuxmodder: you are using Fedora right?
+[12:05:54] <linuxmodder> yep
+[12:06:34] <sudden6> I pushed a fix for simple_make.sh would be cool if you could also test it :)
+[12:06:38] <linuxmodder> btw is the author of PR/3402  in the room ?
+[12:06:56] <linuxmodder> sudden6, was that yours  ? 3402 
+[12:07:04] <sudden6> yes
+[12:07:35] <sudden6> me and zetok
+[12:09:13] <linuxmodder> sudden6,  for {dnf_install}   in that pull (3402) I'd recommend  making it  @development-tools @rpm-development-tools  (c-development is not needed here --unless I missed a recent addition needing it) 
+[12:10:10] <linuxmodder> also for rpmfusion its safer to use  https://download1.rpmfusion.org/free/fedora=rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm rather than the current $fedora_release)
+[12:10:33] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 240 seconds)
+[12:10:47] <linuxmodder> its also more  fault tolerant on  qa tester systems too where someone is on 23  /24  with a 24 or 25 kernel installed 
+[12:10:54] *** Joins: Diadlo (~diadlo@ )
+[12:11:15] <linuxmodder> it will take the /etc/fedora-release value as I  wrote it not the uname -r  which are not always the same
+[12:11:56] <linuxmodder> otherwise a sound pr  fedora wise 
+[12:12:43] <linuxmodder> sudden6,  also where was the simple_make optimization in 3415 or oyu mean the one in 3402 ?/
+[12:13:19] <sudden6> AFAIR c-development-tools was needed because of libtool
+[12:14:27] <linuxmodder> ah its simplier to merely  append libtool intltool to dnf install list than add nearly  40 other thigns MOST users will never need 
+[12:14:32] *** Joins: f10__ (~flo@ )
+[12:14:35] <linuxmodder> use as little as needed
+[12:14:37] <linuxmodder> one sec 
+[12:14:56] <sudden6> and fedora_version=$(rpm -E %fedora) so it's exactly what you meant I think
+[12:15:14] <linuxmodder> sudden6,  http://paste.fedoraproject.org/381570/46633490/ <  works as is 
+[12:15:31] <linuxmodder> if you wanna variablize it yes 
+[12:15:40] *** Joins: sudd3n6 (~anonymous@ )
+[12:15:50] <linuxmodder> or  cat /etc/fedora-release >  $fedora_version
+[12:16:40] <linuxmodder> Fedora release 24 (Twenty Four)
+[12:17:07] <linuxmodder> that  piped to  $fedora_version is  safest way to prevent cross version issues
+[12:17:34] <sudden6> why is rpm -E %fedora unsafe?
+[12:18:12] <linuxmodder> its not,   I neveer saw it in there til now  on the variable  reference in the rpmfusion section 
+[12:19:15] <linuxmodder> referesh my memory to pull just that pr (3415)  its  git checkout  pull/3415  right?
+[12:19:19] <linuxmodder> on master
+[12:19:31] <Diadlo> sudden6: I tested PR. Now I have enough RAM to build project :) Thanks
+[12:20:27] <sudden6> linuxmodder: c-development-tools contains pretty much everything a dev needs anyway, I think it's safe to install
+[12:20:38] <sudden6> Diadlo: nice
+[12:20:59] <linuxmodder> sudden6,  not all qtox users are devs is my  point tho 
+[12:21:03] <linuxmodder> not debating that 
+[12:21:23] <sudden6> Diadlo: else I would have sent you to http://downloadmoreram.com/
+[12:21:30] <linuxmodder> and on minimal systems (i.e. usb install) in oppressed regions that may be  issu
+[12:21:52] *** Joins: f10_ (~flo@ )
+[12:22:28] *** Quits: f10__ (~flo@ ) (Ping timeout: 252 seconds)
+[12:22:39] <Diadlo> sudden6: lol :)
+[12:24:41] <sudden6> linuxmodder: since you seem to be more familiar with fedora, feel free to create a PR with the packages needed on a clean Fedora install
+[12:25:10] <linuxmodder> sudden6,  the fpaste I gave a few minutes works on virgin box
+[12:25:21] <linuxmodder> http://paste.fedoraproject.org/381570/46633490/ < that paste
+[12:25:58] * zetok doubts
+[12:27:07] *** Joins: w7AeVytY (55cb11fe@ )
+[12:27:23] <sudden6> make it into a PR and I'll test
+[12:28:11] <w7AeVytY> ## https://vimeo.com/117153420 ## http://www.etcher.io/ ## Use Appimage please!
+[12:29:10] <zetok> w7AeVytY: oh, you want to make an appimage for qTox?
+[12:29:37] <w7AeVytY> i am trying, but i am not soo advanced
+[12:30:15] <w7AeVytY> but its importand
+[12:30:20] <w7AeVytY> *t
+[12:31:20] -qtox-git-spam- [qTox] sudden6 closed pull request #3414: chore(test-pr.sh): add test-pr.sh script as requested (master...test-script) https://git.io/voafo
+[12:32:30] <zetok> w7AeVytY: https://github.com/probonopd/AppImageKit/blob/master/README.md here you go :)
+[12:35:00] <w7AeVytY> ok ... done
+[12:35:04] <w7AeVytY> now?
+[12:35:18] <zetok> w7AeVytY: proceed from there; if you run into problems, just say so, perhaps someone could help :)
+[12:36:32] <w7AeVytY> ?
+[12:36:47] <w7AeVytY> i meaned that you provide thease
+[12:37:57] <zetok> yes, and you could help to make that happen :)
+[12:39:22] <w7AeVytY> well, use an version of debian that has nothing, (no file manager, no browser, so almost no Library) and run the scripst that creates an appimage from deb repo
+[12:39:32] <w7AeVytY> done
+[12:40:19] <w7AeVytY> ubuntu should work too
+[12:41:14] <linuxmodder> zetok,  sudden6  if I was to merge in 3402 and re running PR with mods  git checkout  3402  would work ? 
+[12:41:33] <sudden6> w7AeVytY: what zetok (very inderectly) is trying to tell you is, that we don't have enough ressources to manage that ourselfes, so we need people like you who are willing to work for a feature
+[12:42:01] <w7AeVytY> what work... you just execute this
+[12:42:15] <w7AeVytY> export APP=qtox && ./apt-appdir/apt-appdir $APP && ./AppImageAssistant.AppDir/package $APP.AppDir $APP.AppImage && ./$APP.AppImage
+[12:42:32] <w7AeVytY> and its magically creating itself in secondas
+[12:42:47] <w7AeVytY> an automated bot can do that
+[12:43:09] * sudden6 doubts
+[12:45:07] <zetok> w7AeVytY: from what I understand that would be limited to debian/*buntu – isn't the whole point of AppImage to make things distro-independent?
+[12:45:16] <sudden6> linuxmodder: just get newest git master, modify the file, "git checkout -b fedora_packages" and push to your qtox repo
+[12:45:25] <sudden6> then make a PR via webinterface
+[12:45:55] <linuxmodder> so -b fedora_packages already  exists ?
+[12:45:58] <linuxmodder> nice okay
+[12:46:11] <sudden6> no you creat it locally, 
+[12:46:28] <sudden6> (with the command I posted)
+[12:46:42] <w7AeVytY> then it should be distro independent, just deinstall all libs that qtox needs and create the app image, or using an croped debian, then it should work on arch fedora and co too
+[12:46:58] <sudden6> also after "git checkout..." you have to make your commit as usual
+[12:47:12] <zetok> >deinstall all libs that qtox needs and create the app image
+[12:47:14] <zetok> yeah, no
+[12:47:30] <sudden6> there goes "just run a script"
+[12:47:56] <w7AeVytY> or chroot in an other system
+[12:48:14] <zetok> w7AeVytY: spending so much time for so little doesn't seem worth it
+[12:48:54] <zetok> out of 3 new package formats appimage looks most promising though
+[12:49:00] <sudden6> zetok: anything against merging https://github.com/tux3/qTox/pull/3383 ?
+[12:49:11] <w7AeVytY> its for the users... providing your software easily is the trick... in my eyes its absolutly worth
+[12:49:27] <zetok> sudden6: with last fixes it works for me
+[12:49:35] <w7AeVytY> just look at other independen developers who ship there software
+[12:49:41] <sudden6> w7AeVytY: we already have a static build, you just have to run
+[12:50:27] <w7AeVytY> i heard that they are in danger to be not contnued
+[12:52:07] -qtox-git-spam- [qTox] sudden6 closed pull request #3383: fix(capslockindicator): fix altering the line edit height (master...widget/capslockindicator/fix-height) https://git.io/voceH
+[12:52:23] <linuxmodder> sudden6,  on line 54 of fedora_packages that is using @{dnf_group_packages} correct?
+[12:52:50] <linuxmodder> if so  group install  dnf_group_packages is  redundant 
+[12:52:57] <w7AeVytY> i just want to save them, else users that are trying to use qtox and not succseed will never try again
+[12:53:12] <zetok> w7AeVytY: feel free to provide scripts that would do all the work for packaging an AppImage, and there will be AppImage
+[12:53:23] <sudden6> linuxmodder: can you give a link?
+[12:53:41] <w7AeVytY> but there is already a scrips
+[12:53:49] <w7AeVytY> script
+[12:54:15] <w7AeVytY> it converts the apt repo to an appimage in seconds
+[12:55:02] <zetok> hm hm.
+[12:55:21] <linuxmodder>     sudo dnf install "${dnf_group_packages[@]}"
+[12:55:22] <linuxmodder>  << that line sudden6 
+[12:55:39] <linuxmodder> the [@] is prepending dnf_group_packages right?
+[12:55:44] <w7AeVytY> it not includes libs that are installed on the system zetok
+[12:56:04] <zetok> w7AeVytY: yes, and thus it won't work
+[12:56:33] <zetok> -bash: ./apt-appdir/apt-appdir: No such file or directory
+[12:56:51] <w7AeVytY> ?
+[12:57:15] <w7AeVytY> i have no problem
+[12:59:06] <sudden6> linuxmodder: no, it's not redundant
+[12:59:22] <linuxmodder> @ == group install in fedora
+[12:59:35] <linuxmodder> aka group install == install @foo
+[13:00:19] <linuxmodder> or the [@] is not prepending dnf_group_packages 
+[13:00:20] <zetok> w7AeVytY: ?
+[13:00:57] <sudden6> no the @ is for bash array syntax
+[13:01:23] <linuxmodder> ah sorry I use zsh mostly myself i forgot 
+[13:01:30] *** Quits: w7AeVytY (55cb11fe@ ) (Ping timeout: 250 seconds)
+[13:02:59] <sudden6> linuxmodder: if you want to discuss code, it's easiest if you upload a gist, pastebin,... whatever, else nobody knows what you are talking about
+[13:03:30] <linuxmodder> one sec I'll gist the full set of mods for review shortly
+[13:05:48] *** Joins: stvlker (~stvlker@ )
+[13:07:54] <linuxmodder> zetok,   on bootstrap.sh why is it still repeating the system-wide cflags on system-wide=false ?
+[13:08:13] <linuxmodder> the local section
+[13:10:24] <zetok> >why
+[13:10:33] <zetok> because it won't work otherwise
+[13:11:24] <linuxmodder> L178-192 here https://github.com/tux3/qTox/blob/master/bootstrap.sh
+[13:11:49] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[13:11:49] <linuxmodder> then why even have the local mention if its still retrying the system-wide
+[13:12:41] <zetok> where it is retrying?
+[13:14:02] <zetok> i.e. I don't see the code there that would rety to install system-wide after local install fails
+[13:15:33] <linuxmodder> ./configure --prefix="${BASE_DIR}" \
+[13:15:33] <linuxmodder>             --enable-tempstore=yes \
+[13:15:33] <linuxmodder>             CFLAGS="-DSQLITE_HAS_CODEC"
+[13:15:43] <linuxmodder> shown twice in master version of bootstrap.sh
+[13:16:16] <linuxmodder> the second lacking ${BASE_DIR}  but same operation
+[13:17:01] <linuxmodder> correct me if wrong but  system-wide == statically  built  non system-wide  == dynamically ?
+[13:20:35] <zetok> no
+[13:21:46] <linuxmodder> then pls explain 
+[13:21:57] <linuxmodder> as that is what it seemed like
+[13:22:29] <linuxmodder> or simply explain that role / purpose of the duplication there in those 18 lines 
+[13:24:16] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[13:24:28] *** Joins: Diadlo (~diadlo@ )
+[13:30:33] <zetok> there is local install and system-wide
+[13:32:04] <linuxmodder> seems like its same compile or it is simply the drop off of  ${BASE_DIR}  that make the local | system-wide  change?
+[13:32:27] <linuxmodder> and you are simply running same  static build but in a local dir vice a global system one?
+[13:32:45] <zetok> ~kinda
+[13:33:11] <linuxmodder> kinda ?
+[13:33:19] <linuxmodder> hm...
+[13:33:35] <zetok> both run locally, the difference is where they're put
+[13:34:02] <zetok> you might have a point that there's unnecessary duplication
+[13:34:27] <linuxmodder> as in a global default dir (system-wide) like a  /usr/bin vice local being  something like /usr/local/bin?
+[13:34:39] <zetok> no
+[13:34:56] <linuxmodder> couldn't we do a similar  check statement as  elsewhere in code 
+[13:35:45] <linuxmodder> then honestly the use of that ~ 20 lines makes no sense to me  other then needless duplication and confusion 
+[13:36:14] <linuxmodder> what if not the location dir where run what else is defining the system | non-system wide bits
+[13:36:35] <zetok> variables
+[13:37:11] <linuxmodder> where the ones at top of bootstrap or elsewhere
+[13:37:39] <linuxmodder> these ?  # directory where dependencies will be installed
+[13:37:39] <linuxmodder> INSTALL_DIR=libs
+[13:37:39] <linuxmodder> # just for convenience
+[13:37:39] <linuxmodder> BASE_DIR=${SCRIPT_DIR}/${INSTALL_DIR}
+[13:49:50] <linuxmodder> ??
+[13:52:22] *** Joins: st4ll1 (~st4ll1@ )
+[13:52:25] *** Quits: st4ll1 (~st4ll1@ ) (Client Quit)
+[14:41:48] <zetok> Diadlo: um, toxme.io does provide an API for changing info associated with given ID without password when you have SK, right?
+[14:42:23] <Diadlo> What is "SK"?
+[14:42:29] <zetok> secret key
+[14:43:40] <Diadlo> If I remember correct, yes
+[14:44:10] <zetok> does qTox use that?
+[14:44:53] * Diadlo goes to check it
+[14:45:35] <Diadlo> Yes
+[14:45:47] <Diadlo> qTox use SK to edit profile info
+[14:46:53] <zetok> I see
+[14:47:19] <Diadlo> What you want?
+[14:48:02] <zetok> https://lists.tox.chat/pipermail/qtox-dev/2016-June/000004.html
+[14:48:57] <zetok> password is impossible to get, but that user should be able to modify stuff, right?
+[14:51:09] <Diadlo> I not sure, but if I remember correct, yes. And user can modify information and get password again
+[15:00:40] <Diadlo> zetok: Hah. I found source of your gif :)  https://www.youtube.com/watch?v=iNtYHswzFzM
+[15:04:50] <zetok> :3
+[15:19:00] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[15:19:11] *** Joins: Diadlo (~diadlo@ )
+[15:28:49] *** Joins: abbat (~Anton@ )
+[15:45:34] *** Joins: ccsdss (~ray@ )
+[15:45:37] *** Parts: ccsdss (~ray@ ) ()
+[15:52:01] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 252 seconds)
+[16:11:04] -qtox-git-spam- [qTox] linux-modder opened pull request #3417: chore:(simple_make.sh) Fedora Packages (master...fedora_packages) https://git.io/voa95
+[16:14:39] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[16:20:11] *** Joins: dardevelin (~dardeveli@ )
+[16:45:55] *** Joins: Diadlo (~Diadlo@ )
+[16:46:50] *** Quits: Diadlo (~Diadlo@ ) (Client Quit)
+[16:47:23] *** Joins: Diadlo (~Diadlo@ )
+[17:04:00] *** Quits: Diadlo (~Diadlo@ ) (Ping timeout: 260 seconds)
+[17:11:03] -qtox-git-spam- [qTox] Talkless opened pull request #3418: fix(passwordedit.cpp): Fix build issue with Qt 5.3 (master...fix-qt53-support) https://git.io/voa7y
+[17:54:03] *** Joins: Diadlo (~Diadlo@ )
+[18:04:44] *** Joins: Diadl0 (~Diadlo@ )
+[18:05:27] *** Quits: Diadl0 (~Diadlo@ ) (Client Quit)
+[18:06:54] *** Quits: Diadlo (~Diadlo@ ) (Ping timeout: 250 seconds)
+[18:13:25] *** Joins: Diadlo (~Diadlo@ )
+[18:14:14] *** Quits: Diadlo (~Diadlo@ ) (Client Quit)
+[18:17:22] *** Joins: Diadlo (~diadlo@ )
+[18:35:37] *** Joins: seyt (~seyt@ )
+[19:04:14] *** Joins: Chiitoo (~Chiitoo@ )
+[19:18:25] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[19:41:54] *** Joins: VVD78053 (~VVD@ )
+[19:45:02] *** Joins: Sephi_ (~me@ )
+[19:45:22] *** Joins: oranges_ (oranges@ )
+[19:48:34] *** Joins: guest1234 (~valvin@ )
+[19:50:07] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[19:50:07] *** Quits: oranges (oranges@ ) (*.net *.split)
+[19:50:07] *** Quits: Andrew7 (~ziltro@ ) (*.net *.split)
+[19:50:08] *** Quits: Sephi (~me@ ) (*.net *.split)
+[19:50:08] *** Quits: valvin (~valvin@ ) (*.net *.split)
+[19:50:09] *** Sephi_ is now known as Sephi
+[19:52:15] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[19:54:13] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:55:05] *** Joins: f10_ (~flo@ )
+[19:56:24] *** Joins: Andrew7 (~ziltro@ )
+[19:56:35] *** Quits: seyt (~seyt@ ) (Quit: Under DDoS attack)
+[19:59:05] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:59:36] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[19:59:48] *** Joins: f10_ (~flo@ )
+[20:07:19] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[20:07:46] *** Joins: f10_ (~flo@ )
+[20:07:57] *** Joins: f10 (~flo@ )
+[20:14:45] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[20:15:09] *** Quits: f10 (~flo@ ) (Ping timeout: 276 seconds)
+[20:33:32] *** Joins: SkyzohKey (~skyzohkey@ )
+[20:46:27] *** Joins: Diadl0 (~Diadlo@ )
+[20:46:40] *** Quits: Diadl0 (~Diadlo@ ) (Client Quit)
+[20:48:32] *** Joins: Diadl0 (~Diadlo@ )
+[20:53:30] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 276 seconds)
+[20:56:15] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 264 seconds)
+[21:01:22] *** Joins: abbat (~Anton@ )
+[21:33:55] *** Joins: f10_ (~flo@ )
+[21:34:00] *** Joins: f10 (~flo@ )
+[22:19:00] *** oranges_ is now known as oranges
+[23:09:45] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[23:09:48] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[23:09:57] *** Joins: SkyzohKey (~skyzohkey@ )
+[23:24:31] *** Joins: hpanago (uid15586@ )
+[23:27:22] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[23:33:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[23:43:17] *** VVD78053 is now known as VVD
+[23:46:17] <SkyzohKey> zetok: https://gist.github.com/SkyzohKey/73ec7662c55c4140b5556fdae1b4091e
