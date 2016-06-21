@@ -1,0 +1,196 @@
+[00:00:00] *** Joins: cisc (~cisc@ )
+[00:27:22] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[00:52:34] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:08:06] *** Joins: cisc (~cisc@ )
+[01:20:00] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[01:35:09] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[04:00:57] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[04:01:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 276 seconds)
+[07:39:21] *** Joins: dardevelin (~dardeveli@ )
+[08:13:31] <zetok> SkyzohKey: yeah, that changelog is broken
+[09:04:43] *** Joins: sudd3n6 (~anonymous@ )
+[09:44:52] *** Joins: ccsdss (~ray@ )
+[09:45:41] *** Parts: ccsdss (~ray@ ) ()
+[09:54:44] *** Joins: abbat (~abbat@ )
+[10:02:36] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[10:43:15] *** Joins: sudd3n6 (~anonymous@ )
+[10:45:16] *** Quits: sudd3n6 (~anonymous@ ) (Client Quit)
+[10:46:42] *** Joins: sudden6 (~anonymous@ )
+[11:07:26] *** Joins: Chiitoo (~Chiitoo@ )
+[11:12:30] *** Joins: hpanago (uid15586@ )
+[12:26:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[12:36:21] *** Joins: f10 (~flo@ )
+[12:42:58] *** Joins: f10_ (~flo@ )
+[12:48:31] *** Joins: sudden6 (~anonymous@ )
+[12:53:36] *** Joins: stvlker (~stvlker@ )
+[12:56:03] <SkyzohKey> >yeah, that changelog is broken
+[12:56:35] <SkyzohKey> zetok: nope, it shows all the changes that hapenned on the repo
+[12:59:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[12:59:45] <zetok> SkyzohKey: yes, and does that in a broken way
+[13:02:00] *** Joins: abbat (~abbat@ )
+[13:04:18] <zetok> SkyzohKey: you're missing the point that changelog shouldn't be for what happens on repo (since that's irrelevant), but it should be for what happens with app
+[13:05:09] <zetok> and when it comes to changelog for app, it's broken, thus there's no point in using it
+[13:07:02] <cisc> ahh nice, when you download 2 magnet links and have pending metadata coming in using qBittorrent, it partially locks up kwin for 60 seconds
+[13:11:00] *** Joins: Diadlo (~diadlo@ )
+[13:11:09] *** Joins: SkyzohKey_ (~skyzohkey@ )
+[13:11:12] *** Joins: Dragofix- (Dragofix@ )
+[13:11:15] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 264 seconds)
+[13:14:04] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 252 seconds)
+[13:14:04] *** Dragofix- is now known as Dragofix
+[13:15:44] <zetok> lol @ kwin
+[13:23:30] *** Joins: st4ll1 (~st4ll1@ )
+[13:26:03] <cisc> qBittorent is likely the culprit, but kwin/plasmashell should be able to handle some naught code without crapping on itself
+[13:26:26] <cisc> *y
+[13:27:10] <cisc> how many lines of C++ is kwin anyway.. way I don't want to know
+[13:29:47] <cisc> i think moving Connection Settings dialogue in qTox to the Advanced tab may be a better idea to clean up that lengthy General tab in settings, and possibly give Chat & Theme their own tab
+[13:30:08] <cisc> or move them somewhere else, it's too long imo, all that scrolling
+[13:31:15] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 250 seconds)
+[13:32:13] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 252 seconds)
+[13:43:04] <zetok> yeah
+[13:43:14] <zetok> dedicated "Network" setting tab would do it
+[13:46:23] <cisc> maybe when tux3 comes back he can add that feature
+[13:46:25] <SkyzohKey_> wait, qTox doesn't have a network page ?
+[13:47:34] <cisc> it does if you're stoned out of your mind and on peyote
+[13:48:37] *** Joins: Diadlo (~diadlo@ )
+[13:48:42] <cisc> "There's that Network tab, god damn it.." "it was there all along!"
+[13:53:07] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 252 seconds)
+[13:55:09] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[13:55:55] *** Joins: Diadlo (~diadlo@ )
+[13:55:57] <zetok> lol :D
+[14:09:11] *** Joins: LittleVulpix (~Miranda@ )
+[14:28:37] *** Joins: ccsdss (~ray@ )
+[14:28:40] *** Parts: ccsdss (~ray@ ) ()
+[14:43:10] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 252 seconds)
+[14:50:05] *** Quits: Impyy_ (~impy@ ) (Quit: Death)
+[14:50:36] *** Joins: Impyy (~impy@ )
+[14:51:03] *** Joins: Lord_Vlad (~Vlad@ )
+[14:58:17] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[15:05:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[15:05:10] *** Joins: Diadlo (~diadlo@ )
+[15:47:37] *** Joins: f10__ (~flo@ )
+[15:47:49] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[16:10:29] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[16:10:59] *** Joins: abbat (~abbat@ )
+[16:25:35] *** Joins: linxon (~lin@ )
+[16:28:17] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 272 seconds)
+[16:30:52] *** Joins: Diadlo (~diadlo@ )
+[16:58:49] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:15:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:19:53] *** Joins: abbat (~abbat@ )
+[17:20:20] *** Joins: f10 (~flo@ )
+[17:22:05] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 246 seconds)
+[18:05:15] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 244 seconds)
+[18:10:35] *** Joins: Diadlo (~diadlo@ )
+[18:16:16] *** Joins: st4ll1 (~st4ll1@ )
+[18:24:46] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[18:24:57] *** Joins: Diadlo (~diadlo@ )
+[18:48:42] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:03:33] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 258 seconds)
+[19:15:37] *** Joins: sudden6 (~anonymous@ )
+[19:20:11] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[19:41:54] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:49:17] *** Joins: Diadlo (~diadlo@ )
+[20:15:55] -qtox-git-spam- [qTox] sudden6 closed pull request #3418: fix(passwordedit.cpp): Fix build issue with Qt 5.3 (master...fix-qt53-support) https://git.io/voa7y
+[20:21:13] *** Joins: Chiitoo (~Chiitoo@ )
+[20:34:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[20:50:27] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[20:51:31] *** Joins: f10__ (~flo@ )
+[20:58:56] *** Joins: sudden6 (~anonymous@ )
+[21:01:54] *** Joins: f10_ (~flo@ )
+[21:02:11] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[21:02:41] *** Quits: f10 (~flo@ ) (Quit: Konversation terminated!)
+[21:04:03] *** Joins: f10 (~flo@ )
+[21:10:45] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 244 seconds)
+[22:32:37] -qtox-git-spam- [qTox] sudden6 closed pull request #3415: chore(qtox.pro): enable maximum ressource compression (master...reduce_memory) https://git.io/voaVY
+[22:36:26] <sudden6> zetok: can you ask tux3 and or antis81 about https://github.com/tux3/qTox/pull/3411 if you see them around?
+[22:36:55] <zetok> yep
+[22:38:25] <sudden6> thx, personally I think this is a good move, but I'd like to hear other opinions and counterarguments
+[22:39:21] <zetok> antis81 most likely will comment on PR when he would have time
+[22:40:27] <sudden6> yeah, maybe I'm a bit impatient^^
+[22:40:42] <sudden6> but I hate to let others wait for a decision...
+[22:41:13] * zetok knows the feel
+[22:41:27] <zetok> and there's a trick to it
+[22:41:33] *** Joins: hpanago (uid15586@ )
+[22:41:39] <zetok> *test really well what you're merging*
+[22:41:56] <zetok> and as long as no one complains, it's all good
+[22:42:18] <zetok> sudden6: i.e. there's no point in waiting for answer that will not come
+[22:42:41] <sudden6> I don't know how to apply this to the current situation
+[22:43:22] <zetok> well, you should know what you're merging
+[22:43:53] <zetok> provided that you know what the change results in, there's no problem
+[22:44:02] <zetok> if you don't → educate yourself
+[22:44:15] <zetok> (that's what I do with PRs to zetox)
+[22:44:26] <sudden6> ahm, the mentioned PR doesn't really have something to test in the classical sense
+[22:44:46] <zetok> mm :)
+[22:44:58] <sudden6> and my short trip to the internet for education told me, it's good
+[22:45:25] <sudden6> but I still feel like there should be counterarguments
+[22:45:39] <sudden6> if there aren'T any it would be to good to be true
+[22:46:56] <zetok> well, if I wasn't sure about something in Rust, I'd just read the Rust spec
+[22:47:57] <zetok> how applicable is that to C++?
+[22:48:33] <sudden6> rust spec is a lot more defined and leaves much less to the programmer IMHO
+[22:48:37] <sudden6> so, not much
+[22:48:46] <zetok> >_>
+[22:49:07] <zetok> so even with hundreds of pages (thousands?) C++ spec is still useless?
+[22:49:23] <sudden6> because of the hundreds of pages
+[22:49:28] <sudden6> it's useless
+[22:50:19] <zetok> that's just wrong
+[22:51:25] <sudden6> at least it feels like that to me^^
+[22:51:31] <zetok> mm
+[22:52:13] <sudden6> Rust designers learned from the past mistake of letting developers do things the way they like
+[22:53:35] <zetok> k
+[22:53:53] * zetok will keep cultivating his C++ cargo cult
+[22:54:13] <sudden6> what's a cargo cult?
+[22:54:27] <zetok> https://en.wikipedia.org/wiki/Cargo_cult
+[22:54:39] <oranges> c++ was a mistake
+[22:54:48] <oranges> it was like how can we take C and add everything
+[22:56:00] <sudden6> yep
+[22:56:19] <sudden6> still one of the most popular languages today
+[22:56:43] <zetok> tux3 seems to like C++
+[22:57:15] <zetok> hmm
+[22:58:31] <zetok> at least qTox doesn't seem to get the kind of broken code that µTox gets
+[22:59:14] <sudden6> zetok: I heard Encrypt is doing pkg.tox.chat now, does that mean we don't move to OBS entirely now?
+[22:59:26] <zetok> ?
+[22:59:32] <zetok> sudden6: I know nothing of this
+[23:00:13] <sudden6> I mentioned OBS repo being better suited for users on #tox
+[23:00:40] <sudden6> and that pkg.tox.chat would be discontinued sometime in the future
+[23:01:36] <sudden6> then he answered, that he is maintaining package scripts for qtox on pkg.tox.chat
+[23:01:57] <zetok> ok
+[23:02:08] * zetok notes whom to blame for broken stuff
+[23:02:15] <sudden6> I heard nothing of this either
+[23:02:37] <sudden6> maybe we should invite him for a short discussion on #qtox?
+[23:02:50] <zetok> I wonder if packages from tox.chat can still be trusted
+[23:03:12] <sudden6> why?
+[23:03:38] <zetok> trust is not something you have by default
+[23:04:04] <sudden6> bad argument
+[23:04:06] <zetok> so the question is "why would they be trusted?", rather than "why not trust?"
+[23:04:16] <sudden6> why trust OBS then?
+[23:04:52] <zetok> ~auditable + done by person who does a lot of good
+[23:07:04] <sudden6> auditable also goes as far for pkg.tox.chat
+[23:07:07] <zetok> bullshit
+[23:07:47] <zetok> it can be easily made to look auditable while it's not at all auditable
+[23:08:32] <sudden6> as can OBS
+[23:09:04] <zetok> not really
+[23:09:51] <sudden6> show me please
+[23:10:48] <zetok> um?
+[23:11:20] <sudden6> show me why OBS is auditable and pkg.tox.chat is not
+[23:12:28] *** Joins: abbat (~Anton@ )
+[23:12:42] <zetok> sudden6: https://github.com/abbat/tox.pkg there you go :)
+[23:14:02] <sudden6> buildscripts are also available for jenkins
+[23:14:10] <zetok> yeah, no
+[23:15:12] <sudden6> https://github.com/Encrypt/toxdeb/tree/master/configs
+[23:16:05] <zetok> lol
+[23:16:25] <sudden6> also at https://build.tox.chat/view/qtox/
+[23:16:31] <zetok> lol
+[23:17:17] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:24:23] <zetok> sudden6: is there something else that would actually show real configs?
+[23:26:46] *** Quits: TheVoid (~void@ ) (Ping timeout: 252 seconds)
+[23:31:39] <sudden6> example: https://github.com/tux3/tox-pkgs/tree/qtox-vivid
+[23:31:58] <sudden6> seems like things are still setup by tux3
+[23:32:27] <zetok> lol
+[23:32:43] *** Joins: TheVoid (~void@ )
+[23:33:53] <oranges> tux3 more like deadandgone3
+[23:36:07] <zetok> https://youtube.com/watch?v=Y6ljFaKRTrI
+[23:36:53] <zetok> what a horrible quality
+[23:39:16] <zetok> almost like audio groupchat :|
+[23:54:03] * zetok wonders when new groupchats will support audio
+[23:54:58] <sudden6> soon™
+[23:55:08] <zetok> <_<
