@@ -1,0 +1,225 @@
+[00:00:19] <zetok> that's one sad joke :(
+[00:04:22] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:04:39] *** Joins: cisc (~cisc@ )
+[00:04:56] *** Quits: cisc (~cisc@ ) (Client Quit)
+[00:05:11] *** Joins: cisc (~cisc@ )
+[00:46:08] *** Joins: abbat_ (~Anton@ )
+[00:46:15] *** Quits: abbat (~Anton@ ) (Ping timeout: 260 seconds)
+[01:37:56] -qtox-git-spam- [qTox] abbat opened pull request #3423: fix(systemtrayicon): #3419, don't activate qTox widget on tray icon click in Unity backend (master...master) https://git.io/vor7B
+[01:47:51] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 264 seconds)
+[01:48:35] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:50:10] *** Quits: abbat_ (~Anton@ ) (Remote host closed the connection)
+[01:52:02] *** Joins: cisc (~cisc@ )
+[01:52:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[01:53:32] -qtox-git-spam- [qTox] b4n opened pull request #3424: refactor(passwordedit): optimize event handler unregistration (master...widget/passwordedit/one-time-vector-walk) https://git.io/vor51
+[02:14:55] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[02:15:23] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[02:35:51] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 264 seconds)
+[02:44:33] *** Joins: smaragdus (~omoo@ )
+[02:45:14] *** Quits: smaragdus (~omoo@ ) (Client Quit)
+[02:46:15] *** Joins: smaragdus (~omoo@ )
+[03:08:28] *** Quits: SkyzohKey_ (~skyzohkey@ ) (Ping timeout: 258 seconds)
+[03:08:56] *** Joins: f10 (~flo@ )
+[03:11:23] *** Joins: f10_ (~flo@ )
+[03:12:29] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[03:21:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:26:15] *** Quits: linxon (~lin@ ) (Ping timeout: 264 seconds)
+[03:27:51] *** Joins: linxon (~lin@ )
+[04:34:44] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 250 seconds)
+[04:35:55] *** Joins: smaragdus (~omoo@ )
+[05:17:14] <Se7en> I got the latest qtox binary
+[05:17:16] <Se7en> I get the error
+[05:17:17] <Se7en> qtox: /usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by qtox)
+[05:19:20] <Se7en> Anyone have the answer
+[05:37:09] <oranges> install libstdc ?
+[05:37:18] <oranges> well you probably have it
+[05:37:23] <oranges> but no the 1.3.8 version
+[05:37:25] <oranges> what is your os Se7en 
+[05:38:16] <Se7en> Trisquel 7
+[05:38:57] <Se7en> If I need to recompile the thing, can you link me te libstdc source?
+[05:39:43] <Se7en> This is version 3
+[05:39:47] <Se7en> Do I need 6?
+[05:40:07] <Se7en> Oh.
+[05:40:09] <oranges> version 3 of what?
+[05:40:22] <oranges> the problem is that your C++ABI is either too new or too old
+[05:40:23] <Se7en> I would need to recompile GCC to get the new libstdc?
+[05:40:40] <oranges> what version of gcc do you have?
+[05:41:09] <Se7en> How  do I tell
+[05:41:16] <oranges> gcc -v
+[05:41:26] <Se7en> Thought so
+[05:41:29] <Se7en> wasn't sure
+[05:41:30] <Se7en> gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+[05:42:18] <oranges> and how did you install qtox?
+[05:43:03] <oranges> i.e via package manager(and the package website) or via source
+[05:45:19] <oranges> the 1.3.8 abi was introduced in gcc 4.9 and above
+[05:45:53] <oranges> I know that antonbatev packaged qtox for ubuntu 14.04, so it might be worth asking zetok if he knows how that was achieved
+[05:58:21] <Se7en> I got the binary from the github
+[05:58:28] <Se7en> And put it in /usr/local/bin
+[06:03:05] <Se7en> oranges, 
+[06:03:36] <Se7en> My system is based on Ubuntu, ut it runs more like mainline debian
+[06:05:52] <oranges> ah well that's the limit of my knowledge
+[06:06:02] <oranges> I'm not up tto speed on qtox sorry
+[06:06:07] <Se7en> I was using an older binary
+[06:17:46] <Se7en> Also, did you  see this
+[06:17:46] <Se7en> https://blog.tox.im/2016/04/01/litigation/
+[07:48:32] *** Joins: abbat (~Anton@ )
+[08:14:33] <zetok> Se7en: just use the repo
+[08:18:30] <zetok> Se7en: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[08:18:45] <Se7en> I can't use  the repo. It fails to work with Trisquel 7
+[08:18:51] <Se7en> Why would you link me the OpenSUSE repo?
+[08:19:04] <Se7en> Oh
+[08:23:05] <Se7en> The repo doesn't work
+[08:23:11] <Se7en> Because of version conflicts
+[08:23:36] <zetok> are you sure that you're using the right repo?
+[08:23:59] <Se7en>  qtox depends on libjpeg62-turbo (>= 1.3.1); however:
+[08:23:59] <Se7en>   Package libjpeg62-turbo is not installed.
+[08:23:59] <Se7en>  qtox depends on libmng1 (>= 1.0.10); however:
+[08:23:59] <Se7en>   Package libmng1 is not installed.
+[08:24:00] <Se7en>  qtox depends on libstdc++6 (>= 4.9); however:
+[08:24:01] <Se7en>   Version of libstdc++6:amd64 on system is 4.8.4-2ubuntu1~14.04.3.
+[08:24:02] <Se7en>  qtox depends on libxcb-keysyms1 (>= 0.4.0); however:
+[08:24:04] <Se7en>   Version of libxcb-keysyms1:amd64 on system is 0.3.9-1ubuntu1.
+[08:25:40] <Se7en> The Ubuntu one is really fucked
+[08:25:45] <Se7en> But debian is less so
+[08:27:14] <zetok> err
+[08:27:25] <zetok> I'm almost sure that you're not using the right repo
+[08:27:42] <Se7en> Trisquel will probably release thewir 8th release soon
+[08:27:51] <Se7en> Maybe then the package manager won't be broken
+[08:28:33] <zetok> given that libjpeg62-turbo is not even in *buntu 14.04..
+[08:28:49] <abbat> Se7en, Trisquel 7.0 based on Ubuntu 14.04 LTS. Do you use Trusty repo?
+[08:29:32] <Se7en> Yes I did
+[08:29:57] <Se7en> I did that one, and it lists more dependency hell errors than the debian one
+[08:33:21] <zetok> Se7en: `apt-cache show qtox` ?
+[08:35:29] <Se7en> http://paste.lisp.org/display/318876/raw
+[08:36:07] <Se7en> That's the ubuntu one
+[08:42:57] <Se7en> zetok, oranges 
+[08:43:08] <Se7en> I'll get you the debian one
+[08:43:14] <Se7en> It must not have posted
+[08:45:44] <Se7en> http://paste.lisp.org/+6U1R
+[08:45:53] <Se7en> zetok, what should I do
+[08:46:55] * zetok is not sure
+[08:47:25] <zetok> abbat: um, *buntu package depends on stuff that is only available in debian..?
+[08:47:48] <zetok> or rather, it's named differently in *buntu
+[08:48:02] <abbat> zetok, No. libjpeg-turbo also in Trusty: http://packages.ubuntu.com/source/trusty/libjpeg-turbo
+[08:48:37] <abbat> zetok, But http://paste.lisp.org/+6U1R - this is debian package
+[08:49:59] <zetok> right
+[08:50:09] <abbat> https://build.opensuse.org/package/binary/home:antonbatenev:tox/qtox?arch=x86_64&filename=qtox_201606210121%7E279225c_amd64.deb&repository=xUbuntu_14.04 - There is no depency from libjpeg-turbo
+[08:50:15] <zetok> sorry, looked at wrong file
+[08:51:32] <abbat> But seems we need static builds as static as we can for other distros.
+[08:51:45] <zetok> Se7en: https://gist.github.com/zetok/da8e778e0bc1642b234cb47e4edcce38 ← *buntu 14.04 one, use the right repo
+[08:52:38] <Se7en> Alright. I'll try it
+[08:53:15] <zetok> abbat: um, do you think that PPA for 16.10 should be included in INSTALL.md ?
+[08:54:11] <Se7en> The following packages have unmet dependencies:
+[08:54:11] <Se7en>  qtox : Depends: libappindicator1 (>= 0.2.96) but it is not going to be installed
+[08:54:12] <Se7en> E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
+[08:54:38] <Se7en> Wait. It did work that time
+[08:54:46] <Se7en> It is fetching the dependencies
+[08:57:35] <abbat> Se7en, http://packages.ubuntu.com/trusty/libs/libappindicator1 - exists in Trusty
+[08:57:56] <Se7en> It works
+[08:57:57] <Se7en> Except
+[08:58:01] <Se7en> I logged into the thing.
+[08:58:15] <Se7en> It is unable to access my chat logs, it said
+[08:59:23] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[09:52:57] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[09:56:30] *** Joins: LittleVulpix (~Miranda@ )
+[10:05:24] *** Joins: abbat (~abbat@ )
+[10:12:46] *** Joins: SkyzohKey (~skyzohkey@ )
+[10:34:47] *** Joins: sudden6 (~anonymous@ )
+[10:55:28] *** Joins: stvlker (~stvlker@ )
+[11:12:07] *** Joins: Diadlo (~diadlo@ )
+[11:32:54] *** Joins: f10_ (~flo@ )
+[11:55:39] *** Joins: Chiitoo (~Chiitoo@ )
+[11:58:56] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 246 seconds)
+[12:03:08] *** Joins: Diadlo (~diadlo@ )
+[12:04:58] *** Joins: STvLKER_ (~stvlker@ )
+[12:06:25] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[12:08:15] *** Quits: stvlker (~stvlker@ ) (Ping timeout: 264 seconds)
+[12:10:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[12:10:32] *** Joins: abbat (~abbat@ )
+[12:39:19] *** Joins: st4ll1 (~st4ll1@ )
+[13:12:13] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[13:14:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:15:42] *** Quits: dardevelin (~dardeveli@ ) (Remote host closed the connection)
+[13:19:08] *** Joins: abbat (~abbat@ )
+[14:53:48] *** Joins: f10_ (~flo@ )
+[15:01:32] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 260 seconds)
+[15:06:14] *** Joins: Diadlo (~diadlo@ )
+[15:13:34] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 260 seconds)
+[15:18:01] *** Joins: Chiitoo (~Chiitoo@ )
+[15:24:04] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[15:30:12] *** Joins: abbat (~abbat@ )
+[15:58:43] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[16:32:19] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[16:32:47] *** Joins: abbat (~abbat@ )
+[17:25:10] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[17:35:54] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[17:37:33] *** Quits: STvLKER_ (~stvlker@ ) (Read error: Connection reset by peer)
+[17:38:21] *** Joins: abbat (~abbat@ )
+[17:40:48] *** Joins: stvlker (~stvlker@ )
+[18:07:11] -qtox-git-spam- [qTox] zetok closed pull request #3413: refactor(.qrc): split emoticon resource files into separate ones (master...emoticons) https://git.io/vo2Fz
+[18:10:21] *** Joins: ccsdss (~ray@ )
+[18:10:23] *** Parts: ccsdss (~ray@ ) ()
+[18:20:14] *** Joins: dardevelin (~dardeveli@ )
+[18:33:47] *** Joins: rebelpunk (~onyx@ )
+[18:33:54] <rebelpunk> hey I'm running TAILS does anyone know how to set up utox with TAILS? I'm able to launch the client but it never connects. I even tried the command torsocks utox and it still just hangs and stays offline..
+[18:34:40] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[18:37:39] <zetok> dunno, don't use µTox
+[18:37:59] <zetok> s/,/, I/
+[18:59:04] <zetok> rebelpunk: https://wiki.ubuntuusers.de/Tox/#Anonymitaet 
+[19:07:04] <rebelpunk> zetok, I tried that already. like I said it still won't log me in..
+[19:07:29] <rebelpunk> I already had that SOCKS 5 setup
+[19:07:51] <rebelpunk> still a red ring 
+[19:19:41] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:24:56] <zetok> you're sure that you got port right?
+[19:28:24] *** Joins: st4ll1 (~st4ll1@ )
+[19:44:50] <zetok> if you did, then it just will take some time
+[19:46:49] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:02:42] *** Joins: hpanago (uid15586@ )
+[20:27:14] *** Joins: smaragdus2 (~omoo@ )
+[20:28:39] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 264 seconds)
+[20:30:27] *** Quits: Sephi (~me@ ) (Ping timeout: 264 seconds)
+[20:30:35] *** Joins: Sephi (~me@ )
+[21:15:21] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[21:34:39] <zetok> since it's public now
+[21:34:58] <zetok> nurupo: https://github.com/tux3/qTox/issues/2909#issuecomment-227560986 there you go :|
+[21:35:52] <rebelpunk> yeah 9050
+[21:36:04] <rebelpunk> still not connecting
+[21:36:36] * zetok wonders
+[21:37:00] <zetok> I had something similar happen when I've tried to use socks5 proxy
+[21:37:17] <zetok> hmm
+[21:37:54] * zetok wonders whether TCP relays could be going down
+[21:39:43] <zetok> time to test
+[21:40:39] <zetok> aaand it works
+[21:41:43] <zetok> rebelpunk: you might want to restart qTox (or log out/in)
+[21:42:31] <zetok> oh wait
+[21:42:37] <rebelpunk> ?
+[21:42:44] <zetok> rebelpunk: are you sure that it's really 9050 ?
+[21:42:50] <rebelpunk> yeah
+[21:42:59] <rebelpunk> remember this is over TAILS OS
+[21:43:10] <zetok> that doesn't mean much
+[21:43:18] <zetok> port could be different
+[21:45:24] <zetok> or, as usual, Tor is the issue
+[21:45:53] *** Joins: abbat (~Anton@ )
+[21:46:37] <zetok> low-latency socks5 work, while tor one doesn't
+[21:48:52] <zetok> :D
+[21:49:04] <zetok> rebelpunk: works for me
+[21:49:14] * zetok got port wrong
+[21:56:23] <zetok> rebelpunk: try with 9150 ?
+[22:01:12] *** Joins: Diadlo (~diadlo@ )
+[22:10:40] *** Joins: f10 (~flo@ )
+[22:28:10] <rebelpunk> zetok, I'll try that one sec
+[22:36:36] <rebelpunk> waiting to see if it connects
+[22:37:08] <rebelpunk> zetok: have you tried it on TAILS before?
+[22:37:47] <zetok> nah
+[22:57:31] *** Quits: rebelpunk (~onyx@ ) (Ping timeout: 252 seconds)
+[23:10:50] *** Joins: rebelpunk (~onyx@ )
+[23:29:21] *** Joins: f10__ (~flo@ )
+[23:29:28] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[23:31:25] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[23:31:27] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[23:31:48] *** Joins: f10 (~flo@ )
+[23:33:26] *** Joins: f10__ (~flo@ )
+[23:39:39] *** Joins: dardevelin (~dardeveli@ )
+[23:41:12] *** Joins: sudden6 (~anonymous@ )
+[23:44:25] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:53:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
