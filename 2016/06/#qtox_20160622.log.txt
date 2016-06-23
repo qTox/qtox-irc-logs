@@ -1,0 +1,175 @@
+[00:54:56] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:08:20] *** Quits: Dragofix (Dragofix@ ) (Read error: Connection reset by peer)
+[01:08:31] *** Joins: Dragofix (Dragofix@ )
+[01:16:54] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[01:17:22] *** Joins: f10__ (~flo@ )
+[01:22:32] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 246 seconds)
+[01:24:40] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[01:25:14] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:41:23] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[02:43:37] *** Parts: oranges (oranges@ ) ()
+[03:07:53] <SkyzohKey> ahahahahah
+[03:08:41] <SkyzohKey> kidness spotted: https://gist.github.com/SkyzohKey/16f47dea9e866def6ac8640d76d73272
+[03:13:36] <SkyzohKey> Jfreegman is a cancer
+[03:14:11] <SkyzohKey> Abusing his fucking ops powers to ban people that contributes to Tox, while he touch his dick everytimes.
+[04:43:51] -qtox-git-spam- [qTox] linux-modder closed pull request #3417: chore:(simple_make.sh) Fedora Packages (master...fedora_packages) https://git.io/voa95
+[04:55:29] *** Quits: rebelpunk (~onyx@ ) (Quit: Leaving)
+[05:26:49] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[05:28:59] *** Joins: cisc (~cisc@ )
+[05:55:41] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:12:24] *** Joins: cisc (~cisc@ )
+[06:41:40] <cisc> So qTox is confirmed running on Mac OS Sierra
+[07:47:54] *** Joins: rysiekpl (~quassel@ )
+[07:54:07] *** Joins: f10__ (~flo@ )
+[08:04:44] *** Quits: rysiek|pl (~quassel@ ) (*.net *.split)
+[08:30:55] *** Joins: abbat (~Anton@ )
+[08:50:08] *** Joins: st4ll1 (~st4ll1@ )
+[09:00:28] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:13:21] *** rysiekpl is now known as rysiek|pl
+[09:33:22] *** Joins: sudden6 (~anonymous@ )
+[09:38:15] *** Quits: f10__ (~flo@ ) (Ping timeout: 264 seconds)
+[09:42:20] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[09:51:35] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 272 seconds)
+[10:03:27] *** Joins: abbat (~abbat@ )
+[10:03:30] *** Joins: sudden6 (~anonymous@ )
+[10:11:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[10:22:32] *** Joins: Chiitoo (~Chiitoo@ )
+[10:29:17] *** Joins: st4ll1 (~st4ll1@ )
+[11:08:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[11:14:41] *** Joins: abbat (~abbat@ )
+[11:40:19] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[11:50:31] *** Joins: sudden6 (~anonymous@ )
+[11:56:07] *** Joins: cisc (~cisc@ )
+[12:38:51] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[12:39:17] *** Joins: sudden6 (~anonymous@ )
+[13:22:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[13:49:58] *** Joins: sudden6 (~anonymous@ )
+[14:03:21] *** Joins: rkzzy (~ishhh@ )
+[14:04:30] <rkzzy> Is there a plan to have program versions (e.g. 1.1,1.2) for qTox, PGP signatures for the installer and authenticode signing on windows?
+[14:04:50] <rkzzy> or is qTox supposed to be always just latest git, relying on https to download it from github?
+[14:09:21] *** Quits: smaragdus2 (~omoo@ ) (Ping timeout: 272 seconds)
+[14:11:49] <zetok> rkzzy: updates for windows are signed
+[14:11:52] *** Joins: stvlker (~stvlker@ )
+[14:14:19] *** Joins: f10 (~flo@ )
+[14:16:53] <CryptoSiD> where can i see the changelogs
+[14:16:59] <CryptoSiD> i dont remember:D
+[14:17:42] <rkzzy> true, the automatic updater checks the signature. I prefer to be able to distribute setup-qtox.exe on a cd (included with a computer magazine) and have a PGP signature next to it and/or authenticode on that binary.
+[14:17:50] <rkzzy> plus, I don't use autoupdates
+[14:18:00] <rkzzy> I always read changelogs (or git history) first
+[14:18:38] <rkzzy> I like to be able to say that the setup file definitely came from the developer
+[14:18:47] <zetok> CryptoSiD: CHANGELOG.md
+[14:18:48] <rkzzy> especially important for security focused tools
+[14:19:10] <zetok> CryptoSiD: right, it should be added to `About` tab in qTox
+[14:19:25] <CryptoSiD> yeah
+[14:19:34] <CryptoSiD> I think the group save should be done ASAP
+[14:19:38] <CryptoSiD> if its still not
+[14:21:19] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[14:22:08] <zetok> rkzzy: right, could you make an issue about providing signature along with the .exe ?
+[14:22:31] <rkzzy> zetok: sure, on it now
+[14:23:01] <zetok> rkzzy: btw, if you're going to distribute qTox, you should also include its sources to comply with GPL
+[14:24:13] *** Joins: abbat (~abbat@ )
+[14:27:22] <rkzzy> zetok: do I have to do that even if I distribute an unmodified binary of the setup, with a link to the homepage and github?
+[14:27:30] <zetok> yep
+[14:27:35] <rkzzy> interesting
+[14:27:54] <zetok> or at least that's the case with GPLv2
+[14:28:29] <rkzzy> is this the correct thing to include? https://github.com/tux3/qTox/archive/v1.4.1.zip
+[14:28:38] <zetok> from what I remember there was slight change to GPLv3 that allowed e.g. torrenting GPLv3 binaries without including sources
+[14:29:10] <zetok> not sure if your use case would fall under that
+[14:29:27] <zetok> rkzzy: depends on the version you'd distribute
+[14:29:37] <zetok> if that's the one, then ~yes
+[14:30:50] <zetok> actually, lemme see what GPLv3 actually says
+[14:33:05] <abbat> zetok, Seems this Issue https://github.com/tux3/qTox/issues/3422 can be closed. And if we merge https://github.com/tux3/qTox/pull/3423 we can make one user happy :)
+[14:33:48] <zetok> abbat: ok
+[14:34:13] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[14:34:45] <zetok> as for merging
+[14:34:48] <zetok> sudden6: ↑ ?
+[14:36:53] *** Joins: f10 (~flo@ )
+[14:37:48] <sudden6> with comment, it's good
+[14:44:30] <zetok> rkzzy: yeah, you'd either need to include source (of qTox & toxcore) along with binary, or offer for recipients an ability to download source from server
+[14:45:25] <zetok> rkzzy: note that according to GPL when you distribute stuff, you have to ensure that source code is available for 3 years since the moment you've distributed binary
+[14:46:02] <zetok> (distribute source separately from binary)
+[14:46:21] <zetok> i.e. distributing source along with binary seems like the most hassle-less way
+[14:46:40] <zetok> https://github.com/tux3/qTox/blob/master/LICENSE#L245
+[14:46:52] <zetok> "object code" – binary
+[14:48:08] <rkzzy> thank you for bringing this to my attention. For all software with an opensource license, we just always stated the binaries were not modifying by us, where we got the binaries from, and a link to the download page of source code.
+[14:48:15] <rkzzy> I will check what to do.
+[14:50:17] <rkzzy> by the way, this is also why we prefer to have pgp signatures and authenticode signing - to prove that we do not modify the distributed binaries
+[14:50:31] <zetok> mm :)
+[14:50:55] <zetok> um, for GPL it doesn't really matter whether binary was modified or not
+[14:51:53] <zetok> with that being said, no one would really care about someone distributing unmodified qTox without source & just linking to the repo
+[14:52:21] <zetok> that is, I for one would be happy that someone distributes qTox :)
+[14:52:59] <rkzzy> all this is for a DVD for a magazine, we're doing a month of security tool review, and we're including the tools we review (license permitting).
+[14:53:40] <zetok> rkzzy: the above is just from legal standpoint, i.e. to have 100% compliance with GPL source must be included, or you have to ensure that recipients can get the source
+[14:53:44] <rkzzy> with every program we clearly state where we obtained it from, what license it is under, and where the source code can be found
+[14:54:25] <rkzzy> I admit, I am a bit worried but I am not a lawyer - including the source code for all tools will likely not make things fit on the DVD
+[14:54:34] <rkzzy> I need to check it with our lawyer
+[14:55:05] <zetok> (sorry about making things harder for you)
+[14:55:45] <rkzzy> does this mean that if someone distributes a linux livecd with a magazine, they need to include the source code too?
+[14:55:52] <rkzzy> linux source code is massive in size
+[14:56:15] <zetok> yep, or they have to provide a way for people to get the source code
+[14:57:19] <zetok> e.g. they can simply include line like "to get source code write a request letter to given address .."
+[14:58:10] <rkzzy> ok, thank you for the information
+[14:59:20] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[14:59:29] <zetok> https://github.com/tux3/qTox/blob/master/LICENSE#L257,L266
+[15:05:06] <zetok> about that "written offer to provide source" – that's what e.g. BMW does
+[15:28:14] <zetok> https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29
+[15:29:27] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:30:22] *** Joins: abbat (~abbat@ )
+[15:31:35] *** Joins: smaragdus (~omoo@ )
+[15:37:39] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[15:38:01] *** Joins: st4ll1 (~st4ll1@ )
+[15:41:19] *** Quits: st4ll1 (~st4ll1@ ) (Client Quit)
+[15:41:39] *** Joins: st4ll1 (~st4ll1@ )
+[16:10:30] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[16:18:09] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[16:18:39] *** Joins: st4ll1 (~st4ll1@ )
+[16:21:00] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[16:54:35] *** Quits: rkzzy (~ishhh@ ) (Remote host closed the connection)
+[17:00:23] *** Joins: f10 (~flo@ )
+[17:11:56] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[17:33:50] <zetok> > * Various improvements in module-role-cork and module-role-ducking
+[17:34:09] <zetok> genesis: ↑ PA 9, does that change anything for qTox?
+[17:44:57] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:45:19] *** Joins: LittleVulpix (~Miranda@ )
+[17:50:24] <genesis> zetok : where ?
+[17:51:01] <genesis> i remember such module allows fine grained behavior when you accept a call
+[17:51:10] <zetok> https://lists.freedesktop.org/archives/pulseaudio-discuss/2016-June/026457.html
+[17:51:13] <genesis> reduce/cut volume of other application, etc
+[17:51:56] <cisc> I always comment out load-module module-role-cork because it messes up VoIP apps
+[17:52:04] <genesis> module-role-cork and module-role-ducking previously ignored streams that don't have the "media.role" property set. Now it's possible to refer to such streams in the configuration by using the special "no_role" string in place of a real stream role.
+[17:52:28] <cisc> for instance you are using Mumble, a KDE sound plays and then your media player cuts out
+[17:53:38] <genesis> worth the try, was not able to success using such thing before with qtox
+[17:53:49] <genesis> and i'm not able to make a PR this days.
+[17:58:34] *** Joins: st4ll1 (~st4ll1@ )
+[18:01:08] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[18:01:34] *** Joins: abbat (~abbat@ )
+[18:18:55] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[18:20:05] *** Joins: Chiitoo (~Chiitoo@ )
+[18:35:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[18:37:52] *** Joins: abbat (~abbat@ )
+[19:24:41] *** Joins: ccsdss (~ray@ )
+[19:24:45] *** Parts: ccsdss (~ray@ ) ()
+[19:25:58] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:38:28] *** Joins: rayb (577388fe@ )
+[19:43:12] *** Quits: rayb (577388fe@ ) (Client Quit)
+[20:32:03] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[20:34:09] *** Joins: f10 (~flo@ )
+[20:48:11] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:50:34] *** Joins: f10 (~flo@ )
+[20:55:57] *** Joins: f10_ (~flo@ )
+[20:56:25] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[21:11:21] *** Joins: abbat (~Anton@ )
+[21:23:11] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[21:29:52] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:56:46] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[21:57:15] *** Joins: f10_ (~flo@ )
+[21:59:55] *** Joins: cisc (~cisc@ )
+[22:13:04] *** Joins: sudden6 (~anonymous@ )
+[22:34:01] *** Joins: ccsdss (~ray@ )
+[22:34:04] *** Parts: ccsdss (~ray@ ) ()
+[22:47:02] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:49:58] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[23:01:59] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:07:01] *** Joins: f10_ (~flo@ )
+[23:39:08] *** Joins: smaragdus2 (~omoo@ )
+[23:39:08] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 258 seconds)
