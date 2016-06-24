@@ -1,0 +1,606 @@
+[00:18:23] *** Joins: f10 (~flo@ )
+[00:18:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:32:49] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:50:40] *** Joins: sudd3n6 (~anonymous@ )
+[01:00:26] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[01:00:38] *** Joins: sudden6 (~anonymous@ )
+[01:13:11] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[01:24:57] *** Joins: papu|2 (~kvirc@ )
+[01:26:06] *** Quits: papu|2 (~kvirc@ ) (Client Quit)
+[01:43:08] *** Joins: f10 (~flo@ )
+[01:46:24] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[01:55:37] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[02:19:02] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:58:03] *** Joins: sockspls (~sockspls@ )
+[03:58:10] <sockspls> Hi internet!
+[05:30:09] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[06:02:45] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[06:04:57] *** Joins: SkyzohKey (~skyzohkey@ )
+[06:05:06] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:18:38] *** Joins: cisc (~cisc@ )
+[08:13:45] *** Joins: abbat (~Anton@ )
+[08:13:50] *** Joins: f10 (~flo@ )
+[08:15:14] <zetok> hello sockspls
+[09:03:40] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[10:04:58] *** Joins: abbat (~abbat@ )
+[10:47:40] *** Joins: f10_ (~flo@ )
+[10:48:01] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[11:08:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[11:10:32] -qtox-git-spam- [qTox] kehugter opened pull request #3428: feat(translation): add update language Spanish (master...feat/spanish-translation) https://git.io/vo1Bj
+[11:13:55] *** Joins: abbat (~abbat@ )
+[12:31:45] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[12:32:02] *** Joins: abbat (~abbat@ )
+[13:16:26] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[13:19:44] *** Joins: Chiitoo (~Chiitoo@ )
+[13:22:03] *** Joins: abbat (~abbat@ )
+[13:47:44] *** Joins: Encrypt (~Chuck@ )
+[13:49:27] *** Quits: Encrypt (~Chuck@ ) (Client Quit)
+[13:51:30] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[13:53:55] *** Joins: f10_ (~flo@ )
+[14:06:11] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:06:43] *** Joins: f10_ (~flo@ )
+[14:24:47] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[14:28:20] *** Joins: cisc (~cisc@ )
+[14:36:43] *** Joins: f10 (~flo@ )
+[14:36:57] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[15:20:54] *** Joins: f10_ (~flo@ )
+[15:22:22] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:05:13] *** Joins: Encrypt (8da36307@ )
+[16:06:21] <Encrypt> Hello o/
+[16:06:26] <Encrypt> zetok: o/
+[16:06:46] <zetok> hello Encrypt
+[16:07:18] <Encrypt> zetok: May I PM you?
+[16:07:26] <zetok> tox ?
+[16:07:39] <Encrypt> Regarding your APT thing
+[16:08:06] <Encrypt> I don't know if you hyave seen that I recently created a building script for Jenkins
+[16:08:26] <Encrypt> I thought that could interest you
+[16:08:56] <Encrypt> And also, I believe that "detaching" from pkg.tox.chat is a bad thing for the users of Toxm regarding aTox
+[16:09:20] <zetok> err
+[16:09:21] <Encrypt> qTox*
+[16:09:25] <zetok> you got it wrong
+[16:09:31] <Encrypt> Rha, QWERTY keyboard :p
+[16:09:45] <Encrypt> zetok: Why?
+[16:09:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[16:10:00] <zetok> it's the other way around
+[16:10:25] <Encrypt> a good thing* then?
+[16:10:42] <Encrypt> Why do you believe that?
+[16:10:48] <zetok> not putting tox.chat at distance would hurt and was hurting qTox
+[16:11:15] <Encrypt> Actually, I'm also trying to understand what has been happening
+[16:11:30] <Encrypt> And when I have time, I would like to set up a clear organisation for Tox
+[16:11:35] <Encrypt> With a bord and so on
+[16:11:42] <zetok> you're most likely wasting your time
+[16:11:47] <Encrypt> Because we're going nowhere now
+[16:12:54] <Encrypt> zetok: That's such a shame that this project is exploding every other day
+[16:13:16] <Encrypt> You wanted to create a "Skype replacement"
+[16:13:30] <Encrypt> But that's not gonna happen if things to go on like that
+[16:13:31] <zetok> err, no, qTox doesn't explode every other day
+[16:13:46] <Encrypt> No but I'm considering Tox in general
+[16:14:02] <Encrypt> We're a group of IM enthusiats, come on!
+[16:14:21] <zetok> you're barking at the wrong door
+[16:14:43] <zetok> >Why do you believe that?
+[16:14:43] <Encrypt> I'm not barking, I'm trying to understand
+[16:14:45] <zetok> people
+[16:15:01] <zetok> Encrypt: yes, but your scope seems to be pointed in the wrong direction
+[16:15:28] <Encrypt> zetok: What is wrong with the people of the projects?
+[16:15:53] <Encrypt> I hyave to say that I firmly do not agree with their current method
+[16:16:10] <zetok> :D
+[16:16:18] <Encrypt> Consisting of banning users from IRC when there is something they don't like
+[16:16:26] <zetok> their inability to see that they're doing things wrong is one of their problems :D
+[16:16:26] <Encrypt> SkyzohKey knows
+[16:17:27] <zetok> Encrypt: so you don't need me telling you what is wrong, you know it yourself :)
+[16:17:47] <Encrypt> zetok: What is wrong for you?
+[16:17:57] <zetok> me?
+[16:17:59] <Encrypt> Apart from the banning thing which is also wrong for me
+[16:18:12] <Encrypt> You're not wrong for me :P
+[16:19:02] <Encrypt> After, I've been told of things that you may have said on #tox but since I have no log, I can't say much
+[16:19:33] <Encrypt> Hum err, #tox-dev
+[16:19:44] <zetok> about people being limited?
+[16:19:55] <Encrypt> "limited"?
+[16:20:10] <zetok> >their inability to see that they're doing things wrong is one of their problems :D
+[16:20:15] <Encrypt> huhu
+[16:20:27] <zetok> there are more problems that escape the sight though
+[16:20:40] <Encrypt> But you know
+[16:20:51] <Encrypt> There was the stqism problem
+[16:21:00] <Encrypt> Then you left the main project
+[16:21:05] <Encrypt> Then SkyzohKey was banned
+[16:21:29] <Encrypt> Thta's really not good
+[16:21:50] <zetok> mm
+[16:23:04] <zetok> question is, are you still hoping that tox.chat can be fixed, or would you prefer more realistic approach where you'd simply work with what you have?
+[16:23:11] <Encrypt> There's definitely something wrong that I'd like to understand
+[16:23:23] <Encrypt> Do you really see how big that project is?
+[16:23:31] <Encrypt> A real Skype replacement!
+[16:23:37] <Encrypt> Perosnally, that cheers me  A LOT
+[16:23:59] <Encrypt> zetok: I believe that tox can be fixed
+[16:24:06] <zetok> ok
+[16:24:11] <Encrypt> With a clear organisation, a clear sructure
+[16:24:22] <zetok> you're going to waste your time
+[16:24:24] <zetok> good luck though
+[16:24:30] <Encrypt> :(
+[16:24:52] <zetok> >their inability to see that they're doing things wrong is one of their problems :D
+[16:24:58] <zetok> Encrypt: feedback loop is missing
+[16:25:01] <Encrypt> Yeah but come on
+[16:25:05] <zetok> Encrypt: without it it's impossible to fix things
+[16:25:10] <Encrypt> zetok: If you don't tell what's wrong
+[16:25:16] * zetok just did
+[16:25:33] <Encrypt> ">their inability to see that they're doing things wrong is one of their problems :D"
+[16:25:39] <Encrypt> This is not helpful at all
+[16:25:47] <Encrypt> SkyzohKey told me what was wrong
+[16:25:54] <zetok> yes, what you'd need to do is to change people
+[16:26:04] <Encrypt> So essentially
+[16:26:04] <zetok> to actually fix the problem, rather than its symptoms
+[16:26:19] <Encrypt> It looks like you're children that can't see each other
+[16:26:32] <zetok> :)
+[16:26:47] <Encrypt> You're more intelligent than that, come on
+[16:27:06] <zetok> I've considered options, and I see no point in doing things differently
+[16:27:08] <Encrypt>  zetok Zhat about the symptoms then?
+[16:27:15] <Encrypt> What*
+[16:27:33] <Encrypt> irungentoo who "stopped" developing toxcore?
+[16:27:35] <zetok> org, irc, website, toxcore
+[16:27:47] <zetok> oh, and jenkins
+[16:27:51] <Encrypt> zetok: Why don't you develop toxcore then?
+[16:27:56] <zetok> (though that's kinda a part of website)
+[16:28:00] <zetok> Encrypt: I do
+[16:28:18] <Encrypt> Regarding Jenkins, my ToxDeb script packages for every Debian and Ubuntu distro
+[16:28:24] <Encrypt> Just as OpenBuild
+[16:28:32] <Encrypt> zetok: Yeah but in rust
+[16:28:39] <Encrypt> I know
+[16:28:48] <Encrypt> zetok: Regarding the website, I like it
+[16:29:00] <Encrypt> And I don't understand why you guys keep focusing on that
+[16:29:15] <Encrypt> And IRC... back to the people problem
+[16:29:17] <zetok> >Regarding Jenkins, my ToxDeb script packages for every Debian and Ubuntu distro
+[16:29:21] <zetok> that's not the problem
+[16:29:42] <Encrypt> So there's no problem? :x
+[16:29:51] <zetok> no, you've just missed it
+[16:29:57] <Encrypt> Hum
+[16:30:02] <zetok> level higher
+[16:30:15] <Encrypt> Thw one who owns Jenkins?
+[16:30:20] <Encrypt> The*
+[16:30:35] <zetok> no idea whether that's a problem, since I don't know who owns it
+[16:30:45] <Encrypt> Maybe nurupo 
+[16:30:52] <Encrypt> I still haben't found out
+[16:31:00] <zetok> there you have another problem :)
+[16:31:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[16:31:21] <Encrypt> zetok: So, back at my idea: a clear organisation has to be done
+[16:31:32] <Encrypt> zetok: But what is the higher problem?
+[16:31:36] <Encrypt> I don't get it
+[16:31:42] <zetok> Encrypt: about jenkins – problem I had in mind is making its usage/availability a matter of politics
+[16:31:55] <Encrypt> Hum
+[16:32:58] <zetok> Encrypt: if you're interested in making an org for qTox, I'm listening
+[16:33:24] *** Joins: abbat (~abbat@ )
+[16:35:21] <zetok> Encrypt: also, could you perhaps explain how you are going to change things when people don't want the change?
+[16:36:18] *** Quits: Encrypt (8da36307@ ) (Ping timeout: 250 seconds)
+[16:42:34] *** Joins: PickleJarBob (~elouin@ )
+[16:54:12] *** Joins: Encrypt (~Chuck@ )
+[16:54:30] <Encrypt> Back on a real connection with a real IRC client
+[16:55:48] <Encrypt> zetok, So yeah, we were talking about Jenkins and the fact that you do not like Jenkins
+[16:56:03] <Encrypt> Somebody suggesting using OpenBuild System for the project too
+[17:14:43] <Encrypt> nurupo, ^
+[17:27:33] *** Joins: tux3 (~tux3@ )
+[17:27:33] *** ChanServ sets mode: +o tux3
+[17:33:41] <zetok> :)
+[17:40:57] <tux3> hi!
+[17:50:53] *** Joins: in1t3r (~LordShiva@ )
+[18:36:47] <zetok> tux3: btw, since you're here, updater?
+[18:36:55] <tux3> ?
+[18:37:01] <zetok> it hasn't been fixed, and is still broken for people
+[18:37:07] <tux3> ;_;
+[18:37:22] <tux3> Pray tell, what is broken now?
+[18:37:26] <zetok> IIRC I've assigned you to the issue
+[18:37:33] <tux3> You might have
+[18:37:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[18:37:51] <zetok> same thing as always, constant notifications about new version
+[18:38:25] <zetok> https://github.com/tux3/qTox/issues/3362
+[18:38:49] <tux3> Please note that people who were on older broken versions need a CLEAN REINSTALL to get the fix
+[18:39:07] <zetok> no can do
+[18:39:09] <tux3> I'm like 50.1% sure this has alreay been fixed
+[18:39:21] <tux3> Just you didn't get the update if you didn't reinstall
+[18:39:25] *** Joins: abbat (~abbat@ )
+[18:39:34] <zetok> i.e. "people" and "clean reinstall" don't go together
+[18:39:38] <tux3> Also, why are peole afraid of running the installer. It's not like you'll lose anything
+[18:39:49] <tux3> You keep your settings and profiles, you know
+[18:40:11] <tux3> Shit Notepad++ just runs the installer for updates and people don't complain
+[18:40:11] <zetok> that's not what windows does when reinstalling
+[18:40:25] <Chiitoo> Margins are still being mean to me.  Aside from the lower left area, Windows builds somehow come with an extra pixel on all sides.  Or maybe I goofed something off, but still, weirded me out!  ^^
+[18:40:27] *** Joins: f10 (~flo@ )
+[18:40:49] <tux3> It's always fun when there's a 1px difference coming from who knows where :)
+[18:41:00] <Chiitoo> Hehe.
+[18:41:03] <zetok> um
+[18:41:14] * zetok doubts whether many people user or need to use notepad++
+[18:41:20] <zetok> use*
+[18:41:33] <zetok> on the other hand, everyone needs to use IM
+[18:41:40] <tux3> That's not my point. 
+[18:41:49] <tux3> You have a bug, the fix is to run the installer. Run the installer!
+[18:42:03] <zetok> err
+[18:42:11] <zetok> I'm trying to point out that users are right
+[18:42:12] <tux3> I can't push an auto-update that fixes it, because the updater *doesn't work* for you....
+[18:42:21] <tux3> It's not like I'm making it hard on purpose
+[18:42:30] <zetok> ok
+[18:43:08] <tux3> If you want to do it the hard way, make sure the CWD and Application directory are equal on start, which may involve fixing desktop shortcuts by hand
+[18:43:28] <tux3> Or just run the installer.
+[18:43:36] <zetok> LittleVulpix: ↑ have you tried to reinstall qTox with 1.4 ?
+[18:43:57] <zetok> or 1.4.1 ?
+[18:44:11] <tux3> And now behold as I'm wrong and it's a different bug in 3..2..1
+[18:45:02] <LittleVulpix> zetok: Well, if I install 1.4, it updates to 1.4.1 and breaks again
+[18:45:06] <LittleVulpix> doesn't it?
+[18:45:13] *** Joins: f10_ (~flo@ )
+[18:45:35] <LittleVulpix> The desktop shortcut was created by the installer
+[18:45:42] <tux3> Install the latest 1.4.1 version and delete a icon plugin file
+[18:45:59] <zetok> >_>
+[18:46:02] <tux3> If it "updates" to 1.4.1 again to fix the file, you'll see if it works!
+[18:46:41] <LittleVulpix> tux3: can this not be fixed without having to reinstall? I.e. without having to tell everyone who's already annoyed with qtox to reinstall _again_ :D
+[18:46:43] <tux3> I know...
+[18:46:46] <LittleVulpix> I'll test it in a bit
+[18:46:56] <tux3> LittleVulpix, well
+[18:47:04] <LittleVulpix> currently investigating an issue on another system at work :p
+[18:47:17] <tux3> Okay
+[18:47:41] <LittleVulpix> I can also give you teamviewer and you can play with it if you want ? :D same system as before.
+[18:47:59] <LittleVulpix> I have a snapshot so you can do w/e
+[18:48:01] <tux3> hey wait didn't I already fix that system!?
+[18:48:19] <LittleVulpix> You fixed it and it broke again
+[18:48:22] <LittleVulpix> with 1.4.1
+[18:48:24] <tux3> ;__;
+[18:48:31] <tux3> That updater is going to put me into depression
+[18:48:32] <LittleVulpix> It was broken
+[18:48:36] <LittleVulpix> from 1.3.0 to 1.4.0
+[18:48:47] <LittleVulpix> then you played around withi t and found the path and "run in" dir thing were different
+[18:48:52] <LittleVulpix> so you fixed the updater
+[18:48:53] <LittleVulpix> and it updated
+[18:48:58] <LittleVulpix> and worked fine on my pc and on all the PCs
+[18:49:02] <LittleVulpix> and then some new update came along
+[18:49:03] <LittleVulpix> and it broke
+[18:49:10] <zetok> \o/
+[18:49:17] <zetok> that would be me pushing osx release tag
+[18:49:19] <zetok> :3
+[18:50:12] <tux3> Waitwaitwait the update that fixes the path and 'run in' dir thing was 1.4.1
+[18:50:20] <tux3> There's no 1.4.2 yet, right?
+[18:50:35] <tux3> And if you're still on 1.4.0, you don't have the fix I made a while ago
+[18:50:36] <zetok> there's 1.4.1.1
+[18:50:41] <tux3> You're kidding.
+[18:50:43] <zetok> (but only for osx)
+[18:51:16] <tux3> Alrigth
+[18:51:49] <tux3> But the updater on OS X is a different thing entirely
+[18:51:57] <tux3> It was the Windows updater that had trouble
+[18:51:59] <zetok> yeah
+[18:52:27] <tux3> And 1.4.1 fixes it
+[18:52:33] <tux3> Doesn't it?
+[18:53:22] <zetok> but me pushing commit to `stable` branch caused build on jenkins for windows, which probably(?) made updater go haywire
+[18:53:38] <tux3> Probably not?
+[18:54:01] <tux3> New updates must be triggered manually, just pushing to stable won't do it
+[18:54:23] <zetok> ok, I hope that this is the case
+[18:54:47] <tux3> I'm pretty sure it is
+[18:55:21] <zetok> btw, protection guard would need to be taken off from `stable` branch for 1.5 release
+[18:57:19] *** Quits: Encrypt (~Chuck@ ) (Quit: Quitte)
+[19:09:26] <zetok> btw, I didn't get any response from weblate regarding hosting translations
+[19:09:42] <zetok> perhaps I did something wrong, dunno
+[19:29:25] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[19:29:53] *** Joins: abbat (~abbat@ )
+[19:31:58] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:33:42] <LittleVulpix> tux3: though, if 1.4.1 fixes it, why does updating to it still trigger this behavior? x3
+[19:34:12] <tux3> If you're updating to it, then you don't have it yet, so you don't have the fix, so you have the bug :)
+[19:34:24] <LittleVulpix> but you update to it
+[19:34:27] <LittleVulpix> and then you have it
+[19:34:41] <tux3> You never really have it, that's the problem
+[19:34:51] <tux3> The bug is that the updater gets confused into installing it in the wrong place
+[19:35:03] <LittleVulpix> Well, it does download itself and it starts itself when the updater launches it :D
+[19:35:10] <LittleVulpix> but yeah, then bam :3 back to 1.3.0
+[19:35:24] <tux3> It actually starts the old version.
+[19:36:06] <LittleVulpix> It doesn't though
+[19:36:12] <LittleVulpix> it launches 1.4.1
+[19:36:20] <LittleVulpix> and when I go to version, I see I have 1.4.1 running
+[19:37:20] <LittleVulpix> it's only after you exit out of this one at whichever point and start it again from the desktop icon that you get the old 1.3.0 or whichever version you were running prior to the update
+[19:38:02] <tux3> Oh right, indeed :) 
+[19:38:17] <tux3> So it installs it in the wrong place, then starts the one installed in the wrong place
+[19:38:26] <tux3> But that doesn't help you much :)
+[19:38:32] <LittleVulpix> yep
+[19:38:44] <tux3> It's already fixed in 1.4.1 though
+[19:39:17] <LittleVulpix> yeah but it isn't
+[19:39:47] <LittleVulpix> If I update to 1.4.1 and it still breaks itself because the updater itself is the "broken" old one, then it's not fixed in 1.4.1
+[19:40:08] <LittleVulpix> from user's standpoint - which is the only real standpoint that matters :D
+[19:40:45] <tux3> >.<
+[19:40:48] <tux3> Well
+[19:41:42] <LittleVulpix> If you have an update mechanism in place, reinstalling is not an option. How will I explain it to the user(s) ? x3 "will I always have to reinstall ? Why have updates then, ah this sucks!" :p
+[19:43:17] <tux3> Imagine you have a house, and you pay someone to make an upgrade to it. Except they mistakenly made the upgrade to your neighbor's house! Then they take you to your neighbor's house and show you the shiny new upgraded home and you're happy. Then the following day you go home and you find your boring old crumbling household, still needing an upgrade. So you call the home-upgrade people again....
+[19:43:51] <tux3> I couldn't do a car analogy, but I tried :)
+[19:43:51] <LittleVulpix> I'll never want anything from those people ever again and I'll ask for my money back
+[19:43:53] <LittleVulpix> :D
+[19:43:58] <LittleVulpix> YOU WOULDN'T DOWNLOAD A CAR
+[19:44:00] <LittleVulpix> but really
+[19:44:01] <tux3> Fair enough, I guess :D
+[19:44:21] <tux3> Just remember that your house is worth exactly what you paid for it!
+[19:45:06] <LittleVulpix> The problem there is that people will just go back to the homeless' people shelter (aka skype). Might have surveillance and stuff but they serve hot food and when something breaks, it's not your problem to get it fixed :p
+[19:45:14] <LittleVulpix> And I don't want people going back to the shelter
+[19:45:15] <LittleVulpix> you feel me
+[19:45:16] <LittleVulpix> :D
+[19:45:40] <tux3> I know, I just don't really see a practical solution here
+[19:46:27] <LittleVulpix> update to a version X should mean you have version X :D
+[19:46:37] <tux3> Well, your neighbor sur does!
+[19:46:57] <tux3> I guess I could make an absolutely horrible hack though
+[19:46:59] <LittleVulpix> Well, thou shall not cover thy neighbour's update, you know the 10 commandments
+[19:47:06] <tux3> Since it does run the new version once after updating
+[19:48:24] <LittleVulpix> If it fixes the problem, users won't care. For all they know right now it's a horrible hack because of how it behaves :D
+[19:48:26] <tux3> I can actually think of a way that would fix it with auto-updates, but it's SO disgusting and dangerous that's just asking for more bugs...
+[19:49:32] <tux3> It's like if basically I'm the supplier of the material for the home-upgrade people and I hide a SWAT team in the supply crate, so when they upgrade your neighbor's home, the swat team comes and and kills your neighbor then help you move into his house. Or something.
+[19:50:04] <tux3> The analogy's just getting started!
+[19:50:04] <LittleVulpix> I like the way you think
+[19:50:33] <tux3> Now the problem is if you already have a normal home with no neighbor problems, you don't want the swat team to come out of the blue and kill you...
+[19:50:51] <LittleVulpix> They should just ask for my identification then
+[19:51:37] <tux3> Yep. Just gotta make sure they don't get it wrong or innocent homeowners are gonna get shot in the face!
+[19:51:49] <LittleVulpix> :D
+[19:52:21] <LittleVulpix> I bet NSA will enjoy reading these logs
+[19:52:32] <LittleVulpix> "wtf they can hide an entire swat team in a box?"
+[19:52:50] <tux3> The irony is that we're not even having those discussions on Tox :)
+[19:53:02] <tux3> Talk about dog food
+[19:53:03] <LittleVulpix> It's not an irony, it's irungentoony
+[19:53:17] <LittleVulpix> giev new gc
+[19:54:32] <tux3> Thou shalt askth grayhatter, and thou shalt receive
+[19:55:26] <zetok> err, no
+[19:56:11] <zetok> unless profanity is what you want
+[19:56:17] <zetok> then I guess you'd get it
+[19:56:50] <tux3> Well, sorry for not keeping track of who hates who nowadays
+[19:57:56] <LittleVulpix> :D
+[19:57:59] <cisc> friend had the same issue with qTox on Windows, but I believe after reinstalling and wiping out .config in %appdata% the updater loop problem was fixed
+[19:58:18] <LittleVulpix> cisc: I assume your friend was not a mother or a grandpa
+[19:58:19] <tux3> \o/
+[19:58:25] <cisc> & I believe it was 1.4.1 but I will check
+[19:58:28] <cisc> ..no
+[19:58:32] <LittleVulpix> well then
+[19:58:41] <tux3> But if you installed it in the first place, you can do it again....
+[19:59:01] <LittleVulpix> yes let me just tell the 7 people who got annoyed by this that they should do that
+[19:59:04] <zetok> tux3: https://github.com/qTox/qtox-irc-logs/blob/75d829a2da7d3aad55a12f4e4c2e50ce6bf162f6/2016/06/%23qtox_20160606.log.txt#L23,L25 there you go :)
+[19:59:12] <LittleVulpix> and well even then they still get 2x messages :p
+[20:00:01] <cisc> ok, asked my friend, here is what he is on: qTox version v1.4.1-1-g06d78dc
+[20:00:15] <cisc> and he said there hadn't been any update since he installed it which was weeks ago
+[20:00:34] <tux3> cisc, sounds like it's working, then!
+[20:01:13] <tux3> zetok, so I've heard a couple times that grayhatter is a bitch, maybe that's true. But to be faire you have your bad moods too...
+[20:01:26] <cisc> putting it in perspective, everybody on SuSE Tumbleweed who updated to the latest snapshot have a Thunderbird crash everytime you try launching an existing profile or creating a new one
+[20:01:40] <zetok> tux3: the difference is that I can stop when asked / I have a reason to stop
+[20:01:50] <tux3> zetok, maybe, I don't know
+[20:01:55] <cisc> so saying that it's some big deal to a user to reinstall qtox because a whole 7 people had an issue.. 
+[20:01:56] <tux3> I don't like to get involved in dramam
+[20:02:24] <tux3> It's maybe possible that I can fix the qTox issue automatically, but it would involve some serious dark magic
+[20:02:26] <LittleVulpix> tux3: I just reinstalled qtox and I have version 1.4.1-1-g06d78dc and it's asking me if I want to update to 1.4.1-1-g06d78dc
+[20:02:42] <zetok> do it
+[20:02:45] <zetok> for the science
+[20:02:51] <tux3> ^
+[20:03:06] <tux3> And gimme a vnc after because I can't believe that
+[20:03:28] <cisc> how do you check for updates on Windows version of qTox, is it automatic or can you manually invoke?
+[20:03:40] <zetok> automatic
+[20:03:43] <tux3> It happens when you start
+[20:03:53] <tux3> So, just restart qTox with the auto updates enabled
+[20:03:59] <cisc> ok, well then it looks like it's working correctly for my friend
+[20:06:25] <LittleVulpix> tux3: after updating to the same version via the autoupdater, it no longer asks. But my question now is this... what happens when a new update comes out. I feel like there are now two toxes in the folder (cause there are), and I feel like this is going to fall apart again with the next update.
+[20:07:20] <tux3> LittleVulpix, when there's an update, what we actually do is check what you have, and check what the new version has, then download the files that changed
+[20:08:04] <tux3> LittleVulpix, you should have a file imageformats/qsvg.dll or something like that
+[20:08:11] <LittleVulpix> tux3: Yeah but from 1.4.1-1-g06d78dc to 1.4.1-1-g06d78dc
+[20:08:33] <tux3> Yeah, the version number is just for being pretty, what the updater actually does is look at the content of the files
+[20:08:34] <LittleVulpix> if you have such elaborate naming system, why is it still not enough to identify the version? :D
+[20:08:43] <LittleVulpix> heh...
+[20:08:45] <LittleVulpix> Well!
+[20:08:47] <tux3> It looks at the files, and it identified that there was a difference: )
+[20:08:52] <LittleVulpix> I will wait for the next version of qtox
+[20:08:55] <LittleVulpix> and see if it breaks again
+[20:08:56] <tux3> If you delete the qsvg.dll thing, it'll trigger a new update
+[20:09:00] <tux3> Then you can see if it works
+[20:09:04] <LittleVulpix> if not I'll ask people to update
+[20:09:12] <tux3> No need to wait, really
+[20:09:18] <tux3> But I'm pretty sure it'll work
+[20:09:21] <LittleVulpix> tux3: yeah there is :p
+[20:09:23] <LittleVulpix> Because
+[20:09:27] <LittleVulpix> It was supposed to work before
+[20:09:37] <LittleVulpix> And what do I know which folder it's updating now :D the old or new one
+[20:09:46] <tux3> The old. Always the old
+[20:09:53] <tux3> The new one is your neighbor's home!
+[20:10:03] <zetok> actually
+[20:10:08] <zetok> that's just your other home
+[20:10:19] <zetok> swat took care of your neighbour, remember?
+[20:10:21] <zetok> ;D
+[20:10:33] <tux3> Well I haven't deployed the swat team yet! It's coming!
+[20:10:43] <tux3> Ready to shoot you in the face if you look like a neighbor
+[20:11:31] <LittleVulpix> You jest, but we'll see :p
+[20:11:43] <tux3> Try deleting that dll thing and you'll see!
+[20:12:26] <tux3> Unless I screw up the next update (which, we can't rule out due to my legendary ROCK SOLID code!), it's just the same as a real update
+[20:13:05] <LittleVulpix> tux3: I have it twice
+[20:13:12] <LittleVulpix> The whole qtox folder is duplicated within itself
+[20:13:25] <LittleVulpix> one deployment of qtox in \qTox\ and another in \qTox\bin\
+[20:13:39] <tux3> The one in bin/ is the neighbor
+[20:13:54] <tux3> The real qTox is in Program Files\qTox\, not bin\
+[20:15:17] <tux3> (Unless you installed it somewhere else, then watch out for swat teams!)
+[20:15:49] <zetok> tux3: https://github.com/tux3/qTox/pull/3411 ← sudden6 would want to merge this, but he said that he would like an opinion of someone more knowledgeable when it comes to C++, to know what possible downsides to this there could be
+[20:16:15] <zetok> LittleVulpix: so, if 1.4.1 works for you, could you close the issue?
+[20:16:23] <zetok> LittleVulpix: if later version won't work, then just reopen
+[20:17:00] <zetok> https://github.com/qTox/qtox-irc-logs/blob/d8316600d052766ee4e783f48500dc79eb38ebb2/2016/06/%23qtox_20160620.log.txt#L105,L107
+[20:17:08] <LittleVulpix> zetok, tux3 : is there 0 chance of making the autoupdate that updates to 1.4.1 fix this issue as it should? Will I really have to tell everyone who has qTox to try and reinstall it ?
+[20:17:24] <zetok> LittleVulpix: yes
+[20:17:34] <tux3> zetok, sudden6 is right in the general case, but sometimes we need a copy and taking a const& would be a use-after-free. And I don't really feel like checking 400 possible cases of Use-After-Free right now :/
+[20:17:49] <tux3> LittleVulpix, there's a nonzero chance ...
+[20:18:02] <zetok> it's simply better if people will reinstall
+[20:18:08] <tux3> To be fair, it is
+[20:18:16] <LittleVulpix> :/ for you.
+[20:18:25] <zetok> not quite
+[20:18:25] <tux3> The problem if I do it autoupdate is there's a risk I'll break it for other people
+[20:18:30] <zetok> ↑
+[20:18:31] <LittleVulpix> Not for the people. People cba. Thye'll just keep using the old version forever
+[20:18:42] <tux3> It's easy to make a mistake when so many things could be different that I don't know of
+[20:18:54] <LittleVulpix> I'll tell them then, whatever :p if it breaks again I'll just have them use miranda
+[20:19:00] <zetok> mm
+[20:19:12] <zetok> LittleVulpix: if you want, just delay that to see if next update will work for you
+[20:19:20] <LittleVulpix> I would like that, yes
+[20:19:32] <zetok> but issue IMO can be closed
+[20:19:50] <zetok> since e.g. it works for cisc's friend, and seems to work for you
+[20:20:11] <tux3> LittleVulpix, it's maybe possible that starting qTox directly from Program Files instead of using a shortcut would be enough to fix it
+[20:20:29] <tux3> If you don't want to reinstall, that's an alternative. Start it once from program files
+[20:20:51] <LittleVulpix> tbh, the technical skill of the people who use it
+[20:20:54] <tux3> Yeah
+[20:21:00] <LittleVulpix> it's easier for me to have them dl and reinstall
+[20:21:03] <tux3> That's not really a step up ..
+[20:21:08] <LittleVulpix> than it is to have them find program files
+[20:21:13] <tux3> Yeah :/
+[20:21:22] <zetok> eh
+[20:21:24] <LittleVulpix> "and which one, there is x86... and normal one" and "oh but now I have UAC popup again, what's happening"
+[20:21:27] <LittleVulpix> :D it's so annoying
+[20:21:28] <zetok> if only they used a sane system
+[20:21:40] <zetok> you could just then make a script, send it to them and be done
+[20:21:48] <LittleVulpix> If you want to stop supporting windows, just do it
+[20:21:53] <LittleVulpix> until then, windows is sane
+[20:21:59] <tux3> zetok, Says the person who has a linux with a /proc so locked down programs can't check their own name :]
+[20:22:12] <zetok> tux3: that's not me though :D
+[20:22:26] <zetok> tux3: I just figured out which part of fedora causes problem ;)
+[20:22:39] <tux3> So it's not SELINUX?
+[20:22:44] <zetok> err
+[20:22:47] <zetok> I didn't have the problem
+[20:22:58] <tux3> Oh sorry then, I must have misremembered
+[20:23:03] <tux3> My bad
+[20:23:09] <zetok> np
+[20:23:16] <zetok> LittleVulpix: no, windows is not sane
+[20:23:53] <zetok> LittleVulpix: sorry, but I'm going to continue complaining about windows
+[20:24:10] <LittleVulpix> zetok: whatever
+[20:25:00] <zetok> actually, I wonder
+[20:25:15] <zetok> isn't installing an .exe the real way one updates stuff on windows?
+[20:25:37] <LittleVulpix> "installing an .exe" ? :D what does that even mean
+[20:25:59] <zetok> dunno, whatever format is used for installer
+[20:26:43] <LittleVulpix> You can use msi as well, which is a more specialized installer format
+[20:26:58] <cisc> wasn't .msi MS's attempt at kind of having a package management system at one time that failed miserably
+[20:27:45] <zetok> right, there was an issue about using .msi for qTox
+[20:28:30] <LittleVulpix> 7zip stopped making msi's for a while and there was a big uproar, and it's now msi-packaged again, hehe. But it's not just that really.
+[20:29:07] <zetok> https://github.com/tux3/qTox/issues/1607#issuecomment-141510253
+[20:35:00] *** Joins: abbat (~Anton@ )
+[20:40:40] <tux3> zetok, so that PR sudden6 wanted to merge is definitely NOT mergeable :)
+[20:41:03] <zetok> k
+[20:41:10] * zetok will pass that to sudden6
+[20:41:16] <tux3> I don't think the bug is exploitable, but it'll still crash nicely. I wonder if anyone tested the PR..
+[20:41:30] * zetok didn't
+[20:41:35] <tux3> Can't blame you!
+[20:41:49] <tux3> Not that I did either
+[20:41:54] <zetok> :D
+[20:42:02] <tux3> But I read the code :P
+[20:42:09] <zetok> https://github.com/tux3/qTox/issues/3323 ← can be closed?
+[20:42:32] *** Joins: rkzzy (~ishhh@ )
+[20:42:34] <zetok> or something?
+[20:42:37] <tux3> People need to reinstall, but the issue is fixed.
+[20:42:49] <zetok> oh, right >.<
+[20:42:55] * zetok facepalms
+[20:46:13] <zetok> rkzzy: o/
+[20:46:26] <rkzzy> zetok: hello :)
+[20:46:34] <zetok> rkzzy: hopefully things worked out for you?
+[20:46:52] <rkzzy> yes, everything is sorted. Thank you very much for bringing this to my attention :)
+[20:47:03] <zetok> that's great to hear :)
+[20:53:49] <zetok> tux3: could you perhaps provide a gpg signature for installer, so that rkzzy could include it? → https://github.com/qTox/qtox-irc-logs/blob/master/2016/06/%23qtox_20160622.log.txt#L56
+[20:54:16] <zetok> and while at it, it could be linked to from readme.md, or something
+[20:54:52] <tux3> Can do
+[20:55:08] <tux3> Though it's a manual thing
+[20:55:15] <zetok> mm
+[20:55:58] <zetok> yeah, but we don't have releases even every month, and you have to do stuff manually anyway for windows release, right?
+[20:56:45] <tux3> I push a button
+[20:57:16] <tux3> I'm okay with putting the qTox signing key on a DigitalOcean server somewhere, but not my personal PGP key :)
+[20:57:43] <zetok> um
+[20:58:07] <zetok> why not just download the binary, and make signature locally?
+[20:58:18] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:58:22] <tux3> Yeah, manually
+[20:58:27] *** Joins: f10 (~flo@ )
+[20:58:29] <zetok> eh
+[20:58:40] <zetok> too much automation might not be too good
+[20:58:57] <tux3> There's no such thing as too much automation :D
+[20:59:07] <tux3> ... as long as it doesn't compromise security
+[20:59:13] <zetok> beside, whole thing can be scripted, so that you'd just need to push 2 buttons instead of 1
+[20:59:30] <zetok> (or at least I hope so that it can be scripted)
+[20:59:55] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:00:19] <tux3> Probably
+[21:00:54] *** Joins: Chiitoo (~Chiitoo@ )
+[21:06:57] <zetok> gpg -sign -armor -b $file
+[21:09:36] <tux3> Yes, I'm coming
+[21:10:07] *** Joins: sudden6 (~anonymous@ )
+[21:10:17] <tux3> http://pastebin.com/raw/AhkUfPd2
+[21:10:22] <zetok> ><tux3> zetok, so that PR sudden6 wanted to merge is definitely NOT mergeable :)
+[21:10:24] <tux3> zetok, rkzzy , ^
+[21:10:26] <zetok> sudden6: ↑ 
+[21:10:44] <tux3> Those arrows are getting confusing ^
+[21:10:48] <sudden6> huh?
+[21:11:05] <zetok> sudden6: the reference(?) PR
+[21:11:08] <tux3> The "replace things with const reference" PR? It introduces a bug
+[21:11:32] <sudden6> aha, that's what I suspected
+[21:11:41] <tux3> Good instinct!
+[21:12:00] <zetok> tux3: right, now though that signature should be put in some visible place
+[21:12:03] <sudden6> well, as always, if it's too good to be true, it's wrong
+[21:13:44] <zetok> tux3: update server ?
+[21:14:12] <zetok> (does it have a nice DNS?)
+[21:15:00] <tux3> https://qtox-win.pkg.tox.chat/
+[21:15:12] <zetok> that'll do
+[21:15:16] <tux3> Proudly certified by Let's Encrypt!
+[21:15:24] <tux3> I'll put the .asc files up there
+[21:15:34] <zetok> ok
+[21:15:36] <tux3> But don't be surprised if I forget to update them...
+[21:16:17] <zetok> don't worry, a few months after the fact some user will notice that signature is wrong
+[21:16:18] <sudden6> write some script ;)
+[21:16:35] <sudden6> btw, I won't attend next meeting
+[21:16:37] <tux3> I guess I'll have to
+[21:17:46] <tux3> zetok, the files are up if you want to link to them
+[21:17:51] <zetok> yep
+[21:18:16] <zetok> links?
+[21:19:06] <tux3> https://qtox-win.pkg.tox.chat/setup-qtox32.exe.asc
+[21:19:09] <tux3> https://qtox-win.pkg.tox.chat/setup-qtox64.exe.asc
+[21:19:28] <tux3> I added the 32/64 since both installers have the same name normally
+[21:20:48] *** Joins: f10__ (~flo@ )
+[21:20:55] <zetok> thanks :)
+[21:21:00] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:25:22] <zetok> tux3: after rename they don't work
+[21:26:04] <zetok> oh wait
+[21:26:22] <zetok> works, but required adding installer filename
+[21:26:39] <tux3> I could put them each in their own folder, I suppose
+[21:26:45] <tux3> Let's
+[21:26:57] <zetok> i.e. `gpg --verify setup-qtox32.exe.asc setup-qtox.exe` to make it work
+[21:27:32] *** Quits: Dragofix (Dragofix@ ) (*.net *.split)
+[21:27:32] *** Quits: Sephi (~me@ ) (*.net *.split)
+[21:27:33] *** Quits: Darky (~Darky@ ) (*.net *.split)
+[21:27:33] <tux3> https://qtox-win.pkg.tox.chat/qtox/win32/setup-qtox.exe.asc
+[21:27:34] <tux3> And 64
+[21:27:43] *** Joins: Dragofix (Dragofix@ )
+[21:27:43] *** Joins: Sephi (~me@ )
+[21:27:47] *** Joins: Darky (~Darky@ )
+[21:32:30] <linuxmodder> what  is  qtox using for translations dep ?
+[21:33:51] <tux3> Qt :)
+[21:35:29] -qtox-git-spam- [qTox] zetok opened pull request #3431: docs(README.md): add links to GPG signatures for windows installer (master...readme) https://git.io/voDJ1
+[21:38:25] -qtox-git-spam- [qTox] zetok closed pull request #3431: docs(README.md): add links to GPG signatures for windows installer (master...readme) https://git.io/voDJ1
+[21:40:01] <zetok> rkzzy: ↑ :)
+[21:42:08] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[21:42:38] <sudden6> I'm off till next week, don't expect any actions, bye :)
+[21:42:44] <tux3> see ya
+[21:43:06] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[21:43:29] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[21:44:05] <zetok> oh oh, new qTox translations \o/
+[21:44:11] *** Joins: f10_ (~flo@ )
+[21:44:52] *** Joins: f10__ (~flo@ )
+[21:45:03] <zetok> https://a.uguu.se/Ul3teTarN2Sr.png ← totally worth all the effort for those 7 happy qTox users ;)
+[21:45:34] <tux3> heh
+[21:50:56] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/voDkX
+[21:50:56] -qtox-git-spam- qTox/master 17f4366 kehugter: feat(translation): add update language Spanish
+[21:50:56] -qtox-git-spam- qTox/master b7759b2 Zetok Zalbavar: Merge pull request #3428...
+[21:56:01] <rkzzy> zetok: thank you :)
+[21:56:20] <rkzzy> to verify, can somebody paste the fingerprint of the key used to make that signature?
+[21:56:40] <zetok> do you have a gpg command for it?
+[21:56:59] <rkzzy> gpg --fingerprint nameofkey
+[21:57:31] <zetok> Key fingerprint = 2880 C860 D95C 909D 3DA4  5C68 7E08 6DD6 6126 3264
+[21:58:00] <rkzzy> that's correct, thank you :)
+[21:58:09] <zetok> np :)
+[21:58:29] <rkzzy> this works for me perfectly fine :)
+[21:59:19] <rkzzy> if you wanted some extensions to this, the portable zipfiles could have a detached signature too, and the detached signatures could be served with a MIME type of application/pgp-signature so that they do not display as text when clicked in a browser
+[21:59:42] <zetok> um
+[21:59:53] <zetok> zips, unlike releases are nightly builds
+[22:00:01] <rkzzy> ah, I did not know that
+[22:00:41] <linuxmodder> odd tux3  cuz qt5-qttranslations
+[22:01:00] <linuxmodder>  is installed but I'm gettign f u errors on  ALL transalations bits
+[22:01:48] <tux3> qt5-qttranslations is probably translations for the Qt tools, not a lib
+[22:02:18] <tux3> Or at least I hope, because the translation system we use is deeply integrated with QtGUI/QtWidgets, it would make no sense to put it in a separate package
+[22:03:11] <tux3> Oh or maybe not
+[22:03:17] <tux3> We do use QTranslator too
+[22:03:24] <tux3> I guess that could be split out
+[22:04:36] *** Quits: rkzzy (~ishhh@ ) (Remote host closed the connection)
+[22:08:08] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[22:17:46] <linuxmodder> tux3 whateveer it is  23  worked with ti 24 is not
+[22:18:01] <linuxmodder> I compiled with those bits commented out tho fine
+[22:57:08] -qtox-git-spam- [qTox] zetok opened pull request #3432: Update translations from weblate (master...tr) https://git.io/voDGD
+[23:04:52] *** Joins: f10 (~flo@ )
+[23:05:35] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[23:12:34] <SkyzohKey> <Encrypt> Thw one who owns Jenkins?
+[23:12:39] <SkyzohKey> nurupo/oranges
+[23:13:11] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[23:13:21] *** Joins: f10 (~flo@ )
