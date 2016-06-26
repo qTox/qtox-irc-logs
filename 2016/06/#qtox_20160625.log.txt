@@ -1,0 +1,144 @@
+[00:17:31] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 252 seconds)
+[00:17:47] *** Joins: SkyzohKey (~skyzohkey@ )
+[00:45:26] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[01:03:44] *** Joins: f10_ (~flo@ )
+[01:03:51] *** Joins: LittleVulpix (~Miranda@ )
+[01:05:50] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:12:23] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[01:19:00] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[01:22:37] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[01:23:18] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[02:22:03] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[03:03:36] *** Joins: LittleVulpix (~Miranda@ )
+[04:14:45] *** Joins: syeekick (~syee@ )
+[04:15:07] <syeekick> zetok, I got refered this way to talk to you about video chat !
+[04:15:08] <syeekick> :)
+[04:40:31] *** Quits: mitfree (~mit@ ) (Remote host closed the connection)
+[04:42:21] *** Joins: mitfree (~mit@ )
+[05:13:00] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[05:13:41] *** Joins: Bheru27 (~Bheru27@ )
+[05:23:01] *** Quits: syeekick (~syee@ ) (Remote host closed the connection)
+[07:07:33] *** Joins: ccsdss (~ray@ )
+[07:07:39] *** Parts: ccsdss (~ray@ ) ()
+[08:04:43] *** Joins: Byouko (~byouko@ )
+[08:27:54] *** Quits: Byouko (~byouko@ ) (Remote host closed the connection)
+[08:33:48] *** Joins: dardevelin (~dardeveli@ )
+[10:00:52] -qtox-git-spam- [qTox] anoadragon453 opened pull request #3434: fix(markdown): Remove spaces from markdown translation (master...md-spaces) https://git.io/vo9qW
+[10:15:18] *** Joins: f10 (~flo@ )
+[10:34:04] *** Joins: anoa (~rainbow@ )
+[11:18:52] *** Joins: abbat (~abbat@ )
+[11:27:27] *** Quits: rysiek|pl (~quassel@ ) (Remote host closed the connection)
+[11:27:33] *** Joins: rysiek|pl (~quassel@ )
+[11:31:43] *** Joins: Chiitoo (~Chiitoo@ )
+[12:49:51] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[13:03:46] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[13:26:17] *** Joins: Saamm (587d2b5e@ )
+[13:26:25] <Saamm> Hello everyone ^^
+[13:34:07] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[13:39:07] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[13:43:36] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 258 seconds)
+[13:48:01] *** Joins: zero-ghost (~0@ )
+[14:07:02] <zetok> hello Saamm :)
+[14:07:28] <Saamm> o/
+[14:11:49] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[14:46:30] *** Joins: smaragdus2 (~omoo@ )
+[14:51:12] *** Quits: chain` (~BoB@ ) (Ping timeout: 258 seconds)
+[14:51:15] *** Quits: guest1234 (~valvin@ ) (Ping timeout: 258 seconds)
+[14:51:16] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 258 seconds)
+[14:51:16] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 258 seconds)
+[14:51:30] *** Joins: valvin (~valvin@ )
+[14:51:30] *** Joins: chain (~BoB@ )
+[14:56:40] *** Joins: hexadezimalion (sid85551@ )
+[14:58:12] *** Joins: f10 (~flo@ )
+[15:20:57] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:22:54] *** Joins: LittleVulpix (~Miranda@ )
+[15:30:30] *** Joins: abbat (~Anton@ )
+[15:51:16] -qtox-git-spam- [qTox] Talkless opened pull request #3437: fix(loginscreen.cpp): fix password input focus after mouse click (master...password-focus) https://git.io/vo94Z
+[16:01:40] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vo94d
+[16:01:40] -qtox-git-spam- qTox/master fca5f15 Andrew Morgan: fix(markdown): Remove spaces from markdown translation...
+[16:01:40] -qtox-git-spam- qTox/master 36b840e Zetok Zalbavar: Merge pull request #3434...
+[16:15:49] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vo9BB
+[16:15:49] -qtox-git-spam- qTox/master 70fc247 Vincas Dargis: fix(chattextedit.cpp): fix drag-and-drop to be consistent across systems...
+[16:15:49] -qtox-git-spam- qTox/master 6e2cca7 Zetok Zalbavar: Merge pull request #3433...
+[16:20:46] *** Quits: Saamm (587d2b5e@ ) (Quit: Page closed)
+[16:23:25] *** Joins: Saamm (587d2b5e@ )
+[16:25:29] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vo9B9
+[16:25:29] -qtox-git-spam- qTox/master 6e8ea15 Vincas Dargis: fix(loginscreen.cpp): fix password input focus after mouse click...
+[16:25:29] -qtox-git-spam- qTox/master dc26379 Zetok Zalbavar: Merge pull request #3437...
+[16:30:06] *** Joins: Diadlo (~Diadlo@ )
+[16:44:27] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:44:29] *** Joins: in1t3r (~LordShiva@ )
+[16:44:44] *** Joins: f10 (~flo@ )
+[16:47:32] <Saamm> Who wrote the code for the website? :3
+[16:48:03] <zetok> look at contributors on gh :)
+[16:48:31] <zetok> https://github.com/qTox/qTox-Website/graphs/contributors
+[16:49:15] <zetok> hm, that just shows top 100 :f
+[16:49:56] <Saamm> X)
+[16:49:59] <Saamm> Thank you
+[16:52:05] <Saamm> There are some subtle changes compared to a "normal" website... like the [[[ ]]] for each link, I guess it may be some syntax needed for GitHub, but I can't be sure about that. So it makes me wondering about all those syntax differences...
+[16:52:36] <zetok> er
+[16:52:55] <zetok> text inside `[[[ ]]]` is being changed by sterminator
+[16:52:59] <Saamm> Hum, it's not even about the links, it's for each "block" of text...
+[16:53:27] <zetok> https://github.com/zetok/sterminator
+[16:53:29] <Saamm> sterminator? oO
+[16:53:39] <Saamm> Thanks, I'll look at this now
+[16:53:53] <Saamm> Ohh, I see
+[16:55:08] <Saamm> That's a cool thing, Sterminator, I didn't know about that :p
+[17:05:37] <Saamm> Got to go, have a nice day guys
+[17:05:44] *** Quits: Saamm (587d2b5e@ ) (Quit: Page closed)
+[17:14:05] <Diadlo> Hello. What you think about add few automatic unit tests?
+[17:23:54] <zetok> would be great to have them
+[17:33:52] *** Joins: stvlker (~stvlker@ )
+[17:46:17] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[18:07:59] -qtox-git-spam- [qTox] zetok opened pull request #3438: Update translations from weblate (master...tr) https://git.io/vo9zY
+[18:25:31] -qtox-git-spam- [qTox] zetok closed pull request #3438: Update translations from weblate (master...tr) https://git.io/vo9zY
+[18:38:43] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[18:42:58] *** Joins: Rowen_Stipe (~rowen@ )
+[18:42:59] -qtox-git-spam- [qTox] zetok opened pull request #3439: chore: add Belarusian and Esperanto to translations/README.md table (master...webl) https://git.io/vo9gy
+[18:46:52] <Rowen_Stipe> @___@ I forgot how rough having a physically demanding job can be.
+[18:48:44] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[18:49:04] *** Joins: f10 (~flo@ )
+[18:50:58] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[18:52:29] *** Joins: SkyzohKey (~skyzohkey@ )
+[18:53:52] <zetok> >0: /usr/bin/X (xorg_backtrace+0x7d) [0x5568d88ac71d]
+[18:54:08] <zetok> thanks a lot X, for killing everything
+[18:55:29] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:02:50] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[19:04:30] <zetok> -.-
+[19:06:16] *** Joins: f10 (~flo@ )
+[19:09:12] *** Joins: cisc (~cisc@ )
+[19:16:36] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[19:18:28] *** Joins: Diadlo (~Diadlo@ )
+[19:19:41] *** Joins: f10_ (~flo@ )
+[19:22:08] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[19:26:48] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:34:40] *** Joins: f10_ (~flo@ )
+[19:44:51] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[19:48:26] *** Joins: f10__ (~flo@ )
+[19:49:48] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[19:55:16] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[19:55:38] *** Joins: SkyzohKey (~skyzohkey@ )
+[19:57:05] *** Joins: f10 (~flo@ )
+[20:02:59] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[20:03:23] *** Joins: f10_ (~flo@ )
+[20:05:08] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:08:16] *** Joins: f10 (~flo@ )
+[20:08:27] *** Quits: f10_ (~flo@ ) (Ping timeout: 276 seconds)
+[20:12:32] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[20:13:02] *** Joins: Diadlo (~Diadlo@ )
+[20:26:08] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[21:12:36] *** Joins: f10_ (~flo@ )
+[21:23:34] *** Joins: abbat (~Anton@ )
+[21:24:35] *** Joins: Chiitoo (~Chiitoo@ )
+[22:01:26] *** Quits: Rowen_Stipe (~rowen@ ) (Remote host closed the connection)
+[22:19:31] *** Joins: f10__ (~flo@ )
+[22:20:06] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[22:25:03] *** Joins: f10 (~flo@ )
+[22:25:52] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[22:37:23] *** Quits: anoa (~rainbow@ ) (Remote host closed the connection)
+[22:44:37] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:21:36] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[23:41:55] *** Joins: f10 (~flo@ )
+[23:49:07] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[23:49:12] *** Joins: f10__ (~flo@ )
+[23:51:15] *** Quits: smaragdus2 (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
