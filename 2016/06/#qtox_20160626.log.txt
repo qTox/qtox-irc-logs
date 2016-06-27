@@ -1,0 +1,207 @@
+[00:00:30] *** Quits: f10__ (~flo@ ) (Ping timeout: 276 seconds)
+[00:04:48] *** Joins: f10__ (~flo@ )
+[00:12:10] *** Joins: f10 (~flo@ )
+[00:12:19] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[00:25:42] *** Joins: smaragdus (~omoo@ )
+[00:39:29] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:40:15] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:05:39] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[01:46:22] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[02:01:29] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[02:09:02] *** Joins: cisc (~cisc@ )
+[03:47:10] *** Joins: smaragdus (~omoo@ )
+[04:33:13] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[04:37:30] *** Joins: SkyzohKey (~skyzohkey@ )
+[08:21:36] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:21:59] *** Joins: LittleVulpix (~Miranda@ )
+[08:42:56] *** Joins: f10 (~flo@ )
+[08:47:29] *** Joins: albel727 (~albel727@ )
+[08:51:15] *** Joins: Grokafar (~jeanbon@ )
+[08:51:21] <Grokafar> Hi!
+[08:52:26] *** Joins: f10_ (~flo@ )
+[08:53:15] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[08:53:46] <Grokafar> I need some explains about a piece of code of CoreAV, someone could help me ?
+[08:57:28] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[08:57:47] *** Joins: f10_ (~flo@ )
+[09:03:33] *** Parts: Se7en (~Bleh@ ) ("Leaving")
+[09:36:54] *** Joins: Chiitoo (~Chiitoo@ )
+[09:44:34] <zetok> Grokafar: sorry, doesn't look like anyone with the knowledge is around atm
+[09:46:27] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[09:47:00] <zetok> Grokafar: um, you could create an issue with your questions
+[09:47:23] *** Joins: Chiitoo (~Chiitoo@ )
+[09:47:29] <zetok> this way more people would see it
+[09:48:45] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/voHel
+[09:48:45] -qtox-git-spam- qTox/master 02b6fcb Zetok Zalbavar: chore: add Belarusian and Esperanto to translations/README.md table
+[09:54:20] *** Joins: tux3 (~tux3@ )
+[09:54:20] *** ChanServ sets mode: +o tux3
+[10:08:31] <zetok> :D
+[10:08:38] <zetok> >[08:53:02] <Grokafar> I need some explains about a piece of code of CoreAV, someone could help me ?
+[10:08:56] <zetok> Grokafar: ↑ ask tux3 :)
+[10:09:19] <tux3> Can do
+[10:29:09] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:31:37] *** Joins: LittleVulpix (~Miranda@ )
+[10:40:42] <Grokafar> Thanks zetok !
+[10:41:00] <Grokafar> tux3: I'm trying to implement auto accept call feature
+[10:43:48] <Grokafar> When I run the fonction CoreAv::answerCall() directly the condition " if (threadSwitchLock.test_and_set(std::memory_order_acquire))" fails... I'm not familiar with multhreading, I think I missunderstand something :/
+[10:47:47] <tux3> So the coreav threading is fairly complicated
+[10:47:59] <tux3> From what function are you calling answerCall() ?
+[10:49:34] <Grokafar> from ChatForm::onAvInvite()
+[10:50:52] <tux3> Okay, so onAvInvite is called directly from the toxcore call callback
+[10:51:27] <tux3> And it's not allowed to run CoreAv functions like answerCall from a toxcore callback, because it could cause a deadlock and freeze qTox
+[10:51:37] <tux3> So that conditon forces the function to return, to prevent a deadlock
+[10:52:29] *** Joins: abbat (~abbat@ )
+[10:53:18] <tux3> Instead, send an asynchronous event to the answerCall slot, using QMetaObject::invokeMethod
+[10:54:21] *** Joins: anoa (~rainbow@ )
+[10:54:52] <anoa> Any idea why qTox would suddenly compile and run normally, but upon logging in doesn't display a window?
+[10:55:58] <tux3> Hard to tell, it could be a number of things
+[10:56:04] <tux3> Do you have multiple screens?
+[10:56:17] <anoa> Yes, although this hasn't been a problem in the past.
+[10:56:41] <anoa> It's likely something outside of qTox though, as compiling based on the same commit earlier gave expected results.
+[10:58:00] <Grokafar> thanks tux3 I gonna try this :)
+[10:58:02] <tux3> anoa, I know Qt has some problems with multiple screens, try deleting the ~/.config/tox/qtox.ini
+[10:58:09] <tux3> Grokafar, ok!
+[10:58:25] <anoa> tux3: No dice.
+[10:58:55] <anoa> Can someone test the implementation of this PR? https://github.com/tux3/qTox/pull/3441
+[10:58:55] -qtox-git-spam- [qTox] anoadragon453 opened pull request #3441: refactor(markdown): Change markdown syntax to be more intuitive (master...md-new-syntax) https://git.io/voHf7
+[11:01:49] *** Joins: anoadragon (~rainbow@ )
+[11:02:26] *** anoadragon is now known as anoa_
+[11:03:22] *** Quits: anoa (~rainbow@ ) (Disconnected by services)
+[11:03:30] *** anoa_ is now known as anoa
+[11:24:57] <Grokafar> tux3: I tried you method but it still doesn't work :/ the condition fail and then answerCall return false immediatly
+[11:26:16] <tux3> Grokafar, have you tried something like this: QMetaObject::invokeMethod(toxav, "answerCall", Qt::QueuedConnection, Q_ARG(uint32_t, friendNum)); ?
+[11:27:24] <Grokafar> tux3: yep exactly
+[11:31:23] <tux3> That's very strange
+[11:32:02] <tux3>   invokeMethod should ensure answerCall runs in the CoreAV thread, so the threadSwitchLock condition should not be reached
+[11:32:17] <Grokafar> tux3: ow my bad, that's work the problem came from another place !
+[11:32:22] <Grokafar> tux3: thanks a lot!
+[11:32:26] <tux3> Alright, no problem :)
+[11:33:51] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[12:09:48] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[12:12:35] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[12:12:53] *** Joins: f10_ (~flo@ )
+[12:16:56] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[12:17:16] *** Joins: f10_ (~flo@ )
+[12:20:30] *** Joins: Saamm (587d2b5e@ )
+[12:20:42] <Saamm> Hello everyone ^^
+[13:07:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[13:48:48] -qtox-git-spam- [qTox] Grokafar opened pull request #3442: feat : Auto accept call (master...master) https://git.io/voHLF
+[14:26:46] <zetok> :f
+[14:26:56] <zetok> >tfw sharing screen doesn't work on debian 8
+[14:41:50] <zetok> i.e. I don't see the screen "device"
+[15:03:16] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[15:15:26] <Grokafar> Does everyone know when a new stable versino will be release ?
+[15:23:00] <Grokafar> anyone*
+[15:29:36] <zetok> when video & audio code will be fixed
+[15:34:34] <Saamm> It could be cool to have a functionnality where qTox does coffee in the morning. We should implement that. :3
+[15:34:40] <zetok> https://github.com/tux3/qTox/pull/3185 ← this PR gets video mostly done, but it includes a regression
+[16:04:37] <Grokafar> zetok: do you need help to fix the code ?
+[16:14:39] -qtox-git-spam- [qTox] Diadlo opened pull request #3444: fix(chatform): Fixed memory leak (master...fixGrabberMemLeak) https://git.io/voHOM
+[16:15:51] <zetok> Grokafar: yep :)
+[16:34:48] *** Joins: isAAAc (~isAAAc@ )
+[16:46:45] *** Joins: f10 (~flo@ )
+[16:47:46] *** Joins: toweI (~toweI@ )
+[16:48:55] *** Joins: f10_ (~flo@ )
+[16:50:24] <Grokafar> zetok: is it the code from the PR you linked before ?
+[16:54:09] *** Joins: f10__ (~flo@ )
+[16:54:30] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[17:06:22] <zetok> Grokafar: yep
+[17:34:52] *** Quits: Grokafar (~jeanbon@ ) (Quit: Konversation terminated!)
+[17:36:37] *** Joins: Diadlo (~diadlo@ )
+[17:40:57] *** Quits: Saamm (587d2b5e@ ) (Quit: Page closed)
+[17:44:16] <Diadlo> I suggest delete `toxcore` from issue template. It seems... useless?)
+[17:46:27] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:54:43] <zetok> atm it kinda is
+[17:57:11] <toweI> Diadlo, oh you are here
+[17:57:17] <toweI> then we can talk here now
+[17:57:27] <toweI> I cam compiling right now
+[18:05:16] <Diadlo> Ok
+[18:05:19] <Diadlo> I am here
+[18:06:27] <Diadlo> May be log file was created with some error. I don't see any other reason :(
+[18:06:35] <toweI> https://github.com/tux3/qTox/issues/3440#issuecomment-228611213
+[18:07:04] <Diadlo> Yes. I see
+[18:08:19] *** Joins: tux3 (~tux3@ )
+[18:08:20] *** ChanServ sets mode: +o tux3
+[18:08:40] <toweI> Diadlo, I created a new log file with 2 mb size and I get the same error
+[18:11:51] <Diadlo> Ok. Let's try create simple application, which will rename file :)
+[18:12:53] <toweI> tux3, we have critical errors https://github.com/tux3/qTox/issues/3440 qtox is doomed. :)
+[18:19:58] <Diadlo> toweI, Can you compile this code http://pastebin.com/JbS5XE87 ?
+[18:20:40] <tux3> Maybe Qt expects QDir::rename to refer to a relative path inside the folder? I'd try with static QFile::rename and see if it changes anything
+[18:21:25] <tux3> (Or remove the "logFileDir + " prefix)
+[18:22:31] <toweI> Diadlo, what command do I need?
+[18:22:44] <toweI> to use qt
+[18:24:53] <Diadlo> Easy way: wipe content of main function of qtox and paste new code instead of it :)
+[18:28:52] <toweI> lol
+[18:29:10] <toweI> sounds like a nice lighweight programm now
+[18:29:41] <toweI> for what it can do :)
+[18:31:10] *** Joins: abbat (~Anton@ )
+[18:34:12] <Diadlo> toweI, who is owner of `qtox.log` file?
+[18:35:17] <toweI> current user, admin, system so it has 3 or 4 owners
+[18:36:15] <toweI> Diadlo, shall I just feed the qtos log path?
+[18:36:19] <toweI> with your program
+[18:36:52] <toweI> oh it works without arguments
+[18:37:01] <Diadlo> You shall just start this program)
+[18:37:02] <Diadlo> Yes
+[18:37:13] <toweI> Diadlo, I now have a qtox.log.1 instead of qtox.log
+[18:37:22] <Diadlo> O_o
+[18:37:49] <Diadlo> I little bit confused
+[18:39:41] <toweI> why? was this expected to not work?
+[18:39:51] <toweI> not to*
+[18:40:05] <Diadlo> Yes
+[18:40:31] <Diadlo> Ok
+[18:40:43] <Diadlo> Restore code of main function :)
+[18:41:02] <Diadlo> I have an idea
+[18:41:46] <Diadlo> Move 182-184 lines at 170 line
+[18:43:36] <tux3> Diadlo, oh yeah your idea is right. Windows can't rename open files ...
+[18:43:46] <tux3> Nice find
+[18:44:25] <Diadlo> Will be good, if it's true :)
+[18:46:03] <Diadlo> tux3, Interesting, how *nix rename opened file :)
+[18:46:34] <tux3> It's so useful, always annoying that windows can't!
+[18:50:09] <toweI> windows disallows any modification if it is opened elsewhere
+[18:50:27] <toweI> on file system perspective
+[18:50:54] <Diadlo> toweI, Now problem fixed?)
+[18:51:10] <toweI> I just read it
+[18:51:31] <toweI> trying now to compile
+[18:52:58] <toweI> Diadlo, what file was it?
+[18:53:14] <Diadlo> main.cpp
+[18:54:45] <toweI> Diadlo, you mean I shall move line 182 -184 to 170?
+[18:55:06] <Diadlo> Yes. closing file before remove/rename
+[19:03:42] <toweI> Diadlo, works
+[19:04:03] <Diadlo> Great :)
+[19:04:14] <Diadlo> Can you create PR?
+[19:05:36] <toweI> is it supposed to delete the .log1 file when .log if full again?
+[19:06:24] <toweI> from the log it looks like a yes
+[19:06:33] <Diadlo> I think, it will be rewritten
+[19:06:35] <toweI> Diadlo, if you don't want?
+[19:07:27] <Diadlo> Ok. Let's I do :)
+[19:09:00] -qtox-git-spam- [qTox] Diadlo opened pull request #3445: fix(main): Closing file before removing (master...fixLogRemove) https://git.io/voHlG
+[19:09:02] <toweI> Diadlo, maybe you can add a comment that this is needed because of windows
+[19:09:16] <toweI> inside the source
+[19:09:26] <zetok> toweI++
+[19:10:18] <Diadlo> Ok
+[19:13:31] *** Joins: Diadl0 (~Diadlo@ )
+[19:14:08] <toweI> who wants a qtox.log rename program which is as big as qtox and has all it's dependencies? :)
+[19:15:37] <Diadlo> All wants :)
+[19:17:38] *** Quits: Diadl0 (~Diadlo@ ) (Client Quit)
+[19:18:28] *** Joins: Diadl0 (~Diadlo@ )
+[19:55:12] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[19:55:21] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[19:57:34] *** Joins: f10_ (~flo@ )
+[19:58:02] *** Joins: f10__ (~flo@ )
+[20:17:58] *** Joins: f10 (~flo@ )
+[20:18:30] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[21:30:00] *** Joins: Chiitoo (~Chiitoo@ )
+[22:10:05] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:10:51] *** Joins: f10_ (~flo@ )
+[22:10:59] *** Joins: f10__ (~flo@ )
+[22:11:20] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[22:15:37] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 260 seconds)
+[22:18:47] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:19:04] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[22:19:18] *** Joins: f10_ (~flo@ )
+[22:19:54] *** Joins: f10__ (~flo@ )
+[22:27:31] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[22:27:37] *** Joins: f10_ (~flo@ )
+[23:13:44] *** Quits: Diadlo (~diadlo@ ) (Quit: Leaving)
+[23:17:15] *** Joins: GGMethos (methos@ )
+[23:21:18] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[23:47:22] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
