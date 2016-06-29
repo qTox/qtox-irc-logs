@@ -1,0 +1,104 @@
+[00:08:24] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:18:58] *** Joins: cisc (~cisc@ )
+[00:41:23] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:41:50] *** Joins: f10 (~flo@ )
+[01:22:52] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:23:51] *** Joins: f10 (~flo@ )
+[01:24:20] *** Joins: anoa (~rainbow@ )
+[01:52:41] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:52:42] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[03:23:39] *** Quits: anoa (~rainbow@ ) (Ping timeout: 260 seconds)
+[03:39:16] *** Joins: anoa (~rainbow@ )
+[05:05:48] <anoa> Still getting crashes on qTox, when Loading a profile from a file and now just when logging in.
+[05:06:08] <anoa> Only from the git version, not the current stable release.
+[05:23:21] <anoa> Interesting, so it's not crashing, it's just a 100% CPU usage in one core. Might be stuck in an infinite loop or something.
+[05:37:32] <anoa> It was an infinite loop.
+[05:44:37] <anoa> Fixed, woo.
+[06:24:42] -qtox-git-spam- [qTox] anoadragon453 opened pull request #3447: fix(profile): Fix for importing profile using Nautilus file manager (master...nautilus-fix) https://git.io/vo5uN
+[07:39:01] *** Joins: sudd3n6 (~anonymous@ )
+[08:15:51] *** Joins: abbat (~Anton@ )
+[08:26:32] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[09:01:00] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:53:22] *** Joins: abbat (~abbat@ )
+[09:53:27] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[10:01:23] *** Joins: rkzzy (~ishhh@ )
+[10:10:47] *** Joins: sudd3n6 (~anonymous@ )
+[10:23:07] *** Joins: st4ll1 (~st4ll1@ )
+[10:26:34] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[10:46:57] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[11:19:53] *** Joins: f10 (~flo@ )
+[11:21:21] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[11:24:17] *** Joins: f10_ (~flo@ )
+[11:25:19] *** Quits: f10 (~flo@ ) (Ping timeout: 244 seconds)
+[11:37:55] *** Joins: cisc (~cisc@ )
+[12:12:34] -qtox-git-spam- [qTox] antis81 opened pull request #3449: [WIP] feat(chat): add settings to alter the chat view's base font (master...chat/font) https://git.io/vodvl
+[12:25:24] *** Joins: LittleVulpix (~Miranda@ )
+[12:51:51] *** Joins: f10 (~flo@ )
+[13:12:16] *** Quits: rkzzy (~ishhh@ ) (Remote host closed the connection)
+[13:55:06] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[14:01:16] *** Joins: LittleVulpix (~Miranda@ )
+[14:40:53] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 258 seconds)
+[15:37:21] *** Joins: stvlker (~stvlker@ )
+[15:48:15] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[16:08:59] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[16:21:18] *** Joins: abbat (~abbat@ )
+[16:36:52] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[16:37:41] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[16:37:42] *** Joins: f10 (~flo@ )
+[16:38:13] *** Joins: f10_ (~flo@ )
+[16:50:49] *** Joins: rkzzy (~ishhh@ )
+[16:55:29] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[16:55:32] <rkzzy> Can someone help me confirm a crash in qTox?
+[16:55:57] <rkzzy> On windows 7, latest qTox, start qTox, then right click on the tray icon, select logout, observe crash.
+[17:26:12] <zetok> huh
+[17:53:02] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:57:53] *** Joins: sudd3n6 (~anonymous@ )
+[17:59:57] *** Joins: vindelschtuffen (~vindelsch@ )
+[18:03:47] *** sudd3n6 is now known as sudden6
+[18:06:34] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vodA7
+[18:06:34] -qtox-git-spam- qTox/master ebc3a60 Colomban Wendling: refactor(passwordedit): optimize event handler unregistration...
+[18:06:35] -qtox-git-spam- qTox/master 4f493c5 sudden6: Merge pull request #3424...
+[18:20:05] <sudden6> zetok: ping
+[18:27:12] *** Joins: anoa (~rainbow@ )
+[18:28:53] *** Joins: Elouin (~elouin@ )
+[18:28:54] <zetok> sudden6: pong
+[18:29:36] <sudden6> any news over the weekend?
+[18:30:24] <zetok> nope
+[18:31:41] <sudden6> :/ no meeting took place then, eh?
+[18:31:53] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[18:32:50] <zetok> yeah
+[18:54:53] *** Quits: Elouin (~elouin@ ) (Quit: WeeChat 1.4)
+[19:00:08] *** Joins: Chiitoo (~Chiitoo@ )
+[19:08:35] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:10:07] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[19:10:13] *** Joins: f10__ (~flo@ )
+[19:10:26] *** Joins: Chiitoo (~Chiitoo@ )
+[19:20:16] *** Quits: rkzzy (~ishhh@ ) (Remote host closed the connection)
+[19:23:00] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:34:08] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[19:52:51] *** Joins: f10_ (~flo@ )
+[19:53:37] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[20:21:44] * zetok wonders
+[20:24:15] *** Joins: f10__ (~flo@ )
+[20:24:17] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:36:07] <sudden6> ?
+[20:39:03] <zetok> is is really better to wait for more commits, rather than merging what is already good for merge?
+[20:39:13] <zetok> s/is is/is it/
+[20:39:43] <sudden6> specific PR you think of?
+[20:39:44] <zetok> re https://github.com/tux3/qTox/pull/3411
+[20:40:03] *** Joins: LittleVulpix (~Miranda@ )
+[20:41:04] <sudden6> I think so, because then everything in this PR can be tested against the specific errors that could happen
+[20:41:22] <sudden6> mainly memory leaks
+[20:41:39] <sudden6> or similar things
+[20:45:26] <zetok> I'm looking at the PRs and I got this feeling that there'll be a lot of conflicts
+[20:46:16] *** Joins: abbat (~Anton@ )
+[20:47:22] <zetok> making PRs bigger than the bare minimum doesn't seem to help with that
+[21:18:59] <sudden6> hmm, I still think it's easier to review if we keep the things together
+[21:53:43] *** Joins: Diadlo (~diadlo@ )
+[21:54:01] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[22:08:30] <zetok> that kinda assumes that review & merging go smoothly
+[23:21:27] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:26:07] *** Joins: f10 (~flo@ )
+[23:43:03] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[23:45:56] *** Joins: albel727 (~albel727@ )
+[23:52:30] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
