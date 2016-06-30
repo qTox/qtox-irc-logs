@@ -1,0 +1,131 @@
+[01:14:29] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 246 seconds)
+[01:31:22] *** Quits: Diadlo (~diadlo@ ) (Quit: Leaving)
+[01:47:04] *** Joins: smaragdus (~omoo@ )
+[01:59:30] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 244 seconds)
+[02:24:11] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[02:48:23] *** Joins: cisc (~cisc@ )
+[02:54:00] *** Joins: anoa (~rainbow@ )
+[03:08:36] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:05:17] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[04:05:34] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 244 seconds)
+[04:10:07] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[04:42:09] *** Joins: smaragdus (~omoo@ )
+[05:20:01] *** Quits: PickleJarBob (~elouin@ ) (Ping timeout: 272 seconds)
+[05:21:38] *** Joins: PickleJarBob (~elouin@ )
+[07:18:33] *** Joins: LittleVulpix (~Miranda@ )
+[08:00:13] *** Joins: abbat (~Anton@ )
+[08:41:30] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[08:45:43] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:57:14] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 258 seconds)
+[09:09:28] *** Joins: vindelschtuffen (~vindelsch@ )
+[09:39:29] *** Joins: abbat (~abbat@ )
+[09:48:48] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[09:49:47] *** Joins: anoa (~rainbow@ )
+[10:01:09] *** Quits: anoa (~rainbow@ ) (Ping timeout: 260 seconds)
+[10:17:29] *** Joins: sudden6 (~anonymous@ )
+[10:45:10] *** Joins: Chiitoo (~Chiitoo@ )
+[10:47:18] *** jl is now known as demize
+[11:08:21] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[11:09:40] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[11:10:36] *** Joins: Chiitoo (~Chiitoo@ )
+[11:25:27] *** Joins: in1t3r (~LordShiva@ )
+[11:28:52] -qtox-git-spam- [qTox] Diadlo opened pull request #3450: fix(widget): Added saving window state before closing (master...fixWindowMaximize) https://git.io/vobSn
+[11:42:21] *** Joins: f10 (~flo@ )
+[11:42:48] *** Joins: f10_ (~flo@ )
+[11:46:03] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:05:11] *** Joins: f10 (~flo@ )
+[12:05:34] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[12:10:04] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[12:10:45] *** Joins: f10_ (~flo@ )
+[12:17:19] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[12:32:18] *** Joins: vindelschtuffen (~vindelsch@ )
+[13:39:08] *** Joins: f10_ (~flo@ )
+[13:52:31] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[13:52:45] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[13:52:58] *** Joins: f10_ (~flo@ )
+[13:53:43] *** Joins: f10 (~flo@ )
+[14:13:02] *** Joins: cisc (~cisc@ )
+[14:15:44] *** Joins: f15h (~thomas@ )
+[14:17:35] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[14:20:21] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[14:34:14] *** Joins: st4ll1 (~st4ll1@ )
+[14:42:13] *** Joins: sudden6 (~anonymous@ )
+[14:50:02] *** Joins: daney_ (68eea96a@ )
+[14:52:39] <daney_> hi
+[14:53:08] <daney_> https://qtox-win.pkg.tox.chat/qtox/win64/setup-qtox.exe.asc gives me 404 Not Found
+[14:53:26] <daney_> I have that link from the qTox homepage https://github.com/tux3/qTox
+[14:56:47] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[14:57:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[15:05:55] <zetok> uh
+[15:06:03] <zetok> daney_: thanks for noticing
+[15:06:21] *** Joins: cisc (~cisc@ )
+[15:10:46] <zetok> I've mailed tux3 about it, hopefully he'll fix it soon
+[15:12:32] <daney_> thanks
+[15:29:49] *** Quits: st4ll1 (~st4ll1@ ) (Read error: Connection reset by peer)
+[15:35:19] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[15:35:37] *** Joins: sudden6 (~anonymous@ )
+[15:46:35] *** Joins: stvlker (~stvlker@ )
+[15:54:18] *** Quits: daney_ (68eea96a@ ) (Quit: Page closed)
+[15:55:05] *** Joins: smoutz (~smoutz@ )
+[15:56:31] *** Joins: sudd3n6 (~anonymous@ )
+[15:56:59] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[16:02:52] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[16:04:08] *** Joins: sudd3n6 (~anonymous@ )
+[16:09:36] *** Joins: sudden6 (~anonymous@ )
+[16:13:03] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[16:14:17] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[16:15:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[16:29:57] *** Joins: f10__ (~flo@ )
+[16:30:43] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:38:38] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[16:40:18] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[16:40:21] *** Joins: f10__ (~flo@ )
+[16:41:27] *** Joins: f10_ (~flo@ )
+[16:52:26] *** Joins: cisc (~cisc@ )
+[17:03:10] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[17:09:03] *** Joins: dardevelin (~dardeveli@ )
+[17:22:52] *** Quits: f10_ (~flo@ ) (Ping timeout: 252 seconds)
+[17:59:24] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[18:41:21] *** Joins: f10 (~flo@ )
+[18:46:44] *** Joins: f10_ (~flo@ )
+[18:47:34] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[18:49:59] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:09:46] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:10:35] *** Joins: Chiitoo (~Chiitoo@ )
+[19:38:04] *** Joins: abbat (~Anton@ )
+[19:56:37] *** Joins: tux3 (~tux3@ )
+[19:56:38] *** ChanServ sets mode: +o tux3
+[20:31:08] *** Joins: Saamm (4ed146f1@ )
+[20:31:17] <Saamm> Hello everyone ^^
+[20:53:11] <zetok> hello Saamm :)
+[21:05:47] <Saamm> o/
+[21:07:10] <zetok> Saamm: any progress with the website?
+[21:08:04] <Saamm> yup
+[21:08:09] <Saamm> I worked on it today
+[21:08:12] <zetok> \o/
+[21:08:40] <Saamm> But it currently doesn't do what I want... (CSS and positionning... such a pain in the a... >.<)
+[21:09:02] <Saamm> So I still need to make it right
+[21:09:14] <Saamm> But yeah, there are some progress ;)
+[21:09:27] <zetok> that's great :)
+[21:22:28] <vindelschtuffen> Saamm, got a repo?
+[21:22:56] <Saamm> Excuse me but, what is a repo? ^^"
+[21:24:05] <Saamm> (oh, by the way, I confirm the "no javascript needed")
+[21:34:31] <Saamm> vindelschtuffen ?
+[21:34:53] <vindelschtuffen> Saamm, the code you're working on, where is it hosted?
+[21:35:09] <Saamm> Localhost ;)
+[21:35:22] <Saamm> I dled the website to work on it on wamp
+[21:35:48] <Saamm> (yeah, I'm not very familiar with github...) :/
+[21:35:54] <Saamm> (so I do what I can)
+[21:40:05] <vindelschtuffen> Cool, I'm interested in seeing your work :)
+[21:41:02] <zetok> Saamm: https://try.github.io/
+[21:42:46] <zetok> um, there seems to be a lot of stuff on the net about starting with git once you type 'git tutorial'
+[21:42:54] <Saamm> Thanks ;)  I'll read that in few minutes ;)
+[21:57:39] <zetok> btw, there's also a lot of github help pages that should explain things quite well
+[21:57:45] <zetok> https://help.github.com/
+[22:02:26] *** Joins: f10 (~flo@ )
+[22:05:15] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[22:06:48] *** Joins: f10__ (~flo@ )
+[22:07:32] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[23:09:34] *** Quits: Saamm (4ed146f1@ ) (Ping timeout: 250 seconds)
+[23:44:59] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:54:19] *** Joins: Saamm (4ed146f1@ )
