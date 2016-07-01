@@ -1,0 +1,189 @@
+[00:13:23] *** Joins: anoa (~rainbow@ )
+[00:29:12] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[00:30:18] *** Joins: f10_ (~flo@ )
+[02:11:52] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[03:09:44] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:39:17] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[03:45:07] *** Joins: cisc (~cisc@ )
+[04:23:51] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[04:42:49] *** Quits: Saamm (4ed146f1@ ) (Quit: Page closed)
+[04:53:40] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[05:11:31] *** Joins: in1t3r (~LordShiva@ )
+[06:00:24] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[06:29:41] *** Joins: cisc (~cisc@ )
+[07:38:09] *** Quits: vindelschtuffen (~vindelsch@ ) (Quit: Leaving)
+[07:51:46] *** Joins: abbat (~Anton@ )
+[08:52:45] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:13:13] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[09:17:57] *** Joins: dardevelin (~dardeveli@ )
+[09:22:46] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[09:31:38] *** Joins: cisc (~cisc@ )
+[09:33:39] <cisc> what is qTox relying on for the "Auto away after" feature on both Win and 'nix; I notice that when a PC is away that it shifts back and forth from yellow to green, there assuredly is no input being done on that computer so on PC 2 it should show PC 1's status as always away
+[09:37:31] <zetok> native stuff
+[09:38:19] <zetok> for linux, it's libxscreensaver, or whatever is its name
+[09:38:55] <zetok> not sure if that's what you have there though
+[09:40:13] * zetok wonders whether that's due to auto-away
+[09:40:40] <zetok> cisc: is it reproducible without auto-away, and only with "Away" set manually?
+[09:42:33] <cisc> when away is set manually from what I can tell with all the people on my FL, it stays 'away' but if someone has auto away set, then can be gone from the computer for 12 hours and it alternates between green and yellow, like it has a mind of its own but that computer is receiving absolutely no input
+[09:42:54] <cisc>  /s/then/they
+[09:42:58] <zetok> huh
+[09:51:20] <zetok> cisc: https://github.com/tux3/qTox/issues/3327 ?
+[09:52:55] *** Joins: abbat (~abbat@ )
+[09:54:10] <cisc> zetok: no because I'm not sending any messages to them
+[09:54:24] <zetok> cisc: yes, but perhaps someone else sent them a message?
+[09:54:43] <cisc> the status light (they are running a Windows machine) will be yellow b/c of auto away, then goes green automatically but they are not doing any input on the PC
+[09:55:02] <cisc> zetok: also no because for instance on person, he only has me and Echobot on his list
+[09:55:14] <cisc>  /s/on/one
+[09:55:38] <zetok> ok
+[09:55:57] <cisc> does that ring any bells or new issue?
+[09:56:10] <zetok> cisc: could you make a new issue for it, linking in it also to the other issue?
+[09:56:23] <cisc> yeah
+[09:56:27] <zetok> thanks
+[09:56:32] <cisc> np
+[09:56:50] <cisc> I haven't tested it w/ a Linux machine, I probably will
+[09:57:09] <cisc> so far its machine A, Linux <------> Machine B, Windows
+[10:04:25] *** Joins: shiva (~LordShiva@ )
+[10:04:40] *** Joins: elouin (~elouin@ )
+[10:08:16] *** Quits: dardevelin (~dardeveli@ ) (*.net *.split)
+[10:08:16] *** Quits: in1t3r (~LordShiva@ ) (*.net *.split)
+[10:08:16] *** Quits: PickleJarBob (~elouin@ ) (*.net *.split)
+[10:15:23] *** Joins: dardevelin (~dardeveli@ )
+[10:41:38] *** Joins: hgjhj (3ecd4a2f@ )
+[10:42:19] <hgjhj> y
+[10:43:56] *** Quits: hgjhj (3ecd4a2f@ ) (Client Quit)
+[10:50:55] *** Joins: sudden6 (~anonymous@ )
+[10:51:43] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[10:56:14] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[11:00:10] *** Joins: zero-ghost (~0@ )
+[11:22:41] *** Joins: abbat (~abbat@ )
+[11:29:05] *** Joins: f10__ (~flo@ )
+[11:47:54] *** Quits: Sephi (~me@ ) (Remote host closed the connection)
+[11:57:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[12:09:12] *** Joins: abbat (~abbat@ )
+[12:09:54] -qtox-git-spam- [qTox] sudden6 closed pull request #3446: fix(addfriendform): Fixed problem with reading friend request (master...fixFriendReqNotification) https://git.io/voQet
+[12:15:58] -qtox-git-spam- [qTox] sudden6 pushed 3 new commits to master: https://git.io/voxK5
+[12:15:58] -qtox-git-spam- qTox/master 29ab61e Diadlo: fix(main): Closing file before removing...
+[12:15:58] -qtox-git-spam- qTox/master 104c7c6 Diadlo: style(main): Small style fixes
+[12:15:58] -qtox-git-spam- qTox/master 2c49ada sudden6: Merge pull request #3445...
+[12:26:17] *** Joins: stvlker (~stvlker@ )
+[12:44:43] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[12:46:05] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[12:51:15] -qtox-git-spam- [qTox] Diadlo opened pull request #3453: Fix video ui (master...fixVideoUI) https://git.io/voxXe
+[12:51:30] -qtox-git-spam- [qTox] sudden6 closed pull request #3444: fix(chatform): Fixed memory leak (master...fixGrabberMemLeak) https://git.io/voHOM
+[13:18:38] *** Joins: Sephi (~me@ )
+[14:05:51] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[14:06:11] *** Joins: abbat (~abbat@ )
+[14:50:51] *** shiva is now known as in1t3r
+[15:00:21] *** Joins: sudd3n6 (~anonymous@ )
+[15:08:48] *** Joins: Chiitoo (~Chiitoo@ )
+[15:21:31] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[15:21:33] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[16:17:59] *** Joins: Saamm (4ed146f1@ )
+[16:18:04] <Saamm> Hey everybody ^^
+[16:19:14] <zetok> o/
+[16:34:08] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[16:34:34] *** Joins: abbat (~abbat@ )
+[16:55:56] *** Quits: genesis (~genesis@ ) (Quit: Leaving)
+[16:56:22] *** Quits: hpanago (uid15586@ ) ()
+[17:01:29] *** Joins: genesis (~genesis@ )
+[17:14:31] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 252 seconds)
+[17:16:00] *** Joins: hpanago (uid15586@ )
+[17:43:51] *** Joins: sudden6 (~anonymous@ )
+[17:49:36] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[17:54:55] <Saamm> Zetok : about the language choice of the website, I keep working on it. But I feel like what is displayed on my screen may not be displayed the same way for every user. So there will be slight corrections to do.
+[17:55:38] <zetok> Saamm: you can test that by pushing website to (IIRC) `gh-pages` branch
+[17:55:46] <Saamm> Moreover, I'm trying to put the flags of every languages too, but for some of them, I'm gonna need some help
+[17:56:44] <Saamm> Yep, you're right. I've started to learn yesterday about how to use GitHub, I've installed Git, but for now I'm not entirely into it
+[17:57:41] <Saamm> About the languages, I see there's a "<a href="{{{lang_shortcode}}}.html">{{{lang_name}}}</a>" in the code, but I've to find the file where the "lang_shortcode" and "lang_name" is displayed...
+[17:57:49] <Saamm> Sorry, I'm not very clear :/
+[17:58:09] <zetok> it's not
+[17:58:33] <zetok> it's replaced by pystache
+[17:59:27] <zetok> https://github.com/qTox/qTox-Website/blob/master/buildsite.py#L45,L62
+[18:00:02] <Saamm> Anyway, for my Git teach, I tried to create a repo, to commit, etc., but even if everything goes well on my computer, "nothing" happen in my online account. I'll have to focus on that.
+[18:00:14] <Saamm> Thanks for pystache
+[18:00:24] <zetok> yeah, git is decentralized
+[18:00:38] <zetok> i.e. until you push to remote server, your local changes are only local
+[18:01:29] <zetok> um, which OS are you using?
+[18:02:32] <Saamm> Windows 7
+[18:02:36] <zetok> uh
+[18:02:53] <zetok> sorry, no idea how to use git on that
+[18:02:55] <Saamm> disappointed? :p
+[18:03:10] <Saamm> Hehe, don't worry, I'm gonna follow tutorials
+[18:03:42] <zetok> um, it's not really about me being disappointed; it's just that using git on windows appears to be overly hard
+[18:04:21] <Saamm> Challenge accepted. 8)
+[18:06:02] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:06:13] <Saamm> Jokes appart, to tell the truth, I'd like to have someone to make me understand the way the languages works on the website. I will try to understand that python file buildsite.py for now.
+[18:06:42] <zetok> well, there are 2 things
+[18:06:50] <zetok> buildsite.sh & buildsite.py
+[18:06:57] <Saamm> Because yeah, there are several things I never saw before... That's a whole new way to display a website for me, I'm not used to that
+[18:07:13] <zetok> buildsite.py was the only thing, using pystache (mustache) to create files from template & replace all strings
+[18:07:14] <Saamm> yup
+[18:08:23] <zetok> sadly, mustache is broken when it comes to "key" values in json having dots, so I've written sterminator, and added buildsite.sh that first runs buildsite.py and then sterminator on files that buildsite.py created
+[18:09:45] <zetok> thus, currently buildsite.py only generates files from template & replaces language section in generated files
+[18:10:54] <zetok> I was wondering whether to not remove buildsite.py completely, but it worked for generating files & replacing language section, so I don't really see point in replacing something that works
+[18:11:53] <zetok> um, about buildsite.py – I understand the general idea behind it, but since I don't really know python, I'm afraid that I can't really help with it
+[18:12:21] <zetok> as for building website – one has to run `buildsite.sh`
+[18:12:30] <zetok> oh wait
+[18:12:47] <zetok> since you have windows, you'd have to compile sterminator & put it in path
+[18:14:15] <zetok> hmm
+[18:14:39] <Saamm> I'd have to compile sterminator... Oô
+[18:16:51] <Saamm> Btw, I never developped programs. I only know a bit of HTML, CSS, PHP, SQL (and the basic part of JS)
+[18:17:36] <Saamm> The only compilations I've done was this year with small C programs, nothing more :3
+[18:17:51] <zetok> compiling native Rust programs is easy
+[18:18:06] <zetok> `cargo build` and that's it
+[18:18:29] <zetok> https://www.rust-lang.org/
+[18:20:53] <zetok> btw, is there a point in learning JS when one can compile Rust to JS, and soon™ to asmjs?
+[18:21:36] <Saamm> Aaaaand another thing to learn X)
+[18:24:11] <Saamm> thank you, by the way, for your patience ;)
+[18:25:17] <zetok> no problem :)
+[18:32:55] <zetok> http://myth.aaronlindsay.com/test/ ← rust compiled to js (wasd, shift, space)
+[19:10:52] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:11:39] *** Joins: Chiitoo (~Chiitoo@ )
+[19:19:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[19:25:59] -qtox-git-spam- [qTox] antis81 closed pull request #3449: feat(chat): add settings to alter the chat view's base font (master...chat/font) https://git.io/vodvl
+[19:39:21] <zetok> \o/
+[19:44:47] <Saamm> Ohhh, nice!
+[19:48:11] *** Joins: abbat (~abbat@ )
+[20:42:59] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[20:43:19] *** Joins: abbat (~abbat@ )
+[20:56:20] *** Joins: f10__ (~flo@ )
+[20:56:21] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[21:00:51] <Saamm> zetok: if I include some PHP code in the index.moustache, will it work?
+[21:00:57] <zetok> nope
+[21:01:26] <Saamm> Okay... well there's something I won't know how to do
+[21:01:26] <zetok> PHP shouldn't be used anyway
+[21:03:21] <Saamm> Then I won't be able to write how to display the good flag/lang shortcut after the user's choice...
+[21:03:37] <zetok> mm
+[21:03:41] *** Joins: f10 (~flo@ )
+[21:03:56] *** Joins: f10_ (~flo@ )
+[21:04:16] <zetok> um, I don't really know about webdev, but it seemed like something not doable, given the constraints – I just hoped that I might be wrong, given my lack of knowledge
+[21:07:12] <Saamm> I hope that someone will know how to do that
+[21:08:31] <zetok> probably not doable
+[21:08:54] <zetok> i.e. to do something dynamically, you'd need js, or something other running code
+[21:12:57] <Saamm> In fact, I was just thinking of an URL-check. If there's for example "it.html", the default flag would be the italian onne
+[21:19:55] -qtox-git-spam- [qTox] zetok opened pull request #3454: Update translations from weblate (master...tr) https://git.io/vohLj
+[21:39:27] -qtox-git-spam- [qTox] zetok closed pull request #3454: Update translations from weblate (master...tr) https://git.io/vohLj
+[21:41:09] -qtox-git-spam- [qTox] zetok opened pull request #3455: chore(ISSUE_TEMPLATE): update location of log file on ~unix platforms (master...template) https://git.io/vohYm
+[22:15:24] <Saamm> The website has been translated in 46 different languages... And I'm looking for the relative flags. I've found this : https://github.com/tux3/qTox/blob/master/smileys/Universe/1f1fa-1f1f8.svg
+[22:15:42] <Saamm> But there's only 10 flags...
+[22:16:28] <Saamm> Does anyone know a website where I could find all the countries?
+[22:27:35] <abbat> qTox for openSUSE ARM (aarch64, armv7l) ready on OBS :)
+[22:27:49] <zetok> \o/
+[22:28:00] * zetok wonders how to fit that into table
+[22:29:13] <zetok> >tfw OBS gives 503
+[22:31:24] *** Joins: anoa (~rainbow@ )
+[22:32:30] <abbat> Hmm. https://build.opensuse.org/package/binaries/home:antonbatenev:tox/qtox?repository=openSUSE_Factory_ARM ?
+[22:34:11] <zetok> ok, it's up now
+[22:35:33] <zetok> um, I see only package for aarch64 and not for armv7l ?
+[22:36:07] <abbat> Compiled but not published yet. Wait a little
+[22:36:23] <zetok> oh, ok
+[22:38:32] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vohCD
+[22:38:32] -qtox-git-spam- qTox/master 6ac8827 Zetok Zalbavar: chore(ISSUE_TEMPLATE): update location of log file on ~unix platforms
+[22:43:22] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[22:48:01] *** Joins: abbat (~Anton@ )
+[22:53:51] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[22:55:20] *** Joins: f10 (~flo@ )
+[22:55:26] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[22:56:13] *** Joins: f10_ (~flo@ )
+[23:05:31] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[23:06:14] *** Joins: f10_ (~flo@ )
