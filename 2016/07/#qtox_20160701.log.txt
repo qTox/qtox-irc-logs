@@ -1,0 +1,134 @@
+[00:11:52] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:23:22] *** Joins: nurupo (~nurupo.ga@ )
+[01:13:36] *** Quits: f10 (~flo@ ) (Ping timeout: 244 seconds)
+[01:14:46] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[01:31:40] *** Quits: Saamm (4ed146f1@ ) (Ping timeout: 250 seconds)
+[03:05:33] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[03:09:13] *** Joins: cisc (~cisc@ )
+[03:10:53] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:08:35] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[04:28:41] *** Joins: cisc (~cisc@ )
+[06:05:49] *** Quits: valvin (~valvin@ ) (Remote host closed the connection)
+[06:06:21] *** Joins: valvin (~valvin@ )
+[07:04:32] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[07:24:46] *** Joins: cisc (~cisc@ )
+[07:52:52] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[08:01:43] *** Joins: abbat (~Anton@ )
+[08:12:42] *** Joins: cisc (~cisc@ )
+[08:52:17] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[08:52:47] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[09:01:26] *** Joins: f10 (~flo@ )
+[09:04:48] *** Joins: f10_ (~flo@ )
+[09:06:44] *** Joins: depate (~patrik@ )
+[09:08:05] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[09:09:23] *** Quits: depate (~patrik@ ) (Client Quit)
+[09:09:38] *** Joins: depate (~depate@ )
+[09:15:33] *** Joins: f10 (~flo@ )
+[09:19:48] *** Quits: valvin (~valvin@ ) (Quit: ZNC - http://znc.in)
+[09:20:19] *** Joins: valvin (~valvin@ )
+[09:42:30] -qtox-git-spam- [qTox] antis81 closed pull request #3175: fix and cleanup audio device lists (master...audio/device-lists) https://git.io/vwlpb
+[09:55:17] *** Joins: abbat (~abbat@ )
+[10:58:20] *** Joins: LittleVulpix|Gho (~Miranda@ )
+[10:59:39] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 276 seconds)
+[11:05:10] *** Quits: LittleVulpix|Gho (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:30:50] *** Joins: testermester (2e0aef9b@ )
+[11:31:07] *** Quits: testermester (2e0aef9b@ ) (Client Quit)
+[11:58:57] *** Joins: Chiitoo (~Chiitoo@ )
+[12:02:10] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[12:02:36] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[13:00:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:12:44] *** Joins: abbat (~abbat@ )
+[13:28:22] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[13:29:14] *** Joins: zero-ghost (~0@ )
+[13:29:58] *** Quits: zero-ghost (~0@ ) (Client Quit)
+[13:31:39] *** Joins: zero-ghost (~0@ )
+[13:32:22] *** Quits: zero-ghost (~0@ ) (Client Quit)
+[13:40:07] *** Joins: sudd3n6 (~anonymous@ )
+[14:00:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:06:39] *** Joins: stvlker (~stvlker@ )
+[14:12:40] *** Joins: abbat (~abbat@ )
+[14:20:51] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[14:31:44] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[15:00:25] *** Joins: f10 (~flo@ )
+[15:01:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[15:01:30] *** Joins: abbat (~abbat@ )
+[15:02:57] *** Joins: f10_ (~flo@ )
+[15:03:51] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[15:05:16] *** Joins: cisc (~cisc@ )
+[15:10:14] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[15:12:23] *** Joins: f10__ (~flo@ )
+[15:12:28] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[15:23:38] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 250 seconds)
+[15:23:45] *** Joins: sockspls (~sockspls@ )
+[15:29:47] *** Joins: sudd3n6 (~anonymous@ )
+[15:37:55] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[15:56:43] *** Joins: f10_ (~flo@ )
+[15:56:55] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[15:58:11] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[16:07:50] *** Quits: f10_ (~flo@ ) (Ping timeout: 246 seconds)
+[16:08:01] *** Joins: f10_ (~flo@ )
+[16:13:55] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:17:48] *** Joins: f10 (~flo@ )
+[16:28:26] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[16:30:20] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:45:19] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[16:47:22] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:00:17] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:05:57] *** Joins: sk0r (~skor@ )
+[17:06:26] *** Parts: sk0r (~skor@ ) ("Leaving")
+[17:13:23] *** Joins: cisc (~cisc@ )
+[17:47:26] *** Quits: Dragofix (Dragofix@ ) (Quit: Wake up and dream!)
+[17:58:02] *** Joins: LittleVulpix (~Miranda@ )
+[18:10:28] *** Quits: depate (~depate@ ) (Ping timeout: 250 seconds)
+[18:25:19] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:36:38] *** Joins: abbat (~Anton@ )
+[19:43:50] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:51:10] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[19:54:05] *** Joins: toweI (~toweI@ )
+[19:54:44] <toweI> is qtox faux offline messaging still working?
+[19:58:35] <zetok> yes
+[19:59:03] <toweI> zetok, why are there no circles anymore?
+[19:59:12] <zetok> uh
+[20:00:14] <zetok> 4f493c5df73dffef25e4f34984fdb736f8da626c works
+[20:01:02] <zetok> i.e. has spinner
+[20:01:57] <toweI> let me see. I am using latest release
+[20:02:20] <zetok> and works on 9694d6b6d434bb7557c9766e89dce5fb4cb89502 (latest, just emerged)
+[20:02:56] <toweI> I guess it got broken and fixed
+[20:03:19] <zetok> hmm
+[20:06:03] <zetok> what os, and which version doesn't work for you?
+[20:08:02] <toweI> https://github.com/tux3/qTox/commit/8d225a8c97a36838092b325ca830c14546f3a0c6 windows. I am compiling latest commit now
+[20:12:18] <toweI> no it's somehow broken
+[20:12:29] <zetok> :/
+[20:13:29] <toweI> it works on a clean settings.ini
+[20:14:52] <toweI> I know what it is
+[20:15:14] <toweI> offline messaging doesn't work anymore when history is disabled
+[20:15:45] <toweI> or the circle is disabled 
+[20:16:50] <zetok> oh, right
+[20:17:11] <zetok> IIRC it's not supported with disabled history
+[20:18:05] <zetok> toweI: https://github.com/tux3/qTox/issues/3022 ?
+[20:19:43] <toweI> why is there so much dicussion^^ it's a simple issue
+[20:20:29] <toweI> there are 2 options disable the faux offline message box or keep messages in memory 
+[20:20:50] <toweI> * disable it when history is disabled
+[20:21:02] <zetok> probably should be disabled
+[20:21:37] <zetok> i.e. this probably will cause least amount of confusion
+[20:22:11] <zetok> as opposed to messages that are supposed to be delivered, but magically disappear upon restart and aren't delivered
+[20:33:39] *** Quits: smoutz (~smoutz@ ) (Read error: Connection reset by peer)
+[20:33:55] *** Joins: anoa (~rainbow@ )
+[20:38:36] *** Joins: Chiitoo (~Chiitoo@ )
+[20:42:27] *** Quits: isAAAc (~isAAAc@ ) (Ping timeout: 252 seconds)
+[20:42:33] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[20:48:55] *** Joins: Dragofix (Dragofix@ )
+[20:56:45] *** Joins: isAAAc (~isAAAc@ )
+[21:08:18] *** Joins: f15h (~thomas@ )
+[21:17:18] *** Joins: sudden6 (~anonymous@ )
+[21:55:39] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[22:11:47] *** Joins: cisc (~cisc@ )
+[22:14:33] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[22:49:47] *** Joins: sudd3n6 (~anonymous@ )
+[22:53:06] *** Quits: genesis (~genesis@ ) (Excess Flood)
+[22:53:11] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[22:53:27] *** Joins: genesis (~genesis@ )
+[22:56:42] *** Joins: smaragdus (~omoo@ )
+[23:05:23] -qtox-git-spam- [qTox] Diadlo opened pull request #3456: Code cleanup (master...codeCleanup) https://git.io/vKve3
+[23:19:49] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[23:31:58] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
