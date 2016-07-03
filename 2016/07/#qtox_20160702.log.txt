@@ -1,0 +1,308 @@
+[00:00:23] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[00:08:00] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[00:11:43] *** Joins: sudd3n6 (~anonymous@ )
+[00:39:25] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[01:02:54] -qtox-git-spam- [qTox] Diadlo opened pull request #3457: Setting rethink (master...settingRethink) https://git.io/vKvt9
+[01:22:46] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:23:45] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[02:01:45] *** Quits: CryptoSiD (SiD@ ) (Ping timeout: 272 seconds)
+[02:06:41] *** Joins: LittleVulpix (~Miranda@ )
+[02:12:54] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[02:20:55] *** Joins: CryptoSiD (SiD@ )
+[03:01:39] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 264 seconds)
+[03:15:42] *** Quits: Bheru27 (~Bheru27@ ) (Quit: o/)
+[03:16:13] *** Joins: Bheru27 (~Bheru27@ )
+[03:28:04] *** Joins: zero-ghost (~0@ )
+[06:02:05] *** Joins: Impyy_ (~impy@ )
+[06:04:49] *** Quits: genesis (~genesis@ ) (*.net *.split)
+[06:04:50] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[06:04:51] *** Quits: linxon (~lin@ ) (*.net *.split)
+[06:04:51] *** Quits: Impyy (~impy@ ) (*.net *.split)
+[08:31:49] *** Joins: sudd3n6 (~anonymous@ )
+[08:42:46] <zetok> sudd3n6: o/
+[08:44:32] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[08:51:58] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[08:56:34] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 252 seconds)
+[09:57:06] *** Joins: sudd3n6 (~anonymous@ )
+[10:03:23] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[10:17:46] *** Joins: tux3 (~tux3@ )
+[10:17:46] *** ChanServ sets mode: +o tux3
+[10:25:22] *** Joins: ovalseven8_ (~ovalseven@ )
+[10:26:01] *** Joins: depate (~depate@ )
+[10:43:23] *** Joins: linxon (~lin@ )
+[11:31:55] <ovalseven8_> zetok, Why shouldn't we be allowed to use the icons?
+[11:32:07] <zetok> have you read the license?
+[11:32:19] <ovalseven8_> The licence is for the qTox code
+[11:32:23] <zetok> exactly
+[11:32:32] <ovalseven8_> But not for the images/icons necessarily
+[11:32:37] <zetok> it covers everything, not "just" the code
+[11:33:03] <ovalseven8_> If you use an image it doesn't mean this image is GPLv3ed now
+[11:33:12] <zetok> and since it sounds like you haven't read it, I'd suggest you to go and read it
+[11:33:46] <ovalseven8_> It covers only the stuff that was created by qTox people
+[11:33:55] <zetok> have you read it?
+[11:34:44] *** Joins: abbat (~Anton@ )
+[11:34:44] *** Joins: Diadlo (~Diadlo@ )
+[11:35:06] <ovalseven8_> Can you show me the line where it says it's now allowed?
+[11:40:22] <zetok> ovalseven8_: sections 1, 2, 12
+[11:41:26] <Diadlo> What about changing license? -_- 
+[11:41:36] <Diadlo> GPL is realy hard
+[11:42:14] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[11:43:07] *** Joins: Diadlo (~Diadlo@ )
+[11:43:43] <zetok> Diadlo: the short answer is 'no'. The longer one is that result would be licensed under GPLv3 anyway, given that toxcore is under it
+[11:44:02] <ovalseven8_> It's more complicated like it seems: https://www.linux.com/news/trouble-artwork-and-free-software-licenses
+[11:44:07] <Diadlo> Oh..
+[11:44:57] <ovalseven8_> Because toxcore uses GPLv3 doesn't necessarily mean qTox also have to be GPLv3
+[11:45:14] <ovalseven8_> For example Antidote uses MIT licence
+[11:45:57] <zetok> which is a ~bullshit, since the combined work is licensed under GPLv3 anyway
+[11:46:13] <ovalseven8_> Why? Antidote doesn't include toxcore
+[11:46:26] <zetok> it's combined with it
+[11:47:48] <ovalseven8_> Well, I am not a lawyer but I can believe that it's legit to use the MIT licence
+[11:48:11] <zetok> lol
+[11:48:28] <ovalseven8_> And... all the emoticons are compatible to GPLv3?
+[11:48:42] <zetok> yep :)
+[11:49:55] <demize> ovalseven8_: It links against toxcore making it a combined work, making GPLv3 apply to the whole work.
+[11:51:52] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[11:52:32] *** Joins: Diadlo (~Diadlo@ )
+[11:54:28] <zetok> >The Non-commercial and No Derivatives elements both conflict with the FSF's free software definition, so no license that includes either of these is compatible with the GPL.
+[11:54:36] <zetok> ovalseven8_: ↑ from the article you've linked to
+[11:56:13] <zetok> btw, that article is rather old, and with never CC licensed more of them are compatible with GPL
+[11:56:33] <ovalseven8_> zetok, Yes but it seems there also exists a grey area and some things are not really clear
+[11:56:36] <zetok> e.g. CC-BY-SA wasn't compatible with GPL, but its newest version (4.0) now is
+[11:57:04] <zetok> s/never/newer/
+[11:57:27] <zetok> ovalseven8_: no, things are quite clear
+[11:57:43] <zetok> at least in the current case you're trying to argue about
+[11:58:05] <zetok> generally, software licensing is a mess
+[11:59:21] <zetok> and the "grey area" are nuances of how exactly licenses are to be adhered to, not the question of what is and what isn't compatible with GPL
+[11:59:21] <ovalseven8_> Well, this is going nowhere. Why not just email icon8, they seem to provide icons for free in general for open-source projects
+[12:00:31] <zetok> yep, that would be the best :)
+[12:01:47] <zetok> ovalseven8_: mind doing that?
+[12:02:44] <ovalseven8_> https://icons8.com/articles/weve-contributed-an-icon-to-imageoptim/
+[12:04:11] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[12:04:51] *** Joins: Diadl0 (~diadlo@ )
+[12:06:38] <ovalseven8_> zetok: Yes, I will ask
+[12:06:45] <zetok> ovalseven8_: thanks :)
+[12:10:33] <ovalseven8_> Diadl0, Perhaps move the font settings to "General"?
+[12:10:46] <ovalseven8_> well, or not
+[12:11:25] <ovalseven8_> But the indentation is wrong for "Show contacts ..." and "Faux Offline Messaging"
+[12:11:41] <ovalseven8_> Let's move "Faux Offline Messaging" to General
+[12:11:50] <zetok> hmm
+[12:13:00] <ovalseven8_> And "Show contacts' ..." could also be in "General"
+[12:13:06] <Diadl0> Ok
+[12:13:12] <ovalseven8_> So the indentation problem would be solved
+[12:13:54] * zetok wonders if that's really the best
+[12:14:26] <Diadl0> Step by step we will return all on General tab :D
+[12:15:19] *** Joins: genesis (~genesis@ )
+[12:16:14] <ovalseven8_> Diadl0, Did you remove the "Reset to default settings" in "Advanced"?
+[12:17:06] <Diadl0> I think, add implementation
+[12:17:26] <Diadl0> May be delete settings file and restart qtox?
+[12:17:42] <ovalseven8_> Diadl0, But it definitely should be removed from the "Portable mode" section
+[12:17:52] <zetok> >May be delete settings file and restart qtox?
+[12:18:29] <zetok> Diadl0: yep, provided that user will be asked whether they want to restart in order to reset settings
+[12:18:32] <Diadl0> Yes. I remove from `porable` block
+[12:18:59] <Diadl0> zetok: Yep
+[12:23:09] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[12:42:55] *** Joins: f10_ (~flo@ )
+[12:44:33] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[12:46:01] *** Joins: abbat (~Anton@ )
+[12:46:40] *** Joins: f10 (~flo@ )
+[13:02:35] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[13:07:03] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 264 seconds)
+[13:07:19] *** Joins: f10__ (~flo@ )
+[13:07:24] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[13:11:29] *** Joins: Chiitoo (~Chiitoo@ )
+[13:20:57] *** Joins: SkyzohKey (~skyzohkey@ )
+[13:38:15] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[14:00:10] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 252 seconds)
+[14:06:11] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:06:54] *** Joins: SkyzohKey (~skyzohkey@ )
+[14:11:33] *** Joins: LittleVulpix (~Miranda@ )
+[14:16:21] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 276 seconds)
+[14:31:00] *** Quits: depate (~depate@ ) (Ping timeout: 272 seconds)
+[14:55:48] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[15:01:44] *** Impyy_ is now known as Impyy
+[15:11:37] *** Joins: cisc (~cisc@ )
+[15:15:34] *** Joins: SkyzohKey (~skyzohkey@ )
+[15:19:27] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[15:42:52] *** Joins: cisc (~cisc@ )
+[15:49:55] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[15:51:48] *** Joins: SkyzohKey (~skyzohkey@ )
+[15:54:51] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[16:01:05] *** Joins: cisc (~cisc@ )
+[16:09:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:13:27] *** Joins: cisc (~cisc@ )
+[16:30:35] *** Joins: Diadlo (~Diadlo@ )
+[16:43:38] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:05:06] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[17:06:33] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:11:29] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[17:12:39] *** Joins: smaragdus (~omoo@ )
+[17:16:45] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[17:17:24] *** Joins: smaragdus (~omoo@ )
+[17:44:59] *** Joins: toweI (~toweI@ )
+[17:53:03] *** Joins: in1t3r (~LordShiva@ )
+[17:53:55] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[18:43:49] *** Joins: sudd3n6 (~anonymous@ )
+[18:52:36] *** Joins: Chiitoo (~Chiitoo@ )
+[18:54:07] <zetok> sudd3n6: o/
+[18:54:23] <sudd3n6> zetok: \o
+[18:54:29] *** sudd3n6 is now known as sudden6
+[18:56:01] <zetok> sudden6: um, I don't want to bother you about the same PR over and over again, but.. https://github.com/tux3/qTox/pull/3411 ← is it really worth waiting indefinitely for some more commits that might, or might not come, rather than merging stuff that is already good for merge?
+[18:56:48] <sudden6> Since PafXUS hasn't responded it's a little bit difficult
+[18:57:00] <zetok> um.
+[18:57:34] <sudden6> well, it would be really shitty if we merged his PR while he's working at it^^
+[18:57:46] <zetok> mm
+[18:58:01] <zetok> that's why I think that workflow isn't as good as it could be
+[18:58:36] <sudden6> tell me more about your thoughts, I lost my crystal ball ;)
+[18:58:47] <zetok> "merge small, merge fast"
+[18:59:03] <zetok> ↑ that probably would be better
+[18:59:35] <zetok> logical changes grouped together sound well, but they put a lot of strain on both sides
+[19:00:28] <zetok> on the other hand, small, incremental changes over a period of time are easier to handle & make necessary changes to them
+[19:01:00] <sudden6> I dislike the idea of merging something WIP
+[19:01:15] * zetok doesn't see it as WIP
+[19:01:21] * sudden6 does
+[19:01:27] <zetok> :D
+[19:01:35] <zetok> whole qTox is WIP
+[19:01:54] <sudden6> this is why we shouldn't add another layer of WIP
+[19:02:11] <zetok> should we not merge anything until it as a whole gets fixed?
+[19:02:30] <sudden6> if multiple contributors start merging "WIP" stuff it soon gets messy
+[19:02:40] <zetok> not really
+[19:03:23] <sudden6> example: I write stuff for a new feature, it works but there is some tiny bug
+[19:03:47] <sudden6> a week later I find the bugfix and have to rewrite everything
+[19:03:47] <zetok> not to be merged, since PR is not done
+[19:03:55] <sudden6> exactly
+[19:04:08] <sudden6> and 3411 is not done :)
+[19:04:18] <sudden6> the plan was to fix all const
+[19:04:32] <zetok> Does the PR introduce bug(s)?
+[19:04:44] <sudden6> I disscussed that with PafXUS on IRC
+[19:05:13] <sudden6> He should submit a small portion of what he wants to do and submit a PR
+[19:05:50] <sudden6> then if everybody (namely all C++ people) agree that it's good, extend the PR and merge
+[19:07:00] <sudden6> tux3 agreed it's good, Diadlo agreed, antis81 said nothing, so the ball is at PafXUS
+[19:07:06] * sudden6 afk
+[19:07:40] <zetok> But the PR doesn't introduce bugs, and actually does improve things?
+[19:30:00] *** Joins: tux3 (~tux3@ )
+[19:30:00] *** ChanServ sets mode: +o tux3
+[19:44:47] * sudden6 back
+[19:45:22] <sudden6> tux3: hey ho
+[19:46:22] <tux3> Hello :)
+[19:46:35] <sudden6> zetok: yes, it probably doesn't introduce bugs and improves things, but what speaks against merging it when it's done?
+[19:47:05] <zetok> unnecessary delay
+[19:47:35] <sudden6> well, I don't see that PR as time critical
+[19:47:42] <sudden6> IMHO
+[19:48:20] <zetok> no, but there might be other people who would want to do something with the code this PR touched, and since they would want to avoid conflicts they might be waiting until PR gets merged
+[19:49:19] <sudden6> I think most people don't base their decicions on other open PRs
+[19:49:43] <zetok> they should
+[19:49:58] <zetok> at least look at what existing PRs are already there
+[19:50:32] <zetok> as for percentage of people who would do that, dunno
+[19:50:37] <sudden6> yes, but only look if what they want to do is already WIP
+[19:51:05] <zetok> WIP – not finished, while the PR seems to be done
+[19:52:05] <zetok> sudden6: anyway, there are other PRs that are finished
+[19:52:10] <sudden6> the PR we are talking about is not done, but I agree this could be made more visible
+[19:52:46] <sudden6> mhmm, I'm currently working on 3380
+[19:52:52] <zetok> btw, won't it be discouraging for people who would want to contribute small things bit by bit?
+[19:53:56] <sudden6> idk, I for one want to get my PRs merged when they are "perfect" and focus on other things then
+[19:54:09] <sudden6> i.e. one PR at time
+[19:54:23] <sudden6> so I don't have to "task switch" too much
+[19:54:29] <zetok> ok
+[19:54:37] <sudden6> will be different for other most probably
+[19:55:45] <sudden6> *others
+[19:56:17] <sudden6> different topic, do you already use gcc6?
+[19:56:38] <zetok> hell no
+[19:56:53] * zetok holds tight to 4.9
+[19:57:08] <sudden6> you should try, it's speed is amazing
+[19:57:24] <zetok> yeah, and AFAIK it produces broken code
+[19:57:27] * sudden6 wonders if qTox builds with llvm
+[19:57:33] <zetok> it does
+[19:57:37] <zetok> at least on osx
+[19:57:44] <zetok> since osx cannot into gcc
+[19:57:50] <sudden6> oh, yeah
+[19:58:12] <sudden6> gcc6 atleast works with qtox
+[19:58:26] <sudden6> and my whole distro apparently
+[19:58:33] <zetok> nope
+[19:58:39] <zetok> checked, and your distro is broken
+[19:58:45] <sudden6> ;)
+[19:59:25] <sudden6> qtox builds fine for me
+[19:59:34] <zetok> so much for the openQA if they provide binaries that crash on start
+[19:59:48] <sudden6> ?
+[20:00:10] <zetok> openSUSE in a nutshell
+[20:01:05] <sudden6> I meant the binaries that crash on start
+[20:01:14] <zetok> qbittorrent
+[20:01:45] <sudden6> perfectly fine here
+[20:01:53] <zetok> sec
+[20:03:31] <zetok> https://a.uguu.se/gieGZVc4Zh8U_block.p2p ← there you go, add blocklist, and watch it crash
+[20:04:08] <sudden6> what's that file for?
+[20:04:19] <zetok> IP filter
+[20:05:28] <sudden6> you promise no malware?
+[20:05:34] <zetok> -.-
+[20:06:05] <zetok> yeah, blocklists includes ip ranges of nasa & similar, so you should be more safe with it
+[20:06:28] <sudden6> no crash, do I need a running torrent?
+[20:06:46] <zetok> not sure
+[20:07:25] <zetok> maybe
+[20:07:51] <sudden6> no, still no crash
+[20:08:02] <sudden6> loading fine for me
+[20:08:06] <zetok> :/
+[20:08:13] <zetok> https://github.com/qbittorrent/qBittorrent/issues/5428
+[20:08:50] <zetok> if it's not that bug, then I don't know
+[20:08:52] <sudden6> ah, if I restart it it crashes, yes
+[20:09:04] <zetok> :3
+[20:09:20] <sudden6> adding it to a running process doesn't do anything bad appearantly
+[20:09:34] <sudden6> btw, why would I want to block ip ranges of nasa?
+[20:09:49] <zetok> that's just small part
+[20:10:01] <sudden6> why should I block anybody?
+[20:10:17] <zetok> why would you want to connect to crappy parts of the net?
+[20:10:34] <zetok> blocklist list is for us and gb
+[20:11:27] <zetok> I probably should also add north korea
+[20:12:15] <sudden6> why not if they provide what you need?
+[20:12:44] <zetok> I'd firmly refuse provided poisoned food
+[20:12:47] <sudden6> if you are torrenting dodgy stuff you're doing it wrong anyway
+[20:12:58] <zetok> eh
+[20:13:01] <zetok> it's not about that
+[20:13:38] <zetok> it's about "why should I waste bandwidth on countries that are trying to kill the net?"
+[20:14:18] <sudden6> ok, I'm not that political with my torrenting :)
+[20:16:59] <sudden6> tux3: what do you think about https://github.com/tux3/qTox/pull/3380 ?
+[20:17:31] <sudden6> especially about the comments of moving to QHash/Map and QVariant in the longer term?
+[20:20:45] <sudden6> zetok: tux3: expect reduced activity from me in the next weeks/months
+[20:22:43] <zetok> :(
+[20:23:42] <sudden6> :/ me too, but I got an internship as a coder and probably don't want to code in my freetime to
+[20:25:26] <sudden6> I'll probably still drop by here tough :)
+[20:25:39] <zetok> mm :)
+[20:25:46] <zetok> sounds nice
+[20:26:31] <sudden6> I hope I return as better programmer ^^
+[20:34:03] <nurupo> what's the primary language you would use at your job?
+[20:34:28] <sudden6> speaking or coding?
+[20:34:36] <nurupo> yep
+[20:34:41] <sudden6> speaking probably english, coding c#
+[20:34:45] <zetok> ew
+[20:35:01] <sudden6> I knew you would say that zetok xD
+[20:35:41] <sudden6> C# the language is actually pretty decent for OOP
+[20:36:03] <sudden6> and IMHO a little bit easier to learn than Java
+[20:36:26] <nurupo> glad you like the language you will be using
+[20:37:09] <sudden6> I'm not that picky about languages, as long as it's C/java like :P
+[20:40:17] <zetok> it is m$ java
+[20:40:27] <sudden6> yep
+[20:41:50] <sudden6> m$ and $un, the battle never ends
+[20:42:12] <sudden6> and then there was Oracl€
+[20:42:40] * sudden6 shows himself out
+[20:59:57] <tux3> sudden6, I added some comments to the PR :)
+[21:00:08] <sudden6> thx very much :)
+[21:00:27] <tux3> It has some interesting changes :)
+[21:00:37] <tux3> Some cleanup is definitely welcome though
+[21:01:43] <sudden6> mhm, I know basically nothing about pure C++, so I can only judge it if it breaks something obvious^^
+[21:07:53] <nurupo> sudden6: http://stackoverflow.com/questions/38060436/what-are-the-new-features-in-c17/38060437#38060437
+[21:10:28] <nurupo> the language gets more and more new features, you are falling behind! :P
+[21:10:53] <sudden6> that's why I stick to the qt abstraction layer :P
+[21:10:55] <tux3> I love C++17! No modules though :/
+[21:11:09] <nurupo> c++17 adds file system api to the language, based on boost file system library
+[21:11:57] <nurupo> they also want to add network support into the language, based on boost asio library
+[21:12:08] <nurupo> well, not into the language but into the standard library
+[21:12:45] <nurupo> maybe they will add Qt into standard library soon too :P
+[21:18:32] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[21:18:49] *** Joins: f10__ (~flo@ )
+[21:22:02] *** Quits: abbat (~Anton@ ) (Ping timeout: 246 seconds)
+[21:23:12] *** Joins: abbat (~Anton@ )
+[21:45:15] <linuxmodder> what other possible  translation pkgs were recently added for qtox  qt5-qtranslations no longer seems to satify the transaltion recipe deps
+[22:26:27] <zetok> nothing
+[22:37:10] *** Quits: ovalseven8_ (~ovalseven@ ) (Ping timeout: 252 seconds)
+[23:27:10] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[23:48:25] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[23:54:14] *** Joins: ovalseven8 (~ovalseven@ )
+[23:54:47] * linuxmodder calls BS
