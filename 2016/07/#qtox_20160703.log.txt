@@ -1,0 +1,465 @@
+[00:43:45] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[00:44:53] *** Joins: Chiitoo (~Chiitoo@ )
+[00:54:29] *** Joins: anoa (~rainbow@ )
+[01:29:02] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[02:08:33] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[02:08:33] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:23:09] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[02:55:01] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[03:24:53] *** Joins: f10 (~flo@ )
+[03:29:30] *** Joins: f10_ (~flo@ )
+[03:44:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[03:45:11] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[04:23:18] *** Joins: ovalseven8_ (~ovalseven@ )
+[04:27:12] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 276 seconds)
+[04:36:45] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:39:15] *** Joins: cisc (~cisc@ )
+[04:43:27] *** Quits: anoa (~rainbow@ ) (Ping timeout: 276 seconds)
+[04:58:37] *** Joins: anoa (~rainbow@ )
+[05:06:04] *** Joins: mitfree (~mit@ )
+[05:07:11] *** Quits: anoa (~rainbow@ ) (Ping timeout: 258 seconds)
+[05:23:02] *** Joins: anoa (~rainbow@ )
+[05:54:26] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[05:54:45] *** Joins: cisc (~cisc@ )
+[05:54:46] *** Quits: cisc (~cisc@ ) (Client Quit)
+[05:55:04] *** Joins: cisc (~cisc@ )
+[07:23:16] *** Joins: tux3 (~tux3@ )
+[07:23:16] *** ChanServ sets mode: +o tux3
+[07:23:54] -qtox-git-spam- [qTox] RegZi opened pull request #3462: docs(CONTRIBUTING.md): Added a new commit message formatting type for translations. (master...AddTranslateType) https://git.io/vKftV
+[07:40:06] *** Joins: f10_ (~flo@ )
+[07:41:23] <zetok> :f
+[07:41:26] <zetok> tux3: https://github.com/tux3/qTox/issues/3461 again
+[07:41:46] <tux3> Wtf
+[07:42:11] <zetok> new binaries wipe out old files
+[07:42:31] <zetok> ?
+[07:42:34] <zetok> dunno :/
+[07:43:02] -qtox-git-spam- [qTox] RegZi opened pull request #3463: docs(CONTRIBUTING.md): Changed commit message type descriptions for less confusion. (master...DocsFix) https://git.io/vKfqJ
+[07:43:13] <tux3> Oh!
+[07:43:25] <tux3> Right... my script cleans up before updating things
+[07:43:48] <tux3> Hm
+[07:44:17] <tux3> What if I make a new qTox PGP key to sign the binaries, and have the script do it on that machiine?
+[07:44:29] <zetok> :/
+[07:44:44] <zetok> that wouldn't be really good
+[07:45:20] <tux3> Why is that?
+[07:45:32] <tux3> I could sign that key and publish it
+[07:45:48] <zetok> https://blogs.gentoo.org/mgorny/2016/04/15/why-automated-gentoo-mirror-commits-are-not-signed-and-how-to-verify-them-2/
+[07:46:45] <tux3> Well, I've only skimmed the thing, but let me address it
+[07:47:47] <tux3> 1) We already have the windows update keys on that same server, so adding the installer signing keys to the same machine would not add any extra significant risk
+[07:48:42] <tux3> 2) I trust people who have access to that machine to not tamper with anything, if I can't trust them I'm screwed anyway as they could mess with Jenkins
+[07:50:09] <tux3> 3) Since I'd have a revocation cert, if something ever goes wrong it's easy to react
+[07:50:18] <tux3> Do you see a problem in there?
+[07:51:01] <zetok> not a problem per se, it's just that your "own" signature would be better
+[07:51:19] <tux3> No, no it would not :/
+[07:51:43] <tux3> Then if the server gets compromised I can't revoke the key, and the attackers get to impersonate me in all kind of places
+[07:52:12] <zetok> err
+[07:52:14] <tux3> Well I'd have to revoke the key, but that would be a pain
+[07:52:20] <zetok> no, that's not what I meant
+[07:52:24] <tux3> ?
+[07:52:50] <zetok> I meant to keep the current "workflow", but modify scripts to not remove signatures
+[07:53:05] <zetok> and keep signing installer locally
+[07:53:19] <tux3> Yeah, the current workflow is annoying and I don't have time to do everything manually, so I'm automating it.
+[07:53:38] <zetok> :/
+[07:53:47] <tux3> If you have an argument against automating it, I'm listenning
+[07:56:18] <tux3> Do we have some sort of official qTox email? Or I can just put mine I guess
+[07:56:33] <tux3> I don't know if the support mailing list is appropriate
+[07:59:26] <zetok> there's no qTox mail
+[08:04:57] <tux3> Hm actually I wonder if I should put the signature directly on Jenkins and have Jenkins sign the installers
+[08:05:19] <zetok> that would be bad
+[08:05:29] <tux3> Yeah, let's not
+[08:10:35] *** Joins: f10 (~flo@ )
+[08:11:31] <zetok> tux3: btw, while you're messing with that stuff, https://github.com/tux3/qTox/issues/3460 ?
+[08:12:10] <tux3> I could, but that's going to break links left and right
+[08:12:46] <zetok> closing the issue as 'sorry, not happening' would do :)
+[08:15:26] <nurupo> tux3: can't you sign them on qtox-win.tox.chat or something?
+[08:15:41] <tux3> nurupo, that's what I'm going to be doing :)
+[08:16:05] <tux3> I just made a PGP key (https://pgp.mit.edu/pks/lookup?op=get&search=0x139CA0453DA2D773) and now I'll write a script.
+[08:16:39] <nurupo> less people have access to that machine than to jenkins
+[08:16:58] <nurupo> and i wouldn't have to import your private key to the on-demand build machine
+[08:17:11] <nurupo> script of which i want to have public
+[08:18:42] <tux3> Ouch. Right.
+[08:31:34] <tux3> Ok, it should work now
+[08:36:45] *** Joins: f10__ (~flo@ )
+[08:37:23] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[08:43:47] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[08:57:36] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[08:58:33] *** Joins: cisc (~cisc@ )
+[09:02:29] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[09:02:29] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[09:06:27] *** Joins: in1t3r (~LordShiva@ )
+[09:14:02] <nurupo> zetok is hiding at google
+[09:15:14] <nurupo> https://github.com/google/zoekt
+[09:15:24] <nurupo> rearrange the letters :P
+[09:18:17] -qtox-git-spam- [qTox] anoadragon453 opened pull request #3464: feat(chatform): Disable call buttons if friend is offline (master...offline-call-buttons) https://git.io/vKfY4
+[09:33:27] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 264 seconds)
+[09:46:40] *** Joins: sudd3n6 (~anonymous@ )
+[09:56:47] -qtox-git-spam- [qTox] RegZi closed pull request #3462: docs(CONTRIBUTING.md): Added a new commit message formatting type for translations. (master...AddTranslateType) https://git.io/vKftV
+[09:57:22] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[10:14:51] -qtox-git-spam- [qTox] RegZi opened pull request #3465: feat(l10n): update Bulgarian translation from weblate (master...BulgarianTranslation) https://git.io/vKf3f
+[10:18:51] *** Joins: abbat (~abbat@ )
+[10:36:49] <tux3> zetok, do you know why Travis is exploding on https://github.com/tux3/qTox/pull/3463 ?
+[10:37:09] <zetok> > Update CONTRIBUTING.md
+[10:37:32] <tux3> OOOh >.<
+[10:37:34] <tux3> Argh.
+[10:37:50] <zetok> you know, we've been wondering with sudden6 whether people actually read travis output
+[10:38:09] <zetok> https://travis-ci.org/tux3/qTox/jobs/141958973#L168
+[10:38:12] <tux3> I tried, but since it doesn't stop after an error, the actual problem is burried within 100k of logs...
+[10:38:21] <tux3> Just saw i
+[10:38:22] <tux3> it
+[10:38:33] <zetok> hmm, so it should be moved to the end?
+[10:39:13] <tux3> Either 1) make it EXIT on error, instead of continuing to build hapilly, or 2) sum up all the errors at the end
+[10:39:22] <anoa> zetok: Are group lists still not updating for you when you change a friend alias?
+[10:39:53] <zetok> tux3: I'll see if exiting build is possible
+[10:40:00] <tux3> zetok, thanks :)
+[10:41:22] <zero-ghost> zetok how do i attach to a running CLI program in terminal
+[10:41:31] <zetok> anoa: um?
+[10:41:51] <zetok> zero-ghost: if it's about gdb, `gdb -p $pid`
+[10:42:02] <anoa> zetok: for #781, what problem are you still experiencing?
+[10:42:24] <zetok> zero-ghost: once attached, type `continue` if you want program to keep running until the crash
+[10:42:46] <zetok> anoa: groupchat displays alias instead of nick
+[10:42:57] <zero-ghost> i dont have gdb installed
+[10:43:08] <zero-ghost> i mean just a general program thats running headless
+[10:43:22] <zetok> um, you don't?
+[10:43:28] <zero-ghost> i can double click a binary and see it running in task manager
+[10:43:36] <zero-ghost> i cant attach toit to see its output
+[10:43:41] <zetok> strace ?
+[10:43:55] <anoa> zetok: I thought that was intended behaviour? From issue: "Although one person is "Person A" in my friend list - in group chat he has another name"
+[10:44:01] <tux3> zetok, tail -F /proc/<pid>/fd/1 ?
+[10:44:04] <tux3> zero-ghost, ^
+[10:45:23] <zero-ghost> just sits there
+[10:46:06] <zetok> anoa: not really
+[10:46:26] <zetok> anoa: that's the description of the wrong behaviour
+[10:46:36] <tux3> zetok, tail -F will show the output as it happens, but you can't get the history or easyly interract with the program
+[10:46:41] <tux3> Damn, I mean zero-ghost ^
+[10:46:46] <tux3> Wrong ze<TAB> :)
+[10:47:05] <zero-ghost> oh ok
+[10:47:16] <zero-ghost> how about getting the history?
+[10:47:21] <zetok> >_>
+[10:47:27] <zero-ghost> and there is no interaction with this program
+[10:47:30] <tux3> You can't, the output history is not kept anywhere.
+[10:47:42] <zero-ghost> but id like to have it headless and be able to just attach and see the history
+[10:47:46] <zero-ghost> yea damn...
+[10:47:48] <zetok> eh
+[10:47:50] <zetok> just use screen
+[10:47:56] <zetok> + increase screen history
+[10:48:00] <zero-ghost> yea someone told me about screen and i was trying it
+[10:48:03] <zero-ghost> seems the best way
+[10:48:06] <zetok> (but not too much, otherwise it'll eat your ram)
+[10:48:09] <zero-ghost> i thought linux was better than that though ;)
+[10:48:09] <tux3> Use nohup if you want to keep the history, use tmux/screen if you want to detach/reattach later
+[10:48:44] <anoa> zetok: If you change a friend's alias then it changes in groupchat, thus groupchat and friends list has same name which is opposite of the wrong behavior I mentioned above.
+[10:50:12] -qtox-git-spam- [qTox] tux3 closed pull request #3173: feat(settings): make close to tray to be the default (master...tray) https://git.io/vwWp2
+[10:52:01] <zetok> uh
+[10:52:21] <zetok> anoa: sorry, brainfarted there
+[10:52:32] <anoa> zetok: No problem :P
+[10:52:56] <anoa> Just not really sure what the issue still is
+[10:53:29] <zetok> anoa: um, the correct behaviour is not altering what is displayed in groupchat, regardless of whether alias is set
+[10:53:48] <zetok> or at least this way of handling things seems to cause least amount of trouble
+[10:55:30] <anoa> Oh I see, whereas a user would mention "alice", they would be referring to who everyone else saw as "bob".
+[10:56:38] <zetok> yeah
+[10:56:48] <anoa> I didn't understand the problem, thanks. As a solution I suppose we could show both, though how to do so would require some ux thought.
+[10:57:07] <zetok> well, there is one ;)
+[10:57:47] <zetok> anoa: https://github.com/tux3/qTox/issues/1195 ?
+[10:58:43] <anoa> That would work, though someone could name themselves alice / bob, so perhaps some color distinction is necessary? We could also do Nick <i>Alias</i>
+[10:59:19] <zetok> um, suggested way is to use cursive for `(Name)`
+[10:59:55] <anoa> Cursive meaning italics? Yeah, that's what I think would be good, something that wouldn't be reproducible by a normal user with a nick only.
+[11:00:02] <zetok> yeah
+[11:00:21] <zetok> I guess it wasn't clear from the post :f
+[11:00:30] -qtox-git-spam- [qTox] RegZi closed pull request #3463: docs(CONTRIBUTING.md): Changed type descriptions for less confusion. (master...DocsFix) https://git.io/vKfqJ
+[11:01:35] -qtox-git-spam- [qTox] RegZi opened pull request #3466: docs(CONTRIBUTING.md): Changed type descriptions for less confusion. (master...DocsFix) https://git.io/vKfsw
+[11:01:51] <anoa> Added a comment to clear up confusion. Also it's 3am here so my brain might be kind of broke atm :p
+[11:06:20] <zetok> tux3: btw, there's now `test-pr.sh` for testing ;)
+[11:06:41] <tux3> zetok, nice, what does it do?
+[11:06:47] <tux3> Check the commit names?
+[11:07:09] <zetok> https://github.com/tux3/qTox/pull/3414
+[11:07:29] <tux3> neat
+[11:07:32] <zetok> oh, that would be a useful check regardless of whether merging or testing
+[11:08:13] <tux3> zetok, do you have RegZi <qeman@abv.bg>'s PGP key by chance? It doesn't seem to be on the keyservers
+[11:08:32] <zetok> um, it doesn't matter?
+[11:09:14] <zetok> um, I don't have it
+[11:09:29] <zetok> but what matters, is merge commit that should be signed
+[11:09:32] <tux3> Oh well. It's just that I like when my git log isn't full of red warnings.
+[11:09:37] <zetok> I see
+[11:09:49] <tux3> The idea is that I import the key once, and if it changes I'll be warned
+[11:09:58] <zetok> right
+[11:10:42] <zetok> I have qTox maintainers added, but not all contributors
+[11:11:02] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[11:12:32] <zetok> hmm, aside from that, it look like travis has a bit of a hard time keeping up with PRs – that's the second PR for which travis didn't make a build
+[11:17:13] <zetok> hmm, I think that I might have found a way for travis to exit upon failure
+[11:29:55] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[11:31:25] *** Joins: abbat (~Anton@ )
+[11:37:58] *** Joins: hexadezimalion (sid85551@ )
+[11:39:13] *** Joins: anoa (~rainbow@ )
+[11:44:16] -qtox-git-spam- [qTox] zetok opened pull request #3467: chore(travis): make travis build exit as soon as test fails (master...travis) https://git.io/vKfGp
+[11:49:46] -qtox-git-spam- [qTox] tux3 pushed 1 new commit to master: https://git.io/vKfZI
+[11:49:46] -qtox-git-spam- qTox/master 2bdd982 tux3: fix(ui): Prevent suicide crash on logout...
+[11:50:58] <tux3> zetok, uuh does travis just use any script you give it in a pull request o.O ?
+[11:51:34] <tux3> If I replace .travis.yml by malicious code and send a PR, travis will run that?
+[11:51:39] <zetok> why yes :3
+[11:51:45] <tux3> :O
+[11:51:57] <tux3> :|
+[11:51:58] <zetok> that would go against travis ToS though
+[11:52:57] <tux3> Outlawing it won't stop outlaws, though
+[11:54:08] <tux3> Maybe travis should refuse to run a script if it's not equal to what's on git master
+[11:54:29] <zetok> um
+[11:56:42] <zetok> the whole point of travis is to run stuff that has been modified
+[11:57:13] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[11:57:28] <tux3> I guess. Isn't it a bit risky to give arbitrary code execution to randos on travis though?
+[11:57:33] <ovalseven8_> By the way: I am in contact with Icons8 and I will probably get an answer on monday
+[11:57:59] <tux3> Hm I guess not, they could get that with the qmake .pro file anywways
+[11:59:40] <zetok> :|
+[12:00:02] <zetok> great, travis fails right after installing dependencies on linux, and I don't know why
+[12:00:37] <zetok> great to know that something in there has been failing for months -.-"
+[12:02:02] <zetok> ovalseven8_: great, thanks :)
+[12:02:38] * zetok should have use word other than 'great' :|
+[12:06:00] <zetok> https://travis-ci.org/tux3/qTox/jobs/141981027 well, at least it stops where it should
+[12:06:34] <tux3> That's much better at least :)
+[12:19:26] <ovalseven8_> qTox A/V needs a complete rewrite! :O
+[12:21:16] <zetok> >Project ERROR: libavformat development package not found
+[12:21:18] <zetok> great
+[12:26:24] <zetok> :(
+[12:26:34] <zetok> ah, crap, dunno what to do with it
+[12:27:54] <tux3> zetok, can I add stuff at the end of the merge commit message, or is the changelog going to break?
+[12:28:23] <zetok> tux3: merge script supports that
+[12:28:43] <zetok> i.e. `./merge-pr.sh 1234 "additional merge msg"`
+[12:29:02] <tux3> So something like "Merge pull request #XXXX, also lol git is hard" would work?
+[12:29:14] <zetok> no
+[12:29:17] <zetok> that would break
+[12:29:17] <tux3> Or just in the messsage body?
+[12:29:20] <tux3> Ah
+[12:29:27] <tux3> Well, I'll just make a new commit then
+[12:30:59] -qtox-git-spam- [qTox] tux3 pushed 3 new commits to master: https://git.io/vKfn8
+[12:30:59] -qtox-git-spam- qTox/master 02cacea RegZi: docs(CONTRIBUTING.md): change type descriptions for less confusion
+[12:30:59] -qtox-git-spam- qTox/master fc3ac1a tux3: Merge pull request #3466...
+[12:30:59] -qtox-git-spam- qTox/master 4eed254 tux3: fix(doc): CONTRIBUTING.md typos
+[12:32:13] <tux3> Well I messed up, should have used docs() instead of fix(), I'll never get used to this changelog thing :)
+[12:33:05] <zero-ghost> running a new install of bitmessage, "220,000 items to be syned".... why doesnt tox just use this style for offline messages %-DDD
+[12:34:21] <zetok> um, unless someone knows what to do, with that travis error, I'll just remove `set -e` from build for Linux instance
+[12:36:00] <tux3> zetok, uh wait what?
+[12:36:23] <zetok> https://travis-ci.org/tux3/qTox/jobs/141983273#L3167
+[12:36:47] <tux3> zetok, what command/script does the error come from?
+[12:37:12] <zetok> https://github.com/tux3/qTox/blob/master/.travis/build-ubuntu_14_04.sh#L93 this line
+[12:38:02] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[12:38:13] <zetok> or at least I think that's the case, given that `echo ` above is printed, and next one is this line, which fails because reasons
+[12:39:15] <tux3> Yep, looks like it
+[12:39:30] <zetok> I don't get it though :(
+[12:39:42] <tux3> I'm not sure either
+[12:40:03] <tux3> Ah, got it
+[12:40:24] <tux3> Some smart person decided to add pkgconfig conditions if ENABLE_SYSTRAY_STATUSNOTIFIER_BACKEND is true
+[12:40:33] <tux3> PKGCONFIG += libavformat libavdevice libavcodec
+[12:40:43] <zetok> >_>
+[12:41:19] <tux3> git blame says Erik Edrosa               2016-03-25 14:18:26 -0400 176
+[12:42:29] <tux3> https://github.com/tux3/qTox/pull/2990/files
+[12:44:22] <zetok> uh
+[12:50:36] *** ovalseven8_ is now known as ovalseven8
+[12:52:14] <zetok> I've pushed fix to PR
+[12:54:46] <tux3> Are you sure that fix will work?
+[12:55:53] <tux3> I think you need to make the PKGCONFIG lines more optional, not less optional
+[12:56:10] <linuxmodder> makes sense if they were thinking audiable notifications
+[12:56:21] <linuxmodder> with tux3 on that 
+[12:56:37] <linuxmodder> make it a switch statement even maybe
+[13:11:40] *** Quits: VVD (~VVD@ ) (Ping timeout: 244 seconds)
+[13:15:38] <zetok> tux3: um, ffmpeg is not optional
+[13:16:13] <tux3> zetok, no, but the pkgconfig stuff is, since we can have ffmpeg in the ./libs subfolder
+[13:16:26] <tux3> package config just looks for system-wide packages afaik
+[13:16:39] <zetok> right
+[13:16:57] <zetok> it actually looks in the defined by env variable dir
+[13:17:32] <zetok> PKG_CONFIG_PATH
+[13:20:54] <zetok> tux3: so should PKG_CONFIG_PATH be used by whatever wants to make static builds, or qtox.pro has to have more `if`s ?
+[13:21:53] <tux3> You could export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:./libs/ or something like that
+[13:22:05] <tux3> It needs to work for both system-wide packages and local packages
+[13:22:31] <tux3> But I don't know if it'll work out of the box if you just point it a ./libs
+[13:22:52] <tux3> You probably need to copy the .pc files in the right place too
+[13:23:06] <zetok> ./libs/pkgconfig
+[13:23:19] <tux3> If that exists, sounds perfect
+[13:23:39] <zetok> dunno if it exists
+[13:31:39] <zetok> actually libs/lib/pkgconfig/
+[13:31:47] <zetok> ffmpeg creates it \o/
+[13:32:15] <tux3> neat
+[13:44:36] *** Joins: f10 (~flo@ )
+[13:45:09] <zetok> make: *** No rule to make target 'libs/include/libavcodec/avcodec.h', needed by 'videoframe.o'.  Stop.
+[13:45:14] <zetok> success \o/
+[13:45:51] *** Joins: f10_ (~flo@ )
+[13:58:23] <zetok> or maybe not
+[14:01:23] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[14:01:50] *** Joins: zero-ghost (~0@ )
+[14:04:09] <zetok> Of course pkg-config is not included in build-essentials.
+[14:14:25] <zetok> :/
+[14:34:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 264 seconds)
+[14:44:35] <zetok> ok, I have no idea how to make that work
+[14:50:23] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[14:51:48] *** Joins: in1t3r (~LordShiva@ )
+[14:52:40] *** Joins: f10 (~flo@ )
+[14:53:07] *** Joins: f10__ (~flo@ )
+[14:54:01] *** Joins: SkyzohKey (~skyzohkey@ )
+[14:54:51] *** Joins: Saamm (4ed146f1@ )
+[14:55:26] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:56:55] <zetok> tux3: um, if you have no idea either, I'll just remove last commit & `set -e` from build-ubuntu.sh
+[14:57:06] <tux3> zetok, alright then :/
+[14:58:05] <Saamm> Hello everyone ^^
+[15:07:50] <tux3> Hi
+[15:17:59] <ovalseven8> tux3, zetok: Seems like we may use the icons! \o/
+[15:18:11] <zetok> awesome :)
+[15:19:09] <ovalseven8> tux3, zetok: They would offer also paid access for free, but I think we don't need it. The 100x100 PNG should be enough for us, right?
+[15:19:20] <zetok> uh
+[15:19:25] <zetok> there's no .svg ?
+[15:19:36] <ovalseven8> There is .svg, but only for paid access
+[15:19:45] <zetok> makes sense
+[15:20:44] <ovalseven8> zetok, Do we necessarily need .svg?
+[15:21:21] <zetok> .png are really bad to store in git, and aren't future-proof, like svg
+[15:29:42] <ovalseven8> zetok, tux3: So, question is: Should we ask for a premium account or are we happy with normal PNG? :)
+[15:30:11] <tux3> ovalseven8, premium account as in paying :) ? Because I don't really have a qTox budget!
+[15:30:24] <zetok> how badly do we need those icons?
+[15:30:37] <ovalseven8> tux3: They give us premium account for free if we want
+[15:30:44] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[15:30:55] <zetok> oh
+[15:31:06] <tux3> Well no harm in asking then!
+[15:31:12] <zetok> ovalseven8: we need only icons for settings, right?
+[15:31:39] <ovalseven8> At the moment, yes. But I guess there are other icons we could use and replace ugly icons in qTox with them
+[15:33:14] <zetok> ovalseven8: um, given their circumstances, I think that it would be the best to use as few as possible?
+[15:34:17] <ovalseven8> zetok, It depends: Normal .png with 50x50 or 100x100 is limited it seems. SVG (premium account needed) we should not use too much.
+[15:34:29] <ovalseven8> *is not limited
+[15:36:26] <zetok> um, it's preferable to not use PNGs at all
+[15:36:44] <zetok> i.e. only when there's really no other choice
+[15:36:57] <ovalseven8> zetok, well, please look -> https://github.com/tux3/qTox/tree/master/img/icons
+[15:37:07] <ovalseven8> I don't think PNG's are such a problem
+[15:38:04] <zetok> yeah, those icons should be "thrown away" at some point to just generate them automatically from .svg
+[15:38:17] <zetok> except that you don't really throw away things with git
+[15:38:31] <zetok> and they will be left in git history forever
+[15:39:09] <ovalseven8> zetok: Well, then probably I will ask for a premium account?
+[15:39:31] <zetok> needed for ~3 icons, right?
+[15:39:45] <ovalseven8> 5, I guess
+[15:40:03] <zetok> oh wait
+[15:40:18] <ovalseven8> And I would know some to replace in qTox :D
+[15:40:27] <zetok> there's PR by Diadlo that adds UI tab
+[15:40:43] <ovalseven8> For example "Remove" avatar icon :P
+[15:41:07] *** Joins: VVD (~VVD@ )
+[15:42:01] <zetok> https://a.uguu.se/jj247DFrsmim.png ?
+[15:42:25] <ovalseven8> It looks different for me
+[15:42:50] <zetok> icon theme :)
+[15:45:20] <zetok> i.e. you set it in your gtk/kde settings
+[15:54:43] <ovalseven8> So should I ask for the 6 .svg icons? https://github.com/tux3/qTox/pull/3457#issuecomment-230091930
+[15:55:17] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:55:30] <ovalseven8> zetok, This should be the default "remove" icon, no? 
+[15:57:54] *** Joins: f10 (~flo@ )
+[15:58:33] <zetok> ovalseven8: not sure if icons for UI and A/V are a good fit
+[15:58:53] <ovalseven8> zetok: Choose another ;)
+[15:59:43] <ovalseven8> I guess it'd be a great deal if we just ask them if we need a nice icon in .svg format. So they don't have to give us a premium account.
+[16:00:05] <ovalseven8> And we have all we need :)
+[16:08:03] <zetok> ovalseven8: UI: https://icons8.com/web-app/12681/navigation-toolbar-left-filled ?
+[16:08:18] <zetok> as for A/V, look at the `video` ones
+[16:09:38] <zetok> also, IMO current Privacy icon is already good
+[16:10:47] <ovalseven8> Well, I think the qTox icon for "Privacy" not so good
+[16:10:57] <ovalseven8> It's the program's icon
+[16:11:39] <zetok> exactly
+[16:12:19] <zetok> >qTox is built on a "privacy goes first" agenda, and we make no compromises.
+[16:12:30] <zetok> ;D
+[16:13:02] <ovalseven8> Of course, I understand. It's just a matter of opinion :D
+[16:16:40] <ovalseven8> zetok, For A/V? https://icons8.com/web-app/10329/webcam-filled
+[16:18:16] <zetok> https://a.uguu.se/RQ7r8kRAjX7W.png ← not good enough, eh?
+[16:18:56] <zetok> ovalseven8: not sure :s
+[16:19:15] <ovalseven8> zetok: It's PNG :P 
+[16:20:18] *** Joins: Bill_MI (~Bill@ )
+[16:20:46] <zetok> ok, consider me convinced
+[16:22:17] <zetok> ovalseven8: https://icons8.com/web-app/514/webcam ← this one seems to be better?
+[16:22:38] <ovalseven8> zetok, Yep, we can use that
+[16:22:41] <zetok> + colour other than black
+[16:24:17] <ovalseven8> zetok, Mh... if one is colored it look inconsistent
+[16:24:37] <zetok> mm, icons shouldn't be black
+[16:25:18] <zetok> https://a.uguu.se/j6m4Uy8yxJOe.png ?
+[16:26:09] <ovalseven8> zetok, also the tab is gray 
+[16:26:37] <zetok> oh, right
+[16:26:41] <zetok> #34495e then?
+[16:27:17] <ovalseven8> Allright
+[16:27:43] <ovalseven8> zetok, But then we also need colored icons for the other tabs?
+[16:27:53] <zetok> yep
+[16:28:36] <ovalseven8> zetok, https://icons8.com/web-app/2969/settings-filled
+[16:28:38] <ovalseven8> Click color right
+[16:28:42] <ovalseven8> It looks good, no?
+[16:29:02] *** Quits: Saamm (4ed146f1@ ) (Ping timeout: 250 seconds)
+[16:29:35] <zetok> yeah
+[16:31:18] <ovalseven8> zetok, https://icons8.com/web-app/13534/privacy
+[16:34:25] <zetok> :|
+[16:36:05] *** Joins: sudd3n6 (~anonymous@ )
+[16:37:02] <ovalseven8> tux3, Would you have something against a link to icons8.com in the about section in case we use some icons from them?
+[16:37:07] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[16:39:42] <tux3> ovalseven8, we should give credit for the icons, as long as it doesn't turn into advertising
+[16:39:52] <tux3> A link is reasonnable :)
+[16:40:48] <zetok> "About" generally could make some use of more place for copyright stuff
+[16:41:15] <zetok> btw
+[16:41:18] <zetok> >See a full list of contributors at Github
+[16:41:28] <zetok> >shows only top 100 contributors
+[16:42:00] <zetok> tux3: could be fixed by a dedicated "AUTHORS" file, like Linux does it
+[16:45:08] <zetok> https://a.uguu.se/GxqcCnxKYBvW.png ← krita has it nicely done
+[16:54:31] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[17:37:03] *** Joins: Chiitoo (~Chiitoo@ )
+[18:04:19] *** Joins: anoa (~rainbow@ )
+[18:06:02] *** Joins: toweI (~toweI@ )
+[19:29:58] <demize> Well, does the contributors list really matter much unless you have a clone of the repo, in which case you can easily get one?
+[19:39:41] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[20:00:50] <zetok> it looks nice
+[20:07:24] *** Joins: tux3 (~tux3@ )
+[20:07:24] *** ChanServ sets mode: +o tux3
+[20:10:22] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[20:14:31] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 240 seconds)
+[20:18:30] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:19:20] *** Joins: f10 (~flo@ )
+[20:25:39] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:25:48] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[20:26:29] *** Joins: f10 (~flo@ )
+[20:26:51] *** Joins: LittleVulpix (~Miranda@ )
+[20:33:59] *** Quits: mitfree (~mit@ ) (Ping timeout: 246 seconds)
+[20:34:05] <nurupo> tux3: zetok: hey, we got the next comment on the multi-device blog post: "I wish the toxing was happy but it wasn't. https://github.com/tux3/qTox/issues/2726 , https://github.com/tux3/qTox/issues/2820 and https://github.com/tux3/qTox/pull/2771 have all been reported half a year ago and nobody does anything about them. Nobody. Instead, we get more new features such as multi-device support, which, judging by the 3 bugs above (the third one is solved and 
+[20:34:05] <nurupo> just needs rebasing, for Christ's sake) is going to be just as (un)usable."
+[20:35:52] <tux3> One of them is a toxcore issue that we'd need to hack around, one is a new feature, and one is a legit bug
+[20:37:14] <zetok> also the PR doesn't require "just a rebase"
+[20:37:21] <zetok> it needs to be fixed first
+[20:37:34] <zetok> or rather, it needs to be rebased, then fixed
+[20:40:17] <zetok> nurupo: you might want to link them to https://github.com/tux3/qTox/pull/2771#issuecomment-223250495
+[20:40:22] <nurupo> oh, JFreegman has already approved the comment
+[20:40:29] <nurupo> and even replied to it
+[20:40:41] <nurupo> was about to approve it myself
+[20:41:30] <nurupo> zetok: https://blog.tox.chat/2016/06/update-new-group-chats-multi-device-and-more/#comment-399
+[20:43:04] <zetok> nurupo: um?
+[20:43:19] <zetok> oh, them
+[20:44:44] <zetok> nurupo: ddobrev on gh → https://github.com/tux3/qTox/pull/2771#issuecomment-226022648
+[20:44:59] *** Joins: stvlker (~stvlker@ )
+[20:59:56] *** Quits: in1t3r (~LordShiva@ ) (Quit: Leaving)
+[21:00:14] *** Joins: in1t3r (~LordShiva@ )
+[21:04:04] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 250 seconds)
+[21:08:09] *** Joins: minor (~mono@ )
+[21:08:27] <minor> Hello!
+[21:22:03] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[21:23:04] <zetok> hello minor :)
+[21:25:17] <minor> Tell me where to get a stable version qtox for Ubuntu 14.04, version from the qtox website has problemswith  keyboard into different languages - can write only in English
+[21:33:12] *** Joins: sudd3n6 (~anonymous@ )
+[22:02:28] *** Joins: ovalseven8 (~ovalseven@ )
+[22:06:31] *** Joins: dardevelin (~dardeveli@ )
+[22:09:34] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[22:10:52] <zetok> minor: have you tried with the right repo?
+[22:12:08] <linuxmodder> tux3 around?
+[22:12:55] <minor> I installed by the link for Ubuntu 14.04 https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[22:13:41] <minor> does not work switching languages 
+[22:23:00] *** Joins: f10_ (~flo@ )
+[22:25:30] *** Quits: f10_ (~flo@ ) (Client Quit)
+[22:28:27] *** Quits: minor (~mono@ ) (Ping timeout: 260 seconds)
+[22:43:09] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[22:52:39] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 264 seconds)
+[22:59:38] *** Joins: koshii (~w@ )
+[23:01:42] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:04:36] *** Joins: misiek200m (~miskof@ )
+[23:09:33] <koshii> Hi there.
+[23:09:48] <koshii> I am using the debian repo version of qtox, how to invite users to a group chat?
+[23:10:17] <ovalseven8> koshii, Right-click and you can invite the user
+[23:10:46] <ovalseven8> Of course, you first have to join a group
+[23:11:21] <koshii> I am in the group
+[23:11:23] <koshii> I created it
+[23:11:38] <koshii> Right clicking on the left bar on the name of the group gives me these options: Open chat in new window, Set title..., Quit group
+[23:11:57] <koshii> Right-clicking in the chat area gives me: Copy, Select all, Save chat log, Clear displayed messages, Quote selected text
+[23:12:05] <ovalseven8> You have to click on the name of the user you'd like to invite
+[23:12:23] <koshii> Ah there isn't a dialog for invites, I see
+[23:12:37] *** Quits: stvlker (~stvlker@ ) (Read error: Connection reset by peer)
+[23:13:14] <koshii> Got it, thanks
+[23:19:53] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 246 seconds)
+[23:31:56] <koshii> Although it doesn't seem to work. :)
+[23:44:11] *** Joins: f10_ (~flo@ )
+[23:44:29] <zetok> it works
