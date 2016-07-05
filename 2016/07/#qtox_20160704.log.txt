@@ -1,0 +1,370 @@
+[00:44:15] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[01:02:45] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:09:03] *** Joins: cisc (~cisc@ )
+[01:53:54] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:00:54] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[02:05:35] *** Joins: anoa (~rainbow@ )
+[02:24:58] *** Joins: mitfree (~mit@ )
+[02:31:36] *** Joins: cisc (~cisc@ )
+[02:43:48] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[02:46:12] *** Quits: mitfree (~mit@ ) (Remote host closed the connection)
+[03:36:03] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[04:21:51] *** Joins: ovalseven8_ (~ovalseven@ )
+[04:25:46] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 252 seconds)
+[04:26:09] *** Joins: SkyzohKey (~skyzohkey@ )
+[04:36:21] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[04:37:25] *** Joins: f10 (~flo@ )
+[06:02:15] -qtox-git-spam- [qTox] RegZi closed pull request #3465: feat(l10n): update Bulgarian translation from weblate (master...BulgarianTranslation) https://git.io/vKf3f
+[06:23:54] -qtox-git-spam- [qTox] RegZi opened pull request #3469: Update translations from weblate (master...UpdateTranslations) https://git.io/vKfAy
+[06:37:09] -qtox-git-spam- [qTox] zetok closed pull request #3467: chore(travis): make travis build exit as soon as test fails (master...travis) https://git.io/vKfGp
+[06:43:35] *** Joins: in1t3r (~LordShiva@ )
+[06:48:22] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[06:52:15] *** Joins: SkyzohKey (~skyzohkey@ )
+[07:05:05] -qtox-git-spam- [qTox] RegZi closed pull request #3469: Update translations from weblate (master...UpdateTranslations) https://git.io/vKfAy
+[07:22:02] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[07:25:04] *** Joins: minor (~mono@ )
+[07:26:01] *** Joins: SkyzohKey (~skyzohkey@ )
+[07:36:10] <zetok> oh
+[07:36:40] <zetok> minor: IIRC it should work with newer *buntu
+[07:36:53] <zetok> old ones don't really support qt5 well
+[07:38:51] <zetok> minor: https://github.com/tux3/qTox/issues/3013#issuecomment-223819880
+[07:41:27] *** Joins: albel727 (~albel727@ )
+[07:44:26] *** Joins: anoa (~rainbow@ )
+[07:59:37] <anoa> Can I open a second instance of qtox?
+[08:00:13] *** Joins: abbat (~Anton@ )
+[08:01:52] <anoa> ie one for a call, one for dev testing.
+[08:12:33] <zetok> yep
+[08:12:44] <zetok> anoa: `qtox -p $profile`
+[08:13:14] <anoa> Thank you.
+[08:13:23] <zetok> some GUI for it would be nice though
+[08:13:34] <zetok> or working autostart :/
+[08:14:47] <anoa> This seems incorrect: https://ghostbin.com/paste/6vyx8
+[08:15:37] <zetok> yes, $profile, not $profile.tox
+[08:16:40] <zetok> anoa: just `qtox -p asddsa`
+[08:18:31] <zetok> anoa: https://github.com/tux3/qTox/pull/3175#issuecomment-229886913
+[08:18:46] <anoa> o
+[08:33:19] <anoa> Is there a reason toxcore is sending two signals of a friend status changing when they go away/online?
+[08:36:57] <anoa> Also how do we tell which arguments toxcore methods provide when Qt 'connect'ing them?
+[08:41:58] <anoa> Is there a toxcore API spec?
+[08:42:51] <zetok> about the first, `Online` in toxcore is used to for both friend actually becoming online, and for their status – first toxcore receives packet from friend, so it "knows" that friend is online → status callback "Online", and short time after that toxcore receives info from friend that their status is "Away", and sends callback about that
+[08:42:58] <zetok> dunno about the second
+[08:43:40] <zetok> >Is there a toxcore API spec?
+[08:43:55] <zetok> there is spec of protocol, and there are API docs
+[08:44:52] <zetok> anoa: https://github.com/irungentoo/toxcore/blob/master/toxcore/tox.h ← API, also toxav.h in toxav dir
+[08:45:26] <anoa> Thank you zetok, running through core.h I was able to find the necessary arguments, but the information about Online vs Away and other status is interesting.
+[08:48:53] <zetok> you're welcome :)
+[08:58:33] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:04:28] *** Quits: nurupo (~nurupo.ga@ ) (Quit: nurupo)
+[09:05:29] *** Joins: nurupo (~nurupo.ga@ )
+[09:27:54] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 276 seconds)
+[09:41:13] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[09:42:34] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 252 seconds)
+[09:43:43] *** Joins: cisc (~cisc@ )
+[09:48:31] *** Joins: mono (~mono@ )
+[09:49:38] <mono> Hello! Please give me link for stable version qtox for Ubuntu 14.04 Gnome and for Ubuntu 14.04 Unity. Thanks
+[09:53:58] <anoa> Try the Debian/Ubuntu section of this page? https://tox.chat/download.html#gnulinux
+[09:54:08] <anoa> ^ mono 
+[09:54:31] <mono> thanks
+[10:00:14] *** Joins: abbat (~abbat@ )
+[10:11:40] *** Quits: minor (~mono@ ) (Remote host closed the connection)
+[10:11:40] *** Quits: mono (~mono@ ) (Remote host closed the connection)
+[10:27:28] *** Joins: minor (~mono@ )
+[10:28:17] *** Joins: SkyzohKey (~skyzohkey@ )
+[10:29:11] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[10:32:13] <minor> Hello after all instructions via the link: https://tox.chat/download.html#gnulinux I got: Unable to locate package qtox
+[10:34:29] <minor> Where I can find stable version qtox for Ubuntu 14.04 ?
+[10:35:31] <ovalseven8_> minor: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[10:36:13] <ovalseven8_> abbat, Do you update your packages every day or after every commit or does your repository only include stable releases?
+[10:42:11] <minor> This release (https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox) does not work the keyboard switch
+[10:42:44] <ovalseven8_> It's probably because it's the stable release and this doesn't include some changes yet
+[10:43:01] <ovalseven8_> Unless you want to test qTox, it's definitely recommended to use the stable releases
+[10:43:30] <abbat> ovalseven8_, I update packages when I have free time (2-3 per week).
+[10:44:00] <ovalseven8_> abbat, Oh, I see. But wouldn't it make sense only to use the stable releases for qTox?
+[10:45:45] <abbat> ovalseven8_, I can create qtox-stable package if someone wants it, but it will be too old from upstream.
+[10:46:30] <ovalseven8_> abbat, Thing is that the stable releases have been created for the reason to provide releases with less bugs for the users
+[10:46:58] <abbat> ovalseven8_, Ok, would you create issue and assign it to me?
+[10:47:42] <ovalseven8_> I am not sure what's tux3's position here, however. But it would make sense to provide stable releases for the normal users.
+[10:47:51] <ovalseven8_> I guess the Windows releases are all stable too
+[10:51:03] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[10:53:09] <ovalseven8_> abbat, https://github.com/tux3/qTox/issues/3470
+[10:57:12] <abbat> Thanks!
+[11:08:52] <zetok> minor: get some better distro
+[11:10:54] <zetok> ovalseven8_: eh
+[11:10:54] *** Joins: Chiitoo (~Chiitoo@ )
+[11:11:27] <ovalseven8_> zetok, eh
+[11:22:51] <ovalseven8_> zetok, Come on. You know what I mean
+[11:23:11] <zetok> yes, I'm merely pointing out that your idea is wrong
+[11:23:30] <zetok> not entirely, but a substantial portion of it
+[11:23:32] <ovalseven8_> Then just say it!
+[11:23:51] <zetok> um.
+[11:24:09] <ovalseven8_> It's just waste of time to talk around something
+[11:25:20] <zetok> Thing is, this is my opinion, which is based on my knowledge – since I don't know everything, I don't have 100% certainty that my opinion is right, thus I'm simply asking questions to determine whether I'm right, and if I'm not, to get the knowledge about stuff I don't know.
+[11:25:59] <zetok> Who knows, perhaps there are good reasons to abandon providing for users newest qTox, and if so, I'd be interested in hearing about them.
+[11:26:25] <ovalseven8_> There is a reason why stable releases has been created, no?
+[11:26:39] <zetok> that's not the point I'm asking about
+[11:26:54] <zetok> I'm asking why should latest builds be abandoned?
+[11:27:08] <zetok> because this is the part of idea that seems wrong
+[11:27:45] <ovalseven8_> What? Normal users should use stable releases and devs and people who would like to test should use the packages abbar already provides
+[11:28:41] <zetok> oh, looks like I misunderstood – it sounded like you were proposing replacing latest packages with stable
+[11:30:56] <zetok> as for part about switching default to stable – might be a good idea starting from the next release, dunno
+[11:31:04] -qtox-git-spam- [qTox] antis81 opened pull request #3471: fix chat base-font settings (master...fix/settings/chat-font) https://git.io/vKJll
+[11:33:35] <abbat> so we need naming decision, "qtox-stable" package name for stable release and "qtox" for upstream, or "qtox" for stable and "?" for upstream?
+[11:34:25] <ovalseven8_> "qtox" for stable and "qtox-nightly" for upstream?
+[11:36:00] <ovalseven8_> zetok, qTox for Windows and MacOS also use only the stable releases, right?
+[11:37:34] <zetok> >qTox for Windows and MacOS also use only the stable releases, right?
+[11:37:35] <zetok> yes
+[11:37:48] <zetok> >"qtox" for stable and "qtox-nightly" for upstream?
+[11:38:09] <zetok> if it starts from next stable release, why not
+[11:38:22] <zetok> note that currently it would constitute a regression
+[11:38:31] <ovalseven8_> Ok :)
+[11:38:53] <abbat> When next stable release planned? :)
+[11:39:03] <zetok> when video gets fixed :s
+[11:39:43] <ovalseven8_> As already pointed out, it would make sense to completely rewrite A/V. It's such a mess - but, of course, it takes time and tux3 is busy it seems
+[11:39:56] <zetok> https://github.com/tux3/qTox/pull/3185 ← mostly this PR, it needs to be fixed
+[11:40:20] <zetok> i.e. there's only 1 thing remaining in PR to fix, but.. :(
+[11:40:41] <zetok> aside from video, some other PRs that are ready or could be ready
+[11:40:57] <zetok> e.g. https://github.com/tux3/qTox/pull/3423
+[11:41:15] <zetok> abbat: ↑ could you make needed change when you will have time?
+[11:42:48] <zetok> or, if because $reasons you can't, mind saying that in PR, to note that someone else is free to take current state and make changes?
+[11:50:58] <abbat> zetok, I already remove my git clone, if you merge this PR I can add fixes in another PR.
+[11:51:12] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:51:49] <abbat> Or you can do it yourself after merging (fix is trivial).
+[11:52:22] <zetok> :|
+[11:58:03] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[11:59:45] *** Joins: cisc (~cisc@ )
+[12:01:22] *** Joins: st4ll1 (~st4ll1@ )
+[12:01:54] <abbat> Or just close this PR without merge - I have a patch in package scripts.
+[12:04:07] <zetok> um, why removing github repo though?
+[12:07:03] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[12:13:50] *** Joins: SkyzohKey (~skyzohkey@ )
+[12:20:21] -qtox-git-spam- [qTox] zetok opened pull request #3472: Update translations from weblate (master...tr) https://git.io/vKJ0n
+[12:30:52] <abbat> I thought that PR is finished and my copy not need more.
+[12:32:59] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[12:33:11] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[12:33:24] *** Joins: f10 (~flo@ )
+[12:45:58] <zetok> I see
+[12:49:20] <ovalseven8_> zetok, Oh that translation from Weblate for German are not really good
+[13:03:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:06:05] *** Joins: abbat (~abbat@ )
+[13:10:27] *** Quits: minor (~mono@ ) (Ping timeout: 246 seconds)
+[13:32:54] *** Joins: st4ll1 (~st4ll1@ )
+[13:47:16] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 244 seconds)
+[13:51:43] *** Joins: SkyzohKey (~skyzohkey@ )
+[13:53:45] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[14:03:26] *** Joins: st4ll1 (~st4ll1@ )
+[14:08:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:09:17] *** Joins: abbat (~abbat@ )
+[14:43:09] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[14:43:55] *** Joins: st4ll1 (~st4ll1@ )
+[14:47:33] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[15:13:26] *** Joins: phd21 (ad41fa9e@ )
+[15:16:58] <phd21> Good Morning and Good Day to all, I installed qtox from a ".deb" in Linux Mint 17.3 KDE, over an existing install, but now get "could not open chat logs, they will be disabled"? And, no chat logs are created. Does anyone know how to fix this?
+[15:19:51] *** Joins: stvlker (~stvlker@ )
+[15:20:31] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:20:51] *** Joins: cisc (~cisc@ )
+[15:26:44] *** Joins: dardevelin (~dardeveli@ )
+[15:30:21] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[15:35:47] <zetok> phd21: install it properly
+[15:35:57] <zetok> phd21: i.e. use repo
+[15:36:07] <phd21> Also, where did the "Tox" name come from?
+[15:36:26] <zetok> ovalseven8_: what do you suggest doing about that?
+[15:36:28] <ovalseven8_> zetok, abbat: What do you think about that the "qtox-nightly" should be debug builds by default because they are especially for devs and testers?
+[15:36:41] <zetok> phd21: um?
+[15:36:47] <ovalseven8_> zetok, I don't have a Weblate account and don't really want to register there
+[15:37:02] <phd21> "qTox" was not in the repos when I first installed it
+[15:37:24] <phd21> Are you saying that "qTox is now in the Linux Mint repos?
+[15:38:07] <zetok> phd21: "tox" may sound like "talks" in English
+[15:38:22] <zetok> phd21: there's a repo that should work with your distro
+[15:38:35] <abbat> ovalseven8_, Not debug build, but has debug symbols in separate file.
+[15:38:58] <phd21> zetok: thanks
+[15:39:06] <zetok> phd21: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[15:39:48] <zetok> ovalseven8_: ok, but how "bad" is the translation? i.e. completely wrong, or just not as good as it could be?
+[15:40:05] <ovalseven8_> Not as good as it could be, but understandable
+[15:40:55] <zetok> ok, so there's no need to discard it, right?
+[15:41:01] <phd21> zetok: I was using the nightly build using the terminal instructions, and it was working. But another mint user said that ".deb" files were available, so I decided to try that, and that is when I go the chat log errors...
+[15:41:11] <phd21> So, just remove it and re-install it?
+[15:42:24] <zetok> phd21: ~yep
+[15:45:21] *** Joins: cisc (~cisc@ )
+[15:46:03] *** Joins: SkyzohKey (~skyzohkey@ )
+[15:46:13] *** Joins: fred_barclay (~fred@ )
+[15:46:22] <zetok> ovalseven8_: dunno, could you perhaps make a PR to `zetok:tr` that improves the translation, and let @CBalsier know that their translation is suboptimal?
+[15:46:27] <phd21> zetok: Is using the terminal install instructions better than using the .deb? On my KDE, the terminal did not create menu items, but the deb file did. I was using v1.3 even though getting nightly updates, perhaps my desktop link to /bin/qtox was not updated properly, but when I used the deb, I am now on v1.4
+[15:47:22] <zetok> phd21: thing is, installing just .deb won't get you all needed dependencies, due to what your qTox install can't open history
+[15:47:53] <zetok> also, the desktop entry should be provided when you install qTox from OBS repo
+[15:48:54] <zetok> desktop entry – menu item
+[15:49:31] *** Joins: minor (~mono@ )
+[15:49:33] <phd21> zetok: ok, thank you. one more question. I used to see a video option for desktop, but now I do not. i was wondering if that helped with users that did not have a actual video source to still receive a video call without qtox crashing?
+[15:49:59] <zetok> abbat: ↑ ?
+[15:50:53] <koshii> Are qtox updates going to continue being available through the debian repo pkg.tox.chat/debian ?
+[15:51:13] <koshii> I've heard that qtox is going to "break off" a bit from the rest of the tox world, I didn't really know what that meant, if it meant anything at all...
+[15:51:51] <zetok> koshii: it means that packages from tox.chat aren't really supported
+[15:52:10] <koshii> zetok: OK, what repo should I be using for qtox instead?
+[15:52:23] <zetok> koshii: OBS one
+[15:52:35] <koshii> ?
+[15:52:37] <zetok> (linked to above and in INSTALL.md)
+[15:52:44] <zetok> and README.md
+[15:53:09] <koshii> Linked where? What is the link?
+[15:53:30] <koshii> https://github.com/tux3/qTox/ ?
+[15:53:40] <zetok> abbat: for some reason build for debian don't show "Desktop" "camera" in A/V settings
+[15:53:43] <fred_barclay> koshi: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[15:54:25] <koshii> fred_barclay: Thanks. And this is the "official" one now, the tox.chat repo will no longer be updated with qtox, correct?
+[15:54:49] <fred_barclay> koshii: I'm not a qtox dev so I wouldn't be the person to answer that. ;)
+[15:56:08] <zetok> koshii: eh, it should be deprecated as of now
+[15:56:46] <koshii> zetok: OK thanks for the clarity
+[15:56:52] <zetok> deprecated – users are suggested to move to the new repo
+[15:58:39] <fred_barclay> zetok: the tox.chat is deprecated or the one I linked above?
+[15:58:51] <zetok> fred_barclay: tox.chat
+[15:59:07] <zetok> only for Linux though
+[15:59:23] <koshii> zetok: But *only* users of qtox right? Not utox (which I don't think is even in the repo), or toxic?
+[15:59:40] <fred_barclay> zetok: phew. Okay. You linked me to the OBS one on GitHub for an issue I had so I've been using that one. :)
+[15:59:56] <zetok> koshii: yep
+[16:00:41] <koshii> zetok: Any chance for an official debian packaging sometime?
+[16:01:32] <zetok> fred_barclay: good to hear that it works for you :)
+[16:01:39] <zetok> koshii: no, that would be bad
+[16:01:55] <koshii> zetok: Oh really, and why would it be "bad" ?
+[16:02:27] <koshii> Seems rather "damn good" from a user experience PoV
+[16:02:46] <zetok> being stuck for years on buggy/broken version?
+[16:03:01] <koshii> contrib, backports?
+[16:03:11] <zetok> do people even use that?
+[16:03:15] <koshii> Of course
+[16:03:18] <zetok> also, you're asking about stable
+[16:03:26] <koshii> And anyway, you wouldn't be allowed to be stuck for years on a buggy/broken version :)
+[16:03:35] <zetok> what.
+[16:03:56] <zetok> being stuck for years on buggy/broken version is precisely how debian stable works.
+[16:04:08] <koshii> The intention is the opposite.
+[16:04:17] <zetok> intention ≠ reality
+[16:04:19] <koshii> Maybe being *stuck* on a version for a while indeed, but they do have some quality standards
+[16:04:27] <zetok> also, that's not the intention of debian stable
+[16:04:46] <koshii> I'm pretty sure it is.
+[16:04:50] <zetok> the intention is "stuck with bugs for years, in order to be stable"
+[16:05:15] <koshii> That's not how it looks from the perspective of the issue tracker, but your cynicism about it is duly noted :)
+[16:05:29] <zetok> again, that's the reality
+[16:05:54] <koshii> I'm a Debian user for 10 years I guess; it hasn't been my experience.
+[16:06:40] <zetok> try to use mpv to play something
+[16:06:46] <ovalseven8_> zetok, Ok I will push an update later for your branch
+[16:06:56] <koshii> zetok: I use mpv every day
+[16:06:56] <zetok> ovalseven8_: thanks
+[16:07:01] <koshii> zetok: What about it?
+[16:07:12] <zetok> sec, gotta get some link
+[16:07:29] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 258 seconds)
+[16:08:30] <zetok> koshii: `mpv 'https://youtu.be/WXsYUa3JJwI?t=28'` ← how well does that work?
+[16:08:46] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[16:09:04] <koshii> zetok: It's playing now, fine.
+[16:09:17] <koshii> zetok: An evil spirit has possessed my right hand, etc :)
+[16:09:52] *** Quits: isAAAc (~isAAAc@ ) (Ping timeout: 276 seconds)
+[16:09:52] <koshii> zetok: Debian stable :)
+[16:09:55] <koshii> (Jessie)
+[16:10:03] <zetok> quite contrary to what I've seen a few days ago
+[16:10:12] <koshii> mpv-0.6.2-2
+[16:10:24] <koshii> *shrug* 
+[16:10:46] *** Joins: f10 (~flo@ )
+[16:10:57] <zetok> yeah, would seem that the same version didn't work to play stuff from yt
+[16:11:04] *** Joins: isAAAc (~isAAAc@ )
+[16:11:40] <koshii> Just did it and it works, 100%.
+[16:12:36] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[16:12:42] <zetok> I'm wondering how's that possible, given that (IIRC) the version debian is using doesn't even support current yt
+[16:14:31] <koshii> zetok: I always do the 'apt-get -t jessie-backports upgrade' so totally possible that there was some patch in a backport.
+[16:16:59] *** Quits: f10 (~flo@ ) (Ping timeout: 246 seconds)
+[16:17:07] *** Joins: f10__ (~flo@ )
+[16:18:01] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 252 seconds)
+[16:21:55] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:30:32] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[16:36:51] <fred_barclay> koshii: mpv is not in the jessie-backports
+[16:37:35] <ovalseven8_> zetok, Done
+[16:39:35] <koshii> fred_barclay: Well however it got on there, it was through a debian repo. And 0.6.2-2 definitely has yt support, since I just tried it :)
+[16:40:45] <fred_barclay> koshii: oh I don't mean to dispute that. ;)
+[16:44:57] *** Joins: st4ll1 (~st4ll1@ )
+[16:45:33] <zetok> ovalseven8_: thanks
+[17:00:31] <ovalseven8_> zetok, Is it normal that the fonts are only updated for new communication?
+[17:00:42] <zetok> yep
+[17:00:56] <zetok> just restart qTox if you want consistency
+[17:02:22] <ovalseven8_> zetok, I see. In case it's not changeable (immediate font change would be cool) we should probably add a popup that asks if you would like to restart
+[17:03:22] <zetok> ovalseven8_: not sure if that's needed, but.. mind making an issue? :)
+[17:05:24] *** Quits: phd21 (ad41fa9e@ ) (Ping timeout: 250 seconds)
+[17:08:26] <linuxmodder> cisc, you around?
+[17:13:40] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:17:02] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[17:26:28] *** Joins: SkyzohKey_ (~skyzohkey@ )
+[17:27:27] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 272 seconds)
+[17:32:48] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[17:34:04] *** Joins: sudd3n6 (~anonymous@ )
+[17:36:29] *** Joins: cisc (~cisc@ )
+[17:36:37] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[17:36:42] <abbat> zetok, Desktop camera will be fixed soon.
+[17:36:54] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[17:42:33] *** Joins: in1t3r (~LordShiva@ )
+[17:48:06] -qtox-git-spam- [qTox] zetok closed pull request #3472: Update translations from weblate (master...tr) https://git.io/vKJ0n
+[17:52:46] -qtox-git-spam- [qTox] zetok opened pull request #3473: chore: remove unnecessary indentation from merge commit message (master...script) https://git.io/vKUfK
+[18:15:29] <koshii> Hey what's the name of the Git bot you are using in here?
+[18:15:42] <koshii> It looks like the same one #ipfs is using? Is it?
+[18:17:22] <zetok> it's provided by github
+[18:17:51] <koshii> Oh really? That's super nice. 
+[18:20:11] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[18:55:58] *** SkyzohKey_ is now known as SkyzohKey
+[18:59:56] *** Quits: sudd3n6 (~anonymous@ ) (Quit: Konversation terminated!)
+[19:01:08] *** Joins: sudd3n6 (~anonymous@ )
+[19:07:13] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[19:28:03] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[19:28:34] *** Joins: cisc (~cisc@ )
+[19:49:20] *** Joins: in1t3r (~LordShiva@ )
+[19:52:36] *** Joins: f10 (~flo@ )
+[19:53:07] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[19:54:16] <zetok> weird stuff, after unplugging my webcam on Gentoo & starting qTox I still have valid `Desktop` "camera", but on a compiled one on other distro it doesn't seem to work :/
+[19:54:29] <zetok> perhaps I'd need to restart Gentoo
+[20:01:42] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[20:48:18] <genesis> < gentoo
+[20:52:37] <ovalseven8_> I was just thinking about which programming language and GUI framework would be ideal for a Tox client. And C++ is actually one of the good choices. Bad state of things.
+[20:53:03] <ovalseven8_> Of course, I mean for cross-platform things
+[21:03:06] *** Joins: abbat (~Anton@ )
+[21:08:11] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[21:12:54] *** Joins: f10__ (~flo@ )
+[21:33:43] <zetok> ovalseven8_: once there will be a good GUI toolkit, Rust
+[21:34:07] <ovalseven8_> zetok, I knew that you would say this. But personally I think Rust is also too low-level
+[21:34:18] <zetok> lol
+[21:34:44] <ovalseven8_> Something like C# but for cross-platform tools is what I had in mind
+[21:34:59] <zetok> if you want to create something broken
+[21:35:32] <ovalseven8_> C# works great for Windows, but not necessarily for Linux & MacOS (Mono)
+[21:37:34] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[21:38:03] <zetok> no, c# is broken, AFAICT
+[21:38:21] *** Joins: f10__ (~flo@ )
+[21:40:39] <ovalseven8_> zetok: Why do you think so?
+[21:41:00] <zetok> does it segfault?
+[21:42:40] <ovalseven8_> zetok: Normally no
+[21:42:50] <zetok> >normally
+[21:42:57] <zetok> oh, but it does! :3
+[21:43:03] <zetok> thus, it's broken.
+[21:43:05] <ovalseven8_> zetok, Does it?
+[21:43:10] <zetok> yep
+[21:43:50] <ovalseven8_> zetok, C# has automatic memory management
+[21:46:03] <zetok> ok
+[21:48:09] <zetok> right, it uses GC
+[21:52:11] <ovalseven8_> zetok, Are there already good GUI frameworks for Rust by the way?
+[21:52:30] <zetok> nope, AFAICT :/
+[21:52:51] <zetok> that is, one can use GTK binding, but that's not really portable
+[21:53:39] <zetok> there's libui binding, but it looks ~ded
+[21:54:07] <zetok> and there's native Rust framework, which isn't yet good enough to use for more complex stuff
+[21:54:22] <ovalseven8_> I see
+[21:54:31] <zetok> there are other things, but aren't really good
+[22:01:17] *** Quits: Impyy (~impy@ ) (Quit: Death)
+[22:01:48] *** Joins: Impyy (~impy@ )
+[22:02:57] *** Quits: albel727 (~albel727@ ) (Ping timeout: 250 seconds)
+[22:04:14] *** Joins: albel727 (~albel727@ )
+[22:20:04] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[22:20:10] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[22:20:23] *** Joins: f10_ (~flo@ )
+[22:21:36] *** Joins: f10__ (~flo@ )
+[22:25:51] *** Joins: st4ll1 (~st4ll1@ )
+[22:45:36] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:46:04] *** Joins: LittleVulpix (~Miranda@ )
+[22:49:15] *** Quits: st4ll1 (~st4ll1@ ) (Read error: Connection reset by peer)
+[23:05:34] *** Quits: abbat (~Anton@ ) (Ping timeout: 252 seconds)
+[23:07:12] *** Quits: minor (~mono@ ) (Quit: Ex-Chat)
+[23:07:24] *** Joins: minor (~mono@ )
+[23:21:02] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[23:28:32] *** Quits: minor (~mono@ ) (Ping timeout: 246 seconds)
+[23:35:59] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[23:47:11] *** Joins: abbat (~Anton@ )
+[23:50:33] *** Quits: nurupo (~nurupo.ga@ ) (Quit: nurupo)
+[23:51:36] *** Joins: nurupo (~nurupo.ga@ )
+[23:54:28] *** Quits: nurupo (~nurupo.ga@ ) (Client Quit)
+[23:55:28] *** Joins: nurupo (~nurupo.ga@ )
