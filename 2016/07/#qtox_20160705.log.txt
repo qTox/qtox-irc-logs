@@ -1,0 +1,298 @@
+[00:00:16] -qtox-git-spam- [qTox] a68366 opened pull request #3475: fix(groupinviteform): consider dateTime format in group invites (master...issue3058) https://git.io/vKUR3
+[00:17:03] *** Joins: f10 (~flo@ )
+[00:17:27] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[00:22:06] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[00:22:27] *** Joins: f10 (~flo@ )
+[00:30:50] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[00:30:56] *** Joins: anoa (~rainbow@ )
+[00:34:21] *** Joins: f10 (~flo@ )
+[00:38:44] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[01:04:59] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:26:36] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[02:46:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:40:27] -qtox-git-spam- [qTox] zetok opened pull request #3477: fix(qtox.pro): don't depend on GTK in order to build on Linux (master...no-gtk) https://git.io/vKUVn
+[04:20:52] *** Joins: ovalseven8__ (~ovalseven@ )
+[04:24:34] *** Quits: ovalseven8_ (~ovalseven@ ) (Ping timeout: 244 seconds)
+[05:12:01] *** Joins: mitfree (~mit@ )
+[06:57:05] *** Quits: ovalseven8__ (~ovalseven@ ) (Quit: Leaving)
+[07:49:23] -qtox-git-spam- [qTox] antis81 pushed 2 new commits to master: https://git.io/vKU12
+[07:49:23] -qtox-git-spam- qTox/master 9ec5c11 Nils Fenner: fix(chat-settings): change order during chat-base-font UI initialization...
+[07:49:23] -qtox-git-spam- qTox/master 1dd7308 Nils Fenner: refactor(chat-settings): use safe methods to get the font's pixel size...
+[08:02:07] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[08:08:18] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
+[08:12:06] *** Joins: abbat (~Anton@ )
+[08:15:33] *** Joins: in1t3r (~LordShiva@ )
+[08:16:13] *** Joins: SkyzohKey (~skyzohkey@ )
+[08:19:05] *** Joins: f10_ (~flo@ )
+[08:20:45] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 258 seconds)
+[08:22:12] *** Joins: ovalseven8 (~ovalseven@ )
+[08:23:16] *** Joins: minor (~mono@ )
+[08:23:27] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[08:26:50] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[08:33:36] *** Joins: SkyzohKey (~skyzohkey@ )
+[08:35:00] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[08:48:30] *** Joins: abbat (~Anton@ )
+[08:56:42] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:01:23] *** Quits: minor (~mono@ ) (Quit: Ex-Chat)
+[09:17:37] *** Joins: f10_ (~flo@ )
+[09:20:09] *** Joins: SkyzohKey (~skyzohkey@ )
+[09:27:47] *** Joins: dardevelin (~dardeveli@ )
+[09:30:00] *** Joins: Chiitoo (~Chiitoo@ )
+[09:39:42] -qtox-git-spam- [qTox] antis81 pushed 2 new commits to master: https://git.io/vKUFx
+[09:39:42] -qtox-git-spam- qTox/master 881409b Andrew Morgan: fix(profile): Fix for opening file dialog using Nautilus file manager...
+[09:39:42] -qtox-git-spam- qTox/master b4a87a3 Nils Fenner: Merge PR #3447 branch from  'anoadragon453:nautilus-fix'
+[09:48:45] *** Joins: abbat (~abbat@ )
+[10:23:45] <nurupo> zetok: is there a script in qtox repo to pull translations off weblate and commit them?
+[10:23:47] <nurupo> what about pushing to weblate?
+[10:24:16] <nurupo> also, do you miss the lack of "User management" https://weblate.org/en/hosting/ ?
+[10:51:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[11:17:28] <zetok> nurupo: there is a script, but I don't use it
+[11:22:10] <zetok> I just cherry-pick all the commits without merges, clean up files (with a script) and push that to qTox master, after which I just reset weblate to master, since cleaning up files causes conflicts
+[11:23:52] <zetok> dunno about user management
+[11:51:05] <Chiitoo> Yay finally I can drop my font changes for the Windows builds!  I wonder if there was any talk on making the writing area font change as well though.
+[13:10:39] *** Quits: genesis (~genesis@ ) (Ping timeout: 264 seconds)
+[13:12:07] *** Joins: genesis (~genesis@ )
+[13:27:04] *** Quits: genesis (~genesis@ ) (Ping timeout: 244 seconds)
+[13:31:46] *** Joins: genesis (~genesis@ )
+[13:33:13] *** Joins: Saamm (4ed146f1@ )
+[13:33:24] <Saamm> Hello eveyone
+[13:33:27] <Saamm> every* one
+[13:35:20] <Saamm> I've finally finished to implement the language change on top on localhost, this is the first step. The next step is to learn how to create a branch (I'll read tutorials for that), and to put the file I've created on the server
+[13:36:10] <Saamm> (sorry about the lag, btw. I'm not in my home these days, I'm at a friend's, and it's quite difficult to work with the whole family and everything...)
+[13:38:56] <Saamm> (or if you want it quicker, I can send the file index.mustache to someone who will be able to create a branch, fix what's gonna need a fix, and send back the file)
+[13:41:30] <Saamm> Note that what I've done can be improved; as I'm not used to the whole git websites system, python files, etc., if there's a new language added, it'll be necessary to manually add some corrections. The best thing would be a direct update if new languages are added...
+[13:52:08] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[14:14:35] *** Joins: stvlker (~stvlker@ )
+[14:25:25] <Chiitoo> Saamm: Which changes are those?  I can't find a related issue open nor think of any Python specific thing we have going.  Makes me think of #pylib (for Tox: generic virtualenv management and test command line tool).
+[14:25:54] <Saamm> Chiitoo: https://github.com/qTox/qTox-Website/issues/2
+[14:26:09] <Chiitoo> Ah.
+[14:26:11] <Chiitoo> Thanks.
+[14:31:54] *** Joins: abbat (~abbat@ )
+[14:32:06] <Saamm> According to https://guides.github.com/activities/hello-world/#branch, when the button "Branch: master" is clicked, a input field allow the user to search for a branch, OR to create a new branch. When I'm trying this on the qTox website repository, I can only search for branchs (while I want to open a new branch). Am I doing something wrong? Oo
+[14:33:24] <Saamm> Chiitoo: by the way, I talked about Python because "Building the site requires Python 2 or Python 3 and the pystache library."  ;)
+[14:33:49] <Chiitoo> Yeah, I haven't looked into the website at all yet.
+[14:33:58] <Chiitoo> Didn't even think of it.
+[14:35:04] <Chiitoo> And indeed, you would need permission to the repository to be able to create branches.
+[14:35:06] <Saamm> My bad, I did not say explicitely I was talking about the website ^^"
+[14:35:36] <Chiitoo> It's fine.  My fault for not thinking of it!
+[14:36:07] <zetok> Saamm: make a fork
+[14:36:32] <Chiitoo> You probably want to fork the repository instead, then create the branch in your own github page.
+[14:36:54] <Saamm> I tried that too 2 minuts ago
+[14:37:06] <Saamm> But I still can't create a branch >.<
+[14:37:23] <Saamm> https://github.com/Saaaam/qtox_website_test
+[14:37:41] <Saamm> Okay, I said nothing...
+[14:37:46] <Saamm> *whistle*
+[14:40:38] <Chiitoo> Hehe.
+[14:42:25] *** Joins: f10_ (~flo@ )
+[14:46:46] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[15:01:43] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[15:01:55] *** Joins: f10_ (~flo@ )
+[15:06:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[15:08:00] *** Joins: abbat (~abbat@ )
+[15:16:03] <Saamm> zetok: I'm trying to see the changes done in my personnal repo. I'm following this: https://pages.github.com/  (GitHub for Windows chosen), but between the step 4 and step 5, nothing happens after I'm cliking on "Sync". By "nothing happens", I mean no webpage appears in http://saaaam.github.io/ (as it would "normally" do). Do you know what I'm doing wrong?
+[15:44:32] <zetok> Saamm: there's no branch/repo that could be displayed there
+[15:45:49] <zetok> Saamm: i.e. you need to use `gh-pages` branch
+[15:45:58] <Saamm> I see
+[15:47:09] <Saamm> I tried the "Automatic Generator". It's not doing it...
+[15:47:27] <zetok> ?
+[15:50:14] <Saamm> Seriously, all I want is to put the index.mustache as the index of saaam.github.io. It's so easy doing it with a simple FTP transfert usually... >.<
+[15:51:40] <zetok> `git branch gh-pages menu-top-add && git push origin gh-pages`
+[15:51:51] <zetok> dunno how to do that on windows
+[15:51:56] <Saamm> I don't know too
+[15:52:13] <Saamm> I didn't use any code for now
+[15:52:24] <zetok> btw, flags are missing
+[15:52:37] <Saamm> I tried to join something called "bash git" to my github account - didn't work
+[15:52:44] <Saamm> Right!
+[15:52:54] <Saamm> I'm adding them
+[16:01:31] <Saamm> Done. There are more flags than currently used - it could be useful for the future...
+[16:13:47] <zetok> :)
+[16:15:49] <zetok> ><a href="eo.html"><img src="assets/imgs/flags/European_Union.png" alt="" class="flag"><span> Esperanto</span></a><br />
+[16:15:51] <zetok> hmm
+[16:17:40] <zetok> Saamm: doesn't Esperanto have its own flag, symbol (or something)?
+[16:18:20] <Saamm> Oh, you're right
+[16:18:30] <Saamm> I thought there was not any...
+[16:18:46] <Saamm> I'm fixing this
+[16:30:15] <Saamm> Done
+[16:34:21] *** Joins: ovalseven8 (~ovalseven@ )
+[17:29:12] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:30:02] *** Joins: sudd3n6 (~anonymous@ )
+[17:42:25] *** Quits: elouin (~elouin@ ) (Quit: WeeChat 1.0.1)
+[18:04:45] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[18:05:21] *** Joins: f10_ (~flo@ )
+[18:10:38] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[18:25:10] *** Joins: sudd3n6 (~anonymous@ )
+[18:43:36] *** Joins: Chiitoo (~Chiitoo@ )
+[18:54:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:55:39] *** Joins: LittleVulpix (~Miranda@ )
+[19:02:10] *** Joins: rajraj (~jarjar@ )
+[19:02:48] *** Parts: rajraj (~jarjar@ ) ()
+[19:05:58] *** Joins: reBrain (~reBrain@ )
+[19:06:00] *** Parts: reBrain (~reBrain@ ) ()
+[19:07:31] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[19:08:11] <Saamm> zetok: I've found a way to have a console with my personnal version of qTox. I tried this https://help.github.com/articles/creating-project-pages-manually/ ; but at the end, the webpage is 404. I tried the line you told me 3 hours ago (git branch gh-pages...), I obtain a fatal error "A branch named 'gh-pages' already exists.'
+[19:09:55] *** Joins: reBrain (~reBrain@ )
+[19:10:10] <zetok> Saamm: ok, you're getting that when you're creating branch?
+[19:10:24] <Saamm> Apparently yeah
+[19:10:31] <zetok> `git branch` ?
+[19:10:33] <Saamm> Note that I don't fully understand the code I'm writing
+[19:11:16] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[19:11:18] <Saamm>  git branch gh-pages menu-top-add && git push origin gh-pages =>  "fatal: A branch named 'gh-pages' already exists."
+[19:11:34] <zetok> um, no, just `git branch`
+[19:11:56] <Saamm> 2 results : * gh-pages / master
+[19:12:00] <zetok> ok
+[19:12:09] *** Joins: abbat (~abbat@ )
+[19:12:10] <zetok> no, wait
+[19:12:26] <zetok> there's no 'menu-top-add' ?
+[19:12:37] <Saamm> Nope :3
+[19:12:42] <zetok> :/
+[19:12:45] *** Quits: reBrain (~reBrain@ ) (Client Quit)
+[19:12:57] *** Joins: reBrain (~reBrain@ )
+[19:13:09] <zetok> does `git log gh-pages` show changes done in menu-top-add branch?
+[19:13:12] <Saamm> I can pull the menu-top-add to the master if needed
+[19:13:27] <zetok> um, why would you not have it?
+[19:13:49] <Saamm> Good question, I don't know
+[19:14:09] <zetok> oh, wait, right
+[19:14:19] <zetok> you've made changes on gh
+[19:14:25] <zetok> nvm
+[19:14:36] <zetok> Saamm: do you have your fork added in remotes?
+[19:14:45] <Saamm> git log gh-pages =>   commit 86a6189491df95d7d9c3700460715252f10ca177  / Author: Saaaam <Saaaam@users.noreply.github.com> / Date:   Tue Jul 5 20:03:29 2016 +0200 /     First pages commit
+[19:15:13] <Saamm> I wrote that while doing a github tuto before
+[19:15:34] <zetok> ok
+[19:15:59] <zetok> Saamm: https://saaaam.github.io/qtox_website_test/index.mustache ← it is there
+[19:16:14] <Saamm> Oô
+[19:16:35] <Saamm> It makes me download the file, not displaying the website
+[19:17:02] <zetok> yes
+[19:17:22] *** Parts: reBrain (~reBrain@ ) ()
+[19:17:26] <zetok> um, you need to build website
+[19:18:02] <ovalseven8> irungentoo/toxcore is now more or less officially dead :P
+[19:18:42] <Saamm> https://github.com/qTox/qTox-Website#building-the-site  <  with this ?
+[19:19:56] <zetok> Saamm: ~yep
+[19:20:11] <Saamm> Damn...
+[19:20:31] <zetok> Saamm: most of that stuff can be done manually
+[19:20:43] <zetok> it's just that it would take a lot of time
+[19:24:00] <zetok> ovalseven8: hm?
+[19:24:50] <zetok> Saamm: um, is using a VM with Linux an option for you?
+[19:25:08] <ovalseven8> zetok, Seems like iphy and grayhatter are planning without irungentoo and grayhatter/toxcore is the new active repository (at least temporarily)
+[19:25:20] <Saamm> To tell the truth, even if there are some explanations about building the site, this doesn't help the guy who doesn't know anything (=> me) to build it :/   I mean "Python 2 or 3 is required" < I though Python was just a language, not a "file", any "object" that is required;  "pystache library"  < okay, a little search on the internet and this probably could be easily downloadable. But, after that, what should we do with it? Where should
+[19:25:30] <Saamm> There are a lot of questions :3
+[19:25:58] <zetok> there are 2 major versions of python, 2 and 3
+[19:26:00] <Saamm> Not really, I'm already fighting with the space of my computer ^^"
+[19:26:09] <zetok> I see
+[19:26:35] <Saamm> I do a lot of things (music recording & editing, videos, etc. etc.)
+[19:27:00] <zetok> mm
+[19:27:30] <Saamm> I constantly have to erase projects. Yeah, I should buy an extern hard disk :x
+[19:27:42] <zetok> um, basically, it will be very hard for you to do stuff under windows, while on Linux it would be as simple as just typing a few commands
+[19:27:56] <Saamm> I see
+[19:29:03] <zetok> i.e. most of the stuff you've mentioned wouldn't bother one on Linux at all, given that python is installed by default, and pystache would be ~1 install command away
+[19:29:13] <zetok> all of this nicely integrated to just work™
+[19:30:08] <zetok> if you'd have like 10GB free you could just use Linux
+[19:30:34] <zetok> and if you would want slimmer option, at the cost of making it harder, 5 GB
+[19:30:37] <Saamm> I'm so used to have a certain comfort to create websites, webpages, just need a FTP launcher and that's it, file on the server & it's done, that it brings a certain frustration not to have it done quickly and as easy as usual for me :3
+[19:31:05] <zetok> um, current setup kinda allows that
+[19:31:33] <zetok> except that it's only for ready website, if you want stuff for testing, you'd need to set things for it locally
+[19:31:49] <Saamm> Mmmm
+[19:32:51] <Saamm> I'm being called for several minuts to go to eat, brb
+[19:33:58] <ovalseven8> Bon appétit!
+[19:41:29] * zetok wonders
+[19:42:19] <zetok> eh
+[19:43:49] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:43:49] <zetok> Saamm: um, I don't remember – do you have any experience with Linux?
+[19:44:51] <zetok> .. probably not.
+[19:49:25] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 250 seconds)
+[20:07:36] *** Quits: sudd3n6 (~anonymous@ ) (Remote host closed the connection)
+[20:07:57] *** Joins: sudden6 (~anonymous@ )
+[20:12:27] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 276 seconds)
+[20:13:39] *** Joins: ovalseven8 (~ovalseven@ )
+[20:15:37] *** Quits: ovalseven8 (~ovalseven@ ) (Client Quit)
+[20:29:35] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[20:35:55] *** Joins: abbat (~abbat@ )
+[20:48:36] <Saamm> zetok: exact, I don't have any :3
+[20:49:43] <zetok> :(
+[21:11:36] <zetok> Saamm: dunno, what are you planning to do?
+[21:21:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:30:31] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[21:32:31] *** Joins: cisc (~cisc@ )
+[21:36:19] *** Joins: albel727 (~albel727@ )
+[22:25:34] <Saamm> For now, I'm not gonna lie, I already have some serious things to learn at first before even planning to learn how to use linux properly, how to use sterminator, the libairie, etc. etc.  And my life is quite filled these days ;)
+[22:27:58] <Saamm> I wanted first to give a help with what I do know; HTML, CSS, even PHP or SQL if needed... Trying to update the website is way more difficult than expected...
+[22:30:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:33:30] <zetok> it works
+[22:33:35] <zetok> kinda
+[22:33:55] *** Joins: dardevelin (~dardeveli@ )
+[22:35:51] <zetok> Saamm: https://a.uguu.se/iG3apUwG4p3n.webm
+[22:36:52] *** Joins: LittleVulpix (~Miranda@ )
+[22:37:45] <Saamm> Hum, yeah, but due to slight font size changes, I have to fix it a bit...
+[22:38:18] <Saamm> Wait
+[22:39:09] <zetok> btw, there seem to be duplicated entry
+[22:39:23] <Saamm> Which one? :3
+[22:40:17] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:40:40] <zetok> hum, nvm
+[22:41:20] *** Joins: f10_ (~flo@ )
+[22:43:08] <zetok> Saamm: style has to be in index.mustache ?
+[22:43:18] <Saamm> Nope ;)
+[22:43:33] <Saamm> I put it here because I didn't know where it was supposed to be
+[22:43:57] <zetok> assets/css/
+[22:44:04] <Saamm> It depends on where you want the stylesheets, and how you want it to be organized 
+[22:44:08] <Saamm> okay ;)
+[22:44:28] *** Joins: smaragdus (~omoo@ )
+[22:44:37] <Saamm> Should I put the style into an existing css file, or should I create a new one?
+[22:44:47] <zetok> new one, since it's for a separate thing
+[22:45:19] <Saamm> That's okay
+[22:47:53] <zetok> >Trying to update the website is way more difficult than expected...
+[22:48:05] <zetok> that part is actually easy, and ~automated
+[22:48:24] <zetok> the part that is not, is building it locally
+[22:48:49] <zetok> I mean, locally on windows
+[22:48:59] <zetok> on Linux it's easy
+[22:50:23] <zetok> sorry, my fault
+[22:51:12] <zetok> it kinda didn't really occur to me that someone using only windows might want to help with something more than just typos/translation
+[22:51:56] <zetok> nurupo: are you planning to host weblate instance?
+[22:56:33] <zetok> Saamm: btw, not all langs are sorted alphabetically
+[22:57:21] <Saamm> I've taken the same way they were listed at the bottom. But, for sure, I can change that if needed of course
+[22:57:23] <Saamm> https://github.com/Saaaam/qtox_website_test/tree/menu-top-add
+[22:58:21] <Saamm> "Commit for nothig" < I thought I was making a mistake with the GitHub software I'm using on Windows, but what I did was apparently correct...
+[22:58:49] <zetok> right
+[22:59:07] <zetok> ok, since that's not a regression it can be there for time being
+[22:59:10] <Saamm> Can you try that and tell me if  1) the flag and the "EN" are on the same line   2) all the countries are displayed 
+[22:59:11] <zetok> (until someone notices)
+[22:59:20] <Saamm> :p
+[23:00:34] <zetok> 1. yes and no
+[23:00:35] <Saamm> Apparently, the languages are sorted according to their zend shortcut name
+[23:00:45] <zetok> mm
+[23:01:08] <zetok> 2. some aren't visible
+[23:01:22] <zetok> i.e. there's a "hidden" column
+[23:01:23] <Saamm> Damn
+[23:01:44] <Saamm> Which is the last country displayed?
+[23:02:07] <zetok> depends on the browser I use
+[23:02:47] <Saamm> I see...
+[23:02:47] <zetok> zh_TW.html / tr.html
+[23:03:01] <zetok> same goes for 1.
+[23:03:34] <zetok> eh, this is why being able to build locally would be good
+[23:03:48] <Saamm> You're right on that
+[23:04:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[23:21:14] <zetok> Saamm: as a work-around, you could copy index.mustache to `site/`, rename it to .html and work with that
+[23:21:36] <Saamm> Good idea
+[23:22:13] <Saamm> I'm gonna try this, as I just commited slighty changes to fix the 2 things we were talking about
+[23:26:01] <zetok> err, there's a regression
+[23:26:17] <zetok> flag
+[23:27:01] <Saamm> Oo ?
+[23:27:06] <zetok> <a href="eo.html"><img src="assets/imgs/flags/European_Union.png" alt="" class="flag"><span> Esperanto</span></a><br />
+[23:27:18] <Saamm> Arf
+[23:27:28] <Saamm> Right
+[23:27:41] <zetok> git diff HEAD~2..HEAD
+[23:27:45] <zetok> :)
+[23:28:23] <zetok> https://a.uguu.se/pWVndZcDsSRS.png ← not a real problem, and looks ok with en version
+[23:30:49] <Saamm> Regression fixed
+[23:31:44] <zetok> err
+[23:31:52] <zetok> that last one should be removed
+[23:32:20] <Saamm> Yup, this is a problem that need to be fixed, we talked about that days ago. I know how to display the good flag with some PHP, but as there can't be any on qTox website... I don't know how to do it.
+[23:32:25] <zetok> db44003 ← that kind of stuff is not going to float
+[23:36:20] <Saamm> Oops
+[23:36:38] <Saamm> My bad, I misread what you told me earlier... I fix this
+[23:37:12] <zetok> um
+[23:37:27] * zetok should have been more clear
+[23:37:35] <Saamm> No no
+[23:37:45] <Saamm> I should have read properly what you said  ;)
+[23:37:54] <Saamm> The fault is on me
+[23:41:25] <zetok> well, night :)
+[23:42:35] <Saamm> Good night Zetok ;)
+[23:42:50] <Saamm> And sorry not being quite efficient  ^^"
