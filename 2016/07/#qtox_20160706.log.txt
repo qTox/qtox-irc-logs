@@ -1,0 +1,175 @@
+[00:10:37] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[00:27:59] *** Joins: f10 (~flo@ )
+[00:30:59] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 258 seconds)
+[00:31:06] *** Joins: anoa (~rainbow@ )
+[00:31:35] *** Quits: Saamm (4ed146f1@ ) (Quit: Page closed)
+[00:38:37] *** Joins: misiek200m (~miskof@ )
+[00:41:15] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[01:01:42] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 276 seconds)
+[01:07:06] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:07:30] *** Joins: f10 (~flo@ )
+[01:29:16] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[01:34:03] *** Joins: f10__ (~flo@ )
+[01:34:39] *** Quits: f10 (~flo@ ) (Ping timeout: 264 seconds)
+[02:14:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[02:15:15] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[03:01:13] <nurupo> ><zetok> nurupo: are you planning to host weblate instance? <-- no
+[03:31:41] *** Joins: f10_ (~flo@ )
+[03:35:31] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[03:36:00] *** Joins: f10__ (~flo@ )
+[03:46:06] *** Joins: cisc (~cisc@ )
+[03:47:41] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[03:47:42] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[04:08:51] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:11:56] *** Joins: cisc (~cisc@ )
+[04:50:12] *** Quits: albel727 (~albel727@ ) (Ping timeout: 250 seconds)
+[06:56:24] *** Joins: sudden6 (~anonymous@ )
+[07:01:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[07:51:59] *** Joins: SkyzohKey (~skyzohkey@ )
+[07:55:06] *** Joins: albel727 (~albel727@ )
+[07:59:33] *** Joins: LittleVulpix (~Miranda@ )
+[08:08:43] *** Joins: f10__ (~flo@ )
+[08:49:51] *** Joins: st4ll1 (~st4ll1@ )
+[08:55:53] *** Joins: f10_ (~flo@ )
+[09:04:24] *** Joins: abbat (~abbat@ )
+[09:09:46] *** Quits: f10__ (~flo@ ) (Ping timeout: 250 seconds)
+[09:10:03] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[09:14:19] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[09:31:52] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[09:54:49] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:06:32] *** Joins: LittleVulpix (~Miranda@ )
+[10:36:03] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[10:37:32] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vKI9t
+[10:37:32] -qtox-git-spam- qTox/master 99ce719 Zetok Zalbavar: chore: remove unnecessary indentation from merge commit message
+[10:52:08] *** Joins: st4ll1 (~st4ll1@ )
+[11:07:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[11:09:53] *** Joins: abbat (~abbat@ )
+[11:10:56] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vKI5t
+[11:10:56] -qtox-git-spam- qTox/master 2d06b99 Zetok Zalbavar: fix(qtox.pro): don't depend on GTK in order to build on Linux
+[11:33:46] -qtox-git-spam- [qTox] minj opened pull request #3482: feat(l10n): update Lithuanian translation (master...l10n-lt) https://git.io/vKIFV
+[11:55:47] *** Joins: Chiitoo (~Chiitoo@ )
+[12:40:53] *** Joins: ovalseven8 (~ovalseven@ )
+[12:49:55] *** Joins: f10_ (~flo@ )
+[12:56:38] *** Joins: f10__ (~flo@ )
+[13:11:05] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[13:13:56] *** Joins: f10 (~flo@ )
+[13:14:15] *** Quits: f10__ (~flo@ ) (Ping timeout: 264 seconds)
+[13:14:20] *** Joins: f10_ (~flo@ )
+[13:43:43] -qtox-git-spam- [qTox] zetok closed pull request #3482: feat(l10n): update Lithuanian translation (master...l10n-lt) https://git.io/vKIFV
+[14:01:25] *** Joins: High_Priest (~hp@ )
+[14:06:38] <High_Priest> hi guys, anything wrong with deb repos? my apt-get update is failing: Err https://pkg.tox.chat nightly/jessie amd64 Packages W: Failed to fetch https://pkg.tox.chat/debian/dists/nightly/jessie/binary-amd64/Packages 
+[14:09:43] -qtox-git-spam- [qTox] zetok opened pull request #3484: docs(MAINTAINING.md): note that not using merge script can break builds (master...maint) https://git.io/vKLqP
+[14:09:52] <zetok> High_Priest: no, you're just using the wrong repo
+[14:12:39] <zetok> High_Priest: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[14:16:24] <High_Priest> zetok, I grabbed the one from the website.. 
+[14:16:33] <zetok> wrong website too
+[14:16:35] <zetok> ;)
+[14:17:51] <zetok> High_Priest: link to homepage is in the topic :)
+[14:18:17] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[14:18:57] <High_Priest> I first found this page: https://tox.chat/about.html
+[14:19:05] <High_Priest> is it not related to this project?
+[14:19:55] <High_Priest> then I added a repo from there (which didn't work) and _then_ I came here to ask
+[14:20:06] <zetok> related ≠ qTox website
+[14:21:30] <High_Priest> so it is related, but only contains wrong/not updated information? 
+[14:22:18] <zetok> ~mostly
+[14:23:08] <High_Priest> okay, I kind of get it now
+[14:23:13] * zetok haven't seen about page before though
+[14:23:23] <zetok> gotta say, there's plenty of bullshit on it
+[14:23:25] <High_Priest> anyways, it's working fine
+[14:23:33] <High_Priest> so thanks :)
+[14:23:44] <zetok> you're welcome :)
+[14:34:56] *** Joins: f10_ (~flo@ )
+[14:44:46] *** Joins: cisc (~cisc@ )
+[14:50:07] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[14:51:14] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[15:01:57] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:09:53] *** Joins: LittleVulpix (~Miranda@ )
+[15:10:38] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:13:38] *** Joins: f10 (~flo@ )
+[15:20:01] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[15:22:47] *** Joins: LittleVulpix (~Miranda@ )
+[15:23:34] *** Joins: cisc (~cisc@ )
+[15:25:07] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:25:42] *** Joins: f10 (~flo@ )
+[15:42:53] <SkyzohKey> zetok: https://github.com/Murazaki/EmojiPanel this might interest u
+[15:44:28] <zetok> >qml quick
+[15:44:37] <zetok> not
+[16:13:43] -qtox-git-spam- [qTox] zetok opened pull request #3485: chore(bootstrap.sh): account for spaces in paths (master...spaces) https://git.io/vKLV8
+[16:17:06] *** Joins: f10__ (~flo@ )
+[16:17:33] *** Quits: f10 (~flo@ ) (Ping timeout: 276 seconds)
+[16:22:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[16:22:30] *** Joins: abbat (~abbat@ )
+[16:48:49] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[16:49:05] *** Joins: abbat (~abbat@ )
+[16:51:07] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[16:51:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[16:53:05] *** Joins: f10_ (~flo@ )
+[16:53:11] *** Joins: f10__ (~flo@ )
+[16:55:16] *** Quits: f10_ (~flo@ ) (Client Quit)
+[17:00:12] *** Joins: dardevelin (~dardeveli@ )
+[17:07:19] <cisc> on KDE the qTox tray icon is the XEmbed type, whereas newer Plasma5 DE went to SNI, if I got that right. so if xembedsniproxy gets killed the qTox icon will go away. Any plan to move to the new framework or whatever?
+[17:07:50] <zetok> is it still broken?
+[17:08:11] <zetok> https://github.com/tux3/qTox/wiki/Tray-icon ← might want to read the note at the bottom
+[17:08:47] <cisc> it works fine, but some apps are using the new SNI way, others are not
+[17:09:39] <cisc> ok nevermind, I killed xembedxniproxy and the qtox icon is still there. so it got fixed @ some point
+[17:10:06] <cisc> *xembedsniproxy
+[17:13:40] *** Joins: sudden6 (~anonymous@ )
+[17:25:47] *** Joins: f10 (~flo@ )
+[17:26:39] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[17:31:50] *** Joins: f10_ (~flo@ )
+[17:37:11] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[17:38:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[17:50:05] *** Joins: stvlker (~stvlker@ )
+[17:53:06] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[17:58:45] *** Joins: Saaaam (4ed146f1@ )
+[17:58:50] <Saaaam> Hey everyone
+[17:58:51] <Saaaam> o/
+[18:00:14] <zetok> hello Saaaam :)
+[18:04:55] *** Joins: Saaaam_ (4ed146f1@ )
+[18:05:34] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[18:18:03] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[18:18:38] *** Joins: stvlker (~stvlker@ )
+[18:18:59] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[18:25:07] *** Quits: f10 (~flo@ ) (Quit: Konversation terminated!)
+[18:26:09] *** Joins: stvlker (~stvlker@ )
+[18:27:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[18:27:50] *** Joins: f10 (~flo@ )
+[18:28:34] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[18:28:44] *** Joins: f10_ (~flo@ )
+[18:30:02] <Saaaam_> zetok: could you tell me when you have time if the language menu for the website is good with the browsers you use? (good = the flag and "EN" on the same line + no hidden columns)
+[18:30:40] *** Joins: st4ll1 (~st4ll1@ )
+[18:31:28] <zetok> Saaaam_: history needs to be rewritten a bit
+[18:32:46] <Saaaam_> History... What do you mean by history?
+[18:35:10] <zetok> Saaaam_: https://github.com/Saaaam/qtox_website_test/compare/cf7f01af3af31c5f52c343ec29893d4ef45c74ea...menu-top-add
+[18:36:42] <zetok> Saaaam_: basically, you'd want to do `git checkout cf7f01af3af31c5f52c343ec29893d4ef45c74ea -b top-lags` and add on top of that only needed changes
+[18:37:39] <zetok> Saaaam_: btw, presence/absence of hidden columns depends on how much zoomed the website is
+[18:39:17] *** Joins: Dragofix- (Dragofix@ )
+[18:40:08] *** Joins: f10__ (~flo@ )
+[18:40:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 276 seconds)
+[18:42:20] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 258 seconds)
+[18:42:20] *** Dragofix- is now known as Dragofix
+[19:26:29] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[19:26:48] *** Joins: f10__ (~flo@ )
+[19:50:55] *** Joins: f10_ (~flo@ )
+[19:51:11] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[19:57:53] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:27:42] *** Quits: Saaaam_ (4ed146f1@ ) (Ping timeout: 250 seconds)
+[20:31:25] *** Joins: SkyzohKey_ (~skyzohkey@ )
+[20:31:26] *** Quits: SkyzohKey_ (~skyzohkey@ ) (Remote host closed the connection)
+[20:31:57] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[20:32:21] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:33:28] *** Joins: f10_ (~flo@ )
+[20:33:32] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:33:39] *** Joins: f10__ (~flo@ )
+[20:36:30] *** Joins: abbat (~Anton@ )
+[21:00:26] *** Joins: fred_barclay (~fred@ )
+[22:31:40] *** Joins: anoa (~rainbow@ )
+[22:46:34] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[23:02:53] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:03:39] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[23:21:15] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[23:21:24] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[23:28:13] *** Joins: f10__ (~flo@ )
+[23:28:49] *** Joins: f10_ (~flo@ )
+[23:43:30] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[23:47:30] *** Joins: f10 (~flo@ )
