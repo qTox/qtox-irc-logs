@@ -1,0 +1,248 @@
+[01:29:51] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[02:24:58] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[02:37:33] *** Joins: anoa (~rainbow@ )
+[02:57:51] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[02:57:52] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[02:59:56] *** Joins: SkyzohKey (~skyzohkey@ )
+[03:13:04] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[03:25:42] *** Joins: anoa (~rainbow@ )
+[03:31:38] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[03:32:34] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[03:45:03] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[03:45:07] *** Joins: anoa (~rainbow@ )
+[04:40:31] *** Joins: smaragdus (~omoo@ )
+[07:29:21] *** Joins: st4ll1 (~st4ll1@ )
+[07:43:59] *** Joins: f10_ (~flo@ )
+[07:44:43] *** Joins: f10 (~flo@ )
+[07:48:14] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[08:08:39] *** Joins: abbat (~Anton@ )
+[08:24:16] -qtox-git-spam- [qTox] wDraw opened pull request #3486: feat(l10n): update Bulgarian translation (master...l10n-bg) https://git.io/vKq0U
+[08:44:33] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[09:04:14] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:07:11] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[09:24:56] *** Joins: Saaaam (4ed146f1@ )
+[09:26:38] <Saaaam> Hello everybody ^^
+[09:31:25] *** Joins: st4ll1 (~st4ll1@ )
+[09:32:12] *** Joins: Diadlo (~diadlo@ )
+[09:55:48] <Saaaam> zetok: new branch top-lags created. About the columbs depending on the zoom, the 2 things I can do is to lower a bit the font-size, or make the height of the div bigger
+[09:57:55] *** Joins: abbat (~abbat@ )
+[10:05:12] <zetok> Saaaam: um, that branch name has a typo in it, I actually meant to write "top-langs" >.<
+[10:06:10] <Saaaam> Ohhh... I was wondering what you were meaning by "lags"... it gets more sense now :p
+[10:10:33] <Saaaam> Fixed
+[10:32:59] -qtox-git-spam- [qTox] Diadlo opened pull request #3487: style(toxcall): Copy constructor return non-const reference (master...fixResultOfCopyConstructor) https://git.io/vKqiw
+[10:34:14] -qtox-git-spam- [qTox] Diadlo opened pull request #3488: style(toxid, widgets): Made constructor explicit (master...makeConstructorExplicit) https://git.io/vKqiy
+[10:42:47] -qtox-git-spam- [qTox] Diadlo opened pull request #3489: Make methods const (master...makeMethodsConst) https://git.io/vKqPX
+[11:01:47] *** Joins: Chiitoo (~Chiitoo@ )
+[11:08:17] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[11:08:39] *** Joins: abbat (~abbat@ )
+[11:18:12] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[11:18:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[11:21:51] *** Quits: Diadlo (~diadlo@ ) (Quit: Leaving)
+[11:28:36] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[12:05:13] *** Quits: High_Priest (~hp@ ) (Remote host closed the connection)
+[12:27:37] *** Joins: High_Priest (~hp@ )
+[13:00:57] -qtox-git-spam- [qTox] antis81 opened pull request #3491: docs(CONTRIBUTING.md): improve guide to avoid merge conflicts (master...docs/CONTRIBUTING.md) https://git.io/vKqAZ
+[13:05:02] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:13:56] *** Joins: cisc (~cisc@ )
+[13:30:14] *** Quits: High_Priest (~hp@ ) (Remote host closed the connection)
+[13:43:27] *** Joins: Saaaam (4ed146f1@ )
+[13:45:23] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vKmer
+[13:45:23] -qtox-git-spam- qTox/master b6b149a wDraw: feat(l10n): update Bulgarian translation...
+[13:45:23] -qtox-git-spam- qTox/master 699ffae Zetok Zalbavar: Merge pull request #3486...
+[13:48:02] *** Joins: High_Priest (~hp@ )
+[13:52:38] -qtox-git-spam- [qTox] zetok opened pull request #3492: feat(l10n): update Russian translation from weblate (master...tr) https://git.io/vKmv8
+[14:02:52] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[14:10:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:14:16] *** Joins: abbat (~abbat@ )
+[14:15:00] -qtox-git-spam- [qTox] zetok closed pull request #3492: feat(l10n): update Russian translation from weblate (master...tr) https://git.io/vKmv8
+[14:22:24] <zetok> qTox could make some use of more people reviewing / testing PRs :s
+[14:40:58] *** Quits: High_Priest (~hp@ ) (Quit: Leaving)
+[14:43:08] *** Joins: f10_ (~flo@ )
+[14:43:10] *** Joins: f10 (~flo@ )
+[14:43:43] *** Quits: linxon (~lin@ ) (Changing host)
+[14:43:43] *** Joins: linxon (~lin@ )
+[15:09:09] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vKmGd
+[15:09:09] -qtox-git-spam- qTox/master 34fb127 Zetok Zalbavar: docs(MAINTAINING.md): note that not using merge script can break builds
+[15:38:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[15:39:08] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[15:42:53] *** Joins: f10 (~flo@ )
+[16:02:31] *** Joins: f10_ (~flo@ )
+[16:08:17] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[16:16:03] *** Joins: abbat (~abbat@ )
+[16:23:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[16:25:28] *** Joins: abbat (~abbat@ )
+[16:25:37] *** Joins: f10__ (~flo@ )
+[16:25:59] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[16:35:45] *** Joins: stvlker (~stvlker@ )
+[16:36:01] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[16:43:35] *** Quits: mitfree (~mit@ ) (Quit: Lost terminal)
+[16:45:52] *** Joins: mitfree (~mit@ )
+[17:08:04] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[17:19:42] *** Joins: f10 (~flo@ )
+[17:19:42] *** Quits: f10__ (~flo@ ) (Ping timeout: 276 seconds)
+[17:26:44] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:27:02] *** Joins: f10 (~flo@ )
+[17:28:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:31:07] *** Joins: abbat (~abbat@ )
+[17:51:45] *** Joins: anoa (~rainbow@ )
+[17:56:45] <zetok> anoa: o/
+[17:57:10] <anoa> sup
+[17:57:28] <zetok> anoa: mind not giving link to the wrong repo for people who would just want things to work?
+[17:57:56] <anoa> Which repo? huh?
+[17:58:02] <zetok> anoa: aside from that, it looks like your PRs again have conflicts :(
+[17:58:46] <anoa> zetok: They need a rebase?
+[17:59:11] <zetok> anoa: https://github.com/qTox/qtox-irc-logs/blob/8ccb997cb9e68abcfd3cb1f3cf184a58385b97b3/2016/07/%23qtox_20160704.log.txt#L65 ← this
+[17:59:30] <zetok> anoa: yep
+[18:00:24] <anoa> Wait, is the website pointing to the wrong repo still? :f
+[18:00:54] <anoa> Hmm, what link should I provide instead?
+[18:01:16] <zetok> qtox.github.io
+[18:01:58] <anoa> Alright, will send that instead if anyone ever asks.
+[18:02:17] <zetok> thanks :)
+[18:06:34] *** Quits: anoa (~rainbow@ ) (Ping timeout: 250 seconds)
+[18:48:39] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:48:57] *** Joins: in1t3r (~LordShiva@ )
+[18:54:10] *** Joins: anon_3367 (~anon_9477@ )
+[18:55:35] <anon_3367> hi
+[18:56:00] <zetok> hello anon_3367 :)
+[18:56:20] <anon_3367> can I poke your mind a little bit? regarding qTox?
+[18:57:02] <zetok> go ahead
+[18:57:06] <anon_3367> first let me thank you for you support on developing this great tool :)
+[18:58:11] <zetok> you're welcome :)
+[18:58:15] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[18:58:19] <anon_3367> here's the thing, I'm using qTox both on Windows 10 and OS X El Capitan, both are using Tor Browser as proxies 
+[18:58:52] <anon_3367> it works well, but with the OS X version, I keep getting these little disconnects, every 2min mostly
+[18:59:13] <anon_3367> me first guess - it's the Tor network, not the client right?
+[18:59:21] <zetok> probably
+[18:59:30] <zetok> or osx
+[19:00:10] *** Joins: Chiitoo (~Chiitoo@ )
+[19:00:40] <anon_3367> I'm trying to reproduce it on another OS X machine, if I get a positive result, can I post it as an issue on github?
+[19:00:59] <anon_3367> (if it's qTox related obvioulsy)
+[19:03:44] <zetok> if it's reproducible without tor, or with other socks proxy that doesn't introduce that kind of latency, it would be a toxcore issue
+[19:04:03] <zetok> that is, osx issue which toxcore would need to work around
+[19:04:21] <anon_3367> got it! thanks a lot for you time and patience!
+[19:04:26] <zetok> np :)
+[19:06:24] *** Quits: anon_3367 (~anon_9477@ ) (Quit: Leaving)
+[19:12:43] <Chiitoo> There's no issue open for “chat window shows 'new message' notification even while it's the active window”, is there?
+[19:13:09] <zetok> not sure, there might have been such issue
+[19:15:04] <Chiitoo> Hmmmhm.
+[19:16:27] <zetok> can't find anything
+[19:17:32] <zetok> Chiitoo: actually, that's a desired behaviour
+[19:17:43] <Chiitoo> How so?
+[19:18:45] <zetok> https://github.com/tux3/qTox/issues/1747
+[19:19:09] <zetok> (1st post)
+[19:20:18] <Chiitoo> Hmmm not sure it makes sense in this context.  I'm saying qTox is notifying about new messages even though the messages that are being received are coming to the chat that is the current active window.
+[19:20:30] <Chiitoo> I have to actually change away from qTox and back to the same chat to clear it.
+[19:20:39] <zetok> ok, this is not a desired behaviour
+[19:20:44] <Chiitoo> Yeah.
+[19:21:10] <Chiitoo> It's not a different contact I'm speaking of (and this is likely only happening for separate windows mode.
+[19:21:13] <Chiitoo> )
+[19:21:55] <Chiitoo> I /think/ it happened before the fix to the blinking never getting cleared without activating the main window, but I'm not sure any longer.
+[19:39:57] <zetok> Chiitoo: mind opening an issue?
+[19:40:34] <Chiitoo> I will if/when I remember to.
+[19:56:39] *** Joins: piwirj (68eea912@ )
+[20:02:10] <piwirj> Is it possible to copy a url into clipboard from qtox? For example, someone sends me the url https://tox.chat/ , and I want to copy the link into clipboard instead of immediately opening it in my defeault browser.
+[20:02:46] <piwirj> e.g. in Firefox, I would right-click the link, and select Copy Link Location.
+[20:11:39] *** Joins: abbat (~Anton@ )
+[20:13:39] <zetok> piwirj: you can select link and copy it
+[20:14:05] <zetok> not really the best way, but works for now
+[20:16:30] <piwirj> that works
+[20:16:50] <piwirj> though I accidentally press the url sometimes while doing that :(
+[20:17:28] <zetok> piwirj: you might want to open an issue about it
+[20:17:48] <zetok> um, sec, I'll see if there's an issue already for it
+[20:17:59] <piwirj> zetok: I don't want to create a github account. I can live with the workaround.
+[20:18:40] <piwirj> one of the reasons I like tox - no need to create accounts on some webpage
+[20:18:51] <zetok> I see
+[20:19:10] *** Joins: anon_3367 (~anon_9477@ )
+[20:19:23] <zetok> piwirj: https://github.com/tux3/qTox/issues/1236
+[20:21:35] <piwirj> I see it is an old request...
+[20:22:00] <zetok> "that works"™
+[20:22:06] <piwirj> I will live with the workaround, thank you
+[20:22:18] <zetok> aka there are other issues that people see as more important
+[20:22:25] <zetok> you're welcome :)
+[20:24:08] <piwirj> yes, there are lots of tiny details that would help bring qtox up to par with skype et al
+[20:24:37] <piwirj> e.g. having an option to have to press the 'ctrl' button to visit a link, so that one does not press it accidentally
+[20:36:17] *** Quits: anon_3367 (~anon_9477@ ) (Quit: Leaving)
+[20:53:23] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:53:43] *** Joins: f10 (~flo@ )
+[20:54:09] <piwirj> has the pgp signing key for qtox changed? It used to be key ID 0x7E086DD661263264 and now it is claiming 0x139CA0453DA2D773 
+[21:25:51] *** Joins: sudden6 (~anonymous@ )
+[21:28:48] <zetok> yep
+[21:33:41] <zetok> sudden6: #3489 now does what follow-up commits to #3411 were supposed to do, right?
+[21:33:52] <zetok> + now you'll get conflicts
+[21:35:04] <zetok> piwirj: https://github.com/qTox/qtox-irc-logs/blob/876211124f47e8b2e0e6a5dc9409ada75f35822c/2016/07/%23qtox_20160703.log.txt#L31
+[21:35:06] <sudden6> yep
+[21:49:32] <zetok> or rather, Diadlo will get conflicts :(
+[21:51:07] <sudden6> I counted on PafXUS, he sounded pretty motivated to do all of it
+[21:53:33] <zetok> motivation ≠ time
+[21:53:42] <sudden6> zetok: are you following the new tox movement?
+[21:53:47] <zetok> hm?
+[21:53:48] <sudden6> yep
+[21:54:03] <zetok> what do you mean, "new" ?
+[21:54:24] <sudden6> iphy wants to ramp up toxcore developement
+[21:54:29] <sudden6> https://docs.google.com/document/d/1lMVNwGhyioBnMESp5JAEDbtssyPzd-SwGJJknduQZrk/edit?pref=2&pli=1#heading=h.q1ebsywuo778
+[21:54:33] <zetok> if you're hinting at iphy losing hope that toxcore will be properly managed and starting to do things by self..
+[21:54:34] <zetok> :D
+[21:55:18] <linuxmodder> sudden6,  zetok  Impyy   you all need to worry more about reining in the needless and often leaderless spawl FIRST
+[21:55:40] <sudden6> linuxmodder: wat?
+[21:56:26] <linuxmodder> too damn many repos and  domains too many  folks forkign to do a  'me2' implement and no fucking direction or  seemingly vaible  control
+[21:56:45] <linuxmodder> the project is  quickly turning into a  teenage cesspool
+[21:57:06] <zetok> linuxmodder: Please.
+[21:57:20] <linuxmodder> zetok,  really?
+[21:58:08] <linuxmodder> so having  4 clients and  a  proposed  3  forks of those with all this let's add this and that when qtox alone has over  300 open PRs /Issues is  controlled?
+[21:58:12] <nurupo> zetok: btw, how do you pull translations from weblate, is there some "Export" functionality in the web ui or every weblate project is actually a git/vcs repo?
+[21:58:21] <linuxmodder> go fuck yourself  you youngblood  pissant
+[21:58:32] <zetok> nurupo: git
+[21:58:37] <nurupo> zetok: cool
+[21:58:44] <zetok> eh.
+[21:59:04] *** ChanServ sets mode: +o zetok
+[21:59:08] *** zetok sets mode: +q *!linuxmodde@*gateway/shell/layerbnc/x-vhgaertnmojxoepl
+[21:59:14] <sudden6> zetok: thx
+[21:59:17] <zetok> np
+[21:59:34] <sudden6> was already looking for instructions how to do it myself
+[22:00:08] <sudden6> so what do you think?
+[22:00:16] <zetok> "finally"
+[22:01:03] *** Joins: ___ (33fe54d4@ )
+[22:01:05] <zetok> sudden6: https://github.com/zetok/tox/pull/15 ← already improves stuff :3
+[22:01:12] <sudden6> i interpret this as a notion of light support form your side^^
+[22:01:31] <zetok> just gotta say one thing
+[22:01:39] <zetok> "88.707% – mine is bigger"
+[22:02:10] <zetok> on a more serious note, it will be nice to have better spec
+[22:02:31] <zetok> + concentration & management of effort
+[22:02:47] <zetok> that is, assuming that it will happen, but iphy has high chances
+[22:04:52] *** zetok sets mode: -o zetok
+[22:05:27] <zetok> btw, that plan isn't entirely correct
+[22:05:53] <zetok> i.e. you might want to remove "fast" from µTox, since it's slower than qTox
+[22:06:00] *** Parts: ___ (33fe54d4@ ) ()
+[22:06:23] <zetok> (or at least it was, last time I've tried it, but I doubt whether that changed, since it was due to how it was build)
+[22:06:32] <zetok> (i.e. architecture)
+[22:06:51] *** Joins: a68366 (33fe54d4@ )
+[22:09:52] <zetok> sudden6: you might be interested in #toktok, rather than wasting time on #tox
+[22:14:22] <a68366> sudden6: https://github.com/tux3/qTox/pull/3475  Well, it's not so bad. As I don't see a better solution, should I add translate() calls?
+[22:15:32] <sudden6> a68366: yep, I think that's the best way
+[22:17:14] *** Joins: st4ll1 (~st4ll1@ )
+[22:34:06] -qtox-git-spam- [qTox] Diadlo closed pull request #3456: Code cleanup (master...codeCleanup) https://git.io/vKve3
+[22:34:16] -qtox-git-spam- [qTox] Diadlo opened pull request #3495: Style fixes (master...styleFixes) https://git.io/vKYwp
+[22:38:19] -qtox-git-spam- [qTox] sudden6 closed pull request #3464: feat(chatform): Disable call buttons if friend is offline (master...offline-call-buttons) https://git.io/vKfY4
+[22:38:22] *** Quits: piwirj (68eea912@ ) (Quit: Page closed)
+[22:59:53] -qtox-git-spam- [qTox] sudden6 closed pull request #3450: fix(widget): Added saving window state before closing (master...fixWindowMaximize) https://git.io/vobSn
+[23:03:54] <zetok> sudden6: #3411 ?
+[23:04:54] <sudden6> I didn't look yet
+[23:04:59] <zetok> :|
+[23:05:26] <sudden6> is it redundant to Diadlo's stuff?
+[23:05:34] <zetok> no
+[23:05:49] <zetok> Diadlo's PR supplements what #3411 does
+[23:06:16] <sudden6> then it's fine
+[23:06:55] <sudden6> since then things tux3 commented weren't issues after all I'll merge it
+[23:06:58] <zetok> or at least that's true for ~half of #3411, I didn't look at it whole
+[23:08:28] <zetok> yep, holds true for whole #3411
+[23:09:23] -qtox-git-spam- [qTox] sudden6 closed pull request #3411: fix(persistence): pass by reference to const (master...performance_improvements) https://git.io/vo2aK
+[23:09:58] -qtox-git-spam- [qTox] sudden6 pushed 3 new commits to master: https://git.io/vKYX6
+[23:09:58] -qtox-git-spam- qTox/master 6030b08 a68366: fix(groupinviteform): consider dateTime format in group invites...
+[23:09:58] -qtox-git-spam- qTox/master d601599 a68366: fix(generalform): call UI retranslation when date or time format changes...
+[23:09:58] -qtox-git-spam- qTox/master 1bd86f7 sudden6: Merge pull request #3475...
+[23:12:23] <sudden6> done for the day, bye
+[23:12:49] <zetok> thanks, cya :)
+[23:17:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[23:18:21] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:25:18] *** Joins: e0f (~e0f@ )
+[23:25:28] *** Quits: a68366 (33fe54d4@ ) (Quit: Page closed)
