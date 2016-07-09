@@ -1,0 +1,224 @@
+[01:44:03] *** Joins: Lomax (~ola@ )
+[02:09:55] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 272 seconds)
+[02:26:44] *** Joins: anoa (~rainbow@ )
+[02:58:17] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:10:00] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[03:10:41] *** Joins: Bheru27 (~Bheru27@ )
+[03:20:21] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[03:25:00] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[03:25:00] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[04:08:27] *** Joins: in1t3r (~LordShiva@ )
+[07:20:37] *** Joins: st4ll1 (~st4ll1@ )
+[07:59:22] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[08:10:44] *** Joins: abbat (~Anton@ )
+[08:22:47] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:23:42] *** Joins: LittleVulpix (~Miranda@ )
+[08:23:53] *** Quits: LittleVulpix (~Miranda@ ) (Changing host)
+[08:23:53] *** Joins: LittleVulpix (~Miranda@ )
+[08:43:21] *** Quits: anoa (~rainbow@ ) (Quit: Leaving)
+[08:44:57] *** Joins: st4ll1 (~st4ll1@ )
+[08:48:38] *** Joins: anoa (~rainbow@ )
+[08:50:34] *** Quits: anoa (~rainbow@ ) (Client Quit)
+[08:57:10] *** Joins: f10 (~flo@ )
+[08:58:39] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:01:13] *** Joins: anoa (~anoa@ )
+[09:08:49] *** Joins: f10_ (~flo@ )
+[09:13:18] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[09:13:55] *** Joins: smaragdus (~omoo@ )
+[09:16:20] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[09:48:20] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[09:49:06] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[09:50:29] *** Joins: f10 (~flo@ )
+[09:54:56] *** Joins: cisc (~cisc@ )
+[09:55:02] *** Joins: abbat (~abbat@ )
+[09:59:17] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[10:00:02] *** Joins: cisc (~cisc@ )
+[10:15:04] *** Joins: f10_ (~flo@ )
+[10:35:33] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[10:41:07] *** Joins: f10 (~flo@ )
+[10:56:10] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[10:56:51] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[11:25:07] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[11:25:54] *** Joins: abbat (~abbat@ )
+[11:48:00] *** Parts: Lomax (~ola@ ) ()
+[12:12:48] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[12:20:24] *** Joins: cisc (~cisc@ )
+[12:33:39] *** Quits: Sephi (~me@ ) (Remote host closed the connection)
+[12:47:09] *** Joins: Sephi (~me@ )
+[13:02:44] *** Joins: abbat_ (~abbat@ )
+[13:02:56] *** Quits: abbat_ (~abbat@ ) (Remote host closed the connection)
+[13:04:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:30:24] *** Joins: f10 (~flo@ )
+[13:36:16] <zetok> 1k stars soon \o/
+[13:36:45] *** ChanServ sets mode: +o zetok
+[13:36:59] *** zetok sets mode: -q *!linuxmodde@*gateway/shell/layerbnc/x-vhgaertnmojxoepl
+[13:37:04] *** zetok sets mode: -o zetok
+[13:51:24] *** Joins: a68366 (~a68366@ )
+[14:03:32] *** Parts: a68366 (~a68366@ ) ()
+[14:27:08] *** Joins: f10_ (~flo@ )
+[14:45:07] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[14:48:34] *** Joins: a68366 (~a68366@ )
+[16:06:59] *** Joins: f10_ (~flo@ )
+[16:32:59] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[16:33:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[16:35:27] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:36:20] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[16:38:41] *** Joins: f10_ (~flo@ )
+[16:42:37] *** Joins: f10__ (~flo@ )
+[16:42:45] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[16:43:20] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:58:22] -qtox-git-spam- [qTox] zetok opened pull request #3497: chore(travis): exit linux build as soon as one of steps fails (master...fail) https://git.io/vK3mx
+[17:01:03] *** Joins: abbat (~abbat@ )
+[17:39:24] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vK3no
+[17:39:24] -qtox-git-spam- qTox/master 464daeb Zetok Zalbavar: chore(travis): exit linux build as soon as one of steps fails...
+[17:54:31] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[18:06:49] -qtox-git-spam- [qTox] antis81 opened pull request #3498: fix(chat): cleanup chat css base style (master...fix/chat/css) https://git.io/vK3lK
+[18:08:22] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:24:50] *** Joins: in1t3r (~LordShiva@ )
+[18:48:41] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[18:52:07] *** Joins: zenjie (68eea956@ )
+[18:53:03] <zenjie> Is it possible to cancel sending a faux offline message?
+[18:53:37] <zenjie> I only see an option to clear displayed messages, but that only clears the display of the messages - it will send the faux offline messages once the contact is online
+[18:59:40] <zetok> maybe
+[19:00:04] <zetok> alternatively, you could turn qTox off, and manually edit db
+[19:00:39] <zetok> (aka qTox doesn't have interface for it yet)
+[19:02:15] <zetok> zenjie: https://github.com/tux3/qTox/issues/1306
+[19:10:24] *** Joins: sudden6 (~anonymous@ )
+[19:11:01] <zetok> zenjie: sqlitebrowser is nice
+[19:18:03] <zenjie> zetok: I should have searched on github, sorry
+[19:18:51] *** Joins: user69 (~user69@ )
+[19:25:30] <user69> Hi Everyone,  Hope all of you are doing well. Just checking to see what's going on (what's happening) in the qTox channel.
+[19:29:28] *** Joins: f10__ (~flo@ )
+[19:31:46] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[19:33:21] <zetok> not much right now :)
+[19:34:33] <user69> Thanks for replying :)
+[19:37:24] <user69> Another qTox user brought up an article he found, and I was wondering if any of it pertained to "qTox"? https://blog.tox.im/2016/04/01/litigation/  
+[19:37:44] <zetok> hm?
+[19:38:12] <user69> Also wondering are any of the tox developers ex-NSA people or some from other security agency, that would afect the privacy of the TOX communications?
+[19:38:32] <zetok> that's an interesting definition of an "article"
+[19:39:01] <user69> It may be total fabrication, I do not know, thus my questions.
+[19:39:10] <zetok> right
+[19:39:47] <zetok> have you heard of the stqism serpent?
+[19:40:01] <user69> No, what's that?
+[19:40:36] <zetok> you've missed the "good" times when things were fun
+[19:40:37] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[19:40:43] <zetok> https://gist.github.com/zetok/cff2a823b5d20dc6db6b
+[19:40:48] <zetok> ;D
+[19:40:51] *** Joins: f10__ (~flo@ )
+[19:41:26] <zetok> user69: sqism == NikolaiToryzin == the person who took the $$
+[19:41:38] <zetok> stqism*
+[19:42:46] <zetok> and the person who wrote that "article"
+[19:43:18] <user69> zetok: I just read the link you gave me ....
+[19:44:20] <user69> So, "qTox" and the "tox" network are secure? Because I really like the "qTox" client and the new updates to it.
+[19:44:34] <zetok> ~yep
+[19:45:09] <user69> Ok, that is good to know, thanks for clearing that up for me. :)
+[19:45:12] <zetok> https://www.xkcd.com/538/ ← as secure as it gets
+[19:49:20] <user69> zetok:  That's a cool web comic link "xkcd", how long has that been around?
+[19:50:44] * zetok thought that it was around long enough for everyone and their dog to know about it
+[19:51:55] <user69> Guess not everyone, I used to read the main stream (newspaper) comics, did not know about the online only web based ones
+[19:52:28] <zetok> I see
+[19:52:51] *** Joins: abbat (~abbat@ )
+[19:54:28] *** Joins: Chiitoo (~Chiitoo@ )
+[19:56:17] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[20:01:41] *** Joins: f10__ (~flo@ )
+[20:15:22] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[20:23:02] <user69> zetok: I just added a comic plasma widget to my 4th virtual desktop workspace, and sure enough "xkcd" was available. Learn something new everyday. :)
+[20:24:30] <zetok> https://xkcd.com/1053/ ← there's an xkcd for that ;D
+[20:47:50] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[20:51:54] *** Quits: zenjie (68eea956@ ) (Quit: Page closed)
+[21:01:12] *** Joins: ovalseven8 (~ovalseven@ )
+[21:09:02] *** Joins: hpanago (uid15586@ )
+[21:19:24] <zetok> ovalseven8: you might be interested in libtoxclient
+[21:19:36] <ovalseven8> What's that?
+[21:19:51] <zetok> an idea
+[21:20:04] <ovalseven8> Can you explain, please
+[21:20:27] <zetok> you're not going to get $stuff from toxcore that it shouldn't handle
+[21:20:52] <zetok> on the other hand, there is stuff that all clients should handle in uniform way
+[21:21:04] <zetok> but it doesn't fall under what toxcore should do
+[21:21:53] <ovalseven8> OK ...
+[21:22:32] <zetok> how much are you interested in making stuff happen?
+[21:23:03] <ovalseven8> zetok, I lack skills
+[21:23:11] <zetok> you can always learn :)
+[21:23:38] <ovalseven8> Have you worked on it?
+[21:23:53] <zetok> no, since I don't perceive it as most important
+[21:26:21] * zetok wonders
+[21:27:01] <zetok> ovalseven8: depending on what you want, you might want to help with HLAPI, and/or libtoxclient, depending on what HLAPI will cover
+[21:27:33] <ovalseven8> HLAPI, what exactly?
+[21:28:15] <zetok> note that HLAPI is to be build on proper toxcore interface, and that's what should be done first
+[21:29:03] <ovalseven8> Who is working on HLAPI/libtoxclient?
+[21:29:16] <zetok> https://toktok.github.io/roadmap.html
+[21:29:26] <zetok> libtoxclient – no one, just my idea
+[21:30:44] <zetok> in any case, you'd want to learn Rust
+[21:30:47] <zetok> :)
+[21:32:30] <ovalseven8> How's zetox going?
+[21:33:03] <zetok> great :)
+[21:33:53] <zetok> perhaps aside from the ~network code, which needs to be ~split, written tests for & stuff
+[21:33:53] <ovalseven8> <zetok> https://toktok.github.io/roadmap.html
+[21:34:58] <ovalseven8> Current Tox situation is poor. irungentoo is dead/lost interest; grayhatter is working on his repository; iphy on his new repository
+[21:35:06] <ovalseven8> That's not how it should be.
+[21:35:41] <ovalseven8> And some are still waiting for irungentoo :X
+[21:36:26] <zetok> that's their problem
+[21:36:48] <ovalseven8> They don't want to see the problems. Or they just ignore it.
+[21:37:35] * zetok too likes to state obvious stuff about human nature :3
+[21:39:59] <ovalseven8> zetok, How many toxcore features are already in zetox?
+[21:40:12] <ovalseven8> Or ... what is missing
+[21:40:19] <zetok> TES is in
+[21:45:09] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:45:31] <zetok> ovalseven8: most of stuff is "missing"
+[21:45:51] *** Joins: cisc (~cisc@ )
+[21:46:44] <cisc> qtox is constantly taking about 1% CPU utilization when idling, has anyone else noticed that?
+[21:46:46] <ovalseven8> zetok, I see. So, the whole project depends more or less on irungentoo :(
+[21:46:58] <zetok> what.
+[21:47:07] <zetok> cisc: toxcore
+[21:47:18] <cisc> zetok: yeah I figured, but do you think that's fixable
+[21:47:28] <zetok> not in current toxcore
+[21:47:51] <cisc> ;-\
+[21:48:03] <zetok> perhaps with zetox
+[21:49:29] <cisc> iphy & grayhatter should probably working together, so we don't end up with 20 different forks
+[21:50:37] <zetok> pls.
+[21:51:32] <zetok> https://a.uguu.se/nkgiQ2qhAlRZ.png
+[21:52:39] <zetok> I mean, good thinking, but they've been doing that
+[21:53:16] <cisc> well not that I'd seen
+[21:53:19] <ovalseven8> I agree with cisc. There should be one official toxcore repository.
+[21:54:01] <zetok> ><cisc> well not that I'd seen
+[21:54:13] * zetok wonders
+[21:54:36] * zetok shrugs
+[21:55:02] <cisc> is that from #tox-dev ?
+[21:55:11] <cisc> Last I saw grayhatter left #tox-dev
+[21:55:18] <zetok> ha.
+[21:55:30] <zetok> after making tox-dev shitty, leaves
+[21:55:45] <zetok> "fun"
+[21:55:58] <zetok> cisc: I don't waste my time on #tox* channels
+[21:56:45] <cisc> zetok: I think you should work with your best buddy, grayhatter on tox
+[21:57:50] <zetok> ah.
+[21:57:55] <cisc> and you can have your second best buddy, linux-modder be your community liaison
+[21:57:59] <zetok> I'm afraid that grayhatter wouldn't be able to handle that
+[21:59:40] <zetok> anecdote: grayhatter asked me to provide toxcore log, so I've said that I don't know of any services that would allow upload of 25GB of log file, and I've asked where to upload it – to this day I still got no response :c
+[22:00:16] <cisc> mega.nz
+[22:00:47] <zetok> doesn't it require some proprietary stuff?
+[22:01:17] <cisc> well for DL larger files it requires a browser plugin but it's open source
+[22:01:21] <cisc> not for uploading
+[22:01:53] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[22:02:04] <zetok> hmm, sounds good, looks like grayhatter will finally be able to get the log
+[22:04:42] <cisc> so what's the status on Rust toxcore..?
+[22:04:57] *** Joins: user69 (~user69@ )
+[22:06:54] <zetok> cisc: https://github.com/zetok/tox :)
+[22:07:44] <cisc> how far is it from a working state?
+[22:07:55] <zetok> TES already works
+[22:08:23] <zetok> aside from that, a bit far away
+[22:09:44] <zetok> I could rush things and do them quickly, without tests, just to get something "working", but there would be little to no point to toxcore re-implementation then
+[22:10:03] <cisc> so how many months would be your estimate?
+[22:10:23] <zetok> working alone at current rate – years
+[22:10:56] <zetok> since I don't do things quickly
+[22:11:36] <cisc> well there had been talk about moving to a rust toxcore in #tox-dev, so if that decision was made then you wouldn't be the only one
+[22:12:15] <cisc> iphy is busy working on toxcore tests, but..
+[22:12:46] <cisc> there's nobody to further toxcore in C that truly knows how to further it from what I can tell
+[22:13:05] <cisc> in the sense of to the level that irun knows the codebase
+[22:13:33] <zetok> ;)
+[22:46:58] *** Joins: stvlker (~stvlker@ )
+[22:48:07] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[22:48:22] *** Joins: stvlker (~stvlker@ )
+[22:49:45] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[23:35:22] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[23:46:40] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[23:51:56] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
