@@ -1,0 +1,297 @@
+[00:06:11] *** Joins: f10 (~flo@ )
+[00:26:44] <linuxmodder> zetok,  I'd be willing to help with that too 
+[00:27:20] <linuxmodder> this entire project INCLUDING ALL CLIENTS needs a serious group hug and  re-bonding
+[00:30:59] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:35:26] *** Quits: f10 (~flo@ ) (Quit: Konversation terminated!)
+[00:36:05] *** Joins: LittleVulpix (~Miranda@ )
+[00:37:10] *** Joins: f10 (~flo@ )
+[00:55:01] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:18:15] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[02:54:33] <mitfree> +1
+[02:58:49] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:10:41] <koshii> +1 also on that :)
+[04:11:34] <koshii> By the way, I keep getting an error at startup of qtox: "Qt couldn't open your chat logs, they will be disabled." ...Anyone know why?
+[04:11:43] <koshii> Err... "qTox couldn't..."
+[04:45:08] *** Joins: dzxs_ (~d2x3@ )
+[04:53:47] *** Quits: dzxs_ (~d2x3@ ) (Quit: Leaving)
+[04:54:10] *** Joins: dzxs_ (~d2x3@ )
+[04:54:16] *** Quits: dzxs_ (~d2x3@ ) (Changing host)
+[04:54:16] *** Joins: dzxs_ (~d2x3@ )
+[05:19:54] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[05:21:10] *** Joins: cisc (~cisc@ )
+[06:00:25] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 258 seconds)
+[06:41:58] *** Joins: smaragdus (~omoo@ )
+[06:49:37] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[07:00:15] *** Joins: cisc (~cisc@ )
+[07:32:51] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[07:53:07] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 258 seconds)
+[07:55:56] *** Parts: dzxs_ (~d2x3@ ) ("Leaving")
+[08:39:39] *** Joins: smaragdus (~omoo@ )
+[08:49:05] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:49:31] *** Joins: LittleVulpix (~Miranda@ )
+[10:14:51] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:29:52] *** Joins: cisc (~cisc@ )
+[10:31:03] *** Joins: hpanago (uid15586@ )
+[11:20:56] *** Joins: abbat (~abbat@ )
+[11:40:43] <zetok> koshii: yep, you're missing a dep
+[11:52:11] *** Joins: sudden6 (~anonymous@ )
+[11:58:22] <linuxmodder> likely  sqlcipher 
+[11:58:28] <linuxmodder> koshii,  what OS
+[12:00:38] *** Joins: LittleVulpix (~Miranda@ )
+[12:30:47] *** Joins: ovalseven8 (~ovalseven@ )
+[12:30:57] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[12:37:26] *** Joins: Saaaam (4ed146f1@ )
+[12:37:34] <Saaaam> Hello everybody :)
+[12:42:32] <zetok> hello Saaaam :)
+[12:42:47] <Saaaam> zetok: o/
+[12:44:39] <Saaaam> When you'll have some free time, could you tell me what should I do to help you implement the functionnality with the languages menu on top for the website? ^^
+[12:50:44] <zetok> um
+[12:51:18] <zetok> in a moment
+[12:57:00] <zetok> Saaaam: I wonder if it should be integrated
+[12:58:53] <zetok> Saaaam: i.e. it has to work
+[12:59:58] <Saaaam> You're totally right
+[13:00:20] <zetok> the stuff you did with CSS is really awesome
+[13:00:39] <Saaaam> But if I can do anything more to make it work, I'll try to do it
+[13:00:57] <zetok> basically the language columns
+[13:01:51] <zetok> i.e. is it possible to dynamically allocate them in CSS?
+[13:02:03] <zetok> otherwise it is going to cause problems
+[13:02:15] <Saaaam> I can increase the height of the columns if not all the languages are displayed
+[13:02:22] <zetok> I see
+[13:02:30] <zetok> I have an idea, but it won't use CSS
+[13:03:32] <zetok> i.e. to use lang icon on top to link to the bottom language section
+[13:04:00] <Saaaam> Right
+[13:04:18] <Saaaam> That should do the trick
+[13:05:08] <zetok> ok
+[13:06:41] <Saaaam> You want to make it as a link for all the screens, or only for small screens?
+[13:06:54] <zetok> um?
+[13:07:47] <zetok> is there a reason to not do that?
+[13:08:14] <zetok> oh
+[13:08:31] <zetok> it's not about screen size, since the issue is reproducible regardless of that
+[13:09:09] <zetok> i.e. it depends on zoom in browser, which can have different values
+[13:09:17] <zetok> regardless of screen size
+[13:09:27] <Saaaam> There's no reason indeed ;)  But as with CSS, you can display things in different ways according to the different kind of screen sizes (using media-queries), it is also a possible solution
+[13:10:13] <zetok> I like what works
+[13:10:19] <Saaaam> Hum... no, nevermind, it's more complicated than your solution: a simple link, and it works for everyone
+[13:10:23] <zetok> if it will work, why not
+[13:10:29] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[13:13:28] <Saaaam> Let's make it a simple link?
+[13:13:55] <zetok> flag + link
+[13:14:07] <zetok> :)
+[13:14:15] <zetok> perhaps in reverse order
+[13:15:01] <Saaaam> To be clear, I was thinking to make the whole "flag + EN" as a link, is it your idea too?
+[13:15:55] <zetok> yep :)
+[13:16:14] <zetok> btw, could you rename flags to the lang codes?
+[13:16:34] *** Joins: Chiitoo (~Chiitoo@ )
+[13:16:48] <Saaaam> like "en.png", "it.png", etc. ?
+[13:16:50] <zetok> Zend locale name, that is
+[13:17:00] <Saaaam> okay, I can do that ;)
+[13:17:19] <zetok> thanks
+[13:17:51] <zetok> hmm
+[13:18:04] <zetok> also
+[13:18:07] <Saaaam> Yup?
+[13:18:42] <zetok> Saaaam: rather than using "EN", use "[[[Language]]]"
+[13:18:56] <Saaaam> Okay, good idea
+[13:19:06] <zetok> hum
+[13:20:26] * zetok wonders if `{{{lang_shortcode}}}` would work
+[13:20:54] <Saaaam> But how to change the flag according to the selected language? I mean, okay, the flag will be named "it.png" for example for Italy. But now the aim is to display the good flag according to the selected language. Does a "[[[Language]]].png" in the code could do the trick?
+[13:21:08] <zetok> i.e. `assets/imgs/flags/{{{lang_shortcode}}}.png`
+[13:21:12] <Saaaam> oh
+[13:21:21] <Saaaam> Yeah, that's what I meant
+[13:21:25] <Saaaam> We can try
+[13:21:34] <zetok> Saaaam: no, it would get replaced with value from .json, e.g. https://github.com/Saaaam/qtox_website_test/blob/top-langs/index.hu.json#L3
+[13:22:19] <Saaaam> I see what you mean, let's try with lang_shortcode 
+[13:22:37] <zetok> probably won't get replaced
+[13:23:02] <zetok> or maybe it will
+[13:23:04] <zetok> dunno :s
+[13:23:05] <Saaaam> (I have something quick to do away from the computer, be right back in few minuts)
+[13:23:11] <zetok> np :)
+[13:23:21] <Saaaam> If we'll never try, we'll never know ;)
+[13:26:30] <zetok> yeah :)
+[13:26:48] <zetok> if it won't work, then it'll just mean that "lang_shortcode" will need to be added to json files
+[13:27:09] * zetok wonders whether writing a script that would add it to json would be faster than adding it manually
+[13:54:12] <Saaaam> I have to help someone for few hours. I'll keep working on it just after
+[14:03:14] <koshii> zetok: linuxmodder: Debian 8 Jessie, i386
+[14:03:30] <zetok> koshii: repo?
+[14:03:49] <zetok> or rather, how have you installed qTox?
+[14:05:14] <koshii> deb https://pkg.tox.chat/debian nightly jessie
+[14:05:37] <zetok> use the right repo
+[14:14:46] <linuxmodder> aka debian jessie  repo 
+[14:15:03] <linuxmodder> https://pkg.tox.chat/debian/pool/jessie/ 
+[14:15:13] <linuxmodder> if you pull them manually
+[14:16:27] <zetok> …
+[14:16:31] <zetok> linuxmodder: that's the wrong repo
+[14:16:41] <a68366> this one https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[14:17:22] <linuxmodder> when did that change ?
+[14:17:25] <linuxmodder> noted 
+[14:21:10] <koshii> I also wrote the wrong one
+[14:21:15] <koshii> This is the one I have: deb http://download.opensuse.org/repositories/home:/antonbatenev:/tox/Debian_8.0/ /
+[14:21:40] <koshii> (Actually I have them both because I also like to play with toxic)
+[14:22:49] <zetok> koshii: make sure then that package is pulled from the right one
+[14:23:14] <koshii> I'm sure it is; I mean qtox isn't updated on the old pkg.tox.chat anymore right?
+[14:23:25] <zetok> dunno
+[14:23:34] <zetok> apt-cache show qtox
+[14:24:20] <koshii>  apt-cache show qtox                                                                                                                                                                                                        ~
+[14:24:24] <koshii> Package: qtox
+[14:24:27] <koshii> Version: 201607081406~1bd86f7
+[14:24:29] <koshii> Architecture: i386
+[14:24:32] <koshii> Maintainer: Anton Batenev <antonbatenev@yandex.ru>
+[14:24:37] <koshii> ...
+[14:24:43] <koshii> Package: qtox
+[14:24:43] <koshii> Version: 1.4.0-262-g464daeb-1
+[14:24:43] <koshii> Architecture: i386
+[14:24:43] <koshii> Maintainer: tux3 <barrdetwix@gmail.com>
+[14:24:43] <koshii> Installed-Size: 6296
+[14:25:44] <koshii> Can I banish qtoxes from certain repos somehow?
+[14:26:09] <zetok> you can set priority, IIRC also on per-package basis
+[14:27:13] * zetok mumbles something about debian people not even knowing how to use their distro
+[14:29:17] <zetok> koshii: https://askubuntu.com/questions/135339/assign-highest-priority-to-my-local-repository
+[14:45:53] <koshii> I mean I have the right version installed
+[14:46:04] <koshii> The latest version. Assuming 201607081406 is the one you would recommend
+[14:46:11] <koshii> So getting back to the main point... :)
+[14:46:20] <koshii> But thanks for the link on that
+[14:48:09] <zetok> ok
+[14:48:24] <zetok> koshii: do you have encrypted history?
+[14:59:35] *** Joins: LittleVulpix|Gho (~Miranda@ )
+[15:00:33] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 240 seconds)
+[15:05:38] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[15:16:03] *** Joins: onyx (~onyx@ )
+[15:16:26] *** onyx is now known as Guest70820
+[15:17:32] *** Guest70820 is now known as onyxrisc
+[15:41:43] *** Quits: onyxrisc (~onyx@ ) (Ping timeout: 250 seconds)
+[15:54:25] *** Joins: onyxrisc (~RiscOS@ )
+[15:58:33] *** Joins: Emcy_ (~MC@ )
+[15:59:42] *** Parts: Emcy_ (~MC@ ) ("Leaving")
+[16:20:48] *** Joins: sk0r (~skor@ )
+[16:22:56] *** Quits: sk0r (~skor@ ) (Quit: Leaving)
+[16:30:28] *** Joins: Diadlo (~Diadlo@ )
+[16:43:58] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[16:44:31] *** Joins: Diadlo (~Diadlo@ )
+[17:14:15] <Diadlo> If you are don't mind, lets discuss about #3457 :)
+[17:15:29] <ovalseven8> Diadlo, Hi
+[17:15:41] <Diadlo> hi)
+[17:15:51] <ovalseven8> What do you want to discuss exactly?
+[17:16:03] <Diadlo> > What about move Light icon and Show system tray icon to UI?
+[17:16:26] <ovalseven8> Mh, personally I would keep it in General
+[17:16:56] <Diadlo> Ok
+[17:20:11] <Diadlo> Ok. What about split General on few blocks? (I don't know what)
+[17:20:36] <Diadlo> Maybe somebody have an idea?
+[17:23:16] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:46:42] <zetok> >What about split General on few blocks?
+[17:46:45] <zetok> doesn't sound bad
+[18:01:22] <zetok> Diadlo: what about removing blocks in General, and adding `–––––––––––` between "groups" ?
+[18:01:45] <zetok> thing is, settings already have too many "window inside a window" things
+[18:02:28] *** Joins: dardevelin (~dardeveli@ )
+[18:07:28] <zetok> Diadlo: https://a.uguu.se/uqjqnIxsRRNw.png ← that green-ish part should be removed
+[18:09:11] <Diadlo> I don't like '----'
+[18:10:38] <Diadlo> Absolutely
+[18:13:39] <Diadlo> I try to remove 'green-ish' part
+[18:15:17] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[18:17:06] *** Joins: Diadlo (~Diadlo@ )
+[18:24:15] *** Joins: Diadl0 (~Diadlo@ )
+[18:25:59] *** Quits: Diadlo (~Diadlo@ ) (Ping timeout: 246 seconds)
+[18:27:08] <Diadl0> I think, that all tab should has same style
+[18:28:23] <Diadl0> It means, that shouldn't be tab with few groupbox ans tab without groupnox at all
+[18:28:46] <Diadl0> Instead groupbox we can use '-------'
+[18:28:55] <zetok> yeah
+[18:29:29] <Diadl0> Bus it's ... ugly (imho)
+[18:30:31] *** Joins: BiTOk (~BiTOk@ )
+[18:30:34] <zetok> a bit
+[18:31:32] <Diadl0> But if we will use '-----' we avoid of 'window in window'
+[18:32:08] <zetok> what about adding some vertical space above & below `––––` ?
+[18:32:32] <Diadl0> I can try it
+[18:33:08] <Diadl0> Maybe repaint it light-gray color
+[18:33:17] *** Joins: abbat (~Anton@ )
+[18:42:11] <ovalseven8> Why does the "green-ish" part look ugly?
+[18:43:43] *** Joins: Saaam_ (4ed146f1@ )
+[18:47:56] *** Quits: Saaam_ (4ed146f1@ ) (Ping timeout: 250 seconds)
+[18:48:39] <Diadl0> I am not about green-ish part. I am about horizontal line
+[18:57:24] <ovalseven8> Horizontal lines look ugly, no?
+[18:58:55] <Diadl0> Yes)
+[19:06:18] *** Quits: BiTOk (~BiTOk@ ) (Quit: KVIrc 4.3.2 Aria http://www.kvirc.net/)
+[19:19:40] <ovalseven8> Mh, I thought tux3 will have more time during the summer. There're so many important bugs to fix with priority "Very high" or "high" 
+[19:23:51] <koshii> zetok: No encrypted history AFAIK
+[19:24:02] <zetok> hmm
+[19:32:06] <a68366> koshii: run qtox from terminal. Are there any errors/warnings?
+[19:33:32] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 246 seconds)
+[19:35:56] *** Joins: Chiitoo (~Chiitoo@ )
+[20:01:05] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 244 seconds)
+[20:06:47] *** Joins: Diadlo (~Diadlo@ )
+[20:08:09] *** Quits: Diadlo (~Diadlo@ ) (Client Quit)
+[20:08:43] *** Joins: Diadlo (~Diadlo@ )
+[20:12:55] *** Quits: Diadlo (~Diadlo@ ) (Ping timeout: 252 seconds)
+[20:17:18] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
+[20:17:52] *** Joins: SkyzohKey (~skyzohkey@ )
+[20:24:44] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:25:59] <zetok> koshii: do you have to type a password?
+[20:39:44] *** Joins: sudden6 (~anonymous@ )
+[20:40:47] *** Joins: sudd3n6 (~anonymous@ )
+[21:00:51] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[21:01:26] *** Joins: in1t3r (~LordShiva@ )
+[21:13:36] *** Quits: CryptoSiD (SiD@ ) (Quit: .)
+[21:22:35] *** Joins: CryptoSiD (~SiD@ )
+[21:43:14] *** Joins: user69 (~user69@ )
+[21:43:38] *** Joins: ovalseven8 (~ovalseven@ )
+[21:45:21] <koshii> zetok: Yes I do have to type one
+[21:45:27] <koshii> zetok: It doesn't seem to remember my pw
+[21:51:18] <koshii> a68366: a few interesting lines from the terminal follow...
+[21:51:19] <koshii> [03:50:35.559] src/persistence/db/rawdatabase.cpp:374 : Warning: Failed to prepare statement "SELECT count(*) FROM sqlite_master" with error 26
+[21:51:22] <koshii> [03:50:35.559] src/persistence/db/rawdatabase.cpp:70 : Warning: Database is unusable, check that the password is correct
+[21:51:39] <koshii> [03:50:35.560] src/persistence/history.cpp:191 : Warning: Database not open, init failed
+[21:51:47] <koshii> [03:50:35.560] src/persistence/profile.cpp:56 : Warning: Failed to open history for profile "w"
+[21:52:03] <linuxmodder> koshii,  this is on debian yes?
+[21:52:10] <koshii> linuxmodder: Yes, Debian Jessie
+[21:52:13] <koshii> i386 (32 bit)
+[21:53:00] <zetok> koshii: then your history is encrypted
+[21:53:05] <koshii> I don't know if it is relevant, but I had used toxic a bit before installing qtox
+[21:53:12] <zetok> koshii: and it probably got corrupted
+[21:53:20] <koshii> zetok: OK, how to "reset" that?
+[21:53:34] <zetok> :|
+[21:53:37] <a68366> close qTox, move ~/.config/tox/PROFILENAME.db somewhere, start qTox
+[21:53:56] <zetok> koshii: you could restore from backup working version
+[21:54:45] <koshii> OK that worked]
+[21:54:46] <zetok> koshii: also, you would want to open an issue about that, since corrupted history was supposed to not be a problem ever again™, or so tux3 said
+[21:54:56] <zetok> "worked"
+[21:54:57] <koshii> zetok: Sure, let me get into all of that.
+[21:55:02] <zetok> now you don't have history :(
+[21:55:16] <koshii> zetok: Does automatic login not work also?
+[21:55:23] <zetok> why would it work?
+[21:55:31] <zetok> and how would it work when your profile is encrypted?
+[21:55:46] <koshii> Because the UI seems to indicate that it is possible :)
+[21:55:50] <zetok> nopoe
+[21:55:59] <zetok> ok
+[21:56:01] <koshii> Probably want to make that more clear then, not just grey out the checkbox :)
+[21:56:05] <zetok> which part of the UI suggests that?
+[21:56:06] <a68366> ofly for non-encrypted profiles
+[21:56:21] <zetok> koshii: mind opening an issue about it too?
+[21:56:38] <koshii> zetok: Sure. GitHub is what you guys use for issues right?
+[21:56:42] <zetok> yep
+[21:57:32] <koshii> Believe it or not I don't have a GitHub account, will set one up and get on it
+[21:58:33] <koshii> Thank you all for being so responsive by the way
+[21:58:37] <koshii> Most impressive for such a small group
+[21:58:51] <koshii> I feel some confidence that you really want to make qtox great
+[22:26:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[22:30:28] <linuxmodder> zetok,  on encrypted profiles  auto login has  not worked for  months
+[22:30:29] *** Joins: f10 (~flo@ )
+[22:30:45] <linuxmodder> dare I say since  around turkey day (us) 2015
+[22:30:55] <zetok> it never worked on encrypted profiles
+[22:31:36] <linuxmodder> then why did we not  ever  remove it from the ui for encrypted profiles -- I seem to remember a commit or  PR to do so
+[22:32:15] *** Quits: linxon (~lin@ ) (Ping timeout: 264 seconds)
+[22:33:01] *** Quits: f10 (~flo@ ) (Excess Flood)
+[22:33:03] *** Quits: LittleVulpix|Gho (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:33:22] *** Joins: LittleVulpix (~Miranda@ )
+[22:34:15] *** Joins: f10 (~flo@ )
+[22:38:19] *** Joins: linxon (~lin@ )
+[22:43:23] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[22:48:29] <koshii> Moreover, it's not clear when my profile is an "encrypted" one and when it isn't :)
+[22:50:06] <koshii> (Or what that even means, in practical terms)
+[22:53:13] <linuxmodder> koshii,  in layman terms if you have a password it is used to salt the foo.tox  file (your profile)  so even access to the location its stored without the password is non trivial to read
+[22:53:39] <linuxmodder> it encrypts the profile and files at rest 
+[23:04:24] <zetok> >then why did we not  ever  remove it from the ui for encrypted profiles -- I seem to remember a commit or  PR to do s
+[23:05:02] <zetok> https://github.com/tux3/qTox/pull/2818
+[23:08:19] *** Quits: onyxrisc (~RiscOS@ ) (Quit: Leaving)
+[23:14:40] <linuxmodder> well it still shows on fedora and rpm distros 
+[23:28:47] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[23:29:08] <zetok> eh
+[23:30:25] *** Joins: cisc (~cisc@ )
+[23:30:30] <zetok> you might want to actually read, rather than "reading" by looking at images
+[23:59:31] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
