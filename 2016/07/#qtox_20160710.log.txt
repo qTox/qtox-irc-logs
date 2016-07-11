@@ -1,0 +1,323 @@
+[00:29:57] *** Joins: f10 (~flo@ )
+[00:31:30] <koshii> Why the passive aggression? :-)
+[00:32:01] <koshii> I'm really blown away by the potential of qtox. You guys have a really good thing here, I hope you realize it. This needs a lot of love but it can really be something tremendously beneficial.
+[00:34:21] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[00:35:11] <zetok> right
+[00:35:42] <koshii> Has there been *any* external funding up to this point?
+[00:35:47] <zetok> koshii: what's your suggestion to pointing out to someone that they didn't manage to actually read stuff?
+[00:35:48] <koshii> Any grants, donations, etc
+[00:35:55] <zetok> not to the qTox
+[00:36:21] <koshii> zetok: Haha, I don't know, but I always like to punctuate things with good humor. :)
+[00:36:24] <zetok> there were a few donations with a few bucks to some people
+[00:36:33] <koshii> Even if people are frustrating sometimes. The tables often turn.
+[00:36:37] <koshii> That's it?
+[00:36:45] <koshii> Gosh, there really should be an organized campaign.
+[00:36:50] <zetok> um
+[00:37:02] <zetok> the problem is that no one has the time to work for money
+[00:37:06] <zetok> :|
+[00:37:16] <koshii> I'm sure there are a lot of talented devs who would love to work on this full time, who could be hired as full-time tox devs
+[00:37:24] <koshii> Oh I see
+[00:37:26] <zetok> I've asked tux3, and he said that he wouldn't be able to find more time for qTox even if he was to be paid for work
+[00:37:36] <koshii> Well then, job boards? :)
+[00:37:45] <koshii> Like I said, I'm totally sure there's folks out there who would be into it.
+[00:37:53] <zetok> possibly
+[00:38:10] <koshii> I know some guys in Poland who could probably help with some things. I am thinking particularly with stuff like noise cancellation
+[00:38:25] <zetok> hmm
+[00:38:35] <koshii> Stuff that makes it more out-of-the-box usable 
+[00:38:43] *** Joins: f10 (~flo@ )
+[00:38:55] <koshii> Damn it's almost like qtox is "80%" ready to be thrown in front of non-technical users
+[00:38:58] <koshii> Just a bit more push and it could be there.
+[00:39:06] <zetok> thing is, for that kind of stuff person would need to have write access to the repo
+[00:39:25] <koshii> I think they could do it independently and send a pull request
+[00:39:27] <koshii> Why not?
+[00:39:42] <zetok> dunno about tux3, but with my paranoia I wouldn't really want someone out of blue be given write access to qTox just so that they could cash out
+[00:39:55] <zetok> well, their PRs would need to be merged
+[00:40:05] <koshii> And reviewed :)
+[00:40:09] <koshii> But isn't that what you guys want?
+[00:40:14] <zetok> and out of 3 active maintainers who can review, they don't have much time
+[00:40:15] <koshii> An active developer community
+[00:40:26] <zetok> yeah
+[00:40:33] <koshii> Well that's pretty unfortunate then, I must say.
+[00:40:50] <zetok> mm
+[00:41:00] <koshii> I don't know if it can get past that 80% easily without super engaged community participation
+[00:41:33] <koshii> I guess a fork could be maintained, but that seems like working at cross-purposes
+[00:41:45] <zetok> from what I see Diadlo has been rather active lately, so I guess they might want to become a maintainer
+[00:42:26] <zetok> hmm
+[00:42:28] <koshii> What's Diadlo? A company?
+[00:42:37] <zetok> https://github.com/Diadlo
+[00:42:53] <zetok> qTox contributor
+[00:42:58] <koshii> Ah
+[00:43:35] <koshii> So -- assuming the pull request/review process is figured out and time is found for that -- I think there could be a lot of benefit in also getting this into the official debian repo
+[00:43:40] <koshii> The project will be seen by a lot more people there
+[00:43:52] <zetok> >I think there could be a lot of benefit in also getting this into the official debian repo
+[00:43:53] <koshii> Since that will also spill out into all the nice Debian-based distros 
+[00:43:53] <zetok> no
+[00:44:13] <koshii> Yeah I couldn't remember if it was you or not who was opposed to this the last time I brought it up
+[00:44:25] <zetok> I mean, anyone is free to package, but that won't be supported. Period.
+[00:44:33] <koshii> Just because of time?
+[00:45:07] <zetok> no, it won't be supported since there's 0 reasons to support broken versions that debian desperately clings to
+[00:45:26] <koshii> Yes, I guess it was you :)
+[00:46:09] <zetok> if you want to look at something that is supported and "packaged" for distro, look at Gentoo
+[00:46:14] <koshii> Well I'm sure there's a way around this, either through active backports or whatever.
+[00:46:32] <koshii> Yes but the problem is that Gentoo isn't the basis of 95% of the most popular distros :)
+[00:46:41] <koshii> As a vehicle for increasing the network effect, it is marginally helpful only.
+[00:46:44] <zetok> that's problem of those distros
+[00:47:40] <zetok> effectively, they aren't able to provide what their users desire, just because they haven't figured out that they can use Gentoo as a base
+[00:48:09] <koshii> Well we can't solve every problem :)
+[00:48:09] <zetok> check, even clinging to broken versions that debian needs can be done via Gentoo
+[00:48:32] <zetok> mm
+[00:48:37] <koshii> I'm just saying, what I want to see is an increase in tox's network of users
+[00:48:55] <koshii> That seems like a way to do it, albeit perhaps it would be a massive pain in the arse.
+[00:49:01] <zetok> question: how happy would users be getting from distro qTox version that won't work?
+[00:49:10] <koshii> Yes, you're right.
+[00:50:27] <koshii> But there *could* be a message in the app like: "qTox is an actively developed, ever-changing project. If this install does not work for you, please add the backports sources list to your reporitory [or the official one for qtox nightly]."
+[00:50:37] <koshii> There may be changes, bla bla bla
+[00:50:53] <zetok> that would be working around broken distro packaging
+[00:51:00] <koshii> And of course even better would be to have an API/network support plan that corresponds to some of these more important releases, but I perhaps digress...
+[00:51:09] <koshii> qTox "LTS", if you will :)
+[00:51:31] <koshii> I know, I know... Time, where will it be found.
+[00:51:50] <zetok> thing is, there are no resources to support that kind of thing
+[00:52:11] <zetok> thus, there will be breakages, since that's the path of least amount of effort that brings most benefits
+[00:52:45] <zetok> and again, even with "LTS" there will be broken distro packages
+[00:53:17] <zetok> unless debian could make an exception, like they already do for ff
+[00:53:35] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:55:21] <koshii> Well, has anyone asked? :-)
+[00:56:38] <zetok> last time I've looked, they were hard bent on "not happening, ever, no exceptions!" in case of xscreensaver
+[00:57:00] <koshii> Doesn't mean it can't happen :)
+[00:57:07] <zetok> koshii: mind asking debian people?
+[00:58:19] <koshii> zetok: I'll look into it. In fact we have a similar issue on the Ethereum side.
+[00:58:34] <zetok> thanks
+[00:58:36] <koshii> So I can kill two birds with one stone here perhaps
+[00:58:44] <zetok> :3
+[01:01:21] <koshii> BTW Gentoo is looking pretty nice lately
+[01:01:31] <koshii> Understand they use btrfs as default, and this new KDE stuff is sharp
+[01:03:08] <zetok> um
+[01:04:14] <koshii> Haha, am I thinking of another distro? :)
+[01:05:06] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[01:05:23] <zetok> opensuse
+[01:05:53] <koshii> Oh yes, right
+[01:08:14] <cisc> but the best distro of all: http://hannahmontana.sourceforge.net/
+[01:08:42] <zetok> >.<
+[01:10:08] <zetok> http://biebian.sourceforge.net/ ← b-but what about this one?
+[01:11:05] <cisc> that looks better than Ubuntu actually
+[01:23:20] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[01:24:21] *** Joins: Chiitoo (~Chiitoo@ )
+[01:50:15] <koshii> LOL @ HML
+[01:52:25] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[02:15:52] *** Joins: f10 (~flo@ )
+[02:16:37] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[02:19:26] *** Joins: SkyzohKey (~skyzohkey@ )
+[02:35:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 264 seconds)
+[02:40:57] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[02:41:30] *** Joins: f10 (~flo@ )
+[02:47:52] *** Joins: f10__ (~flo@ )
+[02:47:56] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[02:54:18] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[02:55:23] *** Joins: in1t3r (~LordShiva@ )
+[04:51:11] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[04:54:13] *** Joins: in1t3r (~LordShiva@ )
+[05:19:05] *** Quits: linxon (~lin@ ) (Changing host)
+[05:19:05] *** Joins: linxon (~lin@ )
+[05:59:52] *** Quits: cisc (~cisc@ ) (*.net *.split)
+[05:59:53] *** Quits: isAAAc (~isAAAc@ ) (*.net *.split)
+[05:59:53] *** Quits: koshii (~w@ ) (*.net *.split)
+[05:59:54] *** Quits: hpanago (uid15586@ ) (*.net *.split)
+[05:59:57] *** Quits: e0f (~e0f@ ) (*.net *.split)
+[06:00:49] *** Joins: cisc (~cisc@ )
+[07:17:29] *** Joins: sudden6 (~anonymous@ )
+[07:26:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[08:57:04] *** Joins: ovalseven8 (~ovalseven@ )
+[09:23:19] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[09:30:17] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[09:42:25] *** Joins: cisc (~cisc@ )
+[09:54:04] *** Joins: isAAAc (~isAAAc@ )
+[09:54:04] *** Joins: koshii (~w@ )
+[09:54:15] *** Joins: hpanago (uid15586@ )
+[09:54:15] *** Joins: e0f (~e0f@ )
+[10:31:35] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:32:59] *** Joins: LittleVulpix (~Miranda@ )
+[11:40:27] *** Joins: f10__ (~flo@ )
+[11:46:37] *** Joins: sudd3n6 (~anonymous@ )
+[11:47:02] *** Joins: sudden6 (~anonymous@ )
+[11:52:19] *** Joins: abbat (~Anton@ )
+[11:56:18] -qtox-git-spam- [qTox] Proton-Byte opened pull request #3499: Update callButton.css (master...patch-1) https://git.io/vKGB8
+[12:01:03] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[12:07:31] *** Joins: sudd3n6 (~anonymous@ )
+[12:24:28] *** Quits: sudd3n6 (~anonymous@ ) (Quit: Konversation terminated!)
+[12:24:40] *** Joins: sudd3n6 (~anonymous@ )
+[12:55:23] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[12:55:31] *** Joins: f10__ (~flo@ )
+[13:11:19] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[13:30:31] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[13:49:48] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[14:25:12] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[14:40:14] *** Joins: abbat (~Anton@ )
+[14:58:06] <ovalseven8> abbat: Ping
+[14:59:18] <abbat> ovalseven8, here
+[14:59:39] <ovalseven8> abbat: Did you link Qt for 16.04 dynamically or statically?
+[15:00:04] <abbat> For 16.04 I use system Qt and dynamic linking
+[15:00:21] <ovalseven8> ok, I will test later
+[15:11:19] *** Joins: Bill_MI (~Bill@ )
+[15:13:39] *** Quits: linxon (~lin@ ) (Ping timeout: 264 seconds)
+[15:43:16] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[15:52:32] <zetok> :|
+[16:29:01] *** Joins: ovalseven8_ (~ovalseven@ )
+[16:31:26] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 246 seconds)
+[16:42:09] *** Joins: linxon (~lin@ )
+[16:42:09] *** Quits: linxon (~lin@ ) (Changing host)
+[16:42:09] *** Joins: linxon (~lin@ )
+[16:42:12] *** Quits: linxon (~lin@ ) (Client Quit)
+[16:52:56] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[17:53:16] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:03:37] *** Joins: cisc (~cisc@ )
+[18:14:11] *** Joins: C0rn3j (5ab2bf9d@ )
+[18:24:12] <C0rn3j> Is it normal to have CPU usage @ 150% when videocalling? (Linux)
+[18:24:34] <C0rn3j> qTox seems to use more bandwith and CPU  than Hangouts
+[18:27:15] <zetok> "normal"
+[18:27:34] <zetok> currently that's expected
+[18:27:46] <zetok> but code needs to be fixed/optimized
+[18:28:09] <zetok> after fixing/optimizing, that number should go down significantly
+[18:34:43] <linuxmodder> not that bloody high tho 
+[18:34:50] <linuxmodder> C0rn3j,  what OS 
+[18:35:06] <linuxmodder> System:    Host f24.linux01.ameridea.net Kernel 4.7.0-0.rc6.git2.2.fc25.x86_64 x86_64 (64 bit gcc 6.1.1)
+[18:35:06] <linuxmodder>            Desktop i3 4.12 Distro Fedora release 24 (Twenty Four)
+[18:35:20] <linuxmodder> vidcalls got to around 75-80% for me
+[19:31:43] *** Joins: f10__ (~flo@ )
+[19:43:11] *** Joins: vindelschtuffen (~vindelsch@ )
+[19:55:14] *** Joins: sudden6 (~anonymous@ )
+[20:20:31] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[20:22:22] <C0rn3j> linuxmodder: Arch Linux
+[20:22:42] <C0rn3j> i7-4790k...
+[20:31:42] <linuxmodder> C0rn3j, christ  I only run 80% on:
+[20:31:50] <linuxmodder> Machine:   System Dell (portable) product Inspiron 3135
+[20:31:50] <linuxmodder>            Mobo Dell model 001GW6 v A00 Bios Dell v A02 date 01/03/2014
+[20:31:51] <linuxmodder> Battery    BAT0 charge 0.0 Wh 0.0% condition 65.5/0.3 Wh (25500%)
+[20:32:01] <linuxmodder> with a 3 year old amd a6-1457 
+[20:33:40] <zetok> C0rn3j: https://github.com/tux3/qTox/issues/3343
+[20:56:23] *** Quits: ovalseven8_ (~ovalseven@ ) (Ping timeout: 272 seconds)
+[21:05:02] <linuxmodder> zetok,  3343 is windows NOT Linux 
+[21:05:06] <linuxmodder> C0rn3j,  is on linu
+[21:05:17] <zetok> pls linuxmodder
+[21:05:45] <linuxmodder> even the comments shwo windows NOT linux 
+[21:05:57] <zetok> so?
+[21:07:38] <linuxmodder> windows does NOT handle cpu usage in any way near the same as  ANY linux  much less Arch
+[21:08:00] <zetok> so?
+[21:08:19] <linuxmodder> C0rn3j,  is on LINUX dude
+[21:08:24] <zetok> how's that relevant to qTox video code being shit?
+[21:09:02] <linuxmodder> he was askign about  cpu usage on vidcalls not the quality of the call which I concede is overall shit
+[21:09:32] <zetok> again, that's irrelevant
+[21:09:42] <linuxmodder> nope its  VERY relevant
+[21:09:47] <zetok> since that too has nothing to do with qTox code
+[21:10:04] <linuxmodder> how does it not?
+[21:10:13] <zetok> toxcore handles that part
+[21:10:16] <linuxmodder> its the implement of  toxcore used by qtox
+[21:10:35] <zetok> right
+[21:10:36] <linuxmodder> qtox code still touches it  and handles it
+[21:10:46] *** Quits: anoa (~anoa@ ) (Quit: ZNC - http://znc.in)
+[21:10:49] <linuxmodder> so it IS relevant
+[21:11:24] <zetok> yes, but video going into state that is e.g. unrecognisable is something that toxcore responsible for
+[21:12:35] *** Joins: anoa (~anoa@ )
+[21:13:01] <linuxmodder> [Sun, 10 July ://: 17:24:15] .:C0rn3j:. Is it normal to have CPU usage @ 150% when videocalling? (Linux)
+[21:13:30] <linuxmodder> CPU USAGE is the core issue and  3343 does NOT address linux cpu usage 
+[21:13:33] <linuxmodder> is my point
+[21:13:45] <zetok> your point is invalid
+[21:14:06] <linuxmodder> how so 
+[21:14:15] <zetok> issue is about CPU usage
+[21:14:27] <linuxmodder> using that logic everything is toxcore's fault clients be damned
+[21:15:01] <linuxmodder> cpu is handled differently on windows /  mac / linux 
+[21:15:05] <linuxmodder> is the issue 
+[21:15:17] <zetok> again, irrelevant
+[21:15:29] <linuxmodder> and my point of pointing out a different  OS is not valid
+[21:15:39] <linuxmodder> no its not
+[21:15:47] <linuxmodder> you are the irrelevant one 
+[21:15:58] <linuxmodder> you seem to play off as if you know all
+[21:16:13] <linuxmodder> but before I start gettign nasty I'm going back to other shit
+[21:16:31] <zetok> sure.
+[21:17:07] <zetok> just please don't mislead people into thinking that they need to open duplicate issues just because they run into same problem on different OS
+[21:17:25] <linuxmodder> OS is valid and relevant  
+[21:17:37] <zetok> not in this case
+[21:17:46] <linuxmodder> or simply make OS tags and merely tag issues as needed
+[21:17:52] <linuxmodder> yes it is 
+[21:18:05] <zetok> oh, but there are OS tags, and issues that are OS-specific are tagged with them :)
+[21:18:21] <linuxmodder> my  heavily used linux box still runs  thousands of times lighter than a virgin win 10 install
+[21:18:34] <zetok> irrelevant
+[21:18:39] <linuxmodder> not in this case when it matters
+[21:18:51] <zetok> koshii: ↑ any suggestions on how I should handle things?
+[21:19:03] *** Quits: anoa (~anoa@ ) (Quit: ZNC - http://znc.in)
+[21:19:17] <linuxmodder> then what IS relevant  in 3343 about  vidcalls using  cpu 
+[21:19:31] <zetok> qTox using a lot of CPU for video calls
+[21:19:45] <linuxmodder> no shit and OS plays a BIG part in that 
+[21:19:54] <linuxmodder> almost as much as  toxcore 
+[21:20:28] <zetok> sure.
+[21:20:33] <linuxmodder> but on a secondary note why is toxcore still so fucked up in its handling of this then if its so well known 
+[21:20:35] <linuxmodder> ??
+[21:21:05] <zetok> no (working) ~QoS
+[21:21:14] <linuxmodder> because only  1  person can commit to it ?   cuz he is reportedly only one knowing it that well??   come on what is it
+[21:21:43] <linuxmodder> so QoS == Cpu usage thru roof how now?
+[21:22:14] <linuxmodder> last I checked load balancers were not needed to run *tox
+[21:22:40] <linuxmodder> and even if so it hardly uses enough b/w to load a cpu on connection work
+[21:22:42] <zetok> err, I thought that you have bad quality of video call in mind
+[21:23:04] <zetok> as for CPU usage, it's mainly due to VPX
+[21:23:36] <linuxmodder> even then  seems the floor for 'quality' is  like 5mb/s  U/D have you not looked at a network spped map of the world lately ?
+[21:25:06] <linuxmodder> and tbh one end having a less than optimal connection should NEVER cause that much issue with quality bi-laterally
+[21:27:55] *** Joins: anoa (~anoa@ )
+[21:36:52] *** Joins: SkyzohKey (~skyzohkey@ )
+[21:39:48] *** Quits: anoa (~anoa@ ) (Quit: ZNC - http://znc.in)
+[21:40:36] *** Joins: anoa (~anoa@ )
+[21:59:47] <koshii> zetok: Is that passive-aggression or are you serious? :)
+[22:00:03] <koshii> I don't mean to tell you your business zetok :)
+[22:00:04] <zetok> koshii: serious
+[22:00:19] <koshii> So you're referring to the process for issues?
+[22:00:20] <zetok> I always look to improve myself
+[22:00:36] <zetok> no, I'm asking how would you propose handling linuxmodder
+[22:01:51] <zetok> or, people like that generally
+[22:03:56] *** Quits: a68366 (~a68366@ ) (Ping timeout: 246 seconds)
+[22:05:07] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 260 seconds)
+[22:07:04] <koshii> I'm just waking up here, give me a bit of time to review and I'll give some thoughts if you really want me to.
+[22:10:37] <linuxmodder> so a persistant  contributor that you butt heads with is  a problem to deal with ?
+[22:10:42] <linuxmodder> that is childish
+[22:17:28] *** Joins: a68366 (~a68366@ )
+[22:32:42] *** Joins: f10 (~flo@ )
+[22:33:17] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[22:48:30] *** Quits: a68366 (~a68366@ ) (Ping timeout: 276 seconds)
+[22:50:09] *** Joins: a68366 (~a68366@ )
+[22:55:43] *** Joins: ovalseven8 (~ovalseven@ )
+[22:58:00] *** Joins: bennypr0fane_ (~ben@ )
+[22:59:48] <bennypr0fane_> hello, I'm running SolydX, a Debian Jessie based distro. apt can't seem to find the qtox package in your repo. the line in sources.list.d/tox.list looks like this: deb https://pkg.tox.chat/debian nightly solydxk
+[23:02:00] <bennypr0fane_> apt-get update outputs this: http://pastie.org/private/jw4rpx4bjlnuge6lnekbwg
+[23:03:24] <zetok> use the right repo
+[23:04:56] <bennypr0fane_> zetok, and which one is that?
+[23:06:16] <bennypr0fane_> I followed these instructions: https://tox.chat/download.html#gnulinux
+[23:07:03] <bennypr0fane_> i.e. I ran these lines, as posted there: http://pastie.org/private/t9qcqve0xq5zoqga8drx8a
+[23:13:46] <zetok> bennypr0fane_: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[23:15:36] <bennypr0fane_> zetok, aahh, always nice when official documentation is wrong. thanks for the help.
+[23:16:03] <zetok> nope
+[23:16:15] <zetok> bennypr0fane_: *official* documentation is correct
+[23:16:55] <bennypr0fane_> well, the one from qtox is, the one from Tox isn't
+[23:17:51] <zetok> dunno, perhaps tox.chat people are keeping like that deliberately
+[23:24:15] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[23:24:48] <bennypr0fane_> zetok, why would they?
+[23:25:21] <zetok> from what I've been told, they're acting rather hostile
+[23:26:11] <zetok> so while before I wouldn't think that they might be not updating info deliberately, now I'm not so sure
+[23:26:17] <bennypr0fane_> oh my
+[23:26:20] <zetok> i.e. it has been this way for quite a long time
+[23:26:56] <zetok> and I think that possibility that they don't have anyone working on the website can be excluded, since it got a nice new page lately
+[23:26:58] <bennypr0fane_> hostile to people who implement their protocol in cross-platofrm software? yeah, that makes sense... :-P
+[23:27:07] <zetok> yeah.
+[23:28:38] <zetok> you're new to tox ecosystem, aren't you ;D
+[23:28:43] <bennypr0fane_> yup
+[23:29:07] <bennypr0fane_> i.e. I've tried to try it before, but couldn't get anyone to try it with me
+[23:29:22] <bennypr0fane_> hung up on multi-device problem for now, it seems?
+[23:30:16] <zetok> a year
+[23:30:37] <bennypr0fane_> a year what?
+[23:30:39] <zetok> that might be a probable amount of time after which there'll be working multidevice
+[23:30:52] <bennypr0fane_> I see
+[23:31:21] <zetok> assuming the current tempo
+[23:31:24] <bennypr0fane_> what's your estimate based on? do you have any knowledge of the development going on?
+[23:32:03] <zetok> https://github.com/tux3/qTox/pull/3353 :P
+[23:32:48] <zetok> let's say that I might have a bit of insight.
+[23:34:10] <nurupo> is tux3 busy?
+[23:34:29] <nurupo> haven't seen him this weekend
+[23:34:54] <zetok> probably
+[23:39:09] <bennypr0fane_> thanks
+[23:39:15] *** Quits: bennypr0fane_ (~ben@ ) (Quit: Leaving)
