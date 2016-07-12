@@ -1,0 +1,141 @@
+[00:00:33] *** Quits: a68366 (~a68366@ ) (Ping timeout: 240 seconds)
+[00:01:46] *** Joins: a68366 (~a68366@ )
+[00:58:27] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[01:55:39] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[01:56:24] *** Joins: f10 (~flo@ )
+[02:05:49] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 258 seconds)
+[02:07:02] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[02:07:29] *** Joins: f10__ (~flo@ )
+[02:11:29] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[02:35:20] *** Joins: smaragdus (~omoo@ )
+[02:41:55] *** Joins: cisc (~cisc@ )
+[03:40:11] *** Joins: sockspls (~sockspls@ )
+[04:06:10] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[04:11:15] *** Joins: ovalseven8_ (~ovalseven@ )
+[04:14:57] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 260 seconds)
+[04:29:13] <C0rn3j> zetok: Is this your campaing or? https://www.indiegogo.com/projects/toxcore-multi-device--2/x/11641627#/ 
+[04:42:03] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[05:11:14] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[05:14:07] *** Joins: SkyzohKey (~skyzohkey@ )
+[05:30:21] *** Joins: smaragdus (~omoo@ )
+[06:24:08] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[07:53:04] *** Joins: reBrain (~reBrain@ )
+[07:54:58] *** Quits: reBrain (~reBrain@ ) (Client Quit)
+[07:56:07] *** Joins: vindelschtuffen (~vindelsch@ )
+[08:05:31] *** Joins: reBrain (~reBrain@ )
+[08:05:31] *** Parts: reBrain (~reBrain@ ) ()
+[08:15:32] *** Joins: abbat (~Anton@ )
+[08:34:12] *** Joins: Saaaam (4ed146f1@ )
+[08:34:18] <Saaaam> Hello everyone ^^
+[08:59:37] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:05:52] *** Joins: f10 (~flo@ )
+[09:09:08] -qtox-git-spam- [qTox] antis81 pushed 1 new commit to master: https://git.io/vKZCk
+[09:09:08] -qtox-git-spam- qTox/master 989b15e Nils Fenner: fix(chat): cleanup chat css base style...
+[09:12:26] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[09:14:15] *** Joins: cisc (~cisc@ )
+[09:24:50] <Saaaam> zetok: languages link on top for the website : https://github.com/Saaaam/qtox_website_test  (top langs branch)
+[09:53:16] *** Joins: abbat (~abbat@ )
+[10:04:05] <zetok> Saaaam: it look like most of flags were removed?
+[10:04:44] *** Joins: depate (~depate@ )
+[10:10:39] <zetok> also, shouldn't the second `{{{lang_shortcode}}}` be `[[[Language]]]` ?
+[10:23:42] <Saaaam> zetok: indeed, the removed flags were the ones unused yet. I plan to add the other current unused flags as soon as they will be renamed properly.
+[10:23:48] <Saaaam> I'm doing the change
+[10:25:38] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vKZ0c
+[10:25:38] -qtox-git-spam- qTox/master ef5c094 Zetok Zalbavar: Merge pull request #3498...
+[10:29:49] <zetok> LittleVulpix: ping?
+[10:30:02] <zetok> LittleVulpix: you might want to join #toktok
+[10:37:03] <Saaaam> zetok: change done ;)
+[10:45:34] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[10:51:19] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:51:51] *** Joins: LittleVulpix (~Miranda@ )
+[10:55:34] *** ovalseven8_ is now known as ovalseven8
+[11:37:22] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[11:43:41] *** Quits: depate (~depate@ ) (Ping timeout: 250 seconds)
+[11:55:09] *** Joins: Saaaam (4ed146f1@ )
+[11:56:23] *** Quits: abbat (~abbat@ ) (Read error: Connection reset by peer)
+[11:56:24] *** Joins: abbat_ (~abbat@ )
+[11:57:09] <in1t3r> yo
+[11:59:53] <Saaaam> plait
+[12:45:36] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[13:31:11] *** Joins: reBrain (~reBrain@ )
+[13:32:41] *** Quits: reBrain (~reBrain@ ) (Client Quit)
+[13:40:51] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 272 seconds)
+[13:54:58] *** Joins: vindelschtuffen (~vindelsch@ )
+[14:02:51] *** Quits: abbat_ (~abbat@ ) (Ping timeout: 264 seconds)
+[14:05:10] *** Joins: abbat_ (~abbat@ )
+[14:19:31] *** Joins: f10 (~flo@ )
+[14:22:12] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 260 seconds)
+[14:23:53] *** Joins: vindelschtuffen (~vindelsch@ )
+[14:34:47] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 246 seconds)
+[14:40:00] *** Joins: dardevelin (~dardeveli@ )
+[14:47:37] *** Joins: in1t3r (~LordShiva@ )
+[14:58:35] *** Quits: abbat_ (~abbat@ ) (Read error: Connection timed out)
+[14:59:22] *** Joins: abbat_ (~abbat@ )
+[15:14:05] -qtox-git-spam- [qTox] antis81 opened pull request #3502: refactor: cleanup chat code (master...chat/cleanup) https://git.io/vKnfH
+[15:20:20] *** Joins: Saaaam (4ed146f1@ )
+[15:20:31] <Saaaam> hey
+[15:35:24] *** Joins: reBrain (~reBrain@ )
+[15:42:06] <zetok> Saaaam: um, could you re-add flags names?
+[15:42:22] <zetok> i.e. all the flags, but with proper zend locale name
+[15:42:54] <zetok> Saaaam: btw, if you could use CLI git you could restore stuff / commit, etc a lot easier
+[15:44:07] <Saaaam> zetok: yep, I plan to do all the flags indeed ;)  It gonna take some days (as I'm gonna move a lot this week), but I want to achieve that.
+[15:44:45] <Saaaam> What does CLI stands for?
+[15:44:57] <zetok> command line interface
+[15:45:00] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[15:45:37] <Saaaam> Oh
+[15:46:08] *** Joins: dardevelin (~dardeveli@ )
+[15:47:14] <Saaaam> Well, I installed git days ago. And I did have a CLI. But apparently, I couldn't manage to unify my local changes to my github account :/
+[15:47:20] <Saaaam> *noob here* :x
+[15:49:52] <zetok> do you have your remote (github) repo added locally?
+[15:50:15] <zetok> `git remote -v`
+[15:55:17] <Saaaam> Yeah, thanks to the GitHub Desktop https://desktop.github.com/
+[15:55:38] <Saaaam> That's what I currently use
+[16:21:50] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[16:21:52] *** Joins: Saaaam_ (4ed146f1@ )
+[16:34:55] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[16:44:48] *** Quits: Saaaam_ (4ed146f1@ ) (Quit: Page closed)
+[16:48:38] *** Joins: in1t3r (~LordShiva@ )
+[17:00:39] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[17:15:27] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[17:16:22] *** Joins: dardevelin (~dardeveli@ )
+[17:19:10] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:26:58] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[17:29:22] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 252 seconds)
+[17:29:37] *** Joins: cisc (~cisc@ )
+[17:33:00] *** Joins: vindelschtuffen (~vindelsch@ )
+[17:57:27] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 264 seconds)
+[18:06:11] *** Quits: abbat_ (~abbat@ ) (Quit: Leaving)
+[18:06:32] *** Joins: misiek200m (~miskof@ )
+[18:31:52] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[18:31:58] *** Joins: Chiitoo (~Chiitoo@ )
+[18:37:30] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[18:39:48] *** Joins: dardevelin (~dardeveli@ )
+[18:55:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[19:00:01] *** Joins: abbat (~Anton@ )
+[19:01:04] *** Joins: in1t3r (~LordShiva@ )
+[19:18:45] *** Joins: f10 (~flo@ )
+[19:38:27] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[19:40:33] *** Joins: linxon (~lin@ )
+[20:13:12] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:13:44] *** Joins: depate (~depate@ )
+[20:19:26] *** Joins: sudden6 (~anonymous@ )
+[22:07:49] <linuxmodder> ideas ?  https://gist.github.com/linux-modder/d79389451c57e2b08c4838ebaab206bb
+[22:12:21] <linuxmodder> hang tight might have figured it out
+[22:15:07] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 272 seconds)
+[22:35:15] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vKcnk
+[22:35:15] -qtox-git-spam- qTox/master 32e48a9 Andrew Morgan: feat(textstyle): Change markdown syntax to be more intuitive...
+[22:35:15] -qtox-git-spam- qTox/master 939c97a sudden6: Merge pull request #3441...
+[22:38:45] <koshii> Hey is there a shortcut key in qtox to cycle between chats?
+[22:41:10] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:46:03] <linuxmodder> koshii,  not that I know but nothing also preventing you form keybinding something tho
+[22:46:39] <linuxmodder> in multi window shift+tab *might* work like it does in some irc clients
+[22:46:40] <zetok> koshii: ctrl + tab?
+[22:46:58] <koshii> zetok: Brilliant thanks. Is that remappable?
+[22:47:05] <zetok> no(t yet)
+[22:48:44] <koshii> Fair enough.
+[22:48:50] <zetok> https://github.com/tux3/qTox/blob/master/doc/user_manual_en.md#keyboard-shortcuts
+[22:55:07] <linuxmodder> zetok,  thanks was not even aware of that 
+[22:55:11] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[23:05:02] *** Joins: smaragdus (~omoo@ )
+[23:29:14] *** Joins: dardevelin (~dardeveli@ )
+[23:51:56] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
