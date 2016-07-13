@@ -1,0 +1,223 @@
+[00:11:02] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[00:11:58] *** Joins: Chiitoo (~Chiitoo@ )
+[00:42:03] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 272 seconds)
+[00:49:56] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: This Konversation is over  ! !! !)
+[01:45:00] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[01:46:56] *** Joins: SkyzohKey (~skyzohkey@ )
+[01:52:51] *** Quits: depate (~depate@ ) (Ping timeout: 276 seconds)
+[02:04:52] *** Joins: vindelschtuffen (~vindelsch@ )
+[02:13:16] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[02:16:50] *** Joins: f10 (~flo@ )
+[02:32:59] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 246 seconds)
+[03:28:16] *** Joins: in1t3r (~LordShiva@ )
+[03:29:21] *** Joins: f10__ (~flo@ )
+[03:30:06] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[03:49:49] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[03:50:18] *** Joins: f10__ (~flo@ )
+[04:14:52] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[04:15:57] *** Joins: f10 (~flo@ )
+[04:26:04] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[05:14:46] *** Joins: in1t3r (~LordShiva@ )
+[05:17:07] *** Joins: dardevelin (~dardeveli@ )
+[05:20:41] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[05:21:32] *** Joins: f10__ (~flo@ )
+[05:27:35] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[05:30:27] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 264 seconds)
+[05:36:53] *** Joins: misiek200m (~miskof@ )
+[05:46:06] *** Joins: f10__ (~flo@ )
+[05:49:39] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 264 seconds)
+[05:51:00] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[05:51:17] *** Joins: reBrain (~reBrain@ )
+[05:53:19] *** Joins: misiek200m (~miskof@ )
+[06:02:09] *** Quits: misiek200m (~miskof@ ) (Ping timeout: 250 seconds)
+[06:12:27] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[06:19:36] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:23:48] *** Joins: cisc (~cisc@ )
+[06:48:33] *** Joins: f10 (~flo@ )
+[06:48:47] <cisc> Any word on Mac OS X releases: https://github.com/RowenStipe/qTox-OSX/releases
+[06:51:55] <cisc> Got a friend on Sierra using the Jun. 9th release, and weird behaviour: "misses letters if i type too fast"
+[07:21:35] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[07:24:41] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Client Quit)
+[07:50:22] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[07:52:31] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[08:03:05] <zetok> cisc: https://github.com/tux3/qTox/issues/3158
+[08:06:26] <cisc> interesting
+[08:09:40] <cisc> "So in this line of thinking I'd like to let you know that unless there's some work done on these and other problems (such as #3117), this is the last time I am bringing this, or any other issues, up - next time I'll just start checking the alternatives." lol
+[08:09:49] <cisc> ouch!
+[08:09:54] <cisc> *door slams*
+[08:11:46] <cisc> well should I add to it? I am not the one with the rotten apple system, a friend is. not sure what else I could add
+[08:16:42] *** Joins: abbat (~Anton@ )
+[08:19:02] <anoa> Weird how it never happened on my OSX VM.
+[08:19:14] <anoa> But it did constantly on my macbook.
+[08:19:35] <anoa> Keystroke eating I mean -the other mac issue.
+[08:21:32] <cisc> VM may have different behaviour than on bare metal
+[08:27:10] <cisc> so on OS X Sierra on the Audio/Video tab if you set the audio devices to anything other than "no device" qtox crashes
+[08:33:35] <zetok> cisc: mind opening an issue about the crash?
+[08:34:38] <zetok> (I'm not sure if it won't be a duplicate, but I can't find anything)
+[08:35:08] <cisc> yeah ill try to get more info from my friend, maybe there's something in the logs
+[08:36:56] <cisc> and where OS X stores the log file for qtox I don't know
+[08:38:07] <zetok> ~/.cache/Tox/qTox
+[08:40:48] <cisc> wasn't that path moved?
+[08:44:04] <cisc> on my Linux box there isn't ~/.cache/Tox/qTox
+[08:48:27] <cisc> and on my system no log file in /.local/share/Tox/qTox/
+[08:51:55] *** Joins: st4ll1 (~st4ll1@ )
+[08:57:50] -qtox-git-spam- [qTox] zetok opened pull request #3503: Update translations from weblate (master...tr) https://git.io/vKCJy
+[08:58:02] <zetok> oh
+[08:58:31] <zetok> cisc: right, older versions had it in ~/.config/tox/
+[08:58:53] <zetok> >on my Linux box there isn't ~/.cache/Tox/qTox
+[08:58:54] <cisc> there's no log file in there either
+[08:59:00] <zetok> hmm
+[08:59:01] <cisc> ~/.config/tox/
+[08:59:04] <cisc> on my system
+[08:59:14] <cisc> qtox is outputting no log file here at all
+[08:59:19] <zetok> that's weird
+[08:59:24] <cisc> I know
+[08:59:29] <zetok> mind making an issue about it?
+[08:59:45] <cisc> no
+[08:59:59] <cisc> but let me see first if anyone else on Linux can reproduce
+[09:02:17] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:27:34] -qtox-git-spam- [qTox] antis81 pushed 3 new commits to master: https://git.io/vKCId
+[09:27:34] -qtox-git-spam- qTox/master b99a9e4 Nils Fenner: refactor(chat): cleanup elided text
+[09:27:34] -qtox-git-spam- qTox/master b204d0a Nils Fenner: refactor(chat): cleanup document cache
+[09:27:34] -qtox-git-spam- qTox/master b7f65ff Nils Fenner: refactor(chat): fix type conversion warnings
+[09:28:02] -qtox-git-spam- [qTox] antis81 closed pull request #3502: refactor: cleanup chat code (master...chat/cleanup) https://git.io/vKnfH
+[09:54:36] *** Joins: abbat (~abbat@ )
+[09:58:32] -qtox-git-spam- [qTox] zetok pushed 5 new commits to master: https://git.io/vKCmo
+[09:58:32] -qtox-git-spam- qTox/master daabda8 Viktar Vauchkevich: feat(l10n): update Belarusian translation from weblate
+[09:58:32] -qtox-git-spam- qTox/master 6052364 ww Draw: feat(l10n): update Bulgarian translation from weblate
+[09:58:32] -qtox-git-spam- qTox/master 8d94ca9 ati3: feat(l10n): update Czech translation from weblate
+[09:58:46] *** Joins: LittleVulpix (~Miranda@ )
+[12:54:55] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:22:37] *** Joins: LittleVulpix (~Miranda@ )
+[13:55:38] *** Joins: reBrain (~reBrain@ )
+[13:55:49] *** Quits: reBrain (~reBrain@ ) (Remote host closed the connection)
+[14:03:01] *** Joins: Saaaam (4ed146f1@ )
+[14:03:14] <Saaaam> Hello everyone o/
+[14:03:27] <zetok> hello Saaaam
+[14:03:48] <Saaaam> :)
+[14:19:03] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 276 seconds)
+[14:55:57] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:49:17] *** Joins: f10 (~flo@ )
+[15:51:03] *** Joins: f10_ (~flo@ )
+[15:53:01] *** Joins: cisc (~cisc@ )
+[16:06:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[16:13:02] *** Joins: abbat (~abbat@ )
+[16:57:20] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[17:06:18] *** Quits: a68366 (~a68366@ ) (Ping timeout: 244 seconds)
+[17:57:24] *** Joins: Chiitoo (~Chiitoo@ )
+[17:58:01] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[18:01:35] *** Joins: abbat (~abbat@ )
+[18:04:15] *** Joins: user69 (~user69@ )
+[18:09:54] *** Joins: ovalseven8 (~ovalseven@ )
+[18:18:35] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[18:23:47] *** Joins: Saaaam (4ed146f1@ )
+[18:31:15] *** Joins: sudden6 (~anonymous@ )
+[18:41:35] <zetok> sudden6: o/
+[18:41:47] <zetok> there are some video PRs to waiting for merge ;)
+[18:42:18] <sudden6> zetok: o/
+[18:43:06] <sudden6> just came online, give me a few minutes ;)
+[18:45:10] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:45:23] <zetok> https://github.com/tux3/qTox/pull/3392
+[18:45:36] <zetok> >2 weeks :c
+[18:49:51] -qtox-git-spam- [qTox] sudden6 closed pull request #3453: Fix video ui (master...fixVideoUI) https://git.io/voxXe
+[18:51:44] *** Quits: Saaaam (4ed146f1@ ) (Ping timeout: 250 seconds)
+[18:56:06] <sudden6> LGTM, merge incoming
+[18:59:19] -qtox-git-spam- [qTox] sudden6 closed pull request #3392: Screen stream settings (master...multiScreenSettings) https://git.io/vo4Za
+[18:59:31] <sudden6> zetok: done :)
+[19:03:25] <zetok> thanks :)
+[19:08:06] <sudden6> anything else I can help you with today?
+[19:08:37] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:10:57] * zetok looks at the PRs
+[19:11:00] <zetok> maybe?
+[19:11:30] <zetok> there are a few small PRs by Diadlo
+[19:12:37] *** Joins: f10_ (~flo@ )
+[19:13:21] <zetok> https://github.com/tux3/qTox/pull/3488 and https://github.com/tux3/qTox/pull/3485
+[19:14:28] <sudden6> I still do not fully understand that const stuff, so I'd rather let antis review and merge it
+[19:15:03] <zetok> ok
+[19:15:20] <sudden6> the other one seems ok
+[19:15:42] <zetok> >.<
+[19:18:45] -qtox-git-spam- [qTox] zetok closed pull request #2535: [WIP] Fix double sender name in action message (master...patch-1) https://git.io/v8Rbj
+[19:21:29] <sudden6> Is there another distribution besides tumbleweed already using gcc6?
+[19:21:50] <zetok> arch, Gentoo
+[19:21:59] <zetok> except that Gentoo doesn't have it in stable
+[19:22:19] <zetok> (i.e. only people who want to have a broken system have it emerged)
+[19:25:16] <sudden6> hmm, then I'll setup a tumbleweed vm
+[19:25:47] * zetok wonders what debian is using
+[19:26:11] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[19:26:37] <sudden6> gcc4.9 if I did search correctly
+[19:26:53] <zetok> 5.3 in unstable
+[19:27:25] <zetok> oh, fedora is probably also using newest gcc
+[19:27:32] <zetok> (they like broken stuff)
+[19:28:01] <sudden6> nope fedora 23 is at 5.3
+[19:28:08] <sudden6> tumbleweed it is then
+[19:28:23] <zetok> pls
+[19:28:27] <zetok> fedora 24 has 6.1
+[19:28:45] <sudden6> huh? when did 24 come out?
+[19:28:55] <zetok> it didn't?
+[19:28:59] <zetok> aw.
+[19:29:50] <sudden6> ok it did come out two weeks ago
+[19:30:01] <sudden6> time for a new vm it is then
+[19:39:01] *** Joins: abbat (~Anton@ )
+[19:42:11] <sudden6> zetok: test-pr.sh isn't working with no git config name and email set maybe you could find a workaround for that?
+[19:42:32] <zetok> um
+[19:42:50] <zetok> not sure if that would be a good idea
+[19:42:56] <sudden6> why not?
+[19:43:25] <zetok> actually
+[19:43:27] <sudden6> also building with spaces in path still doesn't work and leads to cryptic  error messages
+[19:43:33] <sudden6> gist incoming
+[19:43:44] <zetok> nvm, I thought of manually adding that, but there might be a better way
+[19:44:21] <zetok> it fails on merge commit, and nothing else, right?
+[19:44:34] <sudden6> yes, exactly
+[19:44:44] <zetok> ok, that can be worked around
+[19:50:37] -qtox-git-spam- [qTox] zetok opened pull request #3504: chore(test-pr.sh): commit merge as `qTox testing <>` (master...test-pr) https://git.io/vKWwZ
+[19:50:38] <zetok> ↑ no idea whether that works
+[19:50:52] <sudden6> I'll just reset my vm and test ;)
+[19:57:40] <sudden6> zetok: didn't work
+[19:58:17] <sudden6> fatal: empty ident name (for <test@localhost.localdomain>) not allowed
+[19:58:30] <zetok> oh, right
+[20:05:15] *** Quits: genesis (~genesis@ ) (Ping timeout: 264 seconds)
+[20:06:10] <zetok> sudden6: might work now
+[20:06:28] <zetok> hmm
+[20:10:19] <sudden6> no same as before
+[20:10:36] <zetok> :/
+[20:12:34] <sudden6> maybe you have to set an email?
+[20:12:49] <zetok> either because I didn't export those vars, or because git wants to read it from file..
+[20:13:07] <zetok> nah, `<>` as an email is perfectly fine
+[20:13:22] <zetok> e.g. https://github.com/tux3/qTox/commit/888e9d3bbc5859d85dca53a5ef2d00fbd14cd266
+[20:13:27] <zetok> ;D
+[20:14:14] <zetok> sudden6: does manually exporting that stuff change anything?
+[20:14:43] <sudden6> what do you mean by exporting?
+[20:18:10] <zetok> `export GIT_COMMITER_NAME="qTox testing"`
+[20:18:22] <zetok> and `export GIT_COMMITER_EMAIL="<>"`
+[20:19:56] <sudden6> nope also didn't work
+[20:20:21] <zetok> :(
+[20:20:32] <zetok> the only thing left is to actually set that from the script
+[20:20:42] <zetok> but that has a potential to mess things up :/
+[20:20:50] <sudden6> true
+[20:21:54] <zetok> sorry, I'm not aware of any way to work around this
+[20:22:13] -qtox-git-spam- [qTox] zetok closed pull request #3504: chore(test-pr.sh): commit merge as `qTox testing <>` (master...test-pr) https://git.io/vKWwZ
+[20:25:59] <sudden6> zetok: found a solution http://stackoverflow.com/a/19841177
+[20:26:19] <sudden6> the -c flag seems to do the trick
+[20:27:14] <zetok> oh
+[20:27:19] <zetok> good to know
+[20:28:19] <sudden6> I'll make a pr
+[20:29:00] <zetok> ok
+[20:29:02] -qtox-git-spam- [qTox] zetok reopened pull request #3504: chore(test-pr.sh): commit merge as `qTox testing <>` (master...test-pr) https://git.io/vKWwZ
+[20:29:54] <sudden6> or you want? you seem to already have everything
+[20:30:39] <zetok> >.<
+[20:30:48] *** Joins: genesis (~genesis@ )
+[20:30:57] <zetok> I guess I can reopen PR for the second time
+[20:32:41] <sudden6> yes, please
+[20:32:57] <sudden6> then I'm off for the night :)
+[20:33:05] -qtox-git-spam- [qTox] b4n opened pull request #3505: fix(x11grab): try and use the current display (master...x11grab-display) https://git.io/vKWXq
+[21:49:30] *** Joins: Saaaam (4ed146f1@ )
+[21:52:25] *** Quits: f10 (~flo@ ) (Quit: Konversation terminated!)
+[21:59:51] *** Joins: f10 (~flo@ )
+[22:08:18] *** Joins: dardevelin (~dardeveli@ )
+[22:28:35] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:45:17] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[22:54:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[23:06:35] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[23:15:57] -qtox-git-spam- [qTox] antis81 closed pull request #3487: style(toxcall): Copy constructor return non-const reference (master...fixResultOfCopyConstructor) https://git.io/vKqiw
+[23:39:01] -qtox-git-spam- [qTox] Diadlo closed pull request #3297: [WIP] Added drag and drop remote file (master...dragAndDrop) https://git.io/vrtFE
+[23:55:56] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
