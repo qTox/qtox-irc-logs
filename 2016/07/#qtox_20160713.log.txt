@@ -1,0 +1,325 @@
+[00:27:31] *** Joins: in1t3r (~LordShiva@ )
+[00:38:18] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[00:39:07] *** Joins: f10_ (~flo@ )
+[01:16:49] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[01:27:09] *** Joins: f10 (~flo@ )
+[01:37:08] *** Quits: Saaaam (4ed146f1@ ) (Quit: Page closed)
+[01:49:03] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:49:29] *** Joins: f10 (~flo@ )
+[01:51:03] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[02:18:26] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[02:27:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[02:39:37] *** Joins: f10_ (~flo@ )
+[03:05:41] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[03:08:09] *** Joins: f10_ (~flo@ )
+[03:16:07] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[03:16:27] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[03:16:31] *** Joins: f10 (~flo@ )
+[03:17:05] *** Joins: f10_ (~flo@ )
+[04:08:15] *** Joins: SkyzohKey (~skyzohkey@ )
+[04:24:13] *** Joins: in1t3r (~LordShiva@ )
+[04:29:15] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
+[05:24:43] *** Joins: smaragdus (~omoo@ )
+[06:27:13] <zetok> 1k stars \o/
+[06:47:14] *** Joins: sudden6 (~anonymous@ )
+[07:17:27] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[07:18:06] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[07:22:38] -qtox-git-spam- [qTox] zetok reopened pull request #3504: chore(test-pr.sh): commit merge as `qTox testing <>` (master...test-pr) https://git.io/vKWwZ
+[08:01:25] *** Joins: abbat (~Anton@ )
+[09:03:04] *** Joins: f10_ (~flo@ )
+[09:03:05] *** Joins: f10 (~flo@ )
+[09:03:57] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[09:08:37] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:08:55] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[09:09:12] *** Joins: LittleVulpix (~Miranda@ )
+[09:46:19] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[09:47:14] *** Joins: Lord_Vlad (~Vlad@ )
+[09:51:07] *** Joins: cisc (~cisc@ )
+[09:53:16] *** Joins: abbat (~abbat@ )
+[10:44:29] *** Joins: dardevelin (~dardeveli@ )
+[12:24:34] <zetok> cisc: https://github.com/tux3/qTox/issues/2608 ?
+[12:25:35] <zetok> (or was it someone else who had problem with encrypted history?)
+[12:32:23] <zetok> https://github.com/tux3/qTox/issues/1891
+[12:36:57] -qtox-git-spam- [qTox] antis81 opened pull request #3506: fix(about-qtox): fix QString "missing argument" warning (master...fix/settings/about) https://git.io/vK8kL
+[12:54:32] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[13:30:45] <cisc> zetok: that's not it, this probably started happening within the last few weeks, before I got logs
+[13:43:05] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[13:43:24] *** Joins: abbat (~abbat@ )
+[14:12:13] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[14:25:44] -qtox-git-spam- [qTox] antis81 opened pull request #3507: fix settings avform (master...fix/settings/avform) https://git.io/vK8c4
+[14:37:37] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:38:06] *** Joins: abbat (~abbat@ )
+[15:27:35] *** Joins: f10 (~flo@ )
+[15:28:21] *** Joins: f10_ (~flo@ )
+[15:39:07] *** Joins: st4ll1 (~st4ll1@ )
+[15:55:25] *** Joins: dmos (~dmos@ )
+[16:52:24] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[16:53:38] *** Joins: Lord_Vlad (~Vlad@ )
+[17:00:19] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 250 seconds)
+[17:01:54] *** Joins: Lord_Vlad (~Vlad@ )
+[17:16:35] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:17:06] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 244 seconds)
+[17:17:46] *** Joins: Lord_Vlad (~Vlad@ )
+[17:30:01] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[17:31:42] *** Joins: Lord_Vlad (~Vlad@ )
+[17:37:11] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[17:39:06] *** Joins: Lord_Vlad (~Vlad@ )
+[17:44:01] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 252 seconds)
+[17:45:21] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 258 seconds)
+[17:48:59] *** Joins: Lord_Vlad (~Vlad@ )
+[18:00:02] *** Joins: Chiitoo (~Chiitoo@ )
+[18:05:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[18:19:15] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:21:34] *** Joins: f10 (~flo@ )
+[18:21:50] *** Joins: f10__ (~flo@ )
+[18:22:54] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[18:27:51] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 250 seconds)
+[18:28:07] *** Joins: Lord_Vlad (~Vlad@ )
+[18:46:10] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[18:47:48] *** Joins: Lord_Vlad (~Vlad@ )
+[18:52:47] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 260 seconds)
+[18:52:59] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:00:36] *** Joins: Lord_Vlad (~Vlad@ )
+[19:06:33] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 240 seconds)
+[19:13:57] *** Joins: Lord_Vlad (~Vlad@ )
+[19:16:40] *** Parts: dmos (~dmos@ ) ()
+[19:22:32] *** Joins: sudden6 (~anonymous@ )
+[19:40:25] *** Joins: st4ll1 (~st4ll1@ )
+[19:55:17] *** Joins: abbat (~Anton@ )
+[19:58:49] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[20:03:15] <genesis> qtooooooooooooooooooox
+[20:25:59] -qtox-git-spam- [qTox] sudden6 closed pull request #3495: Style fixes (master...styleFixes) https://git.io/vKYwp
+[20:45:07] *** Joins: Uetzi (~Uetzi@ )
+[20:46:00] -qtox-git-spam- [qTox] sudden6 closed pull request #3506: fix(about-qtox): fix QString "missing argument" warning (master...fix/settings/about) https://git.io/vK8kL
+[20:46:31] <sudden6> zetok: o/
+[20:46:43] <zetok> sudden6: o/
+[20:47:02] <sudden6> I tested your pr from yesterday, works :)
+[20:47:56] <sudden6> hmm, if we both do the o/ our nicks line up
+[20:48:02] <sudden6> we should party :D
+[20:48:40] * sudden6 just realized that works with everybody
+[20:48:53] <sudden6> \o/ everybody
+[20:49:05] <Uetzi> \o/
+[20:49:17] <Uetzi> why am i partying?
+[20:49:38] <sudden6> because qTox is awesome I hope ;)
+[20:49:38] <zetok> it's qTox User Party Hub
+[20:49:50] <zetok> :D
+[20:50:09] <Uetzi> hehe
+[20:51:28] <Uetzi> Does qTox have something like a wishlist?
+[20:51:50] -qtox-git-spam- [qTox] zetok closed pull request #3504: chore(test-pr.sh): commit merge as `qTox testing <>` (master...test-pr) https://git.io/vKWwZ
+[20:51:56] <sudden6> closest would probably be #proposal issues
+[20:53:02] <sudden6> Uetzi: what do you wish?
+[20:53:25] <sudden6> zetok: what do you think about a release?
+[20:53:35] <sudden6> 1.4.2 sounds nice?
+[20:53:47] <zetok> uh
+[20:54:06] <zetok> sudden6: https://github.com/tux3/qTox/milestone/3
+[20:54:35] <zetok> this is like the only thing that is needed for 1.5 – fixed video
+[20:55:07] <zetok> would be nice to have some other PRs also merged, but fixed video should be the main point of a new release
+[20:55:08] <Uetzi> Ok, i would have read up first ... but since you ask: Roster push (or some sensible form of (optional) centralised user management) would be killer for corporate or work group environment.
+[20:55:35] <zetok> you can already do that
+[20:55:47] <Uetzi> See, should have read up first ;)
+[20:55:52] <zetok> um
+[20:56:11] <sudden6> zetok: I thought more of a bugfix release, since last one is >1 month ago
+[20:56:23] <zetok> Uetzi: thing is, if you have "sensible form of centralized user management", your infrastructure already provides that functionality
+[20:56:24] <sudden6> and there were many bugs fixed
+[20:56:31] <zetok> sudden6: yeah, no
+[20:57:04] <zetok> generally, bugfix release is not needed, unless there's really some ~single bug that needs to be fixed *now*
+[20:57:29] <zetok> also, it wouldn't be just a bugfix release, since there were breaking changes already
+[20:57:39] <zetok> and new features
+[20:58:11] <zetok> Uetzi: and there's no need to bake into qTox anything more
+[20:58:26] <zetok> Uetzi: unless you don't have proper infrastructure in place
+[21:00:15] <Uetzi> So what does qTox call the feature, that comes closest to roster-push? Accute case of manual blindness...
+[21:01:09] <sudden6> zetok: there were 1 breaking change (Mardown) and 2-3 features, I think it would be worth it
+[21:01:41] <zetok> Uetzi: not qTox's job to handle that
+[21:01:55] <zetok> Uetzi: what qTox does provide, is constant location of files
+[21:02:22] <zetok> Uetzi: https://github.com/tux3/qTox/wiki/Profile
+[21:02:28] <zetok> sudden6: nope
+[21:03:30] <sudden6> Uetzi: what even is roster-push? can't find info on the net
+[21:03:34] <zetok> Uetzi: basically, just make sure that your current infrastructure puts user profile files in place when user logs in
+[21:03:36] <sudden6> zetok: why not?
+[21:03:55] <zetok> sudden6: because there are hundreds of commits unrelated to bugfixes
+[21:04:13] <sudden6> well, then call it evolution release :D
+[21:04:16] <zetok> you don't push all that stuff in, and call it 'bugfix release'
+[21:04:24] <sudden6> ;)
+[21:04:48] <zetok> if you want to make a proper release, do a proper release
+[21:05:23] <zetok> it would be bad IMO to have 2-3 consecutive releases with broken video though
+[21:05:32] <sudden6> ok, what is the difference of a proper release?
+[21:05:42] <zetok> video PR being fixed & merged
+[21:05:58] <zetok> (in this case)
+[21:06:46] <zetok> generally, if there are a few new things merged/changed/fixed, it can become a new release, provided that master isn't ridden with horrible bugs that can kill your cat and set your house on fire
+[21:07:17] <sudden6> well, if the video PR is ready in say a week then it wouldn't make sense to do a release
+[21:07:27] <sudden6> but I suspect this will take a little bit of time
+[21:07:45] <zetok> as soon as initramfs does it, or someone else who has time
+[21:07:55] <sudden6> are there any bugs that kill my cat?
+[21:08:07] <sudden6> then I should close qTox :o
+[21:13:36] <zetok> btw, what about stuff like https://github.com/tux3/qTox/pull/3332 ?
+[21:14:13] <zetok> I haven't even tried to test it, dunno how it works, do we want it in its ~current form?
+[21:14:43] <zetok> >as I understand this feature forces usage of system-keychains.
+[21:14:46] <zetok> is that right?
+[21:16:22] <zetok> also, I'd want to close https://github.com/tux3/qTox/pull/2225 , since IMO it provides only broken stuff
+[21:17:13] <sudden6>  I haven't even tried to test it, dunno how it works, do we want it in its ~current form? --> current form not, but with opt in
+[21:18:01] <zetok> ok
+[21:18:16] <sudden6> seems to be no progress with 2225
+[21:18:29] <sudden6> also think there are better ways to do this
+[21:18:49] <zetok> ok, I'll close 2225 then
+[21:19:24] <sudden6> ok
+[21:20:10] -qtox-git-spam- [qTox] zetok closed pull request #2225: Simple way to make sure the old name remains known until user intervention (master...name_control) https://git.io/vZXkt
+[21:24:26] <sudden6> so no release? :(
+[21:25:02] <zetok> no need to
+[21:25:23] <sudden6> well, then 1.5.0 is next
+[21:25:44] <sudden6> and please only three version digits this time
+[21:25:50] <sudden6> and forever
+[21:26:17] <zetok> ok
+[21:27:20] <zetok> hmm, would be nice to get languages stuff on website done before 1.5 release
+[21:29:27] <sudden6> mhm
+[21:29:58] <sudden6> what do you want to do for 1.6?
+[21:30:09] <zetok> whatever comes :)
+[21:30:38] <sudden6> I remember antis81 wanted to rewrite audio with a new backend lib
+[21:30:42] <zetok> err
+[21:30:45] <zetok> don't care about that
+[21:30:48] <sudden6> and resupport libfilteraudio
+[21:30:51] <zetok> this change should be transparent
+[21:31:15] <zetok> (aside from it fixing a couple of bugs, but transition should be to unaffected by bugs users transparent)
+[21:31:30] <sudden6> should considerably improve audio quality in groupchats
+[21:31:38] <zetok> what would be nice to get as a feature, is file transfer resuming
+[21:31:45] <sudden6> true
+[21:31:58] <zetok> currently, file transfers can be considered to be as good as broken
+[21:32:27] <sudden6> yep
+[21:32:43] <sudden6> so add these two on the list for 1.6
+[21:32:47] <sudden6> ?
+[21:32:56] <zetok> >resupport libfilteraudio
+[21:32:56] <zetok> err
+[21:33:10] <zetok> was that in plans?
+[21:33:24] <zetok> because from what I understood something else was supposed to be used
+[21:33:40] <zetok> as in, drop filter_audio and never come back to it again
+[21:33:43] <sudden6> what else?
+[21:33:49] <sudden6> i know of nothing else
+[21:34:09] <sudden6> and underlying algos work very well, see firefox hello
+[21:34:20] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:34:23] <zetok> hmm
+[21:34:33] <zetok> dunno about that
+[21:35:01] <sudden6> we were using it wrong, if you look at mannols new example in libfilteraudio
+[21:35:05] *** Joins: Diadlo (~diadlo@ )
+[21:35:43] <zetok> ok
+[21:36:06] <sudden6> at least I don't know any better GPL lib to achieve this
+[21:36:38] *** Joins: f10 (~flo@ )
+[21:37:07] <zetok> where's an issue for audio?
+[21:37:30] <sudden6> I think it was mentioned in some PR in comments
+[21:37:39] <zetok> mm
+[21:37:50] <zetok> I remember it being mentioned, but I need issue #
+[21:39:02] <zetok> or just add it to the new milestone when you'll find it: https://github.com/tux3/qTox/milestone/4 :)
+[21:40:32] <sudden6> ok, will be tomorrow, night :)
+[21:41:46] <zetok> night :)
+[21:48:21] <Uetzi> zetok: Scenario: Bob works from his homeoffice, Susan starts working at headquarters. Susan gets a qTox user profile with all relevant contacts pre-added. Which mechanism could an administrator employ, to automatically add Susan to Bob's contacts, without him having to do anything? (same thing for Susan quitting and needing to be removed)
+[21:56:30] <Uetzi> zetok: If you tell me, this concept is opposed to the very nature of tox, being decentralized and distrubted, that is fine, i get that.
+[21:57:53] <zetok> :D
+[21:58:00] <zetok> multiple devices would handle that
+[21:59:21] <zetok> all that Bob needs to do, is to have his local profile associated with other profile that is on server – you add contact to the profile on server, and local Bob's profile gets Susan as a contact
+[22:00:21] <zetok> (multiple devices are still WIP, but initial version would handle that – initially only contacts though, without other data like chat history, avatars, etc)
+[22:01:04] <zetok> all that would needed is profile on server to be online when Bob uses local profile, to sync them
+[22:01:08] <Uetzi> how can i update a profile as a third party (the administrator)? those are in a binary format and (hopefully) encrypted?
+[22:01:38] <zetok> >those are in a binary format
+[22:01:43] <zetok> by using toxcore
+[22:02:02] <zetok> as for encryption, it's provided with password
+[22:02:39] <zetok> Bob's local encrypted profile doesn't mean that associated profile on the server also would need to be encrypted
+[22:04:01] <zetok> https://github.com/zetok/tox-add-pubkey ← basically this, you'd need to add to Susan's profile Bob's pk, and to Bob's profile Susan's pk
+[22:05:05] <zetok> >as a third party
+[22:05:21] <zetok> uhm
+[22:05:24] <zetok> you don't
+[22:05:29] <zetok> unless you're an admin
+[22:05:40] <zetok> then you do have access to associated profile on server
+[22:05:57] <Uetzi> :) this is pretty hacky.
+[22:06:09] <zetok> kinda
+[22:07:58] <linuxmodder> zetok,  why would you not encrypt the server copy tho ?
+[22:08:10] <Uetzi> i would have thought more along the lines: here, this our company bot. it send the latest list of company contacts to all clients, and qtox add and removes those automatically...
+[22:08:16] <linuxmodder> and I seriously  hope simplicity for a lazy admin is not the response
+[22:08:39] <zetok> Uetzi: yep, that would be pretty much it
+[22:08:49] <linuxmodder> Uetzi,  how would a employee prevent deletion of  other client contacts during that tho?
+[22:09:07] <linuxmodder> or  would that  be explicitly  prohibited 
+[22:09:25] <Uetzi> online contacts, that came from the list get removed automatically
+[22:10:03] <Uetzi> private/other contact will not get touched by company bot
+[22:10:09] <zetok> uh
+[22:10:22] <linuxmodder> Uetzi,  so you'd forbid any non company contacts on employee client-devices?
+[22:10:30] <linuxmodder> how 
+[22:10:34] <Uetzi> no.
+[22:10:49] <zetok> Uetzi: wouldn't it be preferable to just use a "company only" profile?
+[22:10:58] <linuxmodder> as is I'm not aware of  any  segegration mechanism to do sucha thing in toxcore
+[22:11:18] <linuxmodder> I'd say that zetok's last idea would be the most  sane option
+[22:11:47] <linuxmodder> and allow for several profiles on their  client-machines and only give company bot access to the 'work'  account
+[22:11:47] <zetok> Uetzi: I know that it's not really realistic, but people can be /strongly suggested/ to use given profile only for company stuff
+[22:12:24] <linuxmodder> if the work environment is  sensitive that should already be in the work culture tho
+[22:12:30] <Uetzi> A seperate profile is perfectly acceptable.
+[22:14:15] <Uetzi> But if I can't *somehow* add and later remove the new intern from the contact list for all workgroup members, any real company use would be pretty tedious.
+[22:14:58] <Uetzi> It is not only lazy admin convenience, but also user convenience in a work enviroment
+[22:17:06] <Uetzi> But if you say, these scenarios are no goal of tox, i will accept that :)
+[22:18:31] <linuxmodder> Uetzi,  ban the old contact(intern / temp client)   from the  company list and push if the  employees contact them outside of official bussiness that is another issue
+[22:19:51] <zetok> Uetzi: currently that wouldn't be automagic, since code for multiple devices needs to be finished
+[22:20:09] <zetok> what you're describing seems to be doable with a bit of code
+[22:20:37] <linuxmodder> basic SOP states something in the nature of:   ALL company profiles will be synced @ {some_interval},  any removed contacts (from the bot's end) are deemed no longer allowed for official business and contacts will be governed by  Company policies and ANY contact added to the company profile shall be deemed Company inspectable.  
+[22:21:36] <zetok> Uetzi: so, not a focus point, but should be doable
+[22:22:02] <Uetzi> linuxmodder: should be fine, i'm less concerned with "information control", just some administrative contact list management
+[22:22:05] <zetok> (lists, groups, whatever would need code for it though)
+[22:22:23] <linuxmodder> zetok,  why 
+[22:22:29] <zetok> linuxmodder: ?
+[22:23:02] <linuxmodder> if the 'company'  sets a group for company contacts and  only the bot has control of  adding/removing contacts it would be easy peasy as is no?
+[22:23:25] <zetok> linuxmodder: where do you have code of the bot?
+[22:23:35] <linuxmodder> making the company  bot start group in a chanserv-ish way I'd think would achieve this
+[22:23:53] <zetok> >_>
+[22:23:56] <zetok> eh.
+[22:24:12] <linuxmodder> I don't was merely statign it should be easy enough with current state using that logic 
+[22:25:50] <Uetzi> linuxmodder has a point, the group-chat could be enough if the bot has control of how gets admitted
+[22:26:08] <Uetzi> eh ... who gets admitted
+[22:26:33] <zetok> except that it's impossible to restrict who gets in
+[22:26:57] <linuxmodder> zetok,  in the current group-chats is there a mechanism to have a chanserv style  administration?  been awhile since I've done larger group chats 
+[22:27:05] <zetok> no
+[22:27:15] <Uetzi> security by obscurity? not publicise the company chat?
+[22:27:43] <linuxmodder> was there not a merged commit to force pk acceptance in GC or did that also fall to the 4 winds
+[22:27:54] <zetok> Uetzi: more like "pls don't invite random strangers into company chat"
+[22:28:00] <linuxmodder> Uetzi,  not a great model 
+[22:28:13] <Uetzi> I know ;)
+[22:29:37] <Uetzi> So we are back to a bot who hands out a list of contacts to an authorized group ( which may be the list itself)
+[22:30:03] <Uetzi> you can only get the company list if you are on the company list
+[22:30:20] <zetok> hm.
+[22:33:29] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[22:36:01] <Uetzi> The more I think about this, it becomes pretty much a sort of "directory service" within tox.
+[22:38:06] <Uetzi> In larger groups you always have this "bootstrap" problem for new users. How do they get all the contacts they need.
+[22:40:08] <linuxmodder> Uetzi,  OR use ipaserver or AD for access to the bot 
+[22:42:07] <Uetzi> linuxmodder: Something like this would be awesome, but you still need some client support, so the data from the bot is displayed in a sensible way, maybe in a company group folder or something.
+[22:42:58] <linuxmodder> Uetzi,  does your  company already  employ a ipa /ldap /ad  solution for  NAS / other company directory access?
+[22:42:58] <Uetzi> but as a bot-backend AD-integration would be killer for company use.
+[22:43:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[22:44:03] <Uetzi> yes, MS AD is available
+[22:45:01] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:46:12] <Uetzi> It would be trivial to add the tox-PK as additional AD-information
+[22:46:40] <linuxmodder> and limit access to the tox-pk data to an 'authorized' list 
+[22:47:05] <linuxmodder> and host the contact list and bot in that data scheme  or however you have that tox-pk setup 
+[22:47:31] <Uetzi> pretty much
+[22:49:13] <Uetzi> now we only need native tox client support for an AD-integrated company bot
+[22:51:02] <zetok> >plugin support
+[22:51:10] <zetok> that would be the only way
+[22:51:14] <Uetzi> 'Add secure communication to your business with the new tox AD-integration' :)
+[22:51:48] <Uetzi> do you have plugin support? or would you need it?
+[22:51:58] <zetok> would be needed
+[22:52:02] <Uetzi> ok :)
+[22:52:51] <zetok> the alternative is to just (ab)use multiple devices functionality
+[22:53:49] <Uetzi> but a (stable) plugin api also is a lot of work ... or not?
+[22:54:32] <zetok> plugin api is something that would be nice to have, while multiple devices is something that needs to be done
+[22:56:19] <zetok> which means that most likely plugin api won't come for a long time (if at all – it all depends on whether anyone would be interested in doing that), while multiple devices most likely will be fully done within a year
+[22:56:40] <zetok> faster, if there will be people more actively working on it
+[22:58:10] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[22:58:19] <Uetzi> As always, talking about nice things is one thing and putting in the work is another :)
+[22:59:04] <zetok> ><zetok> that would be the only way
+[22:59:15] <zetok> by that I mean if you want to go with AD route
+[22:59:39] <zetok> there's other route though ;)
+[22:59:47] <Uetzi> which is?
+[22:59:59] <zetok> (ab)using multiple devices
+[23:00:16] <Uetzi> :)
+[23:01:11] <Uetzi> I would really like to start "The Great Skype Purge" (tm) one day ...
+[23:02:15] <zetok> mm
+[23:02:24] <zetok> well, night
+[23:02:35] <Uetzi> I'll keep this on my list for consideration.
+[23:02:55] <Uetzi> good night
+[23:07:06] <linuxmodder> why is multi a  must?
+[23:08:22] <linuxmodder> seems a import / load profile on multiple machines would suffice (assuming people realized that they needed to backup toxid.tox  first )
+[23:22:17] *** Quits: Uetzi (~Uetzi@ ) (Quit: Bye Bye.)
+[23:36:29] *** Joins: LittleVulpix (~Miranda@ )
+[23:40:22] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
