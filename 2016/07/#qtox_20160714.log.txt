@@ -1,0 +1,202 @@
+[00:05:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:38:30] *** Quits: f10 (~flo@ ) (Disconnected by services)
+[00:38:48] *** Joins: f10 (~flo@ )
+[00:39:14] *** Quits: f10 (~flo@ ) (Disconnected by services)
+[00:39:32] *** Joins: f10 (~flo@ )
+[02:31:24] <anoa> linuxmodder: tox doesn't perform well if you have the same profile running on multiple devices at a time for a moment.
+[02:37:13] *** Joins: st4ll1 (~st4ll1@ )
+[02:54:34] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 252 seconds)
+[05:02:08] *** Quits: mitfree (~mit@ ) (Ping timeout: 272 seconds)
+[05:32:03] *** Quits: CryptoSiD (~SiD@ ) (Quit: .)
+[05:32:58] *** Joins: CryptoSiD (SiD@ )
+[07:54:58] *** Joins: pranomostro (5098e9f3@ )
+[08:07:34] *** Joins: abbat (~Anton@ )
+[08:14:01] *** Joins: LittleVulpix (~Miranda@ )
+[08:49:21] *** Joins: st4ll1 (~st4ll1@ )
+[08:58:42] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:11:02] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 272 seconds)
+[09:45:11] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[09:51:31] *** Joins: abbat (~abbat@ )
+[10:04:27] *** Joins: smaragdus (~omoo@ )
+[10:20:26] -qtox-git-spam- [qTox] zetok opened pull request #3509: Update translations from weblate (master...tr) https://git.io/vKB63
+[10:52:10] *** Joins: st4ll1 (~st4ll1@ )
+[11:18:02] -qtox-git-spam- [qTox] zetok closed pull request #3509: Update translations from weblate (master...tr) https://git.io/vKB63
+[11:47:07] -qtox-git-spam- [qTox] TheNain38 opened pull request #3512: fix(groupinviteform): escape HTML (master...patch-1) https://git.io/vKBQl
+[11:49:59] *** Quits: pranomostro (5098e9f3@ ) (Quit: Page closed)
+[12:05:49] -qtox-git-spam- [qTox] TheNain38 opened pull request #3513: fix(avform): make "Screen" translatable (master...patch-2) https://git.io/vKB5E
+[12:12:47] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 272 seconds)
+[12:17:48] *** Joins: f10_ (~flo@ )
+[12:17:51] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[12:18:29] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[12:25:55] *** Quits: hpanago (uid15586@ ) (Quit: Updating details, brb)
+[12:26:22] *** Joins: hpanago (uid15586@ )
+[12:27:28] *** Quits: hpanago (uid15586@ ) (Client Quit)
+[12:27:39] *** Joins: hpanago (uid15586@ )
+[12:27:46] *** Joins: st4ll1 (~st4ll1@ )
+[13:32:09] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[14:07:34] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[14:08:57] *** Quits: Sephi (~me@ ) (Ping timeout: 260 seconds)
+[14:10:28] *** Joins: Sephi (~me@ )
+[14:23:49] *** Joins: BiTOk (~BiTOk@ )
+[14:23:55] *** Quits: BiTOk (~BiTOk@ ) (Client Quit)
+[15:29:05] *** Joins: soundslave (~soundslav@ )
+[15:29:36] <soundslave> user party hub
+[15:29:40] <soundslave> cool, then i'll stay :D
+[15:29:43] <soundslave> hi, chan!!
+[15:33:15] <zetok> hello soundslave ;)
+[15:36:07] <soundslave> hey zetok :)
+[16:09:53] *** Joins: abbat (~abbat@ )
+[16:12:08] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 246 seconds)
+[16:25:33] *** Joins: st4ll1 (~st4ll1@ )
+[16:35:08] *** Joins: f10_ (~flo@ )
+[16:35:33] *** Joins: f10 (~flo@ )
+[16:35:51] *** Joins: tux3 (~tux3@ )
+[16:35:51] *** ChanServ sets mode: +o tux3
+[17:06:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:08:44] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 258 seconds)
+[17:08:59] *** Joins: abbat (~abbat@ )
+[17:34:12] *** Joins: dongo (~dongo@ )
+[17:35:28] <dongo> Why is my qtox.log file in my tox directory 51GB in size?
+[17:37:59] <zetok> >.<
+[17:38:16] <zetok> looks like you've beat me in size
+[17:38:42] * zetok has only a 25GB libtoxcore.log
+[17:38:51] <zetok> it took me years to get to that size though :c
+[17:39:20] <dongo> well, my qtox.log file was created 2015-06-17
+[17:39:38] <zetok> dongo: good news is that log file in new location is being moved & removed once it goes past 2 MB limit
+[17:39:49] <zetok> uh
+[17:39:57] <zetok> which qTox version are you running?
+[17:40:07] <dongo> You are using qTox version v1.4.1-1-g06d78dc.
+[17:40:11] <dongo> Commit hash: 06d78dcdee7bfe9a320fe91662f34227d74c3916
+[17:40:40] <zetok> hmm
+[17:40:58] <zetok> I'm not sure if 1.4.1 had the log rotation
+[17:41:58] <dongo> oh right, where are chat conversation logs stored?
+[17:42:21] <zetok> <username>.db
+[17:42:28] <zetok> ~/.config/tox/
+[17:42:59] <dongo> ah
+[17:43:49] <dongo> haha wow, glogg is reporting that the file only has 12207 lines
+[17:44:52] <zetok> hmm, https://github.com/tux3/qTox/commit/93991368c6202fc9dfe474ad1e9ba5668c8a1e7b is in 1.4.1
+[17:45:04] <dongo> oh jesus christ
+[17:45:32] <zetok> if you have qtox.log in ~/.config/tox/ that was written to by qTox, then there's something really wrong
+[17:46:56] <zetok> or maybe not
+[17:47:04] <zetok> log location change wasn't in 1.4.1
+[17:47:14] <dongo> I'm using windows so it's in USER/AppData/Roaming/tox
+[17:47:18] <zetok> oh
+[17:47:21] <zetok> ok
+[17:47:33] <zetok> right
+[17:48:08] <dongo> https://qt.tomoko.moe/gmijZe.png glogg is showing a wall of these lines
+[17:48:38] <dongo> That's the qtox.log file by the way
+[17:49:23] <zetok> https://github.com/tux3/qTox/issues/3440
+[17:50:23] <zetok> that fix isn't in 1.4.1
+[17:51:03] <zetok> as for the actual problem, would be good to get it fixed too
+[17:52:07] * zetok just realized
+[17:52:22] <zetok> tux3: hai, how are things?
+[17:52:41] <tux3> hai
+[17:53:05] <tux3> all's well
+[17:53:36] <zetok> that's good :3
+[17:54:18] <zetok> have you seen iphy's newest plan to take over the world?
+[17:54:32] <dongo> So I was browsing the log file using glogg and it started freezing and using 4GB of RAM
+[17:54:33] <dongo> wew
+[17:54:42] *** Joins: in1t3r (~LordShiva@ )
+[17:55:07] <tux3> Wow 51GB is actually pretty impressive :)
+[17:56:12] <tux3> We should probably make a point release pretty soon
+[17:56:28] <zetok> tux3: https://github.com/tux3/qTox/milestone/3 :)
+[17:56:46] <zetok> there was a bit of discussion about that yesterday
+[17:56:46] <tux3> Oh, neat!
+[17:57:47] <zetok> https://github.com/qTox/qtox-irc-logs/blob/master/2016/07/%23qtox_20160713.log.txt#L111
+[17:58:51] <tux3> Hm so the log spam is because every time it tries to play a sound, it'll open the audio output if not already done. So that's not really a logic error, but we should probably rate-limit if the same device keeps failing.
+[17:59:30] <tux3> Though the fact that it fails to open the audio out in the first place is possibly a bug. 
+[17:59:56] <dongo> The audio device has a "ö" in it. Do you think that might've caused the issue?
+[18:00:16] <zetok> yep
+[18:00:24] <zetok> possibly
+[18:01:16] <dongo> I'm still wondering why glogg suddenly started freezing though
+[18:01:23] <dongo> It started at a certain point in the log file
+[18:01:29] <dongo> I need to find out what is written there
+[18:01:51] <zetok> that's a classified info
+[18:02:01] <dongo> oh boy
+[18:05:36] <zetok> on linux you could use less, not sure whether windows has anything that would handle large text files
+[18:05:58] <dongo> well, I've got cygwin so I can use less
+[18:06:05] <dongo> Does it work on big files such as this though?
+[18:06:18] <zetok> ~yep
+[18:06:24] <dongo> I have a program to view the file, it just that it takes several minutes to index the lines or whatever
+[18:06:32] <dongo> it's
+[18:06:33] <dongo> *
+[18:06:45] <zetok> just don't scroll to the end, that would take lot of time
+[18:07:09] <dongo> well I mean it's only 12k lines so it wouldn't take that much time
+[18:07:25] <dongo> $ wc -l qtox.log
+[18:07:25] <dongo> 12215 qtox.log
+[18:12:41] <dongo> I found something interesting
+[18:13:01] <dongo> The audio error lines start like this https://do.the.jew.dance/2m66Nv.png
+[18:13:21] <dongo> Then it progresses into this https://do.the.jew.dance/Vjif3W.png
+[18:13:47] <dongo> https://do.the.jew.dance/QDyWRx.png It gets progressively worse
+[18:14:07] <dongo> https://qt.tomoko.moe/IX9uZG.png what the fuck
+[18:14:20] <dongo> https://do.the.jew.dance/lXO4i1.png
+[18:15:48] <zetok> openal
+[18:16:02] <zetok> yet another reason to dump it
+[18:16:19] <dongo> I think I'm gonna delete this log file now since I know what caused it
+[18:16:40] <zetok> could you preserve a sample?
+[18:16:47] <zetok> or something
+[18:16:58] <dongo> eh, I can preserve the whole file
+[18:17:07] <dongo> just gotta move it to a bigger HDD
+[18:17:15] <zetok> um, there's no need to do that
+[18:17:26] <dongo> well alrighty then
+[18:17:30] <dongo> What part of the file do you want?
+[18:17:32] <zetok> just the part where it starts erroring and gets worse
+[18:17:35] <dongo> ok
+[18:18:11] <dongo> I'm gonna copy just those lines where it just gets worse and worse
+[18:18:16] <dongo> Gonna skip the intermediary lines
+[18:18:28] <dongo> The other lines look pretty normal
+[18:22:21] *** Joins: st4ll1 (~st4ll1@ )
+[18:23:25] <dongo> zetok, https://do.the.jew.dance/vSoB0D.txt Is this fine?
+[18:23:45] <dongo> A few samples of it getting progressively worse
+[18:24:04] <zetok> yep
+[18:24:11] <zetok> dongo: could you make an issue with that stuff?
+[18:24:18] <dongo> Yeah
+[18:24:39] <zetok> thanks :)
+[18:24:42] <dongo> zetok, what do you want me to use as the title for the issue?
+[18:25:34] <zetok> "failing to open audio device results in spam in qtox.log" ?
+[18:25:47] <dongo> alright
+[18:25:52] <zetok> perhaps s/failing/failure/
+[18:26:38] <dongo> You know I've been wondering why it's been taking qtox so long to actually start. Do you think this log file thing is related to the start up times being retardedly high?
+[18:26:55] <zetok> possibly
+[18:27:00] <dongo> Like if I open qtox, it takes several minutes for the qtox window to come up
+[18:27:23] <zetok> what is the size of <profile_name>.ini ?
+[18:27:40] <dongo> 7,49 KB
+[18:27:58] <zetok> ok
+[18:28:29] <zetok> yeah, start time shouldn't take that long
+[18:28:49] <zetok> oh, right
+[18:28:53] <zetok> windows
+[18:29:46] <zetok> i.e. the wait time isn't something that qTox does, but it depends on OS opening file for qTox to write more logs into it
+[18:30:19] <zetok> which might mean that windows reads whole 50GB before providing qTox with ability to write to the file
+[18:30:26] <zetok> so, yeah.
+[18:33:18] <dongo> https://github.com/tux3/qTox/issues/3514 alright there it is
+[18:33:46] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[18:34:13] <dongo> I'm deleting the log file now, hopefully you don't need anything else from it
+[18:34:36] <dongo> Also, I think the audio error lines are from my other issue
+[18:35:18] <dongo> https://github.com/tux3/qTox/issues/2973 this issue
+[18:37:01] <dongo> oh hey, the log file was the cause for the long start up time
+[18:37:48] *** Quits: C0rn3j (5ab2bf9d@ ) (Ping timeout: 250 seconds)
+[18:38:27] <dongo> lmao, qtox.log.1 is 25GB in my tox directory
+[18:38:32] <dongo> time to delete that too
+[18:57:03] *** Joins: sudden6 (~anonymous@ )
+[18:57:52] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:08:50] *** Joins: Emcy_ (~MC@ )
+[19:10:10] *** Joins: Chiitoo (~Chiitoo@ )
+[19:15:13] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 272 seconds)
+[19:20:11] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[19:29:53] *** Joins: bennabiy (~bennabiy@ )
+[19:41:58] *** Joins: pcre (~quassel@ )
+[19:47:31] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 250 seconds)
+[20:10:26] *** Quits: pcre (~quassel@ ) (Ping timeout: 258 seconds)
+[20:10:37] *** Joins: pcre (~quassel@ )
+[20:38:52] *** Joins: abbat (~Anton@ )
+[20:55:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[21:15:27] *** Joins: sudden6 (~anonymous@ )
+[21:16:01] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:26:21] *** Joins: smaragdus (~omoo@ )
+[22:53:31] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[22:54:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[22:57:05] *** Joins: Emcy (~MC@ )
+[22:59:36] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[23:33:43] *** Joins: st4ll1 (~st4ll1@ )
+[23:39:33] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 240 seconds)
+[23:52:52] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
