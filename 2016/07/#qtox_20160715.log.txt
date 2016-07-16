@@ -1,0 +1,160 @@
+[00:17:01] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[00:28:32] *** Joins: vindelschtuffen (~vindelsch@ )
+[00:58:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:11:06] *** Joins: cisc (~cisc@ )
+[01:35:12] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[02:04:39] *** Quits: linxon (~lin@ ) (Ping timeout: 264 seconds)
+[02:22:00] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 276 seconds)
+[02:28:01] *** Joins: vindelschtuffen (~vindelsch@ )
+[02:53:11] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[02:53:34] *** Joins: f10_ (~flo@ )
+[02:59:50] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:03:06] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[03:03:26] *** Joins: f10 (~flo@ )
+[03:05:01] *** Joins: f10_ (~flo@ )
+[03:59:08] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 246 seconds)
+[04:39:21] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[04:39:40] *** Joins: f10_ (~flo@ )
+[05:00:15] *** Joins: f10__ (~flo@ )
+[05:00:47] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[05:03:26] *** Joins: anoadragon (~rainbow@ )
+[05:03:43] *** Quits: anoadragon (~rainbow@ ) (Client Quit)
+[05:22:49] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[05:23:06] *** Joins: f10 (~flo@ )
+[05:54:38] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[05:55:34] *** Joins: f10__ (~flo@ )
+[06:00:01] *** Joins: f10_ (~flo@ )
+[06:01:13] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[06:55:54] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:56:39] *** Joins: cisc (~cisc@ )
+[07:25:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[07:26:06] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[07:50:43] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:09:11] *** Joins: cisc (~cisc@ )
+[08:10:29] *** Joins: abbat (~Anton@ )
+[08:29:23] *** Joins: st4ll1 (~st4ll1@ )
+[09:01:07] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:19:39] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[09:21:57] *** Joins: st4ll1 (~st4ll1@ )
+[09:25:32] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vKEGw
+[09:25:32] -qtox-git-spam- qTox/master 24f0b11 TheNain38: fix(avform): make "Screen" translatable
+[09:25:32] -qtox-git-spam- qTox/master 3822511 Zetok Zalbavar: Merge pull request #3513...
+[09:42:53] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 272 seconds)
+[09:57:24] *** Joins: abbat (~abbat@ )
+[10:16:52] *** Joins: pcre (~quassel@ )
+[10:33:04] *** Joins: reBrain (~reBrain@ )
+[10:33:10] *** Joins: st4ll1 (~st4ll1@ )
+[11:11:51] *** Quits: pcre (~quassel@ ) (Ping timeout: 264 seconds)
+[11:11:52] *** Joins: pcre_ (~quassel@ )
+[11:25:13] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 250 seconds)
+[11:26:00] *** Joins: pcre_ (~quassel@ )
+[11:36:11] *** Joins: pcre__ (~quassel@ )
+[11:37:06] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 276 seconds)
+[11:42:19] *** Joins: pcre (~quassel@ )
+[11:42:28] *** Quits: pcre__ (~quassel@ ) (Ping timeout: 252 seconds)
+[11:55:53] *** Joins: in1t3r (~LordShiva@ )
+[12:01:30] *** Joins: pcre_ (~quassel@ )
+[12:01:35] *** Quits: pcre (~quassel@ ) (Ping timeout: 272 seconds)
+[12:34:18] *** Quits: VVD (~VVD@ ) (Ping timeout: 276 seconds)
+[12:59:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 240 seconds)
+[13:12:41] *** Joins: abbat (~abbat@ )
+[13:54:01] *** Joins: VVD (~VVD@ )
+[14:14:13] *** Joins: onyxrisc (~RiscOS@ )
+[14:16:26] *** Joins: Chiitoo (~Chiitoo@ )
+[14:17:03] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 240 seconds)
+[14:46:34] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[15:01:51] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[15:35:03] *** Quits: onyxrisc (~RiscOS@ ) (Ping timeout: 240 seconds)
+[15:47:36] *** Joins: onyxrisc (~RiscOS@ )
+[15:57:17] *** Joins: f10 (~flo@ )
+[15:59:05] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[16:03:29] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[16:09:03] *** Joins: pcre (~quassel@ )
+[16:16:22] *** Quits: pcre (~quassel@ ) (Ping timeout: 252 seconds)
+[16:16:43] *** Joins: pcre (~quassel@ )
+[16:16:56] *** Joins: f10_ (~flo@ )
+[16:19:10] <Emcy> i think there might be a problem with the way qtox maintains presence on local network segments
+[16:19:44] <Emcy> as in it seems to forget to do so after a number of hours
+[16:19:59] <Emcy> or maybe its toxcore idk
+[16:21:10] <zetok> toxcore
+[16:25:13] *** Joins: cisc (~cisc@ )
+[16:25:54] <Emcy> the broadcast domain stuff is in toxcore?
+[16:26:41] <zetok> yep
+[16:26:51] <zetok> qTox doesn't do networking
+[16:27:21] <zetok> it just calls to toxcore, and toxcore does whatever it needs to do
+[16:27:54] <zetok> the only part where qTox itself touches the network is toxme
+[16:28:14] <Emcy> ok
+[16:29:03] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[17:11:25] *** Joins: linxon (~lin@ )
+[17:11:25] *** Quits: linxon (~lin@ ) (Changing host)
+[17:11:25] *** Joins: linxon (~lin@ )
+[17:28:45] * zetok wonders where's Saamm when needed
+[17:29:01] <zetok> or anyone who can into CSS, for that matter
+[17:29:40] *** Quits: cisc (~cisc@ ) (Ping timeout: 272 seconds)
+[17:31:24] <Chiitoo> zetok: What's that about CSS?  (Not sure I can be of any helh, though.)
+[17:31:28] <Chiitoo> s/helh/help/
+[17:33:29] <zetok> https://a.uguu.se/N25oWJYnyHCz.png
+[17:33:55] <zetok> almost there, this happens only with some languages, and only if browser window is sufficiently small
+[17:35:07] <zetok> https://github.com/zetok/qTox-Website/blob/langs-link/assets/css/language-menu-top.css ← that's with one line removed
+[17:35:56] <zetok> without the line removed it flag was located above language name
+[17:36:12] *** Joins: cisc (~cisc@ )
+[17:36:13] <zetok> so I'm wondering if it's possible to make it somehow not "break" ..
+[17:36:15] <zetok> !
+[17:36:31] <zetok> do html engines respect unbreakable space?
+[17:40:04] <zetok> eh, they don't
+[17:40:37] <zetok> or is that kind of "breakage" acceptable on a website?
+[17:43:49] *** Joins: toxygen_tox (2e35b4b1@ )
+[17:44:01] <toxygen_tox> #ricin
+[17:44:10] *** Joins: dardevelin (~dardeveli@ )
+[17:44:36] *** Quits: dardevelin (~dardeveli@ ) (Remote host closed the connection)
+[17:48:37] *** Joins: TheVoid- (~void@ )
+[17:51:12] *** Quits: TheVoid (~void@ ) (Ping timeout: 272 seconds)
+[18:17:09] <Chiitoo> zetok: Ah, the flag part jumps off of the language button?
+[18:17:21] <zetok> ~yep
+[18:18:09] <Chiitoo> I'll see if/ask if a friend can look at it.  Right now trying to get a delayed obs-studio version bump done!
+[18:20:42] <zetok> thanks! :)
+[18:22:59] <Chiitoo> I don't know much at all, but the friend has made a site or few, so maybe...
+[18:25:55] <Chiitoo> Is there a way to load the site at that state?  I have never looked into github website things like that yet.  :S
+[18:44:09] <zetok> not really
+[18:44:21] <zetok> (also, it's not a gh thing)
+[18:44:33] <zetok> I mean, you'd need to build it
+[18:44:43] <zetok> (buildsite.sh)
+[18:46:37] <zetok> https://github.com/zetok/sterminator ← needed to build
+[18:48:46] <Chiitoo> Yeah, thought so.
+[18:49:10] <Chiitoo> Friend can't say from just looking at the picture and code either.  Would need to be able to actually test it.
+[18:50:19] <Emcy> qtox allows multiple instances of itself
+[18:52:31] <zetok> Chiitoo: as a work-around, one could just manually substitute values
+[18:52:57] <Chiitoo> True.
+[18:53:35] <Chiitoo> I'm hoping someone else will be able to help with that soon though!
+[18:54:28] <Chiitoo> Before anything new, I should be focusing on the things I have on my plate(s) already.  >.<
+[18:54:47] <zetok> https://github.com/zetok/qTox-Website/blob/langs-link/index.mustache#L43 ← `[[[lang_shortcode]]]` with code of some language, and `[[[Language]]]` with some long string
+[19:33:54] *** Joins: pcre (~quassel@ )
+[20:32:03] *** Joins: abbat (~Anton@ )
+[20:53:36] *** Quits: pcre (~quassel@ ) (Ping timeout: 272 seconds)
+[20:54:56] *** Joins: pcre (~quassel@ )
+[20:55:35] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:55:37] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:55:57] *** Joins: f10_ (~flo@ )
+[20:58:28] *** Joins: f10 (~flo@ )
+[21:07:51] *** Quits: isAAAc (~isAAAc@ ) (Ping timeout: 240 seconds)
+[21:08:33] *** Joins: pcre__ (~quassel@ )
+[21:09:06] *** Quits: pcre (~quassel@ ) (Ping timeout: 276 seconds)
+[21:09:51] *** Joins: f10__ (~flo@ )
+[21:10:03] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[21:10:24] *** Joins: isAAAc (~isAAAc@ )
+[21:14:42] *** Joins: pcre_ (~quassel@ )
+[21:14:57] *** Quits: pcre__ (~quassel@ ) (Ping timeout: 276 seconds)
+[21:42:12] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[22:00:42] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[22:02:40] *** Joins: Chiitoo (~Chiitoo@ )
+[22:04:33] *** Joins: Diadlo (~diadlo@ )
+[22:18:15] *** Quits: toxygen_tox (2e35b4b1@ ) (Quit: Page closed)
+[22:19:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:38:03] *** Quits: onyxrisc (~RiscOS@ ) (Quit: Leaving)
+[23:02:26] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 250 seconds)
+[23:06:17] *** Joins: smaragdus (~omoo@ )
+[23:16:05] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[23:18:49] *** Joins: f10_ (~flo@ )
+[23:31:20] *** Joins: Encrypt (~Chuck@ )
+[23:34:13] *** Quits: Encrypt (~Chuck@ ) (Quit: Quitte)
+[23:50:12] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
