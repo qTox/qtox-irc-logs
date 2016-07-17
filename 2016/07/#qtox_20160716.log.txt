@@ -1,0 +1,320 @@
+[00:04:58] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[01:22:46] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[01:29:19] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[01:29:25] *** Joins: f10 (~flo@ )
+[01:40:24] *** Joins: cisc (~cisc@ )
+[02:00:27] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:06:58] *** Joins: cisc (~cisc@ )
+[02:12:38] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[02:31:49] *** Joins: f10__ (~flo@ )
+[02:32:14] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[02:32:31] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[02:45:49] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:46:59] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[03:06:54] *** Joins: Emcy_ (~MC@ )
+[03:25:49] *** Joins: bennabiy (~bennabiy@ )
+[03:27:43] *** Quits: Emcy_ (~MC@ ) (Quit: Leaving)
+[03:27:58] *** Joins: Emcy_ (~MC@ )
+[03:28:10] *** Quits: Emcy_ (~MC@ ) (Remote host closed the connection)
+[03:28:46] *** Joins: Emcy (~MC@ )
+[03:29:26] *** Joins: Emcy_ (~MC@ )
+[03:33:54] *** Quits: Emcy (~MC@ ) (Ping timeout: 276 seconds)
+[03:34:32] *** Joins: Emcy (~MC@ )
+[03:36:30] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 276 seconds)
+[03:36:52] *** Joins: Emcy_ (~MC@ )
+[03:39:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[03:46:52] *** Joins: ben_nabiy (~bennabiy@ )
+[04:09:43] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[04:10:02] *** Joins: cisc (~cisc@ )
+[06:00:46] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[06:09:12] *** Joins: reBrain (~reBrain@ )
+[07:50:41] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[08:24:38] *** Joins: st4ll1 (~st4ll1@ )
+[08:40:01] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[08:52:51] *** Joins: in1t3r (~LordShiva@ )
+[09:05:28] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[09:10:33] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[09:21:38] *** Joins: LittleVulpix (~Miranda@ )
+[09:46:23] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[10:17:42] *** Joins: Saaaam (52f2c702@ )
+[10:17:56] <Saaaam> Hello everyone ^^
+[10:18:48] <zetok> hello Saaaam :)
+[10:18:55] <Saaaam> zetok: as you asked, all the flags have been done: https://github.com/Saaaam/qtox_website_test/tree/top-langs/assets/imgs/flags
+[10:20:18] <Saaaam> (I'm on travel these days, so I'm not close to my computer, I'm more on the road) ;)
+[10:20:51] <zetok> Saaaam: https://github.com/qTox/qtox-irc-logs/blob/master/2016/07/%23qtox_20160715.log.txt#L96 :)
+[10:21:44] <Saaaam> :p
+[10:22:53] <zetok> is "don't break" doable?
+[10:23:58] <Saaaam> Yup, that's what I read in your link, it "may" be possible asking this. Wait 5 minuts, I'm gonna check the W3C website
+[10:24:36] <zetok> https://github.com/zetok/qTox-Website/commit/14f15d7f525a47e0554b856848dccdfe6a5ca952#diff-cda308940599c6096ae1817a13057e91L8 ← changed, it didn't breaks with this, but there was big ugly box with flag on top of language name
+[10:30:47] <Saaaam> white-space: nowrap;
+[10:31:45] <zetok> ooh, awesome
+[10:32:25] <Saaaam> I just hope the whole flag + language shortcup will jump out the line
+[10:32:27] <zetok> https://a.uguu.se/PuyDOUtQmlyk.png
+[10:32:44] <Saaaam> ...
+[10:32:49] <Saaaam> Indeed, it does >.>
+[10:34:03] <Saaaam> is it possible to use only 2-3 letters for that language?
+[10:35:41] <zetok> ~yep
+[10:35:50] <Saaaam> Hum, nevermind, I just looked at the code, and this is about the "[[[language]]]"
+[10:36:33] <Saaaam> Don't you think it could be better to use [[[lang_shortcode]]] instead of [[[language]]] ?
+[10:36:56] <zetok> not really
+[10:37:45] <zetok> I might be wrong about that though
+[10:39:00] <Saaaam> Or, other solution, we just display the flag
+[10:39:10] <zetok> mm
+[10:39:19] <zetok> I wonder if that'll be clear enough?
+[10:39:26] <Saaaam> It is something usual in websites
+[10:39:40] <Saaaam> Example : https://www.neobux.com/
+[10:40:06] <Saaaam> you have just a flag, and as is it near the nav bar, it "is" something clickable
+[10:40:21] <zetok> ok
+[10:40:34] <Saaaam> I mean, that's what occurs in people's mind
+[10:41:50] <Saaaam> Or we can wait for a 3rd opinion about that ^^
+[10:42:42] <travis-ci> qTox/qTox-Website (3130d50): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/145191651 / Changes: https://github.com/qTox/qTox-Website/compare/9f93e8e0b06b^...3130d507062c
+[10:45:34] <zetok> btw, since click just scrolls down, would it be possible to somehow "flash" or otherwise visually mark for a moment language section?
+[10:49:24] <Saaaam> We can add a "title" attribute to the link, like <a href="#languages" id="langbutton" title="Language Selection"> ; is it what you're looking for? :3
+[10:50:24] <Saaaam> Hum... even "Languages" only, not "language selection". The shorter the better.
+[10:50:52] <zetok> not really, but that will be useful too
+[10:51:20] <zetok> i.e. something that would "blink" the section itself one user has clicked on link
+[10:51:33] <zetok> or is that unnecessary?
+[10:51:37] *** Joins: hpanago (uid15586@ )
+[10:51:38] <zetok> (or impossible?)
+[10:51:59] <zetok> https://a.uguu.se/sA6RdAAyrHfB.png ← without language name that box looks a bit too big
+[10:53:25] <Saaaam> Too big on the left & right, not enough on top and bottom
+[10:53:42] <Saaaam> To tell the truth, I don't think it is indeed possible
+[10:53:48] <zetok> ok
+[10:56:27] <Saaaam> https://github.com/qTox/qTox-Website/blob/langs-link/assets/css/language-menu-top.css#L13  
+[10:56:34] <Saaaam> It comes from here I think
+[10:56:56] <Saaaam> We can try : `padding: .3em;`
+[10:57:07] <zetok> https://github.com/qTox/qTox-Website/blob/langs-link/assets/css/language-menu-top.css#L13 ← with `.4em`
+[10:57:20] <Saaaam> :p
+[10:57:28] <Saaaam> okay, go for .4em  ;)
+[11:01:33] <Saaaam> By the way, did you like the way the flags were displayed in the appearing box in my first try? I mean, flag+language, into 4 columns, with a little color effect when the mouse was over 1 language?
+[11:01:50] <zetok> yep
+[11:02:38] <zetok> it's just that functionality breaking due to screen size/zoom is not an option IMO
+[11:03:54] <Saaaam> Well, in the box, it was indeed complicated. Because the box had to have a specifized width and height.
+[11:04:54] <Saaaam> But I can try to display the menu at the bottom of the page the same way. It must be good, as the width and height are automatically handled by the browser
+[11:05:04] *** Joins: abbat (~Anton@ )
+[11:05:24] <travis-ci> qTox/qTox-Website (b1714fa): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/145193678 / Changes: https://github.com/qTox/qTox-Website/compare/3130d507062c...b1714fa384c0
+[11:05:53] <Saaaam> I can give a shot if you want, and if it works, go for it. If it seems that problems occurs, back to the way they are currently display
+[11:06:22] <zetok> if you think it's worth it, why not
+[11:06:33] <Saaaam> Hum... why not `padding: .4em;` ?
+[11:06:56] <Saaaam> (so all the sides, even top and bottom, will have that little space)
+[11:07:03] <zetok> oh
+[11:08:03] <zetok> https://a.uguu.se/pjSVpXHmYgmZ.png
+[11:08:18] <Saaaam> Oh
+[11:08:26] <Saaaam> it seems to be good, what do you think?
+[11:08:40] <zetok> too big
+[11:09:42] <zetok> https://a.uguu.se/hMSHVufeBtTY.png ← .25em
+[11:10:23] <Saaaam> Hum... honestly, I prefer the .4 em, but it's all about tastes
+[11:10:44] <zetok> https://a.uguu.se/xRoIQbNAlSNx.png
+[11:10:56] <Saaaam> Damn... >.<
+[11:13:43] <Saaaam> I have to go, I'm waited
+[11:13:48] <Saaaam> See you soon ;)
+[11:13:51] <zetok> cya :)
+[11:14:04] <Saaaam> We'll try to fix this... because seriously... >.<
+[11:14:24] <Saaaam> It MUST stay in the line :/
+[11:14:28] <Saaaam> o/
+[11:14:37] *** Quits: Saaaam (52f2c702@ ) (Quit: Page closed)
+[11:16:02] <travis-ci> qTox/qTox-Website (9f93e8e): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/145194512 / Changes: https://github.com/qTox/qTox-Website/compare/top-langs
+[11:16:27] *** Joins: Saaaam (52f2c702@ )
+[11:16:30] <Saaaam> Quick idea!
+[11:16:50] <travis-ci> qTox/qTox-Website (28e4d69): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/145194576 / Changes: https://github.com/qTox/qTox-Website/compare/b1714fa384c0...28e4d69cc774
+[11:17:14] <Saaaam> The "white-space: nowrap;" isn't useful anymore for the button (as we remove [[[language]]]), but we can try to put this for the <nav>
+[11:17:39] <Saaaam> If we get lucky, the links won't jump out of the line... But not sure if it really works or not
+[11:17:53] <zetok> um, the wrapping of items is not a problem
+[11:18:07] <zetok> the space between flag and the last item is
+[11:18:20] <Saaaam> (I got to go, you can answer me, I'll read the logs)
+[11:18:28] *** Quits: Saaaam (52f2c702@ ) (Client Quit)
+[11:28:15] <zetok> (or at least I think that it's not a problem)
+[11:38:27] *** Joins: cisc (~cisc@ )
+[13:13:31] *** Joins: f10 (~flo@ )
+[13:21:16] *** Joins: sudden6 (~anonymous@ )
+[13:24:27] *** Quits: sudden6 (~anonymous@ ) (Read error: Connection reset by peer)
+[13:41:07] *** Joins: Chiitoo (~Chiitoo@ )
+[14:13:16] *** Joins: f10__ (~flo@ )
+[14:43:49] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[14:47:59] *** Joins: f10__ (~flo@ )
+[14:55:03] *** Joins: Emcy (~MC@ )
+[14:57:37] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[14:59:16] *** Joins: mitfree (~mit@ )
+[15:38:50] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[15:39:00] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:39:08] *** Joins: f10__ (~flo@ )
+[15:39:27] *** Joins: f10 (~flo@ )
+[16:35:29] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[16:50:54] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:51:02] *** Joins: f10 (~flo@ )
+[16:59:16] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:16:12] *** Joins: ccsdss (~ray@ )
+[17:16:28] *** Parts: ccsdss (~ray@ ) ()
+[17:19:17] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[17:31:30] *** Joins: in1t3r (~LordShiva@ )
+[17:42:46] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[18:08:51] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 264 seconds)
+[18:17:27] *** Joins: in1t3r (~LordShiva@ )
+[18:21:44] *** Joins: Chiitoo (~Chiitoo@ )
+[19:22:18] <Emcy> hey, so the qtox builds on tox.chat are not "official" any more yes
+[19:22:28] <Emcy> so what is official now, and why?
+[19:23:06] <zetok> have you tried looking at readme.md?
+[19:25:03] *** Joins: sudden6 (~anonymous@ )
+[19:30:03] <Emcy> not recently
+[19:34:09] <Emcy> it doesnt seem to say anything about moving repo
+[19:34:46] <Emcy> in fact it still links to build.tox.chat
+[19:35:47] <Emcy> https://github.com/tux3/qTox/issues/3517 theres just this
+[19:35:53] <Emcy> but why is it deprecated?
+[19:36:17] <Emcy> are you disengaging qtox from tox.chat infrastructure?
+[19:44:51] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[19:45:36] *** Joins: sudden6 (~anonymous@ )
+[19:51:20] <zetok> oh?
+[19:51:28] <zetok> Emcy: where does it point to tox.chat repo?
+[19:55:19] <zetok> build.tox.chat ≠ repo
+[20:00:34] *** Joins: f10_ (~flo@ )
+[20:00:50] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[20:02:53] *** Joins: smaragdus (~omoo@ )
+[20:12:35] <Emcy> yes i conflated
+[20:13:13] <Emcy> so the build system is still on tox.chat?
+[20:14:51] <zetok> yes/no
+[20:15:32] <zetok> yes for windows stuff
+[20:18:29] <Emcy> ok
+[20:18:39] <Emcy> why the change tho
+[20:19:13] <zetok> because
+[20:20:09] <Emcy> because what?
+[20:21:14] <zetok> works > doesn't work
+[20:21:49] <Emcy> huh?
+[20:22:57] *** Joins: hpanago (uid15586@ )
+[20:23:35] <zetok> packages from tox.chat don't qualify as something that "works"
+[20:25:43] <zetok> you're right though that communication is lacking and that there should be blog post made about it
+[20:27:07] <Emcy> i see
+[20:33:48] *** Joins: tux3 (~tux3@ )
+[20:33:48] *** ChanServ sets mode: +o tux3
+[20:37:25] <zetok> o/
+[20:39:28] <tux3> Hi!
+[20:46:13] <nurupo> tux3: could you check qtox builds on build.tox.chat?
+[20:46:57] <nurupo> i think the windows ones are failing after some recent commit in qtox
+[20:47:07] <nurupo> i emailed you about that before
+[20:47:18] <nurupo> not sure if you got it fixed or not
+[20:47:36] <tux3> >Invalid command: ShellExecAsUser::ShellExecAsUser
+[20:47:51] <tux3> Looks like the DigitalOcean build VM is missing a NSIS plugin 
+[20:47:54] <nurupo> what is this, powershell?
+[20:48:05] <tux3> Our installer
+[20:48:11] <tux3> NullSoft Install System (NSIS)
+[20:48:22] <nurupo> you mean nsis package?
+[20:48:26] <tux3> Ya
+[20:48:37] <nurupo> confused me with "plugin"
+[20:48:44] <tux3> We use a NSIS plugin called ShellExecuteAsUser to deal with the broken Windows UAC thing.
+[20:48:49] <nurupo> it seems to run nsis halfway though
+[20:48:50] <tux3> Someone needs to install it.
+[20:48:52] <nurupo> oh
+[20:49:10] <zetok> tux3: btw, https://github.com/tux3/qTox/issues/3517 ← looks like people didn't get the changelog memo
+[20:49:43] <nurupo> can't find the plugin in debian repos
+[20:50:01] <tux3> zetok, I haven't done the zenity/kdialog popup yet, but I though the changelog had worked :/
+[20:50:13] <zetok> tux3: apparently it didn't :(
+[20:50:21] <nurupo> unless it uses some weird name
+[20:50:31] <zetok> tux3: since Encrypt now is supposed to take care of packages, he'll do it
+[20:50:40] <tux3> zetok, sounds good
+[20:50:59] <tux3> nurupo, IIRC I had to get the code from here: http://nsis.sourceforge.net/mediawiki/images/c/c7/ShellExecAsUser.zip
+[20:52:23] <tux3> The code is a Visual Studio 6 project (!), but you can just use the magic totally-not-malware-I-swear DLL.
+[20:52:28] <nurupo> ok, now i roughly know what to do, will figure this out later, got to go now
+[20:52:35] <tux3> Awesome, thanks
+[20:52:58] <tux3> Or maybe one day we'll switch to a better installer.
+[20:55:58] <zetok> https://github.com/qTox/qTox-Website/pull/6 ← opinions?
+[20:58:56] <tux3> Why is the language on its own separate line?
+[20:59:00] <tux3> Otherwise I like the screenshot
+[20:59:16] <zetok> it's only like that when there's not enough space on top
+[20:59:19] <tux3> And the logo still looks super weird
+[20:59:35] <tux3> Ok, maybe slightly smaller font so it doesn't overflow then?
+[20:59:44] <tux3> Or remove some margin on the left?
+[20:59:53] <zetok> um, it works well with most of languages
+[21:00:06] <tux3> "most" is a bug, we want "all" :)
+[21:00:10] <zetok> ok
+[21:00:15] <zetok> dunno then how to make it work
+[21:00:22] <tux3> Smaller fonts don't work?
+[21:00:41] <zetok> yep, it's just a matter of how much one zooms the page
+[21:00:49] <zetok> at some point it'll be the same
+[21:01:12] <tux3> Well.
+[21:01:21] <tux3> Alright, whatever
+[21:01:34] <tux3> So we won't have a hipster-approved responsive website
+[21:02:00] <zetok> https://a.uguu.se/yA4HJyl4Ir35.png ← with smaller zoom
+[21:02:15] * zetok considers this to be "responsive"
+[21:02:23] <zetok> responds to zoom setting
+[21:02:30] <tux3> lol
+[21:02:44] <tux3> Well that it does :)
+[21:03:10] <tux3> It's fine, I suppose. it's still readable
+[21:05:29] <zetok> https://a.uguu.se/NZoXgvtgQpgY.png ← is default blog "skin" fine, or should I look for something more fancy?
+[21:06:03] <tux3> I have no tastes, but it looks fine to me!
+[21:09:03] <zetok> ok
+[21:09:42] <zetok> well, jekyll makes making a blog braindead simple
+[21:10:10] <zetok> from 0 knowledge, in a few minutes one has a blog
+[21:10:29] <zetok> now the only thing missing is content
+[21:12:44] <tux3> Cool. Now, before publishing stuff in the name of the qTox project, be sure to always have someone review it first!
+[21:12:59] <tux3> For proofreading and general sanity checking.
+[21:13:14] <zetok> mm
+[21:15:52] <zetok> posting, etc only via PRs
+[21:20:46] <zetok> https://a.uguu.se/VlGeLEpYbFOR.png ← current content
+[21:20:57] <zetok> (should the description be changed to something?)
+[21:22:56] <tux3> Is Tox� actually a registered trademark though :) ?
+[21:23:08] <zetok> nah
+[21:29:49] <zetok> hmm
+[21:39:49] <zetok> https://github.com/qTox/blog not yet deployed
+[21:42:02] <tux3> Maybe we should think of a first hello world post before publishing?
+[21:42:07] <tux3> So it feels less empty :)
+[21:42:34] * zetok is just wondering about publishing part
+[21:42:53] <tux3> ?
+[21:42:54] <zetok> i.e. I thought that gh is supposed to support just using jekyll, but it doesn't seem to just work™
+[21:43:09] <zetok> so I'm wondering if I didn't miss anything
+[21:43:14] <zetok> :s
+[21:45:09] <tux3> strange, you do seem to have the gh-pages branch set up properly :/
+[21:45:31] <zetok> um?
+[21:46:05] <zetok> I've deleted it
+[21:46:54] <zetok> also, from what I understood the base jekyll dir (what's on master) was supposed to be just pushed to gh-pages for it to work
+[21:47:45] <tux3> hm
+[21:48:45] <zetok> I can setup travis to do the build & push to gh-pages branch, but.. is it really required?
+[21:51:12] <tux3> Maybe it'll be easier to do it manually than to fight with travis...
+[21:51:19] <tux3> Travis is such a pain sometimes
+[21:53:23] <zetok> err
+[21:53:32] <zetok> >manually
+[21:53:34] <zetok> no.
+[21:54:13] <tux3> Suit yourself then :)
+[21:54:48] <zetok> #jekyll it is then
+[22:02:18] <zetok> >.<
+[22:02:26] <zetok> so I was doing it wrong
+[22:03:32] <tux3> Who'd a thunk :) ?
+[22:04:46] <zetok> https://qtox.github.io/blog/
+[22:05:02] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:05:43] <tux3> Neat!
+[22:05:47] <tux3> Bit empty, but neat
+[22:07:23] <zetok> posts are added by adding markdown files in `_posts`
+[22:08:02] <zetok> https://jekyllrb.com/docs/posts/
+[22:11:53] <sudden6> hi
+[22:12:05] <sudden6> a little bit late to the party...
+[22:13:46] <tux3> hello!
+[22:15:52] <sudden6> tux3: would be nice if you could review Diadlo's PRs https://github.com/tux3/qTox/pull/3488
+[22:16:05] <sudden6> and https://github.com/tux3/qTox/pull/3489
+[22:16:25] <sudden6> because I'm still working on understanding const
+[22:18:37] <sudden6> ah wait, antis81 is already on it, didn't notice that...
+[22:20:12] <zetok> sudden6: https://github.com/tux3/qTox/pull/3512 ?
+[22:20:36] <zetok> btw
+[22:20:41] <sudden6> didn't test it yet
+[22:21:34] <tux3> Wow that const PR is huge!
+[22:22:19] <sudden6> I think that's called technical debt in newspeak
+[22:23:01] <tux3> :)
+[22:24:39] <zetok> https://runcommand.io/2016/06/26/my-condolences-youre-now-the-maintainer-of-a-popular-open-source-project/ if there's still someone who haven't read it yet ;)
+[22:24:54] *** Joins: LittleVulpix (~Miranda@ )
+[22:25:43] <abbat> Hi! zetok, would you merge new translations (RU)?
+[22:26:01] <zetok> right
+[22:27:44] <zetok> abbat: usually I try to wait a ~day after last change on weblate, in case where someone is still working on a translation, unless there's something on master qTox/PR that would cause conflicts on weblate, then I'm pulling it sooner
+[22:28:10] <zetok> last change across all languages
+[22:28:10] <abbat> Ah, ok. Waiting
+[22:29:08] <zetok> there's been some changes there, and also 1 new string on master, so I guess it's the time
+[22:31:29] <sudden6> zetok: nice read
+[22:38:28] *** Joins: Emcy_ (~MC@ )
+[22:41:08] *** Quits: Emcy (~MC@ ) (Ping timeout: 246 seconds)
+[22:42:29] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vKgYG
+[22:42:29] -qtox-git-spam- qTox/master e4bc857 TheNain38: fix(groupinviteform): escape HTML
+[22:42:29] -qtox-git-spam- qTox/master 56fe94d sudden6: Merge pull request #3512...
+[22:43:34] -qtox-git-spam- [qTox] zetok opened pull request #3519: Update translations from weblate (master...tr) https://git.io/vKgYc
+[22:43:41] <zetok> I guess I'll rebase that PR
+[22:45:29] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[22:53:59] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vKgYQ
+[22:53:59] -qtox-git-spam- qTox/master 294bdab Colomban Wendling: fix(x11grab): try and use the current display...
+[22:53:59] -qtox-git-spam- qTox/master b5c8c60 sudden6: Merge pull request #3505...
+[23:31:07] <zetok> great
+[23:36:58] -qtox-git-spam- [qTox] zetok closed pull request #3519: Update translations from weblate (master...tr) https://git.io/vKgYc
