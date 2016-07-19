@@ -1,0 +1,133 @@
+[00:24:06] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:25:08] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:25:31] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[00:39:00] *** Joins: dardevelin (~dardeveli@ )
+[01:04:55] *** Joins: SkyzohKey (~skyzohkey@ )
+[01:14:32] *** Joins: f10 (~flo@ )
+[01:17:51] *** Joins: f10_ (~flo@ )
+[02:24:29] <nurupo> fixed windows builds (the NSIS plugin issue) https://build.tox.chat/view/qtox/job/qTox_pkg_windows_x86-64_nightly_release/ https://build.tox.chat/view/qtox/job/qTox_pkg_windows_x86-64_stable_release/
+[02:26:07] *** Joins: nightfuri (nightfury@ )
+[02:31:14] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[02:31:15] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:53:08] <Emcy> good
+[03:05:10] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:00:34] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[05:54:39] *** Joins: Chiitoo (~Chiitoo@ )
+[07:10:07] *** Joins: abbat (~Anton@ )
+[07:12:37] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[07:13:53] *** Joins: Chiitoo (~Chiitoo@ )
+[08:26:23] *** Joins: dardevelin (~dardeveli@ )
+[08:59:56] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:53:18] *** Joins: abbat (~abbat@ )
+[10:24:19] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[10:24:38] *** Joins: abbat (~abbat@ )
+[10:35:32] *** Joins: f10 (~flo@ )
+[10:49:55] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 252 seconds)
+[10:49:59] *** Joins: f10_ (~flo@ )
+[10:56:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[10:57:49] *** Joins: abbat (~abbat@ )
+[11:00:31] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:07:25] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[11:09:35] *** Joins: cisc (~cisc@ )
+[11:09:58] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:15:10] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: This Konversation is over  ! !! !)
+[11:17:18] *** Joins: Chiitoo (~Chiitoo@ )
+[11:17:57] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:18:38] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:19:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[11:19:27] *** Joins: LittleVulpix (~Miranda@ )
+[11:40:55] *** Joins: f10 (~flo@ )
+[11:40:57] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[11:41:10] *** Joins: f10_ (~flo@ )
+[11:48:51] *** Joins: minor (~mono@ )
+[12:02:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[12:06:31] *** Joins: abbat (~abbat@ )
+[12:59:59] *** Quits: minor (~mono@ ) (Quit: Ex-Chat)
+[13:09:46] *** Joins: st4ll1 (~st4ll1@ )
+[13:56:06] <cisc> Looks like there are some error on the Tumbleweed build on OBS: https://build.opensuse.org/package/show/home:antonbatenev:tox/qtox
+[14:02:06] <cisc> actually just the i586 build
+[14:10:11] <zetok> >The build can not begin, because required packages are either missing or not explicitly defined.
+[14:10:59] <zetok> cisc: https://github.com/abbat/tox.pkg/tree/master/qtox mind making a PR? :)
+[14:11:39] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:12:13] *** Joins: abbat (~abbat@ )
+[14:15:37] <cisc> a PR or an issue?
+[14:19:24] <zetok> fix is always better than just filling an issue :)
+[14:34:07] <cisc> i'd have to get a GitHub acct first
+[14:40:35] *** Joins: 21WAAQ9P3 (~quassel@ )
+[14:45:42] *** Quits: 21WAAQ9P3 (~quassel@ ) (Remote host closed the connection)
+[15:12:38] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[15:23:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 264 seconds)
+[15:36:08] *** Joins: in1t3r (~LordShiva@ )
+[15:36:33] *** Joins: stvlker (~stvlker@ )
+[15:36:50] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[16:13:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[16:16:03] *** Joins: abbat (~abbat@ )
+[16:44:48] *** Joins: Encrypt (~Chuck@ )
+[16:44:59] <Encrypt> Hello hello here :)
+[16:45:27] <Encrypt> zetok, One of my friends just dist-upgraded his Ubuntu 15.10 to the 16.04 one
+[16:45:48] <Encrypt> During a video call, there are glitches
+[16:45:56] <Encrypt> Like horizontal lines
+[16:46:09] <Encrypt> I don't know if you were aware of such a bug
+[16:47:22] <zetok> using which repo?
+[16:48:20] <zetok> Encrypt: also, when will you have time to update tox.chat packages?
+[16:48:52] <Encrypt> zetok, The OBS one
+[16:49:03] <Encrypt> <zetok> Encrypt: also, when will you have time to update tox.chat packages? // Yeah, I didn't answer, sorry
+[16:49:24] <Encrypt> zetok, But tux3 is the one packaging qTox on build.tox.chat
+[16:49:46] <zetok> hum
+[16:49:46] <Encrypt> zetok, + nurupo is the one who has full rights on pkg.tox.chat / build.tox.chat
+[16:49:51] <Encrypt> So, I can't do much for you
+[16:50:00] <zetok> fok
+[16:50:02] <zetok> ok*
+[16:50:28] <Encrypt> I wish I had more rights on pkg.tox.chat / build.tox.chat to do stuff
+[16:50:55] * zetok will pass to tux3 that he does need to do the stuff
+[16:51:42] <zetok> dunno about the bug, haven't heard about it before
+[16:53:42] <zetok> >Program received signal SIGSEGV, Segmentation fault.
+[16:53:42] <zetok> 0x00007ffff4676542 in ff_hscale8to15_8_ssse3 () from /usr/lib64/libswscale.so.3
+[16:53:47] <zetok> so, yeah.
+[16:54:26] <Encrypt> Ok
+[17:00:26] <zetok> Encrypt: would your friend mind making an issue?
+[17:00:39] <Encrypt> zetok, I'll tell him :)
+[17:25:45] *** Quits: Encrypt (~Chuck@ ) (Quit: Quitte)
+[17:32:51] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[17:48:40] *** Joins: sudden6 (~anonymous@ )
+[17:49:33] <zetok> sudden6: apparently Encrypt doesn't have access to the stuff
+[17:49:47] <zetok> and o/ ;)
+[17:49:55] <sudden6> o/ and -_-
+[18:05:06] *** Quits: valvin (~valvin@ ) (Ping timeout: 272 seconds)
+[18:06:22] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[18:06:23] *** Quits: Darky (~Darky@ ) (Ping timeout: 272 seconds)
+[18:06:57] *** Joins: f10 (~flo@ )
+[18:09:13] *** Joins: Darky (~Darky@ )
+[18:11:17] *** Joins: valvin (~valvin@ )
+[18:13:21] *** Joins: Encrypt (~Chuck@ )
+[18:20:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[18:24:55] *** Joins: abbat (~abbat@ )
+[18:30:06] *** Quits: Encrypt (~Chuck@ ) (Ping timeout: 250 seconds)
+[18:40:49] *** Joins: f10_ (~flo@ )
+[18:43:34] *** Joins: Encrypt (~Chuck@ )
+[18:56:23] *** Joins: Chiitoo (~Chiitoo@ )
+[19:02:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[19:32:50] *** Joins: sudden6 (~anonymous@ )
+[19:36:06] -qtox-git-spam- [qTox] Diadlo opened pull request #3528: fix(chatform): Fixed call buttons (master...fixCallButtons) https://git.io/vKVCY
+[19:36:28] *** Quits: Encrypt (~Chuck@ ) (Quit: Eating time!)
+[19:37:15] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[20:38:35] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:38:54] *** Joins: f10 (~flo@ )
+[21:26:36] *** Joins: abbat (~abbat@ )
+[22:08:27] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[22:08:31] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[22:10:27] *** Joins: f10 (~flo@ )
+[22:10:32] *** Joins: f10_ (~flo@ )
+[22:18:56] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[22:23:15] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:24:20] *** Joins: f10_ (~flo@ )
+[22:33:30] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[23:03:26] *** Joins: dardevelin (~dardeveli@ )
+[23:12:41] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[23:21:14] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[23:21:30] *** Joins: f10 (~flo@ )
+[23:46:25] *** Joins: abbat (~abbat@ )
+[23:54:25] *** Joins: atrapado (~atrapado@ )
+[23:54:41] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[23:55:20] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[23:57:18] <atrapado> which repository should I add for qTox for Debian? https://pkg.tox.chat/debian/ or http://download.opensuse.org/repositories/home:/antonbatenev:/tox/Debian_8.0/ ?
