@@ -1,0 +1,114 @@
+[00:00:22] *** Joins: soundslave_ (~soundslav@ )
+[00:00:23] *** Quits: soundslave_ (~soundslav@ ) (Changing host)
+[00:00:23] *** Joins: soundslave_ (~soundslav@ )
+[00:01:00] <zetok> atrapado: opensuse one
+[00:02:41] *** Quits: soundslave (~soundslav@ ) (Ping timeout: 258 seconds)
+[00:03:38] <atrapado> ok thanks zetok 
+[00:03:56] <zetok> you're welcome
+[00:05:44] *** Joins: f10_ (~flo@ )
+[00:06:42] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[00:14:20] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[00:21:59] *** Joins: f10 (~flo@ )
+[00:22:42] *** Joins: f10_ (~flo@ )
+[00:49:26] *** Quits: atrapado (~atrapado@ ) (Quit: Leaving)
+[02:04:36] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:04:59] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[04:07:20] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[05:18:57] *** Quits: cisc (~cisc@ ) (Ping timeout: 272 seconds)
+[05:21:19] *** Joins: cisc (~cisc@ )
+[06:00:31] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 252 seconds)
+[06:52:23] *** Joins: Guest95368 (~MC@ )
+[06:57:25] *** Joins: sudden6 (~anonymous@ )
+[07:03:06] *** Joins: dardevelin (~dardeveli@ )
+[08:12:14] *** Joins: f10_ (~flo@ )
+[09:15:05] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[09:20:54] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[09:27:48] *** Joins: cisc (~cisc@ )
+[09:56:46] *** Joins: abbat (~abbat@ )
+[10:47:58] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:18:48] *** Joins: toxygen_tox (2e35b4b1@ )
+[11:19:18] *** Quits: toxygen_tox (2e35b4b1@ ) (Client Quit)
+[11:25:08] *** Joins: f10 (~flo@ )
+[11:25:16] *** Joins: cisc (~cisc@ )
+[11:26:38] *** Joins: f10_ (~flo@ )
+[12:11:51] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 264 seconds)
+[12:34:26] *** Joins: Chiitoo (~Chiitoo@ )
+[12:36:33] *** Quits: zero-ghost (~0@ ) (Ping timeout: 276 seconds)
+[12:45:30] *** Joins: dardevelin (~dardeveli@ )
+[12:58:57] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:14:40] *** Joins: cisc (~cisc@ )
+[13:40:50] -qtox-git-spam- [qTox] Diadlo opened pull request #3531: fix(videoframe): Added buffer alignment between lines (master...fixAlignment) https://git.io/vKrCP
+[13:49:59] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[15:07:15] *** Joins: stvlker (~stvlker@ )
+[15:15:25] *** Joins: ccsdss (~ray@ )
+[15:15:28] *** Parts: ccsdss (~ray@ ) ()
+[15:21:52] *** Joins: st4ll1 (~st4ll1@ )
+[15:30:57] *** Quits: Dragofix (Dragofix@ ) (Max SendQ exceeded)
+[15:31:35] *** Joins: Dragofix (Dragofix@ )
+[15:31:55] *** Quits: Dragofix (Dragofix@ ) (Max SendQ exceeded)
+[15:32:27] *** Joins: Dragofix (Dragofix@ )
+[16:03:38] *** Joins: Lord_Vlad (~Vlad@ )
+[16:04:49] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[16:25:10] *** Joins: toxygen_tox (2e35b4b1@ )
+[16:39:57] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[16:53:02] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:54:06] *** Joins: cisc (~cisc@ )
+[17:08:07] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[17:17:17] *** Joins: cisc (~cisc@ )
+[17:21:40] *** Quits: Guest95368 (~MC@ ) (Quit: Leaving)
+[17:21:57] *** Joins: Guest95368 (~MC@ )
+[17:22:04] *** Quits: Guest95368 (~MC@ ) (Remote host closed the connection)
+[17:23:18] *** Joins: Emcy (~MC@ )
+[17:24:23] *** Joins: Emcy_ (~MC@ )
+[17:24:23] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[17:24:23] *** Joins: Emcy_ (~MC@ )
+[17:26:46] *** soundslave_ is now known as soundslave
+[17:27:51] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[17:43:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[17:53:13] *** Joins: sudden6 (~anonymous@ )
+[18:14:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[19:06:24] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:27:54] -qtox-git-spam- [qTox] zetok opened pull request #3532: Update translations from weblate (master...tr) https://git.io/vKosB
+[20:07:16] -qtox-git-spam- [qTox] zetok closed pull request #3532: Update translations from weblate (master...tr) https://git.io/vKosB
+[20:19:25] *** Joins: abbat (~Anton@ )
+[20:21:38] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:23:38] *** Joins: Chiitoo (~Chiitoo@ )
+[20:29:48] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[20:30:14] *** Joins: in1t3r (~LordShiva@ )
+[20:43:33] *** Joins: toweI (~toweI@ )
+[20:44:09] <toweI> what is the purpose of this rtaudio thing?
+[20:55:43] *** Joins: sudden6 (~anonymous@ )
+[21:05:47] <zetok> fixing stuff that can't be fixed because openal
+[21:06:35] <zetok> after fixes, with RtAudio it should be possible to make filter_audio work properly
+[21:36:28] <toweI> oh so openal was the reason why this never worked?
+[21:37:10] <zetok> kinda
+[21:37:26] <zetok> AFAIK it just doesn't provide needed info
+[21:37:38] <zetok> + there are unicode problems with device names
+[21:38:11] <zetok> RtAudio is supposed to do both of those things
+[21:39:23] <zetok> ><zetok> AFAIK it just doesn't provide needed info
+[21:39:46] <zetok> irungentoo made a patch for openal with this, but it doesn't look like it was ever merged by upstream, so.
+[21:43:07] <toweI> I was using his openal fork. it did not change a thing
+[21:44:47] <zetok> yep, it's not supposed to
+[21:45:55] <zetok> openal is(?) still used, only at some later point it will be removed in favour of RtAudio, when RtAudio side will have at least feature parity
+[21:46:23] <zetok> (it's written in the PR description)
+[21:51:15] <toweI> I hope it has a better device managment than opanAl. openal wasted cpu time by letting devices open and sending empty sound or something
+[21:52:58] <zetok> dunno, hopefully
+[21:56:46] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 258 seconds)
+[21:58:26] *** Joins: smaragdus (igneus@ )
+[21:59:36] *** Quits: toweI (~toweI@ ) (Remote host closed the connection)
+[22:01:38] <Emcy_> im surprised to hear openal is still being developed
+[22:04:10] *** Joins: Saaaam (5c59d115@ )
+[22:04:17] <Saaaam> Hello everyone ^^
+[22:06:29] <Saaaam> Simple question: I do have a friend who has a tablet, and we want to install the best Tox software, where developpers though about tablet users while they developped the software. I don't know if qTox is appropriated for that or if I shoul tell her to use another Tox software? :3
+[22:10:38] <Emcy_> qtox is on tablets?
+[22:11:35] <zetok> Saaaam: if android, use Antox
+[22:12:29] <Saaaam> Thanks ;)
+[22:13:11] <zetok> Saaaam: btw, https://a.uguu.se/B7CINNAVR1iN.png
+[22:14:49] <Saaaam> hum... not good... :/
+[22:15:52] <Saaaam> I can't work on it right now, I do have some PHP problems to fix for work for tomorrow (gonna spent the night on it >.< )
+[22:16:05] <Saaaam> But I keep this in mind, don't worry ;)
+[22:18:05] <zetok> no problem, there's no hurry :)
+[23:08:46] *** Quits: toxygen_tox (2e35b4b1@ ) (Quit: Page closed)
+[23:34:27] *** Quits: Saaaam (5c59d115@ ) (Quit: Page closed)
+[23:42:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[23:49:27] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
