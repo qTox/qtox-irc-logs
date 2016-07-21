@@ -1,0 +1,98 @@
+[01:30:29] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[01:33:45] *** Joins: f10_ (~flo@ )
+[02:33:50] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[02:34:09] *** Joins: f10_ (~flo@ )
+[03:16:17] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[03:16:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[04:21:38] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[06:38:51] *** Joins: zero-ghost (~0@ )
+[07:23:54] -qtox-git-spam- [qTox] antis81 closed pull request #3526: docs(INSTALL.md): add RtAudio to list of dependencies (audio/api...audio/api) https://git.io/vKauQ
+[07:45:40] *** Joins: f10 (~flo@ )
+[07:46:33] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 240 seconds)
+[08:06:33] *** Quits: TheVoid- (~void@ ) (Ping timeout: 276 seconds)
+[08:07:17] *** Joins: TheVoid (~void@ )
+[08:08:59] *** Joins: abbat (~Anton@ )
+[08:33:30] *** Joins: f10_ (~flo@ )
+[08:54:05] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:22:31] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[09:52:50] *** Joins: abbat (~abbat@ )
+[10:33:43] *** Joins: dardevelin (~dardeveli@ )
+[10:48:25] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[10:49:03] *** Quits: f10_ (~flo@ ) (Ping timeout: 264 seconds)
+[11:04:08] *** Quits: dardevelin (~dardeveli@ ) (Read error: Connection reset by peer)
+[11:05:56] *** Joins: dardevelin (~dardeveli@ )
+[11:11:29] *** Quits: dardevelin (~dardeveli@ ) (Read error: Connection reset by peer)
+[11:13:21] *** Joins: dardevelin (~dardeveli@ )
+[11:17:17] *** Quits: dardevelin (~dardeveli@ ) (Read error: Connection reset by peer)
+[11:30:26] *** Joins: Diadlo (~diadlo@ )
+[11:31:21] <Diadlo> zetok: Can you test #3531 again?)
+[11:31:45] <Diadlo> https://github.com/tux3/qTox/pull/3531
+[11:46:03] <zetok> Diadlo: now it's back to crashing
+[11:46:10] <zetok> want bt?
+[11:47:19] <Diadlo> If not the same, lets see
+[11:48:18] <zetok> https://gist.github.com/zetok/b8ea453ae3b5207ff0f2e515c77a6f13 seems to be the same
+[11:48:48] <Diadlo> No. I don't understand, why it stop crashing before
+[11:53:07] <Diadlo> Hm... Seems, now without warning?
+[11:55:40] <zetok> yep
+[12:11:36] <Diadlo> zetok: Can you send your /var/tmp/portage/media-video/ffmpeg-2.8.6/work/ffmpeg-2.8.6/libswscale/swscale.c and /var/tmp/portage/media-video/ffmpeg-2.8.6/work/ffmpeg-2.8.6/libswscale/hscale.c or link to download this sources?
+[12:14:26] <zetok> um, I don't have them
+[12:15:57] <Diadlo> Hm.. It's strange
+[12:16:48] <zetok> if needed, I could emerge with `installsources`, but those files should be unmodified ffmpeg source
+[12:19:13] <zetok> Diadlo: https://ffmpeg.org/releases/ffmpeg-2.8.6.tar.xz
+[12:22:44] <Diadlo> Thank you
+[12:26:00] <zetok> np
+[12:55:31] *** Quits: VVD (~VVD@ ) ()
+[13:05:50] <travis-ci> qTox/qTox-Website (28e4d69): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/146086629 / Changes: https://github.com/qTox/qTox-Website/compare/fc3a95bd1bca...28e4d69cc774
+[13:21:00] <qTox-Website> [qTox-Website] zetok closed pull request #7: remove integer value from translation files and building script (master...weblate) https://git.io/vK6fP
+[13:21:52] <travis-ci> qTox/qTox-Website (3878b3c): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/146090075 / Changes: https://github.com/qTox/qTox-Website/compare/28e4d69cc774...3878b3caa697
+[13:22:01] <zetok> hmm
+[13:22:25] * zetok wonders whether travis notifications should be turned down a bit
+[13:36:45] <zetok> https://hosted.weblate.org/projects/tox/website/ ← qTox website is on weblate now \o/
+[14:03:46] <qTox-Website> [qTox-Website] zetok opened pull request #8: update translation section, adding Weblate as translating option (master...readme) https://git.io/vK6Lt
+[14:33:53] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[14:35:18] <qTox-Website> [qTox-Website] zetok closed pull request #8: update translation section, adding Weblate as translating option (master...readme) https://git.io/vK6Lt
+[14:37:58] <travis-ci> qTox/qTox-Website (7461eea): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/146108838 / Changes: https://github.com/qTox/qTox-Website/compare/3878b3caa697...7461eea86972
+[14:41:17] *** Joins: stvlker (~stvlker@ )
+[15:05:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[15:08:58] *** Joins: abbat (~abbat@ )
+[15:34:14] *** Joins: f10 (~flo@ )
+[15:37:17] *** Joins: dardevelin (~dardeveli@ )
+[15:55:35] *** Joins: f10_ (~flo@ )
+[16:04:48] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[16:14:46] *** Joins: abbat (~abbat@ )
+[16:45:30] *** Joins: fred_barclay (~fred@ )
+[17:02:02] *** fred_barclay is now known as fred_barclay_res
+[17:02:11] *** fred_barclay_res is now known as fred_barclay
+[17:02:24] *** fred_barclay is now known as fred_barclay_
+[17:03:59] *** Quits: fred_barclay_ (~fred@ ) (Quit: Leaving)
+[17:04:06] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[17:04:23] *** Joins: fred_barclay (~fred@ )
+[17:07:11] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[17:13:00] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[17:20:58] *** Joins: LittleVulpix (~Miranda@ )
+[17:24:18] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[17:28:16] *** Joins: sudden6 (~anonymous@ )
+[17:43:20] *** Joins: cisc (~cisc@ )
+[17:56:55] <cisc> Gettings logs now in .~/cache/Tox/qTox/ as I wasn't before, I don't see any commit on GitHub about that so maybe was something on my end
+[18:36:43] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:42:51] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 272 seconds)
+[19:24:42] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[19:25:26] *** Joins: f10_ (~flo@ )
+[19:26:21] *** Joins: f10__ (~flo@ )
+[19:26:41] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[19:39:36] *** Joins: abbat (~Anton@ )
+[19:52:49] *** CryptoSiD is now known as CryptoSiD`
+[19:53:04] *** CryptoSiD` is now known as `CryptoSiD
+[19:53:19] *** `CryptoSiD is now known as CryptoSiD
+[19:53:28] *** CryptoSiD is now known as CryptoSlD
+[20:30:24] <sudden6> cisc: that was changed pretty "long" time ago
+[20:37:04] <cisc> sudden6: I wasn't getting any logs there for about a month
+[20:39:35] *** Joins: Diadlo (~diadlo@ )
+[20:42:08] <cisc> thoughout a string of updated qtox packages
+[20:50:05] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[20:54:16] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 244 seconds)
+[21:26:01] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[21:46:24] <sudden6> hmm that's interesting then
+[22:50:12] -qtox-git-spam- [qTox] antis81 closed pull request #3507: fix settings avform (master...fix/settings/avform) https://git.io/vK8c4
+[23:04:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:05:45] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
