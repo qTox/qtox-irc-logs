@@ -1,0 +1,207 @@
+[00:02:43] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[03:39:27] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[03:39:52] *** Joins: f10__ (~flo@ )
+[03:45:38] *** Quits: f10__ (~flo@ ) (Ping timeout: 272 seconds)
+[03:46:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:47:01] *** Joins: f10_ (~flo@ )
+[03:47:55] *** Joins: f10__ (~flo@ )
+[06:45:20] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:52:30] *** Joins: cisc (~cisc@ )
+[06:59:22] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[07:02:26] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[07:34:32] *** Joins: f10_ (~flo@ )
+[07:36:29] *** Joins: sudden6 (~anonymous@ )
+[07:49:22] *** Joins: f10__ (~flo@ )
+[08:09:08] *** Joins: abbat (~Anton@ )
+[08:22:15] *** Joins: Diadlo (~diadlo@ )
+[08:56:18] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:16:28] *** Joins: st4ll1 (~st4ll1@ )
+[09:47:28] *** Joins: Chiitoo (~Chiitoo@ )
+[09:52:17] *** Joins: abbat (~abbat@ )
+[09:54:44] -qtox-git-spam- [qTox] antis81 opened pull request #3533: fix a crash in screen grabber (master...fix/screen-grabber) https://git.io/vKP2y
+[09:55:15] -qtox-git-spam- [qTox] antis81 closed pull request #3522: fix(chatform): Fix crash on screenshot capture (master...fixScreenshot) https://git.io/vKgXG
+[10:36:20] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[10:37:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[10:55:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[10:56:05] *** Joins: abbat (~abbat@ )
+[11:34:18] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[11:36:29] *** Quits: soundslave (~soundslav@ ) (Read error: Connection reset by peer)
+[11:36:54] *** Joins: soundslave (~soundslav@ )
+[11:36:54] *** Quits: soundslave (~soundslav@ ) (Changing host)
+[11:36:54] *** Joins: soundslave (~soundslav@ )
+[11:39:00] *** Joins: in1t3r (~LordShiva@ )
+[11:47:28] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:58:41] *** Joins: cisc (~cisc@ )
+[12:11:06] *** Joins: pcre_ (~quassel@ )
+[12:22:19] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:41:10] *** Joins: Chiitoo (~Chiitoo@ )
+[12:57:28] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[13:07:15] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 276 seconds)
+[13:08:04] *** Joins: pcre (~quassel@ )
+[13:23:34] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[13:24:04] *** Joins: abbat (~abbat@ )
+[13:51:03] *** Quits: pcre (~quassel@ ) (Ping timeout: 258 seconds)
+[14:45:47] *** Joins: stvlker (~stvlker@ )
+[15:02:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[15:04:09] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[15:12:56] *** Joins: abbat (~abbat@ )
+[15:13:24] *** Quits: abbat (~abbat@ ) (Client Quit)
+[15:13:41] *** Joins: abbat (~abbat@ )
+[15:35:06] *** Joins: fred_barclay (~fred@ )
+[15:37:09] *** Joins: SkyzohKey (~skyzohkey@ )
+[15:38:56] *** Quits: fred_barclay (~fred@ ) (Client Quit)
+[15:39:21] *** Joins: fred_barclay (~fred@ )
+[15:40:00] *** Quits: fred_barclay (~fred@ ) (Client Quit)
+[15:40:25] *** Joins: fred_barclay (~fred@ )
+[15:44:08] *** Quits: fred_barclay (~fred@ ) (Client Quit)
+[15:44:30] *** Joins: fred_barclay (~fred@ )
+[15:55:13] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[16:08:05] *** CryptoSlD is now known as CryptoSiD
+[16:14:10] *** Joins: f10_ (~flo@ )
+[16:37:40] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[16:54:00] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[16:54:34] *** Joins: abbat (~abbat@ )
+[17:01:53] *** Joins: f10__ (~flo@ )
+[17:18:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:30:23] *** Joins: abbat (~abbat@ )
+[18:49:26] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[18:54:02] *** Joins: f10 (~flo@ )
+[19:05:30] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:28:05] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[19:31:19] *** Joins: f10 (~flo@ )
+[20:03:07] *** Joins: abbat (~Anton@ )
+[20:22:21] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:23:55] *** Joins: Chiitoo (~Chiitoo@ )
+[20:32:34] *** Joins: Diadlo (~diadlo@ )
+[20:35:55] <Diadlo> zetok: I understand right, that no crash, if you open settings? (about video stream)
+[20:36:26] <zetok> there's no crash if I set the device again
+[20:38:01] <Diadlo> But JUST opening av settings tab doesn't change anything?
+[20:40:33] <Diadlo> zetok:  And what about changing mode, but not device? It fix crash?
+[20:40:59] <zetok> >But JUST opening av settings tab doesn't change anything?
+[20:41:03] <zetok> dunno actually
+[20:41:10] <Diadlo> Can you try?
+[20:41:37] <zetok> yep
+[20:44:23] <zetok> crashes
+[20:45:07] <Diadlo> And the last one :)
+[20:45:07] <zetok> ~interesting, there was `None` video device show in settings
+[20:45:21] <Diadlo> Hm..
+[20:45:23] <zetok> and yet
+[20:45:24] <zetok> Debug: SIZER QRect(0,0 0x0)
+[20:45:34] <Diadlo> Yes, it's normal
+[20:45:51] <Diadlo> > And what about changing mode, but not device? It fix crash?
+[20:46:11] <Diadlo> Oh, if you have "None" you can test it
+[20:46:13] <Diadlo> Sorry :)
+[20:46:15] <Diadlo> Thanks
+[21:27:16] *** Joins: Emcy (~MC@ )
+[21:28:31] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[21:37:49] <Diadlo> zetok: Can you test last commit (d02e3cb) and send full logs? (please, do test with opening settings and without it) :)
+[21:38:37] <zetok> >Automatic merge failed; fix conflicts and then commit the result.
+[21:39:31] <zetok> Diadlo: ↑
+[21:40:16] <Diadlo> Fixed
+[21:41:44] <zetok> thanks
+[21:42:03] <Diadlo> No problem)
+[21:44:31] <zetok> crashes without going into settings
+[21:46:20] <zetok> https://gist.github.com/zetok/7f1dea628219ee7ce90411df2aa02e04 bt
+[21:48:05] <zetok> https://gist.github.com/zetok/203cb5ee29179357988aaa450f842330 ← same thing when going to settings
+[21:48:09] <zetok> Diadlo: ↑
+[21:49:30] <Diadlo> Big thanks, seems, problem ~in CameraDevice::getDefaultDeviceName
+[22:03:47] <Diadlo> zetok: Another one test, if you can
+[22:03:52] <Diadlo> With new commit
+[22:04:24] <Diadlo> 1) Make call without crash (open settings, change device, etc.)
+[22:04:33] <Diadlo> 2) Make call with crash
+[22:04:37] <Diadlo> And send both logs
+[22:06:40] <Diadlo> You can don't attach bt
+[22:07:35] <zetok> https://gist.github.com/zetok/f34709577d3e5d082fc4a84e10032c30 ← crash
+[22:12:09] <zetok> https://gist.github.com/zetok/f5caa40ebc543f86b18a4d0a9d7730f4 ← without crash
+[22:12:16] <zetok> Diadlo: ↑
+[22:13:44] <Diadlo> Hm... It's really strange
+[22:14:02] <Diadlo> Can you change any checkbox in your settings and check it after restart?
+[22:14:35] <zetok> yep
+[22:14:58] <Diadlo> It changed?
+[22:17:47] <Diadlo> zetok: ↑
+[22:19:57] <zetok> sorry for the wait, I needed to copy right files from backup to restore stuff that made qTox crash
+[22:20:18] <Diadlo> np
+[22:20:43] <Diadlo> qTox crash broke your files?
+[22:20:48] <zetok> nah
+[22:21:01] <zetok> saved config crashes qTox when starting video
+[22:21:12] <zetok> ;D
+[22:21:19] <zetok> still crashes
+[22:21:58] <Diadlo> > Can you change any checkbox in your settings and check it after restart?
+[22:22:08] <zetok> yep, that's what I did
+[22:22:34] <Diadlo> But I don't need video test :)
+[22:22:47] <zetok> um?
+[22:23:27] <Diadlo> When you change status of any checkbox and after restart them state saved?
+[22:23:51] <zetok> um?
+[22:23:52] <zetok> yes?
+[22:24:16] <Diadlo> Why it's question?)
+[22:24:35] <zetok> I'm not sure if I understood – if you're asking whether config is saved after restart and loaded correctly, then yes
+[22:24:37] <Diadlo> Sorry for my bad english
+[22:24:49] <Diadlo> Yes
+[22:25:27] <Diadlo> It's boolshit. I don't know
+[22:26:30] <zetok> Diadlo: https://gist.github.com/zetok/48170d57d9fa5c4cd89693175ccfe509 ← perhaps try with this in `qtox.ini` ?
+[22:26:58] <Diadlo> Stop
+[22:27:13] <Diadlo> You always use same config?
+[22:27:25] <Diadlo> > videoDev=x11grab#:0
+[22:27:27] <zetok> for this, yes
+[22:27:32] <Diadlo> This line is wrong
+[22:27:35] <zetok> 'no'
+[22:27:38] <Diadlo> videoDev=x11grab#:0.0
+[22:27:47] <Diadlo> Try with this
+[22:27:52] <zetok> it's the line that earlier qTox version set, and it's perfectly valid
+[22:28:10] <zetok> the problem is that newest qTox crashes with old settings
+[22:28:15] <Diadlo> Yes
+[22:28:25] <Diadlo> Oh my god
+[22:28:53] <Diadlo> All this time, I think, that problem with new settings
+[22:29:46] <zetok> sorry
+[22:29:51] <zetok> I should have made it more clear
+[22:30:15] <Diadlo> But user can once change device and it should fix problem. It's not normal?
+[22:30:21] <zetok> no
+[22:30:28] <zetok> user shouldn't be expected to do that
+[22:30:52] <zetok> if qTox crashes due to settings it set by itself in earlier version, that's a qTox problem
+[22:31:25] <Diadlo> Ok. It will be easy to fix. Thanks :)
+[22:31:27] <zetok> and it's kinda needed anyway for qTox to be able to handle malformed/invalid settings
+[22:32:00] <Diadlo> I agree with you
+[22:33:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[22:33:48] -qtox-git-spam- [qTox] Diadlo closed pull request #3531: fix(videoframe): Added buffer alignment between lines (master...fixAlignment) https://git.io/vKrCP
+[23:41:04] -qtox-git-spam- [qTox] Diadlo opened pull request #3534: Fix desktop stream crash with old settings (master...fixVideoCrash) https://git.io/vK1zO
+[23:41:06] <Diadlo> zetok: New test :)
+[23:41:16] <Diadlo> zetok: Can you try?
+[23:41:27] <zetok> yep
+[23:42:06] <Emcy> are qtox nightlies still a thing
+[23:42:40] <Emcy> i tried to get the "nightly" build from jenkins, and it was v 1.4.0 and demanded to upgrade itself right away
+[23:43:04] <zetok> Emcy: use the right repo
+[23:43:25] <Emcy> i dont use repos
+[23:43:31] <Emcy> i sue windows binaries
+[23:43:36] <zetok> ok
+[23:44:06] <zetok> right, builds for windows are broken due to migration
+[23:44:27] <zetok> =.="
+[23:44:36] <zetok> or was it fixed?
+[23:44:43] * zetok doesn't remember
+[23:44:43] <Emcy> oh
+[23:45:31] <zetok> ><nurupo> fixed windows builds (the NSIS plugin issue)
+[23:45:35] <zetok> ah, it was fixed
+[23:45:58] <zetok> Emcy: so, theoretically, there should(?) be nightly builds for windows
+[23:46:53] <zetok> Emcy: only .zip though, and they might prompt you for update
+[23:46:57] <Emcy> i tried it and it was 1.4.0
+[23:47:04] <zetok> (which will results in a downgrade)
+[23:47:17] <Emcy> unless the version number is irrelevatn
+[23:47:26] <zetok> also, the thing you would want to look at is the commit hash
+[23:47:33] <zetok> it may, or may not be
+[23:47:45] <Emcy> ok
+[23:48:09] <zetok> Diadlo: still crashes
+[23:48:38] <Emcy> what exactly triggers jenkins to rebuild packages
+[23:48:53] <Emcy> it rebuilt everything related to qtox 23hrs ago
+[23:48:56] <zetok> if nothing changed, push to master
+[23:49:00] <Emcy> but "no changes"
+[23:49:04] * zetok shrugs
+[23:49:11] <Diadlo> Can you send logs?
+[23:49:51] <zetok> Diadlo: https://gist.github.com/zetok/e37886df1893c2037efb131acc3160f8
+[23:55:27] <Emcy> https://github.com/tux3/qTox/commit/ff92a5595002a4156bada85eeffe4bdb3cdd7f8e this commit hash
+[23:55:30] <Emcy> 7 days ago hm
+[23:55:43] <zetok> not really
+[23:56:07] <zetok> it's from ~yesterday
+[23:56:45] <Emcy> thats the latest commit on master
+[23:57:00] <Emcy> github says it was 7 days ago?
+[23:57:08] <zetok> 'no'
+[23:57:42] <Emcy> time machine? lol
+[23:58:59] <zetok> https://a.uguu.se/CyFLAfzboy4c.png ← as you can see, it was committed yesterday
