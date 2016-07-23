@@ -1,0 +1,77 @@
+[00:01:22] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[00:01:48] <Emcy> github timestamps are fucked up then
+[00:02:09] <zetok> not really
+[00:02:39] <zetok> they just don't show the commit date
+[00:13:43] <Diadlo> Good night everyone
+[00:18:36] <zetok> night :)
+[00:24:10] <Emcy> wow nightly has font size option
+[00:24:13] <Emcy> praise the sun
+[00:45:15] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: This Konversation is over  ! !! !)
+[00:47:12] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[02:25:33] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[03:59:46] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[03:59:46] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[04:28:02] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[04:32:33] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 240 seconds)
+[04:39:12] *** Quits: soundslave (~soundslav@ ) (Read error: Connection reset by peer)
+[04:39:34] *** Joins: soundslave (~soundslav@ )
+[04:39:34] *** Quits: soundslave (~soundslav@ ) (Changing host)
+[04:39:34] *** Joins: soundslave (~soundslav@ )
+[07:49:56] *** Joins: abbat (~Anton@ )
+[08:59:15] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:12:33] *** Quits: anoa (~anoa@ ) (Ping timeout: 244 seconds)
+[09:12:33] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 244 seconds)
+[09:13:10] *** Joins: anoa (~anoa@ )
+[09:14:16] *** Joins: nurupo (~nurupo.ga@ )
+[09:28:34] *** Joins: st4ll1 (~st4ll1@ )
+[09:43:19] <Diadlo> Hello
+[09:43:30] <Diadlo> zetok: Are you here?
+[09:57:03] *** Joins: abbat (~abbat@ )
+[11:08:13] *** Joins: hpanago (uid15586@ )
+[11:08:56] *** Joins: Chiitoo (~Chiitoo@ )
+[11:58:07] <zetok> Diadlo: yep
+[12:01:51] <Diadlo> zetok: Another test to god of tests ;) (It still crash, but I added more debug)
+[12:02:27] <zetok> ok, I'll test in a few minutes
+[12:08:40] <zetok> Diadlo: you can't reproduce with modified qtox.ini ?
+[12:10:56] <Diadlo> zetok: No, I can't :(
+[12:10:59] <Diadlo> If you about https://gist.github.com/zetok/48170d57d9fa5c4cd89693175ccfe509
+[12:12:59] <zetok> https://gist.github.com/zetok/c633b6dea0c8ac090871b98730f23bba ← log
+[12:13:02] <zetok> Diadlo: ↑
+[12:13:54] <Diadlo> You test it with echobot?
+[12:14:00] <zetok> nah
+[12:14:09] <zetok> with other qTox instance that works
+[12:14:20] <Diadlo> yep
+[12:14:40] <Diadlo> echobot send "wrong" frame
+[12:15:57] <Diadlo> > that works
+[12:16:02] <Diadlo> It means no crash?
+[12:16:13] <Diadlo> zetok: ↑
+[12:16:29] <zetok> yep
+[13:04:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:13:10] *** Joins: abbat (~abbat@ )
+[13:40:28] <zetok> Diadlo: um, I mean that other qTox instance that was compiled before the commit that caused problems works
+[13:40:41] <zetok> PR qTox still crashes
+[13:46:55] <Diadlo> I know. Now have no idea how to fix.
+[13:53:56] *** Joins: f10_ (~flo@ )
+[13:57:49] <zetok> :(
+[14:05:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:12:17] *** Joins: f10 (~flo@ )
+[14:13:31] *** Joins: abbat (~abbat@ )
+[14:17:31] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[16:11:55] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:12:32] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[16:33:35] *** Joins: isAAAc_ (~isAAAc@ )
+[16:39:46] *** Quits: isAAAc (~isAAAc@ ) (*.net *.split)
+[16:54:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[16:56:39] *** Joins: abbat (~abbat@ )
+[16:57:40] *** Joins: st4ll1 (~st4ll1@ )
+[17:05:50] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:16:44] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[18:19:16] *** Quits: ben_nabiy (~bennabiy@ ) (Quit: http://www.yellowdeli.com)
+[18:51:40] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:08:30] *** Joins: sudden6 (~anonymous@ )
+[19:21:47] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[20:02:27] *** Joins: abbat (~Anton@ )
+[20:09:35] *** Joins: Chiitoo (~Chiitoo@ )
+[21:45:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[22:09:37] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:38:16] -qtox-git-spam- [qTox] Diadlo opened pull request #3536: Change comment style (master...changeCommentStyle) https://git.io/vKD7z
