@@ -1,0 +1,260 @@
+[00:20:22] <Diadlo> zetok: I came up with another stupid test
+[00:20:24] *** Joins: f10 (~flo@ )
+[00:20:58] <Diadlo> https://gist.github.com/zetok/48170d57d9fa5c4cd89693175ccfe509 
+[00:21:05] <Diadlo> Problem exist with this config, right?
+[00:21:49] <zetok> I think so
+[00:22:07] <zetok> i.e. that should be the relevant part of the config
+[00:22:31] <Diadlo> Yes, I think too, but can you test it?
+[00:22:39] <zetok> "test" ?
+[00:22:51] <zetok> i.e. manually edit and see what will happen?
+[00:23:03] <Diadlo> Yes
+[00:23:23] <Diadlo> Setup this config and try crash
+[00:23:33] <Diadlo> *try to
+[00:26:21] <zetok> with `.0` added at the end it seems to work
+[00:26:54] <Diadlo> And without -- don't?
+[00:26:58] <zetok> yep
+[00:27:29] <Diadlo> Can you set `videoDev=asdasd` ?
+[00:27:46] <Diadlo> And check this out
+[00:29:24] <zetok> crashes
+[00:29:29] <Diadlo> Wow
+[00:30:04] <Diadlo> Ok. And what about `videoDev=none`?
+[00:31:52] <Diadlo> You can setup it from settings
+[00:32:08] <Diadlo> I think
+[00:32:15] <zetok> crashes
+[00:32:24] <Diadlo> "Super"
+[00:32:59] <Diadlo> This issue absolutely not related with screen stream
+[00:33:22] <Diadlo> Can you change it on GH?
+[00:33:43] <zetok> hm?
+[00:34:29] <Diadlo> Doesn't matter)
+[00:43:40] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:59:51] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:00:40] <Diadlo> zetok: With regular settings video call with "None" device causes problems?
+[01:18:51] <zetok> yep
+[01:20:23] <Diadlo> Ok. Now, when we know, that 294bdab77f8fb6c2b29917f5318ffe4ec2bc2ab6 just provoked bug, but not the reason of it, can you find broken commit?
+[01:20:35] <Diadlo> zetok: ↑
+[01:21:00] <zetok> hmm
+[01:21:02] <Diadlo> Offtop: How you write '↑' without copy-paste?
+[01:22:29] <zetok> ralt + shift + u
+[01:25:25] <zetok> perhaps s/ralt/compose key/
+[01:26:08] <zetok> compose:rwin
+[01:26:29] <zetok> ↑ this `setxkbmap` option
+[01:26:58] <Diadlo> Thanks
+[01:28:14] <zetok> np
+[01:43:52] <Diadlo> zetok: How long, typically, goes search?
+[01:43:59] <Diadlo> *commit search
+[01:44:17] <zetok> >Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[01:44:19] <zetok> :P
+[01:44:39] <zetok> 1-2 min per revision
+[01:44:57] <Diadlo> > Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[01:45:11] <Diadlo> Does it means, that you found?
+[01:45:49] <zetok> https://github.com/tux3/qTox/issues/3527#issuecomment-234688481
+[01:46:01] <zetok> I think so
+[01:46:43] <zetok> i.e. after bisect finds the commit that introduced bug, one should test with the commit reverted, to check if reverting would help
+[01:49:27] <zetok> and yep, reverting helps
+[01:49:51] <Diadlo> Cool
+[01:53:25] <zetok> now that I look at it, it would seem that it takes ~5 min per revision :s
+[01:54:08] <Diadlo> Let's try https://github.com/tux3/qTox/pull/3534
+[01:58:43] <zetok> Diadlo: https://gist.github.com/zetok/947042626eb8dceb0efb14a43245af8b ← crashes; new bt
+[01:59:00] <zetok> also, https://github.com/tux3/qTox/issues/3527#issuecomment-234689245
+[02:03:37] <zetok> goodnight :)
+[02:04:26] <Diadlo> Goodnight)
+[02:17:13] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[02:26:31] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[02:51:47] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:01:11] *** Joins: Chiitoo (~Chiitoo@ )
+[03:17:41] *** Joins: Emcy (~MC@ )
+[03:20:42] *** Joins: Emcy_ (~MC@ )
+[03:22:19] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[03:22:47] *** Joins: Emcy (~MC@ )
+[03:25:49] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[03:26:30] *** Quits: Emcy (~MC@ ) (Client Quit)
+[03:27:12] *** Joins: Emcy (~MC@ )
+[03:27:45] *** Quits: Emcy (~MC@ ) (Client Quit)
+[03:31:34] *** Joins: Emcy (~MC@ )
+[03:36:01] *** Quits: Emcy (~MC@ ) (Ping timeout: 252 seconds)
+[03:39:25] *** Joins: Emcy (~MC@ )
+[03:39:25] *** Quits: Emcy (~MC@ ) (Changing host)
+[03:39:25] *** Joins: Emcy (~MC@ )
+[05:47:53] *** Joins: Emcy_ (~MC@ )
+[05:50:48] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[07:33:07] *** Joins: sudden6 (~anonymous@ )
+[07:37:45] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[08:12:24] *** Joins: f10_ (~flo@ )
+[08:20:38] *** Joins: f10 (~flo@ )
+[08:42:00] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[08:55:00] *** Joins: Diadlo (~diadlo@ )
+[08:55:11] *** Joins: in1t3r (~LordShiva@ )
+[09:02:13] *** Quits: smaragdus (igneus@ ) (Quit: Nettalk6 - www.ntalk.de)
+[09:02:25] *** Joins: Emcy (~MC@ )
+[09:05:02] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 265 seconds)
+[09:37:02] *** Joins: SkyzohKey (~skyzohkey@ )
+[09:43:34] *** Joins: Diadl0 (~diadlo@ )
+[09:43:34] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[09:50:03] <nurupo> zetok: btw, grayhatter has left #tox-dev
+[09:50:03] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[09:50:12] <zetok> so?
+[09:50:18] <nurupo> though i guess you would know by now
+[09:51:06] <nurupo> oh, so you got over the issue with grayhatter
+[09:51:10] <nurupo> good to know
+[09:52:02] <zetok> I hear that Jfreegman is doing grayhatter's job quite well
+[09:52:11] <zetok> and it's not an issue with grayhatter
+[09:52:33] <zetok> per se.
+[10:00:03] *** Joins: smaragdus (~omoo@ )
+[10:32:29] *** Joins: SkyzohKey (~skyzohkey@ )
+[10:44:03] <cisc> jfreegman can't tolerate constructive criticism w/o acting like a 2 year old
+[10:44:19] <cisc> that is why the tox project whatever the hell that even is today is where its at
+[10:50:00] *** Joins: Emcy_ (~MC@ )
+[10:50:00] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[10:50:00] *** Joins: Emcy_ (~MC@ )
+[10:51:56] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[10:52:17] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[10:53:11] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[11:00:43] <zetok> mm
+[11:01:07] <zetok> :/
+[11:03:40] *** Joins: cisc (~cisc@ )
+[12:25:34] *** Joins: Emcy (~MC@ )
+[12:26:09] <SkyzohKey> qTox is finished :)
+[12:26:10] <SkyzohKey> http://i.imgur.com/qeWVUch.png
+[12:27:16] <zetok> SkyzohKey: by something build on top of stuff ridden with security vulnerabilities?
+[12:27:19] <genesis> q what ?
+[12:27:29] <SkyzohKey> like ?
+[12:27:36] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[12:27:49] <zetok> google for it
+[12:27:57] <zetok> or read some security advisories
+[12:27:59] <SkyzohKey> zetok: There are no security vulns if everything is nicely coded
+[12:28:04] <zetok> lol
+[12:28:07] <SkyzohKey> + this is a personal experiment
+[12:30:51] *** Joins: ccsdss (~ray@ )
+[12:30:55] *** Parts: ccsdss (~ray@ ) ()
+[12:32:12] <SkyzohKey> zetok: can't find any security issue
+[12:32:55] <SkyzohKey> ah, ddg was wrong on this searc
+[12:36:34] <SkyzohKey> + chromium just sandbox everything that the app does
+[12:44:59] *** Joins: Emcy_ (~MC@ )
+[12:44:59] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[12:44:59] *** Joins: Emcy_ (~MC@ )
+[12:48:13] *** Quits: Emcy (~MC@ ) (Ping timeout: 252 seconds)
+[12:48:49] *** Joins: Emcy (~MC@ )
+[12:48:49] *** Quits: Emcy (~MC@ ) (Changing host)
+[12:48:49] *** Joins: Emcy (~MC@ )
+[12:49:59] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[12:51:00] *** Joins: Emcy_ (~MC@ )
+[12:51:42] <zero-ghost> that picture looks like a worse version of qtox
+[12:53:05] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[12:57:38] <genesis> tox , ton univers impitoyâaaaableuh.
+[13:15:43] *** Joins: abbat (~abbat@ )
+[13:27:00] <SkyzohKey> ;3
+[13:30:42] <SkyzohKey> <zero-ghost> that picture looks like a worse version of qtox
+[13:30:50] <SkyzohKey> what would you qualify of "worse" ?
+[13:30:57] <SkyzohKey> http://i.imgur.com/Ty8DOT1.png
+[13:31:13] *** Joins: Emcy (~MC@ )
+[13:31:13] *** Quits: Emcy (~MC@ ) (Changing host)
+[13:31:13] *** Joins: Emcy (~MC@ )
+[13:33:13] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[13:33:41] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[13:34:08] *** Joins: Emcy_ (~MC@ )
+[13:34:54] *** Joins: abbat (~Anton@ )
+[13:36:11] *** Quits: Emcy (~MC@ ) (Ping timeout: 265 seconds)
+[13:40:58] *** Joins: Emcy (~MC@ )
+[13:42:57] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 265 seconds)
+[13:44:44] <zero-ghost> yup that
+[13:50:31] *** Joins: Emcy_ (~MC@ )
+[13:52:09] *** Joins: LittleVulpix (~Miranda@ )
+[13:53:33] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[13:56:27] *** Joins: Emcy (~MC@ )
+[13:58:42] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[14:01:59] *** Joins: Emcy_ (~MC@ )
+[14:06:00] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[14:06:54] *** Joins: Emcy (~MC@ )
+[14:07:51] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[14:12:27] *** Joins: Emcy_ (~MC@ )
+[14:15:31] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[14:22:01] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[14:23:48] *** Joins: SkyzohKey (~skyzohkey@ )
+[14:35:09] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
+[14:41:42] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[14:42:21] *** Joins: cisc (~cisc@ )
+[14:44:51] <SkyzohKey> zero-ghost: I was asking in what it was worse than qTox
+[14:45:02] <SkyzohKey> zetok: Another thing cool with electron: http://i.imgur.com/QIEkVjw.png
+[14:48:04] <anoa> SkyzohKey: Font of chat is too light.
+[14:50:24] <SkyzohKey> Yeah I need to fix the fonts, x)
+[14:51:51] <SkyzohKey> anoa: I thought that the Tox Mockup was using the "Aller" font
+[14:51:54] <SkyzohKey> but i'm probably wrong
+[15:03:31] *** Quits: koshii (~w@ ) (Ping timeout: 240 seconds)
+[15:04:28] *** Joins: stvlker (~stvlker@ )
+[15:06:20] *** Joins: koshii (~w@ )
+[15:14:46] *** Joins: smaragdus (~omoo@ )
+[15:23:57] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[15:26:09] *** Joins: SkyzohKey (~skyzohkey@ )
+[15:46:55] *** Joins: Diadlo (~Diadlo@ )
+[16:07:25] *** Joins: sudden6 (~anonymous@ )
+[16:10:40] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[16:12:05] *** Joins: sudden6 (~anonymous@ )
+[16:13:00] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[16:14:26] *** Joins: sudden6 (~anonymous@ )
+[16:19:37] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[16:27:48] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[16:34:09] *** Joins: sudden6 (~anonymous@ )
+[16:35:27] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[16:37:17] *** Joins: sudden6 (~anonymous@ )
+[16:44:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[16:47:05] *** Joins: pcre_ (~quassel@ )
+[16:51:36] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[16:54:02] *** Joins: f10_ (~flo@ )
+[17:00:21] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[17:14:39] *** Joins: sudden6 (~anonymous@ )
+[17:17:12] <zetok> sudden6: o/
+[17:21:04] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[17:32:42] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[18:13:18] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:14:00] *** Quits: Diadlo (~Diadlo@ ) (Ping timeout: 258 seconds)
+[18:14:43] *** Joins: f10 (~flo@ )
+[18:16:58] *** Joins: Diadlo (~Diadlo@ )
+[19:42:32] *** Quits: Diadlo (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[19:59:19] *** Joins: Diadlo (~Diadlo@ )
+[20:28:06] *** Joins: BiTOk (~BiTOk@ )
+[20:28:52] <BiTOk> hello. why qtox doesn't moved to cmake or other modern build system?
+[20:33:58] <Diadl0> CMake generates platform specific make files
+[20:34:17] <Diadl0> qmake -- not
+[20:34:41] <BiTOk> are you tried to build qtox on windows?
+[20:34:55] <Diadl0> Not
+[20:34:59] <BiTOk> :-)
+[20:35:40] <BiTOk> my last attempt took about 2 days
+[20:35:53] <BiTOk> *successful attempt
+[20:36:19] <Diadl0> As I know, CMake doesn't make it easier :)
+[20:36:32] <Diadl0> / Friends say to me
+[20:36:35] <BiTOk> It can
+[20:45:09] <Diadl0> BiTOk: I found partial answer
+[20:45:10] <Diadl0> http://stackoverflow.com/questions/1368534/why-does-qt-use-its-own-make-tool-qmake
+[20:50:28] *** Joins: Chiitoo (~Chiitoo@ )
+[20:57:14] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[21:02:28] *** Joins: toxygen_tox (uid175287@ )
+[21:03:48] <zetok> BiTOk: cmake apparently can't do what qmake does
+[21:04:17] <zetok> BiTOk: https://github.com/tux3/qTox/issues/1153
+[21:05:03] <zetok> BiTOk: if you want to give a shot moving build system to cmake, feel free to do so :)
+[21:05:47] <zetok> (android part was removed, so now it might be simpler)
+[21:08:08] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:08:24] *** Joins: cisc (~cisc@ )
+[21:12:38] *** Quits: Diadlo (~Diadlo@ ) (Ping timeout: 258 seconds)
+[21:24:07] <BiTOk> zetok: I'll think about it:-)
+[21:57:33] *** Joins: f10 (~flo@ )
+[21:59:09] <Diadl0> zetok: If BiTOk write issue inside another "parent" issue, should I add reference to "parent" issue in commit?
+[21:59:50] <zetok> you could, e.g. "Mentioned in #1234 by @someone"
+[21:59:58] <Diadl0> Thanks
+[22:01:07] <BiTOk> Diadl0: are you fixed resolutions duplication?
+[22:01:49] -qtox-git-spam- [qTox] Diadlo opened pull request #3539: fix(avform): Made `best mode` selection more strict. (master...fixDeviceDuplicates) https://git.io/vKy5H
+[22:01:50] <Diadl0> Yes
+[22:03:39] <Diadl0> I believe :)
+[22:04:15] <Diadl0> I just made `magic const` smaller
+[22:08:14] -qtox-git-spam- [qTox] Diadlo opened pull request #3540: feat(avform): Moved loading video device in another thread. (master...avsettingBlockThread) https://git.io/vKy5j
+[22:12:43] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[22:14:18] *** Quits: koshii (~w@ ) (Ping timeout: 258 seconds)
+[22:15:27] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 258 seconds)
+[22:16:45] *** Joins: koshii (~w@ )
+[22:17:22] *** Quits: abbat (~Anton@ ) (Ping timeout: 258 seconds)
+[22:17:46] *** Joins: abbat (~Anton@ )
+[23:01:44] *** Joins: f10_ (~flo@ )
+[23:02:13] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:10:19] *** Joins: LittleVulpix (~Miranda@ )
+[23:12:34] *** Joins: stvlker (~stvlker@ )
+[23:14:41] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[23:21:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
