@@ -1,0 +1,298 @@
+[00:21:25] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[00:23:55] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:25:15] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 244 seconds)
+[01:59:24] *** Joins: oranges (oranges@ )
+[02:00:31] *** Joins: f10_ (~flo@ )
+[02:19:15] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[02:52:46] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:04:24] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[04:56:38] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[05:16:49] *** Joins: Bill_MI (~Bill@ )
+[05:18:40] *** Quits: Bill_MI (~Bill@ ) (Client Quit)
+[05:29:48] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[05:30:11] *** Joins: zero-ghost (~0@ )
+[05:57:43] *** Joins: in1t3r (~LordShiva@ )
+[07:56:36] *** Joins: smaragdus2 (~omoo@ )
+[07:57:54] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 260 seconds)
+[08:02:20] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:04:54] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 276 seconds)
+[08:20:45] *** Joins: cisc (~cisc@ )
+[08:22:48] *** Quits: cisc (~cisc@ ) (Client Quit)
+[08:25:12] *** Joins: cisc (~cisc@ )
+[08:40:05] *** Joins: BiTOk (~BiTOk@ )
+[08:53:24] -qtox-git-spam- [qTox] antis81 closed pull request #3488: style(toxid, widgets): Made constructor explicit (master...makeConstructorExplicit) https://git.io/vKqiy
+[09:02:14] *** Joins: Diadlo (~diadlo@ )
+[09:22:04] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[09:43:42] *** Joins: PXes1 (5dcf8fd4@ )
+[09:45:07] *** Joins: cisc (~cisc@ )
+[09:46:43] *** Quits: cisc (~cisc@ ) (Client Quit)
+[10:43:32] *** Joins: f10_ (~flo@ )
+[11:18:13] *** Joins: cisc (~cisc@ )
+[11:19:39] -qtox-git-spam- [qTox] zetok opened pull request #3543: docs(CONTRIBUTING.md): make more explicit what commit message needs (master...contrib) https://git.io/vKS3v
+[11:24:41] *** Joins: abbat (~abbat@ )
+[11:25:42] <zetok> hmm
+[11:34:06] -qtox-git-spam- [qTox] zetok opened pull request #3544: fix(l10n): incorrect/missing arguments in Arabic translation (master...ar) https://git.io/vKS3C
+[11:44:57] <zetok> Diadlo: o/
+[11:47:43] <zetok> Diadlo: https://github.com/qTox/qTox-Website#language-file-metadata
+[11:49:01] <zetok> Diadlo: i.e. `_author` should be people who did the translation in files other than en.json – you might want to add yourself :)
+[11:49:39] <zetok> Diadlo: or rather, since I'll be pulling stuff from weblate, do you want me to to add you there?
+[11:51:23] <Diadlo> Hello. Doesn't metter. If you want)
+[11:54:25] <Diadlo> zetok: What about close https://github.com/tux3/qTox/issues/3535 ?
+[11:55:19] * zetok wonders
+[11:55:49] <zetok> if people could compile qTox on osx, there'd be no problem
+[11:56:04] <zetok> since if they wanted a fix before 1.5 release, they could just compile master
+[11:56:20] <BiTOk> Hello. Is anybody know why libsodium and some other dependences aren't in windows\bootstrap.sh?
+[11:56:32] <zetok> but since compiling on osx broke, I'm not even sure if osx people will get 1.5
+[11:56:44] <Diadlo> zetok: But it's differen issue
+[11:56:45] <zetok> BiTOk: no idea
+[11:57:10] <Diadlo> This is duplicate of fixed issue
+[11:59:32] <zetok> right
+[12:01:15] <Diadlo> Yeah. -1 issue
+[12:01:24] <Diadlo> Now just 469
+[12:05:08] *** Joins: Emcy (~MC@ )
+[12:07:08] *** Quits: Emcy (~MC@ ) (Client Quit)
+[12:07:29] <qTox-Website> [qTox-Website] zetok opened pull request #9: Update translations from weblate (master...tr) https://git.io/vKSso
+[12:10:08] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[12:10:29] <qTox-Website> [qTox-Website] zetok pushed 2 new commits to master: https://git.io/vKSsX
+[12:10:29] <qTox-Website> qTox-Website/master 38ad209 Diadlo: Translated using Weblate (Russian)...
+[12:10:29] <qTox-Website> qTox-Website/master be8cc1e Kristjan Räts: Translated using Weblate (Estonian)...
+[12:13:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[12:19:42] -qtox-git-spam- [qTox] zetok closed pull request #3544: fix(l10n): incorrect/missing arguments in Arabic translation (master...ar) https://git.io/vKS3C
+[12:29:54] *** Joins: Emcy (~MC@ )
+[12:34:43] *** Joins: f10_ (~flo@ )
+[12:48:01] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[12:49:03] *** Joins: f10_ (~flo@ )
+[12:51:32] <BiTOk> when bootstrap.sh starting in linux env, who should download and build libsodium for toxcore?
+[12:57:36] *** Joins: Emcy_ (~MC@ )
+[13:01:27] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[13:08:36] *** Joins: sudden6 (~anonymous@ )
+[13:08:58] <sudden6> zetok: o/
+[13:23:31] <Diadlo> sudden6: Do you have any idea, what the problem with #3540?
+[13:24:20] <sudden6> I'm investigating
+[13:33:25] *** Joins: Chiitoo (~Chiitoo@ )
+[13:38:48] <zetok> sudden6: \o
+[13:39:18] <Diadlo> zetok: Should qtox support unsupported OS?
+[13:39:22] <Diadlo> About Win XP
+[13:39:29] <sudden6> sorry for not answering yesterday, did you have anything important?
+[13:39:46] *** Quits: PXes1 (5dcf8fd4@ ) (Ping timeout: 250 seconds)
+[13:40:41] <zetok> sudden6: I was just wondering whether you have time to merge some small PRs that fix stuff ;)
+[13:41:18] <zetok> Diadlo: if it doesn't require a lot of effort
+[13:41:36] <zetok> Diadlo: as for the newest xp issue, I doubt whether we need to do anything
+[13:42:17] <Diadlo> I think, it easy to fix
+[13:42:39] <sudden6> zetok: which ones specifically ;)
+[13:42:58] <zetok> sudden6: video crash one
+[13:43:13] <zetok> Diadlo: err
+[13:43:20] <Diadlo> Why?
+[13:43:44] <Diadlo> Just add another condition like `qWinVersion() == WV_XP`
+[13:43:54] <zetok> no
+[13:43:57] <Diadlo> Why?
+[13:43:58] <zetok> completely unnecessary
+[13:44:33] <zetok> also, there's no need to change something that works to something that will break stuff for all xp users, or introduce code that will require maintaining, and will be only used by xp
+[13:44:45] <sudden6> Diadlo: shouldn't it be possible to get the path from some qt environment api?
+[13:46:49] <Diadlo> sudden6: I don't know, but now for Windows we use partial hardcoded path
+[13:47:16] <Diadlo> QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + QDir::separator() + "AppData" + ...
+[13:48:09] <sudden6> yeah, maybe there's a direct way to %AppData% ?
+[13:48:18] <sudden6> would be more future proof
+[13:48:56] <Diadlo> Does anybody try to use "%AppData%" in qt?
+[13:49:34] <sudden6> no idea, but I heard using %appdata% isn't always a good idea
+[13:49:37] <Diadlo> QStandardPaths::AppDataLocation
+[13:49:39] <Diadlo> Wow
+[13:49:44] <Diadlo> It exist :)
+[13:49:53] <sudden6> that's what I thought :)
+[13:51:47] <Diadlo> > This enum value was added in Qt 5.4.
+[13:51:49] <Diadlo> :(
+[13:51:54] <sudden6> ah, crap
+[13:52:30] <zetok> Diadlo: why would you think that breaking stuff is a good idea?
+[13:54:01] <Diadlo> zetok: If microsoft decides that it would be cool rename "AppData" to "AppDataNew" we will have problems
+[13:54:23] <zetok> err, nope
+[13:54:41] <zetok> this is not the case
+[13:55:14] <Diadlo> AppDataLocation seems cross platform
+[13:55:29] <Diadlo> Ie means, that we can do some code cleanup
+[13:55:37] <Diadlo> *It
+[13:56:15] <Diadlo> But not now
+[13:56:34] <Diadlo> After migration on Qt 5.4
+[14:03:29] *** Joins: f10 (~flo@ )
+[14:03:29] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[14:06:40] <sudden6> Diadlo: I found that antis81 solution ~works as expected
+[14:07:11] <sudden6> it makes the ui load immediately the same as your version
+[14:07:27] <Diadlo> Hm...
+[14:07:38] <sudden6> but it crashes if I switch tabs, not sure if I implemented it right though
+[14:08:15] <Diadlo> I add mutex in (un)subscribe
+[14:08:40] <Diadlo> May be it's reason?
+[14:08:49] <sudden6> probably yes
+[14:09:59] <sudden6> could you post you code somewhere for comparison?
+[14:10:27] <Diadlo> I can push it. It will be normal?
+[14:11:20] <sudden6> normal?
+[14:11:50] <Diadlo> https://github.com/tux3/qTox/pull/3540/commits/3f630966e6b7a4371f9c73d19baedacc7ca9b2d9
+[14:18:37] <Diadlo> I try without mutex. Still blocks
+[14:19:01] <sudden6> that's strange
+[14:20:48] <Diadlo> https://github.com/tux3/qTox/pull/3540/commits/19be0fbec34e68a01f51bb4320a582db1f355f19
+[14:25:12] <Diadlo> It work to me for few video modes
+[14:29:00] <sudden6> Diadlo: I have no idea why your first solution works, but the current one doesn't...
+[14:29:18] <sudden6> theoretically it should work
+[14:29:44] <Diadlo> Yes, in theory
+[14:30:27] <Diadlo> sudden6: For you my last solution works fine?
+[14:31:30] <sudden6> wait a moment, didn't notice you changed again
+[14:31:56] <Diadlo> I just remove mutex
+[14:32:16] <sudden6> nope, segfaults if I switch tab
+[14:32:57] <Diadlo> But first loading have no UI freezes?
+[14:33:18] <sudden6> yes
+[14:33:32] <Diadlo> But I have
+[14:33:39] <Diadlo> wtf?
+[14:33:55] <sudden6> maybe it's two issues?
+[14:34:24] <Diadlo> Maybe
+[14:34:32] <sudden6> for me it's definitely setSource which causes the delay
+[14:34:53] <Diadlo> Wow
+[14:35:38] <Diadlo> I move only `subscribe()` in `QtConcurrent::run` and it avoid of crashes
+[14:36:06] <Diadlo> But sill freez for some modes
+[14:36:09] <Diadlo> *freeze
+[14:37:49] <sudden6> wait, it still freezes for another mode for me too
+[14:39:20] <Diadlo> Ok. I came later and try again
+[14:40:10] <sudden6> huh? I don't understand what you'r trying to say^^
+[14:43:20] <sudden6> Diadlo: maybe getVideoDevices(); is messing things up? it seems to also be slow
+[14:51:13] -qtox-git-spam- [qTox] sudden6 pushed 3 new commits to master: https://git.io/vKSWk
+[14:51:13] -qtox-git-spam- qTox/master 780a017 Nils Fenner: fix(screen-grabber): fix crash
+[14:51:13] -qtox-git-spam- qTox/master 2d52032 Nils Fenner: refactor(chatform): cleanup if block and use positive comparison
+[14:51:13] -qtox-git-spam- qTox/master d1da8a9 sudden6: Merge pull request #3533...
+[14:56:06] <zetok> sudden6: um, this one https://github.com/tux3/qTox/pull/3534
+[14:56:24] <sudden6> ah
+[14:57:22] <zetok> Diadlo: https://github.com/tux3/qTox/pull/3528 ← rebase?
+[15:01:31] <zetok> https://github.com/tux3/qTox/blob/master/translations/de.ts#L105 ← 3rd arg is missing
+[15:04:04] -qtox-git-spam- [qTox] sudden6 closed pull request #3534: Fix desktop stream crash (master...fixVideoCrash) https://git.io/vK1zO
+[15:10:11] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[15:15:14] -qtox-git-spam- [qTox] sudden6 opened pull request #3550: fix(l10n): missing argument in German translation (master...translation_update) https://git.io/vKSlr
+[15:15:31] <sudden6> zetok: ↑ german translation fix
+[15:15:36] <zetok> thanks :)
+[15:18:52] <sudden6> I'm off for the day, bye :)
+[15:20:35] <zetok> cya :)
+[15:23:43] *** Joins: cisc (~cisc@ )
+[16:04:16] *** Joins: Bill_MI (~Bill@ )
+[16:14:12] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vKSBT
+[16:14:12] -qtox-git-spam- qTox/master e6e666f sudden6: fix(l10n): missing argument in German translation
+[17:04:09] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[17:05:20] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:13:23] <SkyzohKey> zero-ghost: Still worse than qTox ? http://i.imgur.com/sQdN5lH.png :3
+[17:20:05] *** Joins: abbat (~Anton@ )
+[17:41:43] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:42:49] *** Joins: f10 (~flo@ )
+[18:52:56] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:11:46] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[19:12:33] *** Joins: f10 (~flo@ )
+[20:00:58] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[20:11:25] *** Joins: vindelschtuffen (~vindelsch@ )
+[20:13:24] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[20:16:03] *** Joins: abbat (~abbat@ )
+[20:32:33] *** Joins: stvlker (~stvlker@ )
+[20:46:45] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[21:41:07] -qtox-git-spam- [qTox] Diadlo opened pull request #3551: fix(translator): Added layout direction reset on translation. (master...fixRTLLang) https://git.io/vKS6w
+[21:54:29] *** Joins: f10_ (~flo@ )
+[21:58:46] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[22:11:22] *** Joins: f10 (~flo@ )
+[22:34:06] *** Joins: LittleVulpix (~Miranda@ )
+[22:42:56] *** Joins: Emcy (~MC@ )
+[22:42:56] *** Quits: Emcy (~MC@ ) (Changing host)
+[22:42:56] *** Joins: Emcy (~MC@ )
+[22:46:00] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[22:46:31] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[22:53:49] *** Joins: Emcy_ (~MC@ )
+[22:53:59] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[22:53:59] *** Joins: Emcy_ (~MC@ )
+[22:57:02] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[22:57:50] *** Joins: Emcy (~MC@ )
+[22:57:50] *** Quits: Emcy (~MC@ ) (Changing host)
+[22:57:50] *** Joins: Emcy (~MC@ )
+[22:59:43] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[23:03:01] *** Joins: Emcy_ (~MC@ )
+[23:03:01] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[23:03:01] *** Joins: Emcy_ (~MC@ )
+[23:05:28] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[23:05:42] *** Joins: Emcy (~MC@ )
+[23:05:42] *** Quits: Emcy (~MC@ ) (Changing host)
+[23:05:42] *** Joins: Emcy (~MC@ )
+[23:08:45] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 250 seconds)
+[23:16:42] <Diadlo> zetok: Are you here?
+[23:16:48] <zetok> yep
+[23:17:09] <Diadlo> Who configure jenkins build?
+[23:17:43] <zetok> um?
+[23:17:59] <zetok> who configured it initially, or who can configure & reconfigure it?
+[23:18:19] <Diadlo> 2
+[23:18:25] <zetok> anyone
+[23:18:44] <zetok> (that is, assuming that they can into github PRs)
+[23:19:06] <zetok> https://github.com/tux3/qTox/blob/master/.travis/travis.sh ← this is what travis runs
+[23:19:16] <zetok> the part that you would be interested in, is osx script
+[23:19:27] <zetok> or is that about doxygen?
+[23:19:38] <zetok> if so, then linux script would need to be modified
+[23:19:56] <zetok> https://github.com/tux3/qTox/blob/master/.travis.yml ← general travis config
+[23:20:00] <Diadlo> It's about https://build.tox.chat/view/qtox/
+[23:20:20] <zetok> oh
+[23:20:25] <zetok> then almost no one
+[23:20:35] <zetok> tux3 has access to it
+[23:20:57] <zetok> why?
+[23:21:07] <BiTOk> is there is nightly builds for any PR?
+[23:21:14] <zetok> no
+[23:21:23] <Diadlo> Will be cool have this
+[23:21:40] <BiTOk> can jenkins build it?
+[23:21:57] <zetok> I've started doing stuff in this direction, and soon after my access to jenkins was removed
+[23:21:59] * zetok shrugs
+[23:22:38] <Diadlo> Why?
+[23:22:39] <BiTOk> maybe tux3 can configure it?
+[23:23:18] <zetok> Diadlo: tox.chat people decided that they can't trust me
+[23:23:38] <Diadlo> WAT? -_-
+[23:23:59] <Diadlo> Ok
+[23:24:19] <BiTOk> observed some problems with many pr's, they often break good code
+[23:24:26] <zetok> BiTOk: yeah
+[23:24:46] <BiTOk> there is a need to strengthen testing
+[23:24:46] <Diadlo> If we will have all PR build in jenkins, many people can easly test it
+[23:24:56] <zetok> as for tux3 configuring stuff, I wouldn't count on this, since he doesn't have enough time for stuff
+[23:25:06] <zetok> we won't
+[23:25:43] <BiTOk> but without regular autobuilds it is not possible
+[23:25:57] * zetok wonders
+[23:26:15] <zetok> thing is, building every PR & getting build artifacts would be possible via travis
+[23:26:21] <zetok> (kinda)
+[23:26:26] <zetok> (in a way)
+[23:26:42] <zetok> the problem is, where those binaries will be stored?
+[23:27:00] <Diadlo> qtox.github.io ?
+[23:27:02] <zetok> i.e. that's *a lot* of space, basically new binary for each new push to any of PRs
+[23:27:05] <zetok> nope
+[23:27:15] <Diadlo> Why?
+[23:27:17] <zetok> that's hosted by github, and they have 1GB limit
+[23:27:22] <zetok> "limit"
+[23:27:42] <zetok> they nicely ask you to not have "websites" bigger than 1GB
+[23:27:53] <zetok> (same goes for repo size)
+[23:27:57] <BiTOk> 2-3 builds per day
+[23:28:02] <zetok> BiTOk: nope
+[23:28:44] <BiTOk> dropbox?
+[23:28:49] <BiTOk> mega.co.nz?
+[23:28:56] <zetok> eh.
+[23:29:04] <zetok> hmm
+[23:29:24] <zetok> IIRC oranges linked in some issue to something that hosts binaries for FOSS for free
+[23:29:35] <zetok> not sure if they'd host all the stuff
+[23:31:42] <Diadlo> I can share ~5G
+[23:32:52] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[23:33:22] <zetok> https://github.com/tux3/qTox/issues/3019#issuecomment-203153504
+[23:34:31] <zetok> Data Storage (Per additional 1 GB) Included
+[23:34:53] <zetok> not sure what does that mean in regard to "Free for OSS"
+[23:35:15] <zetok> Vagrant is what we'd be interested in
+[23:35:35] *** Joins: f10_ (~flo@ )
+[23:35:56] <zetok> (I think?)
+[23:37:11] <zetok> https://www.vagrantup.com/
+[23:37:56] <zetok> this + something for automated GUI testing
+[23:38:10] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[23:38:11] <zetok> iphy had something for it mentioned in TokTok docs(?)
+[23:38:17] * zetok goes to check what it was
+[23:39:43] <zetok> https://fedorahosted.org/dogtail/  ← this is the thing
+[23:40:47] <Diadlo> I think, for distribution will be enough ftp? Why not?
+[23:41:45] <zetok> hm?
+[23:42:59] <Diadlo> For what you suggest vagrantup?
+[23:43:20] <zetok> builds for people who would want to test qTox
+[23:44:07] * zetok wonders if it would be possible to integrate `test-pr.sh` with it well
+[23:44:34] <Diadlo> You say, that we can get build artifacts from travis
+[23:44:36] <Diadlo> Right?
+[23:44:53] <zetok> yes, but that isn't the best option
+[23:45:17] <zetok> since first you'd need to configure travis in a way that would result in builds that are usable
+[23:46:31] <zetok> also, this would make travis build times way longer than they're now
+[23:46:51] <Diadlo> Ok. I understand
+[23:48:49] <Diadlo> Adding automatic test make build longer too
+[23:50:10] <zetok> not that much
+[23:56:22] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 252 seconds)
+[23:58:57] *** Joins: f10_ (~flo@ )
