@@ -1,0 +1,152 @@
+[00:08:35] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:08:55] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[00:20:13] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[00:57:06] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[06:12:26] *** Joins: abbat (~Anton@ )
+[06:27:52] *** Quits: sockspls (~sockspls@ ) (Quit: oh god my znc crashed again)
+[08:04:17] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[08:08:24] *** Joins: Emcy (~MC@ )
+[08:38:55] *** Joins: Diadlo (~diadlo@ )
+[09:02:47] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:10:01] *** Joins: BiTOk (~BiTOk@ )
+[09:13:25] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:14:03] *** Joins: LittleVulpix (~Miranda@ )
+[09:33:46] *** Joins: f10_ (~flo@ )
+[09:34:24] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[09:41:57] *** Joins: f10 (~flo@ )
+[10:16:52] <Diadlo> zetok: What you think about https://github.com/tux3/qTox/issues/3554 ?
+[10:17:06] <Diadlo> And hello :)
+[10:17:14] <zetok> hai :)
+[10:18:03] *** Joins: abbat (~abbat@ )
+[10:18:04] * zetok wonders
+[10:18:42] <zetok> if I understand correctly, most of the logging (date & place in source) is being logged by `qDebug()`, right?
+[10:20:18] <zetok> [09:30:57.551] src/persistence/profile.cpp:308
+[10:20:25] <zetok> ↑ that part, right?
+[10:20:26] <Diadlo> Yes
+[10:20:37] <Diadlo> It easy to change
+[10:20:47] <Diadlo> I talk about format
+[10:21:15] <zetok> `[09:30:57.551 UTC]`
+[10:21:30] <Diadlo> Ok
+[10:22:35] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[10:25:09] *** Joins: sockspls (~sockspls@ )
+[10:25:42] -qtox-git-spam- [qTox] Diadlo opened pull request #3555: feat(main): Changed time in logs on UTC. (master...changeDebugTime) https://git.io/vK7I3
+[10:25:55] *** Joins: albel727 (~albel727@ )
+[10:56:01] *** Joins: bashrc (~robertmot@ )
+[10:56:12] *** Joins: dardevelin (~dardeveli@ )
+[10:56:34] <bashrc> is it possible to re-load the bootstrap nodes periodically, or are they only read once on startup?
+[10:57:08] <bashrc> (in a mesh the list of available bootstrap nodes can vary over time)
+[10:58:15] <Diadlo> Not periodically. Settings -> General -> Reconnect
+[10:58:24] <Diadlo> Only manual
+[10:58:38] <Diadlo> // As I know
+[10:59:22] <bashrc> could there be an automatic option in the ini file?
+[11:01:15] <Diadlo> Now isn't available. If somebody more competent (zetok?) confirm it, you can create issue
+[11:01:34] <Diadlo> zetok: ↑ ?
+[11:02:13] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[11:02:42] <zetok> bashrc: yes and no
+[11:03:13] <zetok> i.e. toxcore does keep nodes to bootstrap off by itself
+[11:03:36] <zetok> as for bootstrap nodes provided by qTox, no, there's not going to be an option like that
+[11:03:51] <zetok> if you want them updated, make a PR to qTox with an update
+[11:03:57] <zetok> (there are tools to do it)
+[11:04:13] <zetok> ><zetok> i.e. toxcore does keep nodes to bootstrap off by itself
+[11:04:44] <zetok> i.e. peers from the network, and the list does get updated if you're connected to the network
+[11:05:51] <zetok> as for option to manually reconnect periodically, again, not happening, since needing to restart is a bug, and this needs to be fixed, not hidden away
+[11:05:56] <zetok> (bug in toxcore)
+[11:06:37] <zetok> >are they only read once on startup?
+[11:06:38] <zetok> yep
+[11:07:06] <zetok> they're just needed to bootstrap into network for the first time, from there toxcore does rest of the job and updates stuff by itself
+[11:07:22] <bashrc> I agree that needing to restart is a bug. Ideally peers with toxcore move in and out of the mesh, but an edge running qTox can still find the list of bootstrap nodes
+[11:07:43] <zetok> note though that if all of the nodes that toxcore has 'cached' will become offline, the bootstrap list will be used to bootstrap into network
+[11:07:59] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[11:09:17] <zetok> um
+[11:09:37] <zetok> right, sorry, the wording I used was a bit misleading
+[11:09:53] <zetok> there's no "list" per se – there are just other nodes that you're connected to
+[11:10:13] *** Joins: abbat (~abbat@ )
+[11:10:21] <zetok> and each of them (provided that they do have port forwarded) can be used to bootstrap into network
+[11:10:42] <zetok> and that's the "list" that toxcore has
+[11:10:53] <zetok> (in simplification)
+[11:11:15] <bashrc> the list within the ini file can be periodically updated via avahi broadcasts. The question then is, can qtox read that list occasionally
+[11:11:26] <zetok> need to forward port will be nullified once toxcore gets upnp (or whatever it's called)
+[11:11:36] <zetok> no, and no
+[11:12:00] <zetok> updating it like that would be a good example of "doing it wrong"
+[11:12:27] <bashrc> what would doing it right look like?
+[11:12:32] <zetok> make a PR
+[11:12:35] <oranges> when are you gonna rejoin tox zetok 
+[11:12:38] <oranges> it's inevitable
+[11:12:51] <zetok> oranges: there's #toktok
+[11:12:59] <zetok> and that's what's inevitable
+[11:13:05] <oranges> toktok will join tox too
+[11:13:19] <zetok> it's the other way around
+[11:13:27] <oranges> you'll see
+[11:13:34] <zetok> since "tox" can't get anything done
+[11:13:43] <zetok> I'm already seeing
+[11:13:52] <oranges> the future is so bright
+[11:14:24] <zetok> you might want to move away from the incoming train
+[11:46:50] -qtox-git-spam- [qTox] Diadlo opened pull request #3556: [Need tests] Shift screen region on windows. (master...fixMultiscreenStream) https://git.io/vK7G2
+[11:47:06] *** Joins: pcre_ (~quassel@ )
+[11:54:42] *** Joins: st4ll1 (~st4ll1@ )
+[11:58:19] <zero-ghost> zetok: wasnt my post, just linked so anyone could give input there
+[11:58:37] <zetok> zero-ghost: figured :)
+[12:14:28] *** Joins: dardevelin (~dardeveli@ )
+[12:20:54] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[12:21:48] *** Joins: dardevelin (~dardeveli@ )
+[12:26:39] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[12:26:55] *** Joins: st4ll1 (~st4ll1@ )
+[12:37:27] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[13:22:25] *** Quits: smaragdus2 (~omoo@ ) (Read error: Connection reset by peer)
+[13:49:22] *** Joins: smaragdus (~omoo@ )
+[14:18:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:24:01] *** Joins: stvlker (~stvlker@ )
+[14:25:37] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[14:31:11] *** Quits: demize (kyrias@ ) (Quit: Do Androids Dream of Electric Sheep?)
+[14:33:00] *** Joins: abbat (~abbat@ )
+[14:35:07] *** Joins: demize (kyrias@ )
+[14:50:42] <bashrc> it looks like Reconnect maybe resets toxcore. So to update the bootstrap list presumably it's toxcore which needs to be patched
+[14:55:01] <zetok> …
+[15:03:09] <bashrc> ok so looks patchable. Maybe every N seconds I check the known list of bootstrap nodes, compare it with the existing one and if it has changed then call bootstrap_from_config
+[15:03:23] *** Joins: Chiitoo (~Chiitoo@ )
+[15:37:08] *** Joins: dardevelin (~dardeveli@ )
+[15:40:37] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 252 seconds)
+[16:20:21] *** Joins: f10__ (~flo@ )
+[16:21:52] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:41:29] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[17:20:31] *** Joins: 6A4ABEHLY (~quassel@ )
+[17:24:56] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[17:25:05] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[17:25:36] *** Joins: f10__ (~flo@ )
+[17:25:54] *** Joins: f10_ (~flo@ )
+[17:30:48] *** Joins: f10 (~flo@ )
+[17:31:14] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[17:34:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[17:46:13] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[17:46:21] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:46:54] *** Joins: Bheru27 (~Bheru27@ )
+[17:48:48] *** Joins: f10 (~flo@ )
+[18:02:53] *** Quits: bashrc (~robertmot@ ) (Quit: Lost terminal)
+[18:03:11] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:33:45] *** Joins: sudden6 (~anonymous@ )
+[18:41:32] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:42:15] *** Joins: f10 (~flo@ )
+[18:46:25] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[18:46:27] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[18:47:19] *** Joins: f10 (~flo@ )
+[18:48:59] *** Joins: f10_ (~flo@ )
+[19:20:48] *** Joins: abbat (~Anton@ )
+[19:45:57] *** Parts: toxygen_tox (uid175287@ ) ()
+[20:45:22] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:09:14] *** Joins: f10__ (~flo@ )
+[21:09:18] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[21:44:04] *** Joins: dardevelin (~dardeveli@ )
+[22:19:37] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:19:56] *** Joins: cisc (~cisc@ )
+[22:42:45] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[22:43:19] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 244 seconds)
+[22:46:19] *** Joins: f10 (~flo@ )
+[22:46:54] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[22:48:39] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[22:52:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:09:24] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[23:09:42] *** Joins: f10 (~flo@ )
+[23:11:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[23:12:41] *** Joins: BiTOk (~BiTOk@ )
+[23:37:43] *** Joins: Bill_MI (~Bill@ )
+[23:41:27] *** Quits: Bill_MI (~Bill@ ) (Client Quit)
