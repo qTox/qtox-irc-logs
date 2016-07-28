@@ -1,0 +1,397 @@
+[00:16:01] *** Joins: BiTOk_ (~BiTOk@ )
+[00:17:36] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 265 seconds)
+[00:17:38] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[00:18:08] *** Joins: f10 (~flo@ )
+[00:23:51] *** Quits: 6A4ABEHLY (~quassel@ ) (Remote host closed the connection)
+[00:29:41] *** Quits: BiTOk_ (~BiTOk@ ) (Ping timeout: 265 seconds)
+[00:32:32] <SkyzohKey> zetok: for your concern about electron security, i just found that js code can be compiled to v8 snapshot (binary code) and then get executed directly within the app
+[00:33:06] <SkyzohKey> https://github.com/nwjs/nw.js/wiki/Protect-JavaScript-source-code-with-v8-snapshot
+[00:36:34] *** Quits: sockspls (~sockspls@ ) (Max SendQ exceeded)
+[00:36:41] *** Joins: sockspls (~sockspls@ )
+[00:54:02] *** Joins: f10__ (~flo@ )
+[00:54:18] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[01:45:36] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[01:55:45] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:56:01] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[01:57:26] *** Joins: f10_ (~flo@ )
+[01:58:06] *** Joins: f10__ (~flo@ )
+[03:18:03] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[03:39:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:39:55] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[05:59:23] *** Joins: newbee (d9eae920@ )
+[06:13:35] *** Quits: newbee (d9eae920@ ) (Quit: Page closed)
+[06:49:03] *** Joins: albel727 (~albel727@ )
+[07:06:20] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[07:08:48] <zetok> SkyzohKey: that doesn't appear to make it more secure?
+[07:10:05] *** Joins: sudden6 (~anonymous@ )
+[07:25:16] *** Joins: hpanago (uid15586@ )
+[07:28:41] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 250 seconds)
+[07:31:14] *** Joins: f10_ (~flo@ )
+[07:35:01] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[07:37:35] *** Joins: Chiitoo (~Chiitoo@ )
+[07:45:02] *** Joins: LittleVulpix (~Miranda@ )
+[07:47:33] *** Joins: BiTOk (~BiTOk@ )
+[07:50:49] *** Joins: f10__ (~flo@ )
+[07:56:28] *** Joins: abbat (~Anton@ )
+[08:31:06] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[08:32:22] <zero-ghost> zetok: can i demand 2 things get coded in and pushed out like within a week?
+[08:34:14] <zetok> zero-ghost: unless it's a security fix, no can do :f
+[08:34:29] <zero-ghost> hmm
+[08:34:53] <zetok> there are 2 parts
+[08:35:01] <zetok> 1. is someone who would code it
+[08:35:08] <zetok> 2. is someone to review and merge
+[08:35:22] <zetok> actually, 3rd part is deployment
+[08:35:37] <zero-ghost> i know youre pro enough to do all those things cause these are 2 little things ive mentioned a few times over the past year
+[08:35:43] <zetok> which too isn't really happening for osx & windows until 1.5 gets released
+[08:35:56] <zero-ghost> ability to select rectangle area for desktop sharing
+[08:35:58] <zero-ghost> and
+[08:36:09] <zetok> that is done
+[08:36:17] <zero-ghost> right click on a hyperlink, have option in the menu to "copy link location"
+[08:36:28] <zetok> :|
+[08:36:37] <zero-ghost> simple and needed!
+[08:36:38] <zero-ghost> by me
+[08:36:45] <zetok> dunno about "simple"
+[08:37:04] <zero-ghost> i'll give you 1 shadowcash per line of code it takes
+[08:37:06] <zero-ghost> :-p
+[08:37:11] <zetok> ;D
+[08:37:36] <zero-ghost> 1 SDC = 20 cents right now
+[08:38:26] <zetok> um, I don't know C++, and I wouldn't know where to even start with adding it to the menu
+[08:38:44] <zero-ghost> damn it
+[08:39:21] <zetok> https://github.com/tux3/qTox/issues/1236
+[08:39:41] <zetok> you might want to post your offer there
+[08:40:13] <zero-ghost> damn it, i will
+[08:40:30] <zero-ghost> look at that last random commenter, even HE says it should be "trivial" to implement
+[08:40:37] <zero-ghost> now i know that guy knows what hes talking about
+[08:41:35] <zetok> yes, very often people unfamiliar with coding/codebase think that visually small things ought to be easy to code
+[08:42:22] <zero-ghost> the customer is always right!
+[08:42:32] <zero-ghost> the unpaying customer especially!
+[08:42:39] <zetok> >.<
+[08:43:08] <zetok> um, I see only fellow free software supporters there, not customers
+[08:44:54] <zero-ghost> consuming customer consumers
+[08:49:47] *** Joins: cisc (~cisc@ )
+[08:54:13] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[08:58:32] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[09:10:10] *** Joins: f10 (~flo@ )
+[09:24:23] *** Joins: st4ll1 (~st4ll1@ )
+[09:34:21] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[09:40:16] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Ping timeout: 252 seconds)
+[09:43:33] *** Joins: aouert (68eea92a@ )
+[09:46:27] <aouert> How do I increase the text size in qTox?
+[09:46:39] <aouert> I run windows at 200% DPI, and qTox text is illegible for me :(
+[09:49:50] *** Joins: cisc (~cisc@ )
+[09:50:07] *** Joins: abbat (~abbat@ )
+[09:50:56] <Chiitoo> aouert: A current version has an option to increase the chat font-size, under General/Chat.  Not sure if that's on the official Windows builds yet though.
+[09:51:47] <Chiitoo> If not, you'll probably need to wait for a while more, or build it yourself.  ^^
+[09:54:34] <aouert> Chiitoo: I do not see that option :(
+[09:55:13] <Chiitoo> Which version does it show under 'About'?
+[09:55:25] <aouert> You are using qTox version v1.4.1-1-g06d78dc.
+[09:55:32] <aouert> Commit hash: 06d78dcdee7bfe9a320fe91662f34227d74c3916
+[09:55:36] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[09:55:55] <aouert> downloaded in the last hour
+[09:56:37] <zetok> option for text size will be in 1.5
+[09:56:47] <Chiitoo> OK yeah, thought so.
+[09:58:19] <aouert> ok, thanks for the info
+[09:58:27] <aouert> is there an ETA?
+[10:00:12] <Emcy> i tried the nightly with the text size option
+[10:00:19] <Emcy> font too. its good
+[10:00:38] <Emcy> crashes video though so back to stable for me
+[10:01:23] <Chiitoo> Would be nice for some if the size of the font for the typing area could be changed as well.  ^^
+[10:06:17] <aouert> Chiitoo: are you saying that 1.5 will not be able to change the font size for the actual chat text? That's the most important size!
+[10:06:40] <zetok> https://github.com/tux3/qTox/milestone/3
+[10:06:41] <Chiitoo> The chat text yes, not the typing area.
+[10:07:04] <aouert> better than nothing I guess
+[10:16:54] *** Quits: aouert (68eea92a@ ) (Quit: Page closed)
+[10:33:24] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 244 seconds)
+[10:33:28] *** Joins: Diadl0 (~diadlo@ )
+[10:38:03] <zetok> Emcy: is there an issue for it?
+[10:38:40] <Emcy> i dont know
+[10:39:27] <zetok> when was the last time you've tested nightly?
+[10:39:37] <Emcy> ill say that in my experiece video between qtox and antidote can act odd
+[10:39:45] <Emcy> bout last week
+[10:43:00] <zetok> ok
+[10:44:03] <zetok> Emcy: there was a small fix to video crash a few days ago, you might want to retest with newest nightly; if it will still crash, it would be good to make an issue, so that it could be fixed before 1.5
+[10:44:30] <Emcy> ok
+[10:45:38] <zetok> when making an issue mention that it's a regression since 1.4
+[10:47:38] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[10:48:23] *** Joins: abbat (~abbat@ )
+[10:49:33] <Emcy> oh yeah i deleted my github account
+[10:55:59] *** Joins: dardevelin (~dardeveli@ )
+[12:55:59] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[12:56:15] *** Joins: abbat (~abbat@ )
+[13:04:58] *** Joins: f10__ (~flo@ )
+[13:05:29] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[13:27:09] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[13:34:08] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 265 seconds)
+[13:55:48] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[13:56:14] *** Joins: f10_ (~flo@ )
+[13:58:04] *** Joins: f10 (~flo@ )
+[13:59:35] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[14:05:55] *** Joins: smaragdus (~omoo@ )
+[14:44:41] <Emcy> do you think theres anything qtox can do to push ahead with the iframe bug
+[14:46:05] <Emcy> i think it was with toxcore maybe.....but still. Its one relatively simple (i think) fix that would make video much more usable
+[14:47:34] <Emcy> its been there since A/V was released. My regular video contact knows not to move their phone around on call becuase the video explodes into confetti until the next iframe which is sometimes like over 10 seconds
+[14:52:11] <Emcy> https://github.com/irungentoo/toxcore/issues/1479 allright it was actually tux3 who opened the issue......
+[14:52:17] <Emcy> in December :(
+[14:57:43] <Emcy> the piled up open issues on toxcore are a sad sight overall /sigh/
+[14:59:23] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[15:00:26] *** Joins: Chiitoo (~Chiitoo@ )
+[16:14:52] *** Joins: stvlker (~stvlker@ )
+[16:18:49] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[16:21:07] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[16:32:53] *** Joins: hpanago (uid15586@ )
+[16:58:21] <zetok> indeed
+[17:28:39] <SkyzohKey> Enjoy: http://i.imgur.com/Mn7iPvY.png :)
+[17:31:56] *** Joins: fred_barclay (~fred@ )
+[17:37:11] <zetok> SkyzohKey: what exactly?
+[17:37:21] <SkyzohKey> zetok: look&feel
+[17:37:42] <zetok> can't
+[17:37:46] <SkyzohKey> why?
+[17:37:56] <zetok> because it's wrong
+[17:38:00] <SkyzohKey> how ?
+[17:38:11] <zetok> and your question is wrong too
+[17:38:30] <SkyzohKey> instead of being rude, explain your opinion plz
+[17:38:36] <zetok> what you should ask, yourself first: "what is not wrong with it?"
+[17:38:52] <zetok> SkyzohKey: layout & font
+[17:39:08] <SkyzohKey> how the layout is wrong ?
+[17:39:38] <zetok> what is layout supposed to achieve?
+[17:39:48] <SkyzohKey> login screen
+[17:39:53] <zetok> bullshit
+[17:40:30] <zetok> if you wanted to achieve "login screen" you'd just have 2 fields, one for login, other one for password, with an optional button to log-in, and nothing more
+[17:40:42] <zetok> so, what is the purpose of layout?
+[17:40:49] <SkyzohKey> login screen, again.
+[17:41:08] <SkyzohKey> You know, design matters in applications
+[17:41:13] <zetok> then you don't need layout, remove everything & just leave 2 fields
+[17:41:20] <zetok> yes, and you don't have the design there
+[17:41:27] <SkyzohKey> and it'll looks ugly
+[17:41:40] <zetok> that's what you've said you want to achieve
+[17:41:54] <SkyzohKey> That's already what i achieved
+[17:41:59] <SkyzohKey> the avatar changes whether the user choose another profile
+[17:42:03] <zetok> ugly look?
+[17:42:07] <zetok> if you say so.
+[17:42:13] <SkyzohKey> and if profile has no avatar, it use the tox default one
+[17:42:35] <SkyzohKey> what is wrong with the design in your opinion ?
+[17:42:45] <zetok> I've already said
+[17:42:50] <zetok> layout & font
+[17:43:06] <SkyzohKey> what about font ?
+[17:43:25] *** Joins: Encrypt (~Chuck@ )
+[17:43:38] <Encrypt> zetok, Someone on #tox wants qTox
+[17:43:49] <zetok> Encrypt: good for them, but they're in the wrong channel
+[17:44:01] <Encrypt> zetok, I'll make him come here
+[17:44:29] <Encrypt> Of course, he tried pkg.tox.chat...
+[17:44:36] <zetok> SkyzohKey: same thing as layout – it doesn't fulfil its purpose
+[17:44:40] <Encrypt> And he got that: http://bluehome.net/~csh/fuck-debian/
+[17:45:01] <SkyzohKey> zetok: What you are saying isn't constructive
+[17:45:09] *** Joins: enyc (~enyc@ )
+[17:45:14] <SkyzohKey> How a font cannot fulfil it's purpose ? o;o
+[17:45:20] <SkyzohKey> font purpose is to display text
+[17:45:49] <zetok> SkyzohKey: exactly
+[17:46:04] <zetok> SkyzohKey: so how does the font you chose do this?
+[17:46:08] <zetok> SkyzohKey: hint: size
+[17:46:20] <zetok> enyc: o/
+[17:46:31] <zetok> enyc: assuming you're the user Encrypt mentioned? :)
+[17:46:35] <SkyzohKey> 12px is nice
+[17:46:50] <Encrypt> Nope, it's calher
+[17:46:54] <Encrypt> Who is not here yet
+[17:47:01] <zetok> oh
+[17:47:06] <SkyzohKey> peoples are not blind, they don't need 60px sized-fonts to be able to read
+[17:47:19] <zetok> SkyzohKey: lol
+[17:47:42] *** Joins: calher (~calher@ )
+[17:47:49] <Encrypt> Here he is
+[17:48:00] <calher> http://bluehome.net/~csh/fuck-debian
+[17:48:13] <SkyzohKey> zetok: Also note that qTox login screen is broken
+[17:48:18] <calher> ^ you broke Debian, qTox.  Fix this.
+[17:48:21] <zetok> SkyzohKey: hm?
+[17:48:27] <zetok> calher: nope, that's tox.chat
+[17:48:37] <SkyzohKey> zetok: http://i.imgur.com/N9v6OVD.png
+[17:48:43] <zetok> calher: qTox has its own website, and it does point to the right instructions :)
+[17:48:54] <SkyzohKey> password field miss background
+[17:49:02] <calher> are you freaking kidding me
+[17:49:09] <calher> everything so decentralized and BROKEN!!
+[17:49:12] <zetok> calher: what you'd want to do, is to remove tox.chat repo, and add qTox repo
+[17:49:17] <zetok> nope
+[17:49:26] <SkyzohKey> also, when you hover "load automatically": http://i.imgur.com/jqDW3wc.png
+[17:49:43] <SkyzohKey> same thing on create profile: http://i.imgur.com/SF40hmy.png
+[17:49:49] <enyc> zetok: err no im not a user
+[17:49:51] <zetok> SkyzohKey: that's just your theme
+[17:49:59] <enyc> zetok: but i am however noticenig nthe broken nginx config on build.tox.chat server
+[17:50:27] <zetok> enyc: nothing to do with qTox, as it does have working repo
+[17:50:51] <calher> zetok, So how do i remove this
+[17:51:00] <zetok> calher: `sudo rm /etc/apt/sources.list.d/tox.list`
+[17:51:13] <zetok> calher: and proceed from there: https://qtox.github.io/ :)
+[17:51:26] <zetok> calher: if there's something unclear, please say so :)
+[17:51:31] <zetok> enyc: ↑
+[17:52:01] <SkyzohKey> zetok: that's not a reason
+[17:52:07] <SkyzohKey> it should work with any theme
+[17:52:16] <SkyzohKey> and qTox is the only app that is broken with this theme
+[17:52:19] <SkyzohKey> so qtox fault
+[17:52:22] <zetok> SkyzohKey: yeah, a bug and should be fixed – mind filling an issue?
+[17:52:30] <SkyzohKey> gonna do it
+[17:52:34] <zetok> thanks :)
+[17:56:47] <calher> zetok, thanks!
+[17:56:50] <calher> :D
+[17:57:02] <Encrypt> calher, Also, Debian was not broken
+[17:57:10] <Encrypt> calher, APT just couldn't find a few packages
+[17:57:14] <Encrypt> Nothing extraordinary
+[17:57:21] <zetok> calher: you're welcome :)
+[17:57:59] *** Parts: calher (~calher@ ) ("Leaving")
+[18:06:02] <enyc> zetok: hrrm qtox repo  legacy internet only!
+[18:29:00] <zetok> at least it works
+[18:32:19] <Encrypt> I could package qTox on build.tox.chat if you wished
+[18:32:28] <Encrypt> And it would work
+[18:38:15] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:42:45] *** Joins: f10 (~flo@ )
+[18:47:34] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[19:02:21] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[19:03:06] *** Joins: abbat (~abbat@ )
+[19:13:00] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[19:33:33] *** Quits: Encrypt (~Chuck@ ) (Quit: Quitte)
+[19:34:49] <SkyzohKey> zetok: another qTox bug, in the chatview this time: http://i.imgur.com/LhqwNC8.png
+[19:50:31] <zetok> pls, it does support them
+[19:50:57] <SkyzohKey> I just proved that it doesn't
+[19:51:12] <zetok> you've proved that you can't configure qTox
+[19:51:40] <SkyzohKey> http://i.imgur.com/EJZlmaF.png ←
+[19:51:50] <SkyzohKey> emojis are correctly configured
+[19:51:58] <SkyzohKey> the way qTox handle them is badly coded
+[19:52:09] <SkyzohKey> >you've proved that you can't configure qTox
+[19:52:18] <SkyzohKey> "Tox aims to be a configuration-free secure messenger"
+[19:52:30] <zetok> yes, precisely in this context ;)
+[19:52:44] <SkyzohKey> the code is bad, not my fault
+[19:52:53] <zetok> code works as expected
+[19:53:22] <SkyzohKey> lel no
+[19:53:27] <SkyzohKey> just look at the screenshot
+[19:53:32] <zetok> i.e. if there's no spaces around them, they're not parsed as emoticons
+[19:53:33] <SkyzohKey> i just pasted some unicode emojis
+[19:53:39] <SkyzohKey> so your code is broken
+[19:53:42] <zetok> and currently they're expected to work like that
+[19:53:48] <SkyzohKey> that's stupid so
+[19:54:05] <zetok> dunno about that
+[19:54:09] <SkyzohKey> why couldn't an user get proper emoji if he doesn't want to space them ?
+[19:54:32] <zetok> user doesn't care, and user can't type emojis in anyway
+[19:54:42] <zetok> and emoji picker is supposed to put spaces along with the emoji
+[19:54:47] <SkyzohKey> alt+1 gives you emoji
+[19:55:08] <SkyzohKey> + qTox isn't the only client, if other clients doesn't put spaces, then qTox render is broken
+[19:55:21] <zetok> >other clients
+[19:55:24] <zetok> what other clients?
+[19:55:50] <zetok> right, antidote and Antox
+[19:55:56] <SkyzohKey> uTox, Ricin, Toxygen, gTox, etc
+[19:56:18] <SkyzohKey> I'm not in cause if you refuse to do things the right way eh.
+[19:59:57] <zetok> SkyzohKey: um, when you're going to make an issue?
+[20:00:08] <SkyzohKey> When you're going to accept that qTox is broken
+[20:01:33] <zetok> please SkyzohKey
+[20:02:16] <zetok> if you want to troll at least do it with a class
+[20:21:17] <Chiitoo> Indeed, if there's something wrong about that behaviour, SkyzohKey, I don't see why you wouldn't create an 'issue' for others to see it, too.  :]
+[20:21:34] *** Joins: abbat (~abbat@ )
+[20:35:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[20:39:01] *** Joins: sudden6 (~anonymous@ )
+[20:44:59] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:47:54] *** Joins: LittleVulpix (~Miranda@ )
+[21:07:36] *** Joins: Diadlo (~diadlo@ )
+[21:47:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:05:14] <cisc> it would be nice in qtox if you could turn off "Type your message here..."
+[22:11:32] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[22:11:36] <Chiitoo> cisc: I can imagine it a bit superfluous... but I'd probably outright remove it instead of making a setting for it (usually I'm all for more settings, but that one... hmmm.).
+[22:12:55] *** Joins: abbat (~Anton@ )
+[22:12:56] <cisc> yes, removing it is a good idea
+[22:13:09] <Chiitoo> Open an issue, perhaps, for a vote of sorts.  :]
+[22:13:35] <cisc> i wonder if anyone actually wants that? I think people are smart enough to know where the text input box is
+[22:13:42] <zetok> nope
+[22:14:28] *** Joins: LittleVulpix (~Miranda@ )
+[22:16:19] <zetok> https://imgur.com/C6XdAET
+[22:16:39] <zetok> ↑ how I test qTox
+[22:18:16] <Chiitoo> I'm not sure testing for such users is a good use of time, but as long as you enjoy that time spent, it shouldn't be a waste.  :]
+[22:19:08] <zetok> it is
+[22:19:36] <zetok> i.e. usually people test things for the expected way in which something is /supposed/ to work
+[22:19:56] *** Joins: VVD (~VVD@ )
+[22:20:03] <Chiitoo> But have you had any user ask you where to enter their message at?
+[22:20:09] <Chiitoo> I mean I get your point, yes.
+[22:20:16] <zetok> and the remaining, mostly untested part, is using software the way it is not supposed to be used, and that's where most of bugs that affect normal use-cases hides
+[22:20:18] <Chiitoo> But in this specific case, you're sure it's needed?
+[22:20:29] <zetok> yes
+[22:20:36] <Chiitoo> Do you have an example for me?
+[22:21:33] <zetok> early stages of alzheimer, and generally old people who are new to the software
+[22:22:21] <zetok> having a field that says "type message here" is really helpful
+[22:22:29] <Chiitoo> Okay.  I imagine they would have a lot of other difficulties aside from this to use the application, but I can imagine that.
+[22:23:09] <zetok> yes, they do have lots of other difficulties, but if at least this could be made less difficult..
+[22:23:28] <Chiitoo> s/can imagine that/can imagine that too/
+[22:23:31] <cisc> no email client i've ever seen says "Type your message here..."
+[22:23:40] <cisc> and old people seem to know where to type
+[22:24:11] <Chiitoo> Well we have at least one 'pro' here, what's your 'nay'?  :]
+[22:24:12] <zetok> cisc: yes, one you explain it to them, and preferably repeat process a few times
+[22:24:17] <zetok> once*
+[22:24:19] <cisc> if someone has alzhemers and needs "TYpe your message here..." they have a lot of other problems that will prevent them from ever getting it installed
+[22:24:53] <zetok> err
+[22:25:18] <zetok> who installs software is irrelevant in this context
+[22:25:24] <cisc> why not make it in big bold letters "TYPE YOUR MESSAGE HERE" then
+[22:25:31] <cisc> maybe that will help even more
+[22:25:43] <linuxmodder> or an accessibility mode with that 
+[22:25:46] <cisc> there could be a few people that couldn't see the lighter text
+[22:25:53] <Chiitoo> cisc: What is your specific reason to want it gone?
+[22:26:00] <zetok> cisc: if you think that this would be more helpful, make an issue proposing this :)
+[22:26:05] <cisc> Chiitoo: to me it's just needless, if not annoying
+[22:26:08] <Chiitoo> An accessibility mode could be a thing in the future, why not.
+[22:26:35] <Chiitoo> If it's just 'annoying', I'm not sure I'd go for removing it from the disabled based on just that.
+[22:26:43] <zetok> https://github.com/tux3/qTox/milestone/1 ← it's really bad :(
+[22:26:47] <Chiitoo> You could simply compile your custom version, too, without it.
+[22:26:52] <linuxmodder> cisc,  skype and the like do tho :( not defending the use there but ...
+[22:27:23] <zetok> and the worst part is that I couldn't even get accessibility stuff to even work with qt5 so that I could test & open new issues; dunno perhaps I was doing something wrong :(
+[22:27:31] <Chiitoo> linuxmodder: Do what?  
+[22:27:52] <linuxmodder> Chiitoo,  while  simple_make.sh is great  its not very interactively out the box for that thus  limiting userbase
+[22:28:28] <Chiitoo> I mean what Skype and the like do tho?  Not sure at which point that was to.  :D
+[22:28:38] <cisc> well skype has many annoying things about it, if it says "Type your message here" that is the least of its problems
+[22:29:15] <Chiitoo> linuxmodder: Oh and yeah, sure, I didn't mean just anyone will go and compile things for themselves.
+[22:29:23] <Chiitoo> But if they hate a feature that much...  :]
+[22:29:41] <cisc> Chiitoo: do you think it's needed or should be an option?
+[22:29:42] <Chiitoo> And if Skype has that 'type here' thing too, is that the web app version?
+[22:29:52] <cisc> I just checked on the web version and it doesn't have it
+[22:29:56] <cisc> so it's probably just the app version
+[22:29:58] <Chiitoo> A friend just mentioned a while ago that Skype doesn't have that.  (Does it have an option for it?)
+[22:30:46] <linuxmodder> it may have removed it fully then since I last used that crapware then 
+[22:30:55] <cisc> actually I'm wrong, the web version does have it
+[22:31:06] <cisc> but it goes away, the message, when the cursor is placed in the text input box
+[22:31:07] <Chiitoo> As a single option I think it seems a bit much for such a thing, but if there were to be more accessibility options, maybe then.
+[22:31:13] <cisc> that would be a happy medium for qtox
+[22:31:23] <cisc> when cursor is in text box, have the message disappear
+[22:31:47] <zetok> ><cisc> but it goes away, the message, when the cursor is placed in the text input box
+[22:31:50] <Chiitoo> Ah, that could be a middle ground maybe.
+[22:31:54] <zetok> cisc: it works like that
+[22:32:03] <cisc> zetok: not on my system
+[22:32:16] <cisc> in regards to qtox
+[22:32:18] <zetok> cisc: https://github.com/tux3/qTox/issues/3230
+[22:32:32] <zetok> ?
+[22:32:38] <cisc> yep thats it
+[22:32:46] <cisc> its still not fixed..
+[22:33:08] <cisc> but i'm not using Japanese chars
+[22:33:42] <zetok> but you're not "just" typing on a real™ keyboard, right?
+[22:33:54] <cisc> ok we're not on the same page
+[22:34:06] <zetok> oh
+[22:34:08] * zetok got it
+[22:34:11] <cisc> I am suggesting that the message goes away as soon as the cursor is in the text box
+[22:34:44] <Chiitoo> Yeah, the message doesn't go away even if the window is active, and the input field is selected.
+[22:35:07] <zetok> I guess that would do
+[22:35:24] <Chiitoo> That's how it might work on most websites too, on search fields etc.
+[22:35:27] <cisc> that may even provide more context for people
+[22:35:36] <Chiitoo> Except for youtube, it seems.
+[22:35:55] <Chiitoo> But yes, it can help seeing that the thing is indeed selected.
+[22:36:01] <cisc> agree
+[22:36:13] <Chiitoo> I know I've typed a whiles to qTox while it wasn't actually the active window.  :E
+[22:36:49] <cisc> and that was after a long party night maybe
+[22:37:10] <Chiitoo> Not even.
+[22:40:15] <zetok> cisc: ok, added comment, thanks :)
+[22:40:47] <cisc> zetok: looks good, np
+[22:45:26] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[22:48:45] *** Joins: LittleVulpix (~Miranda@ )
+[22:51:01] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[22:53:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[22:59:28] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[23:05:30] <SkyzohKey> <cisc> but it goes away, the message, when the cursor is placed in the text input box
+[23:05:35] <SkyzohKey> that's called a placeholder
+[23:09:25] <cisc> SkyzohKey: how do you have it set up in your client?
+[23:10:06] <SkyzohKey> <textarea name="chatview-entry" placeholder="Type your message here..."></textarea>
+[23:10:28] <SkyzohKey> and in Ricin: this.entry.placeholder = "Type your message here...";
+[23:11:47] <SkyzohKey> It should work like: Until user write something in the input, placeholder is displayed, once user start to type, placeholder is hided, if the user empty the input, placeholder goes back
+[23:14:09] *** Joins: LittleVulpix (~Miranda@ )
+[23:14:11] <cisc> that's how qtox currently is
+[23:14:31] <SkyzohKey> nice then
+[23:14:49] <SkyzohKey> why would someone wants an useful information to be removed ?
+[23:18:20] <cisc> makes more sense for the placeholder message to go away when cursor is placed in text input box
+[23:18:27] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
