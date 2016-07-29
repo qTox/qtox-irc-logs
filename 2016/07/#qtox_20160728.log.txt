@@ -1,0 +1,232 @@
+[00:13:33] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[01:36:10] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 252 seconds)
+[03:19:22] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[03:38:38] *** Quits: Darky (~Darky@ ) (Ping timeout: 258 seconds)
+[03:39:00] *** Joins: Darky (~Darky@ )
+[06:06:05] *** Joins: Emcy (~MC@ )
+[06:12:30] *** Joins: Emcy_ (~MC@ )
+[06:12:30] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:12:30] *** Joins: Emcy_ (~MC@ )
+[06:15:52] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[06:16:50] *** Joins: Emcy (~MC@ )
+[06:17:37] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[08:11:24] *** Joins: abbat (~Anton@ )
+[08:40:49] *** Joins: f10__ (~flo@ )
+[08:40:55] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[08:40:57] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[08:41:32] *** Joins: f10 (~flo@ )
+[08:59:42] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:03:17] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 260 seconds)
+[09:16:20] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[09:16:38] *** Joins: f10 (~flo@ )
+[09:51:05] *** Joins: abbat (~abbat@ )
+[09:53:24] *** Joins: Dragofix (Dragofix@ )
+[10:05:38] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[10:20:25] *** Joins: f10_ (~flo@ )
+[10:21:08] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[10:33:20] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[10:39:19] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[11:54:27] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[12:03:45] *** Joins: cisc (~cisc@ )
+[12:06:06] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[12:07:17] *** Joins: cisc (~cisc@ )
+[12:37:22] *** Joins: Diadlo (~diadlo@ )
+[14:06:33] *** Joins: st4ll1 (~st4ll1@ )
+[14:16:37] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[14:21:00] *** Joins: stvlker (~stvlker@ )
+[14:21:00] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[14:38:37] *** Joins: zero-ghost (~0@ )
+[14:46:34] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[15:11:42] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[15:14:55] *** Joins: cisc (~cisc@ )
+[15:30:35] *** Joins: dardevelin (~dardeveli@ )
+[15:39:44] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[15:41:30] *** Joins: dardevelin (~dardeveli@ )
+[15:49:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[16:06:22] *** Joins: bennabiy (~bennabiy@ )
+[17:15:00] *** Joins: dardevelin (~dardeveli@ )
+[17:19:32] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[17:20:38] *** Joins: f10__ (~flo@ )
+[17:25:59] *** Joins: f10 (~flo@ )
+[17:26:32] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[17:28:39] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[17:29:20] *** Joins: f10_ (~flo@ )
+[17:46:31] *** Joins: Chiitoo (~Chiitoo@ )
+[17:48:59] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:32:26] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[19:18:10] *** Joins: abbat (~Anton@ )
+[19:41:13] *** Joins: LittleVulpix (~Miranda@ )
+[20:14:21] *** Joins: sudden6 (~anonymous@ )
+[20:28:01] -qtox-git-spam- [qTox] sudden6 pushed  new commits to master: https://git.io/vKxm4
+[20:28:01] -qtox-git-spam- qTox/master 3edd84c Diadlo: refactor(videomode): Move implementation in cpp file
+[20:28:01] -qtox-git-spam- qTox/master 2944304 Diadlo: docs(audio, video): Change comment style
+[20:28:01] -qtox-git-spam- qTox/master 394c4bc Diadlo: docs(chatlog): Change comment style
+[20:30:13] *** Joins: LittleVulpix|Gho (~Miranda@ )
+[20:30:34] <sudden6> zetok: o/
+[20:30:43] <zetok> sudden6: \o
+[20:30:52] <sudden6> https://github.com/tux3/qTox/pull/3543
+[20:30:55] <sudden6> ?
+[20:31:22] <zetok> right
+[20:31:29] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 244 seconds)
+[20:32:04] <zetok> will correct & rebase in a moment
+[20:32:25] -qtox-git-spam- [qTox] sudden6 closed pull request #3555: feat(main): Changed time in logs on UTC. (master...changeDebugTime) https://git.io/vK7I3
+[20:33:50] <zetok> done
+[20:35:44] <zetok> sudden6: if now looks ok, I'll forward on master
+[20:35:53] <zetok> aside from that, https://github.com/tux3/qTox/pull/3528 ?
+[20:35:59] <sudden6> yep, is ok
+[20:37:00] <sudden6> codewise 3528 is ok, does it fix what it's supposed to and don't break anything?
+[20:37:03] -qtox-git-spam- [qTox] zetok closed pull request #3543: docs(CONTRIBUTING.md): make more explicit what commit message needs (master...contrib) https://git.io/vKS3v
+[20:37:44] <zetok> sudden6: fixes, and doesn't seem to break, although I haven't tested it a lot
+[20:38:18] <zetok> sudden6: I've looked a bit into automating testing GUI, and that requires support for accessibility
+[20:38:36] <sudden6> hmm, there's a whitespace issue in the pr...
+[20:38:46] <zetok> thing is, I have been able to only get accessibility work with gtk3 stuff, and not qt5 :/
+[20:39:45] <zetok> I'm kinda lost, and qt docs don't really say what needs to be done (code needs to be written?, compiling with a flag?) to make qt5 application accessible
+[20:39:49] <zetok> :s
+[20:40:29] <zetok> https://doc.qt.io/qt-5/accessible-qwidget.html ← perhaps that'll make sense for someone who can into C++
+[20:40:47] <zetok> >To provide accessibility support for a widget or other user interface element, you need to implement the QAccessibleInterface and distribute it in a QAccessiblePlugin
+[20:44:42] <zetok> Diadlo: https://github.com/tux3/qTox/pull/3551 ← does it work now?
+[20:45:32] <zetok> >there's a whitespace issue in the pr...
+[20:45:39] <Diadlo> For me, yes
+[20:45:42] <zetok> sudden6: so it's perfect to merge ;)
+[20:45:44] <sudden6> zetok: haven't read through everything yet, but this mostly states that for custom widgets/user interface elements you have to implement something
+[20:46:06] <zetok> and qTox uses custom stuff a lot, right?
+[20:46:22] <sudden6> yeah, for the chat interface...
+[20:46:22] <Diadlo> > there's a whitespace issue in the pr
+[20:46:26] <Diadlo> Where?
+[20:46:46] <zetok> Diadlo: um, what editor are you using?
+[20:47:01] <Diadlo> Qt creator
+[20:47:07] <zetok> oh.
+[20:47:15] <sudden6> https://github.com/tux3/qTox/pull/3528/files#diff-53abfd32f01e4156c4b372d6adfe0270R123
+[20:47:21] <zetok> nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+[20:47:35] <Diadlo> Ups
+[20:47:36] <zetok> Diadlo: ↑ if you were to happen to use vim
+[20:47:40] <sudden6> doesn't the green bar mean there are spaces where they don't belong?
+[20:48:38] <sudden6> if you use qtcreator, switch code style to "Qt" and it will remove unnecessary whitespace on save :)
+[20:50:59] <Diadlo> Qt style already in use
+[20:52:23] <Diadlo> Fixed :)
+[20:52:30] <sudden6> thx :)
+[20:52:35] <Diadlo> np
+[20:53:59] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vKxsF
+[20:54:00] -qtox-git-spam- qTox/master dbe0a15 Diadlo: fix(chatform): Fixed call buttons...
+[20:54:00] -qtox-git-spam- qTox/master a556762 sudden6: Merge pull request #3528...
+[20:54:06] <sudden6> nice to see you here often :)
+[20:54:47] <Diadlo> Summer allows it :)
+[20:54:59] <sudden6> zetok: did you get any progress with the travis mac toxcore issue?
+[20:55:10] <zetok> upstream issue
+[20:55:33] <sudden6> Diadlo: haha, if I wasn't working I'd probably never show up here
+[20:55:38] <zetok> https://github.com/travis-ci/travis-ci/issues/6352
+[20:56:09] <sudden6> zetok: ah, thx
+[20:56:29] <sudden6> that issue is really anoying...
+[20:57:51] <Diadlo> sudden6: I think I have something wrong with life?)
+[20:58:16] <sudden6> Diadlo: no, you do everything right ^^
+[21:23:37] *** Joins: bashrc (~motters@ )
+[21:29:31] <bashrc> is it possible to non-interactively generate a qtox profile?
+[21:30:50] <zetok> ~no
+[21:31:25] <zetok> or ~yes, depending on what "profile" means for you
+[21:31:39] <bashrc> username.tox
+[21:32:00] <zetok> then yes
+[21:33:06] <bashrc> is there a command option for it?
+[21:33:10] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:33:12] <zetok> not in qTox
+[21:33:29] <bashrc> can you do it from toxcore?
+[21:33:41] <zetok> ~kinda
+[21:34:47] *** Joins: cisc (~cisc@ )
+[21:36:16] <zetok> bashrc: https://github.com/TokTok/toxcore/blob/master/toxcore/tox.h#L507 https://github.com/TokTok/toxcore/blob/master/toxcore/tox.h#L658
+[21:36:33] <zetok> way easier to use Rust bindings though
+[21:37:05] <zetok> or something; there are python bindings, so it's possible that they're easy to use too
+[21:37:26] * zetok wonders
+[21:38:37] <bashrc> ok
+[21:39:15] <zetok> (just a few lines in Rust, and I suspect that it would be the same story using python bindings)
+[21:40:01] <bashrc> c is probably good enough
+[21:40:29] <bashrc> automating the profile creation should make the mesh UI as a simple as possible
+[21:40:42] <zetok> "mesh UI" ?
+[21:41:01] <bashrc> boot from USB -> enter username -> generate profile -> open qtox with the -q option
+[21:41:33] <bashrc> I'm using tox on a mesh network
+[21:43:01] <zetok> qTox's UI for profile creation is not good?
+[21:44:00] <bashrc> what I'm trying to get to is a condition where there is minimum friction and where the initial profile generated doesn't have a password. That enables a background process to read the ID and broadcast it to other mesh users
+[21:44:11] <bashrc> "foo has joined the mesh"
+[21:45:27] <zetok> I see
+[22:03:02] * zetok wonders
+[22:03:47] <zetok> qTox needs more maintainers :s
+[22:14:25] <sudden6> zetok: +1
+[22:14:38] <sudden6> also more contributors^^
+[22:14:57] <zetok> yeah, but contributors are constrained by maintainers
+[22:15:11] <zetok> i.e. people don't see a point in contributing if stuff isn't being merged
+[22:15:33] <zetok> and stuff not being merged for few days == stuff not being merged
+[22:15:52] <zetok> (that's how it looks from the outside)
+[22:16:06] <zetok> (and that's really discouraging for people)
+[22:16:22] <zetok> s/merged/even reviewed/
+[22:17:05] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:17:13] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[22:17:58] <sudden6> mhm
+[22:17:59] *** Joins: f10_ (~flo@ )
+[22:18:15] <sudden6> maybe we could speed up the review process a little bit?
+[22:18:26] *** Joins: f10 (~flo@ )
+[22:18:33] <sudden6> I'm thinking about a "Tested" flag
+[22:21:09] <zetok> mm
+[22:21:19] <zetok> good idea
+[22:22:46] <sudden6> whoever sets the "Tested" flag is responsible for, testing that a PR fixes the things it claims or provides the features it claims
+[22:23:03] <sudden6> and also doesn't introduce any appearant bugs
+[22:23:15] <sudden6> still good?
+[22:23:27] <zetok> um
+[22:23:35] <zetok> idea is good, as for implementation..
+[22:24:25] <sudden6> tell me your concerns
+[22:25:13] <oranges> https://file.house/dim2.jpg
+[22:25:51] <zetok> burden for maintainers and disassociation of testing from users
+[22:27:09] <sudden6> please explain in more detail
+[22:28:27] <Diadlo> May be "Tested" can be divided on 3 "Tested-<OS>"
+[22:28:32] <zetok> if "flag" is github label, only people with push access can change those, which leads to a situation where they have to do it themselves, while users "see" that things are limited to maintainers, and as such there's no need (or space) for them to contribute
+[22:28:46] <Diadlo> *?
+[22:29:18] <zetok> thus, users are pushed into situation where less testing is being required from them..
+[22:29:44] <sudden6> Diadlo: I think for most of the PRs it's OS agnostic and where it's relevant it could be expressed in a comment
+[22:30:14] <sudden6> zetok: I see your concern, but currently how many users have been testing PRs?
+[22:30:24] <Diadlo> Yes, you are right, sorry
+[22:30:50] <zetok> sudden6: a few, and making smaller is wrong
+[22:31:17] <zetok> sudden6: also, what is currently is suboptimal, and also should be changed, so that users could test things easily
+[22:31:45] <zetok> sudden6: IIRC you weren't here when there was discussion about making it easier for people to test stuff?
+[22:31:46] <sudden6> Hmm, what are the alternatives then? One could only try to make better comments for PRs
+[22:31:54] <sudden6> zetok: nope
+[22:32:51] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[22:34:05] <cisc> I noticed when on an audio call (not sure about video) if a contact sends you a message concurrently to the call, it plays the ringtone sound, not the incoming message chime
+[22:34:30] <zetok> sudden6: https://github.com/qTox/qtox-irc-logs/blob/master/2016/07/%23qtox_20160724.log.txt#L231 ← from there
+[22:34:57] <zetok> sudden6: also, 'people testing stuff' < 'automated tests'
+[22:36:59] <sudden6> zetok: thx, so seems like storage space is an issue?
+[22:37:13] <zetok> also building
+[22:38:10] <zetok> hmm
+[22:38:23] <zetok> perhaps it would be more accurate to say that the whole thing is an issue
+[22:38:48] <sudden6> seems like you want to do travis on your own?
+[22:38:51] <zetok> which then raises the question whether we're not approaching the actual problem the wrong way
+[22:39:54] <zetok> not really
+[22:40:09] <zetok> I think that the priority should be different
+[22:40:15] <zetok> 1. automate GUI testing
+[22:40:29] <zetok> 2. make building qTox easy & reproducible
+[22:40:45] <sudden6> have you taken a look at openQA?
+[22:40:53] <zetok> yes, it's useless
+[22:41:44] <sudden6> yep, but if a big company has problems doing GUI testing, how are we gonna do it significantly better with much less effort?
+[22:41:56] <sudden6> (please ignore my demotivating tone)
+[22:42:48] <sudden6> AFAIK automated GUI testing is HARD
+[22:42:50] <zetok> :D
+[22:42:57] <zetok> dunno about demotivating
+[22:43:23] <sudden6> I don't put high hopes in #1
+[22:43:41] <zetok> ~same question applies to the huge company though: could they be doing it wrong?
+[22:43:45] <cisc> openQA actually catches a ton of bugs
+[22:44:01] <cisc> that's why Tumbleweed doesn't come out broken every cycle
+[22:44:24] <cisc> https://openqa.opensuse.org/tests/230100
+[22:44:36] <zetok> cisc: yes, it's broken by default, so people don't notice other breakages
+[22:45:50] <zetok> cisc: and openqa being useful for opensuse doesn't constitute it being useful for qTox
+[22:45:55] <sudden6> is it even possible to get qTox into openQA?
+[22:45:57] <cisc> true
+[22:46:14] <sudden6> running on suse infrastructure?
+[22:46:40] <zetok> nope, or at least it seems that way
+[22:47:27] <sudden6> well then openQA seems to be out anyway
+[22:48:48] <sudden6> zetok: you mentioned some testing using the qt accessibility stuff, how did you plan to do this?
+[22:49:20] <zetok> dogtail
+[22:50:59] <sudden6> looks promising atleast on the first read
+[22:51:14] <sudden6> where to run it is still an open question tough
+[22:51:28] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[22:54:05] <sudden6> I'll leave for the night, bye :)
+[22:54:45] <Diadlo> Good night)
+[23:03:00] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:12:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:21:37] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 244 seconds)
+[23:27:26] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
