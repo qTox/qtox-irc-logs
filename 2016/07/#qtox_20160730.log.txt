@@ -1,0 +1,216 @@
+[00:55:04] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[00:56:06] *** Joins: f10_ (~flo@ )
+[00:56:24] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:56:31] *** Joins: f10__ (~flo@ )
+[01:39:06] *** Joins: st4ll1 (~st4ll1@ )
+[03:53:30] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 258 seconds)
+[03:58:21] *** Joins: st4ll1 (~st4ll1@ )
+[04:20:43] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 244 seconds)
+[04:45:02] *** Joins: f10 (~flo@ )
+[04:45:15] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[04:50:52] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[05:02:34] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[05:13:09] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[05:53:28] *** Joins: f10_ (~flo@ )
+[06:02:02] *** Joins: f10 (~flo@ )
+[06:15:05] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[06:16:48] *** Joins: f10 (~flo@ )
+[06:39:55] *** Joins: Emcy (~MC@ )
+[06:45:30] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[07:21:18] *** Joins: ccsdss (~ray@ )
+[07:21:24] *** Parts: ccsdss (~ray@ ) ()
+[08:26:29] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[08:34:43] *** Joins: BiTOk (~BiTOk@ )
+[08:42:13] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[08:50:52] *** Quits: nightfuri (nightfury@ ) (Ping timeout: 240 seconds)
+[08:56:11] *** Joins: in1t3r (~LordShiva@ )
+[09:19:07] *** Joins: nightfuri (nightfury@ )
+[09:39:31] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[10:09:20] -qtox-git-spam- [qTox] Diadlo opened pull request #3561: feat(gui, setpassworddialog): Added buttons translation (master...fixMsgBox) https://git.io/vKj48
+[10:23:02] *** Joins: f10_ (~flo@ )
+[10:24:10] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[10:27:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[11:12:29] *** Joins: LittleVulpix (~Miranda@ )
+[11:47:38] *** Joins: abbat (~Anton@ )
+[11:54:57] *** Joins: cisc (~cisc@ )
+[14:07:35] *** Joins: smaragdus (~omoo@ )
+[14:13:20] -qtox-git-spam- [qTox] Diadlo opened pull request #3563: Fix clear log (master...fixClearLog) https://git.io/vKj2Q
+[14:37:49] *** Joins: sudden6 (~anonymous@ )
+[15:28:53] *** Joins: shiva (~LordShiva@ )
+[15:31:58] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[15:42:18] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 276 seconds)
+[16:07:30] *** Joins: f10_ (~flo@ )
+[16:07:58] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[16:08:39] *** Joins: abbat_ (~Anton@ )
+[16:08:39] *** Quits: abbat_ (~Anton@ ) (Client Quit)
+[16:10:47] *** Quits: abbat (~Anton@ ) (Ping timeout: 260 seconds)
+[16:14:24] -qtox-git-spam- [qTox] antis81 opened pull request #3564: create settings form(s) when requested (master...settings-ui) https://git.io/vKjoD
+[16:15:35] *** Joins: in1t3r (~LordShiva@ )
+[16:23:37] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[16:24:24] *** Joins: Emcy (~MC@ )
+[16:26:50] -qtox-git-spam- [qTox] zetok opened pull request #3565: chore(travis): fix compiling on osx travis (master...osx) https://git.io/vKjKt
+[16:42:05] *** Joins: Emcy_ (~MC@ )
+[16:43:06] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[16:43:25] *** Joins: Emcy_ (~MC@ )
+[16:45:45] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[16:47:05] *** Joins: Emcy (~MC@ )
+[16:47:05] *** Quits: Emcy (~MC@ ) (Changing host)
+[16:47:05] *** Joins: Emcy (~MC@ )
+[16:48:36] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 276 seconds)
+[16:57:39] *** Joins: f10 (~flo@ )
+[17:05:49] *** Joins: Emcy_ (~MC@ )
+[17:08:19] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[17:11:59] *** Joins: Emcy (~MC@ )
+[17:11:59] *** Quits: Emcy (~MC@ ) (Changing host)
+[17:11:59] *** Joins: Emcy (~MC@ )
+[17:13:58] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[17:22:04] *** Joins: Emcy_ (~MC@ )
+[17:24:52] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[17:48:46] *** Joins: Emcy (~MC@ )
+[17:48:46] *** Quits: Emcy (~MC@ ) (Changing host)
+[17:48:46] *** Joins: Emcy (~MC@ )
+[17:50:19] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[17:56:09] *** Joins: Emcy_ (~MC@ )
+[18:00:06] *** Quits: Emcy (~MC@ ) (Ping timeout: 276 seconds)
+[18:00:47] *** Joins: abbat (~Anton@ )
+[18:02:54] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[18:05:57] *** Joins: f10_ (~flo@ )
+[18:31:40] <sudden6> zetok: o/
+[18:48:21] <zetok> sudden6: \o
+[18:49:17] <sudden6> these meetings aren't quite as regular as we planned...
+[18:52:33] <zetok> you mean, they're not happening at all
+[18:52:55] <sudden6> yeah
+[18:53:18] <zetok> mm
+[18:53:29] <zetok> time to remove stuff form readme.md
+[18:53:54] <sudden6> I think it would be bad to remove everything
+[18:54:22] <sudden6> because having a plannend time where and when to meet is good
+[18:54:47] <sudden6> the whole comitee thing is useless now tough
+[18:55:21] <sudden6> *though
+[18:55:48] <zetok> yep
+[18:56:32] <zetok> so, committee thing is kil, tux3 also seems to be kil
+[18:56:46] -qtox-git-spam- [qTox] BiTOk opened pull request #3566: Fixed desktop sharing without camera connected (master...fix3476) https://git.io/vKjDI
+[18:57:27] <sudden6> nah, tux3 is not kil
+[18:57:45] <sudden6> I think he's pretty reachable by mail
+[18:57:49] <zetok> nope
+[19:00:33] <zetok> anyway
+[19:00:48] <zetok> what do you think about the TokTok workflow?
+[19:01:33] <sudden6> what workflow do you mean?
+[19:02:13] <zetok> checks required to pass in order for PR to be merged, and one of checks is review done by someone other than PR submitter
+[19:03:15] <sudden6> build checks a being a requirement is good
+[19:03:27] <zetok> not according to tux3
+[19:03:39] <sudden6> the review stuff is good for toxcore/hstox
+[19:03:54] <sudden6> I know
+[19:04:37] <sudden6> on the other side, if the checks itsefl break, see osx travis issue, there are problems
+[19:04:57] <sudden6> with out active people who can deactivate the check
+[19:05:07] <sudden6> *without
+[19:05:37] <zetok> err
+[19:06:33] <zetok> sorry, but what you wrote is invalid
+[19:06:45] <zetok> >with out active people who can deactivate the check
+[19:06:50] <zetok> that doesn't happen
+[19:07:03] <sudden6> ?
+[19:07:29] <zetok> you don't have multiple people and none of them being available to disable something
+[19:07:43] <zetok> unless you do, then project is dead and it's time to move on
+[19:08:12] <zetok> that's hardly relevant, since this doesn't apply to current setup
+[19:08:25] <zetok> in current setup, there's only 1 person who can do stuff, namely tux3
+[19:09:19] <sudden6> yeah, and that's the reason we don't have automatic build checks required^^
+[19:09:29] <zetok> since tux3 is kill, and no one else can do stuff, I was wondering whether it's time to move on, whether people see point it it (already, or whether they feel like waiting more), and how to do that swiftly
+[19:10:26] <sudden6> I get your point, it feels wrong to discuss this without the major involved people
+[19:10:42] <zetok> ok :)
+[19:10:53] <sudden6> major involved people = Diadlo, zetok, antis81, sudden6
+[19:11:01] <sudden6> tux3
+[19:11:12] <zetok> the proper way to go about it, is to open issue on gh, where everyone interested would be notified & be able to comment
+[19:11:26] <sudden6> yeah, or an email
+[19:11:31] <sudden6> or both
+[19:11:34] <zetok> nah, email isn't really good
+[19:11:49] <zetok> since it's not visible to people outside
+[19:12:02] <zetok> and you do want clarity when doing stuff
+[19:12:05] <sudden6> email pointing to gh issue? tux3 seems to ignore gh
+[19:12:42] <zetok> if he does ignore gh, what point is there to forcing him to get on with things?
+[19:13:23] <zetok> anyway, perhaps I'll see point in sending mails to him as soon as he starts reacting to them
+[19:14:34] <sudden6> It still wouldn't be bad to send an email additionally, if he ignores both, well, kill it is
+[19:15:18] <sudden6> I'd rather have changes gracefully
+[19:20:28] <zetok> yeah.
+[19:21:52] <sudden6> Moving to an org would solve this problem, right?
+[19:22:30] <zetok> yes
+[19:22:49] <zetok> to a degree, since github ors are shitty
+[19:22:53] <zetok> orgs*
+[19:22:59] <sudden6> to what degree?
+[19:23:32] <zetok> "can be worked with, until gitlab gets into proper shape"
+[19:24:13] <zetok> btw, the whole thing makes me realize how heavily stuff depends on github
+[19:24:35] <sudden6> mhm
+[19:25:33] <sudden6> pretty much everything goes over gh
+[19:26:00] <sudden6> only separate stuff is tox.chat repo + mailing list and IRC
+[19:26:24] <zetok> err, no, tox.chat stuff is irrelevant
+[19:26:39] <sudden6> no
+[19:26:44] <sudden6> it's there and works
+[19:26:49] <zetok> ok, you're right, they make qTox look bad
+[19:26:57] <sudden6> ...
+[19:28:04] <sudden6> I still count them as people who care about Tox in general and little bit about qTox
+[19:28:40] <zetok> yes, people have an inherent tendency to be overly optimistic, even to a degree where it hurts them
+[19:29:43] <sudden6> I definitely agree with me beeing overly optimistic, but it's only there to compensate your pessimism ;)
+[19:30:40] <zetok> hmm.
+[19:31:07] <zetok> pessimist sees a dark tunnel
+[19:31:15] <zetok> optimist sees a light in the tunnel
+[19:31:24] <zetok> realist sees an incoming train
+[19:32:08] <sudden6> pessimist sees a half empty glass
+[19:32:16] * zetok prefers to be in a position of a train conductor, who sees three idiots standing on tracks
+[19:32:16] <sudden6> optimist sees a half full glass
+[19:32:30] <sudden6> engineer sees a glass twice as big as it needs to be
+[19:33:24] * sudden6 prefers to read https://what-if.xkcd.com/6/
+[19:34:50] <zetok> >I still count them as people who care about Tox in general and little bit about qTox
+[19:35:21] <zetok> caring doesn't really constitute much, aside from wishful thinking
+[19:35:55] <zetok> also, while positive things exists, they say nothing about the negative impact, which is way more important
+[19:37:24] <zetok> (and it's not being "pessimistic", but it's a fact that people pay multiple times more attention to bad stuff)
+[19:37:58] <sudden6> mhm
+[19:38:37] <sudden6> currently from my POV positive things are the majority
+[19:38:39] <zetok> so if your ratio good:bad is e.g. 5:1, you're already screwed, that's how bad it is, and tox.chat people don't even get 2:1 ratio
+[19:39:36] <sudden6> err, I think that's wrong
+[19:39:42] <zetok> nope
+[19:39:51] <zetok> there is a research on that
+[19:40:31] <zetok> (not about the tox.chat ratio, this being just my generous estimation, but about ratio in general)
+[19:40:51] <zetok> >I think that's wrong
+[19:40:55] <sudden6> if people "feel" negative things much stronger, and the felt ratio is 5:1 then reallity is 5:0.5
+[19:41:00] <zetok> well, guess why we can't have nice things.
+[19:41:20] <zetok> err
+[19:41:38] <sudden6> and since you are also only a human your assumption aren't reallity :)
+[19:41:39] <zetok> why are you putting "feels" into equation?
+[19:41:58] <sudden6> it's just the word to describe subjective stuff here
+[19:42:12] <sudden6> therefore the "
+[19:42:47] <zetok> err
+[19:43:03] <zetok> ><sudden6> if people "feel" negative things much stronger, and the felt ratio is 5:1 then reallity is 5:0.5
+[19:43:05] <zetok> eh.
+[19:43:16] <zetok> I guess I'll go do something else.
+[19:43:22] *** Parts: zetok (~zetok@ ) ("Leaving")
+[21:16:07] *** Joins: zetok (~zetok@ )
+[21:22:04] -qtox-git-spam- [qTox] zetok closed pull request #3565: chore(travis): fix compiling on osx travis (master...osx) https://git.io/vKjKt
+[21:39:20] <Diadlo> zetok: https://github.com/tux3/qTox/pull/3563#issuecomment-236372855 can't reproduse
+[21:39:21] <Diadlo> Can you add more details?
+[21:39:45] <zetok> Diadlo: is your contact history empty?
+[21:39:51] <Diadlo> Not
+[21:40:10] <Diadlo> Try with empty
+[21:40:16] <Diadlo> Still can't
+[21:40:27] <zetok> with empty history, I've sent a file transfer, after it message, and then cleared up messages, after which it segfaulted
+[21:41:35] <zetok> and that's all :(
+[21:43:19] <Diadlo> File transfer should be finished/started/not started ?
+[21:44:49] <zetok> ongoing
+[21:45:49] <zetok> i.e. I've started sending 300MB file, sent message, and clicked to clear up messages
+[21:49:05] <Diadlo> Nope :(
+[22:31:29] *** Joins: dardevelin (~dardeveli@ )
+[22:34:55] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[22:39:07] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[22:39:53] -qtox-git-spam- [qTox] BiTOk opened pull request #3569: fix(widget):change received files execution method (master...fix3140) https://git.io/vKjbW
+[22:55:37] *** Joins: LittleVulpix (~Miranda@ )
+[23:09:33] <BiTOk> zetok: as I see, I can skip testing https://github.com/tux3/qTox/issues/3156 ?
+[23:10:19] <zetok> BiTOk: qTox doesn't use yet the newest stable nsis
+[23:10:42] <zetok> I guess you don't need to test
+[23:11:20] <zetok> (will be needed to re-test when using newest stable nsis)
+[23:11:30] <BiTOk> when it can be?
+[23:11:58] <zetok> no idea
+[23:12:05] <zetok> when tux3 comes back to life
+[23:12:13] <BiTOk> oh
+[23:27:26] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[23:30:02] *** Joins: f10_ (~flo@ )
+[23:34:12] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[23:34:28] <Diadlo> https://github.com/tux3/qTox/issues/2892
+[23:34:44] <Diadlo> What it is `-243` and `-314`?
+[23:35:03] <Diadlo> *is it
