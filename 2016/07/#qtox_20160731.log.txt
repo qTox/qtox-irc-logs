@@ -1,0 +1,353 @@
+[00:07:57] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[00:18:00] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[00:29:27] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[00:34:39] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[00:58:55] *** Joins: sudden6 (~anonymous@ )
+[01:07:34] *** Joins: st4ll1 (~st4ll1@ )
+[02:03:48] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[02:17:11] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[03:01:03] *** Joins: st4ll1 (~st4ll1@ )
+[03:06:38] *** Joins: smaragdus (~omoo@ )
+[03:29:04] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[05:52:28] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[07:30:42] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[07:32:34] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[08:23:18] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
+[08:46:35] *** Joins: smaragdus (~omoo@ )
+[08:51:21] *** Joins: Diadlo (~diadlo@ )
+[09:13:55] *** Joins: Diadl0 (~diadlo@ )
+[09:14:00] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 276 seconds)
+[09:14:15] <Diadl0> It's normal, that changing user alias drop av-call?
+[09:17:10] *** Joins: sudden6 (~anonymous@ )
+[09:17:27] <zetok> nope
+[09:32:11] <zetok> Diadl0: mind filling an issue?
+[09:32:37] <zetok> oh, ok
+[09:33:07] <zetok> thanks :)
+[09:34:46] <Diadl0> :)
+[10:04:18] *** Joins: dardevelin (~dardeveli@ )
+[10:57:56] *** Joins: bashrc (~motters@ )
+[11:00:20] <bashrc> does video calling currently in a working condition? It looks like my webcams are working, and they can be selected within qTox but I see no video.
+[11:01:00] <bashrc> toxcore was compiled with av, and audio is working
+[11:01:09] <sudden6> bashrc: video isn't completely stable
+[11:01:14] <bashrc> ah
+[11:01:24] <BiTOk> can you create issue with commit hash and log attached?
+[11:01:24] <sudden6> maybe you could open an issue and provide logs?
+[11:01:43] <sudden6> also, you could try and build from git master
+[11:01:49] <bashrc> ok, where is stuff logged to?
+[11:01:56] <sudden6> there were many fixes since the last release
+[11:02:13] <sudden6> linux ~/cache/tox I think
+[11:02:22] <sudden6> or console output
+[11:02:38] <BiTOk> what OS do you use?
+[11:03:00] <bashrc> I'm currently using 1.4.0-339-ge6e666f-obs
+[11:03:58] <sudden6> ok linux then
+[11:04:12] <bashrc> commit hash e6e666fa8ce36cd3792d4536a59ab2b65fd5b546
+[11:04:30] <bashrc> yes linux, debian stable with backports
+[11:05:34] <sudden6> ok, build is pretty recent, no need for git master
+[11:06:17] <sudden6> best would be to upload logs to gist.github.com and then link to it
+[11:06:33] <sudden6> (or any other paste service)
+[11:07:11] <bashrc> where does qtox log to?
+[11:07:24] <sudden6> ~/.cache/Tox/qtox
+[11:10:12] <bashrc> nothing in ~/.cache
+[11:11:33] <sudden6> hmm, then just run it from terminal and copy the output when the error happens
+[11:11:40] <bashrc> ok
+[11:12:11] <bashrc> actually not logging anything by default is probably a feature
+[11:14:51] <bashrc> looks like it's not finding /dev/video0
+[11:15:24] <bashrc> video4linux2 no such input format : .
+[11:15:48] <bashrc> camerasource.cpp:233 failed to open device
+[11:16:41] <bashrc> camera works ok in cheese
+[11:17:12] <sudden6> no logging should be default
+[11:17:23] <bashrc> good
+[11:17:37] <sudden6> hm, we already have recent issue with similiar message
+[11:17:47] <sudden6> and I meant, qtox should be logging by default
+[11:18:20] <bashrc> /dev/video0 does exist, so this might be a permissions thing
+[11:18:26] <sudden6> bashrc: https://github.com/tux3/qTox/issues/3562 is this the same like your issue?
+[11:18:38] <bashrc> ok if it's a known issue
+[11:20:18] <bashrc> yes, same log messages
+[11:20:23] <sudden6> bashrc: could you attach output from v4l2-ctl --list-formats-ext
+[11:20:29] <sudden6> to the issue?
+[11:20:39] <sudden6> would help to debug the problem
+[11:20:44] <bashrc> ok
+[11:21:17] <bashrc> v4l2-ctl command not found
+[11:21:49] <sudden6> you probably have to install it
+[11:22:13] <sudden6> v4l-utils for debian
+[11:22:17] <bashrc> ok. Could be a while because the system isn't on the internet and installing things means rebuilding the image
+[11:23:50] <sudden6> no problem, just attach it to the issue above when you have time
+[11:25:42] *** Joins: Emcy_ (~MC@ )
+[11:27:19] *** Joins: Emcy (~MC@ )
+[11:28:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[11:30:02] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[11:35:48] -qtox-git-spam- [qTox] Diadlo opened pull request #3571: fix(text): Using modified text, instead of raw (master...fixActionMsg) https://git.io/v6enx
+[11:39:30] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:43:49] -qtox-git-spam- [qTox] sudden6 closed pull request #3539: Changed "best modes" search algorithm (master...fixDeviceDuplicates) https://git.io/vKy5H
+[11:46:38] *** Joins: dardevelin (~dardeveli@ )
+[11:47:23] *** Joins: cisc (~cisc@ )
+[11:52:46] *** Joins: abbat (~Anton@ )
+[11:55:13] <sudden6> zetok: o/
+[12:03:45] <bashrc> when selecting a profile picture is it possible to change the default directory for that? I'd like to create an avatars directory and just go straight to it.
+[12:07:48] <sudden6> bashrc: I think not
+[12:08:38] <zetok> >Could be a while because the system isn't on the internet and installing things means rebuilding the image
+[12:08:39] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/v6eCI
+[12:08:39] -qtox-git-spam- qTox/master 58e503b Diadlo: feat(gui, setpassworddialog): Added buttons translation...
+[12:08:39] -qtox-git-spam- qTox/master a163d18 sudden6: Merge pull request #3561...
+[12:08:51] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 264 seconds)
+[12:08:58] <zetok> bashrc: why not just have a "local" mirror of debian packages?
+[12:09:22] <bashrc> not on a small USB drive :)
+[12:09:48] <zetok> right, but you've mentioned that you have some mesh there?
+[12:10:13] <bashrc> I'm testing mesh peers. They all run from 8GB USB sticks
+[12:10:23] <zetok> also, there are USB drives with >128GB capacity, and debian mirror is 120GB from what I've heard
+[12:10:33] <zetok> I see
+[12:11:46] <bashrc> anyone know of any good CC avatar image sets?
+[12:12:37] <sudden6> zetok: since when qTox is in qTox org?^^
+[12:12:41] <zetok> bashrc: https://github.com/tux3/qTox/issues/711 ?
+[12:12:44] <sudden6> also hi :)
+[12:12:54] <zetok> hello sudden6
+[12:13:45] <zetok> sudden6: since tux3 is kil
+[12:13:49] <bashrc> that would be ok, but really I was thinking of something more artistic
+[12:15:33] <sudden6> zetok: you might rethink the usage of kil https://www.urbandictionary.com/define.php?term=Kil ;)
+[12:16:04] <zetok> uh
+[12:16:40] <zetok> right
+[12:17:28] <sudden6> and much more important, what will be the main repo now?
+[12:18:10] <zetok> I've been wondering about that
+[12:19:31] <zetok> well, the main problem is that stuff relies too much on gh, and because of that changing repo would be really problematic
+[12:19:52] <sudden6> also if org repo is new repo, could we move old issues?
+[12:20:16] <zetok> so, from that point, one could either get rid of most of gh dependencies, or not change repo, staying with status quo
+[12:20:31] <zetok> nope
+[12:21:19] <zetok> what do you think about getting rid of most gh dependencies?
+[12:21:40] <sudden6> we should make a plan first
+[12:22:11] <zetok> err
+[12:22:17] <zetok> no, plan comes later
+[12:22:46] <zetok> first you should evaluate all possible options that are there
+[12:22:56] <sudden6> mhm
+[12:23:14] <zetok> and once you know that one option is more preferable than others, you go with it and plan accordingly
+[12:24:17] <sudden6> ok, what dependencies on gh do we have? Issue tracker, repo hosting, website hosting, travis CI
+[12:24:27] <sudden6> anything I forgot?
+[12:24:41] <sudden6> also community
+[12:25:06] <zetok> issue references, both in commits and the code
+[12:25:14] <sudden6> mhm
+[12:26:18] <sudden6> so what can we replace without making things worse?
+[12:26:47] <sudden6> website hosting would probably be easiest and without much troubles
+[12:26:56] <sudden6> but also without much benefits
+[12:27:10] <bashrc> added https://github.com/tux3/qTox/issues/3572
+[12:31:02] <sudden6> zetok: we also talked about making testing for users easier
+[12:31:23] <zetok> I dunno about "replacing"
+[12:31:31] <sudden6> maybe we could combine simple-make.sh with test-pr.sh
+[12:31:47] <sudden6> so one could do simple-make.sh $PR
+[12:32:13] <sudden6> zetok: what were you thinking about?
+[12:32:33] <zetok> just making qTox depend less
+[12:32:47] <sudden6> also without making things worse was wrong, they should be better afterwards
+[12:36:44] <zetok> meh.
+[12:36:46] <BiTOk> why MicFeedbackWidget still there is?
+[12:37:15] <zetok> it was disabled only "for time being", until it gets fixed
+[12:38:14] <zetok> sudden6: right now I'm not sure if anything should be done, since I don't know if tux3 will want to cooperate, assuming that he's fine and well
+[12:39:01] <zetok> i.e. it would be the best if all the stuff associated with the repo could be kept, if not, I'll start thinking about making a migration somehow
+[12:39:08] <sudden6> ah ok, it came to me you want this done asap
+[12:39:26] <zetok> not really
+[12:39:58] <zetok> right now I just want to highlight the need
+[12:40:57] <sudden6> I think repo hosting and Issue tracking is pretty much bound to gh for now
+[12:41:03] <zetok> not really
+[12:41:23] <zetok> they're bound, not to the gh, but to tux3
+[12:42:07] <zetok> i.e. repo can be moved on gh, and to gitlab, keeping all the issues, etc, but that requires admin privileges, which only tux3 has
+[12:42:27] <sudden6> ah, didn't know that's possible
+[12:42:52] <sudden6> but why does gitlab need admin for that? aren't the issues readable anyway
+[12:43:25] <zetok> hmm
+[12:43:35] <zetok> wait, I see an "import" button there for tux3/qTox repo
+[12:43:40] <zetok> >.<
+[12:44:07] <sudden6> lol
+[12:44:35] * zetok wonders whether that would work
+[12:44:37] <sudden6> but we are still bound to gh by our community
+[12:45:00] <sudden6> what about just trying?
+[12:49:21] <zetok> https://gitlab.com/qTox/qTox/import ← it takes its time
+[12:51:33] *** Joins: sudd3n6 (~anonymous@ )
+[12:52:04] <zetok> hmm
+[12:52:10] <sudden6> I just created a gitlab account, lets see how it does
+[12:52:33] <BiTOk> zetok: what do you think about add donation feature for qTox?
+[12:52:51] <zetok> BiTOk: that would require someone to manage the money
+[12:53:03] <BiTOk> project manager
+[12:53:03] <sudden6> BiTOk: where should donations go?
+[12:53:17] <zetok> BiTOk: and who would be the project manager?
+[12:53:24] <BiTOk> maybe you?
+[12:53:36] <zetok> :|
+[12:53:37] <BiTOk> sudden6: paypal, bitcoin?
+[12:54:09] <zetok> sudden6: um, I'm not sure if you can import things multiple times after deleting a repo
+[12:54:09] <BiTOk> project can't be without administration
+[12:54:26] <sudden6> IMHO the only doable solution atm would be donations directly to people
+[12:54:27] <zetok> sudden6: so it would be good if you don't click on import yet
+[12:54:44] <sudden6> zetok: ok
+[12:54:57] <zetok> sudden6: nick on gitlab?
+[12:55:08] <sudden6> zetok: sudden6
+[12:55:23] <BiTOk> sudden6: it's difficult to select people to donate. donate should be easy and clear
+[12:55:53] <sudden6> that was also the death argument last time it came up...
+[12:56:02] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[12:56:18] <sudden6> problem is, qTox doesn't really have a manager in the traditional sense
+[12:56:44] <sudden6> much less does qTox have someone who wants to take responsibilities with mone
+[12:56:48] <sudden6> y
+[12:57:09] <BiTOk> I think, qTox should find traditional manager
+[12:57:45] <BiTOk> and he should get money for his work
+[12:58:20] <zetok> sudden6: added you to `qTox` group
+[12:58:26] <sudden6> zetok: thx
+[12:59:15] <sudden6> zetok: but I think we should keep the gitlab qtox repo closed till a need arises
+[12:59:23] <zetok> yeah
+[12:59:48] <zetok> this is just testing, to see if migrating stuff would be possible
+[13:00:01] <sudden6> yep
+[13:00:33] <sudden6> seems to work for now :)
+[13:01:37] <sudden6> hmm, I liked my github identicon more, reminded me of space invaders :)
+[13:01:59] <zetok> yeah
+[13:02:59] <sudden6> [13:31] <sudden6> maybe we could combine simple-make.sh with test-pr.sh
+[13:03:01] <sudden6> [13:31] <sudden6> so one could do simple-make.sh $PR
+[13:03:02] <sudden6> [13:32] <sudden6> zetok: what were you thinking about?
+[13:03:33] <zetok> requiring more useful info in commits & code
+[13:03:57] <zetok> not really needed though, since we kinda can just import into gitlab
+[13:04:06] <sudden6> ah damn, last line shouldn't be there
+[13:04:36] <zetok> well, we might "require", but people are generally lazy, and the less they have to do, the "better"
+[13:04:46] <zetok> aka, easier to contribute
+[13:05:11] <sudden6> I'm ok with referencing issue numbers in PRs and commit messages, but they shouldn't be in the code
+[13:05:39] <zetok> BiTOk: I'm not sure if I would be a good person for project manager
+[13:06:02] <sudden6> actually I wanted your opinion about combining simple-make.sh and test-pr.sh
+[13:06:02] <zetok> sudden6: right
+[13:06:25] <zetok> sudden6: vagrant doesn't sound good?
+[13:06:49] <zetok> I'm not sure if combining is a good idea
+[13:07:28] <sudden6> simple-make.sh $PR would make for easy interface to test PRs for users
+[13:08:51] *** Joins: tux3 (~tux3@ )
+[13:08:52] <sudden6> zetok: what do you mean?: <zetok> sudden6: vagrant doesn't sound good?
+[13:09:12] <zetok> tux3: finally :)
+[13:09:15] <zetok> hai
+[13:09:30] <sudden6> tux3: o/
+[13:10:21] <zetok> sudden6: vagrant as a way to set up things for testing
+[13:10:25] <tux3> Hi all :)
+[13:10:34] <tux3> zetok, just saw your mail, sorry for the delay!
+[13:11:08] <sudden6> zetok: I still can't make sense of this sentence...
+[13:11:31] <zetok> sudden6: https://www.vagrantup.com/
+[13:12:28] <zetok> tux3: no problem, we've been testing importing repo on gitlab :)
+[13:12:39] <sudden6> ah^^ I read it literally
+[13:12:58] <zetok> https://a.uguu.se/2Qgl5ZeTgVSV.png ← looks like it failed :c
+[13:13:34] <zetok> only like a sixth of issues was imported
+[13:13:50] <sudden6> :(
+[13:14:19] <zetok> so, in practice it does seem to require admin privileges
+[13:14:28] <zetok> (or something)
+[13:14:38] <sudden6> is there an error message or something?
+[13:15:12] <zetok> I don't see any
+[13:16:09] <sudden6> it also hasn't imported code...
+[13:17:13] <zetok> yep
+[13:17:25] <zetok> this is probably part where it failed
+[13:19:09] <tux3> zetok, so about coveralls & reviewables.io, what did you have in mind?
+[13:19:28] <zetok> the ~same setup that TokTok repos have
+[13:19:45] <zetok> tux3: /j #toktok ?
+[13:19:51] <sudden6> please no reviewable
+[13:19:55] <zetok> sudden6: hm?
+[13:20:01] <zetok> sudden6: it would make reviewing easier
+[13:20:04] <sudden6> it's slow and ugly
+[13:20:13] <zetok> yes, but it does make htings easier
+[13:20:17] <zetok> things*
+[13:20:19] <sudden6> no
+[13:20:27] <sudden6> bad user interface makes things harder
+[13:20:41] <zetok> ok, → toktok ?
+[13:22:01] <tux3> Given that we currently have a grand total of not a single unit test, I'm not sure what we would use Coveralls for?
+[13:22:32] <zetok> to have it in place for when there will be tests
+[13:23:07] <tux3> Are you thinking unit tests or integration tests? I'm all for proper testing but for now we got nothing
+[13:23:32] <zetok> both
+[13:23:53] <zetok> integration tests will be harder though, since they require from qTox to implement accessibility stuff
+[13:24:12] <tux3> Alright
+[13:25:17] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[13:25:37] <tux3> So I turned on Coveralls, but someone will need to set it up so it actually does anything
+[13:26:09] <zetok> yep
+[13:26:14] <zetok> that's just travis config
+[13:26:58] <tux3> I know you love fixing Travis :)
+[13:37:08] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[13:50:00] *** Joins: bashrc (~motters@ )
+[13:50:44] *** Joins: st4ll1 (~st4ll1@ )
+[13:55:12] *** Joins: Emcy_ (~MC@ )
+[13:55:12] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[13:55:12] *** Joins: Emcy_ (~MC@ )
+[13:58:50] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[13:59:05] *** Joins: Emcy (~MC@ )
+[13:59:05] *** Quits: Emcy (~MC@ ) (Changing host)
+[13:59:05] *** Joins: Emcy (~MC@ )
+[14:01:03] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 264 seconds)
+[14:11:49] *** Joins: Chiitoo (~Chiitoo@ )
+[14:28:08] *** Joins: Emcy_ (~MC@ )
+[14:31:39] *** Quits: Emcy (~MC@ ) (Ping timeout: 264 seconds)
+[14:53:10] <sudden6> zetok: do you think it would be good to deactivate osx travis tempory
+[14:53:18] <sudden6> *temporary?
+[15:03:42] *** Quits: Emcy_ (~MC@ ) (Quit: Leaving)
+[15:04:08] *** Joins: sudd3n6 (~anonymous@ )
+[15:04:40] <zetok> no
+[15:08:03] <sudden6> why not?
+[15:09:20] <zetok> sounds like giving up
+[15:09:24] <zetok> :s
+[15:09:54] <tux3> Maybe we should remove the "IMPORTANT NOTE" in the Advanced settings tab, it's kinda useless and confusing now. Thoughs?
+[15:10:06] <sudden6> zetok: why?
+[15:10:09] <bashrc> added video info: https://github.com/tux3/qTox/issues/3562
+[15:10:39] <sudden6> tux3: yeah, wasn't that meant for the database settings?
+[15:10:45] <tux3> Yep
+[15:11:02] <zetok> sudden6: thing is, AFAIK it's an issue with travis, and once they fix it, builds could be restarted
+[15:11:12] <tux3> But then if there's only one checkbox, we might as well delete the tab.
+[15:12:12] <zetok> sudden6: if you disable stuff, there'll be no way to restart stuff
+[15:13:02] <BiTOk> what about nsis update?
+[15:13:49] <tux3> Holly fuck they just released NSIS 3 \o/
+[15:14:04] <tux3> I can't believe it.
+[15:15:27] *** Joins: Encrypt (~Chuck@ )
+[15:15:31] <Encrypt> zetok, o/
+[15:18:01] <Encrypt> Ok, I found what I was looking for (the OBS repository link)
+[15:21:45] -qtox-git-spam- [qTox] BiTOk opened pull request #3573: Fixes of static analyze warnings (master...staticfixes) https://git.io/v6e0O
+[15:24:39] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[15:25:57] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 250 seconds)
+[15:28:23] *** Joins: sudd3n6 (~anonymous@ )
+[15:33:24] <tux3> BiTOk, your PR looks good, just needs to fix the commit name. Could you do that please?
+[15:34:06] <BiTOk> about what PR do you speak?
+[15:34:53] <BiTOk> ah, I see
+[15:35:05] <tux3> >[qTox] BiTOk opened pull request #3573 :)
+[15:35:53] <BiTOk> whats wrong with his name?
+[15:36:32] <tux3> I don't think you can use "fix,refactor", but I'm not positivve
+[15:36:49] <sudden6> BiTOk: only fix or refactor is allowed
+[15:36:59] <BiTOk> there is both
+[15:37:21] <tux3> If there is really both, maybe split into two commits. Otherwise by the name I'd call it just refactor
+[15:37:24] *** Joins: f10_ (~flo@ )
+[15:38:11] *** Joins: fred_barclay (~fred@ )
+[15:38:30] <BiTOk> friendlistwidget.cpp contains av fix for my next PR :-)
+[15:39:03] <BiTOk> oh, let it be refactor
+[15:39:37] <sudden6> BiTOk: In general, don't put things from one PR into another
+[15:39:47] <tux3> Oh right, might be better to split it acutally :)
+[15:39:59] <sudden6> i.e. one PR one thing fixed
+[15:42:01] <BiTOk> this one really fixed static analyze warnings, but one warning about access violation, that wasn't accured because there is no saving of contact list grouping 
+[15:45:03] <BiTOk> I amend it
+[15:45:15] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[16:27:16] <bashrc> I think I see the cause of connection problems. loadGlobal only happens once at start, so when the DHT list later changes as mesh peers are discovered qTox doesn't update itself
+[16:28:05] <bashrc> after repeated manual closing and opening it does eventually connect
+[16:47:28] <bashrc> one way light be to run loadGlobal whenever Settings::getinstance is called
+[16:47:46] <bashrc> and remove the loaded flag
+[16:48:20] <bashrc> I could maybe add an extra setting to do that, such as "mesh=true"
+[17:16:16] *** Joins: f10 (~flo@ )
+[17:17:46] -qtox-git-spam- [qTox] zetok opened pull request #3574: chore: limit scope of commit messages to dozen characters (master...cmf) https://git.io/v6e2d
+[17:20:22] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[18:07:03] *** Joins: Chiitoo (~Chiitoo@ )
+[18:21:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[18:31:32] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[18:34:17] *** Quits: Encrypt (~Chuck@ ) (Quit: Quitte)
+[18:47:54] *** Joins: sudden6 (~anonymous@ )
+[18:49:38] *** Joins: sudd3n6 (~anonymous@ )
+[18:56:12] *** Quits: fred_barclay (~fred@ ) (Ping timeout: 240 seconds)
+[19:08:50] *** Joins: fred_barclay (~fred@ )
+[19:08:50] *** Quits: sudden6 (~anonymous@ ) (Read error: Connection reset by peer)
+[21:00:10] * zetok wonders
+[21:02:20] * Chiitoo swirls.
+[21:04:55] <zetok> well, now at least we know that tux3 won't move the repo
+[21:07:28] *** Joins: bashrc (~motters@ )
+[21:07:29] * zetok wonders what to do
+[21:18:22] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[21:18:24] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[21:25:07] *** Joins: stvlker (~stvlker@ )
+[21:35:48] *** Joins: BiTOk_ (~BiTOk@ )
+[21:38:54] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 276 seconds)
+[21:47:19] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[21:52:02] *** Joins: stvlker (~stvlker@ )
+[21:53:18] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[21:53:32] *** Joins: f10 (~flo@ )
+[21:55:42] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:00:19] *** Joins: bashrc (~motters@ )
+[22:05:41] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[23:02:28] <zetok> ah, crap.
+[23:28:59] *** Quits: BiTOk_ (~BiTOk@ ) (Ping timeout: 258 seconds)
+[23:34:19] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[23:35:26] *** Joins: f10_ (~flo@ )
+[23:40:34] *** Quits: Bheru27 (~Bheru27@ ) (Quit: o/)
+[23:41:04] *** Joins: Bheru27 (~Bheru27@ )
