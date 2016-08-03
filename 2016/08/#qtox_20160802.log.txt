@@ -1,0 +1,247 @@
+[00:40:31] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[00:41:31] *** Joins: f10__ (~flo@ )
+[01:01:14] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[01:02:18] *** Joins: dardevelin (~dardeveli@ )
+[01:14:42] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 265 seconds)
+[01:14:43] -qtox-git-spam- [qTox] Diadlo opened pull request #3582: fix: Added forgotten return statement (master...fixReturn) https://git.io/v6JRK
+[01:19:28] *** Joins: f10__ (~flo@ )
+[01:25:13] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[01:25:37] *** Joins: f10__ (~flo@ )
+[01:54:09] *** Joins: stvlker (~stvlker@ )
+[01:58:40] *** Quits: stvlker (~stvlker@ ) (Ping timeout: 258 seconds)
+[02:37:58] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[02:44:39] *** Joins: SkyzohKey (~skyzohkey@ )
+[02:45:11] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[04:19:06] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[04:21:55] *** Joins: f10 (~flo@ )
+[04:38:54] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[04:45:25] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[06:05:59] *** Quits: enyc (~enyc@ ) (Ping timeout: 258 seconds)
+[07:09:24] *** Joins: sudden6 (~anonymous@ )
+[07:11:04] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/v6J9f
+[07:11:04] -qtox-git-spam- qTox/master 8bc3c3c Diadlo: fix: Added forgotten return statement
+[07:11:04] -qtox-git-spam- qTox/master fca278f sudden6: Merge pull request #3582...
+[07:18:04] *** Joins: st4ll1 (~st4ll1@ )
+[07:31:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[07:36:00] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 276 seconds)
+[07:50:31] *** Joins: LittleVulpix (~Miranda@ )
+[07:56:55] *** Joins: f10 (~flo@ )
+[07:59:54] *** Joins: abbat (~Anton@ )
+[08:21:01] *** Joins: pcre (~quassel@ )
+[08:34:05] *** Joins: BiTOk_ (~BiTOk@ )
+[08:34:35] *** Joins: f10__ (~flo@ )
+[08:57:17] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:00:21] <Diadlo> Hello
+[09:01:12] <Diadlo> What you think: I have the same problem with https://github.com/tux3/qTox/issues/3538, but on new versions. Should I create new issue?
+[09:02:07] <Diadlo> zetok: ↑
+[09:04:33] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[09:04:36] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:10:12] <zetok> Diadlo: no need, just comment in the issue that it's still reproducible on $commit
+[09:19:29] *** Quits: pcre (~quassel@ ) (Ping timeout: 265 seconds)
+[09:21:09] *** Joins: pcre__ (~quassel@ )
+[09:23:32] *** Joins: dardevelin (~dardeveli@ )
+[09:24:53] <Diadlo> zetok: Problem, that I can't reproduce on their commit
+[09:26:09] *** Quits: pcre__ (~quassel@ ) (Ping timeout: 250 seconds)
+[09:26:21] *** Joins: pcre (~quassel@ )
+[09:30:28] <zetok> um, that's not a real problem if the issue is reproducible at all
+[09:30:53] <zetok> if reproducible on master → needs to be fixed
+[09:31:08] <zetok> if not → user is asked to re-test
+[09:31:15] <zetok> (with newest qTox, that is)
+[09:49:26] *** Joins: abbat (~abbat@ )
+[10:03:31] <zetok> fug.
+[10:04:25] <zetok> looks like everything on the internets that could be used to import issues is either broken, or requires admin access
+[10:06:46] <Diadlo> "perfect"
+[10:14:46] <Diadlo> zetok: For import ot export?
+[10:15:05] <zetok> importing from tux3/qTox
+[10:15:20] <zetok> it's not possible to export issues on gh
+[10:17:20] <nurupo> lies, you can use gh api to export issues to your local machine :P
+[10:17:36] <nurupo> that's what the github backup haskell program does
+[10:18:13] <nurupo> you can't import them as they are into another repo though
+[10:18:44] <nurupo> moving qtox repo from tux3/ to qtox/ should preserve all the issues though, i think
+[10:21:44] <zetok> lol
+[10:22:16] <zetok> nurupo: https://github.com/tux3/qTox/issues/3578
+[10:23:02] <zetok> since there is ~consensus that move should happen, I'm looking into what can be done when tux3 doesn't want to cooperate
+[10:23:57] <zetok> https://github.com/qTox-issue-import/qTox/issues ← test repo, currently it looks bad
+[10:24:38] <Diadlo> Yep
+[10:26:51] <nurupo> yeah, that the only way to import them
+[10:26:55] <nurupo> *that's
+[10:27:22] <zetok> via broken python scripts*
+[10:27:39] *** Quits: Dragofix (Dragofix@ ) (Quit: Unexpected error - There is no cause for alarm , but there probably will be)
+[10:30:47] <nurupo> wow
+[10:30:50] <nurupo> https://github.com/tux3/qTox/issues/4
+[10:30:56] <nurupo> >[CLOSED] helt QT GUI qTox-issue-import/qTox#4
+[10:31:08] <nurupo> i wonder if that notified people
+[10:31:39] <nurupo> e.g. sent an email about activity i nthe issue #4 for all of the people watching the issue
+[10:31:53] <nurupo> you might have caused a lot of email spam with this importing :)
+[10:32:29] <zetok> ?
+[10:32:34] <nurupo> hm, doesn't look like i have received any emails
+[10:32:49] <zetok> um, there's no activity
+[10:33:09] <nurupo> at the very bottom of https://github.com/tux3/qTox/issues/4
+[10:33:13] <nurupo> >[CLOSED] helt QT GUI qTox-issue-import/qTox#4
+[10:33:19] <zetok> yes, this is not activity
+[10:33:25] <zetok> just interlinking stuff
+[10:33:26] *** Joins: stvlker (~stvlker@ )
+[10:33:29] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[10:33:38] <nurupo> depends on how you define "activity"
+[10:33:56] <nurupo> my definition of activity includes "interlinking stuff"
+[10:34:13] <nurupo> doesn't seem like gh notifies people of that, which is good
+[10:34:21] <zetok> > Turkish Translation Revised
+[10:34:26] <zetok> -.-"
+[10:34:51] <zetok> and to think that we had to wait 2 years for someone else to make a PR with Turkish translation to qTox..
+[10:35:16] <zetok> no, wait, just a year
+[10:53:32] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[10:56:32] *** Joins: pcre_ (~quassel@ )
+[10:56:54] *** Quits: pcre_ (~quassel@ ) (Client Quit)
+[11:12:53] *** Joins: Chiitoo (~Chiitoo@ )
+[11:33:47] *** Joins: Dragofix (Dragofix@ )
+[11:55:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[11:55:26] *** Joins: abbat (~abbat@ )
+[11:58:24] *** Quits: abbat (~abbat@ ) (Client Quit)
+[11:58:41] *** Joins: abbat (~abbat@ )
+[12:06:52] *** Joins: depate (~depate@ )
+[12:11:13] *** Quits: depate (~depate@ ) (Client Quit)
+[12:58:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[12:58:28] *** Joins: abbat (~abbat@ )
+[13:10:44] *** Joins: DarkWolf84 (5b8bb36b@ )
+[13:12:37] *** Quits: DarkWolf84 (5b8bb36b@ ) (Client Quit)
+[13:52:03] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[14:24:33] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[14:50:36] *** Joins: cisc (~cisc@ )
+[14:59:50] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:00:40] *** Joins: abbat (~abbat@ )
+[15:17:12] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[15:20:12] *** Joins: Chiitoo (~Chiitoo@ )
+[15:29:51] <cisc> zetok: on your issue: https://github.com/tux3/qTox/issues/3578 you didn't add a heading nor explain, one such as "What happens if tux3 agrees"
+[15:30:03] <cisc> then bullets under that. that's my suggestion
+[15:30:29] <zetok> I did though?
+[15:30:49] <cisc> where?
+[15:30:57] <zetok> >If cooperation were to happen, all of that would be ~preserved.
+[15:31:46] <cisc> so why is What moving away means without @tux3 cooperating? a bold heading, not If cooperation were to happen also
+[15:31:57] <cisc> shouldn't they both be
+[15:32:01] <cisc> since they are core issues
+[15:32:15] <zetok> thing is, he already repeatedly refused
+[15:32:48] <cisc> k...
+[15:33:01] <cisc> and also "
+[15:33:02] <cisc> This isn't quire right, since whatever can be pushed to master with no..."
+[15:33:06] <cisc> "quire" :)
+[15:35:29] <zetok> thanks
+[15:35:59] <cisc> sure
+[15:38:54] <zetok> ><zetok> thing is, he already repeatedly refused
+[15:39:12] <zetok> btw, if anyone is interested in convincing tux3, please do so
+[15:39:40] <zetok> I have kinda given up on it, but perhaps someone will be more successful
+[15:40:38] <cisc> zetok: enough time has already passed
+[15:40:52] <zetok> oh, I don't mean to ~wait
+[15:41:35] <cisc> even if we convinved him what what the benefit be?
+[15:41:40] <zetok> I'm merely saying that convincing tux3 might still be possible, so if someone feels confident that they could do it, they should try
+[15:41:48] <cisc>  /s/convinved/convinced
+[15:42:21] <cisc> meaning comparing to him transfering the repo
+[15:42:30] <zetok> um?
+[15:42:31] <cisc> I know there are drawbacks if he doesn't want to cooperate
+[15:42:47] <zetok> there are ~no drawbacks
+[15:43:17] <cisc> but if he doesn't want to relinquish the repo, then you lose all issues?
+[15:43:34] <zetok> I'm working on that
+[15:44:08] <cisc> I don't see any reason for him not handing over the repo as he signed out right in the middle of your chat and said himself he's not interested in doing much with qTox these days
+[15:44:13] <cisc> aside from bragging rights
+[15:44:22] <zetok> by the end of the day I might learn enough of python to ~fix issue importing script enough to get stuff migrated
+[15:46:14] <cisc> good. then if not, we could recreate the important issues, and a lot of those past ones are most likely old and no longer are relevant
+[15:46:35] <zetok> um
+[15:46:54] <zetok> manually "copying" each issue is already possible
+[15:47:09] <cisc> ok
+[15:47:19] <zetok> what I'm looking into, is copying all the stuff under an hour by an automated script
+[15:48:26] <zetok> possibly could be done way faster, but it's better to stay on the "safe" side of gh's rate-limiting
+[15:49:16] <zetok> actually.
+[15:54:22] <cisc> zetok: are the jenkins builds going to switch over to the new repo, meaning someone like nurupo is going to make the modification?
+[15:54:35] <zetok> hopefully at some point
+[15:54:40] <cisc> (downloading the binary from tox.chat)
+[17:00:12] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[17:07:05] *** Joins: f10 (~flo@ )
+[17:10:29] *** Joins: f10__ (~flo@ )
+[17:19:12] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[17:19:53] *** Joins: abbat (~abbat@ )
+[17:34:00] *** Joins: sudden6 (~anonymous@ )
+[17:40:57] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:42:54] *** Joins: cisc (~cisc@ )
+[18:42:17] <zetok> :/
+[18:42:36] <zetok> looks like it won't be possible to go under an hour
+[18:42:47] <zetok> hopefully it's possible to make it less than 5h
+[19:24:26] *** Joins: f10_ (~flo@ )
+[19:24:28] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[19:37:37] *** Joins: st4ll1 (~st4ll1@ )
+[19:42:08] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:42:22] *** Joins: cisc (~cisc@ )
+[20:06:50] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[20:21:42] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[20:29:17] *** Joins: bashrc (~motters@ )
+[20:29:44] *** Joins: Diadlo (~diadlo@ )
+[20:31:09] *** Joins: SkyzohKey (~skyzohkey@ )
+[20:31:51] <zetok> # rate-limit to be <5k requests/h
+[20:31:51] <zetok> time.sleep(0.7)
+[20:31:52] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[20:32:32] <zetok> I wonder if this actually would be enough to get this done
+[20:43:24] *** Joins: DarkWolf84 (5b8bb36b@ )
+[21:09:47] <bashrc> so with a blatant hack I can now get reliable connection to the mesh
+[21:10:18] <bashrc> made an option called meshMode
+[21:14:05] *** Joins: abbat (~Anton@ )
+[21:17:04] *** Quits: DarkWolf84 (5b8bb36b@ ) (Ping timeout: 250 seconds)
+[21:30:13] <sudden6> bashrc: on what kind of mesh are you trying to run qTox?
+[21:30:30] <sudden6> I'm interested in your project in general :)
+[21:33:02] <zetok> …
+[21:33:20] <zetok> FFS
+[21:33:53] * zetok can't get migrating issues to work
+[21:35:09] <sudden6> maybe gitlab support can?
+[21:35:35] <zetok> they could, if we were trying to migrate to gitlab
+[21:35:54] <zetok> https://github.com/qTox-issue-import/qTox/issues/12 ← always fails at this very point
+[21:36:36] <zetok> apparently there exists a cheap workaround for the crap I'm getting, which is "try again until done'
+[21:36:41] <zetok> :/
+[21:36:53] <sudden6> what's so special about issue #12
+[21:37:19] <zetok> no idea
+[21:38:28] *** Joins: DarkWolf84 (5b8bb36b@ )
+[21:39:36] <zetok> perhaps `tux3 assigned tux3 and unassigned tux3 on 28 Jun 2014`
+[21:40:27] <sudden6> could be, but there's nothing we could do about that I think
+[21:40:52] <sudden6> also migrating doesn't have to work yet
+[21:40:54] <zetok> well, the problem is with the script
+[21:41:22] <zetok> sudden6: do you happen to know python?
+[21:41:42] <sudden6> 0.1%
+[21:42:41] <sudden6> well, show me the script anyway
+[21:43:57] <zetok> https://github.com/IQAndreas/github-issues-import
+[21:45:10] <zetok> ok, I'm just going to try with "try again", aka https://github.com/IQAndreas/github-issues-import/pull/32
+[21:45:28] <zetok> btw, fuck gh
+[21:49:45] <sudden6> maybe try with only open issues?
+[21:50:21] <zetok> um
+[21:50:37] <zetok> not much would be preserved this way
+[21:51:08] <sudden6> I know, but it would help to test if script is faulty or you run into gh api rate limit :)
+[22:03:47] <zetok> it is probably rate limiting
+[22:03:55] <zetok> they don't have docs on that though
+[22:04:35] <zetok> i.e. they have docs on rate-limiting when querying for info, and only mention that creating stuff is more limited
+[22:06:44] <zetok> https://gist.github.com/zetok/99ebe97d3503f0b80c604474010f15b4 ← perhaps will work
+[22:09:12] <zetok> >migrating doesn't have to work yet
+[22:09:14] <zetok> it kinda does
+[22:09:38] <zetok> sudden6: btw, you mentioned emailing tux3 – would you mind doing that?
+[22:11:06] *** BiTOk_ is now known as BiTOk
+[22:12:06] <zetok> and if we can't figure out how to migrate issues, it would be good to know that
+[22:14:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[22:25:34] <zetok> IT WORKS!
+[22:26:24] <zetok> MMWWHAHAHAHAHA
+[22:26:46] <BiTOk> where result?
+[22:27:18] <zetok> https://github.com/qTox-issue-import/qTox/issues
+[22:28:03] <zetok> it's going slowly, since rate-limiting allows to import ~20 comments, and then it requires waiting for 60s before getting more stuff
+[22:28:19] <zetok> there are 16000 comments to import
+[22:28:27] <BiTOk> wow
+[22:29:55] <zetok> well, at least I got it done today, so I can go to sleep :)
+[22:31:10] *** Quits: DarkWolf84 (5b8bb36b@ ) (Quit: Page closed)
+[22:43:18] <zetok> and rate-limit killed the fun :c
+[22:44:03] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 276 seconds)
+[22:53:34] *** Joins: f10 (~flo@ )
+[22:54:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[23:17:09] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[23:30:31] <linuxmodder> zetok,  so is qtox-issue-import only going to be a temporary repo ?  I rather not  make a local fork if its gonna be short lived and going to the org repo in days/ ~ week
+[23:31:02] <linuxmodder> I need to repull and compile with recent adds anyway hence the question sitting on like 23 days old compile
+[23:44:22] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[23:47:29] <zetok> not sure
+[23:48:17] <zetok> depending on how fast people would want to move, it might not be just temporary
+[23:53:00] <linuxmodder> zetok,  can you keep the metabug udated to that effect ?  also atm diff -a on the two repos is null yes/ no?
+[23:53:03] <linuxmodder> code wise
+[23:57:16] <cisc> what my not be temporary?
+[23:57:20] <cisc> *might
+[23:57:57] <linuxmodder> cisc,  the qtox-issue-import repo 
+[23:58:09] <linuxmodder> at the tail end of 3578 
