@@ -1,0 +1,404 @@
+[00:12:22] <cisc> so the new repo name is qtox-issue-import
+[00:21:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:25:20] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[00:26:52] *** Joins: f10 (~flo@ )
+[00:34:06] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:41:24] *** Joins: LittleVulpix (~Miranda@ )
+[00:49:30] <linuxmodder> for  the moment yes
+[00:49:47] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[00:50:24] *** Joins: f10 (~flo@ )
+[00:50:48] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:55:47] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[00:57:23] *** Joins: f10 (~flo@ )
+[01:15:07] *** Joins: st4ll1 (~st4ll1@ )
+[01:24:33] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[01:38:26] <cisc> new name for the new qtox client coming up next: qtox-issue-import x64
+[01:55:13] <linuxmodder> lol
+[02:16:25] *** Joins: BiTOk (~BiTOk@ )
+[02:26:13] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[02:33:23] *** Joins: Guest68467 (~flo@ )
+[03:57:57] *** Quits: Guest68467 (~flo@ ) (Remote host closed the connection)
+[03:58:20] *** Joins: Guest68467 (~flo@ )
+[04:04:06] *** Joins: f10 (~flo@ )
+[04:06:13] *** Quits: Guest68467 (~flo@ ) (Remote host closed the connection)
+[04:16:32] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[04:16:51] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[05:09:55] *** Joins: f10_ (~flo@ )
+[05:13:44] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[05:18:47] *** Joins: Guest59735 (~flo@ )
+[05:19:00] *** Joins: BiTOk_ (~BiTOk@ )
+[05:21:30] *** Quits: BiTOk (~BiTOk@ ) (Ping timeout: 244 seconds)
+[05:44:05] *** Joins: f10_ (~flo@ )
+[06:17:36] *** Quits: Guest59735 (~flo@ ) (Ping timeout: 258 seconds)
+[06:17:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[06:19:43] <nurupo> ><cisc> zetok: are the jenkins builds going to switch over to the new repo, meaning someone like nurupo is going to make the modification? <-- not really sure what you mean by that. tux3 has access to all qtox jobs on jenkins, so there is no need for me to get involved. also, afaik, tux3's plan was 1) for windows qtox builds -- to keep them on jenkins, as OBS doesn't build for windows 2) for linux qtox builds -- slowly phase out them
+[06:22:13] <nurupo> there is also Encrypt guy, he wants to keep qtox linux packages in pkg.tox.chat, he said he will maintain them after tux3 stops doing so
+[06:23:48] <nurupo> so there will be qtox linux packages both in OBS and pkg.tox.chat
+[06:25:10] <nurupo> i'm a bit annoyed of that idea, because of the duplicate effort, but then again, OBS has utox, toxic and others, which are present on pkg.tox.chat, so there is already duplication going on
+[06:40:33] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[07:00:17] <oranges> nurupo: qtox has to be super special and different though
+[07:00:31] <nurupo> ?
+[07:00:47] <oranges> </sarcasm>
+[07:51:35] *** Joins: abbat (~Anton@ )
+[08:39:28] *** Joins: st4ll1 (~st4ll1@ )
+[08:45:58] *** Joins: vindelschtuffen (~vindelsch@ )
+[09:01:41] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:30:46] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 252 seconds)
+[10:00:44] *** Joins: abbat (~abbat@ )
+[10:05:44] *** Quits: zero-ghost (~0@ ) (Ping timeout: 265 seconds)
+[10:08:57] <zetok> ><cisc> so the new repo name is qtox-issue-import
+[10:08:59] <zetok> no
+[10:09:14] <zetok> it will be moved under an org if it's not going to be temporary
+[10:12:43] *** Joins: Diadlo (~diadlo@ )
+[10:36:35] *** Joins: zero-ghost (~0@ )
+[10:40:58] *** Joins: LittleVulpix (~Miranda@ )
+[10:41:55] *** Joins: st4ll1 (~st4ll1@ )
+[10:42:52] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 244 seconds)
+[10:44:58] *** Joins: nurupo (~nurupo.ga@ )
+[10:49:06] <zetok> >i'm a bit annoyed of that idea, because of the duplicate effort
+[10:49:15] <zetok> nurupo: you don't need to duplicate effort
+[10:49:33] <zetok> OBS works, and anyone is free to help with things in it
+[10:50:31] <zetok> ><nurupo> there is also Encrypt guy, he wants to keep qtox linux packages in pkg.tox.chat, he said he will maintain them after tux3 stops doing so
+[10:50:34] <zetok> dunno about that
+[10:50:46] <zetok> he said that he can't deprecate things since he doesn't have access to htme
+[10:50:48] <zetok> them*
+[12:26:16] *** Joins: ccsdss (~ray@ )
+[12:28:32] *** Parts: ccsdss (~ray@ ) ()
+[12:42:07] *** Joins: Emcy (~MC@ )
+[13:51:18] <cisc> [02:09] <zetok> it will be moved under an org if it's not going to be temporary <-- I thought we are moving under an org irregardless to whether or not qtox-issue-import is temporary or not
+[13:55:03] <cisc> meaning in the case qtox-issue-import *is* temporary, instead of "is not" going to be temporary, that changes the outcome? I'm a bit confused
+[13:55:33] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[13:56:20] *** Joins: abbat (~abbat@ )
+[14:00:25] <cisc> https://github.com/tux3/qTox/issues/3578#issuecomment-237199410 <-- There are no "IP" rights, this is GPL'd not a Microsoft license
+[14:00:52] <cisc> anyone can fork his code and put it under the GPL and modify it w/o asking permission so I have no clue what he's talking about
+[14:04:20] <cisc> <nurupo> not really sure what you mean by that... <-- because if the repo for qtox changes to a new one which it's in the process of, then someone else needs access to qtox jobs on jenkins so it's building from the correct repo, not tux3/qtox
+[14:13:16] *** Joins: Chiitoo (~Chiitoo@ )
+[14:29:43] <linuxmodder> cisc,  not exactly github allows for IP locking
+[14:31:51] <cisc> not on GPL, you can't do that legally
+[14:59:47] *** Joins: f10_ (~flo@ )
+[15:05:37] *** Joins: Guest59735 (~flo@ )
+[15:06:18] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[15:06:26] *** Joins: bashrc_ (~robertmot@ )
+[15:09:48] *** Joins: Chiitoo (~Chiitoo@ )
+[15:10:47] <linuxmodder> commits can be  IP locked tho that is what he is referring to iirc
+[15:11:06] <linuxmodder> fuck half of my  personal repos are  ip locked
+[15:14:25] <cisc> "If you're asking if I'm ok to pass my IP rights in this repo to different ownership (which I believe is a case now), than I'm completely OK with it. To make it even easier for you all, I officially pass all my IP rights to the organisation that will be created and all its members" He's talking about intellectual property. what he's saying is a moot point because he doesn't own any IP rights to any of the code he wrote. It's under the GPL
+[15:17:00] <linuxmodder> not true 
+[15:17:18] <linuxmodder> gpl allows for IP but its not protected in the traditional sense
+[15:17:21] <linuxmodder> for code 
+[15:18:19] <cisc> no it doesn't
+[15:18:32] <cisc> you are talking about a proprietary license
+[15:24:30] <bashrc_> avoid copyright transfers, unless perhaps they're to a non-profit organisation
+[16:05:11] *** Quits: CryptoSiD (SiD@ ) (Excess Flood)
+[16:13:35] *** Joins: CryptoSiD (SiD@ )
+[16:36:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:59:01] *** Joins: sudden6 (~anonymous@ )
+[17:08:57] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[17:41:37] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[18:02:54] *** Quits: bashrc_ (~robertmot@ ) (Quit: Lost terminal)
+[18:03:58] *** Quits: Guest59735 (~flo@ ) (Read error: Connection reset by peer)
+[18:04:30] *** Joins: Guest59735 (~flo@ )
+[18:06:57] *** Joins: iphy (uid67735@ )
+[18:07:00] <iphy> hi
+[18:07:04] <iphy> is anyone online on tox?
+[18:07:09] <iphy> 81C3BAE23C8DF61E844107D8BB3BEAE7D6E0ECAA1DABFF197BB81648956BD91383AC6BBC3297
+[18:28:20] <iphy> [17:27:21.156 UTC] :0 : Warning: Failed to export decrypted database
+[18:28:20] <iphy> [17:27:21.225 UTC] :0 : Warning: Decryption failed
+[18:28:28] <iphy> so
+[18:28:52] <iphy> bug: after removing password, all messages go to /dev/null
+[18:29:22] <iphy> I have to restart (maybe logout/login is enough) to get the DB opened
+[18:29:50] *** Quits: Guest59735 (~flo@ ) (Ping timeout: 258 seconds)
+[18:29:55] <linuxmodder> give me a sec iphy  I am firing this box back up 
+[18:29:57] <iphy> [17:29:45.572 UTC] :0 : Warning: Failed to export encrypted database
+[18:30:02] <iphy> same thing in the other direction
+[18:30:09] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[18:30:16] <iphy> changing DB between encrypted and plain text messes it up
+[18:30:29] <linuxmodder> iphy,  what OS and DID you compile /install sqlcipher ? 
+[18:30:33] <iphy> [17:30:23.961 UTC] :0 : Warning: Trying to exec, but the database is not open
+[18:30:50] <iphy> linuxmodder: windows, and yes, is it possible to build qtox without sqlcipher?
+[18:31:01] <iphy> I guess it is, but anyway yes
+[18:31:13] *** Joins: fred_barclay (~fred@ )
+[18:31:19] <linuxmodder> not that I know of  (at least not on linux and with encDB )
+[18:31:47] <iphy> ok, so yeah, this is broken
+[18:32:41] <linuxmodder> has been for ages without sqlcipher
+[18:32:41] <iphy> [17:32:21.992 UTC] :0 : Warning: Numeric sorting unsupported on Windows versions older than Windows 7.
+[18:32:45] <iphy> what is this?
+[18:33:33] <linuxmodder> not sure but stab in the dark would be something in the DB and sorting it via toxid  numerically
+[18:33:33] <iphy> ok, maybe qtox doesn't work well on wine
+[18:33:55] <iphy> ok, I'm out of qtox
+[18:34:03] <linuxmodder> Nothing besides games work decent in wine :) and msot of them still suck ass in wine
+[18:40:47] *** Joins: Guest59735 (~flo@ )
+[18:40:47] *** Joins: f10_ (~flo@ )
+[18:46:16] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:11:08] *** Quits: Guest59735 (~flo@ ) (Read error: Connection reset by peer)
+[19:11:25] *** Joins: Guest59735 (~flo@ )
+[19:11:51] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[19:17:45] *** Quits: valvin (~valvin@ ) (Ping timeout: 258 seconds)
+[19:19:31] *** Joins: valvin (~valvin@ )
+[19:22:05] <iphy> zetok: let's continue here
+[19:22:11] <zetok> ok
+[19:22:19] <iphy> Diadlo: unit tests for qtox?
+[19:44:36] *** Joins: abbat (~Anton@ )
+[19:50:13] *** Joins: smaragdus (~omoo@ )
+[19:54:55] *** Quits: zaggynl (~zaggynl@ ) (Read error: Connection reset by peer)
+[20:00:33] *** Joins: zaggynl (~zaggynl@ )
+[20:11:24] *** Joins: SkyzohKey (~skyzohkey@ )
+[20:19:50] *** Quits: demize (kyrias@ ) (Quit: Do Androids Dream of Electric Sheep?)
+[20:20:02] *** Joins: demize (kyrias@ )
+[20:27:45] *** Joins: sudden6 (~anonymous@ )
+[20:29:52] *** Joins: tux3 (~tux3@ )
+[20:29:52] *** ChanServ sets mode: +o tux3
+[20:35:19] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[20:37:59] <Chiitoo> linuxmodder: Heh.  My experiences with Wine since 2010 are quite the opposite.  :]
+[20:44:12] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[20:49:51] <tux3> zetok, boop
+[20:53:26] <zetok> tux3: o/
+[20:53:36] <tux3> So I saw your thing.
+[20:53:50] * zetok just finished fixing the script
+[20:54:07] <tux3> And apparently everyone agrees we should move to an org, so I guess I'll stop being so stubborn and agree :)
+[20:54:20] <tux3> Because maybe I'm wrong
+[20:54:30] <zetok> that would be great :)
+[20:56:23] *** Joins: in1t3r (~LordShiva@ )
+[21:01:09] <tux3> zetok, so you started forking everything in the meantime? :)
+[21:01:15] <tux3> What's the plan here?
+[21:01:25] <zetok> forking?
+[21:01:44] <zetok> so, right
+[21:02:16] <zetok> first is the fork under `qTox/`, it was done for iphy to create stuff that you could copy over
+[21:02:42] <zetok> but then, you were not interested in copying that, and you're not available to maintain stuff
+[21:03:31] <zetok> and you've rejected proposal to move the repo, so I've asked people whether they feel like move should happen, and since there was ~consensus, I saw no point in delaying things, thus I've started looking into copying stuff from the "old" repo
+[21:05:19] <zetok> the `import issues` fork is what it says it is, and it was meant mostly for testing, but given how slow & painful it is to import issues, it might not be just for testing, i.e. when things get done once right, it probably would be better to stick to it
+[21:05:54] <zetok> the `import` thing will be not needed though if move were to happen :)
+[21:11:42] <zetok> tux3: um, if you're trying to move the repo right now, repo from under `qTox/` would need to be moved first
+[21:18:30] <zetok> (just say if you want to move, then repo from under `qTox/` could be moved e.g. under `TokTok/` or something
+[21:18:31] <zetok> )
+[21:19:13] <zetok> i.e. current `qTox/qTox` fork → `TokTok/qTox`; `tux3/qTox` → `qTox/qTox`
+[21:20:16] <zetok> (or just move the `qTox/qTox` fork to `TokTok/qTox`
+[21:21:10] <zetok> iphy: sorry for moving it like that, I hope that it's not a problem to have a fork there temporarily, until things on `qTox/qTox` main repo won't get set up again?
+[21:21:46] <iphy> sure, that's fine
+[21:21:57] <tux3> zetok, Sorry I was writing things on GitHub, let me catch up
+[21:21:58] <zetok> if tux3 moves the repo I'll recreate setup you did (just with more people allowed to push to master, since qTox kinda needs it)
+[21:21:58] <iphy> I don't know what will happen, but go ahead
+[21:23:25] <tux3> Okay, so I think the idea would be to move qTox/qTox somewhere else temporarily, and then move tux3/qTox over it. I hope that won't break anything
+[21:23:31] <zetok> yep
+[21:23:41] <tux3> What would be the purpose of TokTok/qTox?
+[21:23:45] <zetok> tux3: you, or me do the `qTox/qTox` move?
+[21:23:54] <zetok> tux3: just a place to move the repo to for a moment :)
+[21:24:01] <tux3> Whichever :)
+[21:24:07] <tux3> As long as we sync up things
+[21:24:09] <zetok> ok, you do it :)
+[21:24:34] <tux3> Ok, so do you have anything pointed at qTox/qTox right now that might break when we replace it?
+[21:24:49] <zetok> I don't
+[21:25:15] <tux3> Alright, I'm moving it to TokTok/qTox now
+[21:26:10] <tux3> Okay, I don't have the rights apparently, funny how that works :)
+[21:26:16] <zetok> >_>
+[21:26:33] <tux3> Organisations have better permissions they said!
+[21:26:46] <zetok> oh
+[21:26:48] <zetok> right
+[21:27:06] <tux3> I think iphy needs to do the move, or give permissions to someone else
+[21:27:10] <zetok> yeah
+[21:27:24] <zetok> iphy: ↑ mind doing the move?
+[21:28:00] <iphy> done
+[21:28:08] <zetok> ok, thanks
+[21:29:12] <tux3> Awesome, the redirect seems to be working fine
+[21:30:30] <tux3> And boom
+[21:30:43] <tux3> >Moving repository to qTox/qTox. This may take a few minutes. 
+[21:31:32] <tux3> Seems to have worked. Now back to answering that pile of text you left me in the issue tracker ...
+[21:32:09] *** Joins: Monsss (5dcf9b11@ )
+[21:32:28] <zetok> tux3: btw, don't create a fork under `tux3/qTox`, otherwise redirection will fail
+[21:32:37] <tux3> Yeah
+[21:32:50] <tux3> I'm guessing it'd be a good idea to update my .git/config now
+[21:32:55] <zetok> tux3: also, you're fine with iphy having write access, right?
+[21:32:59] <tux3> Sure
+[21:33:03] <linuxmodder> zetok,  so if I were to git clone  /git pull today where qtox/qtox  ?
+[21:33:12] <tux3> Apparently you sent me a mail about that, I don't remember receiving it.
+[21:33:24] <zetok> linuxmodder: yep
+[21:33:33] <zetok> huh
+[21:33:43] <zetok> I've sent you 2 emails
+[21:33:58] <zetok> 1 with the content, and the other one being a "ping" about earlier email
+[21:34:00] <linuxmodder> zetok,  cool beans as I'm in other shit atm can you ping me when the move is all doen so I can update .git/config and git pull 
+[21:34:34] <zetok> tux3: Thursday ~midnight & (IIRC) Friday ~afternoon
+[21:35:42] <tux3> You're right, I only saw the "reviewable & coveralls" part of that email, and completely missed iphy. Sorry about that!
+[21:37:33] <zetok> ok, first the PR with travis fixed
+[21:38:38] <zetok> iphy: do you want to make another PR (again, sorry about ~duplicated time), or should I just get the commits for the travis fix PR & make a PR myself with your commit?
+[21:38:50] <zetok> s/do you want/do you have time & want/
+[21:39:39] <iphy> zetok: I'll make another PR, but not right now
+[21:39:48] <zetok> (same would go for the other PRs that seemed to be good to merge, but I'd assign someone else to review C++ code changes
+[21:40:09] <zetok> iphy: ok, since it's needed ~now, I'll just make a PR with travis fix
+[21:41:12] <zetok> (and thanks :) )
+[21:41:16] <iphy> oh, you mean the one that's already merged?
+[21:41:19] <iphy> sure, go ahead
+[21:42:47] <zetok> looks like I'll need to rebase it
+[21:44:57] *** Quits: Monsss (5dcf9b11@ ) (Quit: Page closed)
+[21:45:38] -qtox-git-spam- [qTox] zetok opened pull request #3584: chore: Fix Mac OS X build. (master...fix_travis) https://git.io/v6LO2
+[21:45:46] <zetok> tux3: ↑ have time to review?
+[21:46:16] <zetok> or someone else to rubber-stamp it ;)
+[21:46:40] <tux3> Is it urgent? I'm taking tonight to make sure things work, but I'm answering stuff right now
+[21:47:11] <zetok> >Needed by other PRs to work, if good needs merge ASAP
+[21:47:25] <zetok> as urgent as making sure that other people have PRs that pass required checks
+[21:47:54] <zetok> I've looked at it already, and it was good (beside actually working), so it's mostly just a rubber stamp
+[21:47:57] <tux3> Why are you cloning TokTok/toxcore?
+[21:48:13] <zetok> better workflow
+[21:48:15] <tux3> I don't do rubber stamps :)
+[21:48:21] <zetok> ok :)
+[21:48:25] <tux3> What do you mean better workflow ?
+[21:49:36] <tux3> Okay overall the changes don't look like they should break anything, but I'm not familiar enough with Travis and the OSX script to be positive
+[21:49:44] <tux3> Just the toxcore change I'd like more info on
+[21:50:01] <tux3> Because as far as I'm concerned, we're still building qTox against irungentoo's toxcore
+[21:50:33] <zetok> irungentoo is kinda kill
+[21:50:44] <zetok> (from what I've heard)
+[21:51:00] <tux3> Okay, that's fair. But what's the difference between TokTok/toxcore and irungentoo/toxcore ?
+[21:51:06] <zetok> tests
+[21:51:13] <tux3> Okay
+[21:51:14] <tux3> I don't mind changing things, but if this is going to change, you can't silently hide it in a pull request and rubber stamp it....
+[21:51:21] <zetok> + active work happening on TokTok/toxcore
+[21:51:43] <tux3> I'd just like to be very clear that hiding unrelated stuff in pull request is *NOT* okay ever
+[21:51:48] <tux3> At all.
+[21:51:55] *** Quits: Guest59735 (~flo@ ) (Remote host closed the connection)
+[21:52:17] *** Joins: Guest59735 (~flo@ )
+[21:52:36] <tux3> If you could at least make a separate commit for the toxcore change and document it, that would be a good start, please :)
+[21:52:52] <zetok> ok
+[21:53:16] * zetok goes to amend iphy's commit
+[21:53:23] <tux3> Thanks
+[21:54:18] <zetok> pushed
+[21:54:24] <tux3> Sounds good
+[21:54:52] <iphy> tux3: sorry, hiding things was not intentional
+[21:55:14] <tux3> iphy, no problem, as long as there's no misunderstanding, just try to be more careful next time :)
+[21:55:32] <iphy> sure
+[22:07:34] * zetok wonders if reviewable is properly configured
+[22:08:04] <zetok> https://github.com/qTox/qTox/pull/3584 ← i.e. I don't see "required LGTMs"
+[22:08:29] *** Quits: abbat (~Anton@ ) (Ping timeout: 244 seconds)
+[22:08:51] *** Joins: abbat (~Anton@ )
+[22:09:30] <tux3> zetok, Is a text LGTM good enough or does that need to be done through reviewables? :)
+[22:09:42] <zetok> via reviewable AFAIK
+[22:09:50] <zetok> also, `:lgtm:`
+[22:10:07] <zetok> (there is handy button for that in reviewable's UI)
+[22:10:16] <tux3> (If I didn't know better I'd be tempted to complain about bureaucracy and high barrier to entry!)
+[22:11:09] <zetok> >needs :lgtm: & reviewing files (pressing that red button on top of changed file by reviewer (person assigned) for review to pass
+[22:11:58] <tux3> Should be good now?
+[22:12:02] <zetok> yep, thanks :)
+[22:12:32] * zetok will go over current PRs and say that they need to be rebased on current master in order to have checks pass & get merged
+[22:14:41] <zetok> >You are about to add to 'qTox-issue-import/qTox':
+[22:14:41] <zetok> > * 3582 new issues
+[22:14:41] <zetok> > * 16076 new comments
+[22:14:44] <zetok> ;)
+[22:14:53] <zetok> >Are you sure you wish to continue? [Y/n]
+[22:16:51] <zetok> >Account successfully deleted. 
+[22:16:57] <zetok> rip qTox-issue-import
+[22:25:08] * zetok wonders
+[22:32:39] <sudden6> wondering intensifies
+[22:33:08] * zetok slow-pokes travis
+[22:33:18] <zetok> http://bulbapedia.bulbagarden.net/wiki/File:079Slowpoke.png
+[22:33:59] <zetok> weird, build passed, but it still didn't report back on the PR
+[22:35:05] <sudden6> maybe it got confused on repo move?
+[22:35:14] <zetok> probably
+[22:38:42] * zetok wonders if turning it off and on again would help
+[22:39:13] <zetok> or should I just wait a bit longer.
+[22:39:17] <sudden6> night everybody
+[22:39:26] <tux3> night
+[22:39:50] <zetok> g'night :)
+[22:39:59] <zetok> >There was an error while loading data. 
+[22:40:23] <zetok> (when I've tried to open travis settings for qTox/qTox)
+[22:40:25] <zetok> great.
+[22:43:07] <zetok> ok, now it works
+[22:44:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[22:45:15] <zetok> and since check doesn't seem to want to appear for the PR, should I just empty amend and push again?
+[22:47:14] *** Quits: Guest59735 (~flo@ ) (Remote host closed the connection)
+[22:47:41] * zetok goes to do that
+[22:47:47] <tux3> aaaaand this is why check shouldn't be mandatory :P
+[22:47:48] *** Joins: f10 (~flo@ )
+[22:47:55] <tux3> Humans > buggy code
+[22:48:21] <zetok> terminator > humans
+[22:48:26] <tux3> heh
+[22:48:44] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:49:50] <oranges> having mandatory checks incentivises you to improve and fix them when they break
+[22:50:07] <oranges> implementing mandatory unit test signoff on code changes in our team was hard work
+[22:50:10] <oranges> but we are better for it
+[22:53:55] <tux3> I think you're right, but I also think that if you have people that need incentives to fix broken things, it's a sad thing
+[22:54:46] <zetok> thing is, people are lazy be default
+[22:55:04] <zetok> and thus everyone needs some sort of incentive
+[22:55:17] <tux3> Maybe I live in a utopia, where people should learn to only be lazy for things that aren't important
+[22:55:27] <oranges> luck you
+[22:57:19] <Emcy> qtox still does the thing where your self preview moves around inside the video window
+[22:57:45] <Emcy> it should be stuck to the top left
+[22:58:00] <zetok> Emcy: mind opening an issue?
+[22:58:17] <Emcy> no github account =)
+[22:58:33] <zetok> Emcy: you're not willing to make one?
+[22:58:41] <Emcy> i might make one again
+[22:58:48] <Emcy> later maybe
+[22:58:54] <Emcy> its an old bug tho
+[22:59:05] <zetok> yes, but so far it wasn't reported
+[22:59:20] <Emcy> strange, its really obvious
+[22:59:36] <Emcy> it changes soze too like covers 20% of the video window sometimes
+[23:02:28] <tux3> oranges, so, I think the incentive should be other people, and not an inflexible system. Because you can't reason with a mandatory check when it's wrong. It sucks if people have to waste time dealing with the system because a mandatory check is broken. Howether if someone accidentally merges something broken, the incentive is that others will notice, don't you think?
+[23:02:50] <oranges> no most people don't test the software they use
+[23:03:19] <zetok> ↑ same goes for the written code
+[23:03:19] <tux3> When I say other people, I mean maintainers and I mean Yours Truly
+[23:04:07] <tux3> If you ignore a broken test and you're right, I think everything is fine and you should be allowed. If you ignore a broken test and you're wrong, I think we will need to talk.
+[23:04:16] <tux3> No?
+[23:05:07] <tux3> I think the difference is that your unit tests don't really fail, so in your case it makes sense. But travis is awful.
+[23:05:21] <tux3> If your unit tests fail, you have to fix them. Travis fails when it feels like it.
+[23:06:25] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[23:06:58] <tux3> It's the same with -Werror I think. We don't set it because 1) I trust people to not ignore warnings and 2) It's horribly annoying for everyone when it breaks because a compiler decided to add a new warning. /rant
+[23:11:06] *** Quits: BiTOk_ (~BiTOk@ ) (Ping timeout: 276 seconds)
+[23:16:35] <zetok> >Travis fails when it feels like it.
+[23:16:52] <zetok> um, in qTox's case that's mostly because there are too many "moving pieces"
+[23:17:27] <tux3> Well in my experience this isn't limited to qTox :)
+[23:17:47] <tux3> Case in point there was the big WebRender2 merge for the awesome Servo engine: https://github.com/servo/webrender/pull/319
+[23:17:56] <zetok> right, sometimes travis likes to network timeout
+[23:18:43] <iphy> tux3: obviously people ignore warnings
+[23:19:03] <tux3> iphy, even maintainers ?
+[23:19:05] <iphy> And network timeouts are rare and if they happen you restart the build
+[23:19:18] <iphy> tux3: apparently
+[23:19:25] <tux3> Maybe I'm too idealistic then
+[23:19:43] <iphy> My pending PR is fixing a warning
+[23:21:46] <tux3> The one for OS X?
+[23:21:56] <iphy> Yes
+[23:22:19] <tux3> Yes the thing with warning is everyone doesn't see the same ones apparently
+[23:22:46] <tux3> Unless you mean something else
+[23:22:58] <iphy> Not returning a value from a non void function is a warning that has been implemented for many many years
+[23:23:03] <iphy> In every compiler I know
+[23:23:41] <zetok> This is wrong.
+[23:23:50] * zetok wonders why no one has made it a hard error
+[23:23:56] <Emcy> it doesnt open the camera sometimes hm
+[23:24:07] <tux3> iphy, hmm are we talking about the same PR then?
+[23:24:14] <tux3> I don't see any C++ code changed in this one
+[23:24:23] <tux3> And I don't have a bash compiler :)
+[23:24:35] <zetok> tux3: https://github.com/TokTok/qTox/pull/4
+[23:25:34] <zetok> i.e. it shouldn't be just a warning, but outright fail to compile if some function that is supposed to return a value doesn't
+[23:25:51] <zetok> isn't there a flag for it?
+[23:26:09] <tux3> The flag is -Werror, but setting -Werror in production code is a mistake
+[23:26:29] <zetok> err?
+[23:26:35] <zetok> why?
+[23:26:41] <iphy> https://github.com/TokTok/qTox/pull/4
+[23:26:55] <tux3> iphy, To be fair that warning is behind a MaxOS specific #ifdef, so you it not everyone would see it here
+[23:27:08] <tux3> But I agree that ignoring it is very wrong
+[23:27:33] <iphy> It was at least ignored once
+[23:27:45] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v6LzU
+[23:27:45] -qtox-git-spam- qTox/master 07ac196 iphydf: chore: Fix Mac OS X build....
+[23:27:57] <tux3> zetok, because different compilers implement different warnings, and -Werror would make the build fail at random depending on what compiler you use
+[23:28:06] <zetok> -.-
+[23:28:11] <zetok> "this is wrong"
+[23:28:33] <tux3> Distributing code that FTBFS at random is wrong.
+[23:28:43] <zetok> eh
+[23:28:54] <zetok> I mean, generally C/C++ is wrong.
+[23:28:57] <tux3> -Werror during development is fine, although I wish it weren't needed, but never in code that ships.
+[23:29:51] <iphy> -Werror makes sense to enable on Travis
+[23:30:07] <tux3> Yes, since Travis only have 10 year old compilers /s :)
+[23:30:14] <iphy> Though at the moment it would make it fail
+[23:30:35] <tux3> You're right, it would make sense on Travis
+[23:30:47] <iphy> Once someone fixes the warning
+[23:31:20] <iphy> The deprecation warnings
+[23:31:37] -qtox-git-spam- [qTox] initramfs opened pull request #3585: Rewrite all links to the qTox repository from tux3 to qTox (master...fix-tux3-links) https://git.io/v6Lz8
+[23:31:52] <iphy> I looked at the code for a few minutes and it's unclear what it does so I stopped wasting time
+[23:37:10] <zetok> so, there's this check whether PR is based on latest master
+[23:37:49] <zetok> for now it's "on", since none of PRs is going to be merged within an hour or so
+[23:38:17] <zetok> bug thing is, requiring ~constant rebases from people doesn't sound quite right
+[23:38:21] <tux3> ???
+[23:38:26] <tux3> Why would you have a check for that?
+[23:38:49] <zetok> iphy: so I'm wondering if there are good reasons to keep it?
+[23:39:53] <iphy> Feel free to change it
+[23:40:12] <zetok> s/bug thing/but thing/
+[23:41:05] <iphy> How do you ensure that the merged code will still pass Travis?
+[23:42:20] <tux3> Make travis do the merge instead?
+[23:59:26] *** Joins: f10__ (~flo@ )
+[23:59:34] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
