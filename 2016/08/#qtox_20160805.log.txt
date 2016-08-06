@@ -1,0 +1,186 @@
+[00:45:15] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[01:12:25] *** Joins: cisc (~cisc@ )
+[01:43:09] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:44:11] *** Joins: f10_ (~flo@ )
+[01:44:35] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:44:45] *** Joins: f10_ (~flo@ )
+[01:47:19] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:48:04] *** Joins: f10_ (~flo@ )
+[01:56:41] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:57:27] *** Joins: f10_ (~flo@ )
+[02:03:36] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[02:03:47] *** Joins: f10_ (~flo@ )
+[03:09:52] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[03:10:47] *** Joins: ccsdss (~ray@ )
+[03:10:50] *** Parts: ccsdss (~ray@ ) ()
+[03:34:45] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[06:11:45] *** Joins: Emcy (~MC@ )
+[06:11:45] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:11:45] *** Joins: Emcy (~MC@ )
+[06:19:03] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[06:44:04] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[06:45:20] *** Quits: f10__ (~flo@ ) (Ping timeout: 265 seconds)
+[06:56:17] *** Joins: sudden6 (~anonymous@ )
+[07:01:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[07:06:35] *** Joins: LittleVulpix (~Miranda@ )
+[07:15:43] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[07:18:04] *** Joins: f10_ (~flo@ )
+[07:21:56] *** Joins: f10 (~flo@ )
+[07:28:34] *** Joins: BiTOk_ (~BiTOk@ )
+[07:49:50] <iphy> Does qt creator have a formatter?
+[07:54:29] *** Joins: abbat (~Anton@ )
+[08:31:58] *** Joins: hpanago (uid15586@ )
+[08:57:21] *** Quits: abbat (~Anton@ ) (Ping timeout: 250 seconds)
+[09:04:25] *** Joins: dardevelin (~dardeveli@ )
+[09:07:49] <nurupo> iphy: not that i know, but depending on what you expect of a formatter, you can "add" one
+[09:08:20] <iphy> ideally a nearly canonical format
+[09:08:28] <iphy> so any piece of code has exactly one formatting
+[09:08:42] <nurupo> you can add an external tool, e.g. astyle or clang-format, through Tools->External->Configure...->Add
+[09:09:09] <nurupo> and bind a shortcut for that tool through Tools -> Options -> Environment -> Keyboard
+[09:11:29] <nurupo> you can also customize what gets called when you click on Run or Debug, e.g. add an invocation of astyle/clang-format
+[09:13:26] <nurupo> that would be in Projects -> Build -> Build Steps
+[09:14:41] <nurupo> you could look for or even write yourself a Qt Creator plugin for formatting, if these integrations are limiting :P
+[09:14:41] *** Quits: f10_ (~flo@ ) (Ping timeout: 265 seconds)
+[09:15:04] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:15:35] <nurupo> iphy: oh
+[09:15:43] <nurupo> there seems to be a plugin for that already
+[09:15:46] <nurupo> http://doc.qt.io/qtcreator/creator-beautifier.html
+[09:17:30] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[09:26:07] *** Quits: BiTOk_ (~BiTOk@ ) (Ping timeout: 244 seconds)
+[09:29:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[09:34:29] *** Joins: cisc (~cisc@ )
+[09:51:19] *** Joins: Diadlo (~diadlo@ )
+[09:57:34] *** Joins: abbat (~abbat@ )
+[10:08:00] <zero-ghost> looks like https://torrentz.eu will be disappearing
+[10:14:07] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v6mF9
+[10:14:07] -qtox-git-spam- qTox/master 34aa905 Zetok Zalbavar: chore: limit scope of commit messages to dozen characters
+[10:35:28] -qtox-git-spam- [qTox] zetok opened pull request #3592: docs(CONTRIBUTING.md): add some real examples of scopes (master...scopes) https://git.io/v6mAR
+[10:57:27] -qtox-git-spam- [qTox] wDraw closed pull request #3576: feat(l10n): update Bulgarian translation (master...l10n-bg) https://git.io/v6mpR
+[10:59:03] -qtox-git-spam- [qTox] wDraw opened pull request #3593: feat(l10n): update Bulgarian translation (master...l10n-bg) https://git.io/v6mpr
+[11:02:06] *** Joins: initramfs (~initramfs@ )
+[11:11:41] *** Parts: initramfs (~initramfs@ ) ("Leaving")
+[11:14:15] *** Joins: f10_ (~flo@ )
+[11:16:30] *** Joins: initramfs (~initramfs@ )
+[11:17:46] <zetok> o/
+[11:23:55] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[11:25:10] <Diadlo> o/
+[11:26:01] <zetok> zero-ghost: following the trend, eh :/
+[11:26:16] <zero-ghost> looks that way
+[11:26:17] <zetok> zero-ghost: wasn't it being DMCA'd anyway?
+[11:26:41] <zero-ghost> yea they had a policy, when you searched things it said how many results were removed for DMCA at the bottom of the search results
+[11:26:51] <zetok> I see
+[11:27:47] <zero-ghost> torrentz was my favorite so its sad, but we already have so many potential replacements with more on the way so im really not worried just an annoying inconvenience
+[11:27:58] <zetok> oh?
+[11:28:03] * zetok haven't heard of any
+[11:28:21] <zetok> not that it would change much, since centralized systems are going to fail
+[11:28:24] <zero-ghost> someone could just mirror torrentz inside i2p and it wouldnt go down again
+[11:28:31] <zero-ghost> yea thats what im saying
+[11:28:33] <zetok> oh, this way
+[11:28:35] <zero-ghost> im waiting for maidsafe
+[11:28:46] *** Parts: initramfs (~initramfs@ ) ("Leaving")
+[11:28:50] <zero-ghost> beside you know theres that movie torrent site in zeronet
+[11:28:54] <zero-ghost> "Play"
+[11:29:20] <zero-ghost> zeronet relies on individual people choosing to mirror the website though
+[11:29:30] <zero-ghost> maidsafe is autonomous and self-replicating
+[11:29:38] <zero-ghost> so no one chooses anything it will just keep living on
+[11:30:00] <zero-ghost> and one of the i2p devs is helping get zeronet running inside i2p
+[11:30:41] <zero-ghost> since right now the torrent tracker sites in i2p are just centrlized servers somewhere
+[11:39:51] *** Joins: initramfs (~initramfs@ )
+[11:40:28] *** Joins: Chiitoo (~Chiitoo@ )
+[11:43:23] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[11:44:11] *** Joins: initramfs (~initramfs@ )
+[11:50:13] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[11:50:37] *** Joins: initramfs (~initramfs@ )
+[11:54:49] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[11:56:11] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[11:57:40] *** Joins: initramfs (~initramfs@ )
+[11:59:06] *** Joins: abbat (~abbat@ )
+[13:01:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:19:17] <cisc> so qtox-import-issue wasn't needed and tux3 handed over the repo finally?
+[13:22:49] *** Joins: Emcy (~MC@ )
+[13:22:49] *** Quits: Emcy (~MC@ ) (Changing host)
+[13:22:49] *** Joins: Emcy (~MC@ )
+[13:23:56] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[13:24:21] *** Joins: Emcy (~MC@ )
+[13:24:21] *** Quits: Emcy (~MC@ ) (Changing host)
+[13:24:21] *** Joins: Emcy (~MC@ )
+[13:31:40] <Chiitoo> Not sure “handed over” is the way to put it.  :]
+[13:31:43] <Chiitoo> Not that I know really.
+[13:32:07] <cisc> well it redirects
+[13:32:40] <Chiitoo> They decided to move it to under “qtox” from “tux3”, from what I've seen.
+[13:32:44] <cisc> just wondering if tux3 ended up transferring ownership or not
+[13:35:32] <Chiitoo> No idea who is the actual owner of that repository.  I'd still imagine tux3 being the boss, but I could be wrong.  :D
+[13:36:02] <cisc> wrong
+[13:36:53] <cisc> qtox-issue-import was an interim repo as the issues were transferred over
+[13:37:24] <cisc> but as that process started, a python script was used to transfer open/closed issues
+[13:37:39] <cisc> tux3 may have handed over the repo, that's what i'm asking
+[13:38:28] <Chiitoo> Yes I was here when that was going on, and from that I'm saying it doesn't seem like “he handed over the repo”.
+[13:41:01] <zetok> yes, tux3 moved the repo
+[13:41:43] * zetok wouldn't call it "handing over" either
+[13:42:51] <cisc> i thought so
+[13:43:00] <cisc> yes not quite, but at least he did
+[13:43:15] <zetok> >No idea who is the actual owner of that repository.
+[13:43:45] <zetok> people with admin access are antis81, sudden6, tux3 and me
+[13:44:37] <zetok> as for write access, everyone in @qTox/core team
+[13:45:55] <cisc> "begrudgingly handing it over"
+[13:46:58] <zetok> um, those aren't the words that I'd use
+[13:47:21] <cisc> what would you use?
+[13:47:46] <zetok> tux3 just needed a friendly nudge to do it :)
+[13:48:55] <zetok> anyway; regarding repo management
+[13:49:57] <zetok> I kinda wonder whether a new group should be added
+[13:53:23] <zetok> or something.
+[13:55:16] <Chiitoo> I'd be good for a 'never gets anything done' group!
+[14:05:29] <zetok> >.<
+[14:05:41] <zetok> more for people who would want to become maintainers
+[14:10:35] *** Joins: bashrc_ (~robertmot@ )
+[14:12:33] <Chiitoo> Hehe.  Yeah, I need to get my things going so I can be of more help.  :]
+[14:12:39] *** Parts: iphy (uid67735@ ) ()
+[14:14:54] *** Joins: abbat (~abbat@ )
+[14:17:35] *** Joins: smaragdus (~omoo@ )
+[14:27:59] *** Joins: sudden6 (~anonymous@ )
+[14:28:28] *** Joins: reBrain (~reBrain@ )
+[14:36:20] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[14:59:44] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[15:01:50] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[15:02:11] *** Joins: dardevelin (~dardeveli@ )
+[15:04:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:11:55] *** Quits: hpanago (uid15586@ ) ()
+[15:12:20] *** Quits: bashrc_ (~robertmot@ ) (Ping timeout: 258 seconds)
+[15:14:02] *** Joins: bashrc_ (~robertmot@ )
+[15:15:01] <initramfs> Does anyone know the reason that qTox is being compiled without exception support (-fno-exceptions)? I'd post an issue but I figured it'd be faster just to ask here...
+[15:20:27] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 258 seconds)
+[15:31:33] *** Quits: bashrc_ (~robertmot@ ) (Ping timeout: 240 seconds)
+[15:53:09] *** Joins: cisc (~cisc@ )
+[16:13:24] *** Joins: st4ll1 (~st4ll1@ )
+[16:15:42] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[16:15:57] *** Joins: abbat (~abbat@ )
+[16:18:21] *** Joins: bashrc_ (~robertmot@ )
+[16:19:46] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 252 seconds)
+[16:20:24] <zetok> probably because they shouldn't be used
+[16:20:41] *** Joins: hpanago (uid15586@ )
+[16:31:44] <initramfs> Any reason for that? I was thinking about including their use...
+[16:38:58] <zetok> aren't exceptions a bad idea?
+[16:47:17] <initramfs> Why? C++11 support very elegant exception types
+[16:47:38] <zetok> dunno about that
+[16:48:28] <initramfs> Well, a lot of times, functions within qTox return null or invalid quantities to distinguish between positive results and failure states
+[16:49:17] <initramfs> Such mechanisms fall short when there are multiple ways something can fail. Exceptions come in handy there, to distinguish between the ways things fail.
+[16:49:41] <initramfs> Exceptions in C/C++ were messy before C++11, but since then it's been pretty decent.
+[17:14:22] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:24:01] *** Quits: initramfs (~initramfs@ ) (Remote host closed the connection)
+[17:24:48] *** Joins: initramfs (~initramfs@ )
+[17:52:04] *** Joins: f10_ (~flo@ )
+[18:00:53] *** Quits: bashrc_ (~robertmot@ ) (Quit: Lost terminal)
+[18:06:25] *** Joins: abbat (~Anton@ )
+[18:08:25] *** Joins: f10 (~flo@ )
+[18:18:49] *** Joins: SkyzohKey (~skyzohkey@ )
+[19:28:05] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:58:37] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:59:23] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[21:06:11] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[21:11:45] *** Joins: Guest6614 (~flo@ )
+[21:13:08] *** Quits: Guest6614 (~flo@ ) (Remote host closed the connection)
+[21:14:16] *** Joins: Guest6614 (~flo@ )
+[22:00:16] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:30:57] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:50:57] *** Joins: bashrc_ (~motters@ )
+[23:41:32] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
