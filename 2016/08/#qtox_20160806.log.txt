@@ -1,0 +1,445 @@
+[00:02:40] *** Quits: bashrc_ (~motters@ ) (Quit: Lost terminal)
+[03:14:15] *** Quits: Emcy (~MC@ ) (Ping timeout: 264 seconds)
+[04:01:47] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[06:53:02] *** Quits: Guest6614 (~flo@ ) (Ping timeout: 258 seconds)
+[07:58:54] *** Joins: Guest6614 (~flo@ )
+[08:29:57] *** Joins: Diadlo (~diadlo@ )
+[08:42:06] *** Joins: Emcy (~MC@ )
+[08:42:06] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:42:06] *** Joins: Emcy (~MC@ )
+[08:43:01] *** Joins: Emcy_ (~MC@ )
+[08:46:07] *** Joins: LittleVulpix (~Miranda@ )
+[08:46:33] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[08:50:40] *** Joins: dardevelin (~dardeveli@ )
+[08:52:03] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[09:56:46] -qtox-git-spam- [qTox] zetok closed pull request #3581: feat(translation): add update language Spanish (master...feat/spanish-translation) https://git.io/v6ONf
+[10:01:06] -qtox-git-spam- [qTox] zetok closed pull request #3593: feat(l10n): update Bulgarian translation (master...l10n-bg) https://git.io/v6mpr
+[10:07:27] *** Joins: abbat (~Anton@ )
+[10:31:55] *** Quits: zaggynl (~zaggynl@ ) (Ping timeout: 258 seconds)
+[10:43:12] -qtox-git-spam- [qTox] zetok opened pull request #3595: Update translations from weblate (master...tr) https://git.io/v6OAl
+[10:45:36] <zetok> ↑ anyone `:lgtm:` ?
+[10:52:11] *** Joins: sudden6 (~anonymous@ )
+[11:37:13] <zetok> https://i.chzbgr.com/full/8966491136/h2E1FE929/ :3
+[11:41:09] *** Joins: krs93 (~krs93@ )
+[11:54:40] <Diadlo> zetok: What is it?)
+[11:57:14] <zetok> a cat :3
+[11:58:04] <Diadlo> Oh.. It's hard to detect :)
+[12:00:31] *** Quits: Guest6614 (~flo@ ) (Ping timeout: 258 seconds)
+[12:03:31] <Diadlo> zetoc: Reviewable required at least one LGTM  to complete check?
+[12:03:41] <Diadlo> zetok: *
+[12:04:51] *** Joins: tux3 (~tux3@ )
+[12:04:51] *** ChanServ sets mode: +o tux3
+[12:18:51] <zetok> Diadlo: yep
+[12:18:56] <zetok> `:lgtm:`
+[12:20:40] -qtox-git-spam- [qTox] sudden6 opened pull request #3596: refactor(groupinvite): remove HTML from translation and simplify function (master...remove_html) https://git.io/v6Ohs
+[12:21:46] <zetok> Diadlo: it requires either `:lgtm:` from anyone, or if someone is assigned, `:lgtm:` from them
+[12:22:12] <Diadlo> I found a mistake
+[12:22:27] <Diadlo> In translation
+[12:23:35] <zetok> hm?
+[12:24:24] <Diadlo> Wait few minutes. I will publish it through reviewable
+[12:24:28] <zetok> ok
+[12:33:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[12:40:32] *** Joins: Chiitoo (~Chiitoo@ )
+[13:03:06] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[13:04:52] -qtox-git-spam- [qTox] zetok pushed 6 new commits to master: https://git.io/v6OjQ
+[13:04:52] -qtox-git-spam- qTox/master 97d8c7a Viktar Vauchkevich: feat(l10n): update Belarusian translation from weblate
+[13:04:52] -qtox-git-spam- qTox/master d951cb7 ati3: feat(l10n): update Czech translation from weblate
+[13:04:52] -qtox-git-spam- qTox/master 237351f Waylon Cude: feat(l10n): add Lojban translation from weblate
+[13:11:50] <zetok> looks like after qTox will have >5k commits \o/
+[13:14:14] <zetok> tux3: https://github.com/qTox/qtox-irc-logs/blob/master/2016/08/%23qtox_20160805.log.txt#L150
+[13:14:24] <zetok> after today*
+[13:15:02] <tux3> We don't use exceptions because Qt doesn't, for consistency
+[13:15:20] <tux3> Also, disabling them gives smaller and slightly faster executables in most cases :)
+[13:15:32] <tux3> (since we don't use them anyways)
+[13:16:04] <zetok> would be good to make a comment about it above the `-fno-exceptions`
+[13:16:19] <zetok> (same goes for the crypto salt, btw)
+[13:18:59] <Diadlo> 1024 starts now :)
+[13:19:18] <Diadlo> qTox has
+[13:29:12] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v63eB
+[13:29:12] -qtox-git-spam- qTox/master b559332 Zetok Zalbavar: docs(CONTRIBUTING): add some real examples of scopes...
+[13:54:00] *** Joins: Emcy_ (~MC@ )
+[14:02:33] *** Joins: abbat (~Anton@ )
+[14:08:59] <zetok> tux3: I assume that you will have time for today's meeting?
+[14:09:08] <tux3> zetok, probably yes
+[14:09:39] <zetok> ok, since "probably" isn't as good as being here right now.. :)
+[14:11:07] <zetok> I've been wondering about how formalized adding to maintainers should be
+[14:13:00] <zetok> or rather, what requirements
+[14:13:22] <zetok> https://gist.github.com/zetok/ea79d7bbaf5c4602c19707e3477b29be ← what I have so far
+[14:14:46] <zetok> I wanted to write "just ask to be added to org", but it's not really clear where that should be asked
+[14:15:03] <sudden6> zetok: should we still use the "don't merge your own commits" rule with reviewable?
+[14:15:20] <zetok> oh, right
+[14:15:37] <zetok> sudden6: yeah, it's now kinda ~irrelevant
+[14:15:58] *** Joins: in1t3r (~LordShiva@ )
+[14:16:06] <zetok> one just has to be careful whether things has been actually reviewed
+[14:16:12] <sudden6> now, that I have the ability to choose, use the merge script or rebase and push to master?
+[14:16:15] <zetok> s/has/have/
+[14:16:31] <zetok> rebase, but note that you'll need to wait for travis to pass again
+[14:16:58] <zetok> (reviewable usually is smart enough to figure out that there have been no actual changes)
+[14:17:09] <sudden6> I'll try with https://github.com/qTox/qTox/pull/3596
+[14:17:15] <sudden6> and see what happens :)
+[14:22:04] <sudden6> huh? I tried to push my feature branch but nothing happened?
+[14:22:58] <zetok> Yes.
+[14:23:25] <sudden6> so that's normal?
+[14:23:31] <zetok> sudden6: you need to push to the PR
+[14:23:47] <zetok> >note that you'll need to wait for travis to pass again
+[14:24:34] <sudden6> ok
+[14:24:37] <zetok> checks are required, and they are only aware of what already is in PRs
+[14:25:31] <sudden6> if travis passed, I merge --ff my feature branch and push, right?
+[14:25:38] <tux3> zetok, I don't know if we need hard rules to decide who can be maintainer? What you wrote it good, though, but I'm not sure if it's possible to formalize it any further
+[14:26:10] * sudden6 afk
+[14:26:27] <tux3> brb 1h
+[14:26:31] *** tux3 is now known as tux3_afk
+[14:26:51] <zetok> sudden6: ok
+[14:28:30] *** Joins: bashrc_ (~motters@ )
+[14:36:27] <zetok> right
+[14:36:59] <zetok> actually, formalizing it further would be possible, but at the same time it most likely would result in something counterproductive
+[14:37:06] <zetok> so yeah.
+[14:42:39] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
+[14:44:39] -qtox-git-spam- [qTox] zetok closed pull request #3596: refactor(groupinvite): remove HTML from translation and simplify function (master...remove_html) https://git.io/v6Ohs
+[14:47:00] <sudden6> zetok: I think I still didn't understand the process
+[14:47:27] <sudden6> If I want to merge someones PR I'll use merge-pr.sh, right?
+[14:47:32] <zetok> yep
+[14:47:39] <sudden6> If I want to merge my own PR, what do I do?
+[14:47:50] <zetok> make a PR & wait for review
+[14:48:22] <sudden6> nah, own PR is reviewed, builds and has no merge conflicts
+[14:48:36] <sudden6> lik the one you closed 4min ago
+[14:48:41] <zetok> then just merge --ff-only
+[14:49:18] <sudden6> so I checkout master, do git merge -ff-only <feature-branch> and then git push upstream master ?
+[14:49:34] <zetok> ~yep
+[14:49:43] <sudden6> ~?
+[14:50:10] <zetok> e.g. https://github.com/qTox/qTox/pull/3592
+[14:50:18] <zetok> it still might be beneficial to wait a bit
+[14:50:51] <zetok> i.e. once initramfs reviewed, it was "good to merge", but then there was double space thing
+[14:51:12] <sudden6> mhm, that probably always applies
+[14:51:41] <sudden6> the 24h rule catches a lot :)
+[14:51:42] <zetok> this time I've failed at smuggling in double spaces :f
+[14:59:14] *** tux3_afk is now known as tux3
+[15:11:04] *** Joins: Diadl0 (~Diadlo@ )
+[15:12:22] -qtox-git-spam- [qTox] zetok opened pull request #3599: docs(MAINTAINING): add instructions for becoming a maintainer (master...maint) https://git.io/v63Uv
+[15:14:17] <Diadl0> Why you don't use rebase && merge --no-ff? git history seems better after it.
+[15:14:55] <sudden6> zetok: you aren't a maintainer?
+[15:15:29] <zetok> Diadl0: commits must be GPG-signed
+[15:15:41] <zetok> sudden6: I was just cc-ing people
+[15:16:46] <Diadl0> zetok: Ok. Thanks
+[15:16:51] <zetok> Diadl0: https://github.com/qTox/qTox/blob/master/MAINTAINING.md#commits
+[15:17:11] <zetok> this, and `Pull requests` section
+[15:17:35] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[15:22:04] *** Joins: in1t3r (~LordShiva@ )
+[15:26:20] <Diadl0> And what you thinks about some refactor: Friend class contain friendWidget and chatForm. It's seems for me like something wrong. I think, it shouldn't be connected with any GUI parts.
+[15:26:32] <Diadl0> Or I'm wrong?
+[15:27:50] <Diadl0> zetok, sudden6, tux3: ↑
+[15:29:42] <zetok> Diadl0: um, I don't even know C++, so I won't be much of help with stuff like that, sorry
+[15:30:40] <sudden6> Diadl0: I think there would be very much refactoring if you wanted to do that
+[15:32:03] <sudden6> I think qTox really needs something like this: https://en.wikipedia.org/wiki/Component_diagram
+[15:32:32] <sudden6> because currently every new feature is added somewhere, without some structure...
+[15:32:57] <Diadl0> zetok: It's about program architecture at all (not only c++) :)
+[15:34:13] <Diadlo> https://github.com/qTox/qTox/pull/3577 contains some changes of doxygen, wich will be render function call graphs
+[15:35:35] *** Joins: initramfs (~initramfs@ )
+[15:36:30] <Diadlo> sudden6: And class inheritance
+[15:39:07] <initramfs> Sorry I missed some discussion and zetok filled me in
+[15:39:39] <initramfs> Regarding component diagrams, for my new video system redesign (I'm redoing video for qTox), I've been drawing component diagram in UML
+[15:39:54] <initramfs> Specifically using LaTeX to draft up diagrams
+[15:40:20] <initramfs> I think that would be a good idea to do for the other subsystems in qTox too
+[15:40:38] <initramfs> Stuff like Audio, Core (interactions with toxcore), etc
+[15:41:13] <Diadlo> initramfs: [17:37] <Diadlo> https://github.com/qTox/qTox/pull/3577 contains some changes of doxygen, wich will be render function call graphs
+[15:42:00] <initramfs> Call graphs would be great
+[15:43:01] <initramfs> Though I still think a higher level component relation diagram could be useful
+[15:48:43] <Diadlo> Off course
+[15:54:18] <sudden6> initramfs: that's exactly the thing I was thinking of
+[15:54:42] <sudden6> we should just decide on one tool/format
+[15:55:01] <sudden6> Diadlo: ok, that contains the state how it is
+[15:55:16] <sudden6> Now we should make a plan how we want it ;)
+[15:56:25] <sudden6> initramfs: is the documentation you made available online?
+[15:56:37] <initramfs> Well, it's not done yet
+[15:56:37] <sudden6> I'd like to take a look :)
+[15:56:57] <Diadlo> I forget about one question. I start some work with tests. And has a problem. We should create fake settings to tests. What you think about  Settings::setInstance ?
+[15:57:03] <initramfs> The plan is such that when it's done, I'll go about implementing it whilst people discuss it
+[15:57:15] <Diadlo> *And I have a problem
+[15:59:01] <Diadlo> Or start using IoC
+[15:59:30] <sudden6> Diadlo: what is IoC?
+[15:59:46] <Diadlo> This problem not only with Settings, but with all standalone classes
+[16:00:02] <Diadlo> https://en.wikipedia.org/wiki/Inversion_of_control
+[16:00:12] <initramfs> sudden6: A page from my proposal (it's not a component diagram cause those aren't done, but a sequence diagram) http://imgur.com/a/cRp9w
+[16:01:12] <initramfs> Forgive my ignorance but, does qTox have a testing framework right now?
+[16:01:21] <sudden6> initramfs: nice
+[16:01:25] <zetok> initramfs: nope
+[16:01:28] <sudden6> no it doesn't
+[16:02:03] <initramfs> Right
+[16:04:09] <sudden6> Diadlo: for testing, I don't have a concrete idea
+[16:05:03] <sudden6> do you mean by using IoC, to derive the Settings class and use a different implementation for testing?
+[16:05:46] <Diadlo> ~yep
+[16:06:21] <Diadlo> I don't sure, that correct understand, what `derive` mean
+[16:06:50] <zetok> automatically implement
+[16:07:26] <sudden6> I'm also not sure it's the right word in english, another one would be to "sublclass" it
+[16:08:03] <sudden6> nah, derive is the right word: http://en.cppreference.com/w/cpp/language/derived_class
+[16:08:38] <Diadlo> Exactly
+[16:08:51] <zetok> right, nvm me, too much Rust/Haskell
+[16:09:10] <sudden6> it could work^^
+[16:14:09] <initramfs> Might want to wait until https://github.com/qTox/qTox/pull/3590 is implemented though, seems to change quite a lot of stuff
+[16:14:25] <sudden6> yep
+[16:15:08] <initramfs> And umm, deriving from Settings is a bit hard, I haven't personally looked closely at it, but it's designed in a singleton fashion
+[16:15:22] <sudden6> yeah Settings is a singleton
+[16:15:42] <initramfs> And uses static variables and qt properties (as well as loads of signals and slots)
+[16:16:41] <Diadlo> initramfs: > What you think about  Settings::setInstance ?
+[16:16:49] <Diadlo> Ок
+[16:16:53] <initramfs> Hmm
+[16:16:53] <Diadlo> *Oh
+[16:16:56] <Diadlo> Nope
+[16:16:58] <Diadlo> Me mistake
+[16:17:01] <Diadlo> *My
+[16:17:21] <initramfs> The problem is that it's so integrated with it's "singleton nature" it's hard to expand
+[16:17:29] <initramfs> It's designed to be thread-safe and uses static mutexes
+[16:19:11] <initramfs> What about using mocks?
+[16:19:29] <Diadlo> How?
+[16:19:52] <initramfs> Yeah... I'm still trying to figure that out... Just throwing it out there incase anyone already knows
+[16:20:45] <sudden6> I have to leave, bye o/
+[16:20:57] <Diadlo> Bye
+[16:21:26] <Diadlo> initramfs: Ok. What about create super class for settings?
+[16:21:33] <Diadlo> A la interface
+[16:22:03] <initramfs> Was thinking about that too
+[16:22:55] <initramfs> Well, I'm not about what testing framework will be used
+[16:23:03] <initramfs> But I remember I've used googlemocks before
+[16:23:04] <initramfs> https://github.com/google/googlemock/blob/master/googlemock/docs/CookBook.md
+[16:23:15] <Diadlo> Yep
+[16:23:20] <Diadlo> I try to use it too
+[16:23:31] <initramfs> They specify a way to mock functions in both virtual and concrete implementations
+[16:23:50] <Diadlo> But we should integrate mock inside class
+[16:24:00] <Diadlo> *testing class
+[16:24:31] <initramfs> Sorry what do you mean?
+[16:29:24] <initramfs> Oh, unrelated, for any persons interested, when I'm done with the proposal (for video), I'll put the LaTeX sources on my GH.
+[16:32:28] *** Quits: tux3 (~tux3@ ) (Quit: Leaving)
+[16:40:30] <Diadl0> initramfs: I mean, that we can create mock of Settings, but how testing class will use it?
+[16:57:19] <initramfs> Well, that depends on how we go about doing it
+[16:57:49] <initramfs> If we create a superclass for settings and have the current settings class derive from it, then mocking will be simple
+[16:58:17] <initramfs> We can dynamically inject a mock setting class at testing runtime that basically does nothing on setters and returns constant, pre-defined values on getters
+[16:59:01] <initramfs> If we choose to mock a concrete class (the setting singleton we have now), we'd need to alter compile flags for testing in order for googlemock to work properly
+[16:59:45] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:00:50] <Diadlo> > [19:02] <initramfs> We can dynamically inject a mock setting class at testing runtime that basically does nothing on setters and returns constant, pre-defined values on getters 
+[17:00:52] <Diadlo> Yes, I thinking about this variant
+[17:01:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[17:01:07] <initramfs> Yep, that would certainly be a lot cleaner
+[17:01:53] <Diadlo> You want create settings field and use setter to change it? Right?
+[17:01:56] <Diadlo> Or how?
+[17:03:07] <Diadlo> inside the test class
+[17:08:16] <initramfs> Well, for one, there will be a "MockSettings" class
+[17:08:33] <initramfs> Which basically handles the mock routines for settings
+[17:09:24] <initramfs> All other test classes can simply use this MockSettings class (or at least, googlemock will take care of injecting it for us in place of regular settings, iirc)
+[17:10:02] <initramfs> The benefit of mocks is that non-test classes will end up using the mock settings as well such that the system is consistent
+[17:10:15] <Diadlo> Hm.. I don't found any information about "googlemock will take care of injecting it for us in place of regular settings"
+[17:11:49] <Diadlo> I understand all other information, except injection
+[17:12:02] <initramfs> Well... That kinda depends on the settings object is obtained
+[17:12:38] <initramfs> If we have a superclass/derived class implementation, could we have a function that populates the superclass with the singleton instance to use at runtime
+[17:13:03] <initramfs> Assume "SettingsSuper" and "Settings : public SettingsSuper"
+[17:13:21] <initramfs> "SettingsSuper" contains a "getSingleton()" function and a "setSingleton" function
+[17:13:47] <initramfs> In qTox's actual main(), we call "setSingleton()" with the actual settings object
+[17:13:57] <initramfs> In testing main(), we call "setSingleton()" with MockSettings
+[17:14:25] <initramfs> All existing qTox subsystems that call "getSingleton()" will get the one set at runtime
+[17:15:08] <Diadlo> Yes. It's what I wanted to know. Thanks)
+[17:15:37] <initramfs> Oh and yes, I think googlemocks doesn't have a injection mechanism, I think was getting confused with Mockito (from Java), sorry :)
+[17:15:49] <Diadlo> np :)
+[17:16:39] <Diadlo> And we should do all this stuff with all singleton classes in qTox ;)
+[17:20:13] <Diadlo> initramfs: Why you think, that this solution better, than factory, for example?
+[17:20:54] *** Joins: Chiitoo (~Chiitoo@ )
+[17:23:08] <initramfs> Well, maybe I don't have the same concept of "factory" as you (please explain if I misunderstood something). But factories are used when we need some way to generate multiple instances of stuff
+[17:23:54] <initramfs> If we have say a settings factory, where one generates a "usable" version and one generates a "test" version, I feel that that solution isn't very clean
+[17:24:16] <initramfs> Since now we have testing code intermixed with "actual" production code
+[17:24:39] <initramfs> Using mocks and super/derived allows you to separate all testing code into it's own folder
+[17:25:16] <initramfs> And thus the main codebase is unaffected by testing code (after some large refactoring)
+[17:26:04] <Diadlo> I think, I have misunderstanding. But in my concept: factory is class, which can provide object by some configuration. It can be one object
+[17:26:52] <Diadlo> For example
+[17:27:05] <Diadlo> SettingsFactory return SettingsSuper
+[17:27:18] <Diadlo> And it can be SettingsMock or Settings
+[17:27:30] <initramfs> Sure
+[17:27:56] <initramfs> But "SettingsFactory" resides in the main production codebase
+[17:28:16] <Diadlo> Yes
+[17:28:16] <initramfs> But it has to handle the case where you request it to give you a SettingsMock
+[17:28:39] <initramfs> Meaning that some testing logic is now present in the main production codebase
+[17:29:08] <initramfs> The fact that it has to handle requests to return a SettingsMock is essentially testing logic
+[17:29:36] *** Joins: Guest6614 (~flo@ )
+[17:30:23] <initramfs> If we skip the whole factory, and just make SettingsSuper return a SettingsSuper object that depends on runtime, our main codebase doesn't require any knowledge of how the testing is performed
+[17:31:16] <Diadlo> But `setStandalone` will be part of main codebase too
+[17:31:35] <initramfs> Sure, but it doesn't need to know about SettingsMock or any sort of mock object
+[17:31:53] <initramfs> That only appears in the testing codebase (that's what googlemock does, it generates testing classes for us)
+[17:32:19] <Diadlo> SettingsFactory don't know about our mock too
+[17:32:20] <Diadlo> Ok
+[17:32:32] <Diadlo> Nevermind
+[17:33:17] <initramfs> Well, I really think we're just misunderstanding each other. Perhaps discuss this when code snippets are available (when this is actually being implemented)
+[17:33:41] <Diadlo> Agree
+[17:37:07] <initramfs> Oh, according to zetok's updated MAINTAINING.md, it says that people wanting to be a maintainer should ask to be added to the GH organization. I've expressed interest directly to zetok already, I'll just post again here for your consideration (I would like to be a maintainer if that's possible).
+[17:40:41] <initramfs> *directed to all the current qTox overlords :)
+[17:44:22] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[17:47:48] *** Joins: in1t3r (~LordShiva@ )
+[17:55:38] <mitfree> Should the ringer have a seperate audio setting?
+[17:57:02] <zetok> IIRC there's an issue for it
+[17:57:10] <mitfree> I use pulseaudio to seperate my pc speakers and headphones on two diffrent output channels.
+[17:57:33] <zetok> https://github.com/qTox/qTox/issues/2459
+[17:58:47] <zetok> initramfs: the PR is more of a proposal, if everyone is fine with it, that'll be the way to go
+[18:00:18] <initramfs> zetok: Sure, just stating intentions :)
+[18:00:57] <mitfree> I know google voice allows for it.
+[18:01:14] <initramfs> mitfree: talk to antis81, he's redoing audio here: https://github.com/qTox/qTox/pull/3524
+[18:03:43] <mitfree> I've never heard of RtAudio. Is it open source?
+[18:04:18] <Diadlo> mitfree: Yes. https://github.com/thestk/rtaudio
+[18:04:59] <mitfree> what's wrong with opus?
+[18:06:12] <cisc> after this commit the gain never worked right for my USB Mic https://github.com/qTox/qTox/pull/3311
+[18:06:23] <Diadlo> mitfree: What is opus?
+[18:07:47] <mitfree> https://en.wikipedia.org/wiki/Opus_(audio_format)
+[18:07:55] <Diadlo> cisc: I think, you should create issue
+[18:08:21] <initramfs> cisc: Well, I can say that it really doesn't change the way audio is taken from your device (afaik)
+[18:08:42] <initramfs> cisc: it's a digital boost/cut after the audio has passed the ADC
+[18:09:08] <initramfs> cisc: but since the algorithm has changed, you can't use the same slider positions to get the same levels
+[18:09:31] <cisc> on KDE the gain seems to work normal
+[18:09:47] <cisc> but when adjusting in qtox it used to be fine before that commit, after that it got worse
+[18:10:10] <initramfs> cisc: well, you need to define what you mean by "worse", is it just harder to control?
+[18:10:12] <cisc> from like 0-75% it's little difference in volume level
+[18:10:28] <cisc> it's quiet mostly all the way up until over 50-60%
+[18:10:43] <initramfs> cisc: Well, yes that's intended
+[18:10:54] <initramfs> cisc: 50% is currently unity gain (i.e. to boost or cut)
+[18:11:18] <initramfs> no boost or cut*
+[18:11:39] <Diadlo> mitfree: Better ask antis81. But I think, there is not "problem wuth opus". This is problem with openAL, wich changed on something else (RtAudio)
+[18:11:48] <Diadlo> *with
+[18:12:25] <cisc> well for me it was better with https://cloud.githubusercontent.com/assets/3128050/15455865/e4e7521e-2092-11e6-8998-fe20d14fe00c.png
+[18:13:23] <cisc> what's the point of a gain control if it barely does anything until after 75%
+[18:15:15] <initramfs> cisc: Well, it's an exponential control (which sounds linear to your ears) so it's not "barely doing anything". It's more like your audio device pushes audio at levels that are extremely low
+[18:15:43] <initramfs> Unless there was an implementation error 75% after the PR is magnitudes louder than 75% before the PR
+[18:16:59] <initramfs> I'm happy to discuss this with you right now if you want, though I don't want to spam the channel with a single issue (message me). If you prefer, you can of course submit an issue too.
+[18:18:14] <cisc> what was wrong with it like this? https://cloud.githubusercontent.com/assets/3128050/15455865/e4e7521e-2092-11e6-8998-fe20d14fe00c.png
+[18:19:59] <initramfs> There is no amplification (gain does not go past 1.0) people with quiet audio devices are unable to boost them. Besides, the changes in the slider value are not linear in terms of perceived audio loudness changes.
+[18:21:13] <cisc> why do you want it so from 0-50% is barely does anything
+[18:21:26] <cisc> *it
+[18:22:25] <cisc> it's not my device, I tried it on 2 different USB mics already
+[18:22:29] <cisc> it's your commit not my hardware
+[18:28:33] <cisc> many people are using USB mics, they are all mostly not "hot" mics, so I don't see why you spent all that time changing it when it's now worse
+[18:39:17] <zetok> eh
+[18:40:20] <cisc> or at least worse for me, have to ask a cpl other users what the experience is
+[18:40:28] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 244 seconds)
+[18:46:08] <cisc> zetok what do you think about changing the unity bias to 25% instead of 50% ?
+[18:46:40] <cisc> because a lot of people are using crappy USB mics like me that have low sensitivity, most people arent using a preamp and a USB audio device and a electrovoice radio studio microphone
+[19:03:35] <zetok> :s
+[19:03:54] <zetok> I have usb ~mic myself, and it works quite well
+[19:04:18] <zetok> but the one I have probably is not crappy
+[19:04:35] <initramfs> zetok: How far along the slider are you?
+[19:04:40] <zetok> :|
+[19:04:53] <zetok> I just have it set to 70% in PA, and I usually don't touch qTox settings
+[19:05:14] <zetok> it's on half in qTox
+[19:05:24] <initramfs> zetok: Okay, thanks
+[19:09:56] <zetok> cisc: you have it set in system to 100%, right?
+[19:10:24] <cisc> zetok: no, it's at 60%
+[19:11:26] <zetok> hmm
+[19:11:34] <cisc> i just set it to 100%
+[19:11:38] <cisc> testing it atm
+[20:15:25] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[20:19:23] *** Joins: xspeed (~xsp@ )
+[20:19:28] <xspeed> hi
+[20:28:49] *** Joins: tux3 (~tux3@ )
+[20:28:49] *** ChanServ sets mode: +o tux3
+[20:34:12] * zetok wonders
+[20:36:01] <zetok> tux3: https://github.com/qTox/qTox/pull/3599 ?
+[20:37:45] <zetok> I'm not sure if I remember correctly about BiTOk wanting to become a maintainer
+[20:38:12] <zetok> tux3: but aside from that, what do you think about initramfs & Diadlo becoming maintainers?
+[20:38:23] <tux3> Sounds good to me
+[20:38:46] <tux3> We can always use more help, as long as everyone is careful to do things right :)
+[20:43:35] <tux3> ... do we have to wait for travis to merge #3599?
+[20:43:59] <zetok> yep
+[20:44:12] <tux3> But it's not a code change -_-
+[20:44:21] <zetok> no, but build could fail regardless
+[20:44:22] <tux3> Whatever.
+[20:44:32] <zetok> i.e. the commit verification thing
+[20:44:40] <tux3> You mean commit names?
+[20:44:41] <tux3> Yeah
+[20:44:56] <tux3> Pretty sure you got it right, though!
+[20:45:28] <zetok> :)
+[20:45:54] <zetok> btw, your point about testing merging on travis isn't quite right, since travis can do it only when something is pushed to the PR
+[20:46:11] <zetok> and not when e.g. something on master changes
+[20:46:18] <zetok> the there would still be the problem
+[20:46:24] <tux3> Oh, that's right
+[20:46:51] <zetok> btw
+[20:46:57] <tux3> But then again if master changed in an incompatible way between the last travis build and now, you'd expect that the PR would need to be rebased
+[20:47:06] <tux3> It's pretty rare that Git's merge algorithm fails silently
+[20:47:41] <zetok> oh, I'm almost sure that I'd be able to pull something like that off :D
+[20:48:06] <zetok> anyway, for now it's just something to keep in mind
+[20:48:09] <tux3> Yeah, you always have the luck of hitting all the corner cases that can possibly exist =D
+[20:48:21] <zetok> [16:31:37] <iphy> zetok: https://travis-ci.org/qTox/qTox/builds/149493390#L923
+[20:48:21] <zetok> [16:31:44] <iphy> "it compiles! ship it!"
+[20:48:21] <zetok> [16:44:06] <iphy> zetok: https://travis-ci.org/qTox/qTox/builds/149505710
+[20:48:21] <zetok> [16:44:12] <iphy> zetok: all three platforms work now
+[20:48:21] <zetok> [16:44:31] <iphy> and in under 10 minutes for everything
+[20:48:46] <zetok> iphy got cross-compiling to work on travis while switching qTox to use cmake
+[20:49:01] <tux3> Awesome!
+[20:49:23] <zetok> um, I've told iphy though that windows qTox links to the libs dynamically, so this is probably the way he set cmake stuff up
+[20:49:31] <zetok> (hopefully that's not a problem?)
+[20:49:42] <tux3> No, it's good
+[20:49:52] <zetok> (I haven't looked through all the changes yet)
+[20:49:57] <tux3> Dynamic linking on Windows makes updates faster (no need to redownload everything)
+[20:50:55] <zetok> mm :)
+[20:51:22] <zetok> some heads-up, since windows builds on jenkins will need to be updated
+[20:52:16] <tux3> Hm? What needs to be updated?
+[20:52:25] <tux3> You're going to completely replace qmake by CMake?
+[20:52:34] <zetok> that's what PR seems to do?
+[20:52:54] <tux3> Alright, yeah that will break everything :)
+[20:53:29] <tux3> zetok, can you link me to the PR?
+[20:53:53] <zetok> tux3: https://github.com/TokTok/qTox/pull/5
+[20:58:31] <Diadlo> Goodbye on a week :)
+[20:59:23] <zetok> Diadlo: o/
+[21:01:07] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[21:01:08] <zetok> looks like soul-eating qTox have heard about Diadlo becoming a qTox maintainer and took away all his free time :c
+[21:01:48] *** Quits: koshii (~w@ ) (Ping timeout: 250 seconds)
+[21:02:33] *** Joins: koshii (~w@ )
+[21:04:34] <zetok> koshii: o/
+[21:04:46] <zetok> koshii: any news on debian ~exceptions?
+[21:05:29] *** Joins: toweI (~toweI@ )
+[21:10:44] <zetok> tux3: ok, once Diadlo & initramfs have time, I'll add them to qTox & walk through the stuff
+[21:10:45] *** Quits: Sephi (~me@ ) (Ping timeout: 276 seconds)
+[21:11:10] <zetok> i.e. repeat several times what MAINTAINING.md already includes >.<
+[21:11:17] *** Joins: Sephi (~me@ )
+[21:11:33] <tux3> :)
+[21:13:41] <zetok> abbat: o/
+[21:15:52] <zetok> https://gist.github.com/zetok/483c2f53102bb62c0b9f78cf6307c0b4 ← what I have so far for blog post
+[21:16:59] <zetok> abbat: ↑ if that's fine with you; currently there's link to your gh profile, would you want link there to somewhere else?
+[21:18:23] <zetok> remaining parts of the post are OSX builds thanks to RowenStipe, move of the repo under an org, perhaps adding a bit on more on translation process, or something
+[21:18:37] <zetok> of the post that still need to be written*
+[21:18:50] <zetok> oh, and the newest maintainers
+[21:20:30] <zetok> anything else that could/should be included?
+[21:23:54] -qtox-git-spam- [qTox] tux3 pushed 2 new commits to master: https://git.io/v63Wn
+[21:23:54] -qtox-git-spam- qTox/master 68fcdae Zetok Zalbavar: docs(MAINTAINING): add instructions for becoming a maintainer...
+[21:23:54] -qtox-git-spam- qTox/master 6bbec63 tux3: Merge pull request #3599...
+[21:26:05] <toweI> tux3, are you working on nice qtox things again?
+[21:26:31] <tux3> toweI, no =]
+[21:27:26] <tux3> I have a multi-device branch that I'll finish when we switch to multi-device toxcore, but mostly I'm not coding anything new
+[21:30:02] <toweI> isn't there an unknwon eta for multi device?
+[21:30:08] *** Quits: bashrc_ (~motters@ ) (Ping timeout: 250 seconds)
+[21:30:19] <toweI> like for new groupchat
+[21:30:20] *** Joins: bashrc_ (~motters@ )
+[21:30:23] <zetok> precisely :3
+[21:31:55] <toweI> tux3, how is it in paris? did they do a house search already in your room ;)
+[21:32:09] <tux3> toweI, lol no, why?
+[21:32:26] <toweI> I have read that they do it often
+[21:32:32] <tux3> I'll have you know I haven't had any problems with the authorities so far! I'm a good little hacker!
+[21:32:51] <zetok> >.<
+[21:32:57] <toweI> since this incident
+[21:55:40] *** Quits: Emcy_ (~MC@ ) (Quit: Leaving)
+[21:55:58] *** Joins: Emcy_ (~MC@ )
+[22:04:27] <abbat> zetok, No, GH profile is enough
+[22:04:39] <zetok> ok
+[22:45:34] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:52:57] *** Joins: cisc (~cisc@ )
+[23:18:53] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[23:32:26] *** Joins: albel727 (~albel727@ )
+[23:40:28] <toweI> does anyone know why grayhatter and jfreegman are banned from tox dev?
+[23:41:41] <zetok> are they though?
+[23:42:06] <toweI> I can see entries
+[23:42:15] <toweI> and both are not there
+[23:43:49] <zetok> dunno, and don't really care
+[23:44:06] <zetok> it's probably meaningless though
+[23:44:13] <toweI> btw is there a new dev channel?
+[23:44:19] *** Joins: grayhatt3r (~grayhatte@ )
+[23:44:20] <toweI> I heard something about toktok
+[23:44:26] <toweI> and a core fork
+[23:44:28] <zetok> yes
+[23:44:57] *** grayhatt3r is now known as tux3_
+[23:46:42] <toweI> well there are no bans
+[23:46:55] <toweI> I just missunderstood the list
+[23:52:24] *** tux3 is now known as tux3__
+[23:52:25] *** tux3_ is now known as tux3
+[23:54:15] *** Quits: tux3__ (~tux3@ ) (Quit: Leaving)
+[23:55:25] *** Quits: bashrc_ (~motters@ ) (Quit: Lost terminal)
+[23:56:19] *** tux3 is now known as grayhatt3r
