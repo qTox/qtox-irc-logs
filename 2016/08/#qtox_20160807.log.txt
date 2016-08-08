@@ -1,0 +1,172 @@
+[00:00:52] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:26:12] *** grayhatt3r is now known as tux3
+[00:44:28] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[00:46:19] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[00:54:46] *** Quits: tux3 (~grayhatte@ ) (Changing host)
+[00:54:46] *** Joins: tux3 (~grayhatte@ )
+[00:54:46] *** ChanServ sets mode: +o tux3
+[00:59:44] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[01:04:06] *** Quits: mitfree (~mit@ ) (Ping timeout: 276 seconds)
+[01:26:34] *** Joins: smaragdus (~omoo@ )
+[02:43:12] *** Quits: Guest6614 (~flo@ ) (Ping timeout: 244 seconds)
+[04:13:02] -qtox-git-spam- [qTox] antis81 closed pull request #3564: [WIP] create forms in the requested context (master...settings-ui) https://git.io/v63w8
+[05:00:37] <Emcy_> wy does the stable pkg release on jenkins get rebuilt with new commits
+[05:01:00] <Emcy_> shouldnt it get rebuilt only on a stable tag
+[05:03:21] <Emcy_> does it depend on what build scripts say or something
+[05:03:35] <Emcy_> does it just get rebuilt with no changes all the time
+[05:08:18] <nurupo> hm
+[05:08:35] <nurupo> apparently me updating libsodium on jenkins triggered that
+[05:09:00] <nurupo> tux3: didn't you say it was fine to update libraries? :P ^
+[05:09:16] <nurupo> Emcy_: here is the reason why it has triggered explained in details https://build.tox.chat/view/qtox/job/qTox_pkg_windows_x86-64_stable_release/415/
+[05:10:22] <nurupo> nurupo -> sodium_src -> libsodium_build_windows_x86-64_static_release -> qTox-updater_build_windows_x86-64_release -> qTox_pkg_windows_x86-64_stable_release
+[05:10:52] <Emcy_> what has qtox updater got to do with libsodium
+[05:11:54] <nurupo> i believe the updates are signed by tux3
+[05:12:01] <Emcy_> p cool to see exactly why that happened
+[05:12:08] <nurupo> so the updater needs sodium to verify the signature
+[05:12:27] <Emcy_> oh thats smart
+[05:13:14] <Emcy_> the nightly built 5 hrs ago is bashed on a commit from days ago
+[05:13:29] <Emcy_> so it doesnt rebuild on every commit i guess
+[05:17:07] <nurupo> which nightly?
+[05:17:48] <nurupo> yeah, it's because i was updating libraries today
+[05:17:58] <nurupo> opus, vpx, sodium, ffmpeg
+[05:18:19] <nurupo> so the downstream jobs all got rebuilt
+[05:18:48] <Emcy_> do dependencies have to be refreshed manually
+[05:18:53] <nurupo> was there a commit made to qtox less than 5h ago?
+[05:19:13] <nurupo> Emcy_: yes, because we pull stable releases
+[05:19:29] <Emcy_> ok
+[05:19:34] <nurupo> they are used only in windows builds and static linux build though
+[05:20:16] <nurupo> the deb pacakges depend on libraries provided by the target distros
+[05:21:06] <Emcy_> even libsodium?
+[05:21:49] <Emcy_> hm i remember bitcoin devs having to fight debian like hell NOT to package bitcoin themselves like that
+[05:21:59] <nurupo> i think so
+[05:22:17] <Emcy_> because its very important everything is static linked and exactly the same everywhere
+[05:32:03] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 265 seconds)
+[05:38:42] *** Joins: dardevelin (~dardeveli@ )
+[05:40:16] <Emcy_> ah youre still updating libs.....
+[05:40:45] <Emcy_> is only the x86-64 build machine on demand
+[05:41:39] <Emcy_> its building for ARM weird
+[05:54:39] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[06:28:11] <nurupo> some android jobs are failing, i'm slowly fixing what i can
+[08:48:19] *** Joins: abbat (~Anton@ )
+[09:12:22] *** Joins: f10 (~flo@ )
+[09:24:52] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:34:55] *** Joins: bashrc_ (~motters@ )
+[09:47:46] *** Joins: initramfs (~initramfs@ )
+[09:48:36] <zetok> initramfs: I've sent you invite to qTox org
+[09:49:27] <zetok> initramfs: what are the steps when it comes to merging PR?
+[09:49:49] <initramfs> Lol, is this a test
+[09:49:57] <zetok> ~yep
+[09:50:01] <initramfs> Well, review on reviewable first
+[09:50:05] <initramfs> lgtm, when reviewed
+[09:50:24] <initramfs> Run through the test_pr script and finally the merge pr script
+[09:50:42] <initramfs> Also, make sure gpg sign is configured
+[09:51:10] <zetok> ok
+[09:51:35] <initramfs> (and of course, obvious checks like does the commit scope match what the commit does, etc)
+[09:52:13] <zetok> 3 notes
+[09:53:04] <zetok> test-pr.sh doesn't do anything beside merging stuff into `test1234` branch, so it's there only to ease testing, you don't have to use it, but PR has to be tested to be merged on master
+[09:53:28] <zetok> 2. it's preferable to wait some time before merging a PR, to let other people comment about stuff
+[09:54:29] <zetok> 3. even if GPG-signing is configured, it's usually a good thing to check whether it actually works – antis81 had a case where stable git 2.9 ignored GPG-signing option, which resulted in an unsigned commit
+[09:55:04] <initramfs> Yep okay, got it
+[09:55:13] <zetok> when it comes to your own PRs, you don't need to run merge-pr.sh scrip, but your commits have to be GPG-signed
+[09:55:19] <zetok> script*
+[09:55:52] <zetok> `logs = log --show-signature` ← useful alias to have in .gitconfig
+[09:56:43] <initramfs> Oh, one thing to note, when merging other people's PRs merge-pr.sh will actually cause the merge right?
+[09:57:07] <initramfs> Because I think a helpful line to add to MAINTAINING.md is to not use the reviewable merge feature
+[09:57:11] <initramfs> Since it won't use the script
+[09:58:22] <zetok> oh, right
+[09:58:44] <zetok> >Oh, one thing to note, when merging other people's PRs merge-pr.sh will actually cause the merge right?
+[09:59:09] <zetok> it will merge it locally, and print commands to push it to remote, or remove local merge if you don't like the result
+[09:59:26] <initramfs> Okay, that sounds good
+[10:02:37] <initramfs> Just for reference, how long do you usually wait for a PR? 3 days?
+[10:02:59] <initramfs> As in before, merging (since the PRs creation)
+[10:03:48] <zetok> so, the usual wait is quite long, but it's way longer than it should be
+[10:04:04] <zetok> waiting a day before merging a PR is usually good
+[10:04:10] <initramfs> Okay
+[10:04:36] <zetok> (the long wait is caused by people not having enough time to review & merge stuff)
+[10:12:07] <zetok> ok, I think that I've worked around reviewable's desire to merge stuff
+[10:13:28] <zetok> and just to be sure I've removed reviewable's permission to push to repo
+[10:13:32] <zetok> :3
+[10:14:29] <zetok> tux3: btw, I'm removing gitcop hook, since it's not needed by now
+[10:54:52] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:55:42] *** Joins: LittleVulpix (~Miranda@ )
+[11:12:10] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[11:17:16] *** Joins: sudden6 (~anonymous@ )
+[11:23:28] <bashrc_> any developments on fixing the video?
+[11:39:05] <zetok> yes
+[11:39:11] <zetok> it waits for review & merge
+[11:39:50] <zetok> sudden6: https://github.com/qTox/qTox/pull/3589 ← I agree with initramfs
+[11:46:18] <bashrc_> oh nice
+[11:46:36] <bashrc_> would be good to have video working on the mesh
+[12:04:46] *** Joins: abbat (~abbat@ )
+[12:29:22] <bashrc_> I've not tried it yet. Is it possible to do multi user audio?
+[12:48:19] *** Joins: ccsdss (~ray@ )
+[12:48:36] *** Parts: ccsdss (~ray@ ) ()
+[12:52:21] <zetok> hm?
+[13:24:59] <zetok> sudden6: merge the PR?
+[13:31:45] <sudden6> yep
+[13:35:47] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[13:43:56] <bashrc_> +1
+[13:53:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[14:11:15] *** Joins: sudden6 (~anonymous@ )
+[15:45:38] *** Joins: initramfs (~initramfs@ )
+[15:47:50] <initramfs> Since the introduction of reviewable.io, does the "pr-changes-required" label mean anything (i.e. should it still be issued)? Since all PRs are essentially "changes-required" until it passes reviewable, which is enforced by the GH merge conditions check.
+[16:18:58] *** Quits: bashrc_ (~motters@ ) (Quit: Lost terminal)
+[16:33:23] <zetok> yeah, now it's ~meaningless
+[16:40:01] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:47:43] *** Joins: cisc (~cisc@ )
+[16:59:29] *** Joins: sudd3n6 (~anonymous@ )
+[17:00:18] *** Quits: sudd3n6 (~anonymous@ ) (Client Quit)
+[17:20:30] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[17:28:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:55:27] *** Joins: abbat (~Anton@ )
+[18:15:18] *** Joins: SkyzohKey (~skyzohkey@ )
+[18:15:48] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[18:16:41] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[18:32:05] *** Joins: SkyzohKey (~skyzohkey@ )
+[18:32:28] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[18:40:55] *** Joins: Emcy (~MC@ )
+[18:42:39] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[19:05:23] *** Quits: xspeed (~xsp@ ) (Quit: Leaving.)
+[19:17:54] <zetok> :|
+[19:22:04] <Emcy> wth is lgbt
+[19:22:11] <Emcy> i mean lgbm
+[19:22:32] <Emcy> whatever that stamp symbol means
+[19:29:17] <zetok> Let Go That Merge
+[19:29:28] <zetok> >@zetok I've assigned you for a final check, feel free to merge if all is good.
+[19:29:49] <zetok> why do I get this feeling that everyone is trying to push me to learn C++ -.-
+[19:32:04] <Emcy> whats that mean
+[19:32:58] <zetok> Emcy: though what you've asked about: https://en.wikipedia.org/wiki/LGBT :)
+[19:33:40] <zetok> um, regarding what?
+[19:33:44] <zetok> LGTM?
+[19:34:21] <zetok> dual purpose – it is used to verify that code has been reviewed, and is a clear message that it's good to be merged
+[19:37:45] <Emcy> qtox has a specific system for code review?
+[19:38:16] <zetok> https://github.com/qTox/qTox/blob/master/MAINTAINING.md#reviews
+[19:40:11] <Emcy> thats great
+[19:40:15] <Emcy> really good
+[19:40:24] <Emcy> surprised its an external service thoguh
+[19:40:37] <zetok> there's nothing better available
+[19:41:00] <Emcy> qtox dev seems to be fairly active tbh
+[19:52:18] *** Joins: LittleVulpix (~Miranda@ )
+[20:18:37] *** Joins: agates (470a761d@ )
+[20:19:17] <agates> Hi.  Does anyone know if qTox works on Ubuntu Touch?
+[20:19:36] <agates> And if it works, will it scale to mobile?
+[20:22:19] <zetok> sa.
+[20:22:56] <zetok> depending on how broken *buntu touch is, qTox may, or may not work
+[20:24:57] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:28:24] <agates> That's a great non-answer.  You must be a politician.
+[20:29:41] *** Quits: agates (470a761d@ ) (Quit: Page closed)
+[20:34:10] <Emcy> lel
+[21:09:58] -qtox-git-spam- [qTox] zetok closed pull request #3589: Fixes missing first video mode from video mode selection (master...fix-missing-video-mode) https://git.io/v6qBT
+[21:24:16] *** Joins: dardevelin (~dardeveli@ )
+[21:32:03] *** Joins: stvlker (~stvlker@ )
+[21:32:17] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[21:49:25] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[22:02:29] *** Joins: sudden6 (~anonymous@ )
+[22:08:37] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[22:11:38] *** Joins: cisc (~cisc@ )
+[22:31:26] <nurupo> can someone test nightly qtox windows build?
+[22:32:30] <nurupo> we were updating libraries about a day ago: libvpx, libsodium, libopus, ffmpeg, sqlcipher and maybe some others
+[22:33:27] <nurupo> i suggest doing a video call, so that even ffmpeg would get tested
+[22:43:06] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:38:59] <Emcy> i could do that
+[23:39:21] <Emcy> if my friendo comes online
