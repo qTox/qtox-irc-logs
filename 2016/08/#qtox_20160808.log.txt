@@ -1,0 +1,226 @@
+[00:35:44] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[01:20:40] <nurupo> hm
+[01:20:45] <nurupo> that's weird
+[01:23:22] <linuxmodder> nurupo,  any windows version needed in partilar ?  I have a win 10 on a backup drive I could test on later 
+[01:23:47] <nurupo> tux3: why there is "qTox_pkg_windows_x86-64_nightly_release" but no "qTox_pkg_windows_x86_nightly_release" ?
+[01:24:39] <nurupo> any windows version. test these two qtoxes https://build.tox.chat/view/qtox/job/qTox_build_windows_x86-64_release/ https://build.tox.chat/view/qtox/job/qTox_build_windows_x86_release/
+[01:25:00] <nurupo> we didn't update libraries in a long time, just want to make sure the update didn't break anything
+[01:33:06] <nurupo> hm
+[01:33:46] <nurupo> just tested qTox_build_windows_x86-64_release, seems to work fine
+[01:34:23] <nurupo> in the About page, it says that it's based on this commit https://github.com/qTox/qTox/commit/fca278f334595ba93db3379dce02848fe02dfde6
+[01:34:45] *** Joins: hpanago (uid15586@ )
+[01:34:53] <nurupo> so i guess tux3 didn't switch qtox_src and qtox-stable_src to use github.com/qtox/qtox
+[01:36:33] <nurupo> Emcy: lgtm is "looks good to me", i.e. an approval
+[01:38:33] <nurupo> zetok: do you happen to know if qtox builds with the latest ffmpeg 3.1.* or only 2.* versions can be used?
+[02:14:49] <Emcy> nightly is running for me
+[02:15:36] <Emcy> is libvpx still slow shit anyway
+[02:16:06] <Emcy> in faxt when are you going to use vp9
+[02:17:45] *** Joins: SkyzohKey (~skyzohkey@ )
+[02:17:46] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[03:49:52] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[05:04:21] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[05:22:52] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/v6szC
+[05:22:52] -qtox-git-spam- qTox/master b71c919 Nils Fenner: feat(settings): add RecursiveSignalBlocker...
+[05:22:52] -qtox-git-spam- qTox/master f50d914 sudden6: Merge pull request #3591...
+[05:45:52] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[06:44:08] <zetok> nurupo: sorry, I don't know
+[06:49:59] <zetok> nurupo: qTox in Arch is build against 3.1, it it looks like it should work
+[06:50:41] <nurupo> ok
+[06:51:32] <nurupo> tux3: permission to up ffmpeg to 3.1 on jenkins?
+[06:52:23] <nurupo> i hope he actually reads all the highlights at the end of the week...
+[06:57:15] <zetok> default znc config doesn't forward highlights..
+[06:58:00] <zetok> so it's probably more likely that the answer will come ~fast, or not a all :|
+[07:27:33] *** Joins: abbat (~Anton@ )
+[07:28:09] *** Joins: f10 (~flo@ )
+[07:41:57] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[07:42:12] *** Joins: cisc (~cisc@ )
+[08:11:52] *** Joins: LittleVulpix (~Miranda@ )
+[08:20:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[08:29:50] *** Joins: in1t3r (~LordShiva@ )
+[08:36:08] *** Joins: shiva (~LordShiva@ )
+[08:38:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[08:58:46] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:10:59] *** Joins: dardevelin (~dardeveli@ )
+[09:48:16] -qtox-git-spam- [qTox] antis81 closed pull request #3587: fix(gui): don't quit application before last event (master...fix/app-quit) https://git.io/v6tkO
+[09:52:34] <tux3> nurupo, '<nurupo> tux3: why there is "qTox_pkg_windows_x86-64_nightly_release" but no "qTox_pkg_windows_x86_nightly_release"' <-- Because x86 was a pain so we stopped doing nightlies for it!
+[09:52:55] <tux3> >nurupo> tux3: permission to up ffmpeg to 3.1 on jenkins? <-- Yes!
+[09:53:03] <tux3> ><zetok> default znc config doesn't forward highlights.. <-- It does!
+[09:53:12] <tux3> Or at least, my xchat picks up on it
+[09:53:26] <zetok> oh?
+[09:53:27] <tux3> Also, hi
+[09:53:30] <zetok> hello :)
+[09:54:19] <zetok> znc does the backlog thing, but it doesn't forward just all highlights
+[09:54:31] <zetok> unless I've missed an option..
+[09:55:06] <tux3> I think xchat just auto-highlights my name
+[09:55:17] <tux3> Just does a dump grep in the backlog
+[09:56:04] <tux3> A bonus of switching to qTox/qTox is now I don't get highlighted everytime someone links to an issue or PR :)
+[09:56:08] *** Joins: abbat (~abbat@ )
+[09:56:19] <zetok> :)
+[09:59:00] <zetok> well, my point being is that znc would only backlog messages from channel up to the limit, and then it would start dropping oldest ones, including "highlights"
+[09:59:36] *** Joins: Chiitoo (~Chiitoo@ )
+[09:59:36] <zetok> unless your backlog limit is >9000
+[10:00:01] <tux3> ... there's a limit ?
+[10:01:02] <zetok> yep
+[10:01:21] <zetok> backlog ≠ log
+[10:17:52] -qtox-git-spam- [qTox] antis81 pushed 2 new commits to master: https://git.io/v6sQG
+[10:17:52] -qtox-git-spam- qTox/master cae5c1f initramfs: chore(qtox.pro): remove a Qt version check for Qt widgets
+[10:17:52] -qtox-git-spam- qTox/master 3a32a03 Nils Fenner: Merge pull request #3586...
+[10:32:56] -qtox-git-spam- [qTox] antis81 closed pull request #3580: fix(systemtrayicon): #3419, don't activate qTox widget on tray icon click in Unity backend (master...unity_fix) https://git.io/v6s5L
+[10:33:21] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[10:38:39] *** Joins: f10 (~flo@ )
+[10:51:18] <zetok> :/
+[10:51:35] <zetok> fuck.
+[10:53:27] <tux3> ?
+[10:55:11] <zetok> antis81 broke master again
+[10:56:22] <tux3> Uh, what's wrong with the commit format here?
+[10:56:30] <zetok> ?
+[10:56:36] <zetok> what do you mean?
+[10:56:41] <tux3> Why is it breaking?
+[10:56:45] <zetok> what is not wrong with it?
+[10:56:45] <tux3> It looks okay to me
+[10:56:49] <tux3> ?
+[10:57:05] <tux3> This failed: https://travis-ci.org/qTox/qTox/jobs/150581073
+[10:57:09] <tux3> But I'm not sure what the problem is
+[10:58:08] <zetok> no GPG signature and message is too long
+[10:58:47] <tux3> Hm
+[10:58:52] <tux3> No GPG sig didn't seem to break https://github.com/qTox/qTox/commit/b71c919f2a5cc92cdb8c0f7b0d3a76e268244549
+[10:59:23] <zetok> yes, GPG is not being being checked right now
+[11:00:01] <tux3> Maybe we need to make some Git hooks to catch errors before pushing, because clearly the commit name rules are pretty hard to follow in practice :/
+[11:01:30] <zetok> :s
+[11:01:53] <zetok> the problem here is that it was merged via reviewable
+[11:03:08] <zetok> something that I thought shouldn't be possible
+[11:04:01] <zetok> >Allow squash merging 
+[11:04:16] <zetok> I've de-selected that option in settings
+[11:04:44] <zetok> since that was the one that allowed it to happen (I think)
+[11:04:59] <zetok> and now the force push (fuck)
+[11:05:14] <zetok> tux3: ↑ if you don't mind?
+[11:05:43] <tux3> Yeah
+[11:08:54] -qtox-git-spam- [qTox] zetok force-pushed master from aeaa27a to 59352ae: https://git.io/v6sNv
+[11:08:55] -qtox-git-spam- qTox/master 2f0ffdd sudden6: fix(systemtray): don't activate qTox widget on tray icon click in Unity backend...
+[11:08:55] -qtox-git-spam- qTox/master 59352ae Zetok Zalbavar: Merge pull request #3580...
+[11:11:30] <zetok> now it's time to test whether it would work
+[11:30:00] <zetok> https://a.uguu.se/Lf802Y1oqYGa.png ← ok, that should do
+[11:30:30] <zetok> still, I've fucked up by not setting that on qTox repo earlier :/
+[11:40:39] -qtox-git-spam- [qTox] zetok opened pull request #3602: docs(MAINTAINING): note that merging PRs should be done locally (master...maint) https://git.io/v6sp6
+[15:02:09] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[15:09:45] *** Joins: zero-ghost (~0@ )
+[15:48:09] *** Joins: Emcy (~MC@ )
+[15:57:01] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:57:37] *** Joins: abbat (~abbat@ )
+[16:16:53] *** Joins: stvlker (~stvlker@ )
+[16:17:13] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[16:21:40] *** Quits: Darky (~Darky@ ) (K-Lined)
+[17:50:22] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:51:09] *** Joins: Chiitoo (~Chiitoo@ )
+[18:09:01] *** Joins: sudden6 (~anonymous@ )
+[18:54:55] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:13:59] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[19:14:17] *** Joins: sudden6 (~anonymous@ )
+[19:45:34] *** Joins: vindelschtuffen_ (~vindelsch@ )
+[19:50:17] *** Joins: BHR27 (~Bheru27@ )
+[19:50:19] *** Quits: dan- (~d@ ) (*.net *.split)
+[19:50:19] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[19:50:19] *** Quits: Bheru27 (~Bheru27@ ) (*.net *.split)
+[19:50:20] *** Quits: Impyy (~impy@ ) (*.net *.split)
+[19:50:35] *** Joins: Impyy (~impy@ )
+[19:50:46] *** Joins: dan- (~d@ )
+[19:50:47] *** Quits: dan- (~d@ ) (Changing host)
+[19:50:47] *** Joins: dan- (~d@ )
+[19:52:05] *** Joins: hexadezimalion (sid85551@ )
+[20:33:04] *** Joins: f15h (~thomas@ )
+[20:38:16] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:38:46] *** Joins: LittleVulpix (~Miranda@ )
+[20:38:54] *** Quits: LittleVulpix (~Miranda@ ) (Changing host)
+[20:38:54] *** Joins: LittleVulpix (~Miranda@ )
+[20:44:15] <nurupo> tux3: tux3/qtox -> qtox/qtox for qtox_src and qtox-stable_src?
+[20:44:23] <tux3> nurupo, yep
+[20:44:30] <nurupo> did you do the switch?
+[20:44:54] <tux3> Nope, I'm about to unless you want to :)
+[20:44:59] <nurupo> because commits to qtox/qtox didn't trigger nightlies 24 hours ago
+[20:45:13] <nurupo> you ened to setup a webhook for junkins in repo's settings
+[20:45:23] <nurupo> junk junkie junkins
+[20:45:48] <nurupo> *need
+[20:45:48] <tux3> The hook should be working already
+[20:45:54] <nurupo> ok
+[20:46:17] <nurupo> i will update ffmpeg then, leaving qtox _src to you
+[20:46:34] <tux3> And don
+[20:46:36] <tux3> +e
+[20:47:43] *** Quits: hexadezimalion (sid85551@ ) (Changing host)
+[20:47:43] *** Joins: hexadezimalion (sid85551@ )
+[20:48:09] <nurupo> and ffmpeg-3.1.1 is triggered
+[20:50:15] <nurupo> tux3: btw, if you are missing out on log, you can either increase # of lines to backlog for a channel or you can request more of backlog for a channel be talking to one of *plugins
+[20:50:24] <sudden6> tux3: hi, do you know the toxID of antis81?
+[20:51:33] <nurupo> i usually just set it to 5000 lines for channels i care about, which is usually enough for a day or two of being afk, sometimes longer
+[20:52:08] <tux3> nurupo, how do you set it?
+[20:52:11] <nurupo> your irc client might lag a bit when you conenct to znc, as it will receive all those lines to you :P
+[20:52:26] <tux3> sudden6, nope, sorry
+[20:54:08] <nurupo> tux3: in web interface, on Your Settings page, at the very bottom you can set the default value in "Buffer Size:"
+[20:54:35] <nurupo> tux3: and if you Edit the network, you can set limit per channel
+[20:55:08] <tux3> augh, I got locked out of the web interface :)
+[20:55:11] <nurupo> i keep the default and set high number on per-channel basis
+[20:55:37] <nurupo> you might be able to do it through irc interface, but i'm not that familiar with it
+[20:56:40] <nurupo> ><*status> | SetBuffer              | <#chan> [linecount]                   | Set the buffer count for a channel
+[20:58:41] <tux3> Seems to have worked, thanks!
+[21:02:36] <nurupo> tux3: have you seen my email?
+[21:03:31] <tux3> nurupo, yeah, I looked at it again and it seems your script is good thanks to the -L option
+[21:03:43] <nurupo> hm
+[21:03:49] <tux3> Or at least, I couldn't figure out an easy way to break it :)
+[21:03:53] <nurupo> you were saying the opposite though
+[21:04:13] <tux3> I got it because I could send arbitrary rsync commands, so I could do "rsync -l"
+[21:04:31] <nurupo> can you give me a working script with any command?
+[21:04:32] <tux3> Your "rsync -L" seems to be protecting the script pretty well though
+[21:04:50] <nurupo> e.g. even without -L
+[21:05:00] <tux3> Well, yeah. But that only works if you have root@build.tox.chat's SSH secret key
+[21:05:13] <nurupo> i don't care
+[21:05:36] <tux3> Ok one sec, I erased my log behind me so I actually forgot what I did, but I'll reinvent it :)
+[21:06:00] <tux3> Did you remove my key in jenkins's authorized_keys btw?
+[21:06:14] <nurupo> yes
+[21:06:20] <tux3> ok, good :
+[21:18:23] <zetok> sudden6: if you want I'll pass your ID to antis81 (via faux offline message)
+[21:18:33] <zetok> sudden6: he's not often online though
+[21:19:02] <sudden6> zetok: yeah, would be cool
+[21:19:11] <zetok> sudden6: ok, send your ID
+[21:19:48] <sudden6> sent to you on qTox
+[21:21:38] <zetok> ok, "sent", he'll receive it when he'll be online
+[21:21:50] <zetok> (assuming that DB won't just eat the message)
+[21:22:21] <zetok> https://github.com/qTox/qTox/issues/1098 there's also this :|
+[21:52:43] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[22:09:12] <nurupo> ffmpeg 3.1.1
+[22:09:12] <nurupo> https://build.tox.chat/view/qtox/job/qTox_build_windows_x86-64_release/lastSuccessfulBuild/artifact/qTox_build_windows_x86-64_release.zip 
+[22:09:12] <nurupo> https://build.tox.chat/view/qtox/job/qTox_build_windows_x86_release/lastSuccessfulBuild/artifact/qTox_build_windows_x86_release.zip
+[22:12:19] <nurupo> hm
+[22:12:41] <nurupo> tux3: why is qtox binary ~17mb in shared windows build?
+[22:13:21] <nurupo> are there really ~15mb of resources (sounds, images, etc) embedded into the binary?
+[22:14:37] <tux3> nurupo, we have a lot of emojis I guess
+[22:15:01] <zetok> only 7MB, and that's uncompressed
+[22:17:06] <nurupo> in my experience with dynamically linked Qt, the .exe binary usually turns out to be <1mb
+[22:17:19] <zetok> ha. ha.
+[22:17:27] <nurupo> i guess there are some libraries that it statically linked
+[22:17:40] <zetok> 6,4M    /usr/bin/qtox
+[22:18:12] <nurupo> i'm talking about windows >.exe
+[22:18:24] <nurupo> though i would expect the same apply for linux
+[22:19:19] <zetok> perhaps that's the case for very simple programs
+[22:19:55] <tux3> Ok lemme check
+[22:20:27] <Chiitoo> Not sure I would call 7MB 'only' there, heh.  Then again, I'd prefer them being an optional thing to install at all.  :D
+[22:20:32] <nurupo> zetok: ones without resources and without any statically linked libraries
+[22:20:51] <tux3> Sur le window x64, on � 12MB de .text, 3MB de .bss and 5MB de .rdata, donc principalement c'est le code qui prend >60% de la place
+[22:21:13] <tux3> Fuck, the same in english
+[22:21:21] <tux3> We have 12MB of code, 3+5 MB of data
+[22:21:26] <tux3> So something must be statically linked
+[22:21:59] <nurupo> yeah, you link against toxcore, sodium, vpx, sqlcipher, qrencode, opus, filteraudio and ffmpeg statically
+[22:22:16] <zetok> \o/
+[22:22:17] <nurupo> that explains why the binary so big
+[22:22:21] <nurupo> plus resources
+[22:22:28] <zetok> so you didn't break everything :)
+[22:23:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[22:24:26] <zetok> (yet)
+[22:25:09] <nurupo> wow, new ffmpeg added 2mb to the qtox binary
+[22:29:05] <tux3> It looks like we link dynamically with Qt, OpenAL, pthreads, libstdc++, and everything else is static
+[22:29:24] <tux3> Or at least that's all I'm seeing looking at the import table
+[22:53:56] *** Joins: Emcy_ (~MC@ )
+[22:53:59] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[22:53:59] *** Joins: Emcy_ (~MC@ )
+[22:55:45] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 244 seconds)
+[22:56:23] *** Quits: Emcy (~MC@ ) (Ping timeout: 265 seconds)
+[23:21:05] *** Joins: sudden6 (~anonymous@ )
+[23:25:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
