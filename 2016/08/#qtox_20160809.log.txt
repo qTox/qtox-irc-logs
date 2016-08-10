@@ -1,0 +1,491 @@
+[00:06:58] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[00:10:00] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:12:13] *** Joins: Emcy (~MC@ )
+[00:38:14] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[00:43:27] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 276 seconds)
+[01:06:43] *** Joins: Emcy_ (~MC@ )
+[01:10:06] *** Quits: Emcy (~MC@ ) (Ping timeout: 276 seconds)
+[01:27:21] <nurupo> yep
+[01:28:37] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[01:50:14] *** Parts: oranges (oranges@ ) ()
+[03:35:28] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[04:30:03] *** Joins: mitfree (~mit@ )
+[04:40:09] *** Quits: vindelschtuffen_ (~vindelsch@ ) (Ping timeout: 250 seconds)
+[05:41:20] *** Quits: BHR27 (~Bheru27@ ) (Remote host closed the connection)
+[05:42:01] *** Joins: Bheru27 (~Bheru27@ )
+[06:11:18] *** Joins: f10 (~flo@ )
+[06:23:29] *** Joins: vindelschtuffen_ (~vindelsch@ )
+[06:38:32] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 244 seconds)
+[06:57:06] *** Joins: shiva (~LordShiva@ )
+[07:26:27] *** Quits: rysiek|pl (~quassel@ ) (Quit: No Ping reply in 180 seconds.)
+[07:26:43] *** Joins: rysiek|pl (~quassel@ )
+[07:32:31] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[07:55:27] *** Joins: abbat (~Anton@ )
+[08:32:06] *** Quits: f10 (~flo@ ) (Ping timeout: 276 seconds)
+[08:41:01] *** Joins: dardevelin (~dardeveli@ )
+[08:51:30] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:44:39] *** Joins: abbat (~abbat@ )
+[09:45:23] *** Joins: cisc (~cisc@ )
+[10:10:48] *** Joins: f10 (~flo@ )
+[10:29:33] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:33:53] *** Joins: cisc (~cisc@ )
+[11:35:24] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[11:45:02] *** Joins: Chiitoo (~Chiitoo@ )
+[11:50:34] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[11:55:14] *** Joins: abbat (~abbat@ )
+[12:17:22] <zetok> Chiitoo: it's sad that Gentoo is dying :(
+[12:22:00] <Chiitoo> According to some, it has been dying since 2006 or so at least.  Still going rather strong from what I can tell.  ^^
+[12:22:28] <zetok> not really
+[12:23:22] <zetok> thing is, Gentoo is improving
+[12:23:35] <zetok> what is important though, is the bigger picture
+[12:23:58] <zetok> in which it's quite clear that Gentoo is not improving, when compared to others
+[12:24:53] <zetok> that would be ~fixable, but people aren't interested in improvement, thinking that "things are going well"
+[12:25:41] <Chiitoo> What sort of thing(s) would you see as an improvement at its current state?
+[12:26:27] <zetok> actually wanting people to contribute to it
+[12:27:49] <zetok> and from the outside perspective it looks like that opposite is true
+[12:29:51] <zetok> I mean, there are those "how to contribute" for Gentoo, but that's a pure bullshit when it comes down to actual interactions with people who supposedly are the ones who could make some use of contribution
+[12:30:26] <Chiitoo> I see.
+[12:30:59] <Chiitoo> I've so far had only good experiences really myself, with regards to that sort of stuff.
+[12:31:31] <Chiitoo> I have read siimlar things you are speaking of though, so it's definitely not just you.
+[12:32:30] <zetok> it's either "there are good docs how to do things, in which case you don't need to interact with people, or docs are pure crap, and you can go fuck yourself"
+[12:32:47] <zetok> in case of former, I did have positive experiences
+[12:34:34] <Chiitoo> Mmmh, to be fair, I haven't had the need to interact with Gentoo people much at all to get things done.  Or not people I already interacted with in the past regardless.
+[12:36:46] <zetok> at this rate in a few years I'll have to switch to some other distro, since Gentoo's quality without enough of people behind it fall down horribly (that's what the current attitude will leads to), a shame really, since there's no other distro that would so good at getting things done :(
+[12:38:40] <Chiitoo> Eh, I don't think it will go like that but time will tell.  :]
+[12:38:45] <Chiitoo> (afk for now)
+[12:39:29] <Chiitoo> Or at least I very much hope so that nothing stupid enough for me to leave Gentoo as well happens.
+[12:52:53] <zetok> 1. There is a minimal amount of people required to "keep things running". Not even improving, just getting it to run. 2. Gentoo already struggles with that. 3. There are efforts to increase amount of people interested in it, but those efforts are killed by the $negative_stuff. 4. Furthermore, efforts to increase pool of people who could contribute are also being/have been killed. 5. There are already not enough people to keep things running, and as people 
+[12:52:53] <zetok> are overwhelmed by stuff they need to do, and not enough time to get it done, it leads to a continuously increasing quality drop. 6. It should be quite clear to what continuous drop in the quality leads.
+[14:45:11] *** Joins: dardevelin (~dardeveli@ )
+[14:47:01] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[14:47:56] *** Joins: f10 (~flo@ )
+[15:03:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[15:05:59] *** Joins: abbat (~abbat@ )
+[15:32:28] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[15:36:05] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[15:37:56] *** Joins: f10 (~flo@ )
+[15:40:27] *** Quits: f10 (~flo@ ) (Excess Flood)
+[15:40:53] *** Joins: f10 (~flo@ )
+[15:56:00] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:00:10] -qtox-git-spam- [qTox] Talkless opened pull request #3604: fix(bootstrap.sh): fix OpenAL build on Windows (master...patch-1) https://git.io/v6cES
+[16:01:50] *** Joins: stvlker (~stvlker@ )
+[16:55:23] *** Joins: f10 (~flo@ )
+[17:12:32] *** Joins: sudden6 (~anonymous@ )
+[17:17:25] -qtox-git-spam- [qTox] sudden6 pushed  new commits to master: https://git.io/v6c1Y
+[17:17:25] -qtox-git-spam- qTox/master 38b1a9b initramfs: feat(video): redesign and improve VideoFrame class...
+[17:17:25] -qtox-git-spam- qTox/master 277ddc3 initramfs: fix(video): fix CoreAV and VideoSurface to conform to new VideoFrame
+[17:17:25] -qtox-git-spam- qTox/master 50f67b3 initramfs: refactor(video): rename and make the frame alignment propety public...
+[17:42:29] <zetok> \o/
+[17:43:57] <zetok> sudden6: so we're doing 1.5, right?
+[17:44:02] <zetok> (today)
+[17:46:14] <abbat> Wow! New release coming! Don't forget about https://github.com/tux3/qTox/issues/3470 - upstream version renamed to... "qtox-nightly" is bad because it is not nightly. May be "qtox-alpha (beta)"?
+[17:47:35] <zetok> yep, alpha sounds good
+[17:47:50] <zetok> and thanks for reminding about the issue :)
+[17:51:20] <zetok> aw, crap, 70 lines of just translation updates in changelog
+[17:53:03] <zetok> 5 new languages >.<
+[18:04:56] <zetok> oh, right, updates from weblate _._
+[18:09:21] <sudden6> zetok: I hope so ;)
+[18:09:52] <sudden6> will be available in 30min if you need me
+[18:11:43] <zetok> yeah, in that time I'll get translations from weblate, so that you could review PR with them :)
+[18:15:26] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v6cdC
+[18:15:26] -qtox-git-spam- qTox/master c8bbd07 Zetok Zalbavar: docs(MAINTAINING): note that merging PRs should be done locally
+[18:37:11] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[18:43:40] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:44:13] -qtox-git-spam- [qTox] zetok opened pull request #3605: Update translations from weblate (master...tr) https://git.io/v6cxw
+[18:44:31] <zetok> sudden6: ↑ :)
+[18:46:42] <zetok> and if that's all for 1.5, I'll start working on the changelog
+[18:55:55] <sudden6> zetok: are you done pulling translations?
+[18:56:02] <zetok> ~yep
+[18:56:26] *** Joins: f10_ (~flo@ )
+[18:58:28] <zetok> working on changelog ATM, would be good if someone could help with post for the blog: https://gist.github.com/zetok/d2b8359fe773a70e6d2e63743d9cbb34
+[18:58:37] <sudden6> do we even review language atm?
+[18:58:57] <zetok> ~kinda
+[18:59:15] <sudden6> well, I can only review de^^
+[18:59:24] <sudden6> (really review)
+[18:59:41] <zetok> https://github.com/qTox/qTox/pull/3595 ← e.g.
+[19:00:08] <sudden6> ok
+[19:07:00] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:08:41] <sudden6> zetok: one small issue, else everything seems alright
+[19:08:59] <zetok> hm?
+[19:09:32] <sudden6> for the translation pr
+[19:09:38] <zetok> oh
+[19:09:47] <zetok> it is supposed to handle invalid values
+[19:10:37] <sudden6> I don't know if it does that, but translation is wrong regardless
+[19:10:45] <sudden6> "translation"
+[19:10:47] <zetok> https://github.com/qTox/qTox/pull/3551
+[19:11:01] <zetok> https://github.com/qTox/qTox/pull/3551/files#diff-b4b0a60ce74973d008669c72f0c135a8R83
+[19:11:56] <sudden6> what are you trying to tell me?
+[19:12:16] <zetok> that people are going to "translate" it wrongly, and that it doesn't matter
+[19:12:48] <sudden6> yeah, but if we detect it's wrong, shouldn't we correct it?
+[19:13:02] <zetok> nah
+[19:13:18] <zetok> too much effort for no gain
+[19:13:23] <zetok> >Don't depend on this value being correct though – i.e. check should be for RTL, otherwise assume LTR.
+[19:13:45] <zetok> we should care only for languages that are RTL
+[19:13:49] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:13:52] <sudden6> hmm, well, there goes the quality...
+[19:14:13] <zetok> having translators > quality
+[19:14:56] <zetok> thing is, people are going to get this wrong again, and again
+[19:15:11] <zetok> or are going to "translate" it into various crap, since it doesn't matter
+[19:15:37] *** Joins: Chiitoo (~Chiitoo@ )
+[19:15:42] <sudden6> and there comes our review, which will detect crap, like currently
+[19:16:28] <zetok> the way I see it, everything's alright
+[19:16:46] <sudden6> not really
+[19:16:46] <zetok> i.e. it was designed to have either "RTL", or ignore the value
+[19:17:19] <sudden6> maybe I'm to much programmer, but I don't like having invalid values
+[19:17:47] <sudden6> also is there a possibility to comment on the blog post?
+[19:18:10] <sudden6> (before it will be posted)
+[19:18:22] <zetok> https://i.imgur.com/01ElIVX.gif
+[19:18:39] <zetok> um, I've linked to blog post above
+[19:18:44] <zetok> "post"
+[19:18:52] <zetok> not posted yet ^_^
+[19:19:05] <sudden6> ah, I just figured out how to comment
+[19:19:38] <sudden6> ok, no I don't
+[19:22:01] <sudden6> zetok: L60 - L74 should be scratched from the post
+[19:22:32] <zetok> why?
+[19:22:45] <sudden6> just hate speech
+[19:23:07] <zetok> hate speech?
+[19:23:33] *** Joins: ovalseven8 (~ovalseven@ )
+[19:23:50] <sudden6> the tone of the writing only conveys hate
+[19:24:18] <zetok> Hm.
+[19:24:36] <zetok> which parts do that?
+[19:25:56] <sudden6> "you might be getting a sinking feeling of doom", "only "chosen ones" can post", "
+[19:25:57] <sudden6> Before the change, answer be
+[19:25:59] <sudden6> +`no`, now with added bonus of curses :-/
+[19:27:18] <zetok> last one is simple statement of fact
+[19:28:05] <zetok> as for the first and second, I've tried to make it sound a little better than "it's crap, and only inner Tox circlejerk is allowed there"
+[19:28:19] <zetok> s/Tox/tox.chat/
+[19:29:09] <sudden6> yeah, but in the context of the rest just emphasises your hate against them
+[19:29:10] <zetok> actually, 2nd is also a fact
+[19:29:16] <zetok> eh
+[19:29:25] <sudden6> This just shouldn't be in there
+[19:33:43] <zetok> fixed
+[19:37:05] <sudden6> I'd still remove L66 - L73
+[19:37:52] <zetok> why?
+[19:38:10] <zetok> Ok.
+[19:38:25] <zetok> sudden6: so what is the story behind the blog according to you?
+[19:38:34] <sudden6> 1st part because it's only cynic, 2nd part because nobody cares 3rd part because it makes no sense alone
+[19:39:28] <sudden6> reasons for our blog: no access to tox.chat, easier posting, even for non devs
+[19:39:35] <zetok> nope
+[19:39:51] <zetok> no access to tox.chat was never a problem
+[19:40:09] <sudden6> ah?
+[19:40:12] <zetok> easier posting is easier posting, but that's just a side effect
+[19:40:48] <zetok> the problem was always tox.chat attitude
+[19:41:38] <sudden6> for me it was slow response times on their side, not more
+[19:41:59] <zetok> and again, that's not a reason "good enough"
+[19:44:16] <sudden6> I was never that thrilled to spin our own blog, that was you and someone else I don't remember
+[19:45:33] -qtox-git-spam- [qTox] zetok pushed 6 new commits to master: https://git.io/v6CLM
+[19:45:33] -qtox-git-spam- qTox/master 3a5e91a Andrii Zymohliad: feat(l10n): update Ukrainian translation from weblate
+[19:45:33] -qtox-git-spam- qTox/master 1b16466 Viktar Vauchkevich: feat(l10n): update Belarusian translation from weblate
+[19:45:33] -qtox-git-spam- qTox/master ba0d7ec Kaur Männamaa: feat(l10n): update Estonian translation from weblate
+[19:47:25] <zetok> except that I'm not "thrilled" about it :)
+[19:47:38] <zetok> it's just something that must be done, so I'm doing it
+[19:47:53] <zetok> (since no one else seems to be interested in doing it ATM)
+[19:49:41] <Chiitoo> I may have missed the link.  Would like to give it a read as well.  :]
+[19:50:07] <sudden6> https://gist.github.com/zetok/d2b8359fe773a70e6d2e63743d9cbb34
+[19:50:13] <Chiitoo> Danks.
+[19:58:39] <sudden6> So Chiitoo what do you think?
+[19:59:00] <Chiitoo> Still reading.
+[19:59:22] <Chiitoo> While multi-tasking a bit hehe.
+[19:59:22] <sudden6> oh^^
+[19:59:40] -qtox-git-spam- [qTox] zetok opened pull request #3606: docs: update CHANGELOG.md for v1.5.0 release (master...changelog) https://git.io/v6Cmz
+[20:06:43] <zetok> updated post slightly
+[20:07:13] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:08:36] <sudden6> I would write "The change nicely"
+[20:09:03] <sudden6> "is not a "one man project" anymore"
+[20:09:04] <Chiitoo> Hmmm.  Yeah, I'm not sure I'd put those line in there either.  Not super against them, but I'm not sure it needs to be said.  All in all, the same idea might be possible the convey by saying something like “it simply makes sense to have a blog for qTox itself, as it is its own project”.  Or/and something like “tox.chat bloggers didn't agree to post stuff there” or so.  Not necessarily with these words exactly, but you see what I mean maybe.
+[20:09:06] <Chiitoo>   ^^
+[20:13:38] <Chiitoo> Also “There are also issues with tox.chat website itself.” feels a bit... weird alone.  Maybe mention something like, for example the information with regards to the available packages.  Or not.  Just thinking out-loud.  :D
+[20:14:30] <zetok> yep, thanks :)
+[20:16:30] <zetok> updated
+[20:16:57] <zetok> >All in all, the same idea might be possible the convey by saying something like “it simply makes sense to have a blog for qTox itself, as it is its own project”.
+[20:17:05] <Chiitoo> A minor grammar note on “no useful informations for debugging”: usually 'information' (as in non-plural) makes more sense maybe.
+[20:17:11] <zetok> I doubt about that
+[20:17:59] <zetok> (grammar corrected)
+[20:18:16] -qtox-git-spam- [qTox] iphydf opened pull request #3607: chore: Return a well-defined value from setAutorun. (master...return-value) https://git.io/v6C3i
+[20:20:57] <zetok> Chiitoo: the issue is that there's simply lots of hostility associated with tox.chat, and that's the idea that post might convey, while at the same time not obnoxiously waver the banner of "they're bad"
+[20:21:26] <zetok> wave*
+[20:21:56] <sudden6> for me it conveys a very hostile message
+[20:22:25] <zetok> >.<
+[20:22:29] <sudden6> I think that this shouldn't be in the "Release post" of the blog
+[20:22:44] <sudden6> or the post announcing a new update
+[20:22:57] <sudden6> or in the official qTox blog at all...
+[20:22:58] <zetok> well, I've tried to cut down the hostility emanating from tox.chat the best I could, while still preserving the content
+[20:25:27] <zetok> which makes me wonder how hostile tox.chat really is to people who don't have a thick skin
+[20:25:34] <zetok> hmm.
+[20:26:03] <zetok> anyway; anyone else who thinks that this stuff is a bad idea™?
+[20:26:25] <sudden6> What I want to say is, everything in this blog will be closely associated with qTox as a project and the members of this project, so opinions posted there should also ~reflect opinions of all members
+[20:26:39] <zetok> ok
+[20:26:46] <sudden6> see what the Trump post did to tox.chat
+[20:27:06] * zetok has heard echo of that
+[20:27:34] <zetok> ok
+[20:28:06] <sudden6> yeah, there was constant bashing in #tox because not everone got the joke...
+[20:28:26] <zetok> good thing I didn't really include jokes ^_^
+[20:28:27] <Chiitoo> If I were in a vote, I'd likely be with sudden6.  Talking too much about their issues might make it look like it's US versus THEM now, or something like that.
+[20:29:00] <sudden6> text only and jokes don't always mix well^^
+[20:29:10] <sudden6> that's why I like memes :D
+[20:29:31] <zetok> I think that I might have a pic/gif/something for it
+[20:29:34] <zetok> lemme see
+[20:30:04] <sudden6> you could add a cat pic to the blog post
+[20:30:16] <sudden6> everyone on the internet likes cats^^
+[20:33:13] <zetok> aw, can't find a pic :f
+[20:33:59] <sudden6> zetok ran out of cat pics, everybody run!!!!
+[20:34:34] <zetok> https://i.imgur.com/nVUsmjP.png ← found it, memes at their best :|
+[20:35:26] <zetok> as for cat pics; https://i.imgur.com/0MkY8.jpg
+[20:35:58] <Chiitoo> I don't enjoy/follow memes/social media, but even I've seen that iMicrowavephone one!
+[20:36:31] <zetok> https://i.imgur.com/bm2OUBm.jpg :3
+[20:37:20] <sudden6> I've seen the water resistant and the microwave one, hilarious^^
+[20:38:02] <zetok> I got some other pic about memes, but it's rather unpleasant
+[20:43:22] <sudden6> zetok: what about http://giphy.com/gifs/13HBDT4QSTpveU/html5
+[20:43:27] <sudden6> happy qToxing
+[20:44:12] <zetok> https://i.imgur.com/YQEiHPb.jpg ;)
+[20:44:39] <sudden6> I don't like apple, but ok^^
+[20:45:09] <sudden6> or maybe that's even good, because qtox on macos ;)
+[20:47:09] <zetok> https://a.uguu.se/P1TqesqkH1Qs.gif ← incoming new qTox update, faster, better, stronger than ever before ;D
+[20:48:35] <sudden6> hmm
+[20:48:47] <sudden6> difficult decision
+[20:49:41] <sudden6> last one is also very good, but would need to be rehosted to a more permanent host
+[20:55:03] <sudden6> zetok: anything else that needs to be done for the release?
+[20:55:20] <sudden6> I think it's just missing the tag right?
+[20:55:31] <zetok> "missing"
+[20:55:52] <zetok> once it builds on osx, it will be good to add tag
+[20:56:06] <zetok> s/good/ready/
+[20:56:56] <sudden6> ah, changelog is still stuck on travis
+[21:00:42] <zetok> ok, restarted the job
+[21:03:05] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[21:03:23] *** Joins: sudden6 (~anonymous@ )
+[21:04:19] <zetok> sudden6: um, I'm going to make a one last change to changelog
+[21:04:45] <sudden6> zetok: can you ping me when it's done? I want to wittness the glorious release of qTox 1.5 ;)
+[21:04:54] <sudden6> ok, what?
+[21:05:14] <zetok> sudden6: pushed
+[21:05:24] *** Joins: initramfs (~initramfs@ )
+[21:05:28] <zetok> initramfs: o/
+[21:05:53] <initramfs> zetok: I don't get the reference lol
+[21:06:14] <zetok> waving hand :)
+[21:06:48] <initramfs> Ah
+[21:07:38] <zetok> https://gist.github.com/zetok/d2b8359fe773a70e6d2e63743d9cbb34 ← opinions?
+[21:10:21] <sudden6> zetok: I thought we agreed on taking out the three paragraphs
+[21:10:40] * zetok didn't agree
+[21:11:42] <sudden6> ok, then I misinterpreted that part of your responses
+[21:11:48] <initramfs> Is there any reason that there is no link to tox.chat
+[21:12:06] <zetok> yes, there's no reason to link to it
+[21:12:15] <initramfs> Okay
+[21:13:03] <sudden6> zetok: you have a typo in the last line: THe
+[21:13:36] <zetok> fixed, thanks
+[21:14:25] <initramfs> "A bit of an old news by now" -> "A bit of old news by now"?
+[21:15:21] <zetok> done
+[21:15:30] <zetok> at this rate I might just make a PR
+[21:15:41] <initramfs> "To add post, one needs to just add a file in _posts/ directory," Perhaps a link to the _posts/ folder? e.g. https://github.com/qTox/blog/tree/gh-pages/_posts
+[21:15:58] <sudden6> I still vote for removing paragraph 3 4 5 from "The Blog"
+[21:16:45] <sudden6> also "To add a post"
+[21:17:55] <zetok> done
+[21:18:57] <Chiitoo> If it's the news that are a bit old, then 'a bit old news' even.  Hee hee.
+[21:19:42] <initramfs> sudden6: Which paragraphs do you refer to? Mind giving me the first sentence?
+[21:20:41] <sudden6> initramfs: "Then a light in the tunnel appeared ..." to "Thus, blog was also needed."
+[21:21:53] <initramfs> Actually in that note: "Thus, blog was also needed." -> "Thus, this blog was also needed." ?
+[21:22:50] <sudden6> initramfs: what do you think about removing those paragraphs?
+[21:22:52] <initramfs> It does seem a bit hostile...
+[21:23:07] <initramfs> Well
+[21:23:18] <initramfs> I see that as some sort of rationale for the blog
+[21:23:27] <initramfs> Though I believe it can be phrased differently
+[21:23:48] <initramfs> Because I get this impression that we aren't very fond of those who work on tox.chat
+[21:24:02] <zetok> we aren't
+[21:24:07] <initramfs> I guess
+[21:24:10] <sudden6> we already had a bit of a discussion about that
+[21:24:20] <initramfs> But I don't think it's in good faith to publicize it
+[21:24:29] <initramfs> At least not in a blog post
+[21:24:35] *** Joins: cisc (~cisc@ )
+[21:24:43] <sudden6> where you'd be the 3rd person with this opinion
+[21:24:51] <zetok> :)
+[21:26:29] <initramfs> I mean, personally, I guess I haven't had to deal with them that much so I don't know what they're like. But it's not exactly a good thing to publicly "go against" if you will, tox.chat (or toxcore for that matter)
+[21:26:36] <zetok> changed
+[21:26:52] <sudden6> initramfs: https://gist.github.com/sudden6/7ff02c55830ba2d4077cfc57332556c9 last 1h of disscussion if you want to read it
+[21:27:39] <initramfs> Okay, let me read
+[21:29:48] <zetok> sudden6: uh, sorry for the delay, I've found (hopefully) last error in changelog
+[21:29:57] <zetok> (just as I was merging it)
+[21:30:04] <initramfs> You're merging it now?
+[21:30:23] <sudden6> zetok: should have spotted that..
+[21:30:35] <sudden6> * I should
+[21:31:07] <zetok> initramfs: as soon as it passes review ( :| ) and builds on travis
+[21:31:16] <initramfs> Okay
+[21:31:18] <initramfs> Sure
+[21:31:33] <initramfs> Mind waiting till I take a look at it later?
+[21:31:38] <sudden6> review is done
+[21:32:14] <initramfs> I mean, as I see it right now
+[21:32:20] <initramfs> There are a bunch of invalid links
+[21:32:33] <zetok> sure :)
+[21:33:22] <sudden6> ok, I'll have to miss the release then
+[21:33:38] <sudden6> good night everybody :)
+[21:34:09] <zetok> sleep well :)
+[21:34:49] <initramfs> Good night
+[21:37:09] <Chiitoo> NightZzz
+[21:38:07] <nurupo> zetok: your irc log link in "You might be wondering why a Blog is needed, if there is already one under tox.chat. Well, basically posts about qTox are not welcome there." is wrong, since grayhatter is not related to tox.chat, in fact he has its own letstox.com
+[21:39:29] <zetok> at the time though he was the one to go to when it comes to tox.chat blog
+[21:40:00] <nurupo> nope
+[21:40:10] <zetok> welp, that's what I was told
+[21:40:21] <nurupo> he was just a guest editor for a blog post about multidevice
+[21:40:42] <zetok> err
+[21:40:46] <nurupo> he didn't have access to the blog before that and he doesn't have access to it now
+[21:41:57] <zetok> not what I've heard, but ok
+[21:43:53] <zetok> https://github.com/qTox/qtox-irc-logs/blob/c04097e6f3493708346f32b810c0bae250446b1d/2016/06/%23qtox_20160605.log.txt#L170 ← and I've heard it from you
+[21:45:13] <nurupo> zetok: also "tox.chat website does not have any support for its localization." is incorrect. the new website platform has support for localization, i'm just waiting for someone web-dev savvy to update the website contents and rework Downloads page before allowing people to translate, because the website is a bit outdated and translating it now would be a waste of everyone's time
+[21:47:52] <zetok> updated part about localization
+[21:48:07] <initramfs> zetok: I've published my review for the changelog
+[21:48:55] <nurupo> ><zetok> not what I've heard, but ok <-- do you remember ovalseven8 making a tox meeting where we decided to let grayhatter handle PR? so grayhatter started by writing a blog post on multidevice as a guest editor, but then he said he didn't like people reviewing his blog post and changing wordings, so he quit :\
+[21:52:58] <zetok> nurupo: I see
+[21:53:17] <zetok> I'll change that part later, once I have some idea what to write there
+[21:53:26] <zetok> (and obviously before posting)
+[21:54:15] <initramfs> "You might be wondering why would it be needed, since there is already tox.chat website?" -> "You might be wondering why would it be needed, since there is already the tox.chat website?"
+[21:54:36] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:54:46] <initramfs> [adds "the" in front of 'tox.chat', you can use "a" as well]
+[21:55:10] *** Joins: cisc (~cisc@ )
+[21:56:15] <zetok> nurupo: and thanks for correction :)
+[21:56:37] <nurupo> zetok: what i mean is it's not very fair to talk about tox.chat referring to a behaviour of a person who got assigned to a task and has quit
+[21:56:42] <zetok> initramfs: I can remove the "video dev" from changelog, but I thought that it would be nice to expose it a bit to people
+[21:56:59] <initramfs> Sure
+[21:57:25] <initramfs> It was just some clarification, just incase you thought the changelog was getting long
+[21:57:40] <zetok> nurupo: it does reflect quite nicely on people who thought that given person is fine for the job
+[21:57:49] <initramfs> Most of it is already pretty technical, no harm leaving it in
+[21:59:32] <Chiitoo> initramfs: If changing that, mayhap also change: “why would it be” to “why it would be”.  :]
+[22:00:02] <nurupo> zetok: why do you have to be so toxic?
+[22:00:41] <initramfs> Chiitoo: Agree
+[22:00:52] <Chiitoo> Toxic... hee hee.
+[22:01:45] <nurupo> i'd say that it's also not very nice to pick on tox.chat website saying that it doesn't support translations (it actually supports them, it just doesn't have them) and qtox website does from day 0, when qtox website is essentially a fork of the previous tox website
+[22:02:07] <zetok> >it just doesn't have them
+[22:02:23] <zetok> that's precisely what is written now :)
+[22:03:05] <nurupo> at least you have changed the wording to be more accurate then
+[22:03:57] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[22:04:06] <zetok> >why do you have to be so toxic?
+[22:04:38] <zetok> nurupo: tox.chat simply doesn't deserve anything better from me
+[22:05:06] <zetok> nor IMO from other people, but it's up to them to make mistakes
+[22:07:54] <zetok> note though that; amount of toxicity from tox.chat > amount of toxicity I have for tox.chat > amount of toxicity I could post on my own blog if I thought that having one is a good idea > amount of toxicity on qTox blog
+[22:08:22] <zetok> and amount of toxicity on qTox blog should be as small as possible, preferably 0
+[22:09:49] <zetok> also, it's worth to note that I'd prefer if someone else wrote the blog post(s) for qTox, and I'm doing it only because no one else seems to be interested in doing that ATM
+[22:10:16] <nurupo> heh, i feel you on that one
+[22:10:50] <initramfs> World peace anyone?
+[22:11:02] <zetok> not possible
+[22:11:05] <nurupo> it seems no one does anything in tox.chat but me and sometimes oranges, so i take all your remarks personally
+[22:11:32] <zetok> initramfs: not physically impossible, but given the nature of people it's impossible
+[22:11:50] <nurupo> for example, if i had spent a week of my free time, i might have updated the website contents and maybe even reworked the Downloads pages myself, so that i could finnaly add translations
+[22:12:11] <nurupo> but sadly i don't have that much of free time to do that
+[22:12:25] <nurupo> i want to do that though
+[22:12:26] <zetok> >it seems no one does anything in tox.chat but me and sometimes oranges, so i take all your remarks personally
+[22:12:43] <zetok> nurupo: sorry, I don't intend to make it sound like that
+[22:13:15] <zetok> nurupo: if I wanted to say something about particular individuals, I'd just say it
+[22:14:14] <zetok> nurupo: you have (recently?) gained a page with people listed on it, and those are people I have on mind when saying "people behind tox.chat"
+[22:15:59] <zetok> on a side note, IMHO it's rather sad seeing you, Impyy and oranges wasting your time there :(
+[22:16:18] <nurupo> i think we had that page for a while now, the ugly table with fuly empty first column https://tox.chat/about.html and there is also a table saying who manages what https://wiki.tox.chat/infrastructure/services
+[22:16:26] <nurupo> *fully
+[22:17:17] <zetok> yep, `about` it is
+[22:17:37] <nurupo> zetok: i kind of like "wasting" my time on tox
+[22:17:48] <zetok> Tox ≠ tox.chat
+[22:20:30] <zetok> >.<
+[22:20:42] <nurupo> for me tox.chat is just a group of people in charge of infrastucture designed to help tox community
+[22:20:45] <zetok> and I forgot to push changes >.<
+[22:21:04] <zetok> initramfs: ↑ sorry about, I've pushed, review?
+[22:21:07] <nurupo> it might be doing poor job at the moment, since almost no one seems to be active, but i'm stil ltrying
+[22:23:10] <zetok> >for me tox.chat is just a group of people in charge of infrastucture designed to help tox community
+[22:23:23] <zetok> so, it's not limited to just that
+[22:23:35] <initramfs> zetok: Okay, shall do now.
+[22:23:40] <zetok> initramfs: thanks :)
+[22:24:03] <nurupo> would be nice if other tox.chat people would be more active or other people would help out more, but it;s all volunteer work, so i can't really demand anything from anyone
+[22:24:16] <zetok> :D
+[22:24:45] <zetok> that's not the issue though
+[22:25:39] <zetok> and `:D` is about thinking in categories of "forcing" people
+[22:25:45] <zetok> it's a wrong approach
+[22:32:32] <initramfs> zetok: Reviewed, and lgtm
+[22:32:41] <zetok> thanks :)
+[22:38:15] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v6CKK
+[22:38:15] -qtox-git-spam- qTox/master 11419fe Zetok Zalbavar: docs: update CHANGELOG.md for v1.5.0 release
+[22:40:21] <zetok> and we have qTox v1.5.0 \o/
+[22:40:52] <zetok> tux3: ↑ would be good to have v1.5.0 builds for windows
+[22:46:59] <initramfs> Push to the stable branch too?
+[22:48:42] *** Quits: Dragofix (Dragofix@ ) (Quit: Closing software...no errors - yet)
+[22:53:07] *** Joins: Darky (~Darky@ )
+[22:53:54] <zetok> tux3 will push to `stable`
+[22:54:08] <zetok> v1.5.0 is tagged, and that would be it
+[22:54:15] <initramfs> Okay
+[22:57:42] <initramfs> Umm
+[22:57:48] <initramfs> Travis failed to deploy
+[22:58:15] <initramfs> For the MacOS release that is
+[23:00:35] <zetok> great.
+[23:00:37] <zetok> :/
+[23:01:12] <zetok> https://github.com/qTox/qTox/blob/master/.travis/travis.sh#L19,L20 of course it did
+[23:01:17] <zetok> :(
+[23:01:55] <initramfs> Hmmm....
+[23:02:17] <zetok> Yes.
+[23:02:25] *** Joins: Dragofix (Dragofix@ )
+[23:02:41] <zetok> qTox really could make some use of someone with OSX, or something
+[23:04:41] <initramfs> What happened to RowenStipe
+[23:05:45] <zetok> life
+[23:05:52] <initramfs> Right
+[23:06:03] <zetok> i.e. he doesn't have time for qTox any longer
+[23:06:20] <initramfs> Does the travis script "release" on pushes to master?
+[23:06:31] <zetok> nope, only on tags
+[23:06:31] <initramfs> Or is there a separate "release" mechanism
+[23:06:34] <initramfs> Ah
+[23:06:41] <initramfs> So once you push a tag, it releases?
+[23:07:17] <initramfs> I can test with that last line uncommented on my fork of qTox, I have travis setup there
+[23:09:00] *** Joins: stvlker (~stvlker@ )
+[23:09:56] <zetok> uh, I don't remember by now
+[23:10:06] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[23:10:11] <initramfs> No matter, I'll try anyway
+[23:10:17] <zetok> err
+[23:10:31] <zetok> sorry, it's a bit late, nvm what I've said earlier
+[23:11:13] <zetok> it won't deploy if last line will be uncommented, but it will (try to) build a .dmg file, which then would be deployed on tag push to qTox/qTox
+[23:11:32] <zetok> i.e. the broken thing is building the .dmg, deploying would work otherwise
+[23:11:52] <zetok> (and just building a .dmg should be always tested IMO)
+[23:14:33] <initramfs> Yeah I figured that out
+[23:14:52] <initramfs> I'm testing if the dmg build works
+[23:16:04] <initramfs> We should really use clang, these compile times...
+[23:20:22] <zetok> isn't clang slower?
+[23:21:04] <initramfs> Thought it was faster lol
+[23:21:11] <initramfs> Anyhow I can benchmark later
+[23:21:33] <initramfs> I've been compiling qTox with clang (personal use) for the last few months lol
+[23:23:02] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[23:23:36] *** Joins: cisc (~cisc@ )
+[23:23:57] <Chiitoo> RowenStipe needs spanks for “You seemed to of started” hehe.  (I think I nagged about that in the past, hmmm.)
+[23:25:20] <Chiitoo> Also parsing 'ls' output, aww.
+[23:26:05] <initramfs> zetok: Okay, clang 55.64s, gcc 56.05s I guess it don't matter...
+[23:27:43] <initramfs> zetok: The mac os deployment script works
+[23:28:03] * zetok hates osx
+[23:28:10] * initramfs does too
+[23:28:27] <initramfs> So...
+[23:28:30] <initramfs> What to do?
+[23:28:40] *** Joins: dardevelin (~dardeveli@ )
+[23:28:58] <initramfs> Emergency push a commit that uncomments the mac os deployment?
+[23:28:58] <zetok> uncomment, commit, PR, merge, make a "special OSX release" again ;_;
+[23:29:03] <initramfs> Lol
+[23:29:10] <initramfs> Shortest release cycle ever
+[23:29:30] <initramfs> Look at how fast we work, v1.5.1 is here already!
+[23:32:40] <initramfs> zetok: Are you gonna do it? Or should I?
+[23:32:58] <zetok> initramfs: um, it kinda sounded like you have it already done?
+[23:33:03] <zetok> (the commit part)
+[23:33:32] <initramfs> zetok: Wait, can I push to master directly?
+[23:33:39] <zetok> nope
+[23:33:46] <zetok> ?
+[23:33:47] <initramfs> So PR then?
+[23:33:58] *** Joins: ovalseven8 (~ovalseven@ )
+[23:34:04] <zetok> initramfs: that is, you can push "directly" whatever passes the checks
+[23:34:28] <zetok> i.e. travis & reviewable
+[23:34:40] <zetok> same goes for other maintainers, including me
+[23:34:41] <initramfs> zetok: Right
+[23:35:01] <zetok> + merging PRs
+[23:35:22] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:35:36] <zetok> (since "empty" merge commit isn't required to pass checks, only commits in the PR)
+[23:36:20] <initramfs> I see
+[23:36:41] <zetok> so yeah, PR :)
+[23:36:58] <zetok> I'll review, and you'll push :)
+[23:37:56] *** Joins: cisc (~cisc@ )
+[23:42:00] -qtox-git-spam- [qTox] initramfs opened pull request #3608: Allow deployment of OSX dmg binary for travis deployment (master...fix-mac-build) https://git.io/v6CSY
+[23:42:00] <initramfs> PR created: https://github.com/qTox/qTox/pull/3608
+[23:45:34] <zetok> thanks :)
+[23:51:51] <initramfs> I've re-pushed based on your review
+[23:54:05] <initramfs> zetok: I'll merge immediately after travis succeeds
+[23:54:49] <zetok> ok
+[23:55:10] <zetok> initramfs: for tag, don't forget to sign it
+[23:55:13] <zetok> v1.5.1
+[23:55:26] <zetok> -s v1.5.1
+[23:56:59] <initramfs> Yep
+[23:58:58] <zetok> btw, what do you think about supporting Qt 5.2 again & moving to cmake ?
+[23:59:27] <initramfs> Why 5.2?
+[23:59:49] <zetok> that's what ubuntu 14.04 has
