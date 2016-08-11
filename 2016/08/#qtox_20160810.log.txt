@@ -1,0 +1,789 @@
+[00:01:04] <initramfs> Holy
+[00:01:05] <initramfs> That's old
+[00:01:06] <initramfs> Lol
+[00:01:40] <initramfs> Ehh... I don't know, I mean I don't know 5.3 added so I'm not the best person to ask.
+[00:01:58] <initramfs> I don't know what 5.3 added*
+[00:03:29] <initramfs> To me the annoying the is that Qt only added HiDPI scaling in Qt 5.6, and qTox has a bunch of broken HiDPI stuff I need to fix (someone broke the desktop screenshare again... sigh)
+[00:04:05] <initramfs> But I don't we can force people to Qt 5.6+, so things get a bit tricky
+[00:04:29] <zetok> https://gist.github.com/zetok/f4e673e06605a0c3bd50d69a87abffc5 ← part of relevant discussion from #toktok
+[00:04:39] <zetok> I see
+[00:04:48] <zetok> :|
+[00:06:31] <initramfs> Well
+[00:07:05] <initramfs> The thing is, based on what I read there, you can always perform conditional compilation on Qt versions for features
+[00:07:13] <zetok> yeah
+[00:07:15] <initramfs> It should be easy if it's only a few features here and there
+[00:07:28] <initramfs> In fact, that's how I got around the HiDPI scaling issue for Qt 5.6+
+[00:07:58] <initramfs> Basically "fix HiDPI for Qt 5.6+, to everyone else: I'm so sorry" lol
+[00:08:17] <zetok> yeah, this is fine
+[00:08:43] * zetok 's Gentoo has been updated to Qt 5.6
+[00:08:49] <zetok> ;D
+[00:09:21] <initramfs> Lol
+[00:09:51] <initramfs> Well, yeah, if it's only a few features here and there, I don't see a reason why not to support Qt 5.2
+[00:11:25] <initramfs> Oh, for the tag message, should I just copy what you put for v1.5.0?
+[00:14:23] <initramfs> Okay, I did. It seems reasonable, I'm going to push to master now
+[00:14:27] <zetok> initramfs: https://github.com/qTox/qTox/releases/tag/v1.4.1.1 sounds more appropriate
+[00:14:32] <initramfs> Oh
+[00:14:34] <initramfs> Okay
+[00:14:35] <initramfs> Let me see
+[00:14:40] <zetok> (the message, not the version)
+[00:14:53] <zetok> version should be just v1.5.1
+[00:15:03] <zetok> (or sudden6 will be angry)
+[00:15:37] <initramfs> Yes yes
+[00:16:45] <zetok> sorry, just making sure that what I've wrote is clear, since it's rather late here, and as I get more tired/sleepy clarity of my sentences goes down
+[00:18:14] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 258 seconds)
+[00:18:27] <initramfs> Master pushed
+[00:18:29] -qtox-git-spam- [qTox] initramfs closed pull request #3608: Allow creation of OSX dmg binary for travis deployment (master...fix-mac-build) https://git.io/v6CSY
+[00:19:41] <zetok> >.<
+[00:19:43] <zetok> oh, right
+[00:20:38] <zetok> if your commits or other maintainer are signed, reviewed, tested & build, you can just fast-forward them
+[00:20:55] <zetok> or commits of other maintainer*
+[00:21:11] <initramfs> Ah
+[00:21:22] <initramfs> Oh well... Not too much of a big deal I guess...
+[00:21:23] <zetok> since merging is only needed to make sure that stuff that goes in is GPG-signed
+[00:21:35] <initramfs> Yep
+[00:21:38] <initramfs> Lol
+[00:21:52] <initramfs> Ironically I just didn't want anything to screw up, so I used the merge script
+[00:21:53] <initramfs> Lol
+[00:22:02] <zetok> I guess I should add part about it to maintaining guide
+[00:22:09] <zetok> yeah, no problem :)
+[00:23:06] <zetok> and since things are done, night :)
+[00:23:06] <initramfs> Now we pray to the Travis overlords the OSX build doesn't randomly fail
+[00:23:20] <zetok> I'll leave that part to you ;)
+[00:23:24] <initramfs> Sure
+[00:23:25] <zetok> =.=
+[00:23:31] <initramfs> Good night, sleep well
+[00:33:57] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 265 seconds)
+[01:07:14] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[01:07:14] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:20:40] <ovalseven8> Why an extra version for MacOS? Why not also 1.5.0 for Mac?
+[01:21:51] <ovalseven8> zetok ^
+[01:23:44] <ovalseven8> tux3 ^
+[02:04:08] <initramfs> We screwed up the v1.5.0 release
+[02:04:12] <initramfs> It was already tagged
+[02:04:21] <initramfs> In order to fix it, we released a new commit
+[02:04:36] <initramfs> And thus we retagged it as v1.5.1
+[02:34:04] <cisc> you can't rename after it's tagged?
+[03:20:18] <Emcy_> the ting about "verified" commits
+[03:20:41] <Emcy_> arent we all talking githubs word for it that a commit was properly GPG signed
+[03:20:58] <Emcy_> i actually dont trust github very much
+[03:33:03] <Emcy_> no windows binary for 1.5.0 yet?
+[03:51:31] <nurupo> tux3 has to manually sign the binary and push it to qtox updater system (tm)
+[03:53:02] <nurupo> you can just get the nightly from jenkins if for some reason you don't want to wait on tux3 to push a stable release
+[03:53:39] <nurupo> Emcy_: ^
+[03:55:11] <Emcy_> nightly is equovalent to 1.5.0 tag rn?
+[03:55:27] <nurupo> 1.5.1, i think
+[03:55:30] <nurupo> let me check
+[03:56:31] <nurupo> it's caused by commit f05b7e040a073c7afadaf763dda5beaf130c6dbd
+[03:56:59] <nurupo> which is v1.5.1 https://github.com/qTox/qTox/releases
+[03:58:21] <nurupo> https://build.tox.chat/view/qtox/job/qTox_build_windows_x86-64_release/764/ https://build.tox.chat/view/qtox/job/qTox_build_windows_x86_release/677/
+[04:02:39] <nurupo> ><Emcy_> arent we all talking githubs word for it that a commit was properly GPG signed <-- you can clone the repository and check the signatures yourself, given you know public keys of people making commits
+[04:03:19] <nurupo> GPG signing is not a feature of github, it's a feature of git itself, github is just an interface for it
+[04:07:01] *** Joins: ovalseven8_ (~ovalseven@ )
+[04:08:20] <nurupo> so even if github makes a malicious commit into your repo under your name and even displays "Verified", when you git clone the repo and verify the commit's signature against your public key -- it won't match, as github would need to have your private key to properly sign it
+[04:08:40] <Emcy_> oh cool
+[04:10:34] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 260 seconds)
+[04:10:45] <Emcy_> whats your normal lead time on putting a new release on the autoupdater
+[04:14:09] <Emcy_> id have tested video with 1.5.0 nightly but apparently the antidote guy has fucked it up on his end so i couldnt test it with my pal
+[04:33:02] <nurupo> it's just whenever tux3 has time to do it, i guess
+[04:33:46] <nurupo> i don't participate in qtox development, so i'm not very informed about the qtox release procedure
+[04:45:40] <Emcy_> ok
+[04:45:51] <Emcy_> https://github.com/qTox/qTox/issues/3583#issuecomment-237345912 wrt tux3 reasoning here
+[04:46:21] <Emcy_> you know that scrypt asics were made right
+[04:46:53] <Emcy_> and before that, a gpu scrypt hasher existed
+[04:49:01] *** Joins: ccsdss (~ray@ )
+[04:49:05] *** Parts: ccsdss (~ray@ ) ()
+[04:52:36] <Emcy_> hes basing his security estimations on 0.1mhash assumption, but this shows a radeon a few years old can do well over 1 megahashes in scrypt https://litecoin.info/Mining_Hardware_Comparison
+[04:52:56] <Emcy_> at least the scrypt parameters litecoin used
+[04:56:00] <Emcy_> https://www.litecoinpool.org/pools this says a total of 1.4 scrypt terahashes p/s for litecoin overall. That must be where the asics come in.
+[04:56:21] <Emcy_> so the security assumption of something merely 10,000 times better at scrypt than his machine could be faulty
+[05:00:00] <Emcy_> i guess the asics dont matter, no one is going to do an asic run to crack tox profile scrypt (maybe NSA if tox got rly big) but gpu code could be repurposed i guess. Even FPGA code.
+[06:19:15] <initramfs> Emcy_: Yeah, I was kinda getting at that (I raised the issue). But the fact does remain that communications itself is secure, it's merely the local db files that are not (you'll need a compromise of the db file for any exploit to work).
+[06:21:04] <initramfs> emcy_: So whilst it's an serious issue (at least in my opinion), it's not an "this has to be fixed right away right now, no sleeping" issue.
+[06:25:34] *** Joins: f10_ (~flo@ )
+[06:28:43] *** Joins: f10 (~flo@ )
+[06:33:43] <zetok> Emcy_: um, it be good to post that int the issue
+[06:38:23] <zetok> s/int/in/
+[06:45:41] *** Joins: sudden6 (~anonymous@ )
+[06:58:54] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[06:59:31] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[07:03:18] *** Joins: sudden6 (~anonymous@ )
+[07:16:57] <ovalseven8_> initramfs: I see, but it looks awful :D
+[07:17:24] <ovalseven8_> initramfs: Wouldn't it have built without a new tag too?
+[07:17:28] <zetok> nope
+[07:19:38] <ovalseven8_> :(
+[07:21:53] <initramfs> zetok: Should we add something in the changelog for v1.5.1? Something like "fix OSX deployment"?
+[07:22:22] <zetok> nah
+[07:23:25] <ovalseven8_> It would make sense to "fix" things so that you're more flexible with MacOS. 1.5.0 is the same as 1.5.1 is very confusing.
+[07:27:13] <zetok> so, it depends on osx travis
+[07:27:21] <zetok> which is not something that can be fixed
+[07:30:33] <initramfs> I'll send an email to travis support, see if they can assist since I feel like this is a travis issue rather than a qTox issue.
+[07:31:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[07:37:53] <zetok> btw, I think that it would be good to edit 1.5.1 release a bit
+[07:38:13] <zetok> i.e. say in it that i's just a release for osx, and that no changes in qTox itself happened
+[07:39:17] <ovalseven8_> zetok, Is a name like "1.5.0-mac" possible?
+[07:39:34] <zetok> https://gist.github.com/zetok/86adf3b94dd82a552cbd88745a09a242 ← this is what I'm proposing
+[07:43:55] <zetok> whoops
+[07:43:57] <zetok> wrong link
+[07:44:00] <zetok> https://a.uguu.se/faCGtRuM23fW.png ← this
+[07:44:03] <zetok> ovalseven8_: ↑
+[07:44:29] <ovalseven8_> zetok: :) Yes, better
+[07:44:52] <ovalseven8_> zetok: But perhaps we can find a better solution for the future for such problems. :)
+[07:45:07] <zetok> and what would that be?
+[07:45:10] <ovalseven8_> BTW: The "stable" branch is not updated yet
+[07:45:46] <ovalseven8_> zetok: I don't know how your build/update system works. But it's not optimal for Mac
+[07:46:43] *** Joins: abbat (~Anton@ )
+[07:46:54] <zetok> yes
+[07:47:33] * zetok wonders whether to not get a second coffee
+[07:47:52] <initramfs> ovalseven8_: According to zetok, stable branch should be updated by tux3
+[07:48:38] <ovalseven8_> Perhaps delete tags and tag latest commit with "1.5.0"?
+[07:48:44] <zetok> ovalseven8_: `stable` is just used for stable windows releases
+[07:48:47] <ovalseven8_> Would be forced push however
+[07:48:53] <zetok> yeah, no
+[07:49:07] <initramfs> Well, yeah, that's gonna be very dodgy
+[07:49:30] <zetok> tag would have to be broken (no GPG signature) to remove & add it again
+[07:49:35] <initramfs> Ugly > Faking git history on master
+[07:49:40] <zetok> ↑
+[07:49:54] <ovalseven8_> initramfs: That's right, it's not a nice solution
+[07:50:38] <zetok> ok, so if no one minds, I'll just update text of 1.5.1 "release"
+[07:50:45] <initramfs> Sure
+[07:50:48] <ovalseven8_> Why not use the stable branch for Mac too?
+[07:51:17] <zetok> because branch is irrelevant
+[07:51:29] <initramfs> ovalseven8_: Right now I'm working on getting travis to auto-build qTox docs. After that I'll see if somehow we can get travis to build windows releases as well... Not sure how possible that is
+[07:51:40] <zetok> ovalseven8_: it's only there so that jenkins will know what to build for stable windows
+[07:51:59] <zetok> >After that I'll see if somehow we can get travis to build windows releases as well... Not sure how possible that is
+[07:52:06] <zetok> initramfs: and that is done :)
+[07:52:22] <initramfs> zetok: Does jenkins build it in a windows environment? Or does it cross-compile?
+[07:52:24] <zetok> not sure whether it would be a good idea to ship that though
+[07:52:31] <zetok> cross-compile
+[07:52:41] <ovalseven8_> initramfs: I see. Isn't it possible to manually select commit for build for stable releases?
+[07:52:53] <ovalseven8_> Then, the 1.5.1 tag would have been unnecessary
+[07:52:58] <zetok> initramfs: as for it being done – yesterday's log from #toktok should have a link to it done (I think?)
+[07:53:12] <initramfs> zetok: Okay
+[07:53:36] <zetok> ah, no, doesn't have it
+[07:53:41] <initramfs> ovalseven8_: no, travis is configured to only deploy OSX binaries on tagged commits
+[07:54:15] <zetok> no, wait, it does
+[07:54:20] <zetok> -.-"
+[07:54:21] <initramfs> Lol
+[07:54:31] <initramfs> ovalseven8_: or else we'd be needlessly updating OSX releases everytime master is pushed to
+[07:54:32] <zetok> https://github.com/iphydf/qTox/commit/ed76a45a8e67894022448f4a9b82d7982303e527
+[07:54:43] <zetok> at this point, 2nd coffee is really tempting
+[07:55:13] <ovalseven8_> initramfs: :/
+[07:55:27] *** Joins: f10 (~flo@ )
+[07:57:46] <initramfs> zetok: looks like iphydf is planning what I intended.
+[08:00:20] <ovalseven8_> Mh... abbat's key for signing is only available via HTTP -> http://download.opensuse.org/repositories/home:antonbatenev:tox/xUbuntu_16.04/Release.key
+[08:01:04] <ovalseven8_> zetok: Perhaps provide a HTTPS link via qtox.github.io/obs.key ?
+[08:03:30] <ovalseven8_> abbat: Or is it possible to use HTTPS for OBS?
+[08:03:58] <initramfs> zetok: what time is it there? if(time >= 1200){drink second coffee;}else{think about drinking second coffee;}
+[08:05:15] <zetok> it's middle of the day, 8 am
+[08:05:28] <abbat> ovalseven8_, You can use standard gpg enviroment to obtain key for antonbatenev@yandex.ru (for example ubuntu keyserver)
+[08:50:00] *** Quits: nightfuri (nightfury@ ) (Quit: Quit)
+[08:52:47] *** Joins: nightfuri (nightfury@ )
+[09:06:46] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:27:29] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:27:29] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[09:33:05] *** Quits: krs93 (~krs93@ ) (Read error: Connection reset by peer)
+[09:42:44] <zetok> https://github.com/qTox/blog/pull/1 ← review?
+[09:43:11] *** Joins: dardevelin (~dardeveli@ )
+[09:45:58] <zetok> I wonder about what I forgot to write about >.<
+[09:46:07] <initramfs> zetok: I shall, in a bit
+[09:46:18] <zetok> no hurry, thanks :)
+[09:52:11] *** Joins: Lord_Vlad (~Vlad@ )
+[09:54:04] <zetok> https://github.com/qTox/qTox/issues/3609 ← I have a feeling that I should somehow more explicitly state reasons about move to OBS
+[09:54:25] <zetok> i.e. info is in the post, but scattered around and not very explicity
+[09:54:27] <zetok> explicit*
+[09:55:21] <ovalseven8_> Yes
+[09:57:08] <zetok> >Perhaps provide a HTTPS link via qtox.github.io/obs.key ?
+[09:57:34] <zetok> with current setup it wouldn't work (or work well)
+[09:58:27] *** Joins: abbat (~abbat@ )
+[09:58:32] <zetok> right
+[10:04:01] <zetok> https://a.uguu.se/gB8uzyQrLHXx.png ← would that work?
+[10:07:35] *** Joins: reBrain (~reBrain@ )
+[10:08:16] <ovalseven8_> zetok, Just post the reasons. "Works" "Doesn't work" is confusing for people who didn't follow the history
+[10:08:49] <zetok> :/
+[10:09:09] <zetok> reasons are under `Linux packages & OSX builds`
+[10:10:27] <zetok> I guess I just link to that?
+[10:12:00] <zetok> ok, different wording
+[10:15:00] <initramfs> Great, The OSX builds don't work
+[10:17:52] *** Parts: reBrain (~reBrain@ ) ("Leaving")
+[10:18:08] <initramfs> There's an issue on GH where OSX 10.11.6 doesn't work. I told my friend to try it who's on OSX 10.11.4, fails out with the same error.
+[10:18:15] <initramfs> Application crash on launch
+[10:24:02] <zetok> initramfs: um, you might want to join #toktok
+[10:24:06] *** Joins: Chiitoo (~Chiitoo@ )
+[10:24:09] <initramfs> Okay
+[10:24:46] <initramfs> Wait, does the qTox application require users to have qt5 installed?
+[10:25:23] <zetok> dunno
+[10:25:32] <zetok> it probably shouldn't
+[10:26:05] <initramfs> Yeah...
+[10:35:39] <zetok> ok, improved blog post
+[10:39:16] <zetok> improved x2
+[11:02:42] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[11:04:16] *** Joins: abbat (~abbat@ )
+[11:17:06] *** Joins: reBrain (~reBrain@ )
+[11:41:08] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[11:44:22] *** Joins: f10_ (~flo@ )
+[11:56:30] *** Joins: f10 (~flo@ )
+[12:30:59] *** Joins: st4ll1 (~st4ll1@ )
+[12:35:05] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[12:35:24] <ovalseven8_> abbat, zetok: "qtox-nightly" is better than "qtox-alpha" I think
+[12:35:29] *** Joins: Lord_Vlad (~Vlad@ )
+[12:35:33] <ovalseven8_> Because more or less also the stable release is alpha software
+[12:35:42] <ovalseven8_> And then it looks like stable is not alpha
+[12:36:03] <ovalseven8_> I would call "stable" release -> "qtox" and upstream -> "qtox-nightly"
+[12:36:15] *** Quits: Lord_Vlad (~Vlad@ ) (Client Quit)
+[12:36:36] *** Joins: Lord_Vlad (~Vlad@ )
+[12:37:48] <ovalseven8_> Or "qtox-test"
+[13:04:31] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[13:17:06] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[13:45:46] *** Joins: abbat (~abbat@ )
+[13:56:29] <Chiitoo> zetok: You are the proxy maintainer of 'net-im/qtox', right?
+[14:01:39] <Chiitoo> Oh I see now that mgorny changes the order, hmmm.
+[14:02:36] *** ovalseven8_ is now known as ovalseven8
+[14:10:11] <zetok> Chiitoo: hm?
+[14:11:14] <Chiitoo> [15:53] <Marecki> Okay, let me rephrase this. Is Zetok the proxied maintainer of qtox or not?
+[14:11:16] <Chiitoo> [15:54] <Marecki> Because if he is, he should come first in metadata and be ASSIGNED bugs in qtox, not CCd on them. And if he is not, what exactly is his role here? g-p-m overseer?
+[14:11:22] <Chiitoo> [15:56] <Marecki> mgorny: It looks like in the original commit Zetok appeared first and was you in aa2f2da2006650d40d43d982eb526f9809789e85 who changed the order. I guess you know more about Zetok's status, then?
+[14:11:26] <Chiitoo> Jsut wondering hehe.
+[14:11:40] <zetok> >.<
+[14:11:52] <zetok> yeah, I'm proxy-maintaining qtox
+[14:13:08] <Chiitoo> Mhm.  Well since mgorny changes it, we'll blame him for everything.
+[14:17:34] <ovalseven8> So, "qtox-alpha" then :(
+[14:25:00] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:43:29] *** Joins: LittleVulpix (~Miranda@ )
+[15:21:36] *** Joins: stvlker (~stvlker@ )
+[15:21:43] *** Quits: stvlker (~stvlker@ ) (Remote host closed the connection)
+[15:23:24] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 250 seconds)
+[15:26:20] *** Joins: shiva__ (~LordShiva@ )
+[15:33:58] *** Joins: skrzepto (~skrzepto@ )
+[16:08:51] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 264 seconds)
+[16:16:36] <zetok> https://github.com/qTox/qTox/issues/3196 ← thoughts on whether it should be closed?
+[16:17:09] *** Joins: reBrain (~reBrain@ )
+[16:24:09] <initramfs> Is there a plan for implementation?
+[16:39:08] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[16:39:29] *** Parts: skrzepto (~skrzepto@ ) ("Leaving")
+[16:42:30] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[16:46:03] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[16:54:40] <zetok> nope
+[16:57:35] <initramfs> Given that the original GH user closed their account, and the discussion hasn't progressed on, close it with a message suggesting interested parties to voice their opinion if they want it reopened.
+[17:12:46] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[17:27:55] -qtox-git-spam- [qTox] initramfs opened pull request #3614: Automatically deploy doxygen documentation on master branch pushes via travis (master...feat-doxy-docs) https://git.io/v6lVM
+[17:28:56] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:39:39] <zetok> initramfs: can doxygen fail to build docs?
+[17:39:50] <initramfs> Doesn't look it it
+[17:39:53] <zetok> e.g. because of syntax error, or something?
+[17:39:58] <initramfs> It just puts a boatload of warnings
+[17:40:12] <initramfs> Which I shall fix, when I have time... lol
+[17:40:20] <initramfs> But no, it doesn't seem to crash
+[17:40:23] <zetok> can it be made to fail on warning?
+[17:40:32] <initramfs> I was looking for that too
+[17:40:34] <zetok> err
+[17:40:37] <initramfs> But I don't see any option
+[17:40:40] <zetok> I don't care whether it crashes
+[17:40:49] <zetok> what is important, is its exit status
+[17:40:59] <initramfs> You want the docs to fail travis right? To enforce correct documentation?
+[17:41:05] <zetok> yep
+[17:41:17] <initramfs> Yeah I was thinking that too
+[17:41:37] <initramfs> I need to find how to make doxygen return an error code (I don't think it does even with warnings, but I'll have to check)
+[17:41:45] <initramfs> The other issue is, there are already a boatload of warnings
+[17:42:01] <initramfs> I don't want to have travis fail due to documentation just yet
+[17:42:15] <initramfs> Since then all PRs will get clogged up until the existing docs are fixed
+[17:46:57] <zetok> 66 warnings
+[17:47:08] <zetok> doesn't sound like much?
+[17:49:16] <zetok> hmm
+[17:49:31] <initramfs> Well...
+[17:49:41] <zetok> there's apparently `WARN_AS_ERROR`, but I can't get it to work for some reason
+[17:49:42] <zetok> "work"
+[17:49:54] <zetok> >If the WARN_AS_ERROR tag is set to YES then doxygen will immediately stop when a warning is encountered.
+[17:50:08] <initramfs> Tag? So in the config file?
+[17:50:18] <zetok> I've put it in doxygen.conf, and it doesn't seem to do anything :f
+[17:50:52] <zetok> http://www.stack.nl/~dimitri/doxygen/manual/config.html#cfg_warn_as_error
+[17:51:54] <initramfs> Yeah... me too.. I just tried it... no results
+[17:52:23] <zetok> great.
+[17:53:16] <initramfs> Well
+[17:53:17] <zetok> the alternative is to redirect doxygen output to file, and fail if grep finds any warnings :s
+[17:53:18] <initramfs> I mean
+[17:53:23] <initramfs> Well yeah
+[17:53:25] <initramfs> I was gonna say
+[17:53:37] <initramfs> By default, doxygen sends all warnings to stderr
+[17:53:40] <initramfs> And nothing else
+[17:53:59] <initramfs> 1. Redirect stderr 2. Check if there is anything there
+[17:54:28] <initramfs> If there is, there are warnings (or something went wrong)
+[17:57:33] <zetok> doxygen doxygen.conf 2>&1 1>/dev/null | egrep -i '(warning|error)
+[17:57:43] <zetok> '
+[17:58:31] <zetok> perhaps s/-i //
+[17:58:34] <initramfs> Oh god
+[17:58:45] <initramfs> Lol
+[17:59:54] *** Joins: st4ll1 (~st4ll1@ )
+[18:02:45] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[18:03:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[18:03:37] <initramfs> I think we should add doc checks later... Put a notice out that documentation will now be checked first and clean up all the warnings.
+[18:04:50] <initramfs> Because if we add it now, either this PR gets delayed until everyone fixes the docs or that no PRs can happen until all the docs are cleaned up.
+[18:09:02] <zetok> um, check should be added, but not enforced
+[18:12:12] <zetok> check with something like "uncomment to make it fail on warnings"
+[18:12:21] *** Joins: Chiitoo (~Chiitoo@ )
+[18:14:41] <initramfs> Hmm
+[18:20:24] *** Joins: reBrain (~reBrain@ )
+[18:20:55] *** Quits: reBrain (~reBrain@ ) (Remote host closed the connection)
+[18:29:38] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[18:33:52] <initramfs> Wait
+[18:33:56] <initramfs> I got it to work
+[18:34:02] <initramfs> The WARN_AS_ERROR thing for doxygen
+[18:34:18] <initramfs> Exit code is being set too
+[18:35:55] <zetok> ooh?
+[18:42:08] <zetok> initramfs: um, re: RtAudio PR; antis81 did put ID in the top post
+[18:42:17] <zetok> (and he's online right now)
+[18:42:22] <initramfs> Oh
+[18:42:24] <initramfs> Okay
+[18:42:26] <initramfs> One sec
+[18:42:54] <initramfs> I'm responding to your review
+[18:44:13] <initramfs> Ah oops, I forgot to mention I'm initramfs in my friend request
+[18:48:08] *** Joins: f10_ (~flo@ )
+[18:49:05] *** Joins: f10 (~flo@ )
+[19:05:07] <tux3> So we're ready to release v1.5?
+[19:05:10] <tux3> zetok, ^
+[19:05:15] *** Joins: ovalseven8 (~ovalseven@ )
+[19:05:28] <zetok> out there in the wild
+[19:06:09] <tux3> It's not in stable though?
+[19:06:49] <zetok> yep, not pushing to stable is a nice indicator of when you'll push update to stable windows :)
+[19:07:04] <zetok> https://github.com/qTox/blog/pull/1 ← needs review
+[19:07:15] <initramfs> Well, OSX is broken...
+[19:07:22] <initramfs> But linux seems fine
+[19:07:29] <tux3> zetok, Ok :) Can you do the push to stable now, and I'll push that to the auto-updater when it's ready?
+[19:07:49] <tux3> zetok, since you know how to make the changelog thing work better than me ...
+[19:08:00] <zetok> :|
+[19:08:15] <tux3> You have to use a special clog binary, right?
+[19:08:40] <zetok> wait, why would regenerating changelog be needed?
+[19:08:50] <initramfs> zetok: there are merge conflicts between the stable and master branches, those are just the links I rewrote, so you can just use "ours" over "theirs" when resolving conflicts
+[19:09:00] <tux3> zetok, Oh I though it was needed, if it isn't, all the bettr
+[19:09:29] <zetok> git branch -D stable && git checkout v1.5.0 -b stable && git push -f qtox stable
+[19:09:58] <tux3> uuuh let's not start deleting and force pushing branches!
+[19:10:03] <tux3> A rebase should do!
+[19:10:13] <zetok> err
+[19:10:22] <zetok> eh :/
+[19:12:06] <zetok> tux3: why would you do rebase?
+[19:12:25] <tux3> zetok, otherwise if stable diverged from master, you won't be able to push
+[19:12:33] <tux3> That would be rewritting the history
+[19:14:41] <zetok> what
+[19:14:50] <zetok> stable is already diverged
+[19:15:03] <tux3> Yes...
+[19:15:17] <tux3> So if you delete it and replace it with v1.5.0, you're overwritting the history
+[19:15:28] <zetok> nope
+[19:15:31] <tux3> git log v1.5.0..stable
+[19:15:46] <zetok> stable is tagged, isn't it
+[19:15:53] <tux3> That returns 5 commits that are in stable, but not in v1.5.0
+[19:15:56] <zetok> so all history is kept
+[19:16:08] <zetok> → no rewriting
+[19:16:19] <tux3> If you delete the branch and push 1.5.0, those 5 commits would magically disappear from the history..
+[19:17:08] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[19:17:23] <tux3> Try it if you want! Make a non-force push of v1.5.0 to stable, Git will reject it because it overwrite history!
+[19:17:48] <zetok> git log v1.5.0..v1.4.1 ← this is what you should be looking at
+[19:18:41] <tux3> That's the same as v1.5.0..stable with 06d78dc omitted..
+[19:19:21] <zetok> git log v1.5.0..v1.4.1.1 ← *fixed*
+[19:19:56] <zetok> as you see, all history is kept
+[19:20:07] <zetok> nicely, neatly tagged & stored
+[19:22:18] <tux3> Okay either we're not looking at the same repo, or you're trying really hard to prove my point :D
+[19:22:46] <tux3> git log v1.5.0..v1.4.1.1 --pretty=oneline <-- This is the commits in v1.4.1.1 that are NOT in v1.5.0, this is where stable diverged from master
+[19:23:11] <tux3> git log v1.4.1.1..v1.5.0 --pretty=oneline <-- This is the commits in v1.5.0 that are NOT in v1.4.1.1, this is the actual new commits in v1.5.0
+[19:24:34] <tux3> You'll notice that there is a difference because v1.4.1.1 and v1.4.0 were tagged on stable, whereas v1.5.0 was tagged on master for some reason
+[19:24:50] <tux3> (git branch --contains vX.X.X to check)
+[19:25:13] <tux3> So, no force pushing please :) !
+[19:25:49] <zetok> WTF.
+[19:27:17] <zetok> you know, all the stuff you've written is either bullshit, or irrelevant
+[19:27:24] <tux3> ...
+[19:28:05] <zetok> So I'm just wondering.
+[19:29:32] <zetok> if you like wasting time, feel free to do the changelog again
+[19:29:50] <zetok> though
+[19:30:24] <zetok> your notes about commits missing in 1.5.0 are ~invalid, since "missing" stuff was just a patched 1.4 with cherry-picked commits from master
+[19:31:20] <tux3> I don't know, but we must be talking past each other or something.
+[19:31:41] <zetok> yes
+[19:31:43] <tux3> If you do this "git branch -D stable && git checkout v1.5.0 -b stable && git push -f qtox stable", it will breaks things for everyone, and I will not be happy. Please don't.
+[19:32:02] <tux3> As a rule of thumb if you have to force push to make it work, you're doing it wrong
+[19:32:41] <zetok> um, no one should depend on history in "stable"
+[19:33:15] <zetok> `master` is something that shouldn't break, while `stable` AFAIK is only kept for jenkins
+[19:33:19] <tux3> If anyone so much as pulled from stable, they depend on the history, yes. Rewritting the history would completely break everything.
+[19:33:30] <zetok> break jenkins?
+[19:33:46] <tux3> If you're arguing that the branch called stable should be allowed to break, no...
+[19:34:05] <tux3> It wuold break every git repo that pulled that branch.
+[19:34:14] <zetok> right, we should change its name
+[19:34:19] <tux3> ....
+[19:34:21] <zetok> since it's misleading
+[19:34:28] <zetok> good point.
+[19:34:35] <tux3> zetok, don't force push to stable, and everything will be fine.
+[19:35:10] <zetok> no problem, I'm just not pushing to stable at all :)
+[19:35:49] <zetok> the problem at hand (2 of them actually) is misperception
+[19:36:15] <zetok> i.e. you seem to perceive "stable" branch as something necessary that shouldn't break and should contain stable version
+[19:37:09] <zetok> which perception IMO is wrong, given that the same is achievable with the tags, that *are not to be changed*
+[19:37:32] <tux3> No, what I'm saying isn't for the stable branch in particular, it's for EVERY git branch in EVERY git repository. If anyone might have pulled from a branch, you can NOT force push to it, because it would horribly break things for the people who pulled.
+[19:37:54] <zetok> and the only remaining use-case for having branch other than `master` is jenkins, which can handle force-pushing just fine
+[19:38:11] <zetok> >If anyone might have pulled from a branch, you can NOT force push to it, because it would horribly break things for the people who pulled.
+[19:38:15] <zetok> that's bullshit
+[19:38:20] <tux3> Jenkins wipes everything and re-clones from scratch, so it's not a problem
+[19:38:28] <tux3> That is *NOT* bullshit.
+[19:39:13] <zetok> bullshit in a sense of expecting all of your branches to never require force-pushing, something that you did even on master
+[19:39:42] <tux3> I'm very serious here. If you force push to master 5s after making a mistake, that sucks and you should avoid it, but probably no one pulled in those five seconds, so in practice it'll be alright.
+[19:40:06] <tux3> If you force push to a branch to rewrite month old history... what the hell, no.
+[19:40:16] <zetok> I agree with your point that by now some people misleadingly could have started depending on `stable` branch, which just means that there will be needed some period of deprecation until that just dies
+[19:40:16] <tux3> Hell no.
+[19:41:14] <tux3> We're not going to just start rewritting history every now and then for no reason.
+[19:41:36] <zetok> branch is a branch, and history is history
+[19:41:39] <zetok> branch ≠ history
+[19:41:52] <tux3> The fuck.
+[19:42:55] *** Joins: abbat (~abbat@ )
+[19:43:30] <tux3> Well define your terms. "branch" can mean the actual pointer to the top of the tree, or it can mean the whole subtree. Either way, rewriting history in a public branch is not okay.
+[19:44:48] <initramfs> Umm... Don't mean to get in the way. How about this? Just merge. It'll look ugly sure, but then we avoid rebasing anything and we don't overwrite any history. Since stable is for jenkins anyway, no one really cares about the lastest commit message.
+[19:45:04] <tux3> ^ Yep, this basically.
+[19:45:21] <tux3> Merge and rebase are both fine, merge would actually make a bit more sense too.
+[19:45:51] <zetok> >rebase are both fine
+[19:45:53] <tux3> No rebase is not fine, I'm confusing myself here..
+[19:45:58] <initramfs> Yeah...
+[19:45:59] <tux3> Merge, I meant merge.
+[19:46:03] <initramfs> That's why I was confused
+[19:46:05] <zetok> ok.
+[19:46:22] <initramfs> That's why I mentioned earlier about the merge conflicts
+[19:46:33] <initramfs> > zetok: there are merge conflicts between the stable and master branches, those are just the links I rewrote, so you can just use "ours" over "theirs" when resolving conflicts
+[19:46:48] <zetok> tux3: my point is that we don't need public branches other than `master`, since as you've pointed out people will wrongly depend on them
+[19:46:56] <tux3> Yeah. Rebase would be ok if stable had not diverged, but it has so we have to merge and solve conflicts.
+[19:47:14] <initramfs> tux3: if stable had not diverged, you just need ff lol :)
+[19:47:33] <tux3> initramfs, same difference :)
+[19:47:48] <tux3> zetok, all branches are public by default. What you have to understand is that if anyone has pulled stable and made any commit on top of that, force pushing would just destroy their work
+[19:48:16] <zetok> tux3: which part of what you've said is relevant to the current situation?
+[19:48:17] <initramfs> zetok: it's not so much that people "depend" on stable, it's that their git history would be invalidated if they cloned it at all
+[19:48:47] <tux3> zetok, the part were you posted a command that would have overwritten hitory ...
+[19:49:03] <zetok> >force pushing would just destroy their work
+[19:49:05] <zetok> nope
+[19:49:24] <zetok> tux3: in your limited scenario, it would, but not in qTox's case
+[19:49:40] <zetok> anyway;
+[19:50:14] <zetok> jenkins doesn't even need to depend on a branch, git tag will do
+[19:50:35] <zetok> tux3: so what should be the deprecation period for `stable` branch?
+[19:50:37] <zetok> year?
+[19:50:38] <tux3> Jenkins has nothing to do with this, though. Jenkins wipes the workspace and clones from scratch anyways
+[19:51:11] <tux3> Never force push until you have no other choice, it's simple.
+[19:51:12] <initramfs> tux3: I think what zetok is getting at is, stable is stale... Not in use... Perhaps just phase it out?
+[19:51:24] <zetok> tux3: jenkins is the only use-case for having branches other than `master`, so please don't bullshit anyone that it has nothing to do with this
+[19:51:49] <tux3> initramfs, maybe, why not. That's entirely different from rewritting history, though
+[19:52:09] <tux3> zetok, if you want to delete stable, that's a different discussion
+[19:52:33] <tux3> All I'm saying is never fucking force push. If you're saying delete stable entirely, that's a different idea and we can talk about it.
+[19:53:03] <zetok> ><zetok> anyway;
+[19:53:15] <zetok> >[19:44:45] <zetok> ok.
+[19:53:24] <zetok> >[19:45:28] <zetok> tux3: my point is that we don't need public branches other than `master`, since as you've pointed out people will wrongly depend on them
+[19:53:42] <zetok> initramfs: thanks though :)
+[19:53:57] <tux3> We could delete stable, yeah.
+[19:54:10] <tux3> At least that won't break anyone's repo
+[19:54:39] *** Joins: cisc (~cisc@ )
+[19:54:54] <tux3> That would mean fixing jenkins to find the latest tag automatically though, unless you want to update Jenkins manually every release...
+[19:55:09] <initramfs> > tux3: so what should be the deprecation period for `stable` branch?
+[19:55:20] <initramfs> I think we should have a deprecation period though
+[19:55:34] <zetok> ><zetok> year?
+[19:55:35] <tux3> Sure, if we're talking about deleting and not rewritting
+[19:55:37] <initramfs> As in, some notice that stable will soon disappear
+[19:56:00] <zetok> → blog
+[19:56:06] <initramfs> Sure
+[19:56:24] <tux3> Maybe somewhere else too, I don't know how many people follow the blog atm
+[19:56:43] <zetok> yeah, ML
+[19:58:24] *** Joins: sudden6 (~anonymous@ )
+[19:58:48] <tux3> zetok, does it break the commit name rules if the commit is "Merge tag 'v1.5.0' into stable"?
+[19:59:15] <zetok> yep
+[19:59:46] <initramfs> But merge commits don't follow the naming scheme? Or am I mistaken?
+[19:59:52] <zetok> they do
+[19:59:52] <tux3> What else can I use :/ ?
+[20:00:16] <zetok> `Merge pull request #9999999999`
+[20:00:20] <initramfs> Right
+[20:00:24] <initramfs> Hmm
+[20:00:28] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[20:00:31] <initramfs> That's a pickle
+[20:00:34] <zetok> bigger PR numbers are also ATM considered invalid
+[20:00:37] <tux3> zetok, okay, can you modify the naming rules to accept this?
+[20:00:42] <zetok> mm
+[20:00:43] <tux3> Because that's pretty insane
+[20:01:01] <zetok> I was thinking about relaxing merge thing a bit anyway, since it's tad too strict
+[20:01:08] <tux3> You don't say??
+[20:01:09] *** Joins: abbat (~abbat@ )
+[20:01:30] <zetok> to `Merge(.*){2,70}`
+[20:01:38] <tux3> Sounds good!
+[20:01:47] <initramfs> Oh, this is unrelated, does anyone care if I move the verify commit message script into .travis?
+[20:02:03] <initramfs> verify-commit-messages.sh
+[20:02:13] <tux3> Hm, isn't it used by things outside of travis?
+[20:02:17] <zetok> initramfs: YES
+[20:02:24] <initramfs> Okay
+[20:02:27] <initramfs> I didn't know
+[20:02:30] <initramfs> Sure
+[20:02:32] <initramfs> I'll deal
+[20:02:33] <initramfs> Lol
+[20:02:53] <tux3> zetok, can you do the change so I can :wq and push :) ?
+[20:03:10] <tux3> Then I'll send v1.5.0 to the auto-updater
+[20:03:20] <tux3> And then we can deprecate stable maybe
+[20:03:20] <initramfs> v1.5.1*
+[20:03:21] <initramfs> Lol
+[20:03:33] <zetok> tux3: I'll make a PR in a moment
+[20:03:36] <tux3> Oh there's a v1.5.1 already!
+[20:03:46] <initramfs> Well
+[20:03:52] <initramfs> We need to fix OSX builds
+[20:03:59] <initramfs> I don't know how, but we really do
+[20:04:28] <initramfs> They're completely broken since v1.5.0
+[20:05:15] <tux3> zetok, thanks, I rolled back my merge, tell me when you're good and I'll merge v1.5.1 directly.
+[20:05:15] <ovalseven8> Mac release has never been really stable
+[20:05:49] <initramfs> ovalseven8: I know, but a across-the-board complete breakage is well... bad?
+[20:06:58] <ovalseven8> Don't know how much work updating is but it would perhaps make sense to update to NSIS 3.0 before provide 1.5 windows builds
+[20:08:00] <initramfs> Oh, also, what version of Qt is being linked in with the Windows builds
+[20:09:21] <initramfs> I will give anyone free candy if they can bump it to Qt 5.6+. For the love of god, HiDPI is non-existent until that version, my 4K panel renders "qTox for ants"
+[20:11:16] -qtox-git-spam- [qTox] zetok opened pull request #3615: chore: relax commit message verification rules for `Merge*` commits (master...verify) https://git.io/v68UR
+[20:12:03] <zetok> nurupo: ↑ :)
+[20:12:27] <zetok> nurupo: <initramfs> I will give anyone free candy if they can bump it to Qt 5.6+. For the love of god, HiDPI is non-existent until that version, my 4K panel renders "qTox for ants"
+[20:13:31] <zetok> tux3: ↑ the commit there relaxes verification
+[20:14:34] <tux3> zetok, thanks, I'll push 1.5.1 to stable and the auto-update next
+[20:15:13] <zetok> tux3: um, you'd need to apply that commit before the merge
+[20:15:19] <zetok> or something :s
+[20:15:26] <initramfs> Mkae sure to sign everything!
+[20:15:35] <initramfs> Make*
+[20:15:40] <tux3> zetok, I can just merge your PR first, right?
+[20:15:42] <initramfs> Typing is hard...
+[20:15:49] <zetok> tux3: conflicts
+[20:15:53] <zetok> (I think)
+[20:16:30] <initramfs> Now we wait for travis...
+[20:17:30] <zetok> tux3: the "easiest" way would be to just merge it on top of your merge
+[20:17:42] <zetok> and only then push that to stable
+[20:17:52] <zetok> but.. urgh
+[20:18:09] <zetok> this will just look bad, no matter how you'll look at the history
+[20:19:06] <tux3> zetok, I could cherry-pick it first if you think it's better?
+[20:19:13] <zetok> initramfs: re: osx breakage; the other thing iphy did to "make it build" was to comment out xcode, which was breaking toxcore compiling :s
+[20:19:35] <zetok> initramfs: and I think that xcode is needed to properly package .dmg, or something?
+[20:19:45] <zetok> tux3: with this you'll have conflicts
+[20:19:58] <tux3> Conflict with what?
+[20:20:00] <zetok> tux3: one conflict for cherry-picking, and one conflict for merge
+[20:20:04] <zetok> with itself
+[20:20:06] <zetok> :|
+[20:20:15] <zetok> this very line is different across versions
+[20:20:19] <tux3> Oh ok
+[20:20:35] <zetok> 1.4 has it different, master has different, and now PR introduces 3rd revision
+[20:20:35] <initramfs> zetok: Well, it packages, but it's missing stuff? I really don't know. I don't have an mac to test it with anyway...
+[20:20:42] <tux3> Then I can just merge it in master, then merge master in stable.
+[20:20:49] <zetok> tux3: yep
+[20:20:56] <zetok> right >.<
+[20:21:26] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:21:28] <bashrc> qtox working pretty well here on the mesh, apart from video not working
+[20:21:34] <zetok> :|
+[20:22:06] <tux3> I'm going to get bored of waiting for travis... :/
+[20:22:26] <tux3> What a waste of time.
+[20:22:41] <bashrc> imho all the commit formatting stuff is overkill
+[20:22:53] <tux3> ^ I couldn't second this any harder
+[20:23:07] <bashrc> generates more work than it's worth
+[20:23:23] <bashrc> but I do agree that verified commits are a good idea
+[20:23:24] <zetok> bashrc: would you prefer to not have a changelog?
+[20:23:54] <tux3> Honestly I think I'd waste less time if we just got rid of super strict name rules and I wrote the changelog by hand
+[20:24:07] <bashrc> the changelog doesn't need to be complex. Often I just see a list of commits and their first description line
+[20:24:25] <zetok> ha ha ha.
+[20:24:45] <zetok> good luck with that when it comes to qTox
+[20:25:14] <zetok> reading through 400 lines of commits, lots of them irrelevant to user-facing functionality
+[20:25:40] <zetok> and that's just 1st lines of commit messages ^_^
+[20:26:15] <initramfs> I'm parallelizing some of travis' jobs right now
+[20:26:30] <zetok> \o/
+[20:26:34] <initramfs> It'll probably save a bit of time per CI run in the future
+[20:32:33] <zetok> so, `stable` will be deprecated, right?
+[20:33:47] <tux3> Sure, why not. We can just make tags in master instead.
+[20:33:56] <zetok> ok.
+[20:34:04] <zetok> year should be enough?
+[20:34:09] <zetok> or is that too long?
+[20:34:21] <zetok> (after deprecation → delete)
+[20:34:48] <tux3> It's probably a bit too much, if someone hasn't reacted after 6 months, giving them 6 more months will probably not fix their problem
+[20:34:58] <zetok> ok
+[20:34:59] <tux3> But then again it costs nothing to make it long :)
+[20:35:08] <tux3> I'd say 6 months is enough
+[20:35:12] <zetok> ok.
+[20:35:37] -qtox-git-spam- [qTox] tux3 pushed 2 new commits to master: https://git.io/v68tR
+[20:35:37] -qtox-git-spam- qTox/master 05db561 Zetok Zalbavar: chore: relax commit message verification rules for `Merge*` commits...
+[20:35:37] -qtox-git-spam- qTox/master 23d08db tux3: Merge pull request #3615...
+[20:36:10] <tux3> Okay I did something funny, let's hope it works
+[20:36:37] -qtox-git-spam- [qTox] tux3 pushed 2 new commits to stable: https://git.io/v68tP
+[20:36:37] -qtox-git-spam- qTox/stable dad09a3 tux3: Merge tag 'v1.5.0' into stable...
+[20:36:37] -qtox-git-spam- qTox/stable fd04a28 tux3: Merge pull request #3615
+[20:37:00] <bashrc> is there a qtox option to open maximized ?
+[20:37:26] *** Joins: stvlker (~stvlker@ )
+[20:37:33] <tux3> There's an option to remember the window geometry IIRC, and it should remember if it's maximized
+[20:39:15] <zetok> ok, pushed updated blog post to the PR
+[20:39:54] <tux3> As soon as Jenkins is done building, in maybe ~30 minutes, I'll send the auto-updates
+[20:40:08] <initramfs> 30 minutes? Oh my
+[20:40:50] <tux3> Could be 5, could be 30 depending on the order Jenkins decides to build things :) If it does all the variations of Linux packages first, well..
+[20:41:28] <zetok> yeah, since they're broken anyway they could be just disabled
+[20:41:34] <zetok> :)
+[20:42:43] <zetok> https://github.com/qTox/blog/pull/1 ← ok, things are set up to require review before post lands on the blog (pls review)
+[20:43:48] <zetok> btw, to render it locally, `jekyll serve`
+[20:45:02] <zetok> (in root dir of the repo)
+[20:46:25] <initramfs> "The answer to query about a post for new qTox" What do you mean by that?
+[20:47:43] <zetok> "The answer to question whether blog post could be made about new qTox" ?
+[20:48:23] <zetok> ↑ would that be understandable?
+[20:48:54] <zetok> right, the sentence needs to be reworked
+[20:48:57] <tux3> s/the first post on qTox blog!/the first post on the qTox blog!/ I think?
+[20:49:26] <tux3> "For a long time `tox.chat` website" -> + "the" here too
+[20:49:28] <initramfs> "The answer to the question about whether a blog post could be made about the new qTox..."
+[20:50:48] <tux3> zetok, if you want I'll send a PR to your PR with some fixes :)
+[20:53:23] <zetok> tux3: yeah :)
+[20:55:57] <tux3> zetok, ok maybe we could be less aggressive in blaming the tox.chat people ... I know you don't like them but the blog is not the place to be angry :/
+[20:56:10] <zetok> >_>
+[20:56:23] <tux3> E.g. we could 39,41d
+[20:56:27] <zetok> b-but I've already censored the post a few times
+[20:56:38] <tux3> Why am I not surprised :D
+[20:57:00] <zetok> You've missed the good bits
+[20:57:12] <tux3> What do you think of deleting lines 39-41 for example? I don't think they add much for the external viewer :) ?
+[20:58:21] <zetok> I think that it does :s
+[20:58:31] <tux3> Oh hm reading further into the post there's a lot of blaming tox.chat going on :/
+[20:59:16] <tux3> This makes it sound like everyone in the tox project hates everyone else � which apparently is true, so at least we got honesty on our side...
+[21:00:05] <initramfs> Ah crap
+[21:00:18] <initramfs> Travis won't pass
+[21:00:39] <initramfs> We've made new changes to the commit format that old commits don't conform to
+[21:01:21] <tux3> Hm but zetok's commit passed travis, weird
+[21:02:19] <zetok> is this about https://github.com/qTox/qTox/pull/3614 failure?
+[21:03:03] <tux3> zetok, for the blog post, is it 80chars or 78 ? 80 I assume?
+[21:03:13] <zetok> 80 I think
+[21:03:21] <zetok> (whatever vim does with `gqap`)
+[21:04:01] <initramfs> zetok: no, tuk3's commit
+[21:04:16] <initramfs> zetok: remember the 12 character scope limit that was imposed
+[21:04:22] <initramfs> zetok: some commits exceed that
+[21:04:33] <zetok> yep
+[21:04:56] <zetok> ok, I'm getting confused
+[21:05:08] * tux3 is confused too
+[21:05:15] <zetok> about which PR are we talking about?
+[21:05:32] <initramfs> Oh
+[21:05:35] <initramfs> Nevermind
+[21:05:38] <initramfs> I'm confusing myself
+[21:05:47] <initramfs> I have too many travis builds going
+[21:05:47] <initramfs> LOL
+[21:06:16] <initramfs> On that note
+[21:06:47] <initramfs> Renaming "build-ubuntu_14_04.sh" to "build-ubuntu-14-04.sh okay?
+[21:07:01] <initramfs> I've updated the reference in the travis script to use the new name too
+[21:07:16] <initramfs> I'm just not aware if any other build systems out there will use that name
+[21:07:21] <zetok> yep
+[21:07:27] <zetok> nothing should depend on it
+[21:07:30] <initramfs> Okay
+[21:07:32] <initramfs> Cool
+[21:07:37] <zetok> (except for the stuff that does)
+[21:08:24] <zetok> https://github.com/qTox/qTox/blob/master/bootstrap.sh#L5,L9 ← of course whole OSX building & deploying depends on it.
+[21:08:29] <tux3> zetok, do you want a diff or a pull request?
+[21:08:46] <tux3> (for the grammar fixes)
+[21:08:46] <zetok> patch will be fine :)
+[21:10:23] <tux3> Sent
+[21:10:40] <zetok> aw
+[21:10:52] <tux3> ?
+[21:10:56] <tux3> You want a pastebin instead?
+[21:10:57] <zetok> using qTox to send patch files works quite well
+[21:11:03] <tux3> Oh :)
+[21:11:11] <tux3> I just did git-send-mail, more natural :)
+[21:16:08] <initramfs> Oh yeah, didn't qtox used to mark >>> as green and <<< as red (for diffs)?
+[21:16:15] <initramfs> What happened to the <<< being red
+[21:16:27] <zetok> no
+[21:16:35] <zetok> there is `>` for quotes
+[21:16:40] <zetok> (green)
+[21:16:40] <initramfs> Yeah I know
+[21:16:42] <zetok> and that's it
+[21:16:45] <initramfs> Really?
+[21:16:49] <zetok> yep
+[21:16:54] <initramfs> I swear at one point there was reds
+[21:16:58] <initramfs> Hmm
+[21:17:27] <initramfs> Because I remember my friends having no clue what it was, resorted to making christmas fish: <><  ><>
+[21:18:29] <zetok> >I swear at one point there was reds
+[21:18:33] <zetok> not in qTox ;)
+[21:19:41] <zetok> tux3: the formatting :s
+[21:19:53] <tux3> zetok, ?
+[21:20:22] <zetok> " Highlight stuff that goes over 79 chars long.
+[21:20:23] <zetok> augroup vimrc_autocmds
+[21:20:23] <zetok>     autocmd BufEnter * highlight OverLength ctermbg=white
+[21:20:23] <zetok>     autocmd BufEnter * match OverLength /\%80v.*/
+[21:20:23] <zetok> augroup END
+[21:20:23] <zetok> " clear highlight
+[21:20:25] <zetok> nnoremap <silent> <F9> :highlight OverLength ctermbg=black<CR>
+[21:20:42] <zetok> ↑ you would see the horrors I'm seeing
+[21:21:24] <tux3> I though you said 80 and not 78 ! 
+[21:21:42] <zetok> apparently it's 79 :|
+[21:21:47] <tux3> ...
+[21:22:13] <tux3> Okay well there's an option for auto-wrapping IIRC, probably you just need to enable it
+[21:23:05] <zetok> https://a.uguu.se/ajYWFWOciQks.png
+[21:24:17] <zetok> pushed
+[21:24:18] <tux3> http://storage6.static.itmages.com/i/16/0810/h_1470860689_6863738_b65a444ae0.png
+[21:24:23] <tux3> Toeing the line :)
+[21:24:59] * zetok never liked the line
+[21:25:16] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[21:25:35] <tux3> It's awesome when you switch frequently between different styles
+[21:26:02] <zetok> I just can't stand it
+[21:26:08] <tux3> I don't have it by default eithre
+[21:26:22] <tux3> But I have a command just for switching between styles, and it sets the bar when needed
+[21:26:39] <zetok> sounds nice
+[21:27:59] <zetok> https://a.uguu.se/hpRRkidqmYkR.png :3
+[21:28:24] <tux3> Wouldn't be a zetok post without the cats
+[21:29:47] <zetok> so, is the post good in its current shape?
+[21:30:03] <zetok> https://a.uguu.se/nlYH1x8qLiq1.png ← "main" page
+[21:30:30] <zetok> https://a.uguu.se/CfiTZroMBxta.png
+[21:31:23] <tux3> I don't like that it's way too negative with blaming tox.chat :/ But then again I suck at PR, so maybe you should ask a third party's opinion :)
+[21:31:41] <zetok> sec, gonna find the link
+[21:32:45] <Chiitoo> There was some chat about that the other day, between few third parties.  ^^
+[21:33:00] <zetok> tux3: https://gist.github.com/zetok/d2b8359fe773a70e6d2e63743d9cbb34 ← go over the revisions to see what I've changed/removed according to feedback
+[21:33:49] <tux3> sorry afk ~30 minutes
+[21:34:58] <zetok> np
+[21:37:03] *** Joins: ovalseven8 (~ovalseven@ )
+[21:47:10] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[22:00:12] <tux3> zetok, is that the latest with my patch applied?
+[22:00:22] <zetok> yep
+[22:01:08] <tux3> Hm
+[22:01:23] <tux3> https://gist.github.com/zetok/d2b8359fe773a70e6d2e63743d9cbb34/revisions#diff-f38631c06dc52d51e25323771c266097R12
+[22:01:34] <tux3> ^ this differs from my patch for example, the "the" is missing
+[22:01:50] <tux3> It should read "+And hello to you, internet citizen, visiting the first post on the qTox blog! :)"
+[22:02:12] <zetok> oh wait
+[22:02:26] <zetok> I thought that you were talking about the PR
+[22:02:39] <tux3> Oh!
+[22:03:08] <zetok> ok, added latest revision to gist ;)
+[22:03:20] <tux3> Cool, cool :)
+[22:03:54] <tux3> I can't say I really like the current remarks about tox.chat though, because it shows that we can't work together as a project, and that's really sad :/
+[22:04:20] <tux3> Maybe there's truth to it though, but that's pretty demoralizing
+[22:04:42] <zetok> such is life :(
+[22:05:15] <tux3> Life should be what you make of it methinks
+[22:05:19] * initramfs Silently judges as tux3 names his first commit on the blog "Fix grammar"
+[22:05:33] <tux3> B-but!
+[22:05:51] <initramfs> Tsk tsk tsk
+[22:05:53] <tux3> Grammar nazism is a perfectly valid occupation :D !
+[22:06:18] * initramfs Shakes heads
+[22:06:22] <initramfs> head*
+[22:06:28] <initramfs> One.. head.
+[22:10:20] <tux3> >Travis CI <builds@travis-ci.org> says: Broken: qTox/qTox#2543 (stable - fd04a28)
+[22:10:39] * tux3 weeps quietly about commit naming rules
+[22:11:07] <zetok> oh, right
+[22:11:10] <zetok> :c
+[22:11:26] <initramfs> Yes
+[22:11:32] <initramfs> So I'm not crazy
+[22:12:06] <initramfs> The thing I said earlier
+[22:12:09] <initramfs> Was about that
+[22:12:09] <initramfs> Lol
+[22:12:20] <zetok> now it all makes sense
+[22:14:59] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 258 seconds)
+[22:15:57] *** Joins: LittleVulpix (~Miranda@ )
+[22:16:14] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[22:16:49] *** Joins: abbat (~abbat@ )
+[22:17:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:20:06] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:20:17] *** Joins: f10_ (~flo@ )
+[22:20:38] <tux3> Ok, auto-updates to v1.5.1 are live!
+[22:21:20] <tux3> (Note that due to stable merging shenanigans people will see a 1.5.1-something instead of a clean 1.5.1 version in the About tab)
+[22:22:34] <zetok> \o/
+[22:23:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:25:40] <initramfs> What Qt version is it compiled against
+[22:26:04] <zetok> it should say it in settings
+[22:27:13] <initramfs> Yeah I know
+[22:27:31] <initramfs> But I don't want to shutdown, reboot into windows, download the binary then check the settings... :)
+[22:28:07] <tux3> Still Qt 5.5.1 sadly
+[22:28:24] <tux3> nurupo, do you think you could update the version of libqt?
+[22:30:03] *** Joins: LittleVulpix (~Miranda@ )
+[22:35:35] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[22:35:37] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[22:42:09] *** Quits: valvin (~valvin@ ) (Quit: ZNC - http://znc.in)
+[22:54:50] *** Joins: valvin (~valvin@ )
+[22:55:12] *** Quits: valvin (~valvin@ ) (Client Quit)
+[22:55:45] *** Joins: valvin (~valvin@ )
+[22:56:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[22:59:09] *** Joins: abbat (~abbat@ )
+[23:13:16] *** Joins: stvlker (~stvlker@ )
+[23:15:19] *** Quits: stvlker (~stvlker@ ) (Client Quit)
+[23:27:12] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[23:27:28] <Emcy_> if toxcore static links things like libopus and libvpx etc, why does qtox include them too
+[23:28:12] <Emcy_> which ones does qtox actually use. Because i think the libs qtox bundles itself are probably newer
+[23:45:04] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:47:55] *** Joins: Bill_MI (~Bill@ )
+[23:49:41] *** Quits: Bill_MI (~Bill@ ) (Client Quit)
+[23:54:33] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 244 seconds)
+[23:58:29] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[23:59:41] *** Joins: Emcy (~MC@ )
