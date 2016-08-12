@@ -1,0 +1,441 @@
+[00:03:33] *** Quits: valvin (~valvin@ ) (Ping timeout: 250 seconds)
+[00:03:49] *** Joins: Emcy_ (~MC@ )
+[00:05:40] *** Quits: Emcy (~MC@ ) (Ping timeout: 252 seconds)
+[00:11:05] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:12:55] *** Joins: valvin (~valvin@ )
+[00:13:40] *** Joins: cisc (~cisc@ )
+[00:30:54] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 265 seconds)
+[00:44:11] *** Joins: iphy (uid67735@ )
+[00:44:14] <iphy> hi
+[00:44:17] <iphy> any windows users around?
+[00:44:31] <iphy> or someone who has access to a windows machine
+[00:44:37] <iphy> or VM
+[00:45:15] <iphy> http://toktok.github.io/client/windows/qtox.zip <- please test the static windows build
+[00:45:50] <iphy> it probably doesn't work correctly because of plugins, but I'd like to know what it looks like and in what way it doesn't work
+[00:51:16] <Emcy_> whats this
+[00:54:47] <iphy> cross compiled qtox using mingw
+[00:55:36] <Emcy_> big file
+[00:55:59] <iphy> it's statically linked
+[00:56:18] <Emcy_> how is it different to what qtox already does
+[00:56:57] <iphy> hopefully it's not
+[00:57:10] <Emcy_> doesnt load
+[00:57:20] <iphy> ok, thanks, that's enough then
+[00:57:31] <Emcy_> couldnt find qt plugin "windows"
+[00:57:40] <iphy> I see
+[00:57:43] <Emcy_> whatever the fuck that means
+[00:57:51] <iphy> I know what that means
+[00:57:53] <iphy> I'll fix it
+[01:00:39] *** Joins: Emcy (~MC@ )
+[01:02:17] <Emcy> toktok is not actually a thing yet right
+[01:03:17] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[01:03:26] <iphy> it's not supposed to be a thing
+[01:03:54] <Emcy> the re-implementation and continuation of toxcore
+[01:04:37] <iphy> the latter is a thing
+[01:04:46] <iphy> the reimpl is on hold
+[01:05:15] *** Joins: Emcy_ (~MC@ )
+[01:08:38] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[01:10:58] *** Joins: Emcy (~MC@ )
+[01:13:50] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 265 seconds)
+[01:14:59] <iphy> Emcy: can you download it again and try?
+[01:17:15] <Emcy> if hstox is the reimplementation wtf is toktok
+[01:18:07] <iphy> toktok was the android client reimpl
+[01:18:17] <iphy> a gsoc project that is now on hold
+[01:18:40] <iphy> then I just took the name and made it the "working on toxcore" thing
+[01:18:57] <iphy> with the plan outlined in a document I shared around a couple of months ago
+[01:19:35] <Emcy> why haskel
+[01:21:34] <iphy> explained here: https://toktok.github.io/design/testing
+[01:22:53] <Emcy> kinda fucked up
+[01:22:58] <Emcy> some missing ui elements
+[01:24:11] <iphy> OK that's kind of expected
+[01:24:21] <iphy> Thanks
+[01:24:40] <Emcy> ausio works
+[01:27:04] <iphy> Images might not work at all
+[01:27:12] <iphy> Because of missing plugins
+[01:27:14] <Emcy> what images
+[01:28:45] <iphy> Avatars?
+[01:29:21] <Emcy> some work
+[01:30:04] <iphy> Hmm ok
+[01:30:37] <iphy> Thanks for testing, I know roughly what needs to be done but I'll wait for tux3 
+[01:50:51] <Emcy> its like ui elements are missing or corrupted sometimes
+[01:51:07] <Emcy> everything else is same i think
+[01:55:16] <Emcy> nah it crashed that time
+[02:23:11] <Emcy> Implement simple offline messaging using Freenet or federated servers. < what does this mean
+[02:23:13] <Emcy> servers no
+[03:20:24] *** Joins: jimj65 (68398385@ )
+[03:22:05] *** Quits: jimj65 (68398385@ ) (Client Quit)
+[04:47:14] *** Quits: bashrc (~motters@ ) (Ping timeout: 250 seconds)
+[04:47:33] *** Joins: nightfur- (nightfury@ )
+[04:48:14] *** Quits: nightfuri (nightfury@ ) (Ping timeout: 258 seconds)
+[04:48:36] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[04:49:05] *** Joins: bashrc (~motters@ )
+[04:49:06] *** Joins: cisc (~cisc@ )
+[04:50:46] *** Quits: nightfur- (nightfury@ ) (Changing host)
+[04:50:46] *** Joins: nightfur- (nightfury@ )
+[04:50:54] *** nightfur- is now known as nightfuri
+[05:47:46] *** Joins: bennabiy (~bennabiy@ )
+[06:34:35] *** Joins: f10_ (~flo@ )
+[06:48:14] *** Joins: BHR27 (~Bheru27@ )
+[06:48:39] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 250 seconds)
+[06:48:39] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 250 seconds)
+[06:48:55] *** Joins: sockspls (~sockspls@ )
+[07:00:56] *** Joins: f10 (~flo@ )
+[07:01:56] -qtox-git-spam- [qTox] zetok opened pull request #3617: chore: actually restrict length the first line of `Merge*` commits (master...verify) https://git.io/v64mo
+[07:06:46] *** Joins: sudden6 (~anonymous@ )
+[07:07:40] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[07:09:01] *** Joins: sudden6 (~anonymous@ )
+[07:31:49] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[08:34:19] *** Joins: st4ll1 (~st4ll1@ )
+[08:42:01] *** Joins: dardevelin (~dardeveli@ )
+[09:16:59] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[09:23:56] *** Joins: LittleVulpix (~Miranda@ )
+[09:31:40] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 265 seconds)
+[09:31:41] <iphy> Emcy: it crashed?
+[09:47:38] *** Joins: ccsdss (~ray@ )
+[09:47:41] *** Parts: ccsdss (~ray@ ) ()
+[09:52:27] *** Joins: abbat (~abbat@ )
+[09:53:16] *** Joins: ccsdss (~ray@ )
+[09:53:24] *** Parts: ccsdss (~ray@ ) ()
+[10:28:03] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[10:28:03] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[10:28:25] *** Joins: f10_ (~flo@ )
+[10:28:38] *** Joins: f10 (~flo@ )
+[10:31:30] *** Joins: Chiitoo (~Chiitoo@ )
+[10:33:04] *** Joins: ovalseven8 (~ovalseven@ )
+[10:33:10] *** Joins: st4ll1 (~st4ll1@ )
+[10:51:54] *** Joins: wangbin (~wangbin@ )
+[10:53:36] <wangbin> anyone have some toxgroup?
+[11:19:07] *** Joins: f10__ (~flo@ )
+[11:19:17] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[11:33:13] <zetok> would there be an interest in qTox one?
+[11:33:28] <zetok> I mean, I'm always interested in dogfooding
+[11:34:10] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[11:35:21] <zetok> the question is, would there be enough of other people who would be interested too to justify the effort of making a bot (modifying current one) & maintaining it for qTox?
+[11:36:44] <zetok> also, current groupchats are not really a that good if even one of participants decides to make things worse for everyone else
+[11:36:58] <zetok> s/a that/that/
+[11:40:43] *** Quits: wangbin (~wangbin@ ) (Quit: leaving)
+[11:57:48] <iphy> how about the new group chats?
+[11:58:04] <iphy> will someone shepherd them through the review process?
+[11:58:25] <iphy> zetok: I have an osx build now
+[11:58:52] <zetok> >will someone shepherd them through the review process?
+[11:59:16] <zetok> um, as soon as they will be in usable state there will be no reason to not run them
+[11:59:30] <iphy> are they less usable than the current ones?
+[11:59:34] <zetok> yep
+[11:59:40] <iphy> why?
+[11:59:45] <zetok> since they have no support for audio and TCP-only mode
+[12:00:27] <iphy> is TCP only mode used a lot?
+[12:00:42] <zetok> not by me personally, but lots of people use it
+[12:00:49] <iphy> ok
+[12:00:52] <iphy> why?
+[12:00:53] <iphy> because tor?
+[12:01:08] <zetok> yes, and because that's what toxcore uses when UDP can't be used on a restrictive network
+[12:01:23] <iphy> ok, and many people are on restrictive networks?
+[12:01:27] <zetok> lots
+[12:01:39] <iphy> ok
+[12:01:46] <iphy> https://travis-ci.org/iphydf/qTox/jobs/151470281
+[12:01:52] <iphy> soon :)
+[12:02:06] <iphy> 4 minutes from now I'll hopefully have a working osx build
+[12:02:12] <zetok> back in the day, when current groupchats didn't have TCP support there were lots of people complaining that groupchats don't work at all
+[12:02:17] <zetok> \o/
+[12:02:36] <zetok> probably something around 30% of people who were interested in using groupchats
+[12:02:42] <zetok> (if not more)
+[12:03:25] <zetok> actually, back in the day I too needed to use TCP-only mode on a restricted network, but toxcore didn't have support for it yet :c
+[12:03:38] <zetok> those were sad days
+[12:04:07] <iphy> build is done
+[12:04:52] <iphy> sadness!
+[12:05:06] <iphy> "toxcore failed to start" - wut?
+[12:06:51] <iphy> uhm
+[12:07:02] <iphy> it hits the default case
+[12:10:44] <iphy> trying again
+[12:11:04] <iphy> thanks qtox for not telling me *why* it failed to start although toxcore has very nice error codes everywhere
+[12:11:28] <iphy> next attempt: https://travis-ci.org/iphydf/qTox/jobs/151473732
+[12:11:49] <zetok> um, it sounds like error wasn't recognised
+[12:12:19] <iphy> yeah, because the switch doesn't handle all errors
+[12:12:25] <zetok> oh.
+[12:12:40] <iphy> for some strange reason, the person implementing it decided that not all errors can happen or are important
+[12:13:16] <iphy> like, malloc failing? that's impossible! or bad proxy type? I never make coding mistakes, so that can't happen either
+[12:14:31] <iphy> 6 minutes then we'll have another build
+[12:20:11] <iphy> ok, it's malloc
+[12:20:27] <zetok> >_>
+[12:21:02] <iphy> now I have no idea anymore :)
+[12:21:47] *** Joins: f10__ (~flo@ )
+[12:22:06] <initramfs> iphy: I have a PR that changes some build script behavior: https://github.com/qTox/qTox/pull/3614
+[12:22:24] <initramfs> Just an FYI for compatibility reasons, because I see you made loads of buildscript changes too
+[12:22:39] <zetok> 'bout that
+[12:22:40] <iphy> I see
+[12:22:54] <iphy> initramfs: looks good, I'm going to ignore it
+[12:23:00] <zetok> :|
+[12:23:20] <iphy> thanks for the heads up
+[12:23:38] <initramfs> Cool
+[12:23:48] <zetok> um
+[12:24:33] <zetok> actually nvm if conflicts aren't a problem
+[12:24:54] <iphy> yeah, mostly not
+[12:25:00] <iphy> I can keep most of the changes
+[12:25:19] <iphy> I'll ignore the travis ones
+[12:31:10] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[12:31:48] *** Joins: f10_ (~flo@ )
+[12:41:02] <iphy> zetok: ok, I have no clue
+[12:41:12] <iphy> I changed it to static linking
+[12:42:21] <iphy> Of toxcore
+[12:49:29] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[13:16:20] <iphy> zetok: I don't know how
+[13:16:34] <iphy> it is indeed malloc failing
+[13:16:50] <initramfs> How does that even happen
+[13:16:52] *** Joins: Elouin (~Elouinon@ )
+[13:17:15] <zetok> that's the question
+[13:17:19] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[13:18:01] *** Joins: abbat (~abbat@ )
+[13:24:45] *** Quits: Elouin (~Elouinon@ ) (Ping timeout: 276 seconds)
+[13:25:24] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[13:25:37] *** Joins: f10_ (~flo@ )
+[13:29:31] <iphy> yeah I have no idea
+[13:31:59] <iphy> anyway, I updated my PR to qtox/qtox
+[13:32:36] <iphy> it's a one line change that fixes a warning
+[13:32:52] <iphy> (and undefined behaviour, but that doesn't really matter)
+[13:33:12] <iphy> https://github.com/qTox/qTox/pull/3607/files <- review please? :)
+[13:41:22] <initramfs> Tsk tsk
+[13:41:50] <initramfs> Coding stlye's all wrong man, gotta have a linebreak before the return...
+[13:41:53] <initramfs> Lol
+[13:42:05] <initramfs> style*
+[13:49:33] *** Joins: cisc (~cisc@ )
+[14:06:33] <zetok> err
+[14:34:19] <iphy> initramfs: please comment on the PR
+[14:36:15] <zetok> initramfs: style is just fine
+[14:49:20] <initramfs> I know, that was a bad joke lol
+[14:52:51] <zetok> :/
+[14:54:04] <iphy> https://github.com/TokTok/toxcore/pull/29 <- can someone review this?
+[14:54:26] <iphy> initramfs: maybe?
+[14:55:29] <initramfs> I'm busy right now. I can in a few hours
+[14:55:41] <iphy> ok
+[15:11:19] <iphy> initramfs: I invited you to the team
+[15:16:57] *** Joins: ick (~archetype@ )
+[15:18:38] <ick> 
+[15:18:41] *** Quits: ick (~archetype@ ) (Client Quit)
+[15:20:07] <initramfs> Okay
+[15:45:23] <iphy> 67% [132 ffmpeg 12.9 MB/32.4 MB 40%]                               678 kB/s 33s <- travis is on AOL :\
+[16:11:48] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[16:17:45] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 265 seconds)
+[16:24:09] *** Quits: shiva__ (~LordShiva@ ) (Remote host closed the connection)
+[16:47:21] *** Joins: in1t3r (~LordShiva@ )
+[17:08:44] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[17:09:05] *** Joins: f10_ (~flo@ )
+[17:21:32] <iphy> zetok: I'm out of ideas
+[17:21:32] <iphy> zetok: I can see calloc fails inside libtoxcore.dylib
+[17:21:42] <zetok> :/
+[17:21:48] <iphy> if I replace it with my locally built libtoxcore.dylib, it works fine
+[17:21:58] <zetok> travis
+[17:22:00] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[17:22:07] <zetok> damn.
+[17:22:20] *** Joins: Chiitoo (~Chiitoo@ )
+[17:22:22] <zetok> this probably should be reported to them
+[17:24:07] <iphy> I don't know what they could do about it
+[17:24:30] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/v6Bu1
+[17:24:30] -qtox-git-spam- qTox/master 2f7076c Vincas Dargis: fix(build): fix OpenAL build on Windows...
+[17:24:30] -qtox-git-spam- qTox/master cf34933 Zetok Zalbavar: Merge pull request #3604...
+[17:25:34] <iphy> alright, I'm going to dig deeper
+[17:25:41] *** Joins: in1t3r (~LordShiva@ )
+[17:26:03] <iphy> since I have no life and have nothing better to do than debugging mac os libc calls
+[17:27:24] <zetok> something on travis changed that broke toxcore
+[17:27:35] <zetok> they can revert the change
+[17:39:47] <iphy> I'm stepping over asm instructions, because debug info is not available
+[17:39:55] <iphy> I started two instances of qtox, one that works and one that's broken
+[17:40:05] <iphy> the only difference is the toxcore lib
+[17:40:14] <iphy> I wanted to see whether they call the exact same calloc, and yes they do
+[17:41:13] <iphy> oh!
+[17:41:32] <iphy> (lldb) p $rax
+[17:41:32] <iphy> (unsigned long) $4 = 3168
+[17:49:39] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[17:50:28] *** Joins: abbat (~abbat@ )
+[18:07:54] <iphy> zetok: I BROKE IT!
+[18:07:59] <iphy> I'm the one who broke it
+[18:08:09] <iphy> sodium_init returns 1
+[18:08:26] <zetok> :s
+[18:08:29] <iphy> :D
+[18:08:32] <iphy> ok
+[18:08:37] <iphy> I'll have a fix out very soon
+[18:08:39] <iphy> zetok: ready?
+[18:08:44] <iphy> it needs lgtm
+[18:08:47] <zetok> mm
+[18:10:07] -qtox-git-spam- [qTox] zetok closed pull request #3607: chore: Return a well-defined value from setAutorun. (master...return-value) https://git.io/v6C3i
+[18:13:32] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[18:16:24] <iphy> zetok: https://github.com/TokTok/toxcore/pull/32
+[18:19:32] <zetok> reviewed
+[18:25:01] <iphy> good
+[18:26:59] <iphy> now all the other PRs have been rebased
+[18:29:28] <iphy> zetok: this would have been caught if we had working tests
+[18:39:46] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 265 seconds)
+[18:39:54] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:41:01] <iphy> ETA: 9 minutes
+[18:48:28] <iphy> zetok: by the way I didn't break your qTox
+[18:48:35] <iphy> You did that all by yourself :)
+[18:48:38] <iphy> I only broke mine
+[18:48:54] <iphy> So this fix won't fix your build
+[18:49:23] <iphy> It's done, who wants to run qTox 1.5 on Mac OS X?
+[18:59:58] *** Joins: in1t3r (~LordShiva@ )
+[19:01:24] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[19:04:17] *** Joins: in1t3r (~LordShiva@ )
+[19:13:44] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[19:20:12] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[19:42:04] *** Joins: in1t3r (~LordShiva@ )
+[20:40:23] *** Quits: vindelschtuffen_ (~vindelsch@ ) (Remote host closed the connection)
+[20:43:16] *** Joins: initramfs_ (~initramfs@ )
+[20:46:58] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 265 seconds)
+[20:48:51] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:49:09] *** Joins: f10_ (~flo@ )
+[20:51:08] *** Quits: initramfs_ (~initramfs@ ) (Quit: Leaving)
+[21:00:36] *** Joins: initramfs (~initramfs@ )
+[21:05:47] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[21:06:16] *** Quits: f10_ (~flo@ ) (Ping timeout: 252 seconds)
+[21:13:45] <initramfs> zetok: I emailed travis support a few days ago about OSX deployment failures (specifically regarding that issue where dmg creation would randomly fail)
+[21:14:04] <initramfs> They've sinced responded with a message for us to update the OSX build image
+[21:14:15] <zetok> -.-"
+[21:14:18] <initramfs> They claim it's a free space issue
+[21:14:51] <zetok> ok, at least there's something that we could try
+[21:15:01] <initramfs> I personally know next to nothing about the OSX deployment process, so I don't know what the affects of using a later version of xcode would be
+[21:15:33] <initramfs> Should I add to to my PR on auto-docs from travis? Or should I start a new PR based off the changes in the existing PR
+[21:15:55] <zetok> new PR
+[21:16:07] <initramfs> Also, if anyone (perhaps iphy) knows about the repercussions of the change, it would be nice to know
+[21:16:27] <initramfs> zetok: Okay. I'll test it in my fork first for stability
+[21:16:41] <initramfs> zetok: Once I verify there are no build-related issues I'll submit a PR
+[21:17:35] <zetok> ok
+[21:17:38] <initramfs> Also, if someone could fill me in on the OSX build status that would be since. I saw a lot of back and forth conversation about people breaking builds, but I don't know if this corresponds to some past change or something specific to a build right now
+[21:17:58] <initramfs> I wasn't really present, kinda just glossed the convo
+[21:18:52] <iphy> initramfs: my build works consistently
+[21:19:02] <iphy> I have a github pages deployment
+[21:20:49] <initramfs> GH pages deployment of what?
+[21:22:39] <zetok> of the osx binary, I'd guess
+[21:24:00] <initramfs> Oh
+[21:24:01] <initramfs> I see
+[21:24:40] <iphy> Yes
+[21:26:12] <zetok> iphy: um, what is your plan regarding changes in fork?
+[21:27:18] <iphy> One thing is, I'll be changing the toxcore public API
+[21:27:29] <iphy> So I'll update qTox to use it
+[21:28:14] <iphy> Other than that I'd like to keep it close to upstream
+[21:28:29] <iphy> And make pull requests for things that I think are useful for upstream
+[21:29:05] <zetok> I see
+[21:29:41] <zetok> tux3: ↑ changes are going to be stateless callbacks, sounds good, right?
+[21:30:05] <initramfs> brb restart, shiny new 5.7 kernel
+[21:30:28] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[21:30:53] <zetok> tux3: what do you think about switching (at least travis) builds to TokTok/toxcore?
+[21:32:16] <zetok> (will probably happen sooner or later, IMO switch could happen ~now)
+[21:32:54] <zetok> iphy: ↑ will there be any expectation of stability?
+[21:33:19] <zetok> API stability, that is
+[21:33:54] <zetok> or rather
+[21:33:55] *** Joins: initramfs (~initramfs@ )
+[21:34:02] <zetok> what I have in mind are proper versions
+[21:34:10] *** Joins: abbat (~abbat@ )
+[21:37:02] <iphy> Yes
+[21:37:25] <iphy> zetok: not in the next 4 weeks
+[21:37:27] <iphy> But the API is good
+[21:37:32] <iphy> It was created by smart people
+[21:37:45] <iphy> It's a very good C API
+[21:38:10] <iphy> I'm going to change only one thing that'll make it a good everything API
+[21:38:24] <iphy> Stateless callbacks are the last piece of that puzzle
+[21:38:36] <iphy> Once we have that, the API is almost perfect
+[21:39:07] <iphy> I need to take a closer look at tox options
+[21:39:28] <iphy> I'll need to make sure it has no padding between members
+[21:40:01] <iphy> Padding makes life harder for ffi
+[21:40:32] <iphy> I think FFI is a very important target for toxcore
+[21:40:53] -qtox-git-spam- [qTox] zetok pushed 5 new commits to master: https://git.io/v6Rq0
+[21:40:53] -qtox-git-spam- qTox/master 51eae5b initramfs: chore(build): deploy doxygen documentation on master branch pushes...
+[21:40:53] -qtox-git-spam- qTox/master e124bd8 initramfs: chore(build): parallelize travis and separate out doc build/deploy...
+[21:40:53] -qtox-git-spam- qTox/master 80581aa initramfs: chore(build): add an error message on failure to deploy documentation
+[21:40:54] <iphy> Making it easy to use the API from other languages is important for adoption
+[21:41:13] <zetok> indeed
+[21:41:14] <iphy> Public structs make that harder
+[21:41:31] <iphy> Because calling conventions are usually well supported in FFI
+[21:41:46] <iphy> But creating aggregate structures is not
+[21:46:30] <iphy> Stateless callbacks are super important
+[21:46:59] <iphy> Think of the implications of handing toxcore a pointer to a data structure in another language
+[21:47:04] <iphy> It's nothing but pain
+[21:48:03] <iphy> Tox4j jumps through lots of hoops with complex logic to keep track of objects and clean them up correctly when Java GCs them
+[21:48:37] <iphy> The tox4j API exposes a clean stateless interface
+[21:48:55] <iphy> The next step is to make toxcore expose a similar clean interface
+[21:49:07] <iphy> Because at the toxcore level, this is a straightforward change
+[21:49:30] <iphy> Making stateful APIs stateless is hard
+[21:50:07] <iphy> The change in qtox is trivial
+[21:50:25] <iphy> I think 18 lines change in core.cpp
+[21:51:00] <iphy> Remove all the passing of this to callback registration, and instead pass this to iterate
+[21:51:36] <iphy> Toxic also needs almost no changes because it uses global variables instead of a user data pointer
+[21:51:42] <iphy> uTox no idea
+[21:52:04] <iphy> Tox4j will need large changes that will get rid of most of the c++ code in it
+[21:52:23] <iphy> But I don't care about tox4j at this point because we're not yet targeting android
+[21:53:01] <iphy> And even when we do I'm leaning towards using a separate HLAPI and communicating with it via RPC
+[21:53:17] <iphy> So no direct tox core API in Java
+[21:56:01] <tux3> ><zetok> tux3: ↑ changes are going to be stateless callbacks, sounds good, right? <-- Sounds great, I'm happy to hear that.
+[21:56:44] <tux3> ><zetok> tux3: what do you think about switching (at least travis) builds to TokTok/toxcore? <-- I think that we need to switch, but it should be done in coordination with other clients, and it should be done all at once � not just travis.
+[21:57:42] <zetok> right
+[21:58:18] <zetok> I'd prefer a granular switch, since if something were to start to explode, users wouldn't be affected as much
+[21:58:59] <zetok> i.e. switch travis, wait for some time to see if things start to explode, if everything seems to be ok, switch the next thing & look out for explosions, etc
+[21:59:30] <tux3> Could we switch travis just for a particular branch first?
+[21:59:43] <zetok> um
+[22:00:00] <tux3> If travis compiles with new toxcore and jenkins compiles with another toxcore, well I'm worried there could be strange bugs creeping in
+[22:00:02] <zetok> travis does whatever .travis.yml states
+[22:00:06] <tux3> Hm
+[22:00:11] <tux3> So that's not a no, then :) ?
+[22:00:30] <zetok> that's a "you need a branch with modified stuff"
+[22:00:33] <tux3> Ya
+[22:01:03] <tux3> I don't think there's a big risk of things exploding though, but we can do that if you think it's worth it
+[22:01:21] <zetok> actually, just 2 steps
+[22:01:30] <zetok> travis, wait, ~everything else
+[22:02:05] <zetok> the "everything else" might be problematic though
+[22:02:21] <zetok> i.e. from packaging perspective
+[22:03:02] <zetok> for Slackware, FreeBSD, Gentoo, Arch, perhaps OBS(?)
+[22:03:35] <zetok> I mean, it won't be a real problem as long as API won't be changed
+[22:03:45] <zetok> but I have a feeling that API is going to be changed soon
+[22:04:14] <zetok> the distros I've mentioned above all package irungentoo/toxcore
+[22:04:25] <tux3> If the API changes, then let's wait until things stabilize and then we'll do a big flag day switch
+[22:04:36] <tux3> With coordination from all the packagers, ideally....
+[22:04:47] <tux3> But in the meantime we can set up a new branch, what do you think?
+[22:05:04] <zetok> I think that it's not really worth the effort
+[22:06:01] <tux3> Fair enough. Let's just wait for a bit then, there's no sense in breaking things now if we'll have to break things again a week from now when the API changes.
+[22:06:39] *** Joins: athan (~athan@ )
+[22:06:44] <zetok> ok
+[22:07:10] <athan> hi everyone, can someone give me the scoop on why http://tox.im looks like it's been seized?
+[22:07:21] <zetok> well, it has been
+[22:07:27] <athan> :O
+[22:07:38] <athan> from whom exactly? Is there justified reason?
+[22:09:41] <zetok> has been "seized" by the blog post author
+[22:10:07] <zetok> nothing to do with Tox/qTox by now though
+[22:10:16] <iphy> tux3: I think that's reasonable
+[22:10:34] <zetok> athan: https://qtox.github.io/ ← qTox does have its own website :P
+[22:10:38] <iphy> I keep my fork of qTox in compatibility with my toxcore
+[22:12:55] <zetok> athan: as for "reason", the person in question AFAIK spent Tox project money on himself, and was thrown out, and since he was the one who was in control of the domain..
+[22:14:10] <athan> zetok: What a sleeze >_> (apologies to any offenses). Thank you for the update
+[22:14:33] <athan> Is there an official site for... tox? Or is that tox-core?
+[22:15:02] <athan> is there a libtox also? Something that I can make haskell bindings to? :)
+[22:15:03] <zetok> there is tox.chat, but there are some issues with it
+[22:15:07] <athan> hm
+[22:15:13] <zetok> :D
+[22:15:16] <zetok> about haskell
+[22:15:23] <zetok> athan: there's #toktok
+[22:15:39] <zetok> athan: and you would be interested in hstox :)
+[22:15:51] <athan> !! I just saw those!
+[22:16:10] <zetok> athan: https://github.com/TokTok/hstox :)
+[22:16:39] <athan> thanks zetok :)
+[22:16:44] <zetok> np :)
+[22:29:33] <initramfs> zetok I'm so sorry...
+[22:29:33] -qtox-git-spam- [qTox] initramfs opened pull request #3619: Fix automatic travis documentation deployment (master...fix-doxy-deploy) https://git.io/v6RnI
+[22:29:37] <initramfs> ^
+[22:33:37] <initramfs> zetok: I'll merge after an hour, just in case
+[22:33:57] <zetok> ok
+[22:37:19] <iphy> athan: regarding FFI
+[22:37:37] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[22:37:48] <iphy> athan: https://github.com/iphydf/hstox/blob/ffi/src/tox/Network/Tox/C.hs
+[22:38:00] <iphy> athan: I started, but I need to make some API changes before this becomes feasible
+[22:38:30] <iphy> athan: callbacks need to become stateless, or a haskell FFI is going to be as complex as tox4j (my java FFI), which is... fairly complex
+[22:40:13] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[23:02:40] *** Joins: ovalseven8 (~ovalseven@ )
+[23:42:04] -qtox-git-spam- [qTox] initramfs closed pull request #3619: Fix automatic travis documentation deployment (master...fix-doxy-deploy) https://git.io/v6RnI
+[23:48:07] <initramfs> We now have auto-documentation: https://qtox.github.io/doxygen/ :)
+[23:48:35] <iphy> Warning:     DO NOT USE! 
+[23:48:38] <iphy> cool :)
+[23:49:39] <iphy> initramfs: neat, and completely useless at the moment
+[23:49:56] <iphy> how to present compact information in the most inflated way possible
+[23:50:00] <iphy> doxygen :)
+[23:50:22] <iphy> initramfs: it might be an incentive for people to actually write documentation though
+[23:50:42] <initramfs> Well, sure... But we have infrastructure... and once we start getting better class documentation, we have at the very least good class docs to look at
+[23:50:50] <iphy> yes
+[23:51:44] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:52:10] <initramfs> As part of my video improvement PR, I did document the videoframe class fully: https://qtox.github.io/doxygen/classVideoFrame.html
+[23:52:45] <initramfs> Doesn't look too bad, a bit inflated sure... But it helps
+[23:54:40] *** Joins: cisc (~cisc@ )
