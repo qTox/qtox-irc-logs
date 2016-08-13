@@ -1,0 +1,567 @@
+[00:11:51] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[00:31:09] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[00:37:59] *** Joins: cisc (~cisc@ )
+[01:32:51] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[01:34:39] *** Joins: st4ll1 (~st4ll1@ )
+[01:36:27] *** Joins: cisc (~cisc@ )
+[01:48:58] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 252 seconds)
+[02:33:28] *** Joins: f10_ (~flo@ )
+[02:33:37] *** Joins: f10__ (~flo@ )
+[02:45:55] *** Quits: nightfuri (nightfury@ ) (Quit: Quit)
+[02:47:28] *** Joins: nightfuri (nightfury@ )
+[03:04:33] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[03:36:04] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[03:36:51] *** Joins: cisc (~cisc@ )
+[03:38:07] <Emcy> where is the qtox logfile
+[03:45:20] <Emcy> lol wtf, sometimes my contact cant hear me unless im on the a/v settings page
+[03:45:22] <Emcy> or see me
+[03:46:14] <koshii> Hi guys, how can I incentivise a few new features in qtox, like multi-device support?
+[03:46:20] <koshii> Is there a bounty program or something?
+[03:47:36] <koshii> (Or is that handled more at the toxcore level?)
+[03:56:20] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[03:56:42] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:57:14] <Emcy> serious issue with opening and closing a/v devices according to log guys
+[03:57:54] <Emcy> it only opens video when i switch to a/v setting page after starting, and only keeps audio open if i stay they when on call. I just reprod this like 3 times in a row
+[04:00:31] <koshii> Emcy: I've seen something like that happen during one call -- the other person on the line could only hear me *when I was in the A/V settings pane*
+[04:00:34] <koshii> Totally weird
+[04:00:59] <Emcy> annoying af
+[04:01:05] <Emcy> i can see it in the logs
+[04:05:15] *** Joins: ovalseven8_ (~ovalseven@ )
+[04:06:27] <Emcy> it would be useful if the were like 10 line breaks in the log after a clean exit also guys
+[04:06:50] <Emcy> to find sessions easier by eye
+[04:08:33] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 240 seconds)
+[04:10:49] <cisc> Emcy: https://github.com/qTox/qTox/issues/3538
+[04:14:25] <Emcy> well, definitely a problem
+[04:30:34] *** Joins: athan (~athan@ )
+[04:36:29] <Emcy> so anti81 is redoing the audio api completely, so i guess that will fix it
+[04:52:49] *** Joins: ccsdss (~ray@ )
+[04:52:53] *** Parts: ccsdss (~ray@ ) ()
+[04:52:56] *** Joins: ccsdss (~ray@ )
+[04:59:13] *** Parts: ccsdss (~ray@ ) ()
+[05:12:56] <Emcy> [02:48:03.779 UTC] src/net/autoupdate.cpp:433 : Debug: Need to update 23 files
+[05:12:56] <Emcy> [02:48:03.779 UTC] src/net/autoupdate.cpp:486 : Debug: "Downloading '\u000E./libeay32.dl' ..."
+[05:13:01] <Emcy> whats all this
+[05:13:07] <Emcy> it failed anyway
+[05:23:22] <zero-ghost> http://arstechnica.com/security/2016/08/microsoft-secure-boot-firmware-snafu-leaks-golden-key/
+[05:48:24] *** Joins: Chiitoo (~Chiitoo@ )
+[05:52:25] *** Quits: athan (~athan@ ) (Ping timeout: 258 seconds)
+[06:33:44] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 265 seconds)
+[06:33:58] *** Joins: athan (~athan@ )
+[07:02:57] *** Quits: albel727 (~albel727@ ) (Ping timeout: 276 seconds)
+[07:10:18] *** Joins: bennabiy (~bennabiy@ )
+[07:58:47] *** Joins: f10_ (~flo@ )
+[08:00:33] *** Joins: st4ll1 (~st4ll1@ )
+[08:03:31] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[08:09:16] *** Joins: f10__ (~flo@ )
+[08:10:21] *** Joins: f10_ (~flo@ )
+[08:11:24] *** Joins: abbat (~Anton@ )
+[08:11:59] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[08:29:45] *** Joins: sudden6 (~anonymous@ )
+[08:41:24] *** Joins: LittleVulpix (~Miranda@ )
+[08:50:14] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:03:41] *** Joins: dardevelin (~dardeveli@ )
+[09:04:03] <zetok> koshii: toxcore handles most of the stuff
+[09:04:30] *** Joins: st4ll1 (~st4ll1@ )
+[09:15:29] <athan> Did you all really use the IE click sound as an effect? lol
+[09:15:39] * athan 's first time using qTox
+[09:16:01] <koshii> athan: Where did you hear that? :)
+[09:17:54] <athan> koshii: Well, I think it's the sound played during a failed message send
+[09:18:05] <athan> still sketched me out though
+[09:18:11] <athan> had some kind of flashback haha
+[09:20:17] <initramfs> Failed message send?
+[09:20:21] <initramfs> That exists?
+[09:20:22] <initramfs> Lol
+[09:21:11] <koshii> Yeah I've never seen that either
+[09:21:18] <koshii> What kind of weird version of qtox are you using athan ? :)
+[09:30:42] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[09:37:17] <athan> koshii: Git commit: f05b7e040a073c7afadaf763dda5beaf130c6dbd
+[09:37:34] <athan> I was trying to send a message to someone who was offline
+[09:37:41] <athan> and it looked like it was just polling every few seconds
+[09:37:52] <athan> but I'd hear a "click click" _exactly_ like old-school IE
+[09:38:18] <zetok> um
+[09:38:23] <athan> I haven't heard it in years, but still rings with the same erie vibe :|
+[09:39:19] <zetok> there's no failed message sound
+[09:39:45] <athan> -.- whaaa
+[09:40:14] <zetok> there are no failed messages :)
+[09:40:25] <koshii> athan: Dude better pull that drive and run a virus scan on it
+[09:40:33] <koshii> Might have some ghosts in the machine
+[09:41:54] <initramfs> Perhaps with faux offline off?
+[09:42:28] <zetok> oh
+[09:42:32] <zetok> right
+[09:42:37] * zetok forgot that there's this mode
+[09:42:40] <zetok> >.<
+[09:42:52] <zetok> still, there should be no sound, I think?
+[09:43:54] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[09:43:59] *** Joins: f10 (~flo@ )
+[09:43:59] <zetok> no wait, there's no such mod
+[09:44:01] <zetok> mode*
+[09:44:07] <athan> :|
+[09:44:24] * athan get's his bic lighter
+[09:44:25] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[09:44:29] <zetok> :\
+[09:44:34] <zetok> damn
+[09:44:41] <athan> I mean this is linux lol
+[09:44:41] <zetok> there is this mod
+[09:44:44] <zetok> mode*
+[09:45:04] <zetok> clearly an option for it isn't in the right place
+[09:45:26] <zetok> which makes me thing that settings rethink should be a thing
+[09:45:47] <zetok> initramfs: would you have time to review Diadlo's PR (and other PRs)?
+[09:46:03] <initramfs> Which one?
+[09:46:43] <athan> Okay I think I must have been on drugs or something, it's not happening now
+[09:46:51] <initramfs> I'm reviewing PR #31 from toxcore right now. After that I'll eat "lunch" (at 4 pm) and then I can review PRs :)
+[09:46:52] <zetok> initramfs: https://github.com/qTox/qTox/pull/3556 , other ones needs rebase
+[09:47:09] *** Joins: LittleVulpix (~Miranda@ )
+[09:47:09] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[09:47:16] *** Joins: f10 (~flo@ )
+[09:47:45] <athan> Can someone give me the scoop on how tox works though? Is the data just pumped through libsodium, where public/secret keys are derived from the passphrase after a scrypt or something?
+[09:48:21] <initramfs> zetok: The one you sent, I can review the code, but I don't know if I can fully verify functionality, since desktop video was broken on HiDPI displays some time ago. Nevertheless I shall try
+[09:49:09] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[09:49:10] <zetok> athan: yes and no
+[09:49:23] <initramfs> athan: Well, there's a spec sheet if you want to read. But the jist is: You have a keypair, encrypted by AES with a key derived from your password, stored locally on your computer.
+[09:49:30] <zetok> athan: password is only used to encrypt local files, and that's it
+[09:49:32] *** Joins: f10 (~flo@ )
+[09:49:50] <athan> zetok: Where local files are keypairs?
+[09:50:03] <zetok> + your contact data, history, etc
+[09:50:15] <athan> so the keypair isn't deterministically derived from the password
+[09:50:20] <athan> ahh okay
+[09:50:44] <initramfs> athan: You can run qTox without a password, the password is only used to encrypt the data locallu
+[09:50:46] <initramfs> locally*
+[09:50:50] *** Joins: abbat (~abbat@ )
+[09:51:15] <athan> initramfs: Okay that makes a lot of sense. What's being used to encrypt files on windows?
+[09:51:22] <athan> something like tomb?
+[09:51:32] <zetok> no
+[09:51:45] <zetok> OS is irrelevant
+[09:51:54] <athan> derp okay
+[09:51:58] <initramfs> athan: Everything is done through libsodium )except for db encryption [specific to qTox]) which is handled by SQLite
+[09:52:05] <athan> the actual content in the files is ciphered?
+[09:52:21] <athan> what's stored in the DB?
+[09:52:24] <athan> anything important?
+[09:52:32] <zetok> history
+[09:52:43] <zetok> + messages that are yet to be delivered
+[09:52:56] <athan> hm :\ that seems sketchy to me
+[09:53:04] <initramfs> athan: Local data encryption is symmetric, using AES-GCM I believe
+[09:53:42] <tux3> For the history DB, we use AS-256 in CBC mode
+[09:54:12] <athan> derived from the password, correct?
+[09:54:17] <initramfs> athan: Yes
+[09:54:23] <initramfs> tux3: Though the key is not derived properly *wink wink.
+[09:54:25] <athan> And the process decrypts the db upon each query?
+[09:54:35] <tux3> :)
+[09:54:39] <athan> s.t. the process is the only holder of the key? (given you don't have a keylogger)
+[09:54:58] <athan> hm :\
+[09:55:04] <athan> okay well that helps a lot, thank you
+[09:55:05] <tux3> athan, the DB is encrypted page by page internally, and SQLite will encrypt/decrypt the pages on the fly as needed
+[09:56:08] <athan> How does tox identify a recipient of a message?
+[09:56:18] <athan> is their global ip encoded in their address or something?
+[09:56:27] <zetok> no
+[09:56:31] <zetok> there's DHT
+[09:56:40] <zetok> and your "contact info" is their PK
+[09:56:59] <athan> sorry I meant physically identify
+[09:57:05] <zetok> provided that both parties have each other PKs, they can find out their addresses via DHT
+[09:57:14] <athan> oh wait, dht..
+[09:57:40] <athan> oh wow, so each client serves a portion of the dht?
+[09:57:46] <zetok> ~yep
+[09:57:49] <athan> something like bittorrent?
+[09:58:17] <zetok> yes and no
+[09:58:30] <athan> how is assurance established?
+[09:58:49] <athan> does a client simply sign a packet authenticating ownership, then relay that to the dht?
+[09:59:03] <zetok> err
+[09:59:10] <athan> or is it all blockchain-y?
+[09:59:17] <zetok> ~neither
+[09:59:20] * athan is obviously a professional
+[09:59:22] <athan> ahh :\
+[09:59:28] <zetok> client is a part of the DHT
+[10:00:28] <zetok> athan: not sure what you mean by "assurance" though?
+[10:01:06] <zetok> so, there are several things that your question touches
+[10:01:11] <athan> zetok: if client A has public key A_p, how do I register A_p with full confidence that nobody else could claim A_p?
+[10:01:24] <zetok> you don't
+[10:01:27] <athan> It must be through a signature
+[10:01:28] <athan> :|
+[10:01:45] <initramfs> athan: Well... That's PKI for you...
+[10:02:01] <athan> pki initramfs?
+[10:02:15] <zetok> you have PK/SK keypair, and the only thing guarding you from someone else claiming your PK as their own is your SK
+[10:02:21] <initramfs> athan: Oops wrong term, public key crypto
+[10:02:44] <athan> oh okay that makes perfect sense
+[10:02:48] <initramfs> athan: I mean, without the private key, does it matter that someone else "claimed" the public key? Without the private key, they can't do anything with the public
+[10:02:56] <zetok> athan: i.e. the only one who can decrypt messages to given PK is the associated SK
+[10:02:57] <athan> so authentication is done through signatures, got it
+[10:03:12] <zetok> not really
+[10:03:25] <athan> so then how does a client relay their (PK,IP) pair to the DHT?
+[10:03:38] <athan> Is the DHT just a short-lived cache, too?
+[10:03:46] <zetok> ~yep
+[10:04:06] <athan> okay that makes sense, hm
+[10:04:10] <zetok> in simplification, client announces its PK + IP to closest nodes
+[10:04:19] <Emcy> i thought toxcore doesnt use any NISt crypto
+[10:04:46] <zetok> Emcy: yes
+[10:04:53] <athan> zetok: Oh wow okay, is this something like meshnet networking?
+[10:05:04] <athan> I'm unsure how dynamic meshnet systems are built
+[10:05:04] <zetok> that's DHT :)
+[10:05:09] <athan> :O wow!
+[10:05:23] <Emcy> the dht is a "mesh"
+[10:05:36] <Emcy> not really, not a fully connected graph. DHTs dont work like that
+[10:05:48] <Emcy> your friend contacts are just direct ip tho
+[10:05:56] <zetok> athan: you might be interested in reading https://toktok.github.io/spec
+[10:06:04] <Emcy> there also an onion routing layer in there somewhere
+[10:06:17] <athan> zetok: That's my next route :) I'm going to try and help with hstox
+[10:06:31] <athan> Emcy: ! wow okay
+[10:06:44] <zetok> athan: mm. What do you think about Rust?
+[10:07:14] <athan> zetok: I've never used it, but have heard good things
+[10:07:21] <athan> (0-cost futures!)
+[10:07:29] <athan> I'm really into haskell though
+[10:07:36] <zetok> I see
+[10:09:35] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[10:19:49] *** Joins: albel727 (~albel727@ )
+[10:20:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[10:28:14] *** Quits: ovalseven8_ (~ovalseven@ ) (Quit: Leaving)
+[10:31:01] <zetok> initramfs: do I really have to `s/Pls/Please/` ?
+[10:35:43] <initramfs> Naa
+[10:35:45] <initramfs> It's fine
+[10:36:05] <zetok> too late :s
+[10:36:09] <initramfs> Well
+[10:36:13] <initramfs> All the better
+[10:36:15] <initramfs> lol
+[10:36:30] <initramfs> I just think it's great that a travis build fails
+[10:36:41] <initramfs> And amongst the logs you see "Pls fix."
+[10:37:41] <zetok> "Halp, I'm trapped in qTox"
+[10:38:02] <Chiitoo> Isn't the arrow in “Above ↑” a bit superfluous?  Not complaining or anything, just a thought.  Nothing bad about it.  :]
+[10:38:03] <zetok> sounds like something I should try to smuggle into qTox :3
+[10:39:10] <initramfs> Chiitoo: Naa, it's cool. Demonstrates travis' superior ability to display unicode chars :)
+[10:39:24] <Chiitoo> I see.
+[10:40:04] <zetok> https://github.com/qTox/blog/pull/1#issuecomment-239394477 ← we can have the blog post \o/
+[10:41:16] <initramfs> \o/
+[10:42:39] <initramfs> > sounds like something I should try to smuggle into qTox :3 I mean, with the way you type amazingly long grep expressions, I don't think that's hard to get past reviewable
+[10:43:23] <qTox-Blog> [blog] zetok closed pull request #1: add newest post (gh-pages...gh-pages) https://git.io/v60ZS
+[10:43:43] <zetok> https://qtox.github.io/blog/ it's up \o/
+[10:44:03] <zetok> initramfs: sec
+[10:45:27] <initramfs> ?
+[10:46:29] <zetok> writing some sed
+[10:46:57] <zetok> sed smsmaim\;smlmowm\;smpmnm\;smowmo\ wm <<< pls
+[10:46:59] <zetok> there :3
+[10:47:09] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[10:47:54] *** Joins: abbat (~abbat@ )
+[10:48:18] <zetok> btw, my regexps aren't even long, since I still find it hard to write expressions that span across several lines
+[10:48:43] <zetok> the one who really can into regexp is nurupo :)
+[10:49:04] <initramfs> Raise your hand if you've ever tried to parse HTML with regex
+[10:49:05] <initramfs> Lol
+[10:49:17] * zetok raises paw
+[10:49:22] <initramfs> Tsk tsk tsk
+[10:49:26] <zetok> it just worked™
+[10:49:32] <initramfs> Sure...
+[10:51:54] <zetok> https://www.zazzle.com/echo_user_sed_e_s_us_idi_g_sed_e_s_er_t_shirt-235646447301766983 ← the idea behind the sed thing, as you can see, the t-shirt one can be optimized
+[10:52:56] <zetok> i.e. sed smermotm\;smusmidim <<< user
+[10:53:54] *** Joins: athan (~athan@ )
+[10:54:23] <zetok> the idea is sad though
+[10:55:43] <zetok> anyway;
+[10:56:28] <zetok> thoughts on desktop notifications as a target for 1.7 release?
+[10:57:56] <Emcy> who maintains tox.chat
+[10:58:34] <initramfs> zetok: Desktop notifications?
+[10:59:23] <initramfs> > the idea behind the sed thing, as you can see, the t-shirt one can be optimized | Plz no.
+[10:59:55] <initramfs> > sed smermotm\;smusmidim <<< user | I tried to read that out
+[11:00:12] <zetok> initramfs: https://github.com/qTox/qTox/issues/483 , and the probable way to go: https://github.com/qTox/qTox/pull/2771
+[11:00:34] <zetok> Emcy: people listed on their `about` page :)
+[11:01:43] <initramfs> zetok: So, desktop notifications as in, notifications from the tray? Or am I missing something? Since qTox already has some form of notifications
+[11:02:04] <zetok> nope, qTox doesn't have actual notifications
+[11:02:25] <zetok> notifications are (usually) a pop-up overlay
+[11:02:45] <initramfs> Oh
+[11:02:46] <initramfs> I see
+[11:02:55] <zetok> with message, and if they're good, they also might provide a clickable stuff
+[11:03:06] <initramfs> Okay, I see the difference now
+[11:03:26] *** Joins: sudden6 (~anonymous@ )
+[11:03:42] <initramfs> Well yeah, definitely for 1.7 (maybe even earlier if need be)
+[11:07:44] <Emcy> the blog sounds like tox.chat is unmaintained now
+[11:08:13] *** Joins: in1t3r (~LordShiva@ )
+[11:08:26] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[11:09:28] *** Joins: sudden6 (~anonymous@ )
+[11:10:19] <Emcy> if stable is going away, where does windows binaries get built from
+[11:10:37] *** Joins: BiTOk (~BiTOk@ )
+[11:10:51] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[11:10:54] <initramfs> Emcy: tags from master
+[11:11:15] <Emcy> oh thats what those are for
+[11:11:42] <initramfs> Emcy: Well, tags were naturally used for releases... Stable was kinda just dragged along when we release a tag
+[11:12:12] <Emcy> so what is the difference between a tag and "release"
+[11:13:55] <initramfs> Emcy: Tag is a git thing, it basically gives a named ref to a given commit
+[11:14:31] *** Quits: BiTOk (~BiTOk@ ) (Client Quit)
+[11:14:51] <initramfs> Emcy: "Release" is a concept of a particular state of software. With tags you could say do: "git checkout v1.4.0" and have the repo in a state of the 1.4.0 release
+[11:15:21] <Emcy> basically the same thing then
+[11:15:58] <initramfs> Well, sure... I mean we did derp up the v1.5.0 "tag" for OSX users, so I don't know if that constitutes a release.
+[11:16:28] <initramfs> The changelog is dated for 1.5.0 though, so I guess it does
+[11:16:28] <Emcy> how much of what github does with code is just a nice frontend for Git, and how much is specific to github itself
+[11:17:01] <initramfs> Well, the whole pull request/issues/checks/assignments/labels/etc stuff is git
+[11:17:07] <initramfs> github*
+[11:17:09] <initramfs> my bad
+[11:17:41] <Emcy> damn, not even PR are in Git? Dissapointing
+[11:18:00] <initramfs> Emcy: Ehh... That's kinda hard to implement in git lol...
+[11:18:21] <Emcy> hm i suppose you could say those things have no business being in the standard
+[11:18:22] <initramfs> Emcy: besides, that's one specific workflow of git (fork -> PR)
+[11:18:27] <zetok> Emcy: git does have pull requests, but not the kind you have in mind
+[11:19:14] <Emcy> it would be nice to decentralise what github does. Dis-intermediate it.
+[11:19:17] <initramfs> Emcy: There are other workflows, the git manual online describes a few. One example is how the linux repo is maintained. iirc, higher up they don't do the whole PR nonsense
+[11:19:55] <initramfs> Emcy: Welll, the whole concept of git is DVCS. I mean if github shut down now... We'd all still have a copy of the code...
+[11:20:05] <zetok> Emcy: eh
+[11:20:16] <zetok> Emcy: there's little to no point in doing that
+[11:20:32] <Emcy> yes but youd lose all the issues, comments, tags, PRs. Imagine trying to recover from that
+[11:21:10] <zetok> so?
+[11:21:22] <Emcy> in fact, that has happened to repos github has unilaterally pulled without notice or warning. Its not right
+[11:21:23] <initramfs> Emcy: Not tags...
+[11:21:29] <zetok> Emcy: that doesn't constitute the need to decentralize/distribute github
+[11:21:57] <initramfs> Emcy: Also, to be fair, I do archive issues :) Remnants of the GitHub issue importer I wrote
+[11:22:20] <Emcy> iirc once they even wiped all forks of a certain repo which they just didnt like
+[11:22:28] <zetok> yes
+[11:23:06] <zetok> Emcy: the point you're trying to prove is invalid, and it doesn't matter much what kind of arguments you use when trying to prove it
+[11:23:20] <zetok> arguments are valid though
+[11:23:52] <zetok> Emcy: what you would be interested, is better gitlab's better support for importing from github
+[11:24:04] <zetok> and not only importing, but also mirroring stuff
+[11:24:24] <Emcy> my point is github is a rather massive spof seeing as its essentially now the gateway for nearly all of Open Source, and they have already shown they cant or wont keep their personal shit out of business
+[11:24:51] * zetok shrugs
+[11:24:56] <zetok> yes, no one cares about that
+[11:25:20] <Emcy> i dont like it. Git itself is cool, and then people turned into into a facebook esque data silo for nerds. bleh
+[11:25:29] <zetok> or rather, not enough people care about it to rapidly change something
+[11:25:57] <zetok> nope.
+[11:26:48] <zetok> Emcy: what is the reason behind github's dominance?
+[11:26:59] <initramfs> Emcy: Git != GitHub
+[11:27:01] <Emcy> network effect
+[11:27:05] <zetok> nope
+[11:27:27] <zetok> network effect is something that you gain, and it helps, but at the beginning you don't have it
+[11:27:42] <Emcy> well they had first mover advantage also
+[11:27:50] <zetok> furthermore, even strong network effect means shit if people don't want to use something
+[11:28:09] <Emcy> look. github is good. really good.
+[11:28:18] <zetok> :)
+[11:28:22] <Emcy> i know that. What it does is useful as fuck
+[11:28:31] <Emcy> there is just, a price to be paid
+[11:29:00] <zetok> so, rather than ranting about it, don't you think that it would be better to improve gitlab, which could be used to replace github?
+[11:29:17] <Emcy> am i ranting
+[11:29:38] <zetok> I think so?
+[11:29:39] <Emcy> iirc i already know of another site based on gitlab
+[11:30:16] <zetok> btw, it would be great to move to gitlab
+[11:30:22] <zetok> but it's not good enough yet for that
+[11:30:24] <Emcy> so it happens. And it happened specifically because github got political when they had no business doing so.
+[11:30:49] <Emcy> i think a few "banished" projects moved there
+[11:32:18] <Emcy> there was also an unpleasant incident where someone internal to github apparently internally doxed/creeped up on the social media profiles of a guy who emailed them an inquiry. Presumably to decide what or if to respond.
+[11:32:28] <Emcy> really unprofessional shit
+[11:33:09] <Emcy> i wonder what theyd do if they found out tox started on 4chan. Even though its far removed from it now
+[11:33:29] -qtox-git-spam- [qTox] zetok closed pull request #3617: chore: actually restrict length the first line of `Merge*` commits (master...verify) https://git.io/v64mo
+[11:34:49] <zetok> https://archive.is/F63mL ← yeah, we all know that
+[11:35:14] <Emcy> yeah, its no secret
+[11:36:08] <zetok> initramfs: um, in what format is the data scrubbed from gh stored?
+[11:36:55] <Emcy> >white folks
+[11:37:02] <Emcy> 50 years ago:
+[11:37:08] <Emcy> >coloured folk
+[11:37:14] <Emcy> drives me binkers
+[11:38:31] <zetok> initramfs: i.e. as currently gitlab massively sucks when it comes to importing from gh, I was wondering if there could be something custom written that would get data from gh, and throw (inject?) it to gitlab instance
+[11:41:14] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:44:01] <initramfs> zetok: You mean like issues?
+[11:44:09] <zetok> all the data
+[11:44:16] <initramfs> Right
+[11:44:23] <zetok> issues, merges, tags, milestones
+[11:44:44] <zetok> + there are also spare comments on commits
+[11:44:59] <initramfs> Because I sense that the issue is, since GH "posts" (issues, merges, tags, milestones) are linked to users on GH
+[11:45:06] <zetok> as for merges – they could be recreated as issues, marked as merges
+[11:45:21] <initramfs> Say for example, you create an issue on GH
+[11:45:27] <initramfs> The issue was created by you
+[11:45:33] <initramfs> Should I export this data
+[11:45:45] <initramfs> And reimport it into GH (say on another archive)
+[11:45:59] <initramfs> There is no way for GH to detect whether I modified your issue
+[11:46:24] <initramfs> Basically, as an extension of that, I could falsify issues by specific people
+[11:46:54] <zetok> :)
+[11:46:56] <initramfs> I could create a malicious issue/PR/tag/milestone as someone else, and programmatically (through the GH API) create it
+[11:47:12] <zetok> the point is to have both code & source data in open
+[11:47:35] <initramfs> Sure
+[11:48:08] <zetok> the only real problem is having the code & data
+[11:48:17] <initramfs> But the moment you associate things to users, you can't allow a third user (maintainer/moderator or not) to recreate this data and tag it as coming from that user
+[11:48:24] <initramfs> I mean
+[11:48:31] <initramfs> If you want a readable dump of the GH data
+[11:48:34] <initramfs> That's very possible
+[11:49:07] <initramfs> But importing that data anywhere would be difficult
+[11:49:34] <initramfs> Since you don't have a way to verify the source data's authenticity
+[11:58:07] <Emcy> wasnt there a thing recently where sourceforge was compromised with malware
+[11:58:13] <Emcy> did i just imagine that
+[11:58:42] <Emcy> package downloads were replaced with malware spiked versions
+[12:01:30] <initramfs> Emcy: No idea
+[12:02:33] <Emcy> shit it was recent but i cant remember the details at all
+[12:19:30] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[12:20:09] *** Joins: shiva (~LordShiva@ )
+[12:20:29] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[12:29:36] <Emcy> >git itself is developed on github
+[12:29:45] <Emcy> m fucking fw
+[12:30:10] *** Joins: athan (~athan@ )
+[12:31:56] <Emcy> oh no its just a mirror
+[12:35:29] *** shiva is now known as in1t3r
+[12:53:38] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[13:05:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:08:24] *** Joins: CGGB (~CGGB@ )
+[13:18:07] *** Joins: abbat (~abbat@ )
+[13:33:24] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[13:45:29] *** Joins: abbat (~abbat@ )
+[13:46:59] *** Quits: BHR27 (~Bheru27@ ) (Remote host closed the connection)
+[13:47:40] *** Joins: Bheru27 (~Bheru27@ )
+[13:51:12] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[13:55:30] *** Joins: Chiitoo (~Chiitoo@ )
+[13:55:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[14:00:18] *** Joins: LittleVulpix (~Miranda@ )
+[14:13:37] <zetok> Emcy: https://github.com/joeyh/github-backup/ ← there you go
+[14:17:43] <linuxmodder> zetok,  see my  question above perchance ?
+[14:22:57] <zetok> linuxmodder: what question?
+[14:25:35] <Emcy> fuckin nice
+[14:25:48] <Emcy> can gitlab parse that though
+[14:26:41] <zetok> nope
+[14:27:48] <Emcy> maybe gitlab is avoiding stepping on githubs toes deliberately
+[14:27:58] <zetok> nope
+[14:28:53] <zetok> there simply not enough interest in making that tool to work with gitlab
+[14:29:05] <zetok> s/to //
+[14:29:35] <zetok> if there was, it would be already doable
+[14:30:25] <zetok> aside from that, gitlab does have an option to import directly from gh, but that doesn't work if you don't have write access to the repo, and can fail anyway on a huge repo because ruby
+[14:30:31] <Emcy> well, its nice someone recognises what a problem github is on an abstract level
+[14:30:49] <Emcy> >So you can keep working on your repository while on a plane, or on a remote beach or mountaintop. Just like Linus intended.
+[14:30:51] <Emcy> ^that
+[14:35:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:35:45] *** Joins: abbat (~abbat@ )
+[14:39:10] *** Joins: sudden6 (~anonymous@ )
+[14:49:22] *** Joins: in1t3r (~LordShiva@ )
+[15:02:21] *** Joins: Rowen_Stipe (~rowen_sti@ )
+[15:03:18] *** Joins: stvlker (~stvlker@ )
+[15:06:35] <zetok> Rowen_Stipe: o/
+[15:06:52] *** Quits: Rowen_Stipe (~rowen_sti@ ) (Ping timeout: 250 seconds)
+[15:07:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[15:07:52] <zetok> >.<
+[15:15:17] *** Joins: sudden6 (~anonymous@ )
+[15:27:49] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[15:31:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:38:49] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[15:45:06] *** Joins: abbat (~abbat@ )
+[16:01:33] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[16:17:15] *** Quits: stvlker (~stvlker@ ) (Ping timeout: 258 seconds)
+[16:21:20] *** Joins: stvlker (~stvlker@ )
+[16:23:21] *** Joins: in1t3r (~LordShiva@ )
+[16:25:47] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[16:36:21] *** Joins: sudden6 (~anonymous@ )
+[16:36:48] *** Joins: hpanago (uid15586@ )
+[16:49:50] *** Quits: stvlker (~stvlker@ ) (Ping timeout: 258 seconds)
+[16:55:52] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[17:02:40] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[17:11:44] *** Joins: in1t3r (~LordShiva@ )
+[17:19:51] *** ChanServ sets mode: +o zetok
+[17:19:58] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | Logs at: https://github.com/qTox/qtox-irc-logs | Testing help: https://github.com/tux3/qTox/wiki/Testing | Homepage: https://qtox.github.io/ | Blog: https://qtox.github.io/blog/'
+[17:20:21] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | Logs at: https://github.com/qTox/qtox-irc-logs | Testing help: https://github.com/qTox/qTox/wiki/Testing | Homepage: https://qtox.github.io/ | Blog: https://qtox.github.io/blog/'
+[17:20:28] *** zetok sets mode: -o zetok
+[17:21:26] <zetok> now the only thing left is to add it on top bar of website, and move a few things off the bar
+[17:22:04] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[17:26:35] *** Joins: sudden6 (~anonymous@ )
+[17:32:05] *** Joins: sudd3n6 (~anonymous@ )
+[17:32:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[17:42:28] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[17:45:47] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:47:07] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[17:48:29] *** Joins: sudd3n6 (~anonymous@ )
+[17:51:42] *** Quits: chain (~BoB@ ) (Remote host closed the connection)
+[17:58:00] *** Joins: ovalseven8 (~ovalseven@ )
+[18:03:45] *** Joins: LittleVulpix (~Miranda@ )
+[18:04:06] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[18:11:49] *** Joins: sudd3n6 (~anonymous@ )
+[18:21:57] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[18:24:42] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:38:35] *** Joins: LittleVulpix (~Miranda@ )
+[18:42:27] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[18:59:02] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[18:59:29] *** Joins: cisc (~cisc@ )
+[19:04:43] *** Joins: abbat (~Anton@ )
+[19:04:44] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[19:13:24] *** Joins: cisc (~cisc@ )
+[19:46:59] *** Joins: f10_ (~flo@ )
+[19:47:15] *** Quits: f10 (~flo@ ) (Ping timeout: 264 seconds)
+[20:00:31] *** Joins: sudd3n6 (~anonymous@ )
+[20:03:17] *** Joins: f10 (~flo@ )
+[20:04:20] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[20:06:03] *** Joins: athan (~athan@ )
+[20:09:12] <cisc> qtox on my Linux box isn't writing any logs to ~/.cache again, commit: f05b7e040a073c7afadaf763dda5beaf130c6dbd
+[20:14:00] <zetok> :|
+[20:16:36] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[20:20:37] <zetok> cisc: I can't find an issue for it?
+[20:25:16] <cisc> it was working properly a couple weeks ago on an older commit
+[20:25:20] <cisc> I don't know what changed
+[20:45:03] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[20:45:49] *** Joins: cisc (~cisc@ )
+[21:08:31] *** Joins: f15h (~thomas@ )
+[21:13:17] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:31:09] *** Joins: initramfs (~initramfs@ )
+[21:35:47] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[21:40:39] *** Joins: cisc (~cisc@ )
+[21:51:10] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[22:02:12] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[22:03:25] -qtox-git-spam- [qTox] zetok opened pull request #3623: fix: use `qAbs()` instead of `abs()` for better platform compatibility (master...fix/qabs) https://git.io/v6E71
+[22:20:42] <iphy> zetok: what platform incompatibility does this fix?
+[22:21:16] <zetok> um, commit should say it?
+[22:22:03] <zetok> or is it not clear from it?
+[22:22:58] <iphy> Oh I see
+[22:23:03] <iphy> Yeah I fixed that one
+[22:23:17] <iphy> By using the C++ standard library correctly
+[22:23:41] <iphy> That's not a freebsd thing
+[22:23:50] <iphy> That code was just wrong
+[22:24:03] <zetok> um
+[22:24:24] <zetok> it seems to work just fine on Linux
+[22:24:47] <iphy> Have you heard of this language called C++
+[22:25:01] <iphy> Where works != correct
+[22:25:05] <zetok> yes, it's like C, but worse
+[22:25:56] <zetok> in any case, I don't really know
+[22:26:37] <iphy> :)
+[22:26:37] <iphy> That's OK, qAbs works too
+[22:26:50] <iphy> I personally like to use the stdlib if it offers the same
+[22:27:08] <tux3> Wut. Freebsd doesn't have abs? Are you sure?
+[22:27:20] <zetok> tux3: it doesn't include stdlib.h by default
+[22:27:29] <iphy> Of course it does
+[22:27:33] <zetok> hm.
+[22:27:45] <tux3> zetok, you mean you didn't #include <cstdlib>?
+[22:27:47] <zetok> I got a different impression from the bug report
+[22:27:55] <iphy> tux3: correct
+[22:28:05] <tux3> Looks like FreeBSD is doing the right thing then :)
+[22:28:31] <iphy> In my fork it's fixed by including cstdlib
+[22:28:39] <iphy> And std::abs
+[22:30:11] <tux3> For basic things like these or standard integer types, I'd rather we use the standard headers than Qt shims
+[22:31:20] <tux3> But that's more of a preference than an objective rule :)
+[22:32:52] <tux3> But still, that PR is wrong, please fix the includes instead.
+[22:35:29] -qtox-git-spam- [qTox] zetok closed pull request #3623: fix: use `qAbs()` instead of `abs()` for better platform compatibility (master...fix/qabs) https://git.io/v6E71
+[22:35:53] <zetok> eh
+[22:36:04] <zetok> someone else can play with includes
+[22:36:17] <tux3> I'll do that, one sec.
+[22:40:10] -qtox-git-spam- [qTox] tux3 opened pull request #3624: Prefer std::abs and correctly include it (master...abs-include) https://git.io/v6EAO
+[22:40:12] <tux3> zetok, Pls review
+[22:40:44] <zetok> s/^/fix: /
+[22:40:52] <zetok> tux3: ↑ will fail with current commit name
+[22:40:56] <tux3> Ah right!
+[22:41:02] <tux3> I will never get used to the commit name rules
+[22:41:21] <tux3> Forcepushed
+[22:43:00] <zetok> hmm
+[22:43:17] <zetok> perhaps we should configure only `master` branch to be build on travis
+[22:43:20] <tux3> Argh and now I have to wait on travis ><
+[22:49:08] <tux3> zetok, so about #2761, that PR is pretty dead, I don't think agilob will rebase it any time soon
+[22:49:38] <zetok> I think so too
+[22:49:39] <tux3> No activity in >6 months, maybe it should be closed and someone else can rebase and re-send it
+[22:49:57] <zetok> the only reason why it's still open is that I hope that someone else will take over
+[22:50:27] <tux3> I think it wil be easier for someone to take over if we acknowledge that it's currently abandonned
+[22:50:38] <zetok> ok
+[22:50:44] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:50:52] <zetok> but
+[22:50:56] <zetok> there's this thing
+[22:51:28] <zetok> where DaSpirit's stuff hasn't been merged, but was closed to be rebased by someone & merged in smaller chunks
+[22:51:43] <zetok> to this day it's still not merged :(
+[22:51:48] <tux3> :/
+[22:51:55] <zetok> searching history ;_;
+[22:52:03] <zetok> it was done in the PR
+[22:52:49] <tux3> True, but I don't know if leaving it open would have changed things
+[22:53:20] <zetok> :D
+[22:53:20] <tux3> After all it's been 6 months for the agilob PR, more time will probably not help, so the problem must be something else and there's no sense in keeping it open
+[22:53:40] <tux3> But I hope someone will rebase it, maybe me :)
+[22:54:01] <zetok> https://github.com/qTox/qTox/pull/2771 ← oh, it would provide commentary from angry users expecting feature to be done & merged by yesterday :D
+[22:54:44] <zetok> btw, notifications are a target for 1.7 release
+[22:54:59] <zetok> https://github.com/qTox/qTox/milestone/5
+[22:55:21] <tux3> >#483 opened on 20 Oct 2014 by stqism
+[22:55:22] <tux3> Wow
+[22:55:25] <tux3> That brings me back
+[22:56:01] <zetok> the great sticker vs. emoji war
+[23:03:00] <zetok> :D
+[23:03:19] <zetok> tux3: https://www.youtube.com/watch?v=p8Y-JjWE3Rw
+[23:03:24] <zetok> initramfs: ↑ :D
+[23:14:07] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[23:28:23] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:45:39] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[23:45:44] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[23:49:26] *** Joins: f10 (~flo@ )
+[23:49:26] *** Joins: f10__ (~flo@ )
