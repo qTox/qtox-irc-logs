@@ -1,0 +1,335 @@
+[00:10:16] <zetok> tux3: https://travis-ci.org/qTox/qTox/jobs/151934488#L597 aw.
+[00:10:40] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[00:10:44] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:11:28] <zetok> meanwhile, `aAbs()` would have worked, if not for travis randomly failing to make a .dmg
+[00:11:43] <zetok> initramfs: https://travis-ci.org/qTox/qTox/jobs/151925738#L790
+[00:20:30] <ovalseven8> Mh, irungentoo doesn't even answer to questions about new groupchats anymore in IRC
+[01:11:07] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[01:11:09] *** Joins: hpanago (uid15586@ )
+[01:28:46] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[02:06:12] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[02:50:55] *** Joins: f10 (~flo@ )
+[02:51:11] *** Joins: f10__ (~flo@ )
+[03:10:55] *** Joins: socks5q (6c3d7b45@ )
+[03:11:38] <socks5q> Question: Possible to use SOCKS5 with authentication? I have a place for the server/port, but no login info.
+[03:25:48] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[03:52:38] *** Quits: socks5q (6c3d7b45@ ) (Ping timeout: 264 seconds)
+[04:03:53] *** Joins: ovalseven8_ (~ovalseven@ )
+[04:07:28] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 252 seconds)
+[04:08:46] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[04:12:35] *** Joins: zero-ghost (~0@ )
+[05:00:50] *** Joins: Emcy (~MC@ )
+[05:42:42] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[05:43:24] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[06:34:20] *** Joins: athan (~athan@ )
+[07:28:37] <initramfs> zetok: I'll run the same job on my modified xcode build
+[07:28:52] <initramfs> zetok: But for now, I'll restart the build for you, it should succeed
+[08:24:10] *** Quits: ovalseven8_ (~ovalseven@ ) (Quit: Leaving)
+[08:55:20] *** Joins: hpanago (uid15586@ )
+[08:59:29] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[09:03:04] *** Joins: f10 (~flo@ )
+[09:19:03] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[09:19:41] *** Joins: cisc (~cisc@ )
+[09:26:36] *** Joins: f10_ (~flo@ )
+[09:29:01] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[09:29:08] *** Joins: f10__ (~flo@ )
+[09:37:30] -qtox-git-spam- [qTox] zetok reopened pull request #3623: fix: use `qAbs()` instead of `abs()` for better platform compatibility (master...fix/qabs) https://git.io/v6E71
+[09:50:16] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:50:42] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[09:51:02] *** Quits: dan- (~d@ ) (Ping timeout: 258 seconds)
+[10:04:15] *** Joins: dan- (~d@ )
+[10:04:15] *** Quits: dan- (~d@ ) (Changing host)
+[10:04:15] *** Joins: dan- (~d@ )
+[10:06:03] *** Joins: f10 (~flo@ )
+[10:06:18] *** Joins: f10__ (~flo@ )
+[11:00:10] *** Joins: iphy (uid67735@ )
+[11:04:26] <zetok> cisc: right, so mind filling an issue?
+[11:04:38] <zetok> (I can't reproduce)
+[11:05:36] <initramfs> zetok: zetok: Any reason to reopen the issue? I have no opinion either way (using qAbs or std::abs)
+[11:05:53] <zetok> well, tux3's PR is broken
+[11:06:04] <initramfs> zetok: My review shows the fix
+[11:06:10] <initramfs> zetok: He includes the wrong header
+[11:06:15] <zetok> I too don't care either way, but `working > not working`
+[11:06:28] <initramfs> zetok: Sure
+[11:06:53] <initramfs> zetok: I just tested his PR with the fix I suggested, it passes the broken OSX test
+[11:42:07] <zetok> initramfs: feel free to close my PR if tux3's one will be fixed :)
+[11:43:55] <initramfs> Well... He needs to fix it
+[11:44:01] <initramfs> Once he does, I will
+[12:01:24] *** Joins: ovalseven8 (~ovalseven@ )
+[12:01:42] <zetok> btw, I've tested https://github.com/qTox/qTox/pull/3556 yesterday and it seems to work for me
+[12:05:11] <initramfs> On windows?
+[12:05:48] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[12:10:36] <initramfs> brb
+[12:10:40] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[12:27:46] *** Quits: f10__ (~flo@ ) (Ping timeout: 244 seconds)
+[12:27:49] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:28:15] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[12:43:30] *** Joins: f10__ (~flo@ )
+[12:43:32] *** Joins: f10 (~flo@ )
+[13:40:05] *** Joins: hpanago (uid15586@ )
+[13:40:32] *** Joins: ovalseven8 (~ovalseven@ )
+[14:33:56] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[15:40:40] *** Joins: initramfs (~initramfs@ )
+[16:02:43] *** Joins: stvlker (~stvlker@ )
+[16:08:54] <zetok> initramfs: nah, on Linux
+[16:09:30] <zetok> for windows, BiTOk said that it works
+[16:12:02] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[16:12:18] *** Joins: f10__ (~flo@ )
+[16:13:00] <initramfs> Right
+[16:13:01] <initramfs> Well
+[16:13:18] <initramfs> I suffer from the broken A/V on Windows (qTox crashes on settings)
+[16:13:24] <zetok> :/
+[16:13:32] <initramfs> And desktop video is broken on HiDPI in linux for me
+[16:13:36] <initramfs> So it's hard to test either
+[16:13:37] <initramfs> Lol
+[16:53:12] *** Joins: abbat (~Anton@ )
+[16:55:39] *** Quits: genesis (~genesis@ ) (Ping timeout: 264 seconds)
+[17:10:47] *** Quits: stvlker (~stvlker@ ) (Ping timeout: 258 seconds)
+[17:36:46] *** Joins: sudd3n6 (~anonymous@ )
+[18:01:45] *** Joins: genesis (~genesis@ )
+[18:01:51] *** Quits: f10 (~flo@ ) (Ping timeout: 265 seconds)
+[18:15:51] *** Joins: f10 (~flo@ )
+[18:16:25] *** Joins: in1t3r (~LordShiva@ )
+[18:35:12] *** Joins: fred_barclay (~fred@ )
+[18:37:51] <fred_barclay> G'day mates! I've been snooping around with qtox for a bit and I can't figure out why it makes multiple, persistent connections to foreign servers. For example, right now it's connecting to 185.25.116.107 in the Ukraine, and 144.76.31.180 in Germany. There's often at least one Russian connection as well.
+[18:38:48] <fred_barclay> I'm in the States at the moment, as is the other chap I contact via qtox; in fact we're relatively close geographically and wouldn't have any reason (that I know of) to be using European servers. Any ideas why this is?
+[18:39:04] <fred_barclay> Thanks! :)
+[18:39:16] <sudd3n6> this is because qTox has no "servers" in the general sense
+[18:39:43] <sudd3n6> it uses a DHT, where every client helps other clients to find their friends
+[18:39:48] *** sudd3n6 is now known as sudden6
+[18:41:25] <sudden6> https://en.wikipedia.org/wiki/Distributed_hash_table
+[18:41:35] <sudden6> tox is even mentioned there :)
+[18:43:51] <fred_barclay> sudden6: thanks for the link. :) So is any traffic (i.e. files, text) routed through the foreign clients? I noticed that most of my traffic was going through a IP in the Great Lakes region of the US, which neither me nor my contact are anywhere near.
+[18:44:08] <fred_barclay> Sorry for the n00b questions, networking is not a strong point with me. ;)
+[18:45:07] <sudden6> no, the DHT is only used to find your friends IP address, from then on there is a direct connection from you to your friend, where your encrypted data is transported
+[18:45:29] <zetok> (assuming that direct connection can be made)
+[18:45:47] <zetok> when direct UDP connection can't be made, TCP is used, in which case stuff is relayed
+[18:46:13] *** Joins: abbat_ (~Anton@ )
+[18:46:32] <fred_barclay> I see. I noticed that most of my traffic (all of it to the European IPs) was TCP, while my connection to the Great Lakes IP was HTTPS
+[18:46:49] <initramfs> HTTPS would be unrelated traffic
+[18:47:00] <sudden6> tox doesn't use HTTPS
+[18:47:15] <initramfs> It's important to note that all traffic is end-to-end encrypted anyway, so intermediate nodes can't snoop on the contents
+[18:47:22] <fred_barclay> initramfs: I thought so, but I correlated it twice when my contact sent me a video through qtox. I had no other web-facing applications running either.
+[18:47:58] <fred_barclay> edit: my contact sent me the videos twice through qtox, and both times it appeared that an https connection was used.
+[18:48:21] <initramfs> How did they "send" the video? As a file? Or as a link that you clicked on?
+[18:48:31] <fred_barclay> As a file through qtox
+[18:48:52] *** Quits: abbat (~Anton@ ) (Ping timeout: 240 seconds)
+[18:50:27] <initramfs> Well... Not sure what I can say, you are free to look over the code that handles file transfers if you want
+[18:50:50] <initramfs> If you can track the destination of the traffic
+[18:50:57] <initramfs> You can track the originating application then?
+[18:51:01] <initramfs> Can you*
+[18:51:20] <initramfs> Perhaps another application sent a background request for an update check or something
+[18:51:56] <initramfs> I don't know how qTox's autoupdater works, so you'd need to ask someone else (zetok/sudde6 perhaps) about how that works.
+[18:52:04] <zetok> TCP relay was used
+[18:52:47] <fred_barclay> I was simply using EtherApe which doesn't show the application being used, so I had to double-check that there were no other web-facing applications running at the time--there weren't. 
+[18:53:16] <fred_barclay> I did get a wireshark capture too, so that could probably yield more info but I haven't dug through it yet.
+[18:53:24] <initramfs> Sure.
+[18:53:37] <fred_barclay> BTW: this is for the Linux client (no auto-update that I'm aware of).
+[18:54:17] <initramfs> If you're very concerned about this, I'd recommend you attempt to trace the application that sent the request. If it was indeed qTox and you have evidence that points to it, feel free to submit an issue
+[18:55:11] <zetok> ..
+[18:55:58] <zetok> initramfs: wwhat issue?
+[18:56:00] <zetok> what*
+[18:57:02] <fred_barclay> also I did check the file size and it seemed to match up with the data transfered via https
+[18:57:38] <initramfs> I'm just saying, at the remote possibility that fred_barclay finds qTox sending off weird HTTPS requests when it's not supposed to... I'm sure that's definitely not the case, but if he can find something legitimate, I'll look at it myself.
+[18:57:45] <initramfs> To zetok ^
+[18:58:06] <zetok> eh.
+[18:58:43] <zetok> fred_barclay: how did you verify that https was used?
+[18:58:50] <initramfs> zetok: It's not like it's extra work for us, unless there is evidence... Which I always welcome.
+[18:59:49] <zetok> initramfs: first of all, you don't even know whether https was used, aside from a connection on port 443, which etherape simply "classified" as https because of port used.
+[19:00:09] <zetok> and there are TCP relays running on port 443
+[19:00:39] <fred_barclay> zetok: you're right, if etherape simply uses the port (I haven't checked the code to see what it does) then that could be to blame right there.
+[19:00:43] <fred_barclay> oops
+[19:00:47] <initramfs> Right
+[19:01:04] <zetok> initramfs: you have a point that more evidence & stuff is really welcome, but something more than etherape is needed
+[19:01:16] <fred_barclay> Let me check the capture files from wireshark. 
+[19:01:23] <zetok> :)
+[19:01:24] <initramfs> zetok: Yep, that's why I kept emphasizing strong evidence
+[19:02:11] <initramfs> Perhaps I wasn't clear enough, what I was meaning was something along the lines of "if you want to investigate, please use a better program for it"
+[19:02:36] <initramfs> e.g. Header data of a HTTPS handshake
+[19:03:06] <initramfs> Destination host/certificates, and qTox being the source of origin
+[19:05:39] <zetok> >Yep, that's why I kept emphasizing strong evidence
+[19:06:40] <zetok> yeah, but at the same time it might have been a bit misleading how you pointed out in https direction
+[19:07:50] <initramfs> zetok: Okay, I'm sorry. I just didn't want to straight up dismiss anything. I didn't mean it in a way that suggested there was much of a possibility. I was just kinda getting at "don't take our word for it, try to find evidence for yourself"
+[19:08:29] <fred_barclay> and wireshark is reporting that the packets were in fact TCP. Oops... looks like a bad call on my part. 
+[19:08:47] <initramfs> zetok: And I'm unaware of the capabilities of the program "etherape" since I've never used it. So apologizes again.
+[19:09:00] <fred_barclay> The port WAS 443 which explains why etherape said it was https
+[19:09:20] <initramfs> TCP relaying is used to get around NATs that block traffic
+[19:09:42] <zetok> initramfs: no problem, it's just that verifying underlying assumptions should happen :)
+[19:09:56] <initramfs> fred_barclay: Port 443 is used because it's commonly used for HTTPS traffic, thus more likely to be open (in a restricted environment)
+[19:10:36] <initramfs> zetok: Yep. Agree.
+[19:12:21] <fred_barclay> Thanks for clearing that up, mates. While I'm at it, could either of you recommend documentation for tox/qtox? I've looked at the wiki for qtox on the Github page but I'd like to know more about qtox and tox themselves. 
+[19:12:51] <initramfs> https://toktok.github.io/spec <- That's the tox spec
+[19:13:54] <initramfs> qTox is a client for that, so it should be more or less conforming (it uses toxcore to do the 'tox')
+[19:14:08] <fred_barclay> Looks good. :)
+[19:19:32] <fred_barclay> zetok: " when direct UDP connection can't be made, TCP is used, in which case stuff is relayed" Wireshark is reporting that most of my packets were TCP. Does that mean that my traffic was routed through these other IPs?
+[19:20:05] <zetok> ~yep
+[19:21:10] <zetok> (probably)
+[19:21:13] <initramfs> Lol
+[19:21:28] <fred_barclay> If it's not a huge answer (or if I should just go look it up myself), what situations govern whether a UDP connection is made? Does qtox decide that?
+[19:21:38] <zetok> toxcore
+[19:21:52] <zetok> although it does provide a switch for TCP-only mode
+[19:21:58] <initramfs> Yep, but well, it boils down to if a direct UDP connection can be made...
+[19:22:14] <zetok> generally, toxcore tries to use UDP first, if it fails to make a connection with it, TCP is used
+[19:23:29] <zetok> https://zetok.github.io/tox-spec/#hole-punching ← basically this
+[19:24:04] <zetok> fred_barclay: https://zetok.github.io/tox-spec/#symmetric-nat ← probably what you have
+[19:24:17] <fred_barclay> And the data is still encrypted when it is routed via TCP? I noticed several SSLv2 packets in the wireshark capture
+[19:25:08] <initramfs> End-to-End encrypted. The mode of transit doesn't matter
+[19:25:19] <initramfs> It would be encrypted in a local loopback transfer as well
+[19:27:13] <fred_barclay> That makes sense. Thanks for the help! I may have some questions later, is it okay to ask here?
+[19:28:07] <initramfs> Sure.
+[19:28:13] <initramfs> Or at least I don't mind.
+[19:28:42] <linuxmodder> initramfs,  how are you claiming the mode doesn't matter 
+[19:29:24] <initramfs> Well, the message is encrypted prior to transit no?
+[19:29:33] <initramfs> And the method of transit is not taken into account
+[19:29:41] <linuxmodder> why not 
+[19:29:57] <initramfs> Am I missing something? Is it taken into account?
+[19:30:11] <linuxmodder> even if it is if the key is compromised  ETE becomes PTP real fast
+[19:30:31] <ovalseven8> ... but I am exercised about toxcore. Without toxcore -> no qTox
+[19:30:59] <linuxmodder> and sorry I'm not  totally  down with the trust us its secure of any client not just  *tox
+[19:31:38] <linuxmodder> ovalseven8,  nice but also a possible  vector of attack if those clients can be printed
+[19:31:47] <linuxmodder> or otherwise isolated
+[19:31:52] <initramfs> Well, to be honest I haven't actually sat down and studied the way tox encrypts in full, but perhaps we had a misunderstanding?
+[19:32:18] <initramfs> By transport I mean TCP/UDP
+[19:33:12] <initramfs> In which, upon key compromise, there is no difference in terms of which transport is more secure. Thus, the encryption itself is somewhat decoupled from the means of transport
+[19:33:31] <initramfs> It doesn't say "ooh, let's use Xsalsa20 because we're on TCP right now"
+[19:34:05] <ovalseven8> Yes, the way of transport is not important in terms of security/encryption
+[19:34:18] <initramfs> Yep, that's what I meant, nothing more.
+[19:35:03] <initramfs> I took fred_barclay's question as that: "does using TCP make it less secure?" My answer to it being: "No, the transport is irrelevant"
+[19:36:14] <zetok> linuxmodder: nope
+[19:37:11] <linuxmodder> zetok, hwo not 
+[19:37:53] <zetok> linuxmodder: go read the spec
+[19:38:32] <initramfs> zetok: Sorry what's the dispute again? I didn't fully understand linuxmodder's claim
+[19:39:34] <linuxmodder> initramfs,  zetok  how about you two go read the recent register article on  breaking https and other crypto withOUT the need for MiTM
+[19:40:01] <linuxmodder> and blantant  mangling to compromise both ends and possibly other hsots
+[19:40:36] <initramfs> linuxmodder: Again, sorry, your point is lost on me. Could you care to explain? Also, link to article?
+[19:41:05] <fred_barclay> linuxmodder you are referring to http://www.theregister.co.uk/2016/08/10/linux_tor_users_open_corrupted_communications/ ?
+[19:41:21] <linuxmodder> fred_barclay,  exactly that one 
+[19:41:40] <linuxmodder> among others on the topic 
+[19:43:04] <initramfs> linuxmodder: So, your point is that a flaw in the TCP implementation in linux is a argument against how transport affects encryption?
+[19:43:07] <linuxmodder> tbh I'm losing trust in all tox clients at this point, pushing audits to some hand wave date and pushing seemingly needless 'nice to have' sht in first 
+[19:43:27] <linuxmodder> initramfs,  read it again 
+[19:43:34] <linuxmodder> there is more to it 
+[19:44:14] <ovalseven8> I don't get it too
+[19:44:17] <zetok> linuxmodder: it's irrelevant though?
+[19:45:07] <initramfs> linuxmodder: It's just TCP packet spoofing
+[19:45:22] <linuxmodder> zetok,  nope its VERY relevant  but whatever I've started moving to other clients 
+[19:45:32] <zetok> lol
+[19:45:33] <initramfs> A big deal to non-encrypted traffic sure... but irrelevent to end-to-end encrypted data
+[19:45:38] <initramfs> I mean
+[19:45:44] <initramfs> You could corrupt and drop packets
+[19:45:55] <initramfs> You could disrupt normal communications
+[19:46:08] <initramfs> But at no point can you spoof actual data, or any content of the message
+[19:46:14] *** Joins: Chiitoo (~Chiitoo@ )
+[19:46:23] <linuxmodder> and break https even or transparently nabs  bits but again whatever 
+[19:46:47] <initramfs> > For encrypted HTTPS or SSH transmissions the worst that can be done is to break the connection.
+[19:46:51] <initramfs> From the article itself...
+[19:46:56] <linuxmodder> i don't trust the crypto for anythign secure 
+[19:47:00] <zetok> lol
+[19:47:30] <linuxmodder> and the fallback breaks qtox and possibly  clients I can confirm the qtox failure 
+[19:47:44] <initramfs> linuxmodder: qTox does not use HTTP or HTTPS
+[19:47:46] <linuxmodder> especially on slower connects
+[19:47:59] <zetok> initramfs: not quite → toxme
+[19:48:05] <initramfs> Well, okay
+[19:48:11] <linuxmodder> initramfs,  nodes are usign https 
+[19:48:20] <zetok> linuxmodder: bullshit
+[19:48:23] <linuxmodder> and not even all of them have over the life of the project
+[19:48:40] <linuxmodder> zetok,  tehn prove it  
+[19:48:48] <zetok> linuxmodder: again, read the spec
+[19:48:51] <linuxmodder> :443 is  ssl 
+[19:49:00] <zetok> eh.
+[19:49:11] <ovalseven8> No, 443 CAN be SSL
+[19:49:33] <ovalseven8> It's just a port common for TLS 
+[19:49:36] <linuxmodder> so then there is no gauranteee of the security of the transport 
+[19:49:52] <linuxmodder> if the spec saying otherwise is all you ahve 
+[19:50:02] <linuxmodder> and again no audit
+[19:50:07] <ovalseven8> If you want to communicate with someone, you need ports!
+[19:50:41] <initramfs> linuxmodder: Read the code then
+[19:51:04] <initramfs> linuxmodder: Or do DPI and look at the packets being sent from your computer
+[19:51:17] <initramfs> linuxmodder: They won't look anything like HTTP or HTTPS
+[19:51:46] <initramfs> Also, what happens if I send qTox traffic over port 25? Does it magically become e-mail?
+[19:52:40] <linuxmodder> no but the point is hueristics but  whatever I'm 98% doen dealing with *tox anyway
+[19:53:08] <linuxmodder> there is WAY to much trust us blindly in this project and always has been
+[19:53:11] *** Parts: linuxmodder (linuxmodde@ ) ("Leaving")
+[19:53:26] <initramfs> Well... That was awkward...
+[19:54:52] <zetok> well, blind trust is all one can have when not being able to read :c
+[19:55:54] <ovalseven8> Well, if a person is really dependent on secure communication they should of course NOT use Tox (yet). They should use approved messengers that have been audited and so on.
+[19:56:07] <ovalseven8> But that's nothing new.
+[19:57:56] <ovalseven8> The biggest problem for Tox at the moment is the lack of development for toxcore
+[19:58:03] <zetok> um
+[20:04:26] <initramfs> ovalseven8: There's been very active development over the last few days, I can say that much.
+[20:05:10] <ovalseven8> initramfs, Not for toxcore
+[20:06:09] <initramfs> ovalseven8: Really? I've seen a lot of PRs come and go (merged) over the last few days
+[20:06:24] <ovalseven8> initramfs, Most of them are just organizational things
+[20:06:52] <initramfs> Well, I guess I consider that development as well
+[20:07:22] <initramfs> I mean a developing a better organized project is much easier than one that requires build tweaks every 4 commits or so
+[20:07:42] <initramfs> ^ That's an example, I have no idea regarding the state of toxcore.
+[20:08:40] <ovalseven8> irungentoo who wrote almost whole toxcore alone is just inactive
+[20:10:06] <initramfs> Well, at least he open-sourced it. One person's inactivity should dictate the state of an entire project
+[20:10:14] <initramfs> Especially when there are so many people who contribute
+[20:10:24] <initramfs> shouldn't*
+[20:11:24] *** Joins: user69_ (~user69@ )
+[20:12:15] <ovalseven8> initramfs, It shouldn't, but it does. irungentoo knows the codebase the best and he delivered not even a FULL specification
+[20:12:57] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:12:58] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[20:13:34] *** Joins: f10__ (~flo@ )
+[20:14:20] *** Joins: f10 (~flo@ )
+[20:15:14] <initramfs> ovalseven8: Call me optimistic then, but I believe people can look at what's on the table and go from there. Sure, progress may be slower without irungentoo, but by no means is it stalled.
+[20:16:33] <initramfs> I mean, I started using qTox this April after being nagged by a friend about how insecure skype is. Now I'm a maintainer. By no means do I claim to understand all the code in qTox, but I went from nothing nothing about tox to having a decent grasp in 4 months.
+[20:17:01] <initramfs> I'm sure those who maintain toxcore are better programmers than me
+[20:17:24] <initramfs> I don't disagree that more progress with toxcore would definitely help
+[20:17:44] <initramfs> But from what I observe, it's definitely not in a state where all hope is lost and nothing is being done
+[20:18:15] <ovalseven8> initramfs, Concerning toxcore almost nothing is being done
+[20:18:28] <zetok> eh.
+[20:18:43] <initramfs> We're going in a circle now... Lol
+[20:19:03] <ovalseven8> Probably :D
+[20:21:14] *** Quits: user69_ (~user69@ ) (Quit: Konversation terminated!)
+[20:23:40] *** Joins: user2 (ad1095eb@ )
+[20:23:52] *** user2 is now known as user99
+[20:24:08] *** user99 is now known as userME_
+[20:24:53] <fred_barclay> whois /ovalseven8
+[20:25:05] <ovalseven8> ;)
+[20:25:09] <fred_barclay> sorry--network testing gone awry
+[20:25:47] <fred_barclay> my IP is apparently visible here and I'm trying to figure out how to hide it
+[20:26:25] <initramfs> Are you new to IRC?
+[20:26:46] <ovalseven8> Get a cloak -> #freenode
+[20:26:50] <fred_barclay> not really, but I don't spend much time on it and I don't understand much of it
+[20:27:11] <ovalseven8> fred_barclay, Get on #freenode -> Ask the admins for cloak "unaffiliated"
+[20:27:18] *** Quits: userME_ (ad1095eb@ ) (Client Quit)
+[20:27:28] <fred_barclay> ovalseven8 Thanks! 
+[20:28:23] <initramfs> Damn
+[20:28:33] <initramfs> I thought I was not going to be the only one
+[20:28:34] <initramfs> Lol
+[20:33:48] <fred_barclay> grrr... eir on #freenode hasn't given me a voice
+[21:03:44] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[21:05:48] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[21:09:33] *** Quits: abbat_ (~Anton@ ) (Ping timeout: 240 seconds)
+[21:11:28] *** Joins: abbat_ (~Anton@ )
+[21:17:22] *** Joins: user69 (~user69@ )
+[21:17:55] *** Quits: user69 (~user69@ ) (Client Quit)
+[21:26:35] <cisc> zetok: yeah I can file an issue but want to see if it's not just me having the logs not be written to that path
+[21:30:12] <iphy> Regarding https
+[21:30:25] <iphy> That's TCP relays running on port 443
+[21:30:31] <iphy> Not actually https traffic
+[21:32:25] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[21:32:55] *** Joins: f10__ (~flo@ )
+[21:36:59] <iphy> ok that was said
+[21:38:17] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[21:38:54] *** Joins: f10__ (~flo@ )
+[21:39:01] *** Quits: fred_barclay (~fred@ ) (Changing host)
+[21:39:01] *** Joins: fred_barclay (~fred@ )
+[21:41:54] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[21:42:50] *** Joins: fred_barclay (~fred@ )
+[21:51:13] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:54:24] *** Joins: test_userP (ad1095eb@ )
+[21:55:34] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[21:55:40] *** Quits: test_userP (ad1095eb@ ) (Client Quit)
+[21:57:04] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[21:57:15] *** Joins: athan (~athan@ )
+[21:57:30] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[23:09:01] *** Joins: hpanago (uid15586@ )
+[23:11:26] *** Joins: user69 (~user69@ )
+[23:11:57] *** Quits: user69 (~user69@ ) (Client Quit)
+[23:46:50] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[23:50:44] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:51:21] *** Joins: cisc (~cisc@ )
+[23:55:44] *** Joins: in1t3r (~LordShiva@ )
