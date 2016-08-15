@@ -1,0 +1,135 @@
+[00:27:22] *** Quits: athan (~athan@ ) (Ping timeout: 252 seconds)
+[00:36:45] *** Joins: user69 (~user69@ )
+[00:38:16] *** Quits: user69 (~user69@ ) (Client Quit)
+[01:45:48] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[01:54:23] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:24:16] *** Joins: cisc (~cisc@ )
+[02:41:16] *** Joins: athan (~athan@ )
+[04:02:38] *** Quits: abbat_ (~Anton@ ) (Remote host closed the connection)
+[05:11:39] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[05:40:11] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[05:49:20] *** Joins: sudden6 (~anonymous@ )
+[05:55:05] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:12:46] *** Joins: cisc (~cisc@ )
+[06:19:09] <nurupo> tux3: zetok: initramfs: i'm back, wasn't online since wednesday or so. i have set up libqt5.6.1 on jenkins, so tux3 can now edit qTox jobs to use it https://build.tox.chat/view/libqt/
+[06:21:13] <nurupo> tux3: i will keep 5.5.1 around, so if there is any issue, you can switch back to it
+[06:24:30] <nurupo> also, anyone is up for a fun project? https://wiki.tox.chat/users/nodes#is_there_anything_else_bootstrap_node_related_i_can_help_with_besides_running_a_bootstrap_node
+[06:24:43] <nurupo> manually adding nodes makes me cry
+[06:49:46] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:59:54] *** Joins: CGGB (~CGGB@ )
+[07:01:38] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[07:02:00] *** Joins: CGGB (~CGGB@ )
+[07:40:41] *** Joins: Diadlo (~diadlo@ )
+[07:41:59] *** Quits: Diadlo (~diadlo@ ) (Client Quit)
+[07:43:06] *** Joins: Diadlo (~diadlo@ )
+[07:53:05] *** Joins: cisc (~cisc@ )
+[07:58:35] *** Joins: f10 (~flo@ )
+[08:00:28] *** Joins: f10__ (~flo@ )
+[08:05:42] <zetok> Diadlo: o/
+[08:23:52] *** Joins: Diadl0 (~Diadlo@ )
+[08:24:59] <Diadl0> Hello everyone :)
+[08:25:24] *** Quits: Diadl0 (~Diadlo@ ) (Client Quit)
+[08:25:45] *** Joins: Diadl0 (~Diadlo@ )
+[08:32:29] <zetok> Diadl0: you've been invited to `qTox` org on gh :)
+[08:38:41] <Diadl0> Cool
+[08:38:59] <Diadl0> > The greater the force, the greater the responsibility
+[08:42:27] <zetok> Diadl0: what is the process for merging PRs?
+[08:42:40] *** Quits: Diadl0 (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[08:43:29] *** Joins: Diadl0 (~Diadlo@ )
+[08:43:39] *** Quits: athan (~athan@ ) (Ping timeout: 264 seconds)
+[08:44:27] <Diadl0> Can I answer little bit later?)
+[08:47:04] <zetok> sure :)
+[08:49:45] <initramfs> nurupo: Do you want free candy? Because that's how you get free candy.
+[08:50:13] *** Quits: Diadl0 (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[08:50:54] *** Joins: Diadl0 (~Diadlo@ )
+[09:07:19] *** Quits: Diadl0 (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[09:08:14] *** Joins: Diadl0 (~Diadlo@ )
+[09:12:57] *** Quits: Diadl0 (~Diadlo@ ) (Client Quit)
+[09:56:24] -qtox-git-spam- [qTox] initramfs opened pull request #3627: Update OSX build image to Xcode 7.3 (master...chore-new-xcode) https://git.io/v6zOR
+[09:57:13] *** Joins: f10_ (~flo@ )
+[09:59:21] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[10:25:50] *** Joins: Allanitomwesh (c5ed8b9a@ )
+[10:26:05] <Allanitomwesh> hi
+[10:35:57] <zetok> hello Allanitomwesh :)
+[10:37:42] <Allanitomwesh> been using this client
+[10:37:51] <Allanitomwesh> my freind had a weird bug
+[10:38:14] <Allanitomwesh> when i voice called him he could only get audio while looking at the settings page
+[10:38:25] <Allanitomwesh> in the actual chat he was muted
+[10:39:20] <Diadlo> Allanitomwesh: https://github.com/qTox/qTox/issues/3538 the same?
+[10:41:32] <Allanitomwesh> yeah simiar
+[10:41:48] <Allanitomwesh> but not windows and not 1.4 client
+[10:43:37] <tux3> nurupo, thanks! I'll try to switch the windows builds
+[10:48:00] <Diadlo> zetok: 
+[10:48:01] <Diadlo> 1) Review PR using Reviewable
+[10:48:03] <Diadlo> 2) Test PR using `test-pr.sh $PR`
+[10:48:04] <Diadlo> 3) If alright mark as `LGTM`
+[10:48:06] <Diadlo> 4) Wait few another `LGTM`
+[10:48:07] <Diadlo> 5) Merge using ./merge-pr.sh $PR
+[10:48:09] <Diadlo> 6) Check signature
+[10:48:10] <Diadlo> 7) git push
+[11:08:46] *** Quits: Allanitomwesh (c5ed8b9a@ ) (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+[11:11:46] <zetok> Diadlo: ~yep :)
+[11:11:59] <Diadlo> zetok:  Why `~` ?)
+[11:12:25] <zetok> Diadlo: waiting for lots of LGTMs is usually not necessary
+[11:15:29] <Diadlo> zetok:  Why? I can not see some errors. I think we should wait at least 2 LGTM. You disagree?
+[11:16:24] <Diadlo> s/I can not see/Any maintainer can not see/
+[11:16:33] <zetok> valid point
+[11:16:49] <initramfs> Diadlo: Well, I say the number of "lgtm"s would be based on the size of the PR. I mean a one line change probably doesn't warrant 4 lgtms...
+[11:17:02] <zetok> that's a problem that should be fixed, rather than working around it by multiple people reviewing stuff
+[11:17:06] <Diadlo> initramfs: Yep
+[11:54:30] -qtox-git-spam- [qTox] initramfs opened pull request #3628: Fixes scaling issues under HiDPI displays with desktop video (master...fix-hidpi-desktop) https://git.io/v6zGF
+[12:20:23] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[12:21:07] *** Joins: f10__ (~flo@ )
+[12:30:21] *** Joins: ovalseven8 (~ovalseven@ )
+[12:37:22] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[13:00:50] *** Joins: Emcy (~MC@ )
+[13:27:11] *** Joins: LittleVulpix (~Miranda@ )
+[14:52:25] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[14:52:50] *** Joins: f10__ (~flo@ )
+[14:58:15] *** Joins: f10 (~flo@ )
+[14:59:28] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[15:06:39] *** Quits: f10 (~flo@ ) (Ping timeout: 265 seconds)
+[15:08:41] *** Joins: f10 (~flo@ )
+[15:12:33] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:15:17] *** Joins: cisc (~cisc@ )
+[15:24:08] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[15:44:06] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:56:58] *** Joins: LittleVulpix (~Miranda@ )
+[17:08:56] *** Joins: athan (~athan@ )
+[17:23:57] -qtox-git-spam- [qTox] antis81 closed pull request #3590: add settings change notification (master...settings/change-notification) https://git.io/v6qV4
+[17:50:13] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[19:07:39] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[19:09:02] *** Joins: cisc (~cisc@ )
+[19:28:08] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[19:31:36] *** Joins: athan (~athan@ )
+[19:33:34] *** Joins: abbat (~Anton@ )
+[19:48:02] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[19:49:55] <nurupo> tux3: btw, guess what debian package got updated https://gist.github.com/nurupo/da2f1200fbe76a20061b6eae902bfa28
+[19:50:32] <tux3> \o/
+[19:50:43] <tux3> That's awesome
+[19:51:05] <nurupo> someone has also replied to https://github.com/sqlcipher/sqlcipher/issues/176
+[19:52:15] <tux3> Ok, so that explains why the hell it had a dependency on GDI32
+[19:52:50] <tux3> nurupo, could you try upgrading NSIS on the build machine? I don't think anything will break, hopefully
+[19:53:43] <nurupo> sure, i can try in 2 or so hours
+[19:54:01] <nurupo> as long as pulling the package from experimental doesn't break debian
+[19:54:25] <nurupo> looks like it depends on the same glibc version as stable, so at least that's fine
+[19:54:28] <tux3> So far my sid/testing/experimental Frankendebian mix is holding up pretty well :)
+[19:55:23] <nurupo> hopefully the plugin .dll we wget works with nsis 3
+[19:55:31] <tux3> Fingers crossed
+[19:56:12] <tux3> Otherwise I'll have to fix the awful Visual Studio 6.0 code..
+[19:56:15] * tux3 shudders
+[20:00:29] *** Joins: abbat_ (~Anton@ )
+[20:03:41] *** Quits: abbat (~Anton@ ) (Ping timeout: 250 seconds)
+[20:19:40] *** Joins: ovalseven8 (~ovalseven@ )
+[20:32:33] *** Joins: athan (~athan@ )
+[20:33:28] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[21:17:32] *** Quits: valvin (~valvin@ ) (Quit: ZNC - http://znc.in)
+[21:19:13] *** Joins: valvin (~valvin@ )
+[21:32:01] *** Quits: athan (~athan@ ) (Ping timeout: 258 seconds)
+[21:35:11] *** Quits: abbat_ (~Anton@ ) (Remote host closed the connection)
+[22:04:25] <Diadlo> Anybody know, why Core signals sends friendId instead of Friend* ?
+[22:04:35] <Diadlo> Same for groupId
+[22:34:43] *** Joins: athan (~athan@ )
+[23:14:46] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[23:33:54] *** Joins: f10__ (~flo@ )
+[23:34:18] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
