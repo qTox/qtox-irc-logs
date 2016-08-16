@@ -1,0 +1,257 @@
+[00:20:12] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[00:46:41] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:47:30] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[04:53:03] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 240 seconds)
+[04:53:21] *** Joins: Diadlo (~diadlo@ )
+[05:12:27] *** Joins: vindelschtuffen (~vindelsch@ )
+[07:24:57] *** Joins: f10_ (~flo@ )
+[07:40:33] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[07:46:21] *** Joins: initramfs (~initramfs@ )
+[08:02:08] *** Joins: anon_ (62172c34@ )
+[08:02:23] *** Quits: anon_ (62172c34@ ) (Client Quit)
+[08:08:23] *** Joins: f10 (~flo@ )
+[08:37:54] <iphy> nurupo: you jump through a lot more hoops than me
+[08:38:36] <iphy> https://github.com/TokTok/qTox/blob/master/.travis/Dockerfile
+[08:39:20] <nurupo> that's tux3, not me
+[08:39:43] <nurupo> i didn't write that sqlcipher build script
+[08:40:43] <nurupo> well, i made the diff for the patch
+[08:41:45] <nurupo> >--with-crypto-lib=none
+[08:43:35] <nurupo> iphy: you need to add a comment saying that the docker file just tests that things get built, it doesn't produce a binary that is supposed to be used by someone as it's missing stuff
+[09:13:51] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[09:15:02] *** Joins: Diadlo (~diadlo@ )
+[09:25:26] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:25:58] *** Joins: LittleVulpix (~Miranda@ )
+[09:34:37] <iphy> Right
+[09:43:52] *** Joins: sockspls (~sockspls@ )
+[09:58:35] *** Joins: cisc (~cisc@ )
+[10:11:26] *** Joins: abbat (~abbat@ )
+[10:51:33] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[10:52:08] *** Joins: abbat (~abbat@ )
+[10:55:31] *** Joins: hpanago (uid15586@ )
+[11:13:03] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[11:19:50] *** Joins: abbat (~abbat@ )
+[11:25:08] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[11:41:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[11:41:48] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:59:55] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[12:23:58] *** Joins: f10_ (~flo@ )
+[12:24:09] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[12:26:28] *** Joins: abbat (~abbat@ )
+[12:28:13] *** Joins: f10 (~flo@ )
+[12:50:48] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[13:02:46] *** Joins: in1t3r (~LordShiva@ )
+[13:03:13] <in1t3r> anyone up for a chat on tox?
+[13:03:15] <in1t3r> Audio chat?
+[13:13:38] *** Joins: Chiitoo (~Chiitoo@ )
+[13:19:12] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[13:20:16] *** Joins: initramfs (~initramfs@ )
+[14:01:10] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[14:19:16] *** Joins: sudden6 (~anonymous@ )
+[14:24:24] *** Joins: Hrki (~hrki@ )
+[14:25:27] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[14:26:48] <Hrki> which encryption is used to protect profile data ?
+[14:29:13] <zetok> libsodium
+[14:30:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[14:30:46] <zetok> well, same crypto that is used for sending data over net :)
+[14:30:50] *** Joins: abbat (~abbat@ )
+[14:31:19] <zetok> note though that this is just for profile data
+[14:32:10] <zetok> for history data, AES via sqlcipher is used
+[14:32:50] <zetok> hmm, there probably should be some FAQ made
+[14:33:11] * zetok wonders
+[14:34:28] *** Joins: cisc (~cisc@ )
+[14:34:40] <zetok> initramfs: how do you feel about making the doc travis job more bloated?
+[14:35:04] <initramfs> What do you mean by that?
+[14:35:36] <zetok> checking if all docs & their format is correct + at later point deploying those docs
+[14:35:48] <initramfs> That's trivial
+[14:35:53] <initramfs> With WARN_AS ERROR
+[14:35:54] <initramfs> I was thinking to have it download the sources of the latest doxygen (so that we get WARN_AS_ERROR) and compile that...
+[14:35:56] <zetok> err
+[14:36:04] <zetok> no, that's only doxygen docs
+[14:36:11] <zetok> what I have in mind, is all docs
+[14:36:16] <initramfs> Huh
+[14:36:42] <initramfs> What tool/program for that? Or are we back to regexing qTox :p
+[14:37:35] <zetok> mdl for checking markdown syntax, and rustdoc for building html from markdown
+[14:37:35] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[14:38:04] <zetok> alternatively, pandoc for MD → html, but it doesn't build a complete website, just the body of it AFAIK
+[14:39:07] <zetok> markdown syntax & style
+[14:39:09] <zetok> *
+[14:41:08] <zetok> and since we have doxygen docs, time to add it to the website :D
+[14:45:40] <zetok> is `Doxygen` good?
+[14:46:22] <zetok> under the `Developer Links` section
+[14:49:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[14:55:04] *** Joins: cisc (~cisc@ )
+[15:22:59] *** Joins: stvlker (~stvlker@ )
+[15:25:45] <initramfs> Sure
+[15:25:52] <initramfs> Sorry I got distracted
+[15:28:05] <iphy> Pandoc can build a body or a whole HTML file
+[15:28:22] <zetok> oh, good to know
+[15:34:27] <initramfs> Hmm... so where would we put generated markdown contents...
+[15:34:34] <initramfs> And in what structure?
+[15:35:06] <initramfs> i.e. where would say CONTRIBUTING.md go in relation to user_manual_en.md
+[15:39:56] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:40:49] *** Joins: cisc (~cisc@ )
+[16:25:03] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:28:29] *** Quits: SkyzohKey (~skyzohkey@ ) (Client Quit)
+[16:29:37] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:26:03] *** Quits: stvlker (~stvlker@ ) (Quit: Isopropilprophemilbarbitursauresphenildimethitdimenthylaminophirazolon)
+[18:43:24] *** Joins: CGGB (~CGGB@ )
+[19:11:04] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 265 seconds)
+[19:25:49] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[19:35:08] *** Joins: initramfs (~initramfs@ )
+[20:15:39] <nurupo> tux3: why is qtox for windows bundles 8.7mb libstdc++-6.dll?
+[20:15:58] <nurupo> you can strip it to 957kb
+[20:16:42] <nurupo> same with libeay32.dll, ssleay32.dll, libgcc_s_seh-1.dll, libwinpthread-1.dll and OpenAL32.dll
+[20:16:55] <nurupo> Qt libs are already stripped
+[20:17:26] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[20:17:32] <nurupo> that reduces qtox's size from 51.6mb to 42.3mb
+[20:17:44] <nurupo> zipped size only differs by 2.5mb or so though
+[20:17:44] *** Joins: smaragdus (~omoo@ )
+[20:18:37] <nurupo> qTox updater, which is 12mb in itself, also bundles that 8.7mb libstdc++-6.dll -_-
+[20:19:27] *** Quits: smaragdus (~omoo@ ) (Client Quit)
+[20:30:41] <zetok> \o/
+[20:33:05] *** Joins: smaragdus (~omoo@ )
+[20:55:00] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:19:18] *** Joins: athan (~athan@ )
+[21:40:59] *** Joins: abbat (~abbat@ )
+[22:11:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[22:11:41] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[22:13:05] *** Joins: f10 (~flo@ )
+[22:13:42] *** Joins: f10_ (~flo@ )
+[22:33:52] <tux3> nurupo, we used to have a stripping + upx-ing step during qTox windows builds, but it was removed at some point
+[22:34:17] <tux3> You can safely strip+compress a lot of things, except Qt which does too much magic
+[22:35:02] <tux3> If you want to add that step back, it's all good
+[22:42:43] -qtox-git-spam- [qTox] Diadlo opened pull request #3629: Drag and drop refactor (master...dndRefactor) https://git.io/v62pP
+[22:43:04] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[22:44:18] <nurupo> tux3: compressing is harmful
+[22:44:28] <nurupo> but there is no excuse not to strip
+[22:44:55] <tux3> nurupo, why is compressing harmful?
+[22:45:36] <tux3> You're right that we should strip, though
+[22:45:53] <zetok> removing "upx-ing" fixed some issues
+[22:46:22] <tux3> Qt really doesn't like being upx'd, they do a lot of questionnable magic
+[22:46:44] <tux3> But you're right that we might as well not take risks
+[22:47:04] <nurupo> 1) the program should be shipped to the user already compressed, as installer, zip file, etc., so compressing libraries/executables only saves disk space on user machine
+[22:47:43] <tux3> "compressing libraries/executables only saves disk space on user machine" <-- If you have a spinning rust drive, it also usually speeds up startup times, which are pretty bad for us (on HDDs at least)
+[22:47:47] <nurupo> 2) compressing increases startup time, as the executables/libraries first need to be uncompressed before being ran
+[22:48:02] <tux3> Not so, unless you have both a slow CPU and a SSD
+[22:48:24] <tux3> upx's decompression speed is lightning fast
+[22:50:28] <nurupo> 3.1) the executable/library you have in memory doesn't match the one you have on disk. on disk you have compressed version, in memory you have uncompressed version. this results in the increased memory usage, as the os can't mmap the executable/library from this. 3.2) this also prevents memory sharing between several instances of qtox running. if the library/executable on disk matched the one in memory, OS could share the Qt5 library for those multiple
+[22:50:28] <nurupo>  instances of qtox
+[22:51:00] <nurupo> *can't mmap the executable/library from disk
+[22:51:35] <nurupo> anyway, upx compressing is harmful
+[22:51:50] <tux3> Fair enough for the memory usage
+[22:52:50] <tux3> But yeah we might as well not if it risks causing weird bugs
+[22:53:17] <tux3> Though at least on my shitty laptop, upx'd qTox starts much faster, which is a shame
+[22:55:37] <nurupo> upx is essentially a trade off
+[22:55:48] <nurupo> you use less disk space, but more ram
+[22:56:13] <tux3> That's only if you run multiple instances though, it's not that common
+[22:56:25] <tux3> Especially on Windows where .dlls are rarely installed system wide
+[22:56:25] <nurupo> no, even if just one instance
+[22:57:23] <tux3> I don't know if that's actually a real difference
+[22:57:33] <nurupo> as i said in 3.1, with upx, your entire binary and libraries have to be loaded in ram. without upx, they could be mmaped from disk, meaning that only small portion of them would be in ram at a time
+[22:57:36] <tux3> Probably a lot of pages will be touched when qTox starts up
+[22:57:57] <zetok> >I don't know if that's actually a real difference
+[22:57:58] <tux3> Probably even all the pages will be touched if the loader needs to apply relocations/ASLR
+[22:57:59] <zetok> it is
+[22:58:08] <tux3> zetok, have you measured?
+[22:58:15] <zetok> no, other people did
+[22:58:24] <tux3> zetok, I'd like to see the numbers
+[22:58:31] <zetok> they were in some issue
+[22:59:02] <tux3> For example I'm pretty sure if ASLR is enabled the loader won't be able to mmap anything
+[22:59:27] <zetok> upx-ed qTox used like 2× the amount of ram
+[23:00:49] <tux3> Hm yeah apparently the loader knows how to relocate stuff on-demand
+[23:00:57] <tux3> I'd still like to see the numbers :)
+[23:01:27] <nurupo> tux3: just download latest qtox, run it and upx'ed version of it
+[23:01:43] <tux3> nurupo, I'd have to reboot into windows though
+[23:01:45] <nurupo> it's like 1 command line to upx all the things
+[23:02:21] <tux3> Or I could run VirtualBox on bare metal I guess, but Windows and Linux touching the same hard drive sounds scary
+[23:03:06] <zetok> >_>
+[23:05:50] <Diadlo> I plan move FriendList class from global scope inside some class. What you think?
+[23:06:26] <nurupo> tux3: hm, actually, compressing a binary might increase startup time if reading the uncompressed binary from disk take longer than reading the compressed binary and uncompressing it, which might be the case with your laptop
+[23:06:56] <nurupo> disk io is that slow, afterall
+[23:07:01] <tux3> nurupo, uncompressing upx'd binaries is practically free, but you get a dramatic speedup in IO time
+[23:07:17] <tux3> At least on hard drives, probably on some SSDs too but I don't have benchmarks :)
+[23:07:43] <zetok> can help too, but not with binaries
+[23:07:54] <nurupo> i'm just trying to explain your laptop observation
+[23:08:07] <tux3> Well my laptop *is* pretty shitty :)
+[23:08:12] <zetok> I mean, with binaries too, but the biggest speed increase isn't for binaries
+[23:08:30] <zetok> I wonder
+[23:08:31] <tux3> Oh what the hell, let me compile virtualbox
+[23:08:56] <tux3> And I'll boot two OS on the same hardware, what could possibly go wrong :) ?
+[23:09:07] <zetok> if you want the compression to increase speed, why not just use FS for it?
+[23:09:18] <nurupo> its likely the old laptop doesn't have heaps of ram, so that's probably not that much of a positive point
+[23:10:01] <tux3> I have 8GB rame actually, it's useful as a cache for my terrible HDD
+[23:10:36] <tux3> Terrible CPU and integrated graphics though
+[23:10:58] <tux3> Aw virtualbox doesn't compile on Linux 4.7 :/
+[23:11:08] <zetok> ha.
+[23:12:00] * zetok wonders whether debian wasn't supposed to work
+[23:12:36] <tux3> Shouldn't have compiled my own kernel I guess
+[23:12:54] <tux3> No problem, let's just fix the compile errors !
+[23:14:19] <nurupo> 3.3) using upx will also make the process more prone to swaps. upx essentially asks os to give it writable+executable memory page and it uncompresses the binary in there. these pages are dirty. when you load a non-upx'ed binary, os allocated pages for the mmap of the binary. these pages are clean. if os needs to free ram, os can discard clean pages, as they can be reloaded back from disk if needed. however, os can't discard dirty pages to free ram, os 
+[23:14:19] <nurupo> can only swap them out on disk
+[23:15:11] <tux3> That's true
+[23:18:53] <zetok> initramfs: on a second thought, given how broken mdl is, it's not suitable to use for verification :/
+[23:19:26] <Diadlo> tux3: What you think about moving FriendList from global scope inside some class
+[23:19:29] <Diadlo> ?
+[23:19:53] <tux3> Diadlo, maybe, it depends what exactly you have in mind
+[23:20:05] <tux3> What kind of other class do you want to put it inside?
+[23:20:45] <Diadlo> It's my next question :)
+[23:20:55] <Diadlo> Core/Widget/Nexus
+[23:21:43] <tux3> You want to make it a subclass of Core/Widget/Nexus?
+[23:21:48] <tux3> Or something else?
+[23:21:51] <zetok> tux3: https://github.com/qTox/qTox/pull/3623 ← good to merge?
+[23:23:24] <Diadlo> tux3: No. Now in many places we send in functions friendId (low-level abstraction) instead of Friend. And every time call FriendList::findFriend(friendId)
+[23:23:42] <Diadlo> I want replace all friendId on Friend*
+[23:24:21] <Diadlo> And we should replace FriendList on array of Friend* inside SOME class
+[23:24:28] <tux3> Diadlo, the advantage is friendIds never change, but it's not clear when a Friend* might get reallocated or destroyed
+[23:24:34] <Diadlo> Already existing class
+[23:24:50] <tux3> If you blindly use Friend* you risk use after free, friendId means you don't even need to think about lifetim
+[23:25:46] <tux3> Also, toxcore itself gives and wants a friendId, so we often end up not needing the full Friend* struct
+[23:26:10] <Diadlo>  But now we have ~global variable. i.e. high cohesion, It's really bad especially for testing
+[23:26:47] <tux3> It's bad that we have global variables, but that can be fixed without replacing friendId arguments by Friend* pointers I think
+[23:27:05] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/v6aUM
+[23:27:05] -qtox-git-spam- qTox/master 9a549d8 initramfs: chore(build): update OSX build image to Xcode 7.3...
+[23:27:05] -qtox-git-spam- qTox/master f3c77c5 Zetok Zalbavar: Merge pull request #3627...
+[23:27:09] <tux3> I think you're right that if would be good to put the FriendList in Core, as in Core should own FriendList
+[23:27:19] <tux3> And then we can remove the global/static variables
+[23:28:07] <Diadlo> Ok. Thanks ;)
+[23:28:13] <tux3> I don't think Widget should own the FriendList, since it's clearly not a GUI element, and probably not Nexus, but Core sounds right :)
+[23:28:20] <tux3> np
+[23:28:46] <Diadlo> Yep
+[23:29:06] <tux3> zetok, it's fine by me either way WRT to the PR
+[23:29:27] <tux3> It's more of a personnal preference, if more people prefer Qt's helpers, then why not
+[23:29:57] <tux3> From a portability point of wiew, I think both are strictly equal
+[23:29:59] <zetok> the way I see it, it's easier to get Qt "helpers" right
+[23:30:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[23:30:16] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:30:45] <tux3> Yeah since we use Qt pretty much everywhere and the helpers are in <QtGlobal>, it's pretty hard to forget to include it :)
+[23:32:05] <zetok> ok, I'll push qabs on master after it'll build on travis
+[23:34:11] <zetok> or maybe tomorrow, to see if anyone will comment on what is more preferred
+[23:34:25] -qtox-git-spam- [qTox] tux3 closed pull request #3624: Prefer std::abs and correctly include it (master...abs-include) https://git.io/v6EAO
+[23:34:36] <tux3> Well I closed my PR, there's no sense in waiting time on bikesheeding when both options are fine imho
+[23:34:43] <tux3> s/waiting/wasting
+[23:34:51] <zetok> oh, ok
+[23:34:54] <zetok> >.<
+[23:35:01] <tux3> Do you want me to reopen?
+[23:35:06] <zetok> nah
+[23:35:07] <tux3> I honestly don't think it matter
+[23:35:09] <tux3> Ok
+[23:35:27] <zetok> I've just reopened my PR since yours didn't even build :c
+[23:42:49] <nurupo> tux3: got 74mb for nightly qtox x86-64 and 116mb for upx'ed version of it
+[23:43:48] <nurupo> tux3: upx'ed everything except imageformats and platforms .dlls with upx.exe --lzma, as upxing those resulted in qtox not starting or images not being displayed
+[23:44:06] <tux3> Yeah, can't upx plugins
+[23:44:45] <tux3> So that's a 56% bigger memory usage, not great
+[23:44:58] <Diadlo> tux3: Using shared_ptr should fix problem with use after free?
+[23:45:12] <tux3> Diadlo, shared_ptr shouldn't be used without a very good reason
+[23:45:29] <tux3> It's intended to solve a very specific problem that we alsmost certainly don't have
+[23:45:40] <tux3> It would work, but we can do simpler :)
+[23:46:51] <Diadlo> By using friendId everywhere?)
+[23:47:17] <tux3> Not necessarily, but if you're talking just about the lifetime, a unique_ptr is enough
+[23:47:38] <tux3> Here Core would be the single owner of the FriendList* objects, so there's no need for shared_ptr at all
+[23:47:53] <tux3> But regardless, I still think using friendId is less risky :) 
+[23:49:19] *** Joins: athan (~athan@ )
+[23:50:43] <zetok> osx now builds >18 min
+[23:50:46] <zetok> great.
+[23:51:12] *** Quits: abbat (~abbat@ ) (Ping timeout: 240 seconds)
+[23:53:35] <zetok> hmm, looks like anomaly, since other build needed only ~13 min
+[23:55:49] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[23:59:00] -qtox-git-spam- [qTox] zetok closed pull request #3623: fix: use `qAbs()` instead of `abs()` for better platform compatibility (master...fix/qabs) https://git.io/v6E71
