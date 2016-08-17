@@ -1,0 +1,281 @@
+[00:01:10] <nurupo> be careful with using Qt macros and things, as some of them are marked as deprecated in favor of c++ stl alternatives
+[00:02:12] <nurupo> off top of my head, i think it's not recommended to use qt algorithms
+[00:03:05] <nurupo> hm, looks like nothing from QtGlobal is deprecated
+[00:03:20] *** Joins: abbat (~abbat@ )
+[00:03:25] <tux3> In practice Qt would never be able to remove them without breaking a lot of stuff I imagine
+[00:04:07] <tux3> But it seems to be that a lot of the Qt shims aren't really justified anymore with the state of modern C++
+[00:04:14] <nurupo> at least not until the next major release
+[00:04:38] <tux3> Perhaps, yes. One can dream :)
+[00:04:41] <nurupo> it's just that Qt included functionality that c++ stl didn't have at the time
+[00:04:51] <tux3> Yeah, Qt is surprisingly old
+[00:05:01] <tux3> There wasn't anything standard at the time
+[00:05:21] <nurupo> also the reason why it has its own containers, doesn't use exceptions, etc
+[00:06:15] <nurupo> Qt things have quite nice syntactic sugar though
+[00:07:31] <nurupo> java-style iterators are pretty, inline things like "QList() << elem1 << elem2" are also pretty. the latter can be replaced with the initialiser list in modern c++ though
+[00:09:17] <tux3> I love Qt, it's ridiculously high-level. The ISO comitee won't even agree to add std::string::split because they can't think of a way to make it fast for every case..
+[00:09:36] <tux3> The STL is "the intersection of your needs, not the union", they say
+[00:11:39] <tux3> I'd rather have convenience by default, C++ still allows to reimplement everything, and even drop down all the way to ASM if I need to fix a performance problem.
+[00:18:52] <nurupo> i'd rather have solid foundation by default and convenience as provided by some library
+[00:20:47] <tux3> Maybe, but in comparison to other languages, the STL is a bit underwhelming. Splitting strings is rarely performance critical, and very often used. I'm a bit sour about std::string::split =]
+[00:23:01] <nurupo> i also kind of don't like that fs, networking and things are being added to c++ standard library. the standard library was always minimalistic and there are libraries that do a very good job at these things, but suddenly we port these libraries (i'm looking at Boost) into the standard library
+[00:23:50] <nurupo> well, there are also pros of this, and perhaps there are more pros than cons, but i thought that standard library's idiology was to be simple, but apparently it's not
+[00:24:08] <nurupo> s/simple/minimalistic/
+[00:24:17] <tux3> I think the philosophy is really to be the intersection of everyone's needs
+[00:24:33] <tux3> In 2016, not having threads, networking, or even filesystem support was really pathetic
+[00:24:38] <tux3> That made it hard to write portable programs
+[00:25:07] <tux3> Everyone relying on Boost as a defacto standard because the STL is stuck 20 years in the past is hardly a great solution
+[00:26:30] <tux3> Now if you're talking about adding things like GUI and grahics into the STL, I get a little queasy, but I think some evolution is good :)
+[00:27:21] <nurupo> Qt in the standard library when? :)
+[00:27:34] <nurupo> c++ will have standard library comparable to java's runtime library
+[00:27:36] <nurupo> :D
+[00:27:37] <tux3> Heh. On Bjarne's dead body!
+[00:27:45] <tux3> Boost is pretty much STL-next though
+[00:29:03] <nurupo> i think there were even proposals for adding 2d graphics to the standard library, i think it was even based off sdl
+[00:29:13] <tux3> Yeah, based on cairo
+[00:29:22] <tux3> It's really not even close to Java or C# though, there was a chart made I think
+[00:29:29] <tux3> Yeah, http://pocoproject.org/blog/wp-content/uploads/2012/05/CppPortableLib.jpg
+[00:29:42] <nurupo> [meme image] let's add all the libraries to the standard library!
+[00:30:09] <tux3> The Java and C# libraries are literally dozens of time bigger than all of C++11's STL
+[00:30:12] <nurupo> suddenly 500mb libstdc++-999.dll
+[00:30:19] <tux3> lol
+[00:30:37] <tux3> And then embeded platforms will still implement only 1% of it :)
+[00:30:40] <nurupo> can we ups it? no, it would break Qt inside of it
+[00:30:43] <nurupo> *upx
+[00:31:18] <tux3> Whatever, real programmers run without the standard library anyways!
+[00:31:23] <tux3> Ring0 is where it's at!
+[00:32:33] <tux3> -nostdinc -nostdinc++ -std=c++14 -ffreestanding -fno-builtin -fno-rtti -nostdlib -fno-exceptions -nodefaultlibs -nostartfiles
+[00:43:22] *** Joins: hpanago (uid15586@ )
+[00:58:49] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[01:12:13] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[01:52:28] <koshii> bitcoin/w 37
+[03:05:49] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[04:23:21] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[04:50:03] *** Joins: athan (~athan@ )
+[06:05:14] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[06:05:30] *** Joins: CGGB (~CGGB@ )
+[06:11:57] *** Joins: in1t3r (~LordShiva@ )
+[06:37:54] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[06:54:06] *** Joins: in1t3r (~LordShiva@ )
+[07:01:31] *** Joins: hpanago (uid15586@ )
+[07:51:43] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[07:58:01] *** Joins: initramfs (~initramfs@ )
+[07:59:01] <initramfs> zetok: The 18min OSX build time seems to be a fluke, build times seem to be about 12 minutes now...
+[08:02:26] *** Joins: iphy (uid67735@ )
+[08:06:44] *** Joins: f10_ (~flo@ )
+[08:10:58] *** Joins: abbat (~Anton@ )
+[08:24:33] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[08:26:54] *** Joins: f10 (~flo@ )
+[09:05:39] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:15:49] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[11:50:35] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[12:24:32] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[12:26:07] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:43:40] *** Joins: hpanago (uid15586@ )
+[12:46:52] *** Joins: Chiitoo (~Chiitoo@ )
+[13:28:44] *** Joins: reBrain (~reBrain@ )
+[13:29:50] *** Joins: f10 (~flo@ )
+[13:31:38] *** Joins: f10_ (~flo@ )
+[14:33:04] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 252 seconds)
+[14:50:59] *** Joins: initramfs (~initramfs@ )
+[14:53:42] -qtox-git-spam- [qTox] antis81 opened pull request #3631: [WIP] ui redesign (master...ui/redesign) https://git.io/v6VCn
+[14:55:50] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[15:31:47] *** Joins: cisc (~cisc@ )
+[16:09:00] *** Joins: hpanago (uid15586@ )
+[16:17:12] <koshii> UI redesign eh?
+[16:32:52] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[16:33:28] *** Joins: cisc (~cisc@ )
+[17:25:28] *** Joins: pcre (~quassel@ )
+[17:40:10] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:49:29] *** Joins: ovalseven8 (~ovalseven@ )
+[18:06:29] <Chiitoo> Good thing I haven't used more time on them margins I guess.
+[18:13:04] *** Joins: LittleVulpix (~Miranda@ )
+[18:25:32] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[18:28:07] *** Joins: pcre (~quassel@ )
+[18:41:34] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[19:08:30] *** Joins: sudden6 (~anonymous@ )
+[19:08:46] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[19:45:17] *** Joins: abbat (~abbat@ )
+[19:45:54] *** Joins: athan (~athan@ )
+[20:22:14] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:23:37] *** Joins: Chiitoo (~Chiitoo@ )
+[20:39:02] <zetok> anyone wants to review PRs to the website?
+[20:40:20] <qTox-Website> [qTox-Website] zetok opened pull request #10: Update translations from weblate (master...tr) https://git.io/v6wcn
+[20:41:44] <zetok> I'll take that as a 'no'
+[20:42:27] <qTox-Website> [qTox-Website] zetok closed pull request #10: Update translations from weblate (master...tr) https://git.io/v6wcn
+[20:42:43] <zetok> (if someone wants, please say so)
+[20:42:52] * tux3 closes the tab
+[20:43:21] <zetok> don't worry, I've got an actual PR, not just a translation update ;)
+[20:43:42] <tux3> Well I couldn't have helped you with that translation anyways :)
+[20:43:43] <travis-ci> qTox/qTox-Website (058b4a5): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/152780800 / Changes: https://github.com/qTox/qTox-Website/compare/be8cc1e774c1...058b4a57614e
+[20:45:20] <qTox-Website> [qTox-Website] zetok opened pull request #11: add doxygen docs to links in the "footer" (master...doxy) https://git.io/v6wCY
+[20:45:22] <zetok> ↑ :)
+[20:46:04] <zetok> re: review; I was wondering whether to enable reviewable on the website repo
+[20:46:27] <zetok> with the same settings that other repos have
+[20:46:43] <zetok> (i.e. to require explicit LGTM)
+[20:47:15] <tux3> zetok, hm, does it make sense to add a translation string for a noun that probably shouldn't be translated?
+[20:47:34] <tux3> I don't know about reviewables. I like simplicity, but I know you like rules.
+[20:47:44] <zetok> well
+[20:48:26] <zetok> simple is nice in its own way
+[20:49:25] <zetok> dunno about the noun, I thought that someone might want to translate it, so I left it as translatable
+[20:50:15] <tux3> I don't think product nouns are translatable, unless the company has a special name for the product in a target country 
+[20:50:28] <zetok> hm.
+[20:50:50] <tux3> I wouldn't add the complexity before we actually need it :)
+[20:51:07] <tux3> If we neeed to translate it somehow, we can add it back later. Probably, we won't need it.
+[20:51:38] <zetok> https://github.com/qTox/qTox-Website/blob/master/index.ar.json ← this
+[20:51:50] <zetok> *everything* is translated there
+[20:52:03] <zetok> and what matters here, transcribed
+[20:52:29] <tux3> Not nouns, typically
+[20:52:30] <tux3>  "Source on GitHub": "GitHub المصدر على",
+[20:52:41] <tux3> Same in Japanese, Chinese, etc from what I've seen
+[20:53:08] <zetok> typically
+[20:53:28] <zetok> it doesn't hurt to leave it translatable, costs nothing, and if someone wants to translate they can
+[20:54:04] <tux3> Adding things we don't need is not good, it piles up and becomes technical debt over time
+[20:54:18] <zetok> and adding/removing translatable string to .json files is just a simple sed command, so this too is not a problem
+[20:54:22] <tux3> The goal is to remove as many lines as possible, until nothing else can be removed
+[20:54:23] <zetok> err
+[20:54:30] <zetok> nope
+[20:54:44] <zetok> content needs to be translatable
+[20:54:49] <tux3> Yes
+[20:54:59] <tux3> Not nouns like Doxygen or Github though
+[20:56:14] <iphy> Githöb
+[20:57:40] <tux3> google.com/?q=Githöb -> 2 results :)
+[20:58:47] <iphy> tforrer aka tforro hät sogar es Tacho Repo bi Githöb! 
+[21:04:38] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[21:12:44] <zetok> so, it's good for merge?
+[21:12:52] <tux3> No?
+[21:13:06] <zetok> :f
+[21:13:20] <tux3> 98% of that PR is fluff :/
+[21:14:18] <tux3> Sorry that I'm asking you to delete a lot of stuff you changed, but it could really be simpler
+[21:14:37] <zetok> except that it can't, AFAIK
+[21:15:17] <zetok> your only argument is that it might not be needed
+[21:15:36] <tux3> My argument is that it might be needed, but it's very unlikely :)
+[21:15:50] <zetok> not likely ≠ impossible
+[21:15:59] <tux3> Yes!
+[21:16:11] <zetok> so, there's no problem and it can be merged :)
+[21:16:20] <tux3> No!
+[21:16:30] <zetok> but it's needed.
+[21:16:45] <tux3> Not right no, now, since the translations are all empty
+[21:16:52] <zetok> …
+[21:16:58] <tux3> There's a teeny tiny chance that we might need it one day, if that
+[21:16:58] <zetok> that's bullshit
+[21:17:09] <tux3> It's not bullshit just because we disagree
+[21:17:24] <tux3> You literally added 48 empty transalations, what the fuck is the point of that?
+[21:17:25] <zetok> translations *are* supposed to be empty until someone will translate
+[21:17:37] <tux3> There is nothing to translate here, it's a noun
+[21:17:46] <zetok> I'd suggest you to go and read weblate docs
+[21:18:09] <tux3> That's an easy thing to say when you don't want to argue, ask people to do research...
+[21:18:57] <zetok> it just seems that at least part of your argument is based on lack of knowledge what weblate requires "source" json to have
+[21:20:00] <zetok> >There is nothing to translate here, it's a noun
+[21:20:28] *** Joins: athan (~athan@ )
+[21:20:31] <zetok> and this is something that I'd consider to be a bullshit, unless you *know* every language out there, including the artificial ones
+[21:20:59] <tux3> Hmm, I'm pretty sure that's a general rule
+[21:21:34] <zetok> not really
+[21:21:39] <tux3> The problem is that if you try to account for every thing that we could possibly need, even if we'll never need it, it makes things harder to maintain
+[21:22:24] <zetok> it's a custom that most of languages follow, but AFAIK generally there's no hard rule to not transcribe stuff
+[21:22:36] <zetok> >The problem is that if you try to account for every thing that we could possibly need, even if we'll never need it, it makes things harder to maintain
+[21:22:50] <zetok> and that's another argument that I'd consider to be a bullshit, given the scope of the PR
+[21:23:16] <tux3> The PR could be a one liner, and instead if modifies 49 files, I think that's needless complexity
+[21:23:33] <zetok> sed -i '/"Developer Links":/a\    "Doxygen": "",' index.*.json
+[21:23:38] <zetok> ↑ this is *not* complex
+[21:24:41] <tux3> It makes the files longer and longer for something we don't need, and it's harder to review because 2% of meaningful changes is hidden in 98% of fluff.
+[21:24:58] <tux3> Yes, it's easy to add a lot of things we don't need with sed :/
+[21:25:32] <zetok> >It makes the files longer and longer for something we don't need
+[21:25:34] <zetok> bullshit
+[21:25:36] <tux3> Can you think of a single language where there would be a translation for Doxygen?
+[21:25:44] <tux3> Even one, even one we don't have?
+[21:25:50] <zetok> you haven't proven that it's not needed
+[21:26:06] <tux3> You have to prove that things you add in PRs are needed
+[21:26:21] <tux3> You're trying to make a change here!
+[21:26:26] <zetok> yes
+[21:26:30] <zetok> and change will happen
+[21:26:40] <zetok> Either way.
+[21:26:43] <tux3> That's not a very helpful mindset.
+[21:27:00] <zetok> oh, it's very helpful :)
+[21:27:19] <zetok> I have a point where I am, and I know the point where I want to be.
+[21:27:37] <tux3> Yes, and it looks almost like you only want reviews to be rubber stamping..
+[21:27:42] <tux3> I'd like to be wrong
+[21:27:43] <zetok> that quite simplifies things, and makes it clear what needs to be done
+[21:28:05] <tux3> I'm sure.
+[21:28:09] <zetok> I'd like reviews to catch actual mistakes & stuff that is simply wrong
+[21:28:40] <tux3> I think you're making things more complicated that they need to be
+[21:28:54] <tux3> But we'll probably waste more time talking about this PR than doing anything els
+[21:28:59] <tux3> So go ahead if you will
+[21:28:59] <zetok> except that there's not much of complication here
+[21:29:08] <tux3> No, there is not much complication.
+[21:29:24] <tux3> But I don't think you can reasonnably argue that it's needed, even if it's a small complication
+[21:29:56] <tux3> Maybe we're bikeshedding though, so go ahead if you want, but if you do that with every review I don't think it'll be a good thing
+[21:30:04] <zetok> well, my argument is that it's probably needed, and if not even right now, at some point it will be needed
+[21:30:21] <zetok> right
+[21:30:25] <tux3> If it were probably needed, perhaps you would be able to show even a single case were it would have a use
+[21:30:31] <tux3> Even for a language we don't actually use
+[21:30:55] <zetok> "better safe than sorry"
+[21:31:53] <tux3> I don't see how we would be sorry to not add things until we need them
+[21:32:05] <tux3> You showed that it was only one sed command to add this, after all.
+[21:32:42] <tux3> But I think we're wasting more time arguing in circle that we could spend doing more productive things :)
+[21:32:57] <zetok> >tux3> I don't see how we would be sorry to not add things until we need them
+[21:33:08] <zetok> probably because you're not looking from the right perspective
+[21:33:14] <tux3> Maybe
+[21:33:34] <zetok> i.e. the perspective shouldn't be of a programmer, but only a translator who uses simple web UI to translate stuff
+[21:33:52] <zetok> and they don't have a way to translate stuff that it not explicitly made translatable
+[21:34:00] <tux3> The translator would have an easier job if they weren't given untranslatable nouns...
+[21:34:12] <zetok> and when one wants to translate something that doesn't have a way to be translated, that makes one sad
+[21:34:28] <zetok> nah, "untranslatable" stuff is the easiest to "translate"
+[21:34:40] <zetok> you just press the button to copy original as translation & you're done
+[21:34:42] <tux3> It is a waste of time, though.
+[21:35:08] <zetok> yes, translating generally is a waste of time
+[21:35:16] <tux3> I don't think so :/
+[21:35:24] <zetok> but it is.
+[21:35:36] <zetok> so much time would have been saved if everyone used the same languages.
+[21:35:38] <zetok> language.
+[21:35:46] <zetok> no need to translate at all
+[21:36:04] <tux3> If you want to do philosophy, you could argue that life is meaningless and however you decide to use your time is a waste, unless you're having fun :)
+[21:36:21] <zetok> err
+[21:36:39] <zetok> what you've said is true though
+[21:36:46] <Chiitoo> tux3: Did you steal that from me!?  If not, we think quite alike, hahaha.  (I say the same thing now and then.)
+[21:37:09] <zetok> ok, going to merge PR
+[21:38:03] <qTox-Website> [qTox-Website] zetok closed pull request #11: add doxygen docs to links in the "footer" (master...doxy) https://git.io/v6wCY
+[21:38:07] <Chiitoo> (Or well, I don't have the philosophy part.)
+[21:38:09] <tux3> Chiitoo, that's more or less Hedonism, and I can't say I invented that :)
+[21:38:40] <tux3> It doesn't always lead to good things though
+[21:38:46] <Chiitoo> Heh.  Well I don't remember seeing it anywhere else so I made it mine.  (Not really but yeah!)
+[21:38:58] <Chiitoo> Was a bit surprising to read it hehe.
+[21:38:59] <zetok> tux3: except that there are no good things \o/
+[21:39:05] <travis-ci> qTox/qTox-Website (bca0eda): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/152795230 / Changes: https://github.com/qTox/qTox-Website/compare/058b4a57614e...bca0eda5cfce
+[21:39:42] <tux3> zetok, I think you should decide for yourself what is good and bad :)
+[21:39:55] <zetok> deciding is bad
+[21:39:59] <tux3> At the end of the day we live in a society, but you can still make your own rules up to an extent
+[21:40:11] <zetok> it's better to keep the line fluid, and adjust it accordingly to what you need
+[21:40:22] <tux3> I think the exact contrary :D
+[21:40:49] <qTox-Website> [qTox-Website] zetok opened pull request #12: move some links from "header" to "footer" (master...move) https://git.io/v6wE5
+[21:40:50] <zetok> ↑ last thing for the website today
+[21:41:11] <tux3> LGTM
+[21:41:40] <tux3> Crap, double post
+[21:42:34] <qTox-Website> [qTox-Website] zetok closed pull request #12: move some links from "header" to "footer" (master...move) https://git.io/v6wE5
+[21:42:48] *** Quits: tux3 (~grayhatte@ ) (Quit: Quitting)
+[21:43:26] *** Joins: tux3 (~tux@ )
+[21:43:53] <travis-ci> qTox/qTox-Website (b43db27): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/152796561 / Changes: https://github.com/qTox/qTox-Website/compare/bca0eda5cfce...b43db27ba5d7
+[21:44:27] <zetok> \o/ https://qtox.github.io
+[21:44:41] <zetok> automation is great :3
+[21:45:45] *** Quits: tux3 (~tux@ ) (Client Quit)
+[21:47:11] *** Joins: tux3 (~tux@ )
+[21:48:01] *** Quits: tux3 (~tux@ ) (Client Quit)
+[21:48:19] *** Joins: tux3 (~tux@ )
+[21:51:06] *** Joins: tux3_ (~tux3@ )
+[21:51:44] *** Quits: tux3_ (~tux3@ ) (Changing host)
+[21:51:44] *** Joins: tux3_ (~tux3@ )
+[21:51:44] *** ChanServ sets mode: +o tux3_
+[21:51:48] *** Quits: tux3 (~tux@ ) (Disconnected by services)
+[21:51:55] *** Joins: tux3 (~tux@ )
+[21:52:06] *** Quits: tux3 (~tux@ ) (Disconnected by services)
+[21:52:08] *** tux3_ is now known as tux3
+[21:52:25] *** Joins: tux3_ (~tux@ )
+[21:55:14] *** Quits: tux3 (~tux3@ ) (Client Quit)
+[21:55:14] *** tux3_ is now known as tux3
+[21:55:36] *** Quits: tux3 (~tux@ ) (Changing host)
+[21:55:36] *** Joins: tux3 (~tux@ )
+[21:55:36] *** ChanServ sets mode: +o tux3
+[22:29:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[22:59:27] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[23:16:51] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[23:29:48] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[23:35:44] *** Joins: initramfs (~initramfs@ )
