@@ -1,0 +1,170 @@
+[00:02:52] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:07:25] *** Joins: cisc (~cisc@ )
+[00:23:05] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:27:46] *** Joins: cisc (~cisc@ )
+[00:52:57] *** Quits: demize (kyrias@ ) (Quit: Do Androids Dream of Electric Sheep?)
+[00:57:07] *** Quits: pcre (~quassel@ ) (Read error: Connection reset by peer)
+[01:02:25] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:05:43] *** Joins: demize (kyrias@ )
+[01:25:37] <zetok> -.-"
+[01:33:18] <zetok> line 249
+[01:33:32] <zetok> gpg: requesting key E9977759 from hkp server keyserver.ubuntu.com
+[01:33:32] <zetok> gpgkeys: key C65D51784EDC19A871DBDBB710C56D0DE9977759 can't be retrieved
+[01:35:04] <zetok> https://travis-ci.org/qTox/qTox/jobs/153045229#L244 ← worked on the latest master -.-"
+[01:35:38] <zetok> I guess that's the fallout from the hardening against short ID collisions
+[01:35:43] <zetok> eh.
+[01:36:04] <zetok> great.
+[01:36:18] *** Joins: cisc (~cisc@ )
+[01:43:20] -qtox-git-spam- [qTox] zetok opened pull request #3634: chore(travis): ignore apt failing to fetch GPG keys (master...travis) https://git.io/v6K1E
+[02:00:18] <nurupo> too bad, can't use my Linus key :\
+[02:36:54] <nurupo> zetok: in other news http://qntra.net/2016/08/rng-whitening-bug-weakened-all-versions-of-gpg/
+[02:41:13] <zetok> :/
+[03:02:08] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[03:14:20] *** Joins: athan (~athan@ )
+[03:43:52] *** Quits: isAAAc_ (~isAAAc@ ) (Quit: WeeChat 1.5)
+[04:37:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[04:37:54] *** Quits: Guest40542 (~flo@ ) (Ping timeout: 250 seconds)
+[05:29:08] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[05:29:49] *** Joins: Bheru27 (~Bheru27@ )
+[07:09:39] <vindelschtuffen> is it known that desktop sharing rarely works on windows?
+[07:13:14] <zetok> :/
+[07:14:27] <zetok> there's https://github.com/qTox/qTox/issues/3552
+[07:15:04] <vindelschtuffen> just had two guys fall back to join.me because they were in a hurry 
+[07:15:29] <vindelschtuffen> tried tox first, just saw each other's avatars
+[08:12:27] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[08:35:14] *** Joins: hpanago (uid15586@ )
+[08:51:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:51:43] *** Joins: LittleVulpix (~Miranda@ )
+[09:23:35] *** Joins: cisc (~cisc@ )
+[09:27:29] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[09:42:15] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[09:48:52] *** Joins: abbat (~abbat@ )
+[09:50:35] *** Joins: zero-ghost (~0@ )
+[09:52:57] *** Joins: Diadlo (~diadlo@ )
+[09:57:30] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[10:00:53] *** Joins: initramfs (~initramfs@ )
+[10:18:24] *** Quits: Sephi (~me@ ) (Ping timeout: 276 seconds)
+[10:19:40] *** Joins: ovalseven8 (~ovalseven@ )
+[10:19:44] <ovalseven8> tux3: https://github.com/TokTok/toxcore/issues/42
+[10:20:46] *** Joins: Sephi (~me@ )
+[10:32:10] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[10:34:21] *** Joins: pcre_ (~quassel@ )
+[10:42:06] -qtox-git-spam- [qTox] iphydf opened pull request #3635: chore: Make the windows code compatible with TCHAR. (master...winapi-tchar) https://git.io/v66Zf
+[11:07:52] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 240 seconds)
+[11:08:31] *** Joins: 6A4ABJ7XE (~quassel@ )
+[11:13:40] <iphy> https://travis-ci.org/qTox/qTox/jobs/153050145 uhm
+[11:15:47] <iphy> that's cool
+[11:16:00] <iphy> 1.5 million lines log
+[12:02:18] *** Joins: Chiitoo (~Chiitoo@ )
+[12:12:44] *** Joins: bashrc (~robertmot@ )
+[12:15:44] -qtox-git-spam- [qTox] iphydf opened pull request #3636: chore: Only do Travis CI builds for the master branch. (master...travis-master-only) https://git.io/v66R4
+[12:36:07] *** Quits: 6A4ABJ7XE (~quassel@ ) (Remote host closed the connection)
+[12:50:02] -qtox-git-spam- [qTox] zetok closed pull request #3636: chore: Only do Travis CI builds for the master branch. (master...travis-master-only) https://git.io/v66R4
+[12:55:09] *** Joins: c4r3t4ker (~user-c4r3@ )
+[13:11:52] *** Joins: Guest40542 (~flo@ )
+[13:12:07] *** Joins: f10_ (~flo@ )
+[13:37:38] *** Joins: reBrain (~reBrain@ )
+[13:55:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:56:05] *** Joins: abbat (~abbat@ )
+[14:03:30] *** Joins: Diadl0 (~diadlo@ )
+[14:03:33] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 240 seconds)
+[14:03:45] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[14:04:54] *** Joins: reBrain (~reBrain@ )
+[14:33:21] *** Parts: reBrain (~reBrain@ ) ("Leaving")
+[14:58:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[15:01:10] *** Joins: SkyzohKey (~skyzohkey@ )
+[15:03:17] *** Joins: abbat (~abbat@ )
+[15:09:12] *** Joins: reBrain (~reBrain@ )
+[15:16:39] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[15:37:42] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:46:25] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[16:08:52] <tux3> ovalseven8: Thanks. We can totally kill toxdns now that we have HTTPS support. Wish we had better though.
+[16:10:39] <tux3> I don't think we're going to get names throught the DHT or equivalent anytime soon, but maybe there's something to be done with multiple toxme servers and shamir's secret sharing so no single entity can forge your Toxme name.
+[16:16:34] <iphy> Hi tux3 
+[16:16:52] <iphy> Feel like reviewing some PRs? :)
+[16:18:55] <tux3> iphy, hi! Sure, I'll try to take a look. Which one(s) ?
+[16:30:03] *** Joins: cisc (~cisc@ )
+[16:38:29] <iphy> tux3: https://github.com/TokTok/toxcore/pull/41
+[17:09:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:21:37] *** Joins: abbat (~abbat@ )
+[17:33:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:36:18] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 244 seconds)
+[17:36:48] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:41:06] *** Joins: cisc (~cisc@ )
+[17:58:12] *** Quits: bashrc (~robertmot@ ) (Quit: Lost terminal)
+[18:09:51] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:19:25] *** Joins: initramfs (~initramfs@ )
+[18:37:14] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:02:03] <zetok> vindelschtuffen: um, it would be good to make a new issue if the one I've linked to isn't the one
+[19:04:14] <zetok> vindelschtuffen: yeah, new issue would be good
+[19:15:30] *** Joins: cisc (~cisc@ )
+[19:19:12] *** Quits: cisc (~cisc@ ) (Client Quit)
+[19:23:01] *** Joins: cisc (~cisc@ )
+[19:45:45] *** Joins: sudden6 (~anonymous@ )
+[19:51:07] <sudden6> Diadl0: ping
+[19:54:57] *** Joins: 6A4ABKBTE (~quassel@ )
+[20:02:19] *** Quits: c4r3t4ker (~user-c4r3@ ) (Quit: leaving)
+[20:02:59] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:04:05] *** Joins: c4r3t4ker (~user-c4r3@ )
+[20:06:24] <Diadl0> sudden6: pong
+[20:06:55] <sudden6> oh, I already submitted my comments to reviewable
+[20:17:44] <Diadl0> sudden6: Ok :)
+[20:21:28] <Diadl0> sudden6: You have something against doxygen-style comments?
+[20:22:04] <sudden6> don't all doxygen-style comments show up in doxygen output?
+[20:22:35] <Diadl0> Only comments before function, AFAIK
+[20:22:43] <Diadl0> And with tags
+[20:23:48] <sudden6> ok, then I was wrong, I thought they would also show up in the output
+[20:24:09] <Diadl0> sudden6: Wait a sec. I will test it now
+[20:24:37] <sudden6> I'd still prefer the normal // and /* style for inline code comments, because it makes it clear it's not going to doxygen
+[20:27:40] <Diadl0> sudden6: I was wrong
+[20:27:42] <Diadl0> Sorry
+[20:27:56] <sudden6> thx for testing :)
+[20:31:41] <Diadl0> sudden6: I think, I split the PR on two (how recommended iphyf). Alright?
+[20:32:36] <sudden6> idk, there are only minor fixes left and one would have to review everything again
+[20:32:41] <sudden6> iphy: ?
+[20:32:48] <sudden6> ↑
+[20:33:05] <sudden6> I don't think it's a good idea now
+[20:33:51] *** Joins: CGGB (~CGGB@ )
+[20:34:45] <iphy> No need
+[20:47:04] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[20:47:24] *** Joins: CGGB (~CGGB@ )
+[20:50:39] *** Joins: athan (~athan@ )
+[21:02:54] <iphy> qtox is fairly buggy on osx
+[21:03:10] <iphy> the chat edit box doesn't support cmd+backspace
+[21:03:22] <iphy> and sometimes it misses the first 1-2 characters I type before it starts accepting them
+[21:05:08] <iphy> that happens when the blinking cursor goes away
+[21:06:22] <iphy> I don't know when it happens - it seems to happen randomly
+[21:07:50] <sudden6> iphy: qtox swallowing chars on osx is a long know issue, nobody managed to solve it...
+[21:08:08] <sudden6> mainly due to non reproducable and missing hardware
+[21:10:15] <cisc> that same thing happened on a friend running OS X, must happen a lot, on a lot of Apple hardware
+[21:12:19] <iphy> I can reliably reproduce it now
+[21:14:13] <iphy> scroll in the chat log, then the cursor goes away
+[21:19:48] <iphy> no need to scroll
+[21:19:54] <iphy> just move the mouse cursor over the chat log
+[21:20:24] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[21:29:00] <Diadl0> sudden6: What about tags like <b> in translation?
+[21:29:13] <Diadl0> Or better avoid of is?
+[21:30:18] <sudden6> Ideally we'd only have text in translations, though I'm not 100% sure this is practical or the best solution
+[21:30:47] <sudden6> because if the translator want's to reorder sentences it'll cause problems with the formatting
+[21:41:12] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[21:42:12] *** Joins: athan (~athan@ )
+[21:55:52] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[21:58:31] *** 6A4ABKBTE is now known as pcre
+[22:12:12] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[22:22:07] *** Joins: SkyzohKey (~skyzohkey@ )
+[22:22:59] *** Quits: c4r3t4ker (~user-c4r3@ ) (Quit: leaving)
+[22:24:01] *** Joins: c4r3t4ker (~user-c4r3@ )
+[22:32:57] <Diadl0> sudden6: About settings rethink
+[22:33:04] <Diadl0> If it's important, may be just revert this change?)
+[22:33:33] <Diadl0> About moving settings groups
+[22:33:52] <sudden6> probably the best idea
+[22:33:57] <sudden6> old 
+[22:34:06] <sudden6> so old fileformat + new ui
+[22:34:08] <Diadl0> Okay :(
+[22:36:40] <sudden6> maybe we should switch the config file to a more extendable one soon
+[22:37:14] <sudden6> then we'll only need the one conversion
+[22:37:23] <Diadl0> Maybe remove groups at all?
+[22:41:36] <Diadl0> But it will make config file not easy to read
+[22:47:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[22:56:07] *** Quits: c4r3t4ker (~user-c4r3@ ) (Ping timeout: 252 seconds)
+[23:10:26] *** Quits: Guest40542 (~flo@ ) (Ping timeout: 258 seconds)
