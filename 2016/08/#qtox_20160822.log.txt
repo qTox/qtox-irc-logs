@@ -1,0 +1,150 @@
+[00:07:20] *** Quits: initramfs_ (~initramfs@ ) (Quit: Leaving)
+[00:07:38] *** Joins: initramfs (~initramfs@ )
+[00:57:11] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[01:29:52] *** Joins: max__ (18c496a0@ )
+[01:30:15] *** max__ is now known as Guest90140
+[01:30:16] *** Quits: Guest90140 (18c496a0@ ) (Client Quit)
+[02:15:34] <nurupo> zetok: is the blog URL intended to include all of the tags? e.g. "qtox", "update", "website", "repositories", "osx", "linux" in https://qtox.github.io/blog/qtox/update/website/repositories/osx/linux/2016/08/10/Hello-World.html
+[02:16:55] <nurupo> not sure if it's done on purpose or some oversight/misconfiguration
+[03:20:12] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[03:25:01] *** Joins: athan (~athan@ )
+[04:09:57] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:46:43] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[05:03:00] *** Joins: initramfs (~initramfs@ )
+[05:09:29] *** Joins: cisc (~cisc@ )
+[05:10:12] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[06:23:26] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:30:21] *** Joins: CGGB (~CGGB@ )
+[07:02:46] *** Joins: cisc (~cisc@ )
+[07:27:45] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[07:28:04] *** Joins: CGGB (~CGGB@ )
+[08:07:37] *** Joins: abbat (~Anton@ )
+[08:19:27] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:20:06] *** Joins: LittleVulpix (~Miranda@ )
+[08:52:27] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:14:26] <zetok> nurupo: latter one
+[09:51:06] *** Joins: f10 (~flo@ )
+[10:44:12] *** Joins: rerumnovarum (~user-reru@ )
+[10:48:32] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[10:53:38] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 265 seconds)
+[10:54:32] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[10:55:30] *** Joins: rerumnovarum (~user-reru@ )
+[11:02:20] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[11:02:44] *** Joins: rerumnovarum (~user-reru@ )
+[11:02:59] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[11:07:36] *** Joins: rerumnovarum (~user-reru@ )
+[11:09:33] *** Joins: reBrain (~reBrain@ )
+[11:10:05] *** Joins: initramfs (~initramfs@ )
+[11:24:33] *** Joins: pcre (~quassel@ )
+[11:30:35] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[11:31:05] *** Joins: rerumnovarum (~user-reru@ )
+[11:34:56] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[11:39:28] *** Joins: cisc (~cisc@ )
+[11:41:26] *** Joins: rerumnovarum (~user-reru@ )
+[11:43:20] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[11:46:31] *** Joins: rerumnovarum (~user-reru@ )
+[11:47:22] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[11:51:10] *** Joins: rerumnovarum (~user-reru@ )
+[11:54:03] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[11:56:11] *** Joins: rerumnovarum (~user-reru@ )
+[12:17:21] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[12:17:37] *** Joins: rerumnovarum (~user-reru@ )
+[12:18:13] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[12:18:40] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[12:19:41] *** Quits: pcre (~quassel@ ) (Read error: Connection reset by peer)
+[12:22:48] *** Joins: rerumnovarum (~user-reru@ )
+[12:29:21] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 276 seconds)
+[12:30:05] *** Joins: cisc (~cisc@ )
+[12:34:41] *** Joins: Curlybear (~Curlybear@ )
+[12:40:05] *** Quits: reBrain (~reBrain@ ) (Quit: Leaving)
+[13:18:16] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[13:20:57] *** Joins: rerumnovarum (~user-reru@ )
+[13:43:51] *** Quits: albel727 (~albel727@ ) (Read error: Connection reset by peer)
+[14:06:34] *** Quits: rerumnovarum (~user-reru@ ) (Remote host closed the connection)
+[14:11:00] *** Joins: rerumnovarum (~user-reru@ )
+[14:11:45] *** Joins: pcre (~quassel@ )
+[14:15:56] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[14:18:27] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[14:34:24] *** Joins: rerumnovarum (~user-reru@ )
+[14:39:38] *** Joins: albel727 (~albel727@ )
+[14:39:51] *** Quits: albel727 (~albel727@ ) (Remote host closed the connection)
+[15:02:20] *** Joins: abbat (~abbat@ )
+[15:07:34] *** Joins: hpanago (uid15586@ )
+[15:25:44] *** Joins: pcre_ (~quassel@ )
+[15:26:44] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[15:35:21] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 250 seconds)
+[15:37:59] *** Joins: Chiitoo (~Chiitoo@ )
+[15:41:16] *** Joins: Sephi (~me@ )
+[15:44:41] *** Joins: pcre (~quassel@ )
+[15:58:49] *** Quits: pcre (~quassel@ ) (Ping timeout: 252 seconds)
+[15:59:21] *** Joins: pcre (~quassel@ )
+[16:13:10] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[16:13:42] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[16:14:07] *** Joins: abbat (~abbat@ )
+[16:37:54] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[16:39:33] *** Joins: rerumnovarum (~user-reru@ )
+[17:16:31] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[17:17:18] *** Joins: rerumnovarum (~user-reru@ )
+[17:17:19] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[18:02:29] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:23:07] *** Joins: sudd3n6 (~anonymous@ )
+[19:11:03] *** Quits: sudd3n6 (~anonymous@ ) (Read error: Connection reset by peer)
+[19:11:17] *** Joins: sudd3n6 (~anonymous@ )
+[19:26:55] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[20:05:58] *** Joins: abbat (~Anton@ )
+[20:08:51] *** Joins: bashrc_ (~motters@ )
+[20:09:12] <bashrc_> trying to debug the camera: "no such input format"
+[20:14:06] *** Quits: Emcy (~MC@ ) (Ping timeout: 276 seconds)
+[20:18:07] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:20:21] *** Joins: Chiitoo (~Chiitoo@ )
+[20:32:13] *** Joins: athan (~athan@ )
+[20:34:59] <zetok> bashrc_: OS?
+[20:35:21] <bashrc_> debian jessie
+[20:35:26] <zetok> right
+[20:35:37] <bashrc_> I'm guessing that it might be lack of libmjpeg-dev
+[20:35:46] <zetok> um
+[20:36:04] <zetok> is it a suggested package for ffmpeg?
+[20:36:24] <bashrc_> it looks like it's picking a camera format which uses mjpeg
+[20:45:56] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[20:46:23] *** Joins: Emcy (~MC@ )
+[20:46:23] *** Quits: Emcy (~MC@ ) (Changing host)
+[20:46:23] *** Joins: Emcy (~MC@ )
+[20:47:13] <bashrc_> does ffmpeg have an mjpeg config option?
+[20:55:31] <iphy> I'm not sure the reviewable "any file modified in rebase invalidates LGTM" is that useful
+[20:56:07] <iphy> I'd like it to only invalidate if the relative diff changes
+[20:59:15] *** Joins: hpanago (uid15586@ )
+[21:01:50] <zetok> iphy: is there an option for it?
+[21:01:57] <zetok> (I didn't see one?)
+[21:02:40] <zetok> bashrc_: ffmpeg is what handles camera stuff, and since it at least detects mjpeg I would think that it does
+[21:06:45] <initramfs> bashrc_: Where are you seeing this "no such input format"? Where is it originating from?
+[21:15:56] <bashrc_> from running qtox in a terminal and watching the debug when I select a camera
+[21:16:12] <bashrc_> I can see that it finds various formats
+[21:16:38] <bashrc_> some yuyv422, some mjpeg
+[21:17:32] *** Joins: sudd3n6 (~anonymous@ )
+[21:23:26] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 244 seconds)
+[21:26:09] <zetok> ok, so ffmpeg detects it correctly
+[21:32:04] <iphy> zetok: no and it would be much harder to implement
+[21:32:32] <zetok> hmm
+[22:01:08] <iphy> zetok: you're not on tox
+[22:01:18] <zetok> right
+[22:01:38] <iphy> the ui redesign branch works with a small patch
+[22:01:44] <iphy> I'm testing it now (on mac)
+[22:01:47] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[22:02:53] *** Joins: f10_ (~flo@ )
+[22:04:56] <iphy> I'm out
+[22:05:02] <iphy> it's super buggy
+[22:05:11] <iphy> but it compiles
+[22:05:33] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[22:10:27] <iphy> doesn't look like building on osx should be a priority right now
+[22:26:50] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[22:34:42] <genesis> news about qtox plugins ?
+[22:36:38] <zetok> as soon as someone implements them
+[22:37:15] <zetok> in other words, nothing has changed on this front
+[22:49:31] -qtox-git-spam- [qTox] antis81 closed pull request #3643: [WORK-BRANCH] for #3639 (ui redesign) (ui/redesign...nf/ui/redesign) https://git.io/v6DmT
+[22:54:31] *** Quits: bennabiy (~bennabiy@ ) (Quit: http://www.yellowdeli.com)
+[22:59:44] *** Joins: oranges (oranges@ )
+[22:59:54] <oranges> are you still making sure the qtox updater vm is being updated?
+[23:18:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[23:19:13] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:20:44] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[23:59:29] <tux3> oranges, you mean the update server, or something else?
