@@ -1,0 +1,176 @@
+[01:03:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 252 seconds)
+[01:04:36] *** Joins: f10_ (~flo@ )
+[01:04:41] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[01:07:05] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[02:21:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[02:59:06] *** Joins: athan (~athan@ )
+[03:13:44] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[03:47:16] *** Quits: nurupo (~nurupo.ga@ ) (Quit: nurupo)
+[03:47:26] *** Joins: nurupo (~nurupo.ga@ )
+[04:04:39] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 264 seconds)
+[04:09:57] *** Joins: nurupo (~nurupo.ga@ )
+[04:10:51] *** Quits: nurupo (~nurupo.ga@ ) (Client Quit)
+[04:15:37] *** Quits: athan (~athan@ ) (Ping timeout: 252 seconds)
+[04:49:19] *** Joins: cisc (~cisc@ )
+[05:07:32] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[05:07:49] *** Joins: cisc (~cisc@ )
+[05:09:20] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[05:09:32] *** Joins: cisc (~cisc@ )
+[05:15:35] *** Joins: nurupo (~nurupo.ga@ )
+[06:03:36] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[06:20:47] *** Joins: cisc (~cisc@ )
+[06:24:03] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 240 seconds)
+[06:27:11] *** Joins: nurupo (~nurupo.ga@ )
+[06:44:50] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 265 seconds)
+[06:48:13] *** Joins: nurupo (~nurupo.ga@ )
+[07:12:28] *** Joins: sudden6 (~anonymous@ )
+[07:34:02] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[07:43:22] *** Joins: abbat (~Anton@ )
+[08:11:49] *** Joins: rerumnovarum (~user-reru@ )
+[08:29:26] *** Joins: LittleVulpix (~Miranda@ )
+[08:36:00] *** Quits: rerumnovarum (~user-reru@ ) (Quit: leaving)
+[08:37:17] *** Joins: rerumnovarum (~user-reru@ )
+[08:59:53] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:25:14] *** Quits: linxon (~lin@ ) (Ping timeout: 260 seconds)
+[09:28:23] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[09:29:10] *** Joins: cisc (~cisc@ )
+[09:45:04] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[09:45:58] *** Joins: cisc (~cisc@ )
+[09:49:13] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[09:50:04] *** Joins: cisc (~cisc@ )
+[09:50:07] *** Quits: cisc (~cisc@ ) (Client Quit)
+[09:57:41] *** Joins: Chiitoo (~Chiitoo@ )
+[09:59:59] *** Joins: abbat (~abbat@ )
+[10:08:53] *** Joins: pcre (~quassel@ )
+[10:13:36] *** Joins: isAAAc (~isAAAc@ )
+[10:15:29] *** Joins: cisc (~cisc@ )
+[10:28:23] *** Joins: f10_ (~flo@ )
+[10:28:26] *** Joins: ovalseven8 (~ovalseven@ )
+[10:28:51] *** Joins: f10 (~flo@ )
+[10:35:49] *** Quits: genesis (~genesis@ ) (Ping timeout: 260 seconds)
+[10:38:11] *** Joins: genesis (~genesis@ )
+[11:34:53] *** Joins: Lord_Vlad (~Vlad@ )
+[11:36:05] <Lord_Vlad> Hello ?
+[11:37:07] <Lord_Vlad> Until recently qTox worked fine in every way
+[11:37:20] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[11:37:23] <Lord_Vlad> But now the calls are messed up.
+[11:37:36] <Lord_Vlad> Is it just me ?
+[11:39:03] <Lord_Vlad> Basically, when I call, my camera and my microphone are not active, they only are if I go to the options...
+[11:40:28] <Diadlo> Lord_Vlad: This is same problem https://github.com/qTox/qTox/issues/3538 ?
+[11:43:08] <Lord_Vlad> Nearly, because it is not just voice, but also image that doesn't go well. I'll read and test to see if any of the solutions given there are appliable, though.
+[11:43:18] <Lord_Vlad> Thanks.
+[11:43:58] <Diadlo> Lord_Vlad: You are welcome :)
+[11:48:08] -qtox-git-spam- [qTox] Diadlo closed pull request #3540: [WIP] Moved loading video device in another thread. (master...avsettingBlockThread) https://git.io/v6FaG
+[11:53:00] *** Quits: rerumnovarum (~user-reru@ ) (Quit: leaving)
+[11:53:19] *** Joins: rerumnovarum (~user-reru@ )
+[11:53:50] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[11:54:07] *** Joins: rerumnovarum (~user-reru@ )
+[11:54:24] *** Joins: rerumnov1rum (~user-reru@ )
+[11:54:44] *** Quits: rerumnov1rum (~user-reru@ ) (Client Quit)
+[12:04:41] <koshii> So on Debian, qtox typically uses 20-30% of one CPU all the time; what is going to be done to bring this down substantially?
+[12:04:47] <koshii> I assume this is because of all the P2P connections it is shuffling around
+[12:05:29] <Diadlo> koshii: What version are you using?
+[12:05:45] <koshii> Git commit: f05b7e040a073c7afadaf763dda5beaf130c6dbd
+[12:05:50] <koshii> (from qtox --version)
+[12:06:03] <Lord_Vlad> Basically, messing with the options back and forth solved the problem... thanks
+[12:08:07] <Diadlo> koshii: I belive, that https://github.com/qTox/qTox/pull/3639 will partially fix this problem
+[12:09:41] <zetok> koshii: what CPU?
+[12:09:48] <koshii> zetok: i386
+[12:09:51] <koshii> 32bit Debian
+[12:10:30] <zetok> clocked at?
+[12:10:47] <koshii> It's one of these 2 core Atom processors, netbook
+[12:10:56] <koshii> Not even sure what the speed is, but bought it this year
+[12:11:11] <koshii> Low-power, but qtox is the most demanding process on the system by far
+[12:11:33] <zetok> grep 'cpu MHz' /proc/cpuinfo
+[12:14:19] <koshii> 2x cpu MHz 2290.050
+[12:14:32] <zetok> ok
+[12:14:42] <zetok> that CPU usage is definitely not normal
+[12:15:30] <zetok> with >150 contacts I have 3-5% CPU usage
+[12:15:33] <koshii> I'm pulliing from deb http://download.opensuse.org/repositories/home:/antonbatenev:/tox/Debian_8.0/ /
+[12:15:39] <zetok> @ 4GHz
+[12:15:42] <koshii> Right
+[12:15:44] <koshii> I didn't think it was normal :)
+[12:15:53] <zetok> (the more contacts you have the bigger CPU usage)
+[12:16:15] <koshii> I have about 20 contacts
+[12:16:32] <koshii> I'm going to guess that I am the only person testing this on 32 bit linux though?
+[12:16:36] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[12:17:21] *** Joins: abbat (~abbat@ )
+[12:17:32] <zetok> maybe not the only one
+[12:18:42] <koshii> Anything I can do to profile it and send to you guys for possible analysis?
+[12:20:34] <zetok> sec
+[12:21:11] <zetok> koshii: https://gist.github.com/suhr/95e9dafd01342b06a985
+[12:22:07] * zetok wonders
+[12:22:30] <koshii> zetok: How much identifying data will come with these logs?
+[12:22:49] <zetok> those aren't logs
+[12:23:27] <koshii> Logs of a kind :)
+[12:23:27] <zetok> it's a graph of functions being called
+[12:23:32] <koshii> Ah, I see
+[12:24:14] * zetok wonders
+[12:24:28] <zetok> koshii: you would want to install debug symbols for stuff
+[12:25:06] <koshii> zetok: A different package?
+[12:25:25] <koshii> qtox-dbg - Debug symbols for qTox
+[12:25:28] <koshii> Right?
+[12:25:34] <zetok> at least for qTox, glibc, Qt and ffmpeg
+[12:25:54] <koshii> Sounds fun
+[12:59:25] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 265 seconds)
+[13:02:05] *** Joins: Chiitoo (~Chiitoo@ )
+[13:06:27] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[13:08:43] *** Joins: abbat (~abbat@ )
+[13:19:33] *** Quits: iphy (uid67735@ ) (Ping timeout: 250 seconds)
+[13:21:38] *** Joins: iphy (uid67735@ )
+[13:32:15] *** Quits: rerumnovarum (~user-reru@ ) (Quit: leaving)
+[13:33:40] *** Joins: linxon (~lin@ )
+[13:37:18] *** Joins: in1t3r (~LordShiva@ )
+[13:40:00] <iphy> just qtox-dbg should give you some idea of what things are slow
+[13:40:19] <iphy> and libtoxcore-dbg (if that exists)
+[13:55:35] <koshii> iphy: You mean just those by themselves, or those in conjunction with the steps in the gist above?
+[13:55:58] <iphy> With the steps
+[14:05:51] *** Quits: pcre (~quassel@ ) (Ping timeout: 258 seconds)
+[14:16:30] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[14:30:04] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[14:34:58] *** Joins: zero-ghost (~0@ )
+[14:51:36] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[15:21:09] *** Joins: cisc (~cisc@ )
+[15:27:26] *** Joins: pcre (~quassel@ )
+[15:43:44] *** Joins: ovalseven8 (~ovalseven@ )
+[16:12:33] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[16:13:06] *** Joins: pcre (~quassel@ )
+[16:19:49] *** Joins: in1t3r (~LordShiva@ )
+[16:20:10] *** Quits: initramfs_ (~initramfs@ ) (Quit: Leaving)
+[16:54:18] *** Joins: pcre_ (~quassel@ )
+[16:54:24] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[16:58:55] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[17:04:33] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 240 seconds)
+[17:04:57] *** Joins: pcre (~quassel@ )
+[17:12:33] *** Joins: in1t3r (~LordShiva@ )
+[17:55:54] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:59:07] *** Joins: pcre_ (~quassel@ )
+[17:59:34] *** Quits: pcre (~quassel@ ) (Ping timeout: 265 seconds)
+[18:13:47] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:15:42] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[18:37:47] *** Joins: Chiitoo (~Chiitoo@ )
+[18:38:15] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 264 seconds)
+[18:45:06] *** Joins: Lord_Vlad (~Vlad@ )
+[18:52:35] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 244 seconds)
+[18:52:47] *** Joins: pcre (~quassel@ )
+[19:00:45] *** Joins: ovalseven8_ (~ovalseven@ )
+[19:03:47] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 244 seconds)
+[19:05:51] *** Joins: athan (~athan@ )
+[19:14:01] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[19:14:50] *** Joins: Lord_Vlad (~Vlad@ )
+[19:17:34] *** Joins: in1t3r (~LordShiva@ )
+[19:18:42] *** Joins: ovalseven8__ (~ovalseven@ )
+[19:20:49] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 260 seconds)
+[19:21:39] *** Quits: ovalseven8_ (~ovalseven@ ) (Ping timeout: 265 seconds)
+[19:29:15] *** Quits: ovalseven8__ (~ovalseven@ ) (Ping timeout: 264 seconds)
+[21:03:55] *** Joins: sudden6 (~anonymous@ )
+[21:18:24] <Chiitoo> tux3, nurupo, et al.: any idea why I'd be getting "/home/jenkins/workspace/libffmpeg_build_windows_x86-64_static_release/libffmpeg/libavutil/file_open.c:140: undefined reference to `mkstemp'"?
+[21:19:16] *** Joins: initramfs (~initramfs@ )
+[21:36:47] -qtox-git-spam- [qTox] Diadlo opened pull request #3648: refactor(toxdns): Removed using of toxdns (master...removeToxDNS) https://git.io/v6NJM
+[21:48:47] <Emcy_> is the a/v qtoc puts out known to be out of sync
+[21:57:22] -qtox-git-spam- [qTox] Diadlo closed pull request #3634: chore(travis): ignore apt failing to fetch GPG keys (master...travis) https://git.io/v6K1E
+[21:57:50] <iphy> would be nice if the spam bot said "merged" instead of "closed"
+[22:43:50] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[23:11:06] *** Joins: SkyzohKey (~skyzohkey@ )
+[23:11:38] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[23:55:33] *** Joins: dardevelin (~dardeveli@ )
