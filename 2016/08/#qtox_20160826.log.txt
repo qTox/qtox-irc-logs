@@ -1,0 +1,379 @@
+[00:37:12] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:37:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 264 seconds)
+[01:04:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[01:06:19] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 252 seconds)
+[01:06:56] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[01:20:15] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[01:20:49] *** Joins: cisc (~cisc@ )
+[01:55:55] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[01:56:47] *** Joins: Chiitoo (~Chiitoo@ )
+[03:01:33] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[03:26:48] *** Joins: athan (~athan@ )
+[03:54:12] *** Quits: tux3 (~tux@ ) (Ping timeout: 276 seconds)
+[03:56:32] *** Joins: tux3 (~tux@ )
+[04:18:20] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:20:31] *** Joins: cisc (~cisc@ )
+[05:01:03] *** Quits: athan (~athan@ ) (Ping timeout: 264 seconds)
+[05:17:05] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[05:38:28] *** Joins: in1t3r (~LordShiva@ )
+[06:03:32] *** Joins: athan (~athan@ )
+[07:10:09] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[07:14:24] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[07:16:47] *** Joins: cisc (~cisc@ )
+[08:02:14] *** Joins: abbat (~Anton@ )
+[08:04:38] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[08:17:05] *** Joins: in1t3r (~LordShiva@ )
+[08:23:07] *** Joins: Diadlo (~diadlo@ )
+[08:33:33] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[08:34:34] *** Joins: Diadlo (~diadlo@ )
+[08:39:49] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[08:44:56] *** Joins: initramfs (~initramfs@ )
+[09:02:08] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:17:36] -qtox-git-spam- [qTox] Diadlo closed pull request #3641: [Redesign] Remove FriendWidget dependency (ui/redesign...dndRefactor) https://git.io/v6MtL
+[09:21:02] *** Joins: CGGB (~CGGB@ )
+[09:51:24] *** Joins: abbat (~abbat@ )
+[09:55:41] *** Joins: sudden6 (~anonymous@ )
+[09:55:56] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[10:09:58] -qtox-git-spam- [qTox] Diadlo closed pull request #3556: Shift screen region on windows. (master...fixMultiscreenStream) https://git.io/v6AUI
+[10:10:48] *** Joins: f10_ (~flo@ )
+[10:13:19] *** Quits: genesis (~genesis@ ) (Ping timeout: 260 seconds)
+[10:16:15] *** Joins: f10 (~flo@ )
+[10:16:57] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[10:24:02] *** Joins: sudd3n6 (~anonymous@ )
+[10:26:02] *** Joins: ovalseven8 (~ovalseven@ )
+[10:31:00] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:31:07] *** Joins: genesis (~genesis@ )
+[10:46:01] *** Joins: LittleVulpix (~Miranda@ )
+[10:56:28] *** Joins: pcre (~quassel@ )
+[11:08:25] *** Joins: f10_ (~flo@ )
+[11:21:47] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[11:24:00] *** Joins: in1t3r (~LordShiva@ )
+[11:44:10] *** Joins: dardevelin (~dardeveli@ )
+[11:59:13] <Diadlo> Hello everyone
+[11:59:30] <Diadlo> HistoryKeeper deprecated little bit smaller, than year. What you think about removing it in new version?
+[12:05:25] <initramfs> What version was it last used in?
+[12:06:58] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[12:07:12] *** Joins: in1t3r (~LordShiva@ )
+[12:07:36] <zetok> for what it's used?
+[12:07:58] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:08:38] <sudden6> it was the old way of storing chat history
+[12:09:01] <zetok> right
+[12:09:25] <zetok> I was wondering if it's for some subset of DB, or whole thing
+[12:10:16] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[12:10:39] <zetok> how hard would it be to extract it from qTox into a separate tool?
+[12:11:55] <sudden6> why would you want it in a separate tool?
+[12:12:17] <sudden6> if you need access to the data, you could use some editor for sqlite
+[12:14:56] <sudden6> I just looked, and it seems like HistoryKeeper is superseeded by the history class and shouldn't do anything anymore
+[12:19:58] <zetok> um, from what I understand it was used to migrate from old DB format into a new one, right?
+[12:20:27] <sudden6> yep
+[12:21:32] <zetok> ok, so when it gets removed all the DBs with old format are going to be useless for qTox?
+[12:21:42] <sudden6> yep
+[12:21:49] <zetok> ok.
+[12:22:26] <sudden6> but all DBs should have been automatically migrated
+[12:22:33] <zetok> err?
+[12:22:37] <zetok> why would you think that?
+[12:22:51] <sudden6> because the code contains functions to do that?
+[12:23:13] <zetok> just because there is code, it doesn't mean that it's executed
+[12:23:32] <sudden6> of course, but why shouldn't it be executed?
+[12:24:51] <zetok> just because qTox has released $versions doesn't mean that someone who has tried using qTox and stopped will try with every new version
+[12:25:38] <zetok> use case is that someone has used qTox for some time with old DB format, stopped, and after we remove the migration code they would want to resume using qTox
+[12:25:40] <Diadlo> It can migrate on new version throug version with migration
+[12:26:03] <Diadlo> Otherwise, we have to store it forever
+[12:26:38] <sudden6> yep, if that happens (unlikely) we could say, run qTox 1.5.1 then run qTox $shinynewrelease
+[12:27:02] <zetok> the problem is availability of 1.5.1
+[12:27:27] <zetok> i.e. you would have to ensure that there's 1.5.1 available & ~running
+[12:28:05] <zetok> the alternative is to have a one simple, small tool that would be easy to compile/get for everyone that would do the job
+[12:28:11] <zetok> hence the extraction question
+[12:29:00] <zetok> >i.e. you would have to ensure that there's 1.5.1 available & ~running
+[12:29:34] <zetok> note that the more time passes since 1.5.1 release, the things will start to break & no longer work, as rest of the software ecosystem will move on
+[12:29:41] <koshii> Is there any point in having both of these sources in /etc/apt/sources.list -- 
+[12:29:41] <koshii> deb http://download.opensuse.org/repositories/home:/antonbatenev:/tox/Debian_8.0/ /
+[12:29:44] <koshii> deb https://pkg.tox.chat/debian nightly jessie
+[12:29:47] <koshii> Or can I just pick one of them and drop the other?
+[12:30:01] <zetok> koshii: you can drop tox.chat one
+[12:30:13] <Diadlo> Ok. Seems, we will store HistoryKeeper forever :)
+[12:30:29] <zetok> err?
+[12:30:47] <Diadlo> What if "err"?
+[12:30:58] <zetok> Diadlo: I dunno about C++ code, but shouldn't migration part be just a few simple SQL statements?
+[12:31:21] <koshii> zetok: The opensuse one also has utox ?
+[12:31:27] <koshii> And toxic
+[12:32:02] <zetok> koshii: https://github.com/abbat/tox.pkg :)
+[12:32:53] <Diadlo> zetok: IDK, maybe
+[12:33:10] <zetok> :/
+[12:33:58] <Diadlo> If it's encrypted -- not :)
+[12:34:10] <zetok> still should be simple
+[12:34:32] <Diadlo> Ok
+[12:34:36] <koshii> zetok: That's using the opensuse build system yea?
+[12:34:43] <zetok> koshii: yep
+[12:34:46] <koshii> OK
+[12:35:23] <koshii> BTW- toxvpn, does that actually work?
+[12:35:41] <zetok> worked at some point
+[12:35:55] <koshii> :)
+[12:36:59] <zetok> and given that one would go to lengths, it could even provide <5ms overhead latency
+[12:37:54] <zetok> Diadlo: i.e. the encryption used for old DB was provided by TES, which has 3 nice functions to make it Just Work™
+[12:38:42] <zetok> Diadlo: i.e. https://zetok.github.io/tox/tox/toxencryptsave/index.html#functions
+[12:39:22] <sudden6> zetok: If I read the code correctly, old encrytped db is just a sqlite db encrypted with TES
+[12:39:31] <zetok> Yes.
+[12:39:44] <sudden6> so it would be trivial to make a decryption to tool to get the data
+[12:40:11] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[12:40:20] *** Joins: in1t3r (~LordShiva@ )
+[12:40:33] <sudden6> I don't think anyone not using qTox for that long is really interested in getting the history back into qTox
+[12:41:05] <sudden6> so a tool to just use TES to decrypt files should be good enough IMHO
+[12:43:36] <zetok> >I don't think anyone not using qTox for that long is really interested in getting the history back into qTox
+[12:43:40] <zetok> I wouldn't be so sure
+[12:44:03] <sudden6> why?
+[12:44:37] <zetok> because I had people on my contact list who after not using tox for years(!) started using it again
+[12:44:59] <zetok> and I think that they would be sad to notice that suddenly their history disappeared
+[12:44:59] <koshii> zetok: Are you the guy maintaining the Android client?
+[12:45:04] <zetok> koshii: nope
+[12:45:08] <sudden6> yeah, but do they really want the history back IN qTox?
+[12:45:12] <koshii> Who is?
+[12:45:36] <sudden6> or would they be happy with history in an sqlite editor?
+[12:45:57] <zetok> koshii: https://github.com/Antox :)
+[12:46:14] <zetok> um
+[12:46:28] <zetok> sudden6: why wouldn't they want the history in qTox?
+[12:46:28] <koshii> Guys, can we talk about "offline" message sending for a minute? It seems that we need to make random nodes into some kind of encrypted cache, storing a big "ball" of messages to be sent 
+[12:46:56] <koshii> I'm trying to get all of my friends to use tox but this is one of the biggest complaints.
+[12:47:04] <sudden6> zetok: because they don't care anymore what happened >1 year ago?
+[12:47:43] <zetok> sudden6: and why would they not care about it?
+[12:47:55] <koshii> Also, right now it appears that messages sent "offline" are not time-stamped and sent to the recipient with the "sent" time stamp; so an old message may appear to be fresh.
+[12:47:56] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:48:02] <koshii> This is really confusing
+[12:48:15] <sudden6> zetok: because it is of no current interest to them anymore?
+[12:48:18] *** Joins: CGGB (~CGGB@ )
+[12:48:30] -qtox-git-spam- [qTox] antis81 opened pull request #3649: [WORKBRANCH] nf/ui/redesign (master...nf/ui/redesign) https://git.io/v6A8f
+[12:48:44] <zetok> sudden6: yes, but why would you assume that it no longer has any value?
+[12:48:57] <sudden6> just because of the time
+[12:49:08] -qtox-git-spam- [qTox] antis81 opened pull request #3650: [WORKBRANCH] nf/ui/redesign (ui/redesign...nf/ui/redesign) https://git.io/v6A8q
+[12:49:17] <zetok> quick, burn all the history books, they no longer have the value \o/
+[12:49:21] <ovalseven8> How many PR has antis81 already opened? :o
+[12:49:33] -qtox-git-spam- [qTox] antis81 closed pull request #3649: [WORKBRANCH] nf/ui/redesign (master...nf/ui/redesign) https://git.io/v6A8f
+[12:49:57] <zetok> koshii: yep, they're stamped with date of successful (confirmed) delivery
+[12:50:04] <Diadlo> ovalseven8: 5
+[12:50:23] <ovalseven8> Why?
+[12:50:27] <sudden6> I'm trying to extrapolate from myself and people I know to the majority of qTox users, and everybody I know doesn't really care about IM messages send one week ago
+[12:50:40] <Diadlo> ovalseven8: What "why"?) https://github.com/qTox/qTox/pulls/antis81
+[12:51:16] <zetok> sudden6: I wonder – how easy/hard it is to get that data from current IMs?
+[12:51:39] <ovalseven8> Diadlo, I don't understand this organization of PRs
+[12:52:16] <zetok> koshii: as for real "offline messages", they will come after multiple devices
+[12:52:31] <ovalseven8> soon (tm)
+[12:53:15] <Diadlo> ovalseven8: I think, there it no "organization". He just do what he want :)
+[12:53:32] <Diadlo> But PR with "ui" in titile it's part of one big PR
+[12:54:52] <koshii> zetok: How is the progress on multi device?
+[12:56:01] <sudden6> zetok: idk, what about opening an issue on gh for that?
+[12:57:17] <sudden6> I also don't get antis81 organization^^
+[12:57:41] <zetok> sudden6: i.e. from what I remember, it wasn't exactly easy to get that data from most IMs back in the day, and the good one that has option for "archives" was prone to data loss; as for the current situation, it most likely has been made harder by IM providers to access that data
+[12:57:56] <zetok> sudden6: as for issue on gh, I guess
+[12:58:40] <zetok> koshii: AFAIK it will be done after toxcore tests & refactor
+[12:59:20] <zetok> koshii: which is being worked on in https://github.com/TokTok/toxcore
+[12:59:45] <sudden6> zetok:  is there an easy way to check on which qTox version a file was created?
+[13:00:22] <zetok> not easily
+[13:00:53] <sudden6> ok, I thought there is some git grep magic for that^^
+[13:01:15] <zetok> AFAIK the "easiest" way is to use vim + fugitive
+[13:01:16] <koshii> zetok: great news!
+[13:03:08] <zetok> actually
+[13:03:48] *** Joins: f10_ (~flo@ )
+[13:06:45] <sudden6> zetok: new history class was introduced in qTox 1.2.2
+[13:07:53] <sudden6> ~8 months ago
+[13:08:54] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[13:09:15] <zetok> so it's not old at all
+[13:11:11] <koshii> Is anyone being paid to work on tox right now, at all?
+[13:11:19] <sudden6> koshii: no
+[13:11:33] <sudden6> i don't think so
+[13:15:23] <Diadlo> sudden6: ovalseven8: And everybody, who interested in antis81 organization of PR
+[13:15:26] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[13:15:46] <Diadlo> [15:12:23] Nils F.: :) -> usually PR's go to master and improve or enhance existing concepts. That is fine for small cleanups, fixes or features, that can be implemented independently on those existing concepts. However tasks like in `ui/redesign` and `audio/api` etc. highly "break" stuff. Btw. there is now a `stable` branch, which in the end should contain the tested release. :)
+[13:15:47] <sudden6> zetok: Issue is opened
+[13:16:54] <sudden6> I still think there's a better way to organize this
+[13:16:59] <zetok> Diadlo: `stable` has been deprecated
+[13:17:38] <sudden6> zetok: Diadlo: what about an qTox groupchat with antis81 about that?^^
+[13:17:45] <sudden6> * an -> a
+[13:17:47] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:21:07] *** Joins: abbat (~abbat@ )
+[13:28:57] *** Joins: LittleVulpix (~Miranda@ )
+[13:59:35] *** Joins: ovalseven8_ (~ovalseven@ )
+[14:01:12] *** Quits: ovalseven8 (~ovalseven@ ) (Ping timeout: 240 seconds)
+[14:01:45] *** ovalseven8_ is now known as ovalseven8
+[14:05:41] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[14:10:40] -qtox-git-spam- [qTox] Diadlo closed pull request #3457: Setting rethink (master...settingRethink) https://git.io/v6Aar
+[14:18:10] *** Joins: shiva__ (~LordShiva@ )
+[14:20:33] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[14:27:06] -qtox-git-spam- [qTox] Diadlo opened pull request #3656: fix(settingsform): Fix layout spacing (master...fixUISpacing) https://git.io/v6AwS
+[14:32:32] -qtox-git-spam- [qTox] Diadlo opened pull request #3657: Fix problem with audio call on settings tab (master...fixAudioCall) https://git.io/v6Arz
+[14:34:57] <ovalseven8> :3 Diadlo
+[14:34:59] <koshii> Is anyone maintaining the libpurple tox plugin at the moment?
+[14:36:32] <Diadlo> ovalseven8: Second PR not related with closed one :p
+[14:50:55] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 265 seconds)
+[14:52:16] <initramfs> koshii: I don't think any of the maintainers are on this channel and the source hasn't been touched in 2 years...
+[14:58:20] *** Joins: f10 (~flo@ )
+[15:18:30] *** Joins: qTox-syncbot (~qTox-sync@ )
+[15:39:45] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[15:58:04] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/v6AH1
+[15:58:04] -qtox-git-spam- qTox/master 2a984c1 Nils Fenner: docs(CONTRIBUTING): rewrite "HowTo contribute" section
+[15:58:04] -qtox-git-spam- qTox/master 557ad33 Zetok Zalbavar: Merge pull request #3491...
+[16:42:26] <zetok> test
+[16:42:36] <qTox-syncbot> Zetok
+[16:42:49] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[16:44:03] <zetok> hmm
+[16:45:59] <zetok> there was someone who was interested in public groupchat, but I don't remember their nick..
+[16:47:48] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[17:04:17] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:13:04] *** Joins: f10 (~flo@ )
+[17:26:29] *** Joins: in1t3r (~LordShiva@ )
+[18:25:52] *** Joins: dardevelin (~dardeveli@ )
+[18:38:50] <qTox-syncbot> Nils F.: cu later guys - leaving for today
+[18:55:13] *** Joins: f10_ (~flo@ )
+[18:58:22] <genesis> i wonder how groupchat evolve this last months :)
+[18:58:51] <ovalseven8> zetok: What is this qTox-syncbot?
+[18:59:47] <genesis> according to the repository, no improvement since 5 months :(
+[19:00:19] <ovalseven8> genesis: You mean toxcore?
+[19:00:37] <genesis> https://github.com/JFreegman/toxcore/tree/new_groupchats
+[19:00:40] <genesis> this repo
+[19:01:02] <ovalseven8> genesis: Oh, new groupchat depends on changes in toxcore
+[19:01:32] <ovalseven8> But 'cause irungentoo left ... toxcore is dead atm
+[19:12:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[19:15:35] *** Joins: abbat (~Anton@ )
+[19:18:51] <zetok> >But 'cause irungentoo left ... toxcore is dead atm
+[19:18:53] <zetok> nope
+[19:19:10] <zetok> ovalseven8: synbot for groupchat ↔ IRC
+[19:19:36] <ovalseven8> zetok: I know you think different about toxcore. But it's dead. ;)
+[19:19:39] <ovalseven8> Which groupchat?
+[19:20:32] *** Joins: f15h (~thomas@ )
+[19:20:36] <zetok> 1BF52E0BE84EAE5A1D32EA4C9E42907555F275D595E1936A4F2858D968914909FE12B2A8D6DC
+[19:24:16] <ovalseven8> ^ don't work
+[19:24:43] <zetok> um?
+[19:25:21] <ovalseven8> offline
+[19:26:06] <qTox-syncbot> ovalseven8: Test
+[19:29:51] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[19:40:18] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[20:10:57] *** Quits: qTox-syncbot (~qTox-sync@ ) (Remote host closed the connection)
+[20:11:16] *** Joins: qTox-syncbot (~qTox-sync@ )
+[20:16:54] *** Joins: rerumnovarum (~user-reru@ )
+[20:16:59] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[20:21:09] *** Joins: rerumnovarum (~user-reru@ )
+[20:29:50] *** Joins: Allanitomwesh (c5ed8b9a@ )
+[20:30:05] <Allanitomwesh> hi
+[20:30:07] *** Joins: kadintrooper (~kadin@ )
+[20:30:13] <kadintrooper> Hallo
+[20:30:30] <Allanitomwesh> zetok: still have that bug with the call feature
+[20:31:09] <zetok> Allanitomwesh: um, which bug?
+[20:31:23] <kadintrooper> I have to be in audio settings panel to talk
+[20:32:05] <zetok> on which qTox version are you?
+[20:32:57] <Allanitomwesh> 1.5.1 here
+[20:32:58] <kadintrooper> qTox version Nightly
+[20:33:09] <kadintrooper> is what's under my about
+[20:34:08] <zetok> Allanitomwesh: you would want to use qtox-alpha
+[20:34:31] <Allanitomwesh> alpha?
+[20:34:38] <zetok> that's the package name
+[20:34:58] <zetok> could it be that you're not using Linux?
+[20:35:08] <Allanitomwesh> I'm on fedora
+[20:35:17] <kadintrooper> I'm on Arch
+[20:35:29] <kadintrooper> Will try installing qtox-alpha
+[20:35:37] <Allanitomwesh> Where do i get this alpha?
+[20:35:44] <zetok> kadintrooper: um, there's qtox-git for arch
+[20:35:48] <zetok> kadintrooper: in AUR
+[20:35:50] <kadintrooper> Alright
+[20:35:53] <zetok> Allanitomwesh: should be in repo
+[20:36:12] <zetok> kadintrooper: but since fix was pushed to master just 6h ago, it's quite likely that the package doesn't have fix yet
+[20:36:20] <zetok> uh
+[20:36:26] <zetok> Allanitomwesh: I mean ↑
+[20:36:56] <zetok> (no idea how I've managed to tabfail that one)
+[20:37:01] <kadintrooper> Lol
+[20:37:23] *** Joins: athan (~athan@ )
+[20:38:08] <zetok> Allanitomwesh: yep, package doesn't have it yet
+[20:38:25] <zetok> https://build.opensuse.org/package/show/home:antonbatenev:tox/qtox-alpha
+[20:40:28] <zetok> oh, no, wait
+[20:40:34] <zetok> fix wasn't pushed to master yet
+[20:40:45] <zetok> https://github.com/qTox/qTox/pull/3657
+[20:40:56] <kadintrooper> Is it in qtox-git
+[20:40:58] <kadintrooper> ?
+[20:41:04] <zetok> nope
+[20:41:09] <zetok> hmm
+[20:41:35] <kadintrooper> Rip
+[20:41:39] <zetok> I don't remember by now, but I think that you should be able to apply patch manually to qTox and use PKGBUILD?
+[20:41:57] <zetok> or something
+[20:42:12] <zetok> I remember that it was possible in arch, don't remember exactly how
+[20:42:23] <kadintrooper> I'll see if update fixed it anyway *shrug*
+[20:42:54] <qTox-syncbot> Diadlo: Wow. Great work. Thanks Zetok for qGroupbot)
+[20:43:20] <kadintrooper> What does qTox-syncbot do?
+[20:43:32] <zetok> synces groupchat with this channel
+[20:43:38] <Diadlo> Yep
+[20:43:39] <kadintrooper> Interesting
+[20:43:42] <Diadlo> But one problem
+[20:43:50] <Allanitomwesh> v1.5.1-38-gb4da768-obs.
+[20:43:53] <zetok> Diadlo: it's a feature™
+[20:43:54] <Allanitomwesh> is this it?
+[20:44:13] <Diadlo> In groupchat replay-bot don't show nicknames
+[20:44:26] <zetok> Diadlo: it actually does
+[20:44:33] <kadintrooper> Update fixed issue
+[20:44:35] <Allanitomwesh> ayy fixed
+[20:44:36] <Diadlo> I don't think so :)
+[20:44:56] <Allanitomwesh> dnf ain't so bad after all
+[20:45:11] <zetok> Diadlo: I've used a neat trick that simply makes bot change its nick to desired one, send the message, and go back to `Relay` name
+[20:45:34] <Diadlo> zetok: It doesn't work :)
+[20:45:36] <zetok> Diadlo: now, as for groupchats & qTox being broken & not displaying that..
+[20:45:50] <Allanitomwesh> why do tox groups feel like irc?
+[20:45:56] <Diadlo> blob:https://imgur.com/a489784d-6ce0-45c8-a6ed-45c3ea79c5df
+[20:46:01] <Diadlo> Ok
+[20:46:19] <zetok> Diadlo: it does change the nick, but groupchats don't handle well switches that happen so fast
+[20:46:33] <zetok> so I guess I'll just print nicks in groupchat too :(
+[20:46:56] <Diadlo> Ok. What about use "<nick>: <message>" as hotfix until qTox groupchats is broken?
+[20:47:07] <Diadlo> Yep
+[20:47:23] <zetok> (this is really bad)
+[20:47:25] <Diadlo> I am slowpoke
+[20:47:48] <Diadlo> zetok: Like i temorary solution
+[20:47:51] *** Joins: kadinparker[m] (kadinparke@ )
+[20:47:55] <kadinparker[m]> Hello
+[20:48:01] <kadinparker[m]> :3
+[20:48:04] <Diadlo> Hello)
+[20:48:20] <kadintrooper> Matrix yay
+[20:50:24] <Diadlo> zetok: Who is developer of utox.com ?
+[20:51:13] <Diadlo> I don't found repo or something like that
+[20:51:14] <zetok> Diadlo: originally it was made by notsecure, "passed on" to irungentoo.. and currently I don't really know, but I'd guess that grayhatter?
+[20:52:03] <zetok> or was it made by irungentoo..
+[20:52:08] * zetok doesn't really remember
+[20:53:06] <iphy> I think it's owned by irungentoo
+[20:53:15] <iphy> which was an issue for google play store at some point
+[20:53:18] <iphy> I don't know, maybe it changed
+[20:53:31] *** Parts: Allanitomwesh (c5ed8b9a@ ) ()
+[20:53:41] <zetok> Diadlo: is it about the toxdns?
+[20:53:50] <Diadlo> TomMe
+[20:53:52] <Diadlo> *Toxme
+[20:53:54] <zetok> https://github.com/notsecure/tox-dns
+[20:54:07] *** Quits: kadintrooper (~kadin@ ) (Read error: Connection reset by peer)
+[20:54:16] <zetok> pure STR8C
+[20:55:02] *** Quits: qTox-syncbot (~qTox-sync@ ) (Remote host closed the connection)
+[20:55:29] <zetok> ok, now nicks will be printed in groupchat
+[20:55:33] *** Joins: qTox-syncbot (~qTox-sync@ )
+[20:57:33] *** Quits: qTox-syncbot (~qTox-sync@ ) (Remote host closed the connection)
+[20:57:51] *** Joins: qTox-syncbot (~qTox-sync@ )
+[20:58:05] <Diadlo> Test?)
+[20:58:11] <Diadlo> Yep. Thanks
+[21:01:06] -qtox-git-spam- [qTox] Diadlo closed pull request #3656: fix(settingsform): Fix layout spacing (master...fixUISpacing) https://git.io/v6AwS
+[21:17:01] *** Quits: qTox-syncbot (~qTox-sync@ ) (Remote host closed the connection)
+[21:17:50] *** Joins: qTox-syncbot (~qTox-sync@ )
+[21:31:33] *** Quits: qTox-syncbot (~qTox-sync@ ) (Remote host closed the connection)
+[21:32:07] *** Joins: qTox-syncbot (~qTox-sync@ )
+[21:36:23] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:51:18] *** Joins: LittleVulpix (~Miranda@ )
+[21:53:19] *** Joins: bashrc (~motters@ )
+[22:01:25] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[22:01:52] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[22:13:40] *** Joins: athan (~athan@ )
+[22:22:00] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:23:35] *** Joins: in1t3r (~LordShiva@ )
+[22:34:41] *** Quits: bashrc (~motters@ ) (Quit: leaving)
+[22:35:28] *** Joins: bashrc (~motters@ )
+[22:36:05] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[22:36:34] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:41:33] *** Quits: bashrc (~motters@ ) (Ping timeout: 240 seconds)
+[22:43:48] *** Joins: bashrc (~motters@ )
+[22:54:58] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[23:03:38] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[23:10:44] *** Joins: initramfs (~initramfs@ )
+[23:35:11] *** Joins: somercet (~somercet@ )
+[23:35:17] *** Parts: somercet (~somercet@ ) ("Leaving")
+[23:36:27] *** Quits: f10 (~flo@ ) (Ping timeout: 264 seconds)
+[23:36:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[23:52:48] *** Quits: zero-ghost (~0@ ) (Ping timeout: 276 seconds)
+[23:54:51] *** Joins: athan (~athan@ )
