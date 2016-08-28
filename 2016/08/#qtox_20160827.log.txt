@@ -1,0 +1,142 @@
+[00:02:51] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:13:05] *** Joins: zero-ghost (~0@ )
+[00:24:38] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[02:13:12] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[02:30:51] *** Joins: athan (~athan@ )
+[02:35:45] *** Joins: captainkraft (~captainkr@ )
+[02:46:26] *** Joins: sudd3n6 (~anonymous@ )
+[02:52:39] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[03:56:16] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[05:43:17] *** Joins: athan (~athan@ )
+[05:51:38] *** Quits: captainkraft (~captainkr@ ) (Quit: WeeChat 1.5)
+[06:26:12] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[07:26:59] *** Joins: athan (~athan@ )
+[07:47:51] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[07:48:00] *** Joins: athan (~athan@ )
+[07:52:12] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[08:04:08] *** Joins: athan (~athan@ )
+[08:08:24] -qtox-git-spam- [qTox] antis81 closed pull request #3657: Fix problem with audio call on settings tab (master...fixAudioCall) https://git.io/v6Arz
+[08:09:59] *** Joins: soundslave_ (~soundslav@ )
+[08:09:59] *** Quits: soundslave_ (~soundslav@ ) (Changing host)
+[08:09:59] *** Joins: soundslave_ (~soundslav@ )
+[08:13:14] *** Joins: albel727_ (~albel727@ )
+[08:16:52] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[08:16:53] *** Quits: soundslave (~soundslav@ ) (Ping timeout: 240 seconds)
+[08:19:39] *** Joins: f10 (~flo@ )
+[08:23:33] *** Joins: f10_ (~flo@ )
+[08:44:21] *** soundslave_ is now known as soundslave
+[08:51:05] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[09:01:49] *** Joins: athan (~athan@ )
+[09:07:06] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[09:12:09] *** Joins: Bleh (~Bleh@ )
+[09:12:54] <Bleh> Hi there. I'm curiouis if these major connection errors will be fixed soon or if you are aware of them
+[09:13:06] <Bleh> Using a tor proxy has proven awful
+[09:13:13] <Bleh> Things frequently connect and disconnect
+[09:13:24] <Bleh> And all sorts of other things
+[09:29:02] <Bleh> Also this connection error causes a number of other bugs
+[09:29:33] <Bleh> For example, when sending text to another user, the thing frequently disconnects then takes at least 20 minutes to reconnect
+[10:03:47] <initramfs> Bleh: Are you sure it's not a tor issue? Also, if you can reproduce the issue in a reliable way, consider submitting an issue with your qtox log files
+[10:04:05] <Bleh> alright
+[10:04:27] *** Bleh is now known as Se7en
+[10:05:19] <Se7en> Are the logs Doxxing?
+[10:05:27] <Se7en> I know that the logs contain IP addresses
+[10:42:11] *** Joins: sudden6 (~anonymous@ )
+[11:05:39] *** Joins: abbat (~Anton@ )
+[11:11:37] *** Joins: LittleVulpix (~Miranda@ )
+[11:34:48] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[11:49:36] *** Joins: in1t3r (~LordShiva@ )
+[11:52:21] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[12:14:55] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[12:15:13] *** Joins: f10_ (~flo@ )
+[12:17:33] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[12:19:00] *** Joins: rerumnovarum (~user-reru@ )
+[12:30:18] <Diadlo> Se7en: Logs don't contains your IP address. It contain bootstrap IP addresses
+[12:31:15] <Diadlo> Se7en: Also they can be found here https://nodes.tox.chat/
+[12:31:50] <Se7en> Bootstrap?
+[12:32:06] <Se7en> What do you  mean by that
+[12:32:21] <Se7en> What is a bootstrap node
+[12:32:33] <Diadlo> It's nodes, which used to find other nodes. You can read tox specification
+[12:33:22] <Se7en> I thought it was peer to peer
+[12:33:33] <Diadlo> Yes. It's p2p
+[12:33:57] <Se7en> But not Client to Client?
+[12:35:28] <Diadlo> I'm not an expert on this area
+[12:35:33] <Se7en> Alright
+[12:35:44] <Se7en> I was under the assumption that it was client to client
+[12:35:47] <Se7en> I am unsure wht
+[12:35:49] <Se7en> why
+[12:36:49] <Diadlo> Better ask on #tox or #toktok
+[12:37:09] <Se7en> They banned me from #tox
+[12:37:11] <Se7en> Heh
+[12:37:47] <Se7en> I massively pasted a link to this troll image reguarding Tox that installgen2 made and I kept saying YOU HAVE BEEN OUTED
+[12:37:47] <Diadlo> Se7en: Ok. I can't give you a correct answer
+[12:37:51] <Se7en> They didn't find it funny
+[12:58:00] <zetok> Se7en: p2p means "client to client"
+[13:04:49] <rerumnovarum> Se7en: it is p2p; it is decentralized; but the point is you still need some entrance point to obtain information about the network; these are bootstrap nodes -- you connect to'em at startup, request info 'bout some other nodes and introduce yourself to them; since that moment you (almost surely) can reach any other node in the network w/o relying on any centralized server&c
+[13:07:54] <rerumnovarum> you can see list of bootstrap nodes used by 'reference' tox at https://nodes.tox.chat/
+[13:15:24] -qtox-git-spam- [qTox] abbat opened pull request #3661: docs(INSTALL.md): Fix minimal Qt version (master...patch-1) https://git.io/v6pMy
+[13:25:18] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[13:37:29] *** Joins: in1t3r (~LordShiva@ )
+[13:43:56] *** Joins: pcre (~quassel@ )
+[13:58:44] *** Joins: CGGB (~CGGB@ )
+[14:35:49] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:38:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[14:38:30] *** Joins: LittleVulpix (~Miranda@ )
+[14:41:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:09:20] *** Joins: f10_ (~flo@ )
+[15:38:15] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[15:57:05] *** Joins: ovalseven8 (~ovalseven@ )
+[15:57:53] <ovalseven8> tux3: Hi, everything fine?
+[16:48:52] *** ChanServ sets mode: +o zetok
+[16:49:12] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | Logs at: https://github.com/qTox/qtox-irc-logs | Testing help: https://github.com/qTox/qTox/wiki/Testing | Homepage: https://qtox.github.io/ | Blog: https://qtox.github.io/blog/ | Group: qgroup@toxme.io'
+[16:49:19] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | Logs at: https://github.com/qTox/qtox-irc-logs | Testing help: https://github.com/qTox/qTox/wiki/Testing | Homepage: https://qtox.github.io/ | Blog: https://qtox.github.io/blog/ | Groupchat: qgroup@toxme.io'
+[16:49:26] *** zetok sets mode: -o zetok
+[16:51:20] *** Joins: Bill_MI (~Bill@ )
+[17:27:10] *** Joins: smaragdus (~omoo@ )
+[17:46:00] *** Joins: cloeyo (5a0d761b@ )
+[17:46:24] <cloeyo> Hum, hello?
+[17:49:36] <zetok> hello cloeyo :)
+[18:01:42] <cloeyo> It's here, that we can ask help for qTox, right? ^^
+[18:07:43] *** Quits: rerumnovarum (~user-reru@ ) (Quit: Changing server)
+[18:09:15] *** Joins: rerumnovarum (~user-reru@ )
+[18:10:27] *** Quits: rerumnovarum (~user-reru@ ) (Remote host closed the connection)
+[18:10:50] *** Joins: rerumnovarum (~user-reru@ )
+[18:10:50] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[18:11:28] *** Joins: rerumnovarum (~user-reru@ )
+[18:15:46] *** Joins: SkyzohKey (~skyzohkey@ )
+[18:15:59] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[18:16:05] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[18:20:13] *** Joins: rerumnovarum (~user-reru@ )
+[18:22:28] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[18:23:10] *** Joins: rerumnovarum (~user-reru@ )
+[18:27:53] *** Quits: cloeyo (5a0d761b@ ) (Quit: Page closed)
+[18:30:54] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:32:19] *** Joins: captainkraft (~captainkr@ )
+[18:33:51] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[19:03:05] *** Joins: f10 (~flo@ )
+[19:07:20] *** Joins: f10_ (~flo@ )
+[19:17:34] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[19:47:35] *** Quits: genesis (~genesis@ ) (Quit: Leaving)
+[19:48:24] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[19:49:48] *** Joins: genesis (~genesis@ )
+[20:06:23] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[20:26:02] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[20:27:57] *** Joins: hpanago (uid15586@ )
+[20:31:38] *** Joins: cisc (~cisc@ )
+[20:43:58] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:51:03] *** Joins: f10 (~flo@ )
+[20:56:03] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:17:55] *** Joins: LittleVulpix (~Miranda@ )
+[21:26:53] <qTox-syncbot> prett: hi
+[21:28:18] <zetok> hello
+[21:28:35] <qTox-syncbot> prett: whats up
+[21:29:14] <zetok> not much right now
+[21:29:53] <qTox-syncbot> prett: what do u usally like to chat or do
+[21:32:39] <qTox-syncbot> prett: im bored
+[21:36:19] <qTox-syncbot> prett: :-(
+[21:46:18] <zetok> you could contribute to qTox of you're bored ;)
+[22:00:23] *** Joins: initramfs (~initramfs@ )
+[22:09:51] *** Joins: LittleVulpix|Gho (~Miranda@ )
+[22:11:13] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 252 seconds)
+[23:34:34] <nurupo> ><Se7en> What is a bootstrap node <-- just a tox client that has high availability and static address+port https://wiki.tox.chat/users/nodes#what_is_the_purpose_of_bootstrap_nodes . this also might help you a little with understanding https://en.wikipedia.org/wiki/Bootstrapping_node
+[23:45:44] *** Quits: captainkraft (~captainkr@ ) (Quit: WeeChat 1.5)
+[23:59:33] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
