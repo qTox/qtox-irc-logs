@@ -1,0 +1,135 @@
+[00:00:01] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[00:09:47] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[00:47:01] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[00:56:01] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[00:57:28] *** Joins: zero-ghost (~0@ )
+[01:15:47] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:30:22] *** Joins: hpanago (uid15586@ )
+[01:36:16] -qtox-git-spam- [qTox] Diadlo opened pull request #3663: feat(reconnect): Made `Reconnect` button wider (master...changeButtonSize) https://git.io/v6hmj
+[02:02:22] *** Quits: LittleVulpix|Gho (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[02:02:41] *** Joins: LittleVulpix (~Miranda@ )
+[03:32:40] *** Joins: ffsake (052b2cea@ )
+[03:33:11] *** Quits: ffsake (052b2cea@ ) (Client Quit)
+[04:21:09] *** Joins: hexadezimalion_ (sid85551@ )
+[04:21:28] *** Joins: VVD76531 (~VVD@ )
+[04:23:42] *** Quits: VVD (~VVD@ ) (Ping timeout: 250 seconds)
+[04:23:53] *** VVD76531 is now known as VVD
+[04:25:53] *** Joins: Darky (~Darky@ )
+[04:25:57] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 258 seconds)
+[04:25:58] *** Quits: koshii (~w@ ) (Ping timeout: 258 seconds)
+[04:25:58] *** Quits: iphy (uid67735@ ) (Ping timeout: 258 seconds)
+[04:26:00] *** Quits: Darky` (~Darky@ ) (Ping timeout: 258 seconds)
+[04:26:04] *** hexadezimalion_ is now known as hexadezimalion
+[04:27:22] *** Joins: koshii (~w@ )
+[04:32:12] *** Joins: iphy (uid67735@ )
+[04:45:58] *** Joins: athan (~athan@ )
+[04:56:02] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[05:28:51] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[05:37:35] *** Joins: cisc (~cisc@ )
+[06:34:54] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[06:40:20] *** Joins: athan (~athan@ )
+[06:55:50] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[06:59:57] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[07:00:10] *** Joins: athan (~athan@ )
+[07:31:11] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[07:31:38] *** Joins: f10 (~flo@ )
+[07:35:11] *** Joins: athan (~athan@ )
+[07:39:28] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[08:09:53] *** Joins: rerumnovarum (~user-reru@ )
+[08:23:54] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[08:29:13] *** Joins: athan (~athan@ )
+[09:03:50] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:04:20] *** Joins: CGGB (~CGGB@ )
+[09:10:50] *** Joins: abbat (~Anton@ )
+[09:36:04] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:40:57] <qTox-syncbot> prett: hello
+[09:43:15] <qTox-syncbot> prett: so this is a group chat with nobody chattin
+[09:50:34] *** Joins: hpanago (uid15586@ )
+[10:14:39] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[10:21:47] *** Joins: futurator (~futurator@ )
+[10:22:08] *** Quits: futurator (~futurator@ ) (Client Quit)
+[10:30:35] *** Quits: athan (~athan@ ) (Ping timeout: 258 seconds)
+[10:30:51] *** Joins: athan (~athan@ )
+[10:31:01] *** Joins: rerumnov1rum (~user-reru@ )
+[10:31:30] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[10:42:17] *** Joins: pcre (~quassel@ )
+[10:46:33] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[10:47:16] *** Joins: pcre (~quassel@ )
+[10:56:07] <iphy> hello prett
+[10:59:06] *** Quits: VVD (~VVD@ ) (Ping timeout: 265 seconds)
+[11:30:42] *** Joins: bashrc (~motters@ )
+[12:01:13] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[12:11:36] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[12:50:15] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[12:58:21] *** Joins: athan (~athan@ )
+[12:59:25] *** Joins: cisc (~cisc@ )
+[13:17:15] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[13:24:35] *** Joins: athan (~athan@ )
+[13:31:05] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[13:31:13] *** Joins: athan (~athan@ )
+[13:40:10] *** Quits: athan (~athan@ ) (Ping timeout: 252 seconds)
+[13:52:57] <qTox-syncbot> Nils F.: Hey fellow mates.
+[13:53:37] <qTox-syncbot> prett: hi 
+[13:54:27] <qTox-syncbot> Nils F.: Any coders here? :)
+[13:55:13] <qTox-syncbot> prett: sorry
+[13:55:55] <qTox-syncbot> Nils F.: prett: ok, no problem
+[13:56:21] <qTox-syncbot> Nils F.: like to discuss some "technical stuff", that's why i'm asking
+[13:58:52] *** Joins: athan (~athan@ )
+[14:05:41] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[14:07:10] *** Joins: athan (~athan@ )
+[14:12:30] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[15:32:36] *** Joins: sudden6 (~anonymous@ )
+[15:40:59] *** Joins: initramfs (~initramfs@ )
+[15:59:35] *** Joins: ovalseven8 (~ovalseven@ )
+[16:21:11] *** Joins: abbat (~Anton@ )
+[16:22:08] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:36:40] *** Joins: cisc (~cisc@ )
+[17:53:43] *** Joins: VVD (~VVD@ )
+[18:19:41] *** Joins: f10 (~flo@ )
+[18:28:45] *** Joins: f10_ (~flo@ )
+[18:47:04] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[18:56:51] <qTox-syncbot> Amit Agnani: Should the clang-format style be all emcompassing? i.e. should it contain best-practices that aren't yet in our coding guidelines?
+[18:58:15] <qTox-syncbot> Zetok
+[18:59:43] <qTox-syncbot> Amit Agnani: Well, it's not under the currently published coding guideline
+[19:00:17] <qTox-syncbot> Zetok
+[19:00:35] <qTox-syncbot> Amit Agnani: My suggestion to the above would be to discuss and tighten up the coding standards, and then have a whole markdown file on the coding standards
+[19:00:37] <qTox-syncbot> Zetok
+[19:00:41] <qTox-syncbot> Amit Agnani: i.e. extract it out of contributing
+[19:01:33] <qTox-syncbot> Amit Agnani: I've been reading up on clang format for the last 30 minutes or so, and I can't seem to write anything more than 5 lines that won't overstretch the existing guidelines
+[19:05:25] <qTox-syncbot> Zetok
+[19:06:33] <qTox-syncbot> Amit Agnani: Okay, but should that be in the clang-format config. Because in most cases we excuse long lines if they can't be broken (e.g. URLs). It's hard to tell clang-format to ignore such lines...
+[19:06:53] <qTox-syncbot> Amit Agnani: If not, it can just exist in the documentation without being actually enforced by clang-format
+[19:07:19] <qTox-syncbot> Zetok
+[19:07:45] <qTox-syncbot> Zetok
+[19:09:11] <qTox-syncbot> Amit Agnani: I'll read more on it
+[19:10:21] <qTox-syncbot> Zetok
+[19:12:33] <qTox-syncbot> Amit Agnani: Yeah I know
+[19:13:05] <qTox-syncbot> Amit Agnani: I get that the idea is to eventually have travis enforce it, once most/all the code is compliant?
+[19:13:17] <qTox-syncbot> Zetok
+[19:19:22] *** Joins: fred_barclay (~fred@ )
+[19:34:01] *** Joins: captainkraft (~captainkr@ )
+[19:35:36] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:12:22] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 244 seconds)
+[20:20:56] -qtox-git-spam- [qTox] zetok opened pull request #3665: chore: add a TODO with removal date for deprecated historykeeper (master...deprecate) https://git.io/v6hdo
+[20:55:31] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[21:03:40] *** Joins: sudden6 (~anonymous@ )
+[21:24:19] *** Quits: captainkraft (~captainkr@ ) (Ping timeout: 255 seconds)
+[21:27:57] *** Quits: initramfs (~initramfs@ ) (Read error: Connection reset by peer)
+[21:28:02] *** Joins: initramfs_ (~initramfs@ )
+[21:40:03] *** Quits: bashrc (~motters@ ) (Ping timeout: 240 seconds)
+[21:41:59] *** Joins: bashrc (~motters@ )
+[22:14:30] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[22:22:29] *** Joins: captainkraft (~captainkr@ )
+[22:24:54] *** Joins: f10 (~flo@ )
+[22:44:28] *** Joins: sudd3n6 (~anonymous@ )
+[22:47:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:55:06] <nurupo> ><Yst> Apparently, qTox dropped support for Tox DNS aside from DNS records under a specific few domain names? What's up with that? A friend wasn't able to add me to their client because qTox was refusing to look up the DNS record.
+[22:55:06] <nurupo> ><Yst> Isn't the whole point of DNS that it's distributed and not controlled by a single entity? THis seems like a *major* antifeature in qTox.
+[22:55:20] <nurupo> someone fired shots in #tox :P
+[22:56:35] <zetok> too bad(?) that they've missed
+[22:57:50] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:16:17] <nurupo> hm, right, it shouldn't be "specific few domain names", i think qTox would work with a toxme service on any domain
+[23:26:51] *** Quits: hpanago (uid15586@ ) (Ping timeout: 264 seconds)
+[23:34:21] *** Joins: hpanago (uid15586@ )
+[23:40:40] *** Quits: captainkraft (~captainkr@ ) (Ping timeout: 255 seconds)
+[23:55:43] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
