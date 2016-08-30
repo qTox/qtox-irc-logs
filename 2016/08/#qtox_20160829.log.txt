@@ -1,0 +1,150 @@
+[00:09:36] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:12:09] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[00:31:31] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[00:33:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[01:40:07] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[01:41:18] *** Joins: cisc (~cisc@ )
+[02:16:39] *** Joins: captainkraft (~captainkr@ )
+[02:28:18] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 276 seconds)
+[03:38:06] *** Joins: bennabiy (~bennabiy@ )
+[03:44:21] *** Quits: captainkraft (~captainkr@ ) (Ping timeout: 276 seconds)
+[03:59:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:55:33] *** Joins: nurupo_ (~nurupo.ga@ )
+[04:56:29] *** Quits: nurupo (~nurupo.ga@ ) (Read error: Connection reset by peer)
+[04:56:59] *** nurupo_ is now known as nurupo
+[06:38:08] *** Joins: rerumnovarum (~user-reru@ )
+[06:51:57] *** Joins: vindelschtuffen (~vindelsch@ )
+[07:30:44] *** Joins: abbat (~Anton@ )
+[07:53:21] *** Joins: f10 (~flo@ )
+[08:05:34] *** Joins: f10_ (~flo@ )
+[08:06:07] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:06:36] *** Joins: LittleVulpix (~Miranda@ )
+[08:07:07] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[08:07:32] *** Joins: CGGB (~CGGB@ )
+[08:08:42] *** Quits: initramfs_ (~initramfs@ ) (Quit: Leaving)
+[08:09:05] *** Joins: initramfs (~initramfs@ )
+[08:18:13] *** Joins: cisc (~cisc@ )
+[08:19:49] -qtox-git-spam- [qTox] antis81 closed pull request #3650: [WORKBRANCH] ui/redesign (ui/redesign...nf/ui/redesign) https://git.io/v6A8q
+[08:37:57] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:45:50] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[08:47:54] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[09:01:45] *** Joins: cisc (~cisc@ )
+[09:18:27] *** Joins: bashrc (~motters@ )
+[09:39:08] *** Joins: sudden6 (~anonymous@ )
+[09:39:48] *** Joins: abbat (~abbat@ )
+[09:47:11] *** Quits: qTox-syncbot (~qTox-sync@ ) (Remote host closed the connection)
+[09:48:07] *** Joins: qTox-syncbot (~qTox-sync@ )
+[10:48:47] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[11:01:02] *** Joins: Diadlo (~diadlo@ )
+[11:09:28] *** Joins: rerumnovarum (~user-reru@ )
+[11:40:30] *** Joins: f10__ (~flo@ )
+[11:40:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[11:44:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[11:44:57] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[11:45:21] *** Joins: f10__ (~flo@ )
+[11:57:15] *** Joins: abbat (~abbat@ )
+[11:59:13] <iphy> IRC sync bot looks broken
+[11:59:29] <iphy> I can't see zetok's messages
+[11:59:37] <qTox-syncbot> Zetok\0: ;)
+[12:00:09] <zetok> bot was just pushing nick + message ~verbatim from groupchat to IRC
+[12:00:43] <zetok> and IRC just doesn't like my null, so now I'm "escaping" it in messages sent to IRC
+[12:01:04] <zetok> (same goes for newlines)
+[12:12:43] *** Joins: in1t3r (~LordShiva@ )
+[12:17:30] *** Joins: shiva (~LordShiva@ )
+[12:17:39] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 265 seconds)
+[12:54:55] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[12:55:49] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[13:22:38] *** Quits: shiva (~LordShiva@ ) (Remote host closed the connection)
+[14:24:13] *** Joins: f10 (~flo@ )
+[14:27:44] *** Joins: f10__ (~flo@ )
+[14:51:19] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[15:03:55] -qtox-git-spam- [qTox] Diadlo opened pull request #3666: [WORKBRANCH] ui/redesign Change buttons (master...changeButtons) https://git.io/vieUp
+[15:04:07] -qtox-git-spam- [qTox] Diadlo closed pull request #3666: [WORKBRANCH] ui/redesign Change buttons (master...changeButtons) https://git.io/vieUp
+[15:06:01] -qtox-git-spam- [qTox] Diadlo opened pull request #3667:  [WORKBRANCH] ui/redesign Change buttons (ui/redesign...changeButtons) https://git.io/vieTR
+[15:14:00] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[15:39:54] *** Joins: kadinparker[m] (kadinparke@ )
+[15:48:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[16:11:33] *** Joins: captainkraft (~captainkr@ )
+[16:28:30] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[16:28:55] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[16:39:21] *** Joins: sudden6 (~anonymous@ )
+[16:40:26] *** Joins: rerumnovarum (~user-reru@ )
+[16:56:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[17:00:26] *** Joins: in1t3r (~LordShiva@ )
+[17:07:28] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[17:09:38] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[17:26:36] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[17:27:17] *** Joins: Bheru27 (~Bheru27@ )
+[17:34:31] *** Joins: in1t3r (~LordShiva@ )
+[17:40:13] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:40:29] *** Joins: f10 (~flo@ )
+[17:48:54] *** Joins: cisc (~cisc@ )
+[18:00:52] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[18:14:28] *** Joins: f10_ (~flo@ )
+[18:18:39] *** Joins: rerumnovarum (~user-reru@ )
+[18:23:25] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[18:34:19] *** Joins: sudden6 (~anonymous@ )
+[18:42:53] *** Joins: f10_ (~flo@ )
+[18:55:15] *** Joins: f10__ (~flo@ )
+[18:57:10] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:28:11] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:34:51] *** Joins: sudd3n6 (~anonymous@ )
+[19:37:47] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[19:51:04] *** Joins: pcre (~quassel@ )
+[19:56:38] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[20:11:06] *** Joins: rerumnovarum (~user-reru@ )
+[20:52:31] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:52:35] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[20:53:45] *** Joins: f10__ (~flo@ )
+[20:55:17] *** Joins: f10 (~flo@ )
+[20:59:38] *** Joins: f10_ (~flo@ )
+[20:59:55] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:02:33] *** Quits: bashrc (~motters@ ) (Ping timeout: 265 seconds)
+[21:03:38] *** Joins: abbat (~Anton@ )
+[21:04:14] *** Joins: bashrc (~motters@ )
+[21:30:30] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[21:43:09] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 265 seconds)
+[21:49:11] *** Joins: f10 (~flo@ )
+[21:50:30] -qtox-git-spam- [qTox] Diadlo opened pull request #3668: fix: Fixed crash on profile import (master...fixProfileImport) https://git.io/viv3i
+[21:53:00] *** Joins: in1t3r (~LordShiva@ )
+[21:53:14] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[21:59:10] <Diadlo> zetok: Can you review and merge (if alright) https://github.com/qTox/qTox/pull/3663 ?
+[21:59:40] <zetok> ok
+[22:00:24] *** Joins: sudd3n6 (~anonymous@ )
+[22:06:21] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vivZw
+[22:06:21] -qtox-git-spam- qTox/master 4a5f89b Diadlo: feat(reconnect): Made `Reconnect` button wider...
+[22:09:35] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[22:17:31] *** Quits: zero-ghost (~0@ ) (Ping timeout: 244 seconds)
+[22:18:14] *** Joins: zero-ghost (~0@ )
+[22:22:03] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[22:23:13] <Diadlo> zetok: Why we store opened upstream issues?
+[22:24:10] <zetok> because they affect users
+[22:24:35] <Diadlo> But we can't fix it
+[22:24:39] <zetok> so?
+[22:24:57] <Diadlo> Hm... I think, that `issues` it's qTox issues :)
+[22:25:11] <zetok> yes, and upstream issues are qTox issues
+[22:25:12] <Diadlo> Nevermind :)
+[22:25:18] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[22:25:24] <Diadlo> And about https://github.com/qTox/qTox/issues/3664
+[22:25:39] <Diadlo> I think, it's correct behaviour
+[22:25:43] <zetok> nope
+[22:25:48] <Diadlo> Why?
+[22:25:50] <zetok> aliases should be stored in the DB
+[22:25:56] <Diadlo> Ok
+[22:25:58] <zetok> same goes for other stuff
+[22:27:14] <zetok> btw, about 2-year-deprecation period – this is something that IMO is needed only when it comes to code that ensures backwards compatibility with user data
+[22:28:31] <Diadlo> What the reason to store deprecated code, if it isn't ensures backwards compatibility?)
+[22:29:16] <zetok> right :)
+[22:30:04] <zetok> um, the other way to go about it, as I've mentioned before, is to extract deprecated code into a separate tool
+[22:30:21] <Diadlo> Yep
+[22:30:42] <zetok> which probably is what going to be needed in future migrations when there will be more people using qTox, and they will need more time to migrate their data
+[22:40:10] *** Joins: in1t3r (~LordShiva@ )
+[23:01:07] *** Joins: Diadl0 (~diadlo@ )
+[23:01:07] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[23:30:55] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[23:32:21] *** Joins: in1t3r (~LordShiva@ )
+[23:39:43] *** Quits: pcre (~quassel@ ) (Ping timeout: 265 seconds)
+[23:40:00] *** Joins: f10__ (~flo@ )
+[23:40:12] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[23:40:32] *** Joins: f10 (~flo@ )
+[23:41:18] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
