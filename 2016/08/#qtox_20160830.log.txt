@@ -1,0 +1,184 @@
+[00:09:33] -qtox-git-spam- [qTox] Diadlo opened pull request #3669: [ui/redesign] Fix groupchats (ui/redesign...fixGroupchats) https://git.io/vivVt
+[00:24:33] *** Quits: captainkraft (~captainkr@ ) (Ping timeout: 276 seconds)
+[00:27:02] *** Joins: f10_ (~flo@ )
+[00:27:28] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[00:27:28] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[00:35:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[01:08:22] *** Joins: initramfs (~initramfs@ )
+[01:34:44] -qtox-git-spam- [qTox] initramfs opened pull request #3670: [WIP] Recreate netcam widget when reselecting a chat with an ongoing video call. (ui/redesign...ui/redesign-fix-chatform-video) https://git.io/vivPn
+[02:31:09] *** Quits: dan- (~d@ ) (Ping timeout: 260 seconds)
+[02:43:36] *** Joins: captainkraft (~captainkr@ )
+[03:12:33] *** Joins: Diadlo (~diadlo@ )
+[03:13:03] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 264 seconds)
+[03:16:34] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[03:17:34] *** Joins: Emcy (~MC@ )
+[03:20:09] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[04:06:47] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 244 seconds)
+[04:34:49] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[04:41:21] *** Joins: cisc (~cisc@ )
+[04:43:38] *** Joins: dan- (~d@ )
+[04:43:38] *** Quits: dan- (~d@ ) (Changing host)
+[04:43:38] *** Joins: dan- (~d@ )
+[04:49:47] <koshii> Is there any tox project for iOS?
+[04:51:30] <koshii> Oh never mind, I see Antidote now
+[04:51:40] <koshii> Hmm, I wonder what the challenges are to get this into the Apple app store
+[04:55:12] <oranges> having it not drain the phone battery in 30 seconds will likely be important
+[04:56:10] <koshii> oranges: Antox on Android isn't too bad, at least on a pretty modern device!
+[04:56:20] <koshii> So there's hope, I'd say.
+[05:01:54] *** Quits: captainkraft (~captainkr@ ) (Ping timeout: 244 seconds)
+[05:08:36] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[05:29:03] *** Joins: cisc (~cisc@ )
+[05:39:51] *** Joins: jjuran_ (~jjuran@ )
+[07:02:24] *** Joins: rerumnovarum (~user-reru@ )
+[07:13:17] *** Joins: pcre (~quassel@ )
+[07:21:13] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[07:21:31] *** Joins: rerumnovarum (~user-reru@ )
+[07:27:44] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[07:33:54] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 260 seconds)
+[07:36:55] *** Joins: SkyzohKey (~skyzohkey@ )
+[07:36:56] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[07:44:12] *** Joins: athan (~athan@ )
+[07:46:47] *** Joins: bennabiy (~bennabiy@ )
+[08:06:12] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 240 seconds)
+[08:06:49] *** Joins: initramfs (~initramfs@ )
+[08:16:07] *** Joins: abbat (~Anton@ )
+[08:23:48] *** Joins: f10_ (~flo@ )
+[08:24:46] *** Joins: smaragdus (~omoo@ )
+[08:29:10] *** Joins: f10 (~flo@ )
+[08:33:13] *** Joins: jjuran__ (~jjuran@ )
+[08:33:53] *** Quits: jjuran_ (~jjuran@ ) (Ping timeout: 244 seconds)
+[08:48:20] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[08:50:27] *** Joins: abbat (~abbat@ )
+[09:24:38] <iphy> koshii: there are three ways to get it into the app store
+[09:25:15] <iphy> 1) violate the GPL or apple tos
+[09:25:23] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[09:28:16] <iphy> 2) get everybody who contributed code to toxcore to agree to make a GPL exemption (the reverse engineering and free distribution part) for iOS
+[09:28:39] <iphy> 3) rewrite toxcore and don't licence that version under GPL
+[09:29:33] <jjuran__> Unfreedom sucks.
+[09:29:51] <iphy> Right, so 2 is unlikely
+[09:41:22] <nurupo> "Unfreedom license, become a slave of your own license" :P
+[09:42:20] <nurupo> given how many absurd licenses there are, someone might have actually made an unfreedom license
+[09:51:43] *** Joins: in1t3r (~LordShiva@ )
+[09:56:02] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[09:57:59] *** Quits: athan (~athan@ ) (Ping timeout: 258 seconds)
+[10:09:52] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[10:24:13] *** Joins: in1t3r (~LordShiva@ )
+[10:38:00] *** Joins: rerumnovarum (~user-reru@ )
+[10:53:25] *** Quits: oranges (oranges@ ) (Quit: Reconnecting)
+[10:53:32] *** Joins: oranges (oranges@ )
+[11:26:37] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[11:28:00] *** Joins: in1t3r (~LordShiva@ )
+[12:55:49] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 255 seconds)
+[12:57:32] *** Joins: rerumnovarum (~user-reru@ )
+[13:13:56] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[13:15:56] *** Joins: rerumnovarum (~user-reru@ )
+[13:20:39] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[13:22:12] *** Joins: rerumnovarum (~user-reru@ )
+[13:33:27] *** Quits: valvin (~valvin@ ) (Ping timeout: 264 seconds)
+[13:53:28] *** Joins: valvin (~valvin@ )
+[14:02:19] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[14:04:02] *** Joins: initramfs (~initramfs@ )
+[14:10:03] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 276 seconds)
+[14:10:21] *** Joins: kadinparker[m] (kadinparke@ )
+[14:22:38] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 244 seconds)
+[14:44:24] *** Joins: initramfs (~initramfs@ )
+[14:47:38] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[14:50:05] *** Joins: in1t3r (~LordShiva@ )
+[15:46:48] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:47:32] *** Joins: f10 (~flo@ )
+[15:50:33] *** Quits: initramfs (~initramfs@ ) (Read error: Connection reset by peer)
+[15:50:39] *** Joins: initramfs_ (~initramfs@ )
+[15:52:34] *** Quits: initramfs_ (~initramfs@ ) (Client Quit)
+[15:56:58] *** Quits: bashrc (~motters@ ) (Ping timeout: 250 seconds)
+[15:57:30] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[15:59:01] *** Joins: bashrc (~motters@ )
+[16:15:55] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[16:18:56] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:23:07] *** Joins: cisc (~cisc@ )
+[16:24:18] *** Joins: rerumnovarum (~user-reru@ )
+[16:47:00] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 258 seconds)
+[16:47:09] *** Joins: rerumnovarum (~user-reru@ )
+[17:16:49] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:20:25] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 255 seconds)
+[17:25:42] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:26:02] *** Joins: LittleVulpix (~Miranda@ )
+[17:38:06] *** Joins: in1t3r (~LordShiva@ )
+[17:42:33] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[17:59:33] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[18:12:53] *** Joins: in1t3r (~LordShiva@ )
+[18:32:25] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 258 seconds)
+[18:34:30] *** Joins: captainkraft (~captainkr@ )
+[18:36:05] *** Joins: rerumnovarum (~user-reru@ )
+[18:39:10] *** Quits: captainkraft (~captainkr@ ) (Ping timeout: 255 seconds)
+[18:48:39] *** Joins: captainkraft (~captainkr@ )
+[18:51:32] *** Quits: captainkraft (~captainkr@ ) (Client Quit)
+[19:02:51] *** Joins: cisc (~cisc@ )
+[19:05:28] -qtox-git-spam- [qTox] antis81 closed pull request #3670: [WIP] Recreate netcam widget when reselecting a chat with an ongoing video call (ui/redesign...ui/redesign-fix-chatform-video) https://git.io/vivPn
+[19:07:43] *** Quits: cisc (~cisc@ ) (Client Quit)
+[19:20:02] *** Joins: cisc (~cisc@ )
+[19:20:33] *** Quits: cisc (~cisc@ ) (Client Quit)
+[19:22:11] *** Joins: sudden6 (~anonymous@ )
+[19:34:48] *** Joins: cisc (~cisc@ )
+[19:38:20] *** Joins: athan (~athan@ )
+[20:02:55] *** Joins: ovalseven8 (~ovalseven@ )
+[20:13:05] <iphy> zetok: is this recursive signal blocking thing really necessary?
+[20:13:26] <iphy> "it's a good thing to have, even though it's probably useless at this point" :\
+[20:13:46] <iphy> "we don't take the decision to drop support for 5.2 lightly"
+[20:17:33] <zetok> no, most likely :(
+[20:18:04] <zetok> what is probably useless though?
+[20:19:31] <iphy> https://github.com/qTox/qTox/pull/3591
+[20:19:37] <iphy> "Note Through the recent PR #3590 this might not be required any longer. Anyway such blocker can come in handy in other use cases as well."
+[20:21:01] <Diadlo> zetok: https://github.com/irungentoo/toxcore/issues/1486 closed. Does it means, that https://github.com/qTox/qTox/issues/2726 no longer "upstream" ?
+[20:22:14] <zetok> Diadlo: it is upstream issue, regardless of what upstream wants to believe in
+[20:22:33] <Diadlo> Lol
+[20:22:44] <zetok> iphy: um, I don't know about C/C++ code
+[20:24:06] <zetok> Diadlo: there are actually 2 issues there
+[20:25:22] <zetok> one is a toxcore issue, where it cannot into sending messages reliably
+[20:25:54] <zetok> the other is a qTox issue, where it sends message duplicates even though it gets confirmations about message's delivery
+[20:28:08] *** Joins: pcre (~quassel@ )
+[20:28:52] <zetok> Diadlo: the issue in qTox is most likely something in how qTox handles message delivery confirmations
+[20:32:28] <iphy> Why can this not happen with uTox?
+[20:34:41] <iphy> Why can't it happen with uTox or ricin?
+[20:35:46] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[20:42:17] *** Joins: bashrc (~motters@ )
+[20:42:31] *** Quits: bashrc (~motters@ ) (Client Quit)
+[20:42:47] -qtox-git-spam- [qTox] antis81 closed pull request #3667: [ui/redesign] Change buttons (ui/redesign...changeButtons) https://git.io/vieTR
+[20:43:10] *** Joins: bashrc (~motters@ )
+[20:45:26] <iphy> Is antis81 on IRC?
+[20:46:35] <zetok> nope
+[20:47:01] <Diadlo> He can come in qtox group chat
+[20:47:32] <iphy> OK
+[20:53:30] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[21:26:05] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[21:27:08] *** Joins: cisc (~cisc@ )
+[21:35:44] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[21:36:18] *** Joins: CGGB (~CGGB@ )
+[21:44:28] <pcre> https://github.com/pranomostro/ratox     https://github.com/endoffile78/ratox/network Star those two. They did a lot of good work in fixing ratox for the new api.
+[21:45:13] *** Joins: initramfs (~initramfs@ )
+[21:48:21] <pcre> and ratox is definitley a suckless tool. 
+[21:50:09] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[21:58:59] *** Joins: initramfs_ (~initramfs@ )
+[22:00:24] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 244 seconds)
+[22:00:35] *** Quits: initramfs_ (~initramfs@ ) (Client Quit)
+[22:00:55] *** Joins: initramfs (~initramfs@ )
+[22:00:56] *** Joins: athan (~athan@ )
+[22:01:31] <Diadlo> zetok: Why we don't setup INCLUDEPATH in .pro file?
+[22:02:03] <zetok> dunno
+[22:02:13] <Diadlo> Ok :)
+[22:07:12] *** Quits: initramfs (~initramfs@ ) (Read error: Connection reset by peer)
+[22:07:18] *** Joins: initramfs_ (~initramfs@ )
+[22:08:12] *** Quits: initramfs_ (~initramfs@ ) (Client Quit)
+[22:08:27] *** Joins: initramfs (~initramfs@ )
+[22:14:26] *** Parts: isAAAc (~isAAAc@ ) ("WeeChat 1.5")
+[22:17:31] -qtox-git-spam- [qTox] iphydf opened pull request #3673: compat: Make aboutuser's placeholderText optional. (master...qt52) https://git.io/viUk5
+[22:37:25] *** Joins: captainkraft (~captainkr@ )
+[22:37:56] -qtox-git-spam- [qTox] iphydf opened pull request #3674: refactor: Disable RecursiveSignalBlocker if not available. (master...qt52-2) https://git.io/viUms
+[22:41:53] *** Joins: initramfs_ (~initramfs@ )
+[22:44:52] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 255 seconds)
+[22:49:59] *** Joins: initramfs (~initramfs@ )
+[22:50:40] *** Quits: initramfs_ (~initramfs@ ) (Ping timeout: 265 seconds)
+[22:58:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:58:46] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[23:13:57] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 265 seconds)
+[23:16:47] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[23:43:21] *** Quits: captainkraft (~captainkr@ ) (Ping timeout: 276 seconds)
