@@ -1,0 +1,275 @@
+[00:07:04] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:16:01] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[00:42:19] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[00:47:16] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[01:33:10] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[02:06:21] *** Quits: doncatnip (~doncatnip@ ) (Remote host closed the connection)
+[02:14:48] *** Joins: captainkraft (~captainkr@ )
+[02:58:50] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[03:19:31] *** Joins: athan (~athan@ )
+[04:11:12] <Se7en> 20:07:49     <@Se7en> I think I am dying                                                                                                                            │
+[04:11:13] <Se7en> 20:08:08     <@Se7en> I wake up at 7 in the evening                                                                                                                 │
+[04:11:13] <Se7en> 20:08:16     <@Se7en> And can not get to bed until 8 in the morning                                                                                                 │
+[04:11:13] <Se7en> 20:08:24     <@Se7en> Am I a vampire?                                                                                                                               │
+[04:11:15] <Se7en> 20:09:28     <@Se7en> My pulse is also very slow   
+[04:11:17] <Se7en> oops
+[04:11:19] <Se7en> Sorry
+[04:11:27] <Se7en> Damn weechat fucking up
+[04:12:10] <Se7en> I went to pasate that into a channel then the delay in connecting to channels in my ZNC ended and then it pasted in here
+[04:49:36] <koshii> Hah
+[04:50:03] <koshii> Se7en: A fascianting insight nonetheless :)
+[05:10:53] <oranges> I am a vampire too
+[05:14:14] *** Quits: captainkraft (~captainkr@ ) (Quit: WeeChat 1.5)
+[05:31:51] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[05:46:00] *** Joins: cisc (~cisc@ )
+[05:59:16] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[06:03:46] *** Joins: athan (~athan@ )
+[06:05:25] *** Quits: valvin (~valvin@ ) (Quit: ZNC - http://znc.in)
+[06:06:00] *** Joins: valvin (~valvin@ )
+[06:53:22] *** Quits: Emcy (~MC@ ) (Ping timeout: 265 seconds)
+[07:42:11] *** Joins: abbat (~Anton@ )
+[08:17:18] *** Joins: f10 (~flo@ )
+[08:17:27] *** Joins: Emcy (~MC@ )
+[08:23:25] *** Joins: Chiitoo (~Chiitoo@ )
+[08:51:33] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[08:53:24] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:10:04] *** Joins: Paky (2d16809a@ )
+[09:10:51] <Paky> Hey the download link for the windows binary gives a 502 error, is this known?
+[09:12:56] <Chiitoo> Paky: Looks like the whole domain (https://build.tox.chat/) is unreachable.  So, maybe?
+[09:13:15] <Paky> whoa
+[09:13:19] <Paky> That's unfortunate
+[09:14:53] <Chiitoo> Or well, it is reachable, by traceroute, but yeah, bad gateway.
+[09:15:36] <Chiitoo> Haven't seen any talk about it yet.  Only been here for an hour or so.  ^^
+[09:18:37] <zetok> nurupo: ↑ ?
+[09:19:08] <Paky> Oh zetok I used to have you on Tox xD
+[09:19:48] <zetok> ah, yes
+[09:19:52] <Paky> though idk why. We never talked after the first day
+[09:21:25] <zetok> building toxcore with new A/V
+[09:22:04] <Paky> Oh yeah testing
+[09:24:36] *** Joins: Diadlo (~diadlo@ )
+[09:33:56] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[09:34:57] *** Joins: Chiitoo (~Chiitoo@ )
+[09:39:28] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[09:41:13] *** Quits: Paky (2d16809a@ ) (Quit: Page closed)
+[09:43:36] *** Joins: vindelschtuffen (~vindelsch@ )
+[09:52:56] *** Joins: abbat (~abbat@ )
+[09:58:49] *** Quits: zero-ghost (~0@ ) (*.net *.split)
+[09:58:49] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[09:58:50] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[09:59:19] *** Joins: dongo (~dongo@ )
+[10:03:00] *** Joins: zero-ghost (~0@ )
+[10:03:00] *** Joins: VVD (~VVD@ )
+[10:07:06] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
+[10:46:07] *** Joins: Emcy (~MC@ )
+[10:55:47] *** Joins: f10_ (~flo@ )
+[11:02:26] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[11:03:14] *** Joins: abbat (~abbat@ )
+[11:26:16] *** Quits: athan (~athan@ ) (Ping timeout: 255 seconds)
+[11:38:14] *** Quits: zero-ghost (~0@ ) (Ping timeout: 244 seconds)
+[11:42:22] *** Joins: zero-ghost (~0@ )
+[11:50:08] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[11:50:49] *** Joins: abbat (~abbat@ )
+[12:01:23] *** Joins: athan (~athan@ )
+[13:00:19] *** Joins: st4ll1 (~st4ll1@ )
+[13:05:44] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[13:06:35] *** Joins: athan (~athan@ )
+[13:46:40] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[13:47:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 265 seconds)
+[15:02:24] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[15:02:50] *** Joins: abbat (~abbat@ )
+[15:17:13] *** Joins: f10 (~flo@ )
+[15:34:13] *** Quits: athan (~athan@ ) (Ping timeout: 255 seconds)
+[15:42:58] *** Joins: athan (~athan@ )
+[15:46:56] *** Joins: f10_ (~flo@ )
+[15:55:26] *** Joins: initramfs (~initramfs@ )
+[16:06:23] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[16:10:54] *** Joins: abbat (~abbat@ )
+[16:45:27] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[16:58:52] *** Joins: zn_ (5a0ac0bd@ )
+[16:59:38] <zn_> hi guys am I the only one getting a 502 when trying to download tox for windows?
+[17:02:41] -qtox-git-spam- [qTox] Diadlo opened pull request #3678: [WIP] Unit tests (master...unitTests) https://git.io/viLQV
+[17:03:04] <Diadlo> zn_: Not. It's already reported to developers
+[17:04:02] <zn_> Thanks
+[17:04:08] *** Quits: zn_ (5a0ac0bd@ ) (Quit: Page closed)
+[17:04:50] *** Quits: bennabiy (~bennabiy@ ) (Read error: Connection reset by peer)
+[17:05:29] *** Joins: bennabiy (~bennabiy@ )
+[17:09:16] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[17:14:32] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[17:14:54] *** Joins: abbat (~abbat@ )
+[17:17:03] *** Quits: bennabiy (~bennabiy@ ) (Read error: Connection reset by peer)
+[17:20:15] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[17:21:21] *** Joins: bennabiy (~bennabiy@ )
+[17:32:21] *** Joins: f10__ (~flo@ )
+[17:32:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[17:33:55] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[17:46:45] *** Joins: genesis_ (~genesis@ )
+[17:46:45] *** genesis is now known as Guest26598
+[17:46:45] *** genesis_ is now known as genesis
+[17:46:54] *** Quits: Guest26598 (~genesis@ ) (Read error: Connection reset by peer)
+[18:07:55] *** Joins: Yv7trNY (~IUTYVExrY@ )
+[18:17:47] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:18:01] *** Joins: qtoxuser35021 (4d25dc4d@ )
+[18:18:09] *** Parts: qtoxuser35021 (4d25dc4d@ ) ()
+[18:18:33] *** Joins: qtoxuser35021 (4d25dc4d@ )
+[18:18:36] *** Quits: Yv7trNY (~IUTYVExrY@ ) (Read error: No route to host)
+[18:23:21] <qtoxuser35021> anyone can tell whats with qtox or utox download links?
+[18:36:26] *** Joins: Chiitoo (~Chiitoo@ )
+[18:40:23] <zetok> yes
+[18:41:07] <zetok> something on tox.chat side is broken
+[18:41:20] <zetok> if you're using Linux you can just use the repo
+[18:42:44] <genesis> qgroup bot is a toxbot ? https://github.com/JFreegman/ToxBot
+[18:43:53] <qTox-syncbot> Ronan: tropdlaball
+[18:44:07] <genesis> ;-)
+[18:46:29] <qtoxuser35021> my mate tried compiling debian qtox and failed too
+[18:49:12] <qtoxuser35021> having p2p messager but being unable to download it from publicly truster source, that sucks
+[18:49:20] <qtoxuser35021> d
+[19:00:41] <qTox-syncbot> ur840501: can anyone tell whats with qtox/utox download links
+[19:02:38] *** Joins: athan (~athan@ )
+[19:03:32] <zetok> genesis: yep
+[19:04:16] <zetok> qtoxuser35021: did they try to use the repo or compile according to INSTALL.md?
+[19:04:37] <zetok> qtoxuser35021: if so, which part of INSTALL.md didn't work?
+[19:05:03] <qTox-syncbot> Zetok\0: ur840501: https://github.com/qTox/qTox/issues/3677
+[19:06:00] <genesis> my friend @ isis stills prefer telegram over tox :/ i lost time i should use to make bomb :/
+[19:07:33] <qTox-syncbot> ur840501: im sure FSB co-devs of telegram can help anyone with how to make bombs
+[19:07:57] *** Quits: qtoxuser35021 (4d25dc4d@ ) (Quit: Page closed)
+[19:12:08] *** Joins: vindelschtuffen (~vindelsch@ )
+[19:13:33] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[19:13:49] *** Joins: f10__ (~flo@ )
+[19:15:20] <genesis> hehe perharps :)
+[19:31:42] *** Joins: abbat (~Anton@ )
+[20:05:37] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[20:09:03] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[20:17:14] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[20:18:38] *** Joins: rerumnovarum (~user-reru@ )
+[20:20:36] *** Joins: sudden6 (~anonymous@ )
+[20:30:27] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[20:30:33] *** Quits: jjuran__ (~jjuran@ ) (Quit: jjuran__)
+[20:31:54] *** Joins: rerumnovarum (~user-reru@ )
+[20:32:19] <qTox-syncbot> Zetok\0: hm.
+[20:35:31] <qTox-syncbot> sudden6: hey ho o/
+[20:35:52] -qtox-git-spam- [qTox] Diadlo closed pull request #3678: [WIP] Unit tests (master...unitTests) https://git.io/viLQV
+[20:36:07] *** Joins: jjuran_ (~jjuran@ )
+[20:37:10] <genesis> zetok : trailing \0 on your nickname :P
+[20:37:39] <qTox-syncbot> Zetok\0: Yes.
+[20:37:57] <qTox-syncbot> Ronan: i've such bug in qtox in setence too
+[20:38:17] <qTox-syncbot> Zetok\0: it's not a bug
+[20:45:07] <qTox-syncbot> sudden6: you have a \0 in your nickname?
+[20:57:19] <qTox-syncbot> Zetok\0: since always ^_^
+[20:58:19] <qTox-syncbot> sudden6: I too like to live dangerously ;)
+[20:58:40] <Chiitoo> That was a little more than confuddling, not really reading qTox-syncbot's nick, haha.
+[21:01:31] <qTox-syncbot> Zetok\0: > I too like to live dangerously ;) |\n|  |\n| as dangerously as blindly reverting commits to GPU driver in kernel, only to find out that it just works™? ;D
+[21:03:13] <qTox-syncbot> Diadlo: Zetok just rewrite Relay bot to add `\0` to their nick ;)
+[21:03:57] <qTox-syncbot> Zetok\0: pls
+[21:04:19] <qTox-syncbot> Zetok\0: I probably should put source somewhere
+[21:08:15] <qTox-syncbot> Zetok\0: Diadlo: https://gitlab.com/zetok/tox-syncbot/commit/7ba838d15d0354fcff81df61b8f6fbff64632f4c#4758983644989ead37f7078d274f6b136b953852_0_28 :)
+[21:09:35] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:09:45] <qTox-syncbot> Diadlo: Okeey.. Gitlab is cool. Why we don't use them?
+[21:09:57] <genesis> because it wasn't ;)
+[21:09:59] <qTox-syncbot> Zetok\0: it doesn't work
+[21:10:01] <qTox-syncbot> Diadlo: cool := open source  |\n| :D
+[21:10:05] <qTox-syncbot> Diadlo: Ok
+[21:10:46] <genesis> i heard lot of people now think it's far better than github.
+[21:11:05] <qTox-syncbot> Zetok\0: yet it's not
+[21:11:25] <qTox-syncbot> Zetok\0: :/
+[21:15:36] *** Joins: cisc (~cisc@ )
+[21:18:57] <Se7en> gitgud.io is pretty nice too
+[21:26:55] <sudden6> zetok Diadlo any objections against merging https://github.com/qTox/qTox/pull/3648 ?
+[21:27:30] <sudden6> I think I remember someone complaining about removing toxnds, but can't find it anymore...
+[21:27:43] <zetok> yes, someone misfired
+[21:27:59] <qTox-syncbot> Diadlo: sudden6: https://github.com/TokTok/toxcore/issues/42#issuecomment-243979363 ?
+[21:28:31] <qTox-syncbot> Diadlo: And no, I not against of merge my PR :)
+[21:28:55] <zetok> sudden6: DNS was to be removed anyway, so it might as well happen ~now
+[21:30:10] <sudden6> ah, didn't see the discussion is still hot
+[21:30:55] <sudden6> well, personally toxme > toxdns so we should remove it I think
+[21:31:33] <qTox-syncbot> Diadlo: +1
+[21:33:15] <zetok> >ah, didn't see the discussion is still hot
+[21:33:17] <zetok> it's not
+[21:33:27] <zetok> grayhatter is just in denial
+[21:34:17] <zetok> https://i.imgur.com/7Pe6ZQS.jpg
+[21:34:18] <zetok> :3
+[21:37:50] <sudden6> Diadlo: you push it to master then?
+[21:38:41] <qTox-syncbot> Diadlo: Ok
+[21:40:56] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://git.io/vitPf
+[21:40:56] -qtox-git-spam- qTox/master 8da695e Diadlo: refactor(toxdns): Removed using of toxdns...
+[21:40:56] -qtox-git-spam- qTox/master 76c4cf7 Diadlo: Merge pull request #3648...
+[21:41:11] <qTox-syncbot> Diadlo: Phew. Done)
+[21:42:53] <qTox-syncbot> Diadlo: https://github.com/qTox/qTox/issues/2159 |\n| Close or change titile on "ToxMe must not be centralized" ?
+[21:48:21] <qTox-syncbot> Zetok\0: Diadlo: closed
+[21:52:53] <qTox-syncbot> Diadlo: Zetok\0: https://github.com/qTox/qTox/issues/3601 any progress?
+[21:53:27] <qTox-syncbot> Zetok\0: none that I know of
+[21:54:05] <qTox-syncbot> Diadlo: I think, we should select one of the existing style
+[21:54:29] <qTox-syncbot> Diadlo: I see no reason to create another
+[21:56:35] <qTox-syncbot> Diadlo: LLVM and Mozilla use 2 space indent. IMHO, it's too small
+[21:59:54] <sudden6> At first glance I like the WebKit one the most
+[22:00:01] <initramfs> Zetok, Diadlo: I've already created a clang-format style with some additional rules, right now I'm writing a new CODE_FORMATTING.md file which goes in depth of how to format code.
+[22:00:35] <sudden6> can a lgtm on reviewable override unresolved discussions?
+[22:00:47] <qTox-syncbot> Diadlo: initramfs: Why you create another one code style?
+[22:01:23] <qTox-syncbot> Amit Agnani: I created a coding style based on the existing established rules of qTox
+[22:01:52] <zetok> sudden6: ~yep
+[22:02:05] <qTox-syncbot> Diadlo: IMO, better will be change current coding style on the one of existing
+[22:02:17] <sudden6> Is there something as a QT or KDE coding style?
+[22:02:29] <qTox-syncbot> Diadlo: sudden6, Zetok: What you think ^ ?
+[22:02:43] <qTox-syncbot> Zetok\0: dunno, I haven't looked much into that
+[22:03:13] <sudden6> IMHO, if something like that exist we should use it, since qt and qtox are very close^^
+[22:03:15] <qTox-syncbot> Diadlo: Zetok: Oh... I forget about it
+[22:03:30] <sudden6> zetok: how exactly ~yep?
+[22:04:18] <zetok> sudden6: I think that it always overrides, but I'm not 100% sure about that
+[22:05:16] <sudden6> ok, I will ask antis81 to clear up his then anyway :)
+[22:05:45] <qTox-syncbot> Diadlo: https://wiki.qt.io/Qt_Coding_Style
+[22:06:09] <qTox-syncbot> Diadlo: https://community.kde.org/Policies/Kdelibs_Coding_Style
+[22:06:11] <qTox-syncbot> Diadlo: https://techbase.kde.org/Policies/Frameworks_Coding_Style
+[22:09:14] <sudden6> seems like kde style is basically indentical to qt style
+[22:10:09] <qTox-syncbot> Diadlo: Seems yes
+[22:10:29] <qTox-syncbot> Diadlo: Noope :)
+[22:10:39] <qTox-syncbot> Diadlo: KDE: Use curly braces even when the body of a conditional statement contains only one line. 
+[22:10:49] <qTox-syncbot> Diadlo: Qt: Use curly braces only when the body of a conditional statement contains more than one line: 
+[22:11:09] <qTox-syncbot> Diadlo: I prefer KDE's one
+[22:11:17] <qTox-syncbot> Diadlo: // In this case
+[22:12:01] <qTox-syncbot> Amit Agnani: Just keep in mind, that means the entire codebase will need to be reformatted
+[22:12:23] <qTox-syncbot> Diadlo: Yes. I know
+[22:12:33] <qTox-syncbot> Diadlo: But only once
+[22:14:13] <qTox-syncbot> Diadlo: From KDE: 
+[22:14:15] <qTox-syncbot> Diadlo: > You can use astyle (>=1.23) to format code or to test if you have followed this document.
+[22:15:03] <sudden6> to be honest, I like our current style the most, because it puts { on it's own line, else we are pretty close to qt I think
+[22:17:51] <qTox-syncbot> Diadlo: I do not like `{` on new line :)
+[22:18:07] <qTox-syncbot> Diadlo: IMHO
+[22:19:05] <qTox-syncbot> Diadlo: Seems, `astyle` are really easy to use)
+[22:21:03] <qTox-syncbot> Amit Agnani: Ah, the age-old, { debate.
+[22:21:33] <qTox-syncbot> Diadlo: No debate :) I agree save old { rule
+[22:22:15] <qTox-syncbot> Amit Agnani: And tsk tsk you people, you wait until AFTER I write the clang format file to discuss it? Tsk tsk tsk
+[22:22:39] <qTox-syncbot> Diadlo: :)
+[22:22:43] <qTox-syncbot> Diadlo: Sorry
+[22:23:04] <sudden6> sorry ^^
+[22:23:31] <qTox-syncbot> Diadlo: Using astyle pretty simple. 
+[22:23:49] <qTox-syncbot> Zetok\0: offtopic: https://bugs.freedesktop.org/show_bug.cgi?id=66963#c288 ← har har, fixin' teh kernel ;D
+[22:23:51] <qTox-syncbot> Diadlo: Amit Agnani, sudden6: Have you try it?
+[22:25:50] <sudden6> no, I never had the need to use tools for code formatting
+[22:25:53] <qTox-syncbot> Amit Agnani: > [05:23:47] Zetok Zalbavar: offtopic: https://bugs.freedesktop.org/show_bug.cgi?id=66963#c288 ← har har, fixin' teh kernel ;D |\n|  |\n| Not bad
+[22:26:15] <qTox-syncbot> Amit Agnani: > [05:23:49] Diadlo: Amit Agnani, sudden6: Have you try it? |\n|  |\n| Same here, I've only researched clang-format so far.
+[22:26:42] <sudden6> I'm leaving for the night, bye :)
+[22:26:51] <qTox-syncbot> Amit Agnani: Bye
+[22:26:55] <qTox-syncbot> Diadlo: Amit Agnani: Ok. Then I think it makes sense to continue research :)
+[22:27:01] <qTox-syncbot> Diadlo: sudden6: Bye :)
+[22:27:09] <qTox-syncbot> Amit Agnani: Diadlo: Sure
+[22:27:49] <qTox-syncbot> Diadlo: I think I also have to go. Good night everyone
+[22:28:03] <qTox-syncbot> Amit Agnani: Good bye
+[22:28:05] <qTox-syncbot> Zetok\0: g'night :)
+[22:45:53] <zetok> would squashing commits for https://github.com/qTox/qTox/pull/3442 be good?
+[22:47:11] <oranges> always squash commits
+[22:47:36] <zetok> well
+[22:47:58] <zetok> tux3 didn't seem to like when commits in PR were squashed :s
+[22:48:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[22:48:26] <zetok> oh well
+[22:48:27] <oranges> tux3 is obviously damaged
+[22:49:28] <zetok> b-but like 20 commits per 200 lines changed sounds just right
+[22:57:08] <initramfs> Yeah.... That should probably be squashed...
+[23:29:25] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[23:50:07] *** Joins: initramfs (~initramfs@ )
+[23:52:09] <iphy> I think one commit should be one logical and consistent change
+[23:52:24] <iphy> So if you revert that commit, the change is undone
+[23:52:45] <iphy> If you need to revert 20 commits to undo a change, it's probably wrong
+[23:53:24] <iphy> Regarding coding style, I agree that it should be close to Qt style
+[23:53:44] <iphy> I don't think it's useful to obsess over it
+[23:54:03] <iphy> Open source projects like to obsess over precise rules
+[23:54:26] <iphy> In reality, you want a consistent enforceable style, and what style it is doesn't really matter
+[23:55:21] <iphy> People who think they've eaten from the tree of wisdom and have been elected by God personally to preach the one and only coding style are going to have a bad time in life
