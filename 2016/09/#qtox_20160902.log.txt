@@ -1,0 +1,204 @@
+[00:10:51] <oranges> I'm of the opinion that if your pr needs more than one commit to contain each logical change
+[00:10:55] <oranges> you're not doing pr's correctly
+[00:10:59] <oranges> since each pr should be atmoic as well
+[00:11:35] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:21:12] <iphy> oranges: almost
+[00:21:18] <iphy> oranges: I agree, but there are exceptions
+[00:21:28] <iphy> oranges: in toktok, PRs are usually one commit
+[00:21:44] <iphy> but these rules do have exceptions
+[00:22:17] <nurupo> zetok: just got on irc
+[00:23:10] <nurupo> zetok: you can also ping oranges and tux3 for build.tox.chat
+[00:23:28] <nurupo> https://wiki.tox.chat/infrastructure/services?s[]=nurupo
+[00:23:32] <oranges> no you cant
+[00:23:36] <oranges> don't ping me for anything
+[00:24:44] <zetok> :c
+[00:24:51] <nurupo> me, oranges and tux3 have root on the machine and admin on jenkins web ui
+[00:28:02] <nurupo> just letting nsa know so they know who to abduct :P
+[00:29:19] <oranges> You"LL NEVER TAKE ME ALIVE
+[00:32:53] *** Joins: st4ll1 (~st4ll1@ )
+[01:33:57] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[02:17:06] *** Joins: athan (~athan@ )
+[02:30:10] *** Joins: captainkraft (~captainkr@ )
+[02:46:30] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[02:46:58] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[03:41:59] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[03:44:59] *** Joins: initramfs (~initramfs@ )
+[05:27:17] *** Quits: captainkraft (~captainkr@ ) (Quit: WeeChat 1.5)
+[05:44:33] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[06:00:09] *** Joins: athan (~athan@ )
+[06:30:28] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[06:38:11] *** Joins: initramfs (~initramfs@ )
+[06:48:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:49:58] *** Joins: cisc (~cisc@ )
+[06:55:58] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[07:05:52] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 265 seconds)
+[07:06:56] *** Joins: Diadlo (~diadlo@ )
+[07:18:30] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[07:23:19] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[07:25:00] *** Joins: sudden6 (~anonymous@ )
+[07:31:17] *** Joins: cisc (~cisc@ )
+[07:31:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:38:37] <cisc> is there any updated binary for OS X? someone I know is trying to run one of Rowen's releases and says it just crashes when they open it
+[07:44:53] *** Joins: f10 (~flo@ )
+[07:45:30] *** Joins: f10__ (~flo@ )
+[07:46:29] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[07:49:22] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[07:52:23] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:52:46] *** Joins: LittleVulpix (~Miranda@ )
+[08:04:30] <nurupo> sounds like someone needs iphy
+[08:06:07] <nurupo> he was working on fixing qTox for OS X in toktok/qtox
+[08:13:39] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[08:15:05] *** Joins: cisc (~cisc@ )
+[08:15:14] *** Joins: abbat (~Anton@ )
+[08:23:46] *** Joins: pcre (~quassel@ )
+[08:28:17] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[08:46:04] *** Joins: cisc (~cisc@ )
+[08:56:32] *** Quits: rerumnovarum (~user-reru@ ) (Remote host closed the connection)
+[09:01:17] *** Joins: st4ll1 (~st4ll1@ )
+[09:06:35] *** Joins: f10 (~flo@ )
+[09:08:47] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:25:19] *** Joins: athan (~athan@ )
+[09:26:51] *** Joins: rerumnovarum (~user-reru@ )
+[09:31:26] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[09:43:56] *** Joins: CGGB (~CGGB@ )
+[09:54:32] *** Quits: dan- (~d@ ) (Ping timeout: 240 seconds)
+[10:05:03] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:07:01] *** Joins: dan- (~d@ )
+[10:07:01] *** Quits: dan- (~d@ ) (Changing host)
+[10:07:01] *** Joins: dan- (~d@ )
+[10:07:25] *** Joins: abbat (~abbat@ )
+[10:15:00] *** Quits: dan- (~d@ ) (Ping timeout: 244 seconds)
+[10:15:53] *** Joins: cisc (~cisc@ )
+[10:23:06] *** Joins: dan- (~d@ )
+[10:23:06] *** Quits: dan- (~d@ ) (Changing host)
+[10:23:06] *** Joins: dan- (~d@ )
+[10:24:27] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[10:25:03] *** Joins: cisc (~cisc@ )
+[10:35:21] *** Joins: bashrc (~motters@ )
+[10:59:07] <qTox-syncbot> ur840501: any other known chat groups for tox?
+[11:03:17] <iphy> cisc: I have a build that works
+[11:03:53] <iphy> cisc: for osx
+[11:03:53] <iphy> cisc: I'm very slowly contributing back my changes to upstream
+[11:14:44] <cisc> iphy: I have a friend on OS X Sierra, can test if needed
+[11:15:27] <iphy> https://toktok.github.io/client/osx/qtox.dmg
+[11:15:57] <cisc> thx, will get back to you with results
+[11:24:28] <koshii> Has anyone tested qtox in China?
+[11:24:31] <koshii> (Does it work?)
+[11:24:52] <zetok> zero-ghost: ↑ ?
+[11:25:34] <zetok> koshii: most likely
+[11:25:38] <zero-ghost> yea
+[11:25:54] <zero-ghost> person i had on it i think tested it with and without VPN
+[11:25:55] <zero-ghost> and it worked
+[11:32:47] <iphy> [10:28:27.528 UTC] widget/translator.cpp:74 : Debug: Error loading translation "ar"
+[11:32:53] <iphy> (I removed "ar" from the translations)
+[11:33:13] <iphy> why does it insist that I'm arabic?
+[11:49:13] *** Quits: pcre (~quassel@ ) (Ping timeout: 255 seconds)
+[11:49:44] <zetok> :|
+[11:50:48] <zetok> the idea was that qTox should try to detect on the first start the system language & use it
+[11:51:09] <zetok> for me that never seemed to work under Linux
+[11:51:17] <iphy> This is osx
+[11:54:25] <zetok> or maybe it did "work"
+[11:55:25] <zetok> (given that my $LANG and $LC_MESSAGES differ)
+[11:57:49] <zetok> if it completely doesn't work on osx, it might be just trying to load first translation from the list, which would be ar
+[12:02:33] <iphy> oh wow
+[12:02:44] <iphy> you have two hard-coded lists of languages
+[12:02:46] <iphy> I didn't realise that
+[12:04:22] <zetok> https://github.com/qTox/qTox/wiki/Translating#if-youre-adding-new-translations :|
+[12:06:50] <iphy> cool
+[12:07:01] <iphy> so 3 then
+[12:07:20] <iphy> or 4, if you include the language names
+[12:07:31] *** Quits: jjuran_ (~jjuran@ ) (*.net *.split)
+[12:07:31] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[12:09:32] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[12:09:43] *** Joins: jjuran_ (~jjuran@ )
+[12:09:51] *** Joins: VVD (~VVD@ )
+[12:10:28] <iphy> https://github.com/qTox/qTox/pull/3661/files wat.
+[12:11:43] *** Joins: rerumnovarum (~user-reru@ )
+[12:11:44] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[12:12:01] <iphy> ok, I see the sentiment now
+[12:12:16] *** Parts: iphy (uid67735@ ) ()
+[12:13:13] -qtox-git-spam- [qTox] iphydf closed pull request #3673: refactor: Make aboutuser's placeholderText optional. (master...qt52) https://git.io/viUk5
+[12:14:04] *** Joins: abbat (~abbat@ )
+[12:14:08] -qtox-git-spam- [qTox] iphydf closed pull request #3674: refactor: Disable RecursiveSignalBlocker if not available. (master...qt52-2) https://git.io/viUms
+[12:59:40] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[13:12:07] *** Joins: abbat (~abbat@ )
+[14:16:32] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[14:26:44] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[14:28:52] *** Joins: cisc (~cisc@ )
+[14:31:07] *** Quits: cisc (~cisc@ ) (Client Quit)
+[14:41:41] *** Joins: cisc (~cisc@ )
+[15:05:11] *** Joins: pcre (~quassel@ )
+[15:13:18] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:23:40] *** Joins: cisc (~cisc@ )
+[16:14:59] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 260 seconds)
+[16:15:17] *** Joins: Diadlo (~diadlo@ )
+[16:19:39] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[16:19:48] *** Joins: rerumnovarum (~user-reru@ )
+[16:42:51] *** Joins: sudden6 (~anonymous@ )
+[16:57:58] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[17:06:27] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[17:33:33] *** Joins: st4ll1 (~st4ll1@ )
+[17:34:38] *** Joins: cisc (~cisc@ )
+[17:38:12] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[17:38:27] *** Joins: rerumnovarum (~user-reru@ )
+[17:40:38] *** Joins: Chiitoo (~Chiitoo@ )
+[17:44:06] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:46:17] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[17:46:24] *** Joins: rerumnovarum (~user-reru@ )
+[18:09:59] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[18:13:35] *** Joins: athan (~athan@ )
+[18:13:37] *** Joins: cisc (~cisc@ )
+[18:17:51] *** Joins: namzezam (~chatzilla@ )
+[18:20:08] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[18:33:45] *** Joins: athan (~athan@ )
+[18:38:35] <namzezam> hi i use qt5 but get error: glib-2.0 development package not found, why and what should i do?
+[18:44:00] <zetok> hello namzezam, what are you trying to do?
+[18:46:03] *** Quits: namzezam (~chatzilla@ ) (Ping timeout: 240 seconds)
+[18:46:32] <zetok> :/
+[18:53:12] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[18:54:04] *** Joins: athan (~athan@ )
+[18:57:10] <cisc> that was fast :)
+[19:03:02] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[19:03:17] *** Joins: rerumnovarum (~user-reru@ )
+[19:05:06] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:06:40] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[19:06:49] *** Joins: athan (~athan@ )
+[19:13:22] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[19:14:59] *** Joins: athan (~athan@ )
+[19:16:32] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[19:18:31] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:18:33] *** Joins: rerumnovarum (~user-reru@ )
+[19:30:34] *** Quits: athan (~athan@ ) (Ping timeout: 252 seconds)
+[19:30:47] *** Joins: athan (~athan@ )
+[19:35:03] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[19:35:49] *** Joins: athan (~athan@ )
+[19:39:27] <qTox-syncbot> Ronan: and furious.
+[19:52:08] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[19:52:25] *** Joins: rerumnovarum (~user-reru@ )
+[19:56:32] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[19:58:11] *** Joins: st4ll1 (~st4ll1@ )
+[20:16:45] *** Joins: Chiitoo (~Chiitoo@ )
+[20:17:27] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[20:17:44] *** Joins: Diadlo (~diadlo@ )
+[20:51:37] *** Joins: comcomist (~chatzilla@ )
+[21:17:25] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[21:17:34] *** Joins: athan (~athan@ )
+[21:17:49] *** Joins: abbat (~Anton@ )
+[21:23:24] <comcomist> why do i get and what should i do when i get it ":-1: error: glib-2.0 development package not found"?
+[21:24:05] <comcomist> am using qt5
+[21:39:02] *** Quits: comcomist (~chatzilla@ ) (Quit: ChatZilla 0.9.92 [Firefox 48.0/20160728204505])
+[21:50:12] *** Joins: initramfs (~initramfs@ )
+[22:03:49] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[22:19:28] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[22:46:21] *** Joins: athan (~athan@ )
+[22:59:47] *** Joins: sudden6 (~anonymous@ )
+[23:00:09] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:08:30] *** Joins: smaragdus (~omoo@ )
+[23:22:27] <sudden6> zetok: what about spring cleaning our bugtracker? some are older than one year ago...
+[23:31:26] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[23:42:20] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:42:21] <Diadlo> sudden6: +1 ^
+[23:42:53] <sudden6> I'm already at it, but some issues >1 year are still reproducible -_-
+[23:46:48] *** Joins: athan (~athan@ )
+[23:49:24] <sudden6> Giving up for today, night
+[23:52:25] <Chiitoo> NightZzz
