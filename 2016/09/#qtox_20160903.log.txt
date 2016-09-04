@@ -1,0 +1,347 @@
+[00:00:20] <Diadlo> sudden6: Good night
+[00:03:27] <Diadlo> sudden6: About your "please reopen if not." https://github.com/qTox/qTox/issues/3647#issuecomment-242579998
+[00:18:14] *** Joins: thiras (~thiras@ )
+[00:18:19] <thiras> hello
+[00:18:42] <thiras> when we will get new groupchats? is there a date for that?
+[00:34:40] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 255 seconds)
+[00:45:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[00:53:07] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[01:00:58] *** Quits: thiras (~thiras@ ) (Ping timeout: 250 seconds)
+[01:06:02] *** Joins: SkyzohKey (~skyzohkey@ )
+[01:43:24] *** Joins: f10 (~flo@ )
+[01:44:29] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[02:43:23] *** Joins: captainkraft (~captainkr@ )
+[02:59:01] *** Quits: koshii (~w@ ) (Read error: Connection reset by peer)
+[03:00:20] *** Joins: koshii (~w@ )
+[03:18:31] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:28:27] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[03:29:24] *** Joins: f10 (~flo@ )
+[03:31:28] *** Joins: f10_ (~flo@ )
+[03:34:00] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[04:51:50] *** Quits: captainkraft (~captainkr@ ) (Quit: WeeChat 1.5)
+[06:22:26] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:25:02] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[06:42:47] *** Joins: cisc (~cisc@ )
+[06:49:04] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[06:49:31] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[07:11:26] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 265 seconds)
+[07:12:01] *** Joins: abbat (~Anton@ )
+[07:28:13] *** Joins: initramfs (~initramfs@ )
+[07:31:08] *** Quits: initramfs (~initramfs@ ) (Client Quit)
+[07:36:35] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[08:15:19] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[08:15:49] *** Joins: rerumnovarum (~user-reru@ )
+[08:16:42] *** Joins: st4ll1 (~st4ll1@ )
+[08:22:45] *** Joins: athan (~athan@ )
+[08:39:12] *** Joins: LittleVulpix (~Miranda@ )
+[09:20:33] *** Joins: sudden6 (~anonymous@ )
+[09:24:01] <sudden6> Diadlo: ah thx for that, will change the phrase to "please comment if it's not fixed"
+[09:24:35] <Diadlo> sudden6: Yes. It will be better :)
+[09:29:32] *** Joins: thiras (~thiras@ )
+[09:32:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[10:03:38] *** Quits: thiras (~thiras@ ) (Quit: Leaving)
+[10:11:33] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[10:13:00] *** Joins: Diadlo (~diadlo@ )
+[10:16:04] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[10:16:31] *** Joins: Diadlo (~diadlo@ )
+[10:22:36] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[10:26:09] *** Joins: Diadlo (~diadlo@ )
+[10:26:38] *** Quits: Diadlo (~diadlo@ ) (Client Quit)
+[10:28:24] *** Joins: Diadlo (~diadlo@ )
+[10:29:33] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[10:29:52] *** Joins: Diadlo (~diadlo@ )
+[11:11:20] *** Joins: Emcy_ (~MC@ )
+[11:14:09] *** Quits: Emcy (~MC@ ) (Ping timeout: 265 seconds)
+[11:19:24] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[11:21:00] *** Joins: rerumnovarum (~user-reru@ )
+[11:52:50] *** Joins: pcre (~quassel@ )
+[12:59:33] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[13:02:57] *** Joins: bashrc (~motters@ )
+[13:22:55] *** Joins: f10 (~flo@ )
+[13:44:49] *** Joins: f10_ (~flo@ )
+[14:11:42] *** Quits: rerumnovarum (~user-reru@ ) (Remote host closed the connection)
+[14:24:37] *** Joins: rerumnovarum (~user-reru@ )
+[14:36:48] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[14:37:30] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[15:19:19] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[15:26:56] *** Joins: cisc (~cisc@ )
+[16:07:55] *** Joins: sudden6 (~anonymous@ )
+[16:07:55] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[16:20:40] *** Joins: sudden6 (~anonymous@ )
+[16:29:33] *** Joins: f10__ (~flo@ )
+[16:29:54] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[17:13:12] *** Joins: abbat (~Anton@ )
+[17:32:01] <zetok> sudden6: about the cleaning – most of stuff that seems to be "old" is still not fixed
+[17:32:18] <sudden6> zetok: yep
+[17:32:38] <sudden6> I'm just closing stuff with a high probability of being fixed or a one off bug
+[17:32:51] <sudden6> Or I test if it's still reproducible
+[17:32:57] <sudden6> and close if not
+[17:33:41] <zetok> :/
+[17:33:51] <zetok> 'no'
+[17:34:05] <sudden6> or I comment if it's still an issue
+[17:34:45] <zetok> https://github.com/qTox/qTox/issues/2175 ← have you fixed it?
+[17:34:49] <zetok> or someone else?
+[17:35:20] <sudden6> nope, but ctrl+c isn't the way to close imho
+[17:35:22] <zetok> because last time I've checked, it still wasn't fixed like 2 months ago
+[17:35:31] <zetok> sudden6: I don't fucking care
+[17:35:39] <sudden6> aha?
+[17:35:56] <sudden6> then please leave a comment it's still an issue
+[17:35:58] <zetok> they can drop their hardware into a pool for what I care
+[17:36:17] <zetok> if it still boots and qTox errors after unclean shutdown, that's a qTox problem
+[17:36:28] <sudden6> nope
+[17:37:12] <zetok> which part of "qTox isn't even able to handle it's crap" is not a qTox problem?
+[17:37:23] <sudden6> when you kill a process while it's saving anything to disk it's your problem
+[17:37:47] <zetok> yeah, no.
+[17:39:25] <sudden6> either that or you'll get data loss sooner or later ;)
+[17:40:15] <zetok> no, you just need to handle the crap
+[17:40:23] <zetok> not produce more of it
+[17:40:53] <zetok> error → handle it → if not possible to do it automatically, interacti with user
+[17:41:04] <zetok> s/cti/ct/
+[17:41:09] <sudden6> yeah, but if you handle (I think you mean actually delete) the crap you will use data
+[17:41:28] <sudden6> of course the user knows what to do with "Cryptic message"
+[17:43:06] <zetok> then don't throw at the user "cryptic messages"
+[17:43:43] <zetok> also, the way you close the issues is asshole-ish
+[17:44:21] <sudden6> some user will always see it as "cryptic message"
+[17:44:34] <sudden6> and personally I see no way that will ever change
+[17:44:42] <sudden6> why asshole-ish?
+[17:44:56] <sudden6> what should I change about it?
+[17:44:56] <zetok> why wouldn't it be?
+[17:45:16] <zetok> you don't even test, and you outright close the issues
+[17:45:41] <sudden6> zetok: nope, only those where everything codewise has changed
+[17:45:48] <zetok> that's bullshit
+[17:46:23] <zetok> code change is way more likely simply add new bugs, rather than fixing old ones
+[17:46:34] <zetok> more likely to*
+[17:46:35] <sudden6> e.g. video recieved at least two big changes in the last 6 months, logs are worthless after that
+[17:47:00] <sudden6> and if the issue is still existing someone will open a new one
+[17:47:22] <zetok> and that's asshole-ish
+[17:47:25] <zetok> :/
+[17:47:28] <sudden6> ?
+[17:47:45] <zetok> throwing away someone's efforts
+[17:48:17] <sudden6> yeah sorry, but the effort doesn't help anyone anymore
+[17:48:27] <zetok> bullshit
+[17:49:17] <sudden6> should I post "Does this issue still exist?" under every issue?
+[17:49:23] <zetok> effort > throwing away effort, which will negatively affect people who did spend their time on stuff
+[17:49:31] <zetok> depends
+[17:50:02] <sudden6> everything depends ;)
+[17:50:14] <zetok> there are issues that are actually fixed and you feel 90-95% sure that it's fixed in newest qTox, so you just close with a "comment for reopen if not"
+[17:50:29] <zetok> the problem is with the issues that aren't like that
+[17:50:40] <sudden6> that's what I did...
+[17:50:44] <zetok> nope
+[17:50:47] <sudden6> yes
+[17:50:54] *** Quits: valvin (~valvin@ ) (Ping timeout: 260 seconds)
+[17:51:05] <zetok> you've closed issues that had like 0% of being fixed
+[17:51:33] <sudden6> well IMHO it was 90-95
+[17:51:40] <zetok> ok, perhaps change that to >99%
+[17:51:57] <zetok> being overly optimistic here doesn't help :s
+[17:52:10] <zetok> btw
+[17:52:11] <sudden6> overly pessimistic also doesn't help
+[17:52:28] <sudden6> nobody looks at the issue reports that old
+[17:52:30] <zetok> no, I'm just trying to be realistic about the actual chances of something being fixed
+[17:52:37] <zetok> they should
+[17:52:48] <zetok> go from the oldest to newest issues
+[17:53:00] <sudden6> of course they should, but reality isn't optimal
+[17:53:22] <zetok> >nobody looks at the issue reports that old
+[17:53:27] <zetok> and that's bullshit
+[17:53:30] <sudden6> what about making qTox 1.5.2 about fixing some old issues?
+[17:53:32] <zetok> people who are affected do
+[17:53:47] <zetok> there's 1.6 planned
+[17:53:49] <sudden6> yeah, but people who fix bugs don't :)
+[17:53:56] <zetok> whatever goes in, goes in :)
+[17:54:41] <sudden6> AFAIK 1.6 is about new features, so we could make 1.5.2 about fixing some old bugs
+[17:55:10] *** Joins: valvin (~valvin@ )
+[17:55:10] <sudden6> i.e. real bugs of stuff not working, not "proposal" or nice to have stuff
+[17:55:11] <zetok> nope
+[17:56:27] <zetok> why would you want to release 1.5.2 ?
+[17:56:27] <sudden6> well, 1.6 has some goals for new features, so I still see no problem about making 1.5.2 a goal of some fixes
+[17:56:34] <sudden6> to fix bugs
+[17:56:37] <zetok> …
+[17:56:42] <zetok> and do that twice?
+[17:56:54] <zetok> i.e. one based on 1.5.1 and the other for 1.6?
+[17:57:00] <sudden6> huh? why twice?
+[17:57:12] <zetok> that's what you're proposing
+[17:57:21] <sudden6> no I want to make 1.5.2 a step on the way to 1.6
+[17:57:48] <zetok> 1.x.y ; x – features & fixes; y – just some very important fixes
+[17:57:50] <sudden6> so fix e.g 5 old bugs for 1.5.2 tag
+[17:58:00] <sudden6> make features ready for 1.6. tag
+[17:58:35] <zetok> `y` should be limited to just backporting fixes from `x`
+[17:58:56] <sudden6> that's not how I understood it
+[17:59:37] <sudden6> I understand y as (important) bug fixes
+[17:59:38] <zetok> that's what is being done for Linux, and seems sane to me
+[17:59:49] <sudden6> x as fancy new features
+[18:00:05] <sudden6> and 1 as ultra fancy new features
+[18:00:11] <zetok> yes, but you already have new features on master
+[18:00:23] <zetok> which means that you'd need to backport fixes
+[18:00:38] <sudden6> ah, crap overlooked the new features
+[18:01:04] <sudden6> I'm still in for more releases
+[18:01:31] <zetok> "1 as ultra fancy new features" ← I was thinking more in line of some breaking changes
+[18:01:37] <sudden6> as we basically do no tests or stabilizing phase that wouldn't hurt I think
+[18:01:52] <zetok> like e.g. when there'll be a incompatible protocol change
+[18:01:59] <sudden6> mhm, also that
+[18:02:55] <zetok> "as we basically do no tests or stabilizing phase that wouldn't hurt I think" ← that's what RCs are for :D
+[18:03:22] <zetok> yeah, we could make some use of that
+[18:03:26] <zetok> btw
+[18:03:39] <zetok> have you read HPMOR by any chance?
+[18:05:38] <sudden6> please post repro instructions for https://github.com/qTox/qTox/issues/2387 I couldn't repro
+[18:05:46] <sudden6> what's HPMOR?
+[18:06:13] <zetok> and regarding closing the issues → ask for retest if you can't reproduce → add `I-need-info` → wait >month for reply, if none, close the issue stating that no info was provided thus assuming as fixed
+[18:07:31] <zetok> posted
+[18:07:44] <zetok> sudden6: http://hpmor.com/ :)
+[18:07:53] <zetok> tad long, but great read :)
+[18:08:24] <sudden6> no I haven't, what's it about?
+[18:08:33] <zetok> great stuff :3
+[18:09:01] <zetok> anyway; the part relevant to earlier discussion here is in http://hpmor.com/chapter/5 :)
+[18:09:30] <zetok> (it's good to read chapters before to get the feel of stuff, but alone too probably would be good)
+[18:10:06] <zetok> no, wait
+[18:10:20] <sudden6> I'll read if I find time
+[18:10:37] <sudden6> right now I have to clean our bugtracker ;)
+[18:11:10] <zetok> sorry, it was http://hpmor.com/chapter/6 that is the most ~relevant
+[18:12:08] <sudden6> also a reason to make a goal for some old bugfixes is that with ~5 small bugs to fix, one gets an overseeable amount of things to do
+[18:12:37] <sudden6> right now there are >100 things which could be done, but nobody knows where to really start
+[18:13:01] <zetok> pick first oldest bug → fix → pick another → …
+[18:13:28] <sudden6> I got lost the last time I tried that
+[18:13:37] <zetok> if you feel like you could make some use of challenge, there are `P-very-high` bugs
+[18:14:07] <sudden6> mhm, these where the ones I last worked on
+[18:14:42] <sudden6> this is already a step in the direction I want to go, but this way only major bugs will be fixed
+[18:15:13] <sudden6> but we have tons of tiny inconveniences which will never get fixed this way
+[18:16:19] <zetok> >I got lost the last time I tried that
+[18:16:21] <zetok> um? how?
+[18:17:34] <sudden6> well I started with one bug, hit a roadblock tried to get more info about the bug from the bugreporter, nothing happened so I picked the next one, repeat
+[18:17:59] <zetok> >bugreporter, nothing happened so I picked the next one
+[18:18:10] <zetok> ok; → `I-need-info`
+[18:18:21] <zetok> if not supplied after >month, close issue
+[18:18:43] <zetok> this way you can also remove `I-need-info` bugs from the search on gh
+[18:18:49] <sudden6> yeah and that is what I'm trying to solve right now for all other devs
+[18:19:14] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:19:16] <sudden6> because one has to usually already invest some time before requesting more info 
+[18:19:30] <zetok> https://github.com/qTox/qTox/issues?q=is%3Aopen+is%3Aissue+label%3AI-bug+-label%3AI-need-info+sort%3Acreated-asc
+[18:19:34] <sudden6> and if nothing happens that is wasted time and frustrating
+[18:20:13] <zetok> right
+[18:20:42] <zetok> can it be worked around/fixed without antagonizing bug reporters?
+[18:20:56] <sudden6> I don't know
+[18:21:23] *** Joins: cisc (~cisc@ )
+[18:21:26] <sudden6> also a bug I cannot reproduce is usually unfixable for me without direct interaction of the bugreporter
+[18:24:00] <zetok> right
+[18:24:03] <zetok> :/
+[18:24:12] <zetok> :(
+[18:25:03] <sudden6> and the only one I know who is reliable to help fix bugs with direct interaction is you, because you can get logs and use a debugger
+[18:27:56] <zetok> >Maybe you can try on a different DE?
+[18:27:59] <zetok> not really :s
+[18:28:09] <zetok> I /could/
+[18:28:23] <zetok> but DEs usually have a tendency to break things
+[18:28:39] <sudden6> maybe use a vm to compare those two?
+[18:28:43] *** Joins: captainkraft (~captainkr@ )
+[18:30:18] <sudden6> also please note that the isssue report templates helped enormously to get better bug reports, because the reporter is forced to clearly describe the expected result
+[18:32:01] <zetok> ok, reproducible in VM
+[18:34:31] <sudden6> zetok: so it's only an i3 problem?
+[18:35:19] <zetok> err?
+[18:35:32] <sudden6> sorry read IRC before gh
+[18:45:02] <sudden6> zetok: are you doing anything special to repro this bug?
+[18:45:29] <sudden6> I have two windows open side by side and join a groupchat
+[18:45:51] <sudden6> then I open emoji picker on A and close it
+[18:46:01] <sudden6> then on B I change the group title
+[18:46:05] <sudden6> no repro
+[18:49:18] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[18:52:34] <zetok> um
+[18:52:39] <zetok> sudden6: do it in the same client
+[18:53:14] <zetok> (I post in instructions stuff that requires changing between clients)
+[18:55:27] <sudden6> still not happening
+[18:55:56] <zetok> :/
+[18:56:15] <zetok> ok, time to install qtox-alpha
+[18:56:18] <sudden6> I think you have to switch your details mode to pedantic
+[18:58:17] <zetok> 1. detached mode in settings; 2. join groupchat with the client; 3. click on emoticon picker in groupchat; 4. change title in the groupchat
+[18:59:50] <sudden6> doesn't happen on current master
+[19:00:05] <sudden6> tested already in an additional debian 8 lxde vm
+[19:00:11] <zetok> abbat: huh, looks like qtox-alpha is missing the icon in menu XFCE @ OpenSUSE Tumbleweed
+[19:01:42] <sudden6> zetok: are you using simple_make.sh?
+[19:01:43] *** Joins: fred_barclay (~fred@ )
+[19:02:50] *** Joins: st4ll1 (~st4ll1@ )
+[19:04:28] <abbat> zetok, I will test it tomorrow (I have to setup Tumbleweed to VirtualBox).
+[19:04:48] <zetok> sudden6: nope
+[19:05:00] <zetok> also, I've just run again into the faux offline msg bug again :/
+[19:05:05] <sudden6> why not?
+[19:05:24] <zetok> :|
+[19:05:41] <zetok> well, using it on Gentoo seems wrong
+[19:05:49] <zetok> and other distros have great packages
+[19:06:12] <sudden6> ah, I thought you are working in the suse environment
+[19:06:19] <zetok> hell no
+[19:06:22] <zetok> it's too broken
+[19:06:38] <sudden6> at least I get less qTox bugs than you :p
+[19:06:53] <zetok> well, at the price of broken system
+[19:07:00] <zetok> which is way worse
+[19:09:25] <zetok> sudden6: yep, still reproducible on newest qTox
+[19:09:38] <sudden6> so how?
+[19:09:48] <sudden6> you are doing something different than me
+[19:09:56] <sudden6> or lxde and kde are not broken
+[19:10:14] <zetok> XFCE
+[19:11:02] <sudden6> I'll try to setup a xfce environment
+[19:12:28] <zetok> >lxde and kde are not broken
+[19:12:29] <zetok> lol :D
+[19:12:45] <zetok> kde libs can't even handle opening an image
+[19:12:49] <sudden6> this story tells something different ;)
+[19:13:03] <zetok> or any file at all in a valid POSIX path
+[19:14:01] <zetok> gwenview & other stuff that uses kde libs was so broken that I've finally moved to feh + script that emulates most of image browser functionality
+[19:15:19] <sudden6> you should switch to a distro that really integrates kde, like suse
+[19:15:25] <sudden6> or even Neon
+[19:15:26] <zetok> pff
+[19:15:44] <zetok> why would I waste my time on broken distros?
+[19:15:50] <zetok> it's not about KDE integration
+[19:15:53] <sudden6> gentoo does only like geek level stuff, which kde isn't, because it works
+[19:15:56] <sudden6> and looks nice
+[19:15:59] <zetok> it's about KDE libs being *broken*
+[19:16:11] <sudden6> > broken in your distro
+[19:16:20] <zetok> broken lib is a broken lib
+[19:16:34] <zetok> there's no difference on what distro you're using it
+[19:16:57] <sudden6> it makes a difference if it's working on one, it means it's not broken
+[19:17:02] <zetok> but using a distro that chooses broken lib as a default for their uses is simply wrong in my eyes
+[19:17:08] <zetok> lol
+[19:17:18] <zetok> their users*
+[19:17:59] <zetok> sudden6: construct a valid POSIX path to file and see KDE failing to open it
+[19:18:40] <zetok> valid file/dir name in POSIX path can contain everything except for null and `/`
+[19:19:15] <zetok> meanwhile, feh + script just works™
+[19:19:40] <sudden6> which path isn't working for you?
+[19:19:53] <zetok> https://wiki.archlinux.org/index.php/Feh#File_Browser_Image_Launcher  ← if someone else is interested in using something that works (the irony)
+[19:20:12] <zetok> sudden6: opening a file
+[19:20:22] <zetok> oh, sorry, misread
+[19:20:41] <zetok> not sure if I can give a path :S
+[19:21:04] <zetok> sec, lemme see if I can make one artificially
+[19:22:08] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[19:23:14] <zetok> ok, that should work
+[19:23:40] <zetok> sudden6: `mkdir -p "$(dd if=/dev/urandom bs=120 count=1)"`
+[19:23:50] <zetok> put in the dir a .jpg
+[19:23:55] <zetok> watch gwenview fail to open it
+[19:31:05] <sudden6> well how do you ensure it doesn't contain \0
+[19:31:07] <sudden6> ? 
+[19:31:18] <zetok> try again™
+[19:31:28] <zetok> mkdir ensures that
+[19:31:40] <zetok> if dir won't be created, just run it again
+[19:31:54] <zetok> I mean
+[19:32:19] <zetok> you could do `until mkdir … ; do true ; done` …
+[19:32:55] <zetok> >mkdir ensures that
+[19:33:11] <sudden6> ok it created a dir
+[19:33:11] <zetok> ~kinda
+[19:33:21] <sudden6> but I can't access it with any of my shells
+[19:33:33] <zetok> use a file manager
+[19:33:38] <zetok> thunar just works™
+[19:33:47] <zetok> (unless you need to rename a file, then it crashes)
+[19:34:17] <sudden6> ok, I have no time today for that
+[19:36:06] <zetok> sure :)
+[19:40:33] *** Quits: abbat (~Anton@ ) (Ping timeout: 276 seconds)
+[19:53:37] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[19:54:15] *** Joins: abbat (~Anton@ )
+[20:04:18] *** Joins: cisc (~cisc@ )
+[20:11:35] *** Joins: CGGB (~CGGB@ )
+[20:15:27] *** Joins: pcre (~quassel@ )
+[20:20:51] *** Quits: pcre (~quassel@ ) (Ping timeout: 244 seconds)
+[20:21:06] *** Joins: pcre (~quassel@ )
+[20:46:02] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[20:46:24] *** Joins: CGGB (~CGGB@ )
+[21:12:59] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[21:13:31] *** Joins: Diadlo (~diadlo@ )
+[21:19:17] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[21:19:37] *** Joins: Diadlo (~diadlo@ )
+[21:24:07] *** Quits: captainkraft (~captainkr@ ) (Quit: WeeChat 1.5)
+[21:33:55] *** Joins: Diadl0 (~diadlo@ )
+[21:33:55] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[21:46:03] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 264 seconds)
+[22:48:48] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:42:03] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
