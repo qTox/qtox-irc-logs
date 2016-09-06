@@ -1,0 +1,233 @@
+[00:57:37] *** Quits: athan (~athan@ ) (Ping timeout: 255 seconds)
+[01:06:53] *** Joins: jjuran__ (~jjuran@ )
+[01:07:03] *** Quits: jjuran_ (~jjuran@ ) (Ping timeout: 264 seconds)
+[01:22:10] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[01:26:58] *** Joins: athan (~athan@ )
+[01:32:36] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[01:35:13] *** Joins: st4ll1 (~st4ll1@ )
+[01:40:45] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 258 seconds)
+[01:47:55] *** Joins: captainkraft (~captainkr@ )
+[02:08:41] *** Joins: athan (~athan@ )
+[02:35:57] <C0rn3j___> What is the recommended setup if I want to chat with friends through multiple devices?
+[02:36:08] <C0rn3j___> Single ID for each device?
+[02:36:32] <C0rn3j___> I've managed to import a profile in Antox from qTox, but logging in to both at once makes it fight each other.
+[02:41:18] <C0rn3j___> zetok: Also no worries, I have 25 char random password on my tox profile file. If it's using something like AES encryption I should be fine ^^
+[03:17:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[03:17:34] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[03:24:40] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[05:09:49] *** Joins: athan (~athan@ )
+[05:19:46] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[05:23:00] *** Quits: captainkraft (~captainkr@ ) (Quit: WeeChat 1.5)
+[05:28:25] *** Quits: Impyy (~impy@ ) (Quit: Death)
+[05:28:56] *** Joins: Impyy (~impy@ )
+[05:38:08] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[05:38:49] *** Joins: Bheru27 (~Bheru27@ )
+[06:42:43] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[06:43:00] *** Joins: rerumnovarum (~user-reru@ )
+[07:32:29] *** Quits: Se7en (~Bleh@ ) (Quit: My ZNC went bye bye!)
+[07:36:17] *** Joins: st4ll1 (~st4ll1@ )
+[07:54:11] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:55:00] *** Joins: LittleVulpix (~Miranda@ )
+[07:59:26] *** Joins: abbat (~Anton@ )
+[08:01:33] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[08:02:29] *** Joins: rerumnovarum (~user-reru@ )
+[08:22:39] *** Quits: soundslave (~soundslav@ ) (Ping timeout: 260 seconds)
+[08:31:24] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[08:32:13] *** Joins: CGGB (~CGGB@ )
+[08:35:28] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[08:35:44] *** Joins: CGGB (~CGGB@ )
+[08:43:01] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[08:48:43] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[08:50:28] *** Joins: CGGB (~CGGB@ )
+[08:53:57] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[09:03:29] *** Joins: CGGB (~CGGB@ )
+[09:06:15] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[09:06:41] *** Joins: rerumnovarum (~user-reru@ )
+[09:17:15] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[09:35:14] *** Joins: f10 (~flo@ )
+[09:36:44] *** Joins: f10_ (~flo@ )
+[10:10:53] *** Joins: Lord_Vlad (~Vlad@ )
+[10:12:49] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[10:16:16] *** Joins: in1t3r (~LordShiva@ )
+[10:18:21] *** Joins: abbat (~abbat@ )
+[10:27:27] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[10:31:27] *** Quits: f10_ (~flo@ ) (Ping timeout: 276 seconds)
+[10:31:33] *** Joins: f10__ (~flo@ )
+[10:33:16] *** Joins: st4ll1 (~st4ll1@ )
+[11:47:20] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[11:47:28] *** Joins: rerumnovarum (~user-reru@ )
+[12:10:31] *** Joins: initramfs (~initramfs@ )
+[12:12:30] *** Joins: Chiitoo (~Chiitoo@ )
+[12:37:34] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[12:37:47] *** Joins: rerumnovarum (~user-reru@ )
+[13:09:46] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 255 seconds)
+[13:10:27] *** Joins: rerumnovarum (~user-reru@ )
+[13:19:48] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 276 seconds)
+[13:59:29] *** Joins: Lord_Vlad (~Vlad@ )
+[14:19:29] *** Joins: Diadlo (~diadlo@ )
+[14:19:29] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[14:21:59] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[14:25:08] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[14:25:34] *** Joins: Emcy_ (~MC@ )
+[14:25:34] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[14:25:34] *** Joins: Emcy_ (~MC@ )
+[14:26:55] *** Joins: abbat (~abbat@ )
+[15:11:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:16:05] *** Quits: koshii (~w@ ) (Ping timeout: 244 seconds)
+[15:17:10] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[15:17:40] *** Joins: cisc (~cisc@ )
+[15:18:24] *** Joins: koshii (~w@ )
+[15:40:31] *** Joins: rerumnov1rum (~user-reru@ )
+[15:44:06] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[15:45:00] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 244 seconds)
+[15:45:41] *** Joins: rerumnovarum (~user-reru@ )
+[16:32:04] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[16:38:46] *** Joins: abbat (~abbat@ )
+[16:43:50] *** Joins: Dragofix- (Dragofix@ )
+[16:45:28] *** Joins: hexadezimalion_ (sid85551@ )
+[16:48:01] *** Joins: sockspls_ (~sockspls@ )
+[16:48:38] *** Joins: nurupo_ (~nurupo.ga@ )
+[16:48:54] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 260 seconds)
+[16:48:55] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 260 seconds)
+[16:48:56] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 260 seconds)
+[16:48:57] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 260 seconds)
+[16:48:57] *** Quits: linxon (~lin@ ) (Ping timeout: 260 seconds)
+[16:48:58] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 260 seconds)
+[16:48:59] *** Quits: genesis (~genesis@ ) (Ping timeout: 260 seconds)
+[16:49:02] *** Quits: Sephi (~me@ ) (Remote host closed the connection)
+[16:49:02] *** Joins: Sephi (~me@ )
+[16:49:04] *** Dragofix- is now known as Dragofix
+[16:49:20] *** nurupo_ is now known as nurupo
+[16:49:26] *** hexadezimalion_ is now known as hexadezimalion
+[16:51:06] *** Joins: kadinparker[m] (kadinparke@ )
+[16:51:29] <zetok> C0rn3j___: yeah, ID per device would you; alternatively, you could try to use same profile, but not at the same time
+[16:51:49] <zetok> using same profile will lead to problems like desynchronised contact list
+[16:52:35] <zetok> C0rn3j___: there is work being done on support for multiple devices, but it will take some time to get it to usable shape
+[16:53:51] *** Joins: linxon (~lin@ )
+[16:54:07] <zetok> would do*
+[16:59:40] *** Joins: genesis (~genesis@ )
+[17:05:47] *** Joins: initramfs (~initramfs@ )
+[17:10:04] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[17:28:44] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[17:30:05] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[17:30:40] *** Joins: abbat (~abbat@ )
+[17:41:51] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[17:42:16] *** Joins: abbat (~abbat@ )
+[17:59:43] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[18:00:35] *** Joins: Lord_Vlad (~Vlad@ )
+[18:19:50] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[18:20:45] *** Joins: Lord_Vlad (~Vlad@ )
+[18:24:52] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:57:26] *** Quits: C0rn3j___ (5ab2bf9d@ ) (Ping timeout: 264 seconds)
+[19:15:43] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[19:24:26] *** Joins: abbat (~Anton@ )
+[19:25:58] *** Joins: sudden6 (~anonymous@ )
+[19:39:15] *** Joins: cisc (~cisc@ )
+[19:50:16] *** Quits: cisc (~cisc@ ) (Ping timeout: 255 seconds)
+[20:02:50] *** Quits: abbat (~Anton@ ) (Ping timeout: 244 seconds)
+[20:07:54] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:14:34] *** Joins: Chiitoo (~Chiitoo@ )
+[20:16:31] *** Joins: abbat (~Anton@ )
+[20:18:28] *** Joins: CGGB (~CGGB@ )
+[21:01:14] *** Joins: cisc (~cisc@ )
+[21:02:10] *** Joins: kadinparker[m]1 (kadinparke@ )
+[21:03:07] * zetok wonders
+[21:03:09] *** Joins: oranges_ (oranges@ )
+[21:03:26] * sudden6 wonders about zetok wondering
+[21:03:48] <zetok> https://github.com/qTox/qTox/pull/3684 ← did you know that as long as it's open people can't translate qTox on weblate?
+[21:04:27] <sudden6> no
+[21:04:43] <sudden6> but I don't see this as a huge problem :)
+[21:04:50] <zetok> …
+[21:04:54] <zetok> it is a problem
+[21:05:09] <sudden6> I know, else you wouldn't have told me ;)
+[21:05:11] <zetok> especially when no one wants to LGTM
+[21:05:31] <zetok> it wasn't a big problem when reviews weren't required to merge stuff
+[21:06:32] <zetok> really, can anyone just LGTM that PR?
+[21:07:25] <sudden6> well, you could always ping other maintainers about it in the pr message
+[21:07:25] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[21:08:02] <sudden6> I'll LGTM soon
+[21:09:01] *** Joins: rerumnovarum (~user-reru@ )
+[21:09:09] *** Joins: toweI (~toweI@ )
+[21:09:14] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/visQB
+[21:09:14] -qtox-git-spam- qTox/master e20dffa iphydf: chore: Make the windows code compatible with TCHAR....
+[21:09:14] -qtox-git-spam- qTox/master 894b47a sudden6: Merge pull request #3635...
+[21:10:13] *** Quits: kadinparker[m] (kadinparke@ ) (*.net *.split)
+[21:10:13] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[21:10:14] *** Quits: oranges (oranges@ ) (*.net *.split)
+[21:10:14] *** Quits: hpanago (uid15586@ ) (*.net *.split)
+[21:11:47] *** Joins: hexadezimalion (sid85551@ )
+[21:11:47] *** Joins: hpanago (uid15586@ )
+[21:12:12] <zetok> thanks
+[21:12:23] <sudden6> done
+[21:13:04] <sudden6> zetok: another chore, updating the bootstrap node list
+[21:13:14] <zetok> yeah
+[21:13:14] <sudden6> do we have a script for that?
+[21:13:22] <zetok> 2 programs actually
+[21:14:03] <sudden6> what would be the process to do that?
+[21:14:17] <zetok> https://github.com/zetok/tox-wiki-nodes-parser + https://github.com/zetok/nodes-parser-for-qtox
+[21:16:07] <sudden6> wouldn't it be better to use nodes.tox.chat?
+[21:16:28] <zetok> `./tox-wiki-nodes-parser > nodes_working && ./nodes-parser-for-qtox > nodes`
+[21:16:32] <zetok> ~no
+[21:16:41] <sudden6> why?
+[21:16:43] <zetok> especially when this didn't even exist
+[21:17:07] <sudden6> ok so it's only because it didn't exist?
+[21:17:14] <zetok> ~yep
+[21:17:26] <sudden6> your ~ is making me nervous
+[21:17:57] <zetok> I just don't see much point in changing something that already works in this case :)
+[21:18:19] <sudden6> ok, maybe I'll get my hands dirty on some Rust and extend it ;)
+[21:18:39] <zetok> sounds good :)
+[21:21:24] <zetok> hmm
+[21:21:29] <zetok> now that I think about it
+[21:22:50] <zetok> sudden6: it's been some time since it was compiled, and since Rust libs ecosystem can move sometimes at quite a peace some it might fail to compile initially, and updating deps could make it worse – if there'll be any problems please say so
+[21:23:39] <sudden6> mhm, I'll not do this today anyway, going to bed early :)
+[21:25:40] <zetok> ok
+[21:27:24] <zetok> https://www.youtube.com/watch?v=QUvVdTlA23w ;)
+[21:39:57] <nurupo> sudden6: or do a few lines of python https://github.com/TokTok/toxcore/blob/master/other/bootstrap_daemon/docker/get-nodes.py
+[21:40:10] <nurupo> you might want to read the json as utf-8 instead ascii though
+[21:40:32] <sudden6> nurupo: thx will also look into it
+[21:41:00] <nurupo> that script populates https://github.com/TokTok/toxcore/blob/master/other/bootstrap_daemon/tox-bootstrapd.conf#L49-L64
+[21:49:46] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:00:19] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[22:03:33] *** oranges_ is now known as oranges
+[22:04:56] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[22:05:17] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[22:05:19] *** Joins: CGGB (~CGGB@ )
+[22:05:30] *** Joins: rerumnovarum (~user-reru@ )
+[22:06:20] *** Joins: athan (~athan@ )
+[22:12:04] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[22:32:59] *** Joins: athan (~athan@ )
+[22:33:09] <Diadlo> Anybody know, does this is fixed? https://github.com/irungentoo/toxcore/issues/1128
+[22:35:25] <Diadlo> Or why it's closed?
+[22:36:52] <zetok> right
+[22:37:33] <zetok> so, grupchat numbers aren't unchanging, even during same run
+[22:37:39] <zetok> toxcore reuses them
+[22:38:04] <zetok> IIRC qTox at the time didn't really account for that
+[22:38:39] <zetok> IIRC dubslow wanted the numbers to not change
+[22:38:55] <zetok> oh, no, wait
+[22:39:00] <zetok> it's about peer numbers
+[22:39:04] <zetok> same story though :D
+[22:39:29] <zetok> (and no, this isn't going to change AFAIK)
+[22:39:37] <zetok> (in toxcore, that is)
+[22:41:27] <zetok> so if you have peers (name:number in gc): A:1, B:2, C:3, once B leaves, there are A:1 and C:2, once B rejoins there are A:1, C:2, B:3
+[22:41:47] <zetok> the only reliable way of tracking who is who is to use PKs of peers in the groupchat
+[22:42:16] <zetok> (for current groupchats, dunno how's the situation for new grupchats but I doubt whether that changes)
+[22:44:47] <Diadlo> zetok: Ok. Thanks for detailed explanation :)
+[22:45:39] <zetok> np :)
+[22:45:44] <Diadlo> Why we can't restructure peer-id pairs on somebody leave?
+[22:46:17] <zetok> um
+[22:46:30] <zetok> making those pairs in the first place is wrong
+[22:47:39] * zetok sighs
+[22:47:45] <Diadlo> What is "first place"?
+[22:48:26] <zetok> "to begin with", "to start with"
+[22:48:48] <Diadlo> Ok
+[22:49:22] <zetok> um, I don't know what qTox actually does
+[22:49:58] <oranges> it's a client for the tox p2p communication protocol
+[22:50:02] <Chiitoo> I think it sends messages, and stuff.
+[22:50:04] <zetok> as for restructuring pairs every time a peer joins/leaves most likely would crash horribly in case of $something, or be a performance bottleneck
+[22:50:06] <Chiitoo> Aff late.
+[22:50:16] <zetok> no wai
+[22:50:59] <Diadlo> zetok: You're right
+[22:51:10] <zetok> Diadlo: not to mention those wonderful scenarios where by the time that you've finished restructuring pairs peer already has left :D
+[22:55:41] *** Joins: f10_ (~flo@ )
+[23:01:07] *** Joins: f10__ (~flo@ )
+[23:02:08] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
