@@ -1,0 +1,212 @@
+[00:35:21] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[01:24:16] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[01:24:35] *** Joins: f10__ (~flo@ )
+[01:25:00] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:32:50] *** Quits: f10__ (~flo@ ) (Ping timeout: 250 seconds)
+[01:32:54] -qtox-git-spam- [qTox] zetok pushed 7 new commits to master: https://git.io/viGJp
+[01:32:54] -qtox-git-spam- qTox/master f6aa308 Kaur Männamaa: feat(l10n): update Estonian translation from Weblate
+[01:32:54] -qtox-git-spam- qTox/master 548df20 Ole Solbakken: feat(l10n): update Norwegian (old code) translation from Weblate
+[01:32:54] -qtox-git-spam- qTox/master 7d704e8 Ali: feat(l10n): update Arabic translation from Weblate
+[01:32:58] *** Joins: f10_ (~flo@ )
+[01:38:12] *** Quits: oranges (oranges@ ) (Ping timeout: 276 seconds)
+[01:38:22] *** Joins: oranges (oranges@ )
+[01:38:22] *** Quits: oranges (oranges@ ) (Client Quit)
+[01:39:08] *** Joins: oranges (~oranges@ )
+[02:11:22] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[02:16:43] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:26:16] *** Joins: cisc (~cisc@ )
+[02:28:05] *** Quits: cisc (~cisc@ ) (Client Quit)
+[02:31:37] *** Joins: mitfree (~mit@ )
+[02:33:10] *** Joins: cisc (~cisc@ )
+[02:38:52] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[02:39:46] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[04:07:57] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[05:28:01] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[05:39:34] *** Joins: CGGB (~CGGB@ )
+[05:40:18] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[05:40:41] *** Joins: CGGB (~CGGB@ )
+[05:52:57] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[05:53:19] *** Joins: CGGB (~CGGB@ )
+[06:05:23] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[06:41:25] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 255 seconds)
+[06:43:11] *** Joins: rerumnovarum (~user-reru@ )
+[06:44:55] *** Joins: CGGB (~CGGB@ )
+[07:15:33] *** Quits: TheVoid (~void@ ) (Ping timeout: 276 seconds)
+[07:19:43] *** Joins: TheVoid (~void@ )
+[08:17:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:20:17] *** Joins: LittleVulpix (~Miranda@ )
+[08:32:06] *** Joins: abbat (~Anton@ )
+[08:57:22] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:47:39] *** Joins: abbat (~abbat@ )
+[09:48:33] *** Quits: TheVoid (~void@ ) (Ping timeout: 250 seconds)
+[11:29:56] *** Joins: Diadl0 (~diadlo@ )
+[11:29:56] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[11:46:23] *** Joins: f10 (~flo@ )
+[11:49:08] *** Joins: f10_ (~flo@ )
+[12:02:45] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:16:14] *** Quits: linxon (~lin@ ) (Ping timeout: 260 seconds)
+[12:18:13] *** Joins: linxon (~lin@ )
+[12:20:45] *** Quits: linxon (~lin@ ) (Client Quit)
+[12:27:14] *** Joins: f10 (~flo@ )
+[12:29:30] *** Joins: in1t3r (~LordShiva@ )
+[12:47:26] -qtox-git-spam- [qTox] Diadlo opened pull request #3690: [ui/redesign] Clean group (ui/redesign...cleanGroup) https://git.io/viG5q
+[13:06:16] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[13:06:34] *** Joins: f10_ (~flo@ )
+[13:17:08] -qtox-git-spam- [qTox] Diadlo opened pull request #3691: fix(settings): Fixed group to load makeToxPortable setting (master...fixPortableMode) https://git.io/viGbn
+[13:30:28] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[13:30:49] *** Joins: abbat (~abbat@ )
+[13:59:12] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[14:00:05] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:00:32] *** Joins: abbat (~abbat@ )
+[14:10:30] <zetok> Diadl0: merge PR?
+[14:11:07] <Diadl0> zetok: https://github.com/qTox/qTox/pull/3691 ?
+[14:11:14] <Diadl0> This?
+[14:11:32] <zetok> Diadl0: https://github.com/qTox/qTox/pull/3687 :)
+[14:11:52] <Diadl0> Yep :)
+[14:12:57] <Diadl0> Done
+[14:13:07] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://git.io/viGjP
+[14:13:07] -qtox-git-spam- qTox/master 7ee883b Vincas Dargis: fix(widget): do not block logout on Linux desktop environments...
+[14:13:07] -qtox-git-spam- qTox/master 191fc15 Diadlo: Merge pull request #3687...
+[14:13:44] <zetok> thanks :)
+[14:14:23] <Diadl0> np)
+[15:02:54] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:03:36] *** Joins: abbat (~abbat@ )
+[15:08:15] *** Quits: mitfree (~mit@ ) (Ping timeout: 264 seconds)
+[15:11:58] *** Joins: mitfree (~mit@ )
+[15:17:06] *** Joins: Chiitoo (~Chiitoo@ )
+[15:27:13] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:27:37] *** Joins: abbat (~abbat@ )
+[15:31:40] *** Joins: st4ll1 (~st4ll1@ )
+[15:37:22] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 255 seconds)
+[15:37:29] *** Joins: rerumnovarum (~user-reru@ )
+[16:32:03] *** Quits: kadinparker[m]1 (kadinparke@ ) (Read error: Connection reset by peer)
+[16:40:58] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:48:43] *** Joins: TheVoid (~void@ )
+[16:49:43] *** Joins: cisc (~cisc@ )
+[16:57:34] *** Joins: kadinparker[m] (kadinparke@ )
+[17:22:16] *** Joins: linxon (~lin@ )
+[17:34:12] *** Quits: linxon (~lin@ ) (Changing host)
+[17:34:12] *** Joins: linxon (~lin@ )
+[18:02:36] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[18:02:59] *** Joins: abbat (~abbat@ )
+[18:18:14] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[18:25:51] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:26:28] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[18:27:18] *** Joins: Lord_Vlad (~Vlad@ )
+[18:27:26] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:28:57] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[18:43:06] *** Joins: cisc (~cisc@ )
+[18:45:47] *** Joins: sudden6 (~anonymous@ )
+[18:59:18] *** Joins: in1t3r (~LordShiva@ )
+[19:04:22] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 255 seconds)
+[19:13:47] *** Joins: abbat (~Anton@ )
+[19:32:15] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[19:33:46] *** Joins: cisc (~cisc@ )
+[19:35:01] *** Joins: st4ll1 (~st4ll1@ )
+[19:46:28] *** Joins: bashrc (~motters@ )
+[19:47:01] *** Joins: athan (~athan@ )
+[19:57:38] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 265 seconds)
+[19:57:52] *** Joins: Lord_Vlad (~Vlad@ )
+[20:03:34] <zetok> Diadl0: um, are you subscribed to qtox-dev ML?
+[20:03:46] <Diadl0> zetok: Nope
+[20:04:01] <zetok> Diadl0: you should subscribe
+[20:04:11] <Diadl0> zetok: Ok. I will try :)
+[20:04:28] <sudden6> hi everybody
+[20:04:39] <Diadl0> sudden6: Hi :)
+[20:04:48] <zetok> hello sudden6 :)
+[20:05:28] <zetok> Diadl0: https://lists.tox.chat/listinfo/qtox-dev
+[20:06:07] <Chiitoo> Hi doctor ni- I mean sudden6.
+[20:07:37] <zetok> given that IRC meetings didn't work out, we could try using something more asynchronous
+[20:08:18] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:09:02] <sudden6> zetok: what are you thinking about?
+[20:09:22] *** Joins: Chiitoo (~Chiitoo@ )
+[20:09:30] <zetok> moving discussion about the most important stuff to the ML
+[20:10:17] <zetok> e.g. stuff like planned features for next releases
+[20:10:42] <zetok> or rather, generally planning
+[20:11:15] <sudden6> could be worth a try
+[20:15:00] <Diadl0> +1
+[20:15:33] <sudden6> it would also integrate antis81 more, since he's not on IRC
+[20:16:08] *** Joins: in1t3r (~LordShiva@ )
+[20:17:38] <Chiitoo> I'd probably subscribe.  :]
+[20:45:37] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[20:47:36] *** Joins: cisc (~cisc@ )
+[20:49:55] -qtox-git-spam- [qTox] Diadlo opened pull request #3692: [ui/redesign] Self managed friend db (ui/redesign...selfManagedFriendDB) https://git.io/vinf8
+[20:52:23] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[20:52:35] *** Joins: cisc (~cisc@ )
+[21:04:09] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 260 seconds)
+[21:12:43] *** Joins: worfox (~worfox@ )
+[21:12:55] *** Parts: worfox (~worfox@ ) ("Part.")
+[21:13:49] *** Joins: worfox (~worfox@ )
+[21:26:02] -qtox-git-spam- [qTox] sudden6 opened pull request #3693: chore(bootstrap): add script to update bootstrap nodes and update them (master...update_bootstrap) https://git.io/vinIA
+[21:29:53] <sudden6> zetok: updated bootrstrap nodes
+[21:30:13] <zetok> sudden6: have you checked whether those nodes are online & can be used to bootstrap?
+[21:30:40] <sudden6> uhm, since they are fresh from nodex.tox.chat I assumed they are working?
+[21:31:00] <zetok> why would they?
+[21:31:38] <zetok> anyone can add trash info there
+[21:31:49] <sudden6> I don't know, I just assumed nodes.tox.chat would only provide online nodes....
+[21:32:10] * zetok shrugs
+[21:32:30] <sudden6> back to the drawing board then...
+[21:32:46] <zetok> or you could just use my bootstrap node checker :P
+[21:32:59] <sudden6> does it work on the ini format?
+[21:33:04] <zetok> nope
+[21:33:16] <sudden6> sigh
+[21:33:25] <zetok> it works with the format provided by the tool that gets info from wiki
+[21:33:35] <sudden6> this seemed so easy with a little python tool...
+[21:34:09] -qtox-git-spam- [qTox] sudden6 closed pull request #3693: chore(bootstrap): add script to update bootstrap nodes and update them (master...update_bootstrap) https://git.io/vinIA
+[21:34:35] <zetok> btw, as for python itself – there's a slight problem with maintainability
+[21:35:05] <sudden6> bigger than Rust changing every few minutes?
+[21:35:22] <zetok> Rust doesn't change every few minutes
+[21:35:31] <sudden6> \s
+[21:36:13] <zetok> it's just that after 10+ stable releases some things were deprecated, libs got newer versions, and I might have been lazy & put `*` as a dependency version requirement, which would cause problems
+[21:36:42] <zetok> if versions of deps are properly defined, it would work without problems (at worst there would be some warnings that some deprecated APIs are used)
+[21:38:26] <zetok> stdlib is stable
+[21:39:06] <zetok> version of library once it's released on crates.io are also immutable
+[21:39:46] <zetok> (and crate submitter can't remove library version once it's uploaded to crates.io too)
+[21:41:50] <zetok> tox-wiki-nodes-parser – compiled without any problems
+[21:42:13] <zetok> same goes for nodes-parser-for-qtox
+[21:42:57] <zetok> and what a surprise, tox-check-online-bootstraps also just works™
+[21:43:21] <zetok> looks like I wasn't lazy about libs versions after all ^_^
+[21:45:51] <zetok> on the other hand, I did have a problem with compiling IRC syncbot & Lee, but they depend on rstox version that seemed to have predated Rust 1.0 that stabilized stuff
+[21:46:25] <zetok> (lots of APIs were removed / moved out of stdlib just before Rust 1.0 release)
+[21:47:20] <zetok> sudden6: btw, if you want to Rust, lib to go with json is `rustc-serialize`
+[21:47:43] <zetok> it's tad "slow", but it works
+[21:48:00] <sudden6> zetok: yup, found that, but I'll do it tomorrow
+[21:48:25] <zetok> the other lib for json, `serde` is made to be fast, but it still requires nightly Rust, and that tends to break
+[21:49:32] <sudden6> btw, I can't seem to find info on how your programs store the data, could you explain that?
+[21:49:55] <zetok> ok, which one first?
+[21:50:21] <sudden6> output of tox-wiki-nodes-parser
+[21:51:09] <zetok> ok
+[21:53:05] <zetok> `dl_vec` downloads webpage, turns it into a `String` → `body`, then goes over the `body` splitting on newlines, and split lines are returned as vector with strings, each string containing a line from `body` → `Vec<String>`
+[21:53:27] <sudden6> I'm just interested in the output format
+[21:53:33] <zetok> ok
+[21:54:00] <zetok> I just print (or not) each line from vector of strings if it matches a bootstrap node
+[21:55:00] <zetok> (I didn't really see much point in storing that data somewhere before printing)
+[21:55:12] <sudden6> won't this cause problems if some node maintainer will name his node te\nst
+[21:55:16] <zetok> if line is a bootstrap → print
+[21:55:31] <zetok> um?
+[21:55:41] <zetok> they can name it whatever they want
+[21:55:51] <sudden6> (\n being newline char)
+[21:56:11] <zetok> that would result in an invalid formatting on wiki :3
+[21:57:35] <zetok> (I did assume that wiki has a correct formatting)
+[21:57:47] <sudden6> ok, just checked and seems to be no problem with json too
+[21:58:38] <sudden6> I'm planning to replace tox-wiki-nodes-parser with a node-tox-chat parser
+[21:58:57] <sudden6> which would allow to reuse the rest of your programs
+[21:59:10] <sudden6> (yay unix philosophy)
+[22:02:44] <zetok> <IP> <PORT> <PK> <MAINTAINER>
+[22:02:50] <zetok> sudden6: ↑ that's the output format
+[22:03:04] <zetok> space-delimited
+[22:03:08] <sudden6> ok so just space separated values
+[22:03:12] <sudden6> thx
+[22:03:21] <sudden6> see you tomorrow then :)
+[22:03:39] <zetok> um
+[22:03:51] <zetok> kinda space-delimited
+[22:04:09] <zetok> <MAINTAINER> can have as many spaces as possible
+[22:04:24] <zetok> cya :)
+[22:11:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:14:14] *** Joins: cisc (~cisc@ )
+[22:20:19] <zetok> https://github.com/zetok/tox-check-online-bootstraps#usage ← ah, so I did specify the format :)
+[22:20:32] <zetok> (just not in all repos :D )
+[22:52:00] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[22:56:49] *** Joins: initramfs (~initramfs@ )
+[23:17:15] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[23:38:21] *** Joins: cisc (~cisc@ )
