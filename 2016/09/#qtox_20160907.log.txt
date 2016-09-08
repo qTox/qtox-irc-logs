@@ -1,0 +1,266 @@
+[00:01:22] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:26:11] *** Joins: toweI (~toweI@ )
+[00:38:15] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[00:38:16] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[00:43:38] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:39:21] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[01:52:33] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 240 seconds)
+[01:52:40] *** Joins: Dragofix (Dragofix@ )
+[02:07:02] *** Joins: f10 (~flo@ )
+[02:19:19] *** Joins: C0rn3j (~c0rn3j@ )
+[02:23:52] <C0rn3j> Hiya, just a question about Tox IDs. I've sent my ID to my friend and he added me, I accepted.  Now I am trying to add him from a different profile, but apparently when I click view details on his profile in qTox it only gives me his ID without the nospam block, and Antox doesn't take that as a valid ID. Is iit not a valid ID in general and I need my friend to tell me the whole ID too?
+[02:24:33] <Emcy_> you need a valid nospam to disturb someone. That is the point
+[02:25:02] <Emcy_> the thing is shows is the pubkey, the full thing is toxid
+[02:25:26] <C0rn3j> Right, so I need to bug him for an ID, thanks.
+[02:25:53] <Emcy_> its expected you add people to your tox by some prior arrangement i think
+[02:26:26] <Emcy_> so thats requesting the ID from the person you know for sure is who you think they are. Thats the authentication part of the security model.
+[02:26:29] <Emcy_> ideally in person
+[02:27:11] <Emcy_> i mean, tox is not aol chatrooms. Its for freinds to talk to friends
+[02:27:49] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[02:28:03] <Emcy_> when MD is implemented you want have to fuck around with a profile for each device anyway
+[02:28:08] <Emcy_> that will be a huge usability boon
+[02:29:09] *** Joins: f10_ (~flo@ )
+[02:35:02] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[02:35:07] *** Joins: f10__ (~flo@ )
+[03:03:51] -qtox-git-spam- [qTox] zetok opened pull request #3694: docs(manual): add section about contact details with explanation for PK (master...doc/about) https://git.io/vin98
+[03:07:47] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[03:09:16] <C0rn3j> Any idea when that'll be? This month? This year?
+[03:10:21] <zetok> next year
+[03:11:18] <C0rn3j> Well at least I don't need to get hyped.
+[03:11:51] <zetok> (yet)
+[03:11:54] <zetok> :P
+[03:12:09] <zetok> POC is already available
+[03:12:27] <zetok> first though toxcore needs to get into shape, which will take some time
+[03:13:03] <zetok> and after that POC will be made to work, at which point users could start to enjoy the features
+[03:13:38] <zetok> it's so slow only because there's not many people working on stuff :)
+[03:15:27] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[03:16:58] *** Joins: rerumnovarum (~user-reru@ )
+[04:08:16] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:52:03] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[05:05:36] *** Quits: oranges (~oranges@ ) (Remote host closed the connection)
+[05:07:33] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[05:09:03] *** Joins: in1t3r (~LordShiva@ )
+[05:10:31] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[05:10:31] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[06:41:51] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[06:43:33] *** Joins: rerumnovarum (~user-reru@ )
+[06:50:34] *** Joins: st4ll1 (~st4ll1@ )
+[07:22:32] *** Joins: sudden6 (~anonymous@ )
+[07:31:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[08:20:26] *** Joins: LittleVulpix (~Miranda@ )
+[08:22:08] *** Joins: abbat (~Anton@ )
+[08:46:19] <Diadl0> zetok: Can I add label `ui/redesign` to corresponding PRs?
+[09:01:38] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:05:22] *** Joins: oranges (oranges@ )
+[09:05:26] *** Quits: oranges (oranges@ ) (Client Quit)
+[09:05:49] *** Joins: oranges (oranges@ )
+[09:43:02] *** Joins: Chiitoo (~Chiitoo@ )
+[09:57:10] *** Joins: abbat (~abbat@ )
+[10:08:52] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[10:37:31] *** Joins: f10 (~flo@ )
+[10:50:19] *** Joins: f10_ (~flo@ )
+[10:52:01] <zetok> Diadl0: adding [ui/redesign] to PR titles is not enough?
+[11:02:51] *** Joins: st4ll1 (~st4ll1@ )
+[11:38:10] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[11:38:42] *** Joins: CGGB (~CGGB@ )
+[11:50:26] *** Joins: barmaley (~barmaley@ )
+[11:50:29] <barmaley> hello
+[11:50:35] <barmaley> is this qtox channel?
+[11:51:29] <barmaley> i mean in this cannel discuss tox?
+[11:51:46] <zetok> ~yep
+[11:56:13] <barmaley> i have idea for qtox
+[11:58:06] <barmaley> when some contact in qtox is go online, need function, play sound(user set path to play sound). it need to hear what exactly contact go back onlive, for example to very important conversation
+[11:58:51] <barmaley> play sound i saw in 2010 year when i use on Windows XP program "qip" is a client for icq
+[11:59:20] <barmaley> so this is very useful, i think qtox must have this feature
+[12:02:15] *** Quits: mitfree (~mit@ ) (Ping timeout: 264 seconds)
+[12:08:08] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[12:08:40] *** Joins: LittleVulpix (~Miranda@ )
+[12:09:00] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:10:18] *** Joins: Chiitoo (~Chiitoo@ )
+[12:19:52] <zetok> barmaley: https://github.com/qTox/qTox/issues/3206 ← you might want to comment there that sound should be customizable on a per-contact basis
+[12:21:23] <barmaley> i need registration on github?
+[12:23:41] <barmaley> i'm new in github
+[12:23:50] <barmaley> how works this site?
+[12:25:51] <zetok> >i need registration on github?
+[12:25:52] <zetok> yep
+[12:27:59] <barmaley> zetok: ok, but can you send this idea about incoming sound when contact  back online to tox community?
+[12:28:18] <barmaley> becouse i noob =\
+[12:34:04] <zetok> barmaley: https://github.com/qTox/qTox/issues/3696
+[12:42:47] *** Joins: mitfree (~mit@ )
+[12:47:45] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[12:48:10] *** Joins: abbat (~abbat@ )
+[12:48:20] <barmaley> zetok: ♥
+[12:48:29] <barmaley> zetok: thank you
+[12:49:34] <zetok> you're welcome :)
+[12:49:37] <barmaley> zetok: your clock, you from europe?
+[12:49:42] <zetok> yep
+[12:49:51] <barmaley> waht country exactley
+[12:49:57] <zetok> :3
+[12:50:05] <barmaley> +1 utc
+[12:50:09] <barmaley> england?
+[12:50:19] <barmaley> west europe
+[12:50:46] <barmaley> i just curious
+[12:51:13] <LittleVulpix> on a personal note I dislike this "innocent doxing" :p And I assume zetok slightly regrets including timestamps in the issue description :D hah.
+[12:53:04] <barmaley> he ca't edit this post?
+[12:54:08] *** Joins: athan (~athan@ )
+[12:54:43] <barmaley> zetok: ok anyway, thank you for help. i must go, see ya
+[12:55:26] <zetok> LittleVulpix: nah, if I didn't want timestamp pointing at my timezone I'd just run it through a script to point to a different timezone
+[12:55:39] <zetok> assuming that I'm not doing that already :D
+[12:55:50] <zetok> barmaley: cya :)
+[12:55:51] <LittleVulpix> :3
+[12:56:16] <LittleVulpix> But it's one of the most basic mistakes indeed
+[12:56:20] <barmaley> :3  ←  is this a cat face, right?
+[12:56:29] <zetok> yep
+[12:56:42] <LittleVulpix> information you want to protect should not be hidden, instead, in its place, misleading info should be provided
+[12:57:25] <LittleVulpix> hehe
+[12:59:25] *** Joins: pcre (~quassel@ )
+[13:29:03] *** Quits: pcre (~quassel@ ) (Ping timeout: 276 seconds)
+[13:40:38] *** Joins: toweI (~toweI@ )
+[14:57:36] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vic7B
+[14:57:36] -qtox-git-spam- qTox/master 7a98ea3 Zetok Zalbavar: docs(manual): add section about contact details with explanation for PK...
+[15:20:34] *** Quits: oranges (oranges@ ) (*.net *.split)
+[15:20:34] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[15:26:29] -qtox-git-spam- [qTox] duffert opened pull request #3697: Bring stable uptodate with current development  (master...stable) https://git.io/vicbq
+[15:27:45] -qtox-git-spam- [qTox] duffert closed pull request #3697: Bring stable uptodate with current development  (master...stable) https://git.io/vicbq
+[15:38:20] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[15:42:09] *** Joins: VVD (~VVD@ )
+[15:44:48] *** Joins: oranges (~oranges@ )
+[15:50:47] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[15:51:05] *** Joins: in1t3r (~LordShiva@ )
+[16:05:44] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[16:06:10] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[16:06:13] *** Joins: f10_ (~flo@ )
+[16:06:34] *** Joins: f10 (~flo@ )
+[16:19:09] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[16:42:25] <qTox-Blog> [blog] zetok opened pull request #2: use tags instead of categories to not make URL be bad (gh-pages...tags) https://git.io/viCT6
+[16:42:43] <zetok> nurupo: ↑ that fixes URL & makes use of real™ tags for blog pages
+[16:44:32] <zetok> nurupo: how's rewriting MD going?
+[16:45:35] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[16:50:52] <zetok> can someone review PR to the blog?
+[17:12:40] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[17:15:19] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[17:17:48] *** Joins: cisc (~cisc@ )
+[17:19:19] *** Quits: albel727_ (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[17:25:19] *** Joins: abbat (~abbat@ )
+[17:25:50] *** Joins: albel727 (~albel727@ )
+[17:50:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 264 seconds)
+[18:02:40] *** Joins: toweI (~toweI@ )
+[18:08:37] *** Joins: in1t3r (~LordShiva@ )
+[18:15:16] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[18:26:32] *** Joins: sudden6 (~anonymous@ )
+[18:28:50] *** Joins: in1t3r (~LordShiva@ )
+[18:28:54] <sudden6> hi all
+[18:30:26] <zetok> o/
+[18:30:53] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[18:31:26] *** Joins: cisc (~cisc@ )
+[18:32:36] <sudden6> just downloaded the rust compiler
+[18:33:12] <zetok> oh, right
+[18:33:19] <zetok> opensuse doesn't even have it packaged
+[18:33:26] <zetok> sudden6: you might want to use rustup
+[18:33:34] <sudden6> it does, but only in an extra repo
+[18:33:46] <sudden6> what's rustup?
+[18:33:55] <zetok> program to manage multiple rust versions
+[18:34:00] <zetok> +stdlib
+[18:34:39] <sudden6> well I only wanr one version...
+[18:34:43] <zetok> it's really useful when you want to easily compile stuff with statically linked libc
+[18:36:03] <zetok> even with 1 version it still makes getting & managing the version easier when Rust is not packaged :)
+[18:36:38] <sudden6> rust is packaged
+[18:37:03] <zetok> also get cargo
+[18:37:58] <sudden6> also installed :)
+[18:43:47] <sudden6> hello world done ;)
+[18:43:59] <zetok> :D
+[18:52:49] <zetok> sudden6: https://github.com/qTox/blog/pull/2 ?
+[18:53:45] <cisc> was wondering about the "snapiness" of the Gain slider vs. Volume slider: the Gain slider doesn't snap to as fine of a grid (almost none at all) but the Volume control slider does. anyway to make both have the same behaviour?
+[18:54:23] <sudden6> zetok: is the difference somewhere where I can look at it?
+[18:54:44] <zetok> hmm, lemme see
+[18:56:48] <zetok> sudden6: no :s
+[18:57:03] <zetok> sudden6: you could install jekyll & `jekyll serve`
+[18:58:01] <zetok> basically change adds `  <meta name="keywords" content="qtox,tox,messenger,instant messaging,secure,decentralized,friendly,github,open source,voice,calling,blog">` to all pages
+[18:58:49] <zetok> if page also contains `tags: ` line, it results in `  <meta name="keywords" content="qtox,tox,messenger,instant messaging,secure,decentralized,friendly,github,open source,voice,calling,blog,<content of tags>">`
+[18:59:21] <sudden6> and what does it improve?
+[18:59:42] <zetok> google & ddg
+[18:59:47] <zetok> ^_^
+[18:59:50] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:00:10] <zetok> it gives some keywords that search engines can associate with the pages
+[19:00:23] <zetok> aside from that, change fixes the overly long URL
+[19:00:36] <zetok> so it looks like `blog/2016/08/10/Hello-World.html` now
+[19:01:36] <zetok> (I just copied the keywords part from the website) :D
+[19:01:36] <sudden6> ok, then it makes sense :)
+[19:01:44] <zetok> (and added "blog")
+[19:14:07] <zetok> LGTM ?
+[19:25:54] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 276 seconds)
+[19:39:59] *** Joins: in1t3r (~LordShiva@ )
+[20:01:14] *** Joins: abbat (~Anton@ )
+[20:05:51] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[20:08:58] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:09:51] *** Joins: Chiitoo (~Chiitoo@ )
+[20:12:09] *** Joins: abbat_ (~Anton@ )
+[20:12:12] *** Quits: abbat (~Anton@ ) (Ping timeout: 240 seconds)
+[20:12:46] <sudden6> zetok: how do I get cargo to download dependencies?
+[20:14:05] <sudden6> I always get src/main.rs:1:1: 1:30 error: can't find crate for `rustc_serialize` [E0463]
+[20:14:29] <sudden6> even though my Cargo.toml contains rustc-serialize = "0.3.19"
+[20:16:24] <sudden6> ah, crap forgot [dependencies] tag...
+[20:20:22] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[20:22:31] <zetok> you got it working?
+[20:24:34] *** Joins: initramfs (~initramfs@ )
+[20:27:25] <qTox-Blog> [blog] zetok closed pull request #2: use tags instead of categories to not make URL be bad (gh-pages...tags) https://git.io/viCT6
+[20:27:26] <18WABPKB3> [blog] zetok pushed 1 new commit to gh-pages: https://git.io/viCiO
+[20:27:26] <18WABPKB3> blog/gh-pages 70051af Zetok Zalbavar: use tags instead of categories to not make URL be bad...
+[20:27:58] <sudden6> yep, now I have a problem getting my data into my program
+[20:28:24] <zetok> ok
+[20:28:38] <zetok> what is the data and from where you you want to get it?
+[20:28:49] <zetok> s/you you/you/
+[20:30:57] <sudden6> ha, lol it just worked™ now
+[20:31:07] <sudden6> I'm not sure how and why...
+[20:31:14] <zetok> :D
+[20:31:19] <sudden6> can data get stuck in stdin?
+[20:31:26] <zetok> oh
+[20:31:36] <zetok> ~yes
+[20:31:59] <zetok> but I'm kind doubtful whether you're running into buffering problem
+[20:32:35] <sudden6> well, if it happens again, how can I clear stdin from bash?
+[20:32:43] <zetok> um, you don't
+[20:32:54] <zetok> it's not about stdin
+[20:33:01] <sudden6> or am I even doing it right with cat nodes.json > myprogram ?
+[20:33:09] <zetok> no
+[20:33:29] <zetok> eh
+[20:33:29] <sudden6> I also tried myprogram < nodes.json
+[20:33:34] <zetok> that would be correct
+[20:33:50] <zetok> `>` is a redirection to file
+[20:34:13] <zetok> i.e. you've redirected output of `cat ..` to file named `myprogram`
+[20:34:23] <sudden6> *facepalm*
+[20:34:51] <sudden6> that's why it said "last_scan" : program not found...
+[20:35:00] <sudden6> I'm an idiot
+[20:35:44] <zetok> `|` is what you'd want to use
+[20:36:11] <zetok> (assuming that you don't have a case of useless cat)
+[20:37:06] <zetok> btw, the buffers problem I've mentioned earlier is not something that you can trigger with just one redirection
+[20:37:38] <zetok> you'd want at least something like `foo | bar | baz` to trigger it
+[20:38:30] <sudden6> mhm, I remember something about | now^^
+[20:50:47] <sudden6> zetok: can your bootstrap online tester handle ipv6?
+[20:53:01] <zetok> if your network supports IPv6, yes
+[20:53:11] <sudden6> ok mine doesn't
+[20:55:13] <zetok> anyone with IPv6 support?
+[21:06:46] <sudden6> zetok: it works™
+[21:07:14] <zetok> have you tested with no other nodes online locally?
+[21:07:37] <sudden6> I just spoke about my tool
+[21:07:43] <zetok> oh, ok
+[21:07:46] <zetok> good then :)
+[21:07:49] <sudden6> it generates data that looks valid ^^
+[21:42:25] *** Joins: Se7en (~Bleh@ )
+[21:44:58] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[22:00:06] <sudden6> zetok: RFC https://github.com/sudden6/tox-json-node-parser
+[22:01:20] <zetok> >using tabs
+[22:01:21] <zetok> ew
+[22:03:31] <sudden6> now that you say it, I probably mixed tabs and spaces *gasp*
+[22:04:38] <zetok> using `unwrap()` isn't really that good
+[22:04:58] <zetok> if you know that given code is not supposed to fail, it's better to use `expect()`
+[22:05:23] <sudden6> what's the difference?
+[22:05:45] <zetok> with `expect()` you get a nice message why something crashed
+[22:06:23] <zetok> though, if you want something to actually work, there should be proper error handling
+[22:06:32] <sudden6> also there has to be a more elegant way of doing the error handling, writing expect() 15 times in 10 lines hurt my eyes...
+[22:06:44] <zetok> :D
+[22:06:46] <zetok> yes
+[22:07:32] <zetok> https://doc.rust-lang.org/book/error-handling.html
+[22:09:40] <sudden6> I was at that page, but not long enough I see
+[22:37:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[22:53:25] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[22:53:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
