@@ -1,0 +1,275 @@
+[00:22:11] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[00:22:44] *** Joins: athan (~athan@ )
+[01:09:53] *** Quits: abbat_ (~Anton@ ) (Remote host closed the connection)
+[03:09:09] *** Joins: fred_barclay (~fred@ )
+[03:09:09] *** Quits: fred_barclay (~fred@ ) (Changing host)
+[03:09:09] *** Joins: fred_barclay (~fred@ )
+[03:15:23] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[04:09:03] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:29:52] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[06:39:16] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[06:43:22] *** Joins: rerumnovarum (~user-reru@ )
+[07:00:17] *** Quits: Emcy_ (~MC@ ) (Remote host closed the connection)
+[07:00:46] *** Joins: Emcy_ (~MC@ )
+[07:03:02] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[07:03:10] *** Joins: rerumnovarum (~user-reru@ )
+[07:07:03] *** Joins: f10 (~flo@ )
+[07:15:28] *** Joins: f10_ (~flo@ )
+[07:59:02] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[08:15:52] *** Joins: abbat (~Anton@ )
+[09:01:44] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:27:37] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[09:29:45] *** Joins: rerumnovarum (~user-reru@ )
+[10:05:25] *** Joins: abbat (~abbat@ )
+[10:41:12] *** Quits: zero-ghost (~0@ ) (Ping timeout: 240 seconds)
+[10:46:26] *** Joins: zero-ghost (~0@ )
+[10:54:28] *** Quits: Emcy_ (~MC@ ) (Quit: Leaving)
+[10:54:48] *** Joins: Emcy (~MC@ )
+[11:13:47] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[11:26:31] *** Joins: in1t3r (~LordShiva@ )
+[11:30:47] *** Joins: Chiitoo (~Chiitoo@ )
+[11:44:07] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[11:45:00] *** Joins: cisc (~cisc@ )
+[11:47:12] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[11:59:29] *** Joins: in1t3r (~LordShiva@ )
+[12:04:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 264 seconds)
+[12:10:19] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:11:50] *** Joins: abbat (~abbat@ )
+[12:12:50] *** Joins: Chiitoo (~Chiitoo@ )
+[12:39:45] *** Joins: isAAAc (~isAAAc@ )
+[12:40:30] *** Quits: isAAAc (~isAAAc@ ) (Client Quit)
+[12:41:20] *** Joins: isAAAc (~isAAAc@ )
+[12:42:18] *** Quits: isAAAc (~isAAAc@ ) (Client Quit)
+[12:44:44] *** Joins: isAAAc (~isAAAc@ )
+[12:48:12] *** Parts: isAAAc (~isAAAc@ ) ()
+[13:09:24] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[13:09:39] *** Joins: in1t3r (~LordShiva@ )
+[13:25:22] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[13:28:38] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: This Konversation is over  ! !! !)
+[13:31:08] *** Joins: Chiitoo (~Chiitoo@ )
+[13:38:31] *** Joins: in1t3r (~LordShiva@ )
+[13:43:04] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 255 seconds)
+[13:49:50] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:56:06] *** Joins: in1t3r (~LordShiva@ )
+[13:58:59] *** Joins: cisc (~cisc@ )
+[14:01:24] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[14:05:19] *** Joins: toweI (~toweI@ )
+[14:08:13] *** Quits: toweI (~toweI@ ) (Read error: Connection timed out)
+[14:08:38] *** Joins: toweI (~toweI@ )
+[14:15:48] *** Joins: in1t3r (~LordShiva@ )
+[16:14:52] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[16:17:54] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[16:22:43] *** Joins: cisc (~cisc@ )
+[16:29:30] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[16:29:42] *** Joins: cisc (~cisc@ )
+[16:30:29] *** Joins: abbat (~abbat@ )
+[16:36:39] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[16:42:56] *** Joins: cisc (~cisc@ )
+[18:13:15] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[18:14:00] *** Joins: in1t3r (~LordShiva@ )
+[18:22:28] *** Joins: rerumnov1rum (~user-reru@ )
+[18:24:46] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 255 seconds)
+[18:26:55] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 244 seconds)
+[18:27:45] *** Joins: rerumnovarum (~user-reru@ )
+[18:36:32] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:41:26] *** Joins: initramfs (~initramfs@ )
+[19:48:31] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[19:49:36] *** Joins: initramfs (~initramfs@ )
+[19:56:58] *** Parts: valvin (~valvin@ ) ("Leaving")
+[19:59:08] *** Joins: Diadlo (~diadlo@ )
+[20:08:24] *** Joins: sudden6 (~anonymous@ )
+[20:08:32] <zetok> sudden6: o/
+[20:08:41] <sudden6> zetok: \o
+[20:09:13] <zetok> we probably could include not tested IPv6 nodes :s
+[20:09:58] <sudden6> I think, we could probably include all nodes, but what would be the point of including only untested IPv6 nodes?
+[20:10:22] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:11:42] <zetok> target/debug/tox-json-node-parser < json | grep -c ':'
+[20:11:42] <zetok> 29
+[20:11:43] <zetok> :s
+[20:12:32] <sudden6> well current bootstrap nodes list is < 20 and it works without issues
+[20:12:49] <zetok> :|
+[20:12:51] <zetok> about that
+[20:13:21] <zetok> it does have some issues
+[20:14:12] <sudden6> does qTox even support ipv6?^^
+[20:14:14] <zetok> thing is, it's better to not include nodes that aren't even working, since bootstrapping would become even slower
+[20:14:21] <zetok> yes and no
+[20:14:30] <zetok> yes, toxcore does support it
+[20:14:41] <zetok> no, qTox shouldn't care about it
+[20:14:54] <zetok> i.e. it's not qTox's job to care about IPv6
+[20:15:00] <zetok> it just feeds the data to toxcore
+[20:15:23] <sudden6> yeah, but if the data input is only designed for v4 addresses there'll be problems
+[20:15:33] <zetok> um?
+[20:15:46] <zetok> "data input" is an address
+[20:15:47] <sudden6> loading of nodes from file or example
+[20:16:13] <zetok> right
+[20:16:26] <zetok> doesn't qTox just treat that as a byte data?
+[20:16:32] <sudden6> yeah, but v6 address is longer than v4 and has a different format -> problems if done wrong
+[20:16:56] <sudden6> idk, I just wanted to bring up the possibility of it not working
+[20:17:24] <zetok> huh
+[20:17:33] <zetok> something rings a bell
+[20:18:41] <zetok> sudden6: hum, you might be right
+[20:19:48] <zetok> there might have been a talk about it in the past
+[20:19:53] <zetok> but I don't remember by now :(
+[20:20:20] <sudden6> I also might be wrong, because there exists a checkbox to disable IPv6 in Advanced, and what's the point to disable something that doesn't work from the start?
+[20:20:29] <zetok> um
+[20:20:39] <zetok> that switch has nothing to do with what qTox does
+[20:20:45] <zetok> it's only a toxcore switch
+[20:21:10] <zetok> (since some shitty routers crash if ipv6 is used)
+[20:21:46] <sudden6> ah, yeah I remember that
+[20:22:04] <zetok> sudden6: the only problem could be in how qTox parses the IP data from settings.ini
+[20:22:21] <sudden6> I'm already checking that
+[20:22:22] <zetok> if it just gives the string verbatim to toxcore, it will work
+[20:22:34] <zetok> awesome :)
+[20:23:29] <sudden6> yeah, it uses strings throughout everything, seems like someone spent some thoughts on that in the past :D
+[20:23:46] <sudden6> (or was to lazy to use the correct types)
+[20:24:47] <zetok> the more you know.. :S
+[20:25:53] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:26:12] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[20:26:49] *** Joins: LittleVulpix (~Miranda@ )
+[20:48:37] *** Joins: in1t3r (~LordShiva@ )
+[20:52:50] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:53:03] <sudden6> zetok: I think I have to extend your bootstrap online checker
+[20:53:15] <zetok> hmm?
+[20:53:20] <sudden6> to properly support ipv6
+[20:53:45] *** Joins: f10_ (~flo@ )
+[20:53:49] <sudden6> because I can't separate v6 and v4 cleanly because of dns...
+[20:54:05] <zetok> um
+[20:54:44] <zetok> oh, you want to check things separately?
+[20:54:48] <sudden6> yep
+[20:54:55] * zetok sighs
+[20:55:52] <zetok> grep ':' nodes > ipv6 && grep -v ':' nodes > ipv4
+[20:56:07] <zetok> sudden6: ↑ that'll separate them
+[20:56:07] <sudden6> doesn't work
+[20:56:13] <sudden6> tried that already
+[20:56:38] <zetok> hmm
+[20:56:40] <sudden6> because '.' also matches to ipv6.someone.net
+[20:56:57] <zetok> oh, I see
+[20:57:44] <sudden6> or, I could just introduce a flag in my programm to only output v6 or v4
+[20:57:55] <zetok> yeah
+[21:01:46] <sudden6> I should have stayed with the python solution...
+[21:02:00] <zetok> nope
+[21:02:32] <zetok> Did you know that python has shitty internal representation of text data?
+[21:03:05] <zetok> what's worse, it has been made like that deliberately only because python devs cannot into utf8
+[21:03:29] <sudden6> huh? I thought python3 is utf8 everywhere?
+[21:03:44] <zetok> not internally
+[21:04:05] <zetok> the more you know :3
+[21:04:22] <sudden6> this wouldn't make any sense...
+[21:04:40] <zetok> ><zetok> what's worse, it has been made like that deliberately only because python devs cannot into utf8
+[21:04:57] <zetok> no, people making wrong decisions because they cannot into something makes perfect sense
+[21:05:21] <zetok> http://utf8everywhere.org/
+[21:05:48] <zetok> (read it whole to get the picture)
+[21:07:34] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[21:07:52] <zetok> btw, have you started reading HPMOR?
+[21:09:18] <sudden6> zetok: no
+[21:09:41] <zetok> you should, it's worth it :)
+[21:10:10] <sudden6> I would if I had that much freetime and wasn't so motivated to improve qTox ;)
+[21:10:33] <zetok> >.<
+[21:12:57] <C0rn3j> XYZ everywhere website without TLS, lol
+[21:13:50] <zetok> C0rn3j: um?
+[21:14:39] <C0rn3j> >http
+[21:14:56] <zetok> oh
+[21:15:56] <C0rn3j> *shrug* I just believe every website should use TLS, especially a website that's trying to set a standard. 
+[21:16:02] <zetok> yeah
+[21:16:20] <zetok> someone should tell them that
+[21:16:56] <C0rn3j> Well imma shame them on FB.
+[21:18:10] <zetok> \o/
+[21:21:23] <zetok> C0rn3j: btw, while doing so, mention Lets Encrypt to them
+[21:25:09] <C0rn3j> Yeah already did that
+[21:26:18] <zetok> great :)
+[21:33:04] *** Parts: C0rn3j (~c0rn3j@ ) ()
+[21:35:35] *** Joins: abbat (~Anton@ )
+[21:52:07] <sudden6> zetok: how can I match a Vec<String> to for example "v6" ?
+[21:52:32] <sudden6> *one element of the vector of course
+[21:53:21] <zetok> for s in strings { if s.contains("v6") { … } }
+[21:53:43] <sudden6> nope, I want an exact match
+[21:53:56] <zetok> alternatively you could use more functional approach with e.g. filter()
+[21:54:12] <sudden6> like 
+[21:54:13] <sudden6> match args[1] {
+[21:54:15] <sudden6> "v6" => ipv6_en = true,
+[21:54:33] <sudden6> args being a Vec<String>
+[21:55:04] <zetok> for s in strings { match s { "v6" => foo(), } }
+[21:55:28] <zetok> probably not in the desired form
+[21:55:43] <sudden6> I want only the specific vector element to be matched
+[21:56:41] <sudden6> if I use the code as posted I get 
+[21:56:42] <sudden6> type mismatch resolving `<std::vec::Vec<std::string::String> as std::ops::Index<usize>>::Output == &str`:
+[21:56:44] <sudden6>  expected struct `std::string::String`,
+[21:56:56] <sudden6> which is slightly confusing...
+[21:57:24] <zetok> right
+[21:58:34] <zetok> sudden6: um, code?
+[21:58:46] <sudden6> whole or minimal?
+[21:58:58] <zetok> whole, or diff from master
+[22:00:01] <sudden6> http://pastebin.com/QcKUhTj8
+[22:00:47] <sudden6> the issue is in the match block, I'm pretty sure that either rust supports no string matching, or I made a syntax mistake
+[22:01:06] <sudden6> (the latter being nearly impossible ;)
+[22:03:58] <zetok> sudden6: https://gist.github.com/zetok/6d149d749cbcca2d1a81c82009d36e66
+[22:04:34] <zetok> uh, diff from master
+[22:05:12] <zetok> "master"
+[22:05:20] <zetok> sudden6: ok, added whole file
+[22:06:38] <zetok> sudden6: um, is explanation needed?
+[22:06:46] <sudden6> thx, it works
+[22:07:50] <zetok> less obvious "solution" is to add prepend `args[1]` with `&*`
+[22:08:10] <sudden6> I don't quite understand the as_str() part, so "asdfa" is a str right? and String isn't a str, right? but doc says String can be &str
+[22:08:13] <zetok> (but `.as_str()` is IMO more clear)
+[22:08:33] <sudden6> why can't String then be a str?
+[22:08:35] <zetok> String and &str are 2 types
+[22:09:09] <zetok> and while `String ≠ &str`, `&String` can be coerced to `&str`
+[22:09:36] <sudden6> but why does the error message then say `<std::vec::Vec<std::string::String> as std::ops::Index<usize>>::Output == &str` ?
+[22:09:49] <sudden6> == &str
+[22:09:52] <zetok> Rust doesn't coerce automatically
+[22:10:01] <zetok> or rather
+[22:10:15] <zetok> now wait, scratch that about no automatic coercions
+[22:10:21] <zetok> it does automatic coercions
+[22:10:57] <zetok> it just doesn't cast automatically, which means that to compare 2 different types you need to give compiler either args of the same type, or something that compiler can coerce into the same types
+[22:11:33] <sudden6> wait is "asdf" a str or a &str ?
+[22:11:44] <zetok> there's no `str`
+[22:12:11] <sudden6> ahhh, now I understand the error message
+[22:12:12] <zetok> sorry, I'm not good at explaining things
+[22:12:21] <zetok> ;D
+[22:12:52] <sudden6> it expected a std::string::String on the right side
+[22:13:04] <sudden6> (inside the match)
+[22:13:22] <zetok> yeah
+[22:13:35] <sudden6> I thought it meant args[1] is equal to a &str
+[22:13:40] <zetok> that shitty error is due to how iterator output is specified
+[22:13:54] <sudden6> thx very much :)
+[22:14:06] <zetok> "iterator"
+[22:15:36] <zetok> btw, strings "defined" in source code are always `&'static str`
+[22:15:51] <zetok> you don't really have to care much about `'static` lifetime (yet)
+[22:16:34] <zetok> and while comparing, it's always better to coerce `String → &str`, rather than the other way around
+[22:17:20] <zetok> since `&str` is kinda just a slice of String, so the abstraction doesn't cost anything; if doing the other way around, you'd need to allocate a new String on heap
+[22:18:00] <zetok> sudden6: https://mgattozzi.github.io/2016/05/26/how-do-i-str-string.html
+[22:18:29] <sudden6> thx, it works now
+[22:18:33] <sudden6> will push :)
+[22:19:07] <zetok> enjoy merge conflicts :P
+[22:20:47] <sudden6> why?^^
+[22:21:23] <zetok> #1
+[22:21:24] <zetok> :D
+[22:21:29] <zetok> https://github.com/sudden6/tox-json-node-parser/pull/1
+[22:21:59] <sudden6> I like my tabs^^
+[22:22:03] <zetok> ew
+[22:27:42] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[22:28:16] <zetok> hmm
+[22:28:44] <zetok> wouldn't it be better if by default all nodes were printed?
+[22:28:52] <sudden6> they are
+[22:28:55] *** Joins: athan (~athan@ )
+[22:28:56] <zetok> oh
+[22:28:59] <zetok> uh
+[22:31:34] <zetok> sudden6: https://gist.github.com/zetok/6d149d749cbcca2d1a81c82009d36e66 ← sorry, couldn't stop myself from fixing it
+[22:32:43] *** Joins: Feedz (~Feedz@ )
+[22:33:15] <sudden6> so why prefer &* of as_str()?
+[22:33:25] *** Parts: Feedz (~Feedz@ ) ("Leaving")
+[22:33:59] <sudden6> also what did you fix besides tab -> space?
+[22:34:31] <zetok> removed unnecessary else
+[22:34:43] <zetok> and removed trailing whitespaces
+[22:35:09] <sudden6> I had that at first, but then decided against it because of future improvements
+[22:35:20] <zetok> oh, ok
+[22:36:18] <sudden6> IMHO it is better to explicitly enable flags for specific cases
+[22:36:45] <sudden6> because once you add a case you will forget that the flag is on by default -> logic error
+[22:40:57] <zetok> hmm
+[22:41:12] <zetok> doesn't explicit enabling lead to messy code?
+[22:41:35] <sudden6> I don't think so
+[22:42:05] <zetok> hmm.
+[22:42:47] <sudden6> imagine, I would add a dns flag that should only print urls on the output
+[22:43:19] <sudden6> in the current state you could easily add it and the logic would be kept
+[22:44:09] <zetok> hmm.
+[22:46:32] <sudden6> anyway, bedtime :) night and thx for your help ↑
+[22:47:57] <zetok> np, sleep well :)
