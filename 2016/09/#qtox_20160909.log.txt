@@ -1,0 +1,146 @@
+[00:03:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[00:09:00] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[00:09:28] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[00:16:15] *** Joins: f10_ (~flo@ )
+[00:17:08] *** Joins: f10 (~flo@ )
+[00:49:42] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[01:06:33] *** Quits: jjuran__ (~jjuran@ ) (Ping timeout: 240 seconds)
+[01:06:50] *** Joins: jjuran_ (~jjuran@ )
+[01:14:03] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:44:25] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[01:44:42] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[01:52:27] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:32:06] *** Joins: cisc (~cisc@ )
+[03:11:34] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[04:35:33] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[06:40:33] *** Joins: in1t3r (~LordShiva@ )
+[06:51:46] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 255 seconds)
+[06:59:44] *** Joins: athan (~athan@ )
+[07:18:22] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:20:51] *** Joins: LittleVulpix (~Miranda@ )
+[07:23:32] *** Joins: in1t3r (~LordShiva@ )
+[07:45:09] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[07:51:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[08:06:17] *** Joins: in1t3r (~LordShiva@ )
+[08:16:40] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[08:36:47] *** Joins: in1t3r (~LordShiva@ )
+[08:43:18] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[08:56:19] *** Joins: in1t3r (~LordShiva@ )
+[09:15:32] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[09:25:12] *** Joins: f10 (~flo@ )
+[09:45:51] *** Joins: f10_ (~flo@ )
+[09:52:36] *** Joins: abbat (~abbat@ )
+[10:24:38] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[10:25:16] *** Joins: abbat (~abbat@ )
+[10:54:53] *** Quits: genesis (~genesis@ ) (Ping timeout: 265 seconds)
+[11:06:28] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[11:13:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[11:18:29] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[11:19:34] *** Joins: rerumnovarum (~user-reru@ )
+[11:59:29] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[12:11:51] *** Joins: abbat (~abbat@ )
+[12:28:47] *** Joins: Chiitoo (~Chiitoo@ )
+[13:00:28] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[13:11:47] *** Joins: in1t3r (~LordShiva@ )
+[13:12:58] *** Joins: f10 (~flo@ )
+[13:14:54] *** Joins: bashrc (~motters@ )
+[13:19:57] *** Joins: f10_ (~flo@ )
+[13:21:11] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[13:23:16] *** Joins: in1t3r (~LordShiva@ )
+[13:30:17] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[13:33:49] *** Joins: in1t3r (~LordShiva@ )
+[13:35:34] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[13:59:27] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[14:02:59] *** Joins: C0rn3j (~c0rn3j@ )
+[14:03:57] <C0rn3j> I'm done, despite doing a wipe of everything my Telegram acc keeps getting compromised. Anyone has info about Antox?  Because afaik it doesn't support groups and that's the only reason I can't fully switch
+[14:04:15] *** Joins: in1t3r (~LordShiva@ )
+[14:08:34] <Emcy> compromised how
+[14:09:18] <C0rn3j> Someone from Iran keeps logging into my account.
+[14:09:53] <Emcy> lol
+[14:10:21] <C0rn3j> I've literally deleted whole internal memory of my phone and flashed newest nightly CM and did a clean Arch Linux install on both my computers. Still got compromised again.
+[14:11:31] <Emcy> antox hasnt updated in a while
+[14:15:32] <C0rn3j> Sadly it looks to be the only android client apart from uTox, which I believe dropped support so I didn't even try that.
+[14:16:42] <Emcy> the iphone client is great
+[14:17:00] <Emcy> antox went thru like 3 maintainers cos of drama
+[14:17:03] <Emcy> a real shame
+[14:17:24] <C0rn3j> Sadly I'm not a fan of Apple products
+[14:18:29] <Emcy> the problem is toxcore is being forked and everyone is thinking about that
+[14:20:13] <C0rn3j> Ughhh
+[14:26:12] <C0rn3j> What other cross platform and secure options do I have, apart from IRC?
+[14:27:08] <Emcy> nothing
+[14:28:01] <Emcy> telegram was never secure
+[14:29:38] <zetok> hmm
+[14:31:19] <zetok> C0rn3j: nothing that would have groupchats
+[14:31:46] <zetok> Emcy: toxcore being forked in *not* a problem
+[14:32:09] <zetok> C0rn3j: also, I wouldn't consider IRC secure either
+[14:32:28] <Emcy> its a turn of phrase you autist
+[14:38:53] <zetok> pls
+[14:39:45] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[14:40:40] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[14:41:47] *** Joins: pcre (~quassel@ )
+[14:48:48] <C0rn3j> zetok: How is IRC insecure?
+[14:49:08] <zetok> by design
+[14:50:49] <Emcy> the only way it could even begin to be secure is if you hosted your own server with a self signed cert you have a prior record of the fingerprint of
+[14:51:02] <Emcy> and only let your freinds on it and no random rabble
+[14:51:27] <Emcy> and ofc disallowed non tls connections
+[14:51:42] <Emcy> and even then tls uses NIST crypto so
+[14:52:09] <Emcy> and by host i mean in your house where you can keep an eye on it
+[14:52:24] <Emcy> i think then it would approch the security of a private tox group
+[15:07:11] <C0rn3j> Yeah I have no problems with self hosted solutions, I'll do that.
+[15:07:15] <C0rn3j> Thanks
+[15:07:37] *** Quits: pcre (~quassel@ ) (Ping timeout: 244 seconds)
+[15:09:16] <C0rn3j> I'll probably just get a LE cert instead of self signed, but eh, still better than TG.
+[15:14:34] <Emcy> if that suits your needs
+[15:14:49] <Emcy> its a pity new GC got stalled
+[15:15:13] <Emcy> they used to crow about deprecating irc with it
+[15:17:37] *** Joins: pcre (~quassel@ )
+[15:25:05] *** Joins: genesis (~genesis@ )
+[16:04:01] *** Joins: sudden6 (~anonymous@ )
+[16:08:40] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[16:27:06] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[16:27:38] *** Joins: cisc (~cisc@ )
+[16:27:58] *** Joins: abbat (~abbat@ )
+[17:35:04] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:50:02] *** Joins: f10 (~flo@ )
+[18:24:41] *** Joins: sudden6 (~anonymous@ )
+[18:25:27] *** Joins: f10_ (~flo@ )
+[18:37:21] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[18:40:58] *** Joins: cisc (~cisc@ )
+[18:45:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[18:45:41] *** Joins: abbat (~Anton@ )
+[18:54:54] <qTox-syncbot> Ingvar: hello
+[19:16:04] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[19:16:04] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[19:19:58] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[19:20:17] *** Joins: f10_ (~flo@ )
+[19:21:02] *** Joins: f10 (~flo@ )
+[19:32:27] *** Joins: rerumnovarum (~user-reru@ )
+[19:38:07] *** Quits: pcre (~quassel@ ) (Ping timeout: 255 seconds)
+[19:38:46] *** Joins: pcre (~quassel@ )
+[20:03:10] *** Joins: cisc (~cisc@ )
+[20:13:19] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[20:13:27] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:15:22] *** Joins: rerumnovarum (~user-reru@ )
+[20:15:33] *** Joins: athan (~athan@ )
+[20:33:14] *** Joins: Chiitoo (~Chiitoo@ )
+[20:40:20] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[20:40:38] *** Joins: cisc (~cisc@ )
+[20:41:52] *** Quits: TheVoid (~void@ ) (Ping timeout: 240 seconds)
+[20:43:09] *** Quits: athan (~athan@ ) (Quit: leaving)
+[20:43:18] *** Joins: athan (~athan@ )
+[20:44:12] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[20:46:07] *** Joins: pcre (~quassel@ )
+[20:52:05] *** Joins: TheVoid (~void@ )
+[20:53:18] *** Joins: pcre_ (~quassel@ )
+[20:53:48] *** Quits: pcre (~quassel@ ) (Ping timeout: 276 seconds)
+[21:51:31] *** Quits: TheVoid (~void@ ) (Remote host closed the connection)
+[22:02:19] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:07:31] *** Joins: sudden6 (~anonymous@ )
+[22:17:26] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[22:21:28] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[22:21:55] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[23:04:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:05:34] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 255 seconds)
+[23:18:11] *** Joins: in1t3r (~LordShiva@ )
+[23:48:07] *** Joins: f10 (~flo@ )
+[23:56:02] *** Joins: f10_ (~flo@ )
