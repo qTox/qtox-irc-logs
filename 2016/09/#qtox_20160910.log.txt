@@ -1,0 +1,175 @@
+[00:06:44] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[00:08:07] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[00:08:44] *** Joins: athan (~athan@ )
+[00:39:37] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[00:40:00] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
+[00:40:04] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[01:42:19] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:47:01] *** Quits: sockspls_ (~sockspls@ ) (Max SendQ exceeded)
+[01:47:09] *** Joins: sockspls (~sockspls@ )
+[02:05:13] *** Joins: cisc (~cisc@ )
+[02:26:26] *** Quits: C0rn3j (~c0rn3j@ ) (Remote host closed the connection)
+[04:13:32] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:44:38] *** Joins: TheVoid (~void@ )
+[05:07:18] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[05:10:56] *** Joins: zero-ghost (~0@ )
+[05:22:07] *** Quits: TheVoid (~void@ ) (Remote host closed the connection)
+[05:32:52] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[05:33:33] *** Joins: Bheru27 (~Bheru27@ )
+[06:07:31] *** Quits: sockspls (~sockspls@ ) (*.net *.split)
+[06:07:31] *** Quits: mitfree (~mit@ ) (*.net *.split)
+[06:07:31] *** Quits: nurupo (~nurupo.ga@ ) (*.net *.split)
+[06:07:32] *** Quits: worfox (~worfox@ ) (*.net *.split)
+[06:07:32] *** Quits: smaragdus (~omoo@ ) (*.net *.split)
+[06:07:32] *** Quits: Darky (~Darky@ ) (*.net *.split)
+[06:07:33] *** Quits: dan- (~d@ ) (*.net *.split)
+[06:07:33] *** Quits: nightfuri (nightfury@ ) (*.net *.split)
+[06:07:33] *** Quits: Bheru27 (~Bheru27@ ) (*.net *.split)
+[06:07:33] *** Quits: cisc (~cisc@ ) (*.net *.split)
+[06:07:34] *** Quits: jjuran_ (~jjuran@ ) (*.net *.split)
+[06:07:34] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[06:07:35] *** Quits: Dragofix (Dragofix@ ) (*.net *.split)
+[06:07:35] *** Quits: kadinparker[m] (kadinparke@ ) (*.net *.split)
+[06:07:37] *** Quits: e0f (~e0f@ ) (*.net *.split)
+[06:25:07] *** Joins: sockspls (~sockspls@ )
+[06:25:07] *** Joins: mitfree (~mit@ )
+[06:25:07] *** Joins: worfox (~worfox@ )
+[06:25:07] *** Joins: nurupo (~nurupo.ga@ )
+[06:25:07] *** Joins: smaragdus (~omoo@ )
+[06:25:07] *** Joins: Darky (~Darky@ )
+[07:10:27] *** Joins: TheVoid (~void@ )
+[08:15:32] *** Joins: Diadlo (~diadlo@ )
+[09:04:37] *** Joins: Dragofix (Dragofix@ )
+[09:04:37] *** Joins: kadinparker[m] (kadinparke@ )
+[09:04:37] *** Joins: e0f (~e0f@ )
+[09:05:10] *** Joins: Bheru27 (~Bheru27@ )
+[09:05:10] *** Joins: cisc (~cisc@ )
+[09:05:10] *** Joins: 17SAA36P6 (~jjuran@ )
+[09:05:10] *** Joins: dongo (~dongo@ )
+[09:05:17] *** Joins: dan- (~d@ )
+[09:05:17] *** Joins: nightfuri (nightfury@ )
+[09:26:29] *** Parts: TheVoid (~void@ ) ("WeeChat 1.0.1")
+[09:28:24] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:31:14] *** Joins: f10_ (~flo@ )
+[09:31:21] *** Joins: f10 (~flo@ )
+[10:20:24] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[10:20:44] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[10:20:48] *** Joins: f10 (~flo@ )
+[10:21:08] *** Joins: f10_ (~flo@ )
+[10:48:05] *** Quits: oranges (~oranges@ ) (Quit: leaving)
+[11:07:18] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[11:12:03] *** Joins: pcre (~quassel@ )
+[11:15:48] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[11:16:13] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[11:16:23] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[11:16:42] *** Joins: f10 (~flo@ )
+[11:17:04] *** Joins: f10_ (~flo@ )
+[11:17:45] *** Joins: pcre (~quassel@ )
+[11:19:47] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[11:22:09] *** Joins: in1t3r (~LordShiva@ )
+[11:22:33] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[11:22:55] *** Joins: pcre (~quassel@ )
+[11:31:09] *** Joins: Chiitoo (~Chiitoo@ )
+[11:36:10] *** Joins: abbat (~Anton@ )
+[12:13:57] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:15:44] *** Joins: Chiitoo (~Chiitoo@ )
+[12:49:27] *** Joins: LittleVulpix (~Miranda@ )
+[13:42:27] *** Quits: pcre (~quassel@ ) (Ping timeout: 264 seconds)
+[13:42:35] *** Joins: pcre (~quassel@ )
+[14:45:15] *** Joins: pcre_ (~quassel@ )
+[14:45:25] *** Quits: pcre (~quassel@ ) (Ping timeout: 252 seconds)
+[15:32:36] *** Joins: initramfs (~initramfs@ )
+[15:39:26] -qtox-git-spam- [qTox] zetok opened pull request #3701: Update translations from Weblate (master...tr) https://git.io/viRFO
+[15:39:48] <zetok> initramfs: ↑ LGTM ?
+[15:40:58] <initramfs> Well given I don't know any of those languages, I'll just lgtm given it's from weblate
+[15:41:32] -qtox-git-spam- [qTox] Talkless opened pull request #3702: fix(widget): do not block logout on Linux desktop environments v2 (master...fix-linux-logout-v2) https://git.io/viRFn
+[15:43:38] <zetok> initramfs: thanks :)
+[15:43:58] <initramfs> zetok: Went starting a new translation, should we start directly on weblate or add a translation file directly as a PR to qTox
+[15:44:19] <initramfs> Me and a few friends are planning to translate to traditional chinese
+[15:44:29] <zetok> ooh, nice
+[15:45:26] <zetok> weblate makes things easier for people who aren't interested in "technical stuff"
+[15:45:54] <initramfs> Sure
+[15:46:26] <zetok> so, in other words, it's slightly easer/less time consuming for maintainers to merge a translation PR with everything in it ready
+[15:46:57] <zetok> i.e. when I pull new translations from weblate, I need to manually add it to places in qTox
+[15:47:35] <zetok> initramfs: https://github.com/qTox/qTox/wiki/Translating#if-youre-adding-new-translations ← if you're still interested in making a PR ;)
+[15:47:45] <initramfs> Okay
+[15:47:53] <initramfs> When pulling a non-weblate translation PR, does it get added to weblate?
+[15:48:01] <zetok> ~yep
+[15:48:04] <initramfs> Okay
+[15:48:10] <zetok> weblate merges stuff from master
+[15:48:14] <initramfs> Okay
+[15:48:19] <initramfs> I'll make a PR eventually then, save you some trouble
+[15:48:40] <initramfs> Since you seem to be the only one who's actually pulling in updates.
+[15:48:44] <zetok> (except for when I push newest translations, since I amend commits from weblate)
+[15:48:59] <initramfs> I see
+[15:49:28] <zetok> in case of pushing newest translations I just manually reset weblate to current master, and freeze weblate translations for time of merging PR
+[15:49:50] <initramfs> Seems like a hassle
+[15:49:59] <zetok> not much
+[15:50:09] <initramfs> Ehh okay.
+[15:50:42] <zetok> `git cherry-pick -e commit` and I have vim macro that does the commit renaming for me, and rest is mostly scripted
+[15:50:55] <initramfs> Ah
+[15:51:00] <initramfs> Zetok and his scripts
+[15:51:25] <initramfs> I would not be surprised if you have a script for making coffee
+[15:51:41] <zetok> ;D
+[15:52:01] <zetok> not that far yet, but part of the process is "scripted"
+[15:52:33] <zetok> although I'm not sure if I'd trust technology with brewing my coffee
+[15:52:34] <initramfs> Not bad
+[15:53:23] <initramfs> Anyways, need to go now. Last week or so has been hectic, just moved from Taiwan to Canada (thus my limited availability). I'll be more available once everything settles down
+[15:53:42] <zetok> I see
+[15:53:46] *** 17SAA36P6 is now known as jjuran
+[15:53:48] <zetok> cya later :)
+[15:53:56] <initramfs> Bye
+[16:16:32] *** Joins: sudden6 (~anonymous@ )
+[16:17:38] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[16:21:56] *** Joins: pcre (~quassel@ )
+[16:23:19] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 265 seconds)
+[16:28:56] *** Joins: user69 (~user69@ )
+[16:30:34] *** Quits: pcre (~quassel@ ) (Ping timeout: 244 seconds)
+[16:30:37] *** Joins: pcre_ (~quassel@ )
+[16:36:46] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[17:25:24] *** Joins: demon (25932560@ )
+[17:30:55] *** Quits: demon (25932560@ ) (Quit: Page closed)
+[17:38:53] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 250 seconds)
+[18:07:09] *** Quits: abbat (~Anton@ ) (Ping timeout: 276 seconds)
+[18:20:32] *** Joins: abbat (~Anton@ )
+[18:25:06] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: This Konversation is over  ! !! !)
+[18:37:46] *** Joins: rerumnovarum (~user-reru@ )
+[18:54:50] -qtox-git-spam- [qTox] zetok pushed 3 new commits to master: https://git.io/vi0f4
+[18:54:50] -qtox-git-spam- qTox/master ab31231 Peter Jespersen: feat(l10n): update Danish translation from Weblate
+[18:54:50] -qtox-git-spam- qTox/master d8a525a Kaur Männamaa: feat(l10n): update Estonian translation from Weblate
+[18:54:50] -qtox-git-spam- qTox/master 0842b50 Viktar Vauchkevich: feat(l10n): update Belarusian translation from Weblate
+[19:26:18] -qtox-git-spam- [qTox] zetok closed pull request #3661: docs(INSTALL.md): Fix minimal Qt version (master...patch-1) https://git.io/v6pMy
+[19:27:15] <zetok> Diadlo: merge https://github.com/qTox/qTox/pull/3691 ?
+[19:38:43] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[19:39:59] *** Joins: Emcy (~MC@ )
+[19:40:43] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:41:32] *** Joins: cisc (~cisc@ )
+[19:41:33] *** Quits: cisc (~cisc@ ) (Client Quit)
+[19:44:11] *** Joins: cisc (~cisc@ )
+[19:47:42] *** Quits: cisc (~cisc@ ) (Client Quit)
+[19:48:40] *** Joins: cisc (~cisc@ )
+[20:09:23] <Diadlo> zetok: Yes
+[21:35:56] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[21:37:41] <Diadlo> zetok: ping
+[21:37:51] <zetok> Diadlo: pong
+[21:38:31] <Diadlo> Are you know, that `Current profile location` in `User Profile` is clickable?
+[21:38:41] <zetok> yep
+[21:39:16] <Diadlo> Do you mind if I add blue color and underlining?
+[21:39:58] <Diadlo> It is not obvious, that it's clickable
+[21:40:05] <zetok> right
+[21:40:14] <zetok> that could help
+[21:40:35] <Diadlo> Thanks
+[21:40:43] <Diadlo> You will merge #3691?
+[21:43:10] <zetok> Diadlo: um, I don't even know C++
+[21:43:19] <Diadlo> Ok
+[21:44:46] -qtox-git-spam- [qTox] Diadlo closed pull request #3691: fix(settings): Fixed group to load makeToxPortable setting (master...fixPortableMode) https://git.io/viGbn
+[22:00:24] *** Joins: Chiitoo (~Unknown@ )
+[22:04:05] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[22:07:55] -qtox-git-spam- [qTox] Diadlo opened pull request #3703: Remove html from translation (master...removeHTMLFromTranslation) https://git.io/vi0mm
+[22:30:16] *** Joins: Bill_MI (~Bill@ )
+[23:20:03] *** Joins: toweI (~toweI@ )
+[23:35:37] *** Joins: sudd3n6 (~anonymous@ )
+[23:37:50] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[23:41:23] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[23:41:53] *** Quits: genesis (~genesis@ ) (Ping timeout: 260 seconds)
+[23:45:21] *** Joins: genesis (~genesis@ )
