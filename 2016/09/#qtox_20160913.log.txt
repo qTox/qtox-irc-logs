@@ -1,0 +1,289 @@
+[01:16:17] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[02:18:25] *** Joins: hpanago (uid15586@ )
+[02:21:19] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[04:46:17] *** Quits: hpanago (uid15586@ ) (Quit: Connection closed for inactivity)
+[04:59:55] *** Joins: Lord_Vlad (~Vlad@ )
+[06:18:49] *** Joins: sudden6 (~anonymous@ )
+[06:27:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[08:10:00] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:10:23] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[08:11:07] *** Joins: Diadlo (~diadlo@ )
+[08:14:15] *** Joins: LittleVulpix (~Miranda@ )
+[08:14:58] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 250 seconds)
+[08:20:29] *** Joins: Dragofix (Dragofix@ )
+[08:30:59] *** Joins: hpanago (uid15586@ )
+[08:38:53] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[08:39:03] *** Joins: jjuran (~jjuran@ )
+[08:56:20] *** Joins: Dragofix- (Dragofix@ )
+[08:58:03] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 240 seconds)
+[08:58:03] *** Dragofix- is now known as Dragofix
+[09:05:53] *** Joins: sudden6 (~anonymous@ )
+[09:13:50] -qtox-git-spam- [qTox] Diadlo opened pull request #3710: fix(settings): Move loading old settings before new (master...saveOldSettings) https://git.io/vigtQ
+[09:16:40] -qtox-git-spam- [qTox] Diadlo closed pull request #3710: fix(settings): Move loading old settings before new (master...saveOldSettings) https://git.io/vigtQ
+[09:32:25] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 255 seconds)
+[09:42:49] -qtox-git-spam- [qTox] Diadlo opened pull request #3711: fix(settings): Rollback to old settings it new doesn't exist (master...saveOldSettings) https://git.io/vigOw
+[10:02:33] *** Joins: abbat (~abbat@ )
+[10:21:30] *** Joins: f10 (~flo@ )
+[11:20:31] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[11:20:45] *** Joins: rerumnovarum (~user-reru@ )
+[11:20:51] -qtox-git-spam- [qTox] PKEv opened pull request #3712: fix(i18): correct ru translation (master...fix(i18n)_correct_ru_translation) https://git.io/vigRb
+[11:58:34] *** demize is now known as eris
+[12:36:41] -qtox-git-spam- [qTox] PKEv opened pull request #3713: fix(settings): correct default value of dateformat (master...fix_date_listbox) https://git.io/vigrg
+[12:45:14] -qtox-git-spam- [qTox] PKEv opened pull request #3714: fix(settings): correct empty listbox audio device (master...fix_settings_av_empty_listbox) https://git.io/vigo9
+[13:09:19] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[13:21:39] *** Joins: abbat (~abbat@ )
+[13:43:05] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[13:47:00] *** Joins: albel727 (~albel727@ )
+[14:05:01] *** Joins: pcre (~quassel@ )
+[14:05:12] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[15:19:47] <Diadlo> zero-ghost: ping
+[15:19:52] <Diadlo> Ups, sorry
+[15:19:57] <Diadlo> zetok: ping
+[15:20:11] <zetok> Diadlo: pong
+[15:20:31] <Diadlo> Lets talk about https://github.com/qTox/qTox/pull/3704 :)
+[15:21:19] <Diadlo> If we can guarantee, that user have correct date, it's 10+ digits (after 2002 year)
+[15:22:06] <Diadlo> If user have some system problem, date can be reseted
+[15:22:27] <zetok> right
+[15:22:55] <Diadlo> Should I leave `{1,}` ?
+[15:23:38] <zetok> what are the chances of timestamp being reverted to the "beginning of the time" ?
+[15:24:09] <Diadlo> I have old laptop which reset date every reboot :)
+[15:25:01] <Diadlo> But we can up it to ~5 (10s = 10000ms = 5 digits)
+[15:25:20] <zetok> ok
+[15:25:24] <Diadlo> Exist any real reason to all those changes?)
+[15:25:34] <zetok> performance
+[15:25:45] <zetok> the "smaller" the regex, the faster it'll be
+[15:25:53] <zetok> >\dMatches a digit (QChar::isDigit()).
+[15:26:39] <zetok> also, using stuff that is pre-defined is generally faster than defining stuff on its own
+[15:26:45] <Diadlo> This method will be called only on some errors
+[15:27:02] <Diadlo> It is so rare... :)
+[15:27:41] <zetok> err
+[15:27:47] <Diadlo> Why?
+[15:27:59] <Diadlo> i.e. 5 digits will be normal?
+[15:28:19] <zetok> thing is, if it's about errors, they can and will be "spammed" a lot
+[15:28:47] <zetok> so performance there is important too
+[15:29:11] <zetok> Diadlo: it makes scope of the regex smaller
+[15:29:40] <Diadlo> I understand
+[15:29:56] <Diadlo> So, 5+ ?
+[15:30:01] <zetok> yep
+[15:30:04] <Diadlo> Ok
+[15:36:47] <Diadlo> zetok: \d doesn't work for me
+[15:37:30] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:38:14] *** Joins: abbat (~abbat@ )
+[15:39:30] <Diadlo> Oh.. sorry. \ should be escaped
+[15:50:00] *** Joins: pcre (~quassel@ )
+[15:56:11] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[15:56:24] *** Joins: Lord_Vlad (~Vlad@ )
+[16:03:57] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[16:08:44] *** Joins: Dragofix- (Dragofix@ )
+[16:09:46] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 255 seconds)
+[16:11:45] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 265 seconds)
+[16:11:46] *** Dragofix- is now known as Dragofix
+[16:12:14] *** Quits: bashrc (~motters@ ) (Ping timeout: 265 seconds)
+[16:12:48] *** Joins: bashrc (~motters@ )
+[16:13:41] *** Joins: smaragdus (~omoo@ )
+[16:30:03] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:37:04] *** Joins: f10 (~flo@ )
+[16:46:27] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[16:47:02] *** Joins: cisc (~cisc@ )
+[16:49:30] *** Joins: bennabiy (~bennabiy@ )
+[18:05:08] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:20:59] *** Joins: sudden6 (~anonymous@ )
+[18:26:00] <sudden6> zetok: o/
+[18:26:08] <zetok> sudden6: \o
+[18:26:54] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[18:27:12] <sudden6> did you want something from me yesterday?
+[18:27:34] <zetok> maybe?
+[18:27:57] <zetok> nothing important, otherwise I'd remember
+[18:28:14] <sudden6> you o/ ed me, I thought you wanted something
+[18:29:02] <zetok> yeah, I just don't remember what exactly I wanted to ask about
+[18:31:57] <sudden6> I will run the bootstrap node update programs today, maybe you could do the same and then we combine the online nodes?
+[18:32:07] <zetok> oh, right
+[18:32:09] <zetok> :D
+[18:32:15] <zetok> that's the thing I wanted to ask about :D
+[18:32:24] <sudden6> ah, well xD
+[18:33:44] <zetok> um, I don't have a "clean" LAN, so the check will be full of false-positives for me
+[18:34:32] <sudden6> ah, crap me neither...
+[18:34:47] <sudden6> well, I'll run it on my server then
+[18:38:27] <sudden6> can rust easily build a static binary for your online checker?
+[18:40:36] <sudden6> zetok: ↑
+[18:43:05] <zetok> yes and no
+[18:43:16] <zetok> actually, no
+[18:43:32] <sudden6> well then a local run on an unknown network has to suffice
+[18:43:35] <zetok> the C part is problematic
+[18:44:02] <zetok> um, by "clean" LAN I mean one that doesn't have other tox instances running on it
+[18:44:23] <zetok> >can rust easily build a static binary for your online checker?
+[18:44:37] <zetok> once zetox is sufficiently advanced, that'll be "yes"
+[18:44:44] <sudden6> I know, but I don't know if any tox instances are running
+[18:44:53] <zetok> I see
+[18:45:14] <sudden6> actually, I'm silly, I have a router between my lan and the dorm lan
+[18:46:00] <sudden6> which also does vpn *facepalm*
+[19:05:50] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 265 seconds)
+[19:12:00] -qtox-git-spam- [qTox] sudden6 opened pull request #3715: chore: update list of bootstrap nodes (master...update_nodes) https://git.io/vi26u
+[19:12:15] <sudden6> zetok: new nodes list created
+[19:12:38] <sudden6> I think it improved bootstrap time for qtox, but I didn't measure it :)
+[19:16:15] *** Joins: Lord_Vlad (~Vlad@ )
+[19:21:03] <zetok> sudden6: btw, do you know if ipv6 is accepted?
+[19:22:10] <sudden6> it should be accepted, since qTox only passes these strings to toxcore
+[19:22:19] <zetok> ok
+[19:22:37] <sudden6> I just have no internet connection supporting IPv6 :(
+[19:37:38] <sudden6> seems like I can get a IPv6 address on my server, now I just have to get your tool to run
+[19:41:21] *** Joins: CGGB (~CGGB@ )
+[19:51:26] <sudden6> zetok: ./tox-check-online-bootstraps: error while loading shared libraries: libtoxav.so.0: cannot open shared object file: No such file or directory
+[19:51:36] <sudden6> why is it even linked against libtoxav?
+[19:53:05] <zetok> rstox
+[19:53:32] <zetok> for simplicity it doesn't have a modular approach
+[19:53:40] <zetok> and depends on "full" toxcore
+[19:54:47] <sudden6> mhm, it could need some enhancement in that way
+[19:55:38] <zetok> not really
+[19:55:42] <zetok> it's deprecated anyway
+[19:55:55] <sudden6> mkay
+[19:56:45] <sudden6> it seems to run for now, tomorrow I'll try to get the list of ipv6 nodes, if my hoster has added the ip by then
+[19:58:00] <Diadlo> sudden6: Hi :)
+[19:58:32] <sudden6> Diadlo: hi :)
+[19:58:49] <Diadlo> https://github.com/qTox/qTox/pull/3711#issuecomment-246768470
+[19:59:10] <Diadlo> What comment I should refer?
+[19:59:38] <sudden6> This one https://github.com/Diadlo/qTox/blob/1bbe1c948ef52adbee9cc71e615930ab19aec65f/src/persistence/settings.cpp#L177
+[19:59:57] <sudden6> because it has to be changed when this part is removed, or am I wrong?
+[20:01:11] <Diadlo> Yes. Ok, and how I should refer it? Line number will be incorrect, because it can be changed
+[20:02:28] <sudden6> yeah, line number is bad, maybe we should copy the toxcore style and assign all TODOs to an issue?
+[20:03:01] <sudden6> ie TODO: #1234 remove when old settings are deprecated
+[20:03:23] <Diadlo> Where the 1234 is PR number?
+[20:03:33] <sudden6> issue number
+[20:04:03] <sudden6> we would have to create one for deprecating old settings, but I think it would be good anyway
+[20:04:44] <Diadlo> Agree
+[20:04:50] <Diadlo> zetok: ^
+[20:05:43] <zetok> hmm
+[20:10:52] <zetok> so
+[20:11:06] <zetok> "old" settings is relative
+[20:11:22] <zetok> and there will be more settings in the future that will become "old"
+[20:11:27] <sudden6> yup
+[20:12:01] <Diadlo> It can me metabug with list of places, where old code should be removed
+[20:12:13] <Diadlo> Or create many small issues
+[20:12:16] <Diadlo> Or both :)
+[20:12:23] *** Joins: initramfs (~initramfs@ )
+[20:12:34] <zetok> aside from that, I think that just adding comments in the code when something needs to be deprecated would do, e.g. `TODO: remove @ 2017.. ; read above`
+[20:12:55] <sudden6> maybe use a common title?
+[20:13:14] <sudden6> but I think comments will be overlooked after some time
+[20:14:19] <zetok> what should be the deprecation period for settings?
+[20:14:30] <zetok> 2 stable releases?
+[20:15:11] <sudden6> same as old history deprecation?
+[20:15:19] <zetok> um
+[20:15:25] <zetok> settings aren't that important
+[20:15:29] <sudden6> doesn't make sense to have different periods for that
+[20:16:07] <zetok> long deprecation period is justifiable only for backwards compatibility with user data
+[20:16:25] <Diadlo> Settings is user data too
+[20:16:31] <zetok> no.
+[20:16:37] <Diadlo> ?
+[20:17:06] <zetok> i.e. in current implementation, qTox has user data in settings
+[20:22:02] *** Joins: zetok (~zetok@ )
+[20:22:11] *** Joins: Diadlo (~diadlo@ )
+[20:22:11] *** Joins: in1t3r (~LordShiva@ )
+[20:22:11] *** Joins: Bheru27 (~Bheru27@ )
+[20:22:11] *** Joins: koshii (~w@ )
+[20:22:11] *** Joins: rysiek|pl (~quassel@ )
+[20:22:24] *** Joins: albel727 (~albel727@ )
+[20:22:35] *** Joins: cisc (~cisc@ )
+[20:22:35] *** Joins: jjuran (~jjuran@ )
+[20:22:41] *** Joins: tux3 (~tux@ )
+[20:22:58] *** Joins: Lord_Vlad (~Vlad@ )
+[20:22:58] *** Joins: LittleVulpix (~Miranda@ )
+[20:22:58] *** Joins: linxon (~lin@ )
+[20:22:58] *** Joins: genesis (~genesis@ )
+[20:22:58] *** Joins: Sephi (~me@ )
+[20:23:00] *** Joins: oranges (oranges@ )
+[20:23:00] *** Joins: VVD (~VVD@ )
+[20:23:23] *** Joins: dongo (~dongo@ )
+[20:24:55] *** Joins: qTox-syncbot (~qTox-sync@ )
+[20:26:08] <qTox-syncbot> Zetok\0: looks in dicebot's direction
+[20:26:50] <qTox-syncbot> Diadlo: Zetok\0: love bots :)
+[20:27:30] <qTox-syncbot> Zetok\0: https://github.com/subliun/tox-dicebot ;)
+[20:27:58] <qTox-syncbot> Diadlo: Why I am not surprised?)
+[20:28:26] <qTox-syncbot> sudden6: I didn't know subliun did Rust
+[20:28:28] <qTox-syncbot> Amit Agnani: "I'm so sorry for this code." |\n|  |\n| Tsk tsk tsk
+[20:28:54] <qTox-syncbot> Zetok\0: sudden6: welp, dicebot is what I've used to make Lee, and further down the road syncbot
+[20:29:18] <qTox-syncbot> sudden6: what is Lee?^^
+[20:29:24] <qTox-syncbot> Zetok\0: Lee is the best
+[20:30:52] <qTox-syncbot> Zetok\0: https://github.com/zetok/Lee
+[20:31:02] <qTox-syncbot> Zetok\0: hmm, where did I have that gist
+[20:31:42] <qTox-syncbot> Amit Agnani: ".stahp" <- best commands
+[20:32:02] <qTox-syncbot> sudden6: yep^^
+[20:33:25] *** Quits: Guest97427 (~MC@ ) (Quit: Leaving)
+[20:33:40] *** Joins: Guest97427 (~MC@ )
+[20:33:51] *** Quits: Guest97427 (~MC@ ) (Remote host closed the connection)
+[20:34:18] *** Joins: Emcy_ (~MC@ )
+[20:35:14] <qTox-syncbot> Zetok\0: https://gist.github.com/zetok/4fb6acc9fc54cbe12b4f there it is :3
+[20:36:42] <qTox-syncbot> Zetok\0: >tfw still no new groupchats ;_;
+[20:36:52] <qTox-syncbot> Amit Agnani: You have way too much free time
+[20:37:52] <qTox-syncbot> sudden6: I can't parse 90% of the sentences, it makes my brain explode
+[20:39:12] <qTox-syncbot> Amit Agnani: Why "Lee"?
+[20:40:28] <qTox-syncbot> Zetok\0: finally someone asked \o/
+[20:41:36] <qTox-syncbot> Amit Agnani: Lol
+[20:41:56] <qTox-syncbot> Zetok\0: Amit Agnani: I was listening to a nice rock/punk song that uses `Lee` both as a nice pun & name
+[20:42:06] <qTox-syncbot> Amit Agnani: I see
+[20:44:36] *** Joins: hexadezimalion (sid85551@ )
+[20:44:43] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[20:45:52] <qTox-syncbot> Zetok\0: https://github.com/zetok/Lee/blob/3215e1b451847f852a2e8e7a4ca75f54da3af21c/src/main.rs#L199,L239 :3
+[20:45:52] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[20:47:52] <qTox-syncbot> Zetok\0: good ol' times
+[20:48:29] *** Joins: f10_ (~flo@ )
+[20:51:42] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[20:52:08] *** Joins: cisc (~cisc@ )
+[20:53:00] <qTox-syncbot> Zetok\0: sudden6: btw, you might be interested in looking at 2nd qTox screenshot :P
+[21:24:52] <Emcy_> ^wut is this
+[21:35:39] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 260 seconds)
+[21:39:58] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/viaJk
+[21:39:58] -qtox-git-spam- qTox/master fcf1d29 sudden6: chore: update list of bootstrap nodes
+[21:39:58] -qtox-git-spam- qTox/master 025cdc8 Zetok Zalbavar: Merge pull request #3715...
+[21:47:37] *** Joins: LittleVulpix (~Miranda@ )
+[21:55:44] *** Quits: GGMethos (~methos@ ) (Ping timeout: 250 seconds)
+[22:14:24] *** Joins: sudden6 (~anonymous@ )
+[22:15:01] <sudden6> uhm, does anyone know how many ipv6 addresses one should order per server?
+[22:15:30] <Emcy_> doesnt everyone get a billion
+[22:16:04] <sudden6> idk, my hosting provider just asked me how many addresses I want, I wasn't prepared for that question
+[22:18:04] <oranges> a \64
+[22:18:08] <oranges> I think is the usual assignment
+[22:18:22] <oranges> that gives you 18,000,000,000,000,000  addresses
+[22:18:32] <oranges> if you need multiple subnets you might want a /60 or a /46
+[22:18:35] <oranges> err 56
+[22:18:42] <sudden6> what the hell should I do with that many addresses?!
+[22:19:17] <initramfs> Well, given that IPv6 is 128-bits, it really doesn't matter to them or you, how many addresses are allocated
+[22:19:31] <initramfs> s/IPv6/IPv6 addresses/
+[22:19:38] <initramfs> s/is/are/
+[22:19:55] <sudden6> okay, I'll then ask for a /64 block
+[22:20:12] <oranges> well you could simulate the entire ipv4 internet
+[22:20:13] <oranges> for fun
+[22:20:15] <oranges> or something
+[22:20:38] <oranges> a /64 is the minimum required for ipv6 stateless configuration
+[22:20:57] <oranges> plus if you handed out anything smaller you would end up with huge routing tables
+[22:21:13] <oranges> like
+[22:21:22] <oranges> the amount of space in ipv6 is difficult to grasp
+[22:21:43] <oranges> http://www.potaroo.net/ispcol/2005-07/ipv6size.html is a good primer
+[22:22:33] <oranges> they're really planning for a large number of small interconnected devices in each househould I imagine
+[22:23:55] <sudden6> interconnected nanobots are comming
+[22:24:10] * sudden6 We are BORG, resistance is futile!
+[22:24:48] <initramfs> sudden6: I mean, you can literally have MAC addresses embedded into the IPv6 addresses of devices
+[22:24:58] <initramfs> Makes for an easy way to auto-assign addresses
+[22:25:18] *** Joins: GGMethos (methos@ )
+[22:26:53] <oranges> honestly you could even ask for a /48
+[22:27:53] *** Quits: sudden6 (~anonymous@ ) (*.net *.split)
+[22:27:53] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[22:27:53] *** Quits: qTox-syncbot (~qTox-sync@ ) (*.net *.split)
+[22:27:54] *** Quits: Lord_Vlad (~Vlad@ ) (*.net *.split)
+[22:27:54] *** Quits: linxon (~lin@ ) (*.net *.split)
+[22:27:54] *** Quits: genesis (~genesis@ ) (*.net *.split)
+[22:27:54] *** Quits: Sephi (~me@ ) (*.net *.split)
+[22:28:02] *** Joins: Sephi (~me@ )
+[22:28:13] *** Joins: genesis (~genesis@ )
+[22:28:15] *** Joins: sudden6 (~anonymous@ )
+[22:28:50] <sudden6> seems like this hoster doesn't, they only provide 10 addresses...
+[22:29:05] <sudden6> maybe because it's a cheap one
+[22:40:05] <Emcy_> i think you found the de beers of hosting
+[22:43:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:44:34] *** Joins: sudden6 (~anonymous@ )
+[22:52:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[22:55:57] *** Joins: LittleVulpix (~Miranda@ )
+[22:57:05] *** Joins: linxon (~lin@ )
+[23:05:57] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[23:14:16] *** Quits: GGMethos (methos@ ) (Ping timeout: 265 seconds)
+[23:20:10] *** Joins: GGMethos (methos@ )
+[23:24:28] *** Joins: athan (~athan@ )
