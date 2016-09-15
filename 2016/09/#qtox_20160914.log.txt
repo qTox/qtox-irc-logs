@@ -1,0 +1,525 @@
+[00:13:03] *** Joins: witheld (446a12ae@ )
+[00:13:12] <witheld> What's with qTox removing toxDNS, what's the replacement?
+[00:22:06] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[00:28:39] *** Joins: cisc (~cisc@ )
+[00:35:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:40:55] <zetok> witheld: toxme
+[00:41:14] <zetok> toxdns was deprecated long time ago
+[00:42:43] <witheld> what is toxme?
+[00:42:47] <witheld> Googling it brings up a single site
+[00:49:04] *** Joins: cisc (~cisc@ )
+[00:51:50] <zetok> witheld: https://github.com/LittleVulpix/toxme
+[00:53:18] <witheld> And how's this work exactly, what do usernames look like now?
+[00:53:40] <zetok> same as always
+[00:54:27] <zetok> I mean, it uses https and rest api, but for the end-user it works the ~same, except for the better integration in the client
+[00:55:00] <zetok> witheld: you can try with the bot listed in topic ;)
+[00:55:29] <witheld> So it's still user@domain?
+[00:55:45] <zetok> yep
+[00:55:54] <witheld> huh okay
+[00:56:39] <zetok> actually, AFAIK you now don't even need a domain
+[00:56:56] <witheld> But instead of using DNS it's using our own servers or....how is this decentralized exactly?
+[00:57:29] <zetok> it's ~not
+[00:57:47] <zetok> toxdns wasn't decentralized either though
+[00:58:15] <witheld> Yeah but, DNS is at least you know...a big organization that's kind of decentralized of itself
+[00:58:25] <zetok> as for servers, it's the same as before – you can run your own instance
+[00:58:46] <zetok> um.
+[00:59:03] <witheld> politically decentralized
+[00:59:15] <zetok> since when?
+[01:00:21] <witheld> https://en.wikipedia.org/wiki/ICANN#Structure
+[01:00:24] <witheld> a while
+[01:00:31] <zetok> "sure"
+[01:01:34] <zetok> anyway, now you don't even need DNS :)
+[01:01:55] <zetok> and e.g. `user@dead::beef` is possible
+[01:02:02] <witheld> I'm just confused- it seems like we replaced DNS with a hardcoded list of username servers?
+[01:02:15] <zetok> there's no hardcoded list
+[01:02:38] <witheld> How does it work?
+[01:03:08] <witheld> Like if I run my own server, I can start handing out usernames from it and every client has a way to look up usernames from that server with no extra effort?
+[01:03:21] <zetok> ~yep
+[01:03:41] <zetok> um, your client choice is a bit limited though
+[01:03:48] <witheld> How does it look them up?
+[01:04:27] <zetok> um?
+[01:04:41] <zetok> client sends a query to a server
+[01:04:53] <witheld> how does it know about my server
+[01:05:00] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[01:05:15] <zetok> you have to tell client about your server..
+[01:05:21] <witheld> ...
+[01:05:46] <witheld> So, there is extra effort, the user has to manually go add my server to their list of servers to look up nicks from
+[01:05:59] * zetok sighs
+[01:06:03] <witheld> This is significantly worse than the old solution
+[01:06:15] <zetok> ><zetok> same as always
+[01:06:21] <zetok> witheld: have you tried to use it?
+[01:06:31] <witheld> The idea of ToxDNS is that it was federated
+[01:06:48] <witheld> You could do username@arbitrarydomain and it would look up arbitrary domain using DNS
+[01:06:52] <zetok> same goes for toxme
+[01:07:01] <witheld> that's federation
+[01:07:03] <zetok> except for no dependency on the dns
+[01:07:07] <witheld> manually adding sources to a list is not federation
+[01:07:09] <witheld> it's a hostfile
+[01:07:16] <zetok> sure.
+[01:07:26] <zetok> please come back after you try
+[01:07:38] <zetok> (I might have worded things wrongly)
+[01:09:43] <witheld> Alright I've got qtox and I don't know what to try here
+[01:09:56] <zetok> :)
+[01:10:01] <witheld> how do I look up usernames from something that isn't toxme.io
+[01:10:16] <witheld> How do I look from usernames from witheldusernameserver.io
+[01:10:22] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[01:10:28] <zetok> username@witheldusernameserver.io
+[01:10:38] <witheld> ...
+[01:10:43] <witheld> which it then...looks up with DNS?
+[01:10:52] <zetok> with toxme
+[01:11:05] <zetok> ><zetok> ><zetok> same as always
+[01:11:10] <witheld> So toxme is just a DNS server(but not DNS)
+[01:11:10] <zetok> at least from user PoV
+[01:11:11] *** Joins: tobiasBora (~tobiasBor@ )
+[01:11:15] <tobiasBora> Hello,
+[01:11:19] <tobiasBora> I have several questions :
+[01:11:24] <witheld> wait that doesn't make sense
+[01:11:27] <zetok> hello tobiasBora :)
+[01:11:30] *** Joins: jjuran (~jjuran@ )
+[01:11:42] <witheld> How does Toxme know to resolve witheldusernameserver.io to my IP?
+[01:11:44] <tobiasBora> 1) Thank you for this great software, (q)Tox is amaizing
+[01:11:46] <zetok> witheld: it's just the protocol used that has changed
+[01:12:00] <zetok> witheld: well, for that DNS is used
+[01:12:07] <witheld> !-!
+[01:12:23] <zetok> witheld: you could just put an IP there though if you don't want DNS
+[01:12:30] <tobiasBora> 2) then, I would like to know : Is it possible to put a video in fullscreen during a call ?
+[01:12:43] <witheld> does anyone have the problem where your mouse stops moving every ten seconds or so for a bit after launching qtox
+[01:13:22] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[01:14:16] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[01:14:55] <zetok> tobiasBora: not yet
+[01:15:11] <tobiasBora> zetok: Ok Thank you
+[01:15:44] <zetok> witheld: haven't heard about problem like that, mind making an issue?
+[01:16:16] <witheld> zetok: if I can figure out how to reproduce it, it only happened the first time
+[01:16:26] <zetok> oh, ok
+[01:19:01] <tobiasBora> 3) I can't manage to install it in debian unstable (and I got similar problem with xubuntu, but I was using the wrong repo)
+[01:19:12] <witheld> Wait so, for ToxDNS, was it...actually doing DNS requests to actual hacked up nameservers to get usernames?
+[01:19:26] <tobiasBora> Les paquets suivants contiennent des dépendances non satisfaites :
+[01:19:28] <tobiasBora>  qtox : Dépend: libsodium13 (>= 0.6.1) mais il n'est pas installable
+[01:19:30] <tobiasBora>         Dépend: libvpx1 (>= 1.0.0) mais il n'est pas installable
+[01:19:32] <tobiasBora>         Dépend: qtbase-abi-5-3-2 mais il n'est pas installable
+[01:19:34] <tobiasBora> E: Impossible de corriger les problèmes, des paquets défectueux sont en mode « garder en l'état ».
+[01:19:36] <tobiasBora> Y
+[01:20:11] <tobiasBora> You can translate it with something like "the following packets cannot be installed :"
+[01:20:59] <witheld> tobiasBora: you really may have to built it yourself for unstable
+[01:21:19] <witheld> that is one of the pains of the bleeding edge
+[01:24:08] <tobiasBora> witheld: Hum... The nighly also works, should I install them ?
+[01:28:19] <tobiasBora> It works great !
+[01:28:28] <tobiasBora> Now a little question :
+[01:28:53] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[01:29:02] <tobiasBora> If I am on the same lan as my friend, is it supposed to go faster ?
+[01:29:43] <zetok> toxcore will try to use direct UDP, but if a connection can't be made, it'll use TCP relay, which is ~slow
+[01:31:26] <tobiasBora> And when direct UDP is possible ? Both adress must have a reachable IP adress, or it has nothing to do with it ? For example if my friend is 500km away, am I sure to be redirected to TCP or not ?
+[01:31:50] <zetok> nope
+[01:33:58] <zetok> toxcore tries by default UDP, if it doesn't want to work, it switches to TCP
+[01:34:08] <tobiasBora> ok
+[01:34:11] <tobiasBora> thank you !
+[01:34:15] <zetok> distance doesn't really matter, but how networks are configured does
+[01:34:20] <zetok> https://zetok.github.io/tox-spec/#hole-punching
+[01:34:52] <zetok> >In case of a bad implementation, crash & burn, making users cry.
+[01:34:55] <zetok> ↑ literally
+[01:35:51] <zetok> (i.e. that's what cheap, shitty router could do)
+[01:36:00] <tobiasBora> And sorry I'm annoying, but I come back to this story of full screen picture.
+[01:36:50] <tobiasBora> Is their any "trick" to have a bigger picture, or not ?
+[01:36:56] <zetok> https://github.com/qTox/qTox/issues/2922
+[01:37:29] <zetok> you could resize qTox's window, and then resize video's size
+[01:38:34] <tobiasBora> zetok: Oh nice I didn't see it was possible to resize the windows part. Thank you !
+[01:38:51] <zetok> you're welcome :)
+[01:39:02] <zetok> that should be added to user manual
+[01:39:15] <zetok> https://github.com/qTox/qTox/blob/master/doc/user_manual_en.md
+[01:39:35] <tobiasBora> And it's not possible to keep only the picture ? (I would love to be able to put in foreground only the picture, like that I can do other stuff.
+[01:39:51] <zetok> not yet
+[01:40:06] <zetok> actually
+[01:40:21] <zetok> tobiasBora: you could detach chat window
+[01:40:35] <tobiasBora> really ?
+[01:40:48] <tobiasBora> how do you detach it ?
+[01:40:49] <zetok> r-click on the contact → open in a new window
+[01:41:58] <tobiasBora> Amazing !
+[01:42:55] <tobiasBora> Now, the last part is removing the header of this window : is it possible ? (but actually detaching chat like that is really practicall, it's more a kind of bonus)
+[01:43:15] <zetok> not yet
+[01:43:24] <tobiasBora> zetok: Ok thank you !
+[01:45:39] *** Joins: smaragdus (~omoo@ )
+[01:46:05] <tobiasBora> A little more general question now : if I want to use my account on a different computer, can I just give my name to toxme.io and I get all my contacts... or do I need to use a usb key to transfert it ?
+[01:47:04] <nurupo> ><witheld> How does it look them up? \ <zetok> um? \ <zetok> client sends a query to a server \ <witheld> how does it know about my server <-- witheld do you realize that you the server name is part of the string user inputs? i.e. "name@server". it's the same as with tox dns
+[01:47:29] <nurupo> s/you//
+[01:49:25] <nurupo> ><witheld> So, there is extra effort, the user has to manually go add my server to their list of servers to look up nicks from <-- users don't have to add it to some list of servers. it's pretty much the same as tox dns usage-wise. you just add a friend as "name@server" and done
+[03:02:55] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 250 seconds)
+[03:49:41] *** Quits: witheld (446a12ae@ ) (Quit: Page closed)
+[05:25:33] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[05:25:50] *** Joins: rerumnovarum (~user-reru@ )
+[05:52:17] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[05:54:02] *** Joins: in1t3r (~LordShiva@ )
+[05:57:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[05:58:11] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 248 seconds)
+[06:00:21] *** Joins: in1t3r (~LordShiva@ )
+[06:04:20] *** Joins: cisc (~cisc@ )
+[06:06:38] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[06:13:10] *** Joins: as (6de41354@ )
+[06:13:34] *** as is now known as Guest14498
+[06:14:33] <Guest14498> hello
+[06:17:57] <Guest14498> autoupdate.h:27: error: sodium.h: No such file or directory. Someone can help me ?
+[06:22:24] <zetok> Guest14498: that's under windows, right?
+[06:23:12] <Guest14498> Yes, Win 7 64 bit
+[06:24:41] <zetok> which qTox version?
+[06:26:45] <Guest14498> I don't know , The last qTox master.zip...    Qt creator 5.7
+[06:27:50] <zetok> oh, so you're trying to compile it?
+[06:28:44] <zetok> error is about missing dependency
+[06:29:13] <Guest14498> Yes , but I can't fix the error..
+[06:29:23] <zetok> https://github.com/qTox/qTox/blob/master/INSTALL.md#windows
+[06:30:10] <zetok> Guest14498: have you followed those steps?
+[06:30:36] <Guest14498> Yes ,I do it like the https://github.com/qTox/qTox/blob/master/INSTALL.md#windows sad.
+[06:31:00] <zetok> ok
+[06:32:03] <zetok> https://github.com/qTox/qTox/issues/3372
+[06:32:24] <zetok> ↑ did you run into that problem?
+[06:34:11] *** Joins: sudden6 (~anonymous@ )
+[06:35:10] <zetok> Guest14498: sorry, since I don't know much about windows I'm not sure if I'm able to help you
+[06:35:49] <zetok> there seems to be an issue with getting (some?) of qTox deps on windows
+[06:36:27] <zetok> and there haven't been much interest in fixing that
+[06:36:44] <zetok> (since it compiles just fine under Linux)
+[06:37:13] <zetok> Guest14498: could you provide full logs though?
+[06:37:30] <Guest14498> ok, thx, but I'm using Windows :( 
+[06:37:53] <Guest14498> that's the full logs
+[06:38:10] <zetok> err
+[06:38:23] <Guest14498> C:\qTox\src\net\autoupdate.h:27: error: sodium.h: No such file or directory
+[06:38:30] <nurupo> building qtox on windows is suffering
+[06:38:32] <Guest14498> only this
+[06:38:42] <nurupo> you should just give instructions on how to get Ubuntu running in VirtualBox and make it share a directory with host Windows system, install docker on Ubuntu and wget&run docker script for building windows qtox
+[06:38:59] <zetok> hmm
+[06:39:33] <nurupo> you can steal VirualBox instructions from toxcore's INSTALL.md windows section
+[06:39:42] <nurupo> including directory sharing
+[06:40:13] <zetok> aside from using *buntu for it, that doesn't sound bad
+[06:40:42] <nurupo> Guest14498: sounds like you don't have sodium.h in include_path
+[06:44:44] <Guest14498> yes , there's no sodium.h I don't know where it is..
+[06:50:39] <nurupo> it's one of many qtox dependencies
+[06:51:23] <nurupo> the .bat file the windows install instructions mention should supposedly have downloaded it and placed it in the place where the qtox build system would see it
+[06:53:40] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[06:53:49] <zetok> https://github.com/qTox/qTox/issues/3716
+[06:54:03] *** Joins: CGGB (~CGGB@ )
+[07:01:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[07:12:51] <Guest14498> hope to Update qTox Windows version building manual soon....
+[07:42:57] *** Quits: Guest14498 (6de41354@ ) (Quit: Page closed)
+[08:04:55] *** Joins: as (58d0d1d0@ )
+[08:05:20] *** as is now known as Guest32838
+[08:05:21] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:08:48] *** Joins: LittleVulpix (~Miranda@ )
+[08:08:58] *** Joins: Emcy_ (~MC@ )
+[08:24:41] *** Quits: Guest32838 (58d0d1d0@ ) (Ping timeout: 240 seconds)
+[08:30:29] *** Joins: as1 (58d0d1d0@ )
+[08:44:16] *** Quits: Se7en (~Se7en@ ) (Ping timeout: 255 seconds)
+[08:50:32] *** Joins: Se7en (~Se7en@ )
+[08:57:30] *** Quits: genesis (~genesis@ ) (Remote host closed the connection)
+[09:09:01] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 255 seconds)
+[09:10:32] *** Joins: nurupo (~nurupo.ga@ )
+[09:16:03] *** Joins: f10 (~flo@ )
+[09:34:11] *** Quits: as1 (58d0d1d0@ ) (Ping timeout: 240 seconds)
+[09:49:31] *** Joins: pcre (~quassel@ )
+[09:55:10] *** Quits: pcre (~quassel@ ) (Ping timeout: 265 seconds)
+[09:55:11] *** Joins: pcre_ (~quassel@ )
+[09:57:50] *** Joins: abbat (~abbat@ )
+[10:24:55] *** Joins: f10_ (~flo@ )
+[11:01:37] -qtox-git-spam- [qTox] Diadlo opened pull request #3717: fix(text): Removed unnecessary text cliping (master...fixArabicText) https://git.io/viVG5
+[11:19:53] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[11:20:10] *** Joins: rerumnovarum (~user-reru@ )
+[11:40:49] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[11:59:40] <oranges> all dead no hope
+[12:36:11] <Emcy_> wot
+[12:41:20] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 260 seconds)
+[13:26:22] <oranges> WOT
+[13:38:35] <Emcy_> u wot m8
+[13:38:40] <Emcy_> dont chops m8
+[13:38:45] <Emcy_> ill do u car
+[13:39:54] <oranges> U WOT M8
+[13:39:59] <oranges> I'LL SLASH YOU UP WITH THIS CUTTER
+[13:40:49] <Emcy_> fuken lay u out m8
+[13:41:10] <Emcy_> fukin ave u now cunt
+[13:52:14] *** Joins: initramfs (~initramfs@ )
+[13:59:51] *** Joins: bashrc (~motters@ )
+[14:17:18] *** Quits: bennabiy (~bennabiy@ ) (Quit: http://www.yellowdeli.com)
+[14:23:32] *** Joins: bennabiy (~bennabiy@ )
+[14:31:56] *** Joins: isAAAc (~isAAAc@ )
+[14:37:18] *** Parts: isAAAc (~isAAAc@ ) ("WeeChat 1.5")
+[15:12:41] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[15:20:22] *** Joins: qTox-syncbot (~qTox-sync@ )
+[16:06:03] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[16:08:05] *** Joins: rerumnovarum (~user-reru@ )
+[16:30:14] *** Joins: Happy (2e1c25e2@ )
+[16:30:26] *** Happy is now known as _Happy__
+[16:31:15] *** Joins: josh98 (~josh98@ )
+[16:31:38] <_Happy__> Hey there, is there a list of all emoticons you can use in qTox? Things like :angel:, :devil: or :finger:. I've found https://github.com/qTox/qTox/blob/master/smileys/Classic/emoticons.xml, but it seems like not all of them are usable
+[16:34:41] <zetok> _Happy__: https://github.com/qTox/qTox/blob/master/smileys/emojione/emoticons.xml
+[16:34:59] <zetok> the ones you've linked to are also usable
+[16:35:37] <_Happy__> Ah, I see. Thank you very much!
+[16:35:56] <zetok> _Happy__: https://github.com/qTox/qTox/blob/master/doc/user_manual_en.md#theme
+[16:36:55] <_Happy__> Is it possible to add custom aliases?
+[16:37:20] <zetok> to emoticons?
+[16:37:33] <_Happy__> yes
+[16:37:59] <zetok> you can edit the source
+[16:39:22] <zetok> there's nothing in qTox that would allow editing them on the fly, or keeping those modified settings
+[16:40:21] <zetok> _Happy__: you might be interested in stickers: https://github.com/qTox/qTox/issues/1294
+[16:42:41] <_Happy__> Alright, thank you
+[17:11:08] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[17:15:07] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[17:15:55] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[17:19:28] *** Joins: f10 (~flo@ )
+[17:21:20] *** Joins: sudden6 (~anonymous@ )
+[17:23:18] *** Joins: abbat (~abbat@ )
+[17:30:15] -qtox-git-spam- [qTox] zetok opened pull request #3718: Update user manual a bit (master...docs/refresh) https://git.io/viwtX
+[17:37:06] <sudden6> zetok: o/
+[17:37:14] <zetok> sudden6: \o
+[17:37:44] <sudden6> again there's a problem with bootstrap nodes list
+[17:38:02] <sudden6> there are duplicate entries because of dnsv6
+[17:38:20] <sudden6> ie node reachable for ipv6 and ipv4 under the same domain
+[17:38:35] <zetok> that's not a problem IMO
+[17:38:47] <sudden6> it is, it leads to duplicate entries
+[17:38:56] <sudden6> which are unneccessary
+[17:39:02] <zetok> right
+[17:39:59] <sudden6> wait, I think I can solve this with unix commands
+[17:40:17] <sudden6> is there a unix command to remove identical lines from a file?
+[17:41:08] <zetok> sort -u
+[17:42:50] <zetok> actually, `sort -uR` would be better
+[17:43:43] <sudden6> why?
+[17:44:44] <zetok> hmm
+[17:44:59] <sudden6> qtox does bootstrap node randomization internally
+[17:44:59] <zetok> does qTox pick bootstraps from the list "randomly" ?
+[17:45:04] <zetok> oh, ok then
+[17:45:59] <sudden6> btw, your tool doesn't handle empty lines well, it counts them as nodes and thus breaks settings.ini format
+[17:46:13] <zetok> \o/
+[17:46:18] <zetok> I mean, I'll fix that
+[17:46:57] <zetok> nodes-parser-for-qtox ?
+[17:47:16] <sudden6> we should write the process of updating bootstrap nodes down somewhere, I don't even remember when I started on this project xD
+[17:47:19] <sudden6> yes
+[17:48:00] <sudden6> zetok: also your tool is missing the first line of settings ini: [DHT%20server]
+[17:48:17] <zetok> right
+[17:48:19] <sudden6> * [DHT%20Server]
+[17:49:21] <sudden6> maybe we could even make it into a full unix pipe, eg. wget | json-parser | online-checker | qtox-formatter
+[17:49:36] <zetok> yeah
+[17:50:31] <zetok> I've made tools use files, since I wasn't at the time familiar with std{in,out} in Rust
+[17:50:52] <zetok> second bug fixed
+[17:50:59] <sudden6> yeah, this is only a thing that would be "cool" imho ;)
+[17:51:15] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[17:53:41] <zetok> ok, first bug fixed too
+[17:54:18] <zetok> is the line really "empty", or could it contain whitespaces?
+[17:54:36] <zetok> because I just did `.filter(|l| !l.is_empty())`
+[17:54:46] <zetok> and that won't work if there are whitespaces
+[17:55:25] <sudden6> could be that there's a whitespace in it
+[17:56:05] <zetok> um
+[17:57:03] <zetok> sudden6: could you send me input sample?
+[17:58:12] <sudden6> I deleted it -_-, I think it was either one or more spaces or one or more newlines at the end of the file
+[18:01:13] <zetok> ok, can reproduce
+[18:02:21] <sudden6> I also sorted the nodes by maintainer name, for smaller diffs
+[18:03:07] *** Joins: abbat (~abbat@ )
+[18:04:15] -qtox-git-spam- [qTox] sudden6 opened pull request #3719: chore: add IPv6 nodes and sort the list by maintainer name (master...update_nodes) https://git.io/viwst
+[18:07:06] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:34:50] *** Joins: bashrc (~motters@ )
+[18:40:58] <zetok> :f
+[18:41:16] <zetok> sudden6: could you just not have lines with whitespaces?
+[18:41:44] <sudden6> If I did my copy and pasting right I could ;)
+[18:42:00] <zetok> um, empty lines are fine
+[18:42:13] <sudden6> isn't there some IsWhitespace() function?
+[18:42:23] <zetok> lemme see >.<
+[18:43:24] <zetok> ~kinda
+[18:43:39] <zetok> ok, I know what to do :3
+[18:52:14] <zetok> sudden6: https://github.com/zetok/nodes-parser-for-qtox/commit/65097e24f4230c31d3fb0cf5025cbb3c7064d9c9#diff-639fbc4ef05b315af92b4d836c31b023R42 :D
+[18:52:25] <zetok> this is great :3
+[18:52:30] *** Joins: initramfs (~initramfs@ )
+[18:53:36] <sudden6> mhm
+[18:53:41] <zetok> where's grammar nazi when one needs them :s
+[18:53:47] * zetok looks in tux3's direction
+[18:54:05] <zetok> sudden6: I dunno about no comma before `and`
+[18:54:25] <sudden6> me neither, initramfs is your English that good?^^
+[18:54:31] <zetok> IIRC I've seen it being used in english literature like that, but..
+[18:54:44] <initramfs> What is this about?
+[18:54:49] <initramfs> Sorry, just joined the channel
+[18:54:51] <zetok> initramfs: https://github.com/qTox/qTox/pull/3718#issuecomment-247098107
+[18:55:42] <zetok> sudden6: btw, have you started reading chapter 6?
+[18:55:54] <sudden6> se says maybe: http://english.stackexchange.com/a/30519
+[18:55:55] <initramfs> Strip the comma'
+[18:56:14] <sudden6> yay, my english isn't that bad :)
+[19:18:45] <sudden6> Since when does github have the "projects" feature?
+[19:21:00] <zetok> hm?
+[19:21:19] <sudden6> https://github.com/qTox/qTox/projects
+[19:21:26] <zetok> oh
+[19:21:28] <zetok> today
+[19:21:39] <zetok> :/
+[19:21:46] <sudden6> first ;)
+[19:24:35] <zetok> ok, time to put ML to some use
+[19:25:46] *** Quits: josh98 (~josh98@ ) (Ping timeout: 250 seconds)
+[19:28:06] <zetok> sudden6: https://about.gitlab.com/2016/09/09/8-dot-11-issue-board-launch-webcast/ there's that.
+[19:30:02] <sudden6> ok? what are you trying to say?
+[19:30:42] <zetok> just wondering how important osx is
+[19:31:05] <zetok> i.e. it seems to be the only thing that gitlab doesn't offer
+[19:31:19] <zetok> oh wait.
+[19:31:28] <zetok> there are also IRC notifications
+[19:31:35] <zetok> :/
+[19:32:26] <zetok> that's a deal-breaker :c
+[19:34:01] <sudden6> haha ;)
+[19:37:39] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[19:40:48] *** Joins: sockspls (~sockspls@ )
+[20:14:18] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[20:34:33] *** Joins: Diadl0 (~diadlo@ )
+[20:34:33] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[20:46:40] <zetok> https://lists.tox.chat/pipermail/qtox-dev/2016-September/000007.html ← if someone haven't seen it yet; opinions wanted
+[20:49:18] <zetok> hmm
+[20:50:29] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[20:51:19] *** Joins: CGGB (~CGGB@ )
+[20:53:11] <Diadl0> IDK, how GitLab work. But I think, we can start from creating mirror of github repository
+[20:53:26] <zetok> not really
+[20:53:27] <zetok> :s
+[20:53:30] <Diadl0> Why?
+[20:53:35] <zetok> it will error out
+[20:53:39] <zetok> :|
+[20:54:20] <Diadl0> Hm... I.e. GitLab has this functionality, but it's doesn't work?
+[20:54:22] <zetok> thing is, current GitLab implementation can have problems with just a few dozens of issues/PRs
+[20:54:48] <zetok> with our repo that has thousands of issues/PRs and >16k comments it will fail
+[20:55:07] <zetok> and when it fails to import a project from github, it leaves behind a mess
+[20:55:12] <Diadl0> But migration on GitLab has same problem :)
+[20:55:29] <Diadl0> Right?
+[20:55:41] <zetok> yes and no
+[20:55:48] <Diadl0> Why "no"?
+[20:56:11] <zetok> migrating gitlab ↔ gitlab can error out, but IIRC not with things we would care about
+[20:57:06] <Diadl0> You mean github <-> gitlab ?
+[20:57:20] <zetok> no ;)
+[20:57:34] <Diadl0> Ok. So why you talk about it?)
+[20:57:38] <zetok> but I meant github → gitlab earlier
+[20:58:16] <zetok> >But migration on GitLab has same problem :)
+[20:58:23] <zetok> did you mean gh by any chance?
+[20:59:09] <zetok> https://gitlab.com/gitlab-org/gitlab-ce/issues/17995
+[20:59:09] <Diadl0> Sorry, I don't understand
+[20:59:47] <zetok> that makes both of us >.<
+[21:00:25] <zetok> >But I think, we can start from creating mirror of github repository
+[21:00:48] <zetok> Diadl0: you were asking about importing on GL project from gh, right?
+[21:00:57] <Diadl0> Yep
+[21:01:00] <zetok> ok
+[21:01:09] <zetok> technically, we /could/ do that
+[21:01:29] <zetok> but it would make repository on gh in mess
+[21:01:45] <zetok> (since imported is buggy)
+[21:01:49] <zetok> importer*
+[21:02:09] <Diadl0> What kind of mess?
+[21:02:17] *** Quits: _Happy__ (2e1c25e2@ ) (Quit: Page closed)
+[21:02:28] <zetok> up to thousands of branches on repo
+[21:02:37] <Diadl0> Ok
+[21:02:44] <Diadl0> What about start with creating just code mirror?
+[21:02:53] <Diadl0> I.e. drop all issues
+[21:03:00] <Diadl0> We can do it?
+[21:03:06] <zetok> yep, but that's kinda pointless
+[21:03:32] <zetok> since mirroring just the code is not a problem
+[21:04:00] <zetok> the problem is all of the data other than code associated with it
+[21:04:03] <Diadl0> "that's kinda pointless" <- Nope. Just see on `positive side` in your mail :)
+[21:04:18] <zetok> err
+[21:04:27] <zetok> code was never a problem
+[21:05:02] <zetok> everyone and their dog has a copy of it, and it wouldn't cause any problems to make a repo with it
+[21:05:34] <zetok> it's the data other than code that currently can be taken down & never recovered
+[21:05:36] <Diadl0> But issues can be created again
+[21:05:42] <zetok> from what?
+[21:05:47] <Diadl0> From users
+[21:06:01] <zetok> how?
+[21:06:20] <Diadl0> Like they create it on github :/
+[21:06:25] <zetok> ?
+[21:06:42] <Diadl0> GitLab support issues system?
+[21:06:45] <zetok> you mean to ask hundreds of people to exactly recreate all the issues?
+[21:06:52] <zetok> manually?
+[21:07:02] <zetok> and how would they have that data?
+[21:07:10] <Diadl0> Like create new project
+[21:07:32] <Diadl0> Just forget about github project
+[21:07:44] <zetok> and then have commits & code comments pointing at wrong issues?
+[21:07:46] <Diadl0> It's hard
+[21:08:03] <Diadl0> GitLab can start issues from some number?
+[21:08:07] <zetok> nope
+[21:08:20] <zetok> I get your idea, but it's essentially wrong
+[21:08:27] <Diadl0> Ok. Yes. Old commits will point on wrong issues
+[21:08:56] <Diadl0> It's just my opinion. Do we have another way now?
+[21:09:23] <zetok> yeah, wait a bit for gitlab to fix their stuff
+[21:09:44] <Diadl0> It will be perfect
+[21:10:56] <Diadl0> So, it they someday fix all issues (from your mail) we will have no problem :)
+[21:11:44] <zetok> not really
+[21:11:48] <Diadl0> Why?
+[21:11:51] <zetok> osx thing is not going to change
+[21:12:07] <Diadl0> Principle?
+[21:12:13] <zetok> cost
+[21:12:21] <Diadl0> Oh...
+[21:12:41] <Diadl0> What about windows?
+[21:12:42] <zetok> thing is, it's possible to run GitLabCI on osx
+[21:12:47] <zetok> (same for windows)
+[21:12:54] <Diadl0> "perfect"
+[21:13:00] <zetok> it's just that we would need to provide that stuff for ourself
+[21:13:23] <zetok> i.e. pay for servers with it
+[21:13:38] <zetok> (and then manage)
+[21:16:15] *** Joins: dardevelin (~dardeveli@ )
+[21:19:18] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[21:19:34] *** Quits: dardevelin (~dardeveli@ ) (Max SendQ exceeded)
+[21:19:34] *** Joins: rerumnovarum (~user-reru@ )
+[21:20:10] *** Joins: dardevelin (~dardeveli@ )
+[21:26:14] * zetok sighs
+[21:27:04] <zetok> Diadl0: https://hosted.weblate.org/projects/tox/qtox/#history ← will conflict
+[21:29:50] <Diadl0> zetok: I do not understand the strange interface of weblate :( Where/what conflict?
+[21:30:03] <zetok> abbat's contrib
+[21:30:24] <zetok> git remote add weblate git://git.weblate.org/qtox.git && git fetch weblate
+[21:30:27] <zetok> Diadl0: ↑
+[21:31:32] <zetok> git log master..weblate/master --no-merges
+[21:31:59] <Diadl0> Just problem with "&lt;/p&gt;"
+[21:32:15] <Diadl0> Should be removed in source and translated versions
+[21:32:33] <zetok> right
+[21:32:45] <zetok> that's what weblate does
+[21:33:39] <zetok> Diadl0: https://gist.github.com/zetok/f87d9c14643c5e51b6d2d91343b36da3 ← what I'm using
+[21:33:52] * zetok should add it to qTox some day
+[21:34:11] <zetok> the `else` clause applies
+[21:34:38] <zetok> and I should add instructions on how to pull translations from weblate to maintaining.md
+[21:34:50] <Diadl0> It's perfect. But I don't understand. What I should do?)
+[21:35:50] <zetok> e.g. `git checkout master -b try-tr && git cherry-pick <commit from weblate/master> && ./script ru && git commit --amend translations/ru.ts`
+[21:36:08] <zetok> commit rename step is missing, but it's not required there
+[21:36:49] <zetok> Diadl0: could you either solve the merge conflict or say which translations from both PR & weblate are the best?
+[21:43:54] <Diadl0> zetok: https://github.com/Diadlo/qTox/tree/try-tr
+[21:43:59] <Diadl0> Can you check it?
+[21:47:20] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[21:47:59] <zetok> Diadl0: ok, and on top of that (if it's good) PKEv commit should be applied
+[21:48:09] <zetok> (git cherry-pick)
+[21:49:18] <zetok> (there will be conflicts)
+[21:57:59] <Diadl0> Updated
+[22:01:04] <Diadl0> zetok: ^
+[22:01:53] <zetok> ok
+[22:02:07] <zetok> Diadl0: rename abbat's commit & make a PR
+[22:04:28] <zetok> ggd4wifeat(l10n): update ^[A<80>kb translation from Weblate^[jVjd  ← vim macro for renaming
+[22:04:42] <zetok> to add to vim:
+[22:05:00] -qtox-git-spam- [qTox] Diadlo opened pull request #3720: Merge weblate translation and #3712 (master...try-tr) https://git.io/viwbq
+[22:05:01] <zetok> let @t='ggd4wifeat(l10n): update ^[A<80>kb translation from Weblate^[jVjd'
+[22:05:06] <Diadl0> zetok: To late :) https://github.com/qTox/qTox/pull/3720
+[22:05:44] <zetok> > feat(i10n)
+[22:05:48] <zetok> should be l10n
+[22:07:13] <Diadl0> fix(i18n) is normal?
+[22:07:50] -qtox-git-spam- [qTox] Diadlo closed pull request #3712: fix(i18n): correct ru translation (master...fix(i18n)_correct_ru_translation) https://git.io/vigRb
+[22:08:02] <zetok> i18n is a correct numeronym
+[22:08:21] <zetok> I wouldn't use it for translation, since l10n does the job, but oh well
+[22:09:32] <zetok> https://en.wikipedia.org/wiki/Internationalization_and_localization#Naming
+[22:10:11] <Diadl0> zetok: Do you sure, that correct test https://github.com/qTox/qTox/pull/3717? I can't understand how it can don't work -_-
+[22:11:17] <zetok> oh
+[22:11:19] <Diadl0> I just hope, that you forget do git checkout test-3717 :D
+[22:11:19] <zetok> crap
+[22:11:37] * zetok launched wrong qTox version under gdb
+[22:11:43] <Diadl0> Wow!
+[22:12:03] <Diadl0> Thank God!
+[22:13:17] <zetok> there's something strange going on though with the PR
+[22:13:41] <zetok> aha.
+[22:13:43] <zetok> :3
+[22:13:50] <Diadl0> About i18n/l10n. I ~know difference. But PKEv's commit is IMO i18n
+[22:14:05] <zetok> err
+[22:14:09] <Diadl0> Ok
+[22:14:10] <zetok> it's l10n
+[22:14:11] <Diadl0> Oh
+[22:14:13] <Diadl0> No
+[22:14:16] <Diadl0> l10n
+[22:14:18] <Diadl0> Yep
+[22:14:33] <Diadl0> Should I change it in commit message?
+[22:14:50] <Diadl0> And s/fix/feat/
+[22:14:58] <zetok> if you want
+[22:15:19] <zetok> btw, the PR still is buggy
+[22:15:24] * zetok will make a webm
+[22:15:30] <Diadl0> Ok
+[22:15:58] <Diadl0> It's better, than "doesn't fix anything"
+[22:16:11] *** Joins: dardevelin_ (~dardeveli@ )
+[22:18:27] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 248 seconds)
+[22:32:55] <Diadl0> Lol. Perfect bug. I will try make some research tomorrow
+[22:33:10] <Diadl0> Good night everyone
+[22:33:20] <zetok> night, sleep well :)
+[23:01:54] *** Quits: dardevelin_ (~dardeveli@ ) (Ping timeout: 276 seconds)
+[23:10:24] *** Joins: josh98 (~josh98@ )
+[23:18:25] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[23:20:19] *** Quits: josh98 (~josh98@ ) (Ping timeout: 248 seconds)
