@@ -1,0 +1,210 @@
+[00:16:58] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[00:17:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[00:19:07] *** Joins: f10 (~flo@ )
+[00:19:22] *** Joins: f10_ (~flo@ )
+[01:02:06] *** Joins: dardevelin_ (~dardeveli@ )
+[01:20:03] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[01:24:34] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[01:25:00] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[02:10:55] *** Joins: jjuran (~jjuran@ )
+[02:30:11] *** Quits: dardevelin_ (~dardeveli@ ) (Ping timeout: 248 seconds)
+[02:54:23] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[03:16:30] *** Joins: dardevelin (~dardeveli@ )
+[04:36:28] *** Quits: oranges (oranges@ ) (Quit: leaving)
+[04:45:12] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[04:45:27] *** Joins: rerumnovarum (~user-reru@ )
+[04:47:22] *** Joins: oranges (oranges@ )
+[04:47:24] *** Quits: oranges (oranges@ ) (Client Quit)
+[04:47:35] *** Joins: oranges (oranges@ )
+[04:47:49] *** Quits: oranges (oranges@ ) (Client Quit)
+[04:51:47] *** Joins: initramfs (~initramfs@ )
+[05:31:21] *** Joins: jjuran (~jjuran@ )
+[06:04:04] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[06:07:51] *** Joins: oranges (oranges@ )
+[06:12:39] *** Joins: sockspls (~sockspls@ )
+[06:47:02] *** Joins: Diadlo (~diadlo@ )
+[06:56:11] <zetok> Diadlo: o/
+[06:56:20] <Diadlo> zetok: \o
+[06:57:00] <zetok> Diadlo: do you want to also cherry-pick your translation from weblate?
+[06:57:35] <Diadlo> Nope. It can be dropped
+[06:57:35] <zetok> i.e. after PR will be merged weblate will need to be reset to current master
+[06:57:38] <zetok> ok
+[06:58:08] <Diadlo> I just try fix conflict through weblate
+[06:59:27] <Diadlo> What better merge translation PR: now or in the evening? 
+[06:59:52] <Diadlo> Or you will merge?
+[07:00:00] * zetok will merge in a moment
+[07:00:23] <Diadlo> Ok
+[07:03:23] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/viray
+[07:03:23] -qtox-git-spam- qTox/master fb418c6 Anton Batenev: feat(l10n): update Russian translation from weblate
+[07:03:23] -qtox-git-spam- qTox/master 5c901d0 PKEv: fix(l10n): correct ru translation
+[07:06:39] * Diadlo Away on ~40 minutes
+[07:10:54] *** Joins: sudden6 (~anonymous@ )
+[07:12:56] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[07:20:19] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[07:22:36] *** Joins: genesis (~genesis@ )
+[07:29:32] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[07:31:23] *** Joins: rerumnovarum (~user-reru@ )
+[07:33:35] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:38:31] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[07:38:55] *** Joins: CGGB (~CGGB@ )
+[08:04:51] *** Joins: Diadlo (~diadlo@ )
+[08:42:45] *** Quits: jjuran (~jjuran@ ) (Remote host closed the connection)
+[08:43:53] *** Joins: jjuran (~jjuran@ )
+[08:44:57] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 276 seconds)
+[08:45:23] *** Joins: Diadlo (~diadlo@ )
+[09:16:34] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:17:08] *** Joins: LittleVulpix (~Miranda@ )
+[09:22:42] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 244 seconds)
+[09:41:38] *** Joins: Diadlo (~diadlo@ )
+[09:44:52] *** Joins: f10_ (~flo@ )
+[09:45:02] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[09:45:11] *** Joins: Diadlo (~diadlo@ )
+[09:57:49] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[09:58:14] *** Joins: Diadlo (~diadlo@ )
+[10:00:17] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[10:00:49] *** Joins: Diadlo (~diadlo@ )
+[10:05:34] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 265 seconds)
+[10:07:12] *** Joins: abbat (~abbat@ )
+[10:08:10] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[10:50:54] *** Joins: cisc (~cisc@ )
+[11:26:13] *** Joins: Emcy_ (~MC@ )
+[12:44:12] *** Joins: f10 (~flo@ )
+[12:44:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[12:45:01] *** Joins: dardevelin (~dardeveli@ )
+[13:58:45] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[14:55:02] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[14:55:32] *** Joins: CGGB (~CGGB@ )
+[14:55:57] *** Quits: CGGB (~CGGB@ ) (Read error: Connection reset by peer)
+[14:56:43] *** Joins: CGGB (~CGGB@ )
+[14:58:03] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[15:02:08] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[15:11:43] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:12:24] *** Joins: abbat (~abbat@ )
+[15:15:49] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[15:16:13] *** Joins: CGGB (~CGGB@ )
+[15:16:18] *** Joins: initramfs (~initramfs@ )
+[15:16:54] *** Quits: CGGB (~CGGB@ ) (Read error: Connection reset by peer)
+[15:17:43] *** Joins: CGGB (~CGGB@ )
+[15:45:14] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/viogn
+[15:45:15] -qtox-git-spam- qTox/master 3ca76ca sudden6: chore: add IPv6 nodes and sort the list by maintainer name
+[16:20:45] *** Joins: dardevelin (~dardeveli@ )
+[16:21:11] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[16:50:34] -qtox-git-spam- [qTox] zetok closed pull request #3718: Update user manual a bit (master...docs/refresh) https://git.io/viwtX
+[16:55:16] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[17:18:02] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[17:29:56] *** Joins: Emcy (~MC@ )
+[17:30:14] *** Quits: Emcy (~MC@ ) (Changing host)
+[17:30:14] *** Joins: Emcy (~MC@ )
+[17:37:48] *** Joins: sudden6 (~anonymous@ )
+[17:42:37] *** Joins: kadinparker[m] (kadinparke@ )
+[17:50:11] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[18:01:43] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[18:02:13] *** Joins: abbat (~abbat@ )
+[18:11:56] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:12:12] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[18:25:08] *** Joins: initramfs (~initramfs@ )
+[18:45:51] *** Joins: kadinparker[m] (kadinparke@ )
+[19:22:36] *** Joins: Diadlo (~diadlo@ )
+[19:27:05] <sudden6> Diadlo: o/
+[19:30:18] <sudden6> zetok: when do you think is the time to switch qtox from irungentoo toxcore to to toktok toxcore?
+[19:30:44] <zetok> when it'll be guaranteed that it's a good idea
+[19:31:35] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[19:31:38] <sudden6> I think it's already a good idea, but it isn't api-stable yet
+[19:32:22] <sudden6> I'm not trying to switch now, just gathering opinions
+[19:33:20] <zetok> >I think it's already a good idea
+[19:33:22] <zetok> not yet
+[19:33:39] <sudden6> why not?
+[19:33:48] <Diadlo> sudden6: \o
+[19:34:15] <zetok> no stable API, and no guarantees of any kind regarding API
+[19:34:52] <zetok> aside from that, it most likely will create more work on the client side to keep up with things
+[19:34:56] <sudden6> yep, no stable API is the dealbreaker for me atm, the rest is already better than irungentoo-toxcore
+[19:35:03] <zetok> also, switch would create a packaging problem
+[19:35:41] <sudden6> Diadlo: is there a reason not to merge https://github.com/qTox/qTox/pull/3711
+[19:35:59] <Diadlo> Nope
+[19:36:04] <sudden6> hmm, didn't think of that
+[19:36:12] <Diadlo> Why?
+[19:36:27] <Diadlo> Oh.. Sorry
+[19:36:33] <sudden6> I was waiting for you to merge, but I think you are waiting for me to merge :D
+[19:36:44] <Diadlo> sudden6: Yep
+[19:36:48] <Diadlo> I will merge it
+[19:36:55] <sudden6> ok
+[19:37:23] <sudden6> zetok: I just want to start thinking about it know, because it will happen sooner or later
+[19:37:35] <sudden6> and I want to prepare a plan
+[19:38:02] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://git.io/viKII
+[19:38:02] -qtox-git-spam- qTox/master 6f0431a Diadlo: fix(settings): Use old settings instead of default values...
+[19:38:02] -qtox-git-spam- qTox/master 5a133b3 Diadlo: Merge pull request #3711...
+[19:38:32] <sudden6> also packaging problem could be avoided by incrementing toxcore version and switching
+[19:39:54] <zetok> :s
+[19:43:32] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[19:54:51] <zetok> sudden6: what sort of plan?
+[19:55:10] <zetok> Diadlo: is merge commit really needed?
+[19:55:38] <sudden6> a list of issues that will need to be solved before switch
+[19:56:33] <Diadlo> Hm... It's provide yeasy way to found PR. Is't it?
+[19:57:26] <zetok> merge commit is needed ~only to keep things gpg-signed
+[19:57:40] <Diadlo> Ok
+[19:58:48] <zetok> if commits are already gpg-signed by a maintainer and can be fast-forwarded there's no need to make a merge commit
+[20:03:14] <zetok> as for fast-forwarding, slightly modified script from iphy would do: https://gist.github.com/zetok/1da909a57fdbc7579aca4095f554fd49
+[20:17:13] <sudden6> Diadlo: also found https://github.com/qTox/qTox/pull/3713 
+[20:17:35] <Diadlo> lgtm for you?
+[20:17:40] <sudden6> should we agree on merging LGTMed PRs after no action for 1-2 days?
+[20:17:51] <sudden6> I didn't test it, but code is ok
+[20:18:48] <Diadlo> > should we agree on merging LGTMed PRs after no action for 1-2 days? <- Agree
+[20:19:01] <sudden6> Diadlo: If you are waiting for an additional LGTM, it may be good to mention that in the comments^^
+[20:19:22] <sudden6> so either 1 or 2 days? zetok any opinion?
+[20:19:25] <Diadlo> Ok
+[20:19:34] <Diadlo> sudden6: For small PRs
+[20:19:58] <sudden6> mhm
+[20:20:32] <sudden6> I think 2 days is better, accounts for different timezones
+[20:21:01] <zetok> ~better
+[20:21:47] <zetok> https://github.com/qTox/qTox/pull/3685 ?
+[20:22:35] <sudden6> zetok: I don't have windows to test this...
+[20:22:50] <Diadlo> +1 ^
+[20:22:55] <zetok> :|
+[20:23:57] <zetok> ok, so it ~depends on https://github.com/qTox/qTox/issues/3716
+[20:24:17] <sudden6> probably
+[20:24:37] <sudden6> I haven't looked into windows building in a looong time
+[20:24:46] <sudden6> and I don't really want to
+[20:24:53] <sudden6> I'm scared
+[20:25:46] -qtox-git-spam- [qTox] zetok closed pull request #3485: chore(bootstrap.sh): account for spaces in paths (master...spaces) https://git.io/viK3O
+[20:26:06] <zetok> which PRs are still relevant?
+[20:26:23] <zetok> https://github.com/qTox/qTox/pull/3573 ?
+[20:27:31] <sudden6> most probably not
+[20:27:51] <zetok> :/
+[20:28:19] *** Joins: jjuran (~jjuran@ )
+[20:28:28] <zetok> would be good to check that
+[20:30:12] <zetok> anyone interested in doing that?
+[20:30:59] <sudden6> currently doing https://github.com/qTox/qTox/pull/3332 zetok you also have some open comments on that
+[20:34:37] <zetok> OKd my comments since stuff was fixed
+[20:35:30] <sudden6> zetok: did you check the scripts?
+[20:36:48] <zetok> um?
+[20:37:01] <zetok> oh
+[20:37:07] <zetok> sec, need to look again
+[20:37:23] <sudden6> thx, I think you are better at that than me :)
+[20:40:19] <zetok> ok, I don't see anything wrong in scripts
+[20:40:58] <sudden6> good :)
+[20:41:08] <sudden6> I really like that feature
+[20:41:22] <zetok> is it ready for testing?
+[20:42:22] <sudden6> I already tested it and it worked without an issue for me
+[20:42:48] <zetok> ok, ready for testing then
+[20:51:46] -qtox-git-spam- [qTox] Diadlo closed pull request #3713: fix(settings): correct default value of dateformat (master...fix_date_listbox) https://git.io/vigrg
+[20:55:52] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[20:57:29] *** Joins: Diadlo (~diadlo@ )
+[21:04:15] <zetok> :3
+[21:04:36] <zetok> at least no segfaults ^_^
+[21:09:06] <sudden6> ok^^
+[21:09:30] <sudden6> well I'll leave now, I have a date with the crew of the NX-01 :)
+[21:13:27] <zetok> have fun ;)
+[21:19:18] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[21:21:07] *** Joins: rerumnovarum (~user-reru@ )
+[22:00:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[22:46:29] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[22:46:42] *** Quits: GGMethos (methos@ ) (Ping timeout: 250 seconds)
+[22:47:08] *** Quits: e0f (~e0f@ ) (Ping timeout: 250 seconds)
+[22:48:42] <Diadlo> Good night everyone :)
+[22:49:06] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[22:52:30] *** Joins: e0f (~e0f@ )
+[22:53:18] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[22:54:55] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:02:04] *** Joins: GGMethos (methos@ )
+[23:49:40] *** Joins: f10 (~flo@ )
+[23:54:52] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
