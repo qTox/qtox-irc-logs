@@ -1,0 +1,105 @@
+[00:02:58] -qtox-git-spam- [qTox] frankcash opened pull request #3722: Changes Windows installation process (#3176) (master...windows-readme-update) https://git.io/viK94
+[00:03:40] *** Joins: cisc (~cisc@ )
+[00:22:22] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:23:33] *** Joins: cisc (~cisc@ )
+[00:35:37] *** Joins: jjuran (~jjuran@ )
+[00:45:14] *** Quits: e0f (~e0f@ ) (Changing host)
+[00:45:14] *** Joins: e0f (~e0f@ )
+[00:47:58] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[01:20:56] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:27:19] *** Joins: cisc (~cisc@ )
+[01:34:36] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:42:37] *** Joins: cisc (~cisc@ )
+[02:08:53] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:09:38] *** Joins: cisc (~cisc@ )
+[02:10:02] *** Quits: f10_ (~flo@ ) (Ping timeout: 250 seconds)
+[02:10:04] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[02:22:46] *** Joins: majora (~majora@ )
+[02:27:46] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[02:28:41] *** Joins: cisc (~cisc@ )
+[02:30:52] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[02:34:20] <majora> hello, I'm trying to build qtox via simple_make.sh and I'm getting QMAKESPEC has not been set, so configuration cannot be deduced.
+[02:36:12] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[02:39:59] <oranges> have you tried setting QMAKESPEC ?
+[02:40:04] <oranges> I'm sorry I don't know I"m a fraud ;~;
+[02:41:38] <majora> idk what it should be set to q.q
+[02:49:29] <zetok> majora: what OS?
+[02:51:15] <majora> ubuntu 1404 q.q
+[02:52:17] <zetok> majora: you could use packages
+[02:52:38] <zetok> if you want to compile qTox, get some better distro
+[02:52:38] <majora> how would I go about that?
+[02:52:46] <majora> ok q.q
+[02:52:47] <zetok> majora: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[02:53:01] <zetok> it's in README.md
+[02:53:23] <zetok> also, INSTALL.md lists compiling instructions for various distros
+[02:57:34] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:57:52] *** Joins: cisc (~cisc@ )
+[02:58:16] <nurupo> it's also what tox.chat points to for qtox :P
+[03:12:10] *** Joins: dardevelin (~dardeveli@ )
+[03:26:32] <majora> yeah, I was trying to see if I could make it through CI to maybe do some dev, but I'm planning on install antegros next week so I'll w8t till then
+[03:27:43] *** Quits: majora (~majora@ ) (Quit: Leaving)
+[03:31:23] *** Quits: Se7en (~Se7en@ ) (Quit: My ZNC went bye bye!)
+[03:33:14] *** Joins: f10 (~flo@ )
+[03:35:04] *** Joins: Se7en (~Se7en@ )
+[03:50:49] *** Joins: f10_ (~flo@ )
+[03:55:54] *** Joins: jjuran (~jjuran@ )
+[05:57:46] *** Joins: bennabiy (~bennabiy@ )
+[06:07:13] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[06:08:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[06:51:54] *** Joins: Diadlo (~diadlo@ )
+[07:19:57] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[07:26:33] *** Joins: CGGB (~CGGB@ )
+[07:31:30] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[07:31:49] *** Joins: CGGB (~CGGB@ )
+[08:53:12] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[09:31:21] *** Joins: abbat (~abbat@ )
+[09:49:43] *** Joins: Emcy (~MC@ )
+[10:24:35] *** Joins: in1t3r (~LordShiva@ )
+[10:35:57] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[10:47:47] *** Joins: abbat (~abbat@ )
+[11:25:05] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[11:25:46] *** Joins: Bheru27 (~Bheru27@ )
+[11:26:46] *** Quits: rerumnovarum (~user-reru@ ) (Quit: leaving)
+[12:15:20] -qtox-git-spam- [qTox] frankcash closed pull request #3722: Changes Windows installation process (#3716) (master...windows-readme-update) https://git.io/viK94
+[12:33:49] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:44:45] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[12:45:23] *** Joins: zero-ghost (~0@ )
+[12:46:06] *** Joins: f10 (~flo@ )
+[12:46:15] *** Joins: f10_ (~flo@ )
+[13:30:20] *** Joins: initramfs (~initramfs@ )
+[13:44:51] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[17:03:17] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:36:28] *** Joins: vcxz (1823ee39@ )
+[17:37:02] *** Quits: vcxz (1823ee39@ ) (Client Quit)
+[18:27:55] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[19:15:53] *** Joins: abbat (~Anton@ )
+[19:21:08] *** Joins: rerumnovarum (~user-reru@ )
+[19:24:38] *** Joins: sudden6 (~anonymous@ )
+[19:25:39] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[19:25:55] *** Joins: rerumnovarum (~user-reru@ )
+[19:28:22] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[19:28:49] *** Joins: rerumnovarum (~user-reru@ )
+[19:29:21] *** Quits: rerumnovarum (~user-reru@ ) (Client Quit)
+[19:50:04] *** Joins: rerumnovarum (~user-reru@ )
+[19:58:06] *** Joins: Diadlo (~diadlo@ )
+[20:09:53] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[20:29:49] *** Joins: Emcy_ (~MC@ )
+[20:30:49] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[20:33:33] <Diadlo> Can anyone LGTM?) https://github.com/qTox/qTox/pull/3704
+[20:34:50] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:34:57] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:35:42] *** Joins: f10 (~flo@ )
+[20:38:08] *** Joins: f10_ (~flo@ )
+[21:15:43] *** Joins: rerumnov1rum (~user-reru@ )
+[21:19:15] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[21:44:02] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[21:45:28] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[21:45:45] *** Joins: cisc (~cisc@ )
+[22:16:24] *** Joins: athan (~athan@ )
+[22:21:29] *** Joins: toweI (~toweI@ )
+[22:41:01] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:42:14] <qTox-Website> [qTox-Website] zetok opened pull request #14: Update translations from Weblate (master...tr) https://git.io/viipV
+[22:50:16] <qTox-Website> [qTox-Website] zetok closed pull request #14: Update translations from Weblate (master...tr) https://git.io/viipV
+[22:51:22] <travis-ci> qTox/qTox-Website (65f46e0): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/160567421 / Changes: https://github.com/qTox/qTox-Website/compare/e09c179b3f1a...65f46e03a62f
+[22:52:58] *** Joins: cisc (~cisc@ )
+[23:06:08] *** Joins: sudden6 (~anonymous@ )
