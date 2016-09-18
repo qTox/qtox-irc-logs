@@ -1,0 +1,131 @@
+[00:17:31] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:33:50] *** Joins: cisc (~cisc@ )
+[00:47:43] *** Quits: mitfree (~mit@ ) (Ping timeout: 255 seconds)
+[00:48:22] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:03:21] *** Joins: cisc (~cisc@ )
+[01:33:29] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 240 seconds)
+[01:33:43] *** Joins: rerumnovarum (~user-reru@ )
+[01:47:56] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[01:48:45] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[02:09:17] *** Joins: cisc (~cisc@ )
+[02:30:01] *** Quits: toweI (~toweI@ ) (Read error: Connection reset by peer)
+[02:30:38] *** Joins: sudden6 (~anonymous@ )
+[03:11:38] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[03:26:17] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[03:51:15] *** Joins: cisc (~cisc@ )
+[03:59:45] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[04:15:09] *** Joins: athan (~athan@ )
+[04:31:47] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[04:33:58] *** Joins: athan (~athan@ )
+[04:38:29] *** Joins: cisc (~cisc@ )
+[04:44:55] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[04:50:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[04:55:41] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[05:30:20] *** Joins: cisc (~cisc@ )
+[05:31:03] *** Joins: Lord_Vlad (~Vlad@ )
+[05:58:13] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[05:58:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[06:37:47] *** Joins: LittleVulpix (~Miranda@ )
+[07:09:53] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[07:13:02] *** Joins: zero-ghost (~0@ )
+[08:11:21] *** Quits: jjuran (~jjuran@ ) (Remote host closed the connection)
+[08:12:04] *** Joins: jjuran (~jjuran@ )
+[08:53:39] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[09:02:25] *** Quits: tux3 (~tux@ ) (Quit: Quitting)
+[09:37:26] *** Joins: tux3 (~tux@ )
+[09:46:41] *** Joins: abbat (~Anton@ )
+[10:00:03] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[10:15:49] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[10:18:57] *** Joins: sudden6 (~anonymous@ )
+[10:42:59] *** Joins: bashrc (~motters@ )
+[11:06:27] *** Quits: bashrc (~motters@ ) (Ping timeout: 248 seconds)
+[11:07:35] *** Joins: bashrc (~motters@ )
+[11:07:40] *** Joins: sudd3n6 (~anonymous@ )
+[11:09:47] *** Quits: sudd3n6 (~anonymous@ ) (Client Quit)
+[11:45:42] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[11:49:11] -qtox-git-spam- [qTox] iphydf closed pull request #3685: chore: Statically link the windows platform plugin. (master...windows-static) https://git.io/viO7y
+[12:18:40] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 265 seconds)
+[12:19:05] *** Joins: smaragdus (~omoo@ )
+[13:37:53] *** Joins: f10_ (~flo@ )
+[13:53:14] *** Joins: f10 (~flo@ )
+[13:57:50] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 265 seconds)
+[13:57:56] *** Joins: smaragdus (~omoo@ )
+[14:10:25] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[14:10:45] *** Joins: athan (~athan@ )
+[14:10:49] *** Joins: Lord_Vlad (~Vlad@ )
+[14:12:00] *** Joins: initramfs (~initramfs@ )
+[14:36:17] *** Joins: CGGB (~CGGB@ )
+[14:37:51] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[14:38:07] *** Joins: CGGB (~CGGB@ )
+[15:37:16] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[15:37:46] *** Joins: Lord_Vlad (~Vlad@ )
+[16:48:23] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[16:55:25] *** Joins: rerumnovarum (~user-reru@ )
+[16:59:27] *** Quits: athan (~athan@ ) (Ping timeout: 272 seconds)
+[17:16:38] *** Joins: jgray (~jgray@ )
+[17:21:26] *** Quits: jgray (~jgray@ ) (Client Quit)
+[17:46:00] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[18:01:34] *** Joins: cisc (~cisc@ )
+[18:03:42] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[18:04:02] *** Joins: Lord_Vlad (~Vlad@ )
+[18:43:00] <initramfs> zetok: Regarding issue #3460, I prefer having the setup files have different names "e.g. setup-qtox.exe and "setup-qtox64.exe" just for the sake of clarity. Though I really don't have a convincing argument for it.
+[18:45:14] -qtox-git-spam- [qTox] zetok opened pull request #3723: feat(l10n): update Russian translation from Weblate (master...tr) https://git.io/viPNK
+[18:45:21] <Andrew7> Isn't it possible to have an MSI installer with both 64-bit and 32-bit executables?
+[18:45:24] <zetok> initramfs: right, could you comment about it on the issue?
+[18:45:48] <zetok> no, it's not possible to have a *msi* installer
+[18:46:16] <initramfs> zetok: Sure
+[18:46:35] <zetok> Andrew7: unless someone has made a FOSS tool for it that works under Linux?
+[18:46:45] <zetok> initramfs: thanks :)
+[18:47:13] <Andrew7> zetok: Does Wix run on Linux? I've only used it a little.
+[18:49:27] <zetok> doesn't seem so
+[18:49:37] <Andrew7> Ah ok.
+[19:02:24] <zetok> could someone review the PR?
+[19:23:58] <initramfs> zetok: Done
+[19:38:10] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/viPpt
+[19:38:10] -qtox-git-spam- qTox/master 628cfd2 Anton Batenev: feat(l10n): update Russian translation from Weblate
+[19:45:01] *** Joins: sudd3n6 (~anonymous@ )
+[19:46:57] *** Quits: sudd3n6 (~anonymous@ ) (Remote host closed the connection)
+[20:11:43] *** Joins: Diadlo (~diadlo@ )
+[20:14:46] -qtox-git-spam- [qTox] zetok opened pull request #3724: feat(l10n): update Polish translation (master...translate) https://git.io/viPjk
+[20:16:27] <zetok> Diadlo: https://github.com/qTox/qTox/pull/3714 ?
+[20:19:04] <Diadlo> zetok: o/
+[20:23:21] -qtox-git-spam- [qTox] Diadlo closed pull request #3714: fix(settings): correct empty listbox audio device (master...fix_settings_av_empty_listbox) https://git.io/vigo9
+[20:25:52] *** Joins: in1t3r (~LordShiva@ )
+[20:30:05] <zetok> sudden6, initramfs: https://github.com/qTox/qTox/pull/3704 ?
+[20:30:26] <initramfs> zetok: I'll review that in a bit
+[20:30:31] <initramfs> Busy right now
+[20:30:32] <zetok> thanks :)
+[21:04:41] *** Joins: sudd3n6 (~anonymous@ )
+[21:07:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[21:19:30] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[21:19:50] *** Joins: rerumnovarum (~user-reru@ )
+[21:47:22] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[22:04:44] *** Joins: mitfree (~mit@ )
+[22:23:59] <Diadlo> zetok: ping
+[22:24:10] <zetok> Diadlo: pong
+[22:24:23] <Diadlo> https://github.com/qTox/qTox/pull/3724
+[22:24:41] <Diadlo> "Commit hash" has translation == source. It's right?
+[22:24:50] <zetok> ~yep
+[22:25:04] <Diadlo> Ok :)
+[22:25:45] <zetok> it ~could be changed, but this is fine too
+[22:27:33] -qtox-git-spam- [qTox] zetok closed pull request #3724: feat(l10n): update Polish translation (master...translate) https://git.io/viPjk
+[22:53:26] <Emcy_> is there any issue about qtox audio being bad on a video call until its restarted
+[22:53:37] <Emcy_> any known issue
+[23:12:00] <Diadlo> Emcy_: https://github.com/qTox/qTox/issues/2529 ?
+[23:15:13] <Emcy_> i get clicky audio from my friend
+[23:15:21] <Emcy_> until i restart qtox then its ok
+[23:24:43] <Diadlo> Emcy_: Any errors in log?
+[23:27:00] <Emcy_> ill have to check next time
+[23:27:10] <Emcy_> dropped frames i bet tho
+[23:27:56] <zetok> but you should have log already?
+[23:38:20] <Emcy_> its huge
+[23:38:48] <Emcy_> doesnt mention the date
+[23:39:45] <Emcy_> qtox leaves a lot of crap lying around in /tox....
+[23:40:39] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[23:41:41] <nurupo> nsa cloud integration required
+[23:42:14] <Emcy_> huh?
+[23:45:33] <nurupo> so that "a lot of crap lying around in /tox" could me removed from you machine
+[23:47:31] <Emcy_> i aalready did
+[23:48:09] <Emcy_> .txt files that appear when you do file transwers
+[23:48:22] <Emcy_> and a folder full of images ive sent to friends wtf
+[23:48:32] <Emcy_> screen clips
