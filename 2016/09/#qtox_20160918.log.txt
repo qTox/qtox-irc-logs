@@ -1,0 +1,92 @@
+[01:03:35] <zetok> Emcy_: if log is huge, then it's a bug
+[01:03:46] <zetok> Emcy_: but I'm almost sure that you're looking in wrong place for it
+[01:04:20] <zetok> ~/.cache/Tox/qTox/
+[01:06:13] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[01:06:24] *** Joins: f10_ (~flo@ )
+[01:06:34] *** Joins: f10__ (~flo@ )
+[01:07:25] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:12:05] <Emcy_> i use windows
+[01:15:35] <zetok> oh, ok
+[01:15:39] <zetok> hmm
+[01:15:59] <zetok> IIRC this should have been fixed in 1.5
+[01:17:34] <zetok> https://github.com/qTox/qTox/commit/c1e2a3c5b670c246c1acc138a8698a1f54591173 yep
+[01:17:43] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:18:14] <zetok> :|
+[01:19:34] <zetok> Emcy_: could you open an issue about abnormally huge log that is not cleaned up?
+[01:23:16] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[01:23:43] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[01:39:02] *** Joins: f10__ (~flo@ )
+[01:39:13] *** Joins: f10_ (~flo@ )
+[02:01:38] <Emcy_> seems to be at least a few days worth
+[02:03:37] <zetok> that's not much..?
+[02:03:48] <zetok> hmm
+[02:03:59] <zetok> Emcy_: is it bigger than a few dozen MBs?
+[02:06:11] <Emcy_> na
+[02:06:36] <Emcy_> half mb
+[02:06:58] <Emcy_> no date stamps so i cant tell what day i called my friendo
+[02:20:03] *** Quits: f10__ (~flo@ ) (Ping timeout: 248 seconds)
+[02:25:50] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[02:26:28] *** Joins: f10__ (~flo@ )
+[02:27:09] *** Joins: f10_ (~flo@ )
+[02:45:18] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[03:38:25] *** Joins: cisc (~cisc@ )
+[03:56:13] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[03:56:15] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[03:56:48] *** Joins: f10__ (~flo@ )
+[03:57:28] *** Joins: f10_ (~flo@ )
+[03:59:00] *** Joins: Bill_MI (~Bill@ )
+[04:00:55] *** Quits: Bill_MI (~Bill@ ) (Client Quit)
+[04:38:51] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[04:39:00] *** Joins: f10 (~flo@ )
+[04:39:04] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[04:39:06] *** Joins: f10__ (~flo@ )
+[08:35:43] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[08:36:36] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[08:40:11] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[10:04:04] *** Joins: Emcy (~MC@ )
+[10:47:53] *** Quits: Emcy (~MC@ ) (Ping timeout: 264 seconds)
+[12:20:06] *** Quits: mitfree (~mit@ ) (Ping timeout: 250 seconds)
+[12:38:07] *** Joins: onyxrisc (~RiscOS@ )
+[13:06:14] *** Quits: tux3 (~tux@ ) (Changing host)
+[13:06:14] *** Joins: tux3 (~tux@ )
+[13:06:14] *** ChanServ sets mode: +o tux3
+[13:36:44] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:37:56] *** Joins: LittleVulpix (~Miranda@ )
+[13:49:08] *** Joins: depate (d9e4b832@ )
+[14:03:11] *** Quits: depate (d9e4b832@ ) (Ping timeout: 240 seconds)
+[14:13:11] *** Joins: Emcy (~MC@ )
+[14:33:45] *** Joins: athan (~athan@ )
+[14:37:45] *** Joins: f10__ (~flo@ )
+[14:42:53] -qtox-git-spam- [qTox] Talkless opened pull request #3725: docs(INSTLALL.md): add hint about problematic paths in Windows (master...patch-1) https://git.io/viXDn
+[14:43:22] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[14:46:08] *** Joins: f10 (~flo@ )
+[15:02:24] *** Joins: abbat (~Anton@ )
+[15:17:29] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[15:43:51] *** Joins: athan (~athan@ )
+[15:57:48] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 244 seconds)
+[16:17:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:51:35] *** Joins: sudden6 (~anonymous@ )
+[16:53:57] *** Joins: CGGB (~CGGB@ )
+[17:02:02] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[17:02:29] *** Joins: f10 (~flo@ )
+[17:02:35] *** Joins: cisc (~cisc@ )
+[17:41:33] <qTox-syncbot> Ingvar: hello
+[18:03:07] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[18:18:14] *** Joins: cisc (~cisc@ )
+[18:23:45] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/viXNY
+[18:23:45] -qtox-git-spam- qTox/master e0daa7b Vincas Dargis: docs(INSTLALL.md): add hint about problematic paths in Windows...
+[18:23:45] -qtox-git-spam- qTox/master 3824a47 Zetok Zalbavar: Merge pull request #3725...
+[18:27:01] *** Quits: Se7en (~Se7en@ ) (*.net *.split)
+[18:27:01] *** Quits: Andrew7 (~ziltro@ ) (*.net *.split)
+[18:29:15] *** Joins: Se7en (~Se7en@ )
+[18:29:15] *** Joins: Andrew7 (~ziltro@ )
+[19:11:06] -qtox-git-spam- [qTox] zetok opened pull request #3726: chore: update docs & scripts for getting translations from Weblate (master...weblate) https://git.io/viXpC
+[20:09:11] <sudden6> zetok: o/ Diadlo \o
+[20:09:21] <zetok> sudden6: \o
+[20:10:10] <Diadlo> sudden6: o/
+[20:58:17] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 240 seconds)
+[21:19:51] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[21:21:40] *** Joins: rerumnovarum (~user-reru@ )
+[21:34:49] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 248 seconds)
+[22:41:07] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:12:15] *** Joins: initramfs (~initramfs@ )
