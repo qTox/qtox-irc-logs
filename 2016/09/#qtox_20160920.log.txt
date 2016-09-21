@@ -1,0 +1,283 @@
+[00:06:41] *** Joins: initramfs (~initramfs@ )
+[00:18:44] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[01:39:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:40:46] *** Joins: cisc (~cisc@ )
+[01:57:38] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[02:23:25] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[02:23:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[03:48:10] *** Joins: f10 (~flo@ )
+[03:49:28] *** Joins: f10_ (~flo@ )
+[05:01:58] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[05:01:58] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[06:02:40] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 265 seconds)
+[06:05:08] *** Joins: Bheru27 (~Bheru27@ )
+[06:18:28] *** Joins: glasscapt (~glasscapt@ )
+[07:07:13] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[07:07:34] *** Joins: CGGB (~CGGB@ )
+[08:12:20] *** Joins: abbat (~Anton@ )
+[08:33:04] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:20:20] *** Quits: genesis (~genesis@ ) (Remote host closed the connection)
+[09:21:57] <Se7en> Why are profiles created with qTox incompatible with uTox 
+[09:25:47] <Se7en> I'm still banned from #tox?
+[09:25:49] <Se7en> Why 
+[09:25:54] <Se7en> You guys can't take a joke?
+[09:55:32] *** Joins: abbat (~abbat@ )
+[09:58:47] *** Joins: Diadlo (~diadlo@ )
+[10:01:59] *** Joins: athan (~athan@ )
+[10:03:15] <oranges> no we just dont' care Se7en 
+[10:03:22] <oranges> we're the uncaring modern world
+[10:31:35] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[10:51:09] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[10:56:04] *** Joins: zero-ghost (~0@ )
+[11:15:18] *** Joins: in1t3r (~LordShiva@ )
+[11:40:17] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[11:40:42] *** Joins: CGGB (~CGGB@ )
+[12:42:12] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:50:57] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[12:51:11] *** Joins: in1t3r (~LordShiva@ )
+[12:59:19] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[12:59:24] *** Joins: f10_ (~flo@ )
+[13:01:46] *** Joins: abbat (~abbat@ )
+[13:09:36] *** Joins: f10 (~flo@ )
+[14:20:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[14:20:52] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[14:35:05] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[15:05:57] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[15:06:30] *** Joins: abbat (~abbat@ )
+[15:09:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[15:14:25] *** Joins: f10 (~flo@ )
+[15:14:33] *** Joins: f10_ (~flo@ )
+[15:19:35] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[15:19:54] *** Joins: f10_ (~flo@ )
+[15:24:35] *** Joins: in1t3r (~LordShiva@ )
+[15:44:47] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:45:35] *** Joins: f10 (~flo@ )
+[15:56:39] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:05:07] *** Joins: cisc (~cisc@ )
+[16:05:55] *** Quits: cisc (~cisc@ ) (Client Quit)
+[16:14:03] *** Joins: cisc (~cisc@ )
+[17:49:55] <zetok> Se7en: they ~are
+[17:50:26] <zetok> Se7en: µTox just cannot into profiles, but aside from that saves are compatible
+[17:53:46] *** Joins: sudd3n6 (~anonymous@ )
+[18:03:25] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:04:06] <Emcy> it has to be called tox_save.tox
+[18:05:40] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[18:06:20] <iphy> Diadlo: were you the one who wanted to implement tests?
+[18:31:39] *** Joins: CGGB (~CGGB@ )
+[18:31:46] *** sudd3n6 is now known as sudden6
+[18:31:51] <sudden6> hi everybody
+[18:32:32] <sudden6> zetok: https://github.com/qTox/qTox/pull/3717 you say mostly fixed, could you post the test case text where it's not fixed?
+[18:34:13] <zetok> sudden6: I did
+[18:34:45] <sudden6> I meant in text form, for copy paste
+[18:34:53] <zetok> oh
+[18:35:01] <zetok> just prepend the test case with `>`
+[18:35:06] <zetok> (from the issue)
+[18:35:15] <sudden6> ah, thx
+[18:36:34] <iphy> how's the clang-format effort going?
+[18:36:41] <zetok> oh
+[18:36:48] <zetok> initramfs was on it
+[18:37:33] <sudden6> iphy: is your question from yesterday still relevant?
+[18:37:47] <iphy> which one?
+[18:37:51] <iphy> sudden6: oh
+[18:37:53] <iphy> no, it's not
+[18:38:36] <sudden6> ok
+[18:42:31] <sudden6> zetok: I can now fully reproduce, but for me the text appears as soon as I move the cursor inside the chat area
+[18:42:41] <zetok> right
+[18:43:35] <zetok> IIRC it did sometimes work like that for me
+[18:46:19] <sudden6> yeah, I posted the instructions for Diadlo to reproduce, maybe it's even a different issue
+[19:00:26] *** Quits: glasscapt (~glasscapt@ ) (Read error: Connection timed out)
+[19:02:29] <iphy> zetok: what's the rule for #includes?
+[19:03:04] <iphy> some use "src/....h" and some are without the src/
+[19:03:36] <zetok> um, there's no rule for that AFAIK
+[19:03:55] <iphy> there are advantages to both, but using both at the same time gives you no advantages of either
+[19:05:15] <iphy> so what do you want the rule to be?
+[19:05:20] <iphy> and how do you plan to enforce it?
+[19:05:43] <iphy> the latter is more easily enforceable
+[19:05:50] <sudden6> what are the advantages of both?
+[19:06:00] <iphy> sudden6: ^ that's one :)
+[19:06:10] <sudden6> also iphy, are you good with crypto?
+[19:06:36] <iphy> sudden6: I'm not good with anything
+[19:07:02] <sudden6> could you still take a look at my comment in https://github.com/qTox/qTox/issues/3583 ? If I made an obvious mistake?
+[19:07:17] <sudden6> also I think TokTok speaks otherwise ;)
+[19:07:47] <iphy> sudden6: how much of that ticket do I need to read to understand your comment?
+[19:08:10] <Diadlo> iphy: Hello
+[19:08:12] <Diadlo> https://github.com/qTox/qTox/pull/3678#issuecomment-244185158
+[19:08:28] <sudden6> nothing basically, we currently use a static salt to encrypt the history db, my comment is about removing that static salt by replacing it with the public toxid
+[19:08:54] <sudden6> I'm unsure if this introduces any obvious security issue
+[19:08:54] <zetok> sudden6: that improves it
+[19:09:17] <Diadlo> iphy: About include
+[19:09:36] <Diadlo> I have one local branch where I remove all "src/" from includes
+[19:09:42] <zetok> sudden6: it's just that instead of having one common salt for all people using qTox you have a known salt for people who have friends
+[19:09:59] <sudden6> yep, that's a drawback
+[19:10:03] <sudden6> but still better
+[19:10:08] <zetok> yeah
+[19:10:12] * sudden6 goes to add this to the list
+[19:10:14] <iphy> Diadlo: ok, and you use relative paths instead?
+[19:11:17] <iphy> wait, so qtox used a single salt for every user globally?
+[19:11:42] <sudden6> zetok: wait, it's not an issue
+[19:11:55] <Diadlo> iphy: In real, no
+[19:12:10] <iphy> ok, anyway I don't care
+[19:12:10] <sudden6> because if you have one salt per user it's equivalent to a bruteforce attack
+[19:12:19] <zetok> iphy: since the migration to the sqlcipher
+[19:12:23] <iphy> Diadlo: what about the #includes?
+[19:12:36] <iphy> did you change everything to relative paths?
+[19:12:49] <sudden6> iphy: you mentioned an advantage to paths without src
+[19:12:54] <sudden6> what is it?
+[19:12:58] <Diadlo> If file to include in the same directory -- use relative. If not -- relative to src/
+[19:13:06] <iphy> Diadlo: uh
+[19:13:19] <iphy> ok.. that changes nothing
+[19:13:44] <iphy> it just removes some bytes from the source code with no change otherwise
+[19:14:06] <Diadlo> What problem with #include ?
+[19:14:32] <iphy> sudden6: it depends on what kind of rules you want to enforce
+[19:15:03] <sudden6> is it only a cosmetic difference or also a functional one?
+[19:15:07] <iphy> for example, if you want local headers to be enclosed in "" instead of <>, then having relative paths helps, because you don't need a -Isrc flag
+[19:15:47] <iphy> forcing local headers to be in "" makes it easier for formatters to group headers in blocks
+[19:16:07] <iphy> e.g. module > project > system
+[19:16:29] <Diadlo> iphy: We try to follow the rule about "" and <>
+[19:16:46] <Diadlo> Local includes with "" others with <>
+[19:16:48] <iphy> Diadlo: yeah, but the compiler won't be able to enforce it if you have "-Isrc"
+[19:16:59] <sudden6> I also prefer "" local <> others
+[19:17:42] <iphy> it's easy to visually distinguish what headers are inside the current subsystem, and what is including a different subsystem
+[19:18:08] <iphy> and source code formatters can use that information to make groups
+[19:19:04] <iphy> of course, qtox is a huge mess with every subsystem somehow transitively including every other subsystem, with basically the whole codebase forming one huge cycle with lots of smaller sub-cycles
+[19:19:35] <iphy> but assuming that someday that won't be the case, you'll benefit from additional clarity and enforceable syntax guidelines
+[19:21:19] <iphy> and today you'd benefit from knowing what parts of the code are reaching deeply into different subsystems
+[19:22:10] <zetok> so, `src/` ?
+[19:23:03] * zetok sighs
+[19:23:17] <zetok> can someone open a PR to the CONTRIBUTING.md with the change?
+[19:23:35] <zetok> I'd do it, but I have no idea what the change is supposed to be
+[19:24:18] <sudden6> will do
+[19:24:23] <zetok> thanks :)
+[19:34:59] <iphy> zetok: adding src/ to everything ensures that you won't be able to enforce the "" rule, and will prevent formatters from detecting groups as described
+[19:36:01] <iphy> At least enforcing it would become a bit more difficult and will need to be a separate validation step
+[19:42:50] -qtox-git-spam- [qTox] sudden6 opened pull request #3729: docs(CONTRIBUTING): add section about include styles (master...include_style) https://git.io/viSNK
+[19:44:00] <iphy> sudden6: so how would you enforce this policy?
+[19:51:22] <sudden6> I don't know, maybe when someone will implement clang-format or astyle support for qTox?
+[19:51:45] <sudden6> iphy: is this even what you meant?
+[19:53:52] <iphy> no
+[19:54:09] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[19:54:35] <iphy> sudden6: remove -I$TOP_SRCDIR (or whatever)
+[19:54:51] <iphy> that'll enforce what I meant
+[19:56:06] <sudden6> ok, then please leave a comment on gh what you actually mean
+[19:56:18] <sudden6> atm I'm not sure what you meant
+[20:01:31] <iphy> sudden6: I don't know whether this discussion is worth having
+[20:02:03] <iphy> you won't be able to enforce that rule for generated headers
+[20:02:07] <iphy> like ui_*.h
+[20:02:35] <iphy> it's easy to enforce "local headers must start with src/ and be in quotation marks"
+[20:02:46] <iphy> your rule set is hard to enforce
+[20:08:10] *** Joins: f10 (~flo@ )
+[20:09:58] <iphy> sudden6: src/net/toxme.cpp:22
+[20:10:21] <iphy> I would recommend you don't fix it
+[20:12:00] <iphy> instead, write a grep expression that checks the format
+[20:12:21] <iphy> put it in a test, let the test fail and show you all the instances of that violation, and clean them up
+[20:14:28] <iphy> find src -name "*.cpp" -or -name "*.h" -exec grep '#include "' {} \; | grep -v '#include "src/' # rule 1
+[20:14:52] <iphy> find src -name "*.cpp" -or -name "*.h" -exec grep '#include <src/' {} \; # rule 2
+[20:15:05] <iphy> turns out toxme.cpp was the only violation
+[20:16:20] <iphy> ! find src -name "*.cpp" -or -name "*.h" | xargs grep '#include <src/'
+[20:16:50] <iphy> if you put this line somewhere in a script, it will fail because of toxme.cpp:22
+[20:18:32] <sudden6> iphy: so the rules are the ones you described?
+[20:20:24] <sudden6> can you give an example of an include according to your rules and one counterexample?
+[20:20:45] <sudden6> I didn't want to make my own rules, I just tried to translate what you were writing in IRC
+[20:32:20] <iphy> https://gist.github.com/iphydf/0febaec22660fd86ea984e498b25747d
+[20:32:39] <iphy> sudden6: this passes the two rules I made validations for
+[20:35:55] <iphy> sudden6: it's the opposite of the rules I discussed earlier
+[20:36:06] <iphy> Both have advantages and disadvantages
+[20:36:07] <iphy> Like I said
+[20:36:13] <sudden6> ok, so your idea is to make all paths relative to the repository root
+[20:36:41] <iphy> This patch changes the code to the rule that is closest to what you have now
+[20:37:15] <iphy> Changing it to the rule I mentioned before would be a larger diff
+[20:38:25] <sudden6> zetok Diadlo are you ok with "src/path/to/locla" and <System/Include.h> ?
+[20:38:31] <iphy> So, these are now all not relative
+[20:38:57] <iphy> They are absolute if you consider the source root the root
+[20:38:57] <zetok> sudden6: um, it doesn't really matter to me; I just like consistency
+[20:39:15] <iphy> All relative would mean lots of ../
+[20:39:19] <Diadlo> sudden6: Yes. But sometimes qt creator use <> style for auto include :/
+[20:39:38] <sudden6> yeah, me to, I just got confused because iphy first described something else than he is now...
+[20:40:01] <sudden6> eh, so is "localinclude.h" not relative?
+[20:40:10] <sudden6> (like it's now)
+[20:40:33] <iphy> sudden6: I'm describing two ways
+[20:40:33] <iphy> You currently have about 3 different ways
+[20:40:33] <iphy> Mixing styles makes it hard to enforce one
+[20:40:41] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[20:40:42] <iphy> Yes that's relative
+[20:41:09] <sudden6> iphy yeah, but you first started with one style and then talked about the other one
+[20:41:14] <Diadlo> sudden6: It would be nice to know the opinion antis81
+[20:41:25] <iphy> Right, that was not very clear, sorry
+[20:41:34] <sudden6> Diadlo: right
+[20:41:51] <sudden6> also initramfs maybe,
+[20:41:57] <Diadlo> Yep
+[20:42:13] *** Joins: albel727 (~albel727@ )
+[20:42:33] <sudden6> so to recap style 1: "src/path/to/locla" and <System/Include.h>
+[20:44:00] <sudden6> and style 2: "localinclude.h" "src/project/level.h" and <System/include.h>
+[20:44:08] <sudden6> did I do it right this time?
+[20:44:34] <sudden6> I'll comment on the PR and mention antis81 and initramfs then
+[20:45:23] <Diadlo> New qt creator don't search include files in `/usr/include` by default :/
+[20:45:35] <iphy> Style 2 is ../subsystem/module.h
+[20:46:23] <iphy> Style 2 is enforceable by compiler
+[20:46:35] <iphy> Style 1 needs two grep rules
+[20:47:58] <iphy> The style 2 you describe is hard to enforce, and at least n(log n) time for n headers
+[20:48:27] <sudden6> hmm, if i look at the qTox directory structure, your style 2 could turn into "../../../../subsystem/module.h" which isn't very pretty IMHO
+[20:48:39] <iphy> Agreed
+[20:49:10] <Diadlo> + ^
+[20:49:36] <sudden6> so, style 1 as RFC for antis81 and initramfs?
+[20:50:08] <iphy> I'll have a test in the cmake build for style 1
+[20:50:25] <iphy> Basically the two line script I wrote here in the channel
+[21:19:25] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[21:19:53] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 248 seconds)
+[21:20:32] *** Joins: Diadlo (~diadlo@ )
+[21:21:44] *** Joins: rerumnovarum (~user-reru@ )
+[22:01:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[22:18:23] *** Joins: initramfs (~initramfs@ )
+[22:24:46] <zetok> ><iphy> how's the clang-format effort going?
+[22:24:48] <zetok> initramfs: ↑ ?
+[22:25:26] <initramfs> Sorry I haven't really worked on that, I still don't have a clear consensus on what the decided format should be
+[22:26:07] <initramfs> I mean, are we following Qt's coding style now? Or are there exceptions?
+[22:27:50] <iphy> initramfs: you'll probably want to run clang-format with all the different options until you find a minimal diff
+[22:27:59] <iphy> then you have a style that mostly matches what's there
+[22:28:24] <initramfs> Well yeah I know... But that's not what this is aiming for though
+[22:28:33] <iphy> you could brute force that over night, I don't think clang-format has a lot of options
+[22:28:38] <initramfs> I think we are aiming for an established coding standard
+[22:28:45] <initramfs> Not a "best fir" to what we have now
+[22:28:47] <iphy> well then just pick one
+[22:28:55] <initramfs> s/best fir/best fit/
+[22:28:58] <initramfs> Well I have
+[22:29:09] <iphy> it doesn't really matter what coding standard you pick, as long as it can be automated and enforced
+[22:29:23] <iphy> LLVM, Google, ...
+[22:29:24] <initramfs> Well
+[22:29:48] <initramfs> Right now, I've already have a clang-format standard created that caters to qTox's established standards
+[22:30:09] <initramfs> But it was proposed to use a pre-established standard verbatim
+[22:30:39] <initramfs> At risk of stepping on other people's toes, I don't want to just go in propose something that requires most of the codebase to be rewritten and have people hate it
+[22:31:16] <initramfs> And given that qTox already has an established standard (though a minimal one) my idea was just to extend that
+[22:32:36] <iphy> ah
+[22:32:45] <iphy> where is that established standard documented?
+[22:33:06] <initramfs> https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#coding-guidelines
+[22:33:43] <initramfs> Part of my clang-format branch was to add a new CODING_STYLE.md that describes more rules for qTox's style after the PR
+[22:34:05] <iphy> your coding style only needs to describe rules that clang-format can't enforce
+[22:35:12] <iphy> asterisksGoWithTheType silly C++ programmers refuse to accept C++ operator precedence rules
+[22:36:14] <iphy> E.g. https://github.com/qTox/qTox/blob/master/src/misc/flowlayout.cpp <- that's a dead link
+[22:38:32] <iphy> the example doesn't follow the rules: https://github.com/qTox/qTox/blob/master/src/widget/flowlayout.cpp#L58
+[22:38:42] <initramfs> I know
+[22:38:55] <iphy> like, ever
+[22:39:00] <initramfs> That's also why I was somewhat against just brute forcing clang format against the existing code base
+[22:39:02] <iphy> (which is good, because that rule makes no sense)
+[22:39:12] <initramfs> Because there is so many "rule violations"
+[22:39:29] <zetok> ><initramfs> At risk of stepping on other people's toes, I don't want to just go in propose something that requires most of the codebase to be rewritten and have people hate it
+[22:39:39] <zetok> just make a PR
+[22:39:45] <initramfs> I know, I will
+[22:40:04] <initramfs> The last discussion however suggested that my efforts were unwarranted
+[22:40:08] <initramfs> Anyway
+[22:40:15] <zetok> um?
+[22:40:45] <initramfs> Well, the last discussion on this topic that I was a part of had Diadlo say to use Qt's coding style verbatim
+[22:41:24] <initramfs> Okay, you know what, I'll just finish this branch on what I was doing, open a PR and have people discuss on that
+[22:41:26] <iphy> which means?
+[22:42:08] <initramfs> iphy: Well, that meant all the previous work I did to find clang format rules (and write appropriate coding standard examples) were nullified if we were to simply use Qt's coding style
+[22:42:10] <iphy> attach braces to control structures
+[22:43:12] <zetok> >Okay, you know what, I'll just finish this branch on what I was doing, open a PR and have people discuss on that
+[22:43:16] <zetok> that would be the best
+[22:43:17] <iphy> (which incidentally is what toxcore does)
+[22:43:31] <iphy> it might be nice to have a common coding standard in all tox projects
+[22:44:05] <iphy> I think toxcore is close to Qt style
+[22:44:46] <iphy> except for the "don't use {} on single line blocks" thing
+[22:44:51] <initramfs> Well... toxcore is C
+[22:45:01] <initramfs> It doesn't cater to all C++ constructs
+[23:55:36] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
