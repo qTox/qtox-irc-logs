@@ -1,0 +1,329 @@
+[00:00:51] *** Joins: Emcy (~MC@ )
+[00:00:51] *** Quits: Emcy (~MC@ ) (Changing host)
+[00:00:51] *** Joins: Emcy (~MC@ )
+[00:16:01] *** Joins: majora (~foobar@ )
+[00:16:47] *** Quits: majora (~foobar@ ) (Client Quit)
+[00:17:09] *** Joins: majora (~foobar@ )
+[00:19:07] <majora> how would one begin to help on https://github.com/qTox/qTox/issues/3708
+[00:32:32] <zetok> Diadlo: ↑ ?
+[00:36:33] <Diadlo> majora: You should replace hardcoded DialogType in Widget::retranslateUI on real DialogType
+[00:41:52] <Diadlo> majora: You can try to detect current type using Widget::contentWiget field or save DialogType on change
+[00:45:21] <Diadlo> Goodnight everyone
+[00:46:02] <majora> awesome, I'll look into it
+[00:46:24] <majora> I'm trying to compile qtox rn on Antegros and I'm getting src/persistence/db/rawdatabase.cpp:15:31: fatal error: sqlcipher/sqlite3.h: No such file or directory
+[00:46:24] <majora>  #include <sqlcipher/sqlite3.h>
+[00:46:25] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[00:46:26] <majora> when doing make
+[00:46:41] *** Joins: rerumnovarum (~user-reru@ )
+[00:58:25] <majora> oh, fixed by install sqlcipher
+[01:46:50] *** Quits: majora (~foobar@ ) (Ping timeout: 260 seconds)
+[01:47:08] *** Joins: majora (~majora@ )
+[02:07:42] *** Quits: majora (~majora@ ) (Ping timeout: 244 seconds)
+[02:11:42] *** Joins: majora (~majora@ )
+[02:37:31] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[02:37:31] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[03:05:14] -qtox-git-spam- [qTox] frankcash opened pull request #3731: fix(settings): On change language title (#3708) (master...issue3708) https://git.io/vi9HX
+[03:29:53] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 240 seconds)
+[03:37:34] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[03:49:56] *** Quits: majora (~majora@ ) (Quit: Leaving)
+[04:26:05] <nurupo> the common way to reference header files is to include system headers with <> and include your project's headers by putting the path to the header relative to the current file in "", without setting any -I/foo/bar. e.g. both "modules/network/tcp_socket.h" and "../network/tcp_socket.h" reference the file but in different contexts (from different files)
+[05:11:40] *** Joins: Emcy (~MC@ )
+[05:34:02] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[05:34:43] *** Joins: Bheru27 (~Bheru27@ )
+[05:43:42] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[06:22:17] *** Joins: CGGB (~CGGB@ )
+[06:54:56] *** Joins: sockspls (~sockspls@ )
+[07:06:30] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 264 seconds)
+[07:09:05] *** Joins: initramfs (~initramfs@ )
+[07:27:00] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[07:28:11] *** Joins: abbat (~Anton@ )
+[07:32:33] *** Joins: in1t3r (~LordShiva@ )
+[07:32:47] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[07:43:01] *** Joins: in1t3r (~LordShiva@ )
+[07:48:11] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[07:54:27] *** Joins: in1t3r (~LordShiva@ )
+[08:01:58] *** Joins: genesis (~genesis@ )
+[08:02:52] *** Joins: f10 (~flo@ )
+[08:05:44] *** Joins: f10_ (~flo@ )
+[08:07:22] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[08:23:44] *** Joins: Allanitomwesh (c5ed5b46@ )
+[08:23:51] <Allanitomwesh> hi  there
+[08:23:57] <Diadlo> Hi
+[08:24:14] <Allanitomwesh> just wanted to ask
+[08:24:27] <Allanitomwesh> is there hope of offline messaging?
+[08:25:44] <Diadlo> Some suggestion: https://github.com/TokTok/toxcore/issues/86
+[08:25:52] <Diadlo> But better ask on #toxtok or #tox
+[08:28:11] <zetok> Allanitomwesh: eventually
+[08:28:35] <zetok> Diadlo: um, it's #toktok
+[08:28:52] <Diadlo> zetok: Ups, sorry
+[08:37:04] <Allanitomwesh> hmmn
+[08:47:57] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:45:35] *** Joins: f10 (~flo@ )
+[09:58:30] *** Joins: abbat (~abbat@ )
+[10:16:48] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:17:17] *** Joins: CGGB (~CGGB@ )
+[10:48:21] <Allanitomwesh> gtg
+[10:48:24] *** Parts: Allanitomwesh (c5ed5b46@ ) ()
+[10:52:10] *** Quits: kadinparker[m] (kadinparke@ ) (Read error: Connection reset by peer)
+[11:21:53] *** Joins: kadinparker[m] (kadinparke@ )
+[11:24:23] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[11:24:48] *** Joins: abbat (~abbat@ )
+[12:01:39] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[12:10:00] *** Joins: abbat (~abbat@ )
+[12:10:06] <iphy> initramfs: how would you enforce the include style rules if changed as you suggested?
+[12:24:19] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[13:43:31] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[14:15:42] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[14:16:07] *** Joins: abbat (~abbat@ )
+[14:43:18] *** Joins: mistermint (59cc8af4@ )
+[14:43:53] *** Quits: mistermint (59cc8af4@ ) (Client Quit)
+[14:49:45] *** Joins: f10 (~flo@ )
+[14:50:59] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[15:10:51] *** Quits: koshii (~w@ ) (Ping timeout: 276 seconds)
+[15:11:22] *** Joins: Lyris (~Lyris@ )
+[15:57:52] *** Joins: koshii (~w@ )
+[15:59:23] *** Parts: Lyris (~Lyris@ ) ()
+[16:35:44] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[16:36:45] *** Joins: Emcy (~MC@ )
+[16:56:42] *** Joins: f10_ (~flo@ )
+[16:59:15] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[17:12:59] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[17:13:27] *** Joins: abbat (~abbat@ )
+[17:23:04] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[17:23:30] *** Joins: abbat (~abbat@ )
+[18:00:05] *** Joins: sudden6 (~anonymous@ )
+[18:05:38] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:20:27] *** Joins: Emcy (~MC@ )
+[18:56:41] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[18:56:47] *** Joins: f10__ (~flo@ )
+[18:57:07] *** Joins: f10_ (~flo@ )
+[18:57:11] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[19:15:59] *** Joins: initramfs (~initramfs@ )
+[19:18:06] <sudden6> hi all
+[19:19:32] <initramfs> Hi
+[19:20:44] <initramfs> I'm still reading the IRC backlog on the includes
+[19:21:05] <initramfs> I don't exactly know what people mean by "enforcing" the rules however
+[19:21:43] <initramfs> If you're talking about tools like clang-format, it's fairly easy to write an expression that allows for local includes (relative to the current directory) as well as project includes
+[19:22:11] <initramfs> Though, tools like clang-format however are insufficient when it comes to include sorting/enforcing
+[19:22:41] <initramfs> AFAIK, clang-format just downright ignores includes if you've already put spaces between them, or wrap C headers in extern "C"
+[19:22:55] <initramfs> s/spaces/newlines
+[19:25:20] <initramfs> Also, so called "local includes" look cleaner in code too, when you have all the includes from a particular module grouped up, it's easy to see what files are relevant to the module directly
+[19:26:30] <initramfs> For example, a video component including a bunch of video class headers and something from chatform or coreav, it's easy to see that the video headers are relevant to the video module as all of their headers are not prefixed with an absolute path
+[19:28:50] <iphy> Whatever you do, make it enforceable and enforce it
+[19:29:53] <initramfs> Well, I'm saying clang-format won't cut it
+[19:30:03] <initramfs> At least from my own experimentation
+[19:30:46] <sudden6> initramfs: your arguments are similiar to mine, but I like the idea of enforcing the rules or at least checking them
+[19:31:00] <initramfs> I know that
+[19:31:12] <sudden6> I'm not fixed to one particular style, the PR just served as RFC
+[19:31:22] <initramfs> Okay
+[19:31:57] <initramfs> I'm just not aware of any tools that are both easily accesible to all (i.e. not some custom script we whip up again) and has the ability to enforce all the things we want
+[19:32:14] <sudden6> if we agreed on a style ~everyone is ~ok with we can then write them down, next step would be enforcing them by tools
+[19:32:36] <zetok> hm.
+[19:32:48] <initramfs> The problem with source code formatters like clang-format and derivatives are that they don't have a brain
+[19:33:04] <zetok> but you don't even need that
+[19:33:22] <initramfs> If we implement a policy for example where all PRs are subjected to a pass through a source code formatter
+[19:33:26] <zetok> simple grep would do
+[19:33:47] <zetok> s/if/when/
+[19:34:15] <initramfs> Yes... but I don't think it's productive to a potential contributor if we mandate them to run all their contributed code through various scripts
+[19:34:41] <zetok> `make format` / `make check`
+[19:35:25] <initramfs> For include ordering that seems trivial
+[19:35:27] <zetok> it's not like they have to run stuff through scripts if their contribution is correct
+[19:35:32] <initramfs> But what if we wanted to check other stuff?
+[19:35:56] <zetok> same thing?
+[19:36:19] <initramfs> I don't suppose writing a C++11 parser in make/bash is any fun or robust...
+[19:36:32] <zetok> um
+[19:36:39] <zetok> grep for includes
+[19:36:54] <zetok> rest is taken care of by formatter, and `git diff`
+[19:37:13] <initramfs> So you're saying to handle includes separately then
+[19:37:15] <zetok> there's also doxygen that could fit in there
+[19:37:30] <zetok> is there a better way?
+[19:37:45] <initramfs> Well, not that I know of right now
+[19:37:52] <zetok> ok
+[19:38:08] <zetok> if there'll be a better way, we could always switch to it :)
+[19:38:12] <initramfs> Okay
+[19:38:16] <nurupo> initramfs: enforcing them means preventing others from using the wrong style of includes. clang-format has got nothing on that
+[19:38:26] <initramfs> Yeah, that was my point
+[19:38:46] <initramfs> nurupo: > Though, tools like clang-format however are insufficient when it comes to include sorting/enforcing
+[19:39:18] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[19:39:45] <nurupo> there are other ways to enforce it
+[19:40:29] *** Joins: rerumnovarum (~user-reru@ )
+[19:40:41] <nurupo> like removing the -I/src/ flag passed to the compiler, which i understood from the irc discussion is what qtox does now
+[19:41:31] <nurupo> also custom tests like the ones iphy wrote earlier that would run on Travis will enforce it
+[19:41:38] <initramfs> Sure
+[19:41:42] <initramfs> That can work
+[19:43:08] *** Joins: toweI (~toweI@ )
+[19:43:35] *** Quits: toweI (~toweI@ ) (Client Quit)
+[19:43:53] *** Joins: toweI (~toweI@ )
+[19:50:12] *** Joins: Chiitoo (~Chiitoo@ )
+[20:11:58] <sudden6> [20:40] <nurupo> like removing the -I/src/ flag passed to the compiler, which i understood from the irc discussion is what qtox does now < I tried that, but it seems it is added by qmake, at least not explicitly by us I think
+[20:13:26] <initramfs> Well, we could simply add failing checks on travis
+[20:13:51] <initramfs> As in, fails when include order is incorrect
+[20:20:14] <sudden6> ↑ I think that's sufficient for now
+[20:21:28] <iphy> initramfs: how?
+[20:22:15] <initramfs> iphy: Right now, qTox has a travis build that solely checks commit message format (it runs a build script that errors out if the commit message format is incorrect)
+[20:22:38] <initramfs> That could easily be expanded into "check all sorts of formatting issues"
+[20:22:54] <initramfs> Yes, it is abusing the job of a CI slightly, but I guess it works?
+[20:23:21] <iphy> makes sense, but how do you check include order, and what does it have to do with include path style?
+[20:23:44] <initramfs> Sorry, I just assumed if we're gonna check path style, might as well check order too
+[20:23:54] <initramfs> But if thats too hard, path styles it is then
+[20:24:14] <initramfs> Regarding the actual checking script, zetok says it should be easy
+[20:24:56] <iphy> initramfs: it's not hard, but it seems like a waste of time if clang-format is going to happen
+[20:25:15] <initramfs> clang-format cannot check include style or oder
+[20:25:21] <initramfs> s/oder/order/
+[20:25:37] <iphy> clang-format can't check anything, the idea would be to run clang-format and then git diff
+[20:25:45] <initramfs> It can FIX include order only on certain conditions
+[20:25:46] <iphy> and clang-format can reorder includes
+[20:25:54] <initramfs> Only when they are bunched up
+[20:26:00] <initramfs> With no new lines in between
+[20:26:10] <iphy> therefore a waste of time to write a script for include order checking
+[20:26:22] <iphy> if you want to check that there are no newlines between includes, that's again a different thing
+[20:26:29] <initramfs> It also doesn't work if there are includes in a extern "C" blocks
+[20:26:35] <initramfs> I want newlines between includes
+[20:26:41] <initramfs> That actually looks nicer
+[20:26:57] <initramfs> But that's just my opinion
+[20:27:21] <initramfs> I'm saying that clang-format, as of the last time I tested it, is grossly insufficient in any sort of include handling (including reordering)
+[20:27:40] <iphy> the #1 FOSS disease: we must make everything beautiful
+[20:27:45] <iphy> functionality and correctness are secondary
+[20:28:04] <initramfs> Well regardless of newlines
+[20:28:11] <initramfs> extern "C" still breaks clang-format
+[20:28:14] <initramfs> That's functionality
+[20:28:20] <initramfs> That can't be removed/replaced
+[20:30:08] <iphy> those are only used for blocks of external imports
+[20:30:26] <iphy> anyway, no need to discuss this, you'll figure it out
+[20:31:57] <initramfs> Which are required in source files when including C headers that don't have those guards (e.g. ffmpeg headers)
+[20:32:12] <initramfs> And the moment those exist, the whole source file no longer gets sorted
+[20:32:13] <initramfs> But yeah
+[20:32:22] <initramfs> I'll try to finish the clang-format PR by the week
+[20:32:40] <initramfs> If I really can't manage this, I'll mention it in the PR, and we can have a discussion then
+[20:33:26] <iphy> they are only required for ffmpeg headers
+[20:33:36] <iphy> gtk/glib/etc. headers don't need them
+[20:34:26] <initramfs> I know
+[20:35:14] <initramfs> I'm saying if you want a "one size fits all" solution (e.g. clang-format), it won't work because qTox has sources that won't be processed by clang-format for this very reason
+[20:37:00] <iphy> you mean clang-format breaks when there is an extern "C" in the code?
+[20:41:10] <initramfs> Yes
+[20:41:21] <initramfs> Well it doesn't "break" it just stops sorting includes
+[20:41:49] <iphy> within the block it will sort includes
+[20:42:03] <iphy> why does this mean those files won't be processed by clang-format, though?
+[20:42:10] <initramfs> Well they will
+[20:42:19] <iphy> ok good
+[20:42:26] <initramfs> I'm just saying the intended "include sorting" won't be performed to spec
+[20:42:40] <iphy> sure, that will need some manual inspection
+[20:42:40] <initramfs> I'll try it again in a few days
+[20:42:49] <initramfs> See what I can muster up
+[20:43:00] <iphy> you could confine the extern "C" to a single file
+[20:43:35] <initramfs> Yeah I know
+[20:43:47] <initramfs> But that will include code refactoring
+[20:43:55] <iphy> yes, not now
+[20:43:55] <initramfs> Which isn't in the scope of this PR right now
+[20:44:21] <initramfs> I mean, bottom line, I'll eventually rewrite both video and audio lol
+[20:44:29] <initramfs> I have plans for both
+[20:46:47] <iphy> sounds good
+[20:46:51] <initramfs> Oh, does anyone know if Qt 5.4 as minimums is viable anytime soon? Is it just Debian trailing behind or are there more distros that have < Qt 5.4 releases
+[20:47:04] <iphy> why do you want that?
+[20:47:23] <initramfs> Qt seems to have a module called Qt Multimedia
+[20:47:33] <initramfs> At least the sound API from that looks good
+[20:48:00] <initramfs> We can rid external dependencies and have a more cross platform sound API using that
+[20:48:11] <initramfs> But I believe it was introduced in Qt 5.4
+[20:52:25] <zetok> initramfs: no, it's not a good API
+[20:52:29] <zetok> initramfs: it's *crap*
+[20:52:32] <initramfs> ?
+[20:52:59] <zetok> qTox used to use qt multimedia
+[20:53:25] <initramfs> And?
+[20:53:32] <initramfs> What happened?
+[20:53:43] <zetok> it's no longer used :)
+[20:53:53] <zetok> (since it was crap)
+[20:54:13] <initramfs> Well... that's very vague...
+[20:54:27] <zetok> not really
+[20:54:29] <zetok> it just doesn't work
+[20:54:39] <initramfs> Perhaps it was implemented incorrectly?
+[20:54:44] <zetok> "sure"
+[20:55:09] <initramfs> I mean, with what little qTox needs from audio, there really isn't any generic audio API that won't won't
+[20:55:09] <zetok> qt multimedia is a crap implementation
+[20:55:17] <iphy> Is this another case of "we're not taking decisions to stop supporting non-eol'd distributions lightly"?
+[20:55:19] <initramfs> won't work*
+[20:55:53] <initramfs> iphy: I don't like to make decisions that could anger people :)
+[20:56:43] <zetok> initramfs: um?
+[20:57:06] <initramfs> zetok: I mean, if you know of a specific crippling issue with the API, that would be helpful to know in advance
+[20:57:18] <zetok> *doesn't work*
+[20:57:24] <zetok> that's the issue
+[20:57:29] <initramfs> But otherwise, if it turns out to be a "crap" implementation of audio, I'd just be wasting my own time
+[20:57:33] <iphy> And yet you decided to drop support for Ubuntu LTS, because you really really need that one tooltip in a settings tab
+[20:57:47] <zetok> initramfs: you probably would be
+[20:58:03] <initramfs> Sure, I wouldn't mind, then at least I'll know what's wrong with the API
+[20:58:15] * zetok shrugs
+[20:58:32] <iphy> So I guess I have a different understanding of what "taking decisions lightly" means
+[20:58:36] <initramfs> iphy: Not to shed responsibility, but I've never made a decision that resulted in backward compatibility issues
+[20:58:43] <initramfs> iphy: Perhaps I read you wrong
+[20:59:16] <initramfs> The very purpose of me asking is to see if there is any chance that those distros would have some backport release to Qt 5.4 or something
+[20:59:30] <zetok> nope
+[20:59:33] <zetok> no chance of that
+[20:59:34] <initramfs> Right
+[20:59:36] <iphy> Ok that's good
+[21:00:22] <initramfs> Because that was the main inhibiting factor over me working with Qt Multimedia
+[21:00:50] <iphy> initramfs: I'm a little bitter about qTox dependency management in the past
+[21:00:57] <initramfs> I see
+[21:01:10] <initramfs> But yeah
+[21:01:26] <initramfs> If there isn't support for Qt 5.4, I'll probably try with PortAudio or work with antis81 on his RtAudio implementation
+[21:01:27] <zetok> initramfs: um, Qt multimedia stuff wouldn't be merged in qTox anyway
+[21:01:37] <initramfs> Why not?
+[21:01:46] <iphy> Because of a tooltip or something, qtox upstream can't be used in my company
+[21:01:53] <zetok> initramfs: because it won't work
+[21:02:39] <initramfs> zetok: I'm sorry you really need to be more specific than that, because last week I was mucking around and got a QtAudio-based output stream working in qTox...
+[21:02:47] <initramfs> Unless there is severe issues with say latency
+[21:02:52] <initramfs> Or it's buggy in general
+[21:03:15] <zetok> "buggy in general" to a degree where it doesn't work for people
+[21:03:20] <initramfs> Okay
+[21:03:35] <iphy> zetok: where do you get that information?
+[21:03:50] <zetok> iphy: past experience
+[21:03:57] *** Joins: Lyris (~Lyris@ )
+[21:04:07] <iphy> Anything linkable?
+[21:04:21] <initramfs> Anyway, I probably won't use that anyway, given it requires Qt 5.4
+[21:04:32] <zetok> iphy: no, IIRC
+[21:04:46] <initramfs> Audio is pissing me off right now, I'm getting that bug where the A/V tab needs to be open during a conversation
+[21:05:22] <initramfs> So I intend to fix it by rewriting it with RtAudio or PortAudio then
+[21:05:38] <zetok> initramfs: the way I see it, current situation with "external" deps is way better than trying to use Qt multimedia
+[21:05:46] <zetok> "external libs" at least work
+[21:05:47] <initramfs> Sure
+[21:05:50] *** Parts: Lyris (~Lyris@ ) ()
+[21:06:10] <zetok> fixing audio would be awesome :)
+[21:06:18] <initramfs> Well, part of this rewrite that I'm doing is to abstract the implementation with the API
+[21:06:27] <initramfs> For both video and audio that is
+[21:06:46] <zetok> iphy: there might be something in old qTox commits about it, but I doubt
+[21:06:47] <initramfs> Meaning that we can potentially swap implementations in the future with no changes to the users of the A/V API
+[21:07:11] <initramfs> But I digress...
+[21:30:54] <Diadlo> zetok: Are you here?
+[21:31:01] <zetok> Diadlo: hm?
+[21:31:21] <Diadlo> I try to puth fast-forwarded commits and have an arror
+[21:31:37] <Diadlo> error: GH006: Protected branch update failed for refs/heads/master
+[21:31:56] <Diadlo> What I am doing wrong?)
+[21:32:05] <zetok> it's not a fast-forward
+[21:32:28] <zetok> Diadlo: did you rebase branch before fast-forwarding it?
+[21:32:33] <Diadlo> Yes
+[21:32:44] <zetok> ok, have you pushed that updated branch to PR?
+[21:33:17] <Diadlo> Nope
+[21:33:21] <Diadlo> I should?
+[21:33:22] <zetok> gh needs to receive from travis notification that given commits did pass checks
+[21:33:24] <zetok> yeah
+[21:34:02] <Diadlo> Thanks
+[21:34:06] <zetok> np :)
+[21:35:07] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[21:37:00] <iphy> who wants to try porting qtox to toktok/toxcore?
+[21:37:31] <iphy> it's mostly trivial, except for group chats, where apidsl style error handling was introduced
+[21:38:45] <Diadlo> iphy: If no one else want I will try :)
+[21:38:49] <initramfs> That should be setup in a separate branch
+[21:39:06] <initramfs> It'd be good to have a old vs new comparison
+[21:39:10] <initramfs> For debugging purposes
+[21:39:25] <iphy> we'll set the version number to 0.1.0 soon
+[21:39:34] <iphy> so you can put #ifdefs in your code to work with both
+[21:39:51] <initramfs> I see
+[21:40:12] <initramfs> Oh, unrelated but, has the "lossy video frame" issue been resolved?
+[21:40:20] <initramfs> lossy keyframe I mean
+[21:42:10] <iphy> no
+[21:43:40] <initramfs> Okay
+[22:24:10] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[22:25:04] *** Quits: f10__ (~flo@ ) (Ping timeout: 255 seconds)
+[22:38:44] *** Joins: f10__ (~flo@ )
+[22:38:51] *** Joins: f10_ (~flo@ )
+[22:57:59] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[22:58:50] *** Joins: jjuran (~jjuran@ )
+[23:27:55] <iphy> I'm looking forward to having qtox code clang-formatted :)
