@@ -1,0 +1,139 @@
+[01:10:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[01:11:34] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[01:48:59] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[03:16:09] -qtox-git-spam- [qTox] iphydf opened pull request #3738: refactor: Avoid RTTI by using qobject_cast. (master...qobject-cast) https://git.io/viFO8
+[03:37:25] *** Joins: glasscapt (~glasscapt@ )
+[03:37:52] *** Quits: glasscapt (~glasscapt@ ) (Client Quit)
+[03:38:23] *** Joins: glasscapt (~glasscapt@ )
+[03:41:30] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:41:45] *** Joins: buglessdr (~buglessdr@ )
+[04:22:54] *** Quits: buglessdr (~buglessdr@ ) (Remote host closed the connection)
+[04:25:03] *** Joins: buglessdr (~buglessdr@ )
+[04:36:10] -qtox-git-spam- [qTox] zetok opened pull request #3739: docs(INSTALL.md): use `$USER` variable instead of dummy `user` (master...docs/user) https://git.io/viFnK
+[05:08:04] *** Joins: Chiitoo (~Chiitoo@ )
+[05:36:50] -qtox-git-spam- [qTox] zetok opened pull request #3740: docs(README.md): update organizational stuff & small update to features (master...docs/install) https://git.io/viFWq
+[05:38:30] *** Joins: initramfs (~initramfs@ )
+[06:27:53] *** Joins: sudden6 (~anonymous@ )
+[06:31:33] <zetok> sudden6: hai
+[06:35:47] <zetok> sudden6: re: gh projects; I'd be cautious about using stuff tied to github
+[06:38:46] *** Quits: buglessdr (~buglessdr@ ) (Quit: Leaving)
+[06:44:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:44:32] *** Joins: abbat (~Anton@ )
+[07:46:06] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[07:47:49] *** Joins: rerumnovarum (~user-reru@ )
+[08:27:19] *** Joins: albel727 (~albel727@ )
+[08:35:05] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[08:35:21] *** Joins: rerumnovarum (~user-reru@ )
+[08:52:16] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[08:59:14] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[09:52:45] *** Joins: cisc (~cisc@ )
+[09:56:30] *** Joins: abbat (~abbat@ )
+[11:41:36] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[11:48:44] *** Quits: oranges (oranges@ ) (Quit: leaving)
+[12:02:18] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[12:02:19] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[12:04:39] *** Joins: abbat (~abbat@ )
+[12:13:45] *** Joins: zero-ghost (~0@ )
+[13:00:19] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[13:08:31] <iphy> what does CString stand for?
+[13:09:26] <zetok> C string I'd assume
+[13:12:46] *** Joins: abbat (~abbat@ )
+[13:15:00] <iphy> but it's not a C string
+[13:17:08] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[13:17:32] *** Joins: CGGB (~CGGB@ )
+[13:19:00] <zetok> https://msdn.microsoft.com/en-us/library/aa300688%28v=vs.60%29.aspx ?
+[13:40:40] <iphy> no, src/core/cstring.h
+[13:41:53] <zetok> nurupo: ↑ ?
+[14:13:45] <iphy> https://github.com/qTox/qTox/commit/18cee41cfb2a38fb63634d9898b9bba3b40ff462#diff-ee67a748f67aee2402ed686b52efa0c6R119
+[14:13:52] <iphy> it has existed since day 1
+[14:14:06] <iphy> committed by tux3 
+[14:15:25] <zetok> yes, but written by nurupo
+[14:16:29] <zetok> (tux3 took some code from nurupo's client)
+[14:16:58] -qtox-git-spam- [qTox] iphydf opened pull request #3741: refactor(settings,chat): fixes of static analyze warnings (master...staticfixes) https://git.io/vibTv
+[14:18:30] <zetok> ↑ that pr is going to fail (scope is now limited to 12 chars)
+[14:19:33] -qtox-git-spam- [qTox] BiTOk closed pull request #3573: Fixes of static analyze warnings (master...staticfixes) https://git.io/vibTl
+[14:21:40] <iphy> zetok: fun stuff
+[14:27:54] *** Joins: Chiitoo (~Chiitoo@ )
+[14:34:38] <genesis> http://discourse.appimage.org/t/thoughts-on-an-infrastructure-for-distributing-linux-application-bundles/58
+[15:49:37] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:50:18] *** Joins: abbat (~abbat@ )
+[16:50:19] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[17:18:49] *** Joins: cisc (~cisc@ )
+[17:26:20] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:36:09] *** Joins: cisc (~cisc@ )
+[17:38:50] *** Joins: sudden6 (~anonymous@ )
+[17:39:01] *** Quits: cisc (~cisc@ ) (Client Quit)
+[17:42:18] *** Joins: cisc (~cisc@ )
+[17:45:07] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[17:45:34] *** Joins: abbat (~abbat@ )
+[17:45:46] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:46:46] *** Quits: cisc (~cisc@ ) (Client Quit)
+[17:48:47] *** Joins: cisc (~cisc@ )
+[17:50:29] *** Quits: cisc (~cisc@ ) (Client Quit)
+[17:52:46] *** Joins: cisc (~cisc@ )
+[18:07:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[19:08:49] *** Joins: abbat (~Anton@ )
+[19:42:03] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:57:03] *** Joins: Chiitoo (~Chiitoo@ )
+[20:04:11] *** Quits: glasscapt (~glasscapt@ ) (Ping timeout: 265 seconds)
+[20:23:57] *** Joins: glasscapt (~glasscapt@ )
+[20:31:21] *** Joins: Emcy_ (~MC@ )
+[20:32:56] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[20:44:20] *** Joins: Lord_Vlad (~Vlad@ )
+[20:46:52] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[20:48:44] *** Quits: glasscapt (~glasscapt@ ) (Ping timeout: 265 seconds)
+[20:50:24] *** Joins: cisc (~cisc@ )
+[21:03:27] *** Joins: glasscapt (~glasscapt@ )
+[21:17:36] *** Joins: sudden6 (~anonymous@ )
+[21:35:16] <zetok> sudden6: o/
+[21:35:26] <zetok> sudden6: merge PRs?
+[21:35:26] <sudden6> zetok: \o
+[21:36:04] *** Joins: f10_ (~flo@ )
+[21:36:47] <sudden6> which ones? some ready to merge fall under the 24h rule
+[21:37:42] <sudden6> and on https://github.com/qTox/qTox/pull/3717 I thought you'll merge directly after LGTM, but I think I should have written that
+[21:39:10] <zetok> I didn't merge it, since I really think that I shouldn't merge that I don't actually understand
+[21:39:42] *** Joins: sudd3n6 (~anonymous@ )
+[21:40:01] <sudden6> Hmm, I think it should suffice to have LGTM for the part you don't understand
+[21:41:11] *** Joins: f10 (~flo@ )
+[21:41:38] <sudden6> because, in my opinion giving a LGTM equals merging it myself, with the added benefit that others can finish their discussions and merge if they are fine with it
+[21:43:52] <zetok> ok
+[21:48:58] <sudden6>  zetok: for emoticons, do you know of a standardized directory for them?
+[21:49:15] -qtox-git-spam- [qTox] zetok closed pull request #3717: Fix problem with disappearing short RTL text in chatform (master...fixArabicText) https://git.io/viVG5
+[21:49:29] <sudden6> or should we just use $XDG_DATA_DIR/qtox/emoticons ?
+[21:51:51] <zetok> standard is /usr/share/emoticons/
+[21:52:34] <sudden6> yeah, but we need a user writeable directory
+[21:53:15] <zetok> `$XDG_DATA_DIR/emoticons/
+[21:53:19] <zetok> `
+[21:53:48] <zetok> note though that
+[21:53:56] <zetok> >$XDG_DATA_HOME is either not set or empty, a default equal to $HOME/.local/share should be used.
+[21:54:37] <sudden6> that would be a user issue I think, I only want to load files from there
+[21:54:58] <sudden6> hmm, actually it's our issue
+[21:58:57] <zetok> rerumnovarum: includes; there should be no relative includes, right?
+[21:59:07] <zetok> …
+[21:59:27] <zetok> ↑ hexchat bug :f
+[21:59:51] * zetok wrote `re: includes;`
+[22:00:28] <zetok> rerumnovarum: sorry, looks like hexchat doesn't like your nick :(
+[22:01:04] <sudden6> zetok: I think https://doc.qt.io/qt-5/qstandardpaths.html GenericDataLocation + emoticons subdirectory would be optimal
+[22:01:54] <sudden6> zetok: yes, I think that was the consensus
+[22:02:07] <zetok> ok, that part is missing in the PR
+[22:03:57] <sudden6> hm? I think that's covered by "include files starting with the root directory of the"
+[22:04:26] <zetok> ~yep
+[22:05:27] <zetok> hmm, perhaps it's fine if explicit mention that relative paths are to not be used, but IMO currently it's not really clear
+[22:05:47] <zetok> s/used/used is missing/
+[22:06:22] <sudden6> mhm, maximum clearance (lol) is not bad on guidelines
+[22:06:24] <zetok> i.e. it sounds like an example of what should be, without specifying that something else shouldn't be used
+[22:07:02] <sudden6> could you comment? I'll redo the emoticons stuff today and don't want to forget
+[22:07:05] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[22:07:06] <zetok> ok
+[22:07:36] <sudden6> my ultimate goal is to not compile emoticons into qtox anymore for non standalone builds
+[22:10:18] <zetok> sounds good :)
+[22:10:27] <Chiitoo> No emoticons sounds nice indeed.
+[22:12:12] *** Joins: sudd3n6 (~anonymous@ )
+[22:45:05] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:58:53] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[22:59:11] *** Joins: Lord_Vlad (~Vlad@ )
+[22:59:44] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[23:59:22] *** Joins: Neolex (~neolex@ )
+[23:59:26] <Neolex> Hi !
+[23:59:56] <zetok> hello Neolex
+[23:59:57] <Chiitoo> Ho!
