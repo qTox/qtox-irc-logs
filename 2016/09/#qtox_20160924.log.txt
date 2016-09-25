@@ -1,0 +1,873 @@
+[00:00:36] <sudden6> good night everybody
+[00:01:03] <zetok> g'night sudden6 :)
+[00:01:49] <Neolex> I want to start contributing
+[00:02:00] <Neolex> good night sudden6
+[00:02:20] <zetok> awesome :)
+[00:02:32] <Neolex> i'm reading the wiki :)
+[00:04:16] <Neolex> do you need french translations ?
+[00:04:43] <zetok> yep
+[00:05:01] <zetok> https://github.com/qTox/qTox/tree/master/translations
+[00:06:33] <Neolex> zetok: thank you
+[00:06:58] <zetok> np
+[00:08:42] <Neolex> https://hosted.weblate.org/projects/tox/qtox/fr/
+[00:08:47] <Neolex> i can translate there ?
+[00:09:08] <zetok> yep
+[00:09:46] <Chiitoo> zetok: Any idea on "/home/jenkins/workspace/libffmpeg_build_windows_x86-64_static_release/libffmpeg/libavutil/file_open.c:136: undefined reference to `mkstemp'"?
+[00:10:47] <zetok> Chiitoo: nope
+[00:11:25] <zetok> I'd guess that it's something with toolchain
+[00:11:40] <Chiitoo> Mhm.
+[00:11:44] <Chiitoo> It's only with ffmpeg-3.
+[00:11:55] <Chiitoo> IT's very weird from what I can tell.
+[00:12:08] <Chiitoo> Since there is a thing in ffmpeg just for mkstemp.
+[00:12:35] <Chiitoo> Haven't been able to figure out what is wrong with my environment ever since the ffmpeg-3 builds.  : |
+[00:13:18] <Chiitoo> Oh and Windows builds.  Somehow left that out.
+[00:13:22] <Chiitoo> >.>
+[00:15:45] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[00:16:35] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[00:16:58] <Chiitoo> Need to go through some commits methinks.
+[00:24:33] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[00:46:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[00:46:37] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[01:15:41] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[01:24:39] <nurupo> ><iphy> what does CString stand for? <-- was over 3 years since i wrote that... i think it was a helper class to convert between QString and (uint8_t*, size_t) toxcore string
+[01:26:29] <iphy> yes, it still is
+[01:26:32] <iphy> but what does it stand for?
+[01:28:45] <nurupo> CString probably stands for C-style string, a tuple of a pointer to the beginning of a string and the string's size, e.g. (uint8_t*, size_t)
+[01:29:22] <iphy> that's not a C style string though
+[01:29:24] <iphy> oh well
+[01:29:35] <iphy> nurupo: in the meantime, https://github.com/TokTok/toxcore/pull/154?
+[01:30:07] <nurupo> iphy: what's a C style string?
+[01:30:50] <iphy> also, irungentoo is going to merge the new branch
+[01:33:51] <zero-ghost> that wouldnt possibly mean new groupchats would it?
+[01:34:04] <iphy> no
+[01:35:08] <iphy> that means toxcore no longer complies with the spec we're maintaining
+[01:35:59] <nurupo> ><Chiitoo> zetok: Any idea on "/home/jenkins/workspace/libffmpeg_build_windows_x86-64_static_release/libffmpeg/libavutil/file_open.c:136: undefined reference to `mkstemp'"? <-- where do you see that?
+[01:36:25] <nurupo> i don't see such error i nthe latest build https://build.tox.chat/job/libffmpeg_build_windows_x86-64_static_release/9/console
+[01:40:46] <iphy> ah, now I know why I like reviewable a lot better than github
+[01:40:53] <iphy> it has "merge and delete branch"
+[01:41:03] <iphy> or "fast forward and delete branch"
+[01:41:12] <iphy> so I don't need to delete the branch myself
+[01:45:25] *** Quits: glasscapt (~glasscapt@ ) (Ping timeout: 265 seconds)
+[01:47:16] <Chiitoo> nurupo: Yeah, I asked that before, when you were around, though I think you missed it.
+[01:47:21] <Chiitoo> It's pretty weird.  : |
+[01:48:18] <Chiitoo> Might just try setting up a new Debian environment (that's how they do things, right?).
+[01:48:23] <nurupo> Chiitoo: i don't see the error, so everything is alright
+[01:48:28] <nurupo> not sure where you got it from
+[01:51:09] <Chiitoo> Yeah, it's a clean Debian installation.
+[01:51:13] <Chiitoo> All I can say!
+[01:51:40] <Chiitoo> Well, clean as in, old, but only used for qTox and updated as they bring out updates.
+[01:51:42] <nurupo> clean Debian installation?
+[01:51:55] <nurupo> i'm confused
+[01:51:56] <Chiitoo> Never used it for anything else.
+[01:52:25] <nurupo> are you talking about our jenkins or you have set up your own jenkins which follows the exact naming scheme for jobs as our does?
+[01:53:13] <Chiitoo> Oh, sorry, no, not your Jenkins.
+[01:53:47] <Chiitoo> It's simply my building Windows builds for a friend, copying the dependencies from Jenkins.
+[01:54:18] <Chiitoo> That is, I just grab the packages for the dependencies from there, and then build qTox from source alone.
+[01:54:25] <nurupo> i can just get you the scripts for ffmpeg and on how to setup a debian machine identical to the one we use
+[01:54:26] <Chiitoo> Something somewhere changed indeed.
+[01:54:35] <Chiitoo> That might help.  :]
+[01:55:16] <nurupo> those things are public anyway, you just have to ask for them. maybe i sometime in the future i get to putting everything on github, but there are some other pressing things to do in tox atm
+[01:55:32] <Chiitoo> Hehe.
+[01:55:48] <nurupo> Chiitoo: this is how we setup the x86-64 build machine https://gist.github.com/nurupo/ba064c51d298fc352626d2a84b884e91
+[01:55:50] <Chiitoo> Yeah, it's more weird than anything to me.  Haven't been too actively asking about it.
+[01:56:00] <Chiitoo> Many thanks!
+[01:58:17] *** Joins: glasscapt (~glasscapt@ )
+[01:58:59] <nurupo> Chiitoo: and here are ffmpeg src and build jobs https://gist.github.com/nurupo/4ebfcfdff1c9a5bbe4c21881e876074f
+[01:59:08] <nurupo> libffmpeg_build_windows_x86-64_static_release specifically
+[01:59:28] <nurupo> zetok has spent lots of time trying to make ffmpeg compile on windows
+[01:59:54] <Chiitoo> Yeah, that's why it's so weird it fails for me.
+[02:00:03] <Chiitoo> And even weirder is the way it does it.
+[02:00:18] <Chiitoo> Debian is probably too hard for me.  Haha.
+[02:01:10] <Chiitoo> All I can guess is, there is something weird going on with that installation of mine, since only ffmpeg-3 bring it up, and it obviously works for the Jenkins builds.
+[02:01:49] <nurupo> well, you can see the exact commands we use to setup our build machine i nthe gist
+[02:02:03] <nurupo> so you can follow them, removing the stuff you don't need, like android and pbuilder
+[02:02:39] <nurupo> that script assumes you run it on Debian 8
+[02:05:31] <Chiitoo> Yeah.
+[02:05:50] <Chiitoo> If those are something not seen in Jenkins, they might help!
+[02:05:58] <Chiitoo> I think I've gone through everything else.
+[03:05:03] *** Joins: fred_barclay (~fred@ )
+[03:05:03] *** Quits: fred_barclay (~fred@ ) (Changing host)
+[03:05:03] *** Joins: fred_barclay (~fred@ )
+[03:28:08] *** Joins: oranges (oranges@ )
+[03:42:06] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:11:24] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[04:36:41] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[04:36:50] *** Quits: e0f (~e0f@ ) (Ping timeout: 255 seconds)
+[04:36:50] *** Quits: iphy (uid67735@ ) (Ping timeout: 255 seconds)
+[04:36:53] *** Quits: koshii (~w@ ) (Ping timeout: 244 seconds)
+[04:37:01] *** Quits: zero-ghost (~0@ ) (Ping timeout: 265 seconds)
+[04:37:01] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 265 seconds)
+[04:37:07] *** Joins: cisc (~cisc@ )
+[04:37:07] *** Joins: Dragofix- (Dragofix@ )
+[04:37:10] *** Joins: hpanago_ (uid15586@ )
+[04:37:12] *** Quits: hpanago_ (uid15586@ ) (Changing host)
+[04:37:12] *** Joins: hpanago_ (uid15586@ )
+[04:37:14] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 255 seconds)
+[04:37:19] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 240 seconds)
+[04:37:20] *** Quits: dongo (~dongo@ ) (Ping timeout: 240 seconds)
+[04:37:20] *** Joins: Curlybear (~Curlybear@ )
+[04:37:23] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 260 seconds)
+[04:37:23] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[04:37:29] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[04:37:41] *** Quits: Darky (~Darky@ ) (Ping timeout: 255 seconds)
+[04:37:49] *** Joins: Diadl0 (~diadlo@ )
+[04:37:53] *** Quits: glasscapt (~glasscapt@ ) (Ping timeout: 240 seconds)
+[04:37:55] *** Joins: Emcy (~MC@ )
+[04:37:58] *** Quits: Sephi (~me@ ) (Ping timeout: 272 seconds)
+[04:37:59] *** Quits: GGMethos (methos@ ) (Ping timeout: 272 seconds)
+[04:38:00] *** Quits: Emcy (~MC@ ) (Changing host)
+[04:38:00] *** Joins: Emcy (~MC@ )
+[04:38:10] *** Joins: Darky (~Darky@ )
+[04:38:11] *** Joins: jjuran (~jjuran@ )
+[04:38:15] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 278 seconds)
+[04:38:18] *** Joins: glasscapt (~glasscapt@ )
+[04:38:50] *** Joins: e0f (~e0f@ )
+[04:39:08] *** Joins: koshii (~w@ )
+[04:39:40] *** Quits: cisc (~cisc@ ) (Client Quit)
+[04:39:51] *** Quits: koshii (~w@ ) (Read error: Connection reset by peer)
+[04:40:11] *** Joins: cisc (~cisc@ )
+[04:40:42] *** Joins: GGMethos (methos@ )
+[04:42:40] *** Joins: koshii (~w@ )
+[04:42:52] *** Joins: tux3_ (~tux@ )
+[04:43:20] *** Joins: Sephi (~me@ )
+[04:44:10] *** Joins: Bheru27 (~Bheru27@ )
+[04:44:42] *** Quits: genesis (~genesis@ ) (*.net *.split)
+[04:44:43] *** Quits: qTox-syncbot (~qTox-sync@ ) (*.net *.split)
+[04:44:43] *** Quits: linxon (~lin@ ) (*.net *.split)
+[04:44:43] *** Quits: tux3 (~tux@ ) (*.net *.split)
+[04:44:43] *** Quits: Dragofix (Dragofix@ ) (*.net *.split)
+[04:44:43] *** Quits: hpanago (uid15586@ ) (*.net *.split)
+[04:44:43] *** Quits: Impyy (~impy@ ) (*.net *.split)
+[04:44:43] *** Quits: eris (kyrias@ ) (*.net *.split)
+[04:47:24] *** Joins: Emcy_ (~MC@ )
+[04:47:24] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[04:47:24] *** Joins: Emcy_ (~MC@ )
+[04:47:41] *** Joins: Dragofix (~Dragofix@ )
+[04:47:41] *** Joins: worfox_ (~worfox@ )
+[04:47:50] *** Quits: Diadl0 (~diadlo@ ) (Remote host closed the connection)
+[04:48:18] *** tux3_ is now known as tux3
+[04:48:20] *** Quits: Darky (~Darky@ ) (Read error: Connection reset by peer)
+[04:48:23] *** Joins: dongo (~dongo@ )
+[04:48:28] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 265 seconds)
+[04:48:31] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 248 seconds)
+[04:48:32] *** Joins: nightfur- (nightfury@ )
+[04:48:45] *** Joins: Diadl0 (~diadlo@ )
+[04:48:45] *** Joins: demize (kyrias@ )
+[04:48:51] *** Joins: glasscapt_ (~glasscapt@ )
+[04:48:59] *** Quits: worfox (~worfox@ ) (Read error: Connection reset by peer)
+[04:49:01] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 255 seconds)
+[04:49:01] *** Quits: anoa (~anoa@ ) (Ping timeout: 255 seconds)
+[04:49:02] *** Quits: koshii (~w@ ) (Ping timeout: 255 seconds)
+[04:49:02] *** Quits: GGMethos (methos@ ) (Ping timeout: 255 seconds)
+[04:49:02] *** Quits: glasscapt (~glasscapt@ ) (Ping timeout: 255 seconds)
+[04:49:03] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[04:49:18] *** Joins: sockspls (~sockspls@ )
+[04:49:19] *** Quits: nightfuri (nightfury@ ) (Ping timeout: 244 seconds)
+[04:50:01] *** Quits: Dragofix- (Dragofix@ ) (Ping timeout: 248 seconds)
+[04:50:18] *** Joins: CGGB (~CGGB@ )
+[04:50:33] *** Joins: Darky (~Darky@ )
+[04:50:36] *** Joins: anoa (~anoa@ )
+[04:51:13] *** Joins: GGMethos_ (methos@ )
+[04:53:35] *** Quits: Dragofix (~Dragofix@ ) (Ping timeout: 244 seconds)
+[04:53:47] *** Joins: Dragofix (Dragofix@ )
+[04:55:26] *** Joins: zero-ghost (~0@ )
+[04:55:32] *** Joins: koshii (~w@ )
+[04:58:22] *** Joins: smaragdus (~omoo@ )
+[05:05:45] *** Joins: f10_ (~flo@ )
+[05:05:59] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[05:09:02] *** Joins: f10 (~flo@ )
+[05:09:32] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[05:10:01] *** Joins: zero-ghost (~0@ )
+[05:19:46] *** Quits: anoa (~anoa@ ) (Ping timeout: 244 seconds)
+[05:20:12] *** Quits: tux3 (~tux@ ) (Ping timeout: 240 seconds)
+[05:20:14] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[05:20:23] *** Quits: zero-ghost (~0@ ) (Ping timeout: 265 seconds)
+[05:20:25] *** Joins: sockspls_ (~sockspls@ )
+[05:20:27] *** Joins: Sephi_ (~me@ )
+[05:20:27] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 248 seconds)
+[05:20:33] *** Joins: Diadlo (~diadlo@ )
+[05:20:34] *** Quits: Sephi (~me@ ) (Ping timeout: 264 seconds)
+[05:20:38] *** Sephi_ is now known as Sephi
+[05:20:40] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 244 seconds)
+[05:20:45] *** Joins: zero-ghost (~0@ )
+[05:20:54] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 255 seconds)
+[05:20:55] *** Joins: tux3_ (~tux@ )
+[05:20:56] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[05:20:57] *** Joins: f10_ (~flo@ )
+[05:20:57] *** Quits: Darky (~Darky@ ) (Ping timeout: 255 seconds)
+[05:20:59] *** tux3_ is now known as tux3
+[05:21:05] *** Joins: Darky` (~Darky@ )
+[05:21:10] *** Joins: initramfs (~initramfs@ )
+[05:21:11] *** Joins: initramfs_ (~initramfs@ )
+[05:21:56] *** Joins: jjuran (~jjuran@ )
+[05:22:09] *** Joins: anoa (~anoa@ )
+[05:22:27] *** Quits: initramfs_ (~initramfs@ ) (Client Quit)
+[05:23:06] *** Joins: CGGB (~CGGB@ )
+[05:23:43] *** Joins: Bheru27 (~Bheru27@ )
+[05:27:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[05:27:37] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[07:25:09] *** Joins: qTox-syncbot (~qTox-sync@ )
+[07:48:06] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[07:48:21] *** Joins: rerumnovarum (~user-reru@ )
+[08:32:31] *** Joins: kadinparker[m] (kadinparke@ )
+[08:35:24] *** Joins: hexadezimalion (sid85551@ )
+[08:35:24] *** Joins: iphy (uid67735@ )
+[08:35:24] *** Joins: linxon (~lin@ )
+[08:35:24] *** Joins: genesis (~genesis@ )
+[08:35:24] *** Joins: Impyy (~impy@ )
+[08:35:29] *** Quits: iphy (uid67735@ ) (Changing host)
+[08:35:29] *** Joins: iphy (uid67735@ )
+[08:35:29] *** Quits: hexadezimalion (sid85551@ ) (Changing host)
+[08:35:29] *** Joins: hexadezimalion (sid85551@ )
+[09:33:53] *** Joins: sudd3n6 (~anonymous@ )
+[09:43:33] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[09:54:59] *** Joins: bashrc (~motters@ )
+[09:58:12] *** Joins: sudd3n6 (~anonymous@ )
+[10:19:40] *** Joins: Chiitoo (~Chiitoo@ )
+[10:19:55] *** Joins: f10_ (~flo@ )
+[10:20:23] *** demize is now known as eris
+[10:20:36] *** Joins: f10 (~flo@ )
+[10:28:40] *** Quits: sudd3n6 (~anonymous@ ) (Quit: Konversation terminated!)
+[10:30:43] *** Joins: sudden6 (~anonymous@ )
+[10:45:55] <sudden6> zetok: hi, do you have time to hold my hand with git once more? 
+[10:46:45] <zetok> yep
+[10:46:56] <sudden6> yay :)
+[10:46:58] <zetok> though I'm writing a post right now, so I might be slow to respond
+[10:47:34] <sudden6> np, I think I just need the right words to google
+[10:47:39] <sudden6> I'm working on https://github.com/qTox/qTox/pull/3737
+[10:48:14] <sudden6> and have made edits that I want to go in the second of the three commits, how do I do that?
+[10:48:33] <zetok> git rebase -i <commit before the one you want to edit>
+[10:50:37] <sudden6> Cannot rebase: You have unstaged changes.
+[10:50:49] <sudden6> do I have to commit the changes first?
+[10:51:18] <initramfs> You can stash them
+[10:51:32] <initramfs> git stash save
+[10:52:41] <sudden6> ok
+[10:53:20] <sudden6> I'm now in interactive rebase, I think I have to use edit to then apply my changes?
+[10:53:42] <zetok> iphy: is that the kind of roadmap that you wanted, or..?
+[10:53:46] <initramfs> Pretty much
+[10:58:11] <zetok> sudden6: um, `git stash apply`
+[10:58:24] <sudden6> zetok: thx, I think I got it done
+[10:58:37] <sudden6> you can see the results in a few secs
+[11:02:12] <iphy> zetok: yes thanks
+[11:03:29] <sudden6> initramfs: I'd like to ask you for some feedback about my C++ coding in https://github.com/qTox/qTox/pull/3737 if you have time
+[11:03:44] <initramfs> sudden6: Sure, no problem
+[11:03:54] <sudden6> thx :)
+[11:07:43] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/viNA1
+[11:07:43] -qtox-git-spam- qTox/master d94712b iphydf: refactor: Avoid RTTI by using qobject_cast....
+[11:07:43] -qtox-git-spam- qTox/master febde25 sudden6: Merge pull request #3738...
+[11:15:55] <iphy> Are you going to avoid dynamic cast in the future?
+[11:19:11] <sudden6> iphy: would it bring some advantages?
+[11:19:21] <sudden6> and how would one enforce it?
+[11:20:51] <iphy> sudden6: 5-6% space savings, and "The qobject_cast() function behaves similarly to the standard C++ dynamic_cast(), with the advantages that it doesn't require RTTI support and it works across dynamic library boundaries."
+[11:21:47] <sudden6> sounds like only advantages, but what are the drawbacks?
+[11:22:02] <iphy> it only works on moc'd classes
+[11:22:13] <iphy> so only Q_OBJECT ones
+[11:25:42] <sudden6> doesn't sound like a huge drawback for me, but I'm not a C++ guru
+[11:27:25] <iphy> sudden6: https://github.com/TokTok/hstox/pull/86
+[11:28:58] <sudden6> iphy: what should I do with it? I don't speak haskell...
+[11:31:14] <iphy> hm ok
+[11:34:48] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[11:39:21] <initramfs> sudden6: Reviewed
+[11:42:34] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[11:42:59] <sudden6> initramfs: thanks :)
+[11:43:53] <iphy> sudden6: you don't use exceptions, how do you enforce that?
+[11:43:56] *** Joins: Chiitoo (~Chiitoo@ )
+[11:46:23] <initramfs> iphy: Well, I' was hoping that can change but that's beside the point. Right now the no exceptions flag is given to travis (gcc/clang) and will fail out if exceptions are being used (I think).
+[11:47:00] *** Joins: abbat (~Anton@ )
+[11:47:10] <initramfs> iphy: -fno-exceptions
+[11:53:44] <iphy> ok, so you can use -fno-rtti as well
+[11:54:14] <iphy> and save memory and download size
+[11:55:50] <zetok> \o/
+[11:55:53] <initramfs> I'd argument against cutting down unnecessarily on C++ features that could be used in the future if not already
+[11:56:05] <zetok> >could
+[11:56:15] <zetok> -.-
+[11:56:37] <initramfs> If there is a serious concern with memory usage, I don't think "let's strop RTTI" should be the first step in optimization
+[11:56:47] <initramfs> s/strop/strip/
+[11:57:04] <zetok> well, that's done, so now other things can be optimised :)
+[11:57:44] <initramfs> To me, that's akin to saying "we have a problem with race conditions, let's completely remove anything that's threaded"
+[11:58:02] <zetok> if that would fix all the problems, why not
+[11:58:07] <zetok> except that it doesn't
+[11:58:17] <initramfs> Well, it would fix every race condition out there...
+[11:58:22] <initramfs> But that's not the point
+[11:58:31] <zetok> and the correct solution would be to move to a language in which there's no race conditions to begin with
+[11:59:00] <iphy> zetok: https://github.com/TokTok/hstox/pull/86/files
+[11:59:01] <initramfs> Well, there are pros and cons to every language
+[11:59:20] <iphy> no, the correct solution is to write subexpression-correct C++
+[11:59:29] <iphy> is there a plan to eventually write qtox like that?
+[12:00:43] <initramfs> iphy: Not familiar with what you mean by that, care to elaborate?
+[12:01:36] <zetok> iphy: I think that it would be good to make an issue for it that would include an explanation or a link to one
+[12:04:08] <zetok> iphy: and sorry, I don't know haskell – I have no idea what the change in code actually does
+[12:04:30] <zetok> changes function input type?
+[12:04:45] <iphy> ok, () is the unit type
+[12:04:56] <iphy> a is the most general polymorphic type
+[12:09:01] <zetok> iphy: "reviewed"
+[12:16:13] <sudden6> initramfs: I think compiling with things like -fno-rtti is good, because we can always enable it again if we think we need it
+[12:16:39] <sudden6> and have a good use case where it brings us advantages
+[12:17:13] <sudden6> for optimization purposes, compiler switches should only be the last resort IMHO
+[12:17:40] <sudden6> algorithmic improvements are most of the time the better way to go
+[12:18:44] <initramfs> sudden6: Sure. But are we sure nothing else right now uses RTTI?
+[12:19:58] <initramfs> I also see it as somewhat of an barrier for entry. If you tell people your codebase is C++11 but then tell them you've disabled quite a few of C++ features, it doesn't exactly give the best impression.
+[12:20:46] <sudden6> I thought that's what iphys PR was about?
+[12:21:45] <initramfs> Okay. I wasn't aware if it completely removed any RTTI-reliance in the codebase
+[12:22:24] <sudden6> I think the opposite way, C++ has so many features and so many ways to do something, I like it if I get some guidance on which ways to go
+[12:22:36] <sudden6> (speaking as a C++ beginner)
+[12:24:03] <initramfs> sudden6: I understand, but that would be the role of coding guidelines and styles in general.
+[12:24:21] <initramfs> It shouldn't be that "we make the language simpler by removing language features"
+[12:24:39] <initramfs> I mean, if that was the ideology, why not use C...
+[12:27:11] -qtox-git-spam- [qTox] zetok opened pull request #3744: docs(CONTRIBUTING): add a guideline to not use dynamic casts/RTTI (master...docs/code) https://git.io/viNjq
+[12:27:13] <zetok> there we go :3
+[12:33:01] <sudden6> ahm, why write coding guidlines if you don't enforce them?
+[12:34:51] <zetok> in regard to explicit mention in the PR?
+[12:42:07] <initramfs> zetok: qobject_cast is not a "catch-all" for all cases where RTTI would be used. Nor is the 5~6% accurate in context to all RTTI
+[12:42:30] <initramfs> qobject_cast SHOULD be used with respect to Qt objects however
+[12:44:44] <zetok> um.
+[12:48:47] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[12:53:06] *** Joins: sudden6 (~anonymous@ )
+[13:00:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[13:02:32] <zetok> initramfs: https://github.com/qTox/qTox/issues/530 ← thoughts?
+[13:05:18] <initramfs> Well I'd definitely like DPI scaling
+[13:05:34] <initramfs> I'm just personally not aware as to how to do it properly within Qt
+[13:06:12] <initramfs> Since Qt 5.6 however there is a standardized HiDPI functionality within Qt to help non-DPI aware programs to be DPI-aware
+[13:07:13] <initramfs> I'm not very versed with Qt and it's UI functionalities
+[13:08:24] <zetok> right
+[13:10:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[13:11:59] <initramfs> If I had loaded Debian on my system with Qt 5.3, qTox would be completely unusable
+[13:15:31] <zetok> https://github.com/qTox/qTox/issues/975 ?
+[13:17:48] <initramfs> Well I've already implemented QApplication.setAttribute(Qt::AA_UseHighDpiPixmaps) and it's been available in qTox 1.5
+[13:18:38] <initramfs> What I'm unsure about is, is there a way to design the UI such that users don't need to use environmental variables like QT_DEVICE_PIXEL_RATIO or the automatic scaling environmental variable
+[13:19:55] <initramfs> Given that qTox on Windows is still compiled with Qt 5.5, I've stopped using qTox on windows (there is absolutely no scaling at all)
+[13:20:30] <initramfs> I could force Qt to scale with a bunch of environmental variables or command line arguments, but I didn't really bother
+[13:20:36] <initramfs> Since I rarely use Windows anyway
+[13:22:11] <iphy> 12:24 <initramfs> It shouldn't be that "we make the language simpler by removing language features"
+[13:22:16] <iphy> initramfs: yes, that's exactly what it should be
+[13:22:36] <initramfs> iphy: "Then why use that language at all?"
+[13:23:27] <initramfs> People who don't want to use advanced language features don't have to, and people who do aren't restricted by that
+[13:24:57] <zetok> just because something can be used doesn't mean that using it is a good idea
+[13:25:18] <initramfs> Sure
+[13:25:20] <initramfs> I agree
+[13:25:35] <initramfs> To be honest I don't care much for RTTI
+[13:25:44] <initramfs> It's not used that much anyway
+[13:25:57] <initramfs> And excessive usage is a sign of bad design anyway
+[13:26:19] <initramfs> I'm just against the attitude of "wow, if we hack off this part of that language we get a 5% gain!"
+[13:27:07] <initramfs> Unless you know exactly what the implications are, disabling whole parts of a language should'nt be done on a whim
+[13:27:18] <initramfs> s/should'nt/shouldn't
+[13:28:53] <initramfs> Personally I've encountered a lot of bugs in qTox that stem from C-like code when C++ style would have downright prevented the bug
+[13:29:13] <initramfs> By prevented, I mean that the bug would never have happened
+[13:29:53] <initramfs> We're already paying the price of a "higher" level language like C++, I don't see why we would hack it down to essentially "C with Classes"
+[13:30:11] <initramfs> At that point it makes no sense to use C++ anymore, let alone C++11
+[13:30:48] <zetok> :)
+[13:31:34] <initramfs> And premature optimization is the root of all evil. 5% gains here doesn't mean much when you can get 50% gains from refactoring bad code
+[13:32:23] <initramfs> One example of this would be getting rid of all the memory barrier code in camerasource.cpp
+[13:32:59] <initramfs> Sure the memory barriers probably gave us 2% advantage in performance or so, but at the cost of at least a dozen reported issues with video
+[13:34:03] <initramfs> And besides, it isn't even the most performance critical part of qTox, thus the savings are essentially negligible.
+[13:35:38] <initramfs> Anyway, I'm rambling now and I apologize. But in essence, I don't approve of this "strip language features without forethought" mentality. If there can be a detailed case, with evidence, I'm more than happy to see some unused part of C++ go.
+[13:36:54] <initramfs> Regarding RTTI specifically, I personally don't have much of a use for it. So I'm not exactly going to object against compiling without RTTI. Though in the contributing guide, I suggest changing the phrasing from "Don't use RTTI to 'must present a valid detailed case as to why RTTI should be used'"
+[13:44:10] <zetok> dunno about "valid detailed case why"
+[13:44:55] <initramfs> Well, if I opened this PR and required RTTI, explaining in detail why RTTI allows a much better design, would you say no?
+[13:45:14] <initramfs> s/this PR/some PR/
+[13:48:14] * zetok wouldn't really care
+[13:48:51] <zetok> I like when things work, and that's what I care about
+[13:49:09] <initramfs> Well, that would be what I mean then
+[13:49:29] <initramfs> If it were established that we will not use RTTI
+[13:49:43] <zetok> as for C++ "features", I know only that exceptions are *bad*
+[13:50:10] <initramfs> See, I don't get that mentality at all. Would you care to explain?
+[13:50:54] <initramfs> Allowing exceptions allows from proper RAII when acquiring failable resources
+[13:50:55] <zetok> they make getting something to work way harder
+[13:51:29] <initramfs> Well, based on code in qTox, at least in A/V, my best judgment says the complete opposite.
+[13:52:27] <initramfs> There are at least 3 separate code paths to initialize a video device because of the singleton nature as well as no way to indicate errors in constructors
+[13:53:33] <initramfs> The whole camera system is excessively complex and restrictive because it has to handle cases where cameras are not available, busy, disconnected, etc
+[13:54:07] <zetok> how throwing in more crap would help fix it?
+[13:54:19] <initramfs> Because we aren't "throwing in more crap"
+[13:54:32] <zetok> yes, since we don't use exceptions :)
+[13:54:35] <initramfs> My A/V changes is inherently a "redesign"
+[13:54:48] <initramfs> There will be very little of the old code that remains
+[13:55:33] <initramfs> And the way I look at it now, C++ exceptions seem pretty essential to the design
+[13:55:43] <iphy> 13:26 <initramfs> I'm just against the attitude of "wow, if we hack off this part of that language we get a 5% gain!"
+[13:55:50] <iphy> initramfs: yeah, it wasn't for that
+[13:56:19] <initramfs> iphy: Perhaps I misunderstood then, sorry.
+[13:56:31] <iphy> it's just an additional gain for disabling a feature you shouldn't be using
+[13:56:38] <initramfs> Okay
+[13:56:42] <initramfs> That I can agree with
+[13:57:30] <initramfs> zetok: Don't worry about the reasons for exceptions in my redesign, I have a design doc that I'm writing which states why I'm designing things in the way I am
+[13:59:12] <zetok> k
+[13:59:17] <iphy> so you're going to use exceptions?
+[13:59:27] <iphy> initramfs: why?
+[14:00:03] <initramfs> iphy: The design is not finalized but this could change. But in essence so we can fail out of operations when hardware resources are not available
+[14:00:19] <initramfs> e.g. trying to create a camera device and getting an exception when the given device is not available
+[14:00:58] <initramfs> This allows us to use a class to: acquire resources on construction and free resources on destruction (basically RAII)
+[14:01:24] <iphy> why do you need exceptions for RAII?
+[14:01:57] <initramfs> So we can fail out on constructors and function calls and indicate the type of failure
+[14:02:38] <zetok> you shouldn't need exceptions for that..?
+[14:02:53] <iphy> initramfs: what are the disadvantages of exceptions?
+[14:03:36] <initramfs> I really don't see any apart from potential abuse from other people and a minor minor performance hit that will not be noticeable at all
+[14:03:46] <iphy> ok
+[14:04:04] <iphy> what about: you don't know whether something can fail, so you need to assume that anything can fail at any time
+[14:04:38] <initramfs> Well, that's the whole concept of 'noexcept'?
+[14:05:10] <initramfs> To state that this code is "unfailable" or at least has a no-throw guarantee
+[14:05:28] <iphy> is noexcept checked?
+[14:06:01] <initramfs> What does that mean?
+[14:06:12] <iphy> do you get a compile time guarantee that it won't throw?
+[14:06:16] <initramfs> Yep
+[14:06:22] <initramfs> it's a C++ keyword
+[14:06:24] <initramfs> Like const
+[14:06:39] <initramfs> So the compiler will flag you if you tried to throw an exception in a no-throw function
+[14:06:48] <iphy> so you can only call other noexcept functions inside a noexcept function?
+[14:07:02] <initramfs> Well you can handle exceptions in a try-catch block inside
+[14:07:20] <initramfs> If you don't handle an exception whilst calling a function it propagates upwards
+[14:07:40] <initramfs> But if you handle it, you "consume" the exception
+[14:07:54] <initramfs> You can, of course, rethrow it if you want to
+[14:10:04] <initramfs> In short, a function that has a noexcept flag can call functions that throw exceptions as long as it handles them.
+[14:10:13] <iphy> https://www.irccloud.com/pastebin/1971zRpo/
+[14:10:45] <iphy> how do I make it checked?
+[14:12:31] <zetok> ><initramfs> I really don't see any apart from potential abuse from other people and a minor minor performance hit that will not be noticeable at all
+[14:12:42] <zetok> initramfs: abuse is *not* potential
+[14:12:54] <zetok> and performance hit is not small
+[14:12:57] <iphy> it is small
+[14:13:25] <zetok> not from what I heard
+[14:13:27] <iphy> if exceptions are used for exceptional errors that rarely or never happen in normal flow, it's zero-cost
+[14:13:40] <iphy> if you use it to replace "return", then yes, it's expensive
+[14:13:44] <initramfs> iphy: Okay my bad, the compiler doesn't check -_-.
+[14:14:00] <iphy> initramfs: right, so that's a fairly large disadvantage
+[14:14:21] <initramfs> One sec
+[14:14:25] <initramfs> Let me test something
+[14:19:24] <iphy> nurupo: I made the changes you requested
+[14:19:28] <iphy> I don't know how to reply "Done"
+[14:20:43] <initramfs> Throwing in a noexcept will call std::terminate instead of proceeding normally
+[14:21:00] <initramfs> So it should be easily picked up during testing or review
+[14:21:13] <zetok> just want to note that if it'll be as bad as I think, there'll be no point in me testing stuff
+[14:21:54] <initramfs> iphy: Yep, your program runs with: terminate called after throwing an instance of 'int' \ Aborted (core dumped)
+[14:22:17] <iphy> I see
+[14:22:38] <iphy> so no compile time guarantee, and the reviewer needs to check every function called to see whether it's noexcept, manulaly
+[14:22:47] <initramfs> Well no
+[14:22:57] <initramfs> The reviewing has to check if a function declared noexcept throws anything
+[14:23:01] <initramfs> Which is much less work
+[14:23:08] <iphy> ok
+[14:23:20] <initramfs> s/reviewing/reviewer/
+[14:23:56] <iphy> https://www.irccloud.com/pastebin/g1FnemwG/
+[14:24:06] <iphy> so this is fine then, because bar doesn't throw anything itself
+[14:24:29] <initramfs> No
+[14:24:41] <iphy> so the reviewer needs to check whether foo is noexcept
+[14:24:46] <iphy> if it's not, it could throw
+[14:24:50] <initramfs> Sure
+[14:25:02] <iphy> 13:22 <iphy> so no compile time guarantee, and the reviewer needs to check every function called to see whether it's noexcept, manulaly
+[14:25:15] <initramfs> Well
+[14:25:16] <iphy> well yes
+[14:25:22] <initramfs> I'm saying that if you run that segment of code
+[14:25:31] <zetok> "no"
+[14:25:32] <initramfs> It'll crash automatically for you...
+[14:25:35] <zetok> "run it yourself"
+[14:25:41] <iphy> initramfs: only if you actually reach a path that does throw
+[14:25:50] <initramfs> True
+[14:26:00] <initramfs> But that's the thing though
+[14:26:13] <initramfs> Since qTox doesn't have any exceptions right now
+[14:26:25] <initramfs> We can safely assume that everything is essentially "nothrow"
+[14:26:27] <iphy> https://www.irccloud.com/pastebin/7Mncx0ps/
+[14:26:42] <iphy> in your tests, foo won't throw
+[14:26:55] <iphy> but if it does in production, program termination
+[14:27:08] <initramfs> Well... that's the same argument as saying "new" wouldn't spontaneously fail
+[14:27:35] <initramfs> Does qTox check pointer validity for every usage of a pointer created with 'new'?
+[14:27:40] <initramfs> I don't think so...
+[14:27:56] <iphy> then why should foo throw an exception in that case?
+[14:28:03] <iphy> why not just terminate right there?
+[14:28:16] <initramfs> In foo WILL throw
+[14:28:32] <initramfs> Bar will also throw
+[14:28:39] <initramfs> Since bar didn't handle foo
+[14:28:47] <iphy> anyway, your plan only works if you have test coverage for all the failure paths
+[14:28:53] <iphy> so you're basically writing python
+[14:29:06] <iphy> because you have no compile time guarantee about the program behaviour in failure scenarios
+[14:29:13] <initramfs> I don't see the point
+[14:29:33] <initramfs> Because the same analogy comes with checking for failures in resource allocation
+[14:29:52] <initramfs> The difference is that exceptions are standardized whilst other code you're up to the mercy of the documentation
+[14:30:15] <initramfs> So you could run some function that gives you a Foo* perhaps a: Foo* createFoo()
+[14:30:34] <iphy> obviously not a raw pointer, because nobody writes code like that (right?)
+[14:30:36] <initramfs> It's up to the documentation to tell you if it'll ever be null
+[14:30:46] <iphy> if it's a pointer, it can be null, done
+[14:31:16] <iphy> that's not up to the documentation
+[14:31:16] <initramfs> Doesn't tell you: "IF it could be null, nor why it would be null"
+[14:31:29] <iphy> it's a pointer, therefore can be null
+[14:31:57] <initramfs> Well, that's perfectly analogous to "if it's a function, then it can throw"
+[14:32:06] <iphy> except when you disable exceptions
+[14:32:16] <iphy> and noexcept doesn't help you
+[14:32:16] <initramfs> Sure...
+[14:32:19] <iphy> references can't be null
+[14:32:21] <iphy> objects can't be null
+[14:32:34] <initramfs> But any heap allocated pointer can be
+[14:32:36] <iphy> if you have things that can't be null, C++ offers ways to express that
+[14:33:07] <initramfs> If you stop to look at why something is null, or why something is not available, or by extension, why exceptions exist
+[14:33:25] <iphy> initramfs: that's when you have things like std::vector, so you confine the responsibility for nullability to a small class
+[14:33:39] <iphy> so the rest of the code can use abstractions where things can't be null
+[14:33:48] <initramfs> Yes
+[14:33:55] <initramfs> And the same argument can be given to exceptions
+[14:33:59] <initramfs> if you really don't like them
+[14:34:02] <iphy> except it's not checked
+[14:34:07] <iphy> while the nullability is
+[14:34:27] <initramfs> What do you mean that the nullability is "checked"
+[14:34:34] <zetok> by compiler
+[14:34:36] <iphy> std::string x; // can't be null
+[14:34:38] <iphy> checked by compiler
+[14:35:15] <initramfs> Okay, I really don't know how to explain this. We're talking about two very different problems here
+[14:35:25] <initramfs> You're talking about features in C++ that can be enforced by the compiler
+[14:35:35] <iphy> I'm talking about compile time guarantees
+[14:35:46] <initramfs> I'm talking about how to handle the case with runtime errors like resources being unavailable
+[14:35:50] <iphy> I like compile time guarantees, so I use haskell and C++
+[14:36:10] <iphy> instead of python or C
+[14:36:50] <iphy> if you acquire a resource, then you can have a function returning a maybe-resource
+[14:37:12] <iphy> if acquisition failed, the maybe-resource could contain nothing or an error code or whatever you want
+[14:37:27] <iphy> if it succeeded, you can use the resource
+[14:38:27] <initramfs> Sure
+[14:38:38] <initramfs> But this comes at the cost of additional complexity
+[14:38:51] <iphy> e.g. Maybe<Resource> my_resource = get_resource; return my_resource.handle([](ErrorCode failure) { return "nope :("; }, [](Resource &res) { return "yep :)"; });
+[14:38:59] <iphy> get_resource()
+[14:39:28] <iphy> now you have compile time guarantee that if you have a Resource& anywhere, it will be valid
+[14:39:45] <iphy> and you have the guarantee that you check errors
+[14:39:55] <initramfs> And how is that different to: try{Resource my_resource = get_resource();}catch(...){return "nope"}
+[14:40:05] <iphy> because you can omit try/catch
+[14:40:06] <initramfs> The same argument applies
+[14:40:13] <iphy> and nothing will tell you that you omitted it
+[14:40:51] <initramfs> Yes
+[14:40:58] <initramfs> That is a downside
+[14:41:03] <zetok> …
+[14:41:09] <iphy> that's exactly the point I'm trying to make
+[14:41:12] <initramfs> Okay
+[14:41:23] <initramfs> But my problem with this is
+[14:42:50] <initramfs> Your argument is saying: a lot of additional code logic (using your 'maybe-resource' idea) vs the potential that one forgets to handle exceptions (which results in a crash)
+[14:43:16] <initramfs> The crash itself is actually immensely helpful
+[14:43:25] <initramfs> Because it tells you where it crashed...
+[14:43:42] <initramfs> So unless everyone here programs without ever running anything at all...
+[14:43:52] <initramfs> I mean unit tests would pick it up as well
+[14:44:12] <zetok> >initramfs> So unless everyone here programs without ever running anything at all...
+[14:44:12] <initramfs> Also, consider this
+[14:44:16] <zetok> that's what you're doing
+[14:44:20] <initramfs> ?????
+[14:44:33] <initramfs> I run ever PR I review?
+[14:44:53] <initramfs> Unless it;s documentation changes... where I don't know what I would run? A markdown parser?
+[14:45:04] <zetok> ><initramfs> I run ever PR I review?
+[14:45:13] <zetok> how much does that matter if testing is flawed?
+[14:45:23] <initramfs> iphy: Consider this, what happens if you run std::vector::push_back() when out of memory?
+[14:46:19] <initramfs> zetok: I think you have bigger issues if you have code that's flawed and testing that's flawed and the general expectation that no bug will ever come of it. Exceptions or not.
+[14:47:01] <zetok> oh, but testing is flawed :D
+[14:47:03] <iphy> initramfs: what should I consider about it?
+[14:47:21] <initramfs> What happens?
+[14:47:48] <iphy> __cxa_throw_bad_alloc() or something (on linux)
+[14:47:57] <iphy> i.e. throw std::bad_alloc()
+[14:48:07] <initramfs> Is that not an exception?
+[14:48:11] <iphy> yes
+[14:48:19] <initramfs> Where did it come from?
+[14:48:27] <iphy> stdlib
+[14:48:45] <initramfs> Probably from a malloc/realloc or a "new" function
+[14:48:49] <iphy> or libsupc++
+[14:48:55] <iphy> not from malloc, no
+[14:48:58] <initramfs> Okay
+[14:49:03] <iphy> from ::operator new
+[14:49:06] <initramfs> Yep
+[14:49:28] <zetok> initramfs: when it comes to technology, people learn to instinctively avoid testing
+[14:50:12] <iphy> initramfs: then?
+[14:50:26] <initramfs> zetok: Well that's tragic. And if you want a bug free environment, testing is definitely one way to enforce that
+[14:50:47] <initramfs> iphy: Well, that's the whole point of exceptions
+[14:50:57] <initramfs> Under your scheme
+[14:51:04] <zetok> initramfs: eh, you've missed the point
+[14:51:29] <initramfs> You'd need whole classes of pseudo objects that carry information of if various operations succeeded or not
+[14:51:58] <initramfs> Sure you could say have "std::vector::push_back()" return a bool indicating success/failure
+[14:52:10] <initramfs> But what if you had an operation that requires a result
+[14:52:31] <initramfs> Do you require a Maybe-Resource specialized for every resource out there?
+[14:52:59] <initramfs> Because after all, if you want to replace exceptions, you'd need to carry the "why it failed" information as well
+[14:53:05] <zetok> https://doc.rust-lang.org/std/result/index.html
+[14:53:12] <initramfs> A generic "Maybe" class cannot do that
+[14:53:46] <iphy> allocation failure on non-embedded systems is generally fatal enough to simply terminate
+[14:54:22] <iphy> exception handling is useful if you have some way to continue working when the exception happens
+[14:55:30] <initramfs> And A/V resource acquisition strictly falls into the second category...
+[14:56:11] <iphy> what is an A/V resource?
+[14:56:40] <initramfs> Physical Camera device, Audio device, Desktop screen capture
+[14:56:56] <initramfs> In particular, you also have respective video and audio modes
+[14:57:00] <iphy> so handles to devices?
+[14:57:07] <initramfs> Not always
+[14:57:12] <iphy> what else?
+[14:57:20] <initramfs> Desktop screen capture isn't a device
+[14:57:25] <iphy> what is it?
+[14:57:46] <initramfs> Well it would be a call to a library and have that library report availability
+[14:57:58] <initramfs> Which is another minor point on exceptions
+[14:58:13] <initramfs> Disabling exceptions completely cuts off any use of C++ libraries that make use of exceptions
+[14:58:28] <initramfs> s/make/makes/
+[14:59:02] <iphy> are you concretely planning to use one of them?
+[14:59:10] <initramfs> antis81 is currently wrestling with RtAudio, which frankly, I don't know how he's managing given that RtAudio throws exceptions when devices are busy
+[14:59:47] <iphy> if you use exceptions, you'll need a lot more discipline
+[14:59:58] <initramfs> I understand that
+[14:59:58] <iphy> I'm not against exceptions, just like I'm not against C
+[15:00:30] <initramfs> It's just, I feel like in the scheme of things, any exception mishap is likely safer than alternatives
+[15:00:45] <iphy> but you need every member of your team to be meticulous about it
+[15:01:00] <zetok> -.-
+[15:01:14] <initramfs> Well
+[15:01:22] <initramfs> If you consider worst case scenarios
+[15:01:48] <zetok> you don't
+[15:01:51] <initramfs> A exception mishap results in application crashing exactly at the point of the mishap (since exceptions are propagated)
+[15:02:47] <initramfs> A mishap of other sorts (such as not checking of a maybe-resource is actually valid, which, would not be picked up by a compiler either), may cause UB and crash elsewhere
+[15:08:03] <iphy> ok
+[15:08:08] <iphy> I'll see how it goes then
+[15:11:09] <initramfs> iphy: Well, you've reminded me of the more functional construct of an optional, which I'll keep in mind. As I said, I'm still designing this thing at this point. If I can use that instead of exceptions without too much complexity, I'll see what I can do.
+[16:20:31] *** Joins: Neolex (~neolex@ )
+[16:20:52] *** Parts: Neolex (~neolex@ ) ()
+[17:08:02] <Diadlo> zetok: Hello)
+[17:08:32] <Diadlo> May be add https://github.com/qTox/qTox/issues/3601 to the "Code formatting" milestone?
+[17:20:47] *** Joins: Lord_Vlad (~Vlad@ )
+[18:07:58] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[18:17:55] *** Joins: Lord_Vlad (~Vlad@ )
+[18:45:50] *** Joins: sudden6 (~anonymous@ )
+[19:24:54] *** Quits: abbat (~Anton@ ) (Ping timeout: 276 seconds)
+[19:31:02] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 252 seconds)
+[19:32:02] *** Joins: Lord_Vlad (~Vlad@ )
+[19:46:33] *** Joins: zetok (~zetok@ )
+[19:46:38] *** Joins: glasscapt_ (~glasscapt@ )
+[19:47:21] *** Joins: rerumnovarum (~user-reru@ )
+[19:47:24] *** Joins: dan- (~d@ )
+[19:47:36] *** Joins: zero-ghost (~0@ )
+[19:47:45] *** Joins: initramfs (~initramfs@ )
+[19:48:08] *** Joins: koshii (~w@ )
+[19:48:08] *** Joins: Chiitoo (~Chiitoo@ )
+[19:48:22] *** Joins: GGMethos_ (methos@ )
+[19:48:59] *** Joins: mitfree (~mit@ )
+[19:48:59] *** Joins: CGGB (~CGGB@ )
+[19:49:41] *** CGGB is now known as Guest6097
+[19:49:55] *** Joins: sockspls (~sockspls@ )
+[19:50:24] *** Quits: dan- (~d@ ) (Changing host)
+[19:50:24] *** Joins: dan- (~d@ )
+[19:55:08] *** Joins: Dragofix- (Dragofix@ )
+[19:55:59] *** Joins: smaragdus2 (~omoo@ )
+[19:57:15] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 248 seconds)
+[19:57:24] *** Joins: Sephi_ (~me@ )
+[19:57:48] *** Joins: sockspls (~sockspls@ )
+[19:57:50] *** Joins: mitfree_ (~mit@ )
+[19:58:11] *** Joins: initramfs_ (~initramfs@ )
+[19:58:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 265 seconds)
+[19:58:42] *** Quits: Sephi (~me@ ) (Ping timeout: 240 seconds)
+[19:58:47] *** Sephi_ is now known as Sephi
+[19:58:52] *** Joins: rerumnov1rum (~user-reru@ )
+[19:59:06] *** Joins: nightfur- (nightfury@ )
+[19:59:07] *** Joins: nurupo_ (~nurupo.ga@ )
+[20:00:59] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[20:03:05] *** Joins: Darky` (~Darky@ )
+[20:03:24] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 272 seconds)
+[20:03:24] *** Quits: mitfree (~mit@ ) (Ping timeout: 255 seconds)
+[20:03:24] *** Quits: Guest6097 (~CGGB@ ) (Ping timeout: 255 seconds)
+[20:03:25] *** Quits: koshii (~w@ ) (Ping timeout: 272 seconds)
+[20:03:26] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 272 seconds)
+[20:03:26] *** Quits: zero-ghost (~0@ ) (Ping timeout: 272 seconds)
+[20:03:27] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 272 seconds)
+[20:03:27] *** Quits: Darky (~Darky@ ) (Ping timeout: 272 seconds)
+[20:03:27] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 272 seconds)
+[20:03:28] *** Quits: nightfuri (nightfury@ ) (Ping timeout: 272 seconds)
+[20:03:28] *** Quits: dongo (~dongo@ ) (Ping timeout: 272 seconds)
+[20:03:28] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 272 seconds)
+[20:03:30] *** Quits: dan- (~d@ ) (*.net *.split)
+[20:03:30] *** Quits: glasscapt_ (~glasscapt@ ) (*.net *.split)
+[20:03:31] *** Quits: Bheru27 (~Bheru27@ ) (*.net *.split)
+[20:03:31] *** Quits: bashrc (~motters@ ) (*.net *.split)
+[20:03:32] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[20:03:58] *** Joins: buglessdr (~buglessdr@ )
+[20:04:18] *** Quits: Curlybear (~Curlybear@ ) (*.net *.split)
+[20:05:27] *** nurupo_ is now known as nurupo
+[20:05:32] *** Joins: dongo (~dongo@ )
+[20:05:35] *** Dragofix- is now known as Dragofix
+[20:05:53] *** Joins: zero-ghost (~0@ )
+[20:06:36] *** Joins: dan- (~d@ )
+[20:06:36] *** Quits: dan- (~d@ ) (Changing host)
+[20:06:36] *** Joins: dan- (~d@ )
+[20:08:25] *** Joins: Bheru27 (~Bheru27@ )
+[20:08:44] *** Joins: Curlybear (~Curlybear@ )
+[20:11:00] *** Joins: albel727 (~albel727@ )
+[20:13:32] *** Joins: glasscapt (~glasscapt@ )
+[20:14:47] *** Joins: koshii (~w@ )
+[20:16:27] *** Joins: bashrc (~motters@ )
+[20:16:32] *** Joins: f10_ (~flo@ )
+[20:17:01] *** Quits: buglessdr (~buglessdr@ ) (Remote host closed the connection)
+[20:19:16] *** Joins: f10 (~flo@ )
+[20:21:03] *** Joins: VVD (~VVD@ )
+[20:22:04] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[20:22:27] *** Joins: Lord_Vlad (~Vlad@ )
+[20:29:10] *** Joins: hpanago_ (uid15586@ )
+[20:35:58] *** Joins: Dragofix- (Dragofix@ )
+[20:37:36] *** Joins: Emcy (~MC@ )
+[20:37:40] *** Quits: Emcy (~MC@ ) (Changing host)
+[20:37:40] *** Joins: Emcy (~MC@ )
+[20:38:06] *** Joins: nightfuri (nightfury@ )
+[20:38:54] *** Joins: rysiekpl (~quassel@ )
+[20:39:02] *** Quits: zero-ghost (~0@ ) (Ping timeout: 276 seconds)
+[20:39:03] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 276 seconds)
+[20:39:03] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 276 seconds)
+[20:39:06] *** Quits: anoa (~anoa@ ) (Ping timeout: 276 seconds)
+[20:39:47] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 276 seconds)
+[20:39:47] *** Quits: dan- (~d@ ) (Ping timeout: 276 seconds)
+[20:39:48] *** Quits: nightfur- (nightfury@ ) (Ping timeout: 276 seconds)
+[20:39:48] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 276 seconds)
+[20:39:49] *** Quits: abbat (~Anton@ ) (Ping timeout: 276 seconds)
+[20:39:49] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 276 seconds)
+[20:39:49] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[20:39:50] *** Quits: tobiasBora (~tobiasBor@ ) (Ping timeout: 276 seconds)
+[20:39:50] *** Quits: rysiek|pl (~quassel@ ) (Ping timeout: 276 seconds)
+[20:40:10] *** Dragofix- is now known as Dragofix
+[20:40:20] *** Joins: cisc (~cisc@ )
+[20:42:26] *** Joins: rerumnovarum (~user-reru@ )
+[20:42:32] *** Joins: abbat (~Anton@ )
+[20:44:30] *** Joins: tobiasBora (~tobiasBor@ )
+[20:45:02] *** Joins: anoa (~anoa@ )
+[20:46:11] *** Joins: nurupo (~nurupo.ga@ )
+[20:49:43] *** Joins: dan- (~d@ )
+[20:49:43] *** Quits: dan- (~d@ ) (Changing host)
+[20:49:43] *** Joins: dan- (~d@ )
+[20:51:28] *** Joins: Bheru27 (~Bheru27@ )
+[20:52:24] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 265 seconds)
+[20:53:51] *** Quits: VVD (~VVD@ ) (Ping timeout: 265 seconds)
+[20:53:52] *** Quits: bashrc (~motters@ ) (Ping timeout: 265 seconds)
+[20:54:20] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[20:54:20] *** Quits: rysiekpl (~quassel@ ) (Ping timeout: 265 seconds)
+[20:55:05] *** Joins: cisc (~cisc@ )
+[21:04:06] *** Joins: rysiek|pl (~quassel@ )
+[21:04:10] *** Joins: Lord_Vlad (~Vlad@ )
+[21:08:16] *** Joins: zero-ghost (~0@ )
+[21:14:30] *** Joins: Dragofix- (~Dragofix@ )
+[21:15:20] *** Joins: Emcy_ (~MC@ )
+[21:15:20] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[21:15:20] *** Joins: Emcy_ (~MC@ )
+[21:15:26] *** Joins: f10__ (~flo@ )
+[21:15:31] *** Quits: Darky` (~Darky@ ) (Ping timeout: 250 seconds)
+[21:15:31] *** Quits: Sephi (~me@ ) (Ping timeout: 250 seconds)
+[21:15:40] *** Joins: Sephi (~me@ )
+[21:15:47] *** Joins: rysiekpl (~quassel@ )
+[21:16:44] *** Joins: bashrc (~motters@ )
+[21:17:09] *** Joins: rerumnov1rum (~user-reru@ )
+[21:17:38] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 272 seconds)
+[21:17:38] *** Quits: nightfuri (nightfury@ ) (Ping timeout: 272 seconds)
+[21:17:39] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 272 seconds)
+[21:17:40] *** Quits: zero-ghost (~0@ ) (Ping timeout: 272 seconds)
+[21:17:41] *** Quits: dan- (~d@ ) (Ping timeout: 272 seconds)
+[21:17:41] *** Quits: anoa (~anoa@ ) (Ping timeout: 272 seconds)
+[21:17:41] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 272 seconds)
+[21:17:42] *** Quits: koshii (~w@ ) (Ping timeout: 272 seconds)
+[21:17:44] *** Quits: rysiek|pl (~quassel@ ) (Ping timeout: 272 seconds)
+[21:17:44] *** Quits: cisc (~cisc@ ) (Ping timeout: 272 seconds)
+[21:17:46] *** Quits: tobiasBora (~tobiasBor@ ) (Ping timeout: 272 seconds)
+[21:17:46] *** Quits: abbat (~Anton@ ) (Ping timeout: 272 seconds)
+[21:17:47] *** Quits: Emcy (~MC@ ) (Ping timeout: 272 seconds)
+[21:17:47] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 272 seconds)
+[21:17:48] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[21:17:48] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[21:17:48] *** Quits: glasscapt (~glasscapt@ ) (Ping timeout: 272 seconds)
+[21:17:49] *** Quits: albel727 (~albel727@ ) (Ping timeout: 272 seconds)
+[21:17:50] *** Quits: dongo (~dongo@ ) (Ping timeout: 272 seconds)
+[21:17:55] *** Dragofix- is now known as Dragofix
+[21:17:59] *** Joins: dongo (~dongo@ )
+[21:18:16] *** Joins: Darky (~Darky@ )
+[21:18:28] *** Joins: cisc (~cisc@ )
+[21:18:32] *** Joins: f10_ (~flo@ )
+[21:19:06] *** Joins: glasscapt (~glasscapt@ )
+[21:19:27] *** Joins: nightfuri (~nightfuri@ )
+[21:20:12] *** Quits: Dragofix (~Dragofix@ ) (Quit: Unexpected error - Please investigate.)
+[21:21:06] *** Joins: anoa (~anoa@ )
+[21:21:08] *** Joins: albel727 (~albel727@ )
+[21:21:14] *** Joins: nurupo (~nurupo.ga@ )
+[21:21:17] *** Joins: dan- (~d@ )
+[21:21:17] *** Quits: dan- (~d@ ) (Changing host)
+[21:21:17] *** Joins: dan- (~d@ )
+[21:31:56] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 250 seconds)
+[21:31:59] *** Joins: f10 (~flo@ )
+[21:31:59] *** Joins: Bheru27 (~Bheru27@ )
+[21:32:01] *** Quits: smaragdus2 (~omoo@ ) (Ping timeout: 250 seconds)
+[21:32:28] *** Joins: Darky` (~Darky@ )
+[21:32:47] *** Quits: anoa (~anoa@ ) (Ping timeout: 272 seconds)
+[21:32:50] *** Quits: dan- (~d@ ) (Ping timeout: 272 seconds)
+[21:32:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[21:32:51] *** Quits: Darky (~Darky@ ) (Ping timeout: 272 seconds)
+[21:33:35] *** Joins: koshii (~w@ )
+[21:34:30] *** Joins: dan- (~d@ )
+[21:34:30] *** Quits: dan- (~d@ ) (Changing host)
+[21:34:30] *** Joins: dan- (~d@ )
+[21:34:46] *** Joins: abbat (~Anton@ )
+[21:35:15] *** Joins: nurupo (~nurupo.ga@ )
+[21:36:07] *** Joins: anoa (~anoa@ )
+[21:37:16] *** Joins: tobiasBora (~tobiasBor@ )
+[21:39:18] *** Quits: demize (kyrias@ ) (Quit: Do Androids Dream of Electric Sheep?)
+[21:40:07] *** Joins: smaragdus (~omoo@ )
+[21:41:14] *** Joins: demize (kyrias@ )
+[21:45:48] *** Joins: Emcy (~MC@ )
+[21:45:59] *** Joins: rysiek|pl (~quassel@ )
+[21:46:33] *** Quits: Sephi (~me@ ) (Ping timeout: 265 seconds)
+[21:47:01] *** Quits: dongo (~dongo@ ) (Ping timeout: 265 seconds)
+[21:47:01] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 265 seconds)
+[21:47:01] *** Quits: bashrc (~motters@ ) (Ping timeout: 265 seconds)
+[21:47:02] *** Quits: rysiekpl (~quassel@ ) (Ping timeout: 265 seconds)
+[21:47:02] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 265 seconds)
+[21:48:37] <nurupo> ><iphy> is noexcept checked? \ <initramfs>  What does that mean? \ <iphy> do you get a compile time guarantee that it won't throw? \ <initramfs> Yep <-- don't think it will flag anything, it will just call std::terminate() if any exception is thrown from a nothrow function. >Note that a noexcept specification on a function is not a compile-time check; it is merely a method for a programmer to inform the compiler whether or not a function should throw 
+[21:48:38] <nurupo> exceptions.
+[21:50:33] *** Joins: rerumnovarum (~user-reru@ )
+[21:51:13] *** Joins: koshii_ (~w@ )
+[21:52:03] *** Quits: dan- (~d@ ) (Ping timeout: 272 seconds)
+[21:52:04] *** Quits: koshii (~w@ ) (Ping timeout: 272 seconds)
+[21:52:09] *** Joins: dan-- (~d@ )
+[21:52:09] *** Quits: dan-- (~d@ ) (Changing host)
+[21:52:09] *** Joins: dan-- (~d@ )
+[21:52:11] *** koshii_ is now known as koshii
+[21:52:12] *** Quits: Curlybear (~Curlybear@ ) (*.net *.split)
+[21:53:29] *** Joins: Sephi (~me@ )
+[21:54:02] *** dan-- is now known as dan-
+[21:55:53] *** Joins: Curlybear (~Curlybear@ )
+[21:57:49] *** Quits: Curlybear (~Curlybear@ ) (*.net *.split)
+[22:00:34] *** Joins: Curlybear (~Curlybear@ )
+[22:01:11] <nurupo> ><zetok> and performance hit is not small \ <iphy> it is small <-- compilers use zero-cost exception model, e.g. it costs nothing to have exceptions in your code, until an exception is thrown. the exception handling code is generally more expensive than regular error code checking, but given that the regular error checking is not very expensive to begin with, exception handling is not that expensive too. also, given exceptions will be thrown only in 
+[22:01:12] <nurupo> exceptional cases, there shouldn't be any issue with using them
+[22:01:42] *** Joins: dongo (~dongo@ )
+[22:01:58] <nurupo> ><iphy> nurupo: I made the changes you requested \ I don't know how to reply "Done" <-- wrong channel :P
+[22:05:04] *** Parts: demize (kyrias@ ) ("WeeChat 1.6-rc1")
+[22:05:22] *** Quits: oranges (oranges@ ) (Ping timeout: 244 seconds)
+[22:05:27] <nurupo> ><initramfs> Does qTox check pointer validity for every usage of a pointer created with 'new'? <-- operator new throws std::bad_alloc if it fails to allocate. you won't get a chance to check the validity of a pointer if allcoation fails
+[22:05:29] *** Joins: oranges (oranges@ )
+[22:05:46] <nurupo> you must be thinking of malloc() family of functions from C
+[22:06:33] <nurupo> theer are ways to make `new` not throw, but i don't think qTox sets them up
+[22:06:34] <nurupo> *there
+[22:12:57] <nurupo> anyway, my take on exceptions is that they change the control flow of your program and unwind stuck. it's a bit less trivial to write correct code with exceptions around as you should always keep in mind that an exception can be thrown from anywhere. this means that you have to RAII any ACID transaction, resource acquisition, etc.
+[22:13:11] <nurupo> *stack
+[22:15:37] <nurupo> ><iphy> I like compile time guarantees, so I use haskell and C++ <-- you'd love Rust then :P
+[22:25:39] <Diadl0> zetok: ping
+[22:26:00] *** Joins: CGGB (~CGGB@ )
+[22:26:58] *** Joins: athan (~athan@ )
+[22:27:08] *** Joins: VVD (~VVD@ )
+[22:27:28] *** Joins: luis_ (3cf07549@ )
+[22:29:08] <luis_> Guys, how faux offline messages work?
+[22:32:06] *** Joins: Diadlo (~diadlo@ )
+[22:32:23] <nurupo> luis_: if you send messages to a friend who is offline, those messages are stored on your computer to be sent when both of you are online
+[22:32:45] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 244 seconds)
+[22:32:45] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 244 seconds)
+[22:32:50] <luis_> ok, thanks
+[22:37:29] <luis_> Are there any tox clients for iOS?
+[22:38:58] *** Quits: e0f (~e0f@ ) (Changing host)
+[22:38:58] *** Joins: e0f (~e0f@ )
+[22:40:12] <nurupo> yes
+[22:40:30] *** Quits: Sephi (~me@ ) (Ping timeout: 244 seconds)
+[22:40:37] *** Joins: Sephi (~me@ )
+[22:40:40] <nurupo> Antidote https://tox.chat/clients.html
+[22:41:42] *** Quits: tux3 (~tux@ ) (Quit: Quitting)
+[22:44:38] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[22:45:50] *** Joins: tux3 (~tux@ )
+[22:46:07] <Emcy> shit when did tox.chat change
+[22:46:10] *** Joins: Dragofix (Dragofix@ )
+[22:49:48] *** Quits: Sephi (~me@ ) (Ping timeout: 244 seconds)
+[22:50:26] *** Joins: Sephi (~me@ )
+[22:52:37] *** Quits: CGGB (~CGGB@ ) (*.net *.split)
+[22:54:23] *** Quits: luis_ (3cf07549@ ) (Quit: Page closed)
+[22:58:07] -qtox-git-spam- [qTox] Diadlo closed pull request #3741: refactor(settings,chat): fixes of static analyze warnings (master...staticfixes) https://git.io/vibTv
+[22:59:06] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[23:01:10] *** Joins: rerumnovarum (~user-reru@ )
+[23:05:00] *** Quits: tux3 (~tux@ ) (Quit: Quitting)
+[23:10:09] *** Joins: Lyris (~Lyris@ )
+[23:10:13] *** Parts: Lyris (~Lyris@ ) ()
+[23:18:52] *** Joins: tux3 (tux@ )
+[23:24:17] *** Joins: Bill_MI (~Bill@ )
+[23:26:25] *** Quits: Bill_MI (~Bill@ ) (Client Quit)
+[23:28:10] <nurupo> talking about exceptions and error handling, here is an interesting talk from Alexandrescu on this https://channel9.msdn.com/Shows/Going+Deep/C-and-Beyond-2012-Andrei-Alexandrescu-Systematic-Error-Handling-in-C
+[23:28:14] *** Joins: athan (~athan@ )
+[23:29:43] *** Joins: CGGB (~CGGB@ )
+[23:37:35] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[23:38:27] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[23:39:52] *** Joins: jjuran (~jjuran@ )
+[23:40:40] *** Joins: kadinparker[m] (kadinparke@ )
+[23:46:01] *** Joins: f10 (~flo@ )
+[23:46:44] *** Joins: f10_ (~flo@ )
+[23:50:45] *** Quits: athan (~athan@ ) (Ping timeout: 276 seconds)
