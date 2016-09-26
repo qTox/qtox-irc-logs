@@ -1,0 +1,365 @@
+[00:06:48] *** Joins: qTox-syncbot (~qTox-sync@ )
+[00:06:59] <initramfs_> nurupo: Oops, I forgot that new never returns nullptr, but that was kinda my point. Exceptions are used in resource unavailability situations by C++ by default anyway.
+[00:07:14] <zetok> Diadlo: pong
+[00:31:32] <nurupo> yep, not by default
+[00:31:49] <nurupo> you can `new(std::nothrow)` to ask it to return null instead of throwing an exception
+[00:34:40] *** Joins: Neolex (~neolex@ )
+[00:34:47] <Neolex> Hi
+[00:46:57] <Neolex> I dont know where to start :(
+[00:47:44] <nurupo> initramfs_: the is also a thing with Linux overcommitment memory allocation model
+[00:48:04] <nurupo> even if there is not enough memory to malloc(512), malloc won't fail
+[00:48:17] <initramfs_> Right
+[00:48:50] <nurupo> linux would try to allocate that much memory the first time the memory segment pointed be what malloc returned is accessed
+[00:49:09] <nurupo> and if then there is not enough memory, your application would get killed
+[00:49:18] <nurupo> or something like that
+[00:49:19] <zetok> Neolex: ok, what you're trying to do?
+[00:49:19] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:50:06] <Neolex> zetok: I want to fix the issue #3334 . Set a parameter for the port 
+[00:50:57] <Neolex> But the servers are on the port 33445 so we cant set a random port ? 
+[00:51:10] <zetok> um
+[00:51:17] <zetok> that doesn't matter
+[00:51:34] <zetok> the problem here is that the functionality isn't in toxcore
+[00:51:58] <zetok> random port would work just fine
+[00:52:05] <zetok> (if toxcore supported that)
+[00:52:10] <Neolex> ok :/
+[00:52:35] <Neolex> so it's not that easy ? I chose an easy issue to start
+[00:52:59] <zetok> Neolex: you can develop against irungentoo/toxcore `new` branch, but it would seem that some(?) time has to pass before it'll get to toxcore that qTox uses
+[00:52:59] <Neolex> so we have to wait for toxcore to implement that ?
+[00:53:31] <zetok> so your PR with changes would most likely wait long time before getting merged
+[00:53:41] <zetok> >so we have to wait for toxcore to implement that ?
+[00:53:45] <zetok> only for merging PR
+[00:53:58] <zetok> also, there's this thing with migrating to TokTok/toxcore
+[00:54:38] <zetok> TokTok/toxcore most likely will support the functionality, but probably with (slightly?) different API
+[00:55:06] <Neolex> ok ok
+[00:57:07] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[00:57:13] <nurupo> zetok: you can tell toxcore which UDP port you want it to use
+[00:57:26] <nurupo> so the functionality is in the toxcore
+[00:57:43] <nurupo> unless i misunderstood and you are talking of something different
+[00:57:56] <zetok> https://github.com/qTox/qTox/issues/3334
+[00:58:12] <zetok> hmm
+[00:58:28] <nurupo> yeah, i have read that
+[00:58:30] * zetok wonders if "help wanted" there is right
+[00:58:35] <nurupo> still don't understand what the issue is
+[00:58:49] <zetok> upnp isn't in toxcore?
+[00:59:46] <zetok> Neolex: sorry, for the whole functionality from the issue you'd need to wait, for just setting the port the stuff is already there
+[01:00:19] <nurupo> zetok: were you talking about upnp not being in toxcore?
+[01:00:22] <nurupo> ><zetok> random port would work just fine \ <zetok> (if toxcore supported that)
+[01:00:40] <nurupo> i thought you were talking about toxcore not supporting using random USP port
+[01:00:42] <nurupo> *UDP
+[01:00:49] <nurupo> ok then
+[01:01:25] <zetok> (sorry, I kinda lumped stuff together since that's what the issue is about)
+[01:07:15] <zetok> Neolex: https://github.com/qTox/qTox/blob/master/src/core/core.cpp#L120 ← if I understand correctly, that creates Tox_Options
+[01:07:51] <zetok> Neolex: https://github.com/irungentoo/toxcore/blob/master/toxcore/tox.h#L441,L459 ← relevant part of Tox_Options
+[01:08:20] <zetok> Neolex: https://github.com/qTox/qTox/blob/master/src/core/core.cpp#L139 ← this
+[01:09:05] <Neolex> zetok: ok thank you :)
+[01:09:08] <zetok> np
+[01:10:01] <iphy> regarding new branch
+[01:10:14] <iphy> it entirely depends on irungentoo how this collaboration will work
+[01:10:27] <Neolex> why does it need a range of port , and not just on port ?
+[01:10:46] <iphy> he has shown zero interest in our work, but I'm still hoping we can work together
+[01:10:47] <Neolex> so the users should choose the range and not only the port ?
+[01:11:01] <iphy> so I've opened a PR to try and bring toktok and irungentoo's repo closer together
+[01:11:18] <iphy> it's up to irungentoo to either ignore us or work with us
+[01:11:28] <zetok> Neolex: there can be other tox instances running, and they can already occupy first ports in range, in this case toxcore tries to bind to the next port in order
+[01:11:36] <iphy> either way, we'll slowly pick things out of the new branch and bring them through our regular review process
+[01:11:51] <Neolex> zetok: ah yes of course , thanks ^^
+[01:11:56] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 265 seconds)
+[01:12:32] <iphy> we've grandfathered in irungentoo/master, but there won't be any grandfathering for new
+[01:14:06] <zetok> ok, good to know that functionality from `new` will eventually land in TokTok/toxcore
+[01:17:52] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[01:37:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[01:44:36] *** Quits: GGMethos_ (methos@ ) (Ping timeout: 250 seconds)
+[01:53:34] *** Quits: iphy (uid67735@ ) (Ping timeout: 265 seconds)
+[01:55:54] *** Joins: iphy (uid67735@ )
+[01:57:26] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 265 seconds)
+[01:57:51] *** Joins: hexadezimalion (sid85551@ )
+[01:59:22] *** Quits: linxon (~lin@ ) (Ping timeout: 265 seconds)
+[01:59:27] *** Joins: GGMethos_ (methos@ )
+[02:00:43] *** Joins: linxon (~lin@ )
+[02:06:05] <iphy> nurupo: it looks like I can't get the review status through the github api
+[02:06:23] <iphy> "Merging is blocked", yet the github api says "mergeable: true"
+[02:06:46] <nurupo> wrong channel again
+[02:07:04] <iphy> why?
+[02:07:11] <iphy> it's off-topic in any channel I'm in
+[02:10:20] <nurupo> we started this disucssion in #toktok
+[02:10:51] <nurupo> and you need to know the review status to merge into TokTok gh org, not qTox
+[02:10:57] <iphy> okay
+[03:07:37] *** Joins: zero-ghost (~0@ )
+[03:23:09] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[03:58:37] *** Joins: zero-ghost (~0@ )
+[04:11:37] <iphy> nurupo: https://gist.githubusercontent.com/iphydf/4cd60a7eb596f1d9a0a2c1d8f6b0a94c/raw/1d1f34d3637ecca6adb866c15d714478f7400bab/gistfile1.txt
+[04:11:53] <iphy> done
+[04:13:04] <nurupo> what is done?
+[04:13:58] <iphy> I'm now happy with github reviews
+[04:14:12] <iphy> I wrote a program to show me the review status of each PR
+[04:34:56] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 244 seconds)
+[04:36:55] *** Joins: CGGB (~CGGB@ )
+[04:50:34] <nurupo> i'm confused with that output
+[04:50:58] <nurupo> it says that i rejected your PR, as opposed to approving it
+[04:51:04] <nurupo> yet it's still good to merge
+[05:18:57] <zetok> iphy: first toxcore release with "stable" API will be v0.1.0, right?
+[07:47:51] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[07:48:59] *** Joins: rerumnovarum (~user-reru@ )
+[07:53:42] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 276 seconds)
+[07:53:52] *** Joins: jjuran_ (~jjuran@ )
+[08:08:17] *** Quits: initramfs_ (~initramfs@ ) (Quit: Leaving)
+[08:12:22] *** Joins: initramfs (~initramfs@ )
+[08:21:50] <Diadlo> zetok: Can you check chore commits? https://github.com/qTox/qTox/pull/3736
+[08:22:23] <zetok> >| toxcore       | >= 0.0.1    | core, av 
+[08:22:27] <zetok> dunno about version
+[08:22:36] <zetok> 0.0.1 doesn't sound like a stable API
+[08:22:53] <zetok> s/doesn't sound like/is not/
+[08:23:55] <Diadlo> So I should stop working with this migration until toxcore version < 0.1.0 ?
+[08:24:25] <zetok> no?
+[08:24:43] <Diadlo> What I should do?)
+[08:24:45] <zetok> it's just that there's no point in merging PR until there's a ~stable toxcore API
+[08:25:18] <Diadlo> Ok
+[08:25:23] <zetok> if you think that you won't be wasting time, you can work on the PR
+[08:26:09] <zetok> btw, I don't know whether toxcore compiling instructions are still correct with TokTok
+[08:27:06] <zetok> ok, TokTok docs didn't seem to have changed, so it should be fine
+[08:30:34] <zetok> Diadlo: aside from version, things look fine; once there'll be `v0.1.0` tag, scripts should `git checkout` it
+[08:31:37] <Diadlo> Ok. Can you add it in your TODO list in PR?
+[08:31:46] <zetok> yep
+[08:31:51] <Diadlo> Thanks :)
+[08:34:41] <zetok> Diadlo: btw, mark things on TODO when they'll be done
+[08:34:52] <zetok> (on my post)
+[08:35:28] <Diadlo> Ok
+[08:52:48] *** Quits: Bheru27 (~Bheru27@ ) (Remote host closed the connection)
+[08:53:29] *** Joins: Bheru27 (~Bheru27@ )
+[09:20:50] *** Joins: Chiitoo (~Chiitoo@ )
+[09:21:34] *** Joins: f10_ (~flo@ )
+[09:23:09] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:23:55] *** Joins: CGGB (~CGGB@ )
+[09:57:50] <iphy> Diadlo: #if TOX_VERSION_IS_COMPATIBLE(0, 0, 1)
+[09:58:01] <iphy> Diadlo:   // new code
+[09:58:03] <iphy> Diadlo: #else
+[09:58:06] <iphy> Diadlo:   // old code
+[09:58:08] <iphy> Diadlo: #endif
+[09:58:11] *** Joins: Lyris (~Lyris@ )
+[09:59:12] <iphy> if you do this, the new code is disabled for irungentoo/toxcore and enabled for toktok/toxcore post-#171
+[09:59:48] <iphy> zetok: yes, right, but that won't happen unless we test it fairly thoroughly in at least 3 clients
+[09:59:49] <Diadlo> iphy: I remember it :)
+[10:10:01] *** Joins: f10 (~flo@ )
+[10:13:26] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[10:22:22] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[10:32:10] *** Joins: Neolex (~neolex@ )
+[11:07:46] *** Joins: abbat (~Anton@ )
+[11:11:43] *** Joins: sudden6 (~anonymous@ )
+[11:25:03] <zetok> sudden6: o/
+[11:25:16] <sudden6> o/
+[11:25:26] <zetok> sudden6: do `Projects` have any purpose?
+[11:25:36] <sudden6> why?
+[11:25:39] <Diadlo> o/
+[11:26:07] <sudden6> you mean, because I created the UI redesign project?
+[11:26:55] <zetok> sudden6: yep, I'm wondering what I've missed in their functionality that milestones offer?
+[11:27:31] <zetok> milestones don't offer*
+[11:27:59] <sudden6> you can put tasks in different groups, but I think that was it
+[11:28:10] <zetok> hm.
+[11:28:30] <zetok> right now it's redundant
+[11:29:02] <sudden6> like for example take the next release, we could do "TODO" "WIP" and "DONE" categories to get a quick overview what needs to be done
+[11:29:21] <zetok> err
+[11:29:36] <zetok> that's precisely what milestones offer
+[11:29:40] <sudden6> but for that to work out, we have to create issues for every TODO task
+[11:29:42] <sudden6> yep
+[11:29:52] <sudden6> just a different UI
+[11:30:30] <zetok> so there's basically no reason to use them?
+[11:30:34] <Diadlo> It reminds me rooms vs virtual desktops in KDE
+[11:30:54] <sudden6> whats rooms?^^
+[11:31:27] <zetok> the other thing
+[11:31:39] <zetok> -.-"
+[11:31:44] <sudden6> never heard of that^^
+[11:32:28] <Diadlo> sudden6: Sorry, wrong translation. It's "Activities"
+[11:32:48] <sudden6> ah, yeah I never got what they are for :DD
+[11:33:37] <Diadlo> It's like virtual desktops with different widgets
+[11:34:20] <sudden6> mhm, I used to make extensive use of widgets and heavily customize my desktop in my kde beginner days
+[11:34:43] <sudden6> but nowadays I barely care
+[11:35:55] <Diadlo> I never loved widgets =/
+[11:38:25] <zetok> hmm
+[11:40:30] <Diadlo> I think, `Project` feature should replace non-version related part of milestone
+[11:41:29] <sudden6> Diadlo: hm, yeah, would make sense
+[11:41:49] <zetok> how would you track deadlines?
+[11:43:21] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[11:44:19] <Diadlo> Seems, `Project` doesn't support deadline feature =/
+[11:44:46] <Diadlo> We can you hack: write deadline in description
+[11:44:50] <zetok> …
+[11:45:04] <zetok> Why use it at all?
+[11:47:03] <zetok> ok, since there's no reason to use it, I can remove not needed `UI redesign` project?
+[11:47:52] <zetok> sudden6: btw, did you have the time to read?
+[11:48:08] <sudden6> your harry potter stuff?
+[11:48:13] <sudden6> nope^^
+[11:48:22] <zetok> aw
+[11:48:35] <zetok> it's really good
+[11:49:34] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[12:00:04] *** Joins: f10_ (~flo@ )
+[12:00:12] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[12:00:26] *** Joins: Diadlo (~diadlo@ )
+[12:28:55] *** Joins: Lord_Vlad (~Vlad@ )
+[12:37:49] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[13:07:18] *** Joins: zero-ghost (~0@ )
+[13:18:35] *** Joins: f10 (~flo@ )
+[13:22:14] *** Joins: f10_ (~flo@ )
+[13:23:47] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[13:24:35] *** Joins: Lord__Vlad (~Vlad@ )
+[13:24:40] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[13:28:43] *** Quits: Lord__Vlad (~Vlad@ ) (Client Quit)
+[13:29:03] *** Joins: Lord_Vlad (~Vlad@ )
+[13:31:05] *** Joins: f10_ (~flo@ )
+[13:33:07] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[13:51:41] *** Quits: iphy (uid67735@ ) (Ping timeout: 272 seconds)
+[13:52:57] *** Quits: tux3 (tux@ ) (Ping timeout: 272 seconds)
+[13:54:15] *** Joins: iphy (uid67735@ )
+[13:57:19] *** Joins: tux3 (tux@ )
+[14:00:00] *** Darky` is now known as Darky
+[14:09:56] *** Quits: mitfree_ (~mit@ ) (Ping timeout: 250 seconds)
+[14:12:57] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[14:20:05] <zetok> sudden6: err
+[14:20:29] <zetok> sudden6: why is https://github.com/qTox/qTox/issues/3745 accepted?
+[14:20:48] *** Joins: f10_ (~flo@ )
+[14:25:16] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:38:43] <sudden6> zetok: because it makes sense?
+[14:41:25] <zetok> in what way?
+[14:42:22] <sudden6> to group non hardware inputs together
+[14:42:31] <zetok> bullshit
+[14:42:34] <zetok> that makes 0 sense
+[14:42:49] <sudden6> it makes 1000 sense
+[14:42:50] <zetok> sudden6: you've missed what the real problem is
+[14:42:57] <sudden6> ah?
+[14:43:10] <zetok> problem is confusing UI
+[14:43:23] <zetok> and you want to "fix" that problem by making UI more confusing?
+[14:43:50] <sudden6> uhm, no? declaring virtual inputs as such makes it less confusing
+[14:44:09] <zetok> again, bullshit
+[14:44:24] <zetok> whole virtual thing makes 0 sense
+[14:44:42] <zetok> user *doesn't know and doesn't care* about some "virtual"
+[14:45:14] <sudden6> then make a a better proposal
+[14:45:21] <zetok> generally, UI doesn't become less confusing by adding stuff that is not understandable
+[14:45:35] <zetok> sudden6: and again, that's not the problem here
+[14:46:01] <zetok> sudden6: as for proposal – I have an idea, but about that later
+[14:46:08] <sudden6> you said, the problem is the confusing UI
+[14:46:18] <zetok> yes, in that issue
+[14:46:22] <sudden6> I like the solution in that issue
+[14:46:32] <zetok> …
+[14:46:36] <zetok> and that's the second problem
+[14:47:23] <sudden6> then please straight up tell me what the problems you see are and how you intend to solve them
+[14:49:04] <zetok> um, so.
+[14:49:43] <zetok> sudden6: the problem is that the horrible proposal was accepted
+[14:50:22] <zetok> as for solving that
+[14:50:45] <zetok> generally, most of proposals (>90%?) are *shit*
+[14:51:46] <sudden6> ↑ can agree
+[14:51:46] <zetok> people don't know what they actually want; if they do know what they want, proposed solutions are outright *bad*; and if solution is not bad for them, then it's very likely that it would negatively affect workflow of other people
+[14:52:28] <zetok> in this case thanks to your intervention it went from shit to just horrible
+[14:52:41] <zetok> but horrible is still not something that should be accepted
+[14:53:47] *** Joins: f10_ (~flo@ )
+[14:53:47] <zetok> sudden6: I'm not sure how to solve the problem, but perhaps you could have a bit more of distance for your ideas or stuff that you personally agree with?
+[14:53:49] *** Joins: bashrc (~motters@ )
+[14:54:24] <sudden6> ok, so the next time before accepting a proposal I'll cross check other opinions
+[14:55:04] <sudden6> "unaccepted" it for the moment
+[14:55:15] <zetok> thanks
+[14:55:43] <sudden6> I think one problem we have is that nobody really knows how to design good UI
+[14:55:59] <zetok> ~yeah
+[14:56:09] <zetok> hmm
+[14:56:15] <sudden6> and there's no general "unified" design approach
+[14:56:46] <sudden6> ie everybody has their own ideas and sooner or later we'll have a huge clusterfuck of UI elements
+[14:56:47] <zetok> so, even with people who are actual designers things aren't always nice
+[14:57:31] <zetok> based on my experience with people who tried to design a better, consistent UI for a tox client
+[14:58:14] <zetok> >everybody has their own ideas and sooner or later we'll have a huge clusterfuck of UI elements
+[14:58:29] <zetok> yeah, that's why accepting UI changes proposals shouldn't happen too lightly
+[14:58:29] *** Parts: Lyris (~Lyris@ ) ()
+[15:01:02] <sudden6> good UI design is hard -_-
+[15:01:05] <sudden6> and I hate it
+[15:01:49] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[15:02:08] <sudden6> that's why I like the "hacker" approach, where functionality is everything :D
+[15:03:45] <zetok> you don't have functionality with bad UI
+[15:04:00] <zetok> and "hacker" approach is 0 UI
+[15:04:34] <sudden6> I specifically meant 0 GUI approach
+[15:04:47] <zetok> >.<
+[15:05:06] <sudden6> not even a cmd UI, you directly edit the code if necessary ;)
+[15:05:07] <zetok> ok, didn't expect that, given that you use opensuse
+[15:05:38] <zetok> I wonder what I'm doing wrong
+[15:06:17] <sudden6> I use opensuse because it has the best KDE support and I use KDE for it's customization options
+[15:06:37] <zetok> for the last 5 min I've been trying to figure out how to make smaller square outline -.-
+[15:06:51] <zetok> (for the audio tab issue)
+[15:06:59] <zetok> (in krita)
+[15:07:17] <zetok> sudden6: err
+[15:07:43] <zetok> sudden6: sorry, but I feel like your sentence is just wrong :(
+[15:08:08] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[15:08:33] *** Joins: CGGB (~CGGB@ )
+[15:08:45] <zetok> :(
+[15:09:03] <sudden6> I thought you would say that ^^
+[15:09:41] <zetok> and sorry, it looks like I can't even use krita to show how things could be improved :(
+[15:09:53] *** Joins: smaragdus (~omoo@ )
+[15:10:08] <zetok> (this is why I hate software)
+[15:10:42] <sudden6> also you might have misunderstood my above statement, I meant I like the 0 UI approach for my own creations
+[15:10:51] <sudden6> not the programs I use daily
+[15:13:08] <zetok> does anyone know how to resize outline of "rectangle tool"?
+[15:13:14] <zetok> (in krita)
+[15:21:43] <zetok> https://github.com/qTox/qTox/issues/3745#issuecomment-249424390 ← there we go :3
+[15:25:31] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[15:25:55] *** Joins: CGGB (~CGGB@ )
+[16:02:50] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/viAxg
+[16:02:50] -qtox-git-spam- qTox/master 6e98d3f Zetok Zalbavar: docs(README.md): update organizational stuff & small update to features...
+[16:21:02] *** Joins: f10_ (~flo@ )
+[16:49:02] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[17:00:37] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[17:30:35] *** jjuran_ is now known as jjuran
+[18:02:45] *** Joins: Dragofix- (Dragofix@ )
+[18:04:42] *** Quits: oranges (oranges@ ) (Ping timeout: 276 seconds)
+[18:04:49] *** Joins: oranges (oranges@ )
+[18:05:21] *** Quits: koshii (~w@ ) (Ping timeout: 276 seconds)
+[18:06:00] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 276 seconds)
+[18:06:01] *** Dragofix- is now known as Dragofix
+[18:06:11] *** Joins: koshii (~w@ )
+[18:31:13] *** Joins: Chiitoo (~Chiitoo@ )
+[18:35:25] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 272 seconds)
+[18:35:43] *** Joins: rerumnovarum (~user-reru@ )
+[19:05:09] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[19:06:23] *** Joins: rerumnovarum (~user-reru@ )
+[19:20:24] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 265 seconds)
+[19:21:18] *** Joins: Lord_Vlad (~Vlad@ )
+[19:22:16] *** Joins: athan (~athan@ )
+[19:33:37] <sudden6> initramfs: about https://github.com/qTox/qTox/pull/3442 should we merge?
+[19:43:28] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:52:16] *** Joins: jjuran_ (~jjuran@ )
+[19:53:15] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 276 seconds)
+[19:53:15] *** jjuran_ is now known as jjuran
+[19:57:09] *** Joins: in1t3r (~LordShiva@ )
+[19:59:18] *** Quits: bashrc (~motters@ ) (Ping timeout: 264 seconds)
+[19:59:38] *** Joins: bashrc (~motters@ )
+[20:07:49] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 255 seconds)
+[20:13:04] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[20:24:44] *** Joins: cisc (~cisc@ )
+[20:40:23] *** Joins: f10 (~flo@ )
+[20:42:57] *** Joins: bobby__ (d05b46aa@ )
+[20:44:06] <bobby__> Anyone there？
+[20:46:35] <bobby__> What are the most secure chat clients besides Skype?
+[20:47:50] <bobby__> Jitsi or Qtox?
+[20:48:08] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[20:50:35] *** Joins: f10_ (~flo@ )
+[20:52:02] <cisc> bobby__: do you think Skype is secure?
+[20:53:59] *** Quits: bobby__ (d05b46aa@ ) (Quit: Page closed)
+[20:57:16] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:57:57] *** Joins: Guest39443 (~alexander@ )
+[20:58:15] <Guest39443> Is anyone there?
+[20:58:42] <Guest39443> Does qtox use pgp to communicate over the network?
+[21:06:59] <cisc> Guest39443: no it doesn't
+[21:11:16] <Guest39443> So how is the communication secure while using qtox?
+[21:11:38] *** Joins: f10_ (~flo@ )
+[21:13:11] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[21:17:49] <Emcy> libsodium
+[21:18:13] <oranges> it's encryption library is called NaCL https://en.wikipedia.org/wiki/NaCl_(software)
+[21:19:05] *** Joins: Chiitoo (~Chiitoo@ )
+[21:21:39] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[21:21:58] *** Joins: f10_ (~flo@ )
+[21:22:40] *** Joins: rerumnovarum (~user-reru@ )
+[21:25:51] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[21:28:16] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[21:28:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 255 seconds)
+[21:29:03] *** Joins: Lord_Vlad (~Vlad@ )
+[21:46:43] <Guest39443> Thanks for the feedback.
+[21:53:13] <initramfs> sudden6: Good for merge
+[22:04:25] *** Quits: Guest39443 (~alexander@ ) (Ping timeout: 272 seconds)
+[22:30:03] *** Joins: f10_ (~flo@ )
+[22:43:29] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[22:52:58] *** Quits: glasscapt (~glasscapt@ ) (Ping timeout: 250 seconds)
+[23:14:24] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[23:17:32] *** Joins: cisc (~cisc@ )
+[23:43:49] *** Quits: bashrc (~motters@ ) (Ping timeout: 255 seconds)
