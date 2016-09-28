@@ -1,0 +1,604 @@
+[00:10:02] <Diadlo> Neolex: Hello. One of ways: you should fork github repository (top right corner on source repo). Clone your fork on local machine, create new branch, make commits, push new branch on your fork repo. Goto your github repo page and you will see message, which will offer to create PR
+[00:10:36] <Neolex> Diadlo: thank you
+[00:10:49] <Diadlo> Neolex: No problem :)
+[00:10:58] <Diadlo> Goodnight everyone
+[00:11:04] <Neolex> Diadlo: but a made a commit on my local repository and i rebase , all of my code is erase
+[00:11:11] <Neolex> how can I go back ? :s
+[00:11:20] <Neolex> The commit is deleted 
+[00:11:26] <Neolex> Diadlo: good night
+[00:12:21] <Diadlo> Neolex: Sorry, I don't understand. You loose your commit? Or what?
+[00:12:44] <Neolex> i commited on my local 
+[00:12:49] <Diadlo> Yep
+[00:13:18] <Neolex> but i saw i was on the master so i "reintialized" so my commit disappear but the change to the files too
+[00:13:41] <Neolex> so all my changings are gone
+[00:13:51] <Neolex> I have to recode them ?
+[00:14:03] <Diadlo> You can restore it using reflogs
+[00:14:14] <Diadlo> Or write again :)
+[00:14:31] <Diadlo> `git reflog`
+[00:14:34] <Neolex> Diadlo: thank you !! :D
+[00:14:55] <Diadlo> Neolex: You are welcome :)
+[00:15:33] <Diadlo> Neolex: So, now I can go?)
+[00:15:58] <Neolex> yes :)
+[00:16:00] <Neolex> good night
+[00:16:03] <Neolex> thanks !
+[00:28:11] -qtox-git-spam- [qTox] HascoetKevin opened pull request #3748: feat(settings)if applied,this commit will add possibility to change the UDP port range (master...addUDPport) https://git.io/vihQv
+[00:36:27] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[00:40:03] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[00:40:31] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[01:28:31] *** Joins: Neolex (~neolex@ )
+[01:28:47] <Neolex> re
+[01:31:28] <Neolex> erf my commit doesnt have the right format
+[01:58:39] *** Joins: initramfs (~initramfs@ )
+[02:22:06] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[03:25:06] -qtox-git-spam- [qTox] zetok opened pull request #3749: style(OSX build): change tabs to spaces and adjust style to existing one (master...style-spaces) https://git.io/vihhA
+[03:43:55] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:02:36] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:20:22] *** Joins: cisc (~cisc@ )
+[04:30:23] <initramfs> zetok: Do you know where the 5~6% figure came from?
+[04:31:52] <initramfs> On my system I get a maximum difference of 0.83% (using either clang or gcc). For comparison the clang binary is 1.4% smaller than the gcc binary...
+[04:35:16] <zetok> initramfs: that's what iphy said
+[04:36:51] <initramfs> Right
+[04:39:47] <zetok> >Rather than having a heading
+[04:39:54] <zetok> um, it's a quote
+[04:40:05] <initramfs> Right
+[04:40:14] <initramfs> Okay then
+[04:40:17] <initramfs> Leave it as it is
+[04:40:21] <zetok> um
+[04:40:28] <initramfs> Quote from who though? Iphy?
+[04:40:29] <zetok> I was going to copypaste what you wrote :D
+[04:40:34] <initramfs> Well
+[04:40:37] <zetok> yep
+[04:40:40] <initramfs> I think mine looks better
+[04:40:54] <initramfs> But then I wrote it :P
+[04:41:25] <zetok> and done
+[04:42:20] <initramfs> You can probably get rid of the "Justification:" line
+[04:42:32] <initramfs> It's pretty obvious from reading the paragraph that it's a justification
+[04:42:54] <initramfs> Sorry if it wasn't clear, but that's what I meant in my comment
+[04:43:09] <zetok> right
+[04:43:35] <zetok> no, what you wrote was rather clear
+[04:44:03] * zetok was just distracted by something
+[04:44:11] <initramfs> Right
+[04:44:23] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[04:44:35] <zetok> line removed
+[04:45:02] <initramfs> lgtm
+[04:45:26] *** Joins: cisc (~cisc@ )
+[04:49:10] <zetok> initramfs: btw, how's translating going?
+[05:21:24] <initramfs> zetok: Not much progress yet, I'm doing it with a friend and they've been rather busy recently (recently got back to university).
+[05:29:47] <zetok> I see
+[05:31:07] <nurupo> ><initramfs> On my system I get a maximum difference of 0.83% (using either clang or gcc). For comparison the clang binary is 1.4% smaller than the gcc binary... <-- difference in size of the binary?
+[05:31:22] <initramfs> Yep
+[05:31:26] <nurupo> ~1%?
+[05:31:30] <initramfs> Yes
+[05:31:38] <nurupo> how is that even an argument
+[05:31:49] <initramfs> How is what an argument?
+[05:32:18] <initramfs> That disabling RTTI is worth the size reduction?
+[05:32:55] <nurupo> hm, wasn't the argument something along the lines clang > gcc because 1-2% binary size reduction?
+[05:33:04] <initramfs> No no
+[05:33:17] <nurupo> hm, so it's related to RTTI
+[05:33:25] <initramfs> The argument was that disabling RTTI gives you 5~6% savings in binary size
+[05:33:38] <initramfs> I just tested with both clang and gcc for the sake of it
+[05:33:58] <initramfs> And for statistical significance, I stated that clang produces binaries 1.4% smaller than gcc
+[05:34:09] <initramfs> At least on my machine, on qTox master right now
+[05:36:48] <nurupo> nah, if i remember right, iphy's argument was something along the lines "thou shalt not use compiler functions thy doesn't need"
+[05:37:02] <nurupo> the binary size reduction was just an extra that came with it
+[05:37:17] <nurupo> not the main reason to disable rtti
+[05:39:13] <initramfs> Okay
+[05:42:20] <nurupo> initramfs: so, you did a gcc build with rtti, stripped it, did a gcc build without it, stripped it too, and measured the percent reduction. then repeated the same with clang, using same optimization flags. and then you noticed that clang's percent reduction is 0.83% higher than gcc's percent reduction?
+[05:42:43] <initramfs> Okay, maybe I was too vague
+[05:42:52] <initramfs> Both produced about 0.83% reduction
+[05:43:20] <initramfs> So clang RTTI vs clang -fno-rtti = 0.83% less for -fno-rtti. The ssame results for gcc
+[05:43:27] <nurupo> ok, that makes sense
+[05:44:50] <nurupo> just was making sure you were comparing the percentages, not the actual sizes of reduced gcc vs clang binaries, which would be comparing apples and oranges
+[05:50:48] <initramfs> Yes I know
+[05:51:41] <initramfs> I mean that final statement essentially says supposingly identical flags cause a 1.4% difference between gcc and clang, so it would be stupid to compare say clang RTTI vs gcc no RTTI
+[05:52:02] <initramfs> I mean it would be stupid to compare even if there was no difference... but yeah
+[06:03:03] *** Joins: Neolex (~neolex@ )
+[06:03:05] <Neolex> Salut o/
+[06:03:10] <Neolex> Hi
+[06:07:40] <zetok> hello Neolex
+[06:08:01] <Neolex> ok my PR is very bad :s
+[06:08:37] <initramfs> Naa, that's just the nature of reviewing lol
+[06:09:38] <zetok> Neolex: you should read https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md
+[06:09:50] <Neolex> for the start port higher than the end port , the toxcore swap the value if the start port is higher than the endport
+[06:10:44] <Neolex> I should redo an other PR or modify my PR ?
+[06:10:58] <Neolex> I'm kinda lost with the commit form
+[06:11:25] <zetok> you could modify your current PR
+[06:11:38] <zetok> Neolex: what is confusing about commit message format?
+[06:12:19] <Neolex> all commit have to have the commit message format , or just the last one ?
+[06:12:25] <Neolex> ( sorry for my bad english )
+[06:12:27] <zetok> every
+[06:12:30] <initramfs> Neolex: I don't think we should rely on toxcore swapping it for us though... If one day it stopped swapping it, then we'll have tons of broken clients
+[06:12:51] <zetok> initramfs: nah, that would be a bug in toxcore
+[06:12:52] <Neolex> initramfs: ok yes you're right
+[06:13:04] <initramfs> Well nevertheless, it's bad UI
+[06:13:10] <initramfs> You confuse the user
+[06:13:37] <zetok> toxcore's API is supposed to be as error-resistant as possible
+[06:13:58] <Neolex> i'm really sorry to make you lose time .. ^^
+[06:13:59] <initramfs> Okay, forget that then. It's still bad UI regardless
+[06:14:17] <initramfs> s/forget that/forget the point about toxcore/
+[06:15:38] <zetok> Neolex: um, have you looked at travis output?
+[06:15:52] <Neolex> and do I have to modify the previous commit to the message format or just the new ?
+[06:15:54] <Neolex> yes
+[06:16:16] <zetok> https://travis-ci.org/qTox/qTox/jobs/162964197#L267 ← what does it say?
+[06:16:55] <Neolex> Above ↑ commits don't conform to commit message format:
+[06:18:03] <zetok> yes..?
+[06:18:30] <zetok> Neolex: there are listed commits that don't conform
+[06:18:44] <initramfs> Quick rundown commit format: keyword(scope): commit message
+[06:18:49] <zetok> you can also check it locally
+[06:19:21] <initramfs> For example, if I fixed a bug foo in the audio code, something like:
+[06:19:21] <Neolex> where is the script to do it locally please ?
+[06:19:26] <zetok> ./verify-commit-messages.sh master..addUDPport
+[06:19:47] <initramfs> fix(audio): resolve bar to fix foo
+[06:19:50] <Neolex> ah thanks
+[06:21:04] <zetok> hmm
+[06:21:17] <zetok> Neolex: you would want to squash those commits into a single one
+[06:21:23] <zetok> first, backup your branch
+[06:21:30] <zetok> `git branch backup-udp`
+[06:21:48] <zetok> then use interactive rebase to squash & rename
+[06:21:56] <zetok> `git rebase -i master`
+[06:23:04] <Neolex> ok i'll do that thank you zetok
+[06:23:21] <zetok> np
+[06:31:12] *** Joins: sudden6 (~anonymous@ )
+[06:36:23] <Neolex> all my commit should be "feat(setttings): ..." no ?
+[06:38:11] <initramfs> Probably
+[06:55:51] -qtox-git-spam- [qTox] HascoetKevin closed pull request #3748: feat(settings): if applied,this commit will add possibility to change the UDP port range (master...addUDPport) https://git.io/vihQv
+[06:59:38] <Neolex> at least , i'm learning how to use git in a real repo ^^
+[07:02:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:06:17] <Neolex> initramfs: sorry... what do you mean by "it's bad UI" ?
+[07:06:51] <initramfs> Which part?
+[07:07:27] <initramfs> The port start/end ordering thing?
+[07:08:40] <Neolex> yes
+[07:14:05] <Neolex> i should use signal and slot maybe ?
+[07:14:48] <Neolex> or I dont have to verify because it's swap if the end port is greater than the start port ?
+[07:16:11] <initramfs> Well, what I meant by that is you get bad UX
+[07:16:28] <initramfs> Imagine a user who doesn't know toxcore reorders the start/end
+[07:16:54] <initramfs> If you put in a bad start/end port combination by mistake, and qTox accepts it fine, you get confused
+[07:17:23] <initramfs> You don't know if it's actually working (it swapped it) or it simply disabled it or something else
+[07:18:04] <initramfs> Essentially you're programming the UI to do behavior that's non-intuitive and possibly ambiguous.
+[07:18:44] <Neolex> ok thank you initramfs
+[07:19:12] <initramfs> There are several ways you can choose to fix it. Either warn the users that their input is bad, or actually change the values in the spinners so it's flipped (so users can see qTox actually flipped them), or give some visual "bad input" feedback
+[07:20:34] <Neolex> yes
+[07:20:53] *** Quits: koshii (~w@ ) (Ping timeout: 252 seconds)
+[07:21:05] <Neolex> I was thinkig about swapping the value if the end is lower than the start
+[07:23:52] <zetok> err
+[07:24:36] <zetok> Neolex: just highlight field as red if value is "invalid" – similar to how it's done with friend address when adding friend
+[07:24:59] <zetok> hmm
+[07:25:43] <zetok> or perhaps a dialog that would ask to swap values would be better
+[07:26:53] <Neolex> it warn that the values will be swapping and do it automaticly or it just ask to swap ?
+[07:27:05] *** Joins: koshii (~w@ )
+[07:27:18] <zetok> ask to swap
+[07:27:22] <Neolex> ok
+[07:27:43] <Neolex> and do nothing if the end is higher than the start ?
+[07:28:05] <Neolex> i mean it doesnt set the ports ?
+[07:30:07] <initramfs> Yeah
+[07:30:17] <initramfs> If the input is valid, just leave it alone
+[07:30:17] <Neolex> ok thank you
+[07:30:46] <Neolex> and i should use the signal editingFinished  and not valuechanged , no ?
+[07:31:31] <initramfs> Ehh, I'm not sure about that, I don't really meddle with the UI code
+[07:49:42] <Neolex> i've done it but I think it's kinda annoying
+[07:49:59] <Neolex> if i modify the start port before the end port I have the warning
+[07:50:30] <Neolex> souldnt I set the warning only for the end port switching ? and set the end port to start port +100 when editing the start port ?
+[07:50:49] <Neolex> end port modifying*
+[07:52:14] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 252 seconds)
+[07:52:41] *** Joins: jjuran (~jjuran@ )
+[07:56:58] <zetok> >and set the end port to start port +100 when editing the start port ?
+[07:57:08] <zetok> only when lower than starting port
+[07:57:14] <Neolex> yes
+[07:57:20] <Neolex> ok I do that 
+[07:57:30] <Neolex> thank you
+[07:59:43] <Neolex> so.. let's commit ^^
+[08:02:41] <Neolex> zetok: if verify-commit-messages.sh prints nothing , it's good ?
+[08:02:47] <zetok> yep
+[08:02:51] <Neolex> ok :)
+[08:06:30] -qtox-git-spam- [qTox] HascoetKevin opened pull request #3750: feat(settings): add possibility to change the UDP port range (master...udp_port) https://git.io/vij33
+[08:19:52] <Neolex> bye
+[08:19:53] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[08:22:26] <oranges> bye
+[08:26:09] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[09:29:29] <iphy> initramfs: did I say binary size? I meant code size
+[09:32:59] *** Joins: f10_ (~flo@ )
+[09:39:28] *** Joins: f10 (~flo@ )
+[09:48:01] *** Joins: abbat (~abbat@ )
+[10:14:35] *** Joins: zero-ghost (~0@ )
+[10:17:59] <iphy> zetok: if/when iru/new is merged into iru/master, I'll probably start by cherry-picking the upnp stuff
+[10:18:11] <iphy> that looks easy
+[10:20:21] <oranges> impossible dreams
+[10:20:57] -qtox-git-spam- [qTox] zetok opened pull request #3751: chore(build): correct URL to qTox website (master...chore-nsi-url) https://git.io/vij0T
+[10:26:53] <Diadlo> zetok: `windows/qtox.nsi` contains `${WriteRegStr} ${REG_ROOT} "${UNINSTALL_PATH}" "DisplayVersion" "1.0"`. Whether there should be `1.5.1`?
+[10:27:22] <zetok> Diadlo: do you want to bump it every time version is bumped?
+[10:27:48] <Diadlo> It's not too frequent)
+[10:27:56] <Diadlo> Ok
+[10:46:41] *** Joins: Chiitoo (~Chiitoo@ )
+[10:52:41] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[10:58:40] *** Joins: albel727 (~albel727@ )
+[11:03:53] *** Joins: rerumnovarum (~user-reru@ )
+[11:28:06] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[11:43:13] *** Joins: Neolex (~neolex@ )
+[11:43:45] <Neolex> re
+[11:44:20] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:06:37] *** Joins: albel727 (~albel727@ )
+[12:14:26] *** Joins: husus (54f072de@ )
+[12:22:12] <husus> Hello, I get "WARNING: The following packages cannot be authenticated!" error for qtox when trying to install from https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[12:22:29] <zetok> husus: have you followed instructions?
+[12:23:27] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[12:23:28] <husus> I did as to page instructs, but I imported the key before trying to install
+[12:23:39] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vijKp
+[12:23:39] -qtox-git-spam- qTox/master 0fecb55 Zetok Zalbavar: style(OSX build): change tabs to spaces and adjust style to existing one...
+[12:23:41] <zetok> `apt-get update`
+[12:24:58] <husus> Tried 'sudo apt-get update' and after that run 'sudo apt-get install qtox' still the same error
+[12:25:04] <zetok> huh
+[12:25:18] <zetok> abbat: ↑ ?
+[12:27:50] <husus> I can see that the key is imported, no errors when I added it. apt-get update shows no errors either
+[12:28:07] <abbat> try apt-get --list-cleanup update
+[12:29:29] <husus> nope, still fails
+[12:32:28] <abbat> husus, Seems you have incomplete downloaded package. Try also apt-get clean
+[12:34:46] <husus> no output from apt-get clean, didn't do anything I suppose, then I run apt-get update and apt-get install qtox again and I'm still having the error
+[12:35:27] <abbat> apt-get clean just clean downloaded packages. Now you can try apt-get update && apt-get install
+[12:35:48] -qtox-git-spam- [qTox] zetok opened pull request #3752: chore(travis): check if .dmg is actually built (master...chore-osx-travis) https://git.io/vijit
+[12:39:17] <husus> something is off because it fails again, maybe I should remove the repository and the key and try again
+[12:43:46] <husus> It's working now
+[12:46:39] <husus> Thanks for your help! something must have went wrong on my end when adding the repository or key because retrying from the start worked, sorry for taking your time
+[12:46:54] *** Quits: husus (54f072de@ ) (Quit: Page closed)
+[12:49:36] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[13:00:25] *** Joins: initramfs (~initramfs@ )
+[13:06:19] *** Joins: rysiekpl (~quassel@ )
+[13:06:41] *** Quits: rysiek|pl (~quassel@ ) (Read error: Connection reset by peer)
+[13:17:04] *** Joins: albel727 (~albel727@ )
+[13:31:40] *** Joins: Neolex_ (~neolex@ )
+[13:32:41] *** Quits: Neolex (~neolex@ ) (Ping timeout: 252 seconds)
+[13:54:57] *** rysiekpl is now known as rysiek|pl
+[14:11:51] *** Quits: Neolex_ (~neolex@ ) (Quit: Konversation terminated!)
+[14:32:16] *** Joins: Neolex (~neolex@ )
+[14:32:55] <Neolex> Hi !
+[14:32:57] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[14:33:20] <Neolex> so..lets fix the issues in my PR..
+[14:38:16] <Neolex> Diadlo: are you there ?
+[14:55:43] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[15:00:27] *** Joins: abbat (~abbat@ )
+[15:14:10] *** Joins: rerumnovarum (~user-reru@ )
+[15:16:13] *** Joins: rerumnov1rum (~user-reru@ )
+[15:29:46] *** Parts: Neolex (~neolex@ ) ("Konversation terminated!")
+[15:32:02] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 252 seconds)
+[15:36:59] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 252 seconds)
+[15:37:12] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[15:42:10] *** Joins: rerumnovarum (~user-reru@ )
+[16:01:04] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[16:05:41] *** Joins: Neolex (~neolex@ )
+[16:05:50] <Neolex> re
+[16:13:33] <koshii> On the .deb repos -- at what point is it expected that some freezing of qtox-alpha replaces qtox?
+[16:20:47] <zetok> um?
+[16:20:59] <zetok> qtox tracks releases
+[16:21:04] <zetok> -alpha tracks master
+[16:24:50] <Neolex> git is pretty complex :/
+[16:25:09] <Neolex> I was using it solo , it's a lot easier ^^
+[16:25:34] *** Quits: bennabiy (~bennabiy@ ) (Quit: http://www.yellowdeli.com)
+[16:26:06] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:28:10] <Neolex> ok zetok thank you 
+[16:28:19] <zetok> np
+[16:28:31] <Neolex> roh
+[16:29:18] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[16:30:06] <Neolex> http://pastebin.com/YsvcAtQZ
+[16:30:10] <Neolex> i'm lost ...
+[16:31:20] <zetok> right
+[16:31:33] <zetok> `git rebase --abort` ?
+[16:31:48] <Neolex> yes
+[16:31:55] <Neolex> its doesnt prints anything
+[16:32:02] <zetok> ok
+[16:32:15] <zetok> are your 2 commits in the `git log` ?
+[16:32:33] <Neolex> just the first
+[16:32:35] <Neolex> and "    Merge branch 'udp_port' of github.com:HascoetKevin/qTox into udp_port" 
+[16:32:46] <zetok> uh
+[16:33:12] <Neolex> :/
+[16:33:47] <Neolex> after the pull request i will training for using git , its very tricky :/
+[16:33:50] <zetok> git checkout origin/udp_port -b new_udp && git checkout new_udp && git branch -D udp_port && git checkout -b udp_port
+[16:34:13] <zetok> >git checkout new_udp
+[16:34:19] <zetok> ↑ unnecessary
+[16:34:37] <zetok> anyway, with that you'll have stuff restored
+[16:34:39] <Neolex> i dont do checkout new_udp ?
+[16:34:52] <zetok> `git checkout origin/udp_port -b new_udp` does that
+[16:35:12] <Neolex> neolex@neolex-pc> src$git branch
+[16:35:13] <Neolex>   master
+[16:35:15] <Neolex>   new_udp
+[16:35:16] <Neolex> * udp_port
+[16:35:26] <zetok> um
+[16:35:28] <zetok> ok
+[16:35:43] <zetok> there are your 2 commits in `git log` now, right?
+[16:36:10] <Neolex> http://pastebin.com/YPvHZ5jE
+[16:36:15] <Neolex> still that :/
+[16:36:38] <zetok> that doesn't matter
+[16:36:43] <Neolex> ok
+[16:37:01] <zetok> the actual commits are there?
+[16:37:32] <zetok> or not?
+[16:37:33] <Neolex> i do git log ?
+[16:37:36] <Neolex> i dont thibk
+[16:37:51] <Neolex> git log gives what i pastebin
+[16:38:34] <Neolex> thank you for your time zetok i'm really sorry to bother you :/
+[16:38:45] <zetok> oh
+[16:39:05] <zetok> :s
+[16:39:12] <zetok> ok, scratch that
+[16:39:27] <zetok> Neolex: do you have `qtox` upstream added?
+[16:39:46] <Neolex> i don't understand :/
+[16:39:50] <zetok> git remote add upstream https://github.com/qTox/qTox.git
+[16:40:01] <Neolex> ok
+[16:40:10] <zetok> git branch -D master && git fetch upstream master:master
+[16:40:30] <Neolex> ok
+[16:40:41] <zetok> git branch -D udp_new && git checkout master -b udp_new
+[16:41:01] <zetok> git cherry-pick 5394a89600ea40fe850ba088b1ea73e2474354b4 195fb4e04a5a02e2ae3553ef1802a23318584cb9
+[16:41:10] <Neolex> udp_new => new_udp no ?
+[16:41:21] <zetok> hm?
+[16:41:21] <Neolex> branch udp_new not found 
+[16:41:28] <Neolex> i think the branch is new_udp 
+[16:41:32] <Neolex> or its a new ?
+[16:41:44] <zetok> oh, right
+[16:41:58] <Neolex> neolex@neolex-pc> src$git branch -D new_udp && git checkout master -b new_udp
+[16:41:59] <Neolex> Branche new_udp supprimée (précédemment 1f45785).
+[16:42:01] <Neolex> Basculement sur la nouvelle branche 'new_udp'
+[16:42:29] <zetok> sorry, don't understand that
+[16:42:37] <Neolex> branch new_udp deleted
+[16:42:41] <zetok> ok
+[16:42:43] <Neolex> checout to new brach newudp
+[16:42:47] <Neolex> checkout*
+[16:42:50] <zetok> git cherry-pick 5394a89600ea40fe850ba088b1ea73e2474354b4 195fb4e04a5a02e2ae3553ef1802a23318584cb9
+[16:43:07] <Neolex> great
+[16:43:15] <zetok> now there should be 2 commits
+[16:43:23] <Neolex> yes !
+[16:43:26] <Neolex> git commit -a --amend.   now ?
+[16:43:29] <zetok> no
+[16:43:32] <Neolex> ok
+[16:43:37] <zetok> since you have 2 commits, you need to squash
+[16:43:43] <Neolex> git rebase -i ?
+[16:43:49] <zetok> git rebase -i upstream/master
+[16:43:58] <zetok> oh wait
+[16:44:12] <zetok> just `git rebase -i master`
+[16:44:30] <Neolex> and i change the second pick to squash ?
+[16:44:40] <zetok> yep
+[16:44:49] <zetok> (IIRC)
+[16:44:59] <Neolex> ? IIRC ?
+[16:45:05] <zetok> if I remember correctly
+[16:45:21] <Neolex> whats iirc ?
+[16:45:29] <zetok> above ↑ :)
+[16:46:21] <Neolex> sorry I dont understand
+[16:46:33] <zetok> IIRC – if I remember correctly
+[16:46:36] <zetok> anyway
+[16:46:43] <Neolex> aah
+[16:46:52] <Neolex> ok lol sorry
+[16:47:00] <zetok> squashed?
+[16:47:17] <Neolex> now i have the 2 validation message
+[16:47:33] <Neolex> i comment the "add space tooltips" etc ?
+[16:47:54] <zetok> you don't need the "add space tooltips" part
+[16:48:29] <zetok> e.g. https://github.com/qTox/qTox/pull/3744
+[16:48:30] <Neolex> http://pastebin.com/EkiUxNWC
+[16:48:37] <Neolex> i delete the second message no ?
+[16:48:51] <zetok> yep
+[16:49:15] <Neolex> great
+[16:49:18] <Neolex> i think thats ok
+[16:50:32] <Neolex> I have to push now ?
+[16:51:00] <zetok> git branch -D udp_port && git checkout -b udp_port
+[16:51:05] <Neolex> but I have to on the udp_port branch no ? the pull request si for that branch ?
+[16:51:09] <Neolex> ok
+[16:51:10] <zetok> git push -u origin udp_port -f
+[16:51:10] <Neolex> thank you
+[16:51:48] <Neolex> thanks
+[16:52:13] <zetok> np
+[16:52:23] <Neolex> I'll be right back
+[16:53:04] <zetok> and now, if there are any changes to be made: 1. make sure that you have a backup branch; 2. you can "squash" latest commit with `git commit -a --amend`
+[17:26:54] <Neolex> zetok: ok thank you
+[17:27:45] <Neolex> zetok: and how do I create a backup branch ? git branch back_up && git checkout back_up && git push backup ?
+[17:28:21] <Neolex> zetok: do you have a link of a good course/tuto/book on git ? 
+[17:28:30] <zetok> Neolex: ~yep, but you don't need to checkout it
+[17:28:40] <Neolex> ok thank's !
+[17:28:48] <zetok> I don't really
+[17:29:03] <zetok> I mean, you got most of basic stuff down
+[17:29:14] <zetok> btw, use `git fetch` instead of `git pull`
+[17:29:20] <Neolex> ah
+[17:29:22] <Neolex> ok thank
+[17:29:27] <Neolex> i'll search the difference
+[17:29:54] <zetok> um, you might be interested in reading git manpages
+[17:30:01] <Neolex> pull = fetch + merge ?
+[17:30:06] <zetok> ~yep
+[17:30:19] <zetok> although pull's behaviour can be changed
+[17:30:31] <Neolex> ah yes i forgot the man pages , i'll read it right now
+[17:30:45] <Neolex> and I'm very sorry for the time you're losing with me 
+[17:31:33] <zetok> no problem :)
+[17:35:23] *** Joins: Dragofix- (Dragofix@ )
+[17:36:10] *** Joins: linxon_new (~lin@ )
+[17:36:36] *** Quits: iphy (uid67735@ ) (Ping timeout: 255 seconds)
+[17:36:38] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 255 seconds)
+[17:36:39] *** Joins: f10__ (~flo@ )
+[17:36:41] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:36:55] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[17:36:56] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 260 seconds)
+[17:36:58] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 240 seconds)
+[17:36:58] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[17:36:59] *** Quits: oranges (oranges@ ) (Ping timeout: 260 seconds)
+[17:37:01] *** Joins: f10 (~flo@ )
+[17:37:11] *** Quits: linxon (~lin@ ) (Ping timeout: 265 seconds)
+[17:37:17] *** Joins: Diadlo (~diadlo@ )
+[17:37:17] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 272 seconds)
+[17:37:18] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 272 seconds)
+[17:37:18] *** Joins: smaragdus2 (~omoo@ )
+[17:37:24] *** Quits: dongo_ (~dongo@ ) (Ping timeout: 244 seconds)
+[17:37:24] *** Quits: genesis (~genesis@ ) (Ping timeout: 244 seconds)
+[17:37:26] *** Quits: zero-ghost (~0@ ) (Ping timeout: 260 seconds)
+[17:37:37] *** Quits: albel727 (~albel727@ ) (Ping timeout: 265 seconds)
+[17:37:42] *** Joins: Curlybear (~Curlybear@ )
+[17:38:01] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 264 seconds)
+[17:38:02] *** Quits: bashrc (~motters@ ) (Ping timeout: 264 seconds)
+[17:38:02] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[17:38:02] *** Dragofix- is now known as Dragofix
+[17:38:03] *** Joins: genesis (~genesis@ )
+[17:38:09] *** Quits: Impyy (~impy@ ) (Excess Flood)
+[17:38:18] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:38:25] *** Quits: Andrew7 (~ziltro@ ) (Ping timeout: 244 seconds)
+[17:38:27] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[17:38:28] *** Joins: Andrew7 (~ziltro@ )
+[17:38:29] *** Joins: bashrc_ (~motters@ )
+[17:38:31] *** Joins: oranges (oranges@ )
+[17:39:22] *** Joins: Impyy (~impy@ )
+[17:39:33] *** Joins: matti (b9891289@ )
+[17:39:41] *** Joins: albel727 (~albel727@ )
+[17:40:36] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 265 seconds)
+[17:46:57] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 240 seconds)
+[17:46:57] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 240 seconds)
+[17:46:57] *** Joins: Diadl0 (~diadlo@ )
+[17:47:02] *** Quits: rysiek|pl (~quassel@ ) (Read error: Connection reset by peer)
+[17:47:16] *** Quits: smaragdus2 (~omoo@ ) (Ping timeout: 272 seconds)
+[17:47:21] *** Joins: ziltro (~ziltro@ )
+[17:47:36] *** Joins: Curlybear (~Curlybear@ )
+[17:48:00] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[17:48:01] *** Joins: f10__ (~flo@ )
+[17:48:01] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:48:02] *** Joins: f10 (~flo@ )
+[17:48:02] *** Joins: oranges_ (oranges@ )
+[17:48:02] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 255 seconds)
+[17:48:03] *** Joins: bashrc (~motters@ )
+[17:48:04] *** Joins: Bheru27 (~Bheru27@ )
+[17:48:05] *** Quits: Andrew7 (~ziltro@ ) (Ping timeout: 244 seconds)
+[17:48:07] *** Quits: bashrc_ (~motters@ ) (Ping timeout: 244 seconds)
+[17:48:11] *** Joins: rysiekpl (~quassel@ )
+[17:48:15] *** Quits: oranges (oranges@ ) (Ping timeout: 264 seconds)
+[17:49:50] *** Joins: hexadezimalion (sid85551@ )
+[17:50:10] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:50:42] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[17:51:06] *** Joins: zero-ghost (~0@ )
+[17:51:40] *** Joins: smaragdus (~omoo@ )
+[17:53:01] *** Joins: dongo (~dongo@ )
+[17:57:02] *** Joins: iphy (uid67735@ )
+[18:05:29] *** Quits: abbat (~abbat@ ) (Ping timeout: 252 seconds)
+[18:10:53] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 240 seconds)
+[18:10:53] *** Quits: koshii (~w@ ) (Ping timeout: 240 seconds)
+[18:11:05] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 240 seconds)
+[18:11:16] *** Joins: f10_ (~flo@ )
+[18:11:17] *** Quits: ziltro (~ziltro@ ) (Ping timeout: 272 seconds)
+[18:11:30] *** Joins: Diadl0 (~diadlo@ )
+[18:11:38] *** Joins: Curlybear (~Curlybear@ )
+[18:11:54] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 244 seconds)
+[18:11:55] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 255 seconds)
+[18:11:55] *** Quits: Bheru27 (~Bheru27@ ) (Ping timeout: 255 seconds)
+[18:11:56] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[18:11:56] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[18:11:57] *** Joins: BHR27 (~Bheru27@ )
+[18:11:57] *** Quits: bashrc (~motters@ ) (Ping timeout: 255 seconds)
+[18:11:57] *** Quits: oranges_ (oranges@ ) (Ping timeout: 255 seconds)
+[18:12:15] *** Quits: zero-ghost (~0@ ) (Ping timeout: 264 seconds)
+[18:12:17] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 264 seconds)
+[18:12:21] *** Joins: oranges (oranges@ )
+[18:13:18] *** Joins: SkyzohKey (~skyzohkey@ )
+[18:13:38] *** Joins: zero-ghost (~0@ )
+[18:14:32] *** Joins: koshii (~w@ )
+[18:14:37] *** Joins: smaragdus (~omoo@ )
+[18:15:08] *** Joins: rerumnov1rum (~user-reru@ )
+[18:15:47] *** Joins: ziltro (~ziltro@ )
+[18:21:45] *** Quits: iphy (uid67735@ ) (Ping timeout: 272 seconds)
+[18:21:46] *** Joins: rysiek|pl (~quassel@ )
+[18:21:46] *** Joins: f10 (~flo@ )
+[18:21:47] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[18:21:52] *** Joins: jjuran (~jjuran@ )
+[18:21:53] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 240 seconds)
+[18:22:00] *** Joins: Curlybear (~Curlybear@ )
+[18:22:48] *** Quits: rysiekpl (~quassel@ ) (Read error: Connection reset by peer)
+[18:22:52] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 264 seconds)
+[18:22:52] *** Quits: oranges (oranges@ ) (Ping timeout: 264 seconds)
+[18:22:53] *** Joins: rerumnov1rum (~user-reru@ )
+[18:31:14] <matti> If I try to call, the call button turns red and neither party can hear anything. If the other party calls me, I can hear the ring tone but upon accepting the call, the call button is red and neither one of us can hear anything. any other sound requiring app works with the sound. Any ideas at all?
+[18:32:29] *** Joins: rysiekpl (~quassel@ )
+[18:32:53] *** Quits: rysiek|pl (~quassel@ ) (Read error: Connection reset by peer)
+[18:32:53] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:32:54] *** Joins: f10 (~flo@ )
+[18:33:11] <matti> Both of us are on Ubuntu 16.04 and qTox 1.5.1
+[18:34:20] *** Joins: oranges (oranges@ )
+[18:37:00] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 244 seconds)
+[18:37:40] *** Joins: smaragdus (~omoo@ )
+[18:38:01] *** Joins: bashrc (~motters@ )
+[18:40:22] *** Joins: vindelschtuffen (~vindelsch@ )
+[18:44:50] *** Joins: sudden6 (~anonymous@ )
+[18:46:49] *** Quits: albel727 (~albel727@ ) (Ping timeout: 244 seconds)
+[18:47:03] *** Joins: hexadezimalion (sid85551@ )
+[18:50:47] *** Joins: iphy (uid67735@ )
+[19:02:35] *** Joins: rerumnov2rum (~user-reru@ )
+[19:09:54] *** Joins: Se78en (~Se7en@ )
+[19:10:17] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 240 seconds)
+[19:10:26] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 272 seconds)
+[19:10:26] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[19:10:38] *** Joins: rerumnov3rum (~user-reru@ )
+[19:10:39] *** Quits: rerumnov2rum (~user-reru@ ) (Ping timeout: 272 seconds)
+[19:11:03] *** Joins: f10 (~flo@ )
+[19:11:19] *** Joins: Curlybear (~Curlybear@ )
+[19:11:26] *** Quits: Se7en (~Se7en@ ) (Ping timeout: 264 seconds)
+[19:11:27] *** Quits: bashrc (~motters@ ) (Ping timeout: 264 seconds)
+[19:11:28] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 264 seconds)
+[19:11:29] *** Joins: rerumnovarum (~user-reru@ )
+[19:21:55] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[19:23:01] *** Joins: bashrc (~motters@ )
+[19:27:19] *** Joins: smaragdus2 (~omoo@ )
+[19:28:21] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[19:32:05] *** Joins: hexadezimalion (sid85551@ )
+[19:39:13] *** Joins: rerumnovarum (~user-reru@ )
+[20:02:05] *** Joins: in1t3r (~LordShiva@ )
+[20:07:28] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[20:07:42] *** Quits: rerumnov3rum (~user-reru@ ) (Ping timeout: 276 seconds)
+[20:12:47] *** Quits: tux3 (tux@ ) (Ping timeout: 265 seconds)
+[20:18:33] *** Joins: tux3 (tux@ )
+[20:18:43] <sudden6> hi tux3
+[20:18:54] <sudden6> how are you?
+[20:26:56] *** Quits: iphy (uid67735@ ) (Ping timeout: 272 seconds)
+[20:26:57] *** Quits: tux3 (tux@ ) (Ping timeout: 272 seconds)
+[20:26:58] *** Joins: tux3 (tux@ )
+[20:26:58] *** Joins: f10_ (~flo@ )
+[20:26:58] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:27:18] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 265 seconds)
+[20:29:41] *** Quits: matti (b9891289@ ) (Ping timeout: 240 seconds)
+[20:30:11] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 265 seconds)
+[20:34:15] *** Quits: nightfuri (~nightfuri@ ) (Ping timeout: 250 seconds)
+[20:34:35] *** Joins: nightfuri (nightfury@ )
+[20:35:46] *** Quits: tux3 (tux@ ) (Ping timeout: 272 seconds)
+[20:35:53] *** Joins: sockspls (~sockspls@ )
+[20:35:53] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[20:35:58] *** Joins: f10 (~flo@ )
+[20:35:58] *** Quits: dan- (~d@ ) (Ping timeout: 250 seconds)
+[20:37:09] *** Joins: tux3 (tux@ )
+[20:38:01] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 240 seconds)
+[20:38:45] *** Joins: iphy (uid67735@ )
+[20:41:54] *** Joins: jjuran (~jjuran@ )
+[20:44:45] *** Quits: iphy (uid67735@ ) (Ping timeout: 272 seconds)
+[20:44:46] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 272 seconds)
+[20:44:46] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:44:46] *** Joins: f10 (~flo@ )
+[20:45:49] *** Joins: sockspls_ (~sockspls@ )
+[20:50:24] *** Joins: dan- (~d@ )
+[20:50:24] *** Quits: dan- (~d@ ) (Changing host)
+[20:50:24] *** Joins: dan- (~d@ )
+[21:08:38] *** Joins: iphy (uid67735@ )
+[21:22:42] *** Joins: sockspls (~sockspls@ )
+[21:22:57] *** Quits: tux3 (tux@ ) (Ping timeout: 272 seconds)
+[21:22:58] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:22:58] *** Joins: tux3 (tux@ )
+[21:23:19] *** Joins: f10 (~flo@ )
+[21:23:39] *** Quits: iphy (uid67735@ ) (Ping timeout: 272 seconds)
+[21:23:59] *** Quits: sockspls_ (~sockspls@ ) (Ping timeout: 264 seconds)
+[21:32:40] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[21:32:44] *** Joins: f10 (~flo@ )
+[21:38:22] *** Quits: hpanago_ (uid15586@ ) (Read error: Connection reset by peer)
+[21:46:09] *** Joins: rerumnovarum (~user-reru@ )
+[21:46:25] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[21:46:26] *** Quits: tux3 (tux@ ) (Ping timeout: 272 seconds)
+[21:46:27] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 272 seconds)
+[21:46:27] *** Joins: f10 (~flo@ )
+[21:46:32] *** Joins: vindelschtuffen (~vindelsch@ )
+[21:49:18] *** Joins: Emcy (~MC@ )
+[21:49:33] *** Joins: tux3 (tux@ )
+[21:50:42] *** Joins: hpanago_ (uid15586@ )
+[21:54:37] *** Joins: iphy (uid67735@ )
+[22:01:16] *** Joins: abbat (~Anton@ )
+[22:07:23] <oranges> tuxked out
+[22:08:45] <oranges> the qtox updater vm just passed 292 days uptime
+[22:10:28] <oranges> 21:10:19 up 292 days,
+[22:12:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[22:43:42] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 276 seconds)
+[23:14:03] <Emcy> if only it had something to do
+[23:14:05] <Emcy> hohoho
+[23:29:20] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:39:54] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[23:44:13] *** Joins: cisc (~cisc@ )
+[23:52:10] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 244 seconds)
+[23:52:24] *** Joins: Dragofix (~Dragofix@ )
