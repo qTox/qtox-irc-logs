@@ -1,0 +1,102 @@
+[00:01:47] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:16:17] *** Joins: in1t3r (~LordShiva@ )
+[00:32:36] <oranges> nice
+[00:43:59] *** Joins: kadinparker[m] (kadinparke@ )
+[00:49:36] *** Joins: SkyzohKey (~skyzohkey@ )
+[01:50:55] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[02:23:36] *** Joins: initramfs (~initramfs@ )
+[02:44:53] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[02:57:17] *** Joins: cisc (~cisc@ )
+[03:11:58] <koshii> :)
+[03:13:56] -qtox-git-spam- [qTox] zetok closed pull request #3751: chore(build): correct URL to qTox website (master...chore-nsi-url) https://git.io/vij0T
+[03:25:58] *** Joins: athan (~athan@ )
+[03:39:15] -qtox-git-spam- [qTox] zetok opened pull request #3754: refactor(build): make bootstrap.sh more aware of spaces in paths (master...refactor-bootstrap-spc) https://git.io/vPv6k
+[04:21:29] *** Quits: athan (~athan@ ) (Ping timeout: 264 seconds)
+[04:30:45] -qtox-git-spam- [qTox] AliceGrey opened pull request #3755: fix(settings): Play test sound when user enables test sound (master...fix/testsounds) https://git.io/vPvPP
+[04:38:50] *** Joins: Alicew (~ali@ )
+[05:12:16] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[05:59:26] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[06:33:41] *** Joins: sudden6 (~anonymous@ )
+[06:47:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[06:56:49] *** Joins: sudden6 (~anonymous@ )
+[06:59:14] *** Joins: Neolex (~neolex@ )
+[07:02:54] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[07:02:56] <Neolex> hey !
+[07:19:40] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[07:37:29] *** Quits: Alicew (~ali@ ) (Quit: Lost terminal)
+[07:51:06] *** Joins: cisc (~cisc@ )
+[07:51:45] <cisc> is there any known issue for qtox lowering the output volume each time a call is connected down to 0? because I'm trying qtox on Leap 42.2 Beta 2 and that is what's happening
+[07:53:34] <cisc> Commit hash: f05b7e040a073c7afadaf763dda5beaf130c6dbd
+[08:06:52] *** Joins: albel727 (~albel727@ )
+[08:08:09] <cisc> if I drag the slider for output volume up to 100%, as soon as I leave the Audio/Video tab and then go back into it it's back down to 0
+[08:21:45] <zetok> cisc: have you tried searching?
+[08:28:02] <cisc> zetok: not yet, but didn't think there would be anything there since i'm testing on Leap 42.2 Beta 2
+[08:28:21] <cisc> and same OBS package doesn't exhibit same issue on Troubleweed
+[08:29:40] <zetok> huh
+[08:29:51] <zetok> that's interesting
+[08:29:59] <cisc> could be this one or similar https://github.com/qTox/qTox/issues/3478
+[08:30:10] <cisc> except it sets to min. when going out of the tab, immediately
+[08:30:53] <zetok> https://github.com/qTox/qTox/issues/3538 https://github.com/qTox/qTox/issues/3721 ?
+[08:33:25] <cisc> it's not 3538 b/c no audio even when in tab, and not 3721 b/c I tested it multiple times and each time the output volume when going out of the tab drops down to 0
+[08:39:46] <nurupo> zetok: i got an email of someone complaining of an unspecified tox client crashing in video settings on windows 10
+[08:40:06] <nurupo> just curious, was the stable qTox updated to use the patched ffmpeg?
+[08:40:21] <zetok> dunno
+[08:44:22] <nurupo> the stable qtox on jenkins was last built before the ffmpeg was patched
+[08:46:09] <nurupo> if we assume tux3 uses the jenkins binary for windows releases, then it has the crashy ffmpeg
+[08:47:04] <nurupo> might make sense to push a patch, based on the same commit but with updated ffmpeg
+[08:47:25] <nurupo> could also use the updated openssl, since they patched something a week ago
+[08:48:09] <nurupo> tux3: ^
+[08:48:33] <nurupo> tux3: here is the patched ffmpeg issue i'm talking about https://github.com/qTox/qTox/issues/3612
+[08:50:39] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[09:05:49] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[09:18:23] *** Joins: iphy (uid67735@ )
+[09:19:02] -qtox-git-spam- [qTox] AliceGrey opened pull request #3756: feat(settings): Export and copy debug log (master...feat/debuglog) https://git.io/vPvhd
+[09:20:31] *** Joins: depate (~depate@ )
+[09:25:30] *** rysiekpl is now known as rysiek|pl
+[09:27:12] <cisc> zetok: tested webcam also in settings, that doesnt' work either on Leap 42.2 B2
+[09:31:10] *** Joins: kadinparker[m] (kadinparke@ )
+[09:38:44] *** Joins: abbat (~abbat@ )
+[09:59:52] *** Quits: kadinparker[m] (kadinparke@ ) (K-Lined)
+[10:21:04] *** Joins: initramfs (~initramfs@ )
+[10:42:41] *** Joins: kadinparker[m] (kadinparke@ )
+[10:55:00] *** Joins: f10 (~flo@ )
+[11:02:32] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[11:03:41] *** Joins: f10 (~flo@ )
+[11:15:31] *** Joins: rerumnovarum (~user-reru@ )
+[12:22:42] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 276 seconds)
+[12:22:48] *** Joins: jjuran_ (~jjuran@ )
+[12:45:57] *** Joins: Neolex_ (~neolex@ )
+[12:46:16] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[13:35:53] *** Joins: athan (~athan@ )
+[14:28:57] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[14:39:17] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[14:40:30] *** Joins: athan (~athan@ )
+[14:43:44] *** Joins: Chiitoo (~Chiitoo@ )
+[14:45:33] <Chiitoo> Any reports from the Windows client missing contacts recently'ish after an update?
+[14:45:39] *** Quits: Neolex_ (~neolex@ ) (Quit: Konversation terminated!)
+[14:56:08] *** Joins: sudden6 (~anonymous@ )
+[15:11:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[15:44:46] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:15:44] *** jjuran_ is now known as jjuran
+[16:17:33] *** Joins: sudden6 (~anonymous@ )
+[17:09:53] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 272 seconds)
+[17:41:06] *** Joins: rerumnovarum (~user-reru@ )
+[17:51:56] <qTox-syncbot> anonymous: i wish we could have text to speech option, since public chats have much talking
+[18:05:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[18:41:01] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 240 seconds)
+[18:41:44] *** Joins: SkyzohKey (~skyzohkey@ )
+[18:56:51] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:08:03] *** Joins: cisc (~cisc@ )
+[19:36:57] <cisc> installed qtox from the OBS repo both on SuSE Tumbleweed & Leap 42.2 Beta. Output volume does not work at all on the 42.2 Beta but fine on Tumbleweed, so something isn't playing nice
+[19:44:29] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:50:53] *** Joins: bashrc_ (~motters@ )
+[19:58:37] *** Joins: Chiitoo (~Chiitoo@ )
+[21:13:44] *** Joins: abbat (~abbat@ )
+[21:19:29] *** Joins: Diadlo (~diadlo@ )
+[21:58:34] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[22:02:03] *** Joins: abbat (~Anton@ )
+[22:11:30] *** Joins: sudden6 (~anonymous@ )
+[22:49:28] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[23:05:54] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[23:13:22] *** Quits: depate (~depate@ ) (Ping timeout: 243 seconds)
+[23:24:47] *** Quits: bashrc_ (~motters@ ) (Quit: Lost terminal)
