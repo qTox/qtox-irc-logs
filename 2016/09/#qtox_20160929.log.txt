@@ -1,0 +1,229 @@
+[00:06:41] *** Quits: hpanago_ (uid15586@ ) (Quit: Connection closed for inactivity)
+[00:31:37] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[02:15:57] <iphy> cisc: how about the osx binary?
+[03:07:49] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[03:11:18] *** Quits: smaragdus2 (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[03:31:11] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[03:44:31] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:50:59] <cisc> iphy:  waiting to hear back from my friend on results
+[03:51:27] <oranges> never trust friends cisc 
+[03:59:59] *** Joins: smaragdus (~omoo@ )
+[04:09:29] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:22:04] *** Joins: cisc (~cisc@ )
+[04:23:21] *** Quits: athan (~athan@ ) (Ping timeout: 240 seconds)
+[04:29:17] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:32:39] *** Joins: cisc (~cisc@ )
+[04:36:08] *** Joins: athan (~athan@ )
+[04:43:23] *** Joins: Emcy_ (~MC@ )
+[04:43:23] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[04:43:23] *** Joins: Emcy_ (~MC@ )
+[04:47:12] *** Quits: Emcy (~MC@ ) (Ping timeout: 272 seconds)
+[04:47:54] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:49:43] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 272 seconds)
+[04:49:52] *** Joins: rerumnovarum (~user-reru@ )
+[05:00:34] *** Joins: cisc (~cisc@ )
+[05:04:14] *** Quits: anoa (~anoa@ ) (Ping timeout: 250 seconds)
+[05:04:38] *** Joins: anoa (~anoa@ )
+[05:34:15] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[05:35:44] *** Joins: rerumnovarum (~user-reru@ )
+[05:36:13] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[05:38:29] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 272 seconds)
+[05:54:03] *** Joins: initramfs (~initramfs@ )
+[06:25:21] <cisc> iphy: my friend said this: "Seems to load fine." "Just crashes when something is pressed."
+[06:26:32] *** Joins: hpanago_ (uid15586@ )
+[06:48:23] <Emcy_> close enough tag it
+[06:48:51] *** Joins: Neolex (~neolex@ )
+[06:48:56] <Neolex> Hi
+[06:54:45] <Emcy_> what
+[06:55:41] -qtox-git-spam- [qTox] initramfs closed pull request #3754: refactor(build): make bootstrap.sh more aware of spaces in paths (master...refactor-bootstrap-spc) https://git.io/vPv6k
+[07:08:22] <Emcy_> qtox has 1400 closed pull requests
+[07:08:26] <Emcy_> goddamn
+[07:51:44] <Emcy_> why is there a fork of qtox under toktok
+[07:56:30] *** Joins: sudden6 (~anonymous@ )
+[08:01:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[08:37:56] <initramfs> Emcy_: I think iphydf uses that repo to submit PRs to qTox/qTox
+[08:44:00] <Emcy_> ok
+[08:45:24] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 277 seconds)
+[08:56:42] *** Quits: hpanago_ (uid15586@ ) (Quit: Connection closed for inactivity)
+[09:13:41] *** Joins: hpanago_ (uid15586@ )
+[09:19:05] <iphy> cisc: ran from the command line?
+[09:19:53] <iphy> cisc: qtox.app/contents/macosx/qtox (or something like that)
+[09:42:35] *** Joins: Chiitoo (~Chiitoo@ )
+[09:52:02] *** Joins: abbat (~abbat@ )
+[10:03:04] *** Joins: st4ll1 (~st4ll1@ )
+[10:18:30] *** Se78en is now known as Se7en
+[10:23:57] *** Joins: f10 (~flo@ )
+[11:22:04] *** Quits: tux3 (tux@ ) (Changing host)
+[11:22:04] *** Joins: tux3 (tux@ )
+[11:22:04] *** ChanServ sets mode: +o tux3
+[11:44:28] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[11:51:16] *** Joins: Chiitoo (~Chiitoo@ )
+[11:56:40] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[11:57:23] *** Joins: abbat (~abbat@ )
+[12:27:41] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[12:27:47] *** Joins: rerumnovarum (~user-reru@ )
+[12:42:23] <Chiitoo> nurupo: I believe I figured my 'mkstemp' issue out.  I thought I compared the mingw versions already at some point, but regardless, the bit under 'utox requires newer version of libraries' made me look into that again, and getting the mingw packages from testing seems to have fixed the linking.  :]
+[12:42:30] <Chiitoo> Thanks again.
+[13:11:23] <tux3> nurupo, zetok so we just need to rebuild a qTox stable binary with the new FFmpeg to fix the video crash, right?
+[13:11:41] <zetok> yep
+[13:18:22] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[13:20:12] <tux3> While we're doing a release, is there more stuff that I should pull into stable?
+[13:21:01] <iphy> you're doing a release?
+[13:21:22] *** Joins: albel727 (~albel727@ )
+[13:23:03] <Chiitoo> Heh.  Going from '1.4.0-240-g87cb2ca' to '1.5.1-131-g315966a' gets rid of contacts every time.  First time I witness that.  :]  (Windows testing.)
+[13:29:51] <tux3> Well we need a new version number if the binary is different :)
+[13:30:17] <tux3> Otherwise tracking bugs gets confusing
+[13:36:03] <iphy> so does your osx build work yet?
+[13:36:10] <iphy> the binary that is
+[13:39:37] <tux3> I wouldn't know about that
+[13:55:21] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[14:01:23] <tux3> Oh release tags are on the master branch now, so I'm not sure where 1.5.2 should be tagged, unless we do a full release
+[14:08:23] *** Joins: rerumnovarum (~user-reru@ )
+[14:25:01] <zetok> tux3: hmm, is it possible to tag commit from 1.5.2 again?
+[14:25:33] <tux3> zetok, you mean have 1.5.2 and 1.5.1 tag the same commit?
+[14:25:41] <zetok> yep
+[14:26:41] <zetok> if nothing in qTox code changes, that seems logical
+[14:27:33] <tux3> Probably actually
+[14:27:42] *** Parts: Neolex (~neolex@ ) ("Konversation terminated!")
+[14:28:54] <tux3> Yep: https://github.com/qTox/qTox/tree/v1.5.2
+[14:28:58] <tux3> Hope that didn't break anything
+[14:29:32] <tux3> I'll start a new Jenkins build and if everything looks ok I'll push it to the update servers
+[14:34:56] <tux3> Hm the libffmpeg build on Jenkins are a month old, do they have the bugfix patch?
+[14:34:59] <tux3> nurupo, ^
+[14:35:35] <tux3> Oh apparently yes, alright
+[14:48:19] *** Joins: depate (~depate@ )
+[15:03:52] <tux3> Ok the new version should be live
+[15:15:57] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vPTBP
+[15:15:57] -qtox-git-spam- qTox/master abaa41e Zetok Zalbavar: docs(CONTRIBUTING): add a guideline to not use dynamic casts/RTTI...
+[15:22:38] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[15:25:03] *** Joins: rerumnovarum (~user-reru@ )
+[16:18:04] *** Joins: Diadlo (~diadlo@ )
+[16:50:45] <nurupo> tux3: cool
+[16:56:54] <iphy> did you build the osx binary yet?
+[17:10:17] <zetok> no, building toxcore failed
+[17:10:52] *** Joins: sudden6 (~anonymous@ )
+[17:10:55] <iphy> where is it built?
+[17:11:08] <zetok> on travis
+[17:11:28] <zetok> https://travis-ci.org/qTox/qTox/jobs/163714876
+[17:11:43] <iphy> I see
+[17:11:50] <iphy> *shrug*
+[17:11:56] <iphy> use toktok
+[17:12:14] <zetok> toktok doesn't even have v0.1 released
+[17:12:15] <iphy> and cmake
+[17:12:38] <iphy> zetok: does qtox use a release?
+[17:12:54] <zetok> not for irungentoo/toxcore
+[17:13:13] <zetok> for toktok, release is required, since you do like to break API
+[17:13:23] <iphy> Diadlo: 0.0.1 is in master now, so you can #if your code to work with both
+[17:13:38] <iphy> zetok: yeah, soon :)
+[17:13:52] <iphy> it can't be done before thorough testing on clients
+[17:15:01] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 240 seconds)
+[17:15:16] <iphy> it also depends on stateless toxav
+[17:15:24] <iphy> which grayhatter was doing, but it's now stalled
+[17:15:29] <zetok> >and cmake
+[17:15:36] <zetok> there are no instructions for using cmake
+[17:15:48] <iphy> zetok: the instructions are: cmake . && make
+[17:15:52] <iphy> or make install
+[17:16:14] <iphy> basically: use cmake as it's intended and documented on its website
+[17:16:44] <zetok> ok, it would be good if that was stated somewhere
+[17:16:52] <iphy> feel free to PR
+[17:17:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[17:33:09] *** Quits: depate (~depate@ ) (Ping timeout: 276 seconds)
+[18:05:45] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:07:51] *** Joins: st4ll1 (~st4ll1@ )
+[18:17:54] <iphy> does github have an issue tracker for bugs and feature requests about github itself?
+[18:22:14] <zetok> nope
+[18:22:30] <zetok> gitlab has that though
+[18:32:18] *** Quits: bashrc (~motters@ ) (Ping timeout: 276 seconds)
+[18:33:35] *** Joins: bashrc (~motters@ )
+[18:50:08] <cisc> iphy: ill let you know when I hear back
+[18:51:29] <cisc> I tested https://build.opensuse.org/package/binaries/home:antonbatenev:tox/qtox?repository=openSUSE_Leap_42.2 on a completely different box, was able to reproduce the same issue on 42.2 Beta 2. Output volume drops down to 0 no matter waht
+[18:52:07] <cisc> as soon as you go out of the Audio/Video tab, the slider is back down to 0
+[18:53:02] <cisc> https://build.opensuse.org/package/binaries/home:antonbatenev:tox/qtox?repository=openSUSE_Tumbleweed also broke webcam for me, Camera doesn't show up as any device
+[18:53:20] <cisc> (update from that repo I mean)
+[18:56:54] <iphy> webcam doesn't work for me either, on osx
+[18:57:35] <cisc> it worked about a month ago, I could preview the device when in the Audio/Video Tab. Now on Tumbleweed with the OBS package, only the Mic on the webcam works, no video
+[18:58:19] <iphy> thoughts on renaming toxcore to c-toxcore?
+[18:58:39] <iphy> so that we make room for other language implementations of toxcore
+[18:59:09] <cisc> either that or toxcore-c
+[19:01:14] <iphy> so there are two things you can do with foreign languages: either make a language binding to $lib, or rewrite $lib in language
+[19:01:33] <iphy> when you do the second thing, you can then also export a C API *from* that language again
+[19:01:38] <iphy> so you can go full circle
+[19:01:49] <iphy> what names should each of these things have?
+[19:02:46] <iphy> e.g.: c-toxcore-c is the C implementation of toxcore backed by C, hs-toxcore-c the haskell binding to a toxcore-c implementation, hs-toxcore-hs a pure haskell implementation with a haskell api, and c-toxcore-hs a C binding to the haskell implementation
+[19:02:56] <iphy> other ideas?
+[19:05:24] <iphy> so it's like $api_lang-$lib-$impl_lang
+[19:06:11] <iphy> theoretically you could do hs-toxcore-py, that would be haskell bindings to py-toxcore-*
+[19:06:31] <iphy> ah, and hs-toxcore-c would be a binding to a c-toxcore implementation, not a toxcore-c implementation
+[19:06:47] <iphy> anything exporting a C API would be named c-toxcore-$impl_lang
+[19:07:02] <iphy> zetok: thoughts?
+[19:10:13] <zetok> looks ugly
+[19:10:59] <iphy> alternatives?
+[19:11:35] <zetok> toxcore-$lang
+[19:11:59] <iphy> what does it mean?
+[19:12:37] <zetok> IMO there's no real need to explicitly say whether implementation in given language exposes C API
+[19:13:03] <zetok> rather, explicitly say in implementation name
+[19:13:17] <iphy> the thing is, hstox for instance will not expose a C API itself
+[19:13:30] <iphy> I found that it's going to be too much code in a single library
+[19:13:55] <zetok> still fine IMO to call it toxcore-h{askell,s}
+[19:14:12] <iphy> instead, there will be hstox (hs-toxcore-hs in the above schema), and a separate library named something else that binds to it and exposes a C API
+[19:14:26] <zetok> eh
+[19:14:27] <iphy> ok, so toxcore-hs would be what?
+[19:14:41] <zetok> haskell implementation with haskell-only bindings
+[19:14:52] <iphy> ok, what's the name of the C API based on it?
+[19:14:59] <zetok> toxcore-capi
+[19:15:02] <iphy> and by bindings I assume you mean API
+[19:15:14] <zetok> if you really want to put a lang name there, toxcore-capi-hs
+[19:15:16] <iphy> ok, but toxcore-capi is for haskell? what about the rust one?
+[19:15:19] <iphy> aha, ok
+[19:15:47] <iphy> so you propose: $lib-${api_lang}api-$impl_lang
+[19:16:34] <zetok> I think that `toxcore-capi` is a fine name for all languages
+[19:16:52] <iphy> so a single repo with all the languages in it?
+[19:16:56] <zetok> no
+[19:17:02] <zetok> just the same name for all languages
+[19:17:08] <iphy> I'm talking about repo names by the way
+[19:17:16] <iphy> library/package names are language-specific
+[19:17:29] <zetok> mm
+[19:17:44] <zetok> I see the benefits of what you're proposing
+[19:18:47] <zetok> I'm just wondering how realistic it will be to have bindings from implementation in $lang, written in that $lang for languages other than C
+[19:21:34] <zetok> if that can be excluded, proposed naming would be `$lib-capi-$impl_lang`
+[19:24:13] <zetok> if that's an actual thing, then proposed by you naming scheme might be better
+[19:24:42] <zetok> it's just that right after reading your explanation for it I've managed to forget what part means what
+[19:24:53] <zetok> twice by now
+[19:25:29] <iphy> The mnemonic is that if you put two of them next to each other, the names need to match
+[19:26:02] <iphy> *-toxcore-c binds to c-toxcore-*
+[19:26:45] <zetok> oh, nice
+[19:42:43] *** Quits: albel727 (~albel727@ ) (Ping timeout: 272 seconds)
+[19:44:32] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[20:31:09] <iphy> zetok: you want to keep the instructions pointing at irungentoo/toxcore?
+[20:31:16] <iphy> the instructions will be wrong like this
+[20:31:43] <iphy> I'd suggest you either add instructions for toktok/toxcore with cmake and leave the irungentoo ones intact, or replace the URL
+[20:50:38] *** Joins: zetok (~zetok@ )
+[20:50:46] *** Joins: linxon (~lin@ )
+[20:51:56] *** Joins: genesis (~genesis@ )
+[20:58:05] *** Quits: linxon (~lin@ ) (Ping timeout: 272 seconds)
+[21:04:48] *** Joins: linxon (~lin@ )
+[21:13:40] *** Joins: depate (~depate@ )
+[21:21:35] *** Joins: sudden6 (~anonymous@ )
+[21:27:11] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[21:27:13] *** Joins: Diadlo (~diadlo@ )
+[21:32:17] *** Quits: linxon (~lin@ ) (Ping timeout: 272 seconds)
+[21:32:50] *** Joins: linxon (~lin@ )
+[21:40:31] *** Quits: linxon (~lin@ ) (Ping timeout: 272 seconds)
+[21:47:52] *** Joins: linxon (~lin@ )
+[21:55:05] *** Quits: linxon (~lin@ ) (Ping timeout: 272 seconds)
+[22:04:12] *** Joins: linxon (~lin@ )
+[22:19:47] *** Quits: depate (~depate@ ) (Ping timeout: 272 seconds)
+[22:33:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:01:29] *** Joins: bkidwell (~bkidwell@ )
+[23:03:53] <iphy> "Qt is a subscription-based service that lets you code in C++, and then export your app to the different platforms on which you want to develop."
+[23:03:53] <iphy> http://thinkapps.com/blog/development/develop-for-ios-v-android-cross-platform-tools/
+[23:05:47] <iphy> zetok: how about this
+[23:06:45] <iphy> zetok: $api_lang-$lib if it's not a binding
+[23:07:31] <iphy> so, c-toxcore, hs-toxcore, rs-toxcore are all native toxcore implementations that aren't backed by another api they bind to
+[23:07:55] <iphy> anything with -$lang at the end is binding to an api in $lang
+[23:08:20] <iphy> so jvm-toxcore-c is the jvm binding for the C API of toxcore
+[23:08:40] <iphy> hs-toxcore is a native haskell implementation, hs-toxcore-c is the haskell C binding
+[23:09:50] <iphy> i.e. if there is no -$lang at the end, then the chain terminates there
+[23:22:39] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[23:25:06] <iphy> So if it has a language at the end, it's a binding
+[23:55:06] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
