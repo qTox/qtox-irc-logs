@@ -1,0 +1,621 @@
+[00:15:35] *** Joins: cisc (~cisc@ )
+[00:28:50] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:30:59] *** Joins: Neolex (~neolex@ )
+[00:32:10] *** Joins: cisc (~cisc@ )
+[00:38:47] <iphy> nurupo: thoughts? Opinions?
+[01:06:43] *** Quits: hpanago_ (uid15586@ ) (Quit: Connection closed for inactivity)
+[01:24:39] * nurupo reads backlog
+[01:27:54] <nurupo> ><iphy> does github have an issue tracker for bugs and feature requests about github itself? <-- don't think it does. you generally just use the support contact form and they are supposedly add your issue to their internal issue tracker
+[01:43:36] <oranges> iphy: can you just clean fork toxcore already so it's not confusing
+[02:02:26] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[02:13:16] <qTox-syncbot> anonymous: want to do an experiment, how muslim apes will react if in some place all men would wear hijabs, and all of women will be without them, and this area would look like typical arabic
+[02:13:36] <qTox-syncbot> anonymous: ooops wrong chat
+[02:16:09] <nurupo> ><iphy> nurupo: thoughts? Opinions? <-- i like it. $lang-$lib for implementation of tox protocol and $lang1-$lib-$lang2 for the bindings in $lang2 language made for the $lang1-$lib implementation of tox protocol
+[02:18:11] <nurupo> i hope you are doing this just to organize the repos better, rather than planning on implementing tox in countless languages
+[03:24:13] *** Joins: albel727 (~albel727@ )
+[03:26:19] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[04:27:59] *** Joins: f10 (~flo@ )
+[04:41:55] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 244 seconds)
+[04:43:54] *** Joins: sockspls (~sockspls@ )
+[05:37:25] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[06:16:03] *** Quits: bashrc (~motters@ ) (Ping timeout: 272 seconds)
+[06:16:19] *** Joins: bashrc (~motters@ )
+[06:19:19] *** Joins: Neolex (~neolex@ )
+[06:19:34] <Neolex> hi
+[08:02:19] *** Joins: pcre (~quassel@ )
+[08:02:28] *** Quits: pcre (~quassel@ ) (Client Quit)
+[08:21:45] <zetok> iphy: that's less confusing
+[08:29:26] *** Joins: depate (~depate@ )
+[08:44:21] <iphy> nurupo: it's just for organisation yes
+[08:50:48] *** Joins: sudden6 (~anonymous@ )
+[09:09:50] *** Joins: XenoPL (~Xeno@ )
+[09:10:52] <XenoPL> ho, i've been redirected here from #tox channel. I'd like to ask what's goin on with qTox linux builds? 
+[09:11:22] <sudden6> XenoPL:  hi do you use the OBS builds or the one from tox.chat?
+[09:20:11] <iphy> nurupo: https://github.com/TokTok/toxcore/pull/178 you've already approved it, but I pushed incorrectly, so it wasn't merged
+[09:20:36] <iphy> nurupo: github doesn't have a "fast forward and delete branch" button like reviewable does
+[09:25:48] <zetok> XenoPL: you might want to read the blog :)
+[09:29:13] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 272 seconds)
+[09:32:29] *** Joins: bashrc_ (~motters@ )
+[09:33:25] <XenoPL> zetok: the one from the channel topic? now I did , nice 'Hello World' message :D
+[09:45:41] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 272 seconds)
+[09:54:07] *** Joins: sudd3n6 (~anonymous@ )
+[10:00:03] *** Joins: abbat (~abbat@ )
+[10:04:42] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[10:31:08] *** Joins: st4ll1 (~st4ll1@ )
+[11:20:14] *** Joins: sudd3n6 (~anonymous@ )
+[11:27:23] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[11:27:48] *** Quits: sudd3n6 (~anonymous@ ) (Quit: Konversation terminated!)
+[11:28:38] *** Joins: f10 (~flo@ )
+[11:28:58] *** Joins: sudd3n6 (~anonymous@ )
+[11:39:23] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[11:45:41] *** Quits: depate (~depate@ ) (Remote host closed the connection)
+[11:49:29] *** Joins: SkyzohKey (~skyzohkey@ )
+[12:01:45] *** Joins: Chiitoo (~Chiitoo@ )
+[12:05:53] *** Quits: sudd3n6 (~anonymous@ ) (Quit: Konversation terminated!)
+[12:06:59] *** Joins: sudden6 (~anonymous@ )
+[12:15:47] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[12:24:36] *** Joins: hpanago_ (uid15586@ )
+[12:51:08] *** Joins: f10 (~flo@ )
+[12:56:13] *** Joins: VVD59847 (~VVD@ )
+[12:56:32] *** Quits: VVD (~VVD@ ) (Ping timeout: 250 seconds)
+[13:07:57] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[13:08:50] *** Joins: abbat (~abbat@ )
+[13:32:11] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[13:33:30] *** Joins: abbat (~abbat@ )
+[13:38:09] *** Joins: athan (~athan@ )
+[13:53:17] *** Joins: Neolex_ (~neolex@ )
+[13:53:17] *** Quits: Neolex (~neolex@ ) (Read error: Network is unreachable)
+[13:58:26] <qTox-syncbot> Nils F.: hey
+[13:58:46] <iphy> hi
+[14:01:22] <qTox-syncbot> Nils F.: ah relay, so you're iphy(df)?
+[14:02:48] <iphy> yes
+[14:03:42] <qTox-syncbot> Nils F.: ok, me is antis81
+[14:04:47] <iphy> yeah
+[14:04:50] <qTox-syncbot> Nils F.: you're coder right?
+[14:05:02] <iphy> which group chats are you in?
+[14:05:06] <iphy> chat*
+[14:05:28] <qTox-syncbot> Nils F.: uhm is there another one? dev based on specific topic maybe?
+[14:05:50] <iphy> which group bot are you using?
+[14:06:54] <qTox-syncbot> Nils F.: called qGroupbot, which was just spawned by zetok few weeks ago. but i'd like to discuss single topic rather than getting the whole confusion :)
+[14:07:21] <iphy> ok
+[14:07:48] <qTox-syncbot> Nils F.: because it's a big one you know
+[14:08:05] <iphy> I was trying to join it, but I don't know where it is
+[14:08:05] <iphy> with qtox
+[14:08:58] <iphy> anyway, let's discuss your topic
+[14:09:10] <sudden6> iphy it's qgroupbot@toxme.io I think
+[14:09:18] <qTox-syncbot> Nils F.: if we're just the few people, no problem
+[14:09:24] <qTox-syncbot> Nils F.: yes, qtox related -> #3639 (https://github.com/qTox/qTox/pull/3639)
+[14:09:47] <iphy> sudden6: This Tox ID does not exist
+[14:11:28] <sudden6> ah, it's qgroup@toxme.io
+[14:11:36] <sudden6> in the channel description ;)
+[14:11:44] <qTox-syncbot> Nils F.: thing is: this one drives qtox ui in a future direction, but for qTox development, this means something like a 2.0 version.
+[14:13:54] <qTox-syncbot> iphy: \o
+[14:15:10] <iphy> ok, what's the thing about that?
+[14:16:45] *** Quits: tux3 (tux@ ) (Ping timeout: 272 seconds)
+[14:17:00] *** Joins: tux3 (tux@ )
+[14:19:06] <qTox-syncbot> Nils F.: Thing is, it introduces a "concept based strategy" rather than a feature based one and it is not doable by a single person unless this person can program with the speed of light - spacex could probably flies passengers to the moon by the time this is finished :)
+[14:28:12] <qTox-syncbot> Nils F.: what i'm trying to say is: we need a strategy how to get that done in parallel to the master branch, as by now it includes two concepts (friend cache & ui-redesign). The latter is by far not where it needs to be and I need some help. So maybe 2-3 devs could work on that frequently, to steer into a "common direction".
+[14:28:36] <qTox-syncbot> Nils F.: zetok, you also there?
+[14:28:58] <qTox-syncbot> Zetok\0: yep
+[14:29:08] <qTox-syncbot> Nils F.: \o
+[14:29:24] <qTox-syncbot> Zetok\0: `master` branch could be frozen to not cause conflicts
+[14:30:52] <qTox-syncbot> Nils F.: this would mean to freeze it for weeks, mayb ~2 months (as i'm not available for longer period of time - can reply messages though with limited access though)
+[14:32:02] <qTox-syncbot> Zetok\0: right
+[14:32:34] <qTox-syncbot> Zetok\0: the alternative is to constantly rebase the PR
+[14:37:28] <qTox-syncbot> Zetok\0: personally, I think that rebasing the PR would be better, but someone who knows what they're doing would need to do that
+[14:38:22] <qTox-syncbot> Nils F.: …and it is not required, but there are some things to be aware of now. Those will need to be changed (not mergable). For example we now got rid of the FriendList class, which changes the game to call `Friend f = Friend::get(id);` any time it is required (before it was `Friend* f = FriendList::findFriend(id);`). Now the trick is, that the friend will actually be looked up from tox, if not already loaded (attention: local, unpushe
+[14:39:33] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[14:40:08] <qTox-syncbot> Zetok\0: mm
+[14:45:16] <qTox-syncbot> Nils F.: zetok A feature freeze is fine on `master` to focus on this (quite important) stuff. simple fixes however, like the recent "test sound" are no problem at all. i don't know how to actually explain that. it introduces a concept, which provides a "feature set" instead of the current "i want this" philosophy. i jut didn't realize that when i started off that topic, but now it is pretty clear.
+[14:51:08] <qTox-syncbot> Nils F.: Some simple changes that would help to better visualize and divide the topic: Instead of the current prefix in the PR title, we could either add a milestone or a `ui/redesign` label, which allows easier filtering. And then the "upstream/ui/redesign" branch should not be required to rebase onto master. So… probably we could use that, as the "main development line" with your mentioned freeze (but just new big features) and impleme
+[14:55:22] <qTox-syncbot> Nils F.: zetok stil with me? :)
+[15:03:18] <qTox-syncbot> Nils F.: hm… i think it actually makes sense to declare the R #3639 (ui/redesign) as "main development" branch and use "master" as an integration branch. the reason for this is, that some features temporarily stop working until implementation is complete.
+[15:04:44] <qTox-syncbot> Amit Agnani: Well for one, you might want to add a PR that makes travis build for that branch as well
+[15:04:50] <qTox-syncbot> Amit Agnani: Right now it builds only for master
+[15:06:12] <qTox-syncbot> Nils F.: right, but one step after the other… currently it cannot build, because few lines were added by master, which now need to be "adjusted" (fixup) and we probably want to avoid that in the future.
+[15:08:24] <qTox-syncbot> Nils F.: i wrote it some blocks above, but it is simple: |\n|  |\n| `Friend* f = FriendList::findFriend(id);` now became `Friend f = Friend::get(id);` - together with our recent discussed changes, this will perform a "automagic cached lookup of a friend", instead of loading all friends on startup.
+[15:09:00] <qTox-syncbot> Amit Agnani: That makes it hard for development though, if you propose "ui/redesign" as a main development branch, you'll need to have all PRs be based off it (i.e. PRs merge into ui/redesign by default as opposed to master). Anytime you want something like that, you need to make sure the development branch is stable enough that every PR passes CI before getting merged
+[15:10:30] <qTox-syncbot> Nils F.: More important: It does not copy. The current master implementation holds e.g. a "friend name" three times in memory: |\n|  |\n| 1. toxcore |\n| 2. Friend::name |\n| 3. QLabel::text |\n|  |\n| This is so 1985 :)
+[15:24:12] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 276 seconds)
+[15:25:50] *** Joins: rerumnovarum (~user-reru@ )
+[15:29:28] *** Quits: Neolex_ (~neolex@ ) (Quit: Konversation terminated!)
+[15:39:35] <iphy> this is so not 1985
+[15:39:42] <iphy> because in 1985, we didn't have ram to waste
+[15:40:24] <qTox-syncbot> Nils F.: so we waste ram in 1985 by copy'ing a var over 3 times?
+[15:40:28] <qTox-syncbot> Nils F.: :)
+[15:41:12] <iphy> no, in 1985 we would not do that
+[15:41:16] <qTox-syncbot> Nils F.: because this is exactly what we currently do
+[15:41:16] <iphy> in 2016 we do
+[15:41:30] <iphy> yeah, and it's 2016
+[15:41:36] <qTox-syncbot> Nils F.: no - in 2016 we do i based lookups :)
+[15:41:46] <iphy> apparently not
+[15:41:46] <qTox-syncbot> Nils F.: *id
+[15:42:05] <iphy> in 1985 you would have pointers to the same name everywhere
+[15:42:10] <qTox-syncbot> Nils F.: well, in this case -> rip qtox
+[15:42:43] <iphy> and if memory becomes scarce, you replace pointers with 8 bit indices
+[15:43:12] <qTox-syncbot> Nils F.: if you like, i can send you code over, which easily uses "real-time" id based lookup for 650.000+ objects and you won'te even notice that :)
+[15:43:43] <iphy> what is id based lookup?
+[15:44:00] <iphy> what is an id?
+[15:45:04] <qTox-syncbot> Nils F.: an id is either, what we use as "friendId" (a uint32_t => 4 byte unsigned integer) or the ToxID actually.
+[15:45:35] <iphy> so by "id based lookup" you mean array indexing
+[15:46:38] <qTox-syncbot> Nils F.: ToxID is slightly bigger (32 byte??) - but, in no way do we want to copy the attributes over and over. not because of memory consumption, but because of synchronization overhead, which is huge
+[15:47:27] <iphy> How huge?
+[15:48:32] <qTox-syncbot> Nils F.: well, let's just say: 2M instead of 1K, to "visualize" it :)
+[15:48:42] <qTox-syncbot> Nils F.: (per object)
+[15:49:48] <iphy> So 2000x overhead
+[15:50:00] <iphy> What is causing that overhead?
+[15:50:20] <qTox-syncbot> Nils F.: well, if the name of a friend changes, how does the QLabel know it changed? ^^
+[15:50:26] <qTox-syncbot> Nils F.: event, right?
+[15:51:10] <iphy> Sure, for example
+[15:51:16] <iphy> Then?
+[15:51:26] <qTox-syncbot> Nils F.: did you ever hear about model/view?
+[15:51:46] <qTox-syncbot> Nils F.: this is how it works!
+[15:52:05] <iphy> You mean it works with events?
+[15:52:58] <qTox-syncbot> Nils F.: yeah, but completely different. wait for it :)
+[15:53:21] <iphy> I'm waiting
+[15:59:54] <qTox-syncbot> Nils F.: instead of sending an event of an event of an event, to inform everybody to update it's copy you have a trigger, which calls the lookup (data request). When performing the request, it may or may not be cached. To simplify stuff, let's assume it is loaded every time. For example we want to draw the friend's name and avatar (the "paintEvent" is our trigger). Now perform a lookup for the name for the "id" and agian perform the lookup
+[16:02:26] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[16:03:28] <qTox-syncbot> Nils F.: Now the only thing that needs to be done is another event, which updates "visible" data without any interaction by the user (e.g. scrolling, resizing,… the view). In QAbstractItemModel, this is done via the "dataChanged" signal - and it is fast. If you don't believe it, go here and see for yourself: |\n|  |\n| https://github.com/antis81/QtModelViewDemo |\n|  |\n| Note, that this can be further optimized, but it can easily handle
+[16:06:52] *** Quits: hpanago_ (uid15586@ ) (Quit: Connection closed for inactivity)
+[16:07:44] <iphy> so
+[16:07:48] <iphy> this change is going to make a certain operation in qtox 2000 times faster?
+[16:12:34] <qTox-syncbot> Zetok\0: um, it's worth to note that syncbot cuts off part of the messages that are too long for IRC
+[16:12:54] <qTox-syncbot> Nils F.: maybe: it simplifies data handling in the first place (!) -> and then this makes sure, memory consumption stays pretty constant (!) This btw. works fine with a QGraphicsItem without using QAbstractItemModel. The important thing is the ID, which is "bound" to the display object. It must not carry the data itself!
+[16:13:14] <qTox-syncbot> Nils F.: zetok :)
+[16:13:20] <qTox-syncbot> Nils F.: no problem
+[16:15:36] <qTox-syncbot> Nils F.: @iphy Btw. i'm still using a dual core 2G ram machine from october 2007. You will notice it soon on this machine, if memory consumption of a process goes beyond a ~1G border and swapping hell starts. ^^
+[16:21:30] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[16:22:21] *** Joins: hpanago_ (uid15586@ )
+[16:28:38] <iphy> nils f.: what is the minimum ulimit for qtox to work?
+[16:28:49] <iphy> when will it crash with OOM?
+[16:36:50] <qTox-syncbot> Nils F.: >https://github.com/antis81/QtModelViewDemo |\n|  |\n| ~50M is a good mark (tending to less, when talking 'bout android or the like) |\n|  |\n| >when will it crash with OOM? |\n|  |\n| I do not run it for several days, but some users do and it crashed for them. For the above mentioned setup this limit would be ~3G, but as soon as swapping starts, I would kill the process as soon as possible.
+[16:37:08] <qTox-syncbot> Nils F.: uh sorry, wrong copy cache :P
+[16:37:28] <qTox-syncbot> Nils F.: >what is the minimum ulimit for qtox to work?
+[16:40:23] <iphy> ok
+[16:40:24] <iphy> does anyone here know haskell?
+[16:40:31] <iphy> athan: ^
+[16:40:35] <iphy> I need a reviewer :)
+[16:40:46] <qTox-syncbot> Nils F.: hehe
+[16:41:00] <athan> iphy: x:
+[16:41:15] <athan> I'm sorry I've been so inactive
+[16:41:17] <iphy> https://github.com/TokTok/hs-toxcore/pull/89 <- this one
+[16:41:24] <athan> I'm working on some serious projects right now stealing all my attention, but I can offer some now if needed :)
+[16:41:37] <iphy> and less urgently: https://github.com/TokTok/hs-msgpack-rpc/pull/2
+[16:41:46] <iphy> the hs-toxcore one is blocking me
+[16:41:48] <athan> iphy: What is it you'd like review on?
+[16:41:57] <athan> like that genre of code quality? :p
+[16:41:59] <iphy> athan: https://github.com/TokTok/hs-toxcore/pull/89
+[16:43:00] <athan> this looks very well done iphy
+[16:43:41] <iphy> athanclark on github, right?
+[16:44:01] <athan> hmm iphy are you just concerned with the use of `rpc` or something?
+[16:44:04] <athan> yep that's me!
+[16:44:14] <iphy> athan: I'm not concerned about anything
+[16:44:33] <iphy> but I have a policy that every line of code I push to master must be reviewed by at least one person who didn't write it
+[16:44:47] <iphy> so if it looks good, you can just approve it
+[16:45:12] <iphy> I've invited you to toktok, accept it so I can assign the review to you and you can approve
+[16:45:13] <athan> line 60 on Network.Tox.Binary
+[16:45:37] <iphy> yes?
+[16:45:54] <athan> Proxy in my opinion is dangerous
+[16:46:10] <athan> especially when you're using it to coerce a closed variable
+[16:46:20] <athan> i.e. ambiguity is extremely easy
+[16:46:22] <qTox-syncbot> sudden6: hi, just finished to read the backlog
+[16:46:35] <iphy> athan: yeah
+[16:46:40] <iphy> how would I do this instead?
+[16:47:09] <athan> also, why are you leaving it in the monad?
+[16:47:09] <iphy> the type to decode depends on the string
+[16:47:18] <athan> it's pure code
+[16:47:23] <athan> the `return` is redundant
+[16:47:41] <iphy> because the code can fail
+[16:47:43] <athan> "depends on the string" - what do you mean?
+[16:47:46] <qTox-syncbot> sudden6: Nils F.: or Zetok you mentioned to make ui/redesign the default branch, what about switching this and make ui/redesign -> master and current master -> stable branch?
+[16:47:54] <athan> how can it fail?
+[16:47:59] <athan> You call `return` on the first line
+[16:48:04] <iphy> wait, let me check
+[16:48:06] <athan> you mean with an exception? Exceptions are pure :)
+[16:48:17] <athan> (er, partial function exceptions I mean)
+[16:48:27] <iphy> ah right
+[16:48:34] <iphy> athan: no
+[16:48:44] <iphy> I just did that to avoid having to write "return" 20 times below
+[16:48:49] <iphy> in all the decodeF definitions
+[16:49:09] <athan> hm
+[16:49:16] <athan> you should never need to
+[16:49:22] <iphy> because decodeF can fail
+[16:49:37] <iphy> with "fail" (MonadFail if it existed)
+[16:49:53] <athan> right, that makes sense
+[16:50:00] <athan> but this code on line 60 will never fail
+[16:50:08] <athan> therefore does not need to be in the monad
+[16:50:11] <athan> remember, monads are functors
+[16:50:15] <iphy> sure
+[16:50:16] <athan> and fmapping uses pure functions
+[16:50:32] <qTox-syncbot> Zetok\0: sudden6: :/
+[16:50:35] <iphy> so what would you suggest?
+[16:50:48] <athan> so `wontFail =<< couldFail` == `pure . wontFailPure =<< couldFail` == `wontFailPure <$> couldFail`
+[16:50:58] <athan> fmap instead of bind
+[16:51:10] <qTox-syncbot> sudden6: Zetok: why :/  ?
+[16:51:16] <athan> but that's only half of the problem on this line
+[16:51:24] <athan> the other problem I have with it is Proxy
+[16:51:32] <iphy> ok, let's talk about proxy
+[16:51:36] <athan> I've done a lot of type-level programming in haskell, and proxy was nice at first
+[16:51:48] <qTox-syncbot> Zetok\0: sudden6: how about getting PR into state that can be merged to master?
+[16:51:55] <athan> but then you realize you should never use it, because it's basically just doing the job of unification in the first place
+[16:52:05] <athan> especially when you need -XScopedTypeVariables, and other stuff
+[16:52:28] <qTox-syncbot> sudden6: Zetok: like Nils F. said, that will take some time
+[16:52:42] <qTox-syncbot> Zetok\0: yeah.
+[16:52:43] <athan> you already know this: `show . read` fails because of the existential variable in-between
+[16:52:50] <qTox-syncbot> sudden6: where master would be basically blocked then...
+[16:52:57] <athan> and this is the same issue - you've just leaked the existential through a proxy
+[16:53:14] <iphy> this function is essentially: decode :: TypeDiscriminator a -> ByteString -> a
+[16:53:26] <qTox-syncbot> Zetok\0: sudden6: there's very little of PRs getting merged anyway
+[16:53:28] <athan> sorry, not "fails" - will not compile and isn't deterministically precomputable
+[16:53:48] <athan> iphy: that looks like a sound type signature
+[16:53:59] <athan> What's MessagePack.Object?
+[16:54:06] <qTox-syncbot> sudden6: yeah, we need more reviewers
+[16:54:08] <iphy> but I need to get a TypeDiscriminator from a String first
+[16:54:16] <qTox-syncbot> Zetok\0: sudden6: 2 PRs could cause conflicts, and other PRs won't cause conflicts, so there'll be no problem with merging them
+[16:54:16] <athan> is that just some wrapper over the `a` type?
+[16:54:25] <iphy> so I could factor that out, but `a` is different for each string
+[16:54:39] <iphy> i.e. GADT
+[16:54:42] <iphy> and obviously I can't return that
+[16:54:54] <athan> or do you mean an existential type?
+[16:54:56] <qTox-syncbot> Zetok\0: sudden6: i.e. I don't think that "full" freeze would be good, so instead just freeze for stuff that could conflict with UI/redesign
+[16:55:05] <athan> iphy: That's the same issue with read :)
+[16:55:15] <iphy> athan: Object is untyped, essentially a String
+[16:55:20] <qTox-syncbot> sudden6: hmm, that sounds easy, but I don't think it is
+[16:55:35] <athan> ooh :\ hm
+[16:55:35] <qTox-syncbot> sudden6: also what do you think about https://github.com/qTox/qTox/issues/3753 ?
+[16:55:35] <iphy> it comes from the network
+[16:55:38] <iphy> it's structured (can be string, array, map, etc.) but untyped
+[16:56:03] <athan> why can't you turn it into a type?
+[16:56:04] <iphy> decodeS and encodeS are RPC methods
+[16:56:06] <qTox-syncbot> Zetok\0: sudden6: sounds like it would need to wait
+[16:56:08] <athan> like Aeson does?
+[16:56:24] <qTox-syncbot> sudden6: Zetok: why?
+[16:56:24] <iphy> how does Aeson do it?
+[16:56:36] <qTox-syncbot> Zetok\0: sudden6: could conflict..?
+[16:56:39] <iphy> afaik it also has an untyped (but structured) "Value" type
+[16:56:40] <athan> decode :: FromJSON a => ByteString -> Maybe a
+[16:56:44] <iphy> aha
+[16:56:45] <athan> and it leaves it at that
+[16:56:52] <athan> then lets unification deal with the instance fetching
+[16:57:06] <athan> er wait sorry ><
+[16:57:08] <iphy> ok
+[16:57:16] <iphy> the thing is, the type comes from the network
+[16:57:30] <qTox-syncbot> sudden6: Zetok: I think I got confused, do you mean that issue has to wait or ui/redesign freeze?
+[16:57:31] <athan> class FromJSON a where; parseJSON :: Value -> Maybe a
+[16:57:33] <iphy> the instance fetching is decided at runtime
+[16:57:35] <athan> that's where the key is
+[16:57:52] <athan> Aeson handles turning the monomorphic ByteString into a Value perfectly fine
+[16:58:04] <iphy> so, first I need to get some haskell type information from the string
+[16:58:07] <athan> but exactly, it prolongs the decision of `a` as much as possible
+[16:58:19] <athan> iphy: Ahh!
+[16:58:21] <athan> that makes a lot of sense
+[16:58:33] <athan> and the set of types that could exist is unbounded?
+[16:58:40] <iphy> no, it's bounded
+[16:58:44] <qTox-syncbot> Zetok\0: sudden6: the code that would "fix" the issue would need to wait
+[16:58:49] <athan> then this should be possible
+[16:58:50] <iphy> if it were unbounded, I don't know how to do it
+[16:59:04] <iphy> you'd need general reflection for that
+[16:59:06] <athan> Value = String Text | Null | Object (HashMap Text Value) | Array (Vector Value)
+[16:59:13] <athan> yeah :)
+[16:59:16] <iphy> athan: yeah, that's essentially what Object is
+[16:59:22] <athan> there's Dynamic from Data.Typeable, but you don't want to use tat
+[16:59:23] <athan> that*
+[16:59:24] <iphy> plus a few more tycons, but yeah
+[16:59:30] <iphy> no I don't :)
+[16:59:30] <athan> Okay!
+[16:59:32] <qTox-syncbot> sudden6: Zetok: hmm, I don't see any obvious conflicts with it...
+[16:59:34] <athan> then that's very finite
+[16:59:43] <athan> and can definitely be parsed without an `a` existing
+[16:59:50] <qTox-syncbot> Zetok\0: sudden6: dunno, if it won't conflict then there's no problem
+[17:00:00] <iphy> it's currently exactly 17 types
+[17:00:08] <iphy> listed twice in that file
+[17:00:32] <athan> hmm
+[17:00:36] <athan> okay so here's what I would do
+[17:00:54] <qTox-syncbot> sudden6: Zetok: I more wanted to disscuss the general idea of not compiling emoji into the binary, but nobody presented his opinion...
+[17:00:54] <athan> instead of `toObject :: MessagePack a => a -> Object`
+[17:01:02] <athan> and `decode :: ByteString -> Maybe a`
+[17:01:10] <athan> (this is exactly the `show . read` problem)
+[17:01:13] <athan> do this:
+[17:01:21] <qTox-syncbot> Zetok\0: sudden6: mm, I'm writing a comment for that issue right now :P
+[17:01:30] <athan> decode :: ByteString -> Object
+[17:01:40] <athan> (sorry I haven't looked at your class yet)
+[17:01:44] <qTox-syncbot> Zetok\0: sudden6: I'm not sure if decoupling emoticons is a good idea
+[17:01:44] <athan> but basically something like this:
+[17:01:57] <athan> data Object = Foo Foo1 | Bar Bar2 | ...
+[17:02:00] <qTox-syncbot> sudden6: Zetok: why? :)
+[17:02:13] <athan> instance Binary Foo1; instance Binary Foo2 ...
+[17:02:22] <qTox-syncbot> Zetok\0: sudden6: what benefits other than lowering memory consumption during compilation that provides?
+[17:02:38] <athan> instance Binary Object where; decode bs = (Foo <$> decode bs) <|> (Bar <$> decode bs) <|> ...
+[17:02:42] <qTox-syncbot> sudden6: you gain modularity
+[17:02:44] <athan> iphy: ^
+[17:03:09] <athan> do you see how I'm keeping it monomorphic here?
+[17:03:09] <qTox-syncbot> Zetok\0: sudden6: that's not a benefit, but a maintenance burden
+[17:03:16] <iphy> athan: I need to explain something here
+[17:03:34] <iphy> decode :: Binary a => ByteString -> Maybe a
+[17:03:40] <iphy> does this make sense?
+[17:03:48] <athan> of course
+[17:03:55] <iphy> good
+[17:03:55] <athan> but that's unbounded
+[17:04:01] <athan> (partially :x)
+[17:04:02] <qTox-syncbot> sudden6: Zetok: uhm, no? You gain the possibility to easily swap out parts that could break -> less maintenance imho
+[17:04:02] <iphy> and encode :: Binary a => a -> ByteString
+[17:04:07] <athan> (not purely unbounded)
+[17:04:11] <athan> definitely
+[17:04:14] <qTox-syncbot> Zetok\0: sudden6: swapping what?
+[17:04:15] <iphy> yes, this is unbounded (yes, mostly), and intentionally so
+[17:04:24] <qTox-syncbot> sudden6: Zetok: emoticons
+[17:04:24] <iphy> bounded by constraint, but ok
+[17:04:26] <athan> read :: Read a => String -> a; show :: Show a => a -> String
+[17:04:30] <qTox-syncbot> Zetok\0: sudden6: they don't break
+[17:04:32] <iphy> no, not read
+[17:04:35] <iphy> readMaybe
+[17:04:40] <athan> iphy: The issue is anologous
+[17:04:47] <athan> er orthogonal
+[17:04:52] <qTox-syncbot> sudden6: Zetok: wait until apple introduces some more
+[17:04:55] <iphy> encode <=> show, decode <=> readMaybe
+[17:04:58] <iphy> there is no read in here
+[17:05:00] <athan> I understand that
+[17:05:05] <iphy> read is partial, I have no partial function here
+[17:05:06] <qTox-syncbot> Zetok\0: sudden6: err?
+[17:05:08] <athan> I'm trying to emphasise the type variable
+[17:05:12] <iphy> ok, sure
+[17:05:17] <iphy> anyway, so I have these two functions
+[17:05:20] <qTox-syncbot> Zetok\0: sudden6: in what way modularity would help with that?
+[17:05:21] <athan> you do have ambiguity though
+[17:05:34] <qTox-syncbot> sudden6: Zetok: what I meant is, it would be easier to add/remove emoji as one likes
+[17:05:35] <iphy> now I want to be able to call them over the network
+[17:05:54] <qTox-syncbot> Zetok\0: sudden6: that's not modularity, and has nothing to do with decoupling emoticons from qTox
+[17:06:14] <qTox-syncbot> Zetok\0: sudden6: detecting & using user-supplied emoticons is a good idea
+[17:06:29] <iphy> but the network function only needs to support a bounded set of types
+[17:06:42] <athan> that makes sense
+[17:06:58] <iphy> so, from the network I get a String and then some bytes
+[17:07:29] <iphy> the bytes need to be interpreted as different `a` depending on the String
+[17:07:32] <athan> sure, something like `send :: ByteString -> IO ()` and `receive :: IO ByteString`, right?
+[17:07:48] <iphy> that's at an outer layer
+[17:07:50] <qTox-syncbot> sudden6: Zetok: also the current way of is a hack of a hack of a hack, there are svgs at the input, which are then compressed one by one with zlib, then they are baseXX encoded and put into a c file, which is then compiled and linked to the qTox binary
+[17:07:51] <iphy> we don't have IO in here
+[17:07:59] <athan> iphy: _But_ a finite set of different `a`s, right?
+[17:08:06] <athan> right okay
+[17:08:06] <iphy> (well, Server is an IO transformer, but we don't care about that here)
+[17:08:15] <athan> sure
+[17:08:18] <athan> that's how I code too
+[17:08:21] <iphy> so
+[17:08:42] <iphy> I get a String, and then need to dispatch to different Binary instances based on that String
+[17:08:52] <athan> but a finite set, right?
+[17:08:58] <iphy> and since that String is a runtime value, I use Proxy to turn it into a compile time type
+[17:08:59] <iphy> yes
+[17:09:02] <qTox-syncbot> sudden6: Zetok: and by loading user supplied emoticons, we could then reduce the in-binary ones to a minimum and put the rest in the directories intended for it
+[17:09:17] <athan> you should make a sum type of the different options
+[17:09:26] <iphy> that sum type would need to be a GADT
+[17:09:28] <athan> and let Binary decide which one is satisfied
+[17:09:31] <athan> no it doesn't
+[17:09:40] <athan> because you know the finite set of monomorphic possibilities
+[17:09:48] <athan> it can be a simple sum type
+[17:09:48] <iphy> hmm
+[17:10:04] <iphy> you mean don't use a string but instead use an int as index
+[17:10:04] <athan> data Options = Opt1 Foo | Opt2 Bar | ...
+[17:10:06] <qTox-syncbot> Zetok\0: sudden6: that applies only to the Linux
+[17:10:32] <athan> then you let Binary's Alternative instance do the option making for you
+[17:10:40] <athan> just like how you'd write Json parsers with aeson
+[17:10:44] <athan> or Attoparsec parsers
+[17:10:50] <qTox-syncbot> Zetok\0: sudden6: for osx/windows the best option is to just compile them in
+[17:10:56] <iphy> right, so using an Int instead of String as index
+[17:10:58] <qTox-syncbot> sudden6: Zetok: I don't think programs on windows or osx normally keep resources in the binary
+[17:11:06] <athan> what do you mean by index?
+[17:11:16] <iphy> what's going to be on the wire?
+[17:11:18] <qTox-syncbot> sudden6: Zetok: but I get your point, my priority for this lies on linux
+[17:11:20] <athan> ??
+[17:11:28] <athan> what do you mean by wire?
+[17:11:30] <iphy> what will Binary write?
+[17:11:35] <iphy> in the ByteString
+[17:11:36] <athan> you mean read?
+[17:11:40] <athan> this is parsing
+[17:11:40] <iphy> or read
+[17:11:47] <athan> okay so here's how it would read:
+[17:11:50] <iphy> yeah, writing is in the second half of the file
+[17:12:04] <qTox-syncbot> Zetok\0: sudden6: um, situation for windows/osx when it comes to files that aren't compiled-in is horrible AFAIK
+[17:12:13] <athan> decode bs = (Opt1 <$> decode bs) <|> (Opt2 <$> decode bs) <|> ...
+[17:12:23] <iphy> it'll read an Int and then decide which ctor that was and read the type based on that
+[17:12:28] <iphy> well, not exactly, but close enough
+[17:12:30] <qTox-syncbot> sudden6: Zetok: really? what a shitty platform...
+[17:12:43] <iphy> it will read an Int first, it won't actually try to read all of them in an Alternative
+[17:12:51] <athan> it should
+[17:13:00] <athan> er, in a way
+[17:13:09] <qTox-syncbot> Zetok\0: sudden6: that's what happens when you don't have a package manager :f
+[17:13:09] <iphy> no, because GBinary reads the tycon index first
+[17:13:09] <athan> you let Alternative do the control flow for you
+[17:13:17] <iphy> GBinary doesn't do that
+[17:13:18] <athan> ooooh ow okay
+[17:13:31] <athan> wait so you're deriving Binary instances?
+[17:13:39] <iphy> sure, but that doesn't matter
+[17:13:48] <qTox-syncbot> Zetok\0: sudden6: i.e. decoupling would work well on Linux only because of proper packaging
+[17:13:55] <athan> yeah you're right
+[17:14:00] <qTox-syncbot> Zetok\0: sudden6: but then again, that'll make building static binaries harder
+[17:14:00] <athan> in virtue at least
+[17:14:17] <iphy> anyway, it will read an Int and then do something based on that int
+[17:14:18] <iphy> maybe it'll backtrack, maybe not, but the result is the same
+[17:14:18] <iphy> Int comes first, everything else depends on it
+[17:14:18] <iphy> so it's the same as my String here
+[17:14:18] <iphy> except using an Int as discriminator
+[17:14:23] <iphy> i.e. type index
+[17:14:31] <iphy> (dynamic type index)
+[17:14:34] <qTox-syncbot> Zetok\0: sudden6: so, are there any benefits that matter?
+[17:14:44] <athan> okay that's not terrible
+[17:14:52] <qTox-syncbot> sudden6: Zetok: I think it would work as well for windows, by just putting the emoticons in the program/qtox/emoticons dir
+[17:14:58] <iphy> ok, but I could separate it out, that's true
+[17:15:01] <athan> decode bs = do {i <- decode bs; case i of 1 -> ... 2 -> ... }
+[17:15:04] <iphy> I don't need to use the Int
+[17:15:18] <iphy> oh by the way, your instance was broken
+[17:15:24] <iphy> decode bs = (Opt1 <$> decode bs) <|> (Opt2 <$> decode bs) <|> ...
+[17:15:26] <qTox-syncbot> sudden6: Zetok: also I don't want to change the static builds
+[17:15:26] <iphy> this doesn't work
+[17:15:30] <athan> why?
+[17:15:41] <iphy> data Opts = Opt1 Int | Opt2 Int
+[17:15:46] <iphy> decode . encode /= id
+[17:15:55] <athan> of course it's not
+[17:16:02] <iphy> it's also /= Maybe
+[17:16:03] <athan> in general I mean
+[17:16:05] <iphy> which it should be
+[17:16:30] <iphy> decode . encode == Maybe is a law
+[17:16:34] <iphy> sorry
+[17:16:35] <iphy> Just
+[17:16:36] <athan> the Opt1 and Opt2 data isn't lost
+[17:16:38] <qTox-syncbot> Zetok\0: sudden6: benefits?
+[17:16:40] <iphy> decode . encode == Just
+[17:16:40] <athan> Sure
+[17:16:53] <athan> how does it not work though?
+[17:16:56] <athan> How does it break that law?
+[17:16:59] <iphy> if you decode = Opt1 <$> decode <|> Opt2 <$> decode
+[17:17:02] <iphy> it's broken
+[17:17:10] <iphy> because Opt1 <$> decode will succeed
+[17:17:16] <qTox-syncbot> sudden6: smaller updates, faster builds, probably faster qtox load time
+[17:17:21] <iphy> even though you encoded an Opt2
+[17:17:23] <iphy> because they both contain an Int
+[17:17:46] <iphy> you need to encode the tycon index somehow
+[17:17:48] <athan> sh*t sh*t okay I think I see the issue here
+[17:17:59] <athan> You're using the binary package, right?
+[17:18:02] <iphy> yes
+[17:18:12] <iphy> thanks, you gave me an idea, I'll implement it and show you again in 10-20 minutes
+[17:18:28] <athan> iphy: not if you sustain that Opt2 data!
+[17:18:30] <qTox-syncbot> Zetok\0: sudden6: that doesn't sound like much, given that load times would become slower
+[17:18:45] <athan> but okay, you're using `decodeOrFail` then?
+[17:18:51] <athan> to turn it into a `Maybe a`?
+[17:18:54] <athan> with hush or something
+[17:19:09] <athan> sure :)
+[17:19:30] <athan> Sorry, I've never used Binary before, I feel like a klutz
+[17:19:46] <athan> I thought `decode` returned a genuine alternative monad, like parser combinators
+[17:20:00] <qTox-syncbot> Zetok\0: sudden6: i.e. it's way slower to read thousands of files, rather than a single, compressed file with the same data
+[17:20:44] <qTox-syncbot> sudden6: Zetok: could be, but this way all the emoji stay in the RAM permanently
+[17:21:00] <qTox-syncbot> Zetok\0: so?
+[17:21:12] <qTox-syncbot> sudden6: Zetok: and thousand files problem could be overcome by loading a compressed pack
+[17:21:28] <qTox-syncbot> Zetok\0: so basically the same thing as having them compiled-in?
+[17:21:45] *** Joins: f10 (~flo@ )
+[17:22:02] <qTox-syncbot> sudden6: nope, just a bunch of emoji-pack.zip files for example
+[17:22:22] <qTox-syncbot> Zetok\0: sounds like the same thing, except for it being harder to maintain
+[17:23:38] <qTox-syncbot> sudden6: Zetok: I don't think so, the way we do it currently will require more and more resources the more emoji packs we have
+[17:23:52] <qTox-syncbot> Zetok\0: we shouldn't have more
+[17:24:14] <qTox-syncbot> Zetok\0: we should start removing the ones we have
+[17:24:22] <qTox-syncbot> sudden6: and I wouldn't call copying a zip with svgs and one xml maintanance burden
+[17:24:32] <qTox-syncbot> Zetok\0: it is
+[17:24:58] <qTox-syncbot> sudden6: Zetok: I bet there'll be requests to add more emoji over time
+[17:25:12] <qTox-syncbot> sudden6: some users like to customize stuff
+[17:25:28] <qTox-syncbot> Zetok\0: yes, and they could
+[17:26:36] <qTox-syncbot> Zetok\0: sudden6: question is, why should more emoticons be added?
+[17:26:50] <qTox-syncbot> sudden6: Zetok: why not?
+[17:26:54] <qTox-syncbot> Zetok\0: more, as in, more packs, not extensions to current ones
+[17:27:16] <qTox-syncbot> Zetok\0: sudden6: there's no benefit in bundling them by default
+[17:27:46] <qTox-syncbot> sudden6: try to explain this to some user on windows^^
+[17:27:54] <qTox-syncbot> sudden6: (sorry windows users)
+[17:28:22] <qTox-syncbot> Zetok\0: "drop this there to get more"
+[17:28:38] <qTox-syncbot> sudden6: "where there?"
+[17:28:58] <qTox-syncbot> Zetok\0: "Yes."
+[17:29:22] <qTox-syncbot> Zetok\0: there are people that do like to customize stuff
+[17:29:30] <qTox-syncbot> Zetok\0: and they would have an option to do so
+[17:29:58] <qTox-syncbot> Zetok\0: but for most of people, the less options the better, and having less emoticons packs to choose from helps
+[17:30:50] <athan> iphy: On line 83 of Network.Tox.Binary, what's the "Binary.decode" string for?
+[17:30:50] <qTox-syncbot> Nils F.: >"where there?" |\n|  |\n| Probably in "personal data dir (e.g. ~/.config/tox/emojis)
+[17:31:04] <athan> and all the strings in general?
+[17:31:06] <qTox-syncbot> Zetok\0: Nils F.: yeah, shouldn't be in ~/.config :)
+[17:31:12] <qTox-syncbot> sudden6: Nils F.: nah, this dir was ruled out by zetok^^
+[17:31:24] <athan> 103 looks extremely sketchy :|
+[17:31:26] <qTox-syncbot> Nils F.: whatever
+[17:31:30] <iphy> athan: that's the method name
+[17:31:43] * athan gets php flashbacks
+[17:31:43] <iphy> for RPC
+[17:31:52] <athan> I would very strongly reconsider this method
+[17:31:56] <qTox-syncbot> sudden6: Nils F.: so do you think we should compile the emojis into the binary?
+[17:31:57] <athan> I mean, if it works for you, go for it
+[17:32:04] <athan> but it's all untyped
+[17:32:30] <qTox-syncbot> Nils F.: well i guess i simply push that bunch of changes to ui/redesign and see what happens
+[17:32:36] <athan> Have you asked on #haskell by the way iphy?
+[17:32:45] <athan> They're very helpful, intelligent, kind people
+[17:33:22] <qTox-syncbot> Nils F.: leaving, bye
+[17:33:24] <qTox-syncbot> sudden6: bye
+[17:37:26] <qTox-syncbot> Zetok\0: sudden6: well, I just don't like that there'll be yet another moving part
+[17:37:46] <qTox-syncbot> Zetok\0: sudden6: since moving parts break
+[17:38:28] <qTox-syncbot> sudden6: imho this removes a moving part, as emoji are then static
+[17:38:52] <qTox-syncbot> sudden6: but lets wait for other opinions
+[17:48:54] <iphy> athan: it's taking a bit more time :) need to think more than I thought
+[17:49:33] *** Quits: athan (~athan@ ) (Ping timeout: 272 seconds)
+[17:54:50] *** Joins: st4ll1 (~st4ll1@ )
+[18:01:06] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[18:42:21] *** Joins: st4ll1 (~st4ll1@ )
+[19:30:30] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 264 seconds)
+[19:44:49] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:54:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[20:03:33] *** Quits: XenoPL (~Xeno@ ) (Quit: Konversation terminated!)
+[20:18:45] *** Joins: Chiitoo (~Chiitoo@ )
+[20:19:39] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[20:33:35] *** Quits: linxon (~lin@ ) (Ping timeout: 272 seconds)
+[20:33:51] *** Joins: linxon (~lin@ )
+[21:17:09] *** Joins: Neolex (~neolex@ )
+[21:33:48] *** Joins: buglessdr (~buglessdr@ )
+[21:33:51] *** Joins: in1t3r (~LordShiva@ )
+[21:47:51] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[22:22:10] *** Joins: athan (~athan@ )
+[22:28:36] <iphy> athan: it's done, and twice as much code now, but almost no more Proxy
+[22:29:13] <iphy> athan: https://github.com/TokTok/hs-toxcore/pull/89 if you like it now, please approve the PR
+[22:29:35] <athan> !! wow alright
+[22:30:48] <athan> it doesn't need to be a GADT iphy
+[22:30:53] <athan> on like 48
+[22:31:02] <athan> the variable `a` in KnownType is also unused
+[22:31:14] <iphy> it's used
+[22:31:15] <athan> Oh wait
+[22:31:18] <athan> ...I'm a ditz sorry
+[22:36:20] <athan> Why not iphy: So why _can't_ you do something like this: http://lpaste.net/233786
+[22:36:44] <athan> your KnownType a is just passing around the representation, which is immediately followed by the correllated data; why not combine them once-and-for-all?
+[22:36:49] <iphy> yeah, you can
+[22:36:54] <iphy> I had that before
+[22:37:07] <iphy> it's the exact same thing
+[22:37:07] <iphy> I can change it back
+[22:38:44] <athan> I think it would be more intuitive
+[22:38:47] <athan> in the long run
+[22:38:54] <athan> and probably more efficient
+[22:39:07] <athan> especially if you use `{-# UNPACK #-} !Foo` for each field :)
+[22:39:14] <athan> no wasted pointers
+[22:39:15] <iphy> athan: done
+[22:39:20] <iphy> I don't need that
+[22:39:39] <iphy> anyway yeah, I've changed it back to normal ADT
+[22:39:46] <athan> awesome :) okay let me refresh
+[22:45:08] <athan> alright, I will aprove this PR, but I really dislike the stringly-typed RPC going on with Network.MessagePack.Client or whichever module it is
+[22:45:21] <athan> I would strongly consider eliminating those strings, because they're basically untyped
+[23:05:13] <iphy> athan: how?
+[23:06:03] <iphy> athan: also can you accept the invitation, so your approval counts
+[23:06:18] <iphy> athan: we can talk about the stringly typed RPCs on the other PR
+[23:06:43] <iphy> https://github.com/TokTok/hs-msgpack-rpc/pull/2 <- this one implements the API for them
+[23:14:40] <athan> iphy: hmm, I'm not sure how teams work - I don't have any notifications
+[23:14:57] <iphy> https://github.com/TokTok
+[23:15:04] <iphy> if you go here, do you see a thing to click?
+[23:15:11] <iphy> or perhaps you have something in your notifications?
+[23:15:18] <iphy> https://github.com/notifications
+[23:16:01] <athan> nothing in my notifications except for commit comments
+[23:16:07] <athan> ahh there we go
+[23:18:05] <athan> iphy: The most simple fix for the string types is a finite symbol set instead, then prettyprint them into the rpc method
+[23:18:49] <athan> so something like BoxDecrypt -> "Box.decrypt"
+[23:19:27] <athan> but the only reason why I mention this as an issue is because I think the strings can become troublesome to maintain, if strings are used at every callsite
+[23:19:39] <athan> if you think you can maintain it like this, it's all on you :)
+[23:29:04] <iphy> athan: they are not used at every call site
+[23:29:52] <iphy> the string is normally written in the program exactly once
+[23:29:57] <iphy> in this case, twice
+[23:30:17] <iphy> because this is a weird polymorphic function that isn't well supported in the RPC library
+[23:30:23] <iphy> I'll need to think about how to do that
+[23:31:26] <athan> ahh okay, right on I don't think that's a terrible problem then
+[23:32:00] <athan> that's basically what I'm doing here: https://github.com/moneybit/hmonero/blob/master/src/Monero/Wallet/RPC.hs#L35
+[23:32:19] <athan> "getbalance" "getaddress" etc
+[23:32:57] <iphy> athan: I'd like to avoid having to enumerate them in a place everything else will depend on
+[23:33:01] <iphy> that's the wrong way around
+[23:34:46] *** Joins: initramfs (~initramfs@ )
+[23:35:27] <iphy> I need to think about it some more, but for now this is fairly safe
+[23:42:57] <athan> right on :)
+[23:45:32] <iphy> the call site is "Binary.encodeC" for the client call
+[23:45:50] <iphy> for most rpcs, it's: "rpc MyModule.myFunctionR"
+[23:45:58] <iphy> the R variants also include the server method
+[23:46:02] <iphy> C is client, S is server
+[23:48:00] <athan> ahh hm
+[23:53:25] *** VVD59847 is now known as VVD
+[23:54:47] *** Quits: bashrc_ (~motters@ ) (Quit: Lost terminal)
+[23:57:00] <iphy> getting this code type-safe is a bit tricky
+[23:57:18] <iphy> also, ClientT and ServerT are monad transformers
+[23:57:44] <iphy> I now think that Free monads might have been a better choice, so I may rewrite it later
+[23:58:09] *** Joins: Neolex (~neolex@ )
+[23:58:16] <iphy> feel free to contribute a Free-based rpc API if you get bored some time :)
