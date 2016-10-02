@@ -1,0 +1,254 @@
+[00:00:46] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[00:22:21] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 240 seconds)
+[00:24:43] *** Joins: jjuran (~jjuran@ )
+[00:35:27] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[00:38:44] *** Joins: jjuran (~jjuran@ )
+[01:04:18] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[01:48:27] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[02:32:41] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 272 seconds)
+[02:32:49] *** Joins: rerumnovarum (~user-reru@ )
+[02:56:44] *** Quits: hpanago_ (uid15586@ ) (Quit: Connection closed for inactivity)
+[03:07:12] *** Joins: kadinparker[m] (kadinparke@ )
+[03:32:12] <athan> iphy: I actually never use Free
+[03:32:17] <athan> mtl all the way :)
+[03:32:29] <athan> I've been really interested in edwardk's morphisms though
+[03:32:36] <athan> and freer :x
+[03:39:15] <zero-ghost> http://thehackernews.com/2016/09/hacking-d-link-wireless-router.html
+[03:40:30] <zero-ghost> Multiple Backdoors found in D-Link DWR-932 B LTE Router
+[03:44:51] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:29:10] *** Quits: athan (~athan@ ) (Quit: leaving)
+[04:31:42] *** Quits: bashrc (~motters@ ) (Ping timeout: 264 seconds)
+[04:32:16] *** Joins: bashrc (~motters@ )
+[05:08:10] *** Joins: initramfs (~initramfs@ )
+[07:14:04] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[07:14:30] *** Joins: zero-ghost (~0@ )
+[07:52:28] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[08:04:05] *** Joins: zero-ghost (~0@ )
+[08:04:05] *** Quits: zero-ghost (~0@ ) (Client Quit)
+[08:04:20] *** Joins: zero-ghost (~0@ )
+[09:13:28] *** Joins: hpanago_ (uid15586@ )
+[09:29:52] *** Parts: hpanago_ (uid15586@ ) ()
+[09:43:22] *** Joins: Chiitoo (~Chiitoo@ )
+[09:49:27] *** Joins: abbat (~Anton@ )
+[10:05:53] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:01:34] *** Joins: cisc (~cisc@ )
+[11:07:25] *** Joins: thiras (~thiras@ )
+[11:08:32] <thiras> when we will get new groupchat?
+[11:10:00] <iphy> thiras: soon™
+[11:10:00] <iphy> thiras: are you a C programmer?
+[11:10:13] <thiras> nope only python
+[11:10:24] <thiras> can you be more spesific?
+[11:10:36] <thiras> like in one month or in one year?
+[11:10:58] <iphy> thiras: somewhere between that
+[11:11:23] <iphy> thiras: do you use PyTox?
+[11:11:31] <thiras> so what's the problem to get that now?
+[11:11:50] <thiras> nope qtox was superior to all other clients
+[11:12:35] <iphy> pytox is a python binding to tox
+[11:12:37] <iphy> toxcore
+[11:16:35] *** Parts: thiras (~thiras@ ) ("Leaving")
+[11:23:26] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[11:45:20] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[13:03:45] *** Joins: athan (~athan@ )
+[13:11:47] *** Joins: Chiitoo (~Chiitoo@ )
+[14:23:33] *** Joins: abbat (~Anton@ )
+[14:26:27] *** Quits: linxon (~lin@ ) (Ping timeout: 272 seconds)
+[14:29:37] *** Quits: athan (~athan@ ) (Ping timeout: 272 seconds)
+[14:32:23] *** Joins: linxon (~lin@ )
+[14:35:56] *** Joins: athan (~athan@ )
+[14:40:18] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[15:02:53] *** Quits: athan (~athan@ ) (Ping timeout: 264 seconds)
+[15:13:44] *** Joins: athan (~athan@ )
+[15:24:05] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 272 seconds)
+[15:24:22] *** Joins: rerumnovarum (~user-reru@ )
+[16:35:03] *** Joins: mitfree (~mit@ )
+[16:52:07] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 272 seconds)
+[17:27:35] *** Quits: athan (~athan@ ) (Ping timeout: 272 seconds)
+[17:49:42] *** Joins: Bill_MI (~Bill@ )
+[18:22:13] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[18:39:11] *** Joins: sandrorso (bc988aac@ )
+[18:39:43] *** Quits: sandrorso (bc988aac@ ) (Client Quit)
+[18:49:43] <iphy> SkyzohKey: ping
+[18:53:29] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[19:17:35] *** Joins: initramfs (~initramfs@ )
+[19:28:35] *** Joins: smaragdus (~omoo@ )
+[19:45:24] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:46:50] *** Joins: Chiitoo (~Chiitoo@ )
+[21:26:38] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[21:49:55] *** Joins: sudden6 (~anonymous@ )
+[21:50:31] <sudden6> hi, everybody
+[21:51:12] <initramfs> Hi
+[21:51:35] <sudden6> initramfs: anything missing for https://github.com/qTox/qTox/pull/3737 ?
+[21:52:18] <initramfs> Let me take a look again
+[21:56:49] <initramfs> I made another comment
+[21:59:51] <sudden6> initramfs: commented
+[22:03:12] <initramfs> sudden6: Responded
+[22:03:33] <initramfs> This is so weird, we're talking indirectly when we have a direct channel of communications
+[22:03:45] <sudden6> I exactly thought the same xD
+[22:14:31] <sudden6> initramfs: done, and how are you btw? ;)
+[22:14:53] <sudden6> (just so this communication channel isn't wasted) 
+[22:14:58] <initramfs> Lol
+[22:15:15] <initramfs> I'm good. My ISP broke IPv4 for me last week, got it back today
+[22:15:20] <initramfs> So today is a good day
+[22:15:20] <initramfs> Lol
+[22:15:43] <sudden6> didn't you like IPv6? ^^
+[22:16:09] <sudden6> I dread the day I have to remember the v6 address of my router config page...
+[22:17:19] <initramfs> IPv6 was great
+[22:17:24] <initramfs> I had access to
+[22:17:30] <initramfs> 1%? of the internet
+[22:17:55] <initramfs> Last weel was a TIL moment when GH doesn't support IPv6
+[22:18:01] <sudden6> isn't there some backwards protocol like 6to4?
+[22:18:17] <initramfs> Well, that's for carrying v6 over v4
+[22:18:27] <initramfs> My v4 was broken, that'll just break all of the internet for me
+[22:18:28] <sudden6> well, I'm not impressed of github
+[22:18:54] <initramfs> lgtm btw
+[22:18:55] <sudden6> ah, I thought there was somethting the other way round too
+[22:19:38] <initramfs> There is ds-lite, but that requires ISP support
+[22:20:11] <initramfs> ds-lite = Dual Stack Lite, allows transport of IPv4 over IPv6 to a AFTR router, which then routes the two separately
+[22:21:07] <sudden6> I'll rebase the PR and then merge then :)
+[22:21:10] <initramfs> Okay
+[22:21:24] <sudden6> ok, I'm not familiar with IPv6 
+[22:21:46] <sudden6> I was taken aback by my hoster asking me how many v6 addresses I wanted on my server
+[22:22:00] <sudden6> I just assumed I'll only get one :DD
+[22:22:40] <initramfs> Ah yes
+[22:22:57] <initramfs> With 128-bits of addressing, they can be very liberal
+[22:23:17] <initramfs> Well, technically they'll only give you down to a /48 block, but that's massive already
+[22:24:26] <sudden6> hmm, my hoster seems to be a snowflake then, they said 10 addresses per user...
+[22:24:41] <initramfs> Oh no, that's "normal"
+[22:24:57] <sudden6> on the other hand it's a ~10€ per year hoster
+[22:25:30] <initramfs> Whilst you could technically have 10^19 routable addresses, it doesn't mean the ISP is willing to route all of them
+[22:25:58] <initramfs> So it's somewhat like picking phone numbers
+[22:26:05] <sudden6> btw, I fixed a typo in the commit messages, I think you have to LGTM again, sorry
+[22:26:11] <initramfs> Okay, no problem
+[22:26:30] <sudden6> so it becomes a problem of the routing hardware then?
+[22:27:27] <initramfs> I guess
+[22:28:42] <sudden6> lets see when v6 gives access to more than 1% of the net :)
+[22:28:43] <initramfs> Well, I'm no expert on IPv6, but I think there is a way to aggregate routing tables so it becomes irrelevant for them (i.e. their hardware won't matter), but I'm not sure
+[22:29:28] <initramfs> Basically they forward all packets with a specific prefix to your router, then it becomes your router's responsibility to route all your billions of addresses
+[22:29:52] <initramfs> The 10 host thing is probably legacy of the IPv4 days
+[22:30:20] <initramfs> My ISP (in Taiwan) gives me 8 hosts/subscription but that's IPv4
+[22:31:00] <sudden6> mhm, I see, so you're just announcing what subnet you're routing and all packets to that net are your responsibility
+[22:31:07] <initramfs> Yep
+[22:31:32] <initramfs> If you're wondering why the "smallest" address space they usually give is /64
+[22:31:42] <sudden6> maybe their databases have only 10 columns for addresses, because it's enough for anyone ;P
+[22:31:46] <initramfs> Lol
+[22:32:15] <initramfs> It's because IPv6 addresses usually have a 64-bit host ID (which under stateless config, allows you to use your interface MAC address directly as the host ID)
+[22:33:31] <initramfs> Technically their database only has to store the IPv6 prefix they gave you (i.e. xxxx:yyyy:zzzz::/48)
+[22:33:47] <sudden6> mhm, but what happens with the 16bits not used by the mac?
+[22:34:14] <initramfs> Oh, there is a conversion from 48-bit MAC addresses to 64-bit host IDs
+[22:34:33] <sudden6> ? why a conversion? privacy reasons?
+[22:34:48] <initramfs> Ehh, well that's more due to standards
+[22:35:14] <initramfs> The conversion is: First 24-bits of MAC FFFE Last24-bits of mac
+[22:35:45] <initramfs> So a MAC address of 00-00-00-00-00-00 will gain a host ID of: 0000:00FF:FE00:0000
+[22:36:05] <sudden6> ok, no privacy, still doesn't really make sense
+[22:36:23] <sudden6> why not do FFFE MAC
+[22:38:46] <initramfs> Well, it's the format of the EUI-64 specifier
+[22:38:58] <initramfs> You're technically doing a MAC->EUI-64 conversion
+[22:39:02] <initramfs> Then using that as a host ID
+[22:40:02] <initramfs> Since the first 24-bits of the MAC is the OUI, I guess they wanted to preserve it being first
+[22:40:06] <sudden6> mhm, never heard of that before
+[22:40:14] <sudden6> did tox work on ipv6 only?
+[22:40:25] <initramfs> Ehh
+[22:40:27] <initramfs> That was hard to say
+[22:40:34] <initramfs> I was connected to the DHT apparently
+[22:40:41] <initramfs> But some contacts were offline
+[22:40:51] <initramfs> I was not sure if that was my issue or tox's issue
+[22:41:22] <sudden6> some contacts offline would make sense, since it's a p2p connection, both must have the same protocol
+[22:41:58] <sudden6> if you can't reach v4 internet, those contacts would be offline for you
+[22:42:56] <sudden6> I'm currently wondering if the Tox DHT can store IPv4 and IPv6 for the same ToxID
+[22:43:37] <zetok> sudden6: nope
+[22:44:03] -qtox-git-spam- [qTox] sudden6 pushed 3 new commits to master: https://git.io/vPqq5
+[22:44:03] -qtox-git-spam- qTox/master ae76910 sudden6: feat(smileys): allow compiling qTox with minimal or no smileys...
+[22:44:03] -qtox-git-spam- qTox/master 29da221 sudden6: feat(smileys): try to load smileys from XDG_DATA_DIR directories...
+[22:44:03] -qtox-git-spam- qTox/master 6628bf2 sudden6: docs(smileys): mention emoji pack support and how to install them
+[22:44:38] <sudden6> so a mixed group between v4 and v6 isn't possible atm?
+[22:44:46] <initramfs> That's too bad
+[22:45:19] <sudden6> I wonder if the bittorrent dht handles that
+[22:46:19] <zetok> err?
+[22:46:26] <zetok> >so a mixed group between v4 and v6 isn't possible atm?
+[22:46:43] <zetok> it is?
+[22:47:12] <zetok> it just needs 4→6 tunnelling
+[22:47:16] <sudden6> ok? I'm interested in how it works then :)
+[22:47:37] <zetok> and that's up to ISP
+[22:47:42] <sudden6> yeah, I meant without such stuff
+[22:47:50] <zetok> yeah, no
+[22:47:52] <initramfs> Well... no then. a 4/6 group is not possible
+[22:48:17] <initramfs> What you described is a all IPv4 group or a all IPv6 group from tox's perspective
+[22:48:49] <initramfs> s/a all/an all/
+[22:49:09] <zetok> well, ipv4 should just die
+[22:51:01] <sudden6> if ipv4 would die a sudden death it would be Y2K, this time for real
+[22:54:28] <initramfs> zetok: It would be more appropriate to massively speed up the adoption of IPv6
+[22:55:09] <initramfs> GitHub for one... should offer IPv6 functionality... so I can actually work on stuff....
+[23:04:18] <sudden6> zetok: do you think it would make sense to compile qTox on Travis only with min smileys?
+[23:05:25] <initramfs> Is there a reduction in compile time?
+[23:05:39] <sudden6> let me check
+[23:06:02] <sudden6> at least a reduction in memory usage, last time I checked
+[23:10:18] <sudden6> would be cool if travis used gcc6, it's noticeably faster :)
+[23:11:39] <initramfs> Yes
+[23:12:09] <initramfs> I can compile qTox in 50 seconds on my local machine using clang lol
+[23:12:24] <sudden6> from a clean dir? :O
+[23:12:28] <initramfs> Yep
+[23:12:32] <initramfs> And no ccache
+[23:12:37] <sudden6> what beast do you have under your desk?
+[23:12:44] <initramfs> Well, it's a laptop
+[23:13:20] <initramfs> It's more about disk I/O than CPU
+[23:13:59] <sudden6> I think for me it's cpu bound
+[23:14:14] <sudden6>         User time (seconds): 230.78
+[23:14:16] <sudden6>         System time (seconds): 24.23
+[23:14:23] <sudden6> with all smileys
+[23:14:42] <initramfs> I see
+[23:14:56] <sudden6> Maximum resident set size (kbytes): 405612
+[23:17:08] <sudden6> how do you compile qtox with clang? (on linux)
+[23:17:12] <iphy> it takes about 7 seconds just to generate the translations (which is a linear process here)
+[23:17:29] <initramfs> real0m50.189s
+[23:17:38] <initramfs> user6m4.827s
+[23:17:52] <initramfs> sys0m12.970s
+[23:17:58] <sudden6> initramfs: use /usr/bin/time -v make gives nice stats :)
+[23:18:06] <initramfs> Sure
+[23:19:19] <iphy> building qtox without resources: 36 seconds (including generating translations)
+[23:19:26] <iphy> with resources: 51 seconds
+[23:19:42] <iphy> including linking twice (once qtox and once the test program)
+[23:20:20] <sudden6>         User time (seconds): 232.70
+[23:20:21] <sudden6>         System time (seconds): 24.21
+[23:20:32] <sudden6> hmm, doesn't seem to make much difference on my pc
+[23:21:10] <iphy> compiling resources cpp takes 2 seconds, compiling translations resources (cpp) takes 2 seconds, smileys takes 10 seconds
+[23:21:20] <iphy> compiling the smileys cpp file with clang
+[23:21:34] *** Joins: Diadlo (~diadlo@ )
+[23:21:54] <sudden6> could someone of you test with git master and "qmake SMILEYS=NO" and "qmake SMILEYS=MIN"
+[23:22:01] <Diadlo> Hello everyone)
+[23:22:08] <sudden6> Hi Diadlo :)
+[23:24:08] <iphy> hi Diadlo 
+[23:25:48] <iphy> https://www.irccloud.com/pastebin/raw/lK5ILZxH
+[23:26:33] <sudden6> iphy: ↑ what's that? :O
+[23:27:15] <sudden6> without smileys 
+[23:27:16] <sudden6> User time (seconds): 223.22
+[23:27:18] <sudden6>         System time (seconds): 23.04
+[23:27:25] <sudden6> not sure it's worth it
+[23:27:42] <sudden6> I think I'll just try a pr and see if it's faster lol
+[23:30:57] <initramfs> Lol, min smileys is faster than no smileys: 49s vs 46s
+[23:31:08] <initramfs> But it's just one run so that's not accurate
+[23:31:27] <initramfs> Sorry I meant 46s vs 49s (min vs no, respectively)
+[23:35:20] -qtox-git-spam- [qTox] sudden6 opened pull request #3763: [TEST]feat(travis): speedup build (master...speedup_travis) https://git.io/vPqOW
+[23:35:32] <sudden6> I just opened a PR to test if it makes a significant difference
+[23:35:47] <sudden6> I also upped the number of threads
+[23:37:36] <sudden6> prev time was ~25min
+[23:39:01] <initramfs> I think it was downed at one point because travis was failing, but I don't know if that's still relevant
+[23:39:20] <sudden6> yeah, there's an annotation about that
+[23:40:10] <sudden6> but we reduced RAM usage significantly one time by enabling maximum resource compression
+[23:40:47] <sudden6> nobody even noticed the build needing more than >1G of RAM until Diadlo complained^^
+[23:41:00] <initramfs> The xcode version PR also bumped resources allocated to the OSX builds
+[23:42:56] <sudden6> hmm, I just found we could compile ffmpeg without most of the stuff
+[23:44:50] <iphy> sudden6: it's all the PRs in the toktok org
+[23:45:27] <iphy> sudden6: I wrote a tool to show an overview like that
+[23:45:42] <sudden6> nice, what language? :)
+[23:45:42] <iphy> https://github.com/iphydf/pull-status
+[23:45:48] <iphy> take a wild guess
+[23:46:10] <sudden6> well seems like you expected my question ^^
+[23:46:39] <iphy> + means approved
+[23:47:06] <iphy> - means changes required, nothing means no response yet, but in the assignees list
+[23:47:53] <initramfs> iphy: Do you know racket?
+[23:48:03] <iphy> yes
+[23:48:23] <initramfs> How long do you recon one can learn haskell given prior knowledge of racket
+[23:49:25] <iphy> 2 weeks
+[23:57:46] <Diadlo> sudden6: could someone of you test with git master and "qmake SMILEYS=NO" and "qmake SMILEYS=MIN" <- Do you mean time of qmake or time of make? Or test build at all? :)
+[23:58:17] <sudden6> Diadlo: I already made a PR to travis, didn't make much difference...
+[23:58:30] <sudden6> I'm now looking into reducing ffmpeg build
