@@ -1,0 +1,297 @@
+[00:00:00] <sudden6> but I'm not exactly sure wich part of ffmpeg we need
+[00:12:08] <sudden6> aaaargh, I accidentially created a new branch
+[00:12:15] <sudden6> how do I delete it on GH?
+[00:12:32] <sudden6> from qTox repo
+[00:12:53] <sudden6> ah, ok done :)
+[00:17:59] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 272 seconds)
+[00:37:57] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[00:39:40] *** Joins: jjuran (~jjuran@ )
+[00:44:55] <initramfs> sudden6: You're only optimizing travis builds here right?
+[00:53:13] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 248 seconds)
+[01:08:57] <sudden6> initramfs: yes, I'm off now
+[01:09:31] <initramfs> Okay
+[01:10:19] <iphy> initramfs: would you like to make racket bindings to toxcore?
+[01:10:44] <nurupo> ><nurupo> i hope you are doing this just to organize the repos better, rather than planning on implementing tox in countless languages
+[01:10:47] <initramfs> iphy: O don't think I'm good enough at racket to do that
+[01:10:48] <iphy> there is guile-toxcore, but it's outdated
+[01:10:58] <iphy> it still uses the old old api
+[01:11:08] <iphy> from early 2014
+[01:13:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[02:02:34] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[02:14:12] *** Joins: sockspls (~sockspls@ )
+[02:17:22] *** Joins: athan (~athan@ )
+[02:54:11] *** Quits: athan (~athan@ ) (Ping timeout: 252 seconds)
+[03:45:26] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[05:15:53] *** Joins: athan (~athan@ )
+[05:24:31] *** Quits: athan (~athan@ ) (Ping timeout: 272 seconds)
+[05:55:07] *** Joins: athan (~athan@ )
+[06:54:07] *** Joins: Neolex (~neolex@ )
+[06:54:50] <Neolex> Hi
+[06:59:54] *** Quits: athan (~athan@ ) (Ping timeout: 264 seconds)
+[08:14:08] *** Joins: abbat (~Anton@ )
+[08:49:11] *** Joins: Diadlo (~diadlo@ )
+[09:04:37] -qtox-git-spam- [qTox] zetok opened pull request #3765: chore: make script for updating translations actually commit stuff (master...chore-tr-script) https://git.io/vPqaz
+[09:05:07] -qtox-git-spam- [qTox] zetok opened pull request #3766: fix(UI): string for option auto-accepting files (master...fix-autoaccept-string) https://git.io/vPqag
+[09:09:54] *** Joins: LittleVulpix (~Miranda@ )
+[09:11:54] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 264 seconds)
+[09:16:18] *** Joins: jjuran (~jjuran@ )
+[09:41:23] *** Quits: Dragofix (~Dragofix@ ) (Quit: 8 year time limit expired)
+[09:41:52] *** Joins: Dragofix (Dragofix@ )
+[09:47:24] <zetok> https://github.com/qTox/qTox/pull/3766 ← can someone review?
+[09:48:04] * zetok shrugs
+[10:05:50] <iphy> zetok: Diadlo did
+[10:06:41] <zetok> Diadlo: thanks :)
+[10:06:57] <Diadlo> zetok: You are welcome :)
+[10:26:58] <Diadlo> zetok: We will wait toktok/toxcore 0.1 version before migration?
+[10:27:16] <zetok> ~yep
+[10:27:27] <Diadlo> Why `~`?
+[10:28:32] <zetok> well, that's when `master` branch should get it
+[10:29:12] <Diadlo> Should I create PR to new branch?
+[10:29:26] <zetok> there probably should be a PR with the switch before 0.1, so that people could test
+[10:29:37] <Diadlo> So close current PR?
+[10:29:45] <zetok> Diadlo: um, I think that current PR is fine
+[10:30:17] <Diadlo> What you mean by `fine`?)
+[10:31:05] <zetok> it builds, so people can test it :)
+[10:31:13] <Diadlo> Ok
+[10:38:51] <zetok> http://i2.kym-cdn.com/photos/images/original/000/962/640/658.png ;)
+[10:39:40] <Diadlo> zetok: Lol
+[10:40:45] <oranges> get some
+[10:40:49] <Diadlo> https://brunocapuano.files.wordpress.com/2015/10/clipboard01.jpg
+[10:44:17] <zetok> :D
+[10:48:07] <oranges> inanity
+[10:55:44] *** Joins: sudden6 (~anonymous@ )
+[11:24:41] <iphy> Diadlo
+[11:24:48] <Diadlo> iphy: ?
+[11:25:04] <iphy> https://github.com/qTox/qTox/blob/master/src/core/coreav.cpp#L587-L589
+[11:25:06] <iphy> what does this do?
+[11:27:07] <oranges> it's a link to some code
+[11:28:13] <iphy> what does the code do?
+[11:28:18] <Diadlo> iphy: IIRC this code call this method in another thread
+[11:28:32] <iphy> which method?
+[11:28:49] <iphy> it's a recursive call?
+[11:29:00] <Diadlo> Second parameter -- name of the method. I.e. "callCallback"
+[11:29:13] <iphy> why does it do a reflection call?
+[11:29:27] <Diadlo> No. It will be called only once
+[11:29:57] <iphy> which method concretely?
+[11:30:22] <iphy> void CoreAV::callCallback(ToxAV*, uint32_t, bool, bool, void *)?
+[11:30:22] <Diadlo> CoreAV::callCallback
+[11:30:28] <Diadlo> Yes
+[11:30:55] <iphy> why is it a reflection call?
+[11:31:22] <Diadlo> To make call in main thread
+[11:32:04] <iphy> so you can't execute code in the main thread without reflection?
+[11:32:44] <Diadlo> IDK
+[11:32:52] <Diadlo> Seems, yes
+[11:36:39] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vPq6J
+[11:36:39] -qtox-git-spam- qTox/master 1d4ea1e Zetok Zalbavar: fix(UI): string for option auto-accepting files...
+[11:37:07] -qtox-git-spam- [qTox] zetok opened pull request #3767: Update translations from Weblate (master...tr) https://git.io/vPq6U
+[11:45:37] *** Joins: Lyris (~Lyris@ )
+[11:47:17] <qTox-Website> [qTox-Website] zetok opened pull request #15: Update translations from Weblate (master...tr) https://git.io/vPq6r
+[11:47:46] *** Joins: Chiitoo (~Chiitoo@ )
+[11:49:46] *** Joins: Diadl0 (~diadlo@ )
+[11:50:03] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
+[12:01:21] -qtox-git-spam- [qTox] zetok closed pull request #3739: docs(INSTALL.md): use `$USER` variable instead of dummy `user` (master...docs/user) https://git.io/viFnK
+[12:08:41] <qTox-Website> [qTox-Website] zetok closed pull request #15: Update translations from Weblate (master...tr) https://git.io/vPq6r
+[12:09:59] <travis-ci> qTox/qTox-Website (850e605): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/164408404 / Changes: https://github.com/qTox/qTox-Website/compare/65f46e03a62f...850e605a1520
+[12:17:24] <iphy> is someone going to rewrite the AV stuff?
+[12:17:43] <zetok> initramfs is planning to
+[12:18:06] <zetok> https://github.com/qTox/qTox/milestones ← listed there :)
+[12:27:58] -qtox-git-spam- [qTox] zetok closed pull request #3752: chore(travis): check if .dmg is actually built (master...chore-osx-travis) https://git.io/vijit
+[12:47:13] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 272 seconds)
+[12:48:20] *** Joins: SkyzohKey (~skyzohkey@ )
+[12:53:56] -qtox-git-spam- [qTox] zetok closed pull request #3765: chore: make script for updating translations actually commit stuff (master...chore-tr-script) https://git.io/vPqaz
+[13:02:10] <SkyzohKey> <iphy> SkyzohKey: ping
+[13:02:11] <SkyzohKey> yep ?
+[13:26:05] -qtox-git-spam- [qTox] zetok closed pull request #3767: Update translations from Weblate (master...tr) https://git.io/vPq6U
+[13:44:26] <iphy> SkyzohKey: can you extract your Vala bindings and put them in a separate repo?
+[13:44:47] <SkyzohKey> they have an own repo yet x)
+[13:45:26] <SkyzohKey> https://github.com/RicinApp/tox-vapi
+[13:45:44] <SkyzohKey> the vapi may not be up to date but i can update it if u need
+[13:47:51] *** Quits: Neolex (~neolex@ ) (Ping timeout: 265 seconds)
+[13:47:58] *** Parts: Lyris (~Lyris@ ) ()
+[13:48:55] <SkyzohKey> iphy: why that question ?
+[13:53:16] <zetok> iphy: https://github.com/TokTok/dockerfiles ← is this supposed to be usable?
+[13:53:26] <iphy> SkyzohKey: I want to collect the bindings to toxcore
+[13:53:34] <iphy> But only with tests
+[13:53:41] <iphy> zetok: yes, is it not?
+[13:53:48] <SkyzohKey> hey zetok
+[13:53:49] <zetok> iphy: well, there are no docs
+[13:54:16] <zetok> hello SkyzohKey
+[13:55:05] <iphy> Ok
+[13:55:36] <iphy> zetok: it's not made for wider consumption indeed
+[13:55:55] <zetok> ok, so not usable
+[13:55:55] <iphy> I made it to support the Travis builds, mostly
+[13:56:02] <iphy> Correct
+[13:58:04] <zetok> https://raw.githubusercontent.com/dockcross/dockcross/master/Dockerfile ← it's a 404
+[13:58:22] <iphy> I'll fix that, thanks
+[13:59:32] <zetok> adding a COPYING file would also would be good
+[14:11:18] <iphy> SkyzohKey: it needs tests
+[14:11:57] <iphy> SkyzohKey: at the very least, it needs a Travis config so it's compiled on ci
+[14:12:40] <iphy> SkyzohKey: I'm collecting bindings with tests so we have better coverage for toxcore changes, since toxcore tests themselves are rather poor
+[14:13:01] <iphy> Especially around av
+[14:13:54] <SkyzohKey> hmm
+[14:14:11] <SkyzohKey> I dunno how to write tests for a vapi file, :x
+[14:16:27] <iphy> Write a program that uses the vapi bindings to start two tox instances that send messages to each other
+[14:16:38] <iphy> The test ends when the message arrives
+[14:16:50] <iphy> Can you do that?
+[14:16:52] <SkyzohKey> is this really reliable ?
+[14:17:17] <iphy> Not totally, but it's the best we've got at the moment
+[14:17:50] <SkyzohKey> hmm, i guess that's doable, but i've no time for that currently :/
+[14:34:43] *** Joins: bashrc (~motters@ )
+[14:37:59] <iphy> SkyzohKey: I'd like to collect the bindings so when we make API changes we can make sweeping changes to all bindings to keep them up to date
+[14:38:13] <SkyzohKey> that would be nice, yep
+[14:38:17] <bashrc> is it possible to record voice calls? I'm thinking of interviews on podcasts
+[14:38:29] <SkyzohKey> bashrc: not sure that it's a great idea
+[14:38:53] <SkyzohKey> but u'd be able to do that simply by using audacity, nope ?
+[14:39:06] <bashrc> maybe so
+[14:40:37] <bashrc> or I could use a separate laptop just to do the recording. So it's probably feasible
+[14:40:45] <zetok> hm.
+[14:41:00] <SkyzohKey> i'm pretty sure ffmpeg/gstreamer can do the job too
+[14:41:17] <zetok> bashrc: https://github.com/qTox/qTox/issues/821
+[14:42:03] <bashrc> I'm just wondering, if I get invited to do podcasts in future what I'll recommend. Obviously I'm not going to use some proprietary thing
+[14:42:47] <SkyzohKey> recommand Tox ofc :p
+[14:43:24] <iphy> SkyzohKey: but to do that, the bindings need tests
+[14:45:27] <SkyzohKey> yeah
+[14:55:29] <zetok> bashrc: https://github.com/qTox/qTox/pull/3645 ?
+[14:57:41] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[14:57:49] *** Joins: rerumnovarum (~user-reru@ )
+[14:58:05] <bashrc> in the end I didn't use video for the demo. It kinda worked, but kinda didn't
+[14:59:04] <bashrc> possibly more down to the old hardware I was using
+[15:00:22] <zetok> what didn't work well?
+[15:00:53] <bashrc> there was a fair amount of lag and jitter, so I thought it wouldn't look great in a demo
+[15:01:05] <bashrc> but they I was using a six year old netbook
+[15:01:29] <bashrc> audio was fine though
+[15:01:56] <bashrc> possibly the problem might have been that it was using a high video resolution which was straining the hardware
+[15:02:43] <zetok> oh
+[15:02:57] <zetok> right, video doesn't have HW acceleration
+[15:03:50] <zetok> + bitrate in qTox is currently hardcoded
+[15:04:17] <bashrc> for video?
+[15:04:21] *** Joins: Lord_Vlad (~Vlad@ )
+[15:04:43] <iphy> SkyzohKey: when will you have time for it?
+[15:05:02] <zetok> bashrc: both video and audio
+[15:13:55] <bashrc> ok, I'll test it again on better hardware and see how it goes
+[15:16:44] <iphy> Diadlo: I'm still confused how this is supposed to work
+[15:17:12] <iphy> Diadlo: invokeMethod is called on `self`, but callCallback is a static member function
+[15:17:18] <iphy> Diadlo: how does that work?
+[15:25:06] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[15:25:24] *** Joins: rerumnovarum (~user-reru@ )
+[15:40:05] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[15:40:14] *** Joins: rerumnovarum (~user-reru@ )
+[15:43:36] <bashrc> retested on more modern laptops and the video is awesome
+[15:44:14] <bashrc> I can see that I should have used different hardware for the mesh demo, but at least I proved that the system still works even on a very minimal spec
+[15:49:37] <iphy> zetok: https://github.com/TokTok/dockerfiles/pull/2
+[15:51:37] <bashrc> one question is how to hang up a video call. Selecting the video button doesn't have any effect
+[15:52:09] <iphy> SkyzohKey: it's really important
+[15:52:25] <iphy> SkyzohKey: because we've changed the API, and I think this might be a problem for your current vapi files
+[15:52:58] <zetok> bashrc: if the button doesn't work, that's a bug
+[15:53:13] <bashrc> ok could be. Perhaps related to my patch
+[15:53:42] <zetok> bashrc: btw, is your video available somewhere?
+[15:53:52] <bashrc> other than that frame rate looks good
+[15:54:08] <bashrc> no, this is on a mesh network
+[15:55:00] <bashrc> separate from the regular internets
+[16:05:53] <zetok> iphy: approved
+[16:41:37] <zetok> https://github.com/qTox/qTox/issues/3768 ;_;
+[16:49:48] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[16:52:03] *** Joins: Lord_Vlad (~Vlad@ )
+[16:55:15] *** Joins: Neolex (~neolex@ )
+[17:21:29] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 248 seconds)
+[17:24:57] *** Joins: jjuran (~jjuran@ )
+[17:43:54] <Diadlo> iphy: Sorry, I'm not professional Qt developer. So my answers can be incorrect or inaccurate. But AFAIK invokeMethod hasn't overload without object parameter
+[18:13:41] *** Quits: bashrc (~motters@ ) (Ping timeout: 264 seconds)
+[18:14:33] *** Joins: bashrc (~motters@ )
+[18:19:22] *** Joins: initramfs (~initramfs@ )
+[18:25:23] <iphy> Diadlo: but it can call static methods?
+[18:26:48] <Diadlo> iphy: Seems, yes
+[18:26:56] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[18:27:10] <iphy> in what situation are callbacks not called from the av thread?
+[18:27:15] <iphy> and in what situation are they?
+[18:27:24] *** Joins: sudd3n6 (~anonymous@ )
+[18:27:27] <Diadlo> iphy: IDK
+[18:27:38] *** Joins: Lord_Vlad (~Vlad@ )
+[18:29:22] <Diadlo> From comment before this code seems, that this method called from toxcore thread, but we want move it to CoreAV thread
+[18:35:39] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[18:51:05] *** Joins: Lord_Vlad (~Vlad@ )
+[18:53:19] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[18:57:06] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[19:07:22] *** Joins: sudd3n6 (~anonymous@ )
+[19:25:17] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 252 seconds)
+[19:27:29] <iphy> Diadlo: but only sometimes
+[19:32:39] <Diadlo> Yes. But we want start ALL callbacks in CoreAV thread. Not only `some`
+[19:32:41] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[19:41:53] <Diadlo> zetok: ping
+[19:42:04] <zetok> Diadlo: pong
+[19:42:30] <Diadlo> Do you remember my question about version in qTox Windows installer?
+[19:42:45] <zetok> yep
+[19:42:46] <Diadlo> https://github.com/qTox/qTox/issues/2655
+[19:43:08] <zetok> >.<
+[19:43:23] <Diadlo> We should change it or close the issue if we don't plan to do it
+[19:43:23] <zetok> I see, will make a PR
+[19:43:27] <Diadlo> Ok
+[19:43:29] <Diadlo> Thanks
+[19:44:23] <zetok> actually
+[19:45:58] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:46:21] <zetok> I wonder if that could be automated somehow
+[19:46:47] <Diadlo> sed?
+[19:46:50] <zetok> mm
+[19:47:27] <zetok> but rather than changing & committing that stuff every time, just running a script that would append correct version there
+[19:48:14] <zetok> (just before the installer gets build, without committing)
+[19:48:23] <Diadlo> I mean script which will use sed
+[19:48:35] <Diadlo> Oh
+[19:49:13] <zetok> tux3: ping?
+[19:51:36] <zetok> oh well
+[19:51:43] <zetok> gonna make the script
+[19:52:35] <Diadlo> gl hf :D
+[20:26:41] -qtox-git-spam- [qTox] zetok opened pull request #3772: chore(installer): add script for automatically generated version in .nsi (master...chore-win-version) https://git.io/vPmfU
+[20:26:52] <zetok> tux3: ↑
+[20:36:58] <nurupo> better email him
+[20:37:14] <nurupo> zetok: tux3 is connected though grayhatter's znc bouncer, so he is 24/7 afk in irc now :D
+[20:37:24] <zetok> nurupo: I know
+[20:37:56] <nurupo> oh, right, you were in toktok at that time
+[21:05:36] -qtox-git-spam- [qTox] Diadlo opened pull request #3774: Time format (master...timeFormat) https://git.io/vPmJM
+[21:05:52] -qtox-git-spam- [qTox] Diadlo closed pull request #2761: Time format settings (master...time_format_settings) https://git.io/vPmJD
+[21:12:35] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[21:24:43] <iphy> nurupo: any chance you can re-approve the PRs you approved before but I failed to merge?
+[21:25:05] <iphy> https://github.com/TokTok/c-toxcore/pull/179
+[21:25:09] <iphy> https://github.com/TokTok/c-toxcore/pull/178
+[21:31:37] <nurupo> you re-opened them as new PRs?
+[21:32:14] <nurupo> yeah, looks like so
+[21:34:03] <nurupo> iphy: i'm curious why you didn't list headers files in before but now you do? https://github.com/TokTok/c-toxcore/pull/178
+[21:34:14] <nurupo> in add_module()
+[21:36:24] <nurupo> i wonder if the format test could be somehow added to the ApiDsl.cmake
+[21:36:26] *** Joins: Bill_MI (~Bill@ )
+[21:36:58] <nurupo> it being in CMakeLists.txt is fine too
+[21:42:06] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[21:50:00] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[21:51:51] *** Joins: in1t3r (~LordShiva@ )
+[21:52:49] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[21:53:02] *** Joins: in1t3r (~LordShiva@ )
+[22:00:59] <Diadlo> zetok: https://github.com/qTox/qTox/pull/3774 What kind of `buggy` do you mean?
+[22:04:49] <zetok> no idea
+[22:05:06] <zetok> I'm just assuming that something in installer would break
+[22:05:16] <zetok> (given how broken windows is)
+[22:05:52] <Diadlo> zetok: Hm... We talk about time format?
+[22:06:02] <zetok> oh >.<
+[22:06:09] <zetok> sorry, a bit late
+[22:07:04] <zetok> Diadlo: e.g. modify just the format part of the string, logout, log in again
+[22:08:04] <Diadlo> Ok. You mean, that non-format character will be duplicated?
+[22:08:26] <zetok> that's not the only outcome
+[22:08:30] <zetok> but yeah
+[22:09:17] <Diadlo> And you suggest add label right to the QComboBox?
+[22:10:05] <zetok> I guess?
+[22:10:36] <zetok> similar to how it's done with font size
+[22:11:09] <zetok> no, wait, emoticon size
+[22:11:17] <zetok> =.=
+[22:11:25] * zetok should go to sleep
+[22:11:38] <Diadlo> You talk about <value> + `px` ?
+[22:11:58] <zetok> nah
+[22:12:14] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[22:12:30] <zetok> | some text | input field |
+[22:13:02] <Diadlo> AFAIK, We haven't nothing like this :)
+[22:13:53] <Diadlo> Anyway, time to go to sleep. I think we can continue tomorrow :)
+[22:14:01] <zetok> | Time format: | input field | formatted text |
+[22:14:04] <zetok> mm :)
+[22:14:09] <zetok> g'night :)
+[22:14:12] <Diadlo> Good night everyone
+[22:16:32] <Diadlo> zetok: If I understand correct wu suggest split input field on 2 parts. Of true, it's impossible with default QComboBox
+[22:16:46] <Diadlo> Font size and emoticon size is QSpinBox
+[22:48:31] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[23:42:37] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
