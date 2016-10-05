@@ -1,0 +1,95 @@
+[00:01:55] *** Joins: genesis (~genesis@ )
+[00:18:42] *** Joins: athan (~athan@ )
+[00:57:37] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[01:40:07] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:42:46] *** Joins: jjuran (~jjuran@ )
+[03:46:31] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[04:04:20] *** Joins: Neolex (~neolex@ )
+[04:09:00] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[05:03:08] *** Quits: Neolex (~neolex@ ) (Ping timeout: 265 seconds)
+[05:12:33] *** Joins: athan (~athan@ )
+[05:54:41] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 272 seconds)
+[06:06:07] *** Joins: Dragofix (Dragofix@ )
+[06:06:46] *** Quits: Dragofix (Dragofix@ ) (Client Quit)
+[06:18:44] *** Joins: Dragofix (Dragofix@ )
+[07:13:55] *** Joins: sudd3n6 (~anonymous@ )
+[07:20:11] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 272 seconds)
+[07:46:19] *** Joins: abbat (~Anton@ )
+[07:53:25] *** Quits: linxon (~lin@ ) (Changing host)
+[07:53:25] *** Joins: linxon (~lin@ )
+[08:25:40] *** Joins: Diadlo (~diadlo@ )
+[08:26:21] *** Quits: Diadlo (~diadlo@ ) (Client Quit)
+[08:26:59] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[08:29:50] *** Joins: Diadlo (~diadlo@ )
+[09:07:17] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[09:18:36] *** Joins: bashrc (~motters@ )
+[09:20:46] -qtox-git-spam- [qTox] zetok opened pull request #3780: Update translations from Weblate (master...tr) https://git.io/vP3L8
+[09:35:44] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[10:04:45] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vP3YN
+[10:04:45] -qtox-git-spam- qTox/master 018a88d Kaur Männamaa: feat(l10n): update Estonian translation from Weblate
+[10:04:45] -qtox-git-spam- qTox/master 60af778 Viktar Vauchkevich: feat(l10n): update Belarusian translation from Weblate
+[10:55:17] *** Joins: Neolex (~neolex@ )
+[10:59:00] <Neolex> Hi
+[10:59:08] <iphy> hi
+[11:00:23] <Neolex> Diadlo: are you there ?
+[11:02:00] <Neolex> for my PR , I don't understand ,the number can't be lower than 1024 so how alert the user if it's lower ?
+[11:18:11] <Diadlo> Neolex: Hello. Yes. I am there
+[11:18:25] <Diadlo> You can use GUI class
+[11:18:59] <Diadlo> Something like GUI::showWarning
+[11:19:42] <Neolex> and I connect it to the signal valueChanged ?
+[11:20:47] <Diadlo> Wait a sec
+[11:20:51] <Neolex> ah non , in the valuechanged slot
+[11:22:39] <Diadlo> In Settings::setStartUDPPort you have `if` which check port correctnes
+[11:22:59] <Neolex> but i dont think the port could be incorrect
+[11:22:59] <Diadlo> Add `else { GUI::showWarnong("text"); }
+[11:23:38] <Diadlo> Why?
+[11:23:39] <Neolex> I have set the mini and maxi port in the form
+[11:24:05] <Neolex> the spinbox number have to be between 1024 and 65535 
+[11:24:17] <Diadlo> Oh...
+[11:25:53] <Diadlo> Better ask initramfs
+[11:26:01] <Neolex> ok
+[11:26:03] <Neolex> thank you
+[11:26:40] <Diadlo> Anyway, you can remove spinbox min and max values and use `if` validation
+[11:27:33] <Neolex> ok
+[11:38:20] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:39:21] *** Joins: LittleVulpix (~Miranda@ )
+[12:50:38] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[13:13:50] *** Joins: athan (~athan@ )
+[13:41:10] *** Joins: Diadl0 (~diadlo@ )
+[13:41:10] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[14:00:30] *** Joins: abbat (~abbat@ )
+[14:20:23] *** Joins: sudd3n6 (~anonymous@ )
+[15:01:59] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[15:02:07] *** Joins: rerumnovarum (~user-reru@ )
+[15:04:56] *** Quits: abbat (~abbat@ ) (Ping timeout: 252 seconds)
+[15:13:18] *** Joins: abbat (~abbat@ )
+[15:25:06] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 264 seconds)
+[15:25:18] *** Joins: rerumnovarum (~user-reru@ )
+[15:30:01] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 248 seconds)
+[15:31:17] *** Joins: Diadl0 (~diadlo@ )
+[15:43:04] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[16:18:33] <genesis> groupchat is dead ?
+[16:19:22] <genesis> oh no sorry
+[16:33:49] *** Joins: sudd3n6 (~anonymous@ )
+[17:58:44] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[17:58:47] *** Joins: Diadlo (~diadlo@ )
+[18:00:14] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:01:31] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[18:41:13] *** Joins: fred_barclay (~fred@ )
+[18:41:13] *** Quits: fred_barclay (~fred@ ) (Changing host)
+[18:41:13] *** Joins: fred_barclay (~fred@ )
+[18:42:35] *** Quits: fred_barclay (~fred@ ) (Client Quit)
+[19:00:20] *** Joins: abbat (~Anton@ )
+[19:11:50] -qtox-git-spam- [qTox] zetok closed pull request #3778: fix(UI): bump default emoticon size, since otherwise it can be too small (master...fix-default-emot-size) https://git.io/vPmBp
+[19:53:55] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[20:48:24] *** Joins: bashrc (~motters@ )
+[21:19:49] *** Joins: bennabiy (~bennabiy@ )
+[21:25:09] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[21:26:18] *** Joins: Diadlo (~diadlo@ )
+[22:13:23] *** Joins: sudd3n6 (~anonymous@ )
+[22:32:25] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[22:44:34] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[22:51:47] *** Joins: cisc (~cisc@ )
+[23:24:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:25:55] *** Joins: cisc (~cisc@ )
+[23:41:43] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
