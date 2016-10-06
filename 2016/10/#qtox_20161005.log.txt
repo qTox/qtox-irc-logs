@@ -1,0 +1,119 @@
+[00:43:47] *** Joins: Neolex (~neolex@ )
+[00:43:51] <Neolex> Hi all !
+[01:10:52] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[01:14:30] *** Joins: Neolex (~neolex@ )
+[01:15:28] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:19:30] *** Joins: cisc (~cisc@ )
+[01:26:20] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:28:00] *** Joins: cisc (~cisc@ )
+[01:46:37] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[01:49:38] *** Quits: hexadezimalion (sid85551@ ) (Read error: Connection reset by peer)
+[02:05:27] *** Joins: hexadezimalion (sid85551@ )
+[02:14:25] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:53:01] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[03:23:51] *** Joins: cisc (~cisc@ )
+[07:07:52] *** Joins: rerumnov1rum (~user-reru@ )
+[07:11:17] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[07:13:25] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 272 seconds)
+[07:13:40] *** Joins: rerumnovarum (~user-reru@ )
+[09:32:41] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 265 seconds)
+[09:56:04] *** Joins: abbat (~abbat@ )
+[10:08:56] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[10:09:03] *** Joins: rerumnovarum (~user-reru@ )
+[10:12:45] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:00:05] *** Quits: abbat (~abbat@ ) (Ping timeout: 252 seconds)
+[11:46:47] *** Joins: abbat (~abbat@ )
+[12:21:33] -qtox-git-spam- [qTox] zetok opened pull request #3782: style: remove unnecessary semicolon for Q_DECLARE_FLAGS (master...style-remove-semicolon) https://git.io/vPZ3s
+[12:47:23] *** Joins: Neolex (~neolex@ )
+[12:48:38] <Neolex> Hi !
+[12:54:57] <zetok> hello Neolex
+[13:11:09] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[13:11:34] *** Joins: abbat (~abbat@ )
+[13:21:26] *** Quits: abbat (~abbat@ ) (Ping timeout: 252 seconds)
+[13:30:20] *** Joins: abbat (~abbat@ )
+[13:33:40] -qtox-git-spam- [qTox] zetok opened pull request #3783: chore: silence unnecessary compiler output (master...chore-compiler-output) https://git.io/vPZWa
+[13:40:27] -qtox-git-spam- [qTox] zetok opened pull request #3784: chore(tools): update translation updater's commit message (s/w/W/) (master...chore-tr-commit-msg) https://git.io/vPZlG
+[14:19:44] *** Quits: abbat (~abbat@ ) (Ping timeout: 252 seconds)
+[14:20:34] *** Joins: abbat (~abbat@ )
+[14:42:17] <genesis> lu Neolex :P
+[14:42:30] <Neolex> salut genesis :)
+[14:43:52] -qtox-git-spam- [qTox] zetok opened pull request #3785: docs(README): list some of the ways to help qTox (master...docs-help) https://git.io/vPZzA
+[15:38:47] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[15:38:50] *** Quits: dan- (~d@ ) (*.net *.split)
+[15:40:03] *** Joins: dan- (~d@ )
+[15:40:03] *** Quits: dan- (~d@ ) (Changing host)
+[15:40:03] *** Joins: dan- (~d@ )
+[15:53:52] *** Joins: hexadezimalion (sid85551@ )
+[16:33:05] *** Joins: sudd3n6 (~anonymous@ )
+[17:03:46] *** Quits: bennabiy (~bennabiy@ ) (Quit: http://www.yellowdeli.com)
+[17:04:57] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 272 seconds)
+[17:04:58] *** Joins: SkyzohKey_ (~skyzohkey@ )
+[17:19:55] *** Joins: bennabiy (~bennabiy@ )
+[17:23:31] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[17:56:21] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:59:22] <SkyzohKey_> oh, un françaouis! Neolex, genesis: cc :)
+[18:03:06] <genesis> la french touch
+[18:03:17] <Neolex> ^^
+[18:03:43] <SkyzohKey_> ;3
+[18:03:51] *** SkyzohKey_ is now known as SkyzohKey
+[18:04:32] <Neolex> dites c'est normal qu'une pull request necissite beaucoup de changement ? 
+[18:04:44] <SkyzohKey> comment ça ?
+[18:04:45] <Neolex> c'est ma premiere et ça fait un moment que je dois faire plein de changement
+[18:04:55] <genesis> on contribue pas a qtox, on est des observateurs
+[18:04:59] <SkyzohKey> x')
+[18:05:02] <Neolex> ah
+[18:05:09] <genesis> on developpe chacun un client different
+[18:05:13] <SkyzohKey> pas faux :rir:
+[18:05:28] <Neolex> client tox aussi ?
+[18:05:39] <genesis> ouai SkyzohKey  bosse sur ricin et moi sur toxsuite
+[18:05:57] <genesis> on est juste la pour les troller :3
+[18:06:00] <SkyzohKey> Neolex: en général les modifs qu'on te demande de faire c'est surtout du code style
+[18:06:12] <SkyzohKey> histoire que tes modifications soient cohérentes avec le codebase
+[18:06:14] <Neolex> SkyzohKey: oui c'est ça surtout 
+[18:06:34] <Neolex> donc c'est pas ma pull request qu'est forcement foireuse , c'est normal ? ^^
+[18:06:37] <SkyzohKey> ué
+[18:06:41] <Neolex> ok ok ^^
+[18:06:43] <SkyzohKey> Contribue à Ricin, promis j'fais pas chier avec ça moi x)
+[18:06:56] <Neolex> ^^
+[18:07:01] <genesis> tu t'fais pas chier avec la video non plus
+[18:07:16] <SkyzohKey> J'vois bien nurupo arriver avec son "here is an english channel, please speak frenchies elsewhere"
+[18:07:24] <genesis> speak white ^^
+[18:07:32] <SkyzohKey> genesis: J'ai prévu l'a/v sur mon rewrite x)
+[18:07:47] <genesis> ca va etre du lourd ^___^
+[18:07:49] <SkyzohKey> Déjà que j'viens de m'péter le cul avec les vargs pour coder mon propre logger maison, x')
+[18:07:51] <sudd3n6> here is an english channel, speak frenchies elsewhere :p
+[18:07:55] <SkyzohKey> x)
+[18:08:03] <SkyzohKey> ur not nurupo, not fun enough x:
+[18:08:11] <genesis> french will be the next main language anyway
+[18:08:15] <SkyzohKey> +1
+[18:08:27] <SkyzohKey> genesis, enjoy: https://github.com/RicinApp/Ricin/blob/rewrite-clean/src/utils/Logger.vala
+[18:08:46] <zetok> genesis: nope
+[18:08:58] <genesis> french or chinese, choose :d
+[18:08:58] <SkyzohKey> zetok: it will for surez
+[18:09:15] <zetok> genesis: sad reality says chinese
+[18:09:20] <SkyzohKey> lel no
+[18:09:22] <genesis> africans are doing great job!
+[18:09:26] <SkyzohKey> chinese language is just weird
+[18:09:47] <genesis> and french africans, thanks to our politics are the poorest so the best reproductor
+[18:10:15] <genesis> diaspora strategy 2030, enjoy your french african immigration all over ze world.
+[18:11:26] <genesis> depend the chinese, if clinton is elected, i hope she'll bomb the yellow anyway, she's crazy enough, wait & see ^^
+[18:18:41] *** Joins: bennabiy (~bennabiy@ )
+[18:54:48] *** Joins: abbat (~Anton@ )
+[20:33:22] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[20:38:00] *** Joins: jjuran (~jjuran@ )
+[21:27:52] *** sudd3n6 is now known as sudden6
+[21:34:07] *** Quits: tux3 (tux@ ) (Ping timeout: 272 seconds)
+[21:45:11] *** Quits: albel727 (~albel727@ ) (Ping timeout: 244 seconds)
+[21:47:39] *** Joins: albel727 (~albel727@ )
+[21:48:17] *** Joins: athan (~athan@ )
+[21:54:10] <iphy> zetok: https://toktok.github.io/ we need a web designer :|
+[21:57:48] <iphy> the qtox website is not bad
+[22:02:57] *** Joins: tux3 (~tux@ )
+[22:07:48] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[22:09:03] *** Joins: sudden6 (~anonymous@ )
+[22:11:53] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[22:13:14] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[22:17:26] *** Joins: bennabiy (~bennabiy@ )
+[22:22:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[22:26:13] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[23:17:18] *** Quits: athan (~athan@ ) (Ping timeout: 264 seconds)
