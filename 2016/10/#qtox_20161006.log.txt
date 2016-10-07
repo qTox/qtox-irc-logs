@@ -1,0 +1,202 @@
+[00:12:59] <SkyzohKey> iphy: do u like https://v2.ricin.im ?
+[00:13:37] <SkyzohKey> I'm rewriting it in local for now in order to add 1 section per feature with images, swagg and content
+[00:13:45] <SkyzohKey> cuz currently it doesn't helps that much
+[00:14:07] <iphy> SkyzohKey: yes
+[00:14:15] <iphy> my browser doesn't really like it though
+[00:14:18] <iphy> pretty slow
+[00:14:19] <SkyzohKey> ah ?
+[00:14:21] <SkyzohKey> o.o
+[00:14:22] <SkyzohKey> wtf
+[00:14:31] <SkyzohKey> it takes only 260 ms to fully load here
+[00:14:56] <SkyzohKey> I like the mockups :o
+[00:15:00] <SkyzohKey> who did them ?
+[00:48:50] <SkyzohKey> iphy; did u wrote this ? https://docs.google.com/document/d/1Reo3BcB0dAXcB2LhcmTAPUUpUf9eOHCL_6s6FS_1-sY/edit
+[00:57:07] <iphy> SkyzohKey: no, my gsoc student did that
+[00:57:10] <iphy> Andre Almeida
+[00:57:13] <SkyzohKey> nice
+[01:01:26] <iphy> SkyzohKey: he made a pretty nice android UI
+[01:01:36] <SkyzohKey> yeah saw that
+[01:01:39] <iphy> it doesn't work anymore because google updated their libraries
+[01:01:42] <SkyzohKey> x:
+[01:02:05] <iphy> I've fixed a few bugs, and generally I'm cleaning up the code a bit
+[01:02:27] <iphy> https://github.com/TokTok/toktok/commits/master
+[03:18:54] *** Joins: Neolex (~neolex@ )
+[03:22:46] *** Joins: buglessdr (~buglessdr@ )
+[03:29:30] <Neolex> salut
+[03:29:40] <Neolex> hi* 
+[05:27:37] *** Joins: CGGB (~CGGB@ )
+[05:35:52] *** Joins: kdhp (2f32c59a@ )
+[05:46:47] <kdhp> Hello.
+[05:47:17] <oranges> hi
+[05:50:09] <kdhp> I found that qTox inadvertently relies on the deinitialization order of a static variable, which can cause a conflict with OpenAL-Soft (Audio::getInstance())
+[05:54:35] <oranges> zetok
+[06:02:38] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[06:04:30] <kdhp> I may have been attributing that to a different issue.
+[06:50:46] *** Quits: buglessdr (~buglessdr@ ) (Quit: Leaving)
+[07:12:17] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[07:12:33] *** Joins: rerumnovarum (~user-reru@ )
+[07:44:56] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[07:55:42] *** Joins: zero-ghost (~0@ )
+[08:30:05] *** Joins: kvs (543457ea@ )
+[08:30:10] <kvs> hi
+[08:30:56] <kvs> qtox is not starting on win7. it was working but today it is not starting
+[08:31:18] <kvs> when i enter login pass it just dissappeared
+[08:31:42] <kvs> qtox.exe in process explorer but no gui
+[08:33:36] <kvs> can i reinstall qtox & save my profile
+[08:33:43] <kvs> ?
+[08:36:37] <kvs> i mean where is my profile is located
+[08:41:41] *** Quits: kvs (543457ea@ ) (Quit: Page closed)
+[08:50:31] -qtox-git-spam- [qTox] kdhp opened pull request #3788: fix(audio): keep the data pointed to by tmpDevName in scope (master...master) https://git.io/vPcwz
+[08:51:10] -qtox-git-spam- [qTox] zetok closed pull request #3782: style: remove unnecessary semicolon for Q_DECLARE_FLAGS (master...style-remove-semicolon) https://git.io/vPZ3s
+[09:24:16] -qtox-git-spam- [qTox] zetok closed pull request #3785: docs(README): list some of the ways to help qTox (master...docs-help) https://git.io/vPZzA
+[09:33:44] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[09:53:52] *** Joins: zero-ghost (~0@ )
+[09:59:39] *** Joins: abbat (~abbat@ )
+[10:09:40] *** Joins: CGGB (~CGGB@ )
+[10:11:23] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[10:11:45] *** Joins: CGGB (~CGGB@ )
+[11:03:17] *** Quits: abbat (~abbat@ ) (Ping timeout: 252 seconds)
+[11:03:42] *** Joins: abbat (~abbat@ )
+[11:05:36] *** Quits: kdhp (2f32c59a@ ) (Quit: Page closed)
+[11:50:36] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[12:04:47] *** Joins: kadinparker[m] (kadinparke@ )
+[12:14:28] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 272 seconds)
+[12:21:05] *** Joins: kadinparker[m] (kadinparke@ )
+[13:44:13] <zetok> iphy: you'd want to put website in a repo
+[13:45:19] <zetok> https://github.com/TokTok/toktok.github.io ← or is this something that people should edit?
+[13:48:34] <iphy> zetok: as soon as I figure out a better way to push binary snapshots from Travis
+[13:56:07] <iphy> actually yes, I could put the content into a different repo and then push the compiled version to toktok.github.io
+[14:11:25] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[14:13:57] *** Joins: abbat (~abbat@ )
+[15:19:56] *** Quits: ziltro (~ziltro@ ) (Quit: WeeChat 1.3)
+[15:20:32] *** Quits: abbat (~abbat@ ) (Ping timeout: 265 seconds)
+[15:33:04] *** Joins: abbat (~abbat@ )
+[15:43:08] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[15:55:53] *** Quits: iphy (uid67735@ ) (Read error: Connection reset by peer)
+[16:12:27] *** Joins: f10 (~flo@ )
+[16:27:11] *** Joins: iphy (uid67735@ )
+[17:13:45] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:14:18] *** Joins: f10 (~flo@ )
+[17:34:36] *** Joins: reBrain (~quassel@ )
+[17:59:21] *** Joins: cenysor (~cenysor@ )
+[18:00:06] <cenysor> How do I export my profile?
+[18:05:12] <zetok> cenysor: https://github.com/qTox/qTox/blob/master/doc/user_manual_en.md#user-profile there you go :)
+[18:06:28] <cenysor> zetok: thanks a lot!
+[18:13:10] -qtox-git-spam- [qTox] zetok closed pull request #3783: chore: silence unnecessary compiler output (master...chore-compiler-output) https://git.io/vPZWa
+[18:42:47] <Diadlo> Hello :)
+[18:42:53] <Diadlo> zetok: Are you here?
+[18:47:32] <Diadlo> test-pr.sh don't work for me anymore :(  https://gist.github.com/Diadlo/133115ca60ce74071dc8cbf66601687a
+[18:58:27] *** Joins: Emcy (~MC@ )
+[19:10:10] <zetok> Diadlo: git branch -D {test,}3750
+[19:10:47] <zetok> should that be added to the script?
+[19:12:00] *** Joins: sudden6 (~anonymous@ )
+[19:12:05] <Diadlo> Thanks. I think yes
+[19:17:32] <Diadlo> zetok: May be add flag? For example `-f`
+[19:24:49] -qtox-git-spam- [qTox] zetok opened pull request #3790: chore: delete leftover branches from previous testing with test script (master...chore-test-script) https://git.io/vPWeS
+[19:24:50] <zetok> Diadlo: ↑ ?
+[19:30:52] <Diadlo> zetoc: What the reason of addition `|| true`?
+[19:32:04] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[19:32:22] <zetok> no branches to delete
+[19:33:11] <Diadlo> Ok
+[19:33:22] *** Joins: sudden6 (~anonymous@ )
+[19:51:46] -qtox-git-spam- [qTox] Diadlo opened pull request #3791: fix(avform): Fixed empty value in autio and video lists (master...fixAVIndex) https://git.io/vPWUM
+[19:55:06] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[19:55:38] *** Joins: cisc (~cisc@ )
+[20:01:31] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[20:18:29] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[20:29:23] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[20:29:42] <Diadlo> zetok: Can you test https://github.com/qTox/qTox/pull/3774 ?
+[20:30:08] <zetok> yep
+[20:36:28] <zetok> :c
+[20:36:58] <zetok> aw, can't change the date back :f
+[20:38:35] *** Joins: f10 (~flo@ )
+[20:39:15] <Diadlo> Back to what?
+[20:39:45] <zetok> to anything
+[20:40:27] <Diadlo> Can't reproduce
+[20:42:25] <zetok> Diadlo: posted steps
+[20:42:27] <zetok> :3
+[20:43:21] <Diadlo> *facepalm*
+[20:43:58] <Diadlo> Ok. What behaviour you expect?
+[20:44:05] <zetok> dunno
+[20:44:19] <Diadlo> :|
+[20:44:30] <zetok> we probably should put some restrictions in place
+[20:44:55] <zetok> i.e. no newlines, limit input size to something like 128 chars
+[20:45:01] <Diadlo> Ok
+[20:46:09] <Diadlo> zetok: What about `\t`?
+[20:46:56] <zetok> can 128 `\t` break UI?
+[20:48:42] <zetok> just checked, they can't
+[20:48:50] <zetok> so it's not a problem :)
+[20:56:21] <Diadlo> zetok: Done
+[20:59:11] <zetok> now qTox doesn't start
+[20:59:25] <zetok> I just get the warning `Format shouldn't contains newlines and be bigger than 128`
+[21:00:48] <Diadlo> zetok: Will be normal completely reset format?
+[21:01:09] <zetok> um, could there be just a limit on the input field, instead of showing a warning?
+[21:01:20] <Diadlo> Whatabout new lines?
+[21:01:41] <zetok> oh, input field can't be limited like that?
+[21:02:00] <Diadlo> I'll check
+[21:02:00] <zetok> as for bad settings format – I guess
+[21:02:26] <zetok> but only if format in stored settings is invalid
+[21:03:38] <Diadlo> So what we should do, if invalid format stored in settings?
+[21:03:56] <Diadlo> Reset to one of default?
+[21:04:21] <zetok> yep
+[21:05:36] *** Joins: cisc (~cisc@ )
+[21:12:56] <qTox-syncbot> vol@nd: Hello
+[21:15:57] <Diadlo> Hello
+[21:16:09] <Diadlo> zetok: Can you help me with RegExp?)
+[21:16:34] <Diadlo> format 0-128 chars without \n
+[21:22:28] <Diadlo> Nevermind :)
+[21:31:42] <sudden6> hi
+[21:33:16] <Diadlo> sudden6: o/
+[21:38:52] -qtox-git-spam- [qTox] sudden6 opened pull request #3792: fix(i10n): remove HTML from translations (master...remove_html) https://git.io/vPWWn
+[21:49:39] <sudden6> Diadlo: I can see no fix in https://github.com/qTox/qTox/pull/3791 ? could you explain? the code looks like it does the same as before to me
+[21:50:08] <Diadlo> I remove `+1` from index
+[21:50:12] <Diadlo> It was wrond
+[21:50:27] <Diadlo> We found element in list and take index + 1
+[21:50:41] <sudden6> ah, thx I get it now :)
+[21:51:19] <Diadlo> Np
+[21:52:12] <Diadlo> sudden6: I need you help
+[21:53:24] <sudden6> ok :)
+[21:53:31] <sudden6> Diadlo: where?  :)
+[21:54:05] <Diadlo> https://github.com/qTox/qTox/pull/3714#issuecomment-246987436 <--- Here antis81 said, that +1 is needed. Is he wrong?
+[21:55:25] <sudden6> ok wait
+[21:56:18] <Diadlo> Or better ask antis81?)
+[21:58:05] <sudden6> Diadlo: I don't think antis81 is wrong here
+[21:58:17] <sudden6> or wait again^^
+[21:58:20] <Diadlo> Why?)
+[21:58:22] <Diadlo> Ok))
+[22:00:41] <Diadlo> What I can see: I have 2 devices. "Disabled" and "Real Device". indexOf("Real Device") return `1`. And if I try setup last device I have white field when go away from tab and return back
+[22:01:21] <sudden6> Diadlo: yep, I think you are right
+[22:01:34] <Diadlo> Thanks)
+[22:01:54] <sudden6> the code sets the index one field wrong
+[22:06:50] <sudden6> Diadlo: your code sets the input device to the first available one, wouldn't it be better to set it to disabled?
+[22:07:04] <sudden6> zetok: ↑ what do you think about that?
+[22:07:51] <Diadlo> sudden6: It's not part of my PR
+[22:08:07] <sudden6> hmm, true
+[22:08:17] <sudden6> still what do you think about it generally?
+[22:09:16] <Diadlo> I think anyone better than "Disabled" by default
+[22:09:32] <Diadlo> *anything
+[22:10:49] <Diadlo> When you start av-chat application first time, what behaviors do you expect? Disabled audio? I don't think so :)
+[22:12:56] <sudden6> hmm, I had the argument of "don't turn on possibly unwanted datasources by default" in mind, but I think that's more my preference
+[22:13:52] <zetok> sudden6: no
+[22:14:23] <Diadlo> https://github.com/qTox/qTox/pull/3714#issuecomment-246721425 <-- Also antis81 opinion
+[22:15:03] <sudden6> ok then
+[22:27:03] <Diadlo> sudden6: About validator and memoryleaks. AFAIK, destructor of QComboBox will delete validator
+[22:28:09] <Diadlo> Or not
+[22:28:11] <Diadlo> :|
+[22:31:17] <sudden6> Diadlo: you might be right, but I can't find some doc clearly stating you are...
+[22:31:37] <Diadlo> Me too
+[22:33:54] <Diadlo> https://stackoverflow.com/questions/28099713/need-to-delete-qvalidator-manually
+[22:34:03] <Diadlo> Seems I'm wrong
+[22:38:47] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:43:13] *** Joins: LittleVulpix (~Miranda@ )
+[22:49:30] <sudden6> Diadlo: I think it's not fixed
+[22:49:39] <Diadlo> Why?
+[22:50:20] <sudden6> wait, I may be wrong
+[22:51:01] <sudden6> yep, I was wrong, you fixed it :)
+[22:51:08] <Diadlo> :)
+[22:52:02] <Diadlo> Goodnight everyone
+[22:53:48] <sudden6> goodnight
+[23:11:39] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[23:12:40] *** Joins: Diadlo (~diadlo@ )
+[23:25:58] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[23:40:10] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
