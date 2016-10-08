@@ -1,0 +1,387 @@
+[00:00:01] *** Joins: sockspls (~sockspls@ )
+[00:07:45] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[00:20:55] *** Joins: sockspls (~sockspls@ )
+[00:50:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[01:25:10] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[01:33:13] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[01:34:02] *** Joins: f10 (~flo@ )
+[01:45:27] *** Joins: jjuran_ (~jjuran@ )
+[01:46:35] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 256 seconds)
+[01:46:41] *** Joins: SkyzohKey (~skyzohkey@ )
+[01:46:42] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 264 seconds)
+[01:46:42] *** jjuran_ is now known as jjuran
+[02:18:41] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[02:40:25] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[04:37:47] *** Joins: reBrain (~quassel@ )
+[05:02:46] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[06:18:33] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:42:20] *** Joins: Neolex (~neolex@ )
+[07:08:32] *** Joins: rerumnov1rum (~user-reru@ )
+[07:08:55] <Neolex> hi !
+[07:09:35] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 256 seconds)
+[07:12:44] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 252 seconds)
+[07:13:39] *** Joins: rerumnovarum (~user-reru@ )
+[07:36:51] *** Joins: testtesttest (68dcaf45@ )
+[07:37:01] *** Quits: testtesttest (68dcaf45@ ) (Client Quit)
+[08:41:28] *** Joins: cisc (~cisc@ )
+[09:26:19] -qtox-git-spam- [qTox] agilob closed pull request #3353: [WIP] Initial multi-device support (master...multi-device) https://git.io/vPlGT
+[09:54:52] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[10:03:49] *** Joins: abbat (~abbat@ )
+[10:07:38] *** Joins: kadinparker[m] (kadinparke@ )
+[10:36:21] *** Joins: sudden6 (~anonymous@ )
+[11:05:23] *** Quits: abbat (~abbat@ ) (Ping timeout: 252 seconds)
+[11:07:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[11:17:44] *** Joins: abbat (~abbat@ )
+[11:22:14] *** Joins: f10 (~flo@ )
+[11:52:09] *** Joins: sudden6 (~anonymous@ )
+[12:00:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[12:06:18] <zero-ghost> this cant be right
+[12:06:19] <zero-ghost> https://build.tox.chat/view/Clients/job/qTox_build_linux_x86-64_release/lastSuccessfulBuild/
+[12:06:30] <zero-ghost> last build 3 months ago
+[12:06:41] <zero-ghost> or where is the place to get the latest binary
+[12:10:25] *** Joins: sudden6 (~anonymous@ )
+[12:11:31] <zetok> there are packages
+[12:11:57] <zero-ghost> in manjaro repo it hasnt been updated in a while
+[12:12:01] <zero-ghost> i dont really want to use AUR
+[12:12:18] <zero-ghost> would rather just grab a binary for now until things are better sorted
+[12:24:35] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[12:25:30] *** Joins: reBrain (~quassel@ )
+[12:35:35] *** Joins: sudden6 (~anonymous@ )
+[12:38:22] *** Joins: DaSpiritWork (404af255@ )
+[12:43:55] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[13:01:22] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:01:51] *** Joins: LittleVulpix (~Miranda@ )
+[13:08:07] *** Joins: SkyzohKey (~skyzohkey@ )
+[13:16:21] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[13:19:16] *** Joins: st4ll1 (~st4ll1@ )
+[13:36:16] *** Quits: DaSpiritWork (404af255@ ) (Quit: Page closed)
+[13:53:33] *** Joins: SkyzohKey (~skyzohkey@ )
+[14:11:33] -qtox-git-spam- [qTox] zetok opened pull request #3793: docs: move `Reviews` section – MAINTAINING.md → CONTRIBUTING.md (master...docs-reviews) https://git.io/vPlDw
+[14:32:37] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vPl91
+[14:32:37] -qtox-git-spam- qTox/master 8f37d4c Zetok Zalbavar: chore: delete leftover branches from previous testing with test script
+[14:36:46] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[14:50:12] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[14:52:19] *** Joins: rerumnovarum (~user-reru@ )
+[15:12:07] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[15:49:44] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 252 seconds)
+[16:20:50] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:58:53] *** Joins: sudden6 (~anonymous@ )
+[17:04:47] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[17:05:24] *** Joins: sudden6 (~anonymous@ )
+[17:22:45] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[17:23:39] *** Joins: rerumnovarum (~user-reru@ )
+[17:25:39] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[17:28:01] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:28:31] *** Joins: jjuran (~jjuran@ )
+[17:28:35] *** Joins: rerumnovarum (~user-reru@ )
+[17:28:38] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[17:33:38] *** Joins: rerumnovarum (~user-reru@ )
+[17:38:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[17:49:54] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[17:50:19] *** Joins: rerumnovarum (~user-reru@ )
+[17:51:37] *** Joins: bashrc (~motters@ )
+[17:57:16] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[17:57:38] *** Joins: rerumnovarum (~user-reru@ )
+[18:09:49] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[18:10:08] *** Joins: rerumnovarum (~user-reru@ )
+[18:20:45] *** Joins: st4ll1 (~st4ll1@ )
+[18:29:35] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[18:31:28] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[18:32:19] *** Joins: rerumnovarum (~user-reru@ )
+[18:38:23] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[18:38:44] *** Joins: rerumnovarum (~user-reru@ )
+[18:54:32] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.5)
+[18:54:47] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[18:55:47] *** Joins: rerumnovarum (~user-reru@ )
+[19:04:54] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[19:05:46] *** Joins: rerumnovarum (~user-reru@ )
+[19:11:50] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[19:12:21] *** Joins: rerumnovarum (~user-reru@ )
+[19:32:40] *** Quits: rerumnovarum (~user-reru@ ) (Read error: Connection reset by peer)
+[19:33:13] *** Joins: rerumnovarum (~user-reru@ )
+[19:48:12] *** Joins: f10 (~flo@ )
+[19:56:55] *** Quits: jjuran (~jjuran@ ) (*.net *.split)
+[19:56:59] *** Quits: bennabiy (~bennabiy@ ) (*.net *.split)
+[19:57:00] *** Quits: mitfree (~mit@ ) (*.net *.split)
+[19:57:03] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[19:57:03] *** Quits: anoa (~anoa@ ) (*.net *.split)
+[19:57:10] *** Joins: mitfree (~mit@ )
+[19:57:19] *** Joins: VVD (~VVD@ )
+[19:57:19] *** Joins: anoa (~anoa@ )
+[19:57:22] *** Joins: bennabiy (~bennabiy@ )
+[19:57:48] *** Joins: jjuran (~jjuran@ )
+[20:08:51] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[20:08:53] *** Quits: zero-ghost (~0@ ) (*.net *.split)
+[20:08:57] *** Quits: dan- (~d@ ) (*.net *.split)
+[20:08:57] *** Quits: Dragofix (Dragofix@ ) (*.net *.split)
+[20:08:57] *** Quits: genesis (~genesis@ ) (*.net *.split)
+[20:08:57] *** Quits: smaragdus (~omoo@ ) (*.net *.split)
+[20:09:01] *** Joins: Dragofix (Dragofix@ )
+[20:09:23] *** Joins: genesis (~genesis@ )
+[20:09:30] *** Joins: smaragdus (~omoo@ )
+[20:09:50] *** Joins: zero-ghost (~0@ )
+[20:11:38] *** Joins: dan- (~d@ )
+[20:11:38] *** Quits: dan- (~d@ ) (Changing host)
+[20:11:38] *** Joins: dan- (~d@ )
+[20:18:55] *** Quits: genesis (~genesis@ ) (*.net *.split)
+[20:18:59] *** Quits: cisc (~cisc@ ) (*.net *.split)
+[20:18:59] *** Quits: Neolex (~neolex@ ) (*.net *.split)
+[20:19:00] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[20:19:03] *** Quits: CGGB (~CGGB@ ) (*.net *.split)
+[20:19:03] *** Quits: albel727 (~albel727@ ) (*.net *.split)
+[20:19:03] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[20:19:06] *** Quits: in1t3r (~LordShiva@ ) (*.net *.split)
+[20:19:06] *** Quits: Impyy (~impy@ ) (*.net *.split)
+[20:19:06] *** Quits: GGMethos_ (methos@ ) (*.net *.split)
+[20:19:06] *** Quits: qTox-syncbot (~qTox-sync@ ) (*.net *.split)
+[20:19:14] *** Joins: CGGB (~CGGB@ )
+[20:19:14] *** Joins: Impyy (~impy@ )
+[20:19:17] *** Joins: genesis (~genesis@ )
+[20:19:19] *** Joins: Neolex (~neolex@ )
+[20:19:20] *** Joins: albel727 (~albel727@ )
+[20:19:22] *** Joins: in1t3r (~LordShiva@ )
+[20:19:23] *** Joins: cisc (~cisc@ )
+[20:25:26] *** Joins: GGMethos_ (methos@ )
+[20:25:33] *** Joins: Diadlo (~diadlo@ )
+[20:28:03] *** Joins: hexadezimalion (sid85551@ )
+[20:28:09] *** Joins: iphy (uid67735@ )
+[20:32:02] *** Quits: Curlybear (~Curlybear@ ) (*.net *.split)
+[20:33:59] *** Joins: zetok (~zetok@ )
+[20:34:41] *** Joins: SkyzohKey (~skyzohkey@ )
+[20:37:50] *** Joins: linxon (~lin@ )
+[20:38:45] *** Joins: sockspls (~sockspls@ )
+[20:47:41] *** Quits: bashrc (~motters@ ) (*.net *.split)
+[20:47:44] *** Quits: tux3 (~tux@ ) (*.net *.split)
+[20:47:50] *** Quits: nightfuri (nightfury@ ) (*.net *.split)
+[20:47:51] *** Quits: Se7en (~Se7en@ ) (*.net *.split)
+[20:47:51] *** Quits: rysiek|pl (~quassel@ ) (*.net *.split)
+[20:47:51] *** Quits: koshii (~w@ ) (*.net *.split)
+[20:47:51] *** Quits: BHR27 (~Bheru27@ ) (*.net *.split)
+[20:47:52] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[20:48:07] *** Joins: rysiek|pl (~quassel@ )
+[20:48:11] *** Joins: dongo (~dongo@ )
+[20:48:11] *** Joins: tux3 (~tux@ )
+[20:48:13] *** Joins: bashrc (~motters@ )
+[20:48:14] *** Joins: koshii (~w@ )
+[20:48:30] *** Joins: nightfuri (nightfury@ )
+[20:48:35] *** Joins: Bheru27 (~Bheru27@ )
+[20:55:45] *** Joins: Se7en (~Se7en@ )
+[21:08:13] *** Quits: oranges (oranges@ ) (*.net *.split)
+[21:08:15] *** Quits: Sephi (~me@ ) (*.net *.split)
+[21:08:17] *** Quits: nurupo (~nurupo.ga@ ) (*.net *.split)
+[21:08:25] *** Joins: nurupo (~nurupo.ga@ )
+[21:08:28] *** Joins: oranges (oranges@ )
+[21:08:28] *** Joins: Sephi (~me@ )
+[21:15:26] *** Joins: ChanServ (ChanServ@ )
+[21:15:26] *** services. sets mode: +o ChanServ   
+[21:20:37] *** Joins: sudden6 (~anonymous@ )
+[21:21:56] *** Joins: Darky` (~Darky@ )
+[21:22:03] *** Quits: tobiasBora (~tobiasBor@ ) (*.net *.split)
+[21:22:04] *** Quits: Darky (~Darky@ ) (*.net *.split)
+[21:22:04] *** Quits: bkidwell (~bkidwell@ ) (*.net *.split)
+[21:22:05] *** Quits: worfox_ (~worfox@ ) (*.net *.split)
+[21:22:05] *** Quits: e0f (~e0f@ ) (*.net *.split)
+[21:22:08] *** Joins: bkidwell- (~bkidwell@ )
+[21:22:17] *** Joins: e0f (~e0f@ )
+[21:22:46] *** Joins: worfox (~worfox@ )
+[21:23:02] *** Joins: tobiasBora (~tobiasBor@ )
+[21:29:30] *** Joins: LittleVulpix (~Miranda@ )
+[21:33:26] *** Joins: qTox-syncbot (~qTox-sync@ )
+[21:33:39] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[21:33:41] *** Quits: Se7en (~Se7en@ ) (*.net *.split)
+[21:33:41] *** Quits: nightfuri (nightfury@ ) (*.net *.split)
+[21:33:43] *** Quits: albel727 (~albel727@ ) (*.net *.split)
+[21:33:43] *** Quits: Impyy (~impy@ ) (*.net *.split)
+[21:33:43] *** Quits: smaragdus (~omoo@ ) (*.net *.split)
+[21:33:44] *** Quits: anoa (~anoa@ ) (*.net *.split)
+[21:33:45] *** Quits: bashrc (~motters@ ) (*.net *.split)
+[21:33:46] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[21:33:46] *** Quits: tux3 (~tux@ ) (*.net *.split)
+[21:33:48] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[21:33:48] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[21:33:49] *** Quits: zero-ghost (~0@ ) (*.net *.split)
+[21:33:50] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[21:33:50] *** Quits: sudden6 (~anonymous@ ) (*.net *.split)
+[21:33:53] *** Quits: rysiek|pl (~quassel@ ) (*.net *.split)
+[21:33:54] *** Quits: Diadlo (~diadlo@ ) (*.net *.split)
+[21:33:54] *** Quits: in1t3r (~LordShiva@ ) (*.net *.split)
+[21:33:54] *** Quits: CGGB (~CGGB@ ) (*.net *.split)
+[21:33:57] *** Quits: oranges (oranges@ ) (*.net *.split)
+[21:33:57] *** Quits: Sephi (~me@ ) (*.net *.split)
+[21:33:59] *** Quits: sockspls (~sockspls@ ) (*.net *.split)
+[21:33:59] *** Quits: SkyzohKey (~skyzohkey@ ) (*.net *.split)
+[21:34:01] *** Quits: Dragofix (Dragofix@ ) (*.net *.split)
+[21:34:01] *** Quits: jjuran (~jjuran@ ) (*.net *.split)
+[21:38:55] *** Joins: sudden6 (~anonymous@ )
+[21:38:55] *** Joins: rysiek|pl (~quassel@ )
+[21:38:55] *** Joins: Diadlo (~diadlo@ )
+[21:38:55] *** Joins: in1t3r (~LordShiva@ )
+[21:38:55] *** Joins: CGGB (~CGGB@ )
+[21:39:25] *** Joins: bashrc (~motters@ )
+[21:39:25] *** Joins: tux3 (~tux@ )
+[21:39:25] *** Joins: dongo (~dongo@ )
+[21:39:25] *** Joins: iphy (uid67735@ )
+[21:39:25] *** Joins: hexadezimalion (sid85551@ )
+[21:39:25] *** Joins: zero-ghost (~0@ )
+[21:39:25] *** Joins: VVD (~VVD@ )
+[21:39:45] *** Joins: LittleVulpix (~Miranda@ )
+[21:39:45] *** Joins: Se7en (~Se7en@ )
+[21:39:45] *** Joins: nightfuri (nightfury@ )
+[21:39:45] *** Joins: albel727 (~albel727@ )
+[21:39:45] *** Joins: Impyy (~impy@ )
+[21:39:45] *** Joins: smaragdus (~omoo@ )
+[21:39:45] *** Joins: anoa (~anoa@ )
+[21:40:03] *** Joins: Sephi (~me@ )
+[21:40:03] *** Joins: oranges (oranges@ )
+[21:40:03] *** Joins: sockspls (~sockspls@ )
+[21:40:03] *** Joins: SkyzohKey (~skyzohkey@ )
+[21:40:03] *** Joins: Dragofix (Dragofix@ )
+[21:40:03] *** Joins: jjuran (~jjuran@ )
+[21:48:25] -qtox-git-spam- [qTox] sudden6 closed pull request #3792: fix(i10n): remove HTML from translations (master...remove_html) https://git.io/vPWWn
+[21:49:23] <zetok> ?
+[21:50:10] <sudden6> zetok: I think I've done something I shouldn't
+[21:50:24] <zetok> >.<
+[21:50:31] <zetok> oh noes
+[21:50:50] <sudden6> I'm just not sure what
+[21:51:57] <zetok> so
+[21:52:16] <zetok> my guess is that you didn't use iphy's script for the PR rebasing
+[21:52:27] <sudden6> ?! what script?
+[21:52:31] <zetok> :3
+[21:52:37] <sudden6> and yes, I was rebasing
+[21:52:54] <sudden6> but it somehow deleted my work?
+[21:53:01] <zetok> https://gist.github.com/zetok/1da909a57fdbc7579aca4095f554fd49 ← I've slightly modified it
+[21:53:28] <zetok> yep
+[21:53:42] <zetok> if you don't know what you're doing, rebase can do that
+[21:54:14] <sudden6> well until today I thought I know rebasing enough^^
+[21:54:18] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[21:56:27] <sudden6> zetok: can you make this a learning experience for me and tell me what I did wrong?
+[21:56:29] <sudden6> https://gist.github.com/sudden6/d4d8732d0fa9d398211934427df6e307
+[21:56:34] <sudden6> ^commands
+[21:57:02] <sudden6> origin is sudden6/qTox on GH and upstream is qTox/qTox
+[21:58:42] <zetok> >git rebase master
+[21:58:45] <zetok> probably this
+[21:59:27] <sudden6> ok, why? I thought this rebases the current branch on master?
+[21:59:34] <sudden6> which is what I wanted to do...
+[22:01:11] <qTox-syncbot> Diadlo: Zetok\0: https://github.com/qTox/qTox/pull/3774 updated. Can you test it?
+[22:01:51] <sudden6> hi Diadlo
+[22:02:01] <qTox-syncbot> Diadlo: Hi :)
+[22:02:26] <zetok> sudden6: actually, I'm not sure if that was it
+[22:02:37] <zetok> sudden6: you have some weird branch switching going on there
+[22:03:07] <zetok> and I have no idea what each of those branches contained
+[22:03:33] <qTox-syncbot> Zetok\0: Diadlo: yep, in a moment
+[22:05:04] *** Joins: sudd3n6 (~anonymous@ )
+[22:06:33] <sudden6> zetok: ok, thx for taking a look
+[22:06:45] <zetok> hmm
+[22:06:56] <zetok> sudden6: ok, got it
+[22:07:36] <zetok> sudden6: https://github.com/zetok/qTox/tree/3792-html-tr
+[22:07:40] <zetok> :P
+[22:08:16] <sudden6> why do you have that?^^
+[22:08:25] <zetok> https://github.com/qTox/qTox/tree/570ae766d849a17c9192be47690a6a3d297679ce there we go :3
+[22:08:49] <iphy> zetok: you can remove the SELF
+[22:08:54] <zetok> sudden6: fetched it earlier
+[22:08:58] <sudden6> well in the meantime I realized it's still on my laptop
+[22:09:03] <iphy> That was for a smart idea I gave up on
+[22:09:11] <sudden6> so I was just restoring it^^
+[22:09:31] <sudden6> thx anyway :)
+[22:09:51] <zetok> iphy: roger
+[22:11:15] <sudden6> do you think there's a way to make the rebase | wait for travis | merge --ff-only | push to master dance less time consuming?
+[22:11:36] <sudden6> because travis is taking 10-15 minutes to verify the PR after rebase
+[22:11:52] <sudden6> so merging own PRs is a lot slower than foreign..
+[22:12:03] <zetok> git push -f && git checkout master && git merge --ff-only && sleep 1h && git push qtox master
+[22:12:09] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[22:12:36] <sudden6> and nobody is allowed to merge things in this time span
+[22:12:43] <zetok> actually
+[22:12:52] <zetok> s/git push -f/git sync/
+[22:13:17] <zetok> you could put that in a loop until it would work
+[22:13:49] <zetok> so you wouldn't even have to care about checking whether someone pushed stuff in meanwhile
+[22:14:38] <sudden6> doesn't look like "The easy solution™" I was lookng for ^^
+[22:14:46] <zetok> would just work™ concurrently with your other branches as well
+[22:16:33] <sudden6> zetok: did you already push the i18n fix to master?
+[22:16:44] <zetok> nope
+[22:17:40] <sudden6> ah, so how do I do that?
+[22:17:55] <zetok> push to the branch, reopen PR?
+[22:18:22] <zetok> or make a new PR if reopening doesn't work
+[22:24:39] <sudden6> zetok: done
+[22:24:42] -qtox-git-spam- [qTox] sudden6 opened pull request #3794: fix(i18n): remove HTML from translations (master...remove_html2) https://git.io/vP8Fz
+[22:25:37] <qTox-syncbot> Zetok\0: Diadlo: commented
+[22:25:57] <qTox-syncbot> Diadlo: Zetok\0: Thanks :)
+[22:26:19] <qTox-syncbot> Zetok\0: np
+[22:26:51] <zetok> sudden6: https://github.com/qTox/qTox/pull/3784 ?
+[22:30:35] <sudden6> Diadlo: https://reviewable.io/reviews/qtox/qtox/3774 -> why is validator a pointer again?
+[22:31:08] <Diadlo> sudden6: Because `setValidator` required pointer :)
+[22:32:13] <sudden6> ok, was blind again :)
+[22:32:22] <Diadlo> But if we will send `&validator` it will be invalid after exit from scope
+[22:32:52] <sudden6> yep, I thought it'll create a memleak again, but you set the parent :)
+[22:33:18] <Diadlo> Exactly ;)
+[22:33:28] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:34:21] <sudden6> sometimes I wonder if I'm even qualified to review C++ code lol
+[22:34:40] <Diadlo> +1
+[22:35:04] <sudden6> zetok: could you LGTM https://github.com/qTox/qTox/pull/3794 again?
+[22:35:25] <zetok> Diadlo: ↑ ?
+[22:36:01] <sudden6> Diadlo: to be honest, I'm probably not, but qTox was in need of a reviewer and I had too much time :D
+[22:36:41] <Diadlo> What the difference with old PR?
+[22:36:48] <Diadlo> About #3794
+[22:36:51] <sudden6> Diadlo: hopefully nothing
+[22:36:58] <Diadlo> Lol
+[22:37:05] <sudden6> I just messed up while trying to rebase it...
+[22:37:21] <zetok> sudden6: aren't you missing an `arg()` there?
+[22:37:24] <sudden6> git must have sensed my tiredness :D
+[22:37:49] <zetok> oh wait
+[22:37:53] <sudden6> zetok: no
+[22:38:02] <sudden6> first arg() has two parameters :)
+[22:38:18] <zetok> yeah, just figured that out >.<
+[22:38:55] <Diadlo> We need more brackets to god of brackets!
+[22:39:13] <sudden6> zetok: are you sure you don't want to invest in the C++ business and start writing it's glorious code? :P
+[22:39:14] * zetok has a relevant pic
+[22:39:51] <zetok> sudden6: you mean rustcxx ;D
+[22:39:52] <zetok> https://github.com/google/rustcxx
+[22:40:53] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 248 seconds)
+[22:40:59] <sudden6> ugh, mixing two languages in the same file
+[22:41:13] <sudden6> that's an even worse idea than BASIC
+[22:41:22] <Diadlo> > * zetok has a relevant pic    <---- https://www.youtube.com/watch?v=HrbtcH5Wag4
+[22:41:25] <zetok> Diadlo: https://assets.toggl.com/images/toggl-how-to-save-the-princess-in-8-programming-languages.jpg ;D
+[22:43:48] <sudden6> the c# part is really accurate :DD
+[22:43:58] <Diadlo> zetok: Oh.. sorry, I think, that `has a relevant pic` was to sudden6 about C++ :)
+[22:44:15] <zetok> Diadlo: um, it wasn't
+[22:45:30] <sudden6> github should implement something like a merge queue
+[22:45:52] <sudden6> you push stuff there and it's merged after it passes travis
+[22:46:39] <zetok> merge_it branch & merge_it branch2 & merge_it branch3 &
+[22:46:49] <zetok> you can just emulate that locally
+[22:47:00] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vP8NF
+[22:47:00] -qtox-git-spam- qTox/master c8bde5b sudden6: fix(i18n): remove HTML from translations...
+[22:47:04] <zetok> although that wouldn't be a real queue
+[22:47:20] <zetok> unless you'd opt for the synchronous version
+[22:47:21] <sudden6> and it requires the reliability of my pc
+[22:47:39] <zetok> actually
+[22:47:49] <sudden6> which approaches zero as time progresses
+[22:48:05] <zetok> >.<
+[22:49:50] -qtox-git-spam- [qTox] sudden6 closed pull request #3788: fix(audio): keep the data pointed to by tmpDevName in scope (master...master) https://git.io/vPcwz
+[22:51:45] <sudden6> zetok Diadlo I'm done with rebasing and merging, you can do it for your PRs now :)
+[22:51:52] <zetok> k
+[22:52:00] *** Joins: Curlybear (~Curlybear@ )
+[22:52:46] <zetok> sudden6: https://github.com/qTox/qTox/pull/3784 :c
+[22:53:50] <sudden6> reviewable doesn't seem to like one char diffs^^
+[22:53:51] <Diadlo> Too many LGTM from s/w/W/ :D
+[22:53:57] <zetok> that's not it
+[22:54:07] <zetok> you just didn't review it
+[22:54:09] <Diadlo> *to
+[22:54:50] -qtox-git-spam- [qTox] sudden6 closed pull request #3729: docs(CONTRIBUTING): add section about include styles (master...include_style) https://git.io/viSNK
+[22:55:39] <zetok> sudden6: i.e. if you don't mark file as reviewed, reviewable doesn't "save" it in its DB
+[22:55:55] <sudden6> zetok: oooohh, that's what that is for ^^
+[22:56:02] <zetok> s/file/revision of file/
+[22:56:25] -qtox-git-spam- [qTox] sudden6 reopened pull request #3729: docs(CONTRIBUTING): add section about include styles (master...include_style) https://git.io/viSNK
+[22:56:42] <zetok> I mean, marking as reviewed is not the only thing, any action that does something with the revision would do
+[22:56:47] <zetok> e.g. making a comment on the revision
+[22:57:00] <sudden6> I see
+[23:05:40] *** Joins: in1t3r (~LordShiva@ )
+[23:06:00] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[23:11:50] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:13:59] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 268 seconds)
+[23:28:49] *** Joins: cisc (~cisc@ )
+[23:32:45] -qtox-git-spam- [qTox] Diadlo closed pull request #3774: Time format (master...timeFormat) https://git.io/vPmJM
+[23:35:39] <Diadlo> sudden6: Can you do requied changes in https://github.com/qTox/qTox/pull/3729 ?
+[23:36:22] <sudden6> Diadlo: will do when I next spend time on qTox :)
+[23:38:58] *** Joins: in1t3r (~LordShiva@ )
+[23:48:40] <Diadlo> sudden6: That's a bargain)
+[23:51:11] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:59:41] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
