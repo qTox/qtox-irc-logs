@@ -1,0 +1,164 @@
+[00:16:47] *** Joins: cisc (~cisc@ )
+[00:48:58] *** Joins: LittleVulpix (~Miranda@ )
+[00:54:44] *** Joins: cenysor (~cenysor@ )
+[00:58:53] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[01:08:56] *** Joins: f10 (~flo@ )
+[01:24:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[01:34:16] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[01:39:46] *** Joins: DaSpirit (~DaSpirit@ )
+[01:45:32] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[01:47:35] *** Joins: jjuran (~jjuran@ )
+[02:29:43] *** Joins: sockspls (~sockspls@ )
+[02:46:02] *** Joins: Neolex (~neolex@ )
+[02:47:07] *** Joins: miokiry (~Adium@ )
+[02:47:43] *** Parts: miokiry (~Adium@ ) ()
+[02:50:10] *** Joins: miokiry (~Adium@ )
+[03:23:01] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:27:04] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[03:43:14] *** Joins: Emcy (~MC@ )
+[04:11:31] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[05:47:03] *** Joins: miokiry (~Adium@ )
+[05:52:47] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[05:56:23] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[06:11:32] <Neolex> Hi !
+[06:20:23] <iphy> Hi
+[06:21:24] *** Joins: zero-ghost (~0@ )
+[06:24:29] *** Quits: linxon (~lin@ ) (Changing host)
+[06:24:29] *** Joins: linxon (~lin@ )
+[06:33:32] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[07:12:07] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 244 seconds)
+[07:12:21] *** Joins: rerumnovarum (~user-reru@ )
+[07:27:55] *** Joins: miokiry (~Adium@ )
+[07:34:08] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[07:46:07] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[07:48:05] *** Joins: miokiry (~Adium@ )
+[08:16:53] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[08:48:13] <Diadlo> zetok: If you do not mind, I will close https://github.com/qTox/qTox/pull/3731 today. The PR don't fix anything and seems, author don't plan change it
+[08:48:39] <zetok> Diadlo: ok
+[08:49:03] <Diadlo> zetok: And hello :)
+[08:49:08] <zetok> hai :)
+[08:51:30] -qtox-git-spam- [qTox] Diadlo closed pull request #3731: fix(settings): On change language title (#3708) (master...issue3708) https://git.io/vi9HX
+[09:18:40] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vP48a
+[09:18:40] -qtox-git-spam- qTox/master 4b7ab09 Zetok Zalbavar: chore(tools): update translation updater's commit message (s/w/W/)
+[09:35:44] *** Joins: miokiry (~Adium@ )
+[09:38:53] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[09:54:49] -qtox-git-spam- [qTox] zetok opened pull request #3797: Update translations from Weblate (master...tr) https://git.io/vP44F
+[10:02:34] *** Joins: f10 (~flo@ )
+[10:28:58] *** Joins: sudden6 (~anonymous@ )
+[10:47:02] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[10:48:46] *** Joins: abbat (~Anton@ )
+[11:11:16] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[11:11:34] *** Joins: rerumnovarum (~user-reru@ )
+[11:16:43] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 268 seconds)
+[11:17:02] *** Joins: rerumnovarum (~user-reru@ )
+[11:37:24] <zetok> someone review https://github.com/qTox/qTox/pull/3797 ?
+[12:07:24] *** Joins: miokiry (~Adium@ )
+[12:24:59] *** Joins: bashrc (~motters@ )
+[14:01:23] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[14:25:32] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[14:25:52] *** Joins: miokiry (~Adium@ )
+[14:28:33] *** Quits: e0f (~e0f@ ) (Changing host)
+[14:28:33] *** Joins: e0f (~e0f@ )
+[14:30:06] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[14:44:58] *** Joins: CGGB (~CGGB@ )
+[14:52:10] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[14:52:30] *** Joins: CGGB (~CGGB@ )
+[16:17:57] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 248 seconds)
+[16:18:10] *** Joins: rerumnovarum (~user-reru@ )
+[17:03:32] *** Joins: sudden6 (~anonymous@ )
+[17:03:44] *** Joins: abbat (~Anton@ )
+[17:11:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[17:44:48] *** linxon is now known as lin|off
+[17:46:12] *** lin|off is now known as linxon
+[18:03:20] *** linxon is now known as lin|off
+[19:05:53] *** lin|off is now known as linxon
+[19:23:34] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:28:11] *** Joins: cisc (~cisc@ )
+[20:36:56] *** Joins: Lyris (~Lyris@ )
+[20:52:46] *** Joins: sudden6 (~anonymous@ )
+[20:59:59] -qtox-git-spam- [qTox] Diadlo opened pull request #3798: fix(i18n): Remove HTML tags from translation (master...removeAnotherHTMLTag) https://git.io/vP4F3
+[21:03:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[21:04:01] *** Joins: sudden6 (~anonymous@ )
+[21:08:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[21:12:46] *** Joins: sudden6 (~anonymous@ )
+[21:20:13] *** Joins: sudd3n6 (~anonymous@ )
+[21:20:29] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[21:23:03] *** Quits: Lyris (~Lyris@ ) (Quit: Leaving.)
+[21:28:24] -qtox-git-spam- [qTox] zetok closed pull request #3797: Update translations from Weblate (master...tr) https://git.io/vP44F
+[21:47:16] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[21:47:31] *** Joins: rerumnovarum (~user-reru@ )
+[21:58:25] <sudd3n6> Diadlo: hi
+[21:58:29] <Diadlo> Hi
+[21:58:34] *** sudd3n6 is now known as sudden6
+[21:58:46] <sudden6> about https://github.com/qTox/qTox/pull/3755
+[21:58:55] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[21:59:11] <sudden6> I don't see any rule stating function doc should be separated from function
+[21:59:42] <Diadlo> > Don't put docs in .h files, if there is a corresponding .cpp file.
+[22:00:16] <sudden6> no, I don't mean that
+[22:01:19] <Diadlo> Ok. What you mean?
+[22:01:23] <sudden6> ah, wait
+[22:01:52] <sudden6> I didn't see that     inline static QString getSound(Sound s) { is declared and implemented in the .h file
+[22:02:02] <Diadlo> Yep)
+[22:02:27] <sudden6> have I overlooked any reason to put it there?
+[22:02:40] <Diadlo> It's inline
+[22:02:57] <Diadlo> By antis81 decision
+[22:03:10] <Diadlo> s/decision/example/
+[22:03:11] <sudden6> AFAIR inline functions can be in .cpp files? can't they?
+[22:03:35] <Diadlo> Only if they used in this .cpp file
+[22:03:58] <Diadlo> Otherwise it will provide error
+[22:03:58] <sudden6> is this different in c++ than c?
+[22:04:03] <Diadlo> IDK
+[22:04:34] <Diadlo> https://stackoverflow.com/questions/3992980/c-inline-member-function-in-cpp-file#3993003
+[22:06:11] <sudden6> hmm, seems it's really different in c++
+[22:06:22] <sudden6> or I didn't hit that case in c yet
+[22:06:40] <Diadlo> You can just try it)
+[22:08:00] <sudden6> on my way ;)
+[22:10:04] *** Quits: bashrc (~motters@ ) (Ping timeout: 260 seconds)
+[22:10:47] *** Joins: bashrc (~motters@ )
+[22:16:29] <sudden6> https://stackoverflow.com/questions/5057021/why-are-c-inline-functions-in-the-header
+[22:16:34] <sudden6> seems to answer it
+[22:16:56] <sudden6> and at the same time rises the question why we should even inline this function
+[22:17:56] <sudden6> I think this is basically a micro optimization with an unsure benefit
+[22:18:09] <Diadlo> For the same reason, as always?) little bit more performance
+[22:21:28] <Diadlo> I don't sure, that we have important reason to do it inline ¯\_(ツ)_/¯
+[22:23:03] <sudden6> yeah, the problem I see here is that blindly "optimizing" stuff can actually hinder the compilers work of optimizing the program
+[22:24:03] <Diadlo> AFAIK, inline can't hinder optimizing
+[22:24:16] <sudden6> in C it can
+[22:24:23] <Diadlo> How?
+[22:24:51] <sudden6> if you start to inline large functions this could fill up the cpu cache
+[22:25:02] <sudden6> this is an extreme example
+[22:25:06] <Diadlo> Ok
+[22:25:54] <sudden6> Basically the opinion is that without much experience/research/profiling the compiler is better on optimizing than a single human
+[22:26:59] <Diadlo> Better ask antis81 why he use `inline` here)
+[22:27:26] <sudden6> yeah, I won't atm
+[22:27:32] <sudden6> I'll leave it as it is
+[22:27:44] <sudden6> I just wanted to voice my opinion
+[22:32:35] *** Quits: abbat (~Anton@ ) (Ping timeout: 268 seconds)
+[22:32:55] <sudden6> hmm, this discussion inspired me to try and enable LTO for qTox
+[22:33:28] <Diadlo> What is LTO?
+[22:33:41] <sudden6> link time optimization
+[22:34:08] <sudden6> basically the compiler delays the optimization process until the linker stage and then optimizes the whole program
+[22:34:20] <sudden6> not only separate compilation units
+[22:35:07] <Diadlo> sudden6: Merge https://github.com/qTox/qTox/pull/3791 ?
+[22:35:36] <sudden6> Diadlo: yes, I think so
+[22:35:42] <Diadlo> Ok
+[22:44:18] *** Joins: abbat (~Anton@ )
+[22:47:58] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[22:51:21] -qtox-git-spam- [qTox] Diadlo closed pull request #3798: fix(i18n): Remove HTML tags from translation (master...removeAnotherHTMLTag) https://git.io/vP4F3
+[22:52:58] *** Joins: sudden6 (~anonymous@ )
+[23:06:21] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vP4pp
+[23:06:21] -qtox-git-spam- qTox/master 15181c4 Diadlo: fix(avform): Fixed empty value in audio and video lists
+[23:06:47] <Diadlo> sudden6: Can you fix https://github.com/qTox/qTox/pull/3729 ?)
+[23:08:57] <Diadlo> For me this PR seems almost ready to merge. And I'm don't want to delay with it :)
+[23:09:18] <sudden6> yeah, I'll work on it now
+[23:09:24] <sudden6> just got killed by OOM
+[23:09:25] <Diadlo> Thanks)
+[23:14:39] <Diadlo> Goodnight :)
+[23:15:16] *** Quits: abbat (~Anton@ ) (Ping timeout: 240 seconds)
+[23:16:07] <sudden6> Diadlo: done
+[23:16:09] <sudden6> goodnight
+[23:28:22] *** Joins: abbat (~Anton@ )
+[23:28:59] *** Joins: buglessdr (~buglessdr@ )
+[23:33:41] *** Quits: abbat (~Anton@ ) (Ping timeout: 248 seconds)
+[23:46:12] *** Joins: abbat (~Anton@ )
+[23:56:05] *** Quits: abbat (~Anton@ ) (Ping timeout: 248 seconds)
