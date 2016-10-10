@@ -1,0 +1,372 @@
+[00:03:52] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:07:22] *** Joins: abbat (~Anton@ )
+[00:42:18] *** Joins: miokiry (~Adium@ )
+[00:55:46] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[01:08:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[01:33:36] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[01:40:23] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[01:44:30] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[01:47:31] *** Joins: jjuran (~jjuran@ )
+[02:54:24] *** Joins: miokiry (~Adium@ )
+[02:58:53] *** Quits: miokiry (~Adium@ ) (Ping timeout: 244 seconds)
+[03:08:33] *** Joins: miokiry (~Adium@ )
+[03:09:39] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[03:14:08] *** Joins: Emcy_ (~MC@ )
+[03:16:32] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[03:28:02] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[03:31:16] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[03:31:46] *** Joins: miokiry (~Adium@ )
+[03:32:11] *** Joins: Emcy (~MC@ )
+[03:32:33] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[03:34:56] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[03:51:48] *** Joins: cisc (~cisc@ )
+[03:52:16] *** Joins: miokiry (~Adium@ )
+[03:53:35] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[03:59:49] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[04:07:37] *** Joins: Emcy_ (~MC@ )
+[04:07:43] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[04:07:43] *** Joins: Emcy_ (~MC@ )
+[04:09:24] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[04:33:44] *** Joins: cisc (~cisc@ )
+[04:38:16] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[04:47:12] *** Joins: Emcy (~MC@ )
+[04:49:59] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 268 seconds)
+[04:53:41] *** Joins: Emcy_ (~MC@ )
+[04:55:46] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[04:58:06] *** Joins: Emcy (~MC@ )
+[05:00:20] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[05:15:32] *** Joins: Emcy_ (~MC@ )
+[05:15:32] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[05:15:32] *** Joins: Emcy_ (~MC@ )
+[05:17:36] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[05:22:06] *** Joins: zero-ghost (~0@ )
+[05:24:12] *** Joins: Emcy (~MC@ )
+[05:24:12] *** Quits: Emcy (~MC@ ) (Changing host)
+[05:24:12] *** Joins: Emcy (~MC@ )
+[05:26:45] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[05:46:12] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[05:48:38] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[05:48:51] *** Joins: rerumnovarum (~user-reru@ )
+[05:52:12] *** Joins: Emcy_ (~MC@ )
+[05:54:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[05:56:22] *** Joins: Emcy (~MC@ )
+[05:58:12] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[06:20:12] *** Joins: Emcy_ (~MC@ )
+[06:20:12] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:20:12] *** Joins: Emcy_ (~MC@ )
+[06:23:24] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[06:38:26] *** Joins: reBrain (~quassel@ )
+[06:50:23] *** Joins: Emcy (~MC@ )
+[06:52:25] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[06:55:47] *** Joins: Emcy_ (~MC@ )
+[06:55:47] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:55:47] *** Joins: Emcy_ (~MC@ )
+[06:58:24] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[07:12:14] *** Joins: Emcy (~MC@ )
+[07:15:10] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 244 seconds)
+[07:45:19] *** Joins: Emcy_ (~MC@ )
+[07:45:19] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[07:45:19] *** Joins: Emcy_ (~MC@ )
+[07:48:14] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[07:50:24] *** Joins: Emcy (~MC@ )
+[07:50:24] *** Quits: Emcy (~MC@ ) (Changing host)
+[07:50:24] *** Joins: Emcy (~MC@ )
+[07:52:21] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[08:03:14] *** Joins: Emcy_ (~MC@ )
+[08:03:14] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:03:14] *** Joins: Emcy_ (~MC@ )
+[08:05:09] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[08:16:30] *** Joins: in1t3r (~LordShiva@ )
+[08:25:54] *** Joins: Emcy (~MC@ )
+[08:28:58] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 250 seconds)
+[08:34:31] *** Joins: Emcy_ (~MC@ )
+[08:34:31] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:34:31] *** Joins: Emcy_ (~MC@ )
+[08:38:09] *** Quits: Emcy (~MC@ ) (Ping timeout: 268 seconds)
+[08:54:42] *** Joins: f10 (~flo@ )
+[09:09:34] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[09:19:52] *** Joins: Emcy (~MC@ )
+[09:20:35] <Diadlo> Hello everyone o/
+[09:20:58] <zetok> \o
+[09:21:23] <Diadlo> zetok: What you think about -> https://github.com/qTox/qTox/pull/3750#issuecomment-252472321 ?
+[09:22:16] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[09:22:57] <zetok> yeah
+[09:24:02] <Diadlo> Tooltip or info-messagebox or what?
+[09:26:52] <zetok> if it requires restarting, it should be under `Connection settings`
+[09:30:20] <Diadlo> Not restart, but reconnect
+[09:34:06] <zetok> that's a toxcore restart
+[09:38:56] <Diadlo> Ok
+[09:40:54] *** Joins: Emcy_ (~MC@ )
+[09:40:54] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[09:40:54] *** Joins: Emcy_ (~MC@ )
+[09:43:03] <Diadlo> zetok: Shouldn't audio/ and img/ be part of res/ catalog?
+[09:43:56] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[09:43:59] <zetok> dunno
+[09:44:10] <Diadlo> Ok
+[09:57:16] *** Joins: Emcy (~MC@ )
+[09:57:16] *** Quits: Emcy (~MC@ ) (Changing host)
+[09:57:16] *** Joins: Emcy (~MC@ )
+[10:00:24] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 250 seconds)
+[11:08:37] <Diadlo> zetok: Do we have online qtox doxygen documenation?
+[11:08:44] <zetok> yep
+[11:08:49] <Diadlo> Where?
+[11:08:49] <zetok> website/doxygen
+[11:09:30] <zetok> it's linked to on the website
+[11:09:51] <Diadlo> It's hard to fond link :)
+[11:10:10] <zetok> (at the bottom)
+[11:10:18] <Diadlo> Yep. I found
+[11:11:03] <Diadlo> https://travis-ci.org/qTox/qTox/jobs/166165067 <- Does it normal, that in the end of log a lot of errors?
+[11:12:10] <zetok> nope
+[11:15:02] <Diadlo> I tried to build docs locally and have no errors
+[11:16:32] <zetok> well, I got the error
+[11:17:59] <Diadlo> Mhm... How?
+[11:18:05] <zetok> no graphviz
+[11:18:58] <Diadlo> What version of doxygen do you use?
+[11:19:08] <Diadlo> I'm using 1.8.12
+[11:19:19] <zetok> 1.18.11
+[11:20:27] <Diadlo> Seems, travis use 1.8.6-2
+[11:21:39] -qtox-git-spam- [qTox] zetok opened pull request #3799: chore(travis): make sure to install needed doxygen deps (master...chore-doxygen-graphviz) https://git.io/vPBn2
+[11:24:12] <Diadlo> zetok: Will travis apply config from PR if it changed in this PR?
+[11:24:22] <zetok> um?
+[11:24:40] <zetok> that's how travis works?
+[11:24:57] <zetok> it gets the config, and it runs it
+[11:25:23] <Diadlo> Your PR change travis config. Which config travis will use for you PR?
+[11:25:42] <Diadlo> new/old?
+[11:25:50] <zetok> HEAD
+[11:25:54] <Diadlo> Ok
+[11:27:20] <zetok> https://travis-ci.org/qTox/qTox/jobs/166181166 ← that fixes it :)
+[11:27:44] <Diadlo> I have seen) Perfect
+[11:27:56] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[11:34:29] -qtox-git-spam- [qTox] zetok closed pull request #3799: chore(travis): make sure to install needed doxygen deps (master...chore-doxygen-graphviz) https://git.io/vPBn2
+[12:00:59] *** Joins: f10 (~flo@ )
+[12:01:46] *** Joins: sudden6 (~anonymous@ )
+[12:17:58] <Diadlo> sudden6: ping?
+[12:18:08] <sudden6> Diadlo: pong :)
+[12:18:26] <Diadlo> Can you review https://github.com/qTox/qTox/pull/3755?
+[12:18:46] *** Joins: Neolex (~neolex@ )
+[12:19:41] <sudden6> mhm
+[12:19:50] <Neolex> hi !
+[12:19:55] <Diadlo> Hi)
+[12:20:19] <Diadlo> sudden6: To be sure, that I don't skip something
+[12:22:02] <Neolex> " port range by default is set to 0, 1024, should be 33445, 33545 " But in my case its 33445 and 33545 by default ?
+[12:22:34] <Neolex> ah no
+[12:22:36] <Neolex> sorry ^^
+[12:23:35] <Neolex> I set "value" to 33545 in the design editor but it's 0 by default ..
+[12:25:41] <sudden6> Diadlo: reviewd, just English fixes necessary
+[12:25:51] <Diadlo> sudden6: Thanks
+[12:26:54] <sudden6> Neolex: are you HascoetKevin from GH?
+[12:31:41] <Neolex> sudden6: yes
+[12:31:52] <sudden6> nice to meet you then :)
+[12:32:08] <Neolex> thanks nice to meet you too !
+[12:32:30] <Neolex> I have set "value" to a number but the default value doesnt change ... I don't know why :s
+[12:33:07] *** Joins: abbat (~Anton@ )
+[12:33:31] <sudden6> didn't look into it, but maybe the value is loaded from the settings?
+[12:33:58] <Neolex> ah 
+[12:34:03] <Neolex> maybe yes
+[12:35:36] <sudden6> Diadlo: all good to merge from my side
+[12:35:58] <Neolex> sudden6: you're right , thank you
+[12:36:11] <sudden6> np, was just a wild guess :D
+[12:43:46] <Neolex> where is the qtox .ini please ? on linux
+[12:44:02] <Diadlo> ~/.config/tox/qtox.ini 
+[12:44:41] <Neolex> ah i was looking for "qtox" not "tox"
+[12:44:44] <Neolex> thank you
+[12:45:49] <zetok> you should get some better file manager
+[12:46:18] <Neolex> who zetok?
+[12:46:23] <Diadlo> zetok: I use `cat <path>` + <Tab> as file manager :D
+[12:46:25] <zetok> you :)
+[12:47:32] <Neolex> so do I ^^
+[12:47:50] <zetok> then lrn2find
+[12:49:05] <zetok> Diadlo: can you bind "back/forward" mouse buttons to `pushd/popd` ?
+[12:50:40] <Diadlo> I don't understand, what `back/fwd` mouse button is? You talk about left/right buttons?
+[12:51:05] <zetok> nah
+[12:51:26] <zetok> back/forward, e.g. like in web browser
+[12:52:55] <Diadlo> IDK
+[12:53:01] <Diadlo> Can I?)
+[12:53:16] <zetok> probably
+[12:54:11] <Diadlo> Maybe I will try it later)
+[12:54:39] * sudden6 afk
+[12:56:29] <zetok> Diadlo: I was just wondering how you emulate that functionality :)
+[12:57:56] <Diadlo> Sometimes `cd -`. But frequently just write full path
+[12:58:02] <Diadlo> Or `cd ..`
+[12:58:37] <Diadlo> zetok: Hm.. I have a problem. Again :(
+[12:58:42] <zetok> hm?
+[12:58:45] <Diadlo> Now with `merge-pr`
+[12:59:15] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[12:59:32] <Diadlo> http://diadlo.dyndns.org/owncloud/s/td6HayBeoo1wXTp
+[13:00:10] <Diadlo> Is it normal, that second commit is unsigned?
+[13:00:36] <zetok> >This application requires JavaScript for correct operation
+[13:01:23] <Diadlo> diadlo.dyndns.org/owncloud/s/td6HayBeoo1wXTp/download
+[13:01:28] <Diadlo> And now?
+[13:02:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[13:02:25] <zetok> Diadlo: yep
+[13:02:52] <Diadlo> https://i.imgur.com/1iBTPHl.png
+[13:03:42] <zetok> https://github.com/qTox/qTox/blob/master/MAINTAINING.md#pull-requests :P
+[13:03:49] <zetok> yep, as in, that's ok
+[13:04:24] <zetok> >Commits that are about to be merged don't have to be signed, but merge-commit must be signed.
+[13:04:44] <Diadlo> Ok)
+[13:05:09] -qtox-git-spam- [qTox] Diadlo closed pull request #3755: fix(settings): Play test sound when user enables test sound (master...fix/testsounds) https://git.io/vPvPP
+[13:06:34] -qtox-git-spam- [qTox] Diadlo closed pull request #3756: feat(settings): Export and copy debug log (master...feat/debuglog) https://git.io/vPvhd
+[13:07:51] *** Joins: sudden6 (~anonymous@ )
+[13:09:28] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[13:44:49] *** Joins: sudden6 (~anonymous@ )
+[14:29:29] *** Joins: CGGB (~CGGB@ )
+[14:55:42] *** Joins: Emcy_ (~MC@ )
+[14:55:42] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[14:55:42] *** Joins: Emcy_ (~MC@ )
+[14:57:24] *** Quits: Emcy (~MC@ ) (Ping timeout: 268 seconds)
+[15:14:11] *** Joins: reBrain (~quassel@ )
+[15:17:10] *** Joins: f10_ (~flo@ )
+[15:17:36] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[15:36:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[15:40:00] *** Joins: sudden6 (~anonymous@ )
+[15:42:42] *** Quits: nightfuri (nightfury@ ) (Remote host closed the connection)
+[15:49:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[16:21:06] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:27:33] *** Joins: f10_ (~flo@ )
+[16:46:05] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[16:57:07] <Diadlo> sudden6: Intresting. Now I think, that inline `Audio::getSound` can be replaced on few const static members of Audio :)
+[16:57:33] <sudden6> Diadlo: I can't parse that^^
+[16:57:35] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[16:58:01] *** Joins: f10_ (~flo@ )
+[16:59:00] <Diadlo> "Play test sound when user enables test sound" PR add method `Audion::getSound`
+[16:59:53] <Diadlo> Which returns path to the audio file
+[17:00:21] <sudden6> yes
+[17:00:31] <Diadlo> This method can be replaced by few constants
+[17:00:46] <sudden6> ah :)
+[17:00:58] <Diadlo> Audio::TEST_SOUND, Audion::NEW_MESSAGE_SOUND
+[17:01:01] <Diadlo> etc.
+[17:01:11] <sudden6> well I think the function is a good approach
+[17:01:19] <Diadlo> Why?
+[17:01:32] <sudden6> because it keeps the possibility of "audio themes" open
+[17:02:02] <Diadlo> Yes. You are right
+[17:02:15] <sudden6> and it also keeps things very modulat
+[17:02:22] <sudden6> *modular
+[17:02:27] <zetok> themes would be nice, but it's way more important to have good notifications by default
+[17:02:50] <sudden6> zetok: yes
+[17:03:21] <Diadlo> zetok: And may bugs :)
+[17:03:27] <Diadlo> *many
+[17:03:52] <sudden6> Diadlo: are you still pursuing the move to toktok?
+[17:04:50] <Diadlo> Migration is frozen until toktok doesn't make 0.1 version
+[17:05:01] <sudden6> ok
+[17:13:28] *** GGMethos_ is now known as GGMethos
+[17:24:32] *** Joins: sudd3n6 (~anonymous@ )
+[17:25:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[17:25:44] *** sudd3n6 is now known as sudden6
+[17:29:02] <iphy> Diadlo: can you get some people to test it?
+[17:29:11] <iphy> Diadlo: 0.1 is basically ready
+[17:29:23] <iphy> I don't think we can make stateless AV callbacks into 0.1
+[17:31:25] <Diadlo> Everyone I can get to test is here :)
+[17:32:11] <Diadlo> zetok: Can I use `E-needtsest` label to this PR?
+[17:32:18] <Diadlo> *needstest
+[17:32:31] <zetok> Diadlo: feel free to do so
+[17:34:06] <zetok> Diadlo: that's what it is for :)
+[17:34:19] <Diadlo> :)
+[17:41:48] *** Joins: Neolex (~neolex@ )
+[17:42:13] <Neolex> Hi
+[17:43:15] <Neolex> Diadlo: for my PR , i should move port range label out of the groupbox or the spinboxs too ?
+[17:43:25] <Diadlo> Both
+[17:43:56] <Diadlo> For me border looks strange
+[17:44:19] <Neolex> ok
+[17:49:08] <Neolex> Diadlo: I can move them in a layout , no ?
+[17:49:41] <Diadlo> Yes
+[17:49:51] <Diadlo> verticalLayout_5
+[17:49:56] <Diadlo> IIRC
+[17:51:56] <Neolex> Diadlo: https://imgur.com/HTY1ckA like this ?
+[17:52:15] <Neolex> or in a horizontal layout ?
+[17:52:45] <Diadlo> Uhm... No. Why you move all elements outside of Connection settings?
+[17:53:26] <Diadlo> Oh... Sorry
+[17:53:45] <Diadlo> Seems, it my mistake
+[17:54:11] <Neolex> ok , so in a horizontal layout ? :)
+[17:54:13] <Neolex> no problem
+[17:56:16] <Neolex> euh 
+[17:56:22] <Neolex> how can we modify the xml code ?
+[17:56:33] <Neolex> i hate the GUI of QtCreator
+[17:56:41] <Neolex> in QtCreator *
+[17:57:01] <Neolex> ok i found , sorry ^^
+[18:02:48] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:04:23] *** Joins: cisc (~cisc@ )
+[18:04:47] <Diadlo> Neolex: blob:https://imgur.com/b78ac73b-a917-4f1c-8df3-0f7cd352d716
+[18:04:55] <Diadlo> Sorry
+[18:04:57] <Diadlo> Neolex: https://i.imgur.com/fsLNbRi.png
+[18:05:07] <Diadlo> Can you remove green part and red border?
+[18:19:31] <Emcy_> why not randomise the port
+[18:20:13] <Emcy_> i expect the packet structure to be obfuscated in future also
+[18:20:18] <Emcy_> make the sods work to block it
+[18:20:26] <Diadlo> Emcy_: User can randomise it manually :)
+[18:20:46] <Emcy_> i mean randomise it regularly
+[18:20:56] <Diadlo> It was a joke :|
+[18:20:57] <Emcy_> bt does this
+[18:20:59] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[18:21:18] <Diadlo> What is `bt`?
+[18:22:06] <Diadlo> And I don't think, that obfuscation of package structure is good idea
+[18:22:07] <Emcy_> torrent
+[18:22:33] <Emcy_> why not? tox should become at least as good at holepunching as skype was
+[18:22:45] <Emcy_> enterprise used to complain a lot that skype was difficult to block
+[18:23:02] <Emcy_> even used to obfuscate as port 80 and 443
+[18:23:44] <Diadlo> IMO, port changing is not obfuscation :)
+[18:24:02] <Emcy_> its the most basic form
+[18:24:58] <Diadlo> Where I can found information about how torrent obfuscate packages?
+[18:25:31] <Diadlo> Maybe I have wrong understanding of `package obfuscation`
+[18:25:43] <Emcy_> they did a few things
+[18:26:01] <Emcy_> changed from 6881 to randomised port each start for each client
+[18:26:24] <Emcy_> implemented opportunistic payload encryption
+[18:26:37] <Emcy_> eventually even phased out tcp pretty much completely
+[18:27:07] <Emcy_> they got serious about it after the sandvine scandal you may have heard of it
+[18:27:30] <Emcy_> intermediaries WILL try and fuck with protocols that harm their interests
+[18:27:49] <zetok> …
+[18:27:55] <zetok> Emcy_: pls
+[18:28:00] <Emcy_> i think even skype was being blocked on the carrier level with some mobile providers a few years ago because they were shit scared of losing sms revenue and such
+[18:28:33] <zetok> ><Emcy_> its the most basic form
+[18:28:35] <zetok> it's not
+[18:28:56] <zetok> Emcy_: also, you should read the spec
+[18:29:25] <Emcy_> how is randomising the port not a light obfuscation
+[18:30:55] <zetok> how it is?
+[18:31:47] <Emcy_> because youd have to fingerprint the traffic somehow to find where tox is rather than just going to 33445
+[18:32:54] <zetok> err
+[18:33:09] <zetok> one should assume that traffic analysis is already happening
+[18:33:33] *** Quits: cenysor (~cenysor@ ) (Quit: Leaving)
+[18:33:57] <Emcy_> no doubt
+[18:34:06] *** Joins: cenysor (~cenysor@ )
+[18:34:08] <zetok> so "it would help if there was no traffic analysis going on" is not a valid argument
+[18:34:42] <Emcy_> still makes it marginally more expensive to perform
+[18:34:58] <zetok> :)
+[18:35:25] <Emcy_> thats what tox is about. increasing the cost of surveillance
+[18:36:05] <zetok> Emcy_: would you mind making an issue for it?
+[18:36:28] <Emcy_> seems like something for toxcore it hink
+[18:36:34] <zetok> nope
+[18:36:42] <zetok> toxcore already provides what is needed
+[18:36:50] <Emcy_> ok
+[18:36:55] <Emcy_> youre right
+[18:37:57] <zetok> option to randomize port range start on qTox start
+[18:38:04] <zetok> (on by default)
+[18:39:27] <Emcy_> what does tox use more than 1 port for
+[18:39:42] <zetok> to Just Work™
+[18:39:52] <Emcy_> eh
+[18:40:17] <Emcy_> i hope it doesnt seperate signalling and data ports. every protocol that does that is a nightmare
+[18:40:30] <zetok> err
+[18:40:42] <zetok> Just Work™ is Just Works™
+[18:41:01] <zetok> toxcore tries to bind to port, if it's already in use, it tries next one from range
+[18:41:26] <Emcy_> i had some fucking shit last week where the nat of the hotspot i was using was too stupid to pipe thru the data port for my sip phone, so i had no sound on incoming calls. so annoying
+[18:41:42] <Emcy_> ok right ok. thats fine
+[18:42:06] <Emcy_> NAT fucks up everything as usual
+[18:42:22] <zetok> investing in ipv6 is not an option?
+[18:43:30] <Emcy_> i was out of town and it was rando hotel wifi
+[18:43:43] <zetok> I see
+[18:43:43] <Emcy_> at least it was free
+[18:43:54] <Emcy_> if i was not a shlub id just get a vpn
+[18:44:32] <Emcy_> ftp is a pain in the ass for the same reason
+[18:59:29] *** Joins: abbat (~Anton@ )
+[19:12:16] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[19:21:34] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[19:50:07] *** Quits: buglessdr (~buglessdr@ ) (Read error: Connection reset by peer)
+[19:59:13] *** Joins: f10_ (~flo@ )
+[20:13:04] *** Joins: onyxrisc (~RiscOS@ )
+[21:46:15] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 268 seconds)
+[21:46:31] *** Joins: rerumnovarum (~user-reru@ )
+[21:49:21] *** Joins: athan (~athan@ )
+[22:28:01] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:29:45] *** Joins: f10_ (~flo@ )
+[22:31:31] *** Joins: sudd3n6 (~anonymous@ )
+[22:59:58] *** Quits: sudd3n6 (~anonymous@ ) (Read error: Connection reset by peer)
+[23:00:03] *** Joins: sudden6 (~anonymous@ )
+[23:55:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
