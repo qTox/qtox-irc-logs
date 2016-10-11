@@ -1,0 +1,150 @@
+[00:08:54] *** Joins: Neolex (~neolex@ )
+[00:08:56] *** Parts: Neolex (~neolex@ ) ()
+[00:20:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[01:18:31] *** Joins: Neolex (~neolex@ )
+[01:20:26] *** Joins: miokiry (~Adium@ )
+[01:26:41] *** Quits: bkidwell- (~bkidwell@ ) (Quit: ZNC - http://znc.in)
+[01:26:57] *** Joins: bkidwell (~bkidwell@ )
+[01:32:32] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[01:35:24] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 256 seconds)
+[01:36:35] *** Joins: miokiry (~Adium@ )
+[01:37:01] *** Joins: Curlybear (~Curlybear@ )
+[01:42:31] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[01:45:51] *** Joins: jjuran_ (~jjuran@ )
+[01:45:56] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 250 seconds)
+[01:45:57] *** jjuran_ is now known as jjuran
+[02:15:32] *** Quits: athan (~athan@ ) (Quit: leaving)
+[02:29:55] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 244 seconds)
+[02:30:01] *** Quits: abbat (~Anton@ ) (Ping timeout: 260 seconds)
+[02:30:29] *** Joins: abbat (~Anton@ )
+[02:31:48] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[02:39:31] *** Joins: bennabiy (~bennabiy@ )
+[02:58:52] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[03:06:51] *** Joins: zero-ghost (~0@ )
+[03:21:48] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[03:54:05] *** Joins: miokiry (~Adium@ )
+[04:04:27] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[04:20:27] *** Joins: phd21 (2fc74c49@ )
+[04:21:28] <phd21> Hi Everyone, what settings do I use for an IRC client like Konversation for this qtox chat?
+[04:22:47] <nurupo> just connect to freenode irc network and join #qtox channel
+[04:24:30] <nurupo> server: chat.freenode.net, port: 7000, enable ssl
+[04:25:56] <nurupo> just note that the ip/hostname you connect from will be visible to everyone, and you connect from tor without creating an account on freenode first, which requires connecting without tor (but you don't have to join any channel for account creation)
+[04:26:07] *** Joins: user69 (~user69@ )
+[04:27:12] <phd21> nurupo: thank you, didn't have "chat.freenode.net", just "freenode.net" and it did not work, works now. I'm user69 thru that
+[04:27:21] <nurupo> *and you can't connect from tor without
+[04:27:41] <phd21> nurupo: without what?
+[04:27:54] <nurupo> i'm correcting my previous message
+[04:28:40] <phd21> Did nbot know about port 7000 either
+[04:31:44] <phd21> as far as I know, I'm not using the "Tor" network. Why port 7000?
+[04:35:04] <phd21> The reason for being on the IRC is that I am testing Linux Mint 18, and I copied my qTox folder to it, but when I start it , it states "could not open chat logs, they will be disabled"? How to correct, please
+[04:37:55] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[04:38:46] *** Joins: user69 (~user69@ )
+[04:46:19] <user69> The reason for being on the IRC is that I am testing Linux Mint 18, and I copied my qTox folder to it, but when I start it , it states "could not open chat logs, they will be disabled"? How to correct, please
+[04:47:08] *** Quits: phd21 (2fc74c49@ ) (Quit: Page closed)
+[04:56:13] <user69> nurupo: The reason for being on the IRC is that I am testing Linux Mint 18, and I copied my qTox folder to it, but when I start it , it states "could not open chat logs, they will be disabled"? How to correct, please
+[04:59:23] <user69> nurupo: You mentioned using the "Tor" network, so I went to freenode's website, they say to use "freenodeok2gncmy.onion", will that work by itself, or do I have to setup something else Tor related ?
+[05:03:36] *** Joins: Thorm (~Thor@ )
+[05:03:44] <nurupo> sorry, don't know how to fix it
+[05:04:37] <nurupo> you need a Tor router software to be able to connect to .onion
+[05:07:20] <user69> nurupo: Thanks, I was wondering if I had to setup some other Tor stuff for that to work.
+[05:10:51] *** Joins: athan (~athan@ )
+[05:31:19] *** Quits: Thorm (~Thor@ ) (Quit: Leaving)
+[05:37:36] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[06:11:02] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[07:53:32] *** Joins: shiva (~LordShiva@ )
+[07:56:00] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[08:23:26] *** Joins: f10_ (~flo@ )
+[08:27:45] <zetok> right, a FAQ
+[08:31:10] *** Joins: miokiry (~Adium@ )
+[08:36:59] <oranges> do a FUQ
+[08:37:03] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[08:37:03] <oranges> frequently unanswered questions
+[08:50:54] <zetok> https://github.com/qTox/qTox/wiki/FAQ there we go :3
+[08:58:39] *** ChanServ sets mode: +o zetok
+[08:59:09] *** zetok changes topic to 'qTox support channel | qTox User Party Hub | Please consider waiting some time for an answer, not everyone is always online ;) | Homepage: https://qtox.github.io/ | Logs: https://github.com/qTox/qtox-irc-logs | Blog: https://qtox.github.io/blog/ | FAQ: https://github.com/qTox/qTox/wiki/FAQ | Source: https://github.com/qTox/qTox | Groupchat: qgroup@toxme.io'
+[08:59:16] *** zetok sets mode: -o zetok
+[09:09:36] *** Quits: onyxrisc (~RiscOS@ ) (Ping timeout: 240 seconds)
+[09:11:09] *** Joins: onyxrisc (~RiscOS@ )
+[09:53:37] *** Joins: dan-- (~d@ )
+[09:53:37] *** Quits: dan-- (~d@ ) (Changing host)
+[09:53:37] *** Joins: dan-- (~d@ )
+[09:54:30] *** Joins: BHR27 (~Bheru27@ )
+[09:54:43] *** Quits: bennabiy (~bennabiy@ ) (*.net *.split)
+[09:54:44] *** Quits: Bheru27 (~Bheru27@ ) (*.net *.split)
+[09:54:45] *** Quits: dan- (~d@ ) (*.net *.split)
+[09:55:37] *** dan-- is now known as dan-
+[09:59:23] *** Joins: abbat (~abbat@ )
+[10:02:02] *** Joins: bennabiy (~bennabiy@ )
+[12:30:03] *** Joins: sudden6 (~anonymous@ )
+[13:15:22] -qtox-git-spam- [qTox] zetok opened pull request #3802: refactor: make bootstrap-osx.sh verbose, flexible and fail on error (master...refactor-osx-bootstrap) https://git.io/vPRaC
+[13:16:16] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 240 seconds)
+[13:29:37] *** Joins: shiva (~LordShiva@ )
+[13:31:17] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[13:37:02] *** Joins: arza (arza@ )
+[14:33:42] *** Joins: f10_ (~flo@ )
+[15:24:39] *** Quits: onyxrisc (~RiscOS@ ) (Quit: Leaving)
+[15:52:51] *** Joins: bashrc (~motters@ )
+[16:01:03] *** Joins: Neolex (~neolex@ )
+[16:01:05] *** Parts: Neolex (~neolex@ ) ()
+[16:14:45] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[16:15:09] *** Joins: reBrain (~quassel@ )
+[16:16:57] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[16:17:23] *** Joins: abbat (~abbat@ )
+[16:18:03] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:31:25] -qtox-git-spam- [qTox] zetok opened pull request #3803: Update translations from Weblate (master...tr) https://git.io/vPRxR
+[17:19:57] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[17:23:59] *** Joins: abbat (~abbat@ )
+[17:43:25] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[17:44:37] *** Joins: f10_ (~flo@ )
+[18:01:56] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[18:26:10] *** Joins: Emcy (~MC@ )
+[18:26:51] *** Quits: Emcy (~MC@ ) (Client Quit)
+[18:27:14] *** Joins: Emcy (~MC@ )
+[18:27:14] *** Quits: Emcy (~MC@ ) (Changing host)
+[18:27:14] *** Joins: Emcy (~MC@ )
+[18:32:00] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[18:44:45] *** Joins: sudden6 (~anonymous@ )
+[19:02:20] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[19:30:25] -qtox-git-spam- [qTox] zetok closed pull request #3803: Update translations from Weblate (master...tr) https://git.io/vPRxR
+[20:31:36] *** Quits: bashrc (~motters@ ) (Ping timeout: 240 seconds)
+[20:39:52] *** Joins: bashrc (~motters@ )
+[20:52:20] *** Joins: dfgsrty (68eea972@ )
+[20:52:58] <dfgsrty> is it possible to increase the font size in the text input window in qtox?
+[21:15:34] <zetok> maybe
+[21:16:16] <zetok> you'd want to set the DPI var for Qt
+[21:16:48] <zetok> (assuming that you have Qt version that supports that)
+[21:17:10] <zetok> aside from that, no, it's not yet possible
+[21:17:36] <dfgsrty> I run the windows version
+[21:17:46] <dfgsrty> so not sure which qt is there and whether I can modify the vars
+[21:17:53] <zetok> ah
+[21:18:04] <zetok> no idea how to set vars under windows
+[21:18:41] <zetok> IIRC you probably could do that in .lnk
+[21:18:56] <zetok> (the shortcut to the program)
+[21:19:07] <dfgsrty> I'll investigate, thanks
+[21:19:41] <dfgsrty> it's good that the normal text size can be changed within qtox - it's just the text input area that needs this functionality too
+[21:21:59] <dfgsrty> qtox on windows is using QT 5.5.1 :(
+[21:22:12] <dfgsrty> that one is not high DPI aware
+[21:22:51] <zetok> https://github.com/qTox/qTox/issues/2280
+[21:22:56] <zetok> oh :/
+[21:23:19] <zetok> IIRC next release will be using 5.6
+[21:28:24] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[21:29:54] *** Joins: rerumnovarum (~user-reru@ )
+[21:30:28] <zetok> hmm
+[21:33:55] -qtox-git-spam- [qTox] zetok opened pull request #3806: feat: bump font size from undersized (master...feat-font-size) https://git.io/vP0Pz
+[21:34:01] <zetok> ↑ also in the next release
+[21:34:29] <dfgsrty> should I know better than to ask for an ETA? :)
+[21:34:38] <zetok> :|
+[21:35:04] <zetok> https://github.com/qTox/qTox/milestone/4 ← no ETA yet
+[21:38:00] <zetok> I've been wondering though whether those goals shouldn't be changed :s
+[21:44:32] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[21:46:19] *** Joins: rerumnovarum (~user-reru@ )
+[21:48:55] <dfgsrty> well, good luck, qtox is awesome. I use qtox-to-qtox for text & voice and all is good.
+[21:49:02] <dfgsrty> I don't use file transfer or video.
+[21:49:12] <zetok> great to hear that :)
+[21:49:22] <dfgsrty> having big text size is important to me though, but I can make do in the meantime
+[21:52:13] *** Quits: dfgsrty (68eea972@ ) (Quit: Page closed)
+[22:14:03] *** Joins: athan (~athan@ )
+[22:33:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[23:05:13] *** Joins: sudden6 (~anonymous@ )
+[23:37:08] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[23:59:31] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
