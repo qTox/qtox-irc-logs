@@ -1,0 +1,90 @@
+[00:45:18] -qtox-git-spam- [qTox] kehugter opened pull request #3807: feat(translation): add update language Spanish (master...feat/spanish-translation) https://git.io/vPEJh
+[00:56:25] <Emcy> how far ahead of 1.5.1 rld is master
+[01:22:49] *** Joins: phd21 (~user69@ )
+[01:24:50] *** Joins: user69 (~user69@ )
+[01:28:05] <user69> Hi Everyone, Testing Linux Mint 18 KDE, copied my "tox" folder, get error: Cannot open chat logs, they will be disabled? How  To Fix?
+[01:54:17] -qtox-git-spam- [qTox] AliceGrey opened pull request #3808: fix(settings): Change test sound button to checkbox (master...fix/testsoundbutton) https://git.io/vPEqI
+[02:39:07] *** Joins: Neolex (~neolex@ )
+[02:46:39] *** Quits: mitfree (~mit@ ) (Ping timeout: 258 seconds)
+[04:24:57] *** Quits: athan (~athan@ ) (Quit: leaving)
+[05:23:43] *** Quits: arza (arza@ ) (*.net *.split)
+[05:23:51] *** Joins: arza (arza@ )
+[05:39:20] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[05:41:09] *** Joins: rerumnovarum (~user-reru@ )
+[06:49:34] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[06:50:18] *** Joins: CGGB (~CGGB@ )
+[07:18:44] <zetok> Emcy: `git describe`
+[07:21:00] *** Quits: phd21 (~user69@ ) (Quit: Konversation terminated!)
+[07:21:00] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[07:38:44] <zetok> Diadlo: hello, are you merging #3807 ?
+[07:42:39] <zetok> k, going to merge it then
+[07:45:17] <Diadlo> zetok: Thanks
+[07:45:27] <zetok> np
+[07:45:28] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vPEEy
+[07:45:28] -qtox-git-spam- qTox/master a7c46ff kehugter: feat(translation): add update language Spanish
+[07:45:28] -qtox-git-spam- qTox/master 9dfdd4e Zetok Zalbavar: Merge pull request #3807...
+[07:47:28] <Diadlo> zetok: Can you review https://github.com/qTox/qTox/pull/3729 ?
+[07:48:05] <zetok> >This branch has conflicts that must be resolved
+[07:48:26] <Diadlo> Oh..
+[07:48:53] <zetok> and the part I've commented about is still missing AFAICS
+[09:39:27] *** Joins: bashrc (~motters@ )
+[09:41:24] *** Quits: bkidwell (~bkidwell@ ) (*.net *.split)
+[09:41:25] *** Quits: tobiasBora (~tobiasBor@ ) (*.net *.split)
+[09:41:25] *** Quits: worfox (~worfox@ ) (*.net *.split)
+[09:41:25] *** Quits: Darky` (~Darky@ ) (*.net *.split)
+[09:44:01] *** Joins: tobiasBora (~tobiasBor@ )
+[09:49:48] *** Joins: bkidwell (~bkidwell@ )
+[09:49:48] *** Joins: worfox (~worfox@ )
+[09:49:48] *** Joins: Darky` (~Darky@ )
+[10:16:44] *** shiva is now known as in1t3r
+[11:28:09] *** Joins: sudden6 (~anonymous@ )
+[11:36:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[11:51:51] *** Joins: sudden6 (~anonymous@ )
+[12:32:26] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[12:32:39] *** Joins: rerumnovarum (~user-reru@ )
+[12:58:49] *** Darky` is now known as Darky
+[14:52:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:10:32] *** Quits: tobiasBora (~tobiasBor@ ) (Ping timeout: 260 seconds)
+[15:20:52] *** Joins: tobiasBora (~tobiasBor@ )
+[15:53:41] *** Joins: bashrc_ (~motters@ )
+[15:55:51] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[15:58:17] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 268 seconds)
+[16:02:54] *** Joins: LittleVulpix (~Miranda@ )
+[16:26:37] *** Joins: mitfree (~mit@ )
+[16:50:10] <Neolex> An unexpected database error occurred. Please try again later.
+[16:50:11] <Neolex> 0
+[16:50:22] <Neolex> oups sorry wrong chan
+[17:04:05] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[17:29:02] *** Joins: cisc (~cisc@ )
+[17:33:55] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:39:49] *** Joins: LittleVulpix (~Miranda@ )
+[17:49:00] -qtox-git-spam- [qTox] zetok opened pull request #3810: docs(osx): remove obsolete info about osx updates (master...docs-osx-obsolete-upd) https://git.io/vPuy8
+[17:53:01] <zetok> anyone feeling like they could review ↑ ?
+[17:56:40] *** bashrc_ is now known as bashrc
+[18:05:16] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[18:07:12] *** Joins: rerumnovarum (~user-reru@ )
+[18:47:49] *** Quits: bashrc (~motters@ ) (Ping timeout: 260 seconds)
+[18:49:26] *** Joins: bashrc (~motters@ )
+[19:35:12] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[19:47:31] *** Joins: bashrc (~motters@ )
+[20:19:37] *** Joins: reBrain (~quassel@ )
+[20:22:41] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[20:40:34] *** Joins: abbat (~Anton@ )
+[20:45:47] *** Joins: Lord_Vlad (~Vlad@ )
+[20:46:53] <Emcy> doesnt the windows builds of qtox build from master
+[20:47:11] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[20:47:18] <Emcy> isnt there a way to get qtox nightlies anymore
+[20:53:28] <Se7en> Emcy: as I know it qTox has a repo hosted by OpenSUSE 
+[20:53:34] <Se7en> It hosts debs and other things
+[20:53:39] <Se7en> It may contain nightlies
+[20:53:57] <Se7en> $ cat /etc/apt/sources.list.d/qtox.list
+[20:53:58] <Se7en> deb http://download.opensuse.org/repositories/home:/antonbatenev:/tox/xUbuntu_14.04/ /
+[20:54:49] <zetok> Emcy: https://github.com/qTox/qTox/issues/3801
+[20:57:45] <Emcy> they stuck with tox.chat for windows builds
+[21:43:56] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 240 seconds)
+[21:45:54] *** Joins: rerumnovarum (~user-reru@ )
+[22:07:36] *** Quits: rerumnovarum (~user-reru@ ) (Quit: leaving)
+[22:08:06] *** Joins: rerumnovarum (~user-reru@ )
+[22:20:29] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[22:53:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:29:15] *** Joins: cisc (~cisc@ )
