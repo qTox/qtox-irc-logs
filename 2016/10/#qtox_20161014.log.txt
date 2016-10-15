@@ -1,0 +1,208 @@
+[00:36:36] *** Joins: jjuran (~jjuran@ )
+[01:11:55] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[01:36:42] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 250 seconds)
+[01:38:13] *** Joins: nurupo (~nurupo.ga@ )
+[01:42:41] *** Joins: smaragdus (~omoo@ )
+[01:55:26] *** Joins: miokiry (~Adium@ )
+[02:23:25] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[02:28:56] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[02:30:07] *** Joins: miokiry (~Adium@ )
+[02:45:44] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[02:47:55] *** Joins: miokiry (~Adium@ )
+[02:58:35] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:32:46] *** Joins: jjuran (~jjuran@ )
+[03:48:41] *** Joins: miokiry1 (~Adium@ )
+[03:48:41] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[04:11:11] *** Quits: miokiry1 (~Adium@ ) (Quit: Leaving.)
+[04:14:46] *** Joins: miokiry (~Adium@ )
+[04:49:54] *** Joins: miokiry1 (~Adium@ )
+[04:49:54] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[05:44:40] *** Quits: miokiry1 (~Adium@ ) (Quit: Leaving.)
+[05:48:28] *** Parts: zlg (zlg@ ) ("WeeChat 1.6")
+[05:49:42] *** Joins: miokiry (~Adium@ )
+[05:52:25] *** Joins: miokiry1 (~Adium@ )
+[05:52:26] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[05:57:19] *** Quits: miokiry1 (~Adium@ ) (Quit: Leaving.)
+[06:54:05] *** Joins: miokiry (~Adium@ )
+[07:13:48] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[07:16:32] *** Joins: miokiry (~Adium@ )
+[07:17:58] *** Joins: miokiry1 (~Adium@ )
+[07:18:18] *** Quits: miokiry1 (~Adium@ ) (Read error: Connection reset by peer)
+[07:18:19] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[07:18:24] *** Joins: miokiry2 (~Adium@ )
+[07:26:04] *** Quits: miokiry2 (~Adium@ ) (Quit: Leaving.)
+[08:09:22] *** Joins: miokiry (~Adium@ )
+[08:10:14] *** Joins: miokiry1 (~Adium@ )
+[08:10:15] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[08:24:56] *** Joins: miokiry (~Adium@ )
+[08:24:57] *** Quits: miokiry1 (~Adium@ ) (Read error: Connection reset by peer)
+[08:25:26] *** Joins: miokiry1 (~Adium@ )
+[08:25:26] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[08:27:33] *** Quits: miokiry1 (~Adium@ ) (Read error: Connection reset by peer)
+[09:26:47] *** oranges is now known as BoneZone
+[09:48:25] *** Joins: abbat (~abbat@ )
+[10:06:29] *** Joins: merNAZI (~laietaniu@ )
+[10:06:41] <merNAZI> Hey, I did a test with udp
+[10:06:48] *** merNAZI is now known as merdeepcore
+[10:06:58] <merdeepcore> it crashes 6 out of 10 routers
+[10:07:07] <merdeepcore> is this submitted somewhere ?
+[10:42:18] <BoneZone> can we file it under bugs of the universe "routers are crap"
+[10:46:01] <zetok> merdeepcore: specific router vendors, or generally?
+[10:49:02] <BoneZone> a lot of crappy consumer routers try to track each udp session as a new tcp one and then run out of state table space
+[10:49:05] <BoneZone> and fall over
+[10:49:18] <zetok> um
+[10:49:26] <zetok> https://github.com/qTox/qTox/wiki/FAQ#why-is-qtox-killing-my-internet-connection
+[10:49:52] <BoneZone> nice
+[10:49:58] <BoneZone> you should name it hte BoneZone effect
+[10:52:40] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[11:01:24] *** Joins: abbat (~abbat@ )
+[11:21:11] <merdeepcore> zetok: random routers
+[11:21:15] <merdeepcore> one is tplink
+[11:21:19] <merdeepcore> the other is netgear
+[11:21:21] <merdeepcore> the other is ZTE
+[11:21:31] <merdeepcore> the other is thomson
+[11:21:35] <merdeepcore> the others Im not sure but I can check
+[11:22:47] <zetok> right
+[11:22:57] <zetok> what do you think about creating a wiki page with list of routers?
+[11:23:04] <merdeepcore> isnt it a bit too much to call 60% of all routers crap
+[11:23:05] <zetok> (or something)
+[11:23:16] <merdeepcore> i know many programs that do udp connections perfectly
+[11:23:19] <merdeepcore> why is qtox different ?
+[11:23:21] <zetok> not really
+[11:23:47] <zetok> rate
+[11:24:17] <merdeepcore> why is tox different when it comes to rate to other udp consuming programs ?
+[11:24:21] <zetok> merdeepcore: are those programs p2p?
+[11:24:22] <merdeepcore> like voip / sharing
+[11:24:24] <merdeepcore> yes
+[11:24:25] <merdeepcore> p2p
+[11:24:32] <zetok> hmm
+[11:24:37] <merdeepcore> are you a coder ?
+[11:24:51] <zetok> Rust, bash
+[11:24:55] <merdeepcore>  isee
+[11:25:27] <merdeepcore> in fact it's the first time I see this 
+[11:25:41] <zetok> do the other p2p programs use hole-punching?
+[11:26:51] <merdeepcore> skype does it fine
+[11:26:56] <merdeepcore> no ?
+[11:27:07] <zetok> yes and no
+[11:27:13] <merdeepcore> behind nat
+[11:27:14] <zetok> it doesn't maintain as many connections
+[11:27:18] <zetok> (I think)
+[11:27:29] <merdeepcore> why does qtox has to maintain more conenctions than skype for example ?
+[11:27:41] <zetok> qTox is distributed
+[11:27:49] <merdeepcore> its like 10 nodes
+[11:27:49] <zetok> that's basically it
+[11:27:57] <merdeepcore> and it ddoses the router
+[11:28:05] <merdeepcore> isnt that extreme
+[11:28:35] <merdeepcore> and why do we need hole punching for p2p
+[11:28:53] <zetok> to have connections without opening ports manually
+[11:29:11] <merdeepcore> isnt this what upnp is for
+[11:31:15] <merdeepcore> do I need hole punching to do p2p ?
+[11:31:22] <merdeepcore> if I can have my ports open ?
+[11:34:49] <merdeepcore> well anyway I think qtox crashing 6 out of 10 routers should considered a bug and not blame the routers
+[11:35:14] <zetok> well, those routers are shitty
+[11:35:15] <merdeepcore> you might as well blame the x86 architecture for whatever or ipv4/6
+[11:35:36] <zetok> it just reflects the sad reality of "embedded" stuff
+[11:35:53] <merdeepcore> what embedded
+[11:36:00] <merdeepcore> half of these are different modem / routers
+[11:36:04] <zetok> but yeah, I get that stuff should work better even with crappy routers
+[11:36:17] <merdeepcore> i use the tplink ac1750 + cisco modem
+[11:36:32] <merdeepcore> if u consider this crap, then 90% routers are crap
+[11:36:38] <merdeepcore> which I would kinda agree
+[11:36:46] <merdeepcore> but its not how we should approach this problem
+[11:37:01] <merdeepcore> when other programs can handle this without the router dying
+[11:37:17] <merdeepcore> and why do we need hole punching for p2p with upnp
+[11:37:36] <zetok> upnp doesn't work everywhere
+[11:37:49] <zetok> anyway
+[11:38:06] <merdeepcore> would it be super difficult to implenent upnp without hole punchingt ?
+[11:38:08] <zetok> merdeepcore: would you mind opening an issue with the data on https://github.com/TokTok/c-toxcore ?
+[11:38:26] <merdeepcore> it would make tox run"able" at every computer
+[11:38:31] <merdeepcore> rather than 40% of computers
+[11:38:32] <zetok> um, I don't know if that's due to hole-punching
+[11:38:34] <merdeepcore> sure 
+[11:38:41] <merdeepcore> I will submit it
+[11:39:00] <merdeepcore> also why are smiley packs inside dlls ?
+[11:39:06] <merdeepcore> and hardcoded ?
+[11:39:10] <merdeepcore> any reason for this ?
+[11:39:20] <zetok> yep, easier to do
+[11:39:27] <merdeepcore> i can help you make it better
+[11:39:32] <merdeepcore> i work at disney :)
+[11:39:33] <zetok> https://github.com/qTox/qTox/milestone/12
+[11:39:39] <zetok> would be awesome :)
+[11:40:04] <merdeepcore> we need to implement custom shortcuts
+[11:40:06] <merdeepcore> and packs
+[11:42:51] <merdeepcore> yeah that submission on smileys is spot on
+[11:56:11] <merdeepcore> ok submitted
+[11:56:13] <merdeepcore> cheers
+[12:20:14] <zetok> thanks :)
+[12:33:23] *** Joins: miokiry1 (~Adium@ )
+[12:35:00] *** Quits: miokiry1 (~Adium@ ) (Read error: Connection reset by peer)
+[12:35:17] *** Joins: miokiry (~Adium@ )
+[12:55:40] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[13:01:01] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[13:23:06] *** Joins: sudden6 (~anonymous@ )
+[13:37:00] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[13:41:05] *** Joins: athan (~athan@ )
+[14:34:52] *** Joins: reBrain (~quassel@ )
+[14:36:13] *** Joins: wign (wign@ )
+[14:42:56] *** Parts: wign (wign@ ) ("Leaving")
+[14:52:08] *** Joins: smaragdus2 (~omoo@ )
+[14:53:29] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 260 seconds)
+[14:59:01] *** Joins: rerumnov1rum (~user-reru@ )
+[15:01:41] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 248 seconds)
+[15:23:42] *** Joins: miokiry (~Adium@ )
+[15:35:05] *** Quits: merdeepcore (~laietaniu@ ) ()
+[16:09:30] -qtox-git-spam- [qTox] sudden6 closed pull request #3808: fix(settings): Change test sound button to checkbox & save to settings (master...fix/testsoundbutton) https://git.io/vPEqI
+[16:25:23] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[16:31:27] *** Joins: miokiry (~Adium@ )
+[16:31:33] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[16:31:41] *** Joins: miokiry (~Adium@ )
+[16:36:48] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[16:51:02] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:56:46] *** Joins: miokiry (~Adium@ )
+[17:00:58] *** Quits: athan (~athan@ ) (Quit: leaving)
+[17:07:09] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[17:21:34] *** Quits: smaragdus2 (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[17:23:53] *** Joins: miokiry (~Adium@ )
+[17:23:54] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[17:24:00] *** Joins: miokiry (~Adium@ )
+[17:28:55] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[17:40:21] *** Joins: miokiry (~Adium@ )
+[17:40:23] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[17:40:30] *** Joins: miokiry (~Adium@ )
+[17:43:19] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[18:17:13] *** Joins: reBrain (~quassel@ )
+[18:28:25] *** Joins: smaragdus (~omoo@ )
+[18:50:01] *** Joins: CGGB (~CGGB@ )
+[18:51:56] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[18:52:15] *** Joins: CGGB (~CGGB@ )
+[19:25:05] *** Quits: cenysor (~cenysor@ ) (Ping timeout: 260 seconds)
+[19:25:34] *** Joins: cenysor (~cenysor@ )
+[19:44:58] *** Joins: Diadl0 (~diadlo@ )
+[19:45:50] *** Joins: mitfree_ (~mit@ )
+[19:46:58] *** Joins: rerumnovarum (~user-reru@ )
+[19:47:05] *** Joins: worfox_ (~worfox@ )
+[19:48:52] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 258 seconds)
+[19:50:15] *** Joins: hexadezimalion (sid85551@ )
+[19:51:03] *** Joins: BHR27 (~Bheru27@ )
+[19:51:44] *** Quits: rerumnov1rum (~user-reru@ ) (*.net *.split)
+[19:51:44] *** Quits: Diadlo (~diadlo@ ) (*.net *.split)
+[19:51:45] *** Quits: Bheru27 (~Bheru27@ ) (*.net *.split)
+[19:51:46] *** Quits: worfox (~worfox@ ) (*.net *.split)
+[19:51:47] *** Quits: qTox-syncbot (~qTox-sync@ ) (*.net *.split)
+[19:51:47] *** Quits: mitfree (~mit@ ) (*.net *.split)
+[19:51:48] *** Quits: bennabiy (~bennabiy@ ) (*.net *.split)
+[19:51:49] *** Quits: genesis (~genesis@ ) (*.net *.split)
+[19:58:01] *** Joins: bennabiy (~bennabiy@ )
+[19:59:07] *** Joins: genesis (~genesis@ )
+[20:11:06] *** Quits: iphy (uid67735@ ) (Ping timeout: 258 seconds)
+[20:13:00] *** Joins: iphy (uid67735@ )
+[20:29:35] -qtox-git-spam- [qTox] zetok closed pull request #3806: feat: bump font size from undersized (master...feat-font-size) https://git.io/vP0Pz
+[20:33:05] *** Joins: qTox-syncbot (~qTox-sync@ )
+[21:02:46] *** Quits: qTox-syncbot (~qTox-sync@ ) (Ping timeout: 258 seconds)
+[21:16:14] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:47:10] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:47:31] *** Joins: qTox-syncbot (~qTox-sync@ )
+[23:02:20] *** Joins: DaSpirit (~DaSpirit@ )
+[23:11:30] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[23:18:03] *** Joins: ics01 (500c503f@ )
+[23:20:17] *** Quits: ics01 (500c503f@ ) (Client Quit)
