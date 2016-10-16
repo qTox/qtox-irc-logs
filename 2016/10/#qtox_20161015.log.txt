@@ -1,0 +1,307 @@
+[00:00:30] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[00:04:08] *** Joins: albel727 (~albel727@ )
+[01:26:55] *** Joins: vindelschtuffen (~vindelsch@ )
+[02:21:21] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:13:50] *** Joins: pocketchip1 (~pocketchi@ )
+[03:31:35] *** Quits: pocketchip1 (~pocketchi@ ) (Remote host closed the connection)
+[03:59:16] *** Joins: maxdamage (9befab92@ )
+[04:00:43] <maxdamage> exit
+[04:01:15] *** Quits: maxdamage (9befab92@ ) (Client Quit)
+[04:36:55] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[04:45:09] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 258 seconds)
+[05:01:35] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[05:29:03] *** Joins: cisc (~cisc@ )
+[07:12:54] *** Joins: sudden6 (~anonymous@ )
+[07:23:39] *** Quits: cisc (~cisc@ ) (Ping timeout: 268 seconds)
+[07:27:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:35:55] *** Joins: cisc (~cisc@ )
+[08:06:09] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vP6tu
+[08:06:09] -qtox-git-spam- qTox/master cefe176 Zetok Zalbavar: docs(CONTRIBUTING): add more info about shape of PRs...
+[08:48:11] *** Quits: VVD (~VVD@ ) (Ping timeout: 258 seconds)
+[09:04:24] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[09:06:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[09:06:11] *** Joins: rerumnovarum (~user-reru@ )
+[09:08:05] *** Joins: reBrain (~quassel@ )
+[09:33:30] *** Quits: dan- (~d@ ) (*.net *.split)
+[09:33:30] *** Quits: BoneZone (oranges@ ) (*.net *.split)
+[09:33:30] *** Quits: Sephi (~me@ ) (*.net *.split)
+[09:37:00] *** Joins: oranges (oranges@ )
+[09:38:51] *** Joins: BoneZone (oranges@ )
+[09:42:55] *** Joins: sudden6 (~anonymous@ )
+[09:46:08] *** Joins: in1t3r (~LordShiva@ )
+[09:51:10] *** Joins: dan- (~d@ )
+[09:51:10] *** Joins: Sephi (~me@ )
+[09:58:45] -qtox-git-spam- [qTox] zetok closed pull request #3802: refactor: make bootstrap-osx.sh verbose, flexible and fail on error (master...refactor-osx-bootstrap) https://git.io/vPRaC
+[10:08:58] *** Joins: Chiitoo (~Chiitoo@ )
+[10:28:24] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:29:23] *** Joins: CGGB (~CGGB@ )
+[10:32:18] <reBrain> hello
+[10:32:30] <reBrain> anyone knows when a new release is comming out?
+[10:32:59] *** Joins: Sephi_ (~me@ )
+[10:33:24] *** Joins: cenysor (~cenysor@ )
+[10:37:20] *** Joins: dan-- (~d@ )
+[10:37:20] *** Quits: dan-- (~d@ ) (Changing host)
+[10:37:20] *** Joins: dan-- (~d@ )
+[10:37:39] *** Quits: dan- (~d@ ) (*.net *.split)
+[10:37:39] *** Quits: Sephi (~me@ ) (*.net *.split)
+[10:37:42] *** Sephi_ is now known as Sephi
+[10:39:20] *** dan-- is now known as dan-
+[10:41:40] *** Joins: VVD (~VVD@ )
+[10:59:02] <zetok> reBrain: when stuff will be done for it
+[10:59:15] <zetok> reBrain: https://github.com/qTox/qTox/milestone/4
+[11:29:50] *** Joins: miokiry (~Adium@ )
+[11:34:44] *** Joins: grayhatter (grayhatter@ )
+[11:34:59] *** Parts: grayhatter (grayhatter@ ) ("Screw you guys...I'm going home!")
+[11:38:20] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[11:38:47] *** Joins: miokiry (~Adium@ )
+[11:46:04] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vP6cc
+[11:46:04] -qtox-git-spam- qTox/master fd36bdc Zetok Zalbavar: chore: merge separate gitignores into a single one
+[11:51:42] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:15:06] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[12:16:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[12:33:06] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[12:34:57] *** Joins: in1t3r (~LordShiva@ )
+[12:41:59] *** Joins: sudden6 (~anonymous@ )
+[14:08:28] *** Joins: mer (~laietaniu@ )
+[14:08:34] <mer> hi qtoxers
+[14:08:46] <mer> "iphydf commented 10 minutes ago
+[14:08:46] <mer> There is preliminary uPNP support in the irungentoo/new branch. Perhaps it would make sense to make a pull request with those patches."
+[14:08:49] <mer> are we implementing this ?
+[14:45:23] <zetok> well, it kinda already is implemented
+[14:55:41] <mer> how
+[14:55:49] <mer> if i may ask
+[15:01:50] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 268 seconds)
+[15:03:14] *** Joins: rerumnovarum (~user-reru@ )
+[15:31:17] *** Quits: reBrain (~quassel@ ) (Quit: Porn.)
+[16:13:30] <zetok> mer: https://github.com/irungentoo/toxcore/tree/new
+[16:13:58] <zetok> mer: TokTok/toxcore would need the changes from this branch
+[16:14:23] <zetok> + https://github.com/qTox/qTox/milestone/7
+[17:53:25] <zetok> sudden6: ping?
+[18:26:23] *** Joins: Chiitoo (~Chiitoo@ )
+[18:56:06] *** Joins: abbat (~Anton@ )
+[19:02:50] <zetok> Diadl0: ping?
+[19:48:40] *** Quits: mer (~laietaniu@ ) (Ping timeout: 260 seconds)
+[19:51:47] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:54:31] <sudden6> zetok: pong
+[19:54:58] <zetok> would be good to pull translations
+[19:55:13] <zetok> sudden6: do you have time to LGTM ?
+[19:55:20] <sudden6> one sec
+[19:55:40] <sudden6> yep :)
+[20:05:30] -qtox-git-spam- [qTox] zetok opened pull request #3817: Update translations from Weblate (master...tr) https://git.io/vP6Xn
+[20:05:31] <zetok> sudden6: ↑
+[20:06:56] <zetok> thanks :)
+[20:07:10] <sudden6> thanks too :)
+[20:19:28] *** Joins: Chiitoo (~Chiitoo@ )
+[20:21:59] <Diadl0> zetok: pong)
+[20:22:38] <Diadl0> If it still does matter)
+[20:22:39] -qtox-git-spam- [qTox] zetok closed pull request #3817: Update translations from Weblate (master...tr) https://git.io/vP6Xn
+[20:23:59] <zetok> not really >.<
+[20:24:26] <zetok> there's still a PR that could make some use of LGTM, but it's nothing urgent :)
+[20:24:43] <Diadl0> Ok
+[20:37:11] *** Joins: athan (~athan@ )
+[20:37:24] <sudden6> Diadl0: build for https://github.com/qTox/qTox/pull/3736 is failing, because of changed repo name for c-toxcore
+[20:37:53] <zetok> is it?
+[20:38:01] <zetok> gh should redirect the stuff
+[20:38:50] <Diadl0> 1) IIRC, I'm already rename toxcore on c-toxcore
+[20:39:16] <Diadl0> 2) I can't find text of error in travis
+[20:39:40] <sudden6> it tries to cd into toxcore, but the dir is now c-toxcore
+[20:39:41] <Diadl0> Oh
+[20:39:44] <Diadl0> I found, sorry
+[20:40:06] <zetok> oh
+[20:40:08] <zetok> >.<
+[20:40:19] <zetok> docs also should be updated then
+[20:40:56] <zetok> or, we could just update docs to clone into `toxcore`
+[20:41:12] <zetok> so that even if stuff changes again things would keep working
+[20:42:12] <Diadl0> zetok: Good idea
+[20:42:38] <Diadl0> And I have a little problem. What I should do with windows bootstrap and build scripts?
+[20:42:54] <zetok> :s
+[20:43:07] <Diadl0> It use libtoxcore_build_windows_x86*.zip
+[20:43:13] <Diadl0> Form build.tox.chat
+[20:43:18] <zetok> IIRC there are build jobs for TokTok/toxcore
+[20:43:22] *** Joins: sudd3n6 (~anonymous@ )
+[20:43:54] <zetok> and IIRC there are plans to switch "default" build to TokTok
+[20:46:12] <Diadl0> Ok
+[21:07:18] *** Joins: grayhatter (grayhatter@ )
+[21:08:42] <grayhatter> what do you think about toxcore restarting on it's own every <amount of time> as a temporary fix for some of the problems. Including rotating session keys regularly, as well as the "friend is offline" lie bug that's hard to find.
+[21:18:32] <zetok> restarting is a bad idea
+[21:18:55] <zetok> and keys should be rotated regardless of whether toxcore is being restarted
+[21:19:27] <zetok> and if user wants to go through the pain of restarting toxcore, they have a button for it
+[21:20:12] <grayhatter> zetok there's no other way without implementing key renegoation
+[21:20:38] <zetok> :)
+[21:21:00] <grayhatter> and it wouldn't change anything the client see, apart from going offline for a 1/10th of a second, before coming back online
+[21:21:13] <grayhatter> all friends would disconnect, then reconnect when the key changes
+[21:21:18] <zetok> that's not how restarting toxcore works
+[21:21:26] <zetok> it goes down for *minutes*
+[21:21:46] <Diadl0> grayhatter: It will not provide audio/video disconnect?
+[21:22:17] <grayhatter> zetok not if you're doing it correctly
+[21:22:21] <Diadl0> For my experience reconnect is longer than few second
+[21:22:25] <Diadl0> Ok
+[21:22:41] <grayhatter> yeah, that's a whole toxcore restart, where it'll have to bootstrap again
+[21:22:57] <zetok> err
+[21:23:07] <zetok> ><grayhatter> what do you think about toxcore restarting (…)
+[21:23:25] <grayhatter> it'll take approx 30s-2m for it to refind it's place in the DHT and reannounce so newly online friends can find you
+[21:23:39] <zetok> yeah, that's unacceptable
+[21:24:00] <grayhatter> but any friend you're already connected to will disconnect and reconnect within 1-3s
+[21:24:16] <grayhatter> given normal network conditions
+[21:24:57] <zetok> if it can disrupt audio/video call, then it's a no-go IMO
+[21:25:02] <zetok> or a file transfer
+[21:25:11] <grayhatter> zetok yeah, I was thinking about that
+[21:25:27] <grayhatter> it would also be trivial to delay while there's an existing FT/AV
+[21:25:55] <zetok> what about bandwidth usage?
+[21:26:51] <zetok> hmm
+[21:27:14] <zetok> "normal network conditions" doesn't include saturated connection, right?
+[21:27:15] <grayhatter> it would actually probably go down
+[21:27:23] <zetok> nope
+[21:27:27] <grayhatter> zetok that is correct
+[21:27:38] <zetok> bandwidth usage is very high when restarting/starting toxcore
+[21:27:47] <grayhatter> if toxcore is already killing your nat, this will make it kill it faster/more often
+[21:27:51] <zetok> high enough to saturate the connection
+[21:28:15] <zetok> which means that friends won't disconnect & reconnect within 1-3 seconds
+[21:28:48] <grayhatter> zetok it means that NO connection will disconnect and reconnect within 1-3s
+[21:29:54] <zetok> so we're looking at 30s-2min even for friends that are online
+[21:32:38] <Diadl0> What you think about closing #3645?
+[21:58:09] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[22:04:56] <zetok> Diadl0: is there a PR that does the change?
+[22:08:32] <Diadl0> What change?
+[22:09:41] <zetok> the change that this PR tries to do
+[22:10:48] <zetok> i.e. unless there's such PR, there's no point in closing #3645, right?
+[22:11:17] <zetok> just add `help wanted` to it
+[22:17:51] *** Joins: Thorm (~Thor@ )
+[22:19:05] <Thorm> Anyone on who has experince building qtox on Windows? I'm trying to build from github in a windows vm.
+[22:19:33] <Thorm> I'm getting vpx/vpx_image.h: No such file or directory. For some reason ffmpeg from bootstrep isn't giving me vpx?
+[22:23:58] <Diadl0> zetok: This PR do simple changes. And this changes is wrong (see initramfs comment)
+[22:24:37] <zetok> Thorm: sounds more like libvpx is missing
+[22:25:04] <zetok> Thorm: if you're using pre-built toxcore binaries, they should include libvpx..
+[22:25:59] <zetok> Diadl0: 1. it seems bot fix stuff for bashrc; 2. yes, it's wrong, but there are no open PRs that would do it right
+[22:26:10] <zetok> s/bot/to/
+[22:26:13] <Thorm> @zetok Does bootstrap get toxcore and build it?
+[22:26:40] <zetok> Thorm: it tries to download & extract zip with its binaries
+[22:27:19] <Diadl0> Ok, I leave it open only because 1'st reason. Second one it wrong
+[22:27:33] <Thorm> @zetok I have libtox.dll in the libs dir and the zip file. I didn't get any errors from bootstrap.
+[22:28:23] <Thorm> @zetok, is it possible bootstrap isn't building in libvpx?
+[22:28:56] <zetok> well, bootstrap isn't building it AFAIR
+[22:29:34] <Thorm> @zetok, I think you are right. It looks like it jsut grabs the release
+[22:29:58] <Thorm> It downloaded libtoxcore_build_windows_x86_shared_release.zip
+[22:32:05] <Thorm> @zetok, there is code in the bootstrap to build toxcore though.
+[22:32:11] <Diadl0> zetok: If someone will open PR with <nothing useful> and mark it as `Fix #<issue>` there is no reason to leave it open, becouse "there are no open PRs that would do it right"
+[22:32:30] <zetok> Diadl0: yep
+[22:33:35] <Thorm> @zetok, libtoxcore starts at line 130 in bootstrap.sh
+[22:34:48] <Thorm> @zetok, nvm that's for the linux build
+[22:35:08] *** Joins: desci (~desci@ )
+[22:35:47] <Thorm> Windows build is doing: wget --no-check-certificate https://build.tox.chat/view/libtoxcore/job/libtoxcore_build_windows_x86_shared_release/lastSuccessfulBuild/artifact/libtoxcore_build_windows_x86_shared_release.zip
+[22:40:13] <Chiitoo> Thorm: Having done it before myself, I'd strongly suggest usinga VM running Linux for building the Windows client.
+[22:40:25] <Chiitoo> s/usinga/using a/
+[22:40:36] <zetok> Chiitoo: not if you want to fix compilation on windows >.<
+[22:41:02] <Thorm> @Chiitoo, I run linux, I was trying to test building on windows to see if it works for bug testing purposes.
+[22:41:19] <zetok> right now it doesn't
+[22:41:49] <Chiitoo> That'sd why I stopped doing it on Windows, since it feels too much of unnecessary work. :]
+[22:42:16] <Chiitoo> But indeed, if one really wants to make that work, then yeah.
+[22:42:34] <Thorm> @zetok, ok if I grab https://build.tox.chat/job/libvpx_build_windows_x86_static_release/21/ I can get past the vpx missing
+[22:43:10] <zetok> Thorm: good to know, mind making a PR with a fix?
+[22:43:15] <Thorm> @zetok, now I'm getting fatal error: AL/al.h: No such file or directory
+[22:43:45] <Thorm> @Thorm, yeah I'll make a pr if I can get it working
+[22:43:56] <Thorm> @zetok woops 
+[22:44:03] <Thorm> that was meant for you
+[22:44:36] <zetok> https://github.com/qTox/qTox/blob/master/windows/bootstrap.sh#L52,L69
+[22:44:56] <Chiitoo> One of the things that made me give up, was the fact that the during the build process, the Windows things just died, and makes it all so very flaky.
+[22:45:17] <Chiitoo> Almost sure it's nothing we can really make better even, without even more work.
+[22:45:19] <Thorm> Let me check the build logs....
+[22:45:35] <Thorm> Hmmm ok so openal build is throwing an error on windows
+[22:45:50] <Thorm> unknown type time_t
+[22:46:03] <Thorm> *unknown type name time_t
+[22:46:07] <zetok> :/
+[22:46:33] <Thorm> Could we have jenkins build openal for windows like it does for libvpx?
+[22:46:51] <zetok> it's already built there
+[22:46:55] <Chiitoo> (I think it was during ffmpeg build, that I would get Windows thingies crash, but the build actually continued in the background, slowly, and would eventually succeed.)
+[22:47:10] <Thorm> @zetok, link?
+[22:47:19] <Chiitoo> All the dependencies are built by Jenkins.
+[22:47:35] <zetok> Thorm: dunno, I just know that it's built there since jenkins builds qTox for windows
+[22:48:05] <Chiitoo> That's why I just grab the deps from there, and build only qTox.
+[22:48:22] <Thorm> found it
+[22:48:32] <Thorm> should I use shared or static release?
+[22:49:08] <zetok> generally, static is better
+[22:49:24] <Thorm> Ok :)
+[22:49:27] <Thorm> Building....
+[22:49:38] <Thorm> Fingers crossed
+[22:50:18] <Chiitoo> If you'd like to have just a 'qtox.exe', static definitely.  :]
+[22:50:27] <Chiitoo> Some like shared better.
+[22:50:51] <zetok> https://github.com/qTox/qTox/issues/2975 https://github.com/qTox/qTox/issues/3080
+[22:51:16] <zetok> hmm
+[22:51:31] <Thorm> @zetok, now it's missing sqlcipher
+[22:51:44] <zetok> oh
+[22:51:56] <zetok> well, same as openal and toxcore
+[22:52:21] <Thorm> yeah
+[22:53:28] *** Quits: athan (~athan@ ) (Quit: leaving)
+[22:53:48] <zetok> it would be also good to bump ffmpeg if they've made a new release with fix for windows breakage
+[22:53:58] <Thorm> So the windows build script will just grab all the libs prebuilt from jenkins :P
+[22:54:10] <zetok> that's kinda bad
+[22:54:35] <Thorm> Lol
+[22:54:43] <Thorm> yeah
+[22:54:50] <Thorm> Fuck windows though
+[22:54:51] <zetok> better(?) than completely broken script, but only so much
+[22:54:55] <zetok> yeah :D
+[22:55:08] <Thorm> I guess it will be quicker builds though
+[22:56:55] <Chiitoo> What's that about ffmpeg?
+[22:57:18] <zetok> https://github.com/qTox/qTox/issues/3612
+[22:57:53] <Chiitoo> Ah, never using the camera stuff here.
+[22:58:05] <Chiitoo> Did not notice that.
+[22:58:25] <Chiitoo> Thanks though!
+[23:02:47] <Thorm> Ohhh yikes that build went weird
+[23:03:48] <Thorm> I got an error in QtCore
+[23:03:54] <Thorm> qglobal.h
+[23:04:17] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[23:04:28] <zetok> details?
+[23:04:44] <Thorm> One sec doing a rebuild
+[23:04:48] <Thorm> Might be a bug
+[23:04:52] <Thorm> in qtcreator
+[23:05:17] <Thorm> Ok so now I'm getting fatal error: ddraw.h no such file
+[23:07:10] <zetok> hum
+[23:07:20] <Thorm> Found something
+[23:07:28] <Thorm> Someone posted on a forum a year ago
+[23:07:33] <Thorm> "It appears that mingw-runtime does not provide ddraw.h, but mingw64-runtime does provide it. Can you use i686-w64-mingw32 instead of i686-pc-mingw32? The i686-w64 version is supposed to be based on the mingw64 project, but produce 32-bit outputs like i686-pc-mingw32 would.
+[23:07:33] <Thorm> "
+[23:08:42] <Thorm> So....does that mean we need to be using mingw64 fow windows builds?
+[23:08:52] <zetok> :|
+[23:09:07] <zetok> sounds like it
+[23:09:10] <Thorm> FML
+[23:10:25] <Chiitoo> You need version 4.0.6 or so too, to build with ffmpeg-3.
+[23:10:48] <Thorm> Ok
+[23:10:55] <Thorm> Let me test this
+[23:11:10] <Chiitoo> At least that, I mean.
+[23:11:45] <Chiitoo> Or maybe something before that... but not something Debian normally provides, for example.  :]
+[23:12:02] <Chiitoo> Haven't looked at the Windows installers in a while.
+[23:13:30] <Thorm> Ok I'm installing mingw-w64
+[23:21:09] <Thorm> Hmmm so http://sourceforge.net/projects/mingw/files/Installer/
+[23:21:14] <Thorm> doesn't have w64
+[23:21:32] <Thorm> FUN :)
+[23:24:30] <Chiitoo> I'll boot up my Windows virtual machine in case I can check what I used.
+[23:24:55] <Thorm> k
+[23:26:42] <Chiitoo> Thorm: I think you might want the 'mingw-get'.
+[23:26:49] <Chiitoo> It's kind of like a package manager.
+[23:26:57] <Thorm> That's what I tried
+[23:27:01] <Thorm> It doesn't have w64
+[23:27:07] <Thorm> only w32
+[23:28:06] <Thorm> :/
+[23:28:27] <Thorm> I'm going to try https://sourceforge.net/projects/mingw-w64/
+[23:29:12] <Chiitoo> Oh, yeah, all I see there that I have installed, are 'mingw32' as well.
+[23:29:51] <Chiitoo> But, I was building only 32-bit versions with that... I think, so that might explain something.
+[23:30:05] <Chiitoo> Another reason perhaps why I chose crossbuilding.
+[23:32:44] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[23:32:44] <Chiitoo> And yeah, just noticed that project as well, but never tried it, from the looks of it.
+[23:33:26] <Thorm> I'm testing it now
+[23:33:30] <Thorm> Seems to be working
+[23:33:56] <Thorm> Just have to grab the libs
+[23:34:51] <Thorm> So far so good...
+[23:39:41] <Thorm> FML
+[23:40:05] <Thorm> @zetok, @Chiitoo we are back to the qglobal error
+[23:40:08] <Thorm> http://pastebin.com/G36n32NR
+[23:40:17] <Thorm> That's the build log
+[23:41:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[23:43:37] <Thorm> @zetok, @Chiitoo Maybe I need cmake x64
+[23:45:52] <Chiitoo> Hm, yeah, I'd probably look at what the 'mingw-get' does, with regards to dependencies, if you're using things outside of it.  Might indeed be missing something.
+[23:46:03] <Chiitoo> Don't have any immediate ideas myself, but am interested.  ^^
+[23:53:36] <Thorm> @Chiitoo, found this https://bugzilla.redhat.com/show_bug.cgi?id=725079#c3
+[23:58:45] <Thorm> In qtox.pro line 41 rtti is set to off.
+[23:59:30] <Thorm> That might be the problem
+[23:59:36] <Thorm> Testing now
+[23:59:44] <Chiitoo> Hmmm, pretty old, and closed as 'notabug' though.  I wonder.
