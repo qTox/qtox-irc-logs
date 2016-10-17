@@ -1,0 +1,96 @@
+[00:01:09] <Thorm> Yup it's rtti
+[00:01:30] <Thorm> I deleted "rtti_off" and added rtti and it got passed that part
+[00:01:37] <Thorm> Now adding qrencode libs
+[00:02:14] <Thorm> It's compiling emojis now :D Farthest it's gotten
+[00:02:52] <Thorm> So we might need to edit qtox.pro 
+[00:04:45] <Thorm> Got another error
+[00:04:46] <Thorm> 'c:\Program' is not recognized as an internal or external command,
+[00:04:48] <Thorm> lol
+[00:07:36] <Thorm> @zetok, windres -i ../qTox/windows/qtox.rc -o release/qtox_res.o --include-dir=./../qTox/windows -DUNICODE -DGIT_VERSION="\"built without git\"" -DGIT_DESCRIBE="\"Nightly\"" -DTIMESTAMP=0 -DLOG_TO_FILE -DQT_MESSAGELOGCONTEXT -DQTOX_PLATFORM_EXT -DQT_NO_EXCEPTIONS -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
+[00:07:36] <Thorm> 'c:\Program' is not recognized as an internal or external command,
+[00:07:46] <Thorm> @zetok, any ideas?
+[00:26:14] *** Joins: Daiwo (~Daiwo@ )
+[00:28:02] <Daiwo> I wouldn't this so, but .. just wondering , Does qTox support SIP ?Y
+[00:36:54] <Chiitoo> Thorm: I don't really know, but that seems like it might be trying to execute a thing under 'C:\Program Files[...]', and it's being word-split.  Hence it just sees 'C:\Program'.  Whatever it is.
+[00:37:01] <Thorm> @zetok, @Chiitoo I think it's because I installed mingw-w64 in Program Files, testing that theory
+[00:37:28] <Thorm> Installing to C:\MinGW64
+[00:42:58] <Chiitoo> Would seem a bit odd that they/it didn't protect them paths!
+[00:43:19] <Thorm> WINDOWS
+[00:43:20] <Thorm> lol
+[00:43:34] <Chiitoo> True.  Heh.
+[00:46:53] <Thorm> compiling...
+[00:47:14] *** Quits: albel727 (~albel727@ ) (Ping timeout: 250 seconds)
+[00:52:16] <Thorm> Well it made it to the linker and errored out
+[00:52:26] <Thorm> I gotta go to work. I'll pick back up on this when I get home.
+[00:52:29] <Thorm> Cya guys
+[00:52:33] <Chiitoo> Different error?
+[00:52:39] <Chiitoo> Have a good work!
+[02:17:47] <Daiwo> Thorm
+[02:18:29] <Daiwo> you got me resurfaced some deep old question I had years ago ..
+[02:19:41] <Daiwo> what are the guideline as to wether we should install an app in C:/ vs the MS's recommended way (ie %ProgramFiles%/(x86)%) ?
+[02:20:44] <Daiwo> I had Conemu installed in %PF% before, but for some unreasearched conclusion, I prefer it to sit in C:/ .... still my reasoning remains unanswered
+[02:20:54] <Daiwo> If you find some time to light me up on that, I'd love to
+[02:20:55] <Daiwo> :)
+[02:21:35] <Daiwo> btw. I'm french, so please forgive my eye-burning english
+[02:37:03] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 252 seconds)
+[02:39:54] *** Joins: Chiitoo_ (~Chiitoo@ )
+[03:20:42] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[03:21:07] *** Joins: in1t3r (~LordShiva@ )
+[03:23:42] *** Quits: oranges (oranges@ ) (Quit: leaving)
+[04:03:09] *** Quits: cisc (~cisc@ ) (Ping timeout: 268 seconds)
+[04:04:12] *** Joins: cisc (~cisc@ )
+[05:27:28] <Thorm> @Daiwo Hey 
+[05:27:34] <Thorm> Still here?
+[06:13:54] *** Joins: Lord_Vlad (~Vlad@ )
+[06:27:42] *** Joins: reBrain (~quassel@ )
+[06:59:28] *** Quits: Daiwo (~Daiwo@ ) (Remote host closed the connection)
+[07:11:48] *** Quits: Thorm (~Thor@ ) (Quit: Leaving)
+[07:24:06] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[07:24:49] *** Joins: CGGB (~CGGB@ )
+[07:43:05] *** Joins: reBrain_ (~quassel@ )
+[07:44:04] *** Quits: reBrain_ (~quassel@ ) (Client Quit)
+[07:44:17] *** Joins: reBrain_ (~quassel@ )
+[07:44:37] *** Quits: reBrain_ (~quassel@ ) (Client Quit)
+[07:46:00] *** Quits: reBrain (~quassel@ ) (Ping timeout: 250 seconds)
+[07:52:19] *** Joins: Thorm (~Thor@ )
+[07:55:38] <Thorm> @zetok I almost have qtox building on windows :D
+[07:59:24] <zetok> sounds great :)
+[08:01:00] <Thorm> Basically fuck compiling any of the libs
+[08:01:08] <Thorm> Just grab the mall from jenkins
+[08:02:15] *** Joins: reBrain (~quassel@ )
+[08:15:45] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:24:59] <Thorm> @zetok, also you need 64bit qt and 64bit mingw
+[08:43:15] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[08:44:42] *** Joins: rerumnovarum (~user-reru@ )
+[08:45:11] *** Quits: Thorm (~Thor@ ) (Quit: Leaving)
+[09:11:28] *** Quits: rerumnovarum (~user-reru@ ) (Remote host closed the connection)
+[09:38:32] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:54:11] *** Joins: LittleVulpix (~Miranda@ )
+[10:26:01] *** Joins: cenysor (~cenysor@ )
+[10:32:44] *** Quits: Chiitoo_ (~Chiitoo@ ) (Read error: Connection reset by peer)
+[10:54:46] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 250 seconds)
+[10:55:05] *** Joins: Lord_Vlad (~Vlad@ )
+[11:41:29] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[12:00:20] *** Joins: sudden6 (~anonymous@ )
+[12:51:19] *** Joins: Chiitoo (~Chiitoo@ )
+[13:05:07] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[13:31:14] *** Joins: in1t3r (~LordShiva@ )
+[14:15:11] *** Joins: bashrc (~motters@ )
+[14:30:42] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[14:31:04] *** Quits: desci (~desci@ ) (Ping timeout: 260 seconds)
+[14:31:08] *** Joins: in1t3r (~LordShiva@ )
+[15:15:41] *** Joins: Bill_MI (~Bill@ )
+[15:17:51] *** Quits: Bill_MI (~Bill@ ) (Client Quit)
+[16:04:42] *** Joins: reBrain (~quassel@ )
+[16:18:00] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:45:03] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:19:31] *** Joins: albel727 (~albel727@ )
+[17:20:10] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[17:20:40] *** Joins: in1t3r (~LordShiva@ )
+[17:55:48] *** Joins: sudd3n6 (~anonymous@ )
+[18:06:32] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[18:32:53] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[18:46:23] *** Joins: Chiitoo (~Chiitoo@ )
+[19:31:53] *** Joins: CGGB (~CGGB@ )
+[22:17:14] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[23:27:52] *** BoneZone is now known as oranges
