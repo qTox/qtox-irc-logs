@@ -1,0 +1,85 @@
+[00:00:43] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:16:30] *** Joins: albel727 (~albel727@ )
+[00:27:34] *** Joins: Thorm (~Thor@ )
+[00:27:48] <Thorm> Hey @zetok
+[00:27:53] <zetok> o/
+[00:29:39] <Thorm> I wasn't able to get qtox building on windows. The main issue is that you need a reliable version of mingw64 and QT64bit with Mingw64 which doesn't exist without building it yourself(a very complicated and painful proccess).
+[00:30:00] <zetok> :|
+[00:30:04] <Thorm> https://wiki.qt.io/MinGW-64-bit
+[00:30:37] <Thorm> I think at this point building natively on windows is somewhat a lost cause until QT comes out with a prebuilt version
+[00:30:53] <zetok> https://github.com/qTox/qTox/issues/3372 ← would be good to add that info here
+[00:30:58] <Thorm> Which devs have been asking for since ~2012
+[00:33:54] <Thorm> Ok I'll add some info
+[00:34:07] <zetok> thanks :)
+[00:34:11] <Thorm> BTW this is @AliceGrey
+[00:34:17] *** Joins: miokiry (~Adium@ )
+[00:35:51] <zetok> hum
+[00:35:52] <zetok> https://github.com/qTox/qTox/issues/3716#issuecomment-247845542
+[00:37:49] <zetok> I wonder how I've managed to forged about that post
+[00:37:55] <zetok> forget*
+[00:38:06] <Thorm> It looks like he got it working using MYSYS2 which is basically linux running on windows. I came to the conclusion from https://wiki.qt.io/MinGW-64-bit that you would need MYSYS2
+[00:39:04] <zetok> oh, I see
+[00:40:45] <Thorm> Hopefully he makes a PR
+[00:40:55] <Thorm> Because I got stuck
+[00:41:16] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[00:42:33] <Thorm> :)
+[00:44:10] *** Joins: miokiry (~Adium@ )
+[00:44:41] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:44:56] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[00:46:53] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[02:32:55] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[02:55:30] *** Quits: Thorm (~Thor@ ) (Quit: Leaving)
+[02:56:16] *** Joins: Chiitoo (~Chiitoo@ )
+[07:11:55] <Diadl0> zetok, Thorm: Is it possible (after INSTALL.md will be updated) to write script for windows, which will build qTox automatically?
+[07:38:13] <zetok> on windows, not really I think
+[07:39:48] <zetok> script for cross-compiling using docker, that's what already happens on TokTok/qTox
+[08:19:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[08:58:13] *** Quits: Se7en (~Se7en@ ) (Quit: My ZNC went bye bye!)
+[09:00:46] *** Quits: Darky` (~Darky@ ) (Ping timeout: 250 seconds)
+[09:06:42] *** Joins: Se7en (~Se7en@ )
+[09:07:43] *** Joins: Darky (~Darky@ )
+[09:08:45] *** Quits: Darky (~Darky@ ) (Remote host closed the connection)
+[09:48:49] *** Joins: bashrc (~motters@ )
+[09:50:31] *** Joins: abbat (~abbat@ )
+[10:34:36] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[11:19:40] *** Joins: smaragdus2 (igneus@ )
+[11:20:18] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 250 seconds)
+[11:39:11] *** Joins: Chiitoo_ (~Chiitoo@ )
+[11:39:57] *** Quits: Chiitoo_ (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[11:48:01] *** Joins: Chiitoo (~Chiitoo@ )
+[12:00:32] *** Joins: Darky (~Darky@ )
+[12:59:33] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[13:02:23] *** Joins: in1t3r (~LordShiva@ )
+[13:18:10] *** smaragdus2 is now known as smaragdus
+[13:27:03] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[13:27:23] *** Joins: abbat (~abbat@ )
+[13:55:28] *** Joins: Neolex (~neolex@ )
+[13:55:52] <zetok> Neolex: hi
+[13:56:06] <Neolex> Hi zetok
+[13:56:29] <zetok> how's PR going?
+[13:57:04] <Neolex> I'm busy this time , I'll work on it this evening
+[14:00:54] <Neolex> I hope it will be accepted someday ^^
+[14:02:39] <zetok> it will :)
+[14:02:51] <zetok> just needs to work
+[17:06:00] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[17:06:13] *** Joins: cisc (~cisc@ )
+[17:22:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:50:13] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[18:11:43] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 245 seconds)
+[18:12:22] *** Joins: Lord_Vlad (~Vlad@ )
+[18:13:08] *** Quits: Lord_Vlad (~Vlad@ ) (Client Quit)
+[18:13:25] *** Joins: Lord_Vlad (~Vlad@ )
+[18:33:06] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[18:33:06] *** Joins: cenysor (~cenysor@ )
+[18:34:21] *** Joins: Chiitoo (~Chiitoo@ )
+[18:42:43] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 258 seconds)
+[18:58:22] *** Joins: vindelschtuffen (~vindelsch@ )
+[19:12:23] *** Parts: grayhatter (grayhatter@ ) ("Screw you guys...I'm going home!")
+[19:50:41] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 260 seconds)
+[19:50:56] *** Joins: Lord_Vlad (~Vlad@ )
+[20:46:45] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[20:50:54] *** Joins: cisc (~cisc@ )
+[21:39:14] *** Joins: rerumnovarum (~user-reru@ )
+[21:43:45] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[23:32:13] *** Joins: abbat (~Anton@ )
+[23:58:11] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
