@@ -1,0 +1,185 @@
+[00:29:21] *** Joins: DaSpirit (~DaSpirit@ )
+[01:07:50] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[01:30:30] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[02:33:07] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[02:43:20] *** Quits: iphy (uid67735@ ) (Ping timeout: 258 seconds)
+[02:45:52] *** Joins: iphy (uid67735@ )
+[03:12:24] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[03:12:40] *** Joins: cisc (~cisc@ )
+[03:50:13] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:17:12] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[05:37:55] *** Joins: cisc (~cisc@ )
+[05:41:42] *** Quits: cisc (~cisc@ ) (Client Quit)
+[05:42:42] *** Joins: cisc (~cisc@ )
+[06:05:23] *** Joins: Neolex (~neolex@ )
+[06:19:13] <Neolex> Hi
+[06:20:21] <Neolex> zetok: I don"t understand your message on my PR 
+[06:20:56] <Neolex> zetok: do I have to do something about it ?
+[06:34:56] <koshii> r/cb
+[07:46:38] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 250 seconds)
+[07:56:43] *** Joins: bennabiy (~bennabiy@ )
+[07:58:05] <zetok> Neolex: yep
+[07:59:12] <zetok> Neolex: things that are checklists need to be fixed/changed
+[07:59:27] <zetok> Neolex: and below I've posted steps how to reproduce the issue
+[07:59:38] <Neolex> aah ok !
+[07:59:44] <Neolex> thank you
+[08:03:37] <Neolex> zetok: i can't make the issue happens
+[08:03:54] <Neolex> I've folow the steps but I dont have error message
+[08:04:04] <zetok> hmm
+[08:05:10] <zetok> Neolex: could you fix the PR to compile?
+[08:05:14] * zetok would re-test
+[08:05:43] <zetok> I have older version of PR locally
+[08:06:20] <Neolex> what have I to do ? :s
+[08:06:22] <Neolex> sorry
+[08:06:38] <zetok> https://travis-ci.org/qTox/qTox/builds/168519539 ← right now it doesn't compile
+[08:06:46] <Neolex> ah
+[08:07:10] <Neolex> i'll do it 
+[08:07:13] <Neolex> thank you
+[08:30:44] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[08:31:12] *** Joins: cisc (~cisc@ )
+[08:42:11] *** Quits: Neolex (~neolex@ ) (Quit: Konversation terminated!)
+[09:38:04] *** Joins: abbat (~abbat@ )
+[11:09:06] *** Joins: Chiitoo (~Chiitoo@ )
+[11:25:30] *** Joins: bashrc (~motters@ )
+[11:42:22] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[11:42:45] *** Joins: abbat (~abbat@ )
+[11:48:15] *** Joins: abbat_ (~abbat@ )
+[11:49:18] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[13:48:26] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[13:49:49] *** Joins: CGGB (~CGGB@ )
+[14:20:00] *** Joins: SkyzohKey (~skyzohkey@ )
+[14:30:09] *** Joins: sudd3n6 (~anonymous@ )
+[14:58:49] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 256 seconds)
+[15:00:31] *** Joins: rerumnovarum (~user-reru@ )
+[15:06:47] *** Joins: reBrain (~quassel@ )
+[15:27:56] -qtox-git-spam- [qTox] zetok opened pull request #3818: chore(osx): link to ffmpeg and sqlcipher statically (master...chore-osx-bin) https://git.io/vPDeH
+[15:31:10] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[15:51:58] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 250 seconds)
+[15:54:35] *** Quits: sudd3n6 (~anonymous@ ) (Remote host closed the connection)
+[15:56:15] *** Joins: hexadezimalion (sid85551@ )
+[16:04:05] *** Quits: hexadezimalion (sid85551@ ) (Read error: Connection reset by peer)
+[16:06:22] *** Joins: hexadezimalion (sid85551@ )
+[16:09:11] -qtox-git-spam- [qTox] zetok opened pull request #3819: docs(README): link to instructions for OSX building (master...docs-readme-osxb) https://git.io/vPDIn
+[16:10:05] <SkyzohKey> hey guys
+[16:10:16] <SkyzohKey> zetok: u can't beat ricin v2 website ;)
+[16:10:25] <zetok> SkyzohKey: pls
+[16:10:31] <SkyzohKey> But i wanted to ask how your translation system works
+[16:10:41] <zetok> Just Works™
+[16:10:45] <SkyzohKey> x)
+[16:10:55] <SkyzohKey> Tried to adapt it on my code, didn't worked, python error :x
+[16:10:57] <SkyzohKey> https://v2.ricin.im
+[16:11:30] <zetok> do you use any js?
+[16:11:34] <SkyzohKey> nope
+[16:11:41] <zetok> oh?
+[16:11:52] <SkyzohKey> CSS3 Only™
+[16:13:13] <zetok> >nope
+[16:13:15] <zetok> that's a lie
+[16:13:19] <SkyzohKey> no
+[16:14:08] <zetok> turn js off in your browser and see for yourself
+[16:14:34] <SkyzohKey> ctrl+u → ctrl+f: .js → 0 result
+[16:18:19] *** Joins: sudden6 (~anonymous@ )
+[16:18:24] <zetok> right, that reminds me
+[16:19:00] <SkyzohKey> even with noscript activated, it just blocks the icons
+[16:19:23] *** Joins: sudd3n6 (~anonymous@ )
+[16:19:43] <SkyzohKey> and font-icons are hosted on my own cdn, so no data leak
+[16:20:02] <zetok> that's not the only thing that's broken
+[16:20:08] <SkyzohKey> show me an example
+[16:20:14] <zetok> try clicking
+[16:20:22] <SkyzohKey> clicking what ?
+[16:20:30] <zetok> what is there to click on? :P
+[16:20:36] <SkyzohKey> links ?
+[16:22:00] <SkyzohKey> if u talk about images pointer cursor, that's normal, i plan to implement something pretty cool soon ;)
+[16:22:10] <zetok> nah
+[16:22:24] <SkyzohKey> what then ?
+[16:23:32] <sudd3n6> zetok: o/
+[16:23:39] <zetok> sudd3n6: hai
+[16:24:03] *** Joins: cenysor (~cenysor@ )
+[16:24:14] <sudd3n6> how are you?
+[16:24:51] <qTox-Website> [qTox-Website] zetok opened pull request #16: Update translations from Weblate (master...tr) https://git.io/vPDqH
+[16:25:00] <zetok> ~
+[16:25:12] <SkyzohKey> zetok: so what is the issue you're talking about ?
+[16:25:19] <sudd3n6> nice answer lol
+[16:25:30] <zetok> SkyzohKey: download links
+[16:25:37] <sudd3n6> also :`ld: unknown option: -Bstatic`
+[16:25:41] <SkyzohKey> Yeah, they are empty, that's normal x')
+[16:25:55] <zetok> oh
+[16:26:09] * zetok thought that they were supposed to point to something
+[16:26:18] <SkyzohKey> They are, but not for now x)
+[16:27:09] <zetok> SkyzohKey: what do you think about redesigning TokTok website?
+[16:27:27] <SkyzohKey> Once the Ricin's one is finished, why not
+[16:29:02] <qTox-Website> [qTox-Website] zetok closed pull request #16: Update translations from Weblate (master...tr) https://git.io/vPDqH
+[16:30:21] <travis-ci> qTox/qTox-Website (06b47ab): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/168649274 / Changes: https://github.com/qTox/qTox-Website/compare/850e605a1520...06b47aba0638
+[17:10:34] *** Quits: bashrc (~motters@ ) (Ping timeout: 250 seconds)
+[17:12:19] *** Joins: bashrc (~motters@ )
+[17:24:47] *** Quits: abbat_ (~abbat@ ) (Quit: Leaving)
+[17:42:40] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[17:42:48] *** Joins: rerumnovarum (~user-reru@ )
+[18:21:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[18:29:14] -qtox-git-spam- [qTox] zetok closed pull request #3818: chore(osx): link to ffmpeg and sqlcipher statically (master...chore-osx-bin) https://git.io/vPDeH
+[18:34:45] *** Joins: zetok (~zetok@ )
+[18:35:02] *** Joins: Chiitoo (~Chiitoo@ )
+[18:35:10] *** Joins: koshii (~w@ )
+[18:35:28] *** Joins: worfox (~worfox@ )
+[18:58:27] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[18:59:08] *** Joins: abbat (~Anton@ )
+[18:59:41] *** Joins: SkyzohKey (~skyzohkey@ )
+[19:39:48] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[20:05:25] -qtox-git-spam- [qTox] zetok opened pull request #3820: style: remove unnecessary curly braces in `Widget::updateIcons()` (master...style-widg-ifp) https://git.io/vPDQf
+[20:07:22] <zetok> Hmm.
+[20:08:07] * zetok wonders how long will it take to get that merged
+[20:23:41] *** Joins: reBrain (~quassel@ )
+[20:45:03] *** Quits: cisc (~cisc@ ) (Ping timeout: 245 seconds)
+[21:01:51] *** Joins: cisc (~cisc@ )
+[21:01:54] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:23:05] *** sudd3n6 is now known as sudden6
+[21:28:27] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:51:18] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 245 seconds)
+[21:51:58] *** Joins: rerumnovarum (~user-reru@ )
+[22:06:01] <iphy> I see
+[22:06:17] <iphy> so much for having a common coding style between toxcore and qtox
+[22:06:39] <oranges> why would you have a common coding style
+[22:11:27] <iphy> I thought it would be nice to have a common standard in all tox related projects
+[22:11:44] *** oranges is now known as Crusader_King_or
+[22:11:53] <zetok> dunno about that
+[22:12:00] <sudden6> Isn't that unrealistic?
+[22:12:04] <zetok> I just made a PR according to what current style is
+[22:12:10] <sudden6> whith all the different languages?
+[22:12:16] <iphy> sudden6: C and C++
+[22:12:26] <iphy> no need to apply the C/C++ coding style to python
+[22:12:33] <sudden6> hm ok
+[22:12:38] <iphy> but we would have a common python coding style
+[22:12:41] <iphy> and a common scala coding style
+[22:12:51] <zetok> I don't really care though, if style will be changed to something else I'm perfectly fine with changing/closing the PR
+[22:12:53] <iphy> C and C++ can have the same style
+[22:13:22] <sudden6> but even C and C++ are better with different styles IMO
+[22:13:44] <sudden6> in C++ you have a lot more confusing operators
+[22:14:02] <zetok> iphy: um, if qTox is to share style with other tox stuff, there should be some movement in that direction to begin with
+[22:14:13] <sudden6> which I think favorors a more verbose style
+[22:17:26] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 256 seconds)
+[22:20:32] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:28:13] *** Joins: sudd3n6 (~anonymous@ )
+[22:44:32] <iphy> sudden6: more verbose in what way?
+[22:45:06] <iphy> sudden6: and which confusing operators?
+[22:46:00] <iphy> zetok: if we have a clang-format config we can share with all projects, we're done
+[22:46:18] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[22:46:56] <zetok> iphy: right, could toxcore one be changed to have curly braces vertically aligned?
+[22:47:37] <iphy> zetok: possibly, we'll need to discuss that with all people involved
+[22:47:56] <zetok> ok
+[22:48:08] <iphy> If we can't find a style we can agree on, at least we can be based on one
+[22:53:42] <zetok> where discussion about style should happen?
+[22:54:18] <zetok> actually
+[22:55:23] <zetok> https://github.com/qTox/qTox/issues/3601 ← there is already one
+[22:55:39] <zetok> "discussion"
+[22:57:15] <zetok> iphy: could you write there what you're proposing?
+[23:07:32] *** Joins: VVD52032 (~VVD@ )
+[23:08:37] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:22:28] *** Joins: VVD (~VVD@ )
+[23:23:40] *** Quits: VVD52032 (~VVD@ ) (Read error: Connection reset by peer)
+[23:37:50] *** Joins: VVD05054 (~VVD@ )
+[23:37:53] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:50:00] *** Joins: bashrc_ (~motters@ )
+[23:51:01] *** Quits: bashrc (~motters@ ) (Ping timeout: 252 seconds)
+[23:53:23] *** Quits: VVD05054 (~VVD@ ) (Read error: Connection reset by peer)
+[23:53:23] *** Joins: VVD (~VVD@ )
+[23:57:57] *** Quits: bashrc_ (~motters@ ) (Quit: Lost terminal)
+[23:58:22] *** Joins: cisc (~cisc@ )
