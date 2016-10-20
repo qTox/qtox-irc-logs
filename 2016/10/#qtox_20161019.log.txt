@@ -1,0 +1,183 @@
+[00:06:01] *** Joins: DaSpirit (~DaSpirit@ )
+[00:08:41] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[00:08:58] *** Joins: VVD (~VVD@ )
+[00:51:24] *** Quits: Impyy (~impy@ ) (Quit: Death)
+[00:56:08] *** Joins: Impyy (~impy@ )
+[01:01:23] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[01:23:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[01:31:29] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[02:16:13] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[02:20:36] *** Crusader_King_or is now known as irungennet2
+[02:24:05] *** irungennet2 is now known as roundaboutthough
+[02:33:47] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[02:57:13] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:01:33] *** Quits: genesis (~genesis@ ) (Quit: Leaving)
+[03:13:10] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[03:16:37] *** Joins: in1t3r (~LordShiva@ )
+[03:21:08] *** Joins: cisc (~cisc@ )
+[03:29:55] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[04:38:16] *** Joins: cisc (~cisc@ )
+[04:48:52] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 256 seconds)
+[05:14:31] *** Joins: in1t3r (~LordShiva@ )
+[06:29:00] *** Joins: Neolex (~neolex@ )
+[06:29:15] *** Parts: Neolex (~neolex@ ) ()
+[07:22:15] -qtox-git-spam- [qTox] Diadlo opened pull request #3822: Separate UserDb from History class (master...userDb) https://git.io/vPypO
+[07:36:45] *** roundaboutthough is now known as oranges
+[07:49:38] *** Quits: VVD (~VVD@ ) (Ping timeout: 245 seconds)
+[07:53:27] *** Joins: VVD (~VVD@ )
+[08:28:45] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:37:05] *** Joins: CGGB (~CGGB@ )
+[08:40:56] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[08:47:54] *** Joins: cisc (~cisc@ )
+[10:00:41] *** Joins: kadinparker[m] (kadinparke@ )
+[10:01:09] *** Joins: abbat (~abbat@ )
+[10:12:12] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:43:56] *** Joins: sudden6 (~anonymous@ )
+[11:03:51] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[11:04:33] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[11:04:56] *** Joins: abbat (~abbat@ )
+[11:27:00] *** Joins: in1t3r (~LordShiva@ )
+[11:40:24] *** Joins: genesis (~genesis@ )
+[12:06:03] *** Joins: sudd3n6 (~anonymous@ )
+[12:08:29] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[12:11:23] *** Joins: abbat (~abbat@ )
+[12:33:27] *** Quits: VVD (~VVD@ ) (Ping timeout: 244 seconds)
+[12:34:24] *** Joins: VVD (~VVD@ )
+[12:49:20] *** Joins: Chiitoo (~Chiitoo@ )
+[13:15:32] *** Quits: abbat (~abbat@ ) (Read error: No route to host)
+[13:21:38] *** Joins: _sudden6_ (~anonymous@ )
+[13:25:07] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[13:25:28] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[13:27:11] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 244 seconds)
+[14:12:10] *** Joins: reBrain (~quassel@ )
+[14:14:57] *** Quits: reBrain (~quassel@ ) (Read error: Connection reset by peer)
+[14:17:03] *** Joins: bashrc (~motters@ )
+[15:03:45] *** Joins: abbat (~abbat@ )
+[15:21:36] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[15:52:17] <Diadl0> Hello everybody :)
+[15:53:15] <zetok> hi
+[15:57:08] <Diadl0> zetok: We need script to autoincrement copyright date :)
+[15:57:51] <zetok> how it would be supposed to work?
+[15:58:46] <Diadl0> Check last changed files in git and replace years
+[15:59:17] <Diadl0> Or it should go through all files and check last modification date
+[15:59:40] <zetok> hmm
+[16:00:12] *** Quits: bashrc (~motters@ ) (Remote host closed the connection)
+[16:01:31] <Diadl0> git diff --stat show files + statistics without changes
+[16:02:12] <Diadl0> Can it be done in merge commit?
+[16:02:37] <zetok> no
+[16:02:55] *** Joins: bashrc (~motters@ )
+[16:02:59] <Diadl0> Ok
+[16:03:07] <Diadl0> Why?
+[16:03:26] <zetok> merge commit doesn't change the code
+[16:03:35] <zetok> if it did, it would need to pass checks
+[16:03:40] <zetok> travis + review
+[16:04:32] <Diadl0> Ok
+[16:06:47] <zetok> grep -i copyright src/ | wc -l
+[16:06:47] <zetok> 281
+[16:06:59] <zetok> yeah, script could be useful
+[16:09:30] <Diadl0> Not all files was changed in this year :)
+[16:10:06] <zetok> no, but having a script that automate increasing number when needed will be useful
+[16:11:44] <zetok> I'm not sure though if I would write it
+[16:13:19] <zetok> src/core/cstring.cpp:    Copyright © 2014 by The qTox Project
+[16:13:35] <zetok> ↑ e.g. that would be problematic, since range can't be really applied yet
+[16:14:03] <zetok> so if it's changed, it would need `2014, 2016`, and then `2014, 2016-2017`
+[16:14:51] <zetok> "fun"
+[16:36:55] <iphy> why do you even want to increase the number?
+[16:39:57] <iphy> zetok: is The qTox Project a legal entity?
+[16:50:42] <Diadl0> zetok: I don't think, that replace on `2014-2016` instead of `2014, 2016` will be big problem
+[16:52:20] <zetok> iphy: nope
+[16:53:24] <zetok> 'The qTox Project' = 'The qTox Project Contributors'
+[17:06:23] <iphy> Diadl0: why do you want to update the year?
+[17:07:01] <zetok> updating copyright should happen once "significant changes" have been made
+[17:33:20] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
+[17:33:50] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:37:33] <iphy> zetok: where do you get this?
+[17:51:51] <zetok> iphy: https://stackoverflow.com/questions/2390230/do-copyright-dates-need-to-be-updated + https://www.gnu.org/licenses/gpl-howto.html
+[17:55:18] <iphy> "In cases where the work was substantially revised you may establish a new copyright claim to the revised work"
+[17:55:20] <iphy> says "may"
+[17:55:31] <iphy> the gnu site doesn't say why you should be doing that
+[18:13:42] *** Joins: cenysor (~cenysor@ )
+[18:29:40] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
+[18:30:02] *** Joins: SkyzohKey (~skyzohkey@ )
+[19:05:12] <zetok> right
+[19:08:59] <zetok> I don't know if it qualifies as such, but given that git{,hub} offers {tar,zip}balls for each of commits that are available, it would seem to be sort of a "release" when commits are pushed to repo
+[19:09:27] <zetok> + there are qTox alpha "releases" based on master
+[19:09:47] <zetok> I don't really know though, it just seems like the right thing to do
+[19:10:34] <zetok> ><iphy> the gnu site doesn't say why you should be doing that
+[19:11:02] <zetok> yeah, but it seems to be a common practice when it comes to copyright, e.g. with books
+[19:40:15] *** Quits: linxon (~lin@ ) (Changing host)
+[19:40:15] *** Joins: linxon (~lin@ )
+[19:56:46] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[20:14:30] *** Joins: in1t3r (~LordShiva@ )
+[20:31:48] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 256 seconds)
+[21:02:30] <zetok> :3
+[21:11:05] <Diadl0> zetok: > Average amount of items that one can hold in their short-term memory is 7
+[21:11:37] <Diadl0> I have one question: why a reader should hold header in memory?
+[21:12:36] <zetok> short-term memory works more in a manner of FILO
+[21:12:59] <zetok> and to process information, you need to hold it in memory
+[21:13:03] <Diadl0> I see READEME.md like a short book
+[21:13:17] <zetok> it's not really one
+[21:13:22] <zetok> it's more of a website
+[21:13:35] <Diadl0> This is the reason, why we use links in header
+[21:14:41] <Diadl0> User should not remember header
+[21:14:53] <zetok> err
+[21:16:09] <Diadl0> On my monitor header take exactly one line. IMO, it's seems perfect
+[21:16:48] <Diadl0> except IRC Channel info
+[21:17:28] <zetok> ><Diadl0> User should not remember header
+[21:17:55] <zetok> if user doesn't need to hold that info even in their short-term memory, we should remove header altogether, since it's unnecessary
+[21:18:42] <zetok> Diadl0: and it's not perfect, given that no one looks at it
+[21:18:49] <zetok> or rather, at its contents
+[21:19:06] <Diadl0> I think, no one read whole README.md in first time. He/she just find useful information
+[21:19:30] <zetok> yeah, and finding info should be as simple and straightforward as possible
+[21:20:11] <zetok> more items in header make it less simple
+[21:20:13] <Diadl0> Yes. Finding text in 1-2 lines it's too hard </sarcasm>
+[21:20:23] <zetok> Yes.
+[21:20:29] <Diadl0> "Err"
+[21:20:42] <zetok> if you require users to do something that is completely unnecessary, you're doing it wrong
+[21:21:02] <zetok> users shouldn't have to find info in 1-2 lines
+[21:21:15] <zetok> things that they are looking for should be nicely exposed to them
+[21:21:39] <Diadl0> If you remove some parts from header you require users read most part of README
+[21:21:54] <Diadl0> To find needed information
+[21:23:02] <zetok> except that people aren't reading, and what they are looking for is nicely exposed :)
+[21:23:28] <zetok> `Help us` has a nice, big, bold font
+[21:24:14] <zetok> right below downloads section, where people would look
+[21:24:20] <Diadl0> I must admit
+[21:24:31] <Diadl0> I never seen this part before
+[21:25:14] <Diadl0> I thought, that all, what we have in README listed in header
+[21:25:53] <zetok> >.<
+[21:26:18] * zetok wonders if it's possible to have <blink> stuff in .md
+[21:27:05] <zetok> ok
+[21:27:06] <Diadl0> When I see header with links, I interpret it as an index. And if I didn't see needed part -- what reason to read it?
+[21:27:50] <Diadl0> What you mean by `<blink> stuff`?
+[21:28:05] <zetok> Diadl0: https://github.com/syl20bnr/spacemacs
+[21:28:15] <zetok> Diadl0: <blink> html tag :P
+[21:29:00] <Diadl0> Like this? :D http://avos.me/
+[21:29:22] <zetok> uuh
+[21:29:34] <zetok> no, although that's something
+[21:29:41] <zetok> blinking text
+[21:29:54] <Diadl0> I understand. It was a joke :)
+[21:30:41] <Diadl0> This is the best advertising I've ever seen)
+[21:31:10] <zetok> a bit heavy on eyes
+[21:31:26] <zetok> not the best kind of an advert that I've seen though
+[21:32:05] <Diadl0> Hm.. I think, problem with no-js
+[21:32:16] <Diadl0> It should redirect after few seconds
+[21:33:54] <zetok> https://www.youtube.com/watch?v=zizoHJXo9Pw ← best advert
+[21:34:08] <zetok> https://www.youtube.com/watch?v=nITLob098W8 ← not as good, but it gives you the taste ;)
+[21:34:10] <Diadl0> `AVOS` it's wordplay. Translated ~like `off chance`
+[21:35:03] <Diadl0> zetok: It's perfect))
+[21:36:16] *** Joins: SudoSam (~user@ )
+[21:41:14] *** Joins: CGGB (~CGGB@ )
+[21:42:53] <Diadl0> Top-marketing
+[21:43:21] <zetok> we should get something like that for qTox
+[21:43:30] <Diadl0> +1
+[21:58:46] *** Joins: rerumnovarum (~user-reru@ )
+[22:00:34] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[22:00:55] *** Joins: CGGB (~CGGB@ )
+[22:13:18] <zetok> ><Diadl0> I thought, that all, what we have in README listed in header
+[22:13:22] <zetok> ok, I don't get that
+[22:13:41] <zetok> ~none of things listed in header point to stuff in rest of README.md
+[22:29:22] <genesis> wazzup qtox ?
+[22:37:11] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[23:00:36] *** Joins: bennabiy (~bennabiy@ )
+[23:21:47] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[23:31:57] *** Joins: Chiitoo (~Chiitoo@ )
