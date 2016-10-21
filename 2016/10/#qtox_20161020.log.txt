@@ -1,0 +1,137 @@
+[00:03:07] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:43:01] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 268 seconds)
+[00:44:37] *** Joins: jjuran (~jjuran@ )
+[00:48:51] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 252 seconds)
+[00:50:24] *** Joins: jjuran (~jjuran@ )
+[00:51:55] *** Joins: DaSpirit (~DaSpirit@ )
+[01:25:28] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[01:44:02] *** Joins: Emcy_ (~MC@ )
+[01:44:02] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[01:44:02] *** Joins: Emcy_ (~MC@ )
+[01:44:21] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[01:45:59] *** Joins: cisc (~cisc@ )
+[01:52:32] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[02:05:25] *** Joins: in1t3r (~LordShiva@ )
+[02:48:34] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:03:50] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[03:21:12] *** Joins: bennabiy (~bennabiy@ )
+[05:20:12] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[05:33:08] *** Joins: cisc (~cisc@ )
+[06:51:24] *** Quits: koshii (~w@ ) (Ping timeout: 260 seconds)
+[07:02:09] *** BHR27 is now known as bheru27
+[07:02:23] *** Parts: bheru27 (~Bheru27@ ) ("Leaving")
+[07:26:38] *** Joins: sudden6 (~anonymous@ )
+[07:35:04] *** Joins: sudd3n6 (~anonymous@ )
+[07:35:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:46:38] <Diadl0> zetok: Are you here?
+[07:46:43] <zetok> yep
+[07:46:45] <Diadl0> https://github.com/matiassingers/awesome-readme
+[07:47:22] <Diadl0> What about reformat README?
+[07:49:56] <Diadl0> Move screenshot/logo on the top, to attract attention
+[07:57:03] <Diadl0> This label absolutely useless on the bottom of README.md https://camo.githubusercontent.com/12b0005615bad24e6794d34f091b881eff14fab5/68747470733a2f2f7472617669732d63692e6f72672f71546f782f71546f782e7376673f6272616e63683d6d6173746572
+[07:57:30] <zetok> mm
+[07:57:52] <zetok> I've moved it there since qTox builds at the time were being constantly broken
+[07:58:13] <zetok> looks like it's time to move it back
+[07:59:40] <Diadl0> On screenshots we didn't show circles
+[07:59:55] <zetok> yeah
+[08:01:16] * zetok wonders
+[08:04:46] *** Quits: albel727 (~albel727@ ) (Ping timeout: 250 seconds)
+[08:05:20] <Diadl0> https://codedocs.xyz/
+[09:02:05] <Diadl0> zetok: What you think about using? ^
+[09:03:07] <zetok> not as good as what we have now
+[09:03:44] <Diadl0> Why?
+[09:04:44] -qtox-git-spam- [qTox] Diadlo closed pull request #3822: Separate UserDb from History class (master...userDb) https://git.io/vPypO
+[09:05:11] <zetok> right now docs have to build in order for tests to pass
+[09:06:14] <zetok> solution used for deploying isn't really bound to a proprietary service, and could be easily reused with gitlab
+[09:06:49] <zetok> or own vps
+[09:07:27] <Diadl0> Ok. Understand
+[09:09:45] <zetok> um, why close the PR?
+[09:12:33] <Diadl0> To rewrite something. Soon I will open new one :)
+[09:14:29] <zetok> oh, ok
+[09:15:16] <zetok> rerumnovarum: README.md; it probably could make some use of improvements, but I'm not sure what those would be
+[09:15:50] <zetok> I mean, I have a few things on mind, but those aren't a real plan, just some minor stuff that needs to be moved around
+[09:16:23] <zetok> ..
+[09:16:41] <zetok> damn, hexchat autocompleted again :/
+[09:16:49] * zetok meant `re: `
+[09:17:10] <zetok> `re: test
+[09:21:37] <oranges> could you repeat the question?
+[09:22:04] <Diadl0> antis81 previously wrote: https://github.com/qTox/qTox/pull/3491/files#diff-6a3371457528722a734f3c51d9238c13R107
+[09:22:13] <Diadl0> But https://github.com/qTox/qTox/pull/3639 has 54 commits
+[09:23:24] <Diadl0> Becouse, he is went away for a some time, I think we should split it on smaller ones
+[09:29:20] <zetok> https://github.com/hexchat/hexchat/issues/1850 there we go
+[09:30:18] <zetok> Diadl0: yeah, that's a good idea
+[09:32:00] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[09:43:32] *** Joins: sudd3n6 (~anonymous@ )
+[09:46:41] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:56:19] *** Joins: VVD (~VVD@ )
+[09:57:05] *** Joins: albel727 (~albel727@ )
+[10:05:07] -qtox-git-spam- [qTox] Diadlo opened pull request #3823: Separate RawDatabase creation from Hisotry (master...userDb) https://git.io/vPHpZ
+[10:19:12] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[10:29:19] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[11:14:23] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[11:21:58] *** Joins: miokiry (~Adium@ )
+[11:45:50] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[11:48:43] *** Joins: cisc (~cisc@ )
+[11:50:13] *** Joins: abbat (~abbat@ )
+[11:50:44] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[12:00:13] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[12:12:53] *** Joins: koshii (~w@ )
+[12:17:48] *** Joins: abbat (~abbat@ )
+[12:20:28] *** Quits: mitfree_ (~mit@ ) (Ping timeout: 268 seconds)
+[12:23:48] *** Joins: sudd3n6 (~anonymous@ )
+[12:29:32] *** Quits: smaragdus (igneus@ ) (Ping timeout: 250 seconds)
+[12:33:08] *** Joins: smaragdus (~omoo@ )
+[12:33:37] *** Joins: miokiry (~Adium@ )
+[12:55:43] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[12:57:22] *** Joins: miokiry (~Adium@ )
+[12:57:26] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[12:57:37] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[13:15:12] *** Joins: miokiry (~Adium@ )
+[13:15:41] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[13:59:26] *** Joins: miokiry (~Adium@ )
+[14:14:38] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[14:18:20] *** Joins: miokiry (~Adium@ )
+[14:18:33] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[15:16:05] *** Joins: rerumnov1rum (~user-reru@ )
+[15:18:58] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[15:23:12] *** Joins: cenysor (~cenysor@ )
+[15:47:21] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:47:32] *** Joins: cisc (~cisc@ )
+[16:29:38] *** Quits: Darky (~Darky@ ) (Ping timeout: 245 seconds)
+[16:58:53] *** Joins: sudd3n6 (~anonymous@ )
+[17:12:25] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[17:15:04] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[17:24:52] *** Joins: abbat (~abbat@ )
+[17:29:17] *** Joins: CGGB (~CGGB@ )
+[17:45:02] *** Joins: sudd3n6 (~anonymous@ )
+[17:49:40] *** Joins: sudden6 (~anonymous@ )
+[17:50:38] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[17:56:59] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:36:19] <zetok> any volunteers to maintain patch releases (i.e. backport fixes)?
+[18:57:55] *** Joins: albel727 (~albel727@ )
+[19:07:45] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[19:07:58] *** Joins: albel727 (~albel727@ )
+[19:24:23] *** Quits: albel727 (~albel727@ ) (Remote host closed the connection)
+[19:24:43] *** Joins: albel727 (~albel727@ )
+[19:36:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[19:41:18] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[19:41:33] *** Joins: albel727 (~albel727@ )
+[19:56:23] *** Joins: sudden6 (~anonymous@ )
+[20:35:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[21:19:30] <Diadl0> zetok: ping
+[21:19:37] <zetok> Diadl0: pong
+[21:20:37] <Diadl0> qTox show in history user alias, what was settled in the past
+[21:21:00] <Diadl0> What you think about changing the behaviour?
+[21:21:12] <Diadl0> Show only current alias
+[21:21:47] <zetok> no
+[21:21:54] <Diadl0> Why?
+[21:22:01] <zetok> history should be preserved the way it happened
+[21:22:12] <Diadl0> Ok
+[21:22:25] <Diadl0> But I was little bit confused)
+[22:34:21] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:43:33] <iphy> interesting: ring is becoming a GNU project
+[22:43:35] <iphy> GNU Ring
+[22:46:54] <zetok> that's just sad
+[22:47:15] <oranges> Gnu/Sad to you
+[23:11:06] *** Joins: DaSpirit (~DaSpirit@ )
+[23:42:22] *** Joins: athan (~athan@ )
