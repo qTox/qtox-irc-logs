@@ -1,0 +1,357 @@
+[00:01:05] *** Quits: vindelschtuffen (~vindelsch@ ) (*.net *.split)
+[00:01:06] *** Quits: SudoSam (~user@ ) (*.net *.split)
+[00:01:07] *** Quits: Sephi (~me@ ) (*.net *.split)
+[00:01:14] *** Quits: ChanServ (ChanServ@ ) (*.net *.split)
+[00:01:15] *** Quits: in1t3r (~LordShiva@ ) (*.net *.split)
+[00:01:15] *** Quits: smaragdus (~omoo@ ) (*.net *.split)
+[00:01:17] *** Quits: Dragofix (Dragofix@ ) (*.net *.split)
+[00:01:18] *** Quits: Emcy_ (~MC@ ) (*.net *.split)
+[00:01:20] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[00:01:26] *** Quits: e0f (~e0f@ ) (*.net *.split)
+[00:01:26] *** Quits: cisc (~cisc@ ) (*.net *.split)
+[00:01:27] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[00:01:27] *** Quits: initramfs (~initramfs@ ) (*.net *.split)
+[00:01:29] *** Quits: Diadl0 (~diadlo@ ) (*.net *.split)
+[00:01:29] *** Quits: tobiasBora (~tobiasBor@ ) (*.net *.split)
+[00:01:30] *** Quits: zero-ghost (~0@ ) (*.net *.split)
+[00:01:31] *** Quits: sudd3n6 (~anonymous@ ) (*.net *.split)
+[00:01:33] *** Quits: albel727 (~albel727@ ) (*.net *.split)
+[00:01:35] *** Quits: kadinparker[m] (kadinparke@ ) (*.net *.split)
+[00:01:36] *** Quits: worfox (~worfox@ ) (*.net *.split)
+[00:01:37] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[00:01:38] *** Quits: sudden6 (~anonymous@ ) (*.net *.split)
+[00:01:41] *** Quits: jjuran (~jjuran@ ) (*.net *.split)
+[00:01:41] *** Quits: koshii (~w@ ) (*.net *.split)
+[00:01:41] *** Quits: Chiitoo (~Chiitoo@ ) (*.net *.split)
+[00:01:42] *** Quits: arza (arza@ ) (*.net *.split)
+[00:01:42] *** Quits: Curlybear (~Curlybear@ ) (*.net *.split)
+[00:01:42] *** Quits: CGGB (~CGGB@ ) (*.net *.split)
+[00:01:42] *** Quits: rerumnovarum (~user-reru@ ) (*.net *.split)
+[00:01:43] *** Quits: Se7en (~Se7en@ ) (*.net *.split)
+[00:01:45] *** Quits: sockspls (~sockspls@ ) (*.net *.split)
+[00:01:48] *** Quits: anoa (~anoa@ ) (*.net *.split)
+[00:01:48] *** Quits: oranges (oranges@ ) (*.net *.split)
+[00:01:49] *** Quits: rysiek|pl (~quassel@ ) (*.net *.split)
+[00:01:49] *** Quits: bkidwell (~bkidwell@ ) (*.net *.split)
+[00:01:51] *** Quits: tux3 (~tux@ ) (*.net *.split)
+[00:01:51] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[00:01:52] *** Quits: mitfree (~mit@ ) (*.net *.split)
+[00:01:53] *** Quits: dan- (~d@ ) (*.net *.split)
+[00:01:54] *** Quits: nurupo (~nurupo.ga@ ) (*.net *.split)
+[00:01:58] *** Quits: GGMethos (methos@ ) (Max SendQ exceeded)
+[00:07:03] *** Joins: sudden6 (~anonymous@ )
+[00:07:03] *** Joins: vindelschtuffen (~vindelsch@ )
+[00:07:03] *** Joins: tux3 (~tux@ )
+[00:07:03] *** Joins: dongo (~dongo@ )
+[00:07:03] *** Joins: anoa (~anoa@ )
+[00:07:03] *** Joins: bkidwell (~bkidwell@ )
+[00:07:03] *** Joins: rysiek|pl (~quassel@ )
+[00:07:03] *** Joins: sockspls (~sockspls@ )
+[00:07:03] *** Joins: nurupo (~nurupo.ga@ )
+[00:07:03] *** Joins: oranges (oranges@ )
+[00:07:03] *** Joins: dan- (~d@ )
+[00:07:03] *** Joins: mitfree (~mit@ )
+[00:07:03] *** Joins: SudoSam (~user@ )
+[00:07:15] *** Joins: Sephi (~me@ )
+[00:07:15] *** Joins: cisc (~cisc@ )
+[00:07:15] *** Joins: LittleVulpix (~Miranda@ )
+[00:07:15] *** Joins: initramfs (~initramfs@ )
+[00:07:15] *** Joins: Diadl0 (~diadlo@ )
+[00:07:15] *** Joins: tobiasBora (~tobiasBor@ )
+[00:07:15] *** Joins: zero-ghost (~0@ )
+[00:07:26] *** Joins: in1t3r (~LordShiva@ )
+[00:07:26] *** Joins: smaragdus (~omoo@ )
+[00:07:32] *** Joins: albel727 (~albel727@ )
+[00:07:36] *** Joins: CGGB (~CGGB@ )
+[00:07:36] *** Joins: rerumnovarum (~user-reru@ )
+[00:07:36] *** Joins: Se7en (~Se7en@ )
+[00:07:46] *** Joins: jjuran (~jjuran@ )
+[00:07:46] *** Joins: koshii (~w@ )
+[00:07:46] *** Joins: Chiitoo (~Chiitoo@ )
+[00:07:46] *** Joins: arza (arza@ )
+[00:07:46] *** Joins: Curlybear (~Curlybear@ )
+[00:07:55] *** Joins: Dragofix (Dragofix@ )
+[00:07:55] *** Joins: Emcy_ (~MC@ )
+[00:07:55] *** Joins: hexadezimalion (sid85551@ )
+[00:07:55] *** Joins: e0f (~e0f@ )
+[00:08:06] *** Joins: GGMethos (methos@ )
+[00:08:06] *** Joins: kadinparker[m] (kadinparke@ )
+[00:08:06] *** Joins: worfox (~worfox@ )
+[00:08:11] *** Quits: GGMethos (methos@ ) (Max SendQ exceeded)
+[00:10:27] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:11:11] *** Joins: GGMethos (methos@ )
+[00:11:56] *** Joins: ChanServ (ChanServ@ )
+[00:11:56] *** adams.freenode.net sets mode: +o ChanServ   
+[00:12:58] *** Joins: sudd3n6 (~anonymous@ )
+[00:20:17] *** Joins: iphy (uid67735@ )
+[00:52:16] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 256 seconds)
+[00:53:57] *** Joins: jjuran (~jjuran@ )
+[01:00:53] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[01:21:47] *** Joins: sudden6 (~anonymous@ )
+[01:34:30] *** Joins: LittleVulpix (~Miranda@ )
+[02:07:05] *** Quits: initramfs (~initramfs@ ) (Remote host closed the connection)
+[02:17:46] *** Joins: initramfs (~initramfs@ )
+[02:55:02] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[02:55:14] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[03:06:39] *** Quits: tux3 (~tux@ ) (Quit: Quitting)
+[03:07:04] *** Joins: tux3 (tux@ )
+[03:12:21] *** Joins: DaSpirit (~DaSpirit@ )
+[03:23:31] *** Quits: tux3 (tux@ ) (Quit: Quitting)
+[03:23:56] *** Joins: tux3 (tux@ )
+[03:30:43] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 252 seconds)
+[03:35:04] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 245 seconds)
+[03:36:10] *** Joins: worfox_ (~worfox@ )
+[03:36:43] *** Quits: worfox (~worfox@ ) (Ping timeout: 245 seconds)
+[03:38:04] *** Joins: kadinparker[m] (kadinparke@ )
+[03:41:34] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:07:07] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[05:05:29] *** Quits: vindelschtuffen (~vindelsch@ ) (Remote host closed the connection)
+[05:44:10] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[05:47:29] *** Joins: initramfs (~initramfs@ )
+[07:18:48] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[07:45:58] *** Joins: initramfs (~initramfs@ )
+[07:46:08] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[08:23:23] *** Joins: cisc (~cisc@ )
+[08:27:03] <zetok> initramfs: hi
+[08:27:17] <zetok> initramfs: did you get things working?
+[08:27:37] <initramfs> zetok: Almost all done
+[08:27:43] <zetok> \o/
+[08:28:08] <initramfs> zetok: Weird thing is the gentoo provided versions of qTox don't work lol
+[08:28:26] <zetok> :|
+[08:28:39] <zetok> initramfs: what's the problem?
+[08:28:46] <initramfs> Building from the git repo directly yields no problem though
+[08:29:02] <initramfs> zetok: Check tox
+[09:14:53] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[09:18:37] <zetok> Diadl0: um, if you're working on splitting ui_redesign into smaller chunks and getting them merged, does that mean that one shouldn't worry about making PRs that could conflict with ui_redesign code?
+[09:18:53] <zetok> or would that still be problematic?
+[09:25:44] *** Joins: zero-ghost (~0@ )
+[09:50:07] *** Joins: reBrain (~quassel@ )
+[09:57:23] *** Joins: cenysor (~cenysor@ )
+[09:59:03] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:59:32] *** Joins: CGGB (~CGGB@ )
+[10:10:26] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[10:16:40] *** Joins: initramfs (~initramfs@ )
+[11:04:44] *** Joins: ada_ (~ada@ )
+[11:04:55] *** Quits: ada_ (~ada@ ) (Client Quit)
+[11:22:21] *** Joins: sudd3n6 (~anonymous@ )
+[11:22:23] *** Joins: sudden6 (~anonymous@ )
+[12:09:03] *** Joins: abbat (~Anton@ )
+[13:05:43] *** Joins: miokiry (~Adium@ )
+[13:06:30] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[13:14:01] *** Joins: miokiry (~Adium@ )
+[14:22:45] <zetok> anyone available to give LGTM for translation pull?
+[14:24:51] <sudd3n6> zetok: yep
+[14:25:09] <zetok> ok, will make one
+[14:34:52] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[14:37:20] -qtox-git-spam- [qTox] zetok opened pull request #3825: Update translations from Weblate (master...tr) https://git.io/vPF7N
+[14:45:50] <zetok> thanks :)
+[15:10:44] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[15:18:03] *** Joins: iphy (uid67735@ )
+[15:35:45] *** Joins: Lyris (~Lyris@ )
+[15:37:30] -qtox-git-spam- [qTox] zetok pushed 8 new commits to master: https://git.io/vPFF8
+[15:37:30] -qtox-git-spam- qTox/master 5f08719 Mingye Wang: feat(l10n): update Chinese translation from Weblate
+[15:37:30] -qtox-git-spam- qTox/master e0c7121 Kaur Männamaa: feat(l10n): update Estonian translation from Weblate
+[15:37:30] -qtox-git-spam- qTox/master dd2a5da Павел: feat(l10n): update Russian translation from Weblate
+[15:55:38] *** Quits: Lyris (~Lyris@ ) (Quit: Leaving.)
+[16:18:16] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 260 seconds)
+[16:26:45] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[16:29:25] <zetok> >First of all there needs to be a maintainer for that package, which nobody wanted to do yet.
+[16:29:34] <zetok> sudd3n6: that's bullshit
+[16:31:29] <sudd3n6> zetok: ah?
+[16:32:45] <zetok> most of distros simply have too shitty packaging rules because of which it would be a bad idea to package qTox according to them
+[16:33:30] <zetok> e.g. Debian, and most of distros based on it – require software to not change, which is not going to work for tox
+[16:34:50] <zetok> the only thing that would result from shitty distros packaging Tox stuff would be people having broken packages, and they would blame Tox for that
+[16:35:05] <zetok> so no, there have been people who wanted to do shitty packaging
+[16:35:11] <zetok> and they were told that this is a bad idea
+[16:35:46] <zetok> koshii: ↑ any luck with bending the rules?
+[16:36:22] <zetok> >For qTox abbat maintains https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox but it isn't official either.
+[16:36:32] <zetok> that too is bullshit, it's as "official" as it gets
+[16:37:10] <zetok> feel free to quote me verbatim on that stuff
+[16:40:32] <zetok> nurupo: regarding what you wondered about earlier – whether to remove qtox packages from tox.chat repo – yeah, removing them seems like a good idea since it would appear that people only have broken packages, thus there's no point in having them, is there?
+[16:44:08] <koshii> zetok: Sure, with backports. :)
+[16:44:28] <zetok> don't backports require packages to be in debian in the first place?
+[16:44:44] <koshii> zetok: And of course, if the package doesn't actually work it can be updated in the main repo. The LTS ones still update even functionality.
+[16:44:59] <koshii> So if qTox had a major protocol change or something, you could update it in the main debian
+[16:45:10] <koshii> Uhhh, I am not sure about that actually. Maybe not!
+[16:45:15] <zetok> that's not the case
+[16:45:16] <koshii> Although that might fall under "contrib"
+[16:45:19] <zetok> they don't change stuff
+[16:45:37] * zetok afk for a moment
+[16:46:27] <koshii> As a user of Debian on a day-to-day basis, I can say for sure they they do.
+[16:46:40] <koshii> It isn't just security updates that get pushed into the main repo with the LTS updates
+[16:46:41] <sudd3n6> [17:36] <zetok> that too is bullshit, it's as "official" as it gets
+[16:46:53] <sudd3n6> it isn't official for any of the distros
+[16:47:21] <sudd3n6> it's official from our side, but the poster meant "official" from the distro side
+[16:47:55] <koshii> I'm glad you guys are still thinking about this.
+[16:50:30] <zetok> ><koshii> As a user of Debian on a day-to-day basis, I can say for sure they they do.
+[16:50:40] <zetok> uhm, so
+[16:51:09] <sudd3n6> another problem we have is libtoxcore
+[16:51:38] <sudd3n6> it's still unversioned and distros don't like unversioned things
+[16:51:39] <zetok> one of most important reasons why I'm using Gentoo is that it offers working stability that Debian couldn't deliver
+[16:52:10] <zetok> koshii: and from what I've seen, there were no updates for broken packages for which protocol changed
+[16:52:33] <zetok> and I need things *working* and stable
+[16:52:54] <koshii> The thing is, it's up to the maintainer.
+[16:53:04] <koshii> There is no centralized command center.
+[16:53:07] <zetok> yeah, so it defaults to shit
+[16:53:18] <koshii> If the maintainer isn't on the ball, indeed.
+[16:53:40] <zetok> "If something can go wrong, it will go wrong"
+[16:54:53] <koshii> So what I'm saying is, I don't see why the qtox maintainer couldn't be on the ball :)
+[16:56:06] <zetok> Err.
+[16:56:44] <zetok> sudd3n6: didn't TokTok get a v0.0.1 tag?
+[16:58:42] <sudd3n6> zetok: AFAIR it's 0.0.1 since ever
+[16:58:48] <zetok> sudd3n6: nope
+[16:59:03] <zetok> toxcore has been 0.0.0 for years
+[16:59:14] <sudd3n6> yeah, that's what I meant
+[16:59:21] <zetok> and fairly recently(?) TokTok got 0.0.1
+[16:59:28] <zetok> or is it still "getting" it?
+[16:59:32] <sudd3n6> toktok probably isn't on the radar then
+[16:59:36] <zetok> I think I saw a tag
+[17:00:02] <zetok>  * [new tag]         v0.0.1     -> v0.0.1
+[17:00:06] <zetok> yeah, it got the tag
+[17:00:40] <zetok> so having versions is no longer a problem
+[17:04:02] <zetok> koshii: um, software development is full of "what could go wrong" problems, including security ones
+[17:06:21] <zetok> if qTox can be in backports without being in stable, why not
+[17:08:45] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[17:11:38] <koshii> That may indeed be possible, I'll look into it.
+[17:12:14] <zetok> thanks :)
+[17:19:08] *** Joins: DaSpirit (~DaSpirit@ )
+[17:47:07] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[18:02:50] *** Joins: cisc (~cisc@ )
+[18:08:39] *** Joins: iphy (uid67735@ )
+[18:10:45] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 265 seconds)
+[18:27:48] *** Joins: in1t3r (~LordShiva@ )
+[18:36:52] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[18:39:47] *** Quits: Emcy_ (~MC@ ) (Quit: Leaving)
+[18:40:17] *** Joins: Emcy (~MC@ )
+[18:45:55] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 252 seconds)
+[18:50:17] *** Joins: jjuran (~jjuran@ )
+[18:56:53] *** Joins: in1t3r (~LordShiva@ )
+[19:01:32] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[19:06:08] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[19:16:11] *** Joins: in1t3r (~LordShiva@ )
+[20:22:14] <Diadl0> zetok: 1) antis81 didn't make logically complete commits => it many things didn't work now
+[20:22:37] <zetok> :|
+[20:22:41] <Diadl0> 2) I will try separate my part of the PR
+[20:22:47] <Diadl0> For the first time
+[20:23:49] <Diadl0> If he does not return in the near future, maybe, I will try finish his work
+[20:25:04] <zetok> AFAIK he got busy with life
+[20:25:25] <Diadl0> I understand
+[20:27:32] <Diadl0> He made many radical changes. For example: he want to remove `ChatForm` from `Friend` class => He removed this using everywhere => Many things stops working :(
+[20:27:50] <Diadl0> And IDK, how he plans to restore this
+[20:28:41] *** Joins: bashrc (~motters@ )
+[20:35:19] <cisc> zetok: having an alternate binary of qtox available for someone in an "emergency" situation if OBS is down or those packages are broken isn't necessarily a bad idea
+[20:35:37] <zetok> cisc: ?
+[20:36:42] <zetok> cisc: you know, AFAIK OBS stuff can be easily mirrored if someone wants to
+[20:59:10] <cisc> zetok: yeah well that isn't the case right now, + some users may want to test the static binary without adding the OBS repo, installing qtox from it
+[20:59:27] <zetok> cisc: what static binary?
+[21:17:40] * zetok sighs
+[21:18:02] <zetok> there's no static binary, since if there was one, it would have worked
+[21:18:24] <zetok> and there would be no problem to begin with
+[21:31:56] <Diadl0> zetok: #3819 you forget 7 places
+[21:33:22] <zetok> not really
+[21:34:07] <zetok> [**_**]()
+[21:34:12] <zetok> **[_]**
+[21:34:44] <Diadl0> `CentOS, Debian, Fedora, openSUSE, Ubuntu`
+[21:35:19] <zetok> I could change [**_**](), but while doing so I'd need to move links
+[21:36:22] <zetok> should I do that in this PR?
+[21:36:33] <Diadl0> IDK. How you whant?
+[21:37:00] <zetok> I was planning on doing that later
+[21:37:11] <Diadl0> Ok
+[21:37:15] <zetok> i.e. after https://github.com/qTox/qTox/pull/3793
+[21:37:31] <zetok> (along with some other things)
+[21:39:18] *** Joins: shiva (~LordShiva@ )
+[21:41:36] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[21:41:44] -qtox-git-spam- [qTox] zetok opened pull request #3826: docs(CONTRIBUTING): change style to always require curly brackets (master...style-always-curly) https://git.io/vPbqp
+[21:42:36] <cisc> zetok: the one built on Jenkins
+[21:43:02] <zetok> cisc: there are no static binaries on jenkins
+[21:43:45] <cisc> then what is this https://build.tox.chat/view/Clients/job/qTox_build_linux_x86-64_release/lastSuccessfulBuild/artifact/qTox_build_linux_x86-64_release.tar.xz
+[21:44:45] <zetok> cisc: have you even tried to run `ldd` on it?
+[21:45:23] <cisc> no but there are users that may not want OBS
+[21:46:14] <zetok> and your point is that they should not use qTox at all?
+[21:46:28] <cisc> huh?
+[21:47:11] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vPbmI
+[21:47:11] -qtox-git-spam- qTox/master 6815a0f Zetok Zalbavar: docs(README): link to instructions for OSX building
+[21:47:12] <cisc> no, my point is that the rest of the world doesn't need to follow every opinion of yours
+[21:47:28] <zetok> [21:17:58] <zetok> there's no static binary, since if there was one, it would have worked
+[21:47:28] <zetok> [21:18:20] <zetok> and there would be no problem to begin with
+[21:47:51] <cisc> there is one that works
+[21:48:00] <zetok> sure.
+[21:48:05] <cisc> I know someone using it
+[21:48:13] <zetok> lol
+[21:48:37] <cisc> zetok: I can see why people dont like working with you
+[21:49:08] <zetok> sorry, but I'm not going to stop laughing at ridiculous statements
+[21:49:17] * zetok goes to fetch a quote
+[21:49:34] <cisc> thats because you arent laughing
+[21:50:03] <zetok> err?
+[21:50:10] <cisc> you aren't the controller of qtox either
+[21:50:10] <sudd3n6> cisc: static binaries on linux aren't widespread, why should qTox have them?
+[21:50:25] <zetok> cisc: b-but I really consider it funny how mistaken you are :D
+[21:50:39] <zetok> all this fight with windmills
+[21:51:03] <zetok> > “Ah, Harry, one symptom of the disease called wisdom is that you begin laughing at things that no one else thinks is funny, because when you’re wise, Harry, you start getting the jokes!”
+[21:51:05] <cisc> then get rid of it
+[21:51:19] <zetok> :|
+[21:51:23] <zetok> right
+[21:51:47] <cisc> lots of other Linux software offers a static binary
+[21:52:25] <cisc> OBS is your central point of failure
+[21:52:40] <sudd3n6> cisc: nope GH is
+[21:52:52] <cisc> nobody is mirroring it either
+[21:53:00] <cisc> GH is too
+[21:53:17] <sudd3n6> OBS is replaceable, not easily but it is
+[21:53:23] <cisc> that doesn't exclude OBS
+[21:53:44] <zetok> cisc: you have a misconception here that packages in tox.chat repo are one and the same things as stuff produced by jenkins – I'm merely saying that qTox stuff produced by jenkins shouldn't be pushed to linux repo as it's done now, since it's clearly broken for Linux users; Now what you did, is misunderstood, and went on how keeping things on jenkins should be continued
+[21:53:53] <cisc> and not all is going to be able to build from source
+[21:54:15] <zetok> s/things/thing/
+[21:54:29] <cisc> there is no misunderstanding
+[21:54:32] <zetok> sudd3n6: pls, static builds are the way to go
+[21:54:46] <sudd3n6> IMO not
+[21:54:55] <cisc> so stop pointing fingers
+[21:55:05] <sudd3n6> or am I missing a /s
+[21:55:15] <zetok> sudd3n6: nope
+[21:55:31] <zetok> sudd3n6: static packaging is the way to go if you want things to work
+[21:55:50] <sudd3n6> zetok: or a package manager
+[21:55:54] <cisc> and its not fully broken either. there are some working static binaries around
+[21:55:58] <zetok> sudd3n6: on the other hand, from packaging perspective shared libs make more sense
+[21:56:12] <zetok> cisc: there are not
+[21:56:23] <cisc> wrong
+[21:56:31] <zetok> cisc: prove it
+[21:57:10] <zetok> I know that there are no static packages, because I was the one who made them as static as possible, and even then I wasn't able to make them fully static
+[21:57:20] <zetok> after that, tux3 went and made things less static
+[21:57:45] <cisc> zetok: so you don't think a qtox binary exists from the past that is fully functional?
+[21:58:06] <zetok> if you're claiming that there are "static packages that work", claim fails on "static", without even arriving at "work"
+[21:58:18] <cisc> wtf
+[21:58:22] <zetok> cisc: there's no binary that is fully static
+[21:58:34] <zetok> which means that at some point it will stop working, due to C++
+[21:58:56] <cisc> you are playing word games now
+[21:59:20] <zetok> not really
+[21:59:29] <zetok> thing is "some point" is already happening
+[21:59:50] <zetok> and what you perceive as "static" already doesn't work for plenty of people due to not being static
+[22:00:54] <cisc> I didn't say that it might not work in the future, did I.
+[22:01:05] <cisc> it works now
+[22:01:09] <zetok> nope :)
+[22:01:59] <zetok> when you pick a random linux box out there, it has to work, rather than "under special circumstances it might work" as it is now
+[22:02:29] <zetok> working under special circumstances ≠ working
+[22:02:54] <cisc> it worked for me on 2 SuSE boxes & a Fedora box in the past
+[22:03:19] <zetok> good for you
+[22:03:35] <cisc> yes, good for me
+[22:04:09] <cisc> you apparently don't really know what you're talking about
+[22:04:58] <zetok> ><zetok> cisc: prove it
+[22:05:13] <zetok> cisc: I still haven't seen your proof of static builds :)
+[22:05:36] <cisc> I already explained that
+[22:05:43] <zetok> lol
+[22:07:30] <cisc> go ahead pull the plug on Jenkins. see how much I care. just letting it be known that there are users who do want those builds
+[22:09:05] <cisc> tox is for the most part going nowhere anyway. its not like one more bad decision can do any more harm
+[22:14:18] <zetok> https://cloud.githubusercontent.com/assets/3148759/19622584/d5c351fe-98a4-11e6-8bcb-2b2462144206.jpeg
+[22:16:01] <cisc> so pull the plug on Jenkins, yes. but why not keep a static binary available for download?
+[22:16:41] <cisc> build one per month or per release cycle
+[22:17:03] <zetok> you really should read what I wrote about misconceptions
+[22:17:47] <zetok> tl;dr: jenkins isn't going to be gone
+[22:18:47] <cisc> I thought I already explained that I ran the static binary on 2 boxes in the past and know someone else that uses it?
+[22:20:39] <zetok> cisc: do you have anything to say that is actually relevant?
+[22:21:19] <cisc> do you?
+[22:22:06] <zetok> k
+[22:22:14] <cisc> because thus far all you've espoused is primarily drivel
+[22:22:57] <zetok> why, thanks :3
+[22:24:25] <zetok> http://principiadiscordia.com/book/1.php ← I find it deeply inspirational, and it looks like you could enjoy reading it too :3
+[23:05:58] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[23:44:51] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[23:51:26] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
