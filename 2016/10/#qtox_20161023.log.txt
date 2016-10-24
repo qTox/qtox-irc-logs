@@ -1,0 +1,141 @@
+[00:20:30] <nurupo> ><sudd3n6> it's still unversioned and distros don't like unversioned things <-- it looks like everyone will switch to toktok/toxcore sooner or later, which is versioned. uTox's develop branch, i.e. the next stable release, is based on toktok/toxcore. there is also some branch of qTox compatible with toktok/toxcore somewhere, either in iphy's or tux3's or both repos
+[00:33:55] <nurupo> ><cisc> then what is this https://build.tox.chat/view/Clients/job/qTox_build_linux_x86-64_release/lastSuccessfulBuild/artifact/qTox_build_linux_x86-64_release.tar.xz <-- this is qTox from July 6th https://build.tox.chat/view/Clients/job/qTox_build_linux_x86-64_release/ . tux3 was the one maintaining linux qTox builds on Jenkins and after the switch to OBS he said he won't maintain them anymore. Encrypt said he would maintain linux qTox on jenkins in 
+[00:33:55] <nurupo> tux3's stead, but he has been busy so it doesn't seem like that would happen anytime soon. i probably should just purge linux qTox builds/pacakges from jenkins at this point, they are outdated, not maintained and fail to build. moreover the static builds are actually not static enough, pretty sure they won't run on Ubuntu 12.04 LTS because of incompatible glibc/libstdc++ versions and they might not run on Ubuntu 14.04 LTS, though i'm not as sure about 
+[00:33:55] <nurupo> that. to build static binaries that run on most systems you got build them on the oldest system that you want to support, as it would have the oldest glibc/libstdc++, which are backward compatible, but we use Debian Jessie to build them, which is newer than some systems people try to run qTox on
+[00:42:32] <nurupo> ><cisc> OBS is your central point of failure <-- you can host your own instance of OBS (Open Build Service http://openbuildservice.org/ ) if you want, you'd need a server for that though. afaik abbat's build scripts are stored in a GH repo, so i assume if OBS (openSUSE Build Service https://build.opensuse.org/ ) goes down, no critical information that would stop you from setting up builds on your own OBS instance would be lost, as long as you have 
+[00:42:32] <nurupo> access to that GH repo
+[00:45:14] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[00:46:45] <genesis> during this time, @ appimage, we still support plateform as centos6 :)
+[00:50:13] *** Joins: Chiitoo (~Chiitoo@ )
+[00:51:35] <nurupo> ><zetok> cisc: you have a misconception here that packages in tox.chat repo are one and the same things as stuff produced by jenkins <-- pkg.tox.chat gets all its pacakges directly from jenkins, it doesn't build them from scratch or modify them in any way that i'm aware of
+[00:55:13] <nurupo> genesis: if we only had a person willing to activly maintain appimage static "packages" of clients and toxcore :P
+[01:00:38] <genesis> i've too much work but basically you just have to adapt some recipe as https://github.com/probonopd/AppImages/blob/master/recipes/meta/Hydrogen.yml
+[01:09:31] <nurupo> where does jackd come from in that recipe?
+[01:11:18] <nurupo> 1) does appimage build it from source or 2) you have to build it yourself, make sure that it will run on "dist: trusty", and give it to appimage?
+[01:12:33] <genesis> i didn't look that part for the moment, i'll help you later on that, i'm ill today.
+[01:13:37] <nurupo> https://github.com/probonopd/AppImages/blob/master/recipes/qtox/Recipe
+[01:16:22] <nurupo> https://github.com/probonopd/AppImageKit/wiki/Creating-AppImages >Use an old system for building (at least 2-3 years old) to ensure the binaries run on older systems too.
+[01:21:30] <sudd3n6> nurupo: yep, there's a toktok/c-toxcore PR for qTox, it's already working (running right now) and will be merged to master once toktok hits 0.1
+[01:22:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[01:51:22] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[02:11:05] *** Joins: miokiry (~Adium@ )
+[02:58:10] *** Joins: initramfs (~initramfs@ )
+[04:18:41] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[05:58:40] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[06:24:46] *** Joins: miokiry (~Adium@ )
+[06:38:28] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[06:39:48] *** Joins: miokiry (~Adium@ )
+[06:41:06] *** Joins: reBrain (~quassel@ )
+[06:48:37] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[06:48:53] *** Joins: miokiry (~Adium@ )
+[06:49:12] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[06:56:47] *** Joins: miokiry (~Adium@ )
+[08:09:57] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[08:39:14] <zetok> nurupo: oh, looks like I've misunderstood you – I wasn't speaking about building stuff, but pushing that built stuff to repo – I don't see a problem with stuff being built, but there's a problem with providing broken packages in the repo
+[08:40:05] <zetok> genesis: last time I've looked (a couple of months ago) appimage didn't really differ from just making a static binary, except for the cool name
+[08:40:32] <zetok> i.e. hard and time consuming for C++
+[08:42:23] <zetok> and it wouldn't even work as a static binary, at which point it's close to being useless
+[08:49:42] *** Parts: Se7en (~Se7en@ ) ("Leaving")
+[08:57:56] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[09:18:28] *** Joins: initramfs (~initramfs@ )
+[09:23:44] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[09:43:35] *** Joins: CGGB (~CGGB@ )
+[10:09:53] *** Joins: bashrc (~motters@ )
+[10:31:05] *** Joins: sudd3n6 (~anonymous@ )
+[10:35:04] *** Joins: cisc (~cisc@ )
+[10:55:03] *** sudd3n6 is now known as sudden6
+[11:30:31] <genesis> zetok : except we have desktop integration, smart update via zsync etc
+[11:35:02] <genesis> 2 sandbox compatibles (firejail and bubble)
+[11:42:17] <zetok> and yet, doesn't work across distros
+[11:42:33] <zetok> one thing that it was supposed to do
+[11:55:08] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:29:34] *** Joins: sudd3n6 (~anonymous@ )
+[13:06:32] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 260 seconds)
+[13:14:53] *** Joins: miokiry (~Adium@ )
+[13:27:30] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[13:31:30] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[13:39:45] *** Joins: miokiry (~Adium@ )
+[13:48:55] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[13:51:15] *** Joins: miokiry (~Adium@ )
+[13:51:21] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[13:51:28] *** Joins: miokiry (~Adium@ )
+[14:11:59] *** Joins: cenysor (~cenysor@ )
+[14:21:37] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[14:32:31] *** Joins: miokiry (~Adium@ )
+[15:23:25] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[15:33:15] *** Joins: DaSpirit (~DaSpirit@ )
+[16:20:50] *** Joins: Chiitoo (~Chiitoo@ )
+[16:45:46] *** Joins: sudd3n6 (~anonymous@ )
+[16:55:05] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[17:03:07] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[17:14:54] <sudden6> Diadl0: ping
+[17:16:31] <zetok> since qgroupbot is not being used, I guess I'm going to turn it off
+[17:17:25] <sudden6> zetok: ok
+[17:17:45] <sudden6> would still be nice to keep it as a backup if IRC goes down
+[17:17:50] <sudden6> (again)
+[17:18:55] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 252 seconds)
+[17:19:45] *** Joins: in1t3r (~LordShiva@ )
+[18:07:11] *** Joins: elios (~elios@ )
+[18:08:13] <elios> wow, where all the people go?
+[18:10:35] <elios> anyhow, i have git repo of qtox and want to update it. can i just '$git pull origin master' and then re-build it or am i doing it wrong?
+[18:30:03] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[18:33:49] *** Joins: CGGB (~CGGB@ )
+[18:43:26] <zetok> elios: git fetch and git rebase
+[18:44:10] <zetok> or, `git config pull.ff only`
+[18:45:13] *** Joins: in1t3r (~LordShiva@ )
+[18:59:27] <sudden6> zetok: why is git fetch and git rebase your preferred way?
+[18:59:38] <sudden6> I always do git pull origin master
+[19:06:09] <zetok> if you have something additional on local master pull constitutes merge
+[19:06:26] <zetok> unless you change the default behaviour
+[19:46:51] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vPNfD
+[19:46:51] -qtox-git-spam- qTox/master 1c2b271 Zetok Zalbavar: docs(CONTRIBUTING): change style to always require curly brackets...
+[19:54:14] -qtox-git-spam- [qTox] zetok closed pull request #3820: style: remove unnecessary curly braces in `Widget::updateIcons()` (master...style-widg-ifp) https://git.io/vPDQf
+[19:59:35] *** Joins: ovalseven8 (~ovalseven@ )
+[20:09:05] <Diadl0> sudden6: pong
+[20:09:58] <sudden6> Diadl0: hi, do you have any idea why in qTox the ToxId.publickey is stored as QString?
+[20:11:39] <Diadl0> sudden6: Hi. Why not? IIRC antis81 planned to change it on QByteArray
+[20:12:01] <sudden6> well it's raw bytes and should be saved as such imo
+[20:12:17] <sudden6> and it causes headaches for me right now...
+[20:12:56] <zetok> hmm.
+[20:13:27] <Diadl0> It's just implementation question. I think, you can change it
+[20:13:51] <sudden6> ok
+[20:14:26] <sudden6> because I need the key as uint8_t[] to feed it back into toxencryptsave
+[20:15:49] <zetok> err
+[20:16:07] <zetok> what are you trying to do?
+[20:16:46] <sudden6> fixing https://github.com/qTox/qTox/issues/3583
+[20:17:22] <zetok> that doesn't depend on toxencryptsave though
+[20:17:29] <sudden6> it does
+[20:17:54] <sudden6> we use the functions for deriving a key from password+salt
+[20:18:19] <zetok> oh
+[20:18:35] <sudden6> I'll have a PR ready to discuss in a few min
+[20:18:43] <sudden6> (hopefully :D)
+[20:19:21] <zetok> https://zetok.github.io/tox/tox/toxcore/toxid/struct.ToxId.html ← just gonna leave it here
+[20:19:58] <zetok> (UpperHex formatting and allowing access to raw PK bytes when needed)
+[20:21:05] <sudden6> I prefer raw bytes + output as hex if needed
+[20:21:21] <sudden6> and Qt already provides the later :)
+[20:26:18] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 245 seconds)
+[20:42:10] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:51:22] <Diadl0> sudden6: store in QByteArray will be better, i think
+[20:51:31] <sudden6> yeah, me too
+[20:51:41] <sudden6> but I'm not even there yet :(
+[20:52:12] *** Joins: in1t3r (~LordShiva@ )
+[20:52:37] <sudden6> Diadl0: can I connect a qt signal to member function of an object which is not a qobject?
+[21:12:17] <elios> thanks, zeto.k 
+[21:12:22] *** Quits: elios (~elios@ ) (Quit: leaving)
+[21:24:27] <nurupo> ><sudden6> because I need the key as uint8_t[] to feed it back into toxencryptsave <-- just get the char array out of QString and use that, sizeof(char) == sizeof(uiny8_t)
+[21:25:15] <sudden6> nurupo: I don't think that's always true for all platforms
+[21:25:27] <sudden6> I worked around it for now
+[21:28:09] <nurupo> sudden6: char is guaranteed to be 1 byte in c++
+[21:28:38] <sudden6> hmm, then it was probably c where that's not the case
+[21:31:29] <nurupo> http://en.cppreference.com/w/cpp/language/types
+[21:31:58] -qtox-git-spam- [qTox] sudden6 opened pull request #3827: use a dynamic salt for the database password (master...dynamic_salt) https://git.io/vPNLV
+[21:41:54] <nurupo> i'm a little confused about this myself. in C/C++ sizeof(char) is defined to always be 1 and that's what C/C++ calls a byte. it's not the byte that is always 8 bits, it's C's definition of a byte, the smallest addressable memory size, which might be more than 8 bits, e.g. 64-bit char would still have sizeof(char)==1, and sizeof(short), sizeof(int), sizoef(long), sizeof(long long) all would be 1 too in that case
+[21:44:10] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:44:50] <sudden6> well, that system is nuts
+[21:45:16] <sudden6> that's why I prefer specifying my bit lenghts explicitely
+[21:51:34] *** Joins: athan (~athan@ )
+[22:02:04] <Diadl0> sudden6: Are you here?
+[22:42:42] <sudden6> Diadl0: not anymore, see you tomorrow
+[22:43:48] <Diadl0> Good night
+[23:36:42] <nurupo> sudden6: uint8_t won't exist on such system
+[23:37:54] <nurupo> so it would fail to compile, which is probably what you want
