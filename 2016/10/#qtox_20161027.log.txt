@@ -1,0 +1,647 @@
+[00:18:34] *** Joins: athan (~athan@ )
+[00:41:07] *** Joins: miokiry (~Adium@ )
+[00:52:12] *** Joins: aliceg (~aliceg@ )
+[00:58:37] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[01:02:59] *** Joins: miokiry (~Adium@ )
+[01:03:42] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[01:25:59] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[01:36:00] *** Joins: athan (~athan@ )
+[01:42:40] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[02:43:34] *** Joins: miokiry (~Adium@ )
+[03:02:13] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:33:31] *** Quits: aliceg (~aliceg@ ) (Quit: Lost terminal)
+[05:00:22] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[05:02:46] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[05:14:18] *** Joins: MiokIry (~Mutter@ )
+[05:27:08] *** Quits: MiokIry (~Mutter@ ) (Remote host closed the connection)
+[05:51:02] *** Joins: miokiry (~Adium@ )
+[06:31:53] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[06:50:29] <nurupo> ><zetok> nurupo: regarding what you wondered about earlier – whether to remove qtox packages from tox.chat repo – yeah, removing them seems like a good idea since it would appear that people only have broken packages, thus there's no point in having them, is there? <-- i have talked it out with tux3 and Encrypt and we decided to remove qTox linux pacakges from pkg.tox.chat and qTox linux jobs from jenkins. if someone reads this and wonders why, 
+[06:50:30] <nurupo> it's because they were not maintained by anyone and some of them were outdated for over a month. OBS is the place to get qTox linux pacakges now
+[06:51:27] <nurupo> zetok: oh, and they are already removed
+[06:51:37] <nurupo> i just did it an hour or so ago
+[06:52:11] <nurupo> will mention this in a blog post which is hopefully will be out within 24h
+[07:03:51] *** Joins: sudden6 (~anonymous@ )
+[07:11:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:11:47] *** Joins: miokiry (~Adium@ )
+[07:17:46] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[07:21:56] <zetok> nurupo: thanks
+[07:22:24] <nurupo> zetok: i have also updated nightly windows qTox to use Qt 5.6.2
+[07:22:45] <nurupo> i have asked tux3 to do that a week or two ago, but it seems he didn't get chance to do so
+[07:22:55] <nurupo> i', updating it from Qt 5.6.1
+[07:22:59] <nurupo> *i'm
+[07:26:05] <nurupo> actually, it's currently i nthe process to rebuilding
+[07:26:16] <nurupo> would be updated to Qt 5.6.2 in a few minutes
+[07:28:36] *** Joins: miokiry (~Adium@ )
+[07:31:28] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[07:36:36] <Emcy> its it building again on build.tox.chat?
+[07:36:51] <nurupo> it's done building
+[07:37:03] <nurupo> what do you mean by "again"?
+[07:37:13] <nurupo> windows qtox builds were always build by build.tox.chat
+[07:37:13] <Emcy> the builds stopped didnt they?
+[07:37:36] <nurupo> yeah, notothing is being built at the moment
+[07:37:40] <nurupo> *nothing
+[07:37:54] <Emcy> so nightlies are back?
+[07:37:58] <nurupo> the build queue is empty
+[07:39:19] <Emcy> ....
+[07:43:49] -qtox-git-spam- [qTox] zetok closed pull request #3836: chore(travis): don't fail generating docs when there's no git version (master...chore-travis) https://git.io/vXvCn
+[07:45:16] <nurupo> Emcy: "back"?
+[07:45:24] <nurupo> they weren't gone
+[07:46:00] <zetok> there you go ;D
+[07:47:10] <zetok> Emcy: ~yeah, it was supposed to be fixed in https://github.com/qTox/qTox/commit/775b6a325be9a19104e73a90c7836446bf429536
+[07:47:50] <zetok> nurupo: I think that Emcy means that .exe was gone in nightlies
+[07:48:24] <nurupo> oh, that
+[07:48:30] <nurupo> afaik initramfs has fixed that
+[07:48:47] <Emcy> no i mean nightlies stoped being built for some reason. or is that wrong?
+[07:49:20] <nurupo> they didn't stop building, the build was failing because of the issue https://github.com/qTox/qTox/commit/775b6a325be9a19104e73a90c7836446bf429536 has fixed
+[07:49:44] <Emcy> i see
+[07:49:51] <initramfs> nurupo: To be fair I only fixed one build error, I didn't check if the builds are passing
+[07:50:07] <nurupo> because of that dynamic cast, qtox nightlies were with everything but qtox.exe in them :D
+[07:50:08] <initramfs> There could very well be more build errors, though that's quite unlikely
+[07:50:21] <Emcy> the msot recent i could get lately was from a commit on aug10
+[07:50:52] <nurupo> initramfs: they are passing https://build.tox.chat/view/qtox/ i didn't try testing them though
+[07:51:12] <nurupo> Emcy: windows nightlies?
+[07:51:24] <initramfs> nurupo: That's good :)
+[07:51:49] <Emcy> yw windows
+[07:52:29] <nurupo> the one from august 10 is the previous stable release
+[07:52:32] <initramfs> Perhaps when it was decided to turn off RTTI, we probably should have actually checked if RTTI was used in the codebase -_-
+[07:52:44] <nurupo> you probably were checking stable builds, not nightly
+[07:52:47] <Emcy> yes it was the same as the nightly
+[07:53:32] <nurupo> hm
+[07:55:57] <Emcy> hm it would be useful if qtox let you copy the text from the about page
+[07:56:03] <Emcy> like the version and commit hash
+[07:56:18] <nurupo> Emcy: i think you are confusing something then. i just got x86 nightly https://build.tox.chat/view/qtox/job/qTox_build_windows_x86_release/ and it's based on https://github.com/qTox/qTox/commit/8a72928ad1451a8a76151a1a070fb35c022aa53b and it uses Qt 5.6.2
+[07:56:26] <nurupo> and links on tox.chat seem to be correct
+[07:56:46] <Emcy> no, i did this about 2 weeks ago
+[07:58:40] <nurupo> idk, everything seems to work correctly now
+[07:58:49] <nurupo> so your issue should be solved
+[07:59:22] <Emcy> yes thanks
+[07:59:46] <Emcy> did the input device bind bug get fixed yet
+[07:59:53] <nurupo> zetok: i'm surprised the About page of qTox doesn't have a copy button for all the version information, so that you could easily copy everything and paste into a gh issue
+[08:00:07] * zetok sighs
+[08:00:18] <nurupo> you have to highligh and copy-paste every line separetly :\
+[08:00:33] <zetok> so, there's that button that fills in all the info in the gh issue
+[08:00:41] <Emcy> on windows i cannot copy the information at all
+[08:00:57] <nurupo> You are using qTox version v1.5.2-213-g8a72928.
+[08:01:00] <nurupo> i can
+[08:01:01] <zetok> "report it"
+[08:01:09] <zetok> that button
+[08:01:18] <nurupo> zetok: wow, that's cool
+[08:01:37] <zetok> it should be made more obvious :/
+[08:01:46] <Emcy> You are using qTox version v1.5.2-213-g8a72928.
+[08:01:53] <Emcy> ok
+[08:02:07] <nurupo> it copied "OS: Windows / OS X / Linux (include version and/or distro)"
+[08:02:30] <zetok> yeah, there's no OS detection
+[08:02:32] <nurupo> i would imagine it be able to figure out which OS it's running on
+[08:02:45] * nurupo nitpicking
+[08:03:08] <zetok> osx / windows, yes, but when it comes to Linux..
+[08:03:24] <zetok> perhaps also could be done, but not as reliably
+[08:05:06] <zetok> using /etc/os-release , or something
+[08:14:39] <initramfs> Holy crap
+[08:14:48] <initramfs> Never knew this existed
+[08:14:50] <initramfs> This is magical
+[08:29:42] <Emcy> eh
+[08:47:42] <oranges> bruh look at this dude
+[08:58:16] *** Joins: miokiry (~Adium@ )
+[08:58:21] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[09:24:55] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[09:35:54] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:36:27] *** Joins: CGGB (~CGGB@ )
+[09:47:02] *** Joins: smaragdus (~omoo@ )
+[09:55:53] *** Joins: MiokIry (~Mutter@ )
+[10:03:28] *** Quits: MiokIry (~Mutter@ ) (Quit: Mutter: http://www.mutterirc.com)
+[10:04:01] *** Joins: MiokIry (~Mutter@ )
+[10:06:56] *** Quits: MiokIry (~Mutter@ ) (Remote host closed the connection)
+[10:16:49] *** Joins: MiokIry (~Mutter@ )
+[10:19:16] *** Quits: MiokIry (~Mutter@ ) (Client Quit)
+[10:40:31] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[10:43:31] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:44:08] *** Joins: CGGB (~CGGB@ )
+[10:47:59] *** Joins: zero-ghost (~0@ )
+[11:57:42] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:11:39] *** Joins: sudden6 (~anonymous@ )
+[12:19:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[12:35:32] *** Joins: miokiry (~Adium@ )
+[12:37:32] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[12:39:51] *** Joins: miokiry (~Adium@ )
+[12:44:40] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[12:55:15] *** Joins: miokiry (~Adium@ )
+[12:56:55] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[13:10:02] *** Joins: CGGB (~CGGB@ )
+[13:42:20] *** Joins: LittleVulpix (~Miranda@ )
+[14:09:59] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[15:24:20] *** Quits: Darky (~Darky@ ) (Ping timeout: 260 seconds)
+[15:32:01] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[15:33:00] *** Joins: CGGB (~CGGB@ )
+[15:42:04] *** Joins: Darky (~Darky@ )
+[15:49:33] *** Joins: cenysor (~cenysor@ )
+[18:00:13] *** Joins: ddobrev (4d556f80@ )
+[18:01:04] *** Quits: ddobrev (4d556f80@ ) (Client Quit)
+[18:08:30] *** Joins: sudden6 (~anonymous@ )
+[18:14:19] *** Joins: Lyris (~Lyris@ )
+[18:17:25] <sudden6> zetok, Diadlo o/
+[18:17:34] <zetok> \o
+[18:17:57] <sudden6> has anyone heard a sign of life from antis81?
+[18:18:04] <sudden6> in the last weeks?
+[18:18:16] <zetok> weeks ago
+[18:18:27] <zetok> probably more like a month?
+[18:18:39] <zetok> life got him
+[18:18:43] <sudden6> his last github activity was in september
+[18:18:55] <zetok> yeah, that sounds about right
+[18:19:07] <zetok> month it is then
+[18:19:49] <sudden6> not that good
+[18:21:17] <sudden6> ui/redesign could need some love before it goes completely out of date
+[18:21:39] <zetok> (in ~30 min I'll be busy with stuff)
+[18:21:42] <zetok> yeah
+[18:23:11] <zetok> >UI refactor, worked on by @antis81, @Diadlo and @sudden6
+[18:23:18] <zetok> then again
+[18:23:31] <sudden6> ok, I don't have anything urgent to ask you^^
+[18:23:32] <zetok> > No compiling-in emoticons
+[18:23:32] <zetok> Past due by 3 days 
+[18:23:43] <zetok> :c
+[18:24:03] <sudden6> I didn't do any code for ui refactor yet
+[18:24:43] <zetok> yeah, but you could rebase it, right?
+[18:24:54] <zetok> (and keep rebasing)
+[18:25:02] <sudden6> I don't know if I can, it's a huge pile of code
+[18:25:17] <sudden6> about emoji
+[18:25:24] <zetok> I see
+[18:25:36] <sudden6> the idea of not compiling in emoji didn't get that much attention
+[18:25:52] <zetok> there was someone interested
+[18:25:59] <sudden6> maybe I should speak to abbat what would be best for linux
+[18:26:15] <sudden6> ?
+[18:26:33] <sudden6> ah I think the guy who wanted to compile on his C.H.I.P
+[18:26:40] <zetok> nah
+[18:27:10] <sudden6> who was it?
+[18:27:20] *** Quits: Lyris (~Lyris@ ) (Ping timeout: 260 seconds)
+[18:28:33] <zetok> sudden6: https://github.com/qTox/qtox-irc-logs/blob/c7cd136c59a773d13377c5543496d738b61cbcc7/2016/10/%23qtox_20161014.log.txt#L123,L136
+[18:29:00] <zetok> https://github.com/TokTok/c-toxcore/issues/195 ← issue by them
+[18:29:57] <sudden6> zetok: that issue is about UDP hole punching
+[18:30:04] <zetok> Yes.
+[18:30:47] <sudden6> so this github user is the same as the IRC guy?
+[18:30:59] <zetok> yep
+[18:31:05] <sudden6> ok
+[18:32:32] <zetok> sudden6: so, are you still interested in working on splitting emoticons?
+[18:32:52] <zetok> if so, update date on the milestone
+[18:33:14] <zetok> if not
+[18:33:18] <sudden6> yes, I'm just not sure of the opinion of others about it, as only you have given feedback
+[18:33:28] <sudden6> (and you seemed to be against it)
+[18:33:31] <zetok> there's this file transfer thingy that blocks qTox 1.6
+[18:33:55] <sudden6> mhm
+[18:34:10] <zetok> sudden6: sorry, I generally am negative about stuff, unless it is absolutely necessary
+[18:34:41] <sudden6> yeah, but I'm not gonna waste time if I only get one response and even that's negative
+[18:35:05] <zetok> the way I see it, there's no direct benefit from splitting emoticons and compiling without them, on the other hand it can result in users getting "broken" qTox
+[18:35:27] <zetok> there's indirect benefit though, namely it opens/widens a road to emoticon packs
+[18:35:47] <sudden6> I understand that and as of now it's already possible to make emoticon packs
+[18:35:57] <sudden6> We just don't advertise it
+[18:36:04] <zetok> ok, then I don't see much point in splitting stuff
+[18:36:18] <zetok> then again, some people might see point in doing that
+[18:36:25] <sudden6> emoticon packs would just decouple emoji from the binary
+[18:36:44] <sudden6> which is the norm on linux but not necessary on other OSes
+[18:36:59] <zetok> ><sudden6> I understand that and as of now it's already possible to make emoticon packs     ← if so, it would be good to "advertise" it
+[18:37:35] <sudden6> probably, add it to the features list in README.md?
+[18:37:43] <zetok> missing docs
+[18:38:25] <zetok> a separate from user manual MD file?
+[18:38:32] <sudden6> IIRC it's in user manual
+[18:38:42] <zetok> oh >.<
+[18:39:09] <zetok> right
+[18:39:17] * zetok forgot about this
+[18:39:29] <sudden6> IMO we should roll out a new release
+[18:39:39] <zetok> well then, there's IMO no reason to split things
+[18:39:53] <sudden6> there's much stuff not reaching our users because of no release
+[18:40:04] <zetok> yeah
+[18:40:12] <sudden6> ok, I'll close the issue then
+[18:40:42] <sudden6> I'll still talk to abbat if he thinks that's a good idea to do for linux packages
+[18:40:57] <zetok> it's not
+[18:41:20] <sudden6> I'm not sure and want to get a second opinion :)
+[18:41:28] <zetok> sure :P
+[18:41:44] <zetok> it's just that the more things you need to pay attention to when packaging the worse it is
+[18:42:00] <zetok> you don't need to pay attention to compiled-in stuff
+[18:42:14] <zetok> (at least in qTox's case)
+[18:43:19] <zetok> packaging 1 file > packaging thousands of files
+[18:44:14] <sudden6> so, milestone closed :)
+[18:44:27] <zetok> ~o~
+[18:45:05] <zetok> sudden6: so, https://github.com/qTox/qTox/milestone/4 ?
+[18:45:15] <zetok> (just the file transfers)
+[18:45:42] <zetok> oh, and about https://github.com/qTox/qTox/pull/3827 , I'll test it once it'll be based on merged Diadlo's PR
+[18:45:50] * zetok busy &
+[18:45:56] <sudden6> I think it would be a good idea to put filetransfer after toktok migration is completed
+[18:46:50] <sudden6> 3827 will be rebased after Diadlo's PR is merged
+[18:47:00] <sudden6> I'll set the labels accordingly
+[18:47:21] <sudden6> ping me when you'r !busy and I'm still online :)
+[18:47:32] <sudden6> *you're
+[18:55:01] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vXUB2
+[18:55:01] -qtox-git-spam- qTox/master 244d1dc Alice Weigt: fix(audio): Clear audio buffer when ending audio loop
+[18:55:01] -qtox-git-spam- qTox/master 6ed8235 sudden6: Merge pull request #3833...
+[18:57:54] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vXURO
+[18:57:54] -qtox-git-spam- qTox/master 3c310f4 Alice Weigt: refactor: Use new getSound function
+[18:57:54] -qtox-git-spam- qTox/master c8a0853 sudden6: Merge pull request #3834...
+[19:02:59] *** Joins: sumuse (54f072de@ )
+[19:11:21] *** Joins: Lyris (~Lyris@ )
+[19:15:40] *** Quits: Lyris (~Lyris@ ) (Client Quit)
+[19:16:44] *** Quits: sumuse (54f072de@ ) (Ping timeout: 260 seconds)
+[20:05:27] <Diadlo> sudden6, zetok: o/ :)
+[20:06:44] <Diadlo> About filestransfers
+[20:07:09] <Diadlo> It's a reason, why I start db refactoring
+[20:07:28] <Diadlo> We need move userdata and filetransfers in db
+[20:09:52] <sudden6> Diadlo: \o
+[20:10:43] <sudden6> Diadlo: can you give me a short summary about ui/redesign state?
+[20:11:04] <Diadlo> Hm... We in the ass
+[20:11:21] <Diadlo> I will try
+[20:11:23] <sudden6> lol that's not what I wanted to hear xD
+[20:13:40] <Diadlo> 1) anti s81 done commits, which partially broke qTox
+[20:13:44] <Diadlo> *antis81
+[20:14:13] <Diadlo> 2) Now I try to move my commits from this PR in smaller one
+[20:15:24] <Diadlo> In short, it's all
+[20:15:57] <sudden6> Ok I see, that's actually not that bad
+[20:16:04] <Diadlo> Hah
+[20:16:08] <Diadlo> I don't think so
+[20:16:14] <sudden6> my idea was to start breaking the huge PR down again
+[20:16:25] <Diadlo> Yes
+[20:16:42] <sudden6> (not that bad was meant more like in line with my plans)
+[20:16:56] <Diadlo> I belive, that today I will finish PR `Remove FriendWidget from Friend`
+[20:17:25] <Diadlo> *believe
+[20:17:54] <Diadlo> The next one is removing ChatForm from Friend
+[20:18:36] <sudden6> good, I'll try to understand the PR in the mean time
+[20:19:12] <Diadlo> You can ~skip my commits
+[20:19:20] <sudden6> there are a lot of fixes in there which could probably just moved to master without all the redesign
+[20:19:27] <Diadlo> Yep
+[20:19:42] <Diadlo> And we must have unit tests
+[20:19:54] <sudden6> I disagree
+[20:20:03] <Diadlo> "Err"
+[20:20:10] <sudden6> first we must have a plan how all the units should interact
+[20:20:15] <sudden6> -> some diagram
+[20:20:36] <Diadlo> Unist test - tests of unit. Without interaction
+[20:20:55] <sudden6> then we can write tests that check the behaviour
+[20:21:10] <sudden6> well, atm it isn't even clear what's a unit
+[20:21:17] <sudden6> at least not for me
+[20:21:34] <Diadlo> You're confusing the unit and integration tests
+[20:21:43] <sudden6> maybe
+[20:23:51] <sudden6> but still, we don't even have a plan over what should be some unit and what not
+[20:24:07] <sudden6> We'll need one, else we're lost
+[20:24:17] <Diadlo> Example of unit test: "When I call `ChatForm::onCallTriggered()` call should be started"
+[20:26:56] <Diadlo> Unit tests will help us ~don't break anything
+[20:27:17] <Diadlo> While we refactor code
+[20:27:56] <sudden6> I agree, but we should still draw up some diagrams, because then we can test more efficient
+[20:28:36] <Diadlo> The fact is that we must do a lot more for the simplest test
+[20:28:57] <sudden6> blindly throwing tests everywhere won't improve much, it will only allow things to stay where they are
+[20:29:03] <Diadlo> And when we will ready to create the first one -- we can start draw diagrams
+[20:29:19] <sudden6> what do we need to get tests?
+[20:29:39] <sudden6> also drawing plans and starting tests could be done in parallel
+[20:29:44] <Diadlo> DI -- dependency injection
+[20:30:20] <Diadlo> Correct tests impossible without it
+[20:30:56] <sudden6> if we start to write tests, we should start with a very simple unit
+[20:32:01] <Diadlo> IIRC we haven't any unit, which independent of core, setting and profile
+[20:32:08] <sudden6> something that doesn't require UI or other interactions with the outside world
+[20:32:33] <Diadlo> IMO UI tests is the last one
+[20:33:33] <sudden6> agreed
+[20:33:49] <sudden6> maybe start with toxid.cpp?
+[20:34:23] <sudden6> testing the basic data structures would be a good start imo
+[20:34:24] <Diadlo> friend/group/toxid seems good for start
+[20:34:28] <Diadlo> +1
+[20:34:33] <sudden6> :)
+[20:35:16] <Diadlo> My short plan: 1) Move my commits from ui/redesign 2) DI 3) Simple unit test
+[20:35:53] *** Joins: initramfs (~initramfs@ )
+[20:36:06] <sudden6> seems like a good plan
+[20:36:26] <Diadlo> What is your plan?)
+[20:36:48] <sudden6> also I just noticed isToxId() isn't that good, it doesn't check the checksum...
+[20:37:08] <sudden6> my plan is to finish the database PR
+[20:37:37] <sudden6> then make a PR with the simple codeing style fixes from ui/redesign
+[20:37:44] <sudden6> and then rebase ui/redesing
+[20:37:58] <sudden6> hi initramfs :)
+[20:38:31] <Diadlo> initramfs: Hi)
+[20:38:57] <sudden6> and while doing that, continue reviewing PRs from others^^
+[20:39:47] <sudden6> btw, Diadlo with all the unit test stuff, do you have some reading material for me? I know basically nothing of how to do this
+[20:39:52] <Diadlo> I do not have enough hours in the day
+[20:40:05] <initramfs> Hi
+[20:40:09] <sudden6> me neither
+[20:40:42] <sudden6> initramfs: we're doing some planning for qtox today :)
+[20:40:44] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:40:48] <initramfs> Ah
+[20:40:49] <initramfs> Umm
+[20:41:03] <initramfs> Somewhat unfortunate but I need to go in about 3 minutes
+[20:41:08] <initramfs> I'll be back about 2 hours later
+[20:41:19] <initramfs> With the clang-format stuff raedy to go as well
+[20:41:26] <initramfs> s/raedy/ready/
+[20:41:34] <Diadlo> initramfs: One question: What with code-style checks?)
+[20:41:42] <Diadlo> :)
+[20:41:43] <initramfs> What do you mean?
+[20:41:43] <Diadlo> Sorry
+[20:41:51] <sudden6> I'm probably not online in 2h, but I'll read the logs :)
+[20:41:52] <Diadlo> I'm slowpoke
+[20:42:07] <initramfs> Lol
+[20:42:25] <initramfs> Sorry this stuff is taking so long lol
+[20:42:28] <sudden6> IMO it would be good to prepare qTox for a release
+[20:42:48] <sudden6> we got many fixes which don't reach the users
+[20:42:52] <initramfs> About 3 weeks ago, I made the brilliant decision to nuke my Arch partition for Gentoo
+[20:43:14] <sudden6> ↑ don't listen to zetok to much :P
+[20:43:15] <initramfs> That was a 2 week process of debugging and slowing dying inside
+[20:43:27] <initramfs> Until I finally got a DE running again
+[20:43:27] *** Joins: LittleVulpix (~Miranda@ )
+[20:43:31] <Diadlo> sudden6: What you mean by "prepare for a release"?
+[20:43:35] <sudden6> :D :D
+[20:43:48] <Diadlo> initramfs: Graz)
+[20:43:52] <initramfs> Lol
+[20:43:55] <initramfs> Okay need to go
+[20:43:58] <initramfs> Bye
+[20:44:00] <sudden6> bye
+[20:44:00] <Diadlo> Bye
+[20:44:15] <sudden6> Diadlo: polish everything so that we can release^^
+[20:45:20] <sudden6> pull translations, check for any obvious bugs, maybe test interoperability witht the old version (upgrading stuff) and increment version number
+[20:45:23] <Diadlo> What about milestone?
+[20:45:51] <sudden6> the milestone blocking 1.6 contains filetransfers
+[20:45:58] <sudden6> which nobody wanted to do yet
+[20:46:10] <Diadlo> I ~start
+[20:46:15] <sudden6> ah?
+[20:46:19] <sudden6> didn't know that
+[20:46:35] <Diadlo> As I say db redesign is first step
+[20:46:59] <sudden6> mhmm
+[20:47:05] <Diadlo> I talk about saving transfers due restart
+[20:47:12] <sudden6> what else do you want to move to the db
+[20:47:14] <Diadlo> We need save info in db
+[20:47:27] <Diadlo> And userdata
+[20:47:31] <Diadlo> It's now in settings
+[20:48:16] <sudden6> before moving everything to the db, we need a db scheme
+[20:48:23] <Diadlo> Yep
+[20:48:41] <Diadlo> But before we should separate db from history
+[20:48:53] <sudden6> a good one, else we'll run into lots of troubles on updates
+[20:49:11] <sudden6> yep, but your PR covers that, right?
+[20:49:16] <Diadlo> Yes
+[20:49:31] <Diadlo> I ~start plan db scheme
+[20:49:38] <sudden6> ok, last I looked it seemed 97% finished
+[20:50:16] <Diadlo> Yep. But... My plan above hasn't this part :)
+[20:50:50] <Diadlo> I think do it in the next release
+[20:51:22] <sudden6> what? the db history seperation?
+[20:51:29] <Diadlo> No
+[20:51:42] <Diadlo> Moving filetransfers and userinfo in db
+[20:52:22] <sudden6> ok :)
+[20:56:02] <sudden6> I think we should move stuff currently under 1.6 to 1.7 and release 1.6 ASAP, maybe included initramfs's work with the coding style and the two open PRs about the database
+[20:56:20] <sudden6> because the last release was nearly 2 months ago
+[20:57:14] <sudden6> Additionally there's the toktok migration that should take place as soon as toktok hits 0.1
+[20:57:27] <sudden6> and IMO it warants a qTox 2.0 release
+[20:57:42] <Diadlo> it == toktok migration?
+[20:57:45] <Diadlo> Or what?
+[20:58:41] <sudden6> yep
+[20:58:52] <sudden6> toktok migration = qTox 2.0
+[20:59:19] <Diadlo> Interesting. But I think, zetok will say "err" ;)
+[20:59:50] <sudden6> I would be sad if he didn't ;P
+[20:59:56] <zetok> ;)
+[21:00:04] <Diadlo> I still don't understand his version numeration
+[21:00:07] <Diadlo> Hello zetok :)
+[21:00:32] <Diadlo> In your version numeration you never say when increment major version :)
+[21:00:49] <zetok> total breakage
+[21:01:09] <Diadlo> I.e. ~never?)
+[21:01:16] <zetok> i.e. protocol change
+[21:01:22] <Diadlo> If qTox will web-browser?
+[21:01:24] <Diadlo> Ok
+[21:02:02] * zetok goes to read the backlog
+[21:02:33] <zetok> ><sudden6> I think it would be a good idea to put filetransfer after toktok migration is completed     ← there's no c-toxcore v0.1
+[21:03:15] <zetok> ><Diadlo> It's a reason, why I start db refactoring      ← basic FT resuming doesn't really need interfacing with DB, but that's awesome that there'll be resuming across restarts \o/
+[21:04:47] <Diadlo> 1) I think people whan to see old file transfers
+[21:05:02] <Diadlo> 2) We can save only active on exit
+[21:05:21] <Diadlo> 1) * in chat history
+[21:05:37] <sudden6> zetok: then when the first stable c-toxcore version is done
+[21:05:38] *** Joins: Laodikea (~laodikea@ )
+[21:05:53] *** Parts: Laodikea (~laodikea@ ) ("WeeChat 1.6")
+[21:07:54] <zetok> um, I don't know what are the plans for c-toxcore API ~stability
+[21:08:32] <sudden6> zetok: that's the problem, but we need some definite point to switch over
+[21:08:43] <zetok> v0.1 ?
+[21:10:32] <zetok> on one hand, I'd want to "hurr, durr, muh switch", but on the other switching to an unstable API will result in unnecessary work for maintainers & problems for people who compile from sources
+[21:12:39] <zetok> so the question that should be forwarded to TokTok is: "when one should expect first release with a ~stable API?"
+[21:13:43] <zetok> https://github.com/TokTok/c-toxcore/issues/216 there we go
+[21:13:59] <Diadlo> Easy
+[21:16:04] <zetok> sudden6: also, given that Diadlo works on making file-transfers possible to resume, I don't think that it's a good idea to move them to 1.7 release & wait until after migration
+[21:18:35] <sudden6> I think otherwise, with releasing now and doing file transfers afterwards we can very toroughly test filetransfers, I don't expect them to be done good in less than two weeks <- Diadlo am I underestimating you here?
+[21:20:57] <zetok> :/
+[21:21:13] <zetok> just basic resuming would IMO be good enough for the 1.6 release
+[21:21:51] <zetok> hmm
+[21:22:42] <zetok> >In https://github.com/qTox/qTox/blob/master/src/core/toxid.cpp#L141 qTox should also check the checksum of the ToxId and not assume any hex string with the correct length is a valid ToxId.
+[21:22:55] <zetok> sudden6: doesn't toxcore do the check?
+[21:23:33] <sudden6> It'll also do the check, but currently the function is just wrong
+[21:23:46] <sudden6> *I think it will
+[21:24:16] <zetok> right
+[21:24:28] <sudden6> currently it's more like "isProbablyToxId()" :D
+[21:27:49] <zetok> ok, so moving the audio goals off the 1.6 milestone
+[21:28:39] <zetok> do we want to specify when it should be tackled?
+[21:29:36] <zetok> 1.8 for now
+[21:29:57] <Diadlo> zetok, sudden6: So, what the decision with FT?
+[21:30:18] <Diadlo> Should I try to do it in current release?
+[21:30:43] <zetok> IMO yes
+[21:30:57] <sudden6> can you estimate the time needed?
+[21:31:13] <Diadlo> sudden6: Absolutely not :(
+[21:31:15] <sudden6> imo we should do a release this weekend
+[21:31:22] <zetok> uh
+[21:31:23] <Diadlo> I have no idea how much time I will have
+[21:31:23] *** Joins: Mehid (ac624f22@ )
+[21:31:28] <Mehid> Hi
+[21:31:36] <Diadlo> Wow
+[21:31:39] <Diadlo> Mehid: Hi
+[21:31:45] <sudden6> Diadlo: ok, that's what I figured and I don't want to put any timepressure on anyone
+[21:31:51] <sudden6> Mehid: hi
+[21:32:00] <Mehid> Help me :)
+[21:32:22] <Diadlo> Mehid: Take it <Help>
+[21:32:35] <zetok> sec, gotta open ff to find the link
+[21:32:37] <Mehid> How to compile?
+[21:32:42] <Diadlo> Windows?
+[21:32:45] <Mehid> Yes
+[21:32:49] <Diadlo> :(
+[21:32:51] <zetok> :s
+[21:32:55] <sudden6> :/
+[21:32:56] <Diadlo> Nobody know)
+[21:32:57] <Mehid> I need help
+[21:33:05] <sudden6> what's the problem? :)
+[21:33:28] <Mehid> Use what program?
+[21:33:36] <zetok> Mehid: https://github.com/qTox/qTox/issues/3372 ← right now compiling on windows doesn't really work
+[21:33:56] <Diadlo> AFAIK BiTOk compile it few month ago
+[21:34:20] <Mehid> Thanks
+[21:35:15] *** Quits: Mehid (ac624f22@ ) (Client Quit)
+[21:35:22] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:36:17] <sudden6> so zetok, release this weekend?
+[21:36:44] <zetok> b-but file transfers
+[21:37:48] <sudden6> imo we can do another release when file transfers are done
+[21:38:25] <Diadlo> zetok: I can broke FT at all :)
+[21:38:31] <sudden6> which I estimate to be in about 3-4 weeks
+[21:39:00] <sudden6> Diadlo: I can't parse this sentence please try again ^^
+[21:39:21] <Diadlo> sudden6: Sorry :(
+[21:40:36] <Diadlo> If I will try make resumable FT after restart in the procces I can broke normal FT
+[21:40:50] <zetok> s/broke/break/
+[21:41:31] <Diadlo> s/restart in/restart, in/
+[21:42:14] <sudden6> I like the approach, break everything and build something new and shiny :)
+[21:42:44] <zetok> sudden6: what then is the goal of 1.6 release?
+[21:43:03] <sudden6> "only bugfixes" ?
+[21:43:45] <sudden6> or close the high-priority bug with all database salts being the same?
+[21:45:11] <zetok> DB thing would be fine
+[21:45:22] <zetok> you're messing up the releases though :(
+[21:45:45] <zetok> add v1.9.0 milestone & move things upward
+[21:46:06] <sudden6> [22:45] <zetok> you're messing up the releases though :( <- I know, but as I see it atm the plan needs replanning
+[21:46:32] <Diadlo> I think, we should add <major>.<minor>.3. Version with bug fixes
+[21:47:13] <Diadlo> People want application without bugs. We want redesign, features, etc.
+[21:47:14] <zetok> Diadlo: we also have breaking changes
+[21:47:19] <Diadlo> And we want more bugs :)
+[21:47:29] <sudden6> that's also an idea, but then we shouldn't merge my PR, because it breaks the db in a not backwards compatible way
+[21:47:43] <zetok> there's <major>.<minor>.<patch>
+[21:48:06] <zetok> <patch> releases should be only bugfixes, which ~implies backporting fixes from master
+[21:48:53] <sudden6> I suppose we currently don't have the manpower for that
+[21:49:00] <sudden6> also it's not needed
+[21:49:04] <Diadlo> I think, after few weeks, after minor version update if was closed some annoying bug, better release new path version
+[21:49:23] <zetok> better release minor version
+[21:49:50] <Diadlo> Why?
+[21:50:02] <Diadlo> It's just patch
+[21:50:43] <zetok> well, if backporting is better
+[21:50:54] <oranges> I just wanted to say
+[21:50:54] <sudden6> imo qTox developement is to fast for much backporting
+[21:51:03] <oranges> qtox works really well on all my desktops
+[21:51:06] <oranges> thanks qtox team
+[21:51:21] <sudden6> oranges: hi and thx :)
+[21:51:23] <zetok> sudden6: it would be if milestone goals were being worked on by more people :|
+[21:52:08] <sudden6> mhm, I think that version model doesn't map well to non corporate structures
+[21:52:21] <zetok> what I have on mind, is making release every 6 weeks
+[21:52:41] <sudden6> zetok: I could agree with that
+[21:53:05] <oranges> does it need to be that fast?
+[21:53:06] <zetok> and what we should do, is set goal (one since multiple are too much for now) that can be met in 6 weeks
+[21:53:50] <zetok> oranges: yeah, otherwise amount of changes between versions would be not just huge, but colossal
+[21:54:59] <zetok> sudden6: version model is ok, but the problem is that we've tried to bite off more than we can swallow
+[21:55:05] <sudden6> zetok: I wouldn't make it a hard requirement tough
+[21:55:10] <zetok> so, we're missing realistic goals
+[21:55:25] <zetok> hmm
+[21:56:27] <sudden6> another idea: 5 weeks merge window 1 week stabilizing phase?
+[21:56:45] <Emcy> You are using qTox version v1.5.2-213-g8a72928 - what does everything after 1.5.2 mean
+[21:57:04] <Emcy> the string doesnt match the commit hash anymore
+[21:57:07] <zetok> Emcy: number of commits since the tag and part of commit hash
+[21:57:23] <sudden6> stabilizing phase only allows fixes, translation updates and minimal chores
+[21:57:25] <zetok> Emcy: remove the g
+[21:57:51] <zetok> sudden6: that probably could work
+[21:58:20] <sudden6> it's just an idea I came up with right now so it has probably some corner cases
+[21:58:31] <zetok> indicator of which week is which
+[21:58:44] <Emcy> wow im dumb
+[21:59:12] <Diadlo> +1 for idea of stabilizing
+[21:59:24] <sudden6> <zetok> indicator of which week is which <- no idea
+[21:59:56] <zetok> 1. posts to the ML; 2. changing topic here; 3. .. ?
+[22:00:07] <zetok> not sure if that would be enough
+[22:00:08] <sudden6> it should be visible on GH
+[22:00:23] <zetok> yeah, and there's no good way to do it there (or is there?)
+[22:00:36] <sudden6> I don't know, would need some research
+[22:00:52] <sudden6> best would be an automatic way
+[22:01:34] <sudden6> maybe integrate it into Travis git message check so it only allows fix and chore commits in this week?
+[22:02:03] <zetok> -.-
+[22:02:45] <sudden6> another thing I thought of: "Check before release checklist" containing things to be done before a release
+[22:03:30] <zetok> sudden6: so we're not moving the milestone goals?
+[22:03:37] <sudden6> hmm, maybe we could make this the indicator for the state?
+[22:04:03] <sudden6> zetok: ??? you threw me out of my thinking pipeline ^^
+[22:04:46] <zetok> sorry
+[22:05:36] <zetok> ok, I think I'm missing something
+[22:05:46] <zetok> what problem does the 5/1 cycle solve?
+[22:06:04] <zetok> (aside from the translation getting slightly out-of-date)
+[22:08:13] <sudden6> not introducing last minute bugs
+[22:08:23] <sudden6> 1 week focus on bug fixes
+[22:08:31] <zetok> hmm
+[22:08:35] <zetok> ok
+[22:09:42] <sudden6> for the state problem, we could make some file like release.md tracking all steps needed for a successful release
+[22:09:53] <zetok> um
+[22:10:48] <sudden6> this file will reside in the qTox source tree and if "the week" beginns a PR with a new copy for the current qTox version will be created
+[22:11:02] <zetok> uh
+[22:11:12] <Diadlo> "astrologers proclaim week of bugfixes"
+[22:11:24] <sudden6> lol
+[22:11:43] <sudden6> I'm just thinking out loud, so please comment and make me laugh :D
+[22:12:17] <zetok> :D
+[22:13:37] <zetok> https://github.com/qTox/release-schedule there we go
+[22:14:46] <zetok> this way there's no need to pollute qTox repo with unnecessary stuff
+[22:15:05] <sudden6> good idea
+[22:15:26] <sudden6> Is there a way to include the state of that into the main README.md ?
+[22:15:41] <zetok> no
+[22:16:00] <zetok> hmm
+[22:16:04] <sudden6> ok
+[22:16:16] <zetok> actually
+[22:16:35] <sudden6> I suppose we won't need the merge commits must be signed rule there?
+[22:16:51] <zetok> I thought of a hack, it probably could work
+[22:16:55] <zetok> sudden6: nope
+[22:16:58] <sudden6> would make edits easier :)
+[22:17:01] <sudden6> yay :)
+[22:17:19] <zetok> no commit rules, no approvals, no signing
+[22:18:28] <sudden6> I would add approvals
+[22:19:03] <zetok> why?
+[22:19:23] <sudden6> just to have someone doublecheck any obvious issues
+[22:19:52] <zetok> I think that I can think of a way to make image in the qTox/README.md reflect state of merge week depending on stuff in release-schedule repo; this is going to be one of a hack though
+[22:20:10] <sudden6> like in a pilot co-pilot setting, 4 eyes on everything
+[22:20:17] <zetok> sudden6: um, you just need to have there shown date of merge/fix weeks, and what week it is now
+[22:20:52] <zetok> I very much doubt that you need that much of checking for it
+[22:20:59] <sudden6> oh, I planned to add a checklist for what's left to do for each release
+[22:21:02] <zetok> even website doesn't get that much attention
+[22:21:22] <zetok> sudden6: you have milestones in the main repo for that
+[22:21:41] <sudden6> ie. you say "Release notes generated" and I check and approve that
+[22:21:54] <zetok> no
+[22:22:00] <sudden6> I could be overcomplicating that tough
+[22:22:39] <zetok> too much of unnecessary bureaucracy
+[22:22:47] <sudden6> ok
+[22:23:55] <sudden6> I'll still write down the instructions of what to do for each release though, because right now I think you're the only one knowing exactly what to do -> single point of failure
+[22:24:37] <zetok> that should go into MAINTAINING.md
+[22:25:19] <sudden6> ok, I don't really care where it is, just that it's there
+[22:25:59] <sudden6> I had another idea, could we use Travis to automatically change a pic on qtox.github.io and include that in the readme?
+[22:26:28] <zetok> :D
+[22:26:50] <zetok> ~that's how I wanted to do the release indicator thing :D
+[22:26:54] * sudden6 senses that's what you're trying to do
+[22:27:49] <zetok> it should have a little bit more magic in it though
+[22:31:39] <sudden6> next thing, start our new release plan after 1.6 or declare next week as first stabilizing week?
+[22:33:01] <zetok> ><zetok> it should have a little bit more magic in it though         ← actually, after pondering a while magic is not really needed :(
+[22:33:16] <zetok> sudden6: next week sounds good
+[22:33:38] <sudden6> ok :)
+[22:33:45] <zetok> rc1 by monday?
+[22:33:52] <sudden6> yep :)
+[22:33:53] <zetok> and blog post
+[22:34:00] <sudden6> of course :)
+[22:34:25] <sudden6> also a blog post about the new release system :)
+[22:34:47] <zetok> ooh, are you volunteering to do all of that? ;D
+[22:35:13] <sudden6> I'm volunteering for the blog post about the new release system :)
+[22:35:34] <zetok> + the rc1 release that needs to be tested?
+[22:35:57] <sudden6> do you want to create a specific build for that?
+[22:36:11] <zetok> that would be nice
+[22:36:14] <sudden6> I'd just build from the last git commit
+[22:36:38] <zetok> well, `rc`s are usually something that people who can't compile should build
+[22:36:48] <zetok> s/build/test/
+[22:37:01] <sudden6> do we have anyone falling in that category?
+[22:37:17] <zetok> the internets
+[22:37:46] <zetok> tfw I can't even write `teh` without hexchat autocorrecting it :/
+[22:38:31] <zetok> that's what blog post is, and linking it on reddit & places should help
+[22:38:46] <sudden6> I'm more concerned about the fact that we could get the responses fast enough
+[22:38:56] <zetok> which reminds me that I should add link to the blog on the website
+[22:39:09] <zetok> I'll see about adding the link tomorrow
+[22:39:13] <sudden6> ah, right I saw that and wanted to open a link lol
+[22:39:21] <sudden6> *issue
+[22:39:39] <sudden6> I didn't know if it was intended^^
+[22:40:19] <sudden6> Diadlo and initramfs will have quite a backlog to read :D
+[22:40:55] <Diadlo> I periodically try to read :)
+[22:41:57] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXTJY
+[22:41:57] -qtox-git-spam- qTox/master e8e946d Zetok Zalbavar: docs(README): refactor/improve README.md...
+[22:42:03] -qtox-git-spam- [qTox] zetok closed pull request #3832: docs(README): refactor/improve README.md (master...docs-readme-bd) https://git.io/vXe87
+[23:01:09] <Diadlo> Yeey
+[23:01:16] -qtox-git-spam- [qTox] Diadlo opened pull request #3838: Friend widget (master...friendWidget) https://git.io/vXTke
+[23:01:26] *** Joins: DaSpirit (~DaSpirit@ )
+[23:01:36] <Diadlo> Just +722 -521 :)
+[23:06:06] <zetok> um, is it something that one should test?
+[23:06:25] <zetok> (i.e. it's not WIP, right?)
+[23:06:33] <Diadlo> Yes
+[23:06:36] <zetok> ok
+[23:06:53] <Diadlo> Please, don't tell me, that you already found a bug 
+[23:06:55] <zetok> I'll see if I can find the time to test it through
+[23:07:06] <zetok> not yet ;D
+[23:07:29] <Diadlo> zetok: You are perfect tester)
+[23:08:16] <Diadlo> I will always remember "Click `register`, fast logout and login again"
+[23:08:40] <sudden6> +1
+[23:10:35] <Diadlo> Goodnight everyone
+[23:10:42] <zetok> https://github.com/qTox/qTox/issues/934 ← I'm still sad about not being able to do it :(
+[23:10:49] <zetok> night :)
+[23:11:57] <Diadlo> zetok: That's perfect issue :D
+[23:12:17] <zetok> or no longer being able to import my .flac files as a valid profile
+[23:13:11] <zetok> at least I got my `11-In Pieces.tox`
+[23:17:38] <sudden6> zetok Diadlo initramfs: draft for the blog post https://gist.github.com/sudden6/2ce742ea58854e6524489e6f9d40ff0f please comment :)
+[23:19:05] <iphy> https://github.com/qTox/qTox/commit/ef64a0ef4cfb71ce98893ab35597bf7809386299
+[23:19:08] <iphy> but why?
+[23:19:16] <iphy> why doesn't it work?
+[23:19:31] <iphy> you're just going to be streaming forever, but you can cancel the transfer
+[23:21:13] <sudden6> iphy: don't spam your friends with random numbers
+[23:21:22] <iphy> why not?
+[23:21:51] <sudden6> it's anoying :P
+[23:22:22] <sudden6> nah, I think the reason that it's not allowed is, it makes no sense in a real world use case
+[23:22:45] <sudden6> good night everybody :)
+[23:30:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[23:44:58] *** Joins: sudden6 (~anonymous@ )
+[23:50:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
