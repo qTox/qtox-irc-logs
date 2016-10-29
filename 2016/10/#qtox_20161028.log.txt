@@ -1,0 +1,221 @@
+[00:21:55] *** Quits: DaSpirit (~DaSpirit@ ) (Ping timeout: 244 seconds)
+[00:22:40] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[00:22:46] *** Joins: DaSpirit (~DaSpirit@ )
+[00:26:19] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:27:22] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 276 seconds)
+[00:30:02] *** Joins: jjuran (~jjuran@ )
+[00:49:10] *** Joins: miokiry (~Adium@ )
+[00:57:50] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[01:02:58] -qtox-git-spam- [qTox] initramfs opened pull request #3839: Implement clang-format and updated coding style document (master...chore-clang-format) https://git.io/vXTnn
+[01:23:54] <nurupo> what if i have an expensive entropy collecting hardware and i want to share some megabytes of high quality random numbers with my buddy?
+[01:24:02] <nurupo> i should open an issue for this
+[01:24:11] <oranges> .ban nurupo 
+[01:24:18] <oranges> get him outta here
+[01:25:18] <nurupo> here we go again, everyone is always jealous of my expensive entropy collecting hardware :\
+[01:29:40] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[01:30:03] *** Joins: VVD (~VVD@ )
+[02:29:09] *** Quits: linxon (~lin@ ) (Ping timeout: 260 seconds)
+[02:42:44] *** Joins: miokiry (~Adium@ )
+[02:43:30] <Emcy> i dont think quantum oscillator thingys are too expensive anymore?
+[02:44:44] <miokiry> duuuuude quantum
+[02:44:49] <miokiry> uber cool!
+[02:44:54] <oranges> carbon nanotubes
+[02:45:30] <miokiry> looks u guys r talking about microphysics :D
+[02:45:38] <miokiry> (i know nothing
+[02:47:20] *** Joins: linxon (~lin@ )
+[02:47:39] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[02:47:40] *** Joins: miokiry1 (~Adium@ )
+[02:52:17] *** Quits: miokiry1 (~Adium@ ) (Read error: Connection reset by peer)
+[02:52:25] *** Joins: miokiry (~Adium@ )
+[02:55:27] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:53:37] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[04:20:06] *** Joins: athan (~athan@ )
+[04:28:23] *** Quits: athan (~athan@ ) (Ping timeout: 245 seconds)
+[04:33:09] *** Joins: miokiry (~Adium@ )
+[04:56:50] *** Joins: athan (~athan@ )
+[05:00:02] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[05:01:09] *** Joins: miokiry (~Adium@ )
+[05:03:16] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[05:39:05] *** Quits: initramfs (~initramfs@ ) (Read error: Connection reset by peer)
+[05:42:08] *** Joins: initramfs (~initramfs@ )
+[06:15:20] *** Joins: miokiry (~Adium@ )
+[06:31:41] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[07:08:20] *** Joins: miokiry (~Adium@ )
+[07:17:27] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[07:26:48] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:27:27] *** Joins: VVD (~VVD@ )
+[07:31:56] <zetok> nurupo: https://organic-entropy.org/photos/ ← ooh, you have that?
+[08:03:00] *** Joins: sudden6 (~anonymous@ )
+[08:11:36] *** Joins: miokiry (~Adium@ )
+[08:19:31] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[08:20:53] *** Joins: miokiry (~Adium@ )
+[08:33:22] *** Quits: albel727 (~albel727@ ) (Read error: Connection reset by peer)
+[08:44:24] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[08:45:18] *** Joins: CGGB (~CGGB@ )
+[08:53:49] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[08:55:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[09:20:56] *** Joins: sudden6 (~anonymous@ )
+[09:25:37] <nurupo> sudden6: i see you refer to #qtox in you blog post. you might consider also linking to IRC web clients, as not everyone might want to install an irc client just to report something. look at the Freenode webchat and Kiwi webclient links in https://wiki.tox.chat/users/community#irc if you want to include web irc in the  blog post
+[09:25:42] <nurupo> *your
+[09:26:17] <nurupo> *if you want to link to web clients i nthe blog post
+[10:21:45] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[10:38:44] *** Joins: kadinparker[m] (kadinparke@ )
+[11:47:07] <qTox-Website> [qTox-Website] zetok opened pull request #18: Update translations from Weblate (master...tr) https://git.io/vXkJM
+[11:50:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[12:09:07] *** Joins: albel727 (~albel727@ )
+[12:15:19] <qTox-Website> [qTox-Website] zetok closed pull request #18: Update translations from Weblate (master...tr) https://git.io/vXkJM
+[12:15:39] <zetok> ↑ opinions?
+[12:15:39] <qTox-Website> [qTox-Website] zetok opened pull request #19: Add blog link (master...add-blog) https://git.io/vXkIe
+[12:15:46] <zetok> ↑ this actually
+[12:16:05] <travis-ci> qTox/qTox-Website (b0fd129): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/171358385 / Changes: https://github.com/qTox/qTox-Website/compare/06b47aba0638...b0fd129ad022
+[12:25:44] *** Joins: reBrain (~quassel@ )
+[12:27:48] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:28:09] *** Joins: CGGB (~CGGB@ )
+[13:04:26] *** Quits: linxon (~lin@ ) (Changing host)
+[13:04:26] *** Joins: linxon (~lin@ )
+[13:15:53] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[13:18:31] *** Joins: LittleVulpix (~Miranda@ )
+[13:55:40] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[14:03:14] *** Joins: miokiry (~Adium@ )
+[14:08:15] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[14:22:00] *** Joins: kadinparker[m] (kadinparke@ )
+[14:22:36] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[14:25:32] *** Joins: miokiry (~Adium@ )
+[14:26:49] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[14:40:20] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[14:46:48] *** Joins: sudden6 (~anonymous@ )
+[15:59:43] *** Joins: Diadlo (~diadlo@ )
+[16:42:18] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[16:44:05] *** Joins: Diadlo (~diadlo@ )
+[16:48:17] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[16:48:22] *** Joins: Diadl0 (~diadlo@ )
+[17:11:03] <zetok> sudden6: your post is good, only links need to be fixed
+[17:12:27] <zetok> sudden6: and perhaps tags would need to be changed
+[17:13:22] <zetok> `website,repositories` is doesn't seem to be relevant
+[17:13:31] <zetok> s/is//
+[17:14:35] <zetok> and the last section probably could say a bit more explicitly that README.md points out various ways of contributing
+[17:25:48] *** Joins: cenysor (~cenysor@ )
+[17:40:44] *** Quits: worfox (~worfox@ ) (Quit: No Ping reply in 180 seconds.)
+[17:40:50] *** Joins: worfox (~worfox@ )
+[17:41:36] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 256 seconds)
+[17:42:10] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 256 seconds)
+[17:46:09] *** Joins: sockspls (~sockspls@ )
+[18:43:11] <qTox-Website> [qTox-Website] zetok pushed 1 new commit to master: https://git.io/vXkAa
+[18:43:11] <qTox-Website> qTox-Website/master bd71cfe Zetok Zalbavar: Add link to the blog in header...
+[18:43:46] <travis-ci> qTox/qTox-Website (bd71cfe): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/171454851 / Changes: https://github.com/qTox/qTox-Website/compare/b0fd129ad022...bd71cfeaa0de
+[19:07:38] *** Joins: kadinparker[m] (kadinparke@ )
+[19:23:51] <sudden6> zetok: what tags do we have?
+[19:24:14] <zetok> we don't
+[19:24:21] <zetok> i.e. make up some
+[19:24:26] <sudden6> ok
+[19:24:29] <zetok> (the best kind of tags)
+[19:24:54] <zetok> btw, tags go into what search engines use to classify pages
+[19:25:20] <sudden6> mhm and what did I do wrong with the links?
+[19:25:40] <zetok> []
+[19:25:44] <zetok> [][]
+[19:25:50] <zetok> [](link)
+[19:26:04] <sudden6> ???
+[19:26:27] <zetok> [text displayed and reference]
+[19:26:41] <zetok> [text][reference]
+[19:26:54] <zetok> [text](link directly without the reference)
+[19:27:06] <sudden6> ah, ok got it
+[19:27:59] <sudden6> were there any comments from initramfs yesterday?
+[19:28:10] <zetok> nope
+[19:28:31] <sudden6> tags: "update,developement,releases"
+[19:28:36] <sudden6> ?
+[19:29:25] <sudden6> *development
+[19:29:42] <zetok> yep
+[19:32:37] <sudden6> updated :)
+[19:32:54] <zetok> PR ?
+[19:34:31] <sudden6> can I just use "create new file" from the GH web-ui?
+[19:34:54] <sudden6> or do I have to fork the blog repo?
+[19:34:57] <zetok> :s
+[19:35:17] <zetok> feel free to use web UI, but that'll need to be merged
+[19:35:40] <zetok> or maybe we shouldn't bother with GPG for the blog
+[19:35:48] <zetok> like with the website
+[19:35:52] <zetok> sudden6: yeah, no problem
+[19:35:58] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:37:46] <qTox-Blog> [blog] sudden6 opened pull request #3: Blog post about the new qTox release cycle (gh-pages...sudden6-post1) https://git.io/vXIfj
+[19:47:18] <zetok> sudden6: once you change things, could you ping me?
+[19:47:26] <zetok> actually
+[19:51:32] <zetok> sudden6: https://gist.github.com/zetok/ee24d4a388f952619aabd9b2e87b72f7 ← how do you feel about adding this?
+[19:51:54] <sudden6> very good :)
+[19:53:14] <sudden6> zetok: done
+[19:55:23] <zetok> hmm
+[19:55:45] <zetok> sudden6: rename to .md
+[19:56:03] <zetok> (right now it doesn't show in posts list)
+[19:56:09] <sudden6> arg
+[19:56:23] <zetok> also, there's inconsistency between the title and file name
+[19:56:30] <zetok> (but that shouldn't matter)
+[19:57:17] <sudden6> Is there a way to preview the final look?
+[19:58:10] <zetok> `jekyll serve`
+[19:58:27] <sudden6> ok, haven't checked out the bog repo
+[20:00:34] <sudden6> did your way to show the current dev state work out?
+[20:02:33] <zetok> https://a.uguu.se/TNxO0GKyyARw.png
+[20:03:47] <zetok> https://a.uguu.se/I0aGi24XZP4Y.png
+[20:04:14] <sudden6> Thx, looks good to me :)
+[20:06:33] <zetok> should we push, or wait for someone's else opinion?
+[20:07:02] <sudden6> I'd like a second opinion, at least for the English
+[20:07:17] <zetok> right
+[20:07:22] <sudden6> besides that, the new release cycle isn't planned out
+[20:07:25] <sudden6> yet
+[20:11:04] <zetok> added some comments
+[20:11:56] <sudden6> both seem valid to me
+[20:12:18] <zetok> um
+[20:12:33] <zetok> `checkout` is something that strikes me as a git command
+[20:12:53] <zetok> check out ≠ checkout
+[20:12:56] <zetok> (AFAIK)
+[20:12:57] <sudden6> yep, I definitely ment check out there
+[20:13:05] <sudden6> I ment you are right
+[20:13:10] *** Joins: CGGB (~CGGB@ )
+[20:14:03] <sudden6> zetok: both changed
+[20:15:12] *** Joins: cisc (~cisc@ )
+[20:16:48] <zetok> :s
+[20:17:03] <zetok> that sentence still doesn't feel right
+[20:17:18] <zetok> >A good first start is always to look at our
+[20:19:23] <sudden6> If you read it in conjunction with the headline it's better
+[20:20:46] <zetok> so ~ so
+[20:28:50] <zetok> actually
+[20:28:59] <zetok> I think that `The future` text should be changed
+[20:29:50] <zetok> gist updated
+[20:30:19] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[20:31:28] *** Quits: athan (~athan@ ) (Ping timeout: 256 seconds)
+[20:31:32] *** Joins: Diadlo (~diadlo@ )
+[20:33:31] *** Quits: Diadlo (~diadlo@ ) (Client Quit)
+[20:34:15] <sudden6> mhm, it's good :)
+[20:34:46] *** Joins: Diadlo (~diadlo@ )
+[20:35:03] *** Quits: SudoSam (~user@ ) (Ping timeout: 244 seconds)
+[20:45:56] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[20:47:11] *** Joins: Diadlo (~diadlo@ )
+[21:00:24] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:01:33] *** Joins: LittleVulpix (~Miranda@ )
+[21:39:42] <Diadlo> sudden6: Hello :)
+[21:39:54] <Diadlo> zetok: Hello too :)
+[21:39:55] <sudden6> Diadlo: hi :)
+[21:40:09] <zetok> \o
+[21:40:21] <Diadlo> > A containsFriend((const ToxId& userId) method would be handy, would simplify a lot of code in this PR.    <--- I want to ask you about it
+[21:41:36] <Diadlo> I found only 1 place, where we check `findFriend` result without subsequent use
+[21:45:51] <sudden6> I found 3
+[21:46:06] <sudden6> ok 2
+[21:46:29] <sudden6> maybe I overlooked more stuff than I thought on the first pass
+[21:46:44] <sudden6> Diadlo: you can probably ignore this
+[21:57:32] <Diadlo> sudden6: I found in `FriendListWidget::dragEnterEvent` where the second one?
+[21:57:41] <Diadlo> Just interesting
+[21:58:20] <sudden6> void GroupChatForm::dragEnterEvent(QDragEnterEvent *ev)
+[21:59:37] <Diadlo> Oh... I was searching only in my patches. Thanks :)
+[22:00:51] <Diadlo> About `chatForm` in `Friend` class
+[22:00:58] <Diadlo> I planned remove chatForm from Friend in next PR. But if you think, that better do it here -- I can.
+[22:02:35] <sudden6> If you have it planned in the next PR just note it in the review, no need to blow up this PR even more.
+[22:02:58] <Diadlo> Agree
+[22:13:24] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:38:26] *** Joins: cisc (~cisc@ )
+[22:38:57] *** Quits: cisc (~cisc@ ) (Client Quit)
+[22:41:47] *** Joins: cisc (~cisc@ )
+[22:42:31] *** Joins: athan (~athan@ )
+[23:30:16] *** Joins: smaragdus2 (~omoo@ )
+[23:31:19] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 252 seconds)
+[23:46:44] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 265 seconds)
+[23:50:00] *** Joins: jjuran (~jjuran@ )
+[23:58:06] <sudden6> Diadlo: I can't say much more about your code in the PR, but I'll review the comments on the next pass
+[23:59:12] <Diadlo> Ok. If it will review easier, I can split this PR on smaller
+[23:59:48] <sudden6> It will certainly make it easier
