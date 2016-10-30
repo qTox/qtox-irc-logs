@@ -1,0 +1,1172 @@
+[00:00:28] <sudden6> btw, if you want to improve your English, you should read the last paragraph of http://www.ef.com/english-resources/english-grammar/simple-present-tense/
+[00:01:04] <sudden6> it would make most of your sentences correct English :)
+[00:01:45] <Diadlo> sudden6: Thanks :)
+[00:02:36] <sudden6> np, night :)
+[00:04:04] <Diadlo> Goodnight
+[00:04:27] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[00:38:09] -qtox-git-spam- [qTox] Diadlo closed pull request #3838: Friend widget (master...friendWidget) https://git.io/vXTke
+[00:39:03] -qtox-git-spam- [qTox] Diadlo opened pull request #3841: Firend widget dnd (master...firendWidget_dnd) https://git.io/vXI1m
+[00:53:28] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[02:15:29] *** Joins: DaSpirit (~DaSpirit@ )
+[02:38:49] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[03:03:57] *** Joins: initramfs (~initramfs@ )
+[03:32:57] *** Joins: jjuran (~jjuran@ )
+[03:50:37] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[05:39:18] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 250 seconds)
+[05:43:36] *** Joins: jjuran (~jjuran@ )
+[05:59:47] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[06:00:28] *** Joins: VVD (~VVD@ )
+[06:43:08] <zetok> Diadlo: https://github.com/qTox/qTox/pull/3829 ← um, wasn't that supposed to be merged?
+[07:17:23] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[07:30:14] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 250 seconds)
+[07:37:35] *** Joins: zero-ghost (~0@ )
+[07:48:44] <nurupo> i have added #qtox to the list of IRC channel on tox wiki https://wiki.tox.chat/users/community
+[07:48:53] <nurupo> not sure why it wasn't there already
+[08:05:41] *** Joins: initramfs (~initramfs@ )
+[08:05:49] *** Quits: initramfs (~initramfs@ ) (Read error: Connection reset by peer)
+[08:06:18] *** Joins: initramfs (~initramfs@ )
+[08:09:53] <Diadlo> zetok: Ups :)
+[08:11:05] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://git.io/vXIxY
+[08:11:05] -qtox-git-spam- qTox/master 6e165ce Alice Weigt: fix(settings): Properly update taskbar on disconnect...
+[08:11:05] -qtox-git-spam- qTox/master 4c02086 Diadlo: Merge pull request #3829...
+[08:17:18] <zetok> >.<
+[09:57:28] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[10:20:13] -qtox-git-spam- [qTox] zetok opened pull request #3842: Update translations from Weblate (master...tr) https://git.io/vXLeK
+[10:32:43] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:56:09] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:56:35] *** Joins: LittleVulpix (~Miranda@ )
+[11:24:23] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:50:16] *** Joins: cisc (~cisc@ )
+[11:56:00] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[12:05:36] *** Joins: cenysor (~cenysor@ )
+[12:09:44] *** Joins: in1t3r (~LordShiva@ )
+[12:11:07] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[12:20:01] *** Joins: cisc (~cisc@ )
+[12:20:09] *** Joins: Emcy (~MC@ )
+[12:20:17] *** Joins: _maxim_ (0538c05d@ )
+[12:22:11] <_maxim_> Hey :) I just wanted to update to the latest qtox version and noticed that you can't download the generic builds anymore :(
+[12:22:25] <_maxim_> https://github.com/qTox/qTox/blob/master/INSTALL.md#generic The links give a 404
+[12:28:14] <zetok> right, that was removed, since no one was maintaining it
+[12:28:25] <zetok> (there will be a blog post about that)
+[12:28:37] <zetok> (probably tomorrow)
+[12:29:09] <_maxim_> Hm... Other options? I'm on mageia linux (a fork of fedora), which doesn't seem to be supported
+[12:31:04] <_maxim_> Damn, ment "Red Hat", not "fedora". I've been trying too many options :-/
+[12:31:19] <zetok> hmm
+[12:33:07] <zetok> _maxim_: does it have ABI compatibility with centos?
+[12:33:19] <zetok> probably not :s
+[12:33:53] <_maxim_> No idea :-/ The system can use rpm/urpmi and dnf, if that helps
+[12:34:00] <_maxim_> But I already tried dnf
+[12:34:14] <_maxim_> and "nothhing provides libcrypto.so.10()(64bit) needed by qtox-201609102219~v1.5.1-4.3.x86_64
+[12:35:15] <_maxim_> There are different libcryptos available: By openssl,libressl and golang-crypto. But nothing include the .so.10
+[12:35:27] <zetok> you could ln -s it
+[12:35:41] <zetok> (from libressl or openssl)
+[12:36:09] <zetok> damn, I can't find what distros OBS can support
+[12:36:14] <_maxim_> I tried ln -s /usr/lib64/libcrypto.so /usr/lib64/libcrypto.so.10
+[12:36:32] <zetok> oh, found it
+[12:36:41] <_maxim_> But dnf still checks for dependencies
+[12:36:48] <zetok> damns opensuse, they've picked font size like 5
+[12:36:57] <_maxim_> And doesn't actually check for the /usr/lib64 file
+[12:37:08] <_maxim_> :D
+[12:37:27] <zetok> https://software.opensuse.org/download/doc ← it would appear that it can be possible to build packages for Mageia on OBS
+[12:39:30] <zetok> _maxim_: oh
+[12:42:08] <zetok> https://github.com/qTox/qTox/issues/3843 ok, now the problem at hand
+[12:42:35] <zetok> _maxim_: you could either try to force install it, or to build from source
+[12:43:46] <_maxim_> Thanks Zetok :)
+[12:44:53] <_maxim_> I'm gonna try to build from source then :) I gtg now, see you :)
+[12:45:04] <zetok> cya
+[12:45:06] *** Quits: _maxim_ (0538c05d@ ) (Quit: Page closed)
+[12:49:41] *** Joins: sudden6 (~anonymous@ )
+[12:52:24] <sudden6> initramfs: hi :)
+[12:53:39] <initramfs> Hi
+[12:54:31] <sudden6> about that i++; ++i thing
+[12:54:49] <sudden6> could you provide me a link where I can read about that?
+[12:54:58] <initramfs> Uhh
+[12:55:08] <initramfs> Let me see
+[12:55:41] <initramfs> What exactly do you want to read about?
+[12:55:50] <zetok> foo = 0; bar = ++foo;   → bar == 0, foo == 1
+[12:56:06] <sudden6> the difference between the two in c++ specifically
+[12:56:11] <zetok> no wait, the other way around
+[12:56:18] <zetok> foo = 0; bar = ++foo;   → bar == 1, foo == 1
+[12:56:31] <zetok> foo = 0; bar = foo++;   → bar == 0, foo == 1
+[12:56:45] <sudden6> I know the difference in C and with simple integers, but you mentioned classes
+[12:57:19] <zetok> -.-
+[12:57:25] <zetok> lets not go there
+[12:57:26] <initramfs> Well, classes allow you to define custom code for operators
+[12:57:31] <initramfs> It's called operator overloading
+[12:57:57] <initramfs> http://en.cppreference.com/w/cpp/language/operators
+[12:58:08] <sudden6> A class can override the behaviours of prefix/postfix operators in a way that the compiler cannot statically determine that prefix is effectively equal to the postfix and cannot perform appropriate optimizations. 
+[12:58:30] <initramfs> In essence, you could write the operator++ to any arbitary code
+[12:58:58] <initramfs> And since prefix/postfix are different, you have to write the ++i version and the i++ version
+[12:59:11] <initramfs> And you have the implementation do different things
+[12:59:20] <zetok> https://doc.rust-lang.org/book/operators-and-overloading.html
+[12:59:28] <zetok> (since C++ doesn't have any good docs)
+[12:59:52] <sudden6> ok, so the problem is, that one can't trust the implementations of prefix/post fix to be the same?
+[12:59:58] <initramfs> Not that
+[13:00:13] <initramfs> Well, I mean if it's not the same, you have extremely bad code
+[13:00:27] <initramfs> But the thing is, the compiler may not be able to determine they do the same thing
+[13:00:37] <initramfs> And thus won't optimize
+[13:00:42] <initramfs> Or at least may not optimize fully
+[13:01:01] <initramfs> So the whole argument that i++ will be optimized is false
+[13:01:09] <initramfs> At least, in a general sense
+[13:01:34] <sudden6> but it's true for numbers in the special case?
+[13:01:40] <zetok> yep
+[13:02:17] <initramfs> zetok: Do you have a source for that? I don't recall it being in the spec for guaranteed optimization
+[13:02:39] <zetok> if your compiler can't do that you can equally well just throw it out
+[13:02:59] <initramfs> zetok: That's not the spec
+[13:03:20] <initramfs> And also, writing code that depends on compiler behaviour to run is not good
+[13:03:22] <sudden6> If we talk about the case where "i++;" is a free standing statement the compiler must be incredibly stupid not to optimize
+[13:03:30] <initramfs> Well
+[13:03:36] <initramfs> Side effects?
+[13:03:40] <zetok> initramfs: it doesn't depend on compiler behaviour to run, but to be optimized
+[13:04:06] <initramfs> ??
+[13:04:08] <initramfs> Same thing?
+[13:04:13] <zetok> nope
+[13:04:16] <initramfs> You know that RTTI bug we had
+[13:04:22] <initramfs> That's literally the same thing happening
+[13:04:29] <zetok> yes, and that would be the case
+[13:04:38] <initramfs> Clang/GCC on linux was "optimizing the RTTI" check to a static cast
+[13:04:46] <zetok> but postfix thing will work either way
+[13:04:47] <initramfs> But Clang/GCC on windows did not
+[13:05:02] <zetok> if your compiler cannot into optimization, then it'll be just slower
+[13:05:09] <initramfs> Yes
+[13:05:23] <initramfs> But the reasoning that they are identical is wrong
+[13:05:28] <sudden6> I'm wondering why -fno-rtti didn't produce a warning
+[13:05:33] <zetok> hence, it doesn't depend on compiler to run, but to be optimized
+[13:05:42] <initramfs> Because that's only so if the language says so
+[13:05:57] <zetok> sudden6: because compiler was smart
+[13:06:21] <zetok> (someone should open a bug against gcc with this)
+[13:06:28] <initramfs> ?
+[13:06:29] <sudden6> zetok: that's not smart, if I disable a feature and then use it, I want a warning/error
+[13:06:46] <initramfs> dynamic_cast are not RTTI though
+[13:06:50] <initramfs> They MAY need RTTI
+[13:07:04] <initramfs> RTTI just means runtime type information IS available
+[13:07:35] <initramfs> It just happens that the way people use dynamic_casts, 99.99% of the time RTTI is required
+[13:08:11] <sudden6> initramfs: another thing, can you agree that "for(int i = 0; i < 5; i++)" and "for(int i = 0; i < 5; ++i)" are equivalent regardless of the compiler?
+[13:08:19] <initramfs> No
+[13:08:19] <zetok> no
+[13:08:23] <initramfs> Not according to the language
+[13:08:49] <zetok> realistically though it's the same thing
+[13:08:51] <sudden6> ok, now I have to test stuff
+[13:08:55] <initramfs> But in any optimizing compiler, the output is probably the same
+[13:09:17] <zetok> sudden6: test with -O2 and -O0
+[13:09:33] <initramfs> Actually -O1
+[13:09:39] <initramfs> Or make the loop do non-trvial things
+[13:09:49] <initramfs> Because the compiler might completely replace your loop
+[13:10:22] <zetok> "realistic" is -O2, if not -O3
+[13:17:20] <sudden6> zetok initramfs I fail to see a difference https://gist.github.com/sudden6/25283b4c11cb22f2375192c6f210eaa8
+[13:17:52] <zetok> err
+[13:17:57] <initramfs> sudden6: We're talking about in terms of the machine code output
+[13:18:13] <initramfs> The "effect" will be the same
+[13:18:19] <sudden6> well I'm talking about the "effect"
+[13:18:26] <initramfs> Yes
+[13:18:28] <sudden6> because that's the one that matters
+[13:18:42] <initramfs> Yes
+[13:18:47] <initramfs> In this case, the ffects are the same
+[13:18:56] <initramfs> s/ffects/effects/
+[13:19:01] <sudden6> If you have to base your code on this micro optimization you're doing it wrong
+[13:19:17] <initramfs> I agree
+[13:19:30] <sudden6> How can I get the machine code from gcc?
+[13:19:44] <initramfs> Well... you get that when you compile it...
+[13:19:53] <initramfs> But I suppose you mean assembly
+[13:20:05] <sudden6> yeah, an assembly listing
+[13:20:35] <initramfs> g++ -S I believe
+[13:20:51] <sudden6> thx
+[13:23:16] <sudden6> updated
+[13:29:29] <sudden6> to me both times the loops look identical
+[13:33:20] <initramfs> I guess that's fair
+[13:33:37] <initramfs> I mean, i++ never specified how it's supposed to be implemented during translation
+[13:33:56] <initramfs> If it were to generate a temporary, that temporary would have nowhere to go anyway
+[13:34:28] <initramfs> Even at minimum optimization, the compiler probably wouldn't bother allocating a register to store the temp because it wouldn't even be visible when debugging
+[13:34:44] <sudden6> yep
+[13:38:09] <zetok> well, I guess it's time to decrease 68
+[13:39:28] <sudden6> 67?
+[13:40:06] <zetok> `grep -rE '\s*\+\+[[:alpha:]]+' src/ | wc -l` ← still returns 68 on master
+[13:40:15] <initramfs> ?
+[13:40:34] <zetok> (remove the `| wc -l` part)
+[13:41:15] <zetok> hmm
+[13:41:30] <zetok> now that I think about it, I probably can just sed it
+[13:41:46] <sudden6> zetok I have no idea what you're talking about
+[13:42:01] <zetok> soon™
+[13:42:35] <initramfs> There is an equal amount of post-increments
+[13:42:36] <initramfs> Lol
+[13:42:46] <zetok> nope?
+[13:42:59] <zetok> postfix is used a lot more
+[13:44:11] <initramfs> grep -rE '[[:alpha:]]\+\+' src/ | wc -l gives me 69
+[13:44:39] <initramfs> So... 1 more?
+[13:45:08] <initramfs> And some of them aren't swappable to preincrements
+[13:46:18] <initramfs> I'm just very confused, what is with this crusade against preincrements...
+[13:47:49] <sudden6> probably just a preference thing and C/C++ made the mistake to allow both, so inevitably 50% are pissed
+[13:49:34] <initramfs> Well... When people said made the 'mistake', you have to account for the historical context? And also, many languages followed suite
+[13:49:45] <initramfs> And once again, they are NOT the same
+[13:50:32] <initramfs> They just work the same under a few specific scenarios
+[13:51:14] <sudden6> yeah, but you can write code with only using one or the other
+[13:51:40] <sudden6> I can't remember the last time I used ++i
+[13:52:01] <initramfs> See that's what I don't get
+[13:52:12] <initramfs> ++i makes more sense in my head at least
+[13:52:23] <initramfs> All unary operators are prefixes
+[13:52:25] <initramfs> &x
+[13:52:27] <initramfs> *x
+[13:52:28] <initramfs> ++x
+[13:52:35] <initramfs> But people prefer a postfix unary?
+[13:52:36] <initramfs> Why?
+[13:52:44] <initramfs> ~x
+[13:53:03] <initramfs> Besides, ++x is probably what you were "meaning" to say anyway
+[13:53:27] <initramfs> It was just at some point in time someone decided "hey I'm gonna arbitarily decide x++ looks more pretty"
+[13:53:46] <initramfs> And now that you're familiar with x++, you think ++x looks weird
+[13:54:06] <sudden6> I don't know either, maybe it's also historic? I just remember all the tutorials I read when learning C were with i++
+[13:54:23] <initramfs> Also
+[13:54:36] <initramfs> You can't always replace all ++x code with x++ code
+[13:55:07] <initramfs> An atomic library using operator overloading will have specific definitions for "increment and get" and "get and increment"
+[13:56:51] <initramfs> http://en.cppreference.com/w/cpp/atomic/atomic/operator_arith
+[13:57:08] <initramfs> Shows how the C++ std::atomic type does things differently
+[13:57:13] <initramfs> Based on ++x or x++
+[13:57:21] <initramfs> Though this is still trivial
+[13:59:19] <sudden6> My approach to this is "use postfix everywhere, if not possible use prefix and note why"
+[13:59:33] <initramfs> I know, I got that impression
+[13:59:45] <initramfs> Though I'd argue the opposite is more straightforward
+[14:00:05] <initramfs> Since prefix is literally "please add one and give me results thx"
+[14:00:08] <zetok> initramfs: is your native language RTL?
+[14:00:20] <initramfs> No
+[14:00:30] <zetok> >Though I'd argue the opposite is more straightforward
+[14:00:39] <sudden6> take x and add one -> x++
+[14:00:42] <zetok> it's more straightforward only if you know what it does
+[14:00:54] <initramfs> sudden6: "But give me x, without the added one"
+[14:01:02] <zetok> more logical is `var|some operation on var`
+[14:01:14] <zetok> initramfs: again, that requires knowledge about what it does
+[14:01:19] <initramfs> So you'd rewrite all unary operators then?
+[14:01:21] <initramfs> x~
+[14:01:22] <initramfs> x*
+[14:01:25] <initramfs> x&
+[14:02:08] <initramfs> Full disclosure, up to about last year I was a strong believer in i++ too
+[14:02:22] <initramfs> But then the arguments presented convinced me otherwise
+[14:03:07] <initramfs> And when reading things in C/C++, one tends to read RTL anyway
+[14:03:29] <initramfs> const * int -> An int pointer that is const
+[14:04:22] <zetok> ><initramfs> So you'd rewrite all unary operators then?
+[14:04:34] *** Joins: _maxim_ (8d1c4476@ )
+[14:04:36] <zetok> C++ is a lost cause
+[14:04:41] <_maxim_> Hey again :)
+[14:04:47] <zetok> \o
+[14:04:57] <_maxim_> I managed to install it
+[14:05:11] <_maxim_> I downloaded the CentOS qtox rpm
+[14:05:16] <initramfs> zetok: Ehh... What else then?
+[14:05:22] <_maxim_> But there were problems with dependencies
+[14:05:40] <initramfs> zetok: Keep in mind C++ can target embedded applications too
+[14:05:44] <_maxim_> I had to install with rpm -i --no-deps qtox-long-filename-blablabla.rpm
+[14:05:47] <zetok> initramfs: https://doc.rust-lang.org/std/ops/ ← note presence of only 2 unary operators
+[14:06:18] <zetok> http://embed.rs/articles/2016/semi-hosting-rust/ ← embedded
+[14:06:30] <_maxim_> Just as we thought, it was a package manager issue - qtox itself worked perfectl with the symlinks
+[14:06:48] <zetok> _maxim_: great to hear :)
+[14:07:21] <initramfs> zetok: Ah, I see this is a Rust crusade
+[14:07:35] <_maxim_> Yep :) I hope that info will be useful to others. That's I wanted to say. Cya :)
+[14:07:36] <initramfs> Might as well use Haskell everywhere then
+[14:07:37] <initramfs> Lol
+[14:07:41] <sudden6> zetok <3 Rust once again ;)
+[14:07:43] *** Quits: _maxim_ (8d1c4476@ ) (Client Quit)
+[14:08:06] <sudden6> nah, I think Rust has some potential for embedded use
+[14:08:09] <zetok> initramfs: Haskell has a horrible syntax and memory usage
+[14:08:21] <initramfs> Memory usage is the compiler's issue
+[14:08:39] <zetok> nope, that's an issue with GC languages
+[14:08:44] <initramfs> Horrible syntax, well, I don't use haskell, but seems like is an opinionated matter again
+[14:08:53] <zetok> oh, and given the GC there's also performance issue
+[14:09:07] <sudden6> Rust also has horrible syntax IMO
+[14:09:11] <zetok> -.-
+[14:09:13] <initramfs> GC languages don't have horrible memory usage lol
+[14:09:21] <initramfs> That depends on the GC
+[14:09:33] <initramfs> Which... you don't program
+[14:09:40] <sudden6> while we're at it, Tabs vs Spaces :P
+[14:09:41] <initramfs> And is up to the compiler...
+[14:09:58] <initramfs> Or runtime for that matter
+[14:09:59] <zetok> initramfs: I have yet to see a program using GC that doesn't have problem with memory usage
+[14:10:09] <initramfs> Umm???
+[14:10:18] <initramfs> Hellow world has memory issues? Oh boy
+[14:10:59] <sudden6> I too have yet to see someone running Python on an 8bit MCU
+[14:11:14] <sudden6> or java
+[14:11:14] <initramfs> Lol
+[14:11:19] <zetok> see? :D
+[14:11:27] <initramfs> However, for whatever reason, they run java on Android
+[14:11:39] <initramfs> And java is probably the worst of the bunch
+[14:11:43] <initramfs> In terms of memory
+[14:11:47] <zetok> memory ~safety
+[14:11:56] <zetok> not the same thing as usage
+[14:12:13] <initramfs> ?
+[14:12:36] <sudden6> I wouldn't actually want apps to be coded in C that I have to compile before running them
+[14:12:50] <initramfs> You don't need to?
+[14:13:01] <initramfs> Precompiled software is a thing lol
+[14:13:11] <initramfs> Java is compiled too...
+[14:13:48] <initramfs> Plenty of programs on the Android platform make use of C as well
+[14:13:56] <sudden6> bad wording, if one used C for Android you'd have to write at least 3 abstraction layers for MIPS, ARM and x86
+[14:14:07] <sudden6> for all apps
+[14:14:12] <initramfs> Well
+[14:14:18] <initramfs> If you write source-portable C
+[14:14:20] <initramfs> You don't...
+[14:14:30] <zetok> or you could just write in Rust
+[14:14:37] <zetok> portable by default
+[14:14:55] <initramfs> I swear he's hired by Mozilla
+[14:14:57] <sudden6> and now look at the linux environment and how much software runs on all three of these without issues
+[14:15:17] <initramfs> Well, Android development is somewhat more restrictive
+[14:15:19] <sudden6> I only know busybox and gnu coreutils
+[14:15:32] <initramfs> And you get flamed for broken software
+[14:15:33] <sudden6> and the kernel, but that's another story
+[14:15:33] <initramfs> Lol
+[14:16:11] <initramfs> And again
+[14:16:20] <initramfs> The reasons for this are historical
+[14:16:44] <zetok> initramfs: https://www.rust-lang.org/friends.html ← or any of those ;P
+[14:16:53] <initramfs> Tsk tsk
+[14:17:03] <initramfs> Projects started decades agin use language constructs that aren't portable, or well defined
+[14:17:16] <initramfs> Or the language standards have changed to deprecated stuff
+[14:17:20] <sudden6> zetok is working for canonical :P
+[14:17:24] <initramfs> Oh my
+[14:17:35] <zetok> -.-
+[14:17:51] <sudden6> you asked me to choose ;)
+[14:18:15] <zetok> n-no, I've just expanded list of possibilities
+[14:18:22] <initramfs> I mean, with a recent language, it's often easy to make design choices and restrictions that cater to the modern state of software
+[14:18:29] <initramfs> Rust came out in 2010
+[14:18:36] <initramfs> It better be source portable...
+[14:18:39] <sudden6> and I choose to believe you're working for Canonical :D
+[14:18:45] <zetok> :f
+[14:20:53] <zetok> initramfs: it's browser-portable (soon™)
+[14:22:00] <initramfs> Oh god
+[14:22:12] <initramfs> Good luck with that...
+[14:22:18] <zetok> http://ashleysommer.com.au/how-to/articles/asm-js-code-using-rust-and-emscripten
+[14:23:07] <sudden6> I'm just waiting for that asm.js thing to explode in fiery fireball
+[14:23:22] <initramfs> Lol
+[14:23:41] <initramfs> I was actually joking to a friend a few months back
+[14:24:00] <zetok> https://blog.rust-lang.org/2016/05/13/rustup.html
+[14:24:07] <initramfs> "Worst web-development techniques" -> "Use ASM"
+[14:24:12] <sudden6> OMG it's slow because of that many abstractions to make it portable, let's add another layer to make it less portable again
+[14:24:49] <initramfs> sudeen6: "Surely this will make it faster!"
+[14:25:02] <initramfs> I can't spell
+[14:26:57] <sudden6> it's like going around the circumference of a circle an expect it to be faster than through the center...
+[14:27:02] <zetok> sudden6: btw, milestones?
+[14:29:01] <sudden6> 1.6 stuff we have now, maybe include #3827 and #3772 ?
+[14:29:24] <sudden6> and finish the plan for new release cycle?
+[14:29:37] <sudden6> ie. work out the details
+[14:30:09] <zetok> blog post
+[14:30:25] <zetok> then the details
+[14:30:28] <sudden6> ok
+[14:30:52] <zetok> initramfs: do you have a moment to look at the blog post grammar?
+[14:30:59] <initramfs> Sure
+[14:31:05] <sudden6> https://gist.github.com/sudden6/2ce742ea58854e6524489e6f9d40ff0f
+[14:31:05] <zetok> and everyone else too
+[14:31:12] <initramfs> sudden6: I'll look at that PR later too
+[14:31:14] <zetok> sudden6: um
+[14:31:20] <sudden6> oh sorry
+[14:31:23] <sudden6> wrong link
+[14:31:55] <initramfs> sudden6: By that PR, I mean #3827
+[14:32:10] <sudden6> https://github.com/qTox/blog/pull/3 <- blog post
+[14:32:45] <zetok> sudden6: date & filename could be updated (if not done yet)
+[14:33:00] <sudden6> I'll update it at the end
+[14:33:05] <zetok> ok
+[14:33:11] <sudden6> and also squash that commit into one
+[14:33:21] <initramfs> And... there is a cat
+[14:33:29] <initramfs> Why am I not surprised
+[14:33:45] <zetok> :3
+[14:35:04] <sudden6> about my PR, I'm specifically unsure about using uint8_t[] here https://github.com/qTox/qTox/pull/3827/commits/88bc10a4eae32200926e116c97327d52fbd6d00d#diff-40c7020428940e515ac9389cb8a7d49dR94
+[14:35:55] <sudden6> or if I should use QByteArray and check the length inside
+[14:36:41] <initramfs> I was actually gonna say that
+[14:37:03] <zetok> ok, moving FT goals from 1.6 to 1.7, they'll be there along with the Desktop Notifications
+[14:37:13] <zetok> tight :s
+[14:37:17] <initramfs> I'd recommend as soon as data gets out of toxcore, it's wrapped in C++/Qt-based containers for safety
+[14:37:34] <sudden6> I don't see Desktop Notifications anywhere soon
+[14:37:46] <sudden6> nobody even showed interest in doing them AFAIK
+[14:37:52] <initramfs> Also, when does this release cycle start and how are feature freezes announced (or are they just not)?
+[14:38:30] <sudden6> the cycle starts on monday with the stabilizing phase of 1.6
+[14:38:58] <sudden6> zetok was working on some badge in the qTox README.md
+[14:39:06] <initramfs> Okay
+[14:39:46] <initramfs> When is 1.6 going to be released or at least planned to be released?
+[14:39:54] <sudden6> next weekend
+[14:40:20] <sudden6> 6. November
+[14:40:30] <zetok> https://github.com/qTox/qTox/milestone/4 :P
+[14:41:49] <sudden6> all PRs that aren't in the release milestone will be blocked?
+[14:41:59] <sudden6> in stabilizing phase?
+[14:42:05] <zetok> ~yep
+[14:42:25] <sudden6> good
+[14:42:51] <zetok> https://github.com/qTox/qTox/pull/3842
+[14:43:27] <zetok> there's a problem though
+[14:43:32] <zetok> (not with the PR)
+[14:43:53] <initramfs> ?
+[14:44:28] <zetok> i.e. conflict between not merging anything but ~fixes, and merging milestone goals in "stabilization" week
+[14:44:42] <zetok> milestone goals are very likely to break stuff
+[14:44:49] <sudden6> right
+[14:45:07] <sudden6> but how will we decide what's a fix?
+[14:45:20] <sudden6> and probably won't break stuff
+[14:45:20] <zetok> does it fix anything?
+[14:45:51] <sudden6> my PR?
+[14:45:56] <zetok> we should accept minor fixes and separately major fixes if they fix serious problems
+[14:46:08] <zetok> sudden6: get your PR working before monday
+[14:46:19] <initramfs> Lol
+[14:46:35] <sudden6> I need Diadlo's working and initramfs for review, the rest is doable ;)
+[14:46:37] <zetok> working – reviewed & tested
+[14:46:49] <zetok> you can help with Diadlo's PR, right?
+[14:46:50] <initramfs> Diadlo being the history thing right?
+[14:46:54] <zetok> yep
+[14:46:56] <sudden6> yes
+[14:46:59] <initramfs> I reviewed it today already
+[14:47:09] <sudden6> Diadlo's thing is a little bit over my head
+[14:47:09] <initramfs> He got rid of most of the bugs
+[14:47:17] <initramfs> It's basically done
+[14:47:55] <sudden6> if you look at the review history I gave a lgtm but initramfs found a lot of issues which I didn't spot
+[14:48:36] <initramfs> Well to be fair, a lot of that relates to specific C++ rules that one could easily miss
+[14:48:55] <sudden6> initramfs: what are you thinking about drawing up some diagrams of the internal structure of qTox
+[14:49:10] <initramfs> It's too messy right now for that
+[14:49:37] <initramfs> Once the more important code has been refactored, it can be done
+[14:49:41] <sudden6> I'm more thinking about a plan how it should look like, to make everybody work in the same direction
+[14:49:47] <initramfs> Sure
+[14:50:00] <initramfs> But after clang-format and the translations I'll be working on A/V
+[14:50:05] <initramfs> And I plan to do just that
+[14:50:17] <initramfs> At least for A/V
+[14:50:26] <initramfs> Video first, audio later (if antis81 doesn't come back)
+[14:50:36] <zetok> initramfs: do you think that merging clang stuff before the Monday is realistic?
+[14:50:53] <sudden6> I can do the diagram thing, if someone can give me feedback about software architecture
+[14:50:55] <initramfs> Well merging the PR is trivial
+[14:51:07] <initramfs> If you want me to refactor all the code in qTox
+[14:51:15] <sudden6> pls don'T
+[14:51:25] <zetok> why not
+[14:51:32] <zetok> we have whole week to test & fix
+[14:51:40] <zetok> :|
+[14:51:51] <initramfs> If the clang-format PR is merged before the end of saturday
+[14:51:54] <sudden6> actually you're right^^ we never did that much testing^^
+[14:52:05] <initramfs> I can format the whole code-base before monday
+[14:52:16] <zetok> ok
+[14:52:47] <initramfs> I'm in eastern daylihgt time right now (UTC-5)
+[14:53:12] <sudden6> do we want someone else to look at our coding style PR?
+[14:53:12] <zetok> that's like cheating
+[14:53:24] <zetok> >going back in time
+[14:53:26] <initramfs> Lol
+[14:53:47] <initramfs> I mean I was in UTC+8 during the summer
+[14:54:05] <initramfs> The "qtox IRC meetingss" were at midnight for me
+[14:54:12] <zetok> sudden6: ~yes
+[14:54:30] <sudden6> [15:54] <initramfs> The "qtox IRC meetingss" were at midnight for me <- just the right time :D
+[14:54:37] <initramfs> Yes
+[14:54:46] <sudden6> zetok: we should ping them
+[14:55:58] <sudden6> I've never been further than UTC+3
+[14:58:00] <zetok> sudden: about #3772: it has potential to completely break building qTox installer
+[14:58:15] <initramfs> Well
+[14:58:20] <initramfs> I can test windows installs
+[14:58:38] <initramfs> But beyond that I can't do much
+[14:58:39] <zetok> um, for that they would need to build..?
+[14:58:50] <initramfs> Yeah
+[14:58:59] <initramfs> I was gonna say, who builds for windows
+[14:59:04] <initramfs> And what magic do they employ
+[14:59:09] <zetok> jenkins
+[14:59:16] <initramfs> Yes
+[14:59:17] <zetok> tux3 somehow builds it on it
+[14:59:20] <sudden6> is jenkins even working?
+[14:59:24] <initramfs> And why can't travis do what jenkins is doing
+[14:59:31] <zetok> sudden6: not the Linux one
+[14:59:50] <sudden6> ok, that's not a problem if the windows one works
+[15:00:30] <zetok> initramfs: https://github.com/qTox/qTox/issues/3716
+[15:00:40] <zetok> initramfs: it possibly could
+[15:01:04] <initramfs> Ah docker
+[15:01:09] <initramfs> Yeah I was gonna try that
+[15:01:24] <initramfs> Expand our build system to: 1. Not rebuild ffmpeg every damn compile
+[15:01:36] <zetok> :|
+[15:01:44] <sudden6> I was also thinking about that
+[15:01:52] <zetok> um, that's kinda my way of ensuring that instructions in INSTALL.md actually work
+[15:01:55] <initramfs> 2. Build seperate versions for the most up-to-update qTox (latest dependencies) and minimum version
+[15:02:05] <sudden6> but minimized ffmpeg was easier to implement
+[15:02:08] <initramfs> zetok: Well, I mean, this is for travis
+[15:02:09] <zetok> at the time, instructions listed building ffmpeg
+[15:02:21] <initramfs> Travis can run a seperate build job
+[15:03:47] <zetok> ><initramfs> And why can't travis do what jenkins is doing
+[15:03:59] <zetok> ah, there's a manual step involved, where tux3 signs stuff
+[15:04:32] <zetok> aside from that, rest ~can be done
+[15:04:37] <initramfs> Right
+[15:10:49] <initramfs> zetok: one of the translations in your PR missed something, do I flag your PR or upstream in weblate
+[15:11:10] <zetok> "missed" ?
+[15:12:12] <initramfs> "使用滑块设置输入设备增益（%1—%2dB）" the "（%1—%2dB）" section missed a 'dB'
+[15:12:25] <initramfs> so it should be "（%1dB—%2dB）"
+[15:13:35] <zetok> um
+[15:13:54] <zetok> isn't `(%1–%2dB)` understandable?
+[15:14:17] <zetok> or is it grammatically incorrect?
+[15:14:19] <initramfs> DOesn't match the source text though, since the source text specifies the units in both
+[15:14:23] <initramfs> No it;s still correct
+[15:14:25] <zetok> err
+[15:14:29] <initramfs> I guess I'm just nitpicking
+[15:14:32] <zetok> it doesn't have to match source text
+[15:14:48] <zetok> the meaning is important
+[15:15:33] <zetok> and if it feels "natural"
+[15:15:53] <initramfs> Okay
+[15:15:56] <initramfs> Not important then
+[15:19:47] <sudden6> zetok: what about https://github.com/qTox/release-schedule what should the content be?
+[15:21:49] <zetok> sudden6: first line is "reserved" for the badge purposes
+[15:22:20] <zetok> what do you want it to say?
+[15:22:30] <zetok> right now it's `# release-schedule`
+[15:22:44] <zetok> `# Release schedule` ?
+[15:23:27] <zetok> `# Release schedule: (merging|testing)` ?
+[15:23:34] <sudden6> Will our planned schedule be noted there?
+[15:23:46] <zetok> as for the rest of the content, I thought about making a table with the dates
+[15:24:16] <zetok> but that can be done later, after I get the badge thing
+[15:24:25] <sudden6> merging|testing sounds good to me
+[15:24:32] <sudden6> or merging|stabilizing
+[15:24:40] <zetok> :D
+[15:24:52] <zetok> there's a great reference
+[15:24:58] <zetok> lemme see if I can find it
+[15:36:22] *** Joins: DaSpirit (~DaSpirit@ )
+[15:59:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[16:00:13] <iphy> zetok: I propose writing a+b * c in qtox
+[16:00:28] <iphy> Since we're all about redefining operator precedence here
+[16:19:24] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[16:20:35] *** Joins: jjuran (~jjuran@ )
+[16:26:18] *** Quits: athan (~athan@ ) (Ping timeout: 245 seconds)
+[16:32:59] <initramfs> iphy: I don't get your comment about that
+[16:33:09] <iphy> Diadlo: have you tested qTox with toktok?
+[16:33:14] <iphy> Has anyone tested it?
+[16:33:40] <iphy> initramfs: you're pretending operator precedence is something it's not
+[16:33:52] <initramfs> ???
+[16:34:15] <iphy> int* a;
+[16:34:25] <initramfs> What about that?
+[16:34:37] <iphy> This makes exactly as much sense as a+b * c
+[16:34:57] <initramfs> ???
+[16:35:05] <initramfs> int* is a type signature
+[16:35:13] <iphy> No
+[16:35:19] <iphy> It's a type
+[16:35:32] <initramfs> Yes okay
+[16:36:03] <iphy> int * is also a type
+[16:36:07] <initramfs> a + b * c doesn't involve int* as a type anywhere, b * c is the binary multiplicative operator
+[16:36:11] <initramfs> I don't see the relevance
+[16:36:21] <iphy> And int     * is the same type
+[16:36:27] <initramfs> Yes
+[16:36:50] <iphy> And a + b * c is the same as a+b * c
+[16:36:55] <initramfs> Yes
+[16:36:56] <initramfs> You realize this is a style guide... We aren't saying the alternatives are wrong or incorrect
+[16:37:04] <initramfs> We are ensuring consistency
+[16:37:07] <zetok> um
+[16:37:14] <zetok> I think that the problem here is wrong wording
+[16:37:21] <initramfs> Yeah I'm changing it
+[16:37:29] <iphy> You're making a style guide to not only ensure consistency
+[16:37:39] <iphy> But hopefully also to help readability
+[16:37:59] <initramfs> Yes
+[16:38:07] <iphy> Otherwise you can just define it as "no whitespace anywhere except where required by the language"
+[16:38:38] <initramfs> I'm not sure I get your point
+[16:39:03] <iphy> Your style guide says that * binds to the type
+[16:39:13] <iphy> Which is not true in C++
+[16:39:23] <iphy> So you put a lie in the style guide
+[16:39:25] <initramfs> Yes it's bad wording
+[16:39:29] <initramfs> What I'm meaning to say is
+[16:39:46] <initramfs> The syntactical glyph that represents the pointer
+[16:39:49] <iphy> And you require people to write code in a style that pretends it's true
+[16:39:59] <initramfs> Is to be attached to the characters that define the word of the parent type
+[16:40:13] <iphy> Ok, and why?
+[16:40:22] <initramfs> To ensure a consistent style?
+[16:41:01] <iphy> Ok but why do you invent confusing rules that don't agree with the grammar?
+[16:43:36] <iphy> I assume another rule is to never have more than one declarator per declaration
+[16:43:46] <initramfs> What is so confusing
+[16:44:12] <initramfs> If you have a pointer type, you physically put the * with the parent type, with no spaces
+[16:44:18] <initramfs> Is that so hard
+[16:44:44] <initramfs> I agree the wording may not be optimal, and I'm changing soon
+[16:44:45] <iphy> Yes because it doesn't make sense to do that
+[16:45:04] <iphy> int* a;
+[16:45:17] <zetok> what would make sense and why?
+[16:45:40] <iphy> This is in fact a declaration of *a as type int
+[16:46:01] <zetok> oh
+[16:46:23] <iphy> zetok: identity<int *> a; would make more sense
+[16:46:37] <iphy> Or int *a;
+[16:47:09] <initramfs> Yes, it makes so little sense all compilers support it and that clang-format has an option to support both your syntax and mine
+[16:47:56] <iphy> initramfs: compilers ignore whitespace except between tokens that would otherwise be one token
+[16:48:17] <initramfs> Yes
+[16:48:28] <iphy> So, why does it make sense?
+[16:48:51] <iphy> "because compilers support it"
+[16:48:55] <initramfs> And somehow if one writes int* a; we are completely breaking C++ operator precedence
+[16:49:25] <iphy> You're not breaking it, it still works, it's just expressing the wrong thing
+[16:49:38] <iphy> To humans reading it
+[16:49:45] <iphy> Not to tools, who don't care
+[16:50:35] <iphy> int* a; says a is declared as int*
+[16:51:39] <iphy> That's not how c++ declarations work
+[16:52:36] <iphy> initramfs: you can put whatever rule you like
+[16:52:56] <initramfs> Well
+[16:52:58] <iphy> I don't really care, but I'm curious as to why
+[16:53:12] <iphy> I like rules to have a rationale
+[16:53:17] *** Joins: athan (~athan@ )
+[16:53:36] <iphy> Maybe the qTox project isn't the right place to look for reasonable decisions
+[16:53:58] <iphy> If that's the case, you can tell me that and I'll stop asking questions
+[16:54:43] <zetok> it's not
+[16:54:58] <iphy> Ok thanks, no further questions
+[16:54:58] <initramfs> The ISo?C++ language spec uses int* a;
+[16:55:00] <initramfs> So...
+[16:55:07] <initramfs> ISO/C++ language spec
+[16:55:26] <zetok> iphy: um, I mean that it's not the case, i.e. the questioning is welcome
+[16:55:54] <initramfs> Full disclosure I don't have the C++11 spec handy, so I'm on the latest C++14 working draft
+[16:56:19] <zetok> hmm
+[16:57:21] <zetok> so the spec doesn't make sense?
+[17:00:15] *** Joins: sudden6 (~anonymous@ )
+[17:06:51] <initramfs> iphy: See sections §7.6.1 and §8.3.1 of the ISO/IEC C++14 language spec (or at least the n4296 working draft)
+[17:07:01] <initramfs> They define how int* a; is a valid construct
+[17:07:20] <iphy> initramfs: I know
+[17:07:33] <iphy> The released standard has the same
+[17:09:22] <initramfs> And somehow that's wrong in this context?
+[17:09:24] <sudden6> I like int* a more, because it's easier to distinguish it visually from int b = *a;
+[17:10:30] <iphy> Where does the ... go?
+[17:10:46] <iphy> In variadic templates?
+[17:10:58] <iphy> Do you forbid C arrays?
+[17:12:03] <iphy> Do you forbid pointers and references to arrays?
+[17:12:23] <iphy> And function pointers?
+[17:13:11] <iphy> All these things should be forbidden if you want this rule to make sense
+[17:13:26] <iphy> In a limited subset of c++, which int*a; is a part of, you can have it make sense
+[17:13:40] <initramfs> Again, I don't see the relevance, can you give an example (or a different one if the earlier ones apply) to why this rule fundamentally doesn't make sense in your eyes?
+[17:14:01] <initramfs> Especially with respect to "C arrays, pointers/reference to arrays and function points"
+[17:14:18] <initramfs> s/points/pointers/
+[17:14:43] <iphy> How do you declare a as pointer to array of 10 ints?
+[17:14:53] <iphy> Let's use x
+[17:14:58] <iphy> How do you declare x ...
+[17:17:57] <initramfs> int** x;
+[17:18:11] <initramfs> ?
+[17:21:07] <iphy> That declares x as pointer to pointer to int
+[17:22:21] <sudden6> int*[10] x; or int[10]* x;?
+[17:23:45] <iphy> Both those things are syntax errors
+[17:24:13] <iphy> But that does show exactly the kind of confusion your role causes
+[17:24:22] <iphy> Rule
+[17:24:35] <initramfs> What is the confusion
+[17:25:05] <initramfs> The C array type decays to a pointer
+[17:25:51] <sudden6> If I want a pointer to an array name, I do "int a[10]; int* x = a;"
+[17:27:16] <iphy> Ok I'm busy now, let's talk about it later
+[17:28:14] <sudden6> I can just throw in another guess: "int* x[10]"
+[17:42:45] *** sockspls is now known as SocksPls
+[17:55:49] <zetok> :3
+[17:55:55] <zetok> https://github.com/qTox/release-schedule/pull/1
+[17:56:07] <zetok> ↑ anyone wants to review?
+[17:56:12] <zetok> (just works™)
+[17:57:44] <zetok> all that you need to switch week is to `./switch.sh`
+[17:57:50] <zetok> && commit
+[18:04:53] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[18:05:48] <zetok> I'll take that as a "no"
+[18:39:09] <zetok> "Week of Testing: Testing skill is boosted to Expert level!"
+[18:39:19] <zetok> "Week of Testing: Your mana regenerates!"
+[18:39:23] <zetok> which sounds better?
+[18:42:31] <zetok> I'll go with the mana version
+[18:46:29] -qtox-git-spam- [qTox] zetok opened pull request #3844: chore(README): add week status badge (master...chore-status-badge) https://git.io/vXLWh
+[18:59:12] -qtox-git-spam- [qTox] zetok closed pull request #3842: Update translations from Weblate (master...tr) https://git.io/vXLeK
+[19:05:17] <initramfs> zetok: Not bad
+[19:06:15] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 265 seconds)
+[19:18:40] *** Joins: in1t3r (~LordShiva@ )
+[19:25:14] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[19:48:26] <zetok> http://www.youtube.com/watch?v=omiroXnw1ao ;D
+[19:48:50] <zetok> https://www.youtube.com/watch?v=Jm932Sqwf5E
+[19:53:58] *** Joins: Bill_MI (~Bill@ )
+[19:54:59] <zetok> 5:30 ;D
+[19:55:24] <zetok> actually, 5:00
+[19:56:48] *** Parts: Bill_MI (~Bill@ ) ()
+[19:57:24] <zetok> eh, sudden6 forgot to rename blog post
+[20:03:51] *** Joins: abbat (~Anton@ )
+[20:26:13] <zetok> `find src/ -type f -name '*.cpp' -exec sed -ri 's,(\s*)(\+{2})([[:alpha:]]+),\1\3\2,g' {} +`
+[20:26:23] <zetok> fu. fu. fu. :3
+[20:35:22] -qtox-git-spam- [qTox] zetok opened pull request #3845: style: change prefix increment to postfix increment (master...style-widg-ifp) https://git.io/vXL0y
+[20:57:26] <Diadlo> Hello everyone)
+[20:57:58] <Diadlo> zetok: #3845. Seems, you really hate prefix increment :)
+[20:58:36] <zetok> not really
+[20:58:47] <zetok> and Hi :)
+[21:00:27] <Diadlo> zetok: What about changing statusnotifier?
+[21:01:57] <Diadlo> src/platform/statusnotifier/statusnotifier.c. Lines: 821, 1285, 1343, 1522, 1749
+[21:01:58] <zetok> it has some weird stuff that probably can't be changed with above sed command
+[21:02:22] <zetok> I figured that I'll leave it to someone who'll know what to do
+[21:03:33] <zetok> can't be changed correctly*
+[21:38:09] *** Joins: sudden6 (~anonymous@ )
+[21:39:08] <zetok> sudden6: post rename?
+[21:39:19] <sudden6> one moment
+[21:43:26] <sudden6> zetok: posting today?
+[21:43:34] <zetok> I guess
+[21:44:37] <zetok> initramfs, Diadlo: ↑ lgtm ?
+[21:45:17] <Diadlo> Can you give a link?)
+[21:45:28] <zetok> https://github.com/qTox/blog/pull/3
+[21:45:47] <initramfs> zetok: They're not all integral types
+[21:45:52] <initramfs> You've replaced some iterators too
+[21:45:58] <initramfs> And I still fail to see why this matters
+[21:46:06] <initramfs> There is no way to enforce any future code
+[21:46:35] <zetok> it changes logic for iterators?
+[21:46:56] <initramfs> No, but the "optimizations" you say may not be performed
+[21:47:03] <initramfs> And I don't think one would want to waste time trying to convince every code contributor to qTox that your style is superior
+[21:47:24] <zetok> don't worry about that :)
+[21:47:26] <initramfs> There is basically no readability change with that
+[21:47:36] <zetok> (the convincing part, that is)
+[21:47:48] <initramfs> Well... I prefer prefixes
+[21:48:05] <initramfs> And you've yet to convince me with a logical argument that's not opininated
+[21:48:22] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[21:49:25] <zetok> I'm not sure if that's doable without averaging/generalizing
+[21:49:57] <initramfs> You haven't answered my question
+[21:50:14] <initramfs> Why is it so important for this to be "standardized". It's not even considered style
+[21:50:54] <zetok> actually, prefix/postfix usage is in some coding guidelines, AFAIK
+[21:51:07] <initramfs> But they're not simply replacable.....
+[21:51:08] <Diadlo> One Planet, One Race, One Code style
+[21:51:09] <zetok> not sure about the importance
+[21:51:41] <zetok> not replaceable, but one can be preferred over the other
+[21:51:48] <initramfs> If you get into saying always prefix over postfix, you need to specify every case where it is excepted
+[21:51:54] <initramfs> Yes
+[21:52:12] <initramfs> And the style that gives the most optimal performance when generalizing is prefix
+[21:52:15] <initramfs> Not postfix
+[21:52:31] <initramfs> There is literally zero argument for postfix being better other than the fact that you like the looks more
+[21:52:49] <zetok> > C++
+[21:53:03] <initramfs> ?
+[21:53:24] <Diadlo> I.e. name of language use postfix increment
+[21:53:36] <initramfs> And that someone defines how we need to di it
+[21:53:44] <initramfs> s/di/do/
+[21:53:47] <initramfs> Sigh...
+[21:54:05] <zetok> you don't need to
+[21:54:12] <zetok> either way, consistency
+[21:54:24] <zetok> right now, it's almost 50:50
+[21:54:39] <initramfs> Well, then I vote for switching it prefix
+[21:54:51] <initramfs> Switch it doesn't matter right?
+[21:55:02] <Diadlo> zetoc: AFAIK, prefix increment for iterators is standard de-facto
+[21:55:17] <zetok> Diadlo: on some codebases
+[21:55:17] <initramfs> Standard uses prefix
+[21:57:02] <iphy> initramfs: the answer is int(*x)[10]
+[21:57:11] <zetok> Diadlo, sudden6: vote?
+[21:57:11] <initramfs> ?
+[21:57:37] <initramfs> iphy: int x[3][5];     §8.3.4
+[21:57:42] <Diadlo> I prefer prefix for iterators and postfix for another
+[21:57:43] <initramfs> Example taken from 8.3.4
+[21:58:00] <zetok> Diadlo: hmm, isn't that kinda inconsistent?
+[21:58:02] <iphy> That's an array of arrays
+[21:58:02] <Diadlo> I'm not against any of the options
+[21:58:11] <Diadlo> zetok: Why?
+[21:58:16] <iphy> How do you format this with your coding style?
+[21:58:28] <iphy> A pointer to an array
+[21:58:31] <Diadlo> And agree with iphy about `*`
+[21:59:01] <iphy> To be consistent, I assume int(* x)[10]
+[21:59:11] <initramfs> Like, I said int** a;
+[21:59:15] <initramfs> That's a pointer to an array
+[21:59:24] <iphy> Ok but you said something incorrect
+[21:59:32] <iphy> No that's a pointer to a pointer
+[21:59:53] <initramfs> Yes... and in C++, and C for that matter
+[21:59:58] <initramfs> All arrays decay to pointers
+[21:59:59] <Diadlo> int* a, b;
+[22:00:04] <Diadlo> a is a pointer. b -- not
+[22:00:07] <iphy> int a[10];
+[22:00:16] <iphy> What is the type of &a?
+[22:00:27] <initramfs> int**
+[22:00:29] <iphy> No
+[22:01:02] <iphy> What is sizeof a?
+[22:01:34] <sudden6> [22:50] <initramfs> Why is it so important for this to be "standardized". It's not even considered style <- I agree
+[22:01:47] <iphy> Is it the same as sizeof(int*)?
+[22:02:20] <sudden6> (blog post updated)
+[22:03:10] <zetok> sudden6: thanks
+[22:03:42] <zetok> sudden6: there's no post though?
+[22:03:57] <sudden6> I didn't merge it
+[22:04:04] <iphy> initramfs: int* x; is a symptom of misunderstanding or refusing to accept how the c++ type system and grammar work
+[22:04:05] <sudden6> also I think I fucked up with git
+[22:04:11] <zetok> sudden6: I mean in PR
+[22:04:19] <iphy> Some standard committee members suffer from this refusal
+[22:04:28] <zetok> sudden6: `git reset HEAD^`
+[22:04:35] <zetok> `git mv`
+[22:05:19] <sudden6> sometimes I want to burn git with fire
+[22:05:32] <initramfs> Again, I fail to see the relevance with having the pointer next to the variable
+[22:05:55] <initramfs> I understand everything you are saying, and I disagree with some of it because we are arguing syntax over sematics
+[22:06:11] <initramfs> But I still fail to see how int *a; is thus more "correct" than int* a;
+[22:06:34] <initramfs> If you think it makes more sense and is sematically the only correct way
+[22:06:34] <zetok> `int *a;` reflects better what the thing actually is
+[22:06:34] <iphy> Can you answer my questions then?
+[22:06:42] <iphy> Given that you now understand
+[22:06:42] <initramfs> What question
+[22:06:45] <initramfs> ...
+[22:06:47] <initramfs> Sigh...
+[22:07:03] <iphy> The sentences with question mark at the end
+[22:07:10] <iphy> The most recent ones
+[22:07:42] <initramfs> Repeat them again
+[22:07:48] <initramfs> I don't want to answer these trivial questions
+[22:07:59] <initramfs> *All of these
+[22:08:07] <iphy> 21:01 <iphy> What is sizeof a?
+[22:08:14] <zetok> initramfs: pls answer
+[22:08:22] <iphy> initramfs: you're answering the trivial questions wrong
+[22:08:30] <iphy> Which lets me think they are not that trivial
+[22:08:51] <initramfs> If i'm answering them wrong, I'm understanding you incorrectly
+[22:09:07] <zetok> err
+[22:09:10] <iphy> Ok let me ask again, and be very clear about it
+[22:09:24] <iphy> int x[10];
+[22:09:44] <iphy> Can we agree that this is a declaration?
+[22:09:52] <initramfs> Yes
+[22:10:04] <iphy> And the declaration has one declarator
+[22:10:37] <iphy> Yes?
+[22:11:23] <initramfs> If you want to argue over the sematics of every word down to the letter, I will consult the standard for every question
+[22:11:31] <iphy> Sure
+[22:11:44] <initramfs> But if not, yes. As far as I understand what you're trying to say
+[22:11:49] <iphy> That's a good idea, so you'll give the right answers
+[22:11:55] <sudden6> zetok: now it's done
+[22:12:17] <iphy> The declaration declares one name: x
+[22:12:57] <iphy> What is the type of x?
+[22:13:03] <iphy> Is this question clear?
+[22:13:12] <iphy> I'll make it more clear
+[22:13:16] <initramfs> The type of x in waht context
+[22:13:20] <iphy> What is the declared type of x?
+[22:13:59] <initramfs> In a runtime context, how it's stored in memory, what it refers to, etc?
+[22:14:06] <iphy> The declared type
+[22:14:12] <iphy> Feel free to consult the standard
+[22:14:24] <zetok> sudden6: ok, thanks :)
+[22:15:31] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[22:17:57] <initramfs> Standard just calls it an array
+[22:20:22] <iphy> initramfs: what is a type in C++?
+[22:22:16] <initramfs> That's sematics, C++ declares two "types" of types fundamental types and compound types
+[22:22:24] <initramfs> Which are defined seprately
+[22:23:10] <initramfs> I'm literally just acting in the capacity of a search function for the standard here...
+[22:23:49] <iphy> ok, so is `int` a type?
+[22:24:02] <iphy> (`` here is used in markdown style as code block)
+[22:24:18] <initramfs> "There are five standard signed integer types : “signed char”, “short int”, “int”, “long int”, and “long
+[22:24:18] <initramfs> long int”."
+[22:24:45] <initramfs> You know you can download the standard...
+[22:24:52] <iphy> initramfs: I know the standard
+[22:24:57] <initramfs> Good
+[22:25:05] <initramfs> And I have the standard, I would never claim to know all of it
+[22:25:15] <iphy> I don't know all of it, either
+[22:25:17] <initramfs> But given that I have the standard
+[22:25:44] <zetok> initramfs: um, it's about knowing the part(s) of the standard relevant to the discussion
+[22:25:47] <initramfs> You don't need to ask questions that the standard can provide direct answers to
+[22:25:53] <initramfs> I can find them
+[22:25:54] <iphy> searching the standard, knowing where to find things, and understanding what the wording in it means, is more important
+[22:25:57] <initramfs> If I am in doubt
+[22:26:02] <iphy> initramfs: well, ok
+[22:26:08] <iphy> I'll continue
+[22:26:42] <iphy> char c; // what is the type of c?
+[22:27:33] <iphy> initramfs: the reason I'm asking this trivial question is because I want to create a common understanding
+[22:27:59] <iphy> actually I meant to ask: what is the declared type of c?
+[22:28:35] <iphy> I can answer it, so you know what I mean
+[22:28:37] <initramfs> BThe tpye is known as char, but implementatiob defined to whether it's unsinged
+[22:28:46] <initramfs> type*
+[22:28:52] <initramfs> I can't spell
+[22:28:52] <iphy> yeah, I wasn't asking about the signedness of char
+[22:28:57] <iphy> but yes, the declared type of c is char
+[22:29:08] <iphy> int a; // we agree that the declared type of a is int?
+[22:29:13] <initramfs> Yes
+[22:29:16] <iphy> good
+[22:29:28] <iphy> int*p; // what is the declared type of p?
+[22:29:53] <initramfs> Compound type: pointer to int
+[22:30:04] <iphy> ok, and in C++, we write that type as..?
+[22:31:32] <initramfs> int* with any spacing between int and *
+[22:32:12] <iphy> ok
+[22:32:27] <iphy> this `int*` is something called a type-id
+[22:33:00] <iphy> int a[10]; // what is the declared type of a, written as type-id?
+[22:34:14] -qtox-git-spam- [qTox] zetok closed pull request #3845: style: change prefix increment to postfix increment (master...style-widg-ifp) https://git.io/vXL0y
+[22:34:36] <iphy> I'll be more precise: what is the declared type of the name `a`, written as type-id?
+[22:37:25] <initramfs> Well, I'm trying to see if the standard explictly mentions how to format type-ids for arrays
+[22:37:31] <initramfs> But I'm going to assume int[]
+[22:37:54] <iphy> int[10]
+[22:38:12] <iphy> int[] is an incomplete type
+[22:38:23] <initramfs> Sure
+[22:39:04] <iphy> int i; // what is the type of the evaluated expression `i`?
+[22:40:20] <iphy> hint: it's different from `+i` (and what is the type of that?)
+[22:40:39] <initramfs> Just answer your own questions, I get that you want to have a common understanding but trying to look through the standard so I can argue semantics is a waste of time
+[22:40:47] <iphy> ok
+[22:40:48] <initramfs> If I somehow don't understand something I'll tell you
+[22:41:13] <iphy> the first is lvalue int (or int&), the second is prvalue int (or int&&)
+[22:41:25] <iphy> as a simplification, you could say they are both int
+[22:42:08] <iphy> int a[10]; // the declared type of a is int[10], the type of the evaluated expression `a` is rvalue int*
+[22:42:31] <iphy> there is your pointer decay
+[22:42:40] <initramfs> Yes
+[22:42:45] <iphy> what is sizeof a?
+[22:42:56] <initramfs> 10 * sizeof(int)
+[22:42:56] <iphy> it's equal to sizeof(int) * 10
+[22:42:59] <iphy> right
+[22:43:11] <iphy> so, sizeof a is not the same as sizeof(int*)
+[22:43:17] <initramfs> Yes I know
+[22:43:25] <iphy> what is the type of &a?
+[22:43:47] <iphy> it's not int**
+[22:45:22] <iphy> ok, first a different question
+[22:45:30] <iphy> initramfs: sizeof does not evaluate its argument, correct?
+[22:45:58] <initramfs> Not sure what you mean by evaluate
+[22:46:01] <iphy> so what is the type of the unevaluated expression `a`?
+[22:46:28] <iphy> the expression argument to sizeof does not undergo usual unary conversions
+[22:47:42] <iphy> initramfs: the type of the unevaluated expression `a` is int(&)[10]
+[22:47:51] <iphy> the type of &a is int(*)[10]
+[22:48:03] <initramfs> Yes
+[22:48:19] <iphy> int**p=&a; // ill-formed
+[22:48:31] <iphy> int(*p)[10]=&a; // correct
+[22:49:13] <iphy> now, given your rules about "* binds to type", how do you format that last declaration?
+[22:53:05] *** Joins: athan (~athan@ )
+[22:53:05] <iphy> to be consistent, it seems that `int(* p)[10];` is the correct way to format it, is it?
+[22:53:11] <initramfs> No..
+[22:53:32] <initramfs> Because (*p) is explicitly stating that *p is a single entity
+[22:53:49] <initramfs> And that the * does not nelong to the *
+[22:54:10] <initramfs> int*
+[22:54:10] <initramfs> belong
+[22:54:43] <initramfs> Also, yeah I see where I wrong with int** I thought that section 4.2 would cover it
+[22:54:43] <initramfs> But it doesn't
+[22:54:46] <iphy> ok, what about: int (*p);
+[22:54:46] <iphy> what is the declared type of p here?
+[22:55:19] <iphy> right
+[22:55:28] <iphy> int(*p); // what is the declared type of p?
+[22:55:44] <initramfs> Same, pointer to int
+[22:55:52] <iphy> so now *p is a single entity
+[22:55:58] <iphy> but without parentheses it's not?
+[22:56:09] <iphy> though it's in fact the exact same thing
+[22:56:28] <iphy> how is this consistent?
+[22:56:34] <initramfs> Sure, but the reason for the parens is for operator precedence
+[22:57:06] <initramfs> The () doesn't do any binding
+[22:57:18] <initramfs> It merely causes the evaluation for that to happen first
+[22:57:23] <iphy> so, your rule is: pointer binds to type, unless the type happens to be an array type
+[22:57:41] <iphy> or a function type, probably
+[22:58:02] <iphy> hence my question earlier: do you forbid arrays and function types?
+[22:58:14] <iphy> or are you explicitly exempting them from the rule?
+[22:58:26] <initramfs> int(* p) doesn't "put" the * with the int
+[22:58:36] <initramfs> It's only through necessily that it is bound to the p
+[22:58:53] <initramfs> In fact
+[22:59:06] <iphy> int*p; and int(*p); are the same thing, as is int((*p));
+[22:59:21] <initramfs> Yes
+[22:59:40] <initramfs> Because there is nothing else to evaluate
+[22:59:53] <iphy> if I want to write "declare x as pointer to T"
+[22:59:53] <initramfs> Evaluate is a bad word to use
+[22:59:54] <initramfs> Parse
+[23:00:28] <initramfs> You would declare it as T* x;
+[23:00:34] <initramfs> Without any extra brackets
+[23:00:37] <iphy> then I write T* x; and make the * bind to T, unless T is an (expanded) array type
+[23:00:39] <initramfs> Parens*
+[23:00:50] <initramfs> Sure
+[23:00:52] <iphy> so a pointer to an array is written: T (*p)[N];
+[23:01:01] <initramfs> Yes
+[23:01:05] <iphy> but T (*p); is not
+[23:01:12] <iphy> then it's T(* p);
+[23:01:19] <iphy> (and we can omit the parentheses)
+[23:01:45] <iphy> weren't you trying to make a consistent style?
+[23:02:20] <iphy> int*p; // the * binds to p by grammar
+[23:02:31] <iphy> your style is trying to make it look like it doesn't
+[23:03:07] <iphy> so it's going to break down whenever the grammar requires things that don't fit in the "I wish * were binding to the type" idea
+[23:03:24] <iphy> introducing inconsistency, exceptions to the rule
+[23:03:31] <initramfs> Okay
+[23:03:52] <initramfs> 1. I wrote those rules to mimic the existing code on qTox and follow the convention of clang-format
+[23:03:55] <iphy> this is a rule that's for a language that's not C++
+[23:04:06] <initramfs> 2. I have, as you pointed out, failed to consider the pointer to array type
+[23:04:24] <iphy> which is fine, if you're going to say "we don't write C++ in qtox, we write this other language that looks like C++ but isn't quite C++, but happens to be understood by C++ compilers"
+[23:04:46] <iphy> if you make that clear in the rules, that's totally fine
+[23:04:48] <initramfs> See, now that statement is unwarrented
+[23:05:02] <initramfs> Because even inconsistently formatted code is still valid under the standard
+[23:05:07] <iphy> no, that's a genuine statement
+[23:05:27] <iphy> what I meant is: we're using a strict subset of C++
+[23:05:29] <initramfs> So, if my style is inconsistent, I am no longer writing in C++?
+[23:05:42] <initramfs> The style is not the standard
+[23:05:43] <iphy> that's fine, and you probably should be using a subset of C++
+[23:05:51] <iphy> but you need to very clearly say what that subset is
+[23:06:20] <iphy> so for example: no function types, no arrays, or at least no pointers to those types in declarations
+[23:06:41] <initramfs> What on earth are you going on about
+[23:06:52] <initramfs> My style guide fails to account for the pointer to array
+[23:07:03] <initramfs> It's listed under style
+[23:07:03] <iphy> yes, and you have two options to solve that
+[23:07:06] <initramfs> Not feature
+[23:07:12] <iphy> 1) fix the style guide
+[23:07:13] <initramfs> And I did say I would fix that
+[23:07:24] <iphy> 2) fix the style guide
+[23:07:31] <iphy> more specifically:
+[23:07:39] <initramfs> Sigh...
+[23:07:39] <initramfs> You know
+[23:07:43] <initramfs> You could have just gone
+[23:07:46] <iphy> 1) fix it to use a consistent rule for all types
+[23:07:57] <iphy> 2) fix it to restrict the language to avoid types it can't account for
+[23:08:01] <initramfs> "Hey, what about pointers to arrays which look like this: <example here>"
+[23:08:11] <iphy> initramfs: but then you wouldn't have learned anything
+[23:08:22] <initramfs> Because I've spent several hours arguing over stupid little things
+[23:08:26] <initramfs> I haven't learnt anything
+[23:08:36] <initramfs> Apart from that I missed that thing in the style guide
+[23:08:38] <initramfs> Which I knew about
+[23:08:42] <initramfs> But merely forgotten
+[23:08:47] <iphy> initramfs: because you were wrong about int a[10]; // type of &a
+[23:08:52] <initramfs> Yes and that
+[23:08:56] <iphy> so I thought you may want to get that right
+[23:08:56] <initramfs> Which I would ahve picked up
+[23:09:03] <initramfs> When you stated the pointer to array type
+[23:09:11] <iphy> and the best way to learn the right thing is to look it up in the standard
+[23:09:16] <initramfs> Well
+[23:09:22] <initramfs> If that your intention
+[23:09:36] <initramfs> You took the most long, convoluted and unceesary approach
+[23:09:56] <initramfs> Starting by telling zetok we should redefine operator precedence 
+[23:10:23] <initramfs> Which I am fairly sure has absolutely nothing to do with "allowing initramfs to remember about pointer to arrays"
+[23:10:43] <iphy> initramfs: yes, I started with a sarcastic approach, hoping that it would immediately be obvious why the rule doesn't make sense
+[23:10:55] <iphy> but then it wasn't, so I had to explain more about the C++ grammar
+[23:10:58] <initramfs> Well, zetok doesn't program in C++
+[23:11:02] <zetok> (sorry that I didn't bite)
+[23:11:22] <iphy> no, but many people in this channel do
+[23:11:24] <iphy> sort of
+[23:11:30] <initramfs> And you talked about operator prescence, gave no example and talked about how we aren't writing C++
+[23:11:44] <initramfs> I was in the process of rewording the guide to state
+[23:12:06] <initramfs> That the pointer follows type is a mere style thing
+[23:12:11] <initramfs> And not a strict requirement
+[23:12:13] <initramfs> In essence
+[23:12:17] <iphy> I see
+[23:12:26] <initramfs> "Whenever possible, bind pointer to type"
+[23:12:31] <iphy> so you insist on having inconsistent style rules
+[23:12:36] <initramfs> No
+[23:12:49] <initramfs> I insist on having rules that are enforcable by clang-format
+[23:13:06] <initramfs> Which btw, produces int(*p)[10]; for your example
+[23:13:19] <initramfs> So, yes, clang-format still binds pointer to type
+[23:13:23] <initramfs> But now there is no space
+[23:13:53] <initramfs> I will make sure this example is documented
+[23:13:58] <zetok> initramfs: um, you're ok with the blog post as it is?
+[23:14:15] <zetok> (nothing changed, just renamed)
+[23:14:32] <initramfs> The one with the cat rubbing the mirror right?
+[23:14:38] <zetok> :3
+[23:14:39] <zetok> yep
+[23:14:42] <initramfs> Yep it's good
+[23:14:45] <zetok> ok
+[23:15:11] <iphy> zetok: we won't have a common style then
+[23:15:26] <initramfs> iphy: Apart from RTTI and no exceptions, we do not define a subset of C++ to use anywhere in the style guide
+[23:15:41] <initramfs> If you see an example of something I wrote that restricts C++ in a way
+[23:15:49] <initramfs> Please tell me here or in a review
+[23:15:56] <qTox-Blog> [blog] zetok closed pull request #3: Blog post about the new qTox release cycle (gh-pages...sudden6-post1) https://git.io/vXIfj
+[23:16:24] <initramfs> It is highly likely that I have merely forgotten/failed to account for such a construct
+[23:16:56] <initramfs> And I'll apologize for not understanding your argument earlier, I haven't seen pointers to arrays used in years
+[23:17:31] <initramfs> Because I don't think any construct in qTox currently uses said construct, nor has any project I have worked on recently
+[23:17:44] <iphy> initramfs: yeah, C++ programmers like to pretend they don't exist
+[23:17:50] <iphy> or function pointers, those don't exist either
+[23:18:00] <iphy> typename T or std::function all the way
+[23:18:02] <initramfs> Well, I mean std::function wraps so nicely
+[23:18:04] <initramfs> Yeah
+[23:18:21] <iphy> std::function wraps so bloatedly
+[23:18:25] <initramfs> Well
+[23:18:29] <initramfs> Sure...
+[23:18:58] <initramfs> But unless it's somewhat performance critical, I say it doesn't matter 99% of the time
+[23:19:08] <iphy> one generated derived class with its own vtable per call site
+[23:19:17] <iphy> and of course a heap allocation of said derived class
+[23:19:25] <iphy> and no way to inline any of it
+[23:20:20] <iphy> (constructor call site that is)
+[23:20:33] <zetok> https://qtox.github.io/blog/2016/10/29/New-Release-Process.html \o/
+[23:20:37] <iphy> so yeah, C++ programmers like to pretend the * binds to the type :)
+[23:20:57] <iphy> I don't like to pretend the language is something it's not, so I'm not going to adopt this style
+[23:21:14] <initramfs> Well again, my mistake for bad wording
+[23:21:17] <initramfs> Again
+[23:21:20] <initramfs> I was trying to say
+[23:21:24] <iphy> yes, I know it's a style
+[23:21:27] <initramfs> The glyph '*'
+[23:21:28] <iphy> but that style is misleading
+[23:21:30] <initramfs> Is to be shoved
+[23:21:33] <initramfs> As far left
+[23:21:36] <initramfs> Into the type
+[23:21:40] <initramfs> as physically possible
+[23:21:42] <iphy> I understand
+[23:21:46] <iphy> and that is misleading
+[23:21:51] <zetok> initramfs: but if it's not right, why do it?
+[23:21:59] <initramfs> It is right
+[23:22:03] <initramfs> It's just bad wording
+[23:22:05] <iphy> it is grammatically correct
+[23:22:08] <iphy> as is a+b * c
+[23:22:15] <initramfs> Like
+[23:22:19] <initramfs> As it is written right now
+[23:22:26] <initramfs> I can see how it can be seen as a restriction
+[23:22:39] <iphy> a+b * c // this is grammatically correct, but misleading
+[23:22:41] <zetok> initramfs: but why not change it?
+[23:22:43] <initramfs> But all I meant was, as far as allowed by the code
+[23:22:55] <initramfs> I will change the text
+[23:22:56] <iphy> which is why I used it as the sarcastic example to show why your style rule is misleading
+[23:22:58] <initramfs> to make it more clear
+[23:23:04] <initramfs> Yes
+[23:23:16] <iphy> so your rule is in the same spirit as a rule that says
+[23:23:17] <initramfs> But I haven't slept in 16 hours and I was arguing about other C++ issue
+[23:23:27] <initramfs> another*
+[23:23:27] <iphy> "use a+b * c if possible, don't use a + b*c"
+[23:23:31] <initramfs> And I have work to do
+[23:23:36] <initramfs> had*
+[23:23:56] <iphy> "only use a + (b*c) if b or c contain &"
+[23:24:03] <initramfs> Yes
+[23:24:07] <initramfs> I understand now
+[23:24:08] <iphy> so like a+b * c, but a + (b&x*c)
+[23:24:22] <initramfs> But again
+[23:24:26] <initramfs> Had you just said
+[23:24:42] <initramfs> "Hey, but what about: int (*p)x[10]"
+[23:24:54] <initramfs> I would stop, think, go "ah shit", and fix it
+[23:25:08] <iphy> initramfs: yeah, I tend to try and make people see mistakes by themselves
+[23:25:25] <initramfs> Well, that was not a mistake per say
+[23:25:39] <initramfs> More like bad wording and omission
+[23:25:57] <iphy> I spend a lot more time that way, but I'm hoping that people would understand things more deeply afterwards
+[23:26:12] <initramfs> Yes, I understand
+[23:26:26] <initramfs> It's just that it's not something new to me
+[23:26:33] <initramfs> It's something I've forgotten
+[23:26:45] <initramfs> And I am trying to do other things as well
+[23:26:48] <iphy> I can't know what you used to know
+[23:27:03] <initramfs> Yes, I know
+[23:27:18] <initramfs> But I've repeatedly said "What is the relevance fo this"
+[23:27:31] <initramfs> And instead of "what about int (*p)x[10]"
+[23:27:36] <initramfs> I got a lecture
+[23:27:41] <iphy> :)
+[23:27:50] <iphy> I'm not sorry
+[23:28:02] <initramfs> I don't doubt your intentions
+[23:28:05] <iphy> but I'll avoid it in the future
+[23:28:17] <initramfs> And to be honest, I would do the same to people I know
+[23:28:43] <initramfs> But today has just not been the best day for me to be lectured
+[23:29:03] <iphy> I hope you have a good rest tonight
+[23:29:19] <initramfs> Meh
+[23:29:31] <initramfs> If I can sort this clang-format PR out
+[23:29:38] <initramfs> I need to convert the whole codebase by monday
+[23:29:39] <initramfs> Lol
+[23:29:47] <initramfs> Oh
+[23:29:53] <initramfs> Speaking of brackets/braces
+[23:30:06] <initramfs> I like them to follow the control statement
+[23:30:16] <initramfs> The only reason I said newline was due to the established standards
+[23:30:39] <initramfs> Does anyone actually want newlines for braces for control statements
+[23:31:38] <zetok> initramfs: sorry about the prefix/postfix thing eating your time
+[23:31:56] <initramfs> It's fine
+[23:32:01] <initramfs> It's good though
+[23:32:11] <initramfs> Yes I have have been very persistent
+[23:32:22] <initramfs> But I want to get my argument across before this is set in stone
+[23:32:30] <zetok> mm
+[23:32:45] <zetok> can we have style suggest to use prefix then?
+[23:33:11] <initramfs> Ehh
+[23:33:22] <initramfs> Okay I'll add a statement
+[23:33:35] <zetok> I kinda hoped that either could be suggested for consistency
+[23:37:19] <initramfs> Okay
+[23:37:45] <initramfs> I'll probably manually swap the ones I see
+[23:37:57] <initramfs> But only the ones I can ensure won't have a change in functionality
+[23:38:00] <zetok> um
+[23:39:14] <zetok> something like `s/([[:alpha]]+)(\+\+)/\2\1/`
+[23:39:56] <initramfs> No
+[23:40:16] <initramfs> Not all postfix operators can be replaced
+[23:40:25] <initramfs> Some use the return value
+[23:40:28] <zetok> oh well
+[23:40:38] <initramfs> Well
+[23:40:51] <initramfs> I don't dare running scripts ove rthe codebase anyway
+[23:41:03] <initramfs> Once clang-format gets merged, I'll clang-format file by file manually
+[23:41:07] <initramfs> And make sure it
+[23:41:11] <initramfs> it's correct
+[23:41:14] <zetok> :|
+[23:41:22] <initramfs> I don't mind
+[23:41:26] <initramfs> I'd rather not break stuff
+[23:41:38] <initramfs> Than break it in batch and then having it to fix later
+[23:41:45] <initramfs> Especially if we are to release 1.6
+[23:42:08] <iphy> initramfs: you can clang-format everything in batch
+[23:42:18] <iphy> and then have lots of people review it
+[23:42:19] <initramfs> Yeah I'll do that
+[23:42:22] <initramfs> Well
+[23:42:28] <initramfs> I'll fix stuff first
+[23:42:32] <initramfs> Then let people review
+[23:42:35] <zetok> > l->setRow(i++);
+[23:42:37] <zetok> :c
+[23:42:39] <iphy> it's quite likely you don't need to fix anything
+[23:42:39] <initramfs> But I'll likely submit multiple PRs
+[23:42:43] <iphy> clang-format is quite good
+[23:42:47] <initramfs> I know
+[23:42:51] <initramfs> But qTox is quite brittle
+[23:42:55] <zetok> this is why we can't have nice things
+[23:42:59] <initramfs> Include order swaps may cause failed compilation
+[23:43:05] <iphy> yes, include order is the only thing
+[23:43:16] <iphy> but you probably don't want include order yet
+[23:43:26] <initramfs> Well... it's already written in
+[23:43:31] <iphy> not before include style is done
+[23:43:40] <initramfs> Include stlye?
+[23:43:42] <initramfs> style*?
+[23:44:10] <iphy> wasn't there an include style section somewhere?
+[23:44:17] <initramfs> Oh yes
+[23:44:26] <initramfs> When I mean I will clang-format everything
+[23:44:32] <initramfs> I mean after this clang-format PR gets approved
+[23:44:46] <iphy> by the way, I didn't follow it much anymore
+[23:44:54] <initramfs> Oh btw
+[23:45:12] <iphy> was an include style chosen that is easily enforceable?
+[23:45:14] <initramfs> You probably should have gotten a gauge of my mental state when I wrote "std::dynamic_cast' lol
+[23:45:31] <iphy> std::int :)
+[23:45:35] <initramfs> Yes
+[23:45:46] <iphy> how will it be enforced?
+[23:45:49] <iphy> or is it already enforced?
+[23:45:54] <initramfs> clang-format
+[23:46:09] <iphy> clang-format can't enforce include styles
+[23:46:14] <iphy> only order
+[23:46:22] <initramfs> Oh you mean like <> vs ""?
+[23:46:44] <iphy> yes, and full paths vs. local paths
+[23:46:53] <initramfs> Yeah... I don't know about that
+[23:47:03] <initramfs> Right now I'll do it manually
+[23:47:13] <iphy> I proposed a style that can be enforced with 2 simple grep statements
+[23:47:15] <initramfs> The style guide does tell which which headers should be absolute vs relative
+[23:48:03] <iphy> I'm not sure which style was chosen in the end, but I hope it's an enforceable one
+[23:49:10] <initramfs> Right
+[23:50:22] -qtox-git-spam- [qTox] zetok opened pull request #3846: style: change postfix increment to prefix increment (master...style-prefix) https://git.io/vXLov
+[23:50:23] <zetok> there we go :3
+[23:52:16] <initramfs> if (source && ++hasSubscribed == 0)
+[23:52:20] <initramfs> That logic is changed
+[23:52:39] <zetok> oh, missed that
+[23:53:59] <zetok> fixed
+[23:54:38] <zetok> thanks
+[23:55:45] <initramfs> Lol, that would ahve been pretty bad
+[23:55:52] <initramfs> That would actually stop video from working entirely
+[23:55:53] <initramfs> Lol
+[23:56:09] <initramfs> brb
+[23:56:19] <zetok> https://i.imgur.com/NqjsGbr.jpg :3
