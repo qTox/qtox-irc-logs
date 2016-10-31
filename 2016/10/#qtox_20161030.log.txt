@@ -1,0 +1,265 @@
+[00:13:50] *** Quits: athan (~athan@ ) (Quit: leaving)
+[00:33:39] *** Joins: DaSpirit (~DaSpirit@ )
+[01:41:17] <initramfs> zetok: I added the appripriate section on increment/decrement
+[01:04:20] *** Joins: kchz (~dschulz@ )
+[01:27:21] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[01:47:20] *** Joins: miokiry (~Adium@ )
+[01:52:52] *** Quits: initramfs (~initramfs@ ) (Ping timeout: 260 seconds)
+[01:54:07] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[01:55:12] *** Joins: miokiry (~Adium@ )
+[01:55:16] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[01:55:56] *** Joins: miokiry (~Adium@ )
+[01:59:04] *** Joins: initramfs (~initramfs@ )
+[02:06:38] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[02:10:08] *** Joins: athan (~athan@ )
+[02:12:27] *** Joins: initramfs (~initramfs@ )
+[02:13:19] *** Quits: initramfs (~initramfs@ ) (Client Quit)
+[02:35:12] *** Joins: jjuran_ (~jjuran@ )
+[02:36:16] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[02:36:16] *** jjuran_ is now known as jjuran
+[02:39:40] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[02:57:42] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[03:01:07] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:02:29] *** Joins: CGGB (~CGGB@ )
+[04:24:11] *** Joins: miokiry (~Adium@ )
+[04:38:35] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[04:51:02] *** Joins: miokiry (~Adium@ )
+[05:28:08] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[05:59:40] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[07:05:59] *** Joins: abbat (~Anton@ )
+[08:47:04] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[09:13:41] *** Joins: miokiry (~Adium@ )
+[09:14:10] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[09:18:06] *** Joins: miokiry (~Adium@ )
+[09:25:18] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[09:31:04] *** Joins: miokiry (~Adium@ )
+[09:35:13] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[10:30:28] <Diadlo> zetok: ping
+[10:30:59] <zetok> Diadlo: pong
+[10:31:22] <Diadlo> Why you didn't merge #3772?
+[10:32:23] <zetok> because I don't know if things will work without the version field
+[10:32:51] *** Joins: miokiry (~Adium@ )
+[10:33:38] <zetok> I guess I should just do that.. :s
+[10:34:26] <zetok> :S
+[10:34:34] -qtox-git-spam- [qTox] zetok closed pull request #3772: chore(installer): add script for automatically generated version in .nsi (master...chore-win-version) https://git.io/vPmfU
+[10:37:55] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[10:59:39] <Diadlo> zetok: Can you test #3841?
+[11:00:24] <zetok> yep, in a moment
+[11:01:12] *** Joins: miokiry (~Adium@ )
+[11:07:45] *** Joins: Bill_MI (~Bill@ )
+[11:09:10] <zetok> hmm
+[11:09:24] <zetok> Diadlo: are circles supposed to have same names?
+[11:09:39] <Diadlo> IDK
+[11:10:11] <zetok> and I don't remember any longs how it's supposed to work :s
+[11:10:18] *** Joins: Diadl0 (~Diadlo@ )
+[11:10:45] <zetok> yeah, looks like it is supposed to work like that
+[11:12:15] <zetok> Diadlo: seems to work
+[11:13:35] <Diadl0> Thanks
+[11:15:32] *** Parts: Bill_MI (~Bill@ ) ("Bye...")
+[11:17:00] *** Quits: Diadl0 (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[11:17:54] *** Joins: Diadl0 (~Diadlo@ )
+[11:24:22] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[11:24:48] *** Joins: sudden6 (~anonymous@ )
+[11:25:52] *** Joins: miokiry (~Adium@ )
+[11:30:28] *** Quits: miokiry (~Adium@ ) (Ping timeout: 245 seconds)
+[11:32:25] *** Joins: miokiry (~Adium@ )
+[11:34:49] *** Joins: Diadlo2 (~Diadlo@ )
+[11:36:43] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 245 seconds)
+[11:39:21] *** Quits: Diadlo2 (~Diadlo@ ) (Ping timeout: 260 seconds)
+[11:42:23] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[11:59:02] <sudden6> hi
+[12:03:25] <zetok> hello
+[12:04:39] <sudden6> I'm not that sure https://github.com/qTox/qTox/pull/3827 will make it into 1.6 anymore, initramfs and Diadlo changed some things in ways I didn't expect
+[12:09:04] <zetok> :|
+[12:30:50] *** Joins: miokiry (~Adium@ )
+[12:37:31] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[12:39:21] *** Joins: miokiry (~Adium@ )
+[12:39:56] <zetok> sudden6: you will try though, right?
+[12:40:12] <sudden6> yes, but I need initramfs and/or Diadlo
+[12:40:26] <sudden6> I have time today, not sure if they have
+[12:43:06] <zetok> ok
+[12:45:06] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[12:45:21] <zetok> https://github.com/TokTok/c-toxcore/issues/112#issuecomment-257145983 ← if you have time to spare, opinion about the idea?
+[12:58:38] *** Joins: Chiitoo (~Chiitoo@ )
+[13:09:41] <sudden6> zetok: the idea is ~, the rust advertising is horrible
+[13:10:48] <sudden6> with your data format it doesn't even need a separate lib
+[13:11:13] <sudden6> just a definition of keys and their corresponding values
+[13:11:54] <sudden6> of course a lib would simiplify stuff a little bit, but for the essential idea it's unneccessary
+[13:14:57] *** Joins: Diadl0 (~Diadlo@ )
+[13:19:21] <sudden6> correction, the idea isn't that good :/
+[13:19:58] <sudden6> even if we implemented it like in your idea, everyone would have to basically have a json parser
+[13:20:31] <sudden6> altough it could be in your lib, it will increase the attack surface drastically
+[13:20:57] <sudden6> and would again make it hard for minimal clients to still be portable
+[14:02:42] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[14:03:55] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[14:04:40] *** Joins: CGGB (~CGGB@ )
+[14:04:44] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[14:05:29] *** Joins: CGGB (~CGGB@ )
+[14:14:05] *** Joins: kchz (~dschulz@ )
+[14:14:17] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[14:18:52] *** Joins: miokiry (~Adium@ )
+[14:34:53] *** Joins: initramfs (~initramfs@ )
+[14:39:42] *** Joins: cenysor (~cenysor@ )
+[14:49:49] <iphy> sudden6: "@zetok The idea fails again at compatibility of minimal clients that don't want any extra library."
+[14:49:55] <iphy> what does "extra library" mean?
+[14:50:18] <sudden6> somthing that's not in toxcore
+[14:50:26] <iphy> like libsodium?
+[14:50:27] <sudden6> e.g. the needed json parser
+[14:58:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:59:39] *** Joins: LittleVulpix (~Miranda@ )
+[15:05:49] <initramfs> iphy: If I may share my two-cents, I would glady accept a JSON parser/writer as a dependency if it can solve the save format issue
+[15:06:13] <iphy> I think the whole save format should go away
+[15:07:10] <initramfs> You mean the current format?
+[15:07:32] <iphy> yes, and toxcore shouldn't do any save formatting
+[15:07:41] <initramfs> Right
+[15:08:04] <initramfs> That... is probably a good idea actually
+[15:08:26] <initramfs> Since clients will no doubt already be saving extra data outside of toxcore
+[15:08:34] <iphy> larger clients yes
+[15:08:55] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 252 seconds)
+[15:09:04] <initramfs> Hmm
+[15:10:30] <initramfs> What about having toxcore define an save spec that requires clients to implement
+[15:10:39] <zetok> err
+[15:10:41] <initramfs> WIth an extensible section for custom data
+[15:11:12] <zetok> it should go like that
+[15:11:33] <zetok> except that clients shouldn't do it, but it should be done in a lib that clients would use
+[15:12:06] <iphy> right
+[15:12:36] <zetok> um, what I proposed if version 0.0.0, something to just get going
+[15:12:37] <initramfs> Well... that boils down to "extract saving into it's own library"
+[15:12:47] <zetok> s/if/is/
+[15:14:00] <initramfs> iphy: This is unrelated but, do you know if clang-format has any rules to tweak the way lambdas are formatted?
+[15:14:11] <iphy> I don't know
+[15:14:13] <initramfs> I thought they would just follow the rules for functions
+[15:14:15] <initramfs> But no
+[15:14:21] <initramfs> They have their own non-tweakable rules
+[15:14:32] *** Joins: DaSpirit (~DaSpirit@ )
+[15:15:49] *** Joins: CGGB (~CGGB@ )
+[15:16:46] *** Joins: miokiry1 (~Adium@ )
+[15:17:33] *** Quits: miokiry (~Adium@ ) (Ping timeout: 245 seconds)
+[15:18:07] *** Quits: miokiry1 (~Adium@ ) (Client Quit)
+[15:20:11] *** Joins: miokiry (~Adium@ )
+[15:23:36] <sudden6> initramfs: could you take a look at https://github.com/qTox/qTox/pull/3827 ? Ideally this would be merged before monday
+[15:23:52] <initramfs> Yep I will
+[15:24:00] <initramfs> Let me finish this clang format stuff first
+[15:24:07] <sudden6> thank you very much :)
+[15:24:07] <initramfs> I'm doing it right now
+[15:24:43] *** Quits: VVD (~VVD@ ) ()
+[15:25:07] <sudden6> zetok: perhaps remove qgroupbot from IRC header ?
+[15:25:25] <zetok> it should be online?
+[15:26:22] <zetok> yep, it's online
+[15:26:41] <zetok> technically, one still can create groups & what not
+[15:27:09] <zetok> sudden6: should it still be removed?
+[15:32:00] <sudden6> oh, I thought you switched it off, then leave it
+[15:32:28] * sudden6 afk 1h
+[15:36:08] *** Joins: miokiry1 (~Adium@ )
+[15:37:08] *** Quits: miokiry (~Adium@ ) (Ping timeout: 245 seconds)
+[15:50:29] *** Joins: Bill_MI (~Bill@ )
+[15:54:14] *** Quits: miokiry1 (~Adium@ ) (Ping timeout: 256 seconds)
+[15:58:25] *** Joins: miokiry (~Adium@ )
+[16:05:31] <iphy> initramfs: 2 grep statements > writing a script to check include statements
+[16:05:41] <initramfs> Yes
+[16:05:48] <iphy> but?
+[16:05:48] <initramfs> But I'll write the script
+[16:05:56] <initramfs> And I will document it
+[16:06:11] <initramfs> I would rather have clearer includes for all source code
+[16:06:15] <initramfs> And a slightly complex script
+[16:06:24] <initramfs> Then having includes that are slightly harder to red
+[16:06:27] <initramfs> s/red/read
+[16:06:56] <iphy> ok
+[16:12:26] *** Joins: VVD (~VVD@ )
+[16:28:13] *** Quits: Diadl0 (~Diadlo@ ) (Ping timeout: 260 seconds)
+[16:43:28] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[16:44:54] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[16:49:46] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:35:45] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:14:35] *** Joins: cisc (~cisc@ )
+[18:20:11] <Diadlo> initramfs: Hello
+[18:20:14] <Diadlo> Are you here?
+[18:22:27] <initramfs> Hi
+[18:22:28] <initramfs> Yes
+[18:23:22] <Diadlo> https://github.com/qTox/qTox/pull/3823#issuecomment-257088712
+[18:23:43] <Diadlo> About moving history init in init list
+[18:23:50] <Diadlo> Why you think, that it's better?
+[18:24:33] <Diadlo> I absolutely do not mind. Just wanted to know arguments
+[18:24:59] <sudden6> Diadlo: I don't think it's that good, because of my PR
+[18:25:32] <sudden6> to decrypt the database we then need the ToxID which is only available when toxcore is started
+[18:26:00] <Diadlo> sudden6: Ok. initramfs, so I leave it?
+[18:26:09] <sudden6> so i need to load the database asynchronous
+[18:26:29] <sudden6> I just don't know if that's the right way to do
+[18:27:03] <Diadlo> sudden6: Do you plan to write db converter?
+[18:27:14] <sudden6> db converter?
+[18:27:14] <Diadlo> To save user history
+[18:27:20] <initramfs> Huh
+[18:27:26] <initramfs> Okay I need to read both your PRs
+[18:27:26] <sudden6> yes, it's already in the PR
+[18:28:06] <Diadlo> Ok. I planned read it after merge of my :)
+[18:28:36] <zetok> >to decrypt the database we then need the ToxID
+[18:28:41] <sudden6> maybe that's still the better approach, merging yours and then adapt stuff in my PR
+[18:28:43] <zetok> sudden6: um
+[18:28:59] <zetok> sudden6: do you *really* depend on ToxID and not the PK?
+[18:29:09] <sudden6> zetok: yes, it's the PK
+[18:30:06] <zetok> :/
+[18:30:06] <sudden6> but I get them with the same function so I didn't bother to distinguish
+[18:41:23] *** Joins: Diadl0 (~diadlo@ )
+[19:06:52] <zetok> how stuff is named in qTox really should be fixed
+[19:07:03] <sudden6> ?
+[19:07:59] <zetok> sudden6: what's the function to get friend's PK?
+[19:09:01] <sudden6> getToxId().publickey
+[19:09:11] <zetok> >getToxId()
+[19:09:36] <sudden6> what do you want to say?
+[19:10:07] <zetok> that it's a leftover thing from the time when tux3 thought that it's a good idea to try to save friend's "ID"
+[19:11:03] <sudden6> I can't see anything wrong with that
+[19:11:09] <zetok> sudden6: we don't have friend's ID, and the code shouldn't pretend that we do
+[19:11:54] <sudden6> ah, know I understand
+[19:12:07] <sudden6> *now
+[19:48:41] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[20:02:31] *** Joins: abbat (~Anton@ )
+[20:25:04] *** Joins: LittleVulpix (~Miranda@ )
+[20:28:34] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[20:39:33] <zetok> hmm.
+[20:49:28] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[21:35:43] <initramfs> Diadlo: Sorry, I was busy
+[21:36:07] <initramfs> It is just a stylistic fix in terms of logic
+[21:36:29] <initramfs> Initialization in the constructor body seems to be bad style since you're actually initializing the pointer twice
+[21:36:48] <initramfs> Once with the default constructor, and then once more with the reset
+[21:46:12] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[21:52:24] <sudden6> good night everybody
+[21:56:51] <initramfs> sudden6: you still there?
+[21:57:01] <sudden6> yes for ~5min
+[21:57:10] <initramfs> Umm, should I review your PR?
+[21:57:20] <initramfs> You seem to encoperate stuff from Diadlo's PR
+[21:57:24] <initramfs> and outdated stuff too
+[21:57:29] <sudden6> yeah it's based on it
+[21:57:54] <sudden6> only the last commit is my own work
+[21:58:02] <initramfs> Hmm
+[21:58:14] <initramfs> Because in your PR, RawDatabase is still references
+[21:58:24] <initramfs> Diadlo's changed it to shared_ptrs
+[21:59:10] <sudden6> I rebased it this morning, so if he changed anything between it's not up to date
+[21:59:54] <sudden6> and I don't quite have a clue about the differences between shared_ptr and a traditional pointer
+[22:00:14] <sudden6> so I used the pointer to make the compiler happy
+[22:01:01] <initramfs> Hmm
+[22:01:10] <initramfs> Okay this is gonna be weird
+[22:01:18] <initramfs> So you want me to only review your code right?
+[22:01:40] <sudden6> you know what, don't waste your time on that
+[22:01:51] <sudden6> this won't make it into 1.6 anyway
+[22:02:13] <sudden6> I'll rebase it tomorrow and then you can take a look
+[22:02:15] <initramfs> I really think we should push 1.6 back a week
+[22:02:27] <initramfs> None of the Prs that were scheduled are probably gonna make it
+[22:02:34] <initramfs> s/Prs/PRs/
+[22:02:42] <sudden6> zetok: ↑?
+[22:02:51] <sudden6> I also thought of that
+[22:02:54] <zetok> I don't see any problem with delaying release a week
+[22:02:59] <sudden6> would definitely be an option
+[22:03:01] <zetok> or at least not a big one
+[22:03:11] <sudden6> ok then
+[22:03:18] <initramfs> Yay I can sleep tonight
+[22:03:18] <initramfs> Lol
+[22:03:22] <zetok> :D
+[22:03:24] <sudden6> and good evening everybody :D
+[22:03:29] <initramfs> Good night
+[22:03:32] <zetok> nigh :)
+[22:03:37] <zetok> +t
+[22:07:15] *** Joins: Wiz (a2d82e73@ )
+[22:07:38] *** Wiz is now known as Guest55610
+[22:19:34] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:36:27] *** Quits: Guest55610 (a2d82e73@ ) (Quit: Page closed)
+[22:48:27] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
