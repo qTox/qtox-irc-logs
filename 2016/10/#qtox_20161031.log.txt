@@ -1,0 +1,259 @@
+[00:44:43] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[00:45:46] *** Joins: kchz (~dschulz@ )
+[00:53:08] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[02:17:09] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:29:57] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[02:52:42] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[03:08:04] *** Quits: initramfs (~initramfs@ ) (Read error: Connection reset by peer)
+[03:08:52] *** Joins: initramfs (~initramfs@ )
+[03:20:10] *** Joins: Emcy (~MC@ )
+[04:46:42] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[05:38:52] *** Joins: sudden6 (~anonymous@ )
+[05:47:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[06:03:38] *** Joins: athan (~athan@ )
+[06:20:20] *** Joins: hrdu (45b2326f@ )
+[06:26:12] *** Quits: hrdu (45b2326f@ ) (Quit: Page closed)
+[07:15:02] *** Joins: xiaocisoa (7b704a7f@ )
+[07:15:17] *** Quits: xiaocisoa (7b704a7f@ ) (Client Quit)
+[08:18:01] *** Joins: LittleVulpix (~Miranda@ )
+[08:34:35] *** Joins: NeaN (~elouin@ )
+[09:24:22] *** Joins: sudden6 (~anonymous@ )
+[09:30:57] *** Joins: miokiry (~Adium@ )
+[09:31:40] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[09:32:49] *** Joins: sudd3n6 (~anonymous@ )
+[09:32:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[09:38:48] *** sudd3n6 is now known as sudden6
+[09:42:37] *** Joins: Salatfreak (~Salatfrea@ )
+[09:46:00] <Salatfreak> Hey ho! On Manjaro with alsa and pulse I get Errors like "Warning: Failed to initialize audio input device" or "Warning: Cannot open output audio device" errors and audio input and output only work occasionally. Is that a known problem? Audio works fine with other software.
+[09:53:39] *** Joins: abbat (~abbat@ )
+[09:55:19] <sudden6> Salatfreak: not that I know off
+[09:56:09] <sudden6> could you take a look at github issues and search for an existing report?
+[09:56:19] <Salatfreak> sudden6: Didn't find anything yet.
+[09:56:55] <sudden6> are you on the newest git version of qTox?
+[09:57:04] <sudden6> if so please open a new issue
+[10:01:11] <Salatfreak> sudden6: Version 1.5.2-1 from the Manjaro repository. Ist that the newest one?
+[10:06:46] <Salatfreak> sudden6: It seems to be. Should I try out compiling it myself before opening an issue?
+[10:08:49] <zetok> Salatfreak: yep
+[10:10:53] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[10:11:06] <Salatfreak> zetok: Compiling toxcore shouldn't be necessary though, should it?
+[10:11:34] <zetok> probably not
+[10:11:55] <zetok> if headers are packaged it's not
+[10:18:18] *** Joins: sudden6 (~anonymous@ )
+[10:26:52] <Salatfreak> The volume test sound works in the compiled version. Is there some echo bot that I could use to test a call?
+[10:27:47] <zetok> Salatfreak: https://github.com/qTox/qTox/wiki/Testing ← perhaps it's stil online
+[10:28:02] <zetok> yeah, seem to be
+[10:31:56] <Salatfreak> zetok: Everything works fine. Thank you very much.
+[10:32:08] <zetok> you're welcome :)
+[10:33:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[10:43:45] *** Quits: Salatfreak (~Salatfrea@ ) (Quit: Leaving)
+[11:51:15] *** Joins: sudden6 (~anonymous@ )
+[11:53:22] <sudden6> hi
+[11:59:45] <iphy> Hi
+[12:23:23] *** Joins: kchz (~dschulz@ )
+[12:33:25] *** Quits: kchz (~dschulz@ ) (Read error: Connection reset by peer)
+[12:34:03] *** Joins: kchz (~dschulz@ )
+[12:40:24] *** Quits: kchz (~dschulz@ ) (Read error: Connection reset by peer)
+[12:41:00] *** Joins: kchz (~dschulz@ )
+[12:41:08] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[12:48:13] *** Joins: kchz (~dschulz@ )
+[13:19:32] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[13:25:01] *** Joins: SkyzohKey (~skyzohkey@ )
+[13:44:48] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[13:46:09] *** Quits: zero-ghost (~0@ ) (Ping timeout: 244 seconds)
+[13:49:28] *** Joins: abbat (~abbat@ )
+[14:27:57] *** Joins: kchz (~dschulz@ )
+[14:38:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:04:27] *** Joins: cisc (~cisc@ )
+[15:06:52] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[15:07:25] *** Joins: abbat (~abbat@ )
+[15:10:16] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[15:25:46] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXqHW
+[15:25:46] -qtox-git-spam- qTox/master 6ee3b95 Zetok Zalbavar: chore(README): add week status badge...
+[15:27:58] *** Quits: athan (~athan@ ) (Ping timeout: 245 seconds)
+[15:37:47] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[15:54:48] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[15:57:08] *** Joins: abbat (~abbat@ )
+[16:06:23] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[16:06:53] *** Joins: cenysor (~cenysor@ )
+[16:18:25] *** Joins: initramfs (~initramfs@ )
+[16:36:21] <sudden6> hi initramfs do you have time? :)
+[16:36:34] <initramfs> A little bit
+[16:36:37] <initramfs> Why?
+[16:37:04] <sudden6> in https://github.com/qTox/qTox/pull/3827/commits/740f414389e9b9cad9cb591f73bec474796a6e9d
+[16:37:16] <sudden6> I made Profile derived from QObject
+[16:37:34] <sudden6> to be able to connect it with signals and slots
+[16:38:16] <sudden6> Is there a way to avoid making it a QObject and still connect one of the functions to a signal?
+[16:40:11] <initramfs> Well, I think you can have a non-Qt object connect as a slot
+[16:41:45] <sudden6> Another thing, would it be bad if Profile is derived from QObject?
+[16:42:24] <initramfs> Ehh... That's hard to say...
+[16:42:50] <initramfs> I mean, if it's necessary, sure. But otherwise, we don't need to couple classes unrelated to the UI with Qt
+[16:43:52] <sudden6> I found no other way to load the database asynchronously
+[16:44:13] <zetok> >load the database asynchronously
+[16:44:18] <initramfs> Well, the signal-slot system is just a complex version of callbacks
+[16:44:22] <zetok> this sounds like something that could break
+[16:44:58] <initramfs> In a trivial case where there is one signal connecting to one slot. That's just a single callback
+[16:45:08] <sudden6> zetok: true, but I couldn't come up with a better way
+[16:45:21] <initramfs> But using signals and slots probably simplifies design
+[16:45:36] <sudden6> and so far it works™
+[16:46:24] <sudden6> also the signal is in another thread, I think the signals slot stuff helps things not to break
+[16:47:11] <initramfs> Right
+[17:14:39] *** Joins: ovalseven8 (~ovalseven@ )
+[17:25:31] *** Joins: athan (~athan@ )
+[17:43:35] <zetok> https://www.youtube.com/watch?v=90CkXVF-Q8M
+[17:46:07] <ovalseven8> zetok, That's the new movie by Leonardo Di Caprio, right?
+[17:46:24] <zetok> :3
+[17:47:04] <ovalseven8> zetok, I didn't watch yet. Do you recommend?
+[17:47:08] <zetok> Yes.
+[18:04:33] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[18:08:52] <nurupo> ><sudden6> Is there a way to avoid making it a QObject and still connect one of the functions to a signal? <-- slots are regular functions, your object doesn't have to derive from QObject to use any of it's functions/methods as slots
+[18:14:42] <nurupo> talking about signal-slots. you know how when you connect a signal emitted from a worker thread to the slot of an object from the main thread, the connection would automatically be Qt::QueuedConnection?
+[18:16:05] <nurupo> this doesn't work if you connect a signal emmited from a worder thread to a lambda function created in the main thread
+[18:17:21] <nurupo> this auto-detection of whether to use Qt::DirectConnection or Qt::QueuedConnection works only for QObjects, because they have thread affinity (i.e. there is a member in QObject saying to which thread it belongs)
+[18:18:51] <nurupo> explicitly specifying Qt::QueuedConnection for a such lambda connection doesn't work either, since it wouldn't know in which thread you want the lambda to be executed
+[18:33:52] *** Joins: cisc (~cisc@ )
+[18:37:56] <zetok> > qTox contributor 
+[18:37:58] <zetok> this is nice
+[18:48:55] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[18:49:24] *** Joins: CGGB (~CGGB@ )
+[18:54:36] <sudden6> nurupo: ok, I did it the right way then, thx :)
+[18:56:28] *** Quits: tux3 (~tux@ ) (Changing host)
+[18:56:28] *** Joins: tux3 (~tux@ )
+[18:56:28] *** ChanServ sets mode: +o tux3
+[18:56:54] <tux3> Hi all
+[18:57:05] <zetok> hello :D
+[18:57:16] <sudden6> he lives :D
+[18:57:30] <tux3> :)
+[18:57:34] <zetok> tux3: https://github.com/qTox/qTox/pull/3772 ← you'll need to adjust things
+[18:58:19] <sudden6> also https://qtox.github.io/blog/ don't know if you already read it :)
+[18:58:28] *** Joins: Diadlo (~diadlo@ )
+[18:58:37] <tux3> Gotcha, LGTM
+[18:58:48] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[18:59:44] *** Quits: tux3 (~tux@ ) (Quit: Quitting)
+[19:00:02] *** Joins: tux3 (~tux@ )
+[19:00:22] *** Quits: tux3 (~tux@ ) (Changing host)
+[19:00:22] *** Joins: tux3 (~tux@ )
+[19:00:22] *** ChanServ sets mode: +o tux3
+[19:00:48] <tux3> Oh I got a mail from someone with a compile error, it looked like qTox doesn't compile on 32bit systems anymore
+[19:01:03] <tux3> Is that official or something to fix?
+[19:01:18] <sudden6> windows?
+[19:02:20] <tux3> Slackware
+[19:02:36] *** Joins: jjuran (~jjuran@ )
+[19:02:40] <zetok> did they use what slackware provides for compiling qTox?
+[19:02:50] <zetok> (listed in INSTALL.md)
+[19:03:09] <tux3> Not sure. It's a linking error due to a missing 64bit atomic operation
+[19:03:17] <tux3> In the videoframe code
+[19:03:29] <zetok> :|
+[19:03:34] <zetok> not intentional
+[19:04:00] <tux3> Good news is it's probably trivial to fix by replacing a *uint64* by *uint32* in videoframe.h
+[19:04:46] <zetok> wait
+[19:04:58] <zetok> uint64 in C++ doesn't compile on 32 bits?
+[19:05:05] <initramfs> ?
+[19:05:09] <initramfs> That seems wrong
+[19:05:17] <sudden6> very wrong
+[19:05:25] <tux3> No, it's an atomic uint64 thing
+[19:05:26] <zetok> u64 in Rust compiles just fine on 32bit OSes
+[19:05:44] <tux3> Normal uint64 works, but std::atomic_uint_fast64_t is not natively supported
+[19:05:59] <zetok> ;_;
+[19:06:01] <initramfs> Urg..
+[19:06:03] <tux3> So you'd need a library to emulate the atomic using a lock (I think), and that causes a link error...
+[19:06:39] <initramfs> I suppose a 32-bit frame ID would work for now
+[19:06:57] <initramfs> That particular code gives every individual frame an ID
+[19:07:18] <initramfs> So unless you have an insanely high FPS camera, running an open video session for years, it won't overflow
+[19:07:40] <tux3> Yeah at 60FPS it should take 6 months to overflow :)
+[19:08:28] <sudden6> I locked qTox to 60fps ;)
+[19:08:42] <initramfs> 6 months?
+[19:08:54] <zetok> 1194444.4444444445 hours @ 30 fps
+[19:08:58] <sudden6> had an interesting experience with a 120fps cam ;)
+[19:09:01] <zetok> ~
+[19:09:29] <initramfs> Umm
+[19:09:45] -qtox-git-spam- [qTox] tux3 opened pull request #3847: fix(build): Avoid 64bit atomics for compatibility (master...atomic-32bit-build-fix) https://git.io/vXmRE
+[19:09:46] <tux3> Possible (untested) fix: https://github.com/qTox/qTox/pull/3847
+[19:10:17] <initramfs> Change the IDType typedef as well
+[19:10:22] <initramfs> Keep those in sync
+[19:10:55] <tux3> Good catch thanks
+[19:11:07] <initramfs> Ah ha
+[19:11:11] <initramfs> My typedef paid off
+[19:12:25] <zetok> https://github.com/qTox/qTox/milestones
+[19:12:32] <zetok> tux3: ↑ if you have the time
+[19:12:51] <sudden6> initramfs: I think Diadlo finished his PR, could you LGTM https://github.com/qTox/qTox/pull/3823 so I have a stable base to work on?
+[19:13:01] <zetok> file transfer stuff from 1.7 was moved there from 1.6 since there was no time to get it to work
+[19:13:02] <initramfs> Okay
+[19:13:10] <initramfs> I'll do it in 2 hours
+[19:13:13] <zetok> tux3: Diadlo stared working on it
+[19:13:22] <initramfs> I'll want to run it down fully again
+[19:13:27] <initramfs> And I'm doing something else right now
+[19:13:55] <sudden6> initramfs: np, I won't be here long today
+[19:14:03] <initramfs> Okay
+[19:14:26] <sudden6> I'm planning on doing some diagrams over the structure of qTox any suggestions what tools I should use?
+[19:15:11] <sudden6> Mainly what thread does what and a very coarse overview so we can reduce dependencies between modules
+[19:15:18] <zetok> https://github.com/ivanceras/svgbobrus ← not a serious suggestion
+[19:16:24] <sudden6> If no better suggestion comes up I'll just use Microsoft Office Visio :P
+[19:16:30] <zetok> D:
+[19:18:53] <initramfs> https://en.wikipedia.org/wiki/LuaTeX
+[19:19:03] <initramfs> And use metaUML
+[19:20:04] * zetok wonders if emacs supports that
+[19:20:05] <sudden6> initramfs: Is there some sort of IDE for that?
+[19:20:15] <initramfs> TexStudio works well
+[19:23:07] <sudden6> initramfs: thx, I will try it, else I'll fall back to dia
+[19:23:15] <initramfs> Okay
+[19:24:00] <sudden6> initramfs: another question, do you have any templates examples for me? getting started is usually the hardest
+[19:24:54] <initramfs> Hmm
+[19:25:39] <initramfs> https://github.com/ogheorghies/MetaUML/releases/download/v0.2.5/metauml_manual_0.2.5.pdf
+[19:25:42] <initramfs> That's a manual
+[19:25:53] <initramfs> https://metauml.denksoft.com/ <- Online editor
+[19:29:06] <initramfs> Mumbai
+[19:29:09] <initramfs> Oops
+[19:29:14] <initramfs> Ignore that
+[19:29:26] <Diadlo> sudden6: umbrello?
+[19:29:33] <Diadlo> And hello everyone)
+[19:29:42] <sudden6> hi Diadlo
+[19:30:03] <sudden6> yep, also looked at umbrello, but metauml looks a little bit more portable
+[19:30:14] <sudden6> but also more complicated :/
+[19:31:16] <Diadlo> Umbrello is pretty easy to use)
+[19:31:34] <Diadlo> initramfs: #3823 LGTM?
+[19:32:01] <initramfs> I'll do a full rundown about 1.5 hours later
+[19:32:06] <initramfs> Then I'll give LGTM
+[19:32:12] <Diadlo> Ok
+[19:32:31] <Diadlo> Note: I think, in this week, I will don't have time to work with qTox
+[19:33:27] <sudden6> Diadlo: np, don't overwork yourself on qTox :)
+[19:33:31] *** Joins: Fumasu (5b435194@ )
+[19:33:55] <zetok> initramfs: ↑ you too don't overworks yourself
+[19:34:49] <zetok> s/s//2
+[19:34:54] <Diadlo> sudden6: It will be hard :) I am very passionate about this
+[19:35:13] <sudden6> Diadlo: I know that feeling xD
+[19:38:20] *** Quits: Fumasu (5b435194@ ) ()
+[20:14:57] <sudden6> zetok: http://www.phoronix.com/scan.php?page=news_item&px=GNOME-Potential-Rust <- for your Rust pleasure
+[20:17:17] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[20:18:08] <zetok> hmm
+[20:18:40] <zetok> sudden6: I expect responses to that being negative, which will perfectly align with gnome becoming worse over time
+[20:19:03] *** Joins: Diadlo (~diadlo@ )
+[20:21:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[20:26:56] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 250 seconds)
+[21:25:15] *** Joins: ovalseven8 (~ovalseven@ )
+[21:26:02] <ovalseven8> tux3: You're back? \o/
+[21:29:04] <tux3> ovalseven8, hey there :)
+[21:29:16] <tux3> I have a bit of free time this week
+[21:30:36] <ovalseven8> Cool :)
+[21:33:12] <ovalseven8> zetok, tux3: Hasn't this been fixed? https://github.com/qTox/qTox/issues/3156
+[21:33:44] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 260 seconds)
+[21:34:05] <tux3> ovalseven8, not sure, I think it might have been when the Jenkins build machines were upgraded!
+[21:34:27] <zetok> tux3: new nsis is being used, right?
+[21:34:28] <ovalseven8> Yeah, not sure if the latest NSIS version is used there.
+[21:34:59] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 268 seconds)
+[21:36:02] <tux3> If it's NSIS 3, then we're good
+[21:38:48] *** Joins: CGGB (~CGGB@ )
+[21:40:45] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:42:40] *** Joins: cisc (~cisc@ )
+[21:48:03] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[21:58:16] *** Joins: DaSpirit (~DaSpirit@ )
+[22:10:04] *** Joins: abbat (~Anton@ )
+[22:24:35] *** Joins: zero-ghost (~0@ )
+[22:37:52] *** Joins: kchz (~dschulz@ )
+[22:42:52] *** Joins: anoa (~anoa@ )
+[22:53:27] *** Quits: kchz (~dschulz@ ) (Quit: Volveré)
+[23:11:49] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[23:13:28] *** Joins: in1t3r (~LordShiva@ )
+[23:24:42] *** Quits: anoa (~anoa@ ) (Quit: ZNC - http://znc.in)
+[23:25:21] *** Joins: anoa (~anoa@ )
+[23:32:12] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[23:48:50] *** Joins: in1t3r (~LordShiva@ )
