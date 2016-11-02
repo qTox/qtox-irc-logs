@@ -1,0 +1,130 @@
+[00:00:16] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[00:21:39] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[00:21:39] *** Joins: cisc (~cisc@ )
+[00:26:42] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[01:50:07] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[02:03:07] *** Joins: in1t3r (~LordShiva@ )
+[02:16:54] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 256 seconds)
+[02:29:59] *** Joins: in1t3r (~LordShiva@ )
+[02:47:50] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:56:36] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[03:06:46] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 256 seconds)
+[03:07:59] *** Joins: in1t3r (~LordShiva@ )
+[03:58:52] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[05:03:41] *** Joins: sudden6 (~anonymous@ )
+[07:06:34] *** Joins: reBrain (~quassel@ )
+[07:11:05] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[08:24:20] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[08:31:16] *** Joins: ovalseven8 (~ovalseven@ )
+[09:01:10] *** Joins: abbat (~abbat@ )
+[09:22:09] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:25:05] *** Joins: reBrain (~quassel@ )
+[09:33:04] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[10:22:26] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[10:23:10] *** Quits: kadinparker[m] (kadinparke@ ) (Read error: Connection reset by peer)
+[10:26:25] *** Joins: sudden6 (~anonymous@ )
+[10:52:23] *** Joins: kadinparker[m] (kadinparke@ )
+[11:02:14] *** Joins: ovalseven8 (~ovalseven@ )
+[11:05:18] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 250 seconds)
+[11:08:27] *** Quits: kadinparker[m] (kadinparke@ ) (Read error: Connection reset by peer)
+[11:21:01] *** Joins: kadinparker[m] (kadinparke@ )
+[11:26:16] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[11:39:05] *** Joins: in1t3r (~LordShiva@ )
+[11:41:19] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[12:41:29] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[12:56:28] *** Joins: miokiry (~Adium@ )
+[12:59:39] *** Joins: Dragofix (Dragofix@ )
+[13:02:12] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[13:02:47] *** Joins: abbat (~abbat@ )
+[13:21:01] *** Joins: cisc (~cisc@ )
+[13:28:24] *** Quits: cisc (~cisc@ ) (Ping timeout: 256 seconds)
+[13:29:26] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[13:38:47] *** Joins: bashrc (~motters@ )
+[14:02:13] *** Joins: reBrain (~quassel@ )
+[14:08:20] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[14:22:45] *** Joins: miokiry (~Adium@ )
+[14:23:32] *** Quits: miokiry (~Adium@ ) (Read error: Connection reset by peer)
+[14:33:51] *** Joins: jjuran_ (~jjuran@ )
+[14:35:42] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[14:35:42] *** jjuran_ is now known as jjuran
+[15:22:18] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[15:47:57] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[16:03:35] *** Joins: in1t3r (~LordShiva@ )
+[16:08:53] *** Quits: Impyy (~impy@ ) (Ping timeout: 260 seconds)
+[16:10:49] *** Joins: Impyy (~impy@ )
+[17:13:48] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 245 seconds)
+[17:26:58] *** Joins: in1t3r (~LordShiva@ )
+[18:09:58] *** Joins: cisc (~cisc@ )
+[18:16:24] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[18:32:00] *** Joins: cisc (~cisc@ )
+[18:34:34] *** Joins: cenysor (~cenysor@ )
+[19:01:12] *** Joins: athan (~athan@ )
+[19:11:25] <cisc> On https://build.opensuse.org/package/show/home:antonbatenev:tox/qtox filename is qtox_201610292107~v1.5.1.tar.bz2 but on the about page in qTox it says v1.5.2-obs, so I guess the about page is wrong?
+[19:16:41] <zetok> yes and no
+[19:17:04] <zetok> tag v1.5.2 points to the same commit as v1.5.1
+[19:36:06] *** Joins: ovalseven8 (~ovalseven@ )
+[19:42:54] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[19:48:16] -qtox-git-spam- [qTox] tux3 closed pull request #3847: fix(build): Avoid 64bit atomics for compatibility (master...atomic-32bit-build-fix) https://git.io/vXmRE
+[20:02:17] <cisc> but it's really 1.5.2?
+[20:02:47] <zetok> 1.5.2 == 1.5.1
+[20:03:50] <zetok> it's just a difference between what was checked out, and what git shows with `describe`
+[20:04:37] <cisc> so if the OBS package is being updated like it was 3 days ago, that's not getting the latest commits for qTox or it is?
+[20:05:07] <zetok> it's getting the version it says it's getting
+[20:05:17] <zetok> for ~latest master use qtox-alpha
+[20:05:25] <zetok> (that probably should be written somewhere)
+[20:06:18] <zetok> >so if the OBS package is being updated like it was 3 days ago
+[20:06:26] <cisc> so why does qTox say 1.5.2 when it's 1.5.1, just a misprint?
+[20:06:32] <zetok> dependencies in distro were bumped and it was needed to be recompiled
+[20:06:44] <cisc> yes I figured that
+[20:07:04] <zetok> no, windows needed a special release because m$ broke their OS
+[20:07:10] <cisc> oh great
+[20:09:26] <zetok> nothing in qTox has changed, but bundled ffmpged was bumped & patched
+[20:12:03] <cisc> so the Windows version on the about page says 1.5.2 even though it's @ 1.5.1?
+[20:12:18] <cisc> I'm looking at https://github.com/qTox/qTox/releases
+[20:12:30] <zetok> ~yep
+[20:16:54] <cisc> what was the issue?
+[20:17:07] <zetok> crashing with video
+[20:17:28] <oranges> with no survivors
+[20:17:46] <zetok> ↑
+[20:17:48] <zetok> cisc: https://github.com/qTox/qTox/issues/3612
+[20:17:58] <cisc> so that couldn't be patched in qtox yet leaving the version in the about page @ 1.5.1?
+[20:18:37] <zetok> ffmpeg was bumped 2.8 → 3.1 + patches that didn't land on master then, that could have had some regressions
+[20:21:40] <cisc> i see
+[20:21:59] <cisc> so it's qtox 1.5.1.1
+[20:22:37] <zetok> yes, but people don't like 4 digits
+[20:22:40] <zetok> :f
+[20:24:11] -qtox-git-spam- [qTox] zetok opened pull request #3848: docs(INSTALL): inform users about `qtox-alpha` package (master...docs-install-alpha) https://git.io/vX3Ys
+[20:26:38] <cisc> zetok: so technically v1.5.2 is not released yet, correct?
+[20:26:44] <zetok> it has been
+[20:27:04] *** Joins: abbat (~Anton@ )
+[20:27:16] <cisc> that is the stable for Windows?
+[20:27:23] <zetok> yep
+[20:28:03] <cisc> so then the OBS package for 'nix, that is a little behind then
+[20:28:26] <cisc> because you said 1.5.2 == 1.5.1
+[20:28:40] <zetok> -.-
+[20:28:56] <cisc> or are you just refering to the version number of the OBS package
+[20:29:57] <zetok> version number
+[20:30:14] <cisc> I see
+[20:31:13] <iphy> does 1.5.2 work on osx?
+[20:31:39] <zetok> there's no 1.5.2 for osx
+[20:31:50] <iphy> ok, so 1.4 is the latest working version for osx?
+[20:32:11] <zetok> technically, 1.5.1 for osx works if one installs deps/links to deps
+[20:32:34] <zetok> https://github.com/qTox/qTox/issues/3747
+[20:32:53] <zetok> (there's a work-around listed there)
+[20:33:22] <iphy> ah
+[20:33:36] <iphy> good
+[20:36:08] <cisc> this one https://github.com/qTox/qTox/issues/3747#issuecomment-253609267
+[20:36:55] <iphy> yes
+[20:42:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[22:01:40] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[22:03:33] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[22:21:00] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:30:28] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 245 seconds)
+[22:35:39] *** Joins: athan (~athan@ )
+[22:46:41] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:51:44] *** Joins: Saamm (587d2b5e@ )
+[22:51:51] <Saamm> Hello everyone :)
+[22:52:42] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:52:44] <oranges> hello Saamm 
+[22:52:54] <Saamm> o/
+[23:59:19] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
