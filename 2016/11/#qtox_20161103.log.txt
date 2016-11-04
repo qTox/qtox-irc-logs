@@ -1,0 +1,324 @@
+[00:30:18] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:45:12] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[00:59:54] *** Joins: albel727 (~albel727@ )
+[01:37:29] *** Joins: miokiry (~Adium@ )
+[01:37:32] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[01:39:08] *** Joins: miokiry (~Adium@ )
+[01:39:56] *** Quits: miokiry (~Adium@ ) (Remote host closed the connection)
+[02:16:50] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:48:01] *** Joins: CGGB (~CGGB@ )
+[02:51:07] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[02:51:31] *** Joins: CGGB (~CGGB@ )
+[03:20:05] *** Quits: linxon (~lin@ ) (Ping timeout: 260 seconds)
+[03:20:44] *** Joins: linxon (~lin@ )
+[03:58:31] *** Joins: miokiry (~Adium@ )
+[04:04:27] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[04:44:19] *** Joins: miokiry (~Adium@ )
+[04:44:23] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[06:43:36] *** Joins: sudden6 (~anonymous@ )
+[06:48:49] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[06:58:54] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[07:18:31] *** Joins: sudden6 (~anonymous@ )
+[07:36:35] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[07:48:21] *** Joins: sudden6 (~anonymous@ )
+[08:06:54] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 268 seconds)
+[08:25:53] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:27:14] *** Joins: LittleVulpix (~Miranda@ )
+[08:29:11] *** Joins: miokiry (~Adium@ )
+[08:35:03] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[08:37:16] *** Joins: in1t3r (~LordShiva@ )
+[08:37:28] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[08:37:47] *** Joins: cisc (~cisc@ )
+[08:42:02] *** Quits: cisc (~cisc@ ) (Client Quit)
+[08:43:30] *** Joins: miokiry (~Adium@ )
+[08:43:44] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[08:45:41] *** Joins: shiva (~LordShiva@ )
+[08:46:17] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[09:04:25] *** Joins: cisc (~cisc@ )
+[09:18:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[09:33:06] *** Joins: sudden6 (~anonymous@ )
+[10:01:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[10:08:24] *** Joins: sudden6 (~anonymous@ )
+[10:40:34] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[12:17:20] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 250 seconds)
+[12:33:39] *** Joins: shiva__ (~LordShiva@ )
+[12:56:19] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXnKj
+[12:56:19] -qtox-git-spam- qTox/master 64bbc6c Zetok Zalbavar: style: change postfix increment to prefix increment
+[13:00:09] *** Quits: shiva__ (~LordShiva@ ) (Quit: Leaving)
+[13:00:28] *** Joins: shiva__ (~LordShiva@ )
+[13:01:11] *** shiva__ is now known as in1t3r
+[13:07:01] *** Joins: bashrc (~motters@ )
+[13:36:33] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:38:51] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[13:39:18] *** Joins: CGGB (~CGGB@ )
+[13:39:22] *** Joins: cisc (~cisc@ )
+[14:00:31] <cisc> what do you guys think about adding a "ping" feature to qTox? When you press Ping, it sends an alert to the contact and makes a chime; "You Pinged *"
+[14:10:13] <Emcy_> i suggested it before and no one liked it
+[14:10:23] <Emcy_> msn used to have it
+[14:10:57] <zetok> cisc: just write `/me pings you` ?
+[14:11:02] <cisc> well I like the idea
+[14:11:44] <cisc> the user would press a graphical button or IRC-style command
+[14:14:54] *** Joins: ovalseven8 (~ovalseven@ )
+[14:18:05] <zetok> wouldn't a "command" defeat its purpose?
+[14:19:18] <zetok> actually, what problem is "ping" supposed to solve?
+[14:19:46] <iphy> Emcy_: buzz
+[14:19:54] <cisc> an easy way to send an alert to a contact without typing anything
+[14:20:24] <iphy> in msn messenger, it made the window vibrate and possibly put in the foreground (not sure about that one)
+[14:20:33] <Emcy_> yeah it did
+[14:21:35] <zetok> cisc: where would you put that button?
+[14:22:10] <Emcy_> it worked fine if you had friends who were not idiots with it. it was useful
+[14:22:11] <cisc> and the sound effect would be different from the IM chime
+[14:22:11] <Emcy_> you could disable it per friend anyway
+[14:23:49] <Emcy_> tbh the thing that was most useful about msn is that you could draw little things in the text box and send it over
+[14:24:12] <Emcy_> that was neat
+[14:24:39] <zetok> Emcy_: https://github.com/qTox/qTox/issues/1145 ← need info
+[14:24:55] <Emcy_> i believe i drew many hearts and dicks in there in my time
+[14:25:01] <zetok> Emcy_: I was wondering whether to not close that since info was not provided, could you (or anyone else) provide it?
+[14:25:59] <Emcy_> iirc the way it worked is you just draw something int he text box and send it like a message
+[14:26:13] <Emcy_> there was a colour palette
+[14:26:16] <zetok> in the issue pls
+[14:26:29] <Emcy_> no gh account
+[14:27:45] <zetok> ok
+[14:28:27] <Emcy_> its something that is down the list of things to work on anyway
+[14:33:50] <cisc> zetok: I don't know yet, first I asked to see if it was a wanted feature or not
+[14:33:50] <cisc> if it is then we could talk about placement later
+[14:34:33] <cisc> Emcy_: Wire lets you draw things
+[14:34:45] <cisc> as well as send pings
+[14:36:15] <Emcy_> theyre good features
+[14:36:38] <Emcy_> the drawing is more useful now since touchspreens have proliferated
+[14:37:58] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[14:40:42] <cisc> if you wanna draw dicks I guess
+[14:40:53] <zetok> cisc: it seems be something that mostly would cause problems
+[14:41:09] <cisc> the ping feature?
+[14:41:12] <zetok> yep
+[14:41:17] <zetok> as for drawing D
+[14:41:18] <cisc> how so?
+[14:41:27] <zetok> "whatever floats your boat"
+[14:41:34] <cisc> oh you mean the drawing
+[14:41:56] <zetok> cisc: ping is something that makes it easier for people to be annoying
+[14:42:10] <cisc> well I know the first thing Emcy will draw if that feature is ever added
+[14:42:34] <zetok> I don't really see any problem with that
+[14:42:56] <zetok> drawings are usually full of useful info
+[14:43:27] <zetok> on the other hand, ping has usually no info, and only rarely there is some meaning in it
+[14:43:37] <cisc> then you can have an option to turn ping off
+[14:43:37] <cisc> or if they are annoying delete them from your list
+[14:44:16] <zetok> not providing the feature that makes it easier for people to be annoying seems like better choice
+[14:44:51] <Emcy_> maybe you shouldnt have annoying people on your friend list
+[14:44:51] <zetok> especially given that most of feature's functionality is already present
+[14:45:01] <Emcy_> thats how i survived
+[14:45:36] <Emcy_> when i got nudged it just meant dude this is important
+[14:45:39] <zetok> Emcy_: would you remove your boss from your contact list?
+[14:45:52] <zetok> and they're pinging you all the time
+[14:46:26] <Emcy_> i wouldnt have my boss on tox.....
+[14:46:40] <zetok> that's just a matter of time :)
+[14:46:49] <cisc> yeah I still think it could be useful, send a notification+sound without typing anything. I don't think that is going te lead to the qTox doomsday
+[14:48:51] <Emcy_> if your boss wants to be an asshole he will just blow up your company phone. its a bad example
+[14:50:11] <Emcy_> iirc nudges were rate limited and you could disable them per contact anyway. it was within control
+[14:50:11] <Emcy_> i dont recall having an issue really. it was just useful within the context of my life back then
+[14:50:45] <zetok> make a feature request?
+[14:50:57] <zetok> (including button placement and other needed info)
+[14:51:07] <zetok> (behaviour, etc)
+[14:53:20] <iphy> "we at qTox Inc don't need no stinking product excellence or code health"
+[14:54:20] <zetok> :/
+[14:54:25] <cisc> the button would be a very large button with size 48 text so old people will know where it is
+[14:54:31] *** Quits: bashrc (~motters@ ) (Remote host closed the connection)
+[14:54:40] <Emcy_> no just stick it in the slide out button thing
+[14:54:54] <Emcy_> it could hardly make that any more weird
+[14:55:05] <iphy> zetok: it's difficult
+[14:55:21] <iphy> To get the balance between feature releases and code health right
+[14:56:50] <iphy> TokTok/qTox has infinitely more test coverage than qTox/qTox
+[14:57:11] <iphy> It'd be good to make that less than infinite
+[14:57:28] <zetok> if only it was contributed upstream
+[14:57:42] <cisc> and the ping icon that gets sent to your contact in the message window will be a small cat icon
+[14:57:43] <cisc> you mean the attatch button
+[14:57:43] <cisc> for sending a screenie
+[14:57:43] <Emcy_> id rather code health be worked on in favour of any new features tbh
+[14:57:45] <cisc> me too, but just food for thought for later
+[14:58:29] <iphy> zetok: how's the redesign coming along?
+[14:58:42] <iphy> I'm probably not doing anything until that's done
+[14:58:52] <zetok> iphy: slowly
+[14:58:59] <zetok> iphy: first is the code formatting
+[14:59:23] <iphy> Because right now if I say something should change, the answer is "we're doing a rewrite already"
+[14:59:31] <iphy> So, no need to give suggestions
+[14:59:40] <zetok> right
+[14:59:52] <iphy> When your rewrite is done, I can give suggestions on the supposedly high quality code you have by then
+[15:00:43] <iphy> Does Qt facilitate good resource management practices?
+[15:00:52] <zetok> no idea
+[15:01:15] <iphy> By the way, the signal blocker is approximately the opposite of good resource management
+[15:01:21] <zetok> about redesign, I wonder if it can be done in any timely manner
+[15:02:01] <iphy> Who in here knows C++ well?
+[15:02:29] <zetok> I'll ask about it, and if answer will be negative (probably) that'll mean that "redesign" shouldn't be something to be concerned about when contributing
+[15:02:56] <iphy> zetok: the redesign is a kind of from scratch thing
+[15:03:03] <iphy> That branch is broken
+[15:03:16] <iphy> It's not an incrementally fix things thing
+[15:03:51] <zetok> tux3 and nurupo know C++ well, also anoa seems to know it, dunno much about other people here
+[15:03:53] <iphy> If the redesign is another new group chats, I'll ignore it and do my own thing
+[15:04:42] <zetok> ><iphy> It's not an incrementally fix things thing
+[15:04:42] *** Joins: bashrc (~motters@ )
+[15:05:10] <zetok> Diadlo plans on moving changes from the branch incrementally in PRs, but I don't know how long that'll take
+[15:05:18] <zetok> (he already started)
+[15:05:23] <iphy> Oh good
+[15:05:59] <iphy> Do you have a policy about calling static member functions through pointers?
+[15:06:11] <zetok> nope, AFAIK
+[15:06:23] <iphy> Initramfs should make one
+[15:07:55] <zetok> as a part of coding guidelines PR?
+[15:08:04] <iphy> Or later
+[15:08:11] <zetok> later
+[15:08:12] <iphy> It should be part of the guidelines yes
+[15:08:21] <iphy> But not necessarily right now
+[15:08:21] <zetok> since PR is kinda just about the style
+[15:08:36] <iphy> It's also about semantics
+[15:08:41] <zetok> ok
+[15:08:57] <iphy> Pre increment is a semantic change
+[15:09:11] <iphy> In fact, the static function through pointer is not
+[15:09:22] <iphy> That's purely a style thing
+[15:09:41] <iphy> And anyone who things differently from me on this should be shot :)
+[15:09:46] <iphy> Thinks*
+[15:09:59] <iphy> Unless they have a very good reason
+[15:10:18] <zetok> >.<
+[15:10:43] <iphy> foo->staticfun();
+[15:10:51] <iphy> This is very misleading
+[15:11:06] <iphy> Normally this syntax means that foo is passed as this pointer
+[15:11:21] <iphy> But if it's a static function, that doesn't happen
+[15:11:44] <iphy> qTox does this
+[15:12:14] <zetok> iphy: if you don't mind, I'll just copypaste that in issue
+[15:12:16] <iphy> Even to the point where it works really hard to get a pointer
+[15:12:31] <iphy> To then proceed to not use it
+[15:12:41] <iphy> zetok: sure
+[15:13:54] <zetok> thanks
+[15:23:41] <zetok> bashrc: is your tlsdate fork compatible with libressl?
+[15:24:34] <zetok> libressl has removed SSLv3 support
+[15:33:32] *** Quits: bashrc (~motters@ ) (Remote host closed the connection)
+[15:34:22] <zetok> :|
+[15:38:13] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[15:41:05] *** Joins: in1t3r (~LordShiva@ )
+[16:27:17] *** Joins: sudden6 (~anonymous@ )
+[16:29:31] <qTox-Website> [qTox-Website] zetok opened pull request #20: Translations from Weblate (master...tr) https://git.io/vXcZ0
+[16:30:59] *** Joins: cenysor (~cenysor@ )
+[16:35:49] *** Joins: ovalseven8 (~ovalseven@ )
+[16:37:40] <qTox-Website> [qTox-Website] zetok closed pull request #20: Translations from Weblate (master...tr) https://git.io/vXcZ0
+[16:38:19] <travis-ci> qTox/qTox-Website (2da181b): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/173006490 / Changes: https://github.com/qTox/qTox-Website/compare/bd71cfeaa0de...2da181b9fffd
+[16:43:21] <qTox-Website> [qTox-Website] zetok opened pull request #21: Add more keywords to website for SE (master...keywords) https://git.io/vXccK
+[16:46:03] <qTox-Website> [qTox-Website] zetok closed pull request #21: Add more keywords to website for SE (master...keywords) https://git.io/vXccK
+[16:46:10] <qTox-Website> [qTox-Website] zetok pushed 1 new commit to master: https://git.io/vXcCt
+[16:46:10] <qTox-Website> qTox-Website/master be88a4b Zetok Zalbavar: Add more keywords to website for SE
+[16:46:47] <travis-ci> qTox/qTox-Website (be88a4b): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/173009044 / Changes: https://github.com/qTox/qTox-Website/compare/2da181b9fffd...be88a4b1ed2f
+[16:51:15] <zetok> sudden6: hi
+[16:55:57] <zetok> sudden6: I was wondering about fixed time-bound release schedule
+[16:56:10] <zetok> i.e. no hard requirements for a release
+[16:56:52] <zetok> because right now it doesn't look like code formatting will make it to release, and DB salt maybe, maybe not
+[16:58:01] <zetok> anyway, since next week is supposed to be a testing one, there should be a blog post for it
+[16:58:55] <zetok> nurupo: btw, since you're releasing post on the tox.chat blog about contributors, it would be good to add a part about qTox testing week before the release
+[16:59:13] <zetok> s/contributors/contributing/
+[17:00:08] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[17:01:23] <zetok> nurupo: testing week will start on Monday
+[17:05:08] <ovalseven8> zetok; I don't understand why to have a "testing week". qTox gets tested all time and MANY bugs has been reported. qTox is testing by using actually.
+[17:06:11] <zetok> right
+[17:06:36] <zetok> it's mostly there to avoid merging something that could break stuff just before the release
+[17:09:52] <zetok> um, it's going to take me a moment to fully answer that
+[17:10:36] <zetok> not because the answer is very long, but rather to not repeat stuff I'm just going to write a blog post
+[17:11:10] <zetok> you'll get an answer and I'll get post written & reviewed
+[17:11:17] <zetok> 2 birds with one stone :3
+[17:13:47] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 265 seconds)
+[17:15:37] <zetok> no wait, that is described
+[17:15:43] <zetok> ovalseven8: https://qtox.github.io/blog/2016/10/29/New-Release-Process.html
+[17:27:21] *** Joins: in1t3r (~LordShiva@ )
+[17:46:40] *** Joins: sudden6 (~anonymous@ )
+[17:49:45] <sudden6> zetok: hi
+[17:51:14] <zetok> sudden6: https://gist.github.com/zetok/3ae1eb5946014160c94fc3ef330c41e7
+[17:52:09] <sudden6> change it even before we tried it?
+[17:52:27] <zetok> it was already changed
+[17:52:41] <zetok> but anyway
+[17:53:13] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[17:53:19] <zetok> the release should go as planned
+[17:53:35] <sudden6> ? when was it changed?
+[17:53:38] <zetok> I'm just wondering if you'll manage with the DB salt
+[17:54:06] <zetok> when we agreed to move testing week to get code formatting & DB salt fix in?
+[17:54:46] <sudden6> I have a lot of time over the weekend I can spend on qTox
+[17:55:08] <zetok> uh
+[17:55:44] <sudden6> the problem is more, testing and getting it reviewed
+[17:56:36] <zetok> getting it reviewed won't work
+[17:57:17] <sudden6> ok? you seem to have more info than me
+[17:58:49] <zetok> I didn't actually gather the data, but it's there
+[17:59:12] <sudden6> ???
+[18:00:00] <zetok> data about time between PR submitted & it gaining LGTM and getting merged points that your PR most likely won't make it if you plan on doing it on weekend
+[18:00:33] <sudden6> your doing some AI level trolling in here :D
+[18:00:38] <sudden6> 'you're
+[18:01:53] <zetok> no, I'm just wondering
+[18:02:00] <sudden6> well, it could be, but I'm against postponing the release another week
+[18:02:12] * zetok sighs
+[18:02:27] <zetok> and then releasing 1.6.1 right after with this fix merged?
+[18:02:41] <zetok> or merging the fix during the testing week
+[18:02:47] <sudden6> haven't thought about that
+[18:02:57] <sudden6> no, not during testing week
+[18:03:29] <zetok> releases done like that miss the point IMO
+[18:03:37] <sudden6> currently we have a problem setting goals that we can meet, see ui/redesign
+[18:03:51] <zetok> um
+[18:04:04] <zetok> ui/redesign IMO doesn't qualify as such
+[18:04:15] <sudden6> so I see this as a learning process for everyone, to set goals that we can actually meet and that includes failing once or twice
+[18:04:31] <zetok> or perhaps I'm just alone in thinking that it was done the wrong way from the start
+[18:04:35] <sudden6> ok, maybe ui/redesign was a bad example
+[18:05:19] <sudden6> what do you think is wrong? releases or ui/redesign?
+[18:05:31] <zetok> ui/redesign
+[18:05:45] <zetok> as for releases, there's a problem with a fixed date of release
+[18:06:16] <zetok> s/a/the/4
+[18:06:56] <zetok> Diadlo is finally doing ui/redesign the way it should be done, i.e. in small incremental chunks
+[18:07:44] <zetok> as for releases, I think that we should aim to have a fixed release schedule, but it should be possible to have a delay
+[18:08:21] <sudden6> I think it was a good approach by antis81, first break everything and create a clean design, then gradualy adapt the old codebase to the new desing
+[18:08:32] <zetok> 'no'
+[18:08:48] <zetok> you'd never find & fix all the bugs introduced by the breakage
+[18:09:46] <zetok> also, it's not only about the bugs, but outright removing & never restoring back features
+[18:09:59] <zetok> I guess it's time to make the cut
+[18:10:16] <sudden6> IMO there are two ways to resolve problems like ui/redesign 1) easy split hard join 2) hard split easy join
+[18:10:16] <sudden6> we took rout #1
+[18:10:16] <sudden6> *route
+[18:10:46] <zetok> I hoped that I'm wrong, so I waited with making PRs that would conflict with ui/redesign
+[18:10:58] <zetok> but I don't think that there's any point in waiting anymore
+[18:11:03] <sudden6> IMO #1 leads to a better and cleaner design at the base, with the cost of merging stuff back being hard
+[18:11:25] <zetok> s/being hard/not happening/
+[18:11:25] <iphy> I think it would make sense to have a qa release and then the prod release that lags behind it for $time
+[18:11:51] <iphy> or beta, or whatever you want to call it
+[18:12:22] <zetok> iphy: that sounds like Rust release model
+[18:12:22] <iphy> some way for users to choose between more tested vs. newer code
+[18:13:18] <sudden6> #2 leads to a lot of compromising between the two codebases
+[18:13:18] <sudden6> like now qtox and qtox-alpha?
+[18:13:18] <sudden6> (we already have qtox-alpha)
+[18:13:18] <sudden6> we do have it
+[18:13:18] <sudden6> at least on OBS
+[18:13:18] <sudden6> thanks to abbat
+[18:13:44] <zetok> https://internals.rust-lang.org/t/release-channels-git-branching-and-the-release-process/1940
+[18:15:42] <zetok> iphy: aside from Linux, AFAIK there are no resources to make that happen
+[18:15:47] <zetok> (for qTox)
+[18:20:40] <zetok> sudden6: the thing I'm arguing in favour of are atomic changes
+[18:21:37] <zetok> if you could break everything, write anew and preserve functionality, that would be an atomic change
+[18:21:55] <zetok> but that's not where ui/redesign was going
+[18:22:25] <iphy> I agree with zetok
+[18:22:28] <zetok> or any other changeset that is overly huge for no reason
+[18:22:32] <iphy> that's the policy on toktok/* repos
+[19:17:31] *** Quits: smaragdus2 (~omoo@ ) (Read error: Connection reset by peer)
+[19:36:58] *** Joins: Diadlo (~diadlo@ )
+[19:37:34] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:38:59] *** Joins: cisc (~cisc@ )
+[19:57:01] *** Joins: Emcy (~MC@ )
+[19:57:01] *** Quits: Emcy (~MC@ ) (Changing host)
+[19:57:01] *** Joins: Emcy (~MC@ )
+[19:59:20] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[20:03:15] *** Joins: smaragdus (~omoo@ )
+[20:04:47] *** Quits: sudden6 (~anonymous@ ) (Read error: Connection reset by peer)
+[20:05:04] *** Joins: sudden6 (~anonymous@ )
+[20:15:17] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[21:03:47] *** Joins: smaragdus (~omoo@ )
+[21:17:09] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[21:17:36] *** Joins: in1t3r (~LordShiva@ )
+[21:26:06] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 268 seconds)
+[21:48:00] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[21:48:27] *** Joins: cisc (~cisc@ )
+[21:53:19] *** Joins: DaSpirit (~DaSpirit@ )
+[22:13:46] *** Joins: in1t3r (~LordShiva@ )
+[22:17:39] *** Quits: in1t3r (~LordShiva@ ) (Client Quit)
+[22:17:58] *** Joins: in1t3r (~LordShiva@ )
+[22:29:10] *** oranges is now known as beees
+[22:59:11] *** Quits: in1t3r (~LordShiva@ ) (Quit: Leaving)
+[22:59:29] *** Joins: in1t3r (~LordShiva@ )
+[23:24:42] *** Joins: athan (~athan@ )
+[23:34:59] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
