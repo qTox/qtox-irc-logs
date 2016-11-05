@@ -1,0 +1,220 @@
+[00:12:19] <nurupo> ><zetok> drawings are usually full of useful info <-- drawing a thing and sending it as an image is a nice feature. some collaborative live drawing using tox custom packets might be a useful feature too
+[00:12:36] <zetok> one thing at a time
+[00:13:10] <zetok> feature request was to do one-way drawing pic, which should be simple to implement
+[00:14:22] <zetok> as for using custom packets, that's not really compelling
+[00:17:06] <zetok> hm.
+[00:20:12] <nurupo> ><iphy> Does Qt facilitate good resource management practices? <-- if be "resource" you mean memory, Qt uses child-parent relation where the container owns the items. in Qt you use raw pointers, like `QWidget *w = new QWidget();`, then you add that QWidget* to some QLayout* of some other QWidget*, and that other QWidget* might be set as QMainWindow::centralWidget(), so that whenever the QMainWindow gets destroyed, it destroys its children.
+[00:21:03] <iphy> resource, window, file, anything
+[00:21:16] <nurupo> using raw pointers like that is a bit weird if you come from C++11 background where you never use raw pointers and wrap everything into unique and shared pointer RIIA
+[00:21:32] <nurupo> *RAII
+[00:26:40] <nurupo> ><iphy> Do you have a policy about calling static member functions through pointers? <-- why would you ever call static member functions throught pointers? D: it's so confusing, it might make you think the output depends on the object and/or that the function modifies internal state of the object. just do `MyClass::static_function();`
+[00:26:52] <iphy> nurupo: exactly
+[00:26:57] <iphy> nurupo: but qtox does :)
+[00:27:14] <nurupo> crazy
+[00:29:38] <iphy> nurupo: it even possibly instantiates the object just to then not use it and call a static member function on it
+[00:29:50] <nurupo> ><iphy> Even to the point where it works really hard to get a pointer <-- lol
+[00:30:28] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[00:30:57] *** Joins: athan (~athan@ )
+[00:31:35] <nurupo> someone probably have seen someone else calling `foo->static_function()` in the code where `Foo *foo` was available and wanted to do the same in the part of the code where there was no `Foo *foo` :D
+[00:39:45] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:40:12] <nurupo> ><zetok> libressl has removed SSLv3 support <-- SSLv3 and TLS 1.0 are considered obsolete
+[00:43:53] <nurupo> zetok: do you have anything explaining the qTox test week thing, so that i could link it?
+[02:15:30] *** Quits: beees (oranges@ ) (Quit: leaving)
+[02:22:23] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:56:41] *** Joins: oranges (oranges@ )
+[03:14:22] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[05:13:30] *** Joins: miokiry (~Adium@ )
+[05:15:44] *** Joins: miokiry1 (~Adium@ )
+[05:17:56] *** Quits: miokiry (~Adium@ ) (Ping timeout: 260 seconds)
+[05:19:38] *** Quits: miokiry1 (~Adium@ ) (Client Quit)
+[05:41:00] *** Joins: miokiry (~Adium@ )
+[05:42:34] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[07:50:00] <zetok> nurupo: it's basically stabilizing week, with no real changes to the code
+[07:56:38] <zetok> nurupo: https://qtox.github.io/blog/2016/10/29/New-Release-Process.html ← explained in the `5:1` part
+[08:04:29] *** Quits: nurupo (~nurupo.ga@ ) (Quit: nurupo)
+[08:05:00] *** Joins: nurupo (~nurupo.ga@ )
+[08:21:23] *** Quits: linxon (~lin@ ) (Changing host)
+[08:21:23] *** Joins: linxon (~lin@ )
+[09:04:41] <Diadlo> zetok: Why https://github.com/qTox/qTox/issues/1930 is not in milestone?
+[09:05:23] <zetok> Diadlo: which milestone?
+[09:05:32] <Diadlo> Version
+[09:05:43] <zetok> um?
+[09:05:47] <zetok> but where would it fit?
+[09:06:28] <Diadlo> v1.6.0 / v1.7.0 / v1.8.0
+[09:06:29] <Diadlo> We have unimplemented tox feature
+[09:06:41] <Diadlo> I think, it should be implemented
+[09:06:55] <Diadlo> Isn't it?
+[09:07:06] <zetok> which feature?
+[09:07:25] <zetok> FTs are one thing
+[09:07:50] <Diadlo> > Start and stop videotranslation whithout recall
+[09:07:59] <zetok> oh, right
+[09:08:07] <zetok> sorry, I just brainfarted
+[09:08:13] <Diadlo> Np :)
+[09:08:45] <zetok> I don't think that this is important enough
+[09:08:57] <Diadlo> Or
+[09:09:00] <Diadlo> *Ok
+[09:09:49] <zetok> i.e. milestone stuff is supposed to be important, and should be possible to be done in given time period
+[09:10:23] <zetok> versions milestones that is
+[09:11:05] <zetok> the way I see it, it either could be added to https://github.com/qTox/qTox/milestone/10 , or it depends on it
+[09:11:55] <Diadlo> Good idea
+[09:55:40] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:59:57] *** Joins: sudden6 (~anonymous@ )
+[10:06:35] *** Joins: LittleVulpix (~Miranda@ )
+[10:34:35] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:35:06] *** Joins: CGGB (~CGGB@ )
+[10:49:35] *** Joins: zetok (~zetok@ )
+[10:56:37] *** Joins: genesis (~genesis@ )
+[11:11:19] -qtox-git-spam- [qTox] zetok opened pull request #3853: Update translations from Weblate (master...tr) https://git.io/vXWsX
+[11:12:29] *** Quits: Darky (~Darky@ ) (Read error: Connection reset by peer)
+[11:23:07] *** Joins: Darky (~Darky@ )
+[11:28:47] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[11:29:26] *** Joins: toxuser_ (5aaa9e2d@ )
+[11:31:39] *** Quits: toxuser_ (5aaa9e2d@ ) (Client Quit)
+[11:34:31] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[11:35:31] *** Joins: Diadlo (~diadlo@ )
+[11:35:43] *** Joins: Lord_Vlad (~Vlad@ )
+[11:36:18] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[11:45:46] *** Joins: sudden6 (~anonymous@ )
+[11:46:03] *** Joins: abbat (~Anton@ )
+[12:14:02] <in1t3r> what is going on with qtox? I dont see updates for a while in arch
+[12:16:05] <zetok> in1t3r: have you read the blog?
+[12:16:23] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[12:23:28] <in1t3r> nope
+[12:23:33] <in1t3r> where is?
+[12:23:45] <in1t3r> ok on github
+[12:24:48] <zetok> linked in the topic :)
+[12:24:54] <zetok> (and from the website)
+[12:27:57] *** Joins: athan (~athan@ )
+[12:42:23] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:43:41] <zetok> in1t3r: does the post explain stuff?
+[13:20:02] *** Joins: sudden6 (~anonymous@ )
+[13:28:13] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[13:30:47] -qtox-git-spam- [qTox] zetok opened pull request #3854: chore(tools): make translation updating script amend translation commits (master...chore-script-trup) https://git.io/vXWg3
+[13:52:26] *** Joins: reBrain (~quassel@ )
+[14:14:43] *** Joins: ovalseven8 (~ovalseven@ )
+[15:00:59] *** Joins: bennabiy (~bennabiy@ )
+[15:15:22] *** Joins: cenysor (~cenysor@ )
+[15:15:56] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[15:45:20] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:26:14] *** Joins: kchz (~dschulz@ )
+[16:31:41] *** Joins: FX (058d14e3@ )
+[16:36:11] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[16:39:14] <FX> Привет. Тут есть русскоязычные?
+[16:39:29] <zetok> there are
+[16:39:40] <zetok> (not me though :P )
+[16:41:07] <zetok> FX: да, али я нет
+[16:41:20] <FX> Вопрос про сборку Qtox.
+[16:41:34] <zetok> abbat: ↑ ?
+[16:41:37] <FX> Как собрать всё в один файл?
+[16:42:14] <FX> Я сижу под линукс.
+[16:42:29] <zetok> ~/.config/tox
+[16:43:15] *** Joins: sudden6 (~anonymous@ )
+[16:44:06] <FX> А Qtcreator ошибку выдаёт, а make беспроблем
+[16:45:10] <FX> Вчём может быть дело.
+[16:48:02] <sudden6> hi all :)
+[16:48:15] <zetok> Diadlo: ↑ ?
+[16:48:21] <zetok> sudden6: hello :)
+[16:50:01] <zetok> sudden6: what is needed to compile qTox under qtcreator if make works?
+[16:51:09] <sudden6> zetok: basically just install the dependencies
+[16:51:21] <sudden6> on Linux, on windows I don't know
+[16:51:38] <zetok> um, that doesn't seem to work for FX
+[16:51:56] <sudden6> what seems to be the exact error message/problem?
+[16:53:41] <zetok> FX: error message?
+[16:54:02] <zetok> FX: https://www.soimort.org/translate-shell/
+[16:54:49] <sudden6> basically follow https://github.com/qTox/qTox/blob/master/INSTALL.md#install-git until https://github.com/qTox/qTox/blob/master/INSTALL.md#compile-qtox there you can just go in your local qTox git repository and open the qTox.pro file with qtcreator
+[16:56:53] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[17:13:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[17:15:40] <abbat> FX, По ссылке, которую тебе дали, есть инструкция. Если сбор самому не является целью, а надо получить лишь работающую программу, то можешь воспользоваться готовыми бинарными пакетами. И, да, тут принято общаться по английски.
+[17:16:34] <FX> Не знаю я разговорного, а читаю только вскользь.
+[17:16:53] <FX> А др. ресурсов с профи я ненашёл.
+[17:18:49] <abbat> FX, Какой дистрибутив?
+[17:19:28] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[17:21:59] <FX> abbat, Есть адрес в tox , а то ту на инглинде шпрехают
+[17:23:16] *** Joins: kchz (~dschulz@ )
+[17:23:33] <FX> Дистрибютив  Qt 5
+[17:24:21] *** Quits: dan- (~d@ ) (Ping timeout: 248 seconds)
+[17:28:01] *** Quits: FX (058d14e3@ ) (Quit: Page closed)
+[17:30:09] <abbat> FX, Qt5 - это не дистрибутив. Можешь подключиться к русскоязычному боту 12EDB939AA529641CE53830B518D6EB30241868EE0E5023C46A372363CAEC91C2C948AEFE4EB - там русскоязычные разработчики в основной группе
+[17:32:52] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[17:51:24] *** Joins: athan (~athan@ )
+[18:12:01] *** Joins: jjuran (~jjuran@ )
+[18:24:42] *** Joins: ovalseven8 (~ovalseven@ )
+[18:27:32] *** Joins: jjuran_ (~jjuran@ )
+[18:28:28] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[18:28:28] *** jjuran_ is now known as jjuran
+[19:15:28] *** Joins: fred_barclay (~fred@ )
+[19:22:35] *** Joins: initramfs (~initramfs@ )
+[19:26:12] *** Joins: kchz_ (~dschulz@ )
+[19:27:28] *** Quits: kchz (~dschulz@ ) (Ping timeout: 244 seconds)
+[19:35:03] *** Joins: kchz (~dschulz@ )
+[19:38:42] *** Quits: kchz_ (~dschulz@ ) (Ping timeout: 256 seconds)
+[19:59:40] *** Joins: CGGB (~CGGB@ )
+[20:10:50] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:14:27] *** Joins: bashrc (~motters@ )
+[20:15:22] *** Quits: fred_barclay (~fred@ ) (Remote host closed the connection)
+[20:23:13] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[20:24:04] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[20:32:46] *** Quits: bennabiy (~bennabiy@ ) (Quit: http://www.yellowdeli.com)
+[20:33:20] *** Joins: bennabiy (~bennabiy@ )
+[20:43:42] *** Quits: genesis (~genesis@ ) (Ping timeout: 250 seconds)
+[20:48:34] *** Joins: genesis_ (~genesis@ )
+[20:48:34] *** genesis_ is now known as genesis
+[20:48:36] *** Joins: kchz (~dschulz@ )
+[20:48:36] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[21:33:54] *** Joins: Lord_Vlad (~Vlad@ )
+[21:40:06] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[21:42:37] *** Joins: Lord_Vlad (~Vlad@ )
+[21:43:46] <Diadlo> zetok: Sorry, I am came just now :(
+[21:44:28] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:46:06] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[22:12:11] *** Joins: sudden6 (~anonymous@ )
+[22:26:36] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vXlbX
+[22:26:36] -qtox-git-spam- qTox/master 55d1fbe TheNain38: feat(l10n): update French translation from Weblate
+[22:26:36] -qtox-git-spam- qTox/master 2b3eaa1 Nathan Follens: feat(l10n): update Dutch translation from Weblate
+[22:26:55] <zetok> Diadlo: no problem
+[22:27:01] <sudden6> hi again
+[22:28:06] <sudden6> zetok: do you know if FX did get qTox to work in qtcreator?
+[22:28:16] <zetok> no idea
+[22:29:40] <sudden6> :(
+[22:32:27] *** Quits: athan (~athan@ ) (Ping timeout: 252 seconds)
+[22:33:12] *** Joins: sudd3n6 (~anonymous@ )
+[22:43:22] *** Joins: DaSpirit (~DaSpirit@ )
+[22:52:46] <Diadlo> sudden6: Hello. I think, you can ask abbat about it :)
+[22:53:23] <sudden6> Hi Diadlo :) did he take over?
+[22:53:38] <Diadlo> IDK
+[22:54:00] <sudden6> ah, ok
+[23:02:14] <Diadlo> zetok: Why you use $@ instead of $1 ?
+[23:04:13] <zetok> consistency
+[23:04:28] <zetok> no actual reason
+[23:04:30] <Diadlo> Ok
+[23:06:34] <zetok> um, that's in this script
+[23:06:50] <zetok> in other scripts there might have been reasons
+[23:07:02] <Diadlo> Why $COMMIT_MSG != "feat(l10n): update .* translation from Weblate" ?
+[23:07:45] <zetok> um?
+[23:08:12] <Diadlo> I.e. you amend commit with `feat(l10n)` message. But create new commit with `chore(i18n)`
+[23:08:26] <zetok> oh
+[23:08:34] <zetok> different stuff
+[23:08:47] <zetok> new commit is for updating translations for Weblate
+[23:09:07] <zetok> while what gets amended, is commit pulled from Weblate that needs cleaning
+[23:09:34] <Diadlo> It seems strange behaviour for this script
+[23:09:57] <Diadlo> But if you think, this it's right -- say it and I will LGTM
+[23:10:18] <zetok> um, I'm not sure about the design of this
+[23:10:29] <zetok> actually, it needs further refactoring
+[23:10:42] <zetok> but I'm lazy, and it already works
+[23:11:04] <zetok> so until there'll be an actual reason to bother with refactoring, it looks good enough to me
+[23:11:45] <Diadlo> AFAIK, before this PR it has different behaviour. Isn't it?
+[23:11:50] <Diadlo> Without amend
+[23:11:53] <zetok> yep
+[23:12:21] <Diadlo> So you add non-obvious behaviour :)
+[23:12:51] <Diadlo> But ok. Mostly you are update translation :)
+[23:13:40] <zetok> actually, I just thought of a way to make it better
+[23:13:51] <zetok> wrap "original" script in another script
+[23:13:58] <zetok> how does that sound?
+[23:14:35] <Diadlo> Normal
+[23:15:32] <Diadlo> ly
+[23:15:59] <zetok> um, better/worse than what PR has?
+[23:16:14] <Diadlo> IMO, better
+[23:16:28] <zetok> ok, going to change it then
+[23:16:32] <Diadlo> 2 scripts = 2 behaviour
+[23:16:37] <zetok> probably not today though
+[23:57:45] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
