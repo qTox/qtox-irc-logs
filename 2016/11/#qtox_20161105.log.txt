@@ -1,0 +1,134 @@
+[00:03:16] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 268 seconds)
+[00:06:32] *** Joins: athan (~athan@ )
+[00:14:15] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:18:35] *** Joins: in1t3r (~LordShiva@ )
+[00:22:36] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[00:54:54] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[01:09:27] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[01:09:46] *** Joins: athan (~athan@ )
+[01:28:05] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:30:00] *** Joins: cisc (~cisc@ )
+[02:00:37] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:14:30] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[03:12:58] *** Quits: cisc (~cisc@ ) (Ping timeout: 265 seconds)
+[03:14:16] *** Joins: cisc (~cisc@ )
+[03:25:32] *** Quits: athan (~athan@ ) (Ping timeout: 265 seconds)
+[03:41:22] *** Joins: LittleVulpix (~Miranda@ )
+[03:50:21] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[04:15:02] *** Joins: in1t3r (~LordShiva@ )
+[04:56:18] *** Joins: David___ (7a3c521d@ )
+[05:38:10] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[05:51:15] *** Joins: in1t3r (~LordShiva@ )
+[06:25:48] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[06:30:22] *** Joins: jjuran (~jjuran@ )
+[06:31:14] *** Joins: dan- (~d@ )
+[06:31:14] *** Quits: dan- (~d@ ) (Changing host)
+[06:31:14] *** Joins: dan- (~d@ )
+[09:19:39] *** Quits: Dragofix (Dragofix@ ) (Quit: Hey, who turned off the lights?)
+[09:33:49] *** Joins: Dragofix (Dragofix@ )
+[11:04:49] *** Joins: sudden6 (~anonymous@ )
+[12:16:51] *** Joins: cenysor (~cenysor@ )
+[12:54:46] *** Joins: bashrc (~motters@ )
+[13:07:32] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[13:10:34] *** Joins: Chiitoo (~Chiitoo@ )
+[14:03:01] *** Joins: ovalseven8 (~ovalseven@ )
+[14:13:30] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[14:27:39] *** Joins: cisc (~cisc@ )
+[14:51:45] *** Joins: miokiry (~Adium@ )
+[15:04:57] <sudden6> zetok: worth a read https://github.com/packpack/packpack
+[15:23:33] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[15:27:32] <zetok> sudden6: interesting
+[15:47:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[15:57:59] *** Joins: DaSpirit (~DaSpirit@ )
+[16:29:19] *** Joins: miokiry (~Adium@ )
+[16:39:01] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[17:05:10] <cisc> I think we can get rid of this section: https://github.com/qTox/qTox/blob/master/INSTALL.md#generic
+[17:05:45] <zetok> yeah, I've removed it in a PR that waits for LGTM
+[17:06:03] <zetok> cisc: https://github.com/qTox/qTox/pull/3848 ← feel free to LGTM it :)
+[17:17:40] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[17:35:57] *** Quits: in1t3r (~LordShiva@ ) (Quit: Leaving)
+[17:36:13] *** Joins: in1t3r (~LordShiva@ )
+[17:37:42] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[17:38:36] *** Joins: in1t3r (~LordShiva@ )
+[17:55:53] *** Quits: dan- (~d@ ) (Ping timeout: 252 seconds)
+[18:59:06] *** Joins: athan (~athan@ )
+[19:12:28] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://git.io/vX8Fn
+[19:12:28] -qtox-git-spam- qTox/master 89138bb Nils Fenner: refactor: fix virtual overrides
+[19:12:28] -qtox-git-spam- qTox/master 2da9de0 Diadlo: refactor(drag&drop): Remove FriendWidget dependency
+[19:55:22] -qtox-git-spam- [qTox] Diadlo opened pull request #3855: Friend widget 2 (master...friendWidget_2) https://git.io/vX8NN
+[19:55:54] <zetok> :D
+[19:57:09] <Diadlo> ;)
+[19:57:50] <Diadlo> zetok: About your PR
+[19:57:59] <Diadlo> `git log --raw | tail -n +7 | head -n1` for me is empty line
+[19:58:13] <zetok> hmm
+[19:58:36] <Diadlo> May be +6 ?
+[19:58:45] <zetok> could you provide output of `git log --raw 2b3eaa1`  ?
+[19:59:07] <zetok> HEAD~1..HEAD that is
+[19:59:19] <zetok> could you provide output of `git log --raw 2b3eaa1..55d1fbeb42e0e83fe6ef5af0441eac4eb3d82592`  ?
+[19:59:22] <zetok> ↑ fixed
+[19:59:38] <zetok> no, wait, the other way around >.<
+[20:00:04] <zetok> git log --raw 55d1fbeb42e0e83fe6ef5af0441eac4eb3d82592..2b3eaa1
+[20:00:04] <Diadlo> Last cmd has empty output
+[20:00:11] <Diadlo> Not last :)
+[20:01:04] <Diadlo> Hm...
+[20:01:12] <Diadlo> For this commits it works
+[20:01:19] <zetok> good :)
+[20:01:41] <Diadlo> Oh... Sorry
+[20:01:59] <Diadlo> I understand my mistake :)
+[20:08:44] *** Joins: ovalseven8 (~ovalseven@ )
+[20:09:15] <zetok> tux3: https://github.com/qTox/qTox/tree/atomic-32bit-build-fix ← is this going to be used for something if it doesn't fix the issue?
+[20:19:55] -qtox-git-spam- [qTox] zetok opened pull request #3856: chore(build): compile with -fstack-protector-strong by default (master...chore-pro-stack) https://git.io/vX8xm
+[20:20:36] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vX8xc
+[20:20:36] -qtox-git-spam- qTox/master b798bac Zetok Zalbavar: chore(doxygen): treat .h as C++ includes when generating docs...
+[20:23:44] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[20:50:12] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[20:51:03] *** Joins: in1t3r (~LordShiva@ )
+[21:08:52] <zetok> nurupo: no post? :c
+[21:55:19] <Diadlo> zetok: https://travis-ci.org/qTox/qTox/jobs/173557331#L2040
+[21:56:15] <Diadlo> This PR will break all future PR
+[21:59:12] <zetok> um?
+[22:00:18] <Diadlo> Ok. Just check the link
+[22:00:31] <zetok> I know that it errored
+[22:00:54] <Diadlo> So, what the reason to create this PR?
+[22:01:26] <zetok> to remember
+[22:01:35] <zetok> and to merge once it will work
+[22:02:20] <Diadlo> Lol. What about tasklist or something like that?
+[22:02:23] <Diadlo> I'm against of open PR just `to remember`
+[22:02:36] <zetok> that's basically the same
+[22:02:37] <Diadlo> We already have 21 open PR
+[22:02:53] <zetok> yeah, we would have less PRs if they were quickly reviewed & merged on time
+[22:03:21] <zetok> + PR already has the code that is ~ready for merge when it could be merged
+[22:03:46] <Diadlo> Do what you think is necessary
+[22:05:55] <zetok> I could close the PR and open an issue, only later on to reopen PR..
+[22:06:52] <zetok> also the downside of creating an issue is that I probably would forget about it long before we'd set Debian 9 as lowest supported version
+[22:07:58] <Diadlo> If you think, that it's right -- leave this PR
+[22:12:44] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[22:12:52] -qtox-git-spam- [qTox] zetok opened pull request #3857: docs(doxygen): fix some warnings for toxcall.cpp (master...docs-toxcall) https://git.io/vX4Jc
+[22:12:57] <zetok> 22 PRs :P
+[22:13:00] *** Joins: athan (~athan@ )
+[22:14:42] <Diadlo> Warnings?
+[22:14:54] <Diadlo> Oh... Doxygen
+[22:15:45] *** Quits: David___ (7a3c521d@ ) (Ping timeout: 260 seconds)
+[22:20:44] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:24:31] <zetok> Diadlo: https://github.com/zetok/qTox/tree/feat-button-cursor ← does that work for you?
+[22:24:49] <zetok> it doesn't change the cursor for me, not sure if that's due to my config
+[22:27:29] <Diadlo> Which button doesn't work for you?
+[22:28:44] <zetok> all that I've tried
+[22:28:49] <zetok> (all from the commit)
+[22:29:01] <nurupo> zetok: i said that i would be busy for 24 hours in #toktok
+[22:29:24] <zetok> nurupo: right, I just though that you would push the button already
+[22:29:39] <nurupo> have you read #toktok?
+[22:29:53] <nurupo> the text is not ready, i want to add stuff to it
+[22:30:06] <nurupo> it's not "just push the button"
+[22:30:13] <zetok> oh well
+[22:30:16] <nurupo> why do i have to repeat myself
+[22:30:20] <Diadlo> zetok: Doesn't work
+[22:32:19] -qtox-git-spam- [qTox] zetok closed pull request #3499: Update buttons - shows different cursors (master...patch-1) https://git.io/vX4Us
+[22:34:08] *** Joins: Lord_Vlad (~Vlad@ )
+[22:34:36] *** Quits: Lord_Vlad (~Vlad@ ) (Read error: Connection reset by peer)
+[22:49:22] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[23:08:49] *** Joins: dan- (~d@ )
+[23:08:49] *** Quits: dan- (~d@ ) (Changing host)
+[23:08:49] *** Joins: dan- (~d@ )
+[23:41:16] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[23:57:49] *** Joins: in1t3r (~LordShiva@ )
