@@ -1,0 +1,334 @@
+[00:01:30] *** Joins: initramfs (~initramfs@ )
+[00:01:46] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:29:51] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[00:30:33] *** Joins: athan (~athan@ )
+[01:11:38] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[02:00:24] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[02:02:53] *** Joins: initramfs (~initramfs@ )
+[02:06:12] *** Quits: koshii (~w@ ) (Ping timeout: 256 seconds)
+[02:29:59] *** Joins: David___ (7a3d5aee@ )
+[02:30:25] *** Quits: David___ (7a3d5aee@ ) (Client Quit)
+[02:40:31] *** Joins: CGGB (~CGGB@ )
+[02:40:34] *** Quits: CGGB (~CGGB@ ) (Remote host closed the connection)
+[02:41:16] *** Joins: CGGB (~CGGB@ )
+[02:50:43] -qtox-git-spam- [qTox] initramfs opened pull request #3858: Fix toxcore clone location in OSX build script (master...fix-mac-deploy) https://git.io/vX43R
+[03:31:00] *** Quits: athan (~athan@ ) (Quit: leaving)
+[03:42:36] *** Joins: koshii (~w@ )
+[06:09:35] *** Joins: athan (~athan@ )
+[06:16:14] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[06:54:31] *** Joins: athan (~athan@ )
+[07:52:07] -qtox-git-spam- [qTox] zetok closed pull request #3854: chore(tools): make translation updating script amend translation commits (master...chore-script-trup) https://git.io/vXWg3
+[07:52:59] *** Quits: bkidwell (~bkidwell@ ) (Ping timeout: 258 seconds)
+[07:53:05] <zetok> initramfs: https://github.com/qTox/qTox/pull/3858 ← could you rebase?
+[07:54:18] <initramfs> zetok: Done
+[07:54:44] <zetok> thanks
+[08:00:44] <koshii> Are any of you being paid/supported financially to work on qtox?
+[08:03:04] *** Joins: bkidwell (~bkidwell@ )
+[08:03:28] <zetok> nope
+[08:04:09] <koshii> Impressive development pace then
+[08:14:43] *** Joins: miokiry (~Adium@ )
+[08:33:45] <zetok> initramfs: um, have you added you gpg key to keyserver?
+[08:37:27] <zetok> https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#git-config
+[08:38:37] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vX48l
+[08:38:37] -qtox-git-spam- qTox/master 624441f initramfs: chore(build): fix toxcore clone location in OSX build script
+[09:01:11] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[09:08:17] *** Joins: ovalseven8 (~ovalseven@ )
+[10:04:20] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[10:09:45] *** Joins: miokiry (~Adium@ )
+[10:24:34] *** Joins: cisc (~cisc@ )
+[10:28:24] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[10:42:15] *** Quits: ovalseven8 (~ovalseven@ ) (Quit: Leaving)
+[10:42:46] *** Quits: athan (~athan@ ) (Ping timeout: 250 seconds)
+[10:49:44] *** Joins: sudden6 (~anonymous@ )
+[11:33:26] *** Joins: miokiry (~Adium@ )
+[11:39:21] *** Joins: abbat (~Anton@ )
+[11:40:19] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 252 seconds)
+[11:55:02] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[11:56:45] *** Joins: miokiry (~Adium@ )
+[11:59:37] *** Joins: in1t3r (~LordShiva@ )
+[12:02:24] <sudden6> Diadlo: o/
+[12:05:12] <Diadlo> sudden6: \o
+[12:05:51] <sudden6> How are you?
+[12:06:17] <Diadlo> Not as good as it could be. And you?
+[12:06:50] <sudden6> have also felt better
+[12:09:37] <Diadlo> Do you know, why reviewable dtop LGTM on rebase?
+[12:09:42] <Diadlo> *drop
+[12:09:50] <sudden6> nope
+[12:10:27] <sudden6> but zetok told me, if one doesn't leave comment or reviews a file, reviewable doesn't save the state to it's db
+[12:10:40] <sudden6> and forgets stuff over a rebase
+[12:11:18] <zetok> initramfs' comment should have made it work in that case
+[12:12:33] <zetok> the other case where LGTM is dropped during rebase is when PR changes touch same files that were changed in rebase
+[12:13:32] <Diadlo> Yes. It's logical
+[12:13:46] *** Quits: miokiry (~Adium@ ) (Ping timeout: 250 seconds)
+[12:13:47] <sudden6> zetok: #3856 dropping debian 8 support will take some time
+[12:13:52] <zetok> sudden6: yeah
+[12:14:45] <sudden6> we could compile with it, only on gcc versions high enough
+[12:15:01] <iphy> :lgtm_strong: avoids the problem
+[12:15:20] <iphy> In TokTok I've set it up so the button defaults to LGTM strong
+[12:15:31] <Diadlo> iphy: Hello
+[12:15:36] <sudden6> what's the difference?
+[12:15:48] <iphy> Strong isn't invalidated on rebase
+[12:15:55] <iphy> Or any change
+[12:16:43] <iphy> You can still know what changed by looking at the file matrix
+[12:17:32] <Diadlo> iphy: It's possible to remove lgtm?
+[12:17:42] <sudden6> well that at least partially defeats the purpose of a review, doesn't it?
+[12:18:44] <zetok> Diadlo: `:lgtm_cancel:` IIRC
+[12:18:54] <Diadlo> zetok: Thanks
+[12:19:14] <zetok> np
+[12:19:46] <iphy> Diadlo: yes
+[12:20:08] <iphy> sudden6: yes, and you fix that with policy
+[12:20:47] <iphy> sudden6: there is a balance to be struck between strict process and trust
+[12:21:53] <iphy> sudden6: if a contributor makes significant changes they want to have re-reviewed, I trust they will ask the reviewers to PTAL
+[12:22:09] <sudden6> iphy: I see
+[12:22:11] *** Joins: miokiry (~Adium@ )
+[12:23:27] <sudden6> but I don't see a reason to change the process qTox uses, besides the reviewable hiccups I don't see major problems
+[12:25:59] <zetok> hmm
+[12:26:10] <zetok> those aren't hiccups
+[12:26:20] <zetok> those are papercuts
+[12:26:36] <zetok> way more dangerous
+[12:31:10] <zetok> >I don't see major problems
+[12:31:15] <zetok> and that's plain wrong
+[12:31:27] <zetok> aim should be to not have any problems
+[12:40:52] <Diadlo> zetok: Merge #3848 #3857 ?
+[12:41:30] <zetok> Diadlo: I was kinda waiting for #3823 merge
+[12:41:52] <Diadlo> Ok :)
+[12:42:09] *** Joins: SkyzohKey (~skyzohkey@ )
+[12:42:14] <zetok> since I can rebase my PRs easily, and that's not necessarily the case for your PRs
+[13:20:46] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[13:21:18] *** Joins: in1t3r (~LordShiva@ )
+[13:27:20] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[13:39:18] *** Parts: GrizzlyBear (uid167501@ ) ()
+[13:46:37] *** Joins: in1t3r (~LordShiva@ )
+[13:57:47] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[14:00:04] *** Joins: shiva (~LordShiva@ )
+[14:00:10] *** Quits: shiva (~LordShiva@ ) (Remote host closed the connection)
+[14:00:13] *** Quits: in1t3r (~LordShiva@ ) (Read error: Connection reset by peer)
+[14:00:52] *** Joins: in1t3r (~LordShiva@ )
+[14:02:01] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[14:08:57] *** Joins: miokiry (~Adium@ )
+[14:26:01] *** Joins: shiva (~LordShiva@ )
+[14:28:32] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 256 seconds)
+[14:38:12] *** Joins: miokiry1 (~Adium@ )
+[14:38:44] *** Quits: miokiry (~Adium@ ) (Ping timeout: 260 seconds)
+[14:43:29] *** Quits: miokiry1 (~Adium@ ) (Quit: Leaving.)
+[14:51:59] *** Joins: miokiry (~Adium@ )
+[15:02:50] <zetok> sudden6: clock is ticking :c
+[15:03:14] <sudden6> zetok: I know :/
+[15:04:43] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[15:06:12] <zetok> code didn't seem to change, right?
+[15:10:35] <zetok> (initramfs probably won't be online for long enough)
+[15:23:57] <sudden6> no, code didn't change
+[15:24:09] <sudden6> just a reviewable fu
+[15:48:04] <zetok> then there's no problem with just doing LGTM..?
+[16:13:06] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[16:16:17] *** Joins: cisc (~cisc@ )
+[16:17:18] *** Quits: cisc (~cisc@ ) (Client Quit)
+[16:22:22] *** Joins: cisc (~cisc@ )
+[16:27:36] *** Joins: cenysor (~cenysor@ )
+[16:35:56] <sudden6> zetok: I guess not
+[17:00:52] *** Joins: nPonImixrEmFKhtv (~nPonImixr@ )
+[17:00:56] <nPonImixrEmFKhtv> https://www.youtube.com/watch?v=3EsJLNGVJ7E & https://wikileaks.org/podesta-emails/emailid/15893, http://www.reuters.com/article/us-usa-election-foundation-idUSKBN12Z2SL & https://wikileaks.org/podesta-emails/emailid/3774 (ctrl+f qatar) - please don't let these be buried
+[17:01:01] *** Parts: nPonImixrEmFKhtv (~nPonImixr@ ) ()
+[17:43:07] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[18:16:42] <Emcy> what a driveby
+[18:17:48] <Emcy> did that guy do every channel on freenode
+[18:25:53] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[18:26:26] *** Joins: jjuran_ (~jjuran@ )
+[18:27:48] *** Quits: Dragofix (Dragofix@ ) (Quit: Game over. Continue?)
+[18:30:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[18:40:27] <initramfs> Hi, I'm back. I went to sleep.
+[18:40:34] <initramfs> zetok: I did sign all my commits
+[18:40:52] <initramfs> zetok: I changed my key though (though it's already registered with GitHub)
+[18:41:02] <zetok> initramfs: yes, but you key doesn't seem to be on keyservers
+[18:41:10] <initramfs> It is
+[18:41:40] <initramfs> https://sks-keyservers.net/pks/lookup?op=vindex&search=0xD5954B8055A31C69AABE80BD8EA0020028621330
+[18:43:36] <zetok> initramfs: https://gist.github.com/zetok/f8530d05acd525db9d0b354b444329b9
+[18:44:47] <zetok> sadly, my gpg-fu isn't strong enough to figure out how to query other keyservers than the default one
+[18:46:08] <initramfs> gpg --search-keys --keyserver hkps://hkps.pool.sks-keyservers.net initramfs
+[18:49:24] <zetok> initramfs: yeah, doesn't show
+[18:49:47] <initramfs> That's weird... Because it does for me
+[18:49:57] <initramfs> I mean I can send you the key over tox
+[18:50:38] <zetok> well, the problem is that other people wouldn't be able to get it..
+[18:50:40] <zetok> wait a sed
+[18:50:43] <zetok> sec*
+[18:51:02] <zetok> you're using EC keys, right?
+[18:51:34] <initramfs> Yes
+[18:51:43] <initramfs> My last key was also an EC key though
+[18:53:44] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 250 seconds)
+[18:53:59] <initramfs> And I sent my key to the same keyserver last time...
+[18:54:53] <zetok> well, I think I remembered last time
+[18:55:27] <zetok> is gpg 2.1.15 still too low for EC keys?
+[18:55:50] <zetok> hmm
+[18:56:23] <initramfs> No, that's the latest version
+[18:56:34] <initramfs> Any 2.1.x GPG should be able to load EC keys
+[18:56:54] <zetok> ok, then I have no idea why it doesn't work..
+[19:16:17] *** Joins: Dragofix (Dragofix@ )
+[19:32:16] <zetok> initramfs: --ff-only Diadlo's PR?
+[19:32:41] <initramfs> You want me to merge it?
+[19:32:53] <zetok> if it's good for merge, why not
+[19:33:03] <initramfs> Okay
+[19:34:17] <initramfs> Done
+[19:34:19] -qtox-git-spam- [qTox] initramfs closed pull request #3823: Separate RawDatabase creation from History (master...userDb) https://git.io/vPHpZ
+[19:48:47] *** Joins: sudd3n6 (~anonymous@ )
+[19:49:36] <sudd3n6> hi
+[19:49:40] *** sudd3n6 is now known as sudden6
+[19:50:00] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vX4bH
+[19:50:00] -qtox-git-spam- qTox/master efecd8f Zetok Zalbavar: docs(INSTALL): inform users about `qtox-alpha` package...
+[19:53:21] <sudden6> initramfs: do you have time?
+[19:58:40] <initramfs> Surer
+[19:58:46] <initramfs> s/surer/sure/
+[19:59:03] <iphy> surest
+[19:59:13] <initramfs> Tsk tsk
+[20:03:20] <sudden6> initramfs: could you please review https://github.com/qTox/qTox/pull/3827 and then ping me afterwards?
+[20:04:11] <initramfs> You'
+[20:04:19] <initramfs> You've rebased onto master right?
+[20:04:25] <sudden6> yeas
+[20:04:27] <initramfs> Okay
+[20:26:36] *** Joins: DaSpirit (~DaSpirit@ )
+[20:32:25] *** Joins: athan (~athan@ )
+[20:44:06] <initramfs> sudden6: Done
+[20:45:56] <sudden6> initramfs: thx, working on fixes
+[20:50:19] <initramfs> sudden6: Though it may not directly relate to your PR, you may consider zeroing out all the salts/derived keys at the end of use for security
+[20:51:31] <sudden6> yeah, good idea, but out of scope for this PR
+[20:53:10] <initramfs> Okay
+[21:12:50] <sudden6> initramfs: fixes were done
+[21:12:58] <sudden6> but I get a new warning
+[21:13:18] <sudden6> In file included from ../qTox/src/persistence/db/rawdatabase.cpp:20:0:
+[21:13:20] <sudden6> ../qTox/src/persistence/db/rawdatabase.h: In constructor 'RawDatabase::RawDatabase(const QString&, const QString&, const QByteArray&)':
+[21:13:21] <sudden6> ../qTox/src/persistence/db/rawdatabase.h:90:16: warning: 'RawDatabase::currentSalt' will be initialized after [-Wreorder]
+[21:13:23] <sudden6>      QByteArray currentSalt;
+[21:13:24] <sudden6>                 ^
+[21:13:26] <sudden6> ../qTox/src/persistence/db/rawdatabase.h:89:13: warning:   'QString RawDatabase::currentHexKey' [-Wreorder]
+[21:13:27] <sudden6>      QString currentHexKey;
+[21:13:29] <sudden6>              ^
+[21:13:30] <sudden6> ../qTox/src/persistence/db/rawdatabase.cpp:94:1: warning:   when initialized here [-Wreorder]
+[21:13:32] <sudden6>  RawDatabase::RawDatabase(const QString& path, const QString& password, const QByteArray& salt)
+[21:13:33] <sudden6>  ^
+[21:15:24] <zetok> pastebin
+[21:15:59] <initramfs> Swap the declaration order in profile.h
+[21:18:31] <sudden6> Interesting
+[21:18:49] <sudden6> didn't think the order matters in C++ O_o
+[21:19:21] <sudden6> fixed
+[21:19:43] <initramfs> Well, it does, since members are initialized in declaration order (rather than the order you specified in the member initialization list)
+[21:20:05] <initramfs> So had you accidentally used a member before it was initialized, the compiler warns you about it
+[21:20:58] <sudden6> ah, I just assumed you can't use other members in the initialization list
+[21:22:43] <initramfs> Well, that would be somewhat tragic. If an initialization operation depended on other member variables, well... good luck getting it initialized.
+[21:23:24] <sudden6> mhm, I would have initialized it in the constructor :)
+[21:23:42] <initramfs> And "initializing" it in the constructor body is not correct. That's technically initialization followed by copy assignment
+[21:24:01] <sudden6> that would have been my next question^^
+[21:24:12] <sudden6> I thought they were the same
+[21:24:17] <initramfs> Nope
+[21:24:25] <initramfs> One uses operator=
+[21:24:34] <initramfs> The other invokes the constructor
+[21:25:05] <sudden6> C++ is a lot more complex in the details than any other language I know^^
+[21:25:11] <initramfs> Yeah
+[21:25:14] <initramfs> Some objects are explicitly not assignable
+[21:26:30] <sudden6> do you think loading the database asynchronously will be a problem in qTox?
+[21:26:36] <sudden6> ie race conditions?
+[21:26:58] <initramfs> Well, race conditions are only relevant when multiple threads are involved
+[21:27:10] <sudden6> they are
+[21:27:16] <sudden6> I think
+[21:27:20] <sudden6> yes
+[21:27:54] <initramfs> Well, I see that your code uses the Qt signal-slot mechanism which basically handles synchronization for you
+[21:28:08] <sudden6> I meant logic race conditions
+[21:28:34] <sudden6> something accessing history before db is loaded for example
+[21:28:47] <initramfs> Well, I'm not sure if that's a term. But in any case, code should be in place to handle that.
+[21:29:03] <initramfs> Or at the very least, documentation should be written to forbid such patterns
+[21:29:45] <initramfs> In essence, if a object has functions foo() and bar() and the documentation says nothing, I am to assume that foo() and bar() can be called in any order any number of times
+[21:30:10] <sudden6> yep
+[21:30:10] <initramfs> Making the db load asynchronously hasn't done anything to change that
+[21:30:55] <zetok> could someone ping me when it'll be ready for testing?
+[21:31:03] <initramfs> Sure
+[21:31:08] <zetok> I mean, I've got whole week
+[21:31:13] <initramfs> Lol
+[21:31:20] <zetok> but still, a bit testing before merge would be nice
+[21:31:24] <zetok> a bit of*
+[21:32:04] <initramfs> sudden6: Did you push your latest changes? I see replies saying "done" with no code changes
+[21:33:00] <sudden6> uhm, I think once again git kicked my ass
+[21:34:03] <initramfs> Lol
+[21:34:12] <initramfs> Well I brb 15 mins anyway
+[21:34:28] <sudden6> initramfs: pushed
+[21:48:08] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:57:11] *** jjuran_ is now known as jjuran
+[22:03:28] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[22:10:50] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[22:13:40] *** Joins: DaSpirit (~DaSpirit@ )
+[22:19:02] <initramfs> sudden6: Reviewed
+[22:31:28] *** Joins: athan_ (~athan@ )
+[22:34:10] *** Quits: athan (~athan@ ) (Ping timeout: 256 seconds)
+[22:41:18] *** Joins: Emcy (~MC@ )
+[22:44:22] *** Quits: athan_ (~athan@ ) (Ping timeout: 256 seconds)
+[22:45:40] *** Joins: athan (~athan@ )
+[22:51:54] <sudden6> initramfs: updated
+[22:52:23] * sudden6 back in 15min
+[22:55:57] <sudden6> zetok: I think it's ready for testing
+[22:57:41] <zetok> k
+[23:03:18] <zetok> [23:02:44.211 UTC] persistence/db/rawdatabase.cpp:566 : Warning: Failed to prepare statement "SELECT count(*) FROM sqlite_master" with error 26
+[23:03:18] <zetok> [23:02:44.211 UTC] persistence/db/rawdatabase.cpp:175 : Warning: Database is unusable, check that the password is correct
+[23:03:18] <zetok> [23:02:44.684 UTC] persistence/db/rawdatabase.cpp:117 : Debug: Successfully upgraded to dynamic salt
+[23:03:18] <zetok> [23:02:44.684 UTC] persistence/db/rawdatabase.cpp:119 : Warning: Failed to set password with new salt
+[23:03:20] <zetok> aw.
+[23:04:55] <zetok> weird, since latest messages seem to be there..
+[23:05:00] -qtox-git-spam- [qTox] initramfs opened pull request #3860: Prevent text style from being reset during retranslation of UI (master...fix-text-style-combo) https://git.io/vXBUN
+[23:05:09] <initramfs> zetok: I fixed the text style bug
+[23:05:32] <zetok> initramfs: nice
+[23:06:10] <zetok> now if only I could open the DB as plaintext one to inspect it :|
+[23:09:26] <sudden6> zetok: that's strange
+[23:10:12] <zetok> https://a.uguu.se/gHReEYjJDRzO.png ← special profile for testing encryption, I've lost count how many times I've lost it
+[23:12:04] <zetok> sudden6: it might be possible that profile had a db encrypted in the old way, before switch to sqlcipher
+[23:12:11] <sudden6> zetok: #define SQLITE_NOTADB      26   /* File opened that is not a database file */
+[23:12:17] <zetok> (and old format of data)
+[23:12:17] <sudden6> seems to be the case
+[23:12:23] <zetok> hm.
+[23:12:36] <initramfs> Lol
+[23:12:38] <initramfs> Now this is getting stupid
+[23:12:49] <initramfs> Are we chain upgrading DB formats?
+[23:12:52] <zetok> ok, another piece of data lost
+[23:12:56] <zetok> :c
+[23:13:13] <zetok> initramfs: kinda
+[23:13:21] <initramfs> Urg
+[23:13:22] <sudden6> initramfs: zetok no
+[23:13:37] <sudden6> just change the way the encryption key is generated
+[23:13:52] <zetok> TES encrypted → sqlcipher encrypted → some DB format change → data lost, I think
+[23:14:21] <zetok> sudden6: ok, I'm going to try with my other encrypted profiles
+[23:15:15] <zetok> no, wait
+[23:15:33] <zetok> master didn't seem to have any problems with openening this DB
+[23:15:39] <zetok> or at least it didn't print anything
+[23:16:24] <zetok> [23:16:07.163 UTC] persistence/db/rawdatabase.cpp:566 : Warning: Failed to prepare statement "SELECT count(*) FROM sqlite_master" with error 26
+[23:16:24] <zetok> [23:16:07.163 UTC] persistence/db/rawdatabase.cpp:175 : Warning: Database is unusable, check that the password is correct
+[23:16:33] <zetok> yeah, it's reproducible across all profiles
+[23:17:37] <zetok> >qTox couldn't open your history, it'll be turned off
+[23:17:47] <zetok> great, just what I needed when creating a new profile
+[23:18:21] <initramfs> zetok: For all "old" profiles, you should get at least one set of those warnings
+[23:18:26] <zetok> https://gist.github.com/zetok/60e4b73273443bb25a9beada9eac75e7 ← new profile
+[23:18:45] <zetok> initramfs: I prefer to "catch 'em all"
+[23:19:37] <initramfs> zetok: No, because we don't have a way to test whether someone is using the old static salt or not, we attempt to open the database with PK salt first, falling back to the static salt
+[23:19:49] <zetok> k
+[23:19:57] <initramfs> So for all "old" profiles, you'll see at least one open failure
+[23:20:14] <zetok> anyway, found better stuff :3
+[23:21:28] <sudden6> zetok: strange thing, when creating a new profile it shows errors, but works...
+[23:21:51] <sudden6> errors -> warnings
+[23:23:08] <sudden6> anyway, I have to sleep now...
+[23:23:14] <sudden6> see you tomorrow?
+[23:23:33] <zetok> sudden6: bai, I've posted a crash I've found
+[23:23:42] <zetok> sleep well :3
+[23:23:45] <initramfs> Night
+[23:24:30] <sudden6> zetok: are you sure that doesn't happen on master?
+[23:24:37] <zetok> no idea
+[23:24:59] <sudden6> pls check, night
+[23:26:31] <zetok> oh, great, master segfaults without anything
+[23:26:44] <zetok> your PR actually fixes the segfault
+[23:26:56] <zetok> and makes it a race condition
+[23:28:41] <initramfs> zetok: I'll investigate, I think I know what went wrong
+[23:28:49] <zetok> I guess it's the time to flip the switch for testing week?
+[23:29:33] <zetok> https://gist.github.com/zetok/58a94354ae91116ce7e1927f2be6fdee ← bt from master segfault
+[23:29:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[23:31:16] <initramfs> Huh fun... I got a different segfault..
+[23:37:29] *** Joins: miokiry (~Adium@ )
+[23:37:54] <zetok> testing week begins :|
+[23:37:57] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[23:38:30] *** Joins: miokiry (~Adium@ )
+[23:38:56] *** Quits: miokiry (~Adium@ ) (Client Quit)
+[23:40:00] *** Joins: miokiry (~Adium@ )
+[23:42:57] <zetok> well, night
+[23:56:20] <initramfs> Night
