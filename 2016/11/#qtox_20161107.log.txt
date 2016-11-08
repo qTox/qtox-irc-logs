@@ -1,0 +1,604 @@
+[00:24:19] *** Quits: miokiry (~Adium@ ) (Quit: Leaving.)
+[00:25:55] *** Joins: MiokIry (~Miok@ )
+[00:29:17] *** Quits: MiokIry (~Miok@ ) (Client Quit)
+[00:41:37] *** Joins: MiokIry (~Miok@ )
+[01:13:46] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 250 seconds)
+[01:18:08] *** Joins: jjuran (~jjuran@ )
+[02:04:09] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[03:12:08] *** Quits: MiokIry (~Miok@ ) (Read error: Connection reset by peer)
+[03:14:53] *** Joins: MiokIry (~Miok@ )
+[03:16:33] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:23:22] *** Joins: MiokIry_ (~Miok@ )
+[03:23:45] *** Quits: MiokIry_ (~Miok@ ) (Client Quit)
+[03:25:00] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 260 seconds)
+[03:25:35] *** Joins: MiokIry (~Miok@ )
+[06:26:47] *** Joins: jjuran_ (~jjuran@ )
+[06:27:28] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[06:27:28] *** jjuran_ is now known as jjuran
+[06:58:21] *** Joins: sudden6 (~anonymous@ )
+[07:23:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[07:45:48] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 260 seconds)
+[07:57:46] *** Joins: shiva (~LordShiva@ )
+[08:23:43] <initramfs> away
+[09:05:56] *** Quits: shiva (~LordShiva@ ) (Quit: Leaving)
+[09:27:14] *** Joins: bashrc (~motters@ )
+[09:35:35] *** Joins: sudden6 (~anonymous@ )
+[09:59:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[10:31:52] *** Joins: shiva (~LordShiva@ )
+[11:36:34] <zetok> https://news.ycombinator.com/item?id=12880520  ← anyone with an account there to post about Antox/Antidote there?
+[11:36:43] <zetok> s/there//2
+[11:44:10] <zetok> actually
+[12:48:32] *** Joins: sudden6 (~anonymous@ )
+[12:54:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[13:05:42] <MiokIry> i use non-central-server chat software cuz cops went to my home just for some trifle political jokes i made on central based blogs :D
+[13:09:12] <MiokIry> cryptocat though its server is in a denmark nuclear bunker, i can't trust on that
+[13:21:26] <iphy> Isn't cryptocat end to end encrypted?
+[13:31:45] <MiokIry> yep, but connection list based on central server
+[13:33:10] <MiokIry> i meant another one exposed shits to cops, cryptocat is safe but not enough imo
+[13:33:44] <MiokIry> tox network is perfect, but development is too slow XD
+[13:41:48] <zetok> more people helping would speed up development :)
+[13:49:11] <iphy> MiokIry: https://github.com/TokTok/c-toxcore/milestone/7
+[13:49:24] <iphy> MiokIry: this week's tasks
+[13:49:39] <iphy> MiokIry: you're welcome to help with any of them
+[13:52:50] <MiokIry> cool, let me see what i could help on that ;D
+[13:54:52] <MiokIry> D:
+[13:55:43] <MiokIry> i think i should learn more about c first D:
+[13:56:32] <iphy> yes :)
+[13:56:33] <zetok> you don't need to learn C to help
+[13:56:40] <iphy> for these ones yes
+[13:56:49] <iphy> MiokIry: what do you know?
+[13:56:53] <zetok> MiokIry: what languages do you know?
+[13:56:54] <MiokIry> i write java, sorry about that D:
+[13:57:25] <zetok> iphy: tox4j needs java help, right?
+[13:57:49] <iphy> yeah
+[13:57:52] <iphy> or scala
+[13:58:04] <zetok> MiokIry: aside from tox4j, there's Antox – it's written in scala
+[13:58:14] <iphy> MiokIry: do you know android?
+[13:58:40] <iphy> zetok: as is toktok, and that's a better entry point
+[13:58:46] <MiokIry> im sooooo sorry D:
+[13:58:59] <iphy> MiokIry: java is fine too
+[13:59:28] <zetok> iphy: ok, didn't know that
+[13:59:48] <MiokIry> im not sure if i could write scala D:
+[14:00:09] <zetok> MiokIry: don't worry about that :)
+[14:00:49] <iphy> MiokIry: you can write java
+[14:00:58] <iphy> the scala we use is almost like java anyway
+[14:01:02] <MiokIry> on what
+[14:01:03] <iphy> just a slightly different syntax
+[14:01:21] <iphy> MiokIry: do you have an android phone, and are you interested in working on an android tox client?
+[14:01:40] <iphy> alternatively, there are some things to be done in tox4j
+[14:01:43] <MiokIry> I use ios bro XD
+[14:01:46] <iphy> group chats are currently not supported
+[14:01:49] <iphy> MiokIry: ok then, no android
+[14:01:56] <zetok> https://github.com/TokTok/jvm-toxcore-c ?
+[14:01:59] <iphy> group chats need to be added to tox4j
+[14:02:00] <iphy> zetok: yes
+[14:02:12] <iphy> and also jvm-toxcore, which doesn't have the group chats api at the moment
+[14:04:07] <MiokIry> seems i have to be familiar with toxcore first...
+[14:04:47] <iphy> maybe
+[14:04:59] <iphy> MiokIry: you could build some small program with java using tox4
+[14:05:01] <iphy> tox4j*
+[14:05:13] <iphy> MiokIry: there is a test GUI client that you could extend
+[14:05:13] <MiokIry> like..?
+[14:05:45] <iphy> would that be interesting?
+[14:05:48] <MiokIry> oh i can try to write GUI
+[14:05:56] <iphy> you can also make your own, if you know how to do gui programming in java
+[14:05:58] <MiokIry> sounds nice
+[14:06:10] <iphy> the one I wrote is really crappy and it's just there for testing
+[14:06:35] <iphy> MiokIry: so, first step: install jvm-toxcore-c
+[14:07:06] <iphy> MiokIry: zetok pasted a link earlier, get that and run "make all"
+[14:07:12] <iphy> if that fails, let me know
+[14:07:16] <MiokIry> will it slow down the progress if im too slow in dev?
+[14:07:24] <zetok> nah
+[14:07:35] <zetok> don't worry about that
+[14:08:23] <MiokIry> thx, cuz im now in school, cruel GPA is waiting for me...
+[14:11:04] <MiokIry> so does it mean im working on my own if im making my own tox client? :\
+[14:12:59] <iphy> MiokIry: I can help a bit
+[14:16:08] <MiokIry> i hope i wont disturb on you guys, i meant
+[14:17:55] <iphy> I think it would be useful
+[14:18:46] <MiokIry> such as checking bugs?
+[14:19:49] <MiokIry> i'll try my best
+[14:20:39] <MiokIry> wiki and doc is helpful enough i think :P
+[14:26:00] <MiokIry> iphy tox4j is jvm-toxcore-c right?
+[14:26:28] <iphy> Yes
+[14:26:44] <MiokIry> thx
+[14:27:40] <MiokIry> does jvm-toxcore-api enough for dev?
+[14:31:34] <MiokIry> k, seems to be
+[14:32:50] <MiokIry> anyway, time to sleep, gtg :P
+[14:34:38] <iphy> MiokIry: yes, it is
+[14:34:41] <iphy> goodnight
+[15:19:25] *** Joins: toweI (~toweI@ )
+[15:19:27] *** Quits: toweI (~toweI@ ) (Remote host closed the connection)
+[15:21:05] *** Joins: toweI (~toweI@ )
+[15:23:02] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[15:24:51] *** Joins: cenysor (~cenysor@ )
+[15:40:20] -qtox-git-spam- [qTox] zetok opened pull request #3862: docs(user manual): add info about ToxMe registration (master...docs-man-toxme) https://git.io/vXRWs
+[15:42:01] *** Quits: iphy (uid67735@ ) (Ping timeout: 250 seconds)
+[15:42:01] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 250 seconds)
+[15:42:31] *** Joins: hexadezimalion (sid85551@ )
+[15:43:44] *** Quits: Darky (~Darky@ ) (Ping timeout: 250 seconds)
+[15:44:53] *** Joins: iphy (uid67735@ )
+[15:46:26] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:46:58] <zetok> >6610 Segmentation fault      (core dumped) qtcreator
+[15:47:05] <zetok> there goes improving qTox
+[15:47:08] <zetok> :/
+[15:47:09] *** Joins: LittleVulpix (~Miranda@ )
+[16:04:14] <iphy> zetok: almost like toxav :)
+[16:13:35] <initramfs> Just to note, the OSX builds are still broken
+[16:15:39] -qtox-git-spam- [qTox] zetok opened pull request #3863: feat(UI): rename `Toxme register` → `Register on ToxMe` (master...feat-reg-toxme) https://git.io/vXRES
+[16:16:41] <zetok> :(
+[16:17:23] <zetok> initramfs: broken, as in, don't compile at all?
+[16:17:37] <zetok> or no .dmg ?
+[16:17:43] <initramfs> Runtime failure
+[16:17:45] <iphy> probably just crashes
+[16:17:48] <initramfs> Yeah
+[16:17:59] <zetok> ok
+[16:18:19] <iphy> looking forward to your fix
+[16:18:36] <iphy> initramfs: do you have a mac to test?
+[16:18:43] <initramfs> Well, I don't have mac
+[16:18:57] *** Joins: sudden6 (~anonymous@ )
+[16:19:05] <initramfs> So far my debugging has been done through calling a friend in the states and telling them what to do
+[16:19:16] <initramfs> Which has been mind numbingly slow
+[16:19:21] <iphy> but you know someone who can test?
+[16:19:26] <iphy> have them test https://toktok.github.io/client/osx/qtox.dmg
+[16:19:41] <initramfs> Okay
+[16:20:40] <cisc> How come https://build.opensuse.org/package/show/home:antonbatenev:tox/qtox would have a rebuild time of today (came through as on update) when the package changed value on OBS reads 9 days ago?
+[16:24:55] <zetok> Diadlo, initramfs, sudden6: https://github.com/qTox/qtox-irc-logs/blob/8dd57aef00fc4d65181b2ce85c8949912782b195/2016/11/%23qtox_20161103.log.txt#L131,L142 ← since ui/redesign is being slowly merged in chunks by Diadlo, there's no reason to wait with improvements after it's done fully, right?
+[16:26:47] <zetok> also, what do you think about moving some repos to gitlab? the ones that can be moved without problems
+[16:27:03] <initramfs> Diadlo would give a more authoritative answer, I'm afraid I don't know enough about the redesign to say anything about it.
+[16:27:14] <sudden6> ↑ same
+[16:28:00] <initramfs> Regarding gitlab, do you intend to run it as a mirror for gitlab or to have all development move to GitLab?
+[16:28:12] <initramfs> mirror for GitHub*
+[16:28:25] <zetok> https://gitlab.com/qTox ← there is already a mirror :D
+[16:28:59] <sudden6> zetok: I would keep it at github for the moment because of the much bigger community (or do you have different data?)
+[16:29:11] <zetok> so what I'm proposing is doing it the other way around for repos that don't matter as much
+[16:29:29] <zetok> i.e. repo on gitlab, and mirror of it on github with a link to gitlab repo
+[16:29:53] <zetok> the repos that I have in mind are irc logs, and website
+[16:30:09] <zetok> although right now only irc logs could be "migrated"
+[16:30:22] <initramfs> Well
+[16:30:38] <initramfs> I assume this is all part of a plan to migrate to GitLab
+[16:31:19] <zetok> sudden6: um, I don't have qTox repo in mind yet
+[16:32:03] <zetok> for repos that are as big (number of PRs, issues, comments) there are bugs in gitlab's import functionality
+[16:32:07] <sudden6> zetok: still, also the website could use some community love
+[16:32:29] <zetok> it didn't see much of it so far
+[16:34:50] <sudden6> I don't think that'll change with an even less know hosting site
+[16:35:10] <sudden6> zetok: I couldn't repro the bogus error messages with your instructions
+[16:35:17] <zetok> hmm
+[16:35:47] <sudden6> did you use a profile with new encryption or old one?
+[16:35:57] <zetok> a new profile
+[16:36:23] <sudden6> me too
+[16:37:09] <zetok> >qTox couldn't open your chat logs, they will be disabled.
+[16:37:10] <zetok> :|
+[16:37:15] <zetok> perfectly reproducible
+[16:37:29] <sudden6> then I need more details
+[16:37:40] <iphy> oh yeah, I got that too
+[16:37:46] <iphy> product excellence
+[16:38:30] <zetok> sudden6: ok, what details do you need?
+[16:38:33] <sudden6> I did: Create new profile, close qTox, open qTox, try login with wrong pw, login with correct pw -> success, no errors
+[16:38:48] <sudden6> ↑ See if I did something different than you
+[16:39:11] <zetok> I didn't close qTox at the first try
+[16:40:56] <sudden6> ah, now I got it too
+[16:41:14] <sudden6> but after creating a new profile
+[16:47:42] <zetok> so, anyone against moving git logs to the gitlab, and only having a mirror of it on github?
+[16:47:49] <zetok> s/git/irc/
+[16:50:12] <sudden6> zetok: no
+[16:50:23] <sudden6> (I'm not against it)
+[16:54:15] <zetok> hmm :|
+[16:54:23] <zetok> gitlab just might have broke
+[16:54:57] <zetok> https://gitlab.com/qTox/qtox-irc-logs
+[16:55:19] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[16:57:03] <iphy> yeah
+[16:57:29] <iphy> zetok: good reason not to move important data quite yet
+[16:57:42] <zetok> yep
+[17:01:34] <sudden6> zetok: bug fixed
+[17:05:50] <zetok> >qTox couldn't open your chat logs, they will be disabled.
+[17:05:53] <zetok> I still get that
+[17:06:35] <zetok> sudden6: have you tried to de-select `Keep history`?
+[17:07:23] <sudden6> interesting
+[17:07:24] <zetok> de-select, logout, login, select, logout, login, and qTox claims that it can't open the history, and that it will be disabled, even though checkbox is set
+[17:07:35] <sudden6> same log output?
+[17:07:38] <zetok> ↑ while loading, always type wrong password first
+[17:08:00] <zetok> [17:05:42.295 UTC] persistence/db/rawdatabase.cpp:514 : Warning: Failed to prepare statement "SELECT count(*) FROM sqlite_master" with error 26
+[17:08:00] <zetok> [17:05:42.295 UTC] persistence/db/rawdatabase.cpp:153 : Warning: Database is unusable, check that the password is correct
+[17:08:00] <zetok> [17:05:42.384 UTC] persistence/profile.cpp:80 : Warning: Failed to open history for profile "del_encrypte"
+[17:08:35] <sudden6> thx, the sqlite error number is important
+[17:15:45] *** Joins: Diadl0 (~diadlo@ )
+[17:17:04] <Diadl0> github, wtf (I remove label) -> http://i.imgur.com/8gzY2eu.png
+[17:20:16] <zetok> :|
+[17:20:59] <zetok> first nurupo's issue is gone, now this
+[17:21:11] <zetok> I wonder if it's not too late to backup qTox repo stuff
+[17:22:29] <Diadl0> > nurupo's issue <-- What is problem?
+[17:23:04] <zetok> it's gone
+[17:23:05] <zetok> 404
+[17:23:35] <Diadl0> Lol
+[17:23:53] *** Joins: ch0k3 (b2a2d3d5@ )
+[17:24:06] <ch0k3> hey folks
+[17:24:14] <zetok> hello
+[17:24:17] <sudden6> hi
+[17:24:46] <Diadl0> Hi
+[17:24:47] <ch0k3> I'm looking for alternatives to PRISM apps, like skype or gchat and I came across tox
+[17:25:18] <ch0k3> however last time I tried it was almost impossible to use it 
+[17:25:31] <ch0k3> loads of bugs and the application (utox) was not stable
+[17:25:40] <ch0k3> I see that its still in the alpha version
+[17:25:43] <zetok> when was that?
+[17:25:55] <zetok> er
+[17:25:56] <ch0k3> around 10 to 12 months ago
+[17:26:08] <zetok> so, about µTox
+[17:26:28] <zetok> I won't say a bad word, since there's a ceasefire, but IMO you really should try qTox instead
+[17:26:44] <ch0k3> is qtox really better?
+[17:26:55] <zetok> Yes.
+[17:27:03] <ch0k3> utox at the time was a winner, given its lightweight platform
+[17:27:08] <zetok> starting from philosophy, and ending on technology
+[17:27:13] <ch0k3> oh
+[17:27:17] <ch0k3> I did not know that
+[17:27:30] <ch0k3> and does it supports all the features as utox client supports?
+[17:27:46] <Diadl0> ch0k3: Not all
+[17:27:47] <ch0k3> file transfer, video conference calls
+[17:27:50] <zetok> yes and no
+[17:27:55] <ch0k3> tell me about :)
+[17:28:17] <ch0k3> the read.me on github is a little bit vague, I confess
+[17:28:19] <zetok> there are no video conference calls
+[17:28:30] <ch0k3> ..readme.md (sorry)
+[17:28:46] <zetok> about readme, it could make use of improvements
+[17:29:04] <zetok> I mean, I could write down all the features that qTox has, but that would be a long list, and hard to parse
+[17:29:11] *** Joins: abbat (~Anton@ )
+[17:30:04] <ch0k3> but does it supports, apart from the video conf., all the normal features one should expect from an app that is suppose to compete with utox?
+[17:30:06] <zetok> as for supported features, qTox has quite a few that µTox doesn't, and µTox has a slightly better support for file transfers right now, perhaps a feature or 2 that qTox doesn't have
+[17:30:17] <zetok> qTox doesn't compete
+[17:30:20] <zetok> it's simply better
+[17:30:23] <ch0k3> my mainly use is video calls and calls
+[17:30:36] <ch0k3> zetok: in which regard?
+[17:30:47] <zetok> ><zetok> starting from philosophy, and ending on technology
+[17:30:53] <zetok> the way I see it, every :)
+[17:30:54] <ch0k3> is there a benchmark matrix that could outline the features in details?
+[17:31:01] <zetok> but I might be biased a little bit :P
+[17:31:10] <ch0k3> zetok: are you a qtox dev.? :P
+[17:31:27] <zetok> maybe? :D
+[17:31:32] <ch0k3> oh
+[17:31:36] <ch0k3> that explains :P
+[17:32:01] <zetok> I don't really write the client code, so I'm not sure if I would call myself a qTox dev
+[17:32:05] <ch0k3> for me as an user, the utox in its descriptions is quite complete 
+[17:32:12] <ch0k3> however I don't find the same in qtox
+[17:32:17] <zetok> oh?
+[17:32:20] <zetok> what's missing?
+[17:32:30] <ch0k3> features list for instance
+[17:32:36] <ch0k3> as an example
+[17:32:54] <zetok> ok, where that list should be put?
+[17:32:56] <ch0k3> if you go to the supported clients of the tox protocol
+[17:32:59] <ch0k3> you see this
+[17:33:07] <ch0k3> µTox is the lightweight client with minimal dependencies; it not only looks pretty, it runs fast! µTox is available for Windows, OS X, and Linux (Android support is experimental), with full support for chat, file transfers, audio/video calling, and desktop sharing (both as video and inline screenshots). It also supports text group chats with audio groups pending the next Toxcore update.
+[17:33:15] <zetok> >ch0k3> if you go to the supported clients of the tox protocol
+[17:33:16] <zetok> err
+[17:33:24] <ch0k3> while for the qtox
+[17:33:44] <ch0k3> you only have this - 'A Qt graphical user interface for Tox.'
+[17:33:47] <zetok> there's not much that I can do about that
+[17:34:03] <zetok> https://qtox.github.io/ ← the qTox website btw
+[17:34:26] <ch0k3> ah
+[17:34:29] <zetok> as for that "description", again, I don't want to say a bad word
+[17:34:35] <ch0k3> I miss the feature list on githib
+[17:34:36] <ch0k3> sorry
+[17:34:38] <ch0k3> mea culpa
+[17:34:44] <zetok> np
+[17:34:47] <ch0k3> zetok: thx
+[17:35:22] <ch0k3> similary to utox, it's still on alpha 
+[17:35:57] <ch0k3> but is it usable, still?
+[17:35:57] <zetok> err, no, I wouldn't say so
+[17:36:02] <Diadl0> [20:34] <ch0k3> I miss the feature list on githib <--- zetok: It's time to add it in the header :D
+[17:36:06] <sudden6> zetok: still couldn't reproduce your issue
+[17:36:08] <zetok> about being alpha, that is >.<
+[17:36:20] <ch0k3> Diadl0: no need for that
+[17:36:25] <zetok> Diadl0: might do
+[17:36:28] <zetok> oh
+[17:36:32] <ch0k3> Diadl0: I simply miss it, it was my fault
+[17:36:35] <sudden6> zetok: can you also reproduce without the wrong password at the first time?
+[17:36:41] <Diadl0> ch0k3: It's joke :)
+[17:36:52] <ch0k3> Diadl0: yeah, I got it ;)
+[17:36:59] * zetok didn't
+[17:37:08] <ch0k3> lol
+[17:37:13] <ch0k3> ok
+[17:37:17] <ch0k3> I'll give it a shot
+[17:37:19] <zetok> sudden6: yep
+[17:38:13] <zetok> sudden6: open qTox, I'll just send you the files
+[17:38:32] <zetok> password is 1234567
+[17:38:35] <ch0k3> btw
+[17:38:44] <sudden6> zetok: ok
+[17:38:55] <ch0k3> other than the linux distros listed on the github page
+[17:39:03] <ch0k3> is there any support for any other distro?
+[17:39:09] <ch0k3> looking for fedora
+[17:39:17] <ch0k3> ..oh
+[17:39:19] <ch0k3> I see it
+[17:39:20] <ch0k3> sorry
+[17:39:26] <ch0k3> I'm getting blind...
+[17:41:39] *** Joins: cisc (~cisc@ )
+[17:41:49] <zetok> ch0k3: https://qtox.github.io/blog/2016/08/10/Hello-World.html ← you might be interested in reading
+[17:45:28] <sudden6> zetok: nope, still not reproducible
+[17:45:43] <sudden6> are you sure you're on latest git?
+[17:46:53] <zetok> yeah
+[17:47:08] <zetok> hmm
+[17:47:29] <zetok> sudden6: I'm starting qTox with `-p del_encrypte`
+[17:48:03] <sudden6> shouldn't make a difference, neither should the thing with the wrong password
+[17:48:39] <zetok> oh wait
+[17:49:28] <zetok> sudden6: oh, nvm, I ran the wrong binary
+[17:49:55] <sudden6> well xD
+[17:50:11] <ch0k3> Aug 10, 2016 • Zetok Zalbavar
+[17:50:15] <ch0k3> a ha!
+[17:50:26] <ch0k3> you are the dev after all :)
+[17:52:17] <ch0k3> tox works over P2P?
+[17:52:56] <zetok> yep
+[17:53:15] <ch0k3> btw
+[17:53:33] <ch0k3> no apt repo for linux mint? (or should I use the sources from ubuntu?)
+[17:53:41] * zetok wonders
+[17:54:14] <zetok> ch0k3: ubuntu repo should work just fine, provided that you add one for the right version
+[17:54:21] <ch0k3> ok
+[17:54:23] <ch0k3> let me try
+[17:54:27] <zetok> sudden6: is DB's password changed when DB isn't even used?
+[17:55:22] <sudden6> zetok: no
+[17:55:40] <sudden6> but database != history anymore, so it's always loaded
+[17:55:55] <zetok> oh, I see
+[17:56:02] <sudden6> password isn't updated if db failed load
+[17:56:24] <sudden6> but that's some logical consequence
+[17:57:00] <ch0k3> zetok: for linux mint 17.3 I should select the ubuntu version 14.04? 
+[17:57:12] <zetok> ch0k3: I think so
+[17:57:14] <ch0k3> ok
+[17:57:19] <ch0k3> thx
+[18:00:04] <ch0k3> oh
+[18:00:12] <ch0k3> the apt sources has no pubkey
+[18:01:58] <sudden6> zetok: please note in the PR if you don't spot any issues anymore
+[18:02:05] <zetok> ok
+[18:03:01] <zetok> ok, I just managed to erase history \o/
+[18:03:19] <zetok> should be reproducible
+[18:03:45] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 252 seconds)
+[18:05:50] <zetok> sudden6: something like: 1. add friend; 2. send a message to the friend; 3. disable `Keep history`, but don't erase it; 4. Change profile name; 5. logout and login; 6. change password; 7. logout & login; 8. enable `Keep history`; 9. logout & login; 10. the message sent to friend is gone
+[18:08:01] <zetok> yep, it's reproducible
+[18:08:19] <sudden6> also on master? (pls say yes)
+[18:08:25] <zetok> lemme check
+[18:09:49] <zetok> oh wait
+[18:10:03] <zetok> can't really check that on master, since it crashes when I'm trying to delete logs
+[18:11:16] <sudden6> deleting logs isn't in your steps
+[18:11:30] <zetok> yeah
+[18:11:38] <zetok> "start clean"
+[18:11:42] <zetok> or so I thought
+[18:11:53] * zetok goes to delete them manually
+[18:14:40] <zetok> sudden6: yep, reproducible on master too
+[18:14:48] <zetok> oh well
+[18:16:09] <zetok> [18:15:57.612 UTC] persistence/db/rawdatabase.cpp:569 : Warning: Failed to prepare statement "SELECT count(*) FROM sqlite_master" with error 26
+[18:16:09] <zetok> [18:15:57.612 UTC] persistence/db/rawdatabase.cpp:178 : Warning: Database is unusable, check that the password is correct
+[18:16:09] <zetok> [18:15:58.058 UTC] persistence/db/rawdatabase.cpp:120 : Debug: Successfully upgraded to dynamic salt
+[18:16:09] <zetok> [18:15:58.058 UTC] persistence/db/rawdatabase.cpp:122 : Warning: Failed to set password with new salt
+[18:16:24] <zetok> got those again with the old db
+[18:16:30] *** Quits: ch0k3 (b2a2d3d5@ ) (Ping timeout: 260 seconds)
+[18:16:35] <zetok> old salt DB
+[18:20:12] <zetok> ok, it's displayed once when migrating and the message is kept
+[18:20:30] <zetok> still, not very correct to claim that setting new salt failed..
+[18:24:58] <zetok> ok, I didn't test removing the password
+[18:25:15] <zetok> perhaps something else
+[18:25:23] * zetok afk &
+[18:28:36] *** Joins: ch0k3 (b2a2d3d5@ )
+[18:29:08] <ch0k3> zetok: is there anything that coulbe be done to minimize background noises during the conversation?
+[18:29:27] <ch0k3> skype for instance uses filters to avoid background/echo noises
+[18:29:46] <ch0k3> this was something that put me away from utox
+[18:30:10] <ch0k3> but from a audio call on qtox it seems that suffers form the same syndrome
+[18:33:32] <ch0k3> and apart from that
+[18:34:14] <ch0k3> is there any signed binaries that could be verified, instead of the non-signed binaries?
+[18:34:22] <ch0k3> just in case this is compromised
+[18:42:12] *** Joins: Diadl0 (~diadlo@ )
+[18:47:56] <sudden6> ch0k3: qTox currently doesn't support audio filtering, it had to be removed because it created more issues than it solved
+[18:48:15] <sudden6> the best workaround is to use headphones
+[18:49:57] <Diadl0> zetok: I checked #3861. It's not a bug. It's minimal width of settings. If you make window wider you will can resize friend widget
+[18:50:41] <ch0k3> oh
+[18:50:42] <ch0k3> ok
+[18:50:43] <ch0k3> btw
+[18:51:05] <ch0k3> on debian there's no system tray icon
+[18:51:14] <ch0k3> nothing appears on my system tray
+[18:51:28] <ch0k3> on fedora its working 
+[18:51:33] <ch0k3> but not on debian 8
+[18:51:42] *** Joins: in1t3r (~LordShiva@ )
+[18:51:47] <ch0k3> does anyone has any clue?
+[18:51:55] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[18:52:06] <sudden6> ch0k3: systray is heavily dependent on the desktop environment, we need more info and the log output if possible
+[18:52:12] <Diadlo> ch0k3: What DE?
+[18:52:17] <ch0k3> xfce
+[18:52:50] <ch0k3> on fedora 23 while on the same xfce version, the system tray icon was working as expected
+[18:53:32] <sudden6> also the same qt version?
+[18:53:33] <ch0k3> on the stdout there are no errors whatsoever
+[18:53:41] <ch0k3> sudden6: 
+[18:53:44] <ch0k3> not sure
+[18:53:46] <ch0k3> need to check
+[18:53:50] <sudden6> on stdout there should be lots of output
+[18:53:59] <ch0k3> sudden6: not really 
+[18:54:14] <sudden6> also qTox shows the Qt version under "About"
+[18:54:19] <ch0k3> oh
+[18:54:47] <ch0k3> Qt version 5.3.2
+[18:54:56] <ch0k3> thats the version that it's not working
+[18:54:58] <ch0k3> on debian
+[18:55:01] <ch0k3> let me check on fedora
+[18:55:18] <zetok> ch0k3: there are signed binaries
+[18:55:33] <zetok> Diadlo: it is a but – I could resize it, and now I can't
+[18:55:54] <zetok> ch0k3: as for tray, old Qt versions have quite a lot of problems with it
+[18:56:10] <zetok> debian has an old Qt version
+[18:56:20] <zetok> Diadlo: bug*
+[18:56:24] <ch0k3> on Qt version 5.6.1 it's working
+[18:56:57] <zetok> nothing can be done about Qt version shipped by distro
+[18:57:00] <ch0k3> need to upgrade the Qt version than
+[18:57:34] -qtox-git-spam- [qTox] sudden6 opened pull request #3864: fix(core): don't emit idSet signal twice (master...fix_idset_emit) https://git.io/vXRAm
+[18:58:41] <sudden6> ch0k3: which packages did you use? maybe the support for systray just isn't compiled in?
+[18:58:58] <ch0k3> sudden6: I have no idea
+[18:59:07] <ch0k3> I simply add the apt sources
+[18:59:19] <sudden6> from where?
+[18:59:24] <ch0k3> from the opensuse repo and installed the binaries
+[18:59:36] <sudden6> ok
+[19:00:03] <sudden6> do you have the output of qTox already?
+[19:00:09] <ch0k3> yes
+[19:00:17] <ch0k3> is this thing on debug by default?
+[19:00:24] <sudden6> yes
+[19:00:39] <sudden6> can you put it on pastebin or something else?
+[19:01:01] <zetok> gist pls
+[19:01:04] <ch0k3> sure
+[19:02:05] <ch0k3> sudden6: http://pastebin.com/ByedHVtW
+[19:02:07] <ch0k3> there u go
+[19:06:40] <sudden6> ch0k3: seems like zetok was right, it's probably the old qt version
+[19:07:11] <ch0k3> the problem with that is that the Qt version is currently provided by the debian repos
+[19:07:25] <ch0k3> and I'm not very inclined in changing that
+[19:07:40] <ch0k3> :|
+[19:14:48] <abbat> I have debian 8 and Xfce and have no problems with systray icon. Probably systray icon simple disabled in settings?
+[19:16:12] <sudden6> abbat another question, would it make sense to move the emojis out of the qTox binary into /usr/share/emoticons?
+[19:18:16] <ch0k3> abbat: you are probably using a higher version of Qt as myself
+[19:18:57] <abbat> ch0k3, Tray icon in qTox does not depend on Qt version for Xfce
+[19:19:04] <abbat> It use Gtk backend
+[19:19:16] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 240 seconds)
+[19:19:23] <ch0k3> oh
+[19:19:42] <ch0k3> but my systray icon is working
+[19:20:00] <ch0k3> I'm can use it fine on other apps
+[19:20:03] <ch0k3> anyway
+[19:20:08] <ch0k3> I'll use fedora instead
+[19:20:13] <ch0k3> since with fedora is working
+[19:22:04] <abbat> sudden6, Splitting qTox for 2 packages (base binary and icons)?
+[19:22:29] <sudden6> abbat: yes
+[19:22:34] <sudden6> would it make sense?
+[19:23:36] <sudden6> one would also have to test the effect on loading time, but I first wanted to check with you if it even makes sense?
+[19:24:04] <abbat> sudden6, Yes it make sense. Most people don't use emoticons and splitting can decrease package size.
+[19:24:12] <zetok> :|
+[19:24:46] <zetok> abbat: how do you ensure that people get emoticons installed?
+[19:24:56] <sudden6> Most people don't use emoticons <- I don't think that's true
+[19:25:29] <sudden6> we should atleast ship one complete set by default
+[19:27:35] <abbat> I think qtox can check if emoticons files exists and disable emoticons support if files not exists (and suggest to user instructions).
+[19:28:31] *** Joins: Diadl0 (~diadlo@ )
+[19:28:58] <zetok> …
+[19:29:15] <zetok> sudden6: that's creating a problem
+[19:29:17] <zetok> sudden6: don't
+[19:29:58] <sudden6> I'd rather pack the minimal set into the binary and have extra packages available
+[19:30:07] <zetok> that would be stupid
+[19:30:13] <sudden6> why?
+[19:30:15] *** Quits: ch0k3 (b2a2d3d5@ ) (Quit: Page closed)
+[19:30:23] <zetok> "why" ?
+[19:30:26] <sudden6> most users will be happy with the default set
+[19:30:40] <zetok> ok, default ≠ minimal
+[19:31:02] <sudden6> oh, by default I meant one complete set
+[19:31:19] <zetok> that's fine :)
+[19:32:33] <zetok> sudden6: um, "minimal" isn't really the right word when it comes to what qTox should ship by default
+[19:33:02] <sudden6> yeah, sorry
+[19:33:19] <zetok> so every time that I hear proposal to ship only bare minimum, I'm on 'no'
+[19:33:47] <sudden6> to reword: ship only one complete set in the binary, the rest as optional package
+[19:34:22] <zetok> about shipping only 1 set by default, I don't know
+[19:34:31] <zetok> people like to think that they have choice
+[19:35:06] <zetok> I'm almost sure that 2 sets would do
+[19:35:37] <sudden6> would be no change to the current "MINIMAL" config
+[19:35:45] <sudden6> *nearly no change
+[19:36:44] <zetok> if you really want, why not
+[19:37:09] <zetok> (Gentoo packages will keep using all sets)
+[19:41:18] <sudden6> emojione and classic sets as "Default" packages?
+[19:41:32] <sudden6> emojione needs some cleanup, btw
+[19:43:55] <sudden6> zetok: can you agree with that? ↑
+[19:47:43] <sudden6> abbat: can you implent that for OBS packages? ↑
+[19:48:19] <sudden6> qTox loads emoji from paths in this function https://github.com/qTox/qTox/blob/master/src/persistence/smileypack.cpp#L79 don't know if you need to know more
+[19:53:19] <sudden6> bye
+[19:57:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[19:59:53] <abbat> Yes,I can
+[20:01:12] *** Joins: ch0k3 (b2a2cd1b@ )
+[20:01:17] <ch0k3> hi again
+[20:01:28] <ch0k3> how can I change my avatar?
+[20:06:59] <ch0k3> just found it :)
+[20:07:25] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[20:15:12] *** Quits: ch0k3 (b2a2cd1b@ ) (Quit: Page closed)
+[20:19:17] *** Joins: initramfs (~initramfs@ )
+[20:22:50] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 240 seconds)
+[20:46:32] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[21:15:11] -qtox-git-spam- [qTox] Diadlo opened pull request #3865: fix(settings): Changed grid layout on form layout (master...settingsResize) https://git.io/vX0Z3
+[21:52:28] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:01:59] <Diadlo> zetok: Are you here?
+[22:02:05] <zetok> Diadlo: yep
+[22:02:18] <Diadlo> Can you reword https://github.com/qTox/qTox/pull/3865#issuecomment-258974554?
+[22:03:21] <zetok> when I have tab `Add friends` open I can resize friendlist, but when I open settings I can't
+[22:03:50] <Diadlo> Hm... Are you sure, that you check right PR?
+[22:04:13] <Diadlo> Because it works for me
+[22:04:24] <zetok> PR #3865 was merged into «test3865» branch.
+[22:04:28] <zetok> pretty sure
+[22:04:45] <Diadlo> Can you capture the video?
+[22:09:47] <zetok> Diadlo: https://a.uguu.se/IXbCpfRlAAqB.webm
+[22:11:16] <Diadlo> In short, minimum width of QTabWidget is maximum of with of tabs. Can you try to try this? 1) https://github.com/qTox/qTox/blob/master/src/widget/form/settingswidget.cpp#L56 test issue with removing elements one by one (don't forget change size in .h) => you will found tab, which block resizing for you 2) Change position of elements on tab one by one => you will found element, which block resizing 3) Move this element somewhere
+[22:12:33] <zetok> ok
+[22:12:34] <Diadlo> For me, blocking elements was font + font size
+[22:12:41] <zetok> I can do that, but tomorrow
+[22:12:50] <Diadlo> Ok. Thanks
+[22:15:36] <Diadlo> zetok: What you think about adding check compiler version? #3856
+[22:16:18] <zetok> Diadlo: sure, but I don't know how to do that
+[22:16:33] <Diadlo> http://stackoverflow.com/questions/801279/finding-compiler-vendor-version-using-qmake#807398
+[22:16:57] <zetok> uh
+[22:17:00] <zetok> that looks ugly
+[22:17:12] <Diadlo> A little :)
+[22:17:48] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:18:10] <Diadlo> Just 2 lines
+[22:18:59] <Diadlo> Good night
+[22:19:05] <zetok> night
+[22:22:08] *** Joins: cisc (~cisc@ )
+[22:24:47] *** Quits: cisc (~cisc@ ) (Client Quit)
+[22:33:58] *** Joins: cisc (~cisc@ )
+[22:38:00] <initramfs> Regarding compiler version, that code assumes gcc/g++ and will fail when using other compilers like clang
+[22:40:16] <iphy> initramfs: how's the reformatting?
+[22:40:46] <initramfs> Well, the rules PR hasn't been merged yet
+[22:40:58] <initramfs> And I'm looking into other tools like clang-tidy
+[22:41:27] <initramfs> Because it seems like if we can get something like clang-tidy set up, all the rules that were previously "unenforceable" become trivial
+[22:42:21] <iphy> yes
+[22:42:39] <iphy> clang-tidy is great
+[22:42:43] <initramfs> Oh and for the record, I completely agree with your issue on instance pointers calling static functions should be banned
+[22:42:58] <iphy> good
+[22:43:00] <initramfs> But I just don't see a way to reliably pick them out
+[22:43:12] <initramfs> Again, clang-tidy could help
+[22:43:41] <initramfs> Because you have to understand, not all of these things occur as a consequence of one individual accidentally using a instance pointer
+[22:43:56] <initramfs> It could be through evolution of code that a member function was made static
+[22:44:47] <initramfs> And trying to catch every single use of said function during a review is difficult, especially if it was not clearly stated that the member function was converted into a static member function
+[22:45:29] <iphy> ((Core *)nullptr)->staticFun();
+[22:46:05] <iphy> initramfs: UB or not?
+[22:47:11] <iphy> in fact
+[22:47:29] <iphy> initramfs: ((Core *)nullptr)->nonStaticNonVirtualFun(); // UB?
+[22:48:58] <initramfs> Probably
+[22:50:26] <iphy> initramfs: no
+[22:50:30] <iphy> why?
+[22:50:36] <iphy> and why probably? why not definitely?
+[22:51:30] <iphy> also, yes, it's hard to detect the static function called through pointer thing
+[22:51:38] <iphy> you'd need to write a clang-tidy plugin :)
+[22:51:50] <iphy> I'm surprised there is no analysis for it already
+[22:53:06] <initramfs> Yes I know, I'd be writing a few plugins
+[22:53:36] <initramfs> > and why probably? why not definitely? Because there is probably some obscure rule in the standard that forbids or defines some behaviour that I don't know about
+[22:54:57] <iphy> ok
+[22:55:20] <iphy> anyway, no it's not UB
+[22:56:12] *** Joins: jjuran_ (~jjuran@ )
+[22:56:35] <iphy> it's somewhat unclear in the standard, because it contradicts itself on this topic
+[22:56:50] *** Joins: sudden6 (~anonymous@ )
+[22:57:02] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 268 seconds)
+[22:57:02] *** jjuran_ is now known as jjuran
+[22:57:15] <iphy> but general consensus is that just dereferencing a null pointer is not UB, just using the lvalue resulting from it is
+[22:58:30] <initramfs> Well, as part of the function call, isn't the result of the dereferenced pointer being used?
+[22:58:40] <iphy> no
+[22:58:42] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[22:59:03] <iphy> only if inside the function you use it
+[22:59:20] <iphy> if it's a virtual function, it's UB
+[23:00:06] <initramfs> Right
+[23:03:06] <sudden6> zetok: you wrote something about bugs in qTox master in the dynamic_salt PR, care to write them down?
+[23:04:11] <iphy> std::dynamic_salt
+[23:05:04] <initramfs> If the type of the expression is “pointer to T,” the type of the result is “T.”
+[23:05:04] <initramfs> [ Note: a pointer to an incomplete type (other than cv void) can be dereferenced.
+[23:05:07] <initramfs> Jesus....
+[23:06:17] <iphy> it can be dereferenced, and the resulting lvalue can be bound to an lvalue reference
+[23:06:22] <initramfs> Yeah
+[23:06:34] <initramfs> Talk about type safety...
+[23:07:30] <iphy> it's totally type safe :)
+[23:08:15] <initramfs> Yes
+[23:16:34] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[23:33:16] <initramfs> Hmm
+[23:33:33] <initramfs> Interestingly null dereference is UB in C
+[23:38:48] <iphy> yep
+[23:40:01] <iphy> initramfs: and clang implements it correctly
+[23:42:09] <initramfs> What does that mean, how does one "implement UB correctly"
+[23:44:20] <iphy> in that in C++ it's not UB :)
+[23:49:47] <initramfs> Oh yeah I tried it
+[23:50:14] <initramfs> Clang has a lovely -Weverything flag
+[23:50:33] <initramfs> Which I essentially use as a "can't be bothered to check the standard, let's just see what clang says"
+[23:52:05] *** Joins: DaSpirit (~DaSpirit@ )
+[23:55:32] <iphy> initramfs: yeah, that's useful
+[23:55:57] <iphy> https://github.com/TokTok/c-toxcore/blob/master/CMakeLists.txt#L61-L114
+[23:56:14] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[23:56:34] <iphy> I think gcc also has -Weverything now
+[23:57:39] <initramfs> Really? My GCC 6.2 doesn't seem to understand it
+[23:58:13] <initramfs> gcc: error: unrecognized command line option ‘-Weverything’
+[23:58:22] <initramfs> gcc (Gentoo Hardened 6.2.0-r1 p1.1) 6.2.0
+[23:58:58] <iphy> ok, maybe not
