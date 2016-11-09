@@ -1,0 +1,166 @@
+[00:24:48] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[01:05:29] *** shiva is now known as in1t3r
+[01:30:26] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[01:30:40] *** Joins: Emcy (~MC@ )
+[01:31:16] *** Joins: athan (~athan@ )
+[02:02:51] *** Joins: shiva__ (~LordShiva@ )
+[02:04:30] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 268 seconds)
+[02:37:40] *** Joins: in1t3r (~LordShiva@ )
+[02:40:41] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[05:00:14] <initramfs> iphy: Are you there?
+[05:03:24] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[05:56:10] *** Joins: cisc (~cisc@ )
+[05:57:58] *** Quits: athan (~athan@ ) (Ping timeout: 258 seconds)
+[06:20:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:24:10] *** Joins: cisc (~cisc@ )
+[07:14:46] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[07:18:21] *** Joins: athan (~athan@ )
+[07:40:55] *** Joins: sudden6 (~anonymous@ )
+[08:06:32] *** Joins: cenysor (~cenysor@ )
+[08:08:52] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[08:17:00] *** Joins: in1t3r (~LordShiva@ )
+[08:20:18] *** Quits: in1t3r (~LordShiva@ ) (Client Quit)
+[08:21:44] *** Joins: in1t3r (~LordShiva@ )
+[08:22:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[08:43:05] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[08:58:18] *** Joins: sudden6 (~anonymous@ )
+[09:17:58] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[09:28:37] *** Joins: sudden6 (~anonymous@ )
+[09:33:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[09:43:13] *** Joins: CGGB (~CGGB@ )
+[09:43:49] *** Joins: sudden6 (~anonymous@ )
+[09:53:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[09:59:31] *** Joins: sudden6 (~anonymous@ )
+[10:01:33] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 256 seconds)
+[10:25:11] *** Joins: SkyzohKey (~skyzohkey@ )
+[10:48:39] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXE2S
+[10:48:39] -qtox-git-spam- qTox/master 2fd07f6 Zetok Zalbavar: docs(user manual): add info about ToxMe registration
+[10:50:34] <zetok> ffs, did gh just break its interface?
+[10:52:41] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[10:54:32] <zetok> anyway, looks like the problem with migrating irc logs to gitlab was caused by github :|
+[10:59:37] *** Joins: in1t3r (~LordShiva@ )
+[11:01:38] <zetok> sudden6: classic emoticon pack shouldn't be included by default
+[11:03:31] <zetok> sudden6: good ones are emojine and "universe"
+[11:12:37] *** Quits: athan (~athan@ ) (Ping timeout: 252 seconds)
+[11:21:21] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 268 seconds)
+[11:24:51] *** Joins: in1t3r (~LordShiva@ )
+[11:31:05] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 256 seconds)
+[11:33:41] <zetok> Diadlo: um, there's a problem
+[11:33:54] <zetok> Diadlo: removing tabs doesn't help
+[11:35:46] <zetok> I did that on top of master though, did you mean on top of your PR?
+[11:46:00] *** Joins: in1t3r (~LordShiva@ )
+[13:22:33] *** Joins: LittleVulpix (~Miranda@ )
+[13:58:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[14:03:00] *** Joins: sudden6 (~anonymous@ )
+[14:22:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[14:43:41] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 265 seconds)
+[14:59:12] *** Joins: in1t3r (~LordShiva@ )
+[15:05:45] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[15:19:29] *** Joins: in1t3r (~LordShiva@ )
+[15:22:51] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[15:30:18] *** Joins: sudden6 (~anonymous@ )
+[15:31:21] *** Joins: cenysor (~cenysor@ )
+[15:59:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[17:03:36] *** Joins: sudden6 (~anonymous@ )
+[17:19:48] *** Quits: VVD (~VVD@ ) (Ping timeout: 265 seconds)
+[17:23:26] *** Joins: VVD (~VVD@ )
+[18:05:07] *** Joins: Emcy (~MC@ )
+[18:06:32] -qtox-git-spam- [qTox] zetok opened pull request #3866: feat(UI): add some accessibility labels to login pages (master...feat-access-login) https://git.io/vXuVU
+[18:20:06] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[18:36:03] *** Joins: in1t3r (~LordShiva@ )
+[19:03:25] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[19:13:42] <Diadlo> zetok: Hello. I have no idea. My PR fix problem for me
+[19:13:54] <Diadlo> Can anyone test it?
+[19:32:12] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[19:33:16] *** Joins: Diadlo (~diadlo@ )
+[19:51:49] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[19:52:21] *** Joins: Diadlo (~diadlo@ )
+[20:02:56] *** Joins: athan (~athan@ )
+[20:12:02] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[20:13:01] *** Joins: Diadlo (~diadlo@ )
+[20:39:11] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[20:40:49] *** Joins: cisc (~cisc@ )
+[20:46:34] <zetok> Diadlo: um, so what about stuff with ui/redesign?
+[20:47:09] <Diadlo> zetok: It's going on (see https://github.com/qTox/qTox/pull/3855)
+[20:47:42] <zetok> yes, but what about stuff that might conflict with it, and whether people should be waiting for it to be done?
+[20:48:22] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[20:49:16] <Diadlo> I don't understand, what you want? I plan split this PR on smaller ones
+[20:49:19] <zetok> Diadlo: https://gitlab.com/qTox/qtox-irc-logs/blob/3d16150d80ab0a4eb2f0243995ea87c1abd87224/2016/11/%23qtox_20161107.log.txt#L145
+[20:50:00] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[20:52:09] <Diadlo> I think, yes. There is no reason to wait
+[20:52:38] <zetok> iphy: ↑
+[20:52:52] <Diadlo> I don't want promise anything, but I will try merge it with all efforts :)
+[20:52:53] <iphy> hm?
+[20:53:02] <iphy> ah
+[20:53:03] <zetok> iphy: no need to wait for ui/redesign anymore
+[20:53:08] <iphy> I see, ok
+[20:53:31] <iphy> I'll wait for clang-format to be done
+[20:53:46] <iphy> I like to not have to bother with formatting
+[20:54:14] <Diadlo> I plan create first unit-test until weekend
+[20:56:17] *** Joins: cisc (~cisc@ )
+[21:04:01] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:28:21] -qtox-git-spam- [qTox] Diadlo opened pull request #3867: refactor(toxid): Removed Core dependency from ToxId (master...removeCoreDepend) https://git.io/vXzIj
+[21:41:57] *** Quits: athan (~athan@ ) (Ping timeout: 248 seconds)
+[21:42:02] *** Joins: cisc (~cisc@ )
+[21:49:56] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[22:03:23] *** Joins: in1t3r (~LordShiva@ )
+[22:16:53] <Diadlo> zetok: ping
+[22:17:00] <zetok> Diadlo: pong
+[22:17:33] <Diadlo> To tests we need to split qtox on 3 parts: client + static library + tests
+[22:17:58] <Diadlo> What you think: which structure should be?
+[22:18:18] <zetok> um?
+[22:18:34] <zetok> sorry, I'm not sure what the question is about
+[22:18:45] <Diadlo> Ok. Wait a minute
+[22:20:24] <Diadlo> https://gist.github.com/Diadlo/68450b5a158ccc25720de054715f6c14
+[22:22:12] <zetok> hmm
+[22:22:20] <zetok> s/client/ui/ ?
+[22:22:22] <Diadlo> 1) Do we need `src/` folder, if we didn't split headers in different ones? 2) Where should be `translation/`?
+[22:22:41] <zetok> 1. – yes, those dirs would go under it
+[22:23:06] <zetok> translations can stay where they are..?
+[22:23:35] <zetok> or would translations need to be split too?
+[22:23:37] <Diadlo> In real, client will not contain ui. Only main
+[22:23:49] <zetok> oh, I see
+[22:24:36] *** Joins: DaSpirit (~DaSpirit@ )
+[22:24:40] <Diadlo> We can leave `translations` here, but libqtox will contains related path to it
+[22:24:56] <Diadlo> I think it's not a problem
+[22:25:53] <Diadlo> [01:22] <zetok> 1. – yes, those dirs would go under it <-- Sorry, I don't understand
+[22:26:08] <zetok> src/{client,libqtox,tests}
+[22:26:21] <Diadlo> Hm...
+[22:26:57] <Diadlo> So *.pro files will be in the same directory with sources
+[22:27:02] <Diadlo> Are you sure?
+[22:28:04] <zetok> I'm not
+[22:28:11] <zetok> just wondering if that wouldn't be better
+[22:28:25] *** Joins: athan (~athan@ )
+[22:28:32] <Diadlo> Who can know right way?
+[22:28:33] <zetok> e.g. src/libqtox/src/toxid.cpp
+[22:28:40] <Diadlo> M...
+[22:28:54] <Diadlo> Better remove first `src/`
+[22:29:51] <zetok> ok
+[22:30:04] <Diadlo> iphy: ping?
+[22:30:08] <zetok> what about having .pro files just under `src/` ?
+[22:30:27] <iphy> Diadlo: pong
+[22:30:32] <zetok> src/libqtox.pro ; src/libqtox/toxid.cpp
+[22:30:56] <Diadlo> It's Qt limitation. We should have `{dir}/{dir}.pro`
+[22:31:02] <zetok> oh
+[22:31:10] <Diadlo> iphy: What you think about project structure?
+[22:31:13] <Diadlo> ^
+[22:31:16] <iphy> Diadlo: I have a test in my fork
+[22:31:53] <iphy> https://github.com/TokTok/qTox/blob/master/test/core/core_test.cpp
+[22:32:02] <Diadlo> zetok: We can migrate on CMake :)
+[22:32:35] <zetok> Diadlo: yeah
+[22:32:47] <zetok> we probably should do that
+[22:33:06] <zetok> https://github.com/qTox/qTox/issues/1153
+[22:36:15] <Diadlo> iphy: does your CMake work correct?
+[22:36:31] <iphy> Diadlo: for what value of correct?
+[22:36:40] <iphy> it works for me on linux and osx
+[22:36:47] <iphy> it works on travis to cross compile to windows
+[22:36:54] <iphy> that's all I know
+[22:36:59] <Diadlo> Perfect
+[22:37:01] <iphy> I haven't tested on windows, and it'll probably not work there
+[22:37:04] <iphy> because of pkg-config
+[22:37:21] <Diadlo> Why you didn't send the PR?
+[22:42:00] <Diadlo> iphy: Ok. Can you send this PR without tests?
+[23:24:19] <iphy> Diadlo: feel free to rip it out of my repo
+[23:24:28] <Diadlo> Ok
+[23:45:08] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[23:49:57] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
