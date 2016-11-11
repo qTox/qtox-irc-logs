@@ -1,0 +1,189 @@
+[00:05:28] *** Quits: cisc (~cisc@ ) (Ping timeout: 245 seconds)
+[00:05:43] *** Joins: cisc (~cisc@ )
+[00:13:28] *** Joins: DaSpirit (~DaSpirit@ )
+[00:16:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[01:43:02] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:46:45] *** Joins: cisc (~cisc@ )
+[01:55:07] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[02:26:17] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[02:27:18] *** Joins: VVD (~VVD@ )
+[02:33:35] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:04:01] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:04:22] *** Joins: VVD (~VVD@ )
+[06:14:05] *** Quits: koshii (~w@ ) (Ping timeout: 268 seconds)
+[06:49:38] *** Joins: koshii (~w@ )
+[08:41:29] *** Quits: Dragofix (Dragofix@ ) (Quit: Duck and cover!)
+[08:47:37] *** Joins: Dragofix (Dragofix@ )
+[09:06:46] *** Joins: rerumnovarum (~user-reru@ )
+[09:16:34] *** Joins: CGGB (~CGGB@ )
+[09:25:29] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 260 seconds)
+[10:24:21] *** Joins: kadinparker[m] (kadinparke@ )
+[10:25:51] *** Joins: Diadl0 (~diadlo@ )
+[10:28:31] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[10:28:52] *** Joins: Diadl0 (~diadlo@ )
+[10:30:13] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
+[10:30:24] *** Joins: Diadl0 (~diadlo@ )
+[10:35:21] *** Joins: Diadlo2 (~diadlo@ )
+[10:35:21] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[10:40:52] *** Joins: Diadl0 (~diadlo@ )
+[10:41:14] *** Quits: Diadlo2 (~diadlo@ ) (Ping timeout: 258 seconds)
+[10:51:16] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[10:51:26] *** Joins: Diadl0 (~diadlo@ )
+[10:51:49] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[10:52:01] *** Joins: Diadl0 (~diadlo@ )
+[10:53:39] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
+[10:55:15] *** Joins: Diadl0 (~diadlo@ )
+[11:02:57] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[11:03:10] *** Joins: Diadl0 (~diadlo@ )
+[11:09:28] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:13:14] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[11:13:27] *** Joins: Diadl0 (~diadlo@ )
+[11:15:06] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
+[11:15:46] *** Joins: Diadl0 (~diadlo@ )
+[11:16:49] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
+[11:17:02] *** Joins: Diadl0 (~diadlo@ )
+[11:29:15] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[11:29:29] *** Joins: Diadl0 (~diadlo@ )
+[11:33:34] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[11:33:34] *** Joins: Diadlo2 (~diadlo@ )
+[11:35:18] *** Quits: Diadlo2 (~diadlo@ ) (Read error: Connection reset by peer)
+[11:35:38] *** Joins: Diadlo2 (~diadlo@ )
+[11:36:46] *** Quits: Diadlo2 (~diadlo@ ) (Client Quit)
+[11:36:56] *** Joins: Diadlo2 (~diadlo@ )
+[11:52:29] *** Quits: Diadlo2 (~diadlo@ ) (Quit: Konversation terminated!)
+[11:52:30] *** Joins: Diadl0 (~diadlo@ )
+[12:05:57] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 248 seconds)
+[12:12:21] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 248 seconds)
+[12:16:56] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 265 seconds)
+[12:21:34] *** Joins: CGGB (~CGGB@ )
+[12:43:59] *** Joins: sudden6 (~anonymous@ )
+[12:54:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[13:17:58] *** Joins: sudden6 (~anonymous@ )
+[13:36:21] *** Joins: st4ll1 (~st4ll1@ )
+[13:56:59] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[14:02:22] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[14:03:58] *** Joins: Emcy (~MC@ )
+[14:12:13] *** Joins: rerumnovarum (~user-reru@ )
+[14:23:03] *** Joins: abbat (~Anton@ )
+[14:28:50] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[14:36:19] *** Joins: Emcy (~MC@ )
+[14:56:32] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[15:06:52] *** Joins: Emcy (~MC@ )
+[15:25:40] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[15:34:38] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 245 seconds)
+[15:35:36] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 240 seconds)
+[15:36:19] *** Joins: Emcy (~MC@ )
+[15:41:27] *** Joins: Emcy_ (~MC@ )
+[15:41:46] *** Joins: cenysor (~cenysor@ )
+[15:42:56] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[15:59:40] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[16:00:17] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[16:15:29] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:53:48] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 245 seconds)
+[17:03:07] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:06:23] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[17:20:33] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[17:25:13] *** Joins: Emcy (~MC@ )
+[17:25:13] *** Quits: Emcy (~MC@ ) (Changing host)
+[17:25:13] *** Joins: Emcy (~MC@ )
+[17:36:40] *** Joins: Emcy_ (~MC@ )
+[17:38:06] *** Joins: st4ll1 (~st4ll1@ )
+[17:38:18] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[17:45:12] *** Joins: cisc (~cisc@ )
+[17:50:47] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 246 seconds)
+[17:50:57] *** Joins: Emcy (~MC@ )
+[17:50:57] *** Quits: Emcy (~MC@ ) (Changing host)
+[17:50:57] *** Joins: Emcy (~MC@ )
+[17:54:36] *** Joins: Emcy_ (~MC@ )
+[17:56:24] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[17:56:47] *** Quits: Emcy_ (~MC@ ) (Client Quit)
+[18:01:15] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:10:12] *** Joins: cisc (~cisc@ )
+[18:28:39] *** Joins: rerumnovarum (~user-reru@ )
+[18:40:02] *** Joins: shiva (~LordShiva@ )
+[18:40:09] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[18:52:42] *** Joins: Emcy (~MC@ )
+[19:45:06] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[19:45:45] *** Joins: Diadlo (~diadlo@ )
+[19:57:39] *** Joins: initramfs (~initramfs@ )
+[20:03:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:04:00] *** Joins: LittleVulpix (~Miranda@ )
+[20:04:23] *** Joins: athan (~athan@ )
+[20:23:10] *** Quits: Sephi (~me@ ) (Ping timeout: 265 seconds)
+[20:23:49] *** Joins: Sephi (~me@ )
+[20:30:01] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 268 seconds)
+[20:34:23] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[20:34:47] <initramfs> iphy: You there?
+[20:35:14] <iphy> Yes
+[20:36:00] *** Joins: Diadlo (~diadlo@ )
+[20:37:44] *** Quits: shiva (~LordShiva@ ) (Quit: Leaving)
+[20:38:41] *** Joins: in1t3r (~LordShiva@ )
+[20:44:47] *** Joins: rerumnovarum (~user-reru@ )
+[20:51:00] <initramfs> Oh oops sorry
+[20:51:16] <initramfs> The OSX binary you sent worked with a few issues
+[20:51:31] <initramfs> What exactly did you change?
+[21:06:41] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[21:07:37] *** Joins: athan (~athan@ )
+[21:21:21] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 260 seconds)
+[21:36:21] *** Joins: sudden6 (~anonymous@ )
+[21:47:33] <sudden6> hi people
+[21:50:26] <initramfs> Hi
+[21:51:55] <oranges> hi sudden6 
+[21:52:49] <sudden6> initramfs: merge #3860 ?
+[21:53:22] <initramfs> Yeah I'll do it now
+[21:54:29] <initramfs> Done
+[21:54:29] -qtox-git-spam- [qTox] initramfs pushed 1 new commit to master: https://git.io/vXw8H
+[21:54:29] -qtox-git-spam- qTox/master 28c2915 initramfs: fix(ui): prevent text style from being reset during retranslation...
+[21:54:47] <sudden6> nice thx :)
+[21:59:03] <sudden6> initramfs: Diadlo suggested adding "src" to the include path, removing it from include paths, what do you think about this?
+[21:59:38] <initramfs> Hmm
+[22:00:08] <initramfs> Well, I don't mind either I guess
+[22:00:28] <sudden6> IMO it makes sense, it removes redundancy
+[22:00:37] <initramfs> Sure
+[22:01:06] <Diadlo> Hi everyone :)
+[22:01:18] <sudden6> hi
+[22:05:06] <initramfs> hi
+[22:05:12] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:07:17] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[22:20:16] <iphy> initramfs: I rewrite the link paths in the binaries of the bundle
+[22:21:45] <initramfs> Link paths to what? Qt?
+[22:23:48] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 245 seconds)
+[22:28:25] *** Joins: in1t3r (~LordShiva@ )
+[22:34:10] <iphy> Everything
+[22:34:18] <iphy> Including Qt
+[22:35:39] <initramfs> Right
+[22:49:41] <vindelschtuffen> is qtox from master compiling right now?
+[22:50:56] <sudden6> vindelschtuffen: yes
+[22:51:04] <vindelschtuffen> sudden6: thanks
+[22:51:22] <sudden6> qtox master should nearly always build
+[22:51:34] <sudden6> at least thats what we try ;)
+[22:54:35] <vindelschtuffen> currently I'm failing to compile it, just wanted to make sure it was me :)
+[22:58:19] <sudden6> Would it be desireable to compile qTox with -Wall -Wextra ?
+[22:58:31] <sudden6> and not generate >1k warnings?
+[22:58:44] <sudden6> also -Wold-style-cast is nice
+[23:00:33] *** Joins: DaSpirit (~DaSpirit@ )
+[23:02:06] *** Joins: shiva (~LordShiva@ )
+[23:03:54] <initramfs> sudden6: Try -Weverything and observe the spam
+[23:04:05] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 248 seconds)
+[23:04:36] *** Joins: in1t3r (~LordShiva@ )
+[23:05:09] <sudden6> I'm currently reading gcc docs about possible -Wsomething options, as enabling everything isn't currently viable I think
+[23:06:17] *** Quits: shiva (~LordShiva@ ) (Read error: Connection reset by peer)
+[23:07:30] <initramfs> Oh no I know
+[23:09:02] <iphy> sudden6: https://github.com/TokTok/c-toxcore/blob/master/CMakeLists.txt#L69
+[23:10:08] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 250 seconds)
+[23:18:34] <iphy> sudden6: enable everything, then selectively disable things until you have no more warnings
+[23:19:14] <iphy> sudden6: then you can go and disable each suppression flag individually and inspect the warnings to decide whether to keep suppressing, or whether that warning makes sense and needs to be fixed
+[23:20:10] <sudden6> iphy: thx, good idea
+[23:29:27] *** Quits: smaragdus (~omoo@ ) (Read error: Connection reset by peer)
+[23:47:43] <sudden6> seems like current state isn't a lost case, -Wall -Wextra -pedantic cause only a few warnings about variable length arrays being unsupported in ISO C++
+[23:50:14] <iphy> they are also unsupported in msvc
+[23:50:27] <iphy> I guess you're not targetting that
+[23:50:36] <sudden6> nope
+[23:50:52] <sudden6> is qt even supporting msvc?
+[23:50:57] <sudden6> I don't think so
+[23:51:03] <iphy> stack overflows are much more fun than std::vector
+[23:51:19] <iphy> sudden6: I think so
+[23:51:51] <iphy> https://wiki.qt.io/Building_Qt_Desktop_for_Windows_with_MSVC
+[23:53:09] <sudden6> doesn't look like a well supported page
+[23:55:44] <sudden6> https://doc.qt.io/qt-5/windows-building.html seems it's possible
+[23:58:01] *** Joins: smaragdus (~omoo@ )
