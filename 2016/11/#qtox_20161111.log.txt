@@ -1,0 +1,253 @@
+[00:15:02] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[00:19:03] *** Joins: athan (~athan@ )
+[00:45:05] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[00:57:12] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[01:05:03] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[01:15:01] *** Joins: jjuran (~jjuran@ )
+[01:17:54] *** Joins: cisc (~cisc@ )
+[01:33:24] *** Joins: smaragdus (~omoo@ )
+[01:42:05] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[01:48:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[01:57:35] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:04:43] *** Joins: athan (~athan@ )
+[02:08:50] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 246 seconds)
+[02:39:24] *** Joins: cisc (~cisc@ )
+[02:45:21] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:50:17] *** Joins: cisc (~cisc@ )
+[02:53:37] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[03:10:10] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[03:32:04] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:06:51] *** Quits: athan (~athan@ ) (Quit: Lost terminal)
+[04:25:16] *** Joins: jjuran (~jjuran@ )
+[05:53:30] *** Joins: Chiitoo (~Chiitoo@ )
+[06:06:03] *** Joins: MiokIry (~Miok@ )
+[06:11:21] <MiokIry> scala is gonna blow up my brain XD
+[07:01:18] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[07:11:44] *** Joins: initramfs (~initramfs@ )
+[08:14:16] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[08:15:37] <zetok> lets hope not >.<
+[08:36:54] *** Joins: sudden6 (~anonymous@ )
+[08:38:03] -qtox-git-spam- [qTox] sudden6 opened pull request #3870: fix(chatlog): silence warning about unused parameters (master...fix_warnings) https://git.io/vXrYn
+[08:49:13] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[09:04:03] *** Joins: st4ll1 (~st4ll1@ )
+[09:23:45] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 265 seconds)
+[10:00:38] *** Joins: cenysor (~cenysor@ )
+[10:12:29] *** Joins: st4ll1 (~st4ll1@ )
+[10:24:37] *** Joins: rerumnovarum (~user-reru@ )
+[10:35:16] *** Joins: Diadl0 (~diadlo@ )
+[10:35:48] *** Joins: CGGB (~CGGB@ )
+[10:49:32] *** Quits: SocksPls (~sockspls@ ) (Remote host closed the connection)
+[10:51:03] *** Joins: sockspls (~sockspls@ )
+[10:54:37] *** Joins: smaragdus (~omoo@ )
+[11:07:41] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[11:10:10] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 258 seconds)
+[11:24:35] *** Joins: Diadl0 (~diadlo@ )
+[11:30:24] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 260 seconds)
+[11:43:01] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 248 seconds)
+[11:56:54] *** Joins: sudden6 (~anonymous@ )
+[11:59:36] *** Joins: SkyzohKey (~skyzohkey@ )
+[12:04:31] *** Quits: dan- (~d@ ) (Quit: Nyan nyan)
+[12:16:42] <SkyzohKey> what library does qTox use to handle a/v ?
+[12:16:50] <SkyzohKey> (or libraries)
+[12:21:50] *** Joins: mva (znc@ )
+[12:21:56] <mva> hi there
+[12:22:39] <mva> is it a documentation of http api qTox using to resolve users from user@domain.tld notation instead of toxdns?
+[12:24:56] *** Joins: dan- (~d@ )
+[12:24:56] *** Quits: dan- (~d@ ) (Changing host)
+[12:24:56] *** Joins: dan- (~d@ )
+[12:26:39] <tux3> mva, qTox uses the toxme.io API, instead of the old ToxDNS api, you can find some documentation here: https://github.com/LittleVulpix/toxme/blob/master/doc/api.md
+[12:28:50] <tux3> SkyzohKey, we use OpenAL and FFMpeg with some platform-specific APIs (v4l2, DirectShow, AVFoundation)
+[12:30:07] <SkyzohKey> tux3: thx, i guess i'll start implementing a/v to Ricin soon
+[12:30:15] <tux3> Sounds good :)
+[12:30:28] <SkyzohKey> Yeah, someone reproched me that UI was a lie xD
+[12:30:39] <SkyzohKey> (which is true c:)
+[12:30:48] <tux3> It does look good tho :P
+[12:30:59] <SkyzohKey> thx
+[12:31:07] <SkyzohKey> did u saw that pr ? https://github.com/TokTok/c-toxcore/pull/263
+[12:32:25] <tux3> If it works, that's wonderful
+[12:32:48] <tux3> I don't know what's the ETA for new groupchats, but in the meantime it's something
+[12:33:07] <SkyzohKey> ETA for new groupchats is ~ 7 years
+[12:33:38] <SkyzohKey> >Coverage decreased (-73.7%)
+[12:33:38] <SkyzohKey> Not sure iphy will like that c:
+[12:33:59] <tux3> That can be fixed
+[12:43:12] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 256 seconds)
+[12:44:21] <mva> uhm
+[12:44:25] <mva> strange thing
+[12:45:30] <mva> I installed (updated, actually) qtox on children laptop. And now it starts fine if I run it over ssh (DISPLAY=:0 qtox), but if I run it locally on it - it segfaults after entering profile password :(
+[12:45:53] <mva> dunno how is it possible at all
+[12:46:00] *** Joins: smaragdus (igneus@ )
+[12:46:25] <sudden6> mva: a backtrace could bring clarity and a bug fix
+[12:48:20] *** Joins: bashrc (~motters@ )
+[12:48:47] <mva> https://gist.github.com/raw/1c18b73e9102fa484c96bf40c2fe99f0
+[12:50:10] <mva> but, as I said, it doesn't segfault if I run it (on the same display with the same user) with ssh
+[12:50:34] <mva> so, it is doubtful, it is Qt fault (as can be seen from backtrace) 
+[12:50:49] <sudden6> looks like problems with the systray
+[12:51:16] <sudden6> systray isn't well supported on older versions of qt
+[12:52:03] <sudden6> is the DISPLAY envvar set if you run it locally?
+[12:52:43] <SkyzohKey> mva: quick fix: edit the .desktop file to add Exec=DISPLAY=:0 qTox c:
+[12:55:12] <tux3> mva, if you're using KDE, it seems to be a known bug: https://github.com/qbittorrent/qBittorrent/issues/3168
+[12:56:41] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:58:42] <mva> SkyzohKey: no, it doesn't help
+[12:59:04] <mva> sudden6: yes, it does
+[12:59:29] <mva> ... and I tried to disable systray icon in qtox.ini
+[12:59:43] <mva> and also systray icon working fine when running from ssh
+[13:02:50] <sudden6> mva: disabling the systray in the qtox.ini isn't possible, I'm not even sure one can disable it at completely at compile time
+[13:28:03] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[13:32:16] *** Joins: Chiitoo (~Chiitoo@ )
+[14:42:45] <zetok> mva: qtox-alpha also segfaults?
+[14:45:01] <zetok> mva: also, install debug symbols
+[15:07:36] <mva> zetok: define qtox-alpha
+[15:07:42] <mva> is qtox from git head alpha? :)
+[15:08:17] <mva> by the way, I'm upgrading system there now, so I'll try when it will be finished
+[15:17:35] *** Joins: DaSpirit (~DaSpirit@ )
+[15:19:48] *** Joins: reBrain (~quassel@ )
+[15:42:42] *** Joins: cenysor (~cenysor@ )
+[16:37:57] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 248 seconds)
+[16:38:28] <zetok> mva: oh, I've thought that you're using the packages
+[16:38:32] <zetok> mva: what distro?
+[16:38:47] <mva> gentoo :)
+[16:38:58] <zetok> ok
+[16:39:16] <mva> (so, qtox is from package. Just of 9999 version (== git HEAD)
+[16:39:18] <zetok> CFLAGS="-ggdb -O0 -pipe -Wall -Wextra -pedantic -fstack-protector-strong -Wformat -Wformat-security" CXXFLAGS="${CFLAGS}" FEATURES="${FEATURES} installsources" emerge -vt1 qtox
+[16:43:16] <zetok> actually, once you'll update you'll have qt 5.6.1, so there should be no problem
+[17:34:58] <mva> btw
+[17:35:07] <mva>  @tux3 │ mva, qTox uses the toxme.io API, instead of the old ToxDNS api, you can find some documentation here: https://github.com/LittleVulpix/toxme/blob/master/doc/api.md
+[17:35:11] <mva> it says
+[17:35:17] <mva> > Assume all requests are POSTed to /api.
+[17:36:05] <mva> but in real world it sends some requests like "GET /pk HTTP/1.1" 
+[17:36:56] <tux3> mva, there are two URLs, /pk to get the server's public key, and /api for the toxme JSON requests
+[17:50:34] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[19:00:31] *** Joins: Lord_Vlad (~Vlad@ )
+[19:03:23] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[19:03:53] *** Joins: Diadlo (~diadlo@ )
+[19:04:03] *** Quits: Diadlo (~diadlo@ ) (Client Quit)
+[19:05:10] *** Joins: Diadlo (~diadlo@ )
+[19:08:07] *** Joins: Emcy_ (~MC@ )
+[19:08:07] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[19:08:07] *** Joins: Emcy_ (~MC@ )
+[19:11:56] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[19:12:11] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[19:41:43] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[20:19:09] *** Quits: in1t3r (~LordShiva@ ) (Remote host closed the connection)
+[20:19:50] *** Joins: in1t3r (~LordShiva@ )
+[20:30:32] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[20:33:52] *** Joins: initramfs (~initramfs@ )
+[20:38:18] -qtox-git-spam- [qTox] Diadlo opened pull request #3871: fix(UI): Changed tab order to be same with visual order (master...fixTabOrder) https://git.io/vXoDA
+[21:28:08] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:29:25] *** Joins: Chiitoo (~Chiitoo@ )
+[21:43:21] <sudden6> zetok: we could just display a list of NoSpam values and the date they got activated/deactivated
+[21:43:28] <sudden6> maybe a comment field
+[21:43:40] <zetok> sounds good
+[21:45:19] <sudden6> I'll open an issue
+[21:45:45] <zetok> thanks :)
+[21:54:44] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:57:43] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[21:58:17] <sudden6> submitted https://github.com/qTox/qTox/issues/3872
+[22:13:25] *** Joins: athan (~athan@ )
+[22:22:43] <sudden6> zetok: Diadlo when should the release take place? sunday or monday?
+[22:23:29] <Diadlo> I do not care
+[22:24:14] <zetok> Sunday
+[22:24:24] <Diadlo> Should we merge #3865 as little improvement of #3861?
+[22:24:38] <Diadlo> (I will remove `Fix #3861` from commit message)
+[22:24:56] <sudden6> Diadlo: It doesn't really change anything for me
+[22:25:11] <sudden6> ie no behaviour change
+[22:25:18] <Diadlo> But for me -- does. Issue depend of DPI
+[22:25:26] <sudden6> is grid layout the wrong one?
+[22:25:45] <Diadlo> A bit
+[22:26:25] <sudden6> I have nothing against it, it doesn't cause any regressions for me
+[22:26:56] <sudden6> I'll LGTM
+[22:28:11] <Diadlo> 1) We use form layout everywhere (so, consisting) 2) `grid` has different alignment with `form`, so this block look different
+[22:28:24] <zetok> err
+[22:28:27] <zetok> it doesn't fix the issue
+[22:28:28] <Diadlo> And grid wider
+[22:28:30] <Diadlo> *is
+[22:28:37] <Diadlo> zetok: [01:24] <Diadlo> (I will remove `Fix #3861` from commit message)
+[22:29:00] <zetok> ok
+[22:29:44] <sudden6> I'll merge the warnings fix now, won't have time till sunday probably
+[22:29:47] <zetok> perhaps change that to `Improves #`
+[22:30:32] <Diadlo> zetok: Why we use --ff-only ?
+[22:30:46] <zetok> no unnecessary merge commits
+[22:30:48] -qtox-git-spam- [qTox] sudden6 closed pull request #3870: fix(chatlog): silence warning about unused parameters (master...fix_warnings) https://git.io/vXrYn
+[22:31:16] <Diadlo> merge commit make git history more beautiful
+[22:31:27] <zetok> no, they don't
+[22:31:32] <Diadlo> If you use rebase + merge --ff
+[22:32:26] <Diadlo> *no-ff
+[22:32:40] <Diadlo> https://habrastorage.org/storage/a90013bb/4166845b/d7905ec1/572137b0.png
+[22:32:43] <sudden6> IMO merge commits for 1 commit are stupid
+[22:32:53] <zetok> still looks bad, and ↑
+[22:33:10] <Diadlo> Are you seriously?
+[22:33:18] <Diadlo> Wait a minute
+[22:34:06] *** Joins: Diadl0 (~diadlo@ )
+[22:35:28] <sudden6> bye everybody
+[22:36:21] <zetok> bai
+[22:36:31] <Diadlo> https://pp.vk.me/c626418/v626418716/38a9e/dswC15Vmwa0.jpg
+[22:36:36] <Diadlo> sudden6: Bye
+[22:37:27] <Diadlo> Good branch-name perfectly describe what the last block does
+[22:37:43] <zetok> lol
+[22:37:56] <Diadlo> You still think, that it's looks bad?
+[22:38:01] <zetok> yes
+[22:38:05] <Diadlo> Why?
+[22:38:27] <zetok> because there would be no good branch names
+[22:38:58] <Diadlo> It still will seen as one logical block
+[22:39:20] <zetok> if you want, I'll just use random branch names, literally `dd if=/dev/urandom bs=1 count=1 | sha..`
+[22:39:31] <Diadlo> [01:38] <Diadlo> It still will seen as one logical block
+[22:39:43] <Diadlo> Without branch names
+[22:40:07] <zetok> yeah, you don't get that either, given that not all PRs can be fast forwarded
+[22:41:54] <Diadlo> I talk about no-ff
+[22:42:10] <zetok> right
+[22:42:27] <Diadlo> Not all PRs can be rebased
+[22:42:29] <Diadlo> Yes
+[22:42:41] <Diadlo> But most of them -- can be
+[22:43:38] <Diadlo> If user didn't sign his commits, why we didn't rebase it?
+[22:44:12] <zetok> because that's harder to do
+[22:44:29] <Diadlo> Hm...
+[22:44:38] <Diadlo> Whithout merge-conflict?
+[22:44:41] <Diadlo> Are you sure?
+[22:44:58] <zetok> yes
+[22:45:00] <Diadlo> Ok
+[22:45:05] <zetok> rebasing is hard
+[22:45:29] <Diadlo> So > Not all PRs can be rebased, but most of them -- can be
+[22:46:33] <Diadlo> First of all, do you agree, that no-ff picture looks better? (forget about qtox now)
+[22:47:17] <zetok> not really
+[22:47:37] <Diadlo> Why?
+[22:48:50] <zetok> it introduces unnecessary merge commits
+[22:49:23] <Diadlo> Oh my god! One more commit!
+[22:49:47] <zetok> thousands you mean
+[22:50:53] <zetok> well, something to think about
+[22:51:08] <Diadlo> Why amount of commits is matter?
+[22:55:20] <zetok> the more useless commits you have, the less useful git log is
+[22:55:58] <zetok> and unnecessary merge commit makes a case for unnecessary commits in PRs
+[22:59:59] <Diadlo> > the more useless commits you have, the less useful git log is < Not. Logical block are helpful for regression test. If you found commit were regression start, reason of regression not beyond of block
+[23:00:11] <Diadlo> and unnecessary merge commit makes a case for unnecessary commits in PRs < Hm... No?
+[23:02:15] <Diadlo> zetok: Merge #3866?
+[23:04:20] <zetok> ok, rebased
+[23:09:01] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[23:11:14] *** Joins: initramfs (~initramfs@ )
+[23:14:27] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 244 seconds)
+[23:23:07] <Diadlo> Hm... it's strange. I can't get accessibleName work
+[23:23:15] <Diadlo> It work in your PR
+[23:23:28] <Diadlo> But didn't, when I try
+[23:23:41] <Diadlo> But accessibleDescription are works
+[23:24:18] <zetok> so only accessibleDescription is read?
+[23:24:43] <Diadlo> Yes
+[23:29:19] <Diadlo> Should I believe, that it's my screen reader problem and leave it separate? Or move/copy name to description?
+[23:30:48] <zetok> I don't know :/
+[23:32:09] <zetok> oh, Qt docs help
+[23:32:10] <Diadlo> I think, that duplicate > lacking
+[23:32:15] <Diadlo> M?
+[23:32:24] <zetok> https://doc.qt.io/qt-5/qwidget.html#accessibleName-prop
+[23:33:10] <Diadlo> And what?
+[23:33:56] <zetok> sec, lemme look at what I've set things to
+[23:34:49] <Diadlo> My problem with QLineEdit
+[23:35:10] <Diadlo> You add name to the QLineEdit
+[23:37:33] <zetok> um, things probably should be changed
+[23:38:05] <Diadlo> In your PR?
+[23:38:09] <zetok> yeah
+[23:38:13] <Diadlo> No
+[23:38:18] <Diadlo> Your PR is perfect
+[23:38:39] <zetok> hmm, ok
+[23:38:48] <zetok> it'll do for now
+[23:55:03] <Diadlo> I found the reason
+[23:56:15] <Diadlo> And it's not as good as I would like
+[23:56:29] <Diadlo> Widget inside the widget
+[23:56:43] <Diadlo> QLineEdit inside QGroupBox
