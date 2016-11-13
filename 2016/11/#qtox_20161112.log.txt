@@ -1,0 +1,199 @@
+[00:00:42] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:01:16] <Diadlo> It read QLineEdit inside QGroupBox as QGroupBox.title + " text"
+[00:02:17] <Diadlo> + QLineEdit.accessibleDesciption
+[00:04:19] <Diadlo> Wow
+[00:04:28] <Diadlo> Seems, I was wrong about your PR
+[00:08:31] <Diadlo> Sorry, all right. Good night.
+[00:11:05] <Diadlo> Seems, you can remove `input field`, `checkbox` because screen reader (orca) add type of UI element automatically
+[00:12:02] *** Joins: st4ll1 (~st4ll1@ )
+[00:32:32] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:34:50] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[00:35:43] *** Joins: Achylles (~Achylles@ )
+[00:36:18] *** Joins: initramfs (~initramfs@ )
+[00:36:43] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[00:37:38] <Achylles> I am running qtox on ubuntu in another computer, but when I close the lid and open that up again qtox does not reconnect. How can I restart its daemon again?
+[00:39:13] <Achylles> It is really annoying since I want to communicate with the other machine and I have to ssh that to try to start qtox daemon again... :(
+[00:39:46] <initramfs> Achylles: Settings -> Advanced -> Reconnect
+[00:40:47] <Achylles> I need a command-line method since I am into that through ssh...
+[00:41:39] <initramfs> You're sshing into another computer which has qTox running on it?
+[00:42:48] <Achylles> Yes...
+[00:43:14] <initramfs> Connectivity to the network is not done through a daemon in qTox, but rather using the toxcore library
+[00:44:03] <initramfs> As far as I know, there is no non-UI interactive method to control qTox (apart from command line options during launch)
+[00:44:26] <initramfs> So you wouldn't be able to tell qTox to "reconnect"
+[00:44:30] <Achylles> :(
+[00:44:45] <initramfs> You could always restart the qTox instance through ssh though
+[00:44:57] <initramfs> Profile selection can be done with the -p flag
+[00:45:17] <initramfs> e.g. qtox -p foo would load qtox with the foo profile
+[00:45:45] <initramfs> But this won't work for profiles that are encrypted (since you'll need to interactively type the password on the host machine)
+[00:48:40] <initramfs> To get the functionality you desire, qTox would need to establish some sort of public IPC or RPC interface, which doesn't exist right now.
+[00:49:53] *** Joins: Achylles_ (~Achylles@ )
+[00:51:30] *** Quits: Achylles (~Achylles@ ) (Quit: Leaving)
+[00:54:20] <Achylles_> initramfs, anyway I just did -  killall qtox && qtox -p user & and it opened the remote qtox machine on my server... But, I would like not to kill the appl and restart all again - if that had a daemon or other feature...
+[00:55:07] <Achylles_> thx, a lot, 4yourHelp...
+[00:55:11] <initramfs> Not sure if you saw it, but I mentioned that qTox would require an IPC or a RPC interface to get the feature you require
+[00:55:34] <Achylles_> Yes. Saw it...
+[00:55:36] <initramfs> Okay
+[00:55:53] <initramfs> May I ask why you need remote access to a UI-based application?
+[00:57:20] <Achylles_> I do not need that, but that was the way I found to kill qtox and start it again...
+[00:59:02] <initramfs> I meant in the sense that you seem to be requiring control of qTox through an ssh session alone, which makes me imply that you are away from the machine thats running qTox
+[00:59:45] <Achylles_> Yes. I am...
+[01:03:00] <initramfs> I'm trying to determine whether there is a usecase to expose such functionality. Being UI-based and, as you said, being on a laptop, why is it necessary to remotely control qTox?
+[01:03:55] <initramfs> Sorry if I'm being overly intrusive, if I'm being a bother you can say so and I'll stop.
+[01:04:39] <Achylles_> Perhaps if I use qtox through tor in that machine that will reconnect after opening up its lid...
+[01:05:21] <initramfs> Well, you can always check the logs
+[01:06:25] <initramfs> There might already been an issue on GitHub regarding this, which you can examine to see if it matches your problem
+[01:07:10] <initramfs> If it doesn't, and you think this is a new problem, you can submit an issue on GitHub
+[01:07:30] <Achylles_> the case is that I have 2 laptops with qtox installed and another person using that one. But, when the person stops working for a while the laptop lid is closed and when the person comes back and opens the lid, unfortunately qtox stays off-line, so that our communication stops...
+[01:07:46] <initramfs> I see
+[01:08:16] <initramfs> Is it not possible to instruct the other person to hit the reconnect button on the UI?
+[01:08:29] <initramfs> Just for clarification, qTox should ideally automatically reconnect
+[01:08:38] <initramfs> If it isn't, it's a bug in toxcore or qTox itself
+[01:09:04] <initramfs> The reconnect button is only there for convenience to reinitialize toxcore
+[01:09:18] <Achylles_> I see. So, this is the problem... No auto-reconnection...
+[01:09:51] <initramfs> Well, as mentioned, checking the log files can help debugging.
+[01:11:18] <initramfs> I suspect the system being suspended (which I assume is what happens when the laptop lid is closed) is causing toxcore to fail to reconnect
+[01:12:52] <Achylles_> Yes. It is possible to instruct the person to do that, but it is kind of annoying, since I should ring or send an email saying that I am on-line. What if the person does not check his email every 10 min. or so?
+[01:14:01] <Achylles_> Yes. The system suspends and upon openning the lid it reconnect its wireless card...
+[01:14:39] <Achylles_> Then qtox does not do the same... As you said before...
+[01:15:29] <initramfs> Just to be clear, does the other person see him/herself as being offline or only you (the contact) as being offline
+[01:16:32] <Achylles_> Yes. He sees himself off-line... :(
+[01:17:25] <Achylles_> I mean. He sees me off-line...
+[01:17:57] <initramfs> Okay
+[01:17:59] <Achylles_> Because his qtox is running. 
+[01:18:45] <initramfs> Well, yeah, okay. Sadly that would be a bug that has not been resolved yet. That would require a fix in toxcore
+[01:20:01] <Achylles_> So, that's why i prefer to ssh'ing there for killing and starting his qtox again. So that the communication is reactivated...
+[01:20:33] <initramfs> Okay
+[01:20:38] <Achylles_> Instead of ringing or sending an emails and saying I am still here...
+[01:23:03] <initramfs> I believe you're suffering from the same issue as https://github.com/irungentoo/toxcore/issues/1550
+[01:23:34] <Achylles_> Well, I hope that in the future 1qtox/toxcore implements a way of reconnecting upon loosing internet connection...
+[01:23:49] <initramfs> Well it does...
+[01:23:53] <Achylles_> qtox, not lqtox...
+[01:24:46] <initramfs> To be more precise, almost all tox network actions are delegated to toxcore (which is a separate project from qTox)
+[01:25:04] <initramfs> And network connectivity is automatically restored, just not correctly (hence a bug)
+[01:27:31] <Achylles_> Seems so...
+[01:34:13] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 245 seconds)
+[01:39:43] *** Joins: st4ll1 (~st4ll1@ )
+[01:44:02] *** Joins: DaSpirit (~DaSpirit@ )
+[01:52:17] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[01:54:34] *** Quits: Achylles_ (~Achylles@ ) (Quit: Leaving)
+[01:55:32] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 268 seconds)
+[01:56:05] *** Joins: in1t3r (~LordShiva@ )
+[02:37:28] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 268 seconds)
+[02:46:01] *** Joins: LittleVulpix (~Miranda@ )
+[03:02:33] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[05:19:14] *** athan is now known as spyborg
+[05:21:36] *** spyborg is now known as athan
+[06:05:22] *** Joins: reBrain (~quassel@ )
+[06:50:53] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[07:11:33] *** Joins: rerumnovarum (~user-reru@ )
+[07:15:34] *** Quits: cisc (~cisc@ ) (Ping timeout: 256 seconds)
+[08:44:16] *** Joins: rerumnov1rum (~user-reru@ )
+[08:47:40] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 260 seconds)
+[08:57:17] *** Quits: rerumnov1rum (~user-reru@ ) (Ping timeout: 252 seconds)
+[08:57:25] *** Joins: rerumnovarum (~user-reru@ )
+[09:41:01] *** Joins: Diadl0 (~diadlo@ )
+[09:52:45] <mva> btw, i also wondered, if it is plans to migrate from irungentoo's toxcore fork to toktok's like many other clients doing?
+[09:59:02] *** Joins: cisc (~cisc@ )
+[09:59:38] *** Joins: shiva (~LordShiva@ )
+[10:01:50] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[10:10:06] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 268 seconds)
+[10:10:17] *** Joins: sudden6 (~anonymous@ )
+[10:14:45] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[10:16:34] <zetok> mva: https://github.com/qTox/qTox/milestone/7 :P
+[10:21:56] *** Quits: athan (~athan@ ) (Quit: leaving)
+[10:22:14] *** Joins: athan (~athan@ )
+[10:22:58] *** Joins: Diadl0 (~diadlo@ )
+[10:34:26] *** Joins: st4ll1 (~st4ll1@ )
+[10:36:26] -qtox-git-spam- [qTox] zetok opened pull request #3873: Update translations from Weblate (master...tr) https://git.io/vXKwU
+[10:38:31] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 244 seconds)
+[10:42:52] *** Joins: Diadl0 (~diadlo@ )
+[11:41:21] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 265 seconds)
+[11:50:59] *** Joins: Diadl0 (~diadlo@ )
+[12:11:53] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 260 seconds)
+[12:24:50] *** Joins: sudd3n6 (~anonymous@ )
+[12:31:38] *** Joins: Diadl0 (~diadlo@ )
+[12:45:08] *** Quits: athan (~athan@ ) (Ping timeout: 260 seconds)
+[13:15:47] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[13:15:58] *** Joins: Diadl0 (~diadlo@ )
+[13:27:02] -qtox-git-spam- [qTox] zetok closed pull request #3873: Update translations from Weblate (master...tr) https://git.io/vXKwU
+[13:52:21] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 256 seconds)
+[13:58:23] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 245 seconds)
+[14:10:21] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 244 seconds)
+[14:28:42] *** Joins: in1t3r (~LordShiva@ )
+[14:30:04] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[15:08:59] *** Joins: deathsbreed (~deathsbre@ )
+[15:09:14] <deathsbreed> Hey, guys. What happened to the normal repo there used to be (not the opensuse one)?
+[15:09:41] <deathsbreed> I just reinstalled Debian on my laptop and I'm trying to reinstall qtox, but I can't seem to find the repo for Debian Testing.
+[15:15:03] <zetok> deathsbreed: https://qtox.github.io/blog/2016/08/10/Hello-World.html
+[15:15:30] <zetok> I guess I'll add the link to the FAQ
+[15:18:41] <zetok> or something..
+[15:22:21] <deathsbreed> zetok: So... you're saying I should just use the OpenSUSE packages?
+[15:22:28] <zetok> yep
+[15:22:37] <zetok> deathsbreed: any reasons not to?
+[15:22:51] <zetok> oh, debian testing
+[15:23:25] <zetok> if you're using a distro that is not stable, it's kinda up to you to make sure that things work
+[15:24:30] <deathsbreed> I see. I tried changing the part that said "debian-8.0" to "debian-9.0", but that didn't work, so I'll try using stable repo then.
+[15:24:56] <zetok> deathsbreed: try to use the one for debian oldstable
+[15:25:12] <zetok> since it bundles Qt and IIRC a few other deps
+[15:25:55] <deathsbreed> You sure Debian Stable wouldn't work?
+[15:26:09] <deathsbreed> Also, does the oldstable still have the same qTox version as Stable?
+[15:26:19] <zetok> yep, yep
+[15:26:32] <deathsbreed> ok, I'll try the oldstable then.
+[15:28:11] <deathsbreed> It seems to be getting an invalid signature (I've already added the key).
+[15:29:05] <zetok> did you update again after adding the key?
+[15:29:22] <deathsbreed> Yeh
+[15:29:54] <zetok> and they key was for oldstable repo?
+[15:30:21] <deathsbreed> Yeh, (debian 7)
+[15:30:49] <zetok> hmm :/
+[15:31:34] <zetok> deathsbreed: would be good if you could get the key that you have added, and make an issue with it included and ping @abbat in it
+[15:31:56] <deathsbreed> Sure thing.
+[15:33:29] *** Joins: sudd3n6 (~anonymous@ )
+[15:33:40] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[15:43:57] <deathsbreed> zetok: https://github.com/qTox/qTox/issues/3874
+[15:44:36] <zetok> thanks :)
+[15:46:46] <zetok> >EXPKEYSIG
+[15:46:48] <zetok> uh :s
+[15:51:33] *** Quits: deathsbreed (~deathsbre@ ) (Quit: See ya!)
+[16:03:21] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[16:04:10] *** Joins: in1t3r (~LordShiva@ )
+[16:05:36] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[16:42:28] *** Joins: phr (~phr@ )
+[16:43:31] *** Joins: rerumnovarum (~user-reru@ )
+[16:43:34] <phr> hi guys is it possible to chat with skype users via qtox?
+[16:47:01] <iphy> No
+[16:47:31] <iphy> Only the official Skype client can connect to the Skype network
+[16:47:47] <phr> thanks for clearing me up
+[16:48:16] <phr> i dont like skype, so i will install qtox
+[16:48:20] <phr> :-)
+[17:25:44] *** Joins: DaSpirit (~DaSpirit@ )
+[19:05:26] <zetok> phr: https://github.com/qTox/qTox/wiki/FAQ#support-for-other-instant-messaging-protocols ← could that answer your question?
+[19:14:23] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[20:01:40] *** Joins: Emcy (~MC@ )
+[20:01:40] *** Quits: Emcy (~MC@ ) (Changing host)
+[20:01:40] *** Joins: Emcy (~MC@ )
+[20:01:55] <phr> zetok: thanks dude, nice info
+[20:02:29] <zetok> you're welcome :)
+[20:04:03] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.6)
+[20:04:17] <phr> for the same reason i didnt want to install skype on my computer..
+[20:04:51] *** Joins: cenysor (~cenysor@ )
+[20:06:26] *** Quits: rerumnovarum (~user-reru@ ) (Ping timeout: 265 seconds)
+[20:06:32] *** Joins: reBrain (~quassel@ )
+[20:11:27] *** Joins: athan (~athan@ )
+[20:42:42] *** Joins: cisc (~cisc@ )
+[20:43:33] *** Quits: phr (~phr@ ) (Quit: bye.)
+[20:44:03] *** Quits: smaragdus (igneus@ ) (Ping timeout: 244 seconds)
+[20:58:55] *** Joins: shiva (~LordShiva@ )
+[21:01:44] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[21:07:16] *** Quits: athan (~athan@ ) (Read error: Connection reset by peer)
+[21:07:40] *** Joins: athan (~athan@ )
+[21:28:04] *** Joins: CGGB (~CGGB@ )
+[21:43:21] *** Quits: athan (~athan@ ) (Quit: leaving)
+[21:45:34] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:52:24] *** Joins: initramfs (~initramfs@ )
+[22:51:36] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[23:25:37] *** Joins: athan (~athan@ )
+[23:26:15] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[23:30:56] *** Quits: athan (~athan@ ) (Ping timeout: 244 seconds)
+[23:37:24] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:38:19] *** Joins: cisc (~cisc@ )
+[23:51:48] *** Joins: athan (~athan@ )
