@@ -1,0 +1,290 @@
+[00:13:14] *** Quits: athan (~athan@ ) (Remote host closed the connection)
+[00:26:54] *** Joins: smaragdus (~omoo@ )
+[00:37:59] *** Joins: aesir (~aesir@ )
+[00:38:59] <aesir> W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: http://download.opensuse.org/repositories/home:/antonbatenev:/tox/xUbuntu_16.04  Release: The following signatures were invalid: KEYEXPIRED 1478959636
+[00:38:59] <aesir> W: Failed to fetch http://download.opensuse.org/repositories/home:/antonbatenev:/tox/xUbuntu_16.04/Release.gpg  The following signatures were invalid: KEYEXPIRED 1478959636
+[00:39:25] <zetok> aesir: https://github.com/qTox/qTox/issues/3874
+[00:40:57] <aesir> ty
+[00:41:49] <zetok> np
+[00:48:14] * zetok wonders if RPMs are also affected
+[00:48:47] *** Joins: abbat (~Anton@ )
+[00:59:16] *** Joins: athan (~athan@ )
+[01:10:47] *** Quits: athan (~athan@ ) (Quit: leaving)
+[01:20:21] <zetok> abbat: https://gist.github.com/zetok/8a8a267fe7b7edfd72d1a831c0071015 ?
+[01:20:44] <zetok> it's like it's trying to tell me something, but I'm not sure what
+[01:30:27] <abbat> zetok, Can you try to get this file manually via curl http://download.opensuse.org/repositories/home:/antonbatenev:/tox/openSUSE_Tumbleweed/repodata/repomd.xml
+[01:31:14] <zetok> abbat: seems to work?
+[01:31:46] <abbat> Yes, and reply not empty
+[01:32:20] <zetok> :|
+[02:17:24] *** Joins: tux3_ (~tux@ )
+[02:18:20] *** Parts: tux3_ (~tux@ ) ()
+[03:26:53] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:59:49] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[04:28:16] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[04:32:54] *** Joins: jjuran (~jjuran@ )
+[05:24:37] *** Quits: hexadezimalion (sid85551@ ) (Ping timeout: 260 seconds)
+[05:27:45] *** Joins: reBrain (~quassel@ )
+[05:40:38] *** Joins: hexadezimalion (sid85551@ )
+[05:41:42] *** Joins: athan (~athan@ )
+[06:19:14] *** Joins: in1t3r (~LordShiva@ )
+[06:20:33] *** Quits: shiva (~LordShiva@ ) (Read error: Connection reset by peer)
+[06:20:50] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[07:19:54] *** Quits: athan (~athan@ ) (Quit: leaving)
+[07:28:28] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[09:28:29] *** Joins: in1t3r (~LordShiva@ )
+[09:52:16] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[10:06:43] *** Joins: in1t3r (~LordShiva@ )
+[10:10:49] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vX60v
+[10:10:49] -qtox-git-spam- qTox/master 9fd0dd7 Diadlo: fix(settings): Changed grid layout on form layout...
+[10:16:15] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[10:30:08] *** Joins: in1t3r (~LordShiva@ )
+[10:50:23] *** Joins: Diadl0 (~diadlo@ )
+[12:35:55] <LittleVulpix> guys does qtox create a toxme ID ?
+[12:37:19] <MiokIry> nope
+[12:37:49] <MiokIry> u have to register one
+[12:38:06] <MiokIry> but i dont recommend that :P
+[12:42:11] <LittleVulpix> Why not? :p
+[12:43:32] <zetok> LittleVulpix: if user registers
+[12:43:58] <zetok> LittleVulpix: https://github.com/qTox/qTox/blob/master/doc/user_manual_en.md#register-on-toxme
+[12:44:34] <LittleVulpix> zetok: is this in the interface somewhere? :o
+[12:44:45] <zetok> yep
+[12:44:57] <zetok> UI for it isn't as good as it could be though
+[12:45:22] <zetok> so if you have any ideas on how to improve it, making an issue with them would be nice
+[12:45:39] <LittleVulpix> MiokIry: You do know I run toxme.io right? :P
+[12:46:32] <LittleVulpix> zetok: I see. I just faced a guy on qtox who said he doesn't remember creating an account on toxme.io but that apparently one is there already. I thought only antox does this but yeah I found the UI just now for toxme.io registration as well
+[12:48:51] <zetok> >qtcreator[2115] general protection ip:7f54061a33f0 sp:7ffc583f81d0 error:0 in libQt5Widgets.so.5.6.1[7f5405ee8000+6d7000]
+[12:49:18] <zetok> ffs
+[12:49:30] <zetok> it reproducibly crashes when I'm trying to open qTox project
+[12:50:12] <zetok> time to emerge newest version
+[12:52:56] <MiokIry> LittleVulpix nope :P ?
+[12:53:07] <LittleVulpix> MiokIry: :P well now you do
+[12:53:28] <MiokIry> Okay :P
+[12:53:48] <zetok> LittleVulpix: if they registered using qTox, UI should show a way to delete the record
+[12:54:04] <zetok> probably should be added to the manual
+[12:54:17] <MiokIry> agree
+[12:56:25] <MiokIry> I use old version qtox 
+[12:56:45] <zetok> MiokIry: why?
+[12:59:50] <zetok> i.e. is there any reason to use an old version?
+[13:04:32] <MiokIry> new version crashes on my macbook
+[13:05:27] <zetok> oh
+[13:06:05] <zetok> https://github.com/qTox/qTox/issues/3747
+[13:19:13] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 260 seconds)
+[13:21:01] *** Joins: Diadl0 (~diadlo@ )
+[13:24:08] <Diadlo> [15:53] <zetok> LittleVulpix: if they registered using qTox, UI should show a way to delete the record <-- https://github.com/subliun/toxme/issues/13
+[13:24:10] <Diadlo> :/
+[13:24:42] <zetok> :\
+[13:26:05] <zetok> LittleVulpix: ↑ ?
+[13:27:02] <MiokIry> issue 13 lmao
+[13:27:27] <LittleVulpix> zetok: I may have fixed that some time ago:  https://github.com/LittleVulpix/toxme/pull/4
+[13:28:07] <zetok> I see
+[13:28:18] <zetok> LittleVulpix: btw, mind enabling issues on your repo?
+[13:28:25] <LittleVulpix> zetok: Oh are they not?
+[13:29:01] <zetok> + commenting on issues that are fixed in subliun's repo
+[13:29:15] <LittleVulpix> zetok: should be enabled now
+[13:29:19] <LittleVulpix> Didn't know you had to enable that
+[13:29:35] <Diadlo> Oh.. I didn't know, that toxme forked
+[13:29:36] <zetok> well, by default gh doesn't enable issues in forks
+[13:30:37] <LittleVulpix> zetok: Fair enough, well it's enabled now.
+[13:43:01] <LittleVulpix> zetok: I also commented on some of the issues and closed mine there
+[13:43:08] <LittleVulpix> I mean, on subliun's repo
+[13:55:44] *** Joins: sudden6 (~anonymous@ )
+[14:16:49] <zetok> thanks
+[14:24:11] <MiokIry> unlike utox, i think qtox is friendlier :D
+[14:24:53] <MiokIry> hope the type on windows could be better :D
+[14:39:11] <zetok> you mean font?
+[14:39:30] <zetok> size / and or..?
+[14:51:50] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 268 seconds)
+[14:56:05] <MiokIry> font
+[14:56:26] <MiokIry> size is nice =~=
+[14:56:41] <zetok> screenshot would be nice
+[14:57:53] <zetok> https://a.uguu.se/yHUlVZRQOZsB.png ← does it differ?
+[14:59:13] -qtox-git-spam- [qTox] zetok opened pull request #3876: docs(user manual): mention ability to remove entry on ToxMe service (master...docs-man-toxme) https://git.io/vX6KE
+[14:59:44] *** Joins: cenysor (~cenysor@ )
+[15:00:11] <MiokIry> yep, windows qtox is now using jurric
+[15:00:54] <MiokIry> *using jurassic font
+[15:02:50] <MiokIry> no anti-aliasing font, looks dumb and ugly
+[15:04:29] <zetok> ok, what font should be used?
+[15:04:47] <zetok> https://github.com/qTox/qTox/tree/master/res
+[15:05:18] <MiokIry> i dont know its name :P
+[15:05:49] <MiokIry> i know its chinese branch called Yahei UI
+[15:07:18] <MiokIry> Google does work :D
+[15:07:33] <MiokIry> it called Segoe UI
+[15:07:33] <zetok> https://www.google.com/get/noto/ ?
+[15:07:54] <MiokIry> i meant i got its name by google :P
+[15:10:09] <MiokIry> segoe is the default font of win 7 and upper if my brain works well
+[15:12:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[15:19:58] *** Joins: sudden6 (~anonymous@ )
+[15:22:21] -qtox-git-spam- [qTox] zetok opened pull request #3877: chore(CHANGELOG): add changelog for the v1.6.0 release (master...chore-changelog) https://git.io/vX66C
+[15:29:39] <zetok> MiokIry: can this font be bundled with qTox?
+[15:32:47] <zetok> >On June 7, 2005 Scala, an electronic signage company (unrelated to the typeface FF Scala), announced[23] that Segoe was being removed from its InfoChannel product "due to licensing issues". (…)
+[15:32:50] <zetok> yeah, no
+[15:33:20] <zetok> MiokIry: https://en.wikipedia.org/wiki/Bitstream_Vera ← what do you think?
+[15:39:02] <MiokIry> well i meant font that used in explorer or somewhere :P
+[15:42:59] <MiokIry> im worried about if it could support some other languages
+[15:44:39] *** Joins: Bill_MI (~Bill@ )
+[15:46:35] <zetok> actually, I wonder if qTox even uses its font
+[15:47:57] <MiokIry> k how about sans serif :P
+[15:48:46] <MiokIry> ms sans serif is the grand daddy of default fonts
+[15:49:54] <zetok> serif is ugly
+[15:50:35] <zetok> weird, DejaVu Sans should be already used
+[15:50:41] *** Joins: reBrain (~quassel@ )
+[15:50:57] <zetok> which probably means that there has been a regression :/
+[15:56:19] <MiokIry> sans
+[15:56:37] <MiokIry> sans serif, not serif
+[15:57:31] <zetok> http://dejavu-fonts.org/wiki/images/0/08/Families.png
+[15:58:49] <MiokIry> Seriously, sans serif looks nice :D
+[15:59:16] <zetok> >_>
+[15:59:19] <zetok> can I get a pic?
+[15:59:59] <MiokIry> what u sent in > http://dejavu-fonts.org/wiki/images/0/08/Families.png
+[16:00:37] <MiokIry> sans row
+[16:00:46] <MiokIry> not serif row
+[16:00:52] <zetok> oh, ok
+[16:02:35] <genesis> i still hope we could choose font one day
+[16:02:44] <genesis> i love fixed size font.
+[16:03:50] <MiokIry> we're just talking about UI font
+[16:04:41] <MiokIry> choose font.. well good idea :P
+[16:05:34] <MiokIry> choosing chat font is available
+[16:06:02] <MiokIry> UI font might be a problem :/
+[16:06:52] <MiokIry> well not really if u want
+[16:15:05] <zetok> initramfs: ping?
+[16:18:40] -qtox-git-spam- [qTox] zetok opened pull request #3878: fix(UI): actually load bundled Unicode font as soon as possible (master...fix-font) https://git.io/vX6Px
+[16:19:26] <zetok> ↑ or anyone who knows C++/Qt; I was wondering if this could be done any sooner, and whether that would actually do anything
+[16:21:21] * zetok wonders if the QGuiApplication ifdef could affect this
+[16:30:14] *** Joins: Diadl0 (~diadlo@ )
+[16:46:26] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 246 seconds)
+[16:56:14] <zetok> anyone who would want to write a blog post?
+[16:57:07] <zetok> about new qTox release
+[16:57:28] <zetok> also the GPG signature thing
+[17:04:35] *** Joins: Diadl0 (~diadlo@ )
+[17:07:14] <sudden6> zetok: sorry, don't have time until probably tuesday :/
+[17:07:33] <zetok> no problem
+[17:07:49] <zetok> I can write something, but it's going to suck
+[17:15:39] <sudden6> zetok: If you want me to check grammar and stuff I could find time for this
+[17:15:51] <sudden6> just mentiion me on GH
+[17:16:00] <zetok> ok
+[17:19:47] <zetok> right now changelog needs review
+[17:25:02] *** Joins: bashrc (~motters@ )
+[17:47:04] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[18:12:58] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[18:17:31] <qTox-Blog> [blog] zetok opened pull request #4: Add new blog post about expired GPG and newest 1.6 release (gh-pages...release-gpg) https://git.io/vX6HL
+[18:19:18] <zetok> ↑ any suggestions?
+[18:31:08] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[18:52:12] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 250 seconds)
+[19:38:44] <vindelschtuffen> zetok: I have no idea what that's about so a blog post would be helpful
+[19:39:19] <zetok> :|
+[19:39:39] <zetok> blog post linked above
+[20:20:44] *** Joins: cenysor (~cenysor@ )
+[20:44:43] <zetok> vindelschtuffen: https://github.com/qTox/blog/pull/4
+[20:45:08] <vindelschtuffen> zetok: I read it, thank you
+[20:45:33] <vindelschtuffen> looks good to me
+[20:48:32] <zetok> except that it doesn't
+[20:48:44] <zetok> >Unlike with some other software projects, you don't need to travel back in time in order to fix the problem.
+[20:49:02] <zetok> here I'm dising manjaro, its fans most likely wouldn't like that
+[20:49:09] <zetok> >And you're done.
+[20:49:40] <zetok> this should be changed, sounds too arrogant, especially given that we're at fault here
+[20:50:14] <zetok> first 2 paragraphs under `v1.6.0 release` also should be improved
+[21:06:34] <initramfs> zetok: Hi, I'm here.
+[21:06:40] <zetok> \o/
+[21:06:48] <zetok> I've finished rewriting blog post
+[21:06:54] <zetok> will commit & push in a second
+[21:07:13] <initramfs> Okay
+[21:09:04] <zetok> initramfs: pushed
+[21:09:28] <initramfs> Okay
+[21:19:09] <initramfs> zetok: Reviewed
+[21:26:26] <zetok> initramfs: replied
+[21:32:18] <initramfs> zetok: Missed a thing, responded
+[21:36:59] <zetok> initramfs: b-but "away" fits there perfectly
+[21:37:57] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:38:08] <initramfs> "passed away" as a phrase means death or someone dying
+[21:38:14] <zetok> yep
+[21:38:31] <initramfs> testing week died?
+[21:38:49] <zetok> time passes, you die
+[21:39:06] <zetok> ¯\_(ツ)_/¯
+[21:40:36] <initramfs> Uhh...
+[21:41:37] <initramfs> Well, I mean, there is nothing grammatically wrong with it, but it just sounds weird. People will probably assume you added the extra "away" accidentally
+[21:42:43] <zetok> >Recently users (…) were hit (…) not without some casualties. Sorry about that. \n\n (…) suffered (…) got what they deserved (…) This might sound a bit scary/bothersome, but it really isn't. (…) passed away without any significant problems (…)
+[21:43:20] <zetok> and after that, there's a link to Metallica's "Thing That Should Not Be", nice song about the Cthulhu :3
+[21:43:28] <vindelschtuffen> i like your blogging style
+[21:43:30] <zetok> There's a bigger picture out there :3
+[21:43:52] <initramfs> Right
+[21:46:09] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:46:25] <vindelschtuffen> I'm trying to implement https://github.com/qTox/qTox/issues/927 and if anyone has any input that would be helpful
+[21:46:38] <vindelschtuffen> as to the best way to do it
+[21:47:34] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 256 seconds)
+[21:49:54] <zetok> initramfs: changed to changelog
+[21:53:28] <initramfs> LGTM
+[21:54:29] <zetok> thanks
+[21:55:22] <zetok> initramfs: https://github.com/qTox/qTox/pull/3877 ← the only thing remaining before tagging 1.6
+[21:59:44] <initramfs> I LGTM'd it
+[22:02:11] -qtox-git-spam- [qTox] zetok closed pull request #3877: chore(CHANGELOG): add changelog for the v1.6.0 release (master...chore-changelog) https://git.io/vX66C
+[22:04:30] <zetok> * [new tag]         v1.6.0 -> v1.6.0
+[22:04:32] <zetok> pushed
+[22:04:39] <qTox-Blog> [blog] zetok closed pull request #4: Add new blog post about expired GPG and newest 1.6 release (gh-pages...release-gpg) https://git.io/vX6HL
+[22:05:22] <zetok> time to make a PR to the Gentoo :3
+[22:05:30] <zetok> first though post to reddit
+[22:06:11] <zetok> https://qtox.github.io/blog/2016/11/13/Expired-GPG-and-v1.6.0-release.html ← pls share whenever
+[22:06:16] <zetok> and wherever
+[22:08:41] <zetok> https://www.reddit.com/r/projecttox/comments/5csebo/qtox_expired_gpg_key_and_v160_release/  ← upboats welcome
+[22:10:33] <zetok> oh, time to flip the switch
+[22:12:22] * zetok pulls the lever
+[22:15:00] <initramfs> Add release notes?
+[22:15:11] <initramfs> To GH releases
+[22:15:43] <zetok> http://www.youtube.com/watch?v=HfIxMNm7roU
+[22:16:43] <zetok> initramfs: um?
+[22:17:15] <initramfs> https://github.com/qTox/qTox/releases
+[22:17:43] <zetok> it gets generated automatically when osx build succeeds
+[22:17:47] <zetok> :|
+[22:18:01] <initramfs> Ah
+[22:18:02] <initramfs> Okay
+[22:18:30] <zetok> i.e. text from the tag description is copypasted
+[22:18:42] <zetok> and that traditionally points to the CHANGELOG.md
+[22:18:54] <initramfs> I know
+[22:19:11] <initramfs> Well the OSX builds are done... and nothing
+[22:20:00] <zetok> oh well
+[22:21:10] <zetok> hmm
+[22:22:14] <zetok> aw, crap
+[22:22:30] <zetok> https://github.com/qTox/qTox/blob/master/.travis.yml#L34
+[22:22:57] <zetok> https://github.com/qTox/qTox/blob/f05b7e040a073c7afadaf763dda5beaf130c6dbd/.travis.yml ← v1.5.2
+[22:23:20] <initramfs> What about it?
+[22:23:34] <initramfs> It was being run on the master branch
+[22:23:42] <zetok> tag isn't being built
+[22:23:45] <zetok> master doesn't matter
+[22:24:00] <initramfs> Ah
+[22:26:20] <zetok> https://docs.travis-ci.com/user/customizing-the-build/#Using-regular-expressions
+[22:26:37] <zetok> fff
+[22:27:07] <zetok> time to make a traditional 1.6.1 special osx release
+[22:27:18] <initramfs> Well
+[22:27:23] <initramfs> To be fair
+[22:27:32] <initramfs> They're still broken
+[22:27:32] <zetok> yeah, should we bother considering that it doesn't even work?
+[22:27:35] <initramfs> Yeah
+[22:32:28] <initramfs> brb
+[22:32:30] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[22:35:03] *** Joins: initramfs (~initramfs@ )
+[22:37:31] -qtox-git-spam- [qTox] zetok opened pull request #3880: chore(travis): build tags; also improve formatting a bit (master...chore-travis-regx-branch) https://git.io/vXie5
+[22:39:39] <initramfs> zetok: Can you access packages.gentoo.org?
+[22:39:49] <zetok> um?
+[22:40:13] <zetok> not sure
+[22:40:31] <zetok> either it doesn't work, or it's just my shitty net refusing to work properly
+[22:41:27] <initramfs> Huh
+[22:41:30] <initramfs> Seems to be down
+[22:41:36] <zetok> use eix
+[22:49:32] <zetok> https://github.com/gentoo/gentoo/pull/2831
+[23:15:21] *** Joins: pizzaiolo (~pizzaiolo@ )
+[23:18:00] <zetok> initramfs: so we're not doing a special osx re-release?
+[23:18:12] <initramfs> I don't think it's required
+[23:18:16] <zetok> (just making sure before pushing on master some 1.7 PRs)
+[23:19:15] <initramfs> Okay
+[23:43:43] <zetok> vindelschtuffen: um, not sure how much help that would be, but if you encounter problems you can always just post about it in the issue, this way someone who could know would be notified about that
+[23:47:02] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXiUm
+[23:47:02] -qtox-git-spam- qTox/master a2912a3 Zetok Zalbavar: docs(doxygen): fix some warnings for toxcall.cpp
+[23:55:28] <vindelschtuffen> zetok: alright
+[23:55:55] <vindelschtuffen> I have no idea how to actually grab the url of the link, or how to only show a menu item when the right click was on a link
+[23:56:34] <zetok> hmm
+[23:56:55] <zetok> vindelschtuffen: perhaps you could looks at how it's done in some other GPLv3+ Qt software
+[23:57:04] <zetok> look*
+[23:57:45] <vindelschtuffen> got any software suggestions? my system is mostly gtk
+[23:57:46] <zetok> no idea whether it would even applicable, but this might point you in the right direction
+[23:57:52] <zetok> quassel ?
+[23:57:57] <vindelschtuffen> thanks :)
+[23:58:25] <zetok> np
