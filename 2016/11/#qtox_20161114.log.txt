@@ -1,0 +1,194 @@
+[00:00:08] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:06:55] -qtox-git-spam- [qTox] zetok closed pull request #3863: feat(UI): rename `Toxme register` → `Register on ToxMe` (master...feat-reg-toxme) https://git.io/vXRES
+[00:29:19] *** Joins: in1t3r (~LordShiva@ )
+[05:41:18] *** Quits: pizzaiolo (~pizzaiolo@ ) (Ping timeout: 256 seconds)
+[07:19:02] *** Joins: nightfuri (~nightfuri@ )
+[07:21:16] <nightfuri> The repository is not updated and the previous index files will be used. GPG error: http://download.opensuse.org/repositories/home:/antonbatenev:/tox/xUbuntu_16.04  Release: The following signatures were invalid: KEYEXPIRED 1478959636Failed to fetch http://download.opensuse.org/repositories/home:/antonbatenev:/tox/xUbuntu_16.04/Release.gpg 
+[07:21:44] <nightfuri> getting that on Linux Mint 18.. so whats the issue ? any problem with the repo ?
+[07:44:56] <nurupo> nightfuri: GPG key expired
+[07:45:10] <nurupo> it was replaced with a new one, just re-downlaod
+[07:45:37] <nurupo> nightfuri: https://qtox.github.io/blog/2016/11/13/Expired-GPG-and-v1.6.0-release.html
+[07:48:35] <nightfuri> nurupo: thanks :)
+[09:17:56] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:18:24] *** Joins: CGGB (~CGGB@ )
+[09:37:22] *** Joins: sudden6 (~anonymous@ )
+[10:14:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[11:15:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:30:59] *** Joins: sudden6 (~anonymous@ )
+[11:49:01] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://git.io/vXiMt
+[11:49:01] -qtox-git-spam- qTox/master ed11a17 Diadlo: refactor(widget): Remove FriendWidget creation from Friend constructor
+[11:49:01] -qtox-git-spam- qTox/master 74eb06b Diadlo: refactor: Added emiting signal on window activation in ContentDialog
+[12:02:13] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[12:02:58] *** Joins: LittleVulpix (~Miranda@ )
+[12:08:52] *** Quits: SkyzohKey (~skyzohkey@ ) (Remote host closed the connection)
+[12:09:48] *** Joins: st4ll1 (~st4ll1@ )
+[12:35:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[12:52:51] *** Joins: mlkj (~mlkj@ )
+[13:06:02] *** Joins: SkyzohKey (~skyzohkey@ )
+[13:15:24] -qtox-git-spam- [qTox] Diadlo opened pull request #3881: Friend widget 3 (master...friendWidget_3) https://git.io/vXidI
+[13:36:34] *** Quits: mlkj (~mlkj@ ) (Ping timeout: 265 seconds)
+[13:44:45] *** Joins: neryot (68eea95d@ )
+[13:47:39] <neryot> I was told qTox 1.6.0 for Windows is now available for download - where can I download it? The github page gives me 1.5.0
+[14:21:58] *** Joins: pizzaiolo (~pizzaiolo@ )
+[14:30:12] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vXij7
+[14:30:12] -qtox-git-spam- qTox/master 5d64450 Diadlo: refactor(core): Changed Core interface, added documentation...
+[14:32:29] *** Joins: mlkj (~mlkj@ )
+[14:48:15] *** Quits: neryot (68eea95d@ ) (Ping timeout: 260 seconds)
+[15:21:25] <zetok> tux3: 1.6 release?
+[15:26:29] <zetok> date -d @$(( $(date -d 2016-11-13 '+%s') + $(( 3600 * 24 * 7 * 6 )) )) '+%Y-%m-%d'
+[15:26:29] <zetok> 2016-12-25
+[15:26:36] <zetok> hmm
+[15:40:36] *** Quits: pizzaiolo (~pizzaiolo@ ) (Remote host closed the connection)
+[15:49:56] <mlkj> zetok, is that the date for the next release?
+[15:50:19] <zetok> yep
+[16:08:37] *** Quits: mlkj (~mlkj@ ) (Ping timeout: 248 seconds)
+[16:31:02] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 268 seconds)
+[16:52:03] <SkyzohKey> eheh, just plagiatized qTox c: https://github.com/RicinApp/Ricin/releases/tag/v0.2.9
+[17:11:43] *** Joins: mlkj (~mlkj@ )
+[17:23:42] *** Joins: albel727 (~albel727@ )
+[18:16:21] *** Joins: cenysor (~cenysor@ )
+[18:43:43] *** Joins: st4ll1 (~st4ll1@ )
+[19:07:29] *** Quits: mlkj (~mlkj@ ) (Ping timeout: 260 seconds)
+[19:56:44] <Diadlo> zetok: ping
+[19:56:48] <zetok> Diadlo: pong
+[19:57:27] <Diadlo> #3866 What you think about add `password strength` to the `create profile` description?
+[19:58:24] <Diadlo> When user will click `Tab` after password confirmation, if password not-empty, screen reader can say it
+[19:58:39] <Diadlo> s/it/password strength/
+[19:58:52] <zetok> um
+[19:59:01] <zetok> sounds good
+[19:59:07] <zetok> (I think?)
+[19:59:29] <Diadlo> I can add it, if you don't want to work with C++ :)
+[19:59:47] <zetok> ok
+[20:04:20] <zetok> I've rebased #3866, going afk, if you want feel free to --ff-only it
+[20:08:15] <Diadlo> zetok: In #3878 you writed, that on some systems fonts can look bad. Do we have this in issues? Does it fixes the problem? Also, comment seems redundant to me, cause it describe your changes, but ~not the code
+[20:10:56] <zetok> >Do we have this in issues?
+[20:10:57] <zetok> nope
+[20:11:02] <zetok> >Does it fixes the problem?
+[20:11:03] <zetok> no idea
+[20:11:22] <zetok> and the code is fine
+[20:11:30] <Diadlo> So, what is the reason of this changes?)
+[20:11:39] <zetok> i.e. the code worked just fine for like 2 years, then there was some regression
+[20:12:15] <zetok> and while it worked, it was close to the beginning of `main()`
+[20:12:22] * zetok shrugs
+[20:12:30] <zetok> feel free to debug it properly
+[20:13:06] <Diadlo> I can't debug it, because I can't reproduce it
+[20:13:16] <zetok> on windows?
+[20:13:21] <zetok> or FreeBSD?
+[20:13:27] <Diadlo> I haven't
+[20:13:29] <Diadlo> Both
+[20:13:36] <zetok> oh
+[20:13:37] <zetok> :f
+[20:13:47] <zetok> do you have agilob on qTox?
+[20:14:01] <Diadlo> Nope :|
+[20:14:13] <zetok> he complained that font in qTox on FreeBSD got worse some time ago
+[20:14:43] <Diadlo> Can he test PR?
+[20:14:46] <zetok> I'll ask him to test the PR
+[20:15:04] <Diadlo> Ok
+[20:16:41] <Diadlo> #3880 <- Does it means, that travis will build always 1 build?
+[20:16:54] <zetok> um?
+[20:17:07] <zetok> it builds only branches that are mentioned there
+[20:17:17] <zetok> (tags are treated like branches)
+[20:18:08] <Diadlo> But all your tags is in master, aren't they?
+[20:18:28] <Diadlo> *our
+[20:18:37] <zetok> nope
+[20:18:42] <Diadlo> Wow. Why?
+[20:18:44] <zetok> (doesn't really work like that)
+[20:19:07] <Diadlo> AFAIK, tag is like a branch
+[20:19:15] <zetok> there you go :)
+[20:20:02] <zetok> branch A and B
+[20:20:03] <Diadlo> Which our tag is not a part of master?
+[20:20:15] <zetok> both contain commit asdf1
+[20:20:22] <zetok> travis is set to build branch A
+[20:20:33] <zetok> why would it build branch B even if it has the same commit?
+[20:20:59] <Diadlo> There is no reason
+[20:21:12] <zetok> same goes for tags
+[20:22:15] <Diadlo> Oh. We use travis to make possible to get night-build?
+[20:22:45] <zetok> perhaps we could
+[20:23:01] <Diadlo> Or what the reason to build asdf1 twice?)
+[20:28:43] *** Joins: sudden6 (~anonymous@ )
+[20:29:08] <sudden6> hi everybody
+[20:29:40] <Diadlo> sudden6: Hi)
+[20:30:07] <sudden6> the release was well done :)
+[20:37:31] <sudden6> Diadlo: what does #3871 exactly do?
+[20:40:14] <Diadlo> Do you know, that <tab> click in gui switches current control?
+[20:40:55] <Diadlo> Open General settings tab, and start clicking <tab>
+[20:41:13] <Diadlo> And you will see, what this PR fix :)
+[20:44:02] <Diadlo> Do you found, what I mean?
+[20:44:17] <sudden6> currently rebuilding qTox^^
+[20:44:36] <Diadlo> Lol
+[20:45:14] <sudden6> ah, I see it now thanks :)
+[20:45:26] <Diadlo> Np :)
+[20:48:18] <sudden6> I thought you were speaking about the tabs (registers?) at the top
+[20:48:36] <Diadlo> No
+[20:48:41] <Diadlo> Tab button
+[20:49:11] <Diadlo> It changes active element in window
+[20:49:14] <sudden6> mhm, in German and English? Tab has a double meaning^^
+[20:49:28] <Diadlo> Sorry :)
+[20:53:13] <zetok> >Or what the reason to build asdf1 twice?
+[20:53:15] <zetok> for osx release
+[20:53:24] <zetok> which is currently broken :|
+[20:53:30] <Diadlo> Ok)
+[20:54:24] <zetok> >the release was well done :)
+[20:54:27] <zetok> thanks :D
+[20:55:36] <zetok> https://travis-ci.org/qTox/qTox/builds/175827825 ← osx hate intensifies
+[20:57:40] *** Joins: FaTony (~FaTony@ )
+[20:58:56] <FaTony> hi, I'm trying to install qTox on Debian Testing and it doesn't seem to work, I have a version from tox.chat repo but when I try to update, it unticks the package and doesn't want to update
+[20:59:01] <FaTony> help?
+[21:02:22] <sudden6> FaTony: use the Open Build Service Repo mentioned on https://github.com/qTox/qTox
+[21:03:05] <FaTony> that's how I'm trying to update it
+[21:03:12] <sudden6> zetok: IIRC there was something special about Debian testing, do you remember what it was?
+[21:03:42] <zetok> sudden6: now there's nothing special :D
+[21:04:05] <sudden6> ah :)
+[21:04:29] <zetok> FaTony: `ls /etc/apt/sources.list.d` ?
+[21:04:33] <sudden6> FaTony: you need to remove the old tox.chat repo and add the one from here: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[21:04:41] <FaTony> oh, I've re added repo and it seems to work, I'm not sure why it didn't before
+[21:05:00] <zetok> k
+[21:06:02] <FaTony> I guess the conflict with tox.chat repo
+[21:09:04] <Diadlo> Guys, do we have issue like this: `opening chat after closing it in separated window, again separated `?
+[21:10:24] <sudden6> Do you mean it opens separate after closing it or it should open separate after closing it?
+[21:10:58] <zetok> Diadlo: IIRC nope
+[21:11:01] <Diadlo> It was the idea of issue. Full description is too long :)
+[21:11:47] <Diadlo> I mean, it should be separated before closing
+[21:15:25] <sudden6> nope, I don't think we have an issue like that
+[21:16:07] <Diadlo> It will be issue in zetok style ;)
+[21:16:24] <Diadlo> 9 steps to reproduce
+[21:17:37] <sudden6> lol
+[21:18:24] <Diadlo> Done. https://github.com/qTox/qTox/issues/3882
+[21:19:22] <sudden6> lol Alisa
+[21:20:02] <sudden6> one can clearly notice where you come from xP
+[21:20:17] <Diadlo> Sorry, russian pronouncing :)
+[21:20:45] <sudden6> np, just funny :D
+[21:26:54] *** Quits: FaTony (~FaTony@ ) (Quit: Leaving)
+[21:28:51] <zetok> oh, that issue
+[21:29:00] <zetok> :|
+[21:33:59] <Diadlo> A bit :)
+[21:45:13] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vXX83
+[21:45:13] -qtox-git-spam- qTox/master 953fe24 Zetok Zalbavar: feat(UI): add some accessibility labels to login pages...
+[21:46:28] <zetok> Diadlo: actually
+[21:46:39] <zetok> Diadlo: I'm not sure about the password strength
+[21:46:44] <Diadlo> Why?
+[21:46:59] <zetok> unnecessary noise
+[21:47:49] <Diadlo> Hm... Ok
+[21:55:51] <Diadlo> sudden6: Does it really matter?) https://github.com/qTox/qTox/pull/3871#issuecomment-260059085
+[21:59:56] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:47:57] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[22:56:34] *** Joins: DaSpirit (~DaSpirit@ )
+[23:15:27] <Diadlo> zetok: http://i.imgur.com/NBHMHEL.png  <- Does he? Or another github bug?
+[23:15:48] <zetok> that's a feature
+[23:16:11] <Diadlo> Where I can read about it?
+[23:16:56] <zetok> probably gh blog
+[23:17:04] <Diadlo> Thx
+[23:17:27] <Diadlo> Do you plan to leave #2961 open?
+[23:19:33] <zetok> ~yep
+[23:19:48] <Diadlo> Also, when you will have free time, can you test #3881?
+[23:19:53] <Diadlo> zetok: Why?
+[23:20:38] <Diadlo> This is absolutely external feature
+[23:20:43] <Diadlo> IMO
+[23:20:59] <zetok> either it gets a proper design, or it won't
+[23:21:12] <Diadlo> Ok
+[23:21:14] <zetok> if it gets a proper design, qTox could make some use of that feature
+[23:21:24] <zetok> if not..
+[23:21:46] <zetok> ¯\_(ツ)_/¯
+[23:22:07] <Diadlo> Yep. I understood
+[23:22:12] <Diadlo> Good night :)
+[23:22:19] <zetok> night :)
