@@ -1,0 +1,230 @@
+[00:36:05] *** Joins: cisc (~cisc@ )
+[01:12:03] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 252 seconds)
+[01:15:28] *** Quits: cisc (~cisc@ ) (Ping timeout: 245 seconds)
+[01:16:45] *** Joins: cisc (~cisc@ )
+[01:41:56] *** Joins: kchz (~dschulz@ )
+[02:29:19] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[02:31:27] *** Joins: kchz (~dschulz@ )
+[02:33:01] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[02:51:07] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[05:34:36] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vX1Uh
+[05:34:36] -qtox-git-spam- qTox/master 2a88e5c Diadlo: refactor(toxid): Removed Core dependency from ToxId...
+[05:48:49] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[06:39:20] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[06:47:41] *** Joins: cisc (~cisc@ )
+[07:07:32] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[07:13:59] *** Joins: cisc (~cisc@ )
+[08:34:23] *** Joins: sudden6 (~anonymous@ )
+[09:23:32] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[09:29:24] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[09:29:49] *** Joins: CGGB (~CGGB@ )
+[09:44:38] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 244 seconds)
+[09:52:55] -qtox-git-spam- [qTox] zetok closed pull request #3880: chore(travis): build tags; also improve formatting a bit (master...chore-travis-regx-branch) https://git.io/vXie5
+[10:13:47] <SkyzohKey> zetok, tux3: does qtox has a qtox.appdata.xml file ?
+[10:14:02] <SkyzohKey> something like that: https://github.com/RicinApp/Ricin/blob/master/res/ricin.appdata.xml
+[10:14:09] <zetok> maybe?
+[10:14:30] <SkyzohKey> as it show only the package description on gnome-software i guess it doesn't have one
+[10:15:35] <zetok> oh
+[10:15:54] <zetok> no, probably not
+[10:16:11] <SkyzohKey> would u like me to do a pr with this file ?
+[10:16:44] <zetok> sure :)
+[10:21:38] *** Joins: st4ll1 (~st4ll1@ )
+[10:29:12] <SkyzohKey> zetok: it permits to have the app showing like that: http://i.imgur.com/b7rcTR9.png
+[10:51:10] *** Joins: cisc (~cisc@ )
+[11:19:17] *** Joins: Chiitoo (~Chiitoo@ )
+[11:23:11] *** Joins: sudd3n6 (~anonymous@ )
+[11:24:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[11:41:07] *** Joins: MiokIry (~Miok@ )
+[12:03:59] <SkyzohKey> zetok: pr is coming, soon
+[12:06:43] <SkyzohKey> zetok, tux3: can u give me some links to qTox screenshots ?
+[12:06:54] <zetok> SkyzohKey: linked in README.md
+[12:07:09] <tux3> SkyzohKey, https://github.com/qTox/qTox/ :)
+[12:07:11] <zetok> (or the website)
+[12:07:15] <SkyzohKey> ok
+[12:07:18] <zetok> tux3: hai :)
+[12:07:22] <tux3> Hai!
+[12:07:24] <zetok> tux3: 1.6 windows release?
+[12:07:28] <SkyzohKey> tux3: hai c:
+[12:07:38] <tux3> SkyzohKey, hey!
+[12:08:01] <tux3> zetok, do you want to do it now?
+[12:08:20] <zetok> tux3: um?
+[12:08:39] <zetok> tux3: there is already 1.6 release, windows just doesn't have the binaries
+[12:08:44] <tux3> Uh
+[12:08:45] <tux3> Ah
+[12:09:17] <SkyzohKey> tux3: I plagiatized qTox eheh c: http://i.imgur.com/1Th8whZ.png
+[12:09:48] <tux3> SkyzohKey, looks nice :)
+[12:09:57] <SkyzohKey> thx ^^
+[12:09:59] <tux3> zetok, should be done
+[12:15:57] <zetok> tux3: thanks :)
+[12:16:08] <SkyzohKey> tux3: what is your email ?
+[12:16:15] <tux3> SkyzohKey, barrdetwix@gmail.com
+[12:16:17] <SkyzohKey> the appdata format requires a "contact email"
+[12:16:23] <SkyzohKey> thx
+[12:16:48] <zetok> tux3: btw, next release is 12-25
+[12:16:53] <tux3> zetok, noted
+[12:17:12] <zetok> and next one + 3600 * 24 * 7 * 6
+[12:17:36] <SkyzohKey> tux3: I have no idea how to add the qTox.appdata.xml to your packages
+[12:17:52] <SkyzohKey> it needs to be installed as /usr/share/appdata/qTox.appdata.xml
+[12:18:27] <tux3> SkyzohKey, since I don't do the packages anymore, I'm not sure either :)
+[12:18:36] <SkyzohKey> hm, who does it ?
+[12:19:37] <zetok> SkyzohKey: https://github.com/qTox/qTox/blob/master/qtox.pro#L132,L146
+[12:20:10] <SkyzohKey> nice
+[12:20:39] <zetok> `make install` should just put it in the right path
+[12:21:01] <zetok> and stuff in the right prefix path should be just packaged
+[12:21:21] <SkyzohKey> nice, going to make the pr
+[12:23:56] <SkyzohKey> https://github.com/qTox/qTox/pull/3884
+[12:24:05] -qtox-git-spam- [qTox] SkyzohKey opened pull request #3884: Add qTox.appdata.xml for enhance packaging integration. (master...packaging/appdata) https://git.io/vX112
+[13:31:04] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[14:23:00] *** Joins: cenysor (~cenysor@ )
+[14:42:19] *** Quits: MiokIry (~Miok@ ) (Read error: Connection reset by peer)
+[16:01:05] *** Joins: Chiitoo (~Chiitoo@ )
+[16:12:24] *** Joins: MiokIry (~Miok@ )
+[16:26:06] *** Joins: user69 (~user69@ )
+[16:41:17] <user69> Hi Everyone, Hope you are all well today.  I am using Linux Mint KDE 32-bit ver. 17.3 and testing ver. 18. On version 18 I copied my "qTox" folder to that so I would not loose my contacts and their authentications, but it always tell me that my chat logs are disabled and will be ignored? How can I resolve that, please. Also, I added another contact in my LM 18, how an I export that contact for importing into my LM 17.3 without having to reauthenticate? Thank 
+[16:41:19] <user69> you all in advance for your help.
+[16:53:44] <sudd3n6> user69: hi
+[16:54:10] <sudd3n6> have you also copied the file ending with *.db?
+[16:54:47] <sudd3n6> and which versions of qTox do you use on which os?
+[17:01:46] <user69> sudd3n6: Thanks for replying. The whole "qtox" folder, including the db file. Linux Mint KDE are the OS's.
+[17:02:31] <sudd3n6> user69: and which version of qTox? (displayed in the "About" tab)
+[17:02:58] <user69> qTox version v1.5.2-obs.
+[17:03:39] <user69> sudd3n6: qTox version v1.5.2-obs.
+[17:03:45] <sudd3n6> is there anything special in the logs?
+[17:04:21] <zetok> sudd3n6: um, what was the exact path to the dir?
+[17:04:28] <zetok> uh, sorry
+[17:04:31] <zetok> user69: ↑
+[17:04:49] <user69> sudd3n6: what logs?
+[17:05:38] <zetok> settings → Advanced → 
+[17:05:47] <sudd3n6> user69: If you run `qtox` from a terminal it displays log output
+[17:06:04] *** sudd3n6 is now known as sudden6
+[17:06:12] <sudden6> or zetok's way^^
+[17:06:34] <zetok> user69: also https://github.com/qTox/qTox/wiki/FAQ#how-to-merge-two-profiles-of-the-same-id-synchronize-contacts-and-history
+[17:07:24] <user69> sudd3n6: The dir (folder path is my "/home/user69/.config/tox/")
+[17:07:35] <zetok> ok
+[17:08:40] <user69> sudden6: The only thing in my "Advanced" tab is the option to make qtox portable
+[17:09:32] <user69> sudden6: and zetok: I am checking out that link now ....
+[17:09:32] <sudden6> hm, there should be "Export Debug Log", but maybe that's only in 1.6
+[17:09:59] <sudden6> user69: run qTox from a terminal and put the output on gist.github.com
+[17:10:07] <sudden6> or some other paste site
+[17:13:19] <user69> sudden6:  and or zetok: It woulod be nice to have an "export" contact with their authentication option. I am not sure that copying the ".db" file back to Linux Mint 17.3 from 18 is the way to go, unless you guys say so....
+[17:14:41] <sudden6> user69: your contacts aren't stored in the db file, they are stored in the *.tox file, which will be hopefully reworked on the next toxcore release
+[17:16:25] <sudden6> copying the *.tox file between different computers should work, on the *.db file I'm not sure...
+[17:16:45] <sudden6> user69: to be safe create a backup of both before experimenting!
+[17:18:27] <zetok> >which will be hopefully reworked on the next toxcore release
+[17:18:33] <user69> sudden6:  thank you ... Yes, as I mentioned before, I copied the whole "tox" folder from my LM 17.3 to my LM 18 system but I get he caht logs disabled error everytime I start "qtox" on that system. then, I added a new contact thru LM 18 qtox, and i wanted to export that contact with authentication into my LM17.3 system's qtox
+[17:18:39] <zetok> sudden6: that won't happen on the next release
+[17:19:38] <user69> sudden6:  I alkways have good backups, but thank you for that advice..
+[17:19:53] <sudden6> user69: you should be able to copy the *.tox file from your LM18 system to the LM17.3 system and have the contact there
+[17:20:16] <sudden6> for the chat logs disabled error I need the output from qTox
+[17:20:40] <user69> So, just export my qtox profile, or just copy it the ".tox" file?
+[17:20:48] <zetok> user69: that's the same thing :)
+[17:20:57] <user69> Got it...
+[17:23:02] <user69> sudden6:  Thank you both for your help. And, please include in future releases and updates the ability to export authenticated contact either one at a time or all to some file that caqn be easily imported into qtox on another system, thank you.  Also, I had a feature request for allowing the user to resize the text entry, anything happening on that?
+[17:23:26] <zetok> >And, please include in future releases and updates the ability to export authenticated contact either one at a time or all to some file that caqn be easily imported into qtox on another system, thank you.
+[17:23:29] <zetok> not doable
+[17:23:50] <zetok> i.e. it doesn't really work like that
+[17:24:25] <zetok> what is required for communication between 2 people, is them knowing each others' PKs (part of Tox ID)
+[17:24:55] <zetok> if you know someone's PK, and they know yours, you've got the "authentication" that you were thinking of
+[17:25:21] <user69> zetok: OOC, out of curiosity, why not? In other messaging apps, I can resize the text entry, or in the option increase or decrease froom 2 line to whatever. When I was a software developer, you could usually just chage the attribut for that text entry box to allow user resize?
+[17:25:41] <zetok> problem is that if you change your PK and friend doesn't know it, you can't communicate
+[17:25:51] <zetok> user69: I was talking just about the quoted part
+[17:26:49] <user69> Can't that be transmitted to the  other user when contact is made, or with each sent message?
+[17:27:28] <zetok> that would be a horrible work-around
+[17:27:40] <user69> just a thought..
+[17:27:44] <zetok> which is not going to be needed once multiple devices are in place
+[17:28:22] <zetok> so simply it's better to focus efforts on support for multiple devices, rather than on workarounds
+[17:28:32] <zetok> user69: as for the feature request: https://github.com/qTox/qTox/issues/1316
+[17:29:10] <user69> zetok:  I understand, thank you for your replies...
+[17:29:18] <zetok> you're welcome :)
+[17:30:29] <user69> I hope you all have a great day, or night, or both :)
+[17:32:01] <zetok> user69: it would be good if you could provide the logs of the error
+[17:33:37] <user69> I am currently in my Linux Mint 17.3 system with no errors, but when I boot to my LM 18 where I always get the "chat logs will disable messages, I will capture that, and get the to you.
+[17:34:09] <zetok> ok, thanks :)
+[17:34:37] <zetok> btw, have you checked if the setting for chat history is set?
+[17:35:08] <zetok> https://a.uguu.se/PEcppUvcjSXK.png
+[17:35:42] <zetok> IIRC it should be "on" by default, but perhaps something went wrong
+[17:35:53] <user69> You are welcome. Yes, I have turned that on and off, but no go with that. And, thanks agin for a wonderful multi-media secure chat application. I recommend it often in the Linux Mint forums and to others.
+[17:37:03] <user69> zetok: I am user "phd21" or "user69"
+[17:37:32] <user69> zetok:  "phd21' in theLinux Mint forums, and "user69" using IRC
+[17:39:58] <user69> zetok:  after reading those links, I wonder if sql light is not installed on my Linux Mint 18, so I will check that as well.
+[17:41:14] <zetok> hmm, it should have been pulled in by the package
+[17:42:27] <zetok> user69: `apt-cache depends qtox` ?
+[17:43:13] <user69> Yeah, I though it was installed in Linux Mint by default, but a lot has changed  in Linux Mint 18 (ubuntu 16.04) vs Linux Mint 17.x (ubuntu 14.04).  I did not know if "qtox" would have installed that as a dependency or not...
+[17:44:38] <user69> I'll check that... I don't see that in my Linux Mint 17.3 ....
+[17:46:20] <user69> I did just see this from those results, "Conflicts: qtox-alpha"?
+[17:47:47] <user69> I have installed "qtox awhile ago from the ".deb" file, and then installed the repo for this, then today I updated using a new ".deb" file....
+[17:52:18] <user69> zetok: fyi: my email address is "phd21mint@gmail.com", and my qtox id is phd21 and is on the toxme.io
+[17:53:24] <user69> Ok, gotta go for now. Thanks again for all your help and replying to my questions...
+[17:55:07] *** Quits: user69 (~user69@ ) (Quit: Konversation terminated!)
+[18:02:40] * zetok wonders if scrub script for public logs should also try to scrub emails
+[18:18:47] *** Joins: kchz (~dschulz@ )
+[18:36:45] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[18:45:16] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 265 seconds)
+[18:58:27] *** Joins: st4ll1 (~st4ll1@ )
+[19:09:46] *** Joins: random (54b80a5c@ )
+[19:10:00] *** Quits: random (54b80a5c@ ) (Client Quit)
+[19:10:25] *** Joins: friedrich_ (~friedrich@ )
+[19:17:51] *** Quits: friedrich_ (~friedrich@ ) (Quit: friedrich_)
+[19:19:41] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 244 seconds)
+[19:26:08] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[19:26:40] *** Joins: LittleVulpix (~Miranda@ )
+[19:39:11] *** Joins: in1t3r (~LordShiva@ )
+[19:41:07] *** Joins: Achylles (~Achylles@ )
+[20:00:42] *** Joins: shiva (~LordShiva@ )
+[20:02:46] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[20:47:35] <nurupo> tux3: ping me when the 1.6 windows binaries are out, will update the website. or just open a PR assign me and stal -- less work for me :P
+[20:48:03] <tux3> nurupo, they should be out!
+[20:48:35] <tux3> Did that earlier today
+[20:52:27] <nurupo> tux3: cool, don't forget to ping me / open pr next time :P
+[20:52:52] <tux3> nurupo, Okay, I'll do that!
+[20:52:55] <nurupo> will be making a pr for it now
+[20:54:43] <nurupo> oh
+[20:54:59] <nurupo> https://build.tox.chat/view/qtox/job/qTox_pkg_windows_x86_stable_release/lastSuccessfulBuild/artifact/setup-qtox.exe
+[20:55:13] <nurupo> >/lastSuccessfulBuild/
+[20:55:15] <nurupo> derp
+[20:55:20] <nurupo> no need to update anything
+[20:55:59] <nurupo> forgot that it's uTox we need to update, not qTox
+[20:56:04] <nurupo> unless you want me to link to your qtox download links
+[20:56:18] <nurupo> *link to your qtox binaries
+[21:01:36] <tux3> Sure, if you want to link to the latest version that sounds good
+[21:01:55] <tux3> (If that isn't already the case?)
+[21:03:27] <nurupo> we link to the latest
+[21:03:45] <nurupo> it's just that your binaries are signed, while the ones on jenkins are not
+[21:03:58] <nurupo> woudl be cool to somehow provide hash/signature information on the website
+[21:04:10] <zetok> Hm.
+[21:04:46] <nurupo> hm
+[21:05:14] <nurupo> tux3: how does binary signing work agin? the binary is the same but the signatiure file is a signed hash of the binary?
+[21:05:34] <zetok> detached signature, yes
+[21:05:47] <nurupo> oh, nevermind then
+[21:06:34] <nurupo> i thought the signature was modifying the binary, so that Windows (tm) (r) would should that the application is not from an untrusted source but from a suchand such developer
+[21:06:43] <nurupo> *would show
+[21:06:45] <zetok> naw
+[21:06:54] <zetok> for that you'd need to pay
+[21:07:06] <nurupo> scams
+[21:07:12] <nurupo> :\
+[21:07:17] <zetok> m$, it's in the name
+[21:08:46] <tux3> nurupo, what zetok says. It used to be signed, but we don't have a cert anymore.
+[21:09:01] <tux3> The upate files are still signed tho, but will a self-signed key.
+[21:31:00] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:34:38] *** Joins: Chiitoo (~Chiitoo@ )
+[22:03:55] <SkyzohKey> tux3: why doesn't u have a key anymore ?
+[22:04:21] <tux3> SkyzohKey, cause it's expensive!
+[22:04:32] <SkyzohKey> wait, the key has to be renewed ?
+[22:04:36] <tux3> You have to buy a certificate
+[22:04:48] <tux3> Ours was only valid for a year
+[22:04:52] <SkyzohKey> o.o
+[22:04:56] <SkyzohKey> that's called "racket"
+[22:05:09] <tux3> Yep! Also known as, "The PKI" :)
+[22:05:15] <SkyzohKey> x')
+[22:05:28] <SkyzohKey> tux3: hs: tu te co' plus sur tox ? Ou t'as changé d'id ?
+[22:06:11] <tux3> SkyzohKey, j'ai pas changé d'id, mais je me co pas tres souvent
+[22:06:20] <SkyzohKey> :c
+[22:06:51] <tux3> J'ai pas encore convaincu assez de gens d'utiliser tox :)
+[22:07:12] <tux3> Il faut juste que je rachète Microsoft et que je remplace Skype
+[22:11:26] <SkyzohKey> x')
+[22:15:02] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 265 seconds)
+[22:53:57] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[22:54:33] *** Joins: Achylles (~Achylles@ )
+[22:57:46] *** Joins: DaSpirit (~DaSpirit@ )
+[23:39:29] -qtox-git-spam- [qTox] Diadlo opened pull request #3885: refactor: Added  to include path and exclude it from all includes (master...includeSrc) https://git.io/vXDrP
+[23:59:28] *** Quits: Achylles (~Achylles@ ) (Quit: Leaving)
