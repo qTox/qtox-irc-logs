@@ -1,0 +1,404 @@
+[00:08:02] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[00:10:04] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:15:25] *** Joins: Emcy (~MC@ )
+[00:15:25] *** Quits: Emcy (~MC@ ) (Changing host)
+[00:15:25] *** Joins: Emcy (~MC@ )
+[00:34:18] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[01:46:28] <oranges> are all qtox clients programmed to check the windows update server at the same times?
+[01:46:33] <oranges> you should randomize it to minimize load
+[01:46:40] <oranges> the spikes seem very regular
+[02:40:17] *** Joins: kchz (~dschulz@ )
+[02:51:04] *** Quits: DaSpirit (~DaSpirit@ ) (Remote host closed the connection)
+[02:58:54] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[04:35:06] *** Quits: vindelschtuffen (~vindelsch@ ) (Remote host closed the connection)
+[05:01:17] *** Joins: Diadlo (~diadlo@ )
+[05:31:00] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[05:38:10] *** Joins: Chiitoo (~Chiitoo@ )
+[06:55:58] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[06:56:47] *** Joins: VVD (~VVD@ )
+[07:59:47] <zetok> oranges: mind making an issue for that?
+[08:17:04] <zetok> Diadlo: looks like agilob can't test, since for some reason compiling on FreeBSD doesn't work anymore
+[08:26:10] *** Quits: cisc (~cisc@ ) (Ping timeout: 268 seconds)
+[08:28:09] *** Joins: cisc (~cisc@ )
+[09:05:36] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 265 seconds)
+[09:23:08] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:24:10] *** Joins: LittleVulpix (~Miranda@ )
+[09:46:02] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:46:35] *** Joins: VVD (~VVD@ )
+[09:57:48] *** Joins: st4ll1 (~st4ll1@ )
+[10:07:40] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[10:35:09] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 252 seconds)
+[10:35:55] *** Joins: CGGB (~CGGB@ )
+[11:10:56] *** Joins: sudden6 (~anonymous@ )
+[11:35:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[11:40:43] *** Joins: sudden6 (~anonymous@ )
+[12:58:46] *** Quits: MiokIry (~Miok@ ) (Read error: Connection reset by peer)
+[13:31:54] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[13:32:58] *** Joins: Chiitoo (~Chiitoo@ )
+[13:59:49] *** Quits: mitfree (~mit@ ) (Ping timeout: 244 seconds)
+[14:10:42] *** Joins: MiokIry (~Miok@ )
+[14:14:19] *** Joins: mitfree (~mit@ )
+[14:20:28] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 260 seconds)
+[14:26:40] *** Joins: kchz (~dschulz@ )
+[14:33:29] *** Joins: shiva (~LordShiva@ )
+[14:52:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[14:55:07] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 252 seconds)
+[15:08:28] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[15:10:08] *** Joins: sudden6 (~anonymous@ )
+[15:10:48] *** Joins: shiva (~LordShiva@ )
+[15:21:15] <sudden6> zetok: https://github.com/qTox/qTox/pull/3827 I think I fixed the issue you reported, can you verify?
+[15:36:46] <zetok> aw
+[15:37:05] <zetok> sudden6: found a way to erase history, no idea if it's also on master
+[15:37:59] <zetok> (I mean, yet another way of erasing profile)
+[15:38:15] <zetok> s/profile/history/
+[15:38:43] *** Joins: jjuran (~jjuran@ )
+[15:39:20] *** Quits: jjuran (~jjuran@ ) (Client Quit)
+[15:40:16] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[15:40:45] *** Joins: CGGB (~CGGB@ )
+[15:40:47] <zetok> and I can't reproduce it :/
+[15:46:39] * zetok sighs
+[15:51:24] *** Joins: jjuran (~jjuran@ )
+[15:57:28] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:00:23] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[16:00:41] <SkyzohKey> zetok: fixed wording on my pr, does it looks better to u ?
+[16:04:54] <zetok> SkyzohKey: that commit is going to fail on travis
+[16:05:00] <SkyzohKey> why?
+[16:05:12] <zetok> >@SkyzohKey please format the commit message according to our https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#-git-commit-guidelines
+[16:05:23] <zetok> also, you don't need a separate commit for that, just squash it
+[16:05:26] <SkyzohKey> ah yes that fucking commit format
+[16:06:34] <SkyzohKey> i'll squash soon, just time to finish something else
+[16:14:39] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[16:20:42] *** Joins: jjuran (~jjuran@ )
+[16:28:13] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[16:33:51] *** Joins: jjuran (~jjuran@ )
+[17:20:29] <SkyzohKey> zetok: just squash everything once you merge, i'll fuck my computer else, not succeeding at squashing everything u-u
+[17:21:15] <zetok> SkyzohKey: um, what is the problem?
+[17:21:23] <SkyzohKey> it ask me to merge
+[17:21:30] <SkyzohKey> https://github.com/qTox/qTox/pull/3884/commits
+[17:21:55] <zetok> ?
+[17:21:59] <zetok> "it" ?
+[17:22:09] <SkyzohKey> git
+[17:22:10] <SkyzohKey> rebase
+[17:23:11] <zetok> SkyzohKey: `git rebase -i 87fe968`
+[17:23:33] <zetok> everything except for the top commit mark as `squash`
+[17:24:11] <SkyzohKey> "noop"
+[17:24:34] <zetok> ?
+[17:24:51] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[17:24:53] <SkyzohKey> it just prints "noop"
+[17:24:58] <SkyzohKey> i really hate git sometimes
+[17:25:32] <zetok> >_>
+[17:26:54] <zetok> you're doing something wrong
+[17:27:01] <zetok> not sure what exactly, but ok
+[17:27:05] <SkyzohKey> :/
+[17:27:13] <SkyzohKey> im not sure what exactly too x')
+[17:28:50] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 246 seconds)
+[17:30:46] <zetok> SkyzohKey: ok, fixed it
+[17:31:12] <SkyzohKey> thx
+[17:31:16] <SkyzohKey> what was the problem ?
+[17:31:28] <zetok> nothing?
+[17:31:36] <SkyzohKey> ok so problem was me
+[17:31:36] <SkyzohKey> x')
+[17:31:38] <zetok> there was just a small conflict
+[17:31:45] <zetok> (which git tells you about)
+[17:31:58] <zetok> $ git rebase -i 87fe968
+[17:31:58] <zetok> error: could not apply 2fdc9cf... chore(packaging): Add qTox.appdata.xml for enhance packaging integration.
+[17:32:25] <zetok> conflict gets fixed, `git add` and `git rebase --continue`
+[17:32:35] <zetok> `git add $file`
+[17:34:45] <zetok> SkyzohKey: wouldn't it be better to put that file under res/ ?
+[17:34:58] <SkyzohKey> it doesn't go inside the binary
+[17:35:05] <SkyzohKey> and .desktop was a project root so...
+[17:35:20] <zetok> yeah, I'm wondering if .desktop should be moved too
+[17:35:46] *** Joins: jjuran (~jjuran@ )
+[17:36:21] <zetok> but with the .desktop problem is that it haven't been moved in a long time (2 years) and I've already seen things depending on it being there
+[17:36:52] <zetok> so if .desktop gets moved, there are some user scripts that are going to break
+[17:37:08] <SkyzohKey> :/
+[17:41:53] <zetok> SkyzohKey: so, res/ ?
+[17:46:07] <SkyzohKey> as ur convenience
+[17:48:58] *** Joins: qtoxuser (5aaa9e2d@ )
+[17:49:40] *** Quits: qtoxuser (5aaa9e2d@ ) (Client Quit)
+[17:55:29] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[18:18:55] *** Joins: st4ll1 (~st4ll1@ )
+[18:31:30] *** Joins: jjuran (~jjuran@ )
+[18:42:15] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[18:45:10] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[18:51:22] <Chiitoo> Hmmm.  I wonder if it's time for me to look into the filetransfer-widget buttons again yet.  I've been waiting for the re-factoring around those parts to be done with.  That, and lots of other things going on.  :V
+[18:51:29] <Chiitoo> That is to say, I've still not forgotten that issue.  :]
+[18:52:09] <zetok> time is probably as good as any other :|
+[18:52:26] <zetok> tux3: btw, are you subscribed to the qtox-dev ML?
+[18:52:58] * zetok should probably make a list or something
+[18:53:01] <tux3> zetok, not sure if I am
+[18:53:58] <tux3> Yeah I seem to be, it's just not that active!
+[18:54:11] <zetok> ok, good
+[18:55:25] *** Joins: cenysor (~cenysor@ )
+[18:59:25] *** Joins: st4ll1 (~st4ll1@ )
+[19:05:56] *** Joins: jjuran (~jjuran@ )
+[19:10:10] *** Quits: jjuran (~jjuran@ ) (Client Quit)
+[19:16:52] *** Joins: sudden6 (~anonymous@ )
+[19:23:47] <Diadlo> zetok: It's good news. We drop OS support one by one ;)
+[19:23:57] <zetok> :s
+[19:23:59] <Diadlo> Mac OS, FreeBS
+[19:24:04] <Diadlo> D
+[19:24:20] <Diadlo> Next should be Windows
+[19:24:24] <zetok> :D
+[19:24:48] <zetok> random though: I wonder if qTox would work on reactOS
+[19:25:25] <Diadlo> But seriously, we should fix our builds
+[19:25:56] <sudden6> hi
+[19:26:16] <zetok> hai
+[19:26:29] <Diadlo> Hi
+[19:26:37] <zetok> Diadlo: mm, I wonder if that's a problem with the build, or agilob's system
+[19:26:47] <zetok> the logs were weird, so to say
+[19:27:40] <sudden6> Diadlo: could you lgtm https://github.com/qTox/qTox/pull/3864 again, reviewable dropped it
+[19:29:30] <zetok> https://gist.github.com/zetok/5dec3e0b79e6263d4db02391b7c63d5e
+[19:32:39] <Diadlo> sudden6: Done :)
+[19:33:45] -qtox-git-spam- [qTox] sudden6 closed pull request #3864: fix(core): don't emit idSet signal twice (master...fix_idset_emit) https://git.io/vXRAm
+[19:34:03] <sudden6> Diadlo: thx :)
+[19:34:52] <Diadlo> np
+[19:35:00] <sudden6> zetok: ↑ this is the only problem I have with rebase instead of merge, it doesn't scale
+[19:35:08] <Diadlo> zetok: What is is?
+[19:35:12] <Diadlo> *it
+[19:35:19] <sudden6> atleast not with current reviewable
+[19:35:51] <zetok> Diadlo: agilob's build problem
+[19:35:59] <Diadlo> O_o
+[19:36:08] <zetok> sudden6: `lgtm_strong` ?
+[19:36:44] <sudden6> zetok: not really an option, because then stuff could change after I gave lgtm and I don't like that
+[19:37:07] <zetok> then just use merge-pr.sh script
+[19:37:19] <zetok> that'll make me a bit sad inside, but it'll work for you
+[19:38:20] <sudden6> the build problem looks like a serious qmake error
+[19:38:27] <zetok> SkyzohKey: if you don't mind, I'll just move the file in PR
+[19:38:40] <sudden6> or there's a reason `silent` is undocumented
+[19:39:50] * zetok afk &
+[19:43:14] <Diadlo> sudden6: We plan to migrate to CMake
+[19:43:42] <Diadlo> If nobody don't mind
+[19:44:09] <sudden6> Diadlo: why?
+[19:44:31] <Diadlo> More flexible configuration
+[19:44:54] <sudden6> for example?
+[19:44:57] <Diadlo> In particular: subprojects
+[19:45:31] <sudden6> ok, I think qmake supports that too, but I'm not strongly against cmake
+[19:45:46] <Diadlo> qmake requed <subproject-name>/<subproject-name>.pro
+[19:46:23] <Diadlo> It requere project structure change
+[19:47:19] <sudden6> I suppose you want to use that for tests?
+[19:47:55] <Diadlo> Including
+[19:49:26] <Diadlo> What you think about name `widget`, `core` as "package"?
+[19:49:36] <Diadlo> Or "module"?
+[19:54:22] <sudden6> Diadlo: I don't quite understand
+[19:54:58] <Diadlo> We have directories `widget`, `core`
+[19:55:30] <Diadlo> What they have in common a name?
+[19:56:00] <sudden6> hmm, I don't now, module sounds better IMHO
+[19:56:19] <sudden6> because a package is something that can work on it's own
+[19:57:04] <Diadlo> Thanks
+[19:57:49] * sudden6 making the most important decisions lol
+[19:59:28] <Diadlo> :D
+[20:05:16] * zetok could make use of some deciding
+[20:06:38] <zetok> sudden6: https://github.com/qTox/qTox/issues/3779 ?
+[20:07:06] <zetok> sudden6: I think that we should do something more than we already do, but not going as far as disabling UDP for everyone
+[20:07:35] <zetok> I wonder if there is some way of detecting whether the SOCKS proxy is a tor one
+[20:08:54] <sudden6> zetok: how many SOCKS5 proxies support UDP?
+[20:09:11] <zetok> theoretically, all of them can
+[20:09:13] <sudden6> I don't think there are that many (guess)
+[20:10:15] <sudden6> anyway, if we can make sure toxcore isn't sending UDP packets anywhere else than to the proxy we should leave it enabled by default
+[20:10:40] <sudden6> since it spreads the load over the network
+[20:11:04] <sudden6> else we should turn it of for security
+[20:11:21] <sudden6> and tell toktok people to fix it ;)
+[20:11:43] <zetok> mm
+[20:12:11] <zetok> I'm not sure if I remember correctly, but if I do, toxcore does try to send UDP outside of proxy
+[20:12:53] <sudden6> that would be very bad then, since it defeats the proxy...
+[20:12:54] <zetok> now, if only Linux had a decent networking stack, we could easily check that
+[20:13:05] <zetok> sudden6: nope
+[20:13:14] <zetok> sudden6: proxy's purpose is to provide connection
+[20:13:24] <iphy> Proxy is TCP only
+[20:13:40] <iphy> You need to disable UDP if you want to avoid it
+[20:13:49] <iphy> Tor does not support UDP
+[20:13:52] <zetok> sudden6: if toxcore achieves a connection outside of proxy, it doesn't defeat purpose of proxy
+[20:14:03] <iphy> Proxy was done mainly for tor
+[20:14:28] <zetok> proxy was done mainly for proxy, and Tor is a bonus that works due to proxy support
+[20:14:39] <sudden6> iphy: do we have to explicitly disable UDP or will toxcore automatically disable it if a proxy is set?
+[20:14:56] <iphy> sudden6: don't know, I just asked
+[20:15:26] <sudden6> I see
+[20:18:08] <sudden6> zetok: so it's pretty clear, we should disable UDP if a proxy is selected
+[20:18:33] <zetok> mm
+[20:37:34] <Diadlo> sudden6: Can you lgtm #3871?
+[20:38:35] <sudden6> Diadlo: done
+[20:39:08] <Diadlo> Quid pro quo :)
+[20:42:53] *** Joins: jjuran (~jjuran@ )
+[21:01:59] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[21:03:08] -qtox-git-spam- [qTox] zetok opened pull request #3888: feat(UI): add accessibility labels to the Profile page (master...feat-access-profile) https://git.io/vX9e1
+[21:17:20] -qtox-git-spam- [qTox] zetok opened pull request #3889: chore(clog): add some options to clog config that help with automation (master...chore-clog) https://git.io/vX9Jk
+[21:22:16] *** Quits: Dragofix (Dragofix@ ) (Quit: Now if you all will excuse me, i have to throw myself out internet.)
+[21:25:58] <Diadlo> zetok: Why xcode build didn't start > https://travis-ci.org/qTox/qTox/builds/176497237?
+[21:26:38] <zetok> osx ¯\_(ツ)_/¯
+[21:27:00] <zetok> there's not enough osx workers, or travis again has some problems with osx servers
+[21:27:40] <zetok> one of reasons why zetox is no longer configured to build on osx travis
+[21:27:51] <zetok> Diadlo: it'll build eventually
+[21:28:54] <Diadlo> I just planned to merge and go sleep. But, I can not wait :/
+[21:29:01] <Diadlo> Good night everyone
+[21:29:07] <zetok> night
+[21:29:58] <zetok> https://www.traviscistatus.com/
+[21:31:52] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:33:12] *** Joins: Chiitoo (~Chiitoo@ )
+[21:38:11] *** Joins: dreadpirate (6dc99807@ )
+[21:38:17] <dreadpirate> hello everyone
+[21:38:41] <zetok> ahoy dreadpirate
+[21:38:44] <dreadpirate> why my qtox client doesn't appear like the one in the official page?
+[21:38:51] <zetok> hm?
+[21:39:09] <zetok> https://qtox.github.io/ ← like this?
+[21:39:21] <dreadpirate> my contact list is so tiny
+[21:39:28] <dreadpirate> not as in the screenshots
+[21:39:54] <dreadpirate> zetok: yup
+[21:39:56] <dreadpirate> for instance
+[21:40:01] <tux3> There's a compact contact list option in the settings, maybe you have it enabled?
+[21:40:02] <zetok> https://camo.githubusercontent.com/9697449c998f6b23154ecd0693e2be6b2ba150cd/68747470733a2f2f692e696d6775722e636f6d2f746d58387a39732e706e67 ← the other screenshot
+[21:40:03] *** Joins: jjuran (~jjuran@ )
+[21:40:07] <dreadpirate> the avatars are much larger
+[21:40:33] <dreadpirate> that's how they are appearing
+[21:40:51] <dreadpirate> however I do have the search contacts bar
+[21:41:06] <dreadpirate> and the last screenshot you sent doesn't
+[21:41:17] <dreadpirate> tux3: compact list?
+[21:41:21] <dreadpirate> I miss that option
+[21:41:27] <dreadpirate> is under the general settings?
+[21:41:44] <zetok> User Interface
+[21:41:56] <tux3> dreadpirate, it's the option for the screenshot zetok showed you. I'm not sure what the exact name is
+[21:42:33] <dreadpirate> not seeing it under the options :|
+[21:42:34] <zetok> dreadpirate: https://github.com/qTox/qTox/blob/master/doc/user_manual_en.md#contact-list-1 ← does that help?
+[21:42:47] <zetok> dreadpirate: also, which qTox version?
+[21:43:05] <dreadpirate>  v1.5.2-obs.
+[21:44:23] <zetok> dreadpirate: https://github.com/qTox/qTox/blob/v1.5.0/doc/user_manual_en.md#chat ← under this
+[21:46:07] <dreadpirate> found it!
+[21:46:08] <dreadpirate> :D
+[21:46:18] <dreadpirate> much appreciated guys
+[21:46:52] <dreadpirate> many thanks zetok 
+[21:46:56] *** Joins: Dragofix (Dragofix@ )
+[21:47:09] <dreadpirate> I'm actually loving this client
+[21:47:16] <zetok> you're welcome :)
+[21:47:24] <dreadpirate> however I did face a bug
+[21:47:29] <dreadpirate> it was the only bug so far
+[21:47:37] <zetok> hm?
+[21:48:00] <dreadpirate> when someone sends a message when the other party is offline or went immediately offline 
+[21:48:06] <dreadpirate> the message is displayed twice
+[21:48:27] <zetok> on the receiving side?
+[21:48:32] <dreadpirate> yes
+[21:48:40] <dreadpirate> for instance
+[21:48:49] <dreadpirate> I got a message while I was off
+[21:49:00] <dreadpirate> actually I didn't sorry
+[21:49:03] <dreadpirate> since I was off
+[21:49:07] <zetok> https://github.com/qTox/qTox/issues/2726
+[21:49:25] <dreadpirate> but when I was online again the message was displayed (which is the expected behaviour) 
+[21:49:32] <dreadpirate> and another time when the other party joined
+[21:49:39] <dreadpirate> so it basically showed up twice
+[21:49:48] <dreadpirate> damn
+[21:49:53] <dreadpirate> this bug track is fast ;D
+[21:50:11] <dreadpirate> it's open since 2015?
+[21:50:13] <dreadpirate> damn
+[21:50:19] <dreadpirate> is that so hard to address?
+[21:50:28] <zetok> kinda
+[21:50:52] <zetok> AFAIK it requires some bigger refactoring
+[21:51:09] <dreadpirate> ah
+[21:51:10] <dreadpirate> ok ok
+[21:51:15] <dreadpirate> I can live with that
+[21:51:25] <dreadpirate> apart form this the experience is very good
+[21:51:29] <dreadpirate> oh
+[21:51:33] <dreadpirate> I recall another thing
+[21:51:39] <dreadpirate> probably it's on my end
+[21:51:41] <zetok> refactoring is going on, but it's slow, given that no one is paid to work on qTox
+[21:51:46] <dreadpirate> but I cannot share my screen
+[21:52:00] <dreadpirate> zetok: yeah, I understand
+[21:52:07] <dreadpirate> zetok: but the project is awesome
+[21:52:16] <dreadpirate> I really appreciate all the effort guys
+[21:52:24] <dreadpirate> its fantastica
+[21:52:35] <dreadpirate> I have been using ricochet so far
+[21:52:51] <dreadpirate> and I confess didn't like that much 
+[21:53:12] <zetok> :)
+[21:53:19] <dreadpirate> given the lack of estability of some of the tor nodes
+[21:53:33] <dreadpirate> so moving to tox is being awesome
+[21:53:49] <dreadpirate> zetok: if I can contribute in any way
+[21:53:52] <dreadpirate> pls let me know
+[21:53:54] <zetok> Yes.
+[21:54:03] <zetok> we lack a pirate translation of qTox
+[21:54:12] <dreadpirate> lol
+[21:54:17] <dreadpirate> that is just the name :P
+[21:54:30] <zetok> https://qtox.github.io/pr.html ← website has it, but not the client :(
+[21:54:37] <zetok> aw
+[21:54:45] <zetok> dreadpirate: any other languages?
+[21:55:33] <zetok> dreadpirate: if you're feeling adventurous, you could try testing PRs
+[21:56:06] <dreadpirate> zetok: PRs?
+[21:56:11] <zetok> pull requests
+[21:56:13] <dreadpirate> ahh
+[21:56:17] <dreadpirate> sorry
+[21:56:19] <dreadpirate> sure
+[21:56:48] <dreadpirate> I know java, c, c++ (which I have not touch for a longe time now), python, perl 
+[21:56:54] <dreadpirate> oh 
+[21:56:58] <zetok> ooh, that sounds great
+[21:57:08] <dreadpirate> and some other decomissioned languages like prolog :P
+[21:57:18] <zetok> there's lots of stuff with the code that could use some help
+[21:57:33] <dreadpirate> I do identify myself a lot with this project
+[21:57:52] <dreadpirate> I have been looking for an alternative like this for quite a while now
+[21:58:03] <dreadpirate> so anything I can do, I'll try my best to
+[21:58:04] <zetok> you might want to skim through CONTRIBUTING.md, and look at the issues with the `help wanted` label
+[21:59:24] <zetok> dreadpirate: also reviewing PRs would be great
+[21:59:34] <dreadpirate> ok
+[21:59:39] <dreadpirate> let me take a look at it
+[21:59:55] <zetok> (CONTRIBUTING.md describes the workflow)
+[22:00:18] <dreadpirate> all commits must be signed?
+[22:00:30] *** Joins: Achylles (~Achylles@ )
+[22:00:31] <zetok> only maintainers' commits
+[22:00:34] <dreadpirate> ah
+[22:00:35] <dreadpirate> ok ok 
+[22:01:25] <zetok> btw, CONTRIBUTING.md could make some use of improvements, so if you find that it lacks in some aspects, don't hesitate to point that out
+[22:03:38] <dreadpirate> ok
+[22:03:52] <dreadpirate> I will definately take a look at it
+[22:04:08] <dreadpirate> however this seem very stable
+[22:04:20] <dreadpirate> my overall experience has been very pleasant I must say
+[22:04:42] <dreadpirate> I've tried the other clients and the experience has not been so great
+[22:07:31] <dreadpirate> zetok: C++11 
+[22:07:48] <zetok> right
+[22:07:58] <zetok> there's a PR that adds coding guidelines
+[22:07:59] <dreadpirate> not familiarized with that
+[22:08:14] <zetok> https://github.com/qTox/qTox/pull/3839
+[22:10:39] <zetok> https://github.com/qTox/qTox/issues/3890 there we go :D
+[22:12:35] <dreadpirate> oh dear
+[22:12:36] <dreadpirate> lol
+[22:13:10] <dreadpirate> when you mentioned pirate translation I though you were teasing with me 
+[22:13:24] <zetok> nah
+[22:13:27] <dreadpirate> as my nick also contains the 'pirate'
+[22:13:28] <dreadpirate> lol
+[22:13:32] <dreadpirate> yup
+[22:13:34] <zetok> I wanted to get pirate translation in qTox for years
+[22:13:36] <dreadpirate> I realize it now
+[22:13:57] <dreadpirate> forgive my ignorance, but what's a pirate translation then?
+[22:14:09] <zetok> um, have you had a look on the website?
+[22:15:08] <dreadpirate> ah
+[22:15:14] <dreadpirate> I realize now
+[22:15:26] <dreadpirate> "keep up with yer mates"
+[22:15:26] <dreadpirate> lol
+[22:15:31] <dreadpirate> funny
+[22:15:31] <dreadpirate> ehe
+[22:16:19] <dreadpirate> btw
+[22:16:41] <dreadpirate> I just notice that this page is not the same as the page I initially landed - tox.chat
+[22:16:48] <zetok> yep
+[22:16:50] <dreadpirate> why the difference?
+[22:16:55] <dreadpirate> is that a fork?
+[22:17:01] <zetok> https://qtox.github.io/blog/2016/08/10/Hello-World.html
+[22:18:50] <dreadpirate> tell me somethinf
+[22:18:53] <dreadpirate> ..something
+[22:19:17] <zetok> dreadpirate: have you had a look at the blog link?
+[22:19:27] <dreadpirate> from what I read it seems that no one is maintaing the chat.tox then
+[22:19:35] <dreadpirate> not yet
+[22:21:05] <dreadpirate> well
+[22:21:11] <dreadpirate> that explains :|
+[22:21:13] <dreadpirate> damn 
+[22:21:46] <dreadpirate> that's why so many good projects stalls
+[22:22:11] <dreadpirate> I did not know anything about it
+[22:22:25] <dreadpirate> actually I landed on the github page by chance
+[22:22:34] <dreadpirate> and installed my qtox version from there
+[22:23:55] <zetok> mm
+[22:24:16] <zetok> qTox could make use of some better "public relations"
+[22:24:49] <zetok> i.e. links to stuff being posted in places
+[22:25:21] <dreadpirate> I concur
+[22:27:13] *** Quits: nightfuri (~nightfuri@ ) (Remote host closed the connection)
+[22:28:09] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[22:35:38] *** Joins: nightfuri (nightfuri@ )
+[22:36:38] *** Quits: nightfuri (nightfuri@ ) (Client Quit)
+[22:39:06] *** Joins: Chiitoo (~Chiitoo@ )
+[23:18:56] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[23:28:06] *** Joins: DaSpirit (~DaSpirit@ )
+[23:43:46] *** Quits: dreadpirate (6dc99807@ ) (Quit: Page closed)
+[23:48:20] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
