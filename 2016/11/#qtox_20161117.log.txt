@@ -1,0 +1,156 @@
+[00:00:28] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 245 seconds)
+[00:14:02] *** Joins: shiva (~LordShiva@ )
+[00:24:12] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:55:18] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[00:56:19] *** Joins: LittleVulpix (~Miranda@ )
+[01:25:24] *** Joins: kchz (~dschulz@ )
+[01:40:51] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 256 seconds)
+[01:50:12] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[01:52:42] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[02:22:32] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:37:05] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 256 seconds)
+[04:42:00] *** Joins: in1t3r (~LordShiva@ )
+[05:24:29] -qtox-git-spam- [qTox] Diadlo closed pull request #3871: fix(UI): Changed tab order to be same with visual order (master...fixTabOrder) https://git.io/vXoDA
+[05:41:29] *** Quits: genesis (~genesis@ ) (Ping timeout: 260 seconds)
+[05:50:55] *** Joins: cisc (~cisc@ )
+[06:13:18] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[06:17:11] *** Joins: Chiitoo (~Chiitoo@ )
+[06:54:08] *** Joins: sudden6 (~anonymous@ )
+[07:10:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[09:39:26] *** Joins: st4ll1 (~st4ll1@ )
+[10:07:57] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[10:30:18] *** Joins: piaert (68eea953@ )
+[10:30:33] <piaert> Where can I download qTox 1.6.0 for Windows?
+[10:31:17] <zetok> from download links
+[10:31:33] <zetok> if you have 1.5.2 installed, it should update itself
+[10:32:36] <zetok> piaert: https://github.com/qTox/qTox#qtox ?
+[10:34:58] <piaert> let me try downloading it again then
+[10:43:02] <SkyzohKey> zetok: feel free to move the file in res if u' want c:
+[10:45:24] <piaert> zetok: thank you, the file now points to 1.6.0, it did not yesterday
+[10:45:52] <zetok> piaert: yeah, it was updated :)
+[10:50:06] *** Quits: piaert (68eea953@ ) (Quit: Page closed)
+[10:53:24] *** Joins: st4ll1 (~st4ll1@ )
+[10:55:40] *** Joins: qtoxuser (5aaa9e2d@ )
+[10:57:53] <qtoxuser> Hello everyone
+[10:58:21] *** Joins: ceurer (68eea994@ )
+[10:59:06] <qtoxuser> I have a little question about qtox 1.6, someone can lend me a hand
+[10:59:42] <zetok> sure
+[11:00:37] <ceurer> Is there a way of increasing the size of text in the text input box? The one that says "Type your message here...".
+[11:00:45] <ceurer> It is very hard for me to see what I type
+[11:01:04] <ceurer> I have already increased the other text size
+[11:01:05] <qtoxuser> From where I can download the new version for debianya that in the new repositories does not appear to me
+[11:01:29] <zetok> qtoxuser: it'll be available once the maintainer has the time to update
+[11:01:54] <zetok> ceurer: not yet, unless you don't mind playing with source
+[11:02:57] <qtoxuser> Thank you for your answer, then wait;)
+[11:03:08] <ceurer> zetok: thank you for the info. I can't deal with source.
+[11:03:18] <ceurer> the text is just too small on a 4K monitor
+[11:03:19] <zetok> ceurer: um, it wouldn't be hard
+[11:03:32] <zetok> (unless you're on windows, there compiling qTox sucks)
+[11:03:39] <ceurer> yes I am on Windows
+[11:03:45] <zetok> oh
+[11:05:24] <qtoxuser> Thank you and goodbye
+[11:05:31] *** Quits: qtoxuser (5aaa9e2d@ ) (Quit: Page closed)
+[11:07:34] *** Joins: kchz (~dschulz@ )
+[11:08:09] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[11:12:25] *** Quits: ceurer (68eea994@ ) (Quit: Page closed)
+[11:32:12] *** Joins: sudden6 (~anonymous@ )
+[12:24:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[12:25:14] *** Joins: sudden6 (~anonymous@ )
+[12:49:25] *** Joins: genesis (~genesis@ )
+[12:51:56] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[13:13:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[13:56:10] <cisc> I got this warning when installing qtox from OBS; key is expired: warning: /var/cache/zypp/packages/home_antonbatenev_tox/x86_64/qtox-201610292107~v1.5.1-4.4.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 5ef8303b: NOKEY
+[13:57:43] <zetok> cisc: have you looked at the blog?
+[13:58:13] <zetok> oh
+[13:58:28] * zetok wonders
+[13:59:39] <zetok> cisc: you're using opensuse?
+[14:00:50] <zetok> cisc: well, anyway; key expired, you need to add a new one
+[14:01:02] <zetok> no idea how to do that for opensuse
+[14:01:09] <zetok> or other rpm distros
+[14:01:20] <zetok> cisc: you might want to make an issue and ping @abbat in it
+[14:06:41] <cisc> zetok: yes on openSUSE but that key is coming from the repo, its not my key
+[14:06:58] <zetok> cisc: ok, then make an issue
+[14:07:42] <cisc> k
+[14:10:08] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[14:18:48] *** Joins: cisc (~cisc@ )
+[16:18:40] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[16:53:22] *** Joins: Emcy (~MC@ )
+[17:11:54] *** Joins: sudden6 (~anonymous@ )
+[17:30:18] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXQZC
+[17:30:18] -qtox-git-spam- qTox/master 4ea0b30 SkyzohKey: chore(packaging): Add qTox.appdata.xml for enhance packaging integration.
+[17:36:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[17:41:44] *** Joins: Emcy_ (~MC@ )
+[17:41:52] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[17:54:15] *** Joins: Emcy (~MC@ )
+[17:54:15] *** Quits: Emcy (~MC@ ) (Changing host)
+[17:54:15] *** Joins: Emcy (~MC@ )
+[17:55:16] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[18:11:46] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 250 seconds)
+[18:28:16] *** Joins: kchz (~dschulz@ )
+[18:32:37] *** Quits: kchz (~dschulz@ ) (Ping timeout: 240 seconds)
+[18:33:47] <Emcy> if you enable portable mode in qtox
+[18:34:19] <Emcy> does it automatically copy or move the stuff in appdata [or usr] to its own directory
+[18:34:32] <Emcy> i mean the directory its running from
+[18:34:41] <Emcy> or do you have to move it yourself
+[18:34:48] <zetok> it should
+[18:37:49] <Emcy> ok
+[18:37:53] <Emcy> i will test this
+[18:40:25] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[18:40:56] *** Joins: VVD (~VVD@ )
+[19:01:10] *** Joins: kchz (~dschulz@ )
+[19:27:22] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[19:27:52] *** Joins: VVD (~VVD@ )
+[19:33:14] <Diadlo> Hello everyone
+[19:33:31] <Diadlo> zetok: What you mean by `Tox ID` aren't accessible?
+[19:33:40] <Diadlo> *do you
+[19:33:47] <zetok> Diadlo: are they?
+[19:33:58] <zetok> i.e. how does one copy them?
+[19:34:26] <Diadlo> Click Tab until it will be selected, Ctrl + C
+[19:34:33] <Diadlo> I didn't try
+[19:34:54] <Diadlo> Tested. It works
+[19:35:33] <Diadlo> And screen reader can read it
+[19:38:00] <zetok> ok, nvm then
+[19:38:30] <Emcy> is qtox in portable mode able to properly autoupdate itself
+[20:07:32] *** Joins: sudden6 (~anonymous@ )
+[20:23:59] <Emcy> ok so enabling portable mode just copied the .tox from appdata on windows
+[20:24:15] <Emcy> it did not delete what was left behind
+[20:24:33] <Emcy> also, even in portable mode it creates an empty tox folder back in appdata
+[20:25:08] <Emcy> kinda not as covert as i had hoped
+[21:22:34] *** Joins: abbat (~Anton@ )
+[21:26:27] <zetok> ><cisc> I got this warning when installing qtox from OBS; key is expired: warning: /var/cache/zypp/packages/home_antonbatenev_tox/x86_64/qtox-201610292107~v1.5.1-4.4.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 5ef8303b: NOKEY
+[21:26:29] <zetok> abbat: ↑ ?
+[21:29:59] <abbat> zetok, Have to re-install or update repo key from OBS
+[21:31:29] <zetok> right
+[21:31:39] <zetok> is there a command for it?
+[21:31:54] <zetok> (updating repo key)
+[21:34:10] <abbat> May be zypper --gpg-auto-import-keys ref (I'm not sure)
+[21:34:49] <zetok> ok
+[21:34:58] <zetok> I guess it'll be simpler to remove & add repo again
+[22:17:20] <zetok> abbat: btw, there were some people asking about for 1.6 in OBS
+[22:22:29] <abbat> zetok, In progress right now
+[22:22:42] <zetok> awesome, thanks :)
+[22:25:46] *** Joins: Asal (ba81a2e5@ )
+[22:26:00] <Asal> Hi there!
+[22:26:06] <Asal> I have a qestion
+[22:26:28] <Asal> how I do to compile qTox in OpenBSD?
+[22:27:31] <Asal> What are the requeriments, because the needed packages for GNU/Linux can have a different name for OpenBSD
+[22:27:53] <Asal> Should I use gmake to compile?
+[22:28:16] <Asal> well, there are my questions, when you have time, please answer... Thank you all!
+[22:29:16] <zetok> Asal: have you looked at the INSTALL.md ?
+[22:30:16] <zetok> Asal: there's a list of dependencies there, but aside from that I'm not sure how relevant to OpenBSD it is
+[22:30:35] <zetok> it would be good to add OpenBSD section :)
+[22:30:50] <Asal> OK, I will start from there! I think I had, but I don't remember! 
+[22:31:07] <Asal> Yes, It would be nice to have a section for OpenBSD
+[22:31:36] <Asal> wait just a few minutes, let's see what I can have in the INSTALL.md
+[22:37:03] <Asal> mmm... I just see a problem here... there is not a clear instruction about dependencies in OpenBSD
+[22:37:05] <Asal> https://github.com/qTox/qTox/blob/master/INSTALL.md
+[22:37:41] <Asal> in FreeBSD you have the ports, so, when you try "make install clean" dependencies are bulding, and installed automatically
+[22:38:17] <Asal> but, the deal here is that the package names of dependences could be different in OpenBSD
+[22:48:37] <sudden6> Asal: I guess the package names are similar to Linux, you'll probably have to take some educated guesses
+[22:49:12] <sudden6> but if you found out all dependencies for OpenBSD it would be cool if you could at them to INSTALL.md
+[22:50:37] <sudden6> you could probably ask on an OpenBSD channel for help on locating the correct packages
+[22:52:00] *** Quits: Asal (ba81a2e5@ ) (Ping timeout: 260 seconds)
+[22:56:35] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:05:11] *** Joins: sudden6 (~anonymous@ )
+[23:15:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[23:27:48] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
