@@ -1,0 +1,154 @@
+[00:29:44] *** Quits: CGGB (~CGGB@ ) (Read error: Connection reset by peer)
+[00:30:01] *** Joins: CGGB (~CGGB@ )
+[00:43:38] *** Joins: DaSpirit (~DaSpirit@ )
+[00:52:13] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[01:22:02] *** Joins: aesir1 (~aesir@ )
+[01:25:33] *** Quits: aesir_ (~aesir@ ) (Ping timeout: 260 seconds)
+[02:09:33] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[02:20:38] *** Joins: LittleVulpix (~Miranda@ )
+[02:22:33] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[03:33:16] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:58:45] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[04:01:10] *** Joins: kchz (~dschulz@ )
+[04:09:18] *** Joins: zero-ghost (~0@ )
+[04:46:12] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[04:50:50] *** Joins: kchz (~dschulz@ )
+[06:16:35] <koshii> Is creating group chats totally broken in the current stable (opensuse repo) qtox?
+[06:16:51] <koshii> I cannot seem to successfully invite someone to a group chat, at all.
+[06:44:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:58:26] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 256 seconds)
+[07:03:27] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[07:03:44] *** Joins: Curlybear (~Curlybear@ )
+[07:04:41] *** Joins: Diadlo (~diadlo@ )
+[07:56:30] *** Joins: cisc (~cisc@ )
+[09:02:02] *** Joins: albel727 (~albel727@ )
+[10:10:49] *** Joins: sudden6 (~anonymous@ )
+[10:12:01] *** Joins: dardevelin (~dardeveli@ )
+[10:21:03] <zetok> koshii: nope
+[10:24:07] <koshii> Are groups compatible between uTox and qTox?
+[10:27:48] <zetok> why wouldn't they be?
+[10:28:13] <zetok> I mean, unless µTox does some non-standard shit
+[10:28:17] * zetok wouldn't be surprised
+[10:29:19] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[10:36:52] <koshii> (shrug)
+[11:05:02] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[11:05:31] *** Joins: CGGB (~CGGB@ )
+[12:03:01] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[12:03:16] *** Joins: SkyzohKey (~skyzohkey@ )
+[12:16:35] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[12:20:45] <zetok> koshii: have you tried with qgroupbot ?
+[12:25:31] <koshii> zetok: No I have not, what and how?
+[12:25:40] <zetok> koshii: it's in the topic :)
+[12:25:45] <koshii> Ah!
+[12:26:11] <koshii> That works. The issue seems to be creating new group chats.
+[12:26:20] <koshii> Anyway I'll narrow it down and make an issue on GitHub...
+[12:27:51] <zetok> um
+[12:28:04] <zetok> are other people you've tried to invite using qTox?
+[12:28:16] <koshii> uTox
+[12:28:23] <zetok> hmm
+[12:28:31] <zetok> it kinda sounds like µTox is broken
+[12:28:35] <koshii> Probably...
+[12:28:50] <koshii> Windows users love it though -- single small exe ftw?
+[12:29:23] <zetok> qTox also could have something like that
+[12:29:48] <koshii> Could or does?
+[12:29:53] <zetok> could
+[12:30:02] <zetok> i.e. it's ~doable
+[12:30:06] <koshii> :)
+[12:30:07] <koshii> Great
+[12:30:21] <zetok> could ≠ will
+[12:30:27] <koshii> I understand that
+[12:36:18] <zetok> perhaps you could ask people to try with qTox
+[12:36:29] <koshii> Will do
+[12:36:35] <zetok> thanks :)
+[12:39:42] <koshii> Thank you!
+[12:47:56] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[12:48:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[13:04:52] *** Quits: MiokIry (~Miok@ ) (Read error: Connection reset by peer)
+[13:06:06] *** Joins: kchz (~dschulz@ )
+[13:13:20] *** Joins: reBrain (~quassel@ )
+[13:16:22] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 268 seconds)
+[13:43:18] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[13:45:11] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXFgW
+[13:45:11] -qtox-git-spam- qTox/master ca94587 Zetok Zalbavar: chore(clog): add some options to clog config that help with automation
+[14:01:57] *** Joins: abbat (~Anton@ )
+[14:44:52] *** Joins: albel727 (~albel727@ )
+[14:58:41] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[15:29:35] *** Joins: DaSpirit (~DaSpirit@ )
+[15:38:09] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[15:38:18] -qtox-git-spam- [qTox] zetok opened pull request #3893: Update translations from Weblate (master...tr) https://git.io/vXFrD
+[15:40:39] -qtox-git-spam- [qTox] zetok opened pull request #3894: chore: add Weblate's config for wlc to automate translation management (master...chore-webl) https://git.io/vXFr5
+[15:42:24] <qTox-Website> [qTox-Website] zetok opened pull request #22: chore: add Weblate's config for wlc to automate translation management (master...chore-webl) https://git.io/vXFrN
+[16:44:52] *** Quits: in1t3r (~LordShiva@ ) (Quit: Leaving)
+[16:45:08] *** Joins: in1t3r (~LordShiva@ )
+[16:47:58] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[17:18:16] *** Joins: sandrorso (~sandro@ )
+[17:27:55] *** Quits: sandrorso (~sandro@ ) (Quit: Ciao. Sto andando via)
+[17:54:28] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:54:40] *** Joins: reBrain (~quassel@ )
+[17:55:15] *** Joins: LittleVulpix (~Miranda@ )
+[18:07:44] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 246 seconds)
+[18:20:20] *** Joins: dardevelin (~dardeveli@ )
+[18:21:26] *** Joins: in1t3r (~LordShiva@ )
+[18:48:15] *** Joins: kchz (~dschulz@ )
+[18:53:18] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:53:41] *** Joins: CGGB (~CGGB@ )
+[18:58:44] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[19:00:40] *** Joins: SkyzohKey (~skyzohkey@ )
+[19:08:02] *** Joins: LittleVulpix (~Miranda@ )
+[19:22:03] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[19:28:00] -qtox-git-spam- [qTox] zetok opened pull request #3895: feat(UI): add accessibility labels to all remaining .ui files (master...feat-access-moar) https://git.io/vXFH8
+[19:40:33] *** Quits: kadinparker[m] (kadinparke@ ) (Ping timeout: 260 seconds)
+[20:00:36] <zetok> Diadlo: um, how translations could be deduplicated?
+[20:01:01] <Diadlo> zetok: Hello. Just execute cmd from post
+[20:01:17] <zetok> ?
+[20:01:37] <zetok> how does it help?
+[20:01:44] <Diadlo> You will see
+[20:01:45] <Diadlo> Ok
+[20:01:48] <Diadlo> Wait a sec
+[20:02:56] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[20:03:16] <Diadlo> https://github.com/qTox/qTox/blob/master/src/net/toxuri.cpp#L76   https://github.com/qTox/qTox/blob/master/src/widget/form/addfriendform.cpp#L279
+[20:03:59] <zetok> yes, I still don't get how does that help
+[20:04:15] <Diadlo> Hm...
+[20:04:21] <zetok> lupdate should handle deduplicating
+[20:04:32] <zetok> if it doesn't, then that's a bug, and should be fixed in it
+[20:04:37] <Diadlo> No
+[20:04:50] <zetok> um?
+[20:05:02] <Diadlo> This is translations from different scopes
+[20:05:15] <Diadlo> QObject and AddFriendForm
+[20:05:30] <zetok> :|
+[20:05:45] <zetok> ok, I see
+[20:05:55] <zetok> seems stupid, but ok
+[20:06:19] <Diadlo> What is "stupid"? Issue or reason?
+[20:06:37] <zetok> reason why lupdate can't handle it
+[20:07:18] *** Joins: kchz (~dschulz@ )
+[20:07:30] <zetok> thanks for explanation
+[20:07:34] <Diadlo> Np
+[20:12:42] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[20:20:26] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:22:56] *** Joins: LittleVulpix (~Miranda@ )
+[20:39:28] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[21:18:58] *** Joins: jjuran (~jjuran@ )
+[21:53:29] -qtox-git-spam- [qTox] zetok pushed 6 new commits to master: https://git.io/vXFAG
+[21:53:29] -qtox-git-spam- qTox/master b4c740b cnzhx: feat(l10n): update Chinese translation from Weblate
+[21:53:29] -qtox-git-spam- qTox/master 1e39d94 pizzaiolo: feat(l10n): update Esperanto translation from Weblate
+[21:53:29] -qtox-git-spam- qTox/master 26ff01b pizzaiolo: feat(l10n): update Portuguese translation from Weblate
+[22:21:49] *** Joins: Bill_MI (~Bill@ )
+[22:28:43] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[22:44:59] <SkyzohKey> zetok: when i say that qTox is broken: blob:https://imgur.com/ffe8a913-a5df-4779-a59b-d3f88e46ac84
+[22:45:01] <SkyzohKey> ups
+[22:45:08] <SkyzohKey> https://i.imgur.com/BYfHPnd.png *
+[22:45:14] <SkyzohKey> it keeps duplicating messages
+[22:53:21] <zetok> SkyzohKey: https://github.com/qTox/qTox/issues/2726
+[22:55:38] <SkyzohKey> linking me to github issue doesn't mean qtox isn't broken
+[23:07:13] *** Quits: aesir1 (~aesir@ ) (Quit: Leaving)
+[23:07:27] *** Joins: aesir1 (~aesir@ )
+[23:07:35] *** aesir1 is now known as aesir
+[23:07:42] *** Quits: aesir (~aesir@ ) (Remote host closed the connection)
+[23:07:57] *** Joins: aesir (~aesir@ )
+[23:15:11] *** Quits: aesir (~aesir@ ) (Quit: Leaving)
+[23:23:47] *** Joins: kchz (~dschulz@ )
+[23:26:53] *** Joins: sudden6 (~anonymous@ )
+[23:27:50] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 256 seconds)
+[23:38:35] <zetok> SkyzohKey: no, it means that it's a known problem
+[23:42:52] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[23:49:15] *** Joins: aesir (~aesir@ )
