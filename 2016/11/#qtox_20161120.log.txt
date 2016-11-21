@@ -1,0 +1,469 @@
+[00:45:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[00:46:29] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 248 seconds)
+[00:50:23] *** Joins: LittleVulpix (~Miranda@ )
+[00:59:50] <LittleVulpix> the #2726 is quite the history to read, lol.
+[02:09:17] <iphy> zetok: can qtox be built on debian stable?
+[04:12:38] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[05:01:37] *** Quits: oranges (oranges@ ) (Remote host closed the connection)
+[05:06:27] *** Joins: jjuran (~jjuran@ )
+[05:07:55] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[05:09:12] *** Joins: SkyzohKey (~skyzohkey@ )
+[05:38:04] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[05:49:41] *** Joins: zero-ghost (~0@ )
+[05:51:25] <nurupo> ><iphy> zetok: can qtox be built on debian stable? <-- there is no ffmpeg and sqlcipher in debian stable (debian jessie). you can built it on debian stable if you build and provide ffmpeg and sqlcipher. alternativly, you could build it on debian jessie-backports, since there are ffmpeg and sqlcipher pcakges available there
+[05:52:50] <nurupo> we were building qTox against jessie-backports successfully ~4 months ago
+[05:53:24] <nurupo> i would expect it to still work
+[05:56:18] *** Joins: dardevelin (~dardeveli@ )
+[05:57:13] <nurupo> debian and ubuntu have this convenient package searching interface https://packages.debian.org/search?suite=jessie-backports&arch=any&searchon=names&keywords=libsqlcipher
+[06:56:32] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[07:05:15] *** Joins: oranges (oranges@ )
+[07:07:01] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[07:47:07] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[07:47:19] *** Joins: cisc (~cisc@ )
+[08:54:04] *** Joins: jjuran (~jjuran@ )
+[09:32:33] <zetok> iphy: what nurupo said, it should build just fine provided that backports repo is added
+[10:05:22] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[10:06:14] <oranges> test
+[10:06:28] *** Joins: SkyzohKey (~skyzohkey@ )
+[10:10:44] *** Quits: in1t3r (~LordShiva@ ) (Quit: Leaving)
+[10:11:07] *** Joins: in1t3r (~LordShiva@ )
+[10:34:49] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:36:34] *** Joins: bashrc (~motters@ )
+[10:53:14] <Diadlo> Hello everyone. One my friend said, that he have a problem with building qtox on slackware 32. Here the error > https://gist.github.com/Diadlo/919b30fc73077d586eeca929b526cabf
+[10:53:47] <Diadlo> Any ideas?
+[10:53:53] <zetok> no
+[10:53:59] <Diadlo> Thx
+[10:54:18] <zetok> Diadlo: https://github.com/qTox/qTox/pull/3847
+[10:55:13] <Diadlo> Ok
+[10:55:29] <zetok> problem reported to tux3 also happened on sl32
+[10:55:57] <zetok> so that makes me wonder
+[11:00:03] <Diadlo> zetok: http://stackoverflow.com/questions/19901934/strange-linking-error-dso-missing-from-command-line
+[11:00:05] <Diadlo> ?
+[11:00:48] <Diadlo> AFAIK, we don't use libatomic direcly
+[11:01:02] <Diadlo> *directly
+[11:01:04] <zetok> :|
+[11:01:12] <zetok> so, a SL problem?
+[11:01:41] <Diadlo> IDK
+[11:02:02] <zetok> in any case, issue could be made
+[11:02:16] <zetok> sec, lemme see who's SL maintainer
+[11:03:44] <zetok> mpxc
+[11:05:45] <zetok> Diadlo: ↑ @mention him on the issue
+[11:08:32] <Diadlo> Ok
+[11:09:02] <Diadlo> After ~10 minute
+[11:09:10] <Diadlo> s
+[11:11:38] <zetok> https://github.com/qTox/qTox/pull/3888 ← btw, I've rebased and LGTM was lost
+[11:13:30] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vXb0T
+[11:13:30] -qtox-git-spam- qTox/master af91885 Zetok Zalbavar: chore: add Weblate's config for wlc to automate translation management
+[11:13:40] <zetok> thanks
+[11:13:43] * zetok goes to rebase again
+[11:15:52] * zetok looks for sudden6
+[11:19:53] <Diadlo> zetok: Seems, it's regression
+[11:20:34] <Diadlo> Friend said, that build was successful in the begin of summer
+[11:24:58] <zetok> mhm
+[11:25:02] <zetok> it is
+[11:25:08] <zetok> Diadlo: can they run bisect?
+[11:25:34] <zetok> https://github.com/qTox/qTox/wiki/Testing#regression-testing
+[11:25:41] <Diadlo> Yes. But not today
+[11:26:21] <zetok> ok
+[11:38:44] *** Joins: sudden6 (~anonymous@ )
+[11:40:44] <zetok> sudden6: hi
+[11:40:49] <sudden6> hi
+[11:41:43] <Diadlo> Hi
+[11:41:44] <zetok> sudden6: about your point that continuous rebasing is problematic – I was wondering if the problem wouldn't exist to begin with if the review process was going more smoothly..
+[11:42:13] <sudden6> zetok: what do you want to improve in it?
+[11:42:43] <zetok> um
+[11:42:56] <zetok> right
+[11:43:22] <zetok> can you say that reviewing goes as smoothly as it can?
+[11:44:26] -qtox-git-spam- [qTox] zetok closed pull request #3888: feat(UI): add accessibility labels to the Profile page (master...feat-access-profile) https://git.io/vX9e1
+[11:44:29] <sudden6> there's always room for improvements, but what concrete thing do you want to improve?
+[11:45:30] <zetok> time
+[11:46:42] <sudden6> and how?
+[11:46:44] <zetok> i.e. it would be nice if there was some guarantee for contributors that their PR will be at least looked at within $x time since they've created it
+[11:47:14] <zetok> Diadlo: btw, have you seen the mail on qTox-dev ML?
+[11:47:41] <sudden6> zetok: I'm not sure we can guarantee this somehow
+[11:47:42] <Diadlo> zetoc: Yes. Sorry, I haven't time to reply
+[11:47:51] <sudden6> ↑ because of this
+[11:48:01] <zetok> Diadlo: no problem, just making sure that you didn't miss it
+[11:48:08] <sudden6> we're all doing this in our free time
+[11:48:12] <Diadlo> Yes. I will do it now
+[11:49:18] <zetok> sudden6: um, is a week still not enough time to even look at the PR and say that you need more time for review?
+[11:49:52] <sudden6> well, I think we have that time now < 1 week
+[11:50:06] <zetok> nope
+[11:50:15] <zetok> there were PRs that exceeded that
+[11:50:59] <zetok> good thing that those were made by me, so no harm done
+[11:51:36] <zetok> but if it was made by someone who was hoping to become a new qTox contributor, they could get disappointed
+[11:51:37] <sudden6> zetok: could it be that those were some bash script changes?
+[11:51:44] <zetok> :|
+[11:51:47] <zetok> maybe?
+[11:52:01] <sudden6> because I looked at some of them, but had no idea what to comment/say
+[11:52:19] <Diadlo> +1
+[11:52:20] <sudden6> so I thought someone more skilled would pick them up
+[11:52:31] <sudden6> well, there's our problem xD
+[11:52:46] <zetok> so, here's the thing
+[11:52:55] <zetok> if it's not clear what something does, comment on that
+[11:53:27] <sudden6> most of the time it's clear what it does, but I can't say if it's done in a good way
+[11:53:43] <zetok> it's bash
+[11:53:54] <sudden6> but I can change that behavior of mine
+[11:54:00] <zetok> you bash it into shape until it works
+[11:54:09] <sudden6> lol
+[11:54:38] *** Joins: sandrorso (~sandro@ )
+[11:56:26] <zetok> ><sudden6> because I looked at some of them, but had no idea what to comment/say
+[11:56:34] <zetok> you could also just write that
+[11:57:03] <zetok> e.g. "looked, seems fine, would be nice though if someone with more exp looked at it"
+[11:57:10] <sudden6> mhm, I'll do from now on
+[11:57:12] <Diadlo> For example changes inside `.travis` or `.clog.toml`. I have no idea, how it works and can't LGTM it. What I should say in this PR?
+[11:57:20] <sudden6> Diadlo: +1
+[11:57:22] <zetok> thanks
+[11:57:41] <zetok> Diadlo: usually there are docs
+[11:57:52] <zetok> (for both clog and travis)
+[11:58:20] <Diadlo> `usually` <- Yep
+[11:59:28] <zetok> I mean, there are docs
+[11:59:39] <zetok> since I make my changes based on the info that docs provide
+[11:59:55] <zetok> https://docs.ansible.com/ansible/YAMLSyntax.html ← docs
+[11:59:58] <zetok> ;D
+[12:00:05] <sudden6> zetok: most of the time the "how" isn't the problem, but the "why"
+[12:00:22] <zetok> right, and that should be in commit msg/comments
+[12:00:28] <sudden6> why is a change necessary and what does it improve?
+[12:00:33] <zetok> if that's lacking, commit msg/comments should be changed/added
+[12:00:42] <sudden6> these two questions should be answered in the commit message
+[12:02:10] <zetok> ok, an example?
+[12:02:33] *** Quits: sandrorso (~sandro@ ) (Quit: Ciao. Sto andando via)
+[12:03:00] <sudden6> zetok: https://github.com/qTox/qTox/pull/3827/commits/e5cd10707f83800d67784b420406f9569160743d 
+[12:03:06] <sudden6> probably not the best example
+[12:03:22] <zetok> um, I meant an example where stuff is missing
+[12:03:30] <sudden6> oh
+[12:03:33] <zetok> so that I would know what to avoid
+[12:07:31] <sudden6> zetok: https://github.com/qTox/qTox/pull/3889/commits/ca9458792c2daeb68b4525e80550f400ccb7f1f9
+[12:07:47] <sudden6> for example, could use an explanation why they help with automation
+[12:08:11] <zetok> hmm
+[12:08:19] <zetok> docs explain that
+[12:09:05] <sudden6> then a link to the docs is nice
+[12:09:32] <sudden6> ie. changed as recommended in [link to doc]
+[12:09:54] <zetok> there is one in CONTRIBUTING.md
+[12:10:09] <zetok> https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#-git-commit-guidelines
+[12:10:10] <sudden6> no, I mean directly in the commit or PR message
+[12:10:20] <zetok> >changed as recommended
+[12:10:26] <zetok> it's a config option
+[12:11:03] <sudden6> that was just an example
+[12:11:07] <zetok> right
+[12:14:51] <zetok> so the problem is finding docs, or their relevant parts?
+[12:19:30] <sudden6> yep
+[12:19:42] <sudden6> especially the "relevant parts" stuff
+[12:20:13] <zetok> ok
+[12:24:28] <zetok> what do you think about providing a HTML version of docs like user manual and CONTRIBUTING.md ?
+[12:24:42] <zetok> and install.md
+[12:25:27] <sudden6> zetok: having a version of our user manual on the website would be awesome
+[12:25:48] <zetok> oh, is that so
+[12:25:50] <sudden6> idk if it makes sense for CONTRIBUTING.md 
+[12:25:53] <zetok> sec
+[12:29:32] <zetok> https://a.uguu.se/YF4IRw1Heyzm.png
+[12:29:48] <zetok> ↑ like this?
+[12:31:47] <zetok> https://a.uguu.se/H3UkwDIEsJJA.png alternatively
+[12:35:50] <sudden6> zetok: looks very "hacker style" to me, maybe match the design of the website?
+[12:35:59] <zetok> :f
+[12:36:02] * sudden6 afk
+[12:38:41] <zetok> https://a.uguu.se/2No1ss1t4zol.png
+[12:41:15] <zetok> https://a.uguu.se/P748uXulzWFY.png ← improved
+[12:54:18] *** Joins: clams (~Kitteh@ )
+[12:58:40] *** Quits: clams (~Kitteh@ ) (Quit: clams)
+[13:19:27] <sudden6> zetok: looks good :)
+[13:19:46] <sudden6> do you think it would be a good idea to make all fonts sans serif?
+[13:23:23] <Diadlo> AFAIC, all screen text should be sans serif
+[13:23:26] <Diadlo> *K
+[13:23:50] <zetok> hmm
+[13:23:55] <Diadlo> screen text == text, which should not be printed
+[13:24:04] <Diadlo> In most cases
+[13:24:25] <zetok> >font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+[13:24:50] <zetok> I have no idea what to put there to make it sans serif
+[13:25:03] <zetok> actually
+[13:25:17] * zetok copypastes
+[13:25:31] <Diadlo> Make first "DejaVu Sans"
+[13:25:33] <Diadlo> I think
+[13:26:05] <Diadlo> Remove `Georgia, Times, "Times New Roman",`
+[13:26:10] <Diadlo> And change last on `sans`
+[13:26:14] <zetok> https://a.uguu.se/a6WxoVnupCpf.png there we go :3
+[13:26:31] <Diadlo> Yep
+[13:27:02] <Diadlo> I skip part, why github `.md` is bad?
+[13:29:17] <sudden6> Diadlo: it's not bad, but to put the user manual directly on qtox.github.io it's bad
+[13:29:59] <Diadlo> Where do you want to put it?
+[13:30:39] <zetok> website/docs/user_manual_en.html
+[13:30:54] <sudden6> Diadlo: no idea yet, maybe under qtox.github.io/manual ?
+[13:31:03] <sudden6> (if that's even possible
+[13:31:20] <zetok> possible, wouldn't recommend
+[13:31:38] <Diadlo> Ok
+[13:34:09] <sudden6> zetok: why not?
+[13:34:29] <zetok> not extensible
+[13:34:49] <sudden6> what do you mean by that?
+[13:35:23] <sudden6> Diadlo: zetok: https://github.com/qTox/qTox/pull/3827 ready to merge?
+[13:37:46] <Diadlo> sudden6: Sorry, I still didn't read it
+[13:38:02] <sudden6> ok, was just a reminder
+[13:38:32] <zetok> >QString RawDatabase::deriveKey(const QString& password, const QByteArray& salt)
+[13:38:37] <zetok> that doesn't look good
+[13:40:46] <zetok> sudden6: is there really no better way to signal that deriving key failed?
+[13:42:14] <zetok> sudden6: do you zero the password/key memory?
+[13:42:53] <sudden6> zetok: no, no password/key memory zeroing, wasn't done before and is out of scope of this PR imo
+[13:43:06] <zetok> IMO it's not
+[13:43:08] <sudden6> (could do it in a follow up tough)
+[13:43:42] <zetok> is there something like `Drop` in C++?
+[13:44:01] <zetok> (a way to specify how something should be free'd)
+[13:44:15] <sudden6> free != zeroed
+[13:44:19] <sudden6> in C++
+[13:44:20] <zetok> pls.
+[13:44:32] <zetok> we're not talking about just freeing memory
+[13:45:00] <zetok> I'm talking about a way to specify how given type should be treated when it comes to its destruction
+[13:45:10] <zetok> "freeing"
+[13:45:13] <sudden6> C++ uses destructors for that
+[13:45:25] <zetok> ok
+[13:45:28] <sudden6> this is commonly called a "Destructor"
+[13:45:46] *** Joins: reBrain (~quassel@ )
+[13:49:31] <sudden6> zetok: I wanted to compile your identicon code, but have a problem
+[13:49:41] <zetok> deps?
+[13:50:16] <zetok> image = "*"
+[13:50:18] <zetok> (IIRC)
+[13:50:41] <sudden6> zetok: did that, but the image crate doesn't compile somehow
+[13:51:03] <zetok> update your Rust
+[13:51:10] <zetok> works on 1.12.1
+[13:51:20] <zetok> 1.11.0 is "too old"
+[13:51:42] <sudden6> rustc 1.10.0-dev -_-
+[13:52:12] <sudden6> can't I just take an older version of the image crate?
+[13:53:58] <sudden6> zetok: newest version I can get is 1.11
+[13:54:09] <zetok> sudden6: https://www.rustup.rs/ there you go
+[13:54:33] <zetok> (you don't need to use curl instructions, there are proper instructions in README.md)
+[13:56:48] <sudden6> zetok: I don't want to circumvent my package manager just for that...
+[13:56:56] * zetok shrugs
+[13:57:08] <sudden6> i'll try an older version of the crate
+[13:57:26] <zetok> as always, I don't see point in using package manager that works against you
+[13:58:39] <zetok> btw, it's not necessarily the direct dependency that fails to compile
+[13:58:43] <sudden6> well, it prevents me from falling back into the windows world of having to update everything separately..
+[13:58:49] <zetok> it can be equally well dep of a dep
+[13:58:58] <sudden6> yep, I noticed :/ it's `rayon` that fails
+[13:59:41] <sudden6> but I guess there's nothing I can do about this then
+[14:01:11] <zetok> https://a.uguu.se/adZ0HYEMgFTA.png ← a proper package manager doesn't work against you
+[14:01:56] <sudden6> I've no idea what I'm looking at lol
+[14:14:40] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[14:30:54] *** Joins: kchz (~dschulz@ )
+[14:55:30] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[14:56:36] *** Joins: SkyzohKey (~skyzohkey@ )
+[14:59:03] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[15:13:58] *** Joins: abbat (~Anton@ )
+[15:31:24] <Diadlo> zetok: Are you here?
+[15:31:32] <zetok> Diadlo: yep
+[15:31:52] <Diadlo> Problem with atomic is architecture
+[15:31:59] <Diadlo> He has i686
+[15:33:01] <sudden6> Diadlo: didn't tux3 change something to make atomic stuff work on 32bit? maybe that broke it for others
+[15:33:20] <Diadlo> Seems, gcc required to specify arch to avoid this problem
+[15:33:24] <tux3> sudden6, no, that commit was never actually merged
+[15:33:33] <sudden6> tux3: oh, sorry then
+[15:33:39] <tux3> np
+[15:33:39] <Diadlo> tux3: Hello
+[15:33:43] <tux3> Diadlo, hi!
+[15:33:52] <sudden6> also hi :)
+[15:34:00] <tux3> hi!
+[15:35:37] <Diadlo> http://stackoverflow.com/questions/23065501/stdatomicunsiged-long-long-undefined-reference-to-atomic-fetch-add-8
+[15:37:06] <zetok> Diadlo: so it's a problem with downstream?
+[15:37:20] <Diadlo> What is `downstream`?
+[15:38:01] <zetok> we're upstream
+[15:38:35] <zetok> downstream is whatever OS that qTox is being packaged/compiled/used on
+[15:38:47] <zetok> os/env
+[15:38:55] <Diadlo> Not really
+[15:39:09] <Diadlo> I.e. Yes, but it's seems, easy to fix
+[15:39:15] <zetok> ok
+[16:13:19] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[16:22:19] *** Joins: in1t3r (~LordShiva@ )
+[16:28:10] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[16:29:17] *** Joins: SkyzohKey (~skyzohkey@ )
+[16:46:06] <iphy> zetok: I got backports
+[16:46:48] <zetok> iphy: and it doesn't work?
+[16:55:01] <iphy> it doesn't have libavcodec-ffmpeg-dev
+[17:00:25] <zetok> :/
+[17:16:37] *** Joins: Diadl0 (~diadlo@ )
+[17:18:12] <Diadl0> What you think about change "Remove circle" on "Delete circle"? It will visually distinguishable with "Rename circle"?
+[17:18:25] <Diadl0> *without ? in the end
+[17:24:53] <sudden6> Diadl0: +1
+[17:25:53] *** Joins: kchz (~dschulz@ )
+[17:26:05] <sudden6> zetok: I ported GH identicon code to ~Rust https://gist.github.com/sudden6/df577a7f4a2ecf0ef9534d8a613599d4 wanna try?
+[17:26:30] <sudden6> note: I couldn't compile/test it, but I think the algorithm should be ok
+[17:27:04] <zetok> hmm.
+[17:28:00] <sudden6> I think the key to a good identicon is operating in the HSV or HSL colorspace
+[17:35:05] <sudden6> zetok: what do you think about it?^^
+[17:36:18] <zetok> sudden6: I think that you should compile the code first
+[17:36:54] <sudden6> I have, I can't fix the remaining errors :(
+[17:37:38] <zetok> errors that aren't caused by using an old compiler?
+[17:38:25] <sudden6> no, something on line 114
+[17:38:47] <sudden6> I ignored the errors caused by the missing image crate
+[17:39:24] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[17:40:10] <zetok> src/main.rs:114:30: 114:54 note: expected type `bool`
+[17:40:10] <zetok> src/main.rs:114:30: 114:54 note:    found type `std::ops::RangeTo<u8>`
+[17:40:25] <sudden6> yep, I don't understand the meaning
+[17:40:27] <zetok> seems quite clear?
+[17:40:40] <sudden6> I want to create a 2d array of bool
+[17:40:44] <zetok> ok, whatever you're feeding wants `bool` value
+[17:40:57] <zetok> what you're providing is a Range
+[17:41:21] <zetok> 1..4 range
+[17:41:24] <zetok> ..4 range
+[17:41:30] <zetok> 4.. infinite range
+[17:41:46] <zetok> "infinite"
+[17:42:09] <zetok> sudden6: in other words, you're not using a valid Rust syntax for what you're doing
+[17:42:14] <sudden6> isn't the syntax for an array [initVal, ..nrOfElements] ?
+[17:42:28] <zetok> nope
+[17:42:39] <sudden6> and how is the correct syntax? I didn't find anything helpful in the docs
+[17:42:47] <zetok> [val; number of items]
+[17:43:06] <zetok> [val, val, val] ← an array with 3 items
+[17:43:27] <sudden6> aw, crap
+[17:44:05] <zetok> btw, you might want to work on Vec instead
+[17:45:15] <zetok> sudden6: um, if you're not sure about the syntax, just ask
+[17:45:27] <zetok> and when it comes to syntax, rust reference is really great
+[17:45:31] <sudden6> I got the syntax now
+[17:45:52] <sudden6> > rust reference is really great <- I can't really agree with that...
+[17:46:25] <zetok> hm?
+[17:47:21] *** Quits: SkyzohKey (~skyzohkey@ ) (Read error: Connection reset by peer)
+[17:48:13] <zetok> https://doc.rust-lang.org/reference.html#array-expressions
+[17:48:28] *** Joins: SkyzohKey (~skyzohkey@ )
+[17:50:23] <sudden6> ok, that referece looks more useful than the stuff I found
+[17:50:47] <sudden6> zetok: I have a new problem now
+[17:50:53] <zetok> gist
+[17:50:58] <sudden6> is updated
+[17:51:20] <sudden6> L96 mismatched types again
+[17:51:33] <zetok> error?
+[17:51:47] <sudden6> main.rs:96:16: 96:23 error: mismatched types [E0308]
+[17:51:48] <sudden6> main.rs:96              hash_color = hash[x];
+[17:51:50] <sudden6>                                      ^~~~~~~
+[17:51:51] <sudden6> main.rs:96:16: 96:23 help: run `rustc --explain E0308` to see a detailed explanation
+[17:51:52] <sudden6> main.rs:96:16: 96:23 note: expected type `[u8; 10]`
+[17:51:54] <sudden6> main.rs:96:16: 96:23 note:    found type `u8`
+[17:52:08] <sudden6> ah ,wait I'm stupid
+[17:52:57] <zetok> http://www.smbc-comics.com/comic/the-rubber-duck-method
+[17:53:31] <sudden6> well, my rubber duck can't explain the Rust syntax to me :p
+[17:54:28] <sudden6> I updated the gist, no more errors not related to the missing image crate
+[17:54:36] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 250 seconds)
+[17:54:42] <zetok> btw, newest stable Rust has nice improvements to compiler output that nicely explain to you what and why doesn't work, and suggest what you could do to make it work
+[17:55:44] <sudden6> mhm, thx
+[17:56:40] <zetok> just install newest Rust
+[17:56:46] *** Quits: aesir (~aesir@ ) (Ping timeout: 250 seconds)
+[17:56:46] *** Joins: aesir_ (~aesir@ )
+[17:56:48] <sudden6> not today, sorry
+[17:57:19] <sudden6> when will rust start to break things less often?
+[17:57:34] <zetok> Rust doesn't break things
+[17:57:37] <sudden6> ie changes in years not in months
+[17:58:10] <zetok> there's just new stuff introduced in the newer versions, and some people have a need to depend on the features
+[17:58:28] <sudden6> >Rust doesn't break things <- pretty wrong imho
+[17:58:37] <zetok> hm?
+[17:58:45] <sudden6> well, it broke for me
+[17:58:57] <zetok> what broke?
+[17:59:03] <sudden6> the image crate
+[17:59:09] <zetok> except that it's not
+[17:59:29] <zetok> there's a dependency on Rust >=1.12
+[17:59:31] <sudden6> my rust is only 2 versions older than the latest release, that's 12 weeks and it broke
+[17:59:51] <zetok> ..
+[18:00:21] <sudden6> ok, to reword my question, when will a rust version appear that won't change for 5 years
+[18:00:25] <zetok> you're using an old version, and you're complaining that it doesn't work with the code that depends on features introduced in newer version
+[18:00:37] <zetok> there's no reason for that to happen
+[18:00:49] <sudden6> that's bad
+[18:00:53] <zetok> not really
+[18:00:57] <sudden6> yes really
+[18:01:32] <sudden6> if you want a greater adoption of rust there has to be some stability
+[18:01:37] <zetok> there is
+[18:01:47] <zetok> and people are using it
+[18:01:52] <sudden6> introducing new stuff every 6 weeks isn't what I call stable
+[18:02:04] <zetok> if your distro doesn't want you to get newest software, that's your problem
+[18:02:15] <zetok> not breaking things is stable
+[18:02:24] <zetok> you might want to also fix your definition of stability
+[18:02:47] <zetok> the code that compiled on 1.10 compiles just fine on 1.13
+[18:02:53] <zetok> that is stable, and will be
+[18:03:13] <zetok> that's the same thing with gcc/clang
+[18:03:38] <zetok> try to compile code that depends on features introduced in newer compiler with an older compiler and complain that it doesn't work
+[18:03:49] <sudden6> yeah, but if stuff is always developed for the newest version there will never be a big codebase you can reuse
+[18:04:11] <zetok> I develop for the version that I can
+[18:04:22] <sudden6> zetok: in C there are standards like C89/C99
+[18:04:39] <zetok> initially that was 1.9, but 1.11 brought some new features that I needed and some nice fixes that made things easier, so now I depend on 1.11
+[18:05:03] <zetok> yeah, we all know that C predates dinosaurs
+[18:05:50] <zetok> sudden6: and there are newer C standards too AFAIK
+[18:05:59] <sudden6> the key point is, that you can compile most of the stuff on hardware where the compiler is 10 years old
+[18:06:14] <zetok> sudden6: have you tried to compile that code with a compiler that supports only C89?
+[18:07:24] <sudden6> zetok: this won't work and I'm not arguing about that, but currently everyone uses C99, and you can go atleast 5 years back in time and compile your stuff
+[18:07:37] <zetok> if your distro doesn't provide you with newest Rust, rustup does the job quite well with `rustup update`
+[18:07:51] <sudden6> mhm
+[18:08:45] <zetok> >this won't work and I'm not arguing about that
+[18:08:50] <zetok> it sounded like you did
+[18:10:21] <sudden6> then I've misworded something
+[18:11:59] *** Joins: dardevelin (~dardeveli@ )
+[18:33:02] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[18:33:14] *** Joins: Diadl0 (~diadlo@ )
+[18:35:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[18:37:54] *** Joins: DaSpirit (~DaSpirit@ )
+[18:51:06] -qtox-git-spam- [qTox] zetok opened pull request #3901: docs(CONTRIBUTING): state the correct way of using CONTRIBUTING.md (master...docs-contrib-easy) https://git.io/vXb77
+[18:59:49] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 256 seconds)
+[19:09:30] *** Joins: kchz (~dschulz@ )
+[19:32:16] *** Joins: sudden6 (~anonymous@ )
+[19:37:57] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[19:38:36] *** Quits: bashrc (~motters@ ) (Ping timeout: 250 seconds)
+[19:38:48] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 256 seconds)
+[19:39:36] *** Joins: bashrc (~motters@ )
+[19:47:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[19:49:49] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[19:49:52] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[19:51:53] *** Joins: SkyzohKey (~skyzohkey@ )
+[20:06:14] *** Joins: in1t3r (~LordShiva@ )
+[20:07:22] *** Quits: aesir_ (~aesir@ ) (Ping timeout: 250 seconds)
+[20:14:44] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[20:15:15] *** Joins: cisc (~cisc@ )
+[20:19:28] *** Joins: aesir_ (~aesir@ )
+[20:22:13] *** Joins: Diadl0 (~diadlo@ )
+[20:42:51] *** Joins: jsgrant (~jsgrant@ )
+[20:50:32] *** Quits: jsgrant (~jsgrant@ ) (Remote host closed the connection)
+[20:51:02] *** Joins: jsgrant (~jsgrant@ )
+[21:01:48] <zetok> sudden6: um, could you fix the code or write how a spec for it?
+[21:02:33] <zetok> s/how //
+[21:06:12] *** Joins: kchz (~dschulz@ )
+[21:09:18] <zetok> Diadlo: btw, antis81 squashed & rebased ui/redesign thing
+[21:10:54] <zetok> Diadlo: https://github.com/antis81/qTox/commit/6fb7243e9d93c8a265df5c71bc12170afe005ecb
+[21:11:06] <zetok> (it still breaks things)
+[21:14:02] <Diadl0> zetok: Yes. I know
+[21:15:42] *** Quits: jsgrant (~jsgrant@ ) (Ping timeout: 256 seconds)
+[21:21:44] <Diadl0> zetok: Please, make warn, if you send a link on a big page
+[21:22:01] <zetok> oh, ok
+[21:24:00] <Diadl0> I split commits, he squash. Cooperation
+[21:24:04] <zetok> sudden6: and it looks like zetox's dependency on Rust is going to be bumped to 1.12.1, since it fixes a problem
+[21:24:30] <zetok> Diadl0: there's a good quote for that
+[21:24:36] <zetok> lemme find it
+[21:26:04] <Diadlo> I am again here
+[21:26:51] <Diadlo> sudden6: Do you plan to replace {} on ()? If not, I will LGTM
+[21:27:16] *** Joins: jsgrant (~jsgrant@ )
+[21:27:48] <zetok> >'I'm sure we can pull together, sir.'
+[21:27:48] <zetok> >Lord Vetinari raised his eyebrows. 'Oh, I do hope not, I really do hope not. Pulling together is the aim of despotism and tyranny. Free men pull in all kinds of directions.' He smiled. 'It's the only way to make progress. That and, of course, moving with the times.'
+[21:28:30] <Diadlo> :)
+[21:35:39] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[21:38:57] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 258 seconds)
+[21:52:42] *** Quits: aesir_ (~aesir@ ) (Read error: Connection reset by peer)
+[21:56:17] *** Joins: cisc (~cisc@ )
+[22:07:08] *** Joins: aesir_ (~aesir@ )
+[22:08:30] *** aesir_ is now known as aesir
+[22:08:37] *** Quits: aesir (~aesir@ ) (Client Quit)
+[22:08:47] *** Joins: aesir (~aesir@ )
+[22:14:35] <Diadlo> zetok: So, this is not a problem, anymore? https://github.com/qTox/qTox/pull/3881#issuecomment-260980236
+[22:15:01] <zetok> Diadlo: no, that's a regression in the PR
+[22:15:20] <zetok> #3886 just describes steps
+[22:19:30] *** Quits: DaSpirit (~DaSpirit@ ) (Remote host closed the connection)
+[22:31:45] *** Quits: jsgrant (~jsgrant@ ) (Remote host closed the connection)
+[22:33:49] <iphy> zetok: what packages do I need to install on debian jessie?
+[22:34:32] <zetok> iphy: https://github.com/qTox/qTox/blob/master/INSTALL.md#debian-other-deps
+[22:35:52] <iphy> I have all those
+[22:36:51] <zetok> welp
+[22:36:58] <zetok> next step would be making an issue
+[23:00:31] *** Joins: CGGB (~CGGB@ )
+[23:03:03] *** Quits: CGGB (~CGGB@ ) (Client Quit)
+[23:03:23] *** Joins: CGGB (~CGGB@ )
+[23:24:33] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[23:55:31] <sudden6> <Diadlo> sudden6: Do you plan to replace {} on ()? If not, I will LGTM <- should I? honestly I don't know what's the difference what would be appropriate
+[23:56:23] <sudden6> <zetok> sudden6: um, could you fix the code or write how a spec for it? <- are you talking about the identicon code?
+[23:56:36] <zetok> sudden6: yep
+[23:57:12] <sudden6> I plan on fixing the code, but this will have to wait a little bit
+[23:57:32] <sudden6> I could also write a spec, but I want to play a little bit with the values
+[23:57:54] <sudden6> atm I'm not sure how good of a code that is
+[23:58:30] <sudden6> zetok: If you want to work on this, feel free to take my code
+[23:58:39] <zetok> um
+[23:58:48] <zetok> I could work if there were docs
+[23:59:27] <zetok> trying to figure out what non-compiling Rust code or JS code do is not really appealing
+[23:59:40] <zetok> it probably would be ~easy to make Rust code compile
+[23:59:49] <zetok> but then again, I got the tests to fix in zetox
+[23:59:57] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
