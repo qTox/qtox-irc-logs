@@ -1,0 +1,278 @@
+[00:00:32] <sudden6> zetok: ok, then I'll work on it during this week
+[00:01:15] <sudden6> I'll still probably ask for your help when converting this to a good library/spec
+[00:01:47] <zetok> sure
+[00:09:18] *** Joins: kchz (~dschulz@ )
+[00:19:43] *** Joins: DaSpirit (~DaSpirit@ )
+[00:20:08] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[00:23:00] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[00:34:25] *** Quits: aesir (~aesir@ ) (Ping timeout: 252 seconds)
+[00:41:22] *** Joins: kchz (~dschulz@ )
+[00:49:20] *** Quits: oranges (oranges@ ) (Ping timeout: 256 seconds)
+[00:49:46] *** Joins: oranges (oranges@ )
+[00:51:09] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[01:16:34] *** Joins: kchz (~dschulz@ )
+[01:16:40] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[01:16:52] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[01:57:03] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[01:58:09] *** Joins: SkyzohKey (~skyzohkey@ )
+[02:15:06] <cisc> something I noticed with qTox 1.6 is the notification chime for incoming messages doesn't repect PA's notification vol.; it's adjusted by the playback vol. slider. Don't remember it being that way in past versions
+[02:33:26] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:34:06] *** Joins: cisc (~cisc@ )
+[02:47:44] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[02:48:50] *** Joins: SkyzohKey (~skyzohkey@ )
+[03:19:37] *** Joins: jsgrant (~jsgrant@ )
+[03:41:16] *** Joins: jsgrant- (~jsgrant@ )
+[03:41:25] *** Quits: jsgrant (~jsgrant@ ) (Ping timeout: 248 seconds)
+[05:13:59] *** Quits: bkidwell (~bkidwell@ ) (Quit: ZNC - http://znc.in)
+[05:23:36] *** Joins: aesir (~aesir@ )
+[05:43:16] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[05:51:38] *** Joins: bkidwell (~bkidwell@ )
+[06:48:16] *** Joins: sudden6 (~anonymous@ )
+[06:59:25] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[07:06:22] *** Joins: sudden6 (~anonymous@ )
+[07:09:17] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[07:10:24] *** Joins: SkyzohKey (~skyzohkey@ )
+[07:14:28] *** Joins: Diadl0 (~diadlo@ )
+[07:23:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:25:37] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[07:27:52] *** Joins: SkyzohKey (~skyzohkey@ )
+[07:41:26] *** Quits: SkyzohKey (~skyzohkey@ ) (Quit: No Ping reply in 180 seconds.)
+[07:41:40] *** Quits: aesir (~aesir@ ) (Ping timeout: 260 seconds)
+[07:42:32] *** Joins: SkyzohKey (~skyzohkey@ )
+[07:43:00] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 256 seconds)
+[07:44:33] *** Joins: aesir (~aesir@ )
+[07:44:33] *** Joins: Diadl0 (~diadlo@ )
+[07:45:22] *** Joins: sudden6 (~anonymous@ )
+[07:48:26] *** Parts: aesir (~aesir@ ) ()
+[07:51:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[08:04:47] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 268 seconds)
+[08:57:47] *** Joins: in1t3r (~LordShiva@ )
+[09:15:29] *** Joins: sudden6 (~anonymous@ )
+[09:18:37] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:21:15] *** Joins: LittleVulpix (~Miranda@ )
+[09:38:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[10:01:27] *** Joins: dardevelin (~dardeveli@ )
+[10:13:09] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[10:14:36] *** Joins: SkyzohKey (~skyzohkey@ )
+[10:30:43] *** Joins: Diadl0 (~diadlo@ )
+[10:34:28] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
+[10:34:42] *** Joins: Diadl0 (~diadlo@ )
+[10:35:50] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[10:36:05] *** Joins: Diadl0 (~diadlo@ )
+[10:40:02] *** Joins: Diadlo2 (~diadlo@ )
+[10:41:59] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 246 seconds)
+[10:42:17] *** Joins: kadinparker[m] (kadinparke@ )
+[10:42:39] *** Joins: Diadl0 (~diadlo@ )
+[10:44:16] *** Quits: Diadlo2 (~diadlo@ ) (Ping timeout: 240 seconds)
+[10:45:33] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
+[10:45:49] *** Joins: Diadl0 (~diadlo@ )
+[10:48:37] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[11:28:18] *** Joins: Diadlo2 (~diadlo@ )
+[11:31:33] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 258 seconds)
+[11:48:29] -qtox-git-spam- [qTox] antis81 closed pull request #3639: [WIP] ui redesign (master...ui/redesign) https://git.io/v6MUB
+[11:48:58] -qtox-git-spam- [qTox] antis81 closed pull request #3690: [ui/redesign] Clean group (ui/redesign...cleanGroup) https://git.io/viG5q
+[11:53:55] -qtox-git-spam- [qTox] antis81 opened pull request #3902: refactor: major ui redesign (master...nf/ui/redesign) https://git.io/vXNdd
+[11:57:13] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 260 seconds)
+[12:04:07] *** Quits: Diadlo2 (~diadlo@ ) (Ping timeout: 252 seconds)
+[12:30:02] *** Joins: sudden6 (~anonymous@ )
+[12:31:55] <sudden6> hi
+[12:32:11] <sudden6> Diadlo: ping
+[13:21:35] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[14:01:47] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[14:02:21] *** Joins: cisc (~cisc@ )
+[14:12:15] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[14:12:25] *** Joins: cisc (~cisc@ )
+[15:12:36] *** Joins: sudden6 (~anonymous@ )
+[15:14:30] <zetok> https://www.oracle.com/corporate/acquisitions/dyn/index.html
+[15:14:35] <zetok> Diadlo: ↑
+[15:25:24] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[15:26:10] *** Joins: sudden6 (~anonymous@ )
+[15:47:03] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:49:22] *** Joins: LittleVulpix (~Miranda@ )
+[16:12:37] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[16:13:05] *** Joins: CGGB (~CGGB@ )
+[16:23:48] <iphy> https://github.com/qTox/qTox/issues/3883
+[16:24:17] <iphy> zetok: I can't make a PR because it has flaws and I don't have time to investigate them
+[16:24:53] <iphy> the language selection keeps going to arabic
+[16:25:01] <iphy> and someone reported issues with notification sounds
+[16:25:52] <zetok> right
+[16:45:01] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[16:47:39] *** Joins: LittleVulpix (~Miranda@ )
+[16:55:46] *** Joins: sudd3n6 (~anonymous@ )
+[16:56:21] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[16:57:51] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[17:26:01] *** Joins: dardevelin (~dardeveli@ )
+[17:35:01] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[17:52:32] *** Joins: reBrain (~quassel@ )
+[18:03:40] *** Quits: jsgrant- (~jsgrant@ ) (Read error: Connection reset by peer)
+[19:13:19] <Diadlo> zetoc: I'm not a business client. And I didn't found anything about non-business
+[19:33:39] <zetok> it's oracle
+[19:33:47] <zetok> either way, you're screwed
+[19:34:04] *** Joins: sudd3n6 (~anonymous@ )
+[19:34:35] <zetok> http://arachnist.is-a.cat/n/148916e46d51789b.dyndns.png :D
+[19:35:09] <sudd3n6> well
+[19:35:14] *** sudd3n6 is now known as sudden6
+[19:49:22] *** Joins: in1t3r (~LordShiva@ )
+[19:49:49] <Diadlo> sudden6: slowpong
+[19:50:23] <sudden6> Diadlo: about the {} vs () thing, does it make a difference?
+[19:50:32] <Diadlo> zetok: Do you have in mind another free reverse-dns service?
+[19:50:43] <Diadlo> Yes. Seems, {} better
+[19:50:48] <Diadlo> I was wrong
+[19:51:07] <Diadlo> It's feature of new standard
+[19:51:10] <zetok> Diadlo: not really, I was just wondering if perhaps you know
+[19:51:29] <Diadlo> Nope :(
+[19:52:52] <sudden6> Diadlo: could you enlighten me, what it does or how this feature is called? I forgot to ask^^
+[19:53:36] <Diadlo> sudden6:  http://stackoverflow.com/questions/18222926/why-is-list-initialization-using-curly-braces-better-than-the-alternatives#18222927
+[19:55:34] <sudden6> thx, interesting, C++ seems to let go of it's C roots
+[19:55:49] <Diadlo> Yes, it is
+[19:57:46] <zetok> lol
+[19:58:19] <sudden6> Diadlo: I rebased, waiting for lgtm
+[20:02:12] <Diadlo> sudden6: IDK, what about adding some history backup?
+[20:02:39] <Diadlo> May be show dialog
+[20:02:57] <sudden6> hm
+[20:03:07] <zetok> history backup sounds nice
+[20:03:39] <sudden6> so a backup before upgrading?
+[20:04:09] <zetok> yep
+[20:04:19] <sudden6> will do
+[20:04:58] <zetok> `.db.backup-$commit` ?
+[20:10:04] <sudden6> zetok: I was thinking about just .db.bak
+[20:10:28] <zetok> mm
+[20:10:32] <sudden6> this would be a ~one liner
+[20:10:56] <zetok> is commit stuff not accessible from settings?
+[20:12:49] <sudden6> I don't think so, but you gave me a nice idea
+[20:15:08] <sudden6> zetok: should we still try upgrading the db if the backup fails?
+[20:15:17] <sudden6> I don't think so
+[20:15:40] <zetok> sudden6: we should provide a pop-up window with a link to make an issue
+[20:15:55] <zetok> sudden6: issue with pre-filled content
+[20:15:58] <sudden6> zetok: code wise that would be horrible
+[20:17:49] <sudden6> since I'd just copy the file, the most probable reason a backup would fail is out of disk space and I suppose this will cause problems elsewhere pretty fast
+[20:21:23] <zetok> oh wait
+[20:21:30] <zetok> >should we still try upgrading the db if the backup fails?
+[20:21:31] <zetok> no
+[20:21:59] <zetok> sudden6: sorry, I've misread that as "should we try upgrading again if upgrading fails"
+[20:22:20] <sudden6> ok
+[20:22:26] *** Joins: robinli (robinli@ )
+[20:46:10] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[20:54:00] <sudden6> zetok: Diadlo: made requested changes
+[20:55:23] <zetok> sudden6: thanks
+[20:55:53] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 245 seconds)
+[20:57:07] <Diadlo> Good job
+[20:58:17] *** Joins: jjuran (~jjuran@ )
+[20:59:10] <Diadlo> Something goes wrong :\  http://i.imgur.com/9uRaKpd.png
+[21:00:53] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[21:01:12] <sudden6> Diadlo: I hope that's not my fault o_O
+[21:01:31] <Diadlo> Nope. It's my :D
+[21:01:44] <sudden6> whew
+[21:02:17] <Diadlo> I'm trying to cherry-pick commit from ui/redesign
+[21:03:20] <sudden6> good luck
+[21:03:36] <sudden6> Is there a reason why antis81 squashed everything into one change
+[21:04:28] <sudden6> hmm, travis OSX backlog is already increasing...
+[21:05:06] <zetok> one commit is probably easier to rebase
+[21:05:31] <sudden6> could be, but makes the cherry picking changes a nightmare...
+[21:10:46] * sudden6 now running Rust 1.13
+[21:12:19] <zetok> https://www.reddit.com/r/linux/comments/5e5n1m/riot_open_source_slack_alternative_built_on/ ← anyone interested in commenting about qTox/Tox ?
+[21:12:34] <zetok> which provide Real™ crypto
+[21:30:03] <sudden6> zetok: how can I get the last n bytes of an array of length n in Rust?
+[21:30:20] <sudden6> s/length n/length x/
+[21:30:44] <zetok> array[array.len()-n..]
+[21:30:56] <zetok> you probably want a slice though
+[21:31:06] <zetok> i.e. add `&` before it
+[21:31:50] <sudden6> ah, nice
+[22:02:03] <sudden6> zetok: thx, another question, is there an easy method to make a uint64 out of n <= 8 bytes?
+[22:02:13] <sudden6> besides the shift and add way
+[22:02:22] <zetok> :|
+[22:03:36] <zetok> https://zetok.github.io/tox/tox/toxcore/binary_io/fn.array_to_u64.html ← there's this
+[22:03:44] <zetok> alternatively, you could use a crate
+[22:03:52] <zetok> sec, lemme find its name
+[22:04:11] <sudden6> zetok: no thx
+[22:04:19] <sudden6> then the shift and add way is easier
+[22:04:30] <zetok> sudden6: https://crates.io/crates/byteorder
+[22:04:56] <sudden6> I thought maybe there's some way to restructure the bytes like a slice or something
+[22:04:56] <zetok> byteorder is the proper™ way
+[22:05:08] <zetok> there is
+[22:05:32] <zetok> but it doesn't produce same results on different archs
+[22:05:52] <zetok> hence the byteorder crate
+[22:07:07] <zetok> sudden6: http://burntsushi.net/rustdoc/byteorder/
+[22:10:05] -qtox-git-spam- [qTox] Twyz opened pull request #3906: feat(l10n): update Italian translation (master...Twyz-patch-1) https://git.io/vXxWQ
+[22:16:00] -qtox-git-spam- [qTox] zetok opened pull request #3907: Update translations from Weblate (master...tr) https://git.io/vXx8i
+[22:24:26] <Diadlo> zetok: ping
+[22:24:39] <zetok> Diadlo: pong
+[22:25:14] <Diadlo> Seems, I can reproduce on master https://github.com/qTox/qTox/pull/3881#issuecomment-260980236
+[22:25:18] <Diadlo> Did you try it?
+[22:26:08] <Diadlo> And on v1.6.0
+[22:27:10] <zetok> Diadlo: I did, and it seemed to work :|
+[22:27:29] <zetok> if it's reproducible, then nvm
+[22:27:42] <Diadlo> How you detect, that call it still active?
+[22:27:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[22:28:05] <zetok> you don't need to?
+[22:28:19] <Diadlo> By color of mute buttons?
+[22:28:27] <zetok> if there is only 1 participant in the groupchat, there is no call
+[22:29:02] <Diadlo> Yes. But, what the bug?
+[22:29:08] <zetok> oh
+[22:29:17] <zetok> Diadlo: um, what exactly did you reproduce?
+[22:29:34] <zetok> green or black nick?
+[22:29:38] <Diadlo> > By color of mute buttons?  <-- Mute button is green
+[22:30:04] <zetok> Diadlo: the problem is that own nick is not colored green
+[22:30:05] <Diadlo> And call button is disabled
+[22:30:13] <zetok> nvm the call
+[22:30:29] <Diadlo> This is known bug?
+[22:31:06] <zetok> um
+[22:31:27] <zetok> nick being black instead of green – no, I didn't know about it earlier
+[22:31:44] <zetok> call buttons – I don't think that it's a bug
+[22:31:57] <zetok> oh
+[22:32:01] <zetok> no, wait, that is a bug
+[22:32:06] <zetok> (another one)
+[22:32:15] <zetok> (not really a bug)
+[22:32:15] <Diadlo> Hm... Ok, if simplify problem: it's impossible to make call twice
+[22:32:26] <Diadlo> In groupchat
+[22:32:28] <zetok> right, there's no need to
+[22:32:33] <Diadlo> O_o
+[22:32:35] <Diadlo> What?
+[22:33:27] <zetok> Diadlo: how many participants are in the group?
+[22:33:36] <Diadlo> 1
+[22:33:45] <Diadlo> And more
+[22:33:48] <zetok> and how do you want to make a call when there is no participants?
+[22:33:52] *** Joins: sudden6 (~anonymous@ )
+[22:34:15] <zetok> "and more" ?
+[22:34:34] <zetok> Diadlo: are you sure that it's an audio groupchat?
+[22:36:04] <Diadlo> Steps: invite friend, make audio-call, friend quit from group => profit
+[22:36:30] <zetok> ok, and at that point it's not possible to make a call, since there are no participants
+[22:36:35] <zetok> (not a bug)
+[22:37:05] <Diadlo> And invite friend again
+[22:37:38] <Diadlo> Call button will be disabled
+[22:37:59] <zetok> oh, I see
+[22:38:22] <zetok> Diadlo: well, good thing that your PR fixes that :D
+[22:39:07] <Diadlo> Hm... It's not :/
+[22:39:13] <Diadlo> AFAIK
+[22:39:31] <zetok> weird, it worked for me on qTox based on your PR
+[22:39:44] <Diadlo> Ok, I will check it
+[22:40:19] <zetok> or maybe not :|
+[22:40:41] <zetok> hmm, looks like it doesn't work only in this specific way
+[22:41:16] <zetok> ok, another thing
+[22:47:22] <Diadlo> zetok: I can't understand something
+[22:47:29] <zetok> ?
+[22:47:40] <Diadlo> What right color of nickname while audio-call?
+[22:47:46] <Diadlo> My nickname
+[22:47:54] <zetok> probably green
+[22:47:57] <zetok> :|
+[22:47:59] <Diadlo> Ok
+[22:48:01] <Diadlo> So
+[22:48:02] <zetok> sorry, I don't really remember
+[22:48:04] <Diadlo> I can;t reproduse
+[22:48:15] <Diadlo> My nickname always green
+[22:48:27] <Diadlo> With 2 groupchats
+[22:48:39] <zetok> :/
+[22:48:54] <zetok> ok, I'll see about making more reliable steps tomorrow if I'll have time
+[22:49:19] <Diadlo> Can you capture the video? May be some order is matter?
+[22:49:26] <Diadlo> Ok
+[22:49:28] <Diadlo> Thanks
+[22:49:46] <zetok> np
+[22:50:25] <sudden6> zetok: It works™ https://gist.github.com/sudden6/df577a7f4a2ecf0ef9534d8a613599d4
+[22:50:43] <sudden6> RFC btw, I didn't do stuff pretty Rusty
+[22:51:25] <zetok> sec, busy writing docs that provide explanation needed by the invalid issue
+[22:55:01] -qtox-git-spam- [qTox] zetok opened pull request #3908: docs(manual): note that disabling history disables faux offline msgs (master...docs-sett-history) https://git.io/vXxuB
+[22:55:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[22:56:57] *** Joins: jsgrant (~jsgrant@ )
+[23:15:52] *** Quits: jsgrant (~jsgrant@ ) (Remote host closed the connection)
+[23:23:33] *** Joins: DaSpirit (~DaSpirit@ )
+[23:39:28] -qtox-git-spam- [qTox] Diadlo opened pull request #3909: refactor: fixup chat form (master...fixupChatform) https://git.io/vXxVE
