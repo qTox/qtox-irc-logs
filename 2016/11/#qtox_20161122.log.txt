@@ -1,0 +1,260 @@
+[00:01:58] *** Joins: d0rped (b99142f7@ )
+[00:02:04] <d0rped> hey folks
+[00:02:24] <d0rped> does anyone knows if qtox could work with TCP?
+[00:03:16] <d0rped> and therefore if one can have qtox over tor 
+[00:09:55] <iphy> yes
+[00:10:03] <GGMethos> You can use a SOCKS5 local proxy and route qtox through it
+[00:10:13] <iphy> d0rped: you can set it to TCP only and add a proxy in the settings
+[00:11:09] <d0rped> so I have to disable UDP
+[00:11:30] <d0rped> and how do I force all the traffic through tor?
+[00:13:40] <d0rped> uhm I see now
+[00:13:46] <d0rped> i have to install the tor client
+[00:14:06] <d0rped> and force all the traffic through a SOCKS5 proxy
+[00:14:08] <d0rped> ok
+[00:14:48] <d0rped> that's very prone to error
+[00:14:57] <d0rped> if not well implemented
+[00:23:00] *** Quits: d0rped (b99142f7@ ) (Quit: BANG BANG)
+[00:57:32] *** Joins: jsgrant (~jsgrant@ )
+[01:53:31] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:03:05] *** Quits: jsgrant (~jsgrant@ ) (Read error: Connection reset by peer)
+[04:03:47] *** Joins: jsgrant (~jsgrant@ )
+[04:52:15] *** Quits: jsgrant (~jsgrant@ ) (Remote host closed the connection)
+[05:40:28] *** Joins: jsgrant (~jsgrant@ )
+[05:44:42] *** Quits: jsgrant (~jsgrant@ ) (Remote host closed the connection)
+[06:20:58] *** Joins: dardevelin (~dardeveli@ )
+[07:15:34] *** Joins: sudden6 (~anonymous@ )
+[07:27:43] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[08:19:12] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:21:56] *** Joins: cisc (~cisc@ )
+[08:27:58] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 245 seconds)
+[09:04:36] *** Joins: dardevelin (~dardeveli@ )
+[09:09:41] <LittleVulpix> Guys
+[09:09:48] <LittleVulpix> Does qtox update simply not work at all anymore?
+[09:18:15] <nurupo> seems to work for me
+[09:18:24] <nurupo> uh, i just noticed something
+[09:18:47] <nurupo> tux3: we switched nightlies to use Qt 5.6.2 a month or so ago
+[09:19:15] <nurupo> tux3: but when you have released qTox 1.6.0, you didn't update its Qt from 5.5.1 to 5.6.2
+[09:22:08] <nurupo> LittleVulpix: hm, i installed qTox 1.6.0 and it asked that new qTox 1.6.0 is available -_-
+[09:22:18] <nurupo> zetok: ^
+[09:23:12] <nurupo> seems to happen only on the fresh install, so the uninstall.exe probably doesn't erase some of qTox state (windows registry entries?)
+[09:27:03] <LittleVulpix> nurupo: I had 1.4.1, it didn't ask for any updates. My friend had 1.5.1 and it didn¨t ask him either, we both have "check for updates on startup" selected.
+[09:27:53] <LittleVulpix> oh I see how it is
+[09:28:10] <nurupo> weird, i can't find anything in registry that has "qtox" in it
+[09:28:25] <LittleVulpix> [00:50:23.340 UTC] net/autoupdate.cpp:225 : Debug: timestamp: 1479600005 , str: "v1.6.0"
+[09:28:25] <LittleVulpix> [00:50:23.341 UTC] :0 : Warning: QObject::connect: Cannot connect (null)::stateChanged(QNetworkSession::State) to QNetworkReplyHttpImpl::_q_networkSessionStateChanged(QNetworkSession::State)
+[09:28:25] <LittleVulpix> [00:50:23.789 UTC] net/autoupdate.cpp:433 : Debug: Need to update 23 files
+[09:28:25] <LittleVulpix> [00:50:23.791 UTC] net/autoupdate.cpp:486 : Debug: "Downloading '\u000E./libeay32.dl' ..."
+[09:28:25] <LittleVulpix> [00:50:23.793 UTC] :0 : Warning: QObject::connect: Cannot connect (null)::stateChanged(QNetworkSession::State) to QNetworkReplyHttpImpl::_q_networkSessionStateChanged(QNetworkSession::State)
+[09:28:25] <LittleVulpix> [00:50:24.243 UTC] net/autoupdate.cpp:391 : Warning: "getUpdateFile: network error: Error downloading https://qtox-win.pkg.tox.chat/qtox/win64/files/8d2d849d6954588eff3f5e19b3130451a40cb92f033ff840e2d8b62c - server replied: Not Found"
+[09:28:25] <LittleVulpix> [00:50:24.243 UTC] net/autoupdate.cpp:499 : Critical: downloadUpdate: Error downloading a file, aborting...
+[09:28:27] <LittleVulpix> Basically
+[09:28:30] <LittleVulpix> something wrong with DL
+[09:28:33] <LittleVulpix> but qtox doesn't say anything
+[09:28:36] <LittleVulpix> this is just in the log..
+[09:28:41] <LittleVulpix> No errors or anything in UI
+[09:29:18] <nurupo> wow
+[09:29:26] <nurupo> someone is connecting a null object
+[09:29:32] <nurupo> that's bad
+[09:30:09] <LittleVulpix> Should I log an issue for this or
+[09:30:59] <nurupo> for the update failing? sounds like you should
+[09:31:23] <LittleVulpix> Okay. But I fear that it's gonna be some of those bs resolutions like always "update manually" >.<
+[09:32:05] <LittleVulpix> Don't take this the wrong way, but if you want people to have up to date software, the update function should work :p
+[09:33:14] <nurupo> there is an issue for the null connection errors https://github.com/qTox/qTox/issues/3553
+[09:33:50] <Emcy> so if/when segwit is activated bitcoin unlimited is dead right
+[09:35:11] <nurupo> sounds like this null object connection issue was fixed in Qt 5.6.0
+[09:35:54] <nurupo> LittleVulpix: it's also likely to be unrelated to your issue of not being able to get qTox update
+[09:36:00] <nurupo> those are two separate things
+[09:37:16] <LittleVulpix> nurupo: Well when I check the stuff qtox is trying to download, it literally doesn't exist on the server so I mean :p
+[09:39:09] <LittleVulpix> nurupo: furthermore " 8[10:22]nurupo: LittleVulpix: hm, i installed qTox 1.6.0 and it asked that new qTox 1.6.0 is available -_- " that is also a bad behavior :D
+[09:39:15] <nurupo> aha
+[09:39:23] <nurupo> it looks like some kind of off by one error
+[09:41:23] <nurupo> LittleVulpix: issue link?
+[09:42:14] <LittleVulpix> nurupo: https://github.com/qTox/qTox/issues/3910
+[09:43:27] <LittleVulpix> er.. not sure why I said prior to 1.6.1 when there isn't any version like that. Must have mixed 1.5.1 in there or something.
+[09:43:50] <LittleVulpix> changed
+[09:47:17] <Emcy> fuck completely the wrong chan
+[09:52:40] <nurupo> LittleVulpix: replied :P
+[09:54:24] <nurupo> no idea where this off-by-one error is happening in the code though
+[09:56:07] <nurupo> this might even be not qTox issue but the server-side issue of the tool tux3 uses to generate the update files
+[09:57:24] <LittleVulpix> nurupo: I see, that's somewhat funny x3
+[09:59:34] <nurupo> it's kind of weird as the webserver says that the update files were generated today
+[09:59:51] <nurupo> i thought tux3 does it manually at the day of the release
+[10:00:01] <nurupo> and the day of the release wasn't today
+[10:00:14] <nurupo> does he just cron it or something?
+[10:00:46] <nurupo> sounds like waste of cpu cycles
+[10:01:31] <nurupo> does the server really automatically sign with tux3's key anything jenkins spits out?
+[10:02:18] <LittleVulpix> nurupo: I always wondered about that to be honest, back when updates were "kinda" working, all of them sort of seemed like the update was from "few hours ago" at most
+[10:03:36] <nurupo> yep
+[10:03:51] <nurupo> they files got updated again
+[10:04:00] <nurupo> exactly 1 hour after the last update
+[10:04:37] <nurupo> interesting
+[10:17:26] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[10:28:39] *** Joins: sudden6 (~anonymous@ )
+[10:31:58] *** Quits: mva (znc@ ) (Quit: ZNC - http://znc.in)
+[10:34:12] *** Joins: mva (znc@ )
+[10:36:58] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[10:37:30] *** Joins: cisc (~cisc@ )
+[10:37:55] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:39:25] *** Joins: LittleVulpix (~Miranda@ )
+[10:47:04] <zetok> ><nurupo> does the server really automatically sign with tux3's key anything jenkins spits out         ← no
+[10:47:34] <zetok> my guess is that tux3 just didn't upload file to the server
+[10:47:55] <zetok> i.e. with previous releases, aside from the signature there were also some files on server
+[10:48:00] <zetok> now they are not there
+[10:48:02] <zetok> ..
+[10:53:28] <tux3> Well, fuck.
+[10:53:52] -qtox-git-spam- [qTox] zetok closed pull request #3907: Update translations from Weblate (master...tr) https://git.io/vXx8i
+[10:53:55] <tux3> I'm going to regenerate update files on the server and see if that fixes things
+[10:56:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[11:00:49] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vXpoR
+[11:00:49] -qtox-git-spam- qTox/master ed47200 Twyz™: feat(l10n): update Italian translation...
+[11:00:49] -qtox-git-spam- qTox/master 830e73b Zetok Zalbavar: Merge pull request #3906...
+[11:03:13] <tux3> Hm, something weird is going on. Looks like the serialization code in qTox might be broken
+[11:16:10] <tux3> Good news is, I can probably fix that without anyone needing to update manually..
+[11:21:46] -qtox-git-spam- [qTox] zetok closed pull request #3908: docs(manual): note that disabling history disables faux offline msgs (master...docs-sett-history) https://git.io/vXxuB
+[11:33:12] *** Joins: SkyzohKey (~skyzohkey@ )
+[11:33:56] *** Joins: sudden6 (~anonymous@ )
+[11:40:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[11:45:15] <tux3> Okay, this is the commit that broke the upater: https://github.com/qTox/qTox/commit/6c150a04c0f7e960e0105e63abdeb742a1a99147
+[11:46:11] <tux3> I'll send a patch and try to put a workaround on the update server to make it work anyways
+[11:46:12] <tux3> Maybe this would be a good time to introduce unit tests in at least the serialization code :)
+[11:49:31] *** Joins: sudden6 (~anonymous@ )
+[11:53:49] -qtox-git-spam- [qTox] tux3 opened pull request #3911: Fix dataToString correctness regression (master...fix-updater-seralization) https://git.io/vXp1c
+[12:06:26] <zetok> tux3: um, https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#commit-message-format
+[12:06:54] <tux3> Argh, my bad, lemme force push
+[12:14:41] <tux3> Okay, bad news: it's probably not going to be possible to fix this automatically without a manual update..
+[12:22:48] <tux3> Hm. Or maybe there's a way if we forge the update file just the right way, but that would break the updater for everyone not on 1.6.0 ..
+[12:30:01] <sudden6> hi, can anyone lgtm https://github.com/qTox/qTox/pull/3827 again? I tried the rebase dance, but was to slow, will use merge-pr this time -_-
+[12:31:40] <LittleVulpix> tux3: Good news is, I can probably fix that without anyone needing to update manually.. <--- please, if at all possible :D because I don't want to go through all of it again (like I had to the last time the updater wouldn't update properly) x3
+[12:33:09] <tux3> LittleVulpix, I can *maybe* do it. The thing is I can either make it work for people on 1.6.0 or make it work for everyone else on < 1.6.0, but not both at the same time :/
+[12:33:40] <tux3> I'd have to intentionally corrupt the update files so the bug corrupts it back just the right way..
+[12:33:59] <LittleVulpix> tux3: Yeah, like, switch the "one off" thing on purpose on your update server x3
+[12:34:24] <tux3> I'll try to do that, but first we need to publish a 1.6.1 with a fix :)
+[12:34:54] <LittleVulpix> :D I believe in you
+[12:43:22] <zetok> tux3: corrupted one for a week/two + blog post, then switch to fixed one once people have updated
+[12:44:29] <zetok> and if it's not possible to get people to 1.6, blog post is needed anyway
+[12:46:02] <LittleVulpix> Basically ever since this issue was introduced, no-one who uses / relies upon autoupdater has not been able to update
+[12:46:28] <LittleVulpix> And most people don't know there is an update available because the failure is silent; you won't see it unless you check logs.
+[12:46:37] *** Joins: st4ll1 (~st4ll1@ )
+[12:48:06] <tux3> Okay maybe if I do some really shady stuff I can make it work for everyone automagically, but no promise
+[12:48:32] <LittleVulpix> Please call your next release "Dark Magic" then, ha
+[12:48:42] <tux3> That would be fitting :)
+[13:03:18] <tux3> Okay if we don't have any file names longer than 32 characters and windows trims spaces at the start of filenames, the magic might just work out.. It's not often I get to write an exploit for my own code :)
+[13:18:33] <zetok> sudden6: https://gist.github.com/zetok/dd97d1eec95c70919702e9c4fe331db3 ← some comments, I've "sent" you the link on qTox
+[13:18:56] <zetok> sudden6: btw, it seems that identicons are limited only to 240x240 images?
+[13:20:06] <sudden6> zetok: I have no time right now, see you in the evening
+[14:03:13] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[15:25:17] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[16:25:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[17:12:20] *** Joins: sandrorso (~sandro@ )
+[17:16:50] *** Joins: dardevelin (~dardeveli@ )
+[17:18:24] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:20:52] *** Joins: LittleVulpix (~Miranda@ )
+[17:32:21] *** Quits: sandrorso (~sandro@ ) (Quit: Ciao. Sto andando via)
+[17:47:04] *** in1t3r is now known as shiva
+[17:47:53] *** shiva is now known as in1t3r_
+[17:59:10] *** Joins: jjuran (~jjuran@ )
+[18:00:59] *** Joins: sudden6 (~anonymous@ )
+[18:06:01] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[18:15:29] *** Joins: CGGB (~CGGB@ )
+[18:24:36] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[18:24:58] *** Joins: CGGB (~CGGB@ )
+[18:37:23] <nurupo> tux3: when releasing new windows qTox, make it use the newer Qt version
+[18:37:49] <tux3> nurupo, okay, I just need to edit the windows build dependencies?
+[18:38:24] <nurupo> just grep for 5.5.1 in /var/lib/jenkins/jobs/*/config.xml
+[18:38:37] <tux3> Alright
+[18:38:56] <nurupo> supposedly you should only change the job dependencies
+[18:39:03] <nurupo> and don't forget about the updater :P
+[18:39:19] <tux3> That updater is giving me a headache right now @_@
+[18:39:40] <tux3> But yeah I'll try to remember :)
+[18:39:41] <nurupo> this refactor is giving me a headache https://github.com/qTox/qTox/commit/6c150a04c0f7e960e0105e63abdeb742a1a99147
+[18:39:46] <nurupo> can't see where it went wrong
+[18:40:17] <tux3> The data.remove(0, i - 1); is a off-by-one error
+[18:40:46] <tux3> The end "iterator" should be one past the end
+[18:41:15] <nurupo> why not just use json? -_-
+[18:41:44] <nurupo> QtCore has json parsing functionality
+[18:42:35] <tux3> Yeah I wish I had done that right about now..
+[18:43:04] <tux3> I'm starting to think it won't be possible to fix this without a manual update. My black magic isn't working out
+[18:43:15] <zetok> D:
+[18:44:31] <tux3> The thing is the serialization code was broken in qTox itself, but wasn't changed in the updater, so I would need to find a hack that can be parsed by both the correct and the buggy version at the same time..
+[18:45:31] <sudden6> hi
+[18:45:47] <nurupo> it might be a good idea to improve the updater/qtox so that the next time something like this happens, you would be able to make your black magic work
+[18:46:05] <zetok> >_>
+[18:48:11] <nurupo> i.e. if it was possible to create an update rule on the server saying "if you are qTox < 1.6.1, then update to 1.6.1 using this off-by-one flist at ./some/path/flist; if you are qTox >= 1.6.1, then update to 1.7.0 using this correct flist at ./some/other/path/flist"
+[18:48:49] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[18:49:45] <sudden6> <zetok> sudden6: btw, it seems that identicons are limited only to 240x240 images? <- not true, the block size is limited to 240x240
+[18:49:49] <nurupo> so instead of updating to the latest version directly, you could update to any number of the intermediate versions before updating to the latest version. not sure if this make sense outside of the context of this issue we are having though
+[18:50:13] <zetok> sudden6: I don't see the difference?
+[18:50:41] <sudden6> block size is one colored block in the identicon, image size is the whole image
+[18:50:56] <zetok> hmm
+[18:51:12] <zetok> that doesn't seem to be the case with supplied code
+[18:51:20] <zetok> or I needed to change more than 1 var
+[18:52:13] <tux3> nurupo, there's a version number in the update files already, so we can sort of do that, but that won't fix it fo people stuck on 1.6.0 :/
+[18:53:09] <zetok> tux3: um, can we get people first to 1.6 ?
+[18:53:29] <zetok> or is updating from 1.6 up not possible?
+[18:54:25] <tux3> zetok, right now it's possible to update to 1.6.0 from previous versions, but 1.6.0 is completely broken itself and won't update to anything else :/
+[18:54:36] <zetok> ok
+[18:54:43] <zetok> so no point in doing that :|
+[18:54:48] <tux3> I should have done more testing before releasing it :/
+[18:55:10] <zetok> um
+[18:55:27] <zetok> the code that supposedly does that has been in since 1.5..?
+[18:56:23] <tux3> ?
+[18:56:28] <nurupo> seems like so
+[18:57:44] <tux3> Oh wow indeed. git says v1.4.0-362-g6c150a0
+[18:57:56] <nurupo> tux3: "Better?" https://github.com/qTox/qTox/pull/3380#discussion-diff-72909332
+[18:57:59] <nurupo> haha
+[18:58:00] <tux3> That's pretty sad, especially since a basic serialization unit test would have caught that
+[18:58:25] <tux3> -_-
+[19:01:23] <zetok> we can get the testing in along with CMake, which also will fix the linux-32bit building problem
+[19:01:44] <nurupo> where is this serialization code used besides updates?
+[19:01:48] <zetok> the work has been done in TokTok/qTox, it just only needs to be moved
+[19:02:46] <tux3> nurupo, It's currently only used for updates
+[19:02:55] <tux3> I'd be happy to replace it with json or whatever, too
+[19:03:30] <nurupo> http://doc.qt.io/qt-5/json.html
+[19:07:00] <nurupo> btw, i don't think we are i nany hurry to fix this, given it has been broken for a while now. it's probably better to take your time to properly fix this (maybe redesign to use json?) and think about how the update system could be improved to prevent issues like this (the updater logic being changed) in the future
+[19:23:37] *** Joins: st4ll1 (~st4ll1@ )
+[19:34:54] <nurupo> >qTox-stable_build_windows_x86-64_release/config.xml:      <project>libqt5.5.1_build_windows_x86-64_shared_release</project>
+[19:34:54] <nurupo> >qTox-stable_build_windows_x86_release/config.xml:      <project>libqt5.5.1_build_windows_x86_shared_release</project>
+[19:35:14] <nurupo> tux3: looks like you need to only update deps of these^
+[19:35:27] <tux3> nurupo, Awesome. I'll do that when we release 1.6.1 then
+[19:35:28] * nurupo ran the grep
+[19:35:32] <tux3> Thanks :)
+[19:38:40] *** Joins: Diadlo2 (~diadlo@ )
+[19:39:36] <zetok> sudden6: any luck with producing identicons bigger than 240x240 ?
+[19:40:13] <sudden6> I'm currently fixing the problem that even columncounts don't work
+[19:40:56] <zetok> ok
+[20:18:19] <sudden6> zetok: https://gist.github.com/sudden6/df577a7f4a2ecf0ef9534d8a613599d4 should work now also for larger sizes
+[20:18:42] <sudden6> with the options i set it should exactly match the github identicon algorithm
+[20:18:52] <zetok> sudden6: rename to .rs ?
+[20:19:17] <sudden6> don't care atm
+[20:19:29] <sudden6> I want to try identicons with more than 2 colors
+[20:19:43] *** Quits: Diadlo2 (~diadlo@ ) (Read error: Connection reset by peer)
+[20:19:58] *** Joins: Diadlo2 (~diadlo@ )
+[20:20:44] *** Quits: Diadlo2 (~diadlo@ ) (Client Quit)
+[21:09:27] <sudden6> zetok: is there an easy to use (pseudo)RNG for Rust?
+[21:09:43] <sudden6> I want to test my identicon stuff with some real data
+[21:09:44] <zetok> sudden6: rand crate
+[21:10:00] <zetok> (IIRC)
+[21:10:15] <zetok> `fill_bytes()`
+[21:13:48] <zetok> or was that a function from sodiumoxide -.-"
+[21:15:19] <zetok> no, looks like rand does have it
+[21:23:49] *** Joins: cenysor (~cenysor@ )
+[21:35:05] <sudden6> zetok: thanks, it's working :)
+[21:35:32] <sudden6> now I have the problem that sometimes the two colors are too close together...
+[21:50:57] *** Joins: MarKo (523684d4@ )
+[21:56:21] <MarKo> hello
+[21:56:32] <MarKo> can i ask?
+[21:57:22] <oranges> you can ask
+[21:58:08] <MarKo> hi, i would ask if there's a plugin or whatever to enlarge the chat board
+[21:58:21] <MarKo> i mean where you type messages
+[21:58:21] <zetok> nope
+[21:58:37] <MarKo> ah ok
+[21:58:45] <MarKo> there's a way to?
+[21:58:50] <zetok> not yet
+[21:59:01] <MarKo> you mean is under dev?
+[21:59:54] <zetok> MarKo: https://github.com/qTox/qTox/issues/1316
+[22:00:28] <MarKo> ohh thank you very much mate
+[22:00:38] <zetok> you're welcome
+[22:00:48] <MarKo> :)
+[22:24:35] *** Parts: MarKo (523684d4@ ) ()
+[22:38:56] *** Joins: DaSpirit (~DaSpirit@ )
+[23:45:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
