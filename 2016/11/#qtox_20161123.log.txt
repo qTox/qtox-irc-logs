@@ -1,0 +1,236 @@
+[01:31:47] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[02:07:51] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:12:49] *** Joins: cisc (~cisc@ )
+[02:37:21] <nurupo> zetok: tux3: audio_filter was updated on jenkins and qtox for windows was rebuilt with it https://github.com/irungentoo/filter_audio/pull/36/
+[02:37:30] <nurupo> >make echo canceller adjust delay dynamically
+[02:38:09] <nurupo> might make sense to test qTox audio/video before releasing the update fix
+[03:10:49] <Emcy> opened in january
+[03:11:09] <oranges> gentoo runs on gentoo time
+[03:11:28] <Emcy> irg only merged it because hatter asked him to commit anything to sign it as verified
+[03:11:30] <Emcy> wew
+[03:32:59] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:38:28] <nurupo> Emcy: the nightly should already contain that filter_audio change
+[03:39:06] <nurupo> so you can test if it got worse, or improved, or nothing got changed
+[03:39:13] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 245 seconds)
+[03:42:23] <Emcy> yeah i got it
+[03:49:05] *** Joins: dardevelin (~dardeveli@ )
+[03:49:49] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[03:56:27] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[04:49:19] *** Joins: ghost-287 (~ghost-287@ )
+[04:53:06] *** Quits: ghost-287 (~ghost-287@ ) (Remote host closed the connection)
+[05:25:17] *** Joins: dardevelin (~dardeveli@ )
+[06:41:39] -qtox-git-spam- [qTox] Diadlo opened pull request #3913: CMake migration (master...cmakemigration) https://git.io/vXjbL
+[07:09:35] *** Joins: sudden6 (~anonymous@ )
+[07:11:35] *** Joins: st4ll1 (~st4ll1@ )
+[07:17:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[07:17:42] *** Quits: CGGB (~CGGB@ ) (Quit: CGGB)
+[07:18:17] *** Joins: CGGB (~CGGB@ )
+[07:33:41] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 252 seconds)
+[08:08:31] <zetok> ><nurupo> zetok: tux3: audio_filter was updated on jenkins and qtox for windows was rebuilt with it          ← no it doesn't
+[08:08:53] <zetok> nurupo: there's no support for filter_audio in qTox anymore
+[08:15:50] <nurupo> all i know is that qtox jenkins job depends on it and it was rebuilt when filteraudio was rebuilt https://build.tox.chat/job/qTox_build_windows_x86-64_release/
+[08:19:55] <nurupo> well, that's funny then
+[08:20:07] <nurupo> grayhatter says utox doesn't use it
+[08:20:14] <nurupo> you say qtox doesn't use it
+[08:20:18] <nurupo> no one uses it then
+[08:54:48] <zetok> ¯\_(ツ)_/¯
+[09:30:15] <oranges> rest in peace filter audio
+[09:41:45] *** Joins: jjuran (~jjuran@ )
+[10:13:04] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[10:26:43] <Emcy> maybe use it again if its fixed now
+[10:29:28] *** Joins: sudden6 (~anonymous@ )
+[10:36:36] *** Joins: mlkj (c2fe3d29@ )
+[10:37:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[10:37:57] *** Joins: sudd3n6 (~anonymous@ )
+[11:14:39] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[11:23:03] *** Joins: st4ll1 (~st4ll1@ )
+[12:12:45] *** Joins: Achylles (~Achylles@ )
+[12:13:04] *** Joins: jjuran_ (~jjuran@ )
+[12:16:37] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 248 seconds)
+[12:16:37] *** jjuran_ is now known as jjuran
+[12:22:09] <iphy> zetok: -O3 is in the test build, right?
+[12:22:14] <iphy> Not in the deploy build
+[12:22:41] <iphy> Diadlo: -O3 is good in the test build
+[12:26:25] *** Quits: mlkj (c2fe3d29@ ) (Ping timeout: 260 seconds)
+[12:47:37] <zetok> iphy: doesn't seem to be the case, it looks like it's in the build that gets deployed
+[12:59:16] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[13:00:02] *** Joins: dardevelin (~dardeveli@ )
+[13:12:13] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[13:15:43] *** Joins: cenysor (~cenysor@ )
+[13:16:38] <iphy> zetok: ok that's wrong then
+[13:16:55] <iphy> Test builds should be maximum optimisation
+[13:17:07] <iphy> Deploy builds should rather play safe
+[13:28:10] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[14:22:47] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[14:53:11] *** Joins: CGGB (~CGGB@ )
+[16:07:09] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 260 seconds)
+[16:19:54] *** Joins: in1t3r_ (~LordShiva@ )
+[16:20:17] *** in1t3r_ is now known as Guest19394
+[16:53:06] *** Quits: Achylles (~Achylles@ ) (Quit: Leaving)
+[17:35:27] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[17:41:16] *** Joins: Emcy_ (~MC@ )
+[17:44:02] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[18:01:11] *** Joins: Emcy (~MC@ )
+[18:01:11] *** Quits: Emcy (~MC@ ) (Changing host)
+[18:01:11] *** Joins: Emcy (~MC@ )
+[18:03:25] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 256 seconds)
+[19:05:11] *** Joins: Emcy_ (~MC@ )
+[19:07:42] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[19:19:45] *** Quits: Guest19394 (~LordShiva@ ) (Quit: Leaving)
+[19:19:58] *** Joins: in1t3r_ (~LordShiva@ )
+[19:22:43] <Diadlo> iphy: Hello
+[19:23:41] *** Joins: Emcy (~MC@ )
+[19:24:28] <Diadlo> Can you answer on all travis-related questions? https://github.com/qTox/qTox/pull/3913#issuecomment-262460492
+[19:26:43] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 256 seconds)
+[19:36:43] *** Joins: Emcy_ (~MC@ )
+[19:38:37] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[19:57:50] *** Joins: Emcy (~MC@ )
+[19:57:50] *** Quits: Emcy (~MC@ ) (Changing host)
+[19:57:50] *** Joins: Emcy (~MC@ )
+[20:01:12] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 250 seconds)
+[20:03:57] <Diadlo> zetok: Hello
+[20:04:01] <zetok> Diadlo: hi
+[20:04:23] <Diadlo> I was thinking about toktok-migration
+[20:04:42] <Diadlo> You say, that we need ~stable v1.0
+[20:04:44] <Diadlo> Right?
+[20:05:13] <zetok> yep
+[20:05:29] <Diadlo> But why current v0.0.0 better?
+[20:05:51] <zetok> ?
+[20:06:01] <Diadlo> Now we use toxcore v0.0.0
+[20:06:15] <zetok> Diadlo: when was the las time that irungentoo/toxcore's API changed?
+[20:06:19] <zetok> last*
+[20:06:59] <Diadlo> Long time ago. I don't remember
+[20:07:15] <Diadlo> Sep 28
+[20:07:25] <zetok> err
+[20:07:31] <zetok> really?
+[20:07:34] <Diadlo> Yep
+[20:07:59] <Diadlo> https://github.com/irungentoo/toxcore/commits/master
+[20:08:58] <Diadlo> Oh
+[20:09:00] <Diadlo> API
+[20:09:01] <Diadlo> Sorry
+[20:09:03] <Diadlo> IDK
+[20:09:46] <zetok> hint: until someone decided to add newer ebuild, I was casually using toxcore from 2016-02-01
+[20:10:35] <zetok> and that old ebuild was already pointing to the API that haven't changed in a long time
+[20:11:23] <Diadlo> And what's bad in API changing? 
+[20:11:49] <zetok> that stuff breaks, and requires additional maintenance
+[20:13:19] <zetok> qTox has to at least build
+[20:13:29] <zetok> with an API that is not stable, this is not possible
+[20:14:27] <Diadlo> We can use certain version of c-toxcore 
+[20:14:34] <zetok> yes, 0.1
+[20:14:39] <Diadlo> For example
+[20:17:50] <zetok> for example, file transfers, audio, video, faux offline messaging and groupchats were/are in qTox broken due to constantly changing API
+[20:18:49] <zetok> just because API in toxcore changed, and qTox needed to get support for it, otherwise it wouldn't build, which led to situation where instead of proper implementation & support dirty hacks where put in place to keep qTox rolling
+[20:19:50] *** Joins: Emcy_ (~MC@ )
+[20:19:51] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[20:19:51] *** Joins: Emcy_ (~MC@ )
+[20:20:22] <zetok> Emcy: you might want to invest in SASL
+[20:22:04] <zetok> Diadlo: after TokTok/toxcore's 0.2 gets released, we have 6 weeks to get to support that
+[20:22:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[20:23:14] <zetok> not a lot of time, but hopefully there'll be ~working support for API changes already in a PR
+[20:25:04] <zetok> Diadlo: btw, about testing PRs – I start doing that when PR builds and apparent problems with it are fixed
+[20:25:20] <zetok> so for TokTok/toxcore PR, I'll start testing it when it'll start building
+[20:26:30] <Diadlo> Ок
+[20:26:32] <Diadlo> *Ok
+[20:27:33] <zetok> Diadlo: btw, `merge --ff-only fix-updater-seralization` ?
+[20:28:08] <Diadlo> Hm... Sorry, I don't understand, what you want :)
+[20:28:19] <zetok> `git fetch upstream`
+[20:28:21] <zetok> :D
+[20:28:58] <zetok> aka https://github.com/qTox/qTox/pull/3911
+[20:29:14] <zetok> tux3: any luck getting filenames corrupted just the right way?
+[20:29:50] <Diadlo> zetok: Ok. I will merge
+[20:29:55] <zetok> Diadlo: thanks :)
+[20:30:01] <tux3> zetok, nope, the only solution I have would involve downloading a file 0x0101010101010101 bytes long...
+[20:30:09] <zetok> :/
+[20:30:37] <tux3> It's pretty complicated, so I can't definitely say that it's impossible to find the right magic, but I think I'm going to give up :/
+[20:30:48] <zetok> I see
+[20:30:52] <zetok> blog post it is then
+[20:30:57] <tux3> Sadly, yes
+[20:31:24] <tux3> Maybe we should have a fix ready before the blog post though, so people can act on it
+[20:31:32] <zetok> yep
+[20:32:17] <tux3> I don't know if we should just fix it and hope it doesn't break again, or scrap the whole thing
+[20:32:52] <zetok> since it doesn't work anyway, scraping and doing it the right way sounds good
+[20:32:53] <tux3> Rewritting it might just introduce some new bugs..
+[20:33:25] <zetok> yes, that's why now tests also should be added to new implementation :D
+[20:33:37] <tux3> Fair enough, either way tests would be good :)
+[20:34:25] <Diadlo> tux3: Hello
+[20:34:32] <tux3> Diadlo, hey
+[20:34:36] <Diadlo> zetok: We need -O0 ?
+[20:34:52] <zetok> Diadlo: `-O2` is fine
+[20:34:54] <Diadlo> Ok
+[20:35:14] <zetok> -O3 is just a bit too much with C/C++ when you need things to work
+[20:35:53] <zetok> (Rust uses by default -O3 when compiling in release mode :D)
+[20:37:12] <Diadlo> zetok: I can't ff-only fix-updater-seralization
+[20:37:21] <zetok> oh
+[20:37:30] <Diadlo> tux3 can rebase and merge
+[20:37:38] <Diadlo> Or I can merge with no-ff
+[20:37:58] <tux3> I'll rebase and force-push if you want
+[20:38:17] <Diadlo> tux3: Sounds good
+[20:38:36] <Diadlo> But why you can merge it?
+[20:38:50] <tux3> Pushed. I can merge it too if you want.
+[20:39:20] <tux3> It's been a while since I merged anything though so there's 50% chance I'll break something ::)
+[20:39:31] <zetok> tux3: uh
+[20:40:07] <zetok> tux3: `git sync $branch && sleep 30m && git checkout master && git merge --ff-only $branch && git push`
+[20:40:41] *** Joins: Emcy (~MC@ )
+[20:40:41] *** Quits: Emcy (~MC@ ) (Changing host)
+[20:40:41] *** Joins: Emcy (~MC@ )
+[20:40:52] <tux3> zetok, git sync?
+[20:41:04] <zetok> yep, script from iphy
+[20:41:46] <zetok> tux3: https://gist.github.com/zetok/1da909a57fdbc7579aca4095f554fd49
+[20:42:32] <tux3> It gets more complicated everytime :/
+[20:42:35] <tux3> So, what about I just cherry-pick the commit and push that to master?
+[20:42:50] <zetok> won't work :3
+[20:43:00] <zetok> tux3: you don't need the script to rebase, it just makes things easier
+[20:43:16] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[20:43:20] <zetok> i.e. instead of typing lots of commands, you type 1
+[20:43:37] <tux3> zetok, what's the magic required to push things manually?
+[20:43:42] <zetok> :f
+[20:43:55] <zetok> git fetch upstream && git rebase upstream/master && git push -f
+[20:44:08] <tux3> Nah I mean without the force :)
+[20:44:20] <tux3> Like, what's the requirements?
+[20:44:45] <zetok> assuming that it can be fast-forwarded, just `git push`
+[20:45:23] <zetok> I mean, the `git push -f` is for pushing to the PR branch, so that travis can build it and check that it still compiles on top of master
+[20:45:43] <zetok> from there, `git checkout master && git merge --ff-only branch && git push`
+[20:46:49] <tux3> Awesome
+[20:47:06] <tux3> So I just need to wait on travis and I can do a normal git merge/git push
+[20:47:28] <zetok> why would you do that when you can use scripts
+[20:47:40] <zetok> :P
+[20:47:45] <tux3> Because I'm annoying and I like to understand how things work :P
+[20:49:44] *** Quits: CGGB (~CGGB@ ) (Ping timeout: 265 seconds)
+[20:53:23] <tux3> zetok, is it normal that the macOS build is taking a while? Travis says it hasn't even started
+[20:53:29] <zetok> yep
+[20:53:43] <tux3> Damn.
+[20:54:42] <zetok> https://a.uguu.se/8iwZuTk1WP4j.png ← don't worry, you'll wait a bit
+[20:55:07] <zetok> https://www.traviscistatus.com/
+[20:55:37] <zetok> (why zetox is no longer being built on osx travis)
+[20:57:48] <tux3> I'm just gonna `watch -n 30 git push` and go make me some food :)
+[21:01:48] <zetok> bon appétit :)
+[21:03:05] *** Joins: cenysor (~cenysor@ )
+[21:03:52] *** Joins: Emcy_ (~MC@ )
+[21:03:52] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[21:03:52] *** Joins: Emcy_ (~MC@ )
+[21:06:45] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[21:10:12] *** Joins: Emcy (~MC@ )
+[21:13:11] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[21:15:41] *** Joins: DaSpirit (~DaSpirit@ )
+[21:32:24] *** Joins: Emcy_ (~MC@ )
+[21:33:40] -qtox-git-spam- [qTox] tux3 closed pull request #3911: Fix dataToString correctness regression (master...fix-updater-seralization) https://git.io/vXp1c
+[21:34:40] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[21:41:13] *** Joins: Emcy (~MC@ )
+[21:41:13] *** Quits: Emcy (~MC@ ) (Changing host)
+[21:41:13] *** Joins: Emcy (~MC@ )
+[21:44:12] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[21:48:21] *** Joins: Emcy_ (~MC@ )
+[21:48:21] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[21:48:21] *** Joins: Emcy_ (~MC@ )
+[21:51:04] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:51:42] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[22:05:09] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[22:37:20] *** Joins: Emcy (~MC@ )
+[22:40:54] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 268 seconds)
+[22:51:44] *** Joins: st4ll1 (~st4ll1@ )
+[23:00:27] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1vQG
+[23:00:27] -qtox-git-spam- qTox/master 7a18efa Zetok Zalbavar: docs(CONTRIBUTING): state the correct way of using CONTRIBUTING.md
+[23:09:12] *** Quits: anoa (~anoa@ ) (Quit: ZNC - http://znc.in)
+[23:11:48] *** Joins: anoa (~anoa@ )
+[23:29:38] *** Joins: Emcy_ (~MC@ )
+[23:31:48] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
