@@ -1,0 +1,107 @@
+[01:15:40] *** Joins: DaSpirit (~DaSpirit@ )
+[01:18:18] *** Joins: sudd3n6 (~anonymous@ )
+[01:18:48] <sudd3n6> Diadlo: could you lgtm https://github.com/qTox/qTox/pull/3827 once more? I was to slow...
+[01:23:49] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 248 seconds)
+[01:32:55] *** Joins: dardevelin (~dardeveli@ )
+[01:36:42] *** Joins: Emcy (~MC@ )
+[01:39:17] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[01:39:31] *** Joins: Emcy_ (~MC@ )
+[01:42:55] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[01:48:16] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[01:52:21] *** Joins: Emcy (~MC@ )
+[01:55:09] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[01:56:17] *** Joins: Emcy_ (~MC@ )
+[01:57:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[02:19:25] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[02:30:27] *** Joins: dardevelin (~dardeveli@ )
+[02:34:58] <oranges> https://www.humblebundle.com/books/unix-book-bundle
+[02:43:52] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[03:03:51] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:04:13] *** Joins: jjuran (~jjuran@ )
+[03:06:07] *** Joins: Emcy (~MC@ )
+[03:06:07] *** Quits: Emcy (~MC@ ) (Changing host)
+[03:06:07] *** Joins: Emcy (~MC@ )
+[03:09:00] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 256 seconds)
+[03:09:46] *** Joins: Emcy_ (~MC@ )
+[03:10:29] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[03:11:41] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[03:17:43] *** Joins: Emcy (~MC@ )
+[03:20:33] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[03:26:43] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[03:32:51] *** Joins: in1t3r_ (~LordShiva@ )
+[05:09:11] *** Quits: dan- (~d@ ) (Ping timeout: 246 seconds)
+[08:03:33] *** Joins: dardevelin (~dardeveli@ )
+[08:21:49] *** Joins: cisc (~cisc@ )
+[08:48:04] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:48:34] *** Joins: LittleVulpix (~Miranda@ )
+[09:30:48] *** Joins: sudd3n6 (~anonymous@ )
+[09:51:35] -qtox-git-spam- [qTox] sudden6 closed pull request #3827: use a dynamic salt for the database password (master...dynamic_salt) https://git.io/vPNLV
+[10:12:29] <iphy> Diadlo, sudd3n6: I would indeed suggest reverting the code changes in the cmake PR
+[10:12:52] *** sudd3n6 is now known as sudden6
+[10:12:56] <sudden6> ok
+[10:13:09] <sudden6> maybe comment to the PR?
+[10:15:10] <iphy> you've already commented that
+[10:15:17] <iphy> I just agree
+[11:11:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[11:28:29] <LittleVulpix> nurupo: :D didn't expect to see your name on the miranda repo!
+[11:40:24] *** Joins: sudden6 (~anonymous@ )
+[11:47:45] *** Joins: st4ll1 (~st4ll1@ )
+[12:20:30] -qtox-git-spam- [qTox] zetok opened pull request #3916: docs(manual): add section about profile corner in the main window (master...docs-man-min-profile) https://git.io/v1fye
+[12:48:04] <iphy> zetok: ^ that's just bad usability
+[12:48:11] <iphy> docs don't fix bad usability
+[12:48:26] <zetok> right
+[12:48:28] <iphy> (but they help users get along with it)
+[12:48:44] <zetok> what would be the right way to do it?
+[12:48:49] <iphy> no idea
+[12:48:54] <iphy> do usability engineering
+[12:49:10] <iphy> like andrealmieda did for the toktok client
+[12:52:39] <zetok> :(
+[12:53:45] <iphy> if I ever get around to it, I'll do that for qtox
+[12:53:54] <iphy> or I can guide someone who wants to do it
+[12:54:05] <iphy> (more likely)
+[14:00:04] *** Joins: Emcy_ (~MC@ )
+[14:01:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 244 seconds)
+[14:05:35] *** Joins: Emcy (~MC@ )
+[14:07:55] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[14:09:11] *** Joins: Emcy_ (~MC@ )
+[14:09:11] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[14:09:11] *** Joins: Emcy_ (~MC@ )
+[14:11:11] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[14:15:56] *** Quits: kadinparker[m] (kadinparke@ ) (Write error: Connection reset by peer)
+[14:36:44] *** Joins: kadinparker[m] (kadinparke@ )
+[15:00:11] *** Joins: pcre (~quassel@ )
+[15:15:19] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[15:20:47] *** Joins: Chiitoo (~Chiitoo@ )
+[15:48:49] <Emcy_> is there a way to point the autoupdater of qtox nightly to the nightly package on build.tox.chat
+[15:49:43] <Emcy_> i think it comes with the same updater as stable/release to it never really updates if you use qtox nightly
+[15:56:30] <zetok> nope
+[16:02:59] <Emcy_> its not possible or you wont do it
+[16:14:58] *** Joins: cenysor (~cenysor@ )
+[16:24:26] *** Joins: DaSpirit (~DaSpirit@ )
+[16:28:40] *** Quits: pcre (~quassel@ ) (Quit: No Ping reply in 180 seconds.)
+[16:29:47] *** Joins: pcre (~quassel@ )
+[17:21:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[17:24:13] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 256 seconds)
+[17:40:33] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[17:43:43] *** Joins: dardevelin (~dardeveli@ )
+[17:51:13] *** Joins: sudden6 (~anonymous@ )
+[18:37:16] *** Joins: LittleVulpix (~Miranda@ )
+[18:53:18] <sudden6> zetok: I think the identicon algorithm works now, want to see some results?
+[18:53:46] <zetok> sudden6: yep
+[18:54:10] <sudden6> zetok: can you start qTox? I'll send it to you there
+[19:02:50] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.6)
+[19:15:06] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[19:59:57] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[20:09:19] *** Joins: pcre (~quassel@ )
+[20:18:10] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[20:26:18] *** Joins: Chiitoo (~Chiitoo@ )
+[20:34:27] *** Joins: DaSpirit (~DaSpirit@ )
+[21:16:06] *** Joins: jjuran_ (~jjuran@ )
+[21:17:34] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 268 seconds)
+[21:17:34] *** jjuran_ is now known as jjuran
+[21:26:07] *** Joins: f15h (~thomas@ )
+[21:38:32] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 256 seconds)
+[21:54:03] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[22:06:40] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[22:15:31] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[23:19:56] *** Joins: Diadlo (~diadlo@ )
