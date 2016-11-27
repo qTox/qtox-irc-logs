@@ -1,0 +1,108 @@
+[00:02:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[00:25:10] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[00:46:08] *** Joins: dardevelin (~dardeveli@ )
+[00:48:32] *** Joins: dan- (~d@ )
+[00:48:32] *** Quits: dan- (~d@ ) (Changing host)
+[00:48:32] *** Joins: dan- (~d@ )
+[00:59:12] *** Joins: cisc (~cisc@ )
+[01:03:57] *** Quits: Achylles (~Achylles@ ) (Quit: Leaving)
+[01:36:09] *** Joins: abbat (~Anton@ )
+[02:19:54] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:23:32] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[03:36:21] *** Joins: LittleVulpix (~Miranda@ )
+[04:13:58] *** Joins: errorHelpMe (c2f20b2d@ )
+[04:14:11] <errorHelpMe> hello, anyone up?
+[04:15:06] <errorHelpMe> I installed qTox in antergos+xfce and UI is completely messed up. Everything is oversized basically. Anyone knows what's up with that?
+[04:33:05] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[04:40:30] *** Quits: errorHelpMe (c2f20b2d@ ) (Ping timeout: 260 seconds)
+[04:40:37] *** jjuran_ is now known as jjuran
+[04:49:23] *** Joins: zero-ghost (~0@ )
+[08:29:00] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[08:58:13] <qTox-Website> [qTox-Website] zetok opened pull request #23: Update translations from Weblate (master...tr) https://git.io/v1TPP
+[09:00:28] <qTox-Website> [qTox-Website] zetok closed pull request #23: Update translations from Weblate (master...tr) https://git.io/v1TPP
+[09:01:06] <travis-ci> qTox/qTox-Website (6eb0c39): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/179011497 / Changes: https://github.com/qTox/qTox-Website/compare/be88a4b1ed2f...6eb0c39a0a6b
+[09:03:01] <qTox-Website> [qTox-Website] zetok pushed 1 new commit to master: https://git.io/v1TPy
+[09:03:01] <qTox-Website> qTox-Website/master e088b62 Zetok Zalbavar: chore: add Weblate's config for wlc to automate translation management
+[09:03:31] <travis-ci> qTox/qTox-Website (e088b62): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/179011792 / Changes: https://github.com/qTox/qTox-Website/compare/6eb0c39a0a6b...e088b626e6d0
+[10:15:40] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:22:56] *** Joins: cisc (~cisc@ )
+[10:44:08] *** Joins: sudden6 (~anonymous@ )
+[10:45:02] *** Joins: sudd3n6 (~anonymous@ )
+[10:53:28] <sudden6> zetok: want to fixup https://github.com/qTox/qTox/pull/3876 ?
+[10:53:51] <zetok> sudden6: not yet
+[10:54:06] <sudden6> why not?
+[10:54:33] <zetok> I don't even know if qTox supports that
+[10:54:44] <sudden6> ohh
+[10:55:10] <zetok> i.e. it's been long since I've forgotten about the UI for toxme integration when I've tested it
+[10:55:30] <zetok> and I don't really feel like registering a bogus account only to find out that I can't remove it
+[10:55:50] <sudden6> can't you remove it via the website anyway?
+[10:56:01] <zetok> nope
+[10:56:14] <sudden6> IIRC there's some key/password where you can do this
+[10:56:20] <zetok> not quite
+[10:56:31] <zetok> website functionality ≠ API functionality
+[10:57:34] <sudden6> that's sad
+[10:57:46] <zetok> i.e. website does give you a password when registering, but when you're using the API, you're expected to use SK to later manage the entry
+[11:00:50] * zetok wonders
+[11:13:23] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[11:14:25] *** Joins: cisc (~cisc@ )
+[12:01:09] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 248 seconds)
+[12:03:27] *** Joins: jjuran (~jjuran@ )
+[12:39:22] *** Joins: f10 (~flo@ )
+[12:58:17] <zetok> https://a.uguu.se/G3JxPWKjNJcW.png  ← fedora's stability
+[13:20:42] *** Joins: pcre (~quassel@ )
+[13:22:27] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[13:22:40] *** Joins: pcre (~quassel@ )
+[13:30:17] *** Quits: SkyzohKey (~skyzohkey@ ) (Ping timeout: 260 seconds)
+[13:34:46] *** Joins: fred_barclay (~fred@ )
+[13:37:43] <zetok> and of course fedora VM had to crash :f
+[13:43:02] *** Joins: Bill_MI (~Bill@ )
+[13:51:52] <zetok> and now it doesn't even boot
+[13:52:59] <zetok> wow, what a piece of crap
+[13:59:40] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[14:03:47] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[14:04:08] *** Joins: jjuran (~jjuran@ )
+[14:51:58] *** Joins: f10 (~flo@ )
+[14:52:55] *** Joins: LittleVulpix|Gho (~Miranda@ )
+[14:56:18] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 268 seconds)
+[15:04:56] *** Joins: bashrc_ (~motters@ )
+[15:05:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[15:06:47] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[15:09:59] *** Joins: cenysor (~cenysor@ )
+[15:14:48] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:31:03] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[15:46:34] *** Quits: pcre (~quassel@ ) (Ping timeout: 250 seconds)
+[15:49:57] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 256 seconds)
+[15:57:55] *** Joins: f10 (~flo@ )
+[16:12:52] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[16:20:58] *** Quits: f10 (~flo@ ) (Ping timeout: 250 seconds)
+[16:38:06] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[16:39:55] *** Joins: jjuran (~jjuran@ )
+[16:50:52] -qtox-git-spam- [qTox] zetok opened pull request #3921: feat(UI): add accessibility labels to the add friend page (master...feat-access-fadd) https://git.io/v1TpM
+[17:24:22] *** Joins: pcre (~quassel@ )
+[17:37:46] *** Joins: f10 (~flo@ )
+[18:22:55] *** Joins: DaSpirit (~DaSpirit@ )
+[18:38:44] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[19:06:39] *** Joins: f10 (~flo@ )
+[19:22:26] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[20:43:07] *** Joins: f15h (~thomas@ )
+[20:59:26] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[21:02:58] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[21:10:49] *** Joins: jjuran (~jjuran@ )
+[21:12:57] *** Joins: f10 (~flo@ )
+[21:21:58] -qtox-git-spam- [qTox] zetok closed pull request #3921: feat(UI): add accessibility labels to the add friend page (master...feat-access-fadd) https://git.io/v1TpM
+[21:22:21] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[21:28:20] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 260 seconds)
+[21:28:50] *** Joins: in1t3r_ (~LordShiva@ )
+[21:52:33] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 268 seconds)
+[21:54:47] *** Joins: in1t3r_ (~LordShiva@ )
+[22:06:32] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:52:15] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[22:53:34] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 250 seconds)
+[22:56:43] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:13:05] *** Joins: in1t3r_ (~LordShiva@ )
+[23:20:32] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[23:20:56] *** Joins: f10 (~flo@ )
+[23:21:00] *** Quits: LittleVulpix|Gho (~Miranda@ ) (Read error: Connection reset by peer)
+[23:24:53] *** Joins: LittleVulpix (~Miranda@ )
+[23:41:43] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[23:59:56] *** Quits: bashrc_ (~motters@ ) (Quit: Lost terminal)
