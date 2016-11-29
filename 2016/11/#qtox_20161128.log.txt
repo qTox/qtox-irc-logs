@@ -1,0 +1,65 @@
+[00:00:51] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[00:11:59] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[01:29:51] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:40:39] *** Joins: jjuran (~jjuran@ )
+[02:52:59] *** Joins: dardevelin (~dardeveli@ )
+[02:54:29] *** Quits: dardevelin (~dardeveli@ ) (Max SendQ exceeded)
+[02:54:57] *** Joins: dardevelin (~dardeveli@ )
+[02:58:29] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[03:13:20] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:19:01] *** Joins: jjuran (~jjuran@ )
+[04:15:38] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[04:18:14] *** Joins: cisc (~cisc@ )
+[05:32:19] *** Joins: chatter (5fd3abaa@ )
+[05:34:15] *** Quits: chatter (5fd3abaa@ ) (Client Quit)
+[07:18:55] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 265 seconds)
+[07:25:43] *** Joins: dardevelin (~dardeveli@ )
+[07:34:35] *** Joins: sudd3n6 (~anonymous@ )
+[07:49:48] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[08:48:07] *** Joins: mitgor (5cd55beb@ )
+[08:48:17] *** Quits: mitgor (5cd55beb@ ) (Client Quit)
+[09:39:11] *** Joins: cenysor (~cenysor@ )
+[10:30:16] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[10:31:59] *** Joins: abbat (~abbat@ )
+[10:56:55] *** Joins: f10 (~flo@ )
+[11:08:18] *** Joins: LittleVulpix (~Miranda@ )
+[12:10:15] *** Joins: sudd3n6 (~anonymous@ )
+[12:33:46] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[12:34:27] *** Joins: abbat (~abbat@ )
+[13:03:29] *** Quits: abbat (~abbat@ ) (Ping timeout: 260 seconds)
+[13:40:23] -qtox-git-spam- [qTox] zetok opened pull request #3922: chore: explicitly mention that copyright belongs to qTox contributors (master...chore-cright) https://git.io/v1LfQ
+[13:42:57] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/v1LJJ
+[13:42:57] -qtox-git-spam- qTox/master 6a520c9 Twyz: feat(l10n): update Italian translation...
+[13:42:57] -qtox-git-spam- qTox/master a34751f Zetok Zalbavar: Merge pull request #3918...
+[14:14:24] -qtox-git-spam- [qTox] zetok opened pull request #3923: Update translations from Weblate (master...tr) https://git.io/v1Lkh
+[14:16:11] -qtox-git-spam- [qTox] zetok opened pull request #3924: chore(tools): make deweblate script automatically use last commit msg (master...chore-dewebl-scr) https://git.io/v1LIc
+[14:19:12] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[15:00:38] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:28:19] *** Joins: LittleVulpix (~Miranda@ )
+[15:44:47] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 244 seconds)
+[16:01:43] *** Quits: cenysor (~cenysor@ ) (*.net *.split)
+[16:01:45] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[16:02:08] *** Joins: cenysor (~cenysor@ )
+[16:06:16] *** Joins: M39640[m] (39640matri@ )
+[16:17:04] *** Joins: sudden6 (~anonymous@ )
+[16:21:08] *** Joins: LittleVulpix (~Miranda@ )
+[17:28:46] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[17:29:20] *** Joins: dardevelin (~dardeveli@ )
+[17:39:40] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 244 seconds)
+[18:02:20] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[20:46:24] *** Joins: VVD (~VVD@ )
+[21:12:29] <Diadlo> zetok: Lol, translations has two instance of `Optional. Something about you. Or your cat.`
+[21:12:36] <Diadlo> Also, hello
+[21:12:50] <zetok> hi
+[21:30:17] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 260 seconds)
+[22:11:44] *** Joins: sudden6 (~anonymous@ )
+[22:20:09] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://git.io/v1t4J
+[22:20:09] -qtox-git-spam- qTox/master b4a9f04 Diadlo: refactor: Added  to include path and exclude it from all includes
+[22:20:09] -qtox-git-spam- qTox/master 5921122 Diadlo: docs: Updated includes rules in CONTRIBUTING.md
+[22:56:37] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[23:04:03] *** Joins: DaSpirit (~DaSpirit@ )
+[23:52:04] -qtox-git-spam- [qTox] zetok pushed  new commits to master: https://git.io/v1toQ
+[23:52:04] -qtox-git-spam- qTox/master dd4673c cnzhx: feat(l10n): update Chinese translation from Weblate
+[23:52:04] -qtox-git-spam- qTox/master 899d74f Viktar Vauchkevich: feat(l10n): update Belarusian translation from Weblate
+[23:52:04] -qtox-git-spam- qTox/master 6e040b8 박길송: feat(l10n): add Korean translation from Weblate
+[23:52:40] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
