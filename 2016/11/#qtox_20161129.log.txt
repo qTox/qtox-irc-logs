@@ -1,0 +1,74 @@
+[00:06:06] -qtox-git-spam- [qTox] genodeftest opened pull request #3927: docs(INSTALL.md): update Fedora info on sqlcipher (master...patch-1) https://git.io/v1t6n
+[00:22:50] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:50:07] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 260 seconds)
+[00:51:28] *** Joins: Chiitoo (~Chiitoo@ )
+[01:17:57] *** Joins: dardevelin (~dardeveli@ )
+[01:58:09] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[02:19:43] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:22:54] *** Joins: nurupo (~nurupo.ga@ )
+[02:58:07] *** Joins: dardevelin (~dardeveli@ )
+[03:20:58] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 265 seconds)
+[03:21:08] *** Joins: jjuran_ (~jjuran@ )
+[06:19:42] <koshii> Man, qtox is getting damn good
+[06:19:51] <koshii> Thank you all for your work on this
+[07:46:28] *** Joins: sudden6 (~anonymous@ )
+[07:47:16] *** Joins: f10 (~flo@ )
+[07:52:07] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[08:55:49] -qtox-git-spam- [qTox] zetok closed pull request #3895: feat(UI): add accessibility labels to all remaining .ui files (master...feat-access-moar) https://git.io/vXFH8
+[09:05:03] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:20:04] *** Joins: sudden6 (~anonymous@ )
+[09:41:48] -qtox-git-spam- [qTox] zetok closed pull request #3916: docs(manual): add section about profile corner in the main window (master...docs-man-min-profile) https://git.io/v1fye
+[09:45:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[09:51:45] *** Joins: sudden6 (~anonymous@ )
+[09:58:36] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1qGk
+[09:58:36] -qtox-git-spam- qTox/master 78b242a Zetok Zalbavar: chore(tools): make deweblate script automatically use last commit msg
+[10:04:02] *** Joins: f10 (~flo@ )
+[10:35:54] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 258 seconds)
+[10:36:57] *** Joins: in1t3r_ (~LordShiva@ )
+[11:11:09] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/v1q8X
+[11:11:09] -qtox-git-spam- qTox/master fc016c6 Christian Stadelmann: docs(INSTALL.md): update Fedora info on sqlcipher...
+[11:11:09] -qtox-git-spam- qTox/master fed3e17 Zetok Zalbavar: Merge pull request #3927...
+[11:35:23] *** M39640[m] is now known as ehmry
+[11:41:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[11:43:49] *** Joins: sudden6 (~anonymous@ )
+[11:49:07] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:44:56] *** Joins: pcre (~quassel@ )
+[12:56:35] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[13:31:41] *** Joins: pcre_ (~quassel@ )
+[13:40:52] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[13:47:24] *** Joins: f10 (~flo@ )
+[13:55:08] *** Joins: abbat (~abbat@ )
+[13:59:04] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[14:00:42] *** Joins: st4ll1 (~st4ll1@ )
+[14:09:04] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.6)
+[14:27:10] *** Joins: st4ll1 (~st4ll1@ )
+[14:47:28] *** Joins: f10 (~flo@ )
+[15:05:00] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[15:26:17] *** Joins: cisc (~cisc@ )
+[15:41:53] *** Joins: sudden6 (~anonymous@ )
+[16:01:43] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[16:45:14] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 265 seconds)
+[16:57:16] <Emcy> why did qtox ever use a static salt for the profile encryption
+[17:01:41] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[17:04:22] *** Joins: smaragdus (~omoo@ )
+[17:07:50] *** Joins: smaragdus2 (~omoo@ )
+[17:08:38] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 246 seconds)
+[17:08:50] <zetok> since the switch to sqlcipher
+[17:25:52] *** Quits: smaragdus2 (~omoo@ ) (Ping timeout: 256 seconds)
+[17:34:17] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[17:44:59] *** Joins: smaragdus (~omoo@ )
+[18:33:48] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 245 seconds)
+[18:34:26] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[18:34:43] <Diadlo> zetok: Hello
+[18:47:28] *** Joins: sudden6 (~anonymous@ )
+[18:53:04] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[19:05:07] *** Joins: LittleVulpix (~Miranda@ )
+[19:06:18] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 245 seconds)
+[20:16:29] *** Joins: st4ll1 (~st4ll1@ )
+[20:44:32] *** Joins: in1t3r_ (~LordShiva@ )
+[21:35:51] <zetok> Diadlo: hi
+[22:04:44] *** Joins: f15h (~thomas@ )
+[22:32:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[23:37:02] *** Joins: sudden6 (~anonymous@ )
+[23:47:38] *** Joins: DaSpirit (~DaSpirit@ )
+[23:55:03] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
