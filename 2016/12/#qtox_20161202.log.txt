@@ -1,0 +1,459 @@
+[00:32:28] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 268 seconds)
+[00:48:26] *** Joins: jjuran (~jjuran@ )
+[01:20:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:08:30] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:27:38] *** Joins: abbat (~Anton@ )
+[05:27:45] *** Joins: dardevelin_ (~dardeveli@ )
+[05:31:37] *** Joins: MarKo (523684d4@ )
+[05:33:12] <MarKo> hi folks
+[05:33:20] <MarKo> got a question
+[05:36:44] <MarKo> it is helping for others clients if i leave open the qTox ?
+[05:37:17] <MarKo> shuold be working like a "node"... or not?
+[05:47:59] <robinli> MarKo: It helps.
+[05:48:12] <robinli> If you've got UDP enabled, at least.
+[05:48:30] <robinli> You can also run a node on its own if you want to help out. :)
+[06:03:30] <MarKo> ah ok thanks
+[06:03:38] <MarKo> how to run a node?
+[06:04:26] <MarKo> can i do it from the Options, or need add some plugin?
+[06:18:07] <robinli> MarKo: https://wiki.tox.chat/users/runningnodes
+[06:18:29] <robinli> It's not a feature in qTox and it requires you to build toxcore, so maybe that's not what you want. :x
+[06:22:09] <MarKo> lol indeed :D
+[06:22:31] <robinli> Well, for as long as qTox is running in UDP mode you're part of the DHT, so you'll help routing things. :)
+[06:23:11] <MarKo> i don't coding at all
+[06:23:41] <robinli> It doesn't require any coding. Just following instructions, so you can still do it if you want, and I'll be here to help you if you're interested. :P
+[06:23:47] <MarKo> ok thanks. That's a good thing, and thank you for confirmation
+[06:24:07] <MarKo> ok.. i'll give a try ;)
+[06:24:31] <robinli> And bear in mind that this uses a lot of bandwidth. :P
+[06:24:39] <MarKo> in the meantime i run qTox as well. UDP port is open
+[06:24:59] <MarKo> thank you again for clarifications :)
+[06:25:07] <robinli> No problem at all. :)
+[06:25:22] <MarKo> cya next time
+[06:25:25] <robinli> See you~
+[06:25:33] *** Quits: MarKo (523684d4@ ) (Quit: Page closed)
+[07:59:27] *** Joins: f10_ (~flo@ )
+[08:01:55] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[08:07:36] <Diadl0> Whan I cherry-picked commits from ui/redesign, I got changed version of buttons, now it looks [like a buttom](http://i.imgur.com/AOqBLao.png). Should I change size to old?
+[08:10:45] <robinli> Bottom ones look better imo, but maybe they should be moved a bit to the right so the margins are the same?
+[08:12:17] <Diadl0> robinli: Ok. Thanks
+[08:55:23] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[08:55:59] *** Joins: cisc (~cisc@ )
+[09:41:42] <genesis> https://www.youtube.com/watch?v=50Qs4gVHB_E  Coding in the Name of - Rage Against the Machine Parody 
+[09:45:13] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 260 seconds)
+[10:16:48] <Emcy> ^this is why nerds get bullied
+[10:20:34] *** Joins: cenysor (~cenysor@ )
+[10:23:53] *** Joins: Dragofix- (Dragofix@ )
+[10:26:43] *** Quits: Dragofix (~Dragofix@ ) (Ping timeout: 245 seconds)
+[10:26:43] *** Dragofix- is now known as Dragofix
+[10:48:34] *** Joins: st4ll1 (~st4ll1@ )
+[11:08:23] <zetok> robinli: actually, there are easy to use packages with bootstrap daemon
+[11:10:00] <zetok> https://github.com/abbat/tox.pkg#utils
+[11:11:33] <robinli> I had no idea. :x I just checked our wiki for it.
+[11:11:35] <robinli> Thank you. :)
+[11:12:12] <zetok> the wiki sucks, since no one maintains it
+[11:12:22] <robinli> Yeah, I guess so.
+[11:12:46] <zetok> things need to change
+[11:13:08] *** Quits: Darky (~Darky@ ) (Ping timeout: 260 seconds)
+[11:13:13] <zetok> robinli: btw, it's kinda sad that µTox is no longer on OBS
+[11:13:29] <robinli> Yeah. I've been trying to help out pretty much everywhere, but my time isn't unlimited. 
+[11:13:30] <robinli> OBS?
+[11:13:36] <zetok> https://github.com/abbat/tox.pkg/commit/2ddfb8b14d47f3067c00fef16eacd19ef6a706c0
+[11:13:46] <zetok> >I've been trying to help out pretty much everywhere, but my time isn't unlimited.
+[11:13:49] <zetok> yeah, that doesn't scale
+[11:14:05] <robinli> Hmm.
+[11:14:34] <robinli> I'll talk to grayhatter about that. I think we should have uTox in his repo.
+[11:14:46] <zetok> thanks :)
+[11:16:05] <robinli> No worries. :P It's better for the users if it's in there.
+[11:16:56] <robinli> Thanks for letting me know about it.
+[11:17:09] <zetok> um, why would it be better for users?
+[11:17:54] <robinli> Convenient way of installing uTox? More alternatives? Central location for Tox packages?
+[11:17:59] <robinli> Or am I being silly? :x
+[11:18:14] <zetok> oh, wait
+[11:18:18] <zetok> sorry, I've misread
+[11:18:39] <zetok> >It's better for the users if it's in       ← I've read that as "isn't"
+[11:19:24] <robinli> Oh, okay. :P
+[11:19:25] <zetok> so, yeah :)
+[11:40:04] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[11:44:41] *** Quits: dardevelin_ (~dardeveli@ ) (Ping timeout: 258 seconds)
+[11:50:54] *** Joins: dardevelin (~dardeveli@ )
+[11:52:11] *** Quits: dardevelin (~dardeveli@ ) (Max SendQ exceeded)
+[11:54:29] <zetok> sudd3n6: ping?
+[11:54:52] *** sudd3n6 is now known as sudden6
+[11:54:55] <sudden6> zetok: pong
+[11:55:05] <zetok> sudden6: why close the issues that aren't fixed?
+[11:55:15] <sudden6> what specifically
+[11:55:17] <sudden6> ?
+[11:55:24] <zetok> 2 most recently closed ones
+[11:55:39] <sudden6> the last one is fixed in master
+[11:55:47] <zetok> yes, but that's not the problem
+[11:56:03] <zetok> to the user, it's not
+[11:56:03] <sudden6> the previous one is upstream?
+[11:56:29] <sudden6> ok, how should I go about it?
+[11:56:41] <zetok> ask the user to test whether it's fixed on master
+[11:57:12] <zetok> as for the upstream, it's kinda better to keep it open until upstream fixes it
+[11:57:41] <sudden6> @yurivict please update to the latest release, it should be fixed there. I'll close this issue then, please comment if you want it reopened. <- does this count as asking if it's fixed?
+[11:57:57] <zetok> i.e. it's better to know what issues are actually still affecting qTox, even if they steam from upstream
+[11:58:22] <zetok> sudden6: yeah, but there's a difference between closing the issue, and asking to confirm that it's fixed
+[11:59:07] *** Joins: dardevelin (~dardeveli@ )
+[11:59:08] <sudden6> ok, so I should reverse the process, noted
+[11:59:33] <zetok> s/steam/stem/
+[12:01:28] <zetok> thanks :)
+[12:02:21] <zetok> which reminds me
+[12:02:41] <zetok> that it's probably about the time for routine cleanup of the I-need-info issues
+[12:03:04] *** Joins: pcre (~quassel@ )
+[12:03:25] *** Quits: dardevelin (~dardeveli@ ) (Max SendQ exceeded)
+[12:03:30] <zetok> sudden6: ↑ if you're feeling a need to close some issues..? :D
+[12:06:47] *** Joins: dardevelin (~dardeveli@ )
+[12:07:23] <zetok> https://github.com/qTox/qTox/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3AI-need-info%20updated%3A%3C2016-11-01
+[12:14:19] <sudden6> zetok: maybe in the evening, I have an exam to write :)
+[12:14:34] <zetok> I see, good luck then :)
+[12:40:42] *** Joins: abbat (~abbat@ )
+[12:45:11] *** Quits: pcre (~quassel@ ) (Ping timeout: 244 seconds)
+[12:45:15] *** Joins: pcre_ (~quassel@ )
+[12:45:27] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[13:15:35] *** Quits: abbat (~abbat@ ) (Ping timeout: 246 seconds)
+[13:25:07] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[13:28:01] *** Joins: abbat (~abbat@ )
+[13:37:53] *** Quits: st4ll1 (~st4ll1@ ) (Ping timeout: 244 seconds)
+[13:47:50] *** Joins: jmarciano (~support1@ )
+[13:56:51] <jmarciano> I cannot compile sqlcipher, and so lack qtox
+[13:59:14] <jmarciano> good concept that SQL database is also encrypted.
+[13:59:53] <jmarciano> sqlcipher: /usr/bin/ld: /usr/lib/libcrypto.a(libcrypto_la-c_all.o): relocation R_X86_64_32 against `.rodata.str1.1' can not be used when making a shared object; recompile with -fPIC -- what shld I do?
+[14:00:14] <zetok> jmarciano: which distro?
+[14:01:42] <jmarciano> no distro
+[14:01:53] <zetok> oh?
+[14:02:05] <jmarciano> *** Warning: Linking the shared library libsqlcipher.la against the static library /usr/lib/libcrypto.a is not portable
+[14:02:13] <jmarciano> so shall I make it non-static?
+[14:02:33] <zetok> > recompile with -fPIC
+[14:02:52] <zetok> CFLAGS are missing `-fPIC`
+[14:02:58] <jmarciano> which one? sqlcipher?
+[14:03:08] <zetok> it would seem so
+[14:03:16] <jmarciano> aha
+[14:03:35] <jmarciano> CFLAGS="-fPIC" ./configure <--- like this to start?
+[14:04:31] <jmarciano> OK I got it, I see the flag when compiling
+[14:04:42] <jmarciano> but no, same error
+[14:05:13] <jmarciano> I will install again libcrypto.a but not static
+[14:05:32] <jmarciano> actually libressl
+[14:13:31] <jmarciano> I did not even see there are other clients...
+[14:21:52] *** Quits: abbat (~abbat@ ) (Ping timeout: 250 seconds)
+[14:22:16] *** Joins: abbat (~abbat@ )
+[14:31:00] *** Joins: mlkj (c2fe3d2f@ )
+[14:53:31] <jmarciano> I have disabled shared libraries for sqlcipher and now got it. Not that I know what I am doing...
+[14:54:46] <jmarciano> src/platform/timer_osx.cpp:26:37: fatal error: QtCore/qsystemdetection.h: maybe some other dependency required
+[14:59:40] <zetok> IOKit, CoreFoundation
+[14:59:50] <zetok> right, it should be listed
+[14:59:59] <zetok> .. somewhere
+[15:01:12] <zetok> jmarciano: i.e. you're using osx, right?
+[15:02:37] <zetok> OpenBSD ?
+[15:02:52] <zetok> but then osx stuff shouldn't be built
+[15:02:55] <jmarciano> no, I am using GNU
+[15:03:03] <zetok> ok, then that's weird
+[15:03:30] <jmarciano> I have: /opt/qt-5.5.1/include/QtCore/qsystemdetection.h
+[15:03:45] <jmarciano> I can build qt applications normally. I have 2 versions of QT
+[15:05:34] <zetok> jmarciano: how do you ensure that qmake5 is called?
+[15:05:35] *** Quits: mlkj (c2fe3d2f@ ) (Ping timeout: 260 seconds)
+[15:06:04] <zetok> also, could you elaborate on `<jmarciano> no distro` ?
+[15:09:09] <zetok> `qmake -v` ?
+[15:17:20] <jmarciano> sorry, I was absent, let me see
+[15:17:52] <jmarciano> QMake version 2.01a
+[15:17:59] <jmarciano> Using Qt version 4.8.7 in /opt/qt4/lib
+[15:18:04] <jmarciano> maybe that is the problem? Using older qt?
+[15:19:18] <jmarciano> I have qmake5
+[15:19:42] <zetok> yep
+[15:20:03] <jmarciano> the Makefile was generated with qt4 qmake.
+[15:20:08] <zetok> `make clean && qmake5`
+[15:21:45] <jmarciano> Command: /usr/bin/qmake-qt5 -o Makefile qtox.pro
+[15:21:54] <jmarciano> after running qmake-qt5 I got that in Makefile
+[15:22:02] <jmarciano> so now, make
+[15:22:23] <jmarciano> at least moving forward now...
+[15:22:29] *** Joins: buglessdr (~buglessdr@ )
+[15:22:31] <jmarciano> compiling...
+[15:27:09] <jmarciano> src/audio/audio.h:37:20: fatal error: AL/al.h:
+[15:27:40] <jmarciano> I don't know where to find al.h
+[15:28:13] <zetok> https://github.com/qTox/qTox/blob/master/INSTALL.md#dependencies
+[15:28:15] <zetok> openal
+[15:30:00] <jmarciano> aha
+[15:37:36] *** Quits: jmarciano (~support1@ ) (Ping timeout: 240 seconds)
+[15:40:17] *** Joins: jmarciano (~support1@ )
+[15:40:29] <jmarciano> power outage in Tanzania
+[15:42:36] <zetok> are they often?
+[15:42:56] <zetok> btw, would you be interested in translating qTox: https://hosted.weblate.org/projects/tox/qtox/ ?
+[15:50:06] *** Joins: cenysor (~cenysor@ )
+[15:50:26] *** Joins: jmarcian` (~support1@ )
+[15:50:44] <jmarcian`> did you get my answer?
+[15:50:52] <zetok> no
+[15:51:05] <zetok> >[15:40:25] <jmarciano> power outage in Tanzania
+[15:51:09] <zetok> that's the last message
+[15:51:29] <jmarcian`> <jmarciano> often, very often, I was happy to have it almost 24 hours  [18:48]
+[15:51:30] <jmarcian`> <jmarciano> maybe I can put people to translate into Swahili
+[15:51:30] <jmarcian`> <jmarciano> and there are other languages here like Luganda in Uganda and
+[15:51:30] <jmarcian`>     others, like in Zambia  [18:49]
+[15:51:46] <zetok> I see
+[15:52:04] <zetok> it would be awesome to have more translations :)
+[15:52:10] *** Quits: jmarciano (~support1@ ) (Ping timeout: 250 seconds)
+[15:54:30] <jmarcian`> how much text is it
+[15:55:01] <jmarcian`> Swahili area is large like 100 millions and more
+[15:55:13] *** jmarcian` is now known as jmarciano
+[15:56:36] <zetok> there are 2400 words to translate
+[15:57:22] <zetok> https://github.com/qTox/qTox/wiki/Translating#if-youre-adding-new-translations ← without using weblate
+[15:58:00] <zetok> um, translation doesn't need to be 100% complete to be included in qTox
+[15:58:23] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[15:59:07] <zetok> partial translation is fine too
+[15:59:44] <zetok> (weblate just makes translating easier)
+[16:01:49] <jmarciano> 2400 words is not much 
+[16:02:01] <jmarciano> like few pages
+[16:02:25] <jmarciano> I will do it, ok
+[16:02:58] <abbat> m... Africa. Heat, sun, ocean... But outside the window is snow and frost :(
+[16:05:00] <jmarciano> you are absolutely right, I am in t-shirt and short pants
+[16:11:39] <zetok> thanks :)
+[16:12:46] *** Quits: abbat (~abbat@ ) (Read error: Connection timed out)
+[16:13:18] *** Joins: abbat (~abbat@ )
+[16:15:43] <jmarciano> I have registered, once I see how it looks like, somebody can already start
+[16:19:52] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[16:20:05] *** Joins: sudden6 (~anonymous@ )
+[16:21:39] <jmarciano> they don't have quick email for sign up
+[16:23:36] <sudden6> zetok: hi, I have the algorithm for identicons finished, now I'm debating on how I should publish it
+[16:23:54] <zetok> sudden6: as a library
+[16:24:05] <sudden6> ie whether to make a static Rust lib or rewrite it in C
+[16:24:30] <zetok> sudden6: what's the name?
+[16:24:34] <sudden6> how do I make a lib out of my Rust code
+[16:24:36] <zetok> $name{,-capi}
+[16:25:02] <zetok> mv src/{main,lib}.rs
+[16:27:21] <sudden6> and how do i "include" it into other Rust code?
+[16:27:31] <zetok> `pub fn`
+[16:27:44] <zetok> use $name::fn_name;
+[16:27:58] <zetok> hmm
+[16:28:01] <zetok> right
+[16:28:20] <zetok> docs on that are tad scattered around
+[16:29:31] <zetok> sudden6: do you want to publish that right away on gh/gl ?
+[16:29:59] <sudden6> zetok: probably
+[16:30:08] <sudden6> I can ask you later if you have no time atm
+[16:30:56] <zetok> no, I'm just wondering how to describe stuff in a coherent and ~generic manner
+[16:31:14] <jmarciano> for translations, I don't see qtox under watch projects
+[16:31:29] <zetok> jmarciano: it's `Tox`
+[16:31:54] <jmarciano> aha
+[16:32:00] <zetok> sudden6: I'd suggest to have a `$name-capi` for C bindings
+[16:32:21] <zetok> sudden6: `$name` would have just the pure Rust API
+[16:32:41] <sudden6> ok
+[16:33:47] <zetok> sudden6: so, for `$name-capi`, you would want to put in `Cargo.toml` under `[dependencies]` e.g. `$name = { git = "link to gh" }`
+[16:34:21] <sudden6> API is a overstatement, atm it's one public function and some internal helpers
+[16:34:32] <zetok> to not bother with downloading stuff from git when you've just changed something locally in `$name`, you'd want to add local path to the dependency
+[16:34:45] <zetok> sudden6: that's an API :)
+[16:35:10] <zetok> local path to the dep shouldn't be committed
+[16:35:26] <sudden6> ok, lets start with the easy things, I'll try to publish the Rust lib^^
+[16:36:13] <zetok> http://doc.crates.io/config.html#configuration-keys
+[16:37:05] <zetok> sudden6: ok, `README.md`, `LICENSE`
+[16:37:51] <zetok> (don't publish yet on crates.io though)
+[16:39:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[16:44:50] *** Joins: sudden6 (~anonymous@ )
+[16:46:25] <zetok> sudden6: also, I'd suggest to split things from `lib` away, and add tests
+[16:47:44] <jmarciano> I have assigned to someone to translate qTox
+[16:49:27] <zetok> jmarciano: thanks :)
+[16:49:48] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[17:04:12] *** Joins: reBrain (~quassel@ )
+[17:04:18] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[17:17:34] *** Joins: f10_ (~flo@ )
+[17:22:42] *** Quits: buglessdr (~buglessdr@ ) (Remote host closed the connection)
+[17:23:08] *** Joins: buglessdr (~buglessdr@ )
+[17:35:55] *** Joins: f10 (~flo@ )
+[17:36:06] *** Joins: pekka10 (~pekka@ )
+[17:36:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[17:39:04] -qtox-git-spam- [qTox] zetok opened pull request #3931: docs(INSTALL): list optional dependencies and how to disable them (master...docs-inst-dep) https://git.io/v1Cvu
+[17:48:46] *** Joins: jmarcian` (~support1@ )
+[17:50:03] *** Quits: jmarciano (~support1@ ) (Ping timeout: 245 seconds)
+[18:11:51] *** Joins: abbat (~Anton@ )
+[18:29:45] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 260 seconds)
+[18:45:49] *** Quits: jmarcian` (~support1@ ) (Ping timeout: 268 seconds)
+[18:49:28] *** Joins: in1t3r_ (~LordShiva@ )
+[18:54:29] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[19:07:52] <pekka10> hi, is it possible to compile qTox without pulseaudio?
+[19:08:02] <zetok> AFAIK yep
+[19:08:04] <pekka10> it it is, how?
+[19:08:08] <pekka10> nice
+[19:08:15] <zetok> qTox doesn't depend on PA
+[19:08:33] <zetok> you just need openal with support for your audio stack
+[19:09:16] <zetok> any reason to not have PA though?
+[19:13:03] <pekka10> well, some of us just use alsa
+[19:13:28] <zetok> which doesn't work
+[19:16:29] <pekka10> some of us even use BSD
+[19:18:18] <zetok> :)
+[19:32:55] <Chiitoo> Alsa works just fine here.  :V
+[19:39:09] *** Joins: sandrorso (~sandro@ )
+[19:43:00] *** Quits: sandrorso (~sandro@ ) (Client Quit)
+[19:46:42] <pekka10> It looks like its a regression error I get. libavdevice.so (ffmpeg) need libpulse.so
+[19:47:06] <pekka10> I need to recompile ffmpeg to get rid of pulse DNA
+[20:11:07] *** Joins: sudden6 (~anonymous@ )
+[20:13:34] *** Joins: sudd3n6 (~anonymous@ )
+[20:28:57] <sudden6> zetok: I'm having another problem with Rust
+[20:29:13] <sudden6> I split the code into a lib.rs and a main.rs
+[20:29:28] <sudden6> but stuff in the main.rs can't find the function from lib.rs
+[20:29:51] <sudden6> how can I reference it?
+[20:37:13] *** Quits: sudd3n6 (~anonymous@ ) (Quit: Konversation terminated!)
+[20:38:38] <zetok> um
+[20:39:02] <zetok> "split" ?
+[20:39:40] <sudden6> yep, there's a lib.rs with the identicon generation function and main.rs with the main function to call it
+[20:39:50] <zetok> sudden6: do you have the (IIRC) [bin] section in Cargo.toml ?
+[20:40:05] <zetok> but why would you need the main function?
+[20:40:24] <sudden6> zetok: to test it and actually generate some images?
+[20:40:38] <zetok> uh
+[20:40:45] <zetok> you don't need main.rs then
+[20:41:16] <sudden6> so I should put the main() function into the lib.rs file?
+[20:41:22] <zetok> no
+[20:41:34] <zetok> 1. tests don't need main
+[20:42:06] <zetok> 2. for code that acts as an example, you don't want to have a file named `main.rs`
+[20:42:41] <zetok> sec, I'll find the docs on examples
+[20:43:33] <zetok> http://openal.org/mailman/listinfo/openal
+[20:43:40] <zetok> uh, wrong paste
+[20:43:41] <zetok> http://doc.crates.io/manifest.html#examples
+[20:44:16] <zetok> sudden6: ↑ does that help?
+[20:44:22] <sudden6> yes
+[20:45:24] <zetok> to have "inline" tests, for each function you use just have an `#[test]` before the function
+[20:45:31] <zetok> a*
+[20:45:46] <zetok> uh
+[20:45:55] <zetok> I worded it wrong
+[20:46:50] <zetok> I mean, test functions need `#[test]` before them; e.g. `fn foo() {}; #[test] fn test_foo() {}`
+[20:54:59] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[20:58:07] <sudden6> Rust is still crying about unresolved name :/
+[20:59:30] <zetok> extern crate $name;
+[20:59:42] <sudden6> I did that
+[20:59:47] <zetok> hmm
+[20:59:55] <zetok> error & code?
+[21:01:26] <sudden6> I'll just push it to GH now and will start fixing things then
+[21:01:34] <zetok> ok
+[21:16:57] <sudden6> zetok: https://github.com/sudden6/rust-identicon
+[21:18:17] <zetok> ok
+[21:23:33] <zetok> err
+[21:24:24] <zetok> [16:27:40] <zetok> use $name::fn_name;
+[21:24:50] <sudden6> oh crap
+[21:24:59] <zetok> `use identicon::*;`
+[21:25:54] <zetok> https://a.uguu.se/18QthtDIf0nC.png ← that's just sad
+[21:26:40] <zetok> also
+[21:26:42] <zetok> >tabs
+[21:27:46] <sudden6> does Rust have a definite guide about tabs/spaces?
+[21:28:07] <zetok> >tabs
+[21:28:16] <zetok> no, but tabs are an abomination
+[21:28:24] <zetok> or maybe there is a guide
+[21:28:36] <zetok> but usually it's better to discard Rust style guides
+[21:28:50] <zetok> as they quite often suggest shitty defaults
+[21:29:17] <sudden6> tabs are the right thing ;)
+[21:29:24] <zetok> e.g. it's preferable to use block comments for documentation that spans across several lines
+[21:29:47] <zetok> sudden6: no, since you don't even use them right
+[21:30:02] <zetok> sudden6: and they are not needed when your editor is properly configured
+[21:30:32] <sudden6>  don't even use them right <- currently fixing that :)
+[21:30:56] <zetok> `s/\t/    /g` ← there you go :)
+[21:32:27] <sudden6> should be better now
+[21:32:45] <sudden6> consistent use of TAB throughout the code :p
+[21:33:13] <sudden6> btw, what do you think of the output?
+[21:33:18] <sudden6> ie the identicons
+[21:33:26] <zetok> the spam on stdout ?
+[21:33:44] <zetok> it's bad
+[21:34:30] <sudden6> I mean the images
+[21:34:47] <zetok> right
+[21:35:33] <zetok> sudden6: what is the size limit?
+[21:35:48] <sudden6> didn't calculate it
+[21:35:56] <zetok> i.e. is there a hard one?
+[21:36:38] <zetok> actually
+[21:36:45] <zetok> how does one specify image size?
+[21:37:15] <zetok> https://a.uguu.se/zoYrmS7ooTbr.png ← ok, one does not do that
+[21:37:20] <sudden6> 1240x1240 is the current hard limit
+[21:37:28] <zetok> sudden6: can it be made to have variable size?
+[21:37:34] <sudden6> change IDENTICON_BLOCK_SIZE
+[21:37:44] <zetok> 'no'
+[21:37:56] <sudden6> zetok: it can, this is just the PoC code
+[21:38:00] <zetok> ok
+[21:38:53] <sudden6> the "production" version will probably be a function taking the hash and the image size or block size
+[21:39:09] <zetok> um
+[21:39:15] <zetok> why would you need to take in hash?
+[21:39:40] <sudden6> how should I generate an identicon without a hash?
+[21:39:49] <sudden6> hash/key meaning the same
+[21:39:50] <zetok> why without a hash :D
+[21:40:08] <zetok> hash is computed from data
+[21:40:14] <zetok> just get the data "directly"
+[21:40:20] <zetok> `&[T]`
+[21:40:38] <sudden6> also that would be an option
+[21:40:53] <zetok> why making it an option when you can make it the default?
+[21:41:20] <sudden6> but I like hashes, they have the nice property of being equally long for different data :)
+[21:41:46] <zetok> um?
+[21:43:27] <zetok> why wouldn't hash be equally long?
+[21:44:39] <sudden6> I don't want to make the library specific to tox, so it'll probably be an array of 30 bytes
+[21:44:47] <zetok> err
+[21:44:59] <zetok> "no"
+[21:45:18] <zetok> T: Hash
+[21:45:25] <zetok> or something equivalent
+[21:45:34] <zetok> sudden6: what you would want, is a generic function
+[21:45:47] <sudden6> zetok: no
+[21:45:49] <zetok> sudden6: that takes in whatever stuff that implements the needed trait
+[21:46:30] <zetok> sudden6: why not?
+[21:46:31] <sudden6> what I mean is, the function will work on any data that is 32bytes long
+[21:46:43] <sudden6> I don't care where it comes from
+[21:46:48] <zetok> that is specific and limited
+[21:46:50] <sudden6> or what type it is
+[21:47:07] <zetok> and you have the type anyway
+[21:47:22] <sudden6> as long as it's 32 bytes, it will produce you an identicon
+[21:48:09] <sudden6> actually I only use 29 bytes, but that doesn't really matter
+[21:54:12] <zetok> ><zetok> that is specific and limited
+[21:55:38] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:57:37] <sudden6> that's the way I'd do it in C, there it's the most unlimited way :)
+[21:57:58] <zetok> except that it's not
+[21:59:23] <zetok> https://crates.io/crates/ring-pwhash ← your hash
+[21:59:44] <zetok> (btw, look at its lib.rs)
+[22:01:28] <sudden6> the lib.rs is mostly empty?
+[22:02:00] <zetok> :)
+[22:02:25] <zetok> great inspiration, ain't it?
+[22:02:37] <sudden6> what do you want to tell me?
+[22:02:54] <zetok> that stuff should be moved from lib.rs
+[22:03:22] <sudden6> why?
+[22:04:28] <zetok> it makes things easier
+[22:04:59] <zetok> lib.rs is used to provide a public API
+[22:05:26] <sudden6> > ($($set_idx:expr, $idx_a:expr, $idx_b:expr, $rot:expr);*) => { { <- looks like someone slept on the top row xD
+[22:06:25] <sudden6> Rust should have gone with the header/source file way
+[22:06:43] <zetok> nope
+[22:06:46] <zetok> it would be crap
+[22:07:08] <sudden6> it would be nice :)
+[22:07:11] <zetok> nope
+[22:07:33] <zetok> header/source exists only because compilers at the time couldn't hold it all in the memory
+[22:07:46] <zetok> this crap is not needed
+[22:07:47] <sudden6> as can't humans^^
+[22:07:53] <zetok> ?
+[22:07:56] <zetok> you have docs
+[22:08:26] <zetok> if you can't find something in them, it means that your docs need to be improved
+[22:08:56] <sudden6> I like the the header/source way, because it makes it very easy to determine what part of a random lib I'm supposed to use
+[22:09:21] <zetok> err
+[22:09:31] <zetok> that's a wrong way to do things
+[22:10:09] <sudden6> tell me why :)
+[22:10:27] <zetok> I did :)
+[22:11:03] <robinli> zetok: The public API for Rust code goes in lib.rs?
+[22:11:11] <sudden6> ah, you're speaking about the theoretical world where everything has optimal docs available ;)
+[22:11:12] <zetok> robinli: kinda
+[22:11:29] <zetok> sudden6: no, I'm speaking about the real world where you make an issue if docs are missing
+[22:11:36] <sudden6> lol
+[22:12:47] <sudden6> I welcome you to the world of embedded systems where docs like a christmas present ^^
+[22:12:54] <sudden6> * are like
+[22:13:42] <sudden6> robinli: what do you think about https://github.com/sudden6/rust-identicon ?
+[22:14:04] <sudden6> it generates identicons, which I plan to add to qTox
+[22:14:05] <zetok> robinli: e.g. https://github.com/zetok/tox/blob/master/src/lib.rs#L161,L181 ← submodules have their internal public API, and lib.rs is used to re-export exported from submodules API to stuff that would use `tox` crate
+[22:14:35] <zetok> sudden6: well, you always have the source, and public API without docs
+[22:15:29] <sudden6> mhm, but the different extension *.h makes it faster to find the public api :)
+[22:15:39] <zetok> nope
+[22:15:41] <sudden6> Rust should introduce *.rh
+[22:15:45] <zetok> `cargo doc` and you have the docs
+[22:16:10] <zetok> `cargo doc --somethingbrowser` and your browser opens them
+[22:17:10] <zetok> sudden6: do you want to have coveralls support?
+[22:17:58] <zetok> sudden6: also, should the docs be generated just from the `master` branch, or perhaps some other branch as well?
+[22:18:40] <sudden6> master branch should do for now
+[22:18:55] <sudden6> is coveralls support needed at this state?
+[22:19:06] <sudden6> as I said, it's PoC state
+[22:19:28] <zetok> well, I've just copied script form `tox` and I was wondering which parts to remove :P
+[22:20:03] <robinli> sudden6: What's the difference between this and Ansa89's indenticon-c?
+[22:20:12] <robinli> I know we have an issue on uTox about adding that in.
+[22:20:14] <sudden6> ah^^  I won't do anything today anymore
+[22:20:26] <sudden6> robinli: this uses two colors for the identicons
+[22:20:47] <zetok> Rust
+[22:20:59] <sudden6> ie it uses more bits from the input (key)
+[22:21:00] <zetok> that's the most significant difference
+[22:21:11] <zetok> meaning, it'll Just Work™
+[22:21:48] <sudden6> robinli: would be cool if you could take a look at the output and give feedback if it looks "nice"
+[22:22:54] <zetok> sudden6: can you enable travis?
+[22:23:49] <sudden6> zetok: tomorrow, not doing anything productive anymore :)
+[22:24:00] <robinli> sudden6: Sure. :) I'll have a look later. Am cooking right now.
+[22:24:19] <zetok> sudden6: b-but I have this code that wants enabled travis :c
+[22:59:27] *** Parts: pekka10 (~pekka@ ) ("WeeChat 1.5")
