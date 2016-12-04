@@ -1,0 +1,98 @@
+[00:25:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[01:12:45] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:35:18] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[02:36:19] *** Joins: VVD (~VVD@ )
+[03:07:09] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:07:39] *** Joins: VVD (~VVD@ )
+[03:18:05] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:18:31] *** Joins: VVD (~VVD@ )
+[03:23:37] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:24:14] *** Joins: VVD (~VVD@ )
+[03:51:45] *** Joins: dardevelin (~dardeveli@ )
+[06:56:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:09:43] *** Joins: LittleVulpix (~Miranda@ )
+[08:38:21] *** Joins: f10 (~flo@ )
+[08:41:37] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:43:01] *** Joins: LittleVulpix (~Miranda@ )
+[10:22:25] -17WAAOWVW- [qTox] zetok closed pull request #3931: docs(INSTALL): list optional dependencies and how to disable them (master...docs-inst-dep) https://git.io/v1Cvu
+[10:22:25] -14WAAOQRZ- [qTox] zetok pushed 1 new commit to master: https://git.io/v1Wlq
+[10:22:25] -14WAAOQRZ- qTox/master 8c07fa6 Zetok Zalbavar: docs(INSTALL): list optional dependencies and how to disable them
+[11:13:40] *** Joins: shiva (~LordShiva@ )
+[11:15:03] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 245 seconds)
+[11:56:46] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:57:24] *** Joins: LittleVulpix (~Miranda@ )
+[12:39:30] *** Joins: in1t3r_ (~LordShiva@ )
+[12:39:46] *** Joins: LAGonauta (~muchwow@ )
+[12:40:49] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 260 seconds)
+[12:43:36] *** Joins: sudden6 (~anonymous@ )
+[12:44:59] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 268 seconds)
+[12:49:32] *** Joins: abbat (~Anton@ )
+[13:09:17] <zetok> sudden6: https://zetok.github.io/tox-spec/ ← how user manual could look like
+[13:10:13] <sudden6> I'm not exactly sure if this is what a user manual should look like
+[13:11:46] <zetok> ¯\_(ツ)_/¯
+[13:11:54] <zetok> feel free to tinker with CSS
+[13:12:03] <sudden6> I don't mean the CSS
+[13:12:23] <zetok> oh
+[13:12:37] <sudden6> a user manual should be user friendly and not just a wall of text, more pictures, less text
+[13:12:53] <zetok> there's no problem with that though?
+[13:14:32] <sudden6> ideally it would also contain some SEO, so if people start to google "qTox dark theme" they are directly at our user manual
+[13:16:25] <zetok> fix that with sed
+[13:16:56] <zetok> or perhaps rustdoc has something for including stuff
+[13:17:58] <zetok> >--html-in-header
+[13:18:01] <zetok> that should do
+[13:18:55] <zetok> sudden6: so, there's no problem, right?
+[13:18:56] <zetok> :D
+[13:19:30] <sudden6> what do you mean with problem?
+[13:19:45] <zetok> dunno
+[13:20:03] <zetok> ><sudden6> I'm not exactly sure if this is what a user manual should look like
+[13:20:23] <sudden6> ah, this was just a loud thought about what could be improved
+[13:21:38] <zetok> mm
+[13:21:59] <zetok> I'm not sure either, since markdown version looks a bit less appealing
+[13:22:27] <zetok> https://github.com/zetok/tox-spec/blob/master/spec.md
+[13:24:25] <zetok> https://zetok.github.io/tox-spec/#tox-id ← now with images :D
+[13:25:19] <sudden6> *thumbsup*
+[13:56:56] *** Quits: Curlybear (~Curlybear@ ) (Ping timeout: 256 seconds)
+[13:59:01] *** Joins: Curlybear (~Curlybear@ )
+[14:03:49] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[14:04:40] *** Joins: VVD (~VVD@ )
+[14:10:06] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[14:10:24] *** Joins: VVD (~VVD@ )
+[14:17:50] *** Quits: VVD (~VVD@ ) ()
+[14:21:40] *** Joins: VVD (~VVD@ )
+[14:25:37] *** Quits: VVD (~VVD@ ) (Client Quit)
+[14:28:29] *** Joins: VVD25647 (~VVD@ )
+[14:28:37] *** Quits: VVD25647 (~VVD@ ) (Client Quit)
+[14:30:56] *** Joins: VVD (~VVD@ )
+[15:15:58] *** Joins: cenysor (~cenysor@ )
+[15:23:19] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[15:25:24] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:26:16] *** Joins: VVD (~VVD@ )
+[15:31:15] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:31:36] *** Joins: VVD (~VVD@ )
+[16:03:46] *** Joins: in1t3r_ (~LordShiva@ )
+[16:30:16] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:33:56] *** Joins: cisc (~cisc@ )
+[16:38:16] *** Joins: Emcy_ (~MC@ )
+[16:38:16] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[16:38:16] *** Joins: Emcy_ (~MC@ )
+[16:41:20] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[17:06:14] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[17:08:51] *** Joins: Emcy (~MC@ )
+[17:11:05] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[17:16:02] *** Quits: LAGonauta (~muchwow@ ) ()
+[17:34:32] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[17:52:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[18:26:24] *** Quits: buglessdr (~buglessdr@ ) (Quit: Leaving)
+[19:20:09] *** Joins: reBrain (~quassel@ )
+[19:24:37] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 265 seconds)
+[19:29:58] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[19:47:31] *** Joins: dardevelin (~dardeveli@ )
+[20:32:39] *** Joins: in1t3r_ (~LordShiva@ )
+[21:19:01] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 248 seconds)
+[21:40:35] *** Quits: koshii (~w@ ) (Quit: ZNC - http://znc.in)
+[21:53:30] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:57:26] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[22:28:54] -qtox-git-spam- [qTox] Diadlo opened pull request #3935: Svg mic and vol buttons (master...svgButtons) https://git.io/v1WQM
+[22:36:40] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:37:17] *** Joins: VVD (~VVD@ )
+[22:45:16] *** Joins: f10 (~flo@ )
