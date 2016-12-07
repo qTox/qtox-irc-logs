@@ -1,0 +1,178 @@
+[00:03:20] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[00:06:32] *** Joins: f10_ (~flo@ )
+[00:07:10] -qtox-git-spam- [qTox] kehugter opened pull request #3940: docs(install): link dependencies' missing websites (master...docs/link-dependencies) https://git.io/v1BOg
+[00:20:39] *** Joins: craigbass76 (~craig@ )
+[00:22:54] <craigbass76> Is there any way to sign on with my desktop, then my laptop, but be the same person? I've got the same username/pass on both computers, btu I'm not seeing the two people on my laptop that I "friended" today on my desktop.
+[00:25:57] <zetok> >I've got the same username/pass on both computers
+[00:26:05] <zetok> this is local-only stuff
+[00:26:34] <zetok> craigbass76: you can, but for time being it requires making sure that things are kept in sync
+[00:27:22] <zetok> craigbass76: sync your profile directory between boxes
+[00:27:30] <craigbass76> so if I rsync stuff over from the PC to the laptop, that should work? Can I have it open on both bexes at once?
+[00:27:33] <craigbass76> boxes...
+[00:28:28] <zetok> >Can I have it open on both bexes at once?
+[00:28:33] <zetok> you can, but it won't work well
+[00:28:45] <zetok> also, beware https://github.com/qTox/qTox/wiki/FAQ#how-to-merge-two-profiles-of-the-same-id-synchronize-contacts-and-history
+[00:29:37] <zetok> craigbass76: I probably would suggest trying out syncthing
+[00:48:46] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 258 seconds)
+[00:49:10] *** Joins: shiva (~LordShiva@ )
+[00:49:32] *** Joins: jjuran_ (~jjuran@ )
+[00:49:33] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[00:49:33] *** jjuran_ is now known as jjuran
+[01:07:53] <craigbass76> zetok: instead of syncthing, can I just rsync both ways? I'd have to do it every time I moved from one box to the other probably...
+[01:08:09] <zetok> craigbass76: whatever works
+[01:08:56] <craigbass76> what needs to go, everything, or just a file or two
+[01:18:52] <zetok> ~/.config/tox
+[01:47:06] *** Quits: craigbass76 (~craig@ ) (Quit: Leaving)
+[03:48:20] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1Bug
+[03:48:20] -qtox-git-spam- qTox/master feaedee Zetok Zalbavar: feat(UI): make link to filled issue template on About page visible...
+[03:54:30] -qtox-git-spam- [qTox] zetok opened pull request #3941: History autoload (master...feat-hist-auto) https://git.io/v1BuH
+[04:01:21] -qtox-git-spam- [qTox] zetok opened pull request #3942: style: add a missing space between `#include` and `"` (master...style-inc-spc) https://git.io/v1Bzn
+[05:38:57] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[05:42:24] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[06:47:41] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 268 seconds)
+[07:59:43] *** Joins: sudden6 (~anonymous@ )
+[08:08:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[08:08:08] *** Joins: sudd3n6 (~anonymous@ )
+[08:22:55] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[09:22:46] *** Joins: cisc (~cisc@ )
+[09:28:26] *** Joins: in1t3r_ (~LordShiva@ )
+[10:10:05] *** Joins: pcre (~quassel@ )
+[11:07:21] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:16:21] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[11:53:37] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[12:26:21] *** Joins: pcre (~quassel@ )
+[12:33:23] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[12:37:03] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/v1Rtn
+[12:37:03] -qtox-git-spam- qTox/master 9a5dfe7 kehugter: docs(install): link dependencies' missing websites...
+[12:37:03] -qtox-git-spam- qTox/master 12fd1fa Zetok Zalbavar: Merge pull request #3940...
+[12:41:12] *** Joins: cisc (~cisc@ )
+[13:46:09] *** Joins: f10_ (~flo@ )
+[13:47:47] *** Joins: f10__ (~flo@ )
+[14:18:02] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[14:18:51] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[14:19:03] *** Joins: cisc (~cisc@ )
+[14:20:30] <zetok> $ ./testproject 
+[14:20:30] <zetok> Segmentation fault (core dumped)
+[14:20:53] <zetok> I wonder if it's even possible to hate C++ more
+[14:26:50] *** Joins: reBrain (~quassel@ )
+[14:27:52] *** Joins: f10 (~flo@ )
+[14:29:30] *** Joins: cenysor (~cenysor@ )
+[14:39:29] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[14:42:35] <iphy> zetok: Java is almost as bad
+[14:43:24] <iphy> And golang is also bad
+[14:43:37] <iphy> Segfaults all the time
+[14:55:18] *** Joins: abbat (~abbat@ )
+[15:18:05] -qtox-git-spam- [qTox] zetok reopened pull request #3938: fix(UI): fix own status message not being properly displayed in tooltip (master...fix-stat-newline) https://git.io/v14Ps
+[15:19:42] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[15:32:59] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[15:33:42] *** Joins: f10__ (~flo@ )
+[15:33:52] *** Joins: f10_ (~flo@ )
+[15:33:53] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:39:33] *** Joins: LittleVulpix (~Miranda@ )
+[16:16:28] *** Joins: albel727 (~albel727@ )
+[17:10:54] *** Joins: sudd3n6 (~anonymous@ )
+[17:34:42] -qtox-git-spam- [qTox] zetok closed pull request #3942: style: add a missing space between `#include` and `"` (master...style-inc-spc) https://git.io/v1Bzn
+[17:42:50] *** sudd3n6 is now known as sudden6
+[17:44:12] <zetok> hmm
+[17:45:02] <zetok> >1   /* SQL error or missing database */
+[17:45:03] <zetok> great.
+[17:45:12] <zetok> (autoload PR)
+[18:32:51] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[18:34:38] *** Joins: Diadlo (~diadlo@ )
+[18:42:03] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[18:42:31] *** Joins: pcre (~quassel@ )
+[19:09:38] *** Quits: pcre (~quassel@ ) (Ping timeout: 245 seconds)
+[19:10:02] *** Joins: pcre (~quassel@ )
+[19:34:24] *** Joins: rysiekpl (~quassel@ )
+[19:35:33] *** Quits: rysiek|pl (~quassel@ ) (Ping timeout: 248 seconds)
+[19:40:32] *** Quits: pcre (~quassel@ ) (Ping timeout: 246 seconds)
+[19:42:21] *** Joins: pcre (~quassel@ )
+[20:00:49] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[20:01:59] *** Joins: cisc (~cisc@ )
+[20:09:21] *** Quits: pcre (~quassel@ ) (Ping timeout: 268 seconds)
+[20:11:26] *** Joins: pcre (~quassel@ )
+[20:19:45] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[20:20:26] *** Joins: cisc (~cisc@ )
+[20:26:53] *** Quits: cisc (~cisc@ ) (Ping timeout: 244 seconds)
+[20:33:41] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[20:34:07] *** Joins: Lord_Vlad (~Vlad@ )
+[20:37:03] *** Joins: cisc (~cisc@ )
+[20:51:17] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 268 seconds)
+[20:53:33] *** Quits: cisc (~cisc@ ) (Ping timeout: 260 seconds)
+[20:53:42] *** Joins: cisc (~cisc@ )
+[21:05:25] *** Joins: LittleVulpix (~Miranda@ )
+[21:10:14] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[21:12:26] *** Joins: LittleVulpix (~Miranda@ )
+[21:52:40] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:58:16] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:58:45] *** Joins: LittleVulpix (~Miranda@ )
+[22:00:31] *** Quits: rysiekpl (~quassel@ ) (Remote host closed the connection)
+[22:17:58] *** Joins: rysiek|pl (~quassel@ )
+[22:29:37] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[22:29:55] *** Joins: f10_ (~flo@ )
+[22:34:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:35:12] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[22:35:52] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:36:12] *** Joins: f10__ (~flo@ )
+[22:36:15] *** Joins: f10_ (~flo@ )
+[22:41:30] <zetok> tux3: um, I was wondering if you plan to do anything regarding updating mechanism
+[22:41:50] <zetok> tux3: i.e. current one seems to be a bit fragile, and you were saying something about a rewrite
+[22:42:07] <tux3> zetok, I'm considering the idea, but that seems likely to introduce regressions
+[22:42:14] <zetok> I see
+[22:42:17] <tux3> There's also those pre-made update frameworks
+[22:42:47] <tux3> For now I'm thinking adding unit tests would do more good than rewriting things
+[22:43:05] <tux3> Since that would have caught this particular bug quite trivially..
+[22:43:10] <zetok> right
+[22:43:32] <zetok> do you plan to write unit test(s?) for that?
+[22:45:00] <tux3> That downright garbage serialization code that I copypasted from another project 2 years ago, it needs to be thoroughly tested and maybe rewritten, because I know for a fact it's positively awful :)
+[22:45:22] <tux3> For the updater itself, tests would be good but less urgent
+[22:45:31] <tux3> I don't have any concrete plans right now
+[22:45:37] <zetok> ok
+[22:45:49] <zetok> um, it would be nice to have it in qTox before 1.7 release
+[22:46:19] <zetok> so that we could say that problem has been fixed, and from now on we will have tests that would detect problems
+[22:46:27] <zetok> before they hit the users
+[22:46:46] <zetok> (1.7 is to be released on 25)
+[22:47:00] <zetok> https://github.com/qTox/qTox/issues/3910#issuecomment-265296459
+[22:47:04] <zetok> >Update
+[22:47:14] <zetok> :|
+[22:47:58] <zetok> and if not, then for the next release
+[22:48:07] <tux3> I'm pretty frustrated that the updater broke, again. Unfortunately I don't know if I'll have the time & motivation to sit down and fix all of that
+[22:48:19] <zetok> I see
+[22:48:32] <oranges> doesn't windows have a package manager now
+[22:48:33] <oranges> just use that
+[22:48:36] <oranges> it's about time
+[22:48:38] <zetok> it doesn't
+[22:48:45] <zetok> it's called windows store
+[22:48:54] <zetok> but it's limited & useless
+[22:49:12] <tux3> ^
+[22:50:24] <tux3> Wasn't there a plan in the works to switch to CMake btw?
+[22:50:33] <zetok> yep, it's WIP
+[22:50:41] <tux3> That could change how we do the unit tests
+[22:50:44] <tux3> In a good way
+[22:50:47] <zetok> https://github.com/qTox/qTox/pull/3913
+[22:50:49] <oranges> no I mean teh other thingy
+[22:50:54] <zetok> oranges: oh?
+[22:51:13] <oranges> I hope I didn't hallucinate it
+[22:51:26] <oranges> OneGet!
+[22:51:35] <oranges> http://www.howtogeek.com/200334/windows-10-includes-a-linux-style-package-manager-named-oneget/
+[22:51:39] <tux3> I had heard of NuGet but that's a MSVC thing
+[22:52:39] <tux3> Oh it actually looks pretty neat
+[22:52:53] <tux3> Without a UI I don't know how many people use it though. And Win10 only..
+[22:53:03] <oranges> Yeah, it's a shame
+[22:53:59] *** Joins: cisc (~cisc@ )
+[23:02:07] <zetok> >.<
+[23:04:59] <zetok> tux3: do you have a bit of time to point in the right direction https://github.com/qTox/qTox/issues/927#issuecomment-260225397 ?
+[23:06:52] <tux3> zetok, not sure I know the answer
+[23:07:09] * zetok half-expected that
+[23:07:13] <zetok> no problem
+[23:07:18] <tux3> Is there a WIP PR that goes with that issue?
+[23:07:32] <tux3> It doesn't sound very hard tbqh
+[23:08:01] <zetok> there's no PR
+[23:09:51] <zetok> perhaps it's not hard, but they're only starting out with Qt/C++
+[23:22:24] <zetok> https://github.com/qTox/qTox/pull/3192 :|
+[23:22:29] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[23:22:51] *** Joins: Diadlo (~diadlo@ )
+[23:40:14] <robinli> Legends say that one day he will return with a rebased brach, fixing all the bugs.
+[23:46:48] <zetok> :D
+[23:57:47] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 246 seconds)
+[23:57:56] *** Joins: shiva (~LordShiva@ )
