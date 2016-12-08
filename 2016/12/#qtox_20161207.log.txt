@@ -1,0 +1,242 @@
+[00:22:25] <zetok> Chiitoo: ping, are you still onto filetransfer widget?
+[00:28:02] <Chiitoo> It still is oft in my mind, and I might even finally be able to do something about it soon.  None of the new changes have been blocking me rebasing the original changes, so there shouldn't be issues like that either.
+[00:28:22] <Chiitoo> It will remain to be seen if it's even close to an appropriate way of doing them things.  :D
+[00:28:42] <Chiitoo> (Or if people even want it.)
+[00:29:10] <zetok> um, did you want to do something more than just moving the buttons a bit?
+[00:29:15] * zetok doesn't remember by now
+[00:29:56] <Chiitoo> Mainly it was the buttons only, yeah.  At most, the margins also, but probably no.
+[00:29:57] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[00:30:12] <zetok> ok
+[00:49:36] *** Joins: jjuran_ (~jjuran@ )
+[00:50:33] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 268 seconds)
+[00:50:33] *** jjuran_ is now known as jjuran
+[00:58:19] <tux3> zetok, I think I found a way to make it work
+[00:58:22] <tux3> PR incoming :)
+[00:58:36] <zetok> ooh
+[00:59:21] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[01:00:27] -qtox-git-spam- [qTox] tux3 opened pull request #3947: feat(UI): Add 'Copy link' context menu item (master...copy-link-menuitem) https://git.io/v1Eqn
+[01:02:46] *** Joins: f10_ (~flo@ )
+[01:11:33] <zetok> :|
+[01:12:28] <tux3> ?
+[01:15:50] <zetok> weird, I couldn't copy link and now I can't reproduce
+[01:15:56] <tux3> uh
+[01:16:26] <zetok> actually, nvm, I can ~reproduce
+[01:16:43] <zetok> for some reason pasting with ctrl+v doesn't always work
+[01:16:57] <zetok> pasting via r-click menu works
+[01:17:26] <tux3> Can't repro. Is it only for links, or also if you select and right click copy?
+[01:17:39] <zetok> what is weird, is that ctrl+v copying doesn't want to work reliably for links
+[01:18:00] <tux3> That's super weird, and probably that would be a Qt bug :/
+[01:18:14] <zetok> and copying starts working after removing & restoring focus to qTox window
+[01:18:28] <zetok> a second Qt bug in ~24h :f
+[01:19:43] <tux3> It's weird because I can't repro
+[01:20:10] <tux3> If you ^V in another application, it works though?
+[01:21:07] <zetok> yep
+[01:21:32] <zetok> focus change is all that it takes to make it work
+[01:21:36] <tux3> Welp
+[01:22:16] <zetok> btw, I'm copying link by not clicking on link directly, but rather, on the empty space between link lines that is still classified as "link"
+[01:22:34] <zetok> (that probably doesn't matter)
+[01:24:01] <zetok> meanwhile, I think that I've found a link that qTox doesn't detect as such
+[01:24:20] <zetok> or maybe not
+[01:24:43] <tux3> If it's highlighted and you can't copy it, that's my fault and I have no idea how that could happen :)
+[01:24:58] <tux3> If it's not highlighted, blame QTextDocument being weird
+[01:25:23] <tux3> I think it just looks for http:// or another protocol://
+[01:25:52] <zetok> no, it detect link just fine so far
+[01:26:19] <zetok> just less decided that breaking up 300+ char link into separate lines is a good idea
+[01:26:28] <tux3> Heh
+[01:27:45] <zetok> it works
+[01:27:47] <tux3> Well I could fix that probably
+[01:30:05] <tux3> Nah you're right it work
+[01:30:12] <tux3> works*
+[01:31:06] <tux3> Alright imma go catch some Zs, nigh
+[01:31:12] <zetok> night :)
+[03:07:42] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[03:39:28] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:39:47] *** Joins: VVD (~VVD@ )
+[04:41:38] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[04:42:01] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[05:14:29] *** Quits: Impyy (~impy@ ) (Ping timeout: 260 seconds)
+[05:15:01] *** Joins: mva_ (znc@ )
+[05:15:43] *** Joins: worfox_ (~worfox@ )
+[05:15:53] *** Quits: Darky (~Darky@ ) (Ping timeout: 260 seconds)
+[05:15:54] *** Quits: mva (znc@ ) (Ping timeout: 260 seconds)
+[05:15:54] *** Quits: worfox (~worfox@ ) (Ping timeout: 260 seconds)
+[05:16:21] *** Quits: robinli (robinli@ ) (Ping timeout: 260 seconds)
+[05:20:54] *** Joins: robinli (robinli@ )
+[05:20:54] *** Quits: robinli (robinli@ ) (Changing host)
+[05:20:54] *** Joins: robinli (robinli@ )
+[05:21:02] *** Joins: Impyy (~impy@ )
+[05:21:41] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 248 seconds)
+[05:26:42] *** Joins: in1t3r_ (~LordShiva@ )
+[08:34:25] <nurupo> oranges: zetok: tux3 has made the stable qTox windows build rebuilt every time git master branch of qTox changes
+[08:34:50] <nurupo> effectivly making qTox stable builds the same as nightly
+[08:35:29] <oranges> okay?
+[08:35:36] <nurupo> he said that this wasn't done by mistake as qTox is getting away from having a stable git branch
+[08:36:03] <oranges> well, probably not how I'd do it, but fair enough
+[08:36:12] <nurupo> oranges: just tagging you so that you won't freak out when you see stable qTox rebuilding every day, like i did a day ago :P
+[08:36:24] <nurupo> anyway, back to my point
+[08:36:47] <nurupo> if qTox is getting away from having a stable git branch, why not just make the stable qtox checkout the release git tag?
+[08:37:34] <nurupo> or you really mean for qtox to be releaseless like that, always pointing at master's HEAD?
+[08:37:56] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[08:41:39] <nurupo> emailed to tux3 about that just in case
+[09:41:32] *** Joins: pcre (~quassel@ )
+[09:47:43] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 244 seconds)
+[09:49:29] *** Joins: albel727 (~albel727@ )
+[09:51:48] *** Joins: jjuran (~jjuran@ )
+[09:57:24] *** Quits: pcre (~quassel@ ) (Ping timeout: 256 seconds)
+[09:57:42] *** Joins: pcre (~quassel@ )
+[10:54:08] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:59:00] *** Joins: cisc (~cisc@ )
+[11:00:24] *** Joins: pcre_ (~quassel@ )
+[11:00:52] *** Quits: pcre (~quassel@ ) (Ping timeout: 265 seconds)
+[11:01:30] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 250 seconds)
+[11:02:31] *** Joins: in1t3r_ (~LordShiva@ )
+[11:11:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[11:43:32] *** Quits: rysiek|pl (~quassel@ ) (Remote host closed the connection)
+[11:43:39] *** Joins: rysiek|pl (~quassel@ )
+[11:54:33] *** Joins: sudden6 (~anonymous@ )
+[11:59:13] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[12:29:17] <tux3> nurupo, oranges Just to respond here too, we're not going release-less, but the stable branch has been replaced by using tags on the master branch
+[12:29:36] <tux3> The qTox stable jenkins job always checks-out the last stable tag and builds that
+[13:04:46] *** Joins: oli (~4444@ )
+[13:05:02] *** oli is now known as Guest13956
+[13:07:23] *** Joins: cenysor (~cenysor@ )
+[13:07:40] *** Joins: f10__ (~flo@ )
+[13:07:52] *** Joins: f10_ (~flo@ )
+[13:12:24] *** Guest13956 is now known as jimjim
+[13:13:01] <jimjim> Hi. Does anyone know the compatibility requirements for the qTox MacOS binary?
+[13:13:41] *** Joins: sudden6 (~anonymous@ )
+[13:16:00] <jimjim> I run qTox on Debian without issue. Tried to have my brother install on OSX Yosemite and got error msg like 'Check with the developer to make sure qtox works with this version of osx'
+[13:19:29] <zetok> right
+[13:19:46] <zetok> jimjim: which version is Yosemite?
+[13:20:02] <zetok> jimjim: also, right now ~latest osx binary is broken
+[13:20:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[13:20:10] <jimjim> He is using 10.10.5
+[13:20:42] <jimjim> Would a previous binary work?
+[13:20:46] <zetok> jimjim: https://github.com/qTox/qTox/issues/3747
+[13:20:57] <jimjim> Thanks, will read
+[13:21:25] <zetok> 10.10.5 sounds like something that would work once things get fixed
+[13:27:32] <jimjim> Thanks zetok. The link explained the matter well.
+[13:27:43] <zetok> np
+[13:28:17] <jimjim> is it reasonable to use the 1.4.1 release until the next working version is made available? any major issues?
+[13:29:29] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[13:31:43] <zetok> if you don't mind bugs, there aren't any "major" issues
+[13:32:40] <zetok> https://github.com/qTox/qTox/blob/master/CHANGELOG.md
+[13:40:59] *** Joins: Emcy (~MC@ )
+[13:40:59] *** Quits: Emcy (~MC@ ) (Changing host)
+[13:40:59] *** Joins: Emcy (~MC@ )
+[13:43:13] *** Joins: f10 (~flo@ )
+[13:49:38] <jimjim> Thanks again zetok. Will try 1.4.1.1. You have been most helpful!
+[13:49:56] <zetok> you're welcome :)
+[13:50:13] *** mva_ is now known as mva
+[13:54:36] *** Quits: jimjim (~4444@ ) (Quit: Leaving)
+[14:17:53] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[14:35:59] *** Joins: f10_ (~flo@ )
+[14:36:11] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[14:36:25] *** Joins: f10 (~flo@ )
+[14:36:34] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[14:38:55] *** Joins: sudden6 (~anonymous@ )
+[15:12:45] * zetok wonders
+[15:13:45] <zetok> is it a right approach to require running a shell script to have a valid version in *.nsi|*.plist ?
+[15:14:00] <zetok> (for windows|osx "packages")
+[15:14:37] <zetok> script depends on git, and wants a valid tag
+[15:42:22] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:42:52] *** Joins: LittleVulpix (~Miranda@ )
+[15:55:01] -qtox-git-spam- [qTox] zetok opened pull request #3948: chore: add current version in OSX's .plist file(s) with a script (master...chore-ver-tool) https://git.io/v1uEf
+[15:55:55] <zetok> tux3: ↑ with this there's no need to `cd` to the `windows` dir to call the script directly, instead `./tools/update-versions.sh` can be called
+[16:00:21] <tux3> zetok, sounds good
+[16:13:40] -qtox-git-spam- [qTox] zetok opened pull request #3949: chore(build): make sure that OSX building script cleans up files (master...chore-osx-clean) https://git.io/v1ug2
+[16:19:37] *** Joins: cenysor (~cenysor@ )
+[16:42:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 244 seconds)
+[16:43:49] *** Quits: f10_ (~flo@ ) (Ping timeout: 248 seconds)
+[16:43:50] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:46:05] -qtox-git-spam- [qTox] zetok opened pull request #3950: Update transltions from Weblate (master...tr) https://git.io/v1uoU
+[17:11:46] -qtox-git-spam- [qTox] zetok opened pull request #3951: docs(maint): remove obsolete part about translations from Weblate (master...docs-maint-webl) https://git.io/v1uXI
+[17:33:29] <zetok> Chiitoo: um, do you have any ETA on when the file transfer PR would be ready?
+[17:34:15] <Chiitoo> Not really.  Whyes?
+[17:34:44] <Chiitoo> I could perhaps do it really quick-like, since I do use the change in my builds, but I was hoping to maybe get some adjustments done before.
+[17:34:53] <Chiitoo> Of course, getting it out there would help getting comments on it at least.
+[17:35:37] <Chiitoo> Oh and I need to learn the “new” pull request guidelines for it, too.  :]
+[17:36:22] <zetok> sounds like today, eh? :D
+[17:36:42] <Chiitoo> I can't say it's a 100% no, hehe.
+[17:37:31] <Chiitoo> There is one thing I kinda have 3 more days before it needs to be done, so I may be working on that instead... but I'll think about it!
+[17:37:45] <zetok> I see
+[17:38:19] <zetok> well, once you have the time don't forget to note down which parts of commit guidelines aren't good/clear/stuff
+[17:38:34] <zetok> and then make an issue with those notes
+[17:39:02] <Chiitoo> Definitely, if I find any.
+[17:39:10] <zetok> thanks :)
+[17:46:14] *** Joins: f10_ (~flo@ )
+[17:46:25] *** Joins: f10 (~flo@ )
+[17:59:33] <Chiitoo> Hrm.  Forgot I also changed things like 'okb' into a '11 KiB', but I think these are only for anyone looking at it via the ui files (that is, not even visible while running the application).
+[17:59:44] <Chiitoo> Still probably should undo those for this.  Maybe.
+[18:12:45] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[18:13:08] *** Joins: Lord_Vlad (~Vlad@ )
+[18:25:44] *** Joins: bashrc (~motters@ )
+[18:40:52] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[18:41:22] *** Joins: in1t3r_ (~LordShiva@ )
+[19:05:44] <Chiitoo> Awww why not 1024.  So close: “Your branch is ahead of 'origin/master' by 1029 commits.”
+[19:13:11] <zetok> ;)
+[19:21:08] <Chiitoo> Looks like the least I should do, is remove the old things I left in commented out, as reminders.  Good thing I did, because I would not remember the whats and whyes otherwise... probably.
+[19:26:59] <Chiitoo> Ahhh, of course there's something I didn't think of yet.  There are some references in the code to 'topButton' and 'bottomButton', which I never changed.  So while it works, the names are now somewhat... unaccurate.  So to fix that, there's more work to be done.  :\
+[19:51:09] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 260 seconds)
+[20:02:24] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[20:02:47] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[20:06:12] *** Joins: f10 (~flo@ )
+[20:06:12] *** Joins: f10_ (~flo@ )
+[20:37:10] *** Quits: bashrc (~motters@ ) (Ping timeout: 256 seconds)
+[20:38:05] *** Joins: bashrc (~motters@ )
+[20:45:15] <zetok> iphy: https://github.com/qTox/qTox/pull/3948/files#diff-5c14beea957fcf1edaa6f63c76eecd4eR40 ← any idea why this doesn't want to work on osx?
+[20:45:32] <zetok> https://travis-ci.org/qTox/qTox/jobs/182053716#L850 error
+[20:45:39] <zetok> (works on Linux0
+[20:45:49] <zetok> s/0/)/
+[20:51:38] *** Joins: pcre (~quassel@ )
+[20:57:10] <iphy> Maybe sed
+[20:57:21] <iphy> Osx sed is not GNU sed
+[21:00:29] *** Joins: f15h (~thomas@ )
+[21:11:14] * zetok sighs
+[21:13:06] <oranges> osx lol
+[21:13:10] <zetok> calling GNU sed with `--posix` doesn't change anything in the output
+[21:14:33] * zetok wonders whether to try with POSIX_ME_HARDER
+[21:14:44] <oranges> hehehe
+[22:12:56] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:49:28] <zetok> so, it's not the sed, but bash
+[22:50:10] <zetok> osx has too old version
+[22:52:15] <zetok> …
+[22:58:21] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[22:58:44] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:01:21] <Chiitoo> Hm.  Was the push of timestamps to the left intentional?
+[23:02:16] <zetok> um?
+[23:04:31] <Chiitoo> I just bisected commit c8512fa98461a54f3febc076fa1d7f99eae1d593 to be the one doing it.  It doesn't explain to me at least that it would be doing something like this.
+[23:07:07] <Chiitoo> The 'unset' circle animation still appears in the old place.
+[23:07:43] *** Joins: f10 (~flo@ )
+[23:08:06] *** Joins: f10_ (~flo@ )
+[23:15:05] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[23:31:09] *** Joins: sudden6 (~anonymous@ )
+[23:31:42] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 256 seconds)
+[23:32:23] *** Joins: DaSpirit (~DaSpirit@ )
+[23:36:16] *** Joins: jjuran (~jjuran@ )
+[23:39:46] <tux3> zetok, so what's the current PR-merging protocol anyways?
+[23:39:52] <tux3> With or without a merge commit?
+[23:40:37] <zetok> if all commits are GPG-signed by a qTox maintainer there's no need for a merge commit
+[23:40:57] <sudden6> tux3: If you can rebase and wait for travis, without merge commit
+[23:41:20] <zetok> tux3: https://github.com/qTox/qTox/blob/master/MAINTAINING.md#pull-requests :)
+[23:41:25] <tux3> That's actually pretty great :)
+[23:42:00] -qtox-git-spam- [qTox] tux3 merged copy-link-menuitem into master: https://git.io/v1z5D
+[23:42:31] * zetok goes to rebase 10 PRs
+[23:43:47] <sudden6> zetok: GH now has a rebase and merge button in the web ui, maybe it can simplify things for us?
+[23:43:54] <zetok> sudden6: no
+[23:44:49] <sudden6> :/ it looked so easy
+[23:45:17] <tux3> Weird git syntax of the day: "git push origin :foo" to delete remote branch foo
+[23:45:20] <zetok> sudden6: you should look at the stuff I've just linked above
+[23:48:07] <sudden6> yeah, after thinking about it, it's impossible for GH to sign the rebased commit...
+[23:49:41] <Chiitoo> With regards to the timestamps moving, am I correct in thinking it wasn't intended?
+[23:50:34] <tux3> Chiitoo, screenshot?
+[23:51:21] <Chiitoo> Will need to make some, probably.
+[23:51:41] <tux3> Well, timestamps definitely should be to the right, but I'm not sure what you're seeing
+[23:51:48] <tux3> Probably it's not intentional, no
+[23:53:32] <Chiitoo> Here's one I sent to zetok a while ago, and how I think it should be: http://i.imgur.com/iP4UObS.png
+[23:53:47] <oranges> qtox's icons look too flat
+[23:54:31] <sudden6> can anyone recommend a good format to export a quadratic rgb bitmap via a C API?
+[23:54:33] <zetok> Chiitoo: it wasn't intentional AFAIK
+[23:55:05] <Chiitoo> zetok: Okies, thanks.
+[23:59:13] <Chiitoo> Anyone around tried running qTox with Qt 5.8?  Getting some slow startup times and loading chat history feels like taking quite a bit more than usual.
+[23:59:21] <Chiitoo> Might be my imagination, too.
