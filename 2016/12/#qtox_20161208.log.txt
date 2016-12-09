@@ -1,0 +1,563 @@
+[00:00:07] *** Joins: vindelschtuffen (~vindelsch@ )
+[00:01:09] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:01:59] <zetok> Chiitoo: DB conversion perhaps
+[00:02:17] <sudden6> this should happen only once
+[00:02:25] <Chiitoo> Hmhm.
+[00:04:37] <Chiitoo> 446572 samples in libQt5Gui.so.5.8.0 from loading profile to main window appearing.  :V
+[00:04:56] <zetok> huh
+[00:06:19] <Chiitoo> I can't say for sure, but I have a feeling it started indeed after I moved to 5.8... but I'll see if I can investigate that more.
+[00:14:16] <sudden6> zetok: how bad would it be to generate only identicons with a size multiple of 5?
+[00:20:55] <zetok> sudden6: it wouldn't be bad IMO
+[00:23:37] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[00:24:06] *** Joins: f10_ (~flo@ )
+[00:29:38] <nurupo> got an email from tux3, apparently i misunderstood what he did on jenkins, the stable qTox binary for windows gets rebuilt every time someone pushes anything to the master branch, but it gets rebuild off the latest git tag
+[00:30:09] <tux3> That's the gist of it, yes :)
+[00:30:11] <nurupo> oh, i see tux3 has mentioned it here too
+[00:30:14] <oranges> why rebuild it every time
+[00:30:28] <tux3> I don't know how to make it not rebuild every time
+[00:30:36] <nurupo> this sounds kind of wasteful, it requires servers to spin up for no reason and takes up the build queue
+[00:30:41] <tux3> Without having to manually update the config every release
+[00:30:54] <tux3> Yeah it's pretty wasteful, I'd love a better solution
+[00:31:03] <oranges> just check if the tag has changed in the git fetch script
+[00:31:06] <nurupo> when the job was monitoring the stable branch, it didn't do any of that if something was pushed to a branch whic his not named "stable"
+[00:31:07] <Emcy> i noticed that
+[00:31:08] <oranges> surely there is some way to do it
+[00:31:12] <Emcy> im sure i mentioned it
+[00:31:21] <nurupo> tux3: oh, hi
+[00:31:28] <nurupo> tux3: mind to reply to my email?
+[00:31:29] <tux3> oranges, well can we cancel the job from the script if it hasn't changeed?
+[00:31:33] <tux3> nurupo, hi!
+[00:31:35] <tux3> nurupo, which one?
+[00:31:40] <nurupo> the latest one
+[00:31:44] <nurupo> unless you already did
+[00:31:46] <tux3> Lemme chec
+[00:32:00] <oranges> tux3: just fail the build
+[00:32:05] <oranges> and none of the downstream builds will trigger
+[00:32:08] <tux3> Eh, I suppose
+[00:32:27] <tux3> How do I save the information that the tag hasn't changed between builds though? 
+[00:32:36] <oranges> hmm
+[00:32:39] <tux3> Isn't the VM starting in a clean state?
+[00:32:43] <oranges> I am not sure
+[00:32:55] <oranges> include a tag as a build artifcat?
+[00:33:01] <oranges> fetch teh last clean build artifact from jenkins in the new build?
+[00:33:06] <oranges> and read out the tag
+[00:33:08] <oranges> that could work
+[00:33:11] <nurupo> you are solving the wrong problem
+[00:33:33] <oranges> show me then nurupo 
+[00:33:44] <zetok> :3
+[00:35:06] <tux3> So, one more level of indirection :) ?
+[00:35:14] <tux3> Create a job that just fetches the last tag?
+[00:35:53] <nurupo> previously Jenkins was spinning up a build machine if the push was made to the "stable" branch. if it was made to e.g. "master", it wouldn't even create any build machines.
+[00:35:53] <nurupo> but now Jenkins looks to pushes to "master" branch, so every single push would result in a build machine being created (unless there is already a build machine)
+[00:35:53] <nurupo> i see you want to prevent Jenkins from building qToxes if the git tag didn't change, but at that point the build machine was already created and we are already wasting DigotalOcean credits (or oranges's money)
+[00:36:51] <nurupo> preventing qTox from being built if the tag didn't change fixes only half of the problem
+[00:37:01] <tux3> We could just add an executor to the Jenkins master, and pin ONLY the qTox stable fetch job on this machine
+[00:37:01] <oranges> true
+[00:37:10] <nurupo> another half is the build machines being created for no reason
+[00:37:10] <tux3> Pretty dirty, but cheap!
+[00:37:21] <oranges> hey
+[00:37:26] <oranges> why can't we just change the config on the job?
+[00:37:32] <oranges> to track the tag?
+[00:37:41] <zetok> oranges: are you willing to be the one doing this?
+[00:37:43] <nurupo> what was the issue with having the "stable" branch, why are deprecating it and considering removing it?
+[00:37:48] <nurupo> tux3: ^
+[00:38:06] <tux3> oranges, We could, but I'd rather automate the release process as much as possible to prevent accidentally publishing a release with the wrong tag
+[00:38:10] <tux3> nurupo, ask zetok !
+[00:38:21] <tux3> I forgot the conversation we had :3
+[00:39:17] <nurupo> oranges: tux3 says it's too much work and he can forget to do that. he is right on that one
+[00:39:24] <oranges> what
+[00:39:32] <oranges> why are you building from a tag at all then
+[00:39:34] <oranges> just build from master
+[00:39:47] <tux3> master is unstable though
+[00:39:53] <oranges> then you're alraedy tagging things
+[00:39:56] <tux3> tags are for stable releases
+[00:39:59] <nurupo> even if he was to update the git tag in the config, i still think it's easier to push to "stable" branch every time you mak a release rather than update a tag on jenkins
+[00:40:33] <zetok> why change to the jenkins config can't be automated?
+[00:40:38] <tux3> ^
+[00:40:49] <nurupo> it can, jenkins has api
+[00:40:50] <tux3> The easiest solution would be to tell Jenkins to just track the latest tag
+[00:41:17] <oranges> https://issues.jenkins-ci.org/browse/JENKINS-30076 rip
+[00:41:22] <nurupo> so every time you need to make a release, you can update jenkin's config with a new git tag though jenkin's web api
+[00:41:51] <tux3> Yeah but updating configs manually is a pretty sucky release process :/
+[00:41:57] <tux3> Automation would be neat
+[00:42:07] <nurupo> ><tux3> The easiest solution would be to tell Jenkins to just track the latest tag <-- can you do that without making jenkins spin up a new build machine and execute the shell script?
+[00:42:16] <oranges> yes
+[00:42:22] <oranges> pin the source builds to the jenkins machine itself
+[00:42:27] <nurupo> there is specific ref for the latest git tag?
+[00:42:32] <oranges> then you can do bash scripting
+[00:42:37] <oranges> and just fail builds when you want
+[00:42:49] <nurupo> oranges: no, we don't want to run anything on the jenkins machine
+[00:42:53] <oranges> why
+[00:42:54] <nurupo> security considerations
+[00:42:56] <tux3> nurupo, what oranges said, add an executor to the jenkins master and pin the job to that
+[00:43:06] <oranges> ?
+[00:43:09] <tux3> But yeah, then I could get a shell on the box trivially :)
+[00:43:15] <oranges> so?
+[00:43:19] <oranges> you are a fuckign qtox maintainer already
+[00:43:25] <oranges> you can owne the machines of several thousand people
+[00:43:31] <tux3> I am. Pretty sure I have SSH access too
+[00:43:44] <tux3> So the point is moot. Still it's not a very nice solution
+[00:44:08] <zetok> web api it is?
+[00:44:17] <tux3> Having a special ref or a config option for the latest tag would be neat-er, but we can always do the pinning to jenkins master thing
+[00:44:48] <oranges> there isn't any easy way to do it in config that I can see
+[00:44:57] <oranges> you can specify some regex fuzzy matching
+[00:45:04] <oranges> but it would cause all of the release tags to be built
+[00:45:16] <tux3> Hm
+[00:45:36] <tux3> Maybe there's a plugin for that, but eh
+[00:46:30] <oranges> the other option is to have a floating tag that tracks the release tag, but then you're doing extra work
+[00:46:36] <oranges> *current release tag
+[00:46:41] <nurupo> tux3: the most efficient solutions i see: 1) keep the "stable" branch (or rename it to "jenkins-windows-builds" if you are removing it because of its name) and push to it every time you do a release 2) use curl to trigger the Jenkins to build the latest tag whenever you do a release
+[00:46:59] <tux3> oranges, yeah I was just thinking of that, and if we could automate it :
+[00:47:24] <zetok> tux3: we can
+[00:47:37] <tux3> zetok, so why did we remove the stable branch, anyways?
+[00:47:39] <zetok> although automating nurupo's suggestion sounds better
+[00:47:39] <nurupo> i think (1) is better than (2), since you have to remember your auth token for jenkins, worry about it not being leaked anywhere if you are going to store it in a script on your machine, etc.
+[00:47:55] <zetok> tux3: misleading name
+[00:48:01] <tux3> Hm.
+[00:48:06] <zetok> :|
+[00:48:13] <nurupo> pushing to a branch sounds a lot easier and can be done by any of qTox maintainers with push access
+[00:48:13] *** Joins: jjuran_ (~jjuran@ )
+[00:48:33] <zetok> nurupo: actually, it's better to automate it to make travis do this
+[00:49:24] <zetok> what should be the branch name?
+[00:49:29] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 246 seconds)
+[00:49:29] *** jjuran_ is now known as jjuran
+[00:49:33] <nurupo> zetok: travis?
+[00:49:41] <zetok> uh
+[00:49:47] <zetok> I meant for jenkins to track
+[00:50:01] <zetok> `jenkins-do-not-touch-manually` ?
+[00:50:06] <nurupo> lol
+[00:50:16] <zetok> `jenkins-do-not-touch-manually-do-not-use` ?
+[00:50:16] <nurupo> i confuse them all the time too
+[00:50:53] <oranges> wait
+[00:51:02] <oranges> if the tags dont' change, it's possible that jenkins won't rebuild them
+[00:51:05] <oranges> so you could just do a regex
+[00:51:12] <oranges> assuming your tag format is regularl
+[00:51:14] <oranges> *regular
+[00:51:18] <zetok> it is
+[00:51:22] <nurupo> so many negatives for a branch name. why not just name it for what it does? "jenkins-trigger-stable-builds-for-windows" or something
+[00:51:32] <oranges> then just a regex to match teh release tag should work
+[00:51:36] <oranges> *the
+[00:51:51] <zetok> `v[0-9]+\.[0-9]+\.[0-9]+
+[00:51:55] <zetok> `
+[00:51:59] <nurupo> oranges: jenkins has such an option?
+[00:52:02] <oranges> nurupo: yes
+[00:52:09] <nurupo> :O
+[00:52:18] <oranges> the branch specifier for the github plugin is quite flexible
+[00:52:47] <zetok> regex above should do
+[00:52:48] <oranges> refs/tags/v[0-9]+\.[0-9]+\.[0-9]+
+[00:53:06] <zetok> btw
+[00:53:09] <zetok> Today is Boomtime, the 50th day of The Aftermath in the YOLD 3182
+[00:53:09] <zetok> Celebrate Afflux
+[00:54:15] <zetok> jenkins supports extended regex, right?
+[00:54:19] <nurupo> oranges saves the day by reading the docs
+[00:54:27] <zetok> \o/
+[00:54:40] <nurupo> >:<regular expression>
+[00:54:40] <nurupo> >The syntax is of the form: :regexp. Regular expression syntax in branches to build will only build those branches whose names match the regular expression.
+[00:54:43] <zetok> tux3: and the other reason was that `stable` branch is not needed when we have tags :D
+[00:55:00] <tux3> So we can just do "refs/tags/v.*" and Jenkins will build only once per tag?
+[00:55:17] <oranges> I want to test it first
+[00:55:21] <oranges> but from my reading of the doc
+[00:55:21] <oranges> yes
+[00:55:39] <oranges> assuming it's smart enough to know that a tag hasn't changed between pulls
+[00:56:16] <tux3> I think it just resolves the ref and see if the target changed, so that would work..
+[00:56:33] <oranges> nurupo: I'm going to hijack one of your test jobs
+[00:56:37] <tux3> Lemme check. I'll push a dummy branch with dummy tags
+[00:57:14] <nurupo> http://www.cyber-tec.org/2015/09/20/build-last-git-tag-with-jenkins/
+[00:57:22] <nurupo> oranges: sure
+[00:58:30] <nurupo> just as long as it builds it only once for a new tag
+[00:59:26] <nurupo> i.e. it doesn't build for every single tag there is, and it doesn't keep rebuilding the latest tag every time someone pushes something to the master
+[00:59:58] <oranges> nurupo: did you set jenkins to autoupdate?
+[01:00:07] <nurupo> yes
+[01:00:45] <nurupo> jenkins auto-updates whenever there is a new version
+[01:00:55] <oranges> ah, explaisn why so many of the plugins aren't updated
+[01:00:56] <nurupo> it does so though apt-get's unattended upgrades
+[01:01:11] <oranges> gonna update the plugins
+[01:01:17] <oranges> so they'll install after the next restart
+[01:01:23] <nurupo> don't update DO plugin please
+[01:01:35] <oranges> roger, will skip that one
+[01:02:20] <oranges> dang
+[01:02:27] <oranges> does anyone remember the jenkins webhook
+[01:02:30] <oranges> I can't for the life of me remember it
+[01:02:32] <oranges> or where it was stored
+[01:02:38] <nurupo> 1 second
+[01:03:00] <nurupo> oranges: https://build.tox.chat/github-webhook/
+[01:04:20] <nurupo> oranges http://i.imgur.com/K7Jl28L.png
+[01:08:02] *** Quits: pcre (~quassel@ ) (Ping timeout: 256 seconds)
+[01:08:18] *** Joins: pcre (~quassel@ )
+[01:08:54] <tux3> I can't get it to work :/
+[01:09:45] <tux3> It doesn't seem to find new tags when I push them
+[01:10:30] <zetok> but why testing on qTox repo ;_;
+[01:10:31] <tux3> And it always starts a job even if nothing changed
+[01:10:37] <tux3> Easier :D
+[01:10:57] <zetok> but it notifies people who subscribed to RSS about new tags
+[01:11:09] <tux3> There's a RSS for that??
+[01:11:28] <zetok> yep..?
+[01:12:05] <sudden6> zetok: made an update to the identicon stuff
+[01:12:08] <tux3> Well, experiment failed
+[01:12:29] <sudden6> pls tell me what you think about it :)
+[01:12:32] <zetok> tux3: not sure if I remember correctly, but the person who maintains epaste in arch said that they've subscribed to RSS to get notifications about new releases of it
+[01:14:03] <zetok> sudden6: use `const` for magic numbers
+[01:14:23] <zetok> sudden6: the `80` thing
+[01:15:03] <sudden6> even in an example?
+[01:15:21] <sudden6> should I do "const 80" or give it an actual name?
+[01:15:37] <zetok> name is needed
+[01:15:47] <zetok> actually, `let` would do in an example
+[01:16:09] <zetok> but const nicely shows what the number is for above the code
+[01:16:17] <sudden6> I see
+[01:17:00] <zetok> btw, why size is limited to u16 ?
+[01:17:37] <sudden6> zetok: no reason, a 65k picture should be enough for everyone ;p
+[01:17:49] <zetok> oh
+[01:17:53] <zetok> wait
+[01:18:00] <zetok> silly me
+[01:18:08] <zetok> I thought that you multiply supplied number by 5
+[01:18:19] <sudden6> I do
+[01:18:28] <zetok> um
+[01:18:32] <sudden6> so it would actually be 65k * 5
+[01:18:39] <zetok> ok
+[01:18:47] <sudden6> on one side
+[01:19:47] <sudden6> I just got a nice idea involving this code and an RGB-LED matrix :D
+[01:19:55] <zetok> :)
+[01:20:30] <zetok> sudden6: you should now add docs
+[01:21:22] <zetok> and move things out from lib.rs
+[01:21:58] <zetok> sudden6: btw, can you enable travis?
+[01:25:40] <sudden6> zetok: I have
+[01:27:15] <zetok> sudden6: ok, add the token to travis config
+[01:28:04] <sudden6> zetok: I don't have any token...
+[01:28:10] <sudden6> and no travis config
+[01:28:17] <zetok> sudden6: you need to generate one
+[01:28:23] <zetok> sudden6: and the config is on options
+[01:28:52] <oranges> I have to do some work stuff so I'll have to leave this jenkins testing for now, but I fear that I am not having much luck either
+[01:29:40] <zetok> well, looks like a branch for jenkins will be needed
+[01:29:56] <zetok> sudden6: don't merge the PR before adding the token
+[01:30:39] <sudden6> what do I need this token for?
+[01:31:05] <sudden6> also your PR already triggered Travis^^
+[01:31:14] <zetok> sudden6: https://a.uguu.se/ZCWtAQN3sbKM.png
+[01:31:32] <zetok> sudden6: to automatically deploy docs to the website every time you push to master
+[01:32:00] <zetok> sudden6: make sure that you don't put any spaces before the token
+[01:32:10] <zetok> sudden6: you can generate it in gh settings
+[01:32:40] <zetok> regarding spaces – if there happen to be any, your token will be printed by travis, so careful with that
+[01:33:19] <zetok> tru story™
+[01:34:10] <zetok> hmm, interesting, travis offers now a cronjob
+[01:34:23] <zetok> +s
+[01:34:30] <sudden6> what scope does the token need?
+[01:34:46] <zetok> pushing to public repo
+[01:37:38] <sudden6> ok, added
+[01:39:37] <zetok> actually
+[01:39:45] <zetok> sudo is not required, I'll remove that
+[01:41:23] <zetok> sudden6: feel free to merge :)
+[01:43:30] <sudden6> zetok: done
+[01:43:46] <sudden6> will start docs tomorrow, I'm tired now :)
+[01:43:57] <zetok> in 2 min docs should be deployed \o/
+[01:44:12] <sudden6> "docs"
+[01:44:19] <zetok> :)
+[01:45:47] * zetok wonders how to name the jenkins branch
+[01:46:13] <zetok> I'll go with `jenkins-do-not-touch-manually-do-not-use` if no one is against
+[01:46:40] <sudden6> zetok: no
+[01:46:44] <tux3> Why not just "release" or "continuous-integration" ?
+[01:46:52] <zetok> tux3: misleading names
+[01:47:00] <tux3> Or just "for-jenkins" if you want to be very clear?
+[01:47:11] <tux3> Though "release" doesn't seem misleading to me
+[01:47:30] <zetok> tux3: "release" is misleading in a sense that it seems to offer stability
+[01:47:40] <sudden6> "for-jenkins" is ok IMO
+[01:47:54] <tux3> That was valid criticism for the "stable" branch, but "release" is exactly what it is imo
+[01:48:04] <zetok> um
+[01:48:19] <sudden6> does that mean, whenever we push to this branch a windows build is done? I.e. I can use it for testing windows fixes?
+[01:48:35] <tux3> Yep
+[01:48:38] <zetok> …
+[01:48:42] <tux3> zetok, ?
+[01:48:49] <zetok> That's what I mean by misleading name.
+[01:49:07] <tux3> You lost me, but I'm too tired to argue :)
+[01:49:09] <zetok> `jenkins-do-not-touch-manually-do-not-use` is quite clear
+[01:49:31] <sudden6> btw, what happened to the "provide a build env for windows" subproject?
+[01:49:34] <sudden6> zetok: no
+[01:49:35] <tux3> It's longer than it ought to be
+[01:49:45] <tux3> And not much clearer
+[01:50:03] <zetok> tux3: what other name could be used that tells people to not touch/depend on it?
+[01:50:27] <zetok> sudden6: it depends on the CMake stuff
+[01:50:28] <tux3> zetok, "for-someone" implies it's not for you, if people touch it anyways I see no harm, but they've been warned!
+[01:50:59] <sudden6> tux3: +1
+[01:51:14] <zetok> tux3: so breaking things is now ok?
+[01:51:20] <tux3> zetok, ?
+[01:51:29] <zetok> what you've said implies that
+[01:51:42] <tux3> Argh. It's 3 AM, I don't even want to do this
+[01:51:43] <zetok> actually, lemme check something first
+[01:52:11] <oranges> name it
+[01:52:24] <oranges> if_you_push_to_this_branch_I_will_Hunt_You_down_and_gut_You_Like_a_fish
+[01:52:46] <sudden6> would be a nice experiment how long branch names can be
+[01:54:40] <zetok> tux3: branch for jenkins for releases shouldn't be touched by anything other than automated script
+[01:54:57] <zetok> tux3: if you want to provide a separate branch for testing, why not
+[01:55:07] <zetok> just not the branch for automated releases
+[01:55:44] <sudden6> "for-jenkins-release" and "for-jenkins-testing" ?
+[01:56:58] <zetok> actually, nvm
+[01:57:50] <zetok> it can be set up to have the `for-jenkins-release` branch not very prone to accidental pushes
+[02:02:00] <tux3> If we're doing a separate clean "for-jenkins-release" branch, I could make it automatically push Windows auto-updates so I don't have to be there to do it
+[02:02:23] <tux3> But that's dangerous, a bad push and it's send bad updates live
+[02:03:40] <tux3> That would reduce the bus factor if I disappear completely, though. Opinions :) ?
+[02:07:38] <zetok> no idea
+[02:09:48] <tux3> Oh well. Let's not.
+[02:11:33] * zetok wonders
+[02:11:57] <zetok> would pushing a shallow git clone to a branch work?
+[02:13:56] <zetok> if it does, I think I got it done
+[02:16:52] <nurupo> i can't seem to get the tag regex thing to work
+[02:21:30] -qtox-git-spam- [qTox] zetok opened pull request #3953: chore(travis): automatically deploy `for-jenkins-release` branch on tag (master...chore-jenk-br) https://git.io/v1gLT
+[02:21:43] <zetok> `$(git describe --abbrev=0):for-jenkins-release` ← not sure if `tag:branch` is a correct syntax
+[02:22:01] <zetok> but if `:branch` to delete a branch works, this should work too
+[02:22:29] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[02:22:39] <zetok> tux3: ↑ someone would need to add a GH_DEPLOY_JENKINS token
+[02:23:03] <zetok> then the branch could be locked down to only this person
+[02:23:26] <zetok> (probably)
+[02:23:50] <zetok> oh, no, it can't :/
+[02:31:06] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:09:12] *** Joins: f10_ (~flo@ )
+[03:11:43] *** Quits: worfox_ (~worfox@ ) (Ping timeout: 245 seconds)
+[03:11:54] *** Joins: worfox (~worfox@ )
+[03:14:05] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:53:53] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[04:54:34] *** Joins: f10_ (~flo@ )
+[05:31:40] *** Quits: NeaN (~elouin@ ) (Ping timeout: 268 seconds)
+[05:33:16] *** Joins: NeaN (~elouin@ )
+[05:51:58] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[05:52:13] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[07:26:16] *** Quits: Emcy (~MC@ ) (Ping timeout: 250 seconds)
+[08:03:43] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[08:10:37] *** Joins: LittleVulpix (~Miranda@ )
+[08:10:43] *** Quits: LittleVulpix (~Miranda@ ) (Changing host)
+[08:10:44] *** Joins: LittleVulpix (~Miranda@ )
+[09:06:56] *** Joins: sudden6 (~anonymous@ )
+[09:51:09] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[09:51:28] *** Joins: pcre (~quassel@ )
+[10:11:37] *** Joins: bashrc (~motters@ )
+[10:25:43] *** Quits: worfox (~worfox@ ) (Changing host)
+[10:25:43] *** Joins: worfox (~worfox@ )
+[11:27:02] *** Joins: Emcy (~MC@ )
+[11:27:02] *** Quits: Emcy (~MC@ ) (Changing host)
+[11:27:02] *** Joins: Emcy (~MC@ )
+[11:43:39] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[12:09:48] *** Joins: zero-ghost (~0@ )
+[13:22:26] *** Quits: pcre (~quassel@ ) (Ping timeout: 256 seconds)
+[13:27:39] *** Joins: pcre (~quassel@ )
+[14:01:07] <sudden6> zetok: I think I found the real reason why that osx PR isn't compiling on Travis
+[14:01:18] <zetok> oh?
+[14:01:41] <sudden6> you're installing gnu-sed but aren't using it
+[14:01:45] <zetok> err
+[14:01:51] <sudden6> according http://stackoverflow.com/a/34815955 to 
+[14:01:53] * zetok sighs
+[14:01:55] <sudden6> you have to use gsed
+[14:02:02] <zetok> it's a leftover
+[14:02:11] <zetok> I did use gsed, and it still failed
+[14:02:29] <zetok> (different error, but still)
+[14:02:42] <sudden6> hmm
+[14:02:53] <zetok> but yeah, I'll remove leftover
+[14:03:15] <sudden6> why are you using " instead of ' quotes?
+[14:03:26] <sudden6> all the sed examples I saw us ' quotes
+[14:03:30] <sudden6> *use
+[14:03:46] <zetok> $var
+[14:03:53] <zetok> it doesn't matter which is used
+[14:04:23] <zetok> quotes don't need to be used at all
+[14:04:39] <sudden6> I'm pretty sure this stuff not working is some silly error
+[14:04:50] <zetok> with `'` you usually don't need to escape stuff
+[14:05:11] <zetok> I think that it's due to difference between bash 4 and 3
+[14:05:55] <sudden6> but this shouldn't cause the sed command to error
+[14:06:08] <zetok> it can
+[14:06:35] <zetok> i.e. bash processes text, and passes processed stuff to sed
+[14:06:46] <sudden6> yep
+[14:07:06] <zetok> and there can be a difference in how stuff is processed
+[14:08:00] <sudden6> mhm
+[14:08:09] <sudden6> does bash need escaping for \ or for /
+[14:18:27] <sudden6> zetok: why are you using a\\ instead of a\ ?
+[14:18:58] <zetok> to escape \
+[14:19:23] <sudden6> why does it need escaping? is it because of the "
+[14:19:28] <zetok> yep
+[14:20:03] <sudden6> all the examples use ' and only a \
+[14:20:21] <zetok> so?
+[14:21:04] <sudden6> still reading
+[14:21:09] <zetok> ok
+[14:22:10] <sudden6> at first glance I see no reason to escape \
+[14:22:46] <zetok> `echo "\"` there you go
+[14:25:13] <sudden6> I see
+[14:25:18] <sudden6> back to reading...
+[14:26:29] *** Joins: f10_ (~flo@ )
+[14:30:44] <sudden6> zetok: another high probability fix: http://stackoverflow.com/a/4247319
+[14:31:32] <zetok> I've tried without `-i`
+[14:31:55] <zetok> oh
+[14:31:59] <sudden6> have you tried with `-i` and a backup extension?
+[14:32:03] <zetok> no
+[14:32:11] <zetok> but perhaps I should try `-i -e`
+[14:32:35] <zetok> >sed -i -e ... - does not work on OS X as it creates -e backups
+[14:32:51] <zetok> ok then, `-i"" -e`
+[14:32:52] <sudden6> does travis have osx >10.9?
+[14:33:22] <zetok> probably
+[14:33:48] <sudden6> yep
+[14:33:50] <sudden6> I checked
+[14:34:15] <sudden6> you can use sed -i'' then
+[14:34:22] <sudden6> (two single quotes)
+[14:36:09] <zetok> that reminds me
+[14:36:23] <zetok> we should write down somewhere which osx versions are supported
+[14:37:23] <sudden6> yep
+[14:39:13] <zetok> >OS X 10.8, 10.9, 10.10, 10.11
+[14:39:25] <zetok> that's with Qt 5.7 though https://doc.qt.io/qt-5/supported-platforms.html
+[14:39:45] <sudden6> min qt version is 5.4 IIRC
+[14:39:49] <zetok> 5.3
+[14:41:04] <sudden6> ah right
+[14:42:11] <zetok> https://github.com/qTox/qTox/issues/685#issuecomment-62321587
+[14:43:58] <zetok> that was 2 years ago
+[14:44:15] <zetok> I guess it's reasonable to support >=10.8 ?
+[14:44:47] <sudden6> I think so
+[14:47:27] <sudden6> We hit the Travis rush hours^^
+[15:07:34] <sudden6> zetok: failed again -_- https://travis-ci.org/qTox/qTox/jobs/182294754
+[15:07:45] <sudden6> atleast it's a different error this time...
+[15:08:04] <zetok> https://travis-ci.org/qTox/qTox/builds/182300668 :)
+[15:09:06] <sudden6> nice :)
+[15:13:04] <zetok> fug
+[15:13:33] <zetok> I've just managed to reproduce https://github.com/qTox/qTox/pull/3881 only to find out that I forgot to record this time
+[15:24:42] <zetok> >sed: 1: "qtox.nsi": extra characters at the end of q command
+[15:24:44] <zetok> …
+[15:25:36] <zetok> ok, at least osx works
+[15:26:00] <zetok> or rather, it works on osx
+[15:38:03] -qtox-git-spam- [qTox] zetok opened pull request #3955: docs(INSTALL): mention minimal supported OSX version (master...docs-min-osx) https://git.io/v12n4
+[15:38:21] <zetok> sudden6: thanks for the help :)
+[15:38:32] <sudden6> np :)
+[15:42:18] <zetok> >cd: target/doc: No such file or directory
+[15:42:29] <zetok> right, by default travis doesn't build docs
+[15:42:41] <zetok> oh well
+[15:47:01] *** Joins: Darky (~Darky@ )
+[15:56:06] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[16:07:01] <zetok> tux3: are you ok with https://github.com/qTox/qTox/pull/3953 ?
+[16:07:22] <tux3> zetok, yep
+[16:07:36] <zetok> ok, then going to merge that
+[16:10:05] -qtox-git-spam- [qTox] zetok closed pull request #3953: chore(travis): automatically deploy `for-jenkins-release` branch on tag (master...chore-jenk-br) https://git.io/v1gLT
+[16:11:20] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[16:11:46] *** Joins: LittleVulpix (~Miranda@ )
+[16:14:27] <Chiitoo> Was there ever talk about having an option to automatically log the chats into a plaintext file?  Can't seem to find any issues/pull requests like that.
+[16:17:00] *** Joins: f10_ (~flo@ )
+[16:17:41] <zetok> yep
+[16:18:00] <zetok> Chiitoo: https://github.com/qTox/qTox/issues/3138
+[16:18:28] <Chiitoo> Yay.  Didn't manage to find that one.
+[16:18:31] <Chiitoo> Thanks.
+[16:18:35] <zetok> np
+[16:18:41] * zetok searched for `plaintext`
+[16:18:48] <Chiitoo> I did too.
+[16:18:59] <Chiitoo> Odd.
+[16:19:01] <Chiitoo> I see it now.
+[16:19:01] <zetok> huh
+[16:19:25] <Chiitoo> Eh.  Maybe I only searched in pull requests.
+[16:19:29] <Chiitoo> I just woke up, sheesh!
+[16:19:32] <LittleVulpix> Your conversation just now sounded like tox looking for people in DHT
+[16:19:44] <Chiitoo> Hehehe.
+[16:19:50] <zetok> :D
+[16:37:57] *** Quits: pcre (~quassel@ ) (Ping timeout: 248 seconds)
+[16:38:19] *** Joins: pcre (~quassel@ )
+[16:41:25] *** Quits: pcre (~quassel@ ) (Read error: Connection reset by peer)
+[17:19:19] *** Joins: cenysor (~cenysor@ )
+[17:25:49] *** Joins: f10 (~flo@ )
+[17:48:50] <zetok> hum
+[17:49:11] <zetok> >Must be >= TOX_ENC_SAVE_MAGIC_LENGTH (8), which isn't publicly defined
+[17:49:13] <zetok> wat.
+[17:49:23] <zetok> there's a reason why it's not defined
+[17:50:55] <zetok> it shouldn't be used
+[17:52:19] * zetok wonders how to use defines from toxcore in qTox
+[17:52:42] <sudden6> zetok: Include the *.h file
+[17:52:51] <zetok> hmm
+[17:53:08] <zetok> so I can't just include file that includes it?
+[17:53:24] <sudden6> this would also work
+[17:53:27] <zetok> ok
+[17:53:49] <sudden6> depending on what you're trying to achieve it could be the wrong way though
+[17:54:28] <zetok> #define TOX_PASS_ENCRYPTION_EXTRA_LENGTH 80
+[17:54:34] <zetok> from TES header
+[17:54:54] <zetok> core/core.h includes TES header
+[17:55:12] <zetok> and is already included in profile.cpp
+[17:55:30] <zetok> so all that I need to do is to use `TOX_PASS_ENCRYPTION_EXTRA_LENGTH`, right?
+[17:55:36] <sudden6> yes
+[17:56:01] <zetok> ok
+[17:56:03] <sudden6> since when are you doing c++? O_o
+[17:56:28] <zetok> I don't
+[17:56:32] <zetok> hence the question above
+[17:57:30] <sudden6> well, you are trying, even that's new^^
+[17:57:37] <zetok> it's quite sad that even someone who doesn't know C++ can be fixing qTox code :/
+[17:58:17] <sudden6> most of the time actual knowledge of the language isn't even needed
+[17:58:19] <zetok> not quite "trying", I'm mostly just stress testing current qTox's review system
+[17:58:37] <zetok> I'm wondering if (when) it would start failing
+[17:58:50] <zetok> (due to overload)
+[17:59:35] <sudden6> would be an interesting thing to know
+[18:03:16] <zetok> I've actually have been looking into improving docs
+[18:03:20] -qtox-git-spam- [qTox] zetok opened pull request #3956: fix: remove unnecessary variable when checking whether save is a TES (master...fix-rm-var-tes) https://git.io/v12Xd
+[18:03:22] <zetok> but then I save that comment
+[18:04:34] <zetok> or should that be a `refactor`
+[18:04:36] <zetok> hmm
+[18:06:34] <sudden6> zetok: where's the doc to TOX_PASS_ENCRYPTION_EXTRA_LENGTH ?
+[18:09:06] <zetok> sudden6: https://github.com/TokTok/c-toxcore/blob/master/toxencryptsave/toxencryptsave.h#L118
+[18:11:16] <sudden6> not very intuitive IMHO
+[18:11:23] <zetok> indeed
+[18:12:04] <sudden6> it never states that TOX_PASS_ENCRYPTION_EXTRA_LENGTH can be used to determine a valid TES save file
+[18:12:27] <zetok> it's not
+[18:12:45] <zetok> it's the minimal length for any file that could be TES
+[18:12:54] <zetok> if files doesn't have even that, it's not TES
+[18:13:11] <sudden6> ah
+[18:14:22] <zetok> file*
+[18:18:36] <zetok> actually, I can think of a reason why it's done like that
+[18:19:51] <sudden6> ?
+[18:21:13] <zetok> 1. memory allocation (less important); 2. handling & clearing out memory
+[18:21:50] <zetok> the 2nd point applies only when qTox doesn't make sure to properly handle the memory
+[18:22:20] <sudden6> depending on how you define handling the memory, the way it's done is fine
+[18:22:39] <zetok> memory should be cleaned
+[18:22:46] <zetok> before freeing it
+[18:22:52] <sudden6> you mean zeroing
+[18:23:04] <zetok> yep
+[18:23:13] <sudden6> why do you think so?
+[18:23:41] <zetok> it's not a real issue when you have properly configured kernel on linux, but given that there's a slight performance penalty to that not many people are using that config
+[18:24:16] <zetok> sudden6: IIRC within first 80 bytes of save file when it's not a TES there's located SK
+[18:24:42] <sudden6> hmm
+[18:25:12] <zetok> qTox should clean up memory of any files that are possibly TES
+[18:25:47] <sudden6> I see why one would want that
+[18:27:13] <sudden6> given it's only 80 bytes to zero the performance overhead will be negible
+[18:27:48] <sudden6> additionally it could be speed up by only zeroing the bytes that were actually read
+[18:29:03] <zetok> yep, SK-2bytes is located in the first 80 bytes
+[18:31:13] <sudden6> a problem could be that the compiler can optimize the zeroing away
+[18:31:19] <zetok> nope
+[18:31:24] <zetok> not when it's done properly
+[18:31:37] <zetok> and to do that, one should use function provided for it by libsodium
+[18:34:03] <sudden6> mhm, maybe attach that to to the "zero memory" issue?
+[18:34:32] <zetok> well
+[18:34:57] <zetok> wouldn't it be better to not introduce the problem in the first place?
+[18:40:30] <zetok> based on gut feeling, I'm pretty sure that qTox doesn't clean up memory in other places as well
+[18:40:42] <zetok> but adding yet another problem to the pile doesn't sound right
+[19:13:16] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[19:13:29] *** Joins: f10_ (~flo@ )
+[19:23:52] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[19:42:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[20:17:36] *** Joins: DaSpirit (~DaSpirit@ )
+[20:42:04] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[20:56:26] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 250 seconds)
+[20:56:32] *** Joins: cisc (~cisc@ )
+[20:57:04] *** Joins: in1t3r_ (~LordShiva@ )
+[21:17:55] <Chiitoo> Hum.  Is there a bit missing, off of the bottom of the volume button?  Actually, mic button, too.
+[21:31:33] <zetok> no idea
+[21:31:41] <zetok> oh
+[21:31:46] <zetok> it indeed is
+[21:31:56] <Chiitoo> I though I did that when I was preparing my pull request stuff.
+[21:32:01] <Chiitoo> Then I was :[
+[21:32:16] <Chiitoo> But now as I built a 'clean' build I noticed they're still wonky, heh.
+[21:32:18] <oranges> greetings to all qtox
+[21:32:26] <oranges> I am bring message from tox
+[21:32:30] <Chiitoo> I wonder if it's the same change that did that, that did the timestamp thingy.
+[21:32:34] <Chiitoo> (I'm making an issue about it now.)
+[21:32:35] <oranges> keep up the good work
+[21:32:37] <oranges> message ends
+[21:32:53] <Chiitoo> I think I broke your message a bit.  Sorry about that!
+[21:33:05] <zetok> oranges: ACK
+[21:34:59] <Chiitoo> Hm, no, looks like that's done by some other commit.
+[21:36:02] *** Joins: n (531f4927@ )
+[21:36:25] *** n is now known as Guest59010
+[21:37:32] *** Parts: Guest59010 (531f4927@ ) ()
+[21:49:37] *** Joins: sudden6 (~anonymous@ )
+[22:10:18] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[22:10:40] *** Joins: f10 (~flo@ )
+[22:11:16] <Chiitoo> Aww, there's an issue for Pirate Translation.  :]  My qTox still always says 'Debug: Error loading translation "pirate"' upon starting it, heh.
+[22:11:18] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:11:40] *** Joins: f10_ (~flo@ )
+[22:18:13] -qtox-git-spam- [qTox] zetok closed pull request #3948: chore: add current version in OSX's .plist file(s) with a script (master...chore-ver-tool) https://git.io/v1uEf
+[22:43:12] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:04:49] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:05:43] *** Joins: VVD (~VVD@ )
+[23:50:30] *** Joins: f10 (~flo@ )
+[23:50:34] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
