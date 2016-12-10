@@ -1,0 +1,206 @@
+[00:04:45] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:38:58] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:39:21] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:45:10] *** Joins: f10 (~flo@ )
+[00:45:42] *** Joins: f10_ (~flo@ )
+[00:48:58] *** Joins: jjuran_ (~jjuran@ )
+[00:49:23] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 246 seconds)
+[00:49:23] *** jjuran_ is now known as jjuran
+[01:12:51] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[01:17:12] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[01:19:23] *** Joins: jjuran (~jjuran@ )
+[01:20:44] *** Joins: cisc (~cisc@ )
+[01:23:33] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[01:23:49] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[01:27:02] *** Joins: f10_ (~flo@ )
+[01:27:10] *** Joins: f10 (~flo@ )
+[02:09:01] -qtox-git-spam- [qTox] zetok closed pull request #3955: docs(INSTALL): mention minimal supported OSX version (master...docs-min-osx) https://git.io/v12n4
+[02:09:04] <zetok> time to test rebasing script :3
+[02:10:28] <zetok> fu fu fu.
+[02:10:34] <zetok> (it works)
+[02:11:35] <zetok> 10 PRs rebased, time to add some more
+[02:57:56] -qtox-git-spam- [qTox] zetok opened pull request #3958: feat(UI): make it possible to select text of the received friend request (master...feat-freq-txt-sel) https://git.io/v1ab7
+[03:10:19] *** Joins: f10__ (~flo@ )
+[03:11:56] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[03:12:15] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[03:14:15] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:14:54] *** Joins: albel727 (~albel727@ )
+[03:15:45] *** Quits: vindelschtuffen (~vindelsch@ ) (Remote host closed the connection)
+[03:15:58] <oranges> ooer
+[03:16:42] *** Joins: Emcy_ (~MC@ )
+[03:16:42] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[03:16:42] *** Joins: Emcy_ (~MC@ )
+[03:18:28] <zetok> tux3: -.-
+[03:18:53] <zetok> tux3: qTox truncating newlines in status messages makes me sad
+[03:19:05] <oranges> ooer
+[03:19:12] <zetok> it's not even about the UI anymore
+[03:19:12] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[03:19:24] <zetok> it truncates them before copying stuff to the clipboard
+[03:20:15] *** Joins: f10_ (~flo@ )
+[03:20:21] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[03:21:26] <nurupo> multiline status messages, hah
+[03:22:28] <nurupo> you could try make your tox avatar be a live webcam feed for funzies
+[03:22:47] -qtox-git-spam- [qTox] zetok opened pull request #3959: fix(UI): copy friend's non-truncated status message instead of truncated (master...fix-chatform-stat-msg-copy) https://git.io/v1aAI
+[03:22:53] <nurupo> update the avatar several times per second with the most recent image from webcam
+[03:22:55] <zetok> qTox wouldn't be able to handle that
+[03:22:59] <nurupo> or some some other video input
+[03:23:24] <zetok> it sends avatar only once(!!!) per friend per qTox instance start
+[03:23:27] <nurupo> stream copyrighted content through tox avatars :D
+[03:23:50] <nurupo> huh?
+[03:24:16] <nurupo> if you change your avatar, your friends won't see it until you restart qTox?
+[03:24:21] <zetok> yep
+[03:24:54] <zetok> :/
+[03:25:06] <nurupo> that's weird
+[03:25:17] <zetok> that's broken
+[03:41:58] <zetok> oranges: wouldn't 'Uuk.' be more appropriate?
+[03:42:03] <oranges> ooooooooer
+[03:42:32] <zetok> hmm, right
+[03:48:15] <zetok> oranges: https://youtu.be/9dcVOmEQzKA?t=127 ← is that it?
+[04:09:12] *** Quits: f10_ (~flo@ ) (Ping timeout: 244 seconds)
+[04:09:25] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[04:11:03] *** Joins: f10_ (~flo@ )
+[04:13:29] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[04:13:47] *** Joins: f10_ (~flo@ )
+[04:13:53] *** Joins: f10 (~flo@ )
+[04:16:56] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 246 seconds)
+[04:26:32] <zetok> https://github.com/qTox/qTox/pull/3950 ← can someone "review" ?
+[04:26:36] <zetok> nurupo: ↑ ?
+[04:28:04] <nurupo> i don't know any of those languages
+[04:28:13] <zetok> yes
+[04:28:16] <nurupo> also, how do you even review this? +7,693 −1,087 
+[04:28:30] <zetok> well, all that you need to do is to `:lgtm:`
+[04:28:43] <nurupo> are you a devil? D:
+[04:29:44] <zetok> um, it doesn't really need review
+[04:29:50] <nurupo> "can you review this?" "you don't actually have to review it, just sign off that you have reviewed it"
+[04:29:53] <zetok> it needs a `:lgtm:`
+[04:30:08] <nurupo> yeah, that's what it sounds like
+[04:30:18] <nurupo> that it doesn't actually need a review
+[04:30:18] <zetok> generally, no one reviews translations
+[04:30:40] <zetok> except for Diadlo, who has found quite a few things not quite right
+[04:32:25] <nurupo> there you go
+[04:32:56] <zetok> thanks
+[04:33:09] <nurupo> i don't really like lgtm'ing things without actually reviewing them, please don't ask me to do this anymore
+[04:33:21] <zetok> :(
+[04:33:37] <zetok> ok
+[04:35:37] -qtox-git-spam- [qTox] zetok closed pull request #3950: Update transltions from Weblate (master...tr) https://git.io/v1uoU
+[04:35:43] <zetok> problem is that as long as there's open translation PR, translating on weblate is blocked for people
+[04:35:51] <zetok> (to not introduce conflicts)
+[05:30:20] <oranges> ude
+[05:33:07] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[05:33:15] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[05:33:38] *** Joins: f10 (~flo@ )
+[05:33:57] *** Joins: f10_ (~flo@ )
+[05:54:47] <nurupo> oranges: op his
+[05:55:01] <nurupo> *top his
+[05:58:18] <Diadlo> zetok: Hello. I wanted to review the translation today :( Also, why we have comments: `A list of all knownâ¦`
+[06:00:08] <Diadlo> Seems, we have some problem with `…` in .ts files
+[06:04:02] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[06:04:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[07:04:00] *** Joins: in1t3r_ (~LordShiva@ )
+[08:07:19] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[08:12:09] *** Joins: jjuran (~jjuran@ )
+[09:05:20] *** Quits: oranges (oranges@ ) (Quit: Reconnecting)
+[09:05:27] *** Joins: oranges (oranges@ )
+[09:40:21] *** Joins: sudden6 (~anonymous@ )
+[09:52:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[11:46:15] *** Joins: sudden6 (~anonymous@ )
+[11:57:41] <iphy> zetok: does the reviewable script have access to the file list?
+[11:58:22] <iphy> If so, you could add review exemptions
+[11:58:55] <iphy> Or wait, there was a reviewable ignore feature added, right?
+[12:03:49] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[12:12:25] *** Joins: chinabiz[m] (chinabizma@ )
+[12:13:43] *** Parts: chinabiz[m] (chinabizma@ ) ()
+[12:55:15] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:38:20] <zetok> Diadlo: right
+[13:38:31] <zetok> iphy: oh, there is something like that?
+[13:44:20] <robinli> zetok: They added the reviewable ignore feature really really recently.
+[13:44:57] <robinli> http://changelog.reviewable.io/.gitattributes-support-13109
+[13:46:47] <zetok> I see
+[13:46:49] <zetok> :s
+[13:47:08] <zetok> it's not really good though
+[13:47:50] <zetok> i.e. disabling diffs doesn't sound quite right
+[13:51:50] <robinli> zetok: Might be useful for generated files.
+[13:52:12] * zetok wonders if there are any
+[13:52:33] <robinli> Isn't the tox.api.h generated from other files?
+[13:53:01] <zetok> it is, but it shouldn't be hidden from review
+[13:54:19] *** Joins: f10_ (~flo@ )
+[13:55:41] *** Joins: f10 (~flo@ )
+[13:59:06] *** Joins: LittleVulpix (~Miranda@ )
+[14:01:55] *** Quits: iphy (uid67735@ ) ()
+[14:02:10] *** Joins: iphy (uid67735@ )
+[14:11:28] *** Joins: pcre (~quassel@ )
+[14:13:21] *** Joins: sudden6 (~anonymous@ )
+[14:33:06] *** Joins: f10__ (~flo@ )
+[14:33:52] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[14:47:51] *** Joins: cenysor (~cenysor@ )
+[15:00:56] *** Quits: pcre (~quassel@ ) (Ping timeout: 256 seconds)
+[15:01:11] *** Joins: pcre (~quassel@ )
+[16:37:28] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[16:37:38] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[16:38:08] *** Joins: f10__ (~flo@ )
+[16:38:09] *** Joins: f10_ (~flo@ )
+[17:02:37] <Diadlo> zetok: Did you seen my comments after merge? https://github.com/qTox/qTox/pull/3950
+[17:05:40] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[17:05:40] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[17:26:48] *** Joins: f10_ (~flo@ )
+[17:27:18] *** Joins: f10__ (~flo@ )
+[18:08:35] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[18:09:03] *** Joins: Lord_Vlad (~Vlad@ )
+[18:17:42] *** Joins: abbat (~Anton@ )
+[19:15:14] <zetok> Diadlo: yeah
+[19:15:33] <zetok> Diadlo: the translation was like that before though
+[19:15:53] <zetok> (at least the stuff that you've commented on)
+[19:16:07] <zetok> would be good to fix it now
+[19:16:50] <Diadlo> Yes :)
+[19:19:49] <zetok> sudden6: I've got the rebasing script for all PRs working
+[19:20:32] <sudden6> you have my attention ;)
+[19:21:14] <zetok> I wrote a bit of rust that pulls the info about all open PRs from github, and I've plugged that into a script
+[19:21:46] <zetok> https://gist.github.com/zetok/bd7fc53d8fba257b0dcd970a8d8ca928 ← script output
+[19:23:12] <zetok> https://gist.github.com/zetok/a054f6214439681969331f1cbf29c401 ← script that works on the output
+[19:23:36] <zetok> right now gopull is hardcoded to qTox/qTox repo
+[19:23:52] <sudden6> mhm, I see
+[19:25:08] <zetok> I guess I'll put it on gh after adding toml support for configurable repos
+[19:25:22] <zetok> (unless you want to use it right now with hardcoded qTox repo)
+[19:26:36] <sudden6> no thanks, I'll wait till you're satisfied with it
+[19:26:52] <zetok> it works, and I'm fairly satisfied
+[19:27:07] <zetok> uhm, kinda
+[19:27:57] <zetok> the only thing that I couldn't get to work was proxy support, since hyper (lib used for ~connections) doesn't support https over http proxies (yet)
+[19:28:18] <zetok> :/
+[19:28:29] <zetok> but aside from that it works
+[19:35:52] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1w4u
+[19:35:52] -qtox-git-spam- qTox/master 231e1d7 Zetok Zalbavar: fix: remove unnecessary variable when checking whether save is a TES...
+[19:37:28] <zetok> hum, it probably should have been `refactor` -.-"
+[19:37:34] * zetok forgot to rename
+[19:46:13] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 248 seconds)
+[19:54:24] <zetok> https://a.uguu.se/krui0CtOOkD6.png ← rebasing script in action
+[19:57:40] <zetok> Diadlo: https://github.com/qTox/qTox/issues/3960 ← um, it's not the same bug that causes problems with copying "normal" conversation text impossible^Whard?
+[19:58:59] <Diadlo> zetok: Do you have a link?
+[19:59:04] <Diadlo> But, seems not
+[19:59:21] <zetok> Diadlo: https://github.com/qTox/qTox/issues/2891
+[20:00:12] <Diadlo> No. It's not the same
+[20:00:29] <zetok> ok
+[20:36:00] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[20:36:49] *** Joins: f10 (~flo@ )
+[20:36:53] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[20:36:55] *** Joins: f10_ (~flo@ )
+[20:42:36] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[20:45:42] *** Quits: pcre (~quassel@ ) (Read error: Connection reset by peer)
+[20:46:48] *** Joins: pcre (~quassel@ )
+[21:29:20] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1wXQ
+[21:29:20] -qtox-git-spam- qTox/master 9d1275b Zetok Zalbavar: fix(UI): copy friend's non-truncated status message instead of truncated...
+[21:43:25] *** mitfree_ is now known as mitfree
+[21:47:48] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:48:33] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:48:47] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[21:49:00] *** Joins: f10 (~flo@ )
+[21:49:19] *** Joins: f10_ (~flo@ )
+[22:21:55] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[22:30:58] *** Joins: f10_ (~flo@ )
+[22:39:02] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:49:33] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[22:53:43] *** Joins: f10_ (~flo@ )
+[22:59:04] *** Joins: pcre_ (~quassel@ )
+[22:59:12] *** Quits: pcre (~quassel@ ) (Ping timeout: 256 seconds)
+[22:59:17] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[23:09:31] *** Joins: bashrc (~motters@ )
+[23:36:22] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
