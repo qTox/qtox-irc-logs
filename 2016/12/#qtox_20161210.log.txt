@@ -1,0 +1,107 @@
+[00:03:53] *** Quits: Darky (~Darky@ ) (Ping timeout: 258 seconds)
+[00:04:56] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:08:31] *** Quits: kadinparker[m] (kadinparke@ ) (Remote host closed the connection)
+[00:22:54] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[01:01:17] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[01:02:05] *** Joins: Lord_Vlad (~Vlad@ )
+[01:02:59] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[01:03:19] *** Joins: f10_ (~flo@ )
+[01:14:48] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:15:20] *** Joins: f10_ (~flo@ )
+[01:19:00] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 250 seconds)
+[01:19:10] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:19:41] *** Joins: f10_ (~flo@ )
+[01:19:45] *** Joins: jjuran (~jjuran@ )
+[01:19:47] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:20:14] *** Joins: f10 (~flo@ )
+[02:31:06] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1rOT
+[02:31:06] -qtox-git-spam- qTox/master 0660695 Zetok Zalbavar: feat(UI): make it possible to select text of the received friend request
+[02:47:09] *** Joins: f10__ (~flo@ )
+[02:47:34] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:27:32] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[03:27:44] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[03:29:27] *** Joins: f10__ (~flo@ )
+[03:29:31] *** Joins: f10 (~flo@ )
+[03:38:35] *** Quits: Lord_Vlad (~Vlad@ ) (Write error: Broken pipe)
+[03:38:47] *** Joins: Lord_Vlad (~Vlad@ )
+[03:44:32] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[03:44:50] *** Joins: f10__ (~flo@ )
+[04:51:38] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[05:09:01] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[05:14:23] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[06:01:13] *** Joins: f10 (~flo@ )
+[06:01:22] *** Joins: f10__ (~flo@ )
+[07:23:49] *** Quits: mitfree (~mit@ ) (Ping timeout: 248 seconds)
+[07:25:17] *** Joins: mitfree (~mit@ )
+[07:42:21] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[07:42:21] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:05:33] *** Quits: zero-ghost (~0@ ) (*.net *.split)
+[09:11:03] *** Joins: zero-ghost (~0@ )
+[09:16:53] *** Joins: sudden6 (~anonymous@ )
+[09:32:39] *** Quits: zero-ghost (~0@ ) (*.net *.split)
+[09:33:35] *** Joins: zero-ghost (~0@ )
+[09:39:22] *** Joins: abbat (~Anton@ )
+[10:15:41] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[10:24:00] *** Joins: sudd3n6 (~anonymous@ )
+[10:27:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[11:08:17] *** Joins: Chiitoo (~Chiitoo@ )
+[11:20:42] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[11:33:04] *** Joins: Chiitoo (~Chiitoo@ )
+[12:51:41] *** Quits: mitfree (~mit@ ) (*.net *.split)
+[12:52:03] *** Joins: mitfree (~mit@ )
+[13:58:53] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 246 seconds)
+[14:02:37] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[14:06:20] *** Joins: bashrc (~motters@ )
+[15:31:24] *** Joins: cenysor (~cenysor@ )
+[15:34:10] *** Joins: f10 (~flo@ )
+[15:36:11] *** Joins: f10__ (~flo@ )
+[15:54:18] *** Joins: Lord_Vlad (~Vlad@ )
+[16:30:56] *** Joins: sudd3n6 (~anonymous@ )
+[16:45:46] <zetok> sudd3n6: o/
+[16:45:54] *** sudd3n6 is now known as sudden6
+[16:45:57] <sudden6> zetok: o/
+[16:45:59] <zetok> sudd3n6: tumbleweed is broken :|
+[16:46:12] <sudden6> in what sense?
+[16:46:23] <zetok> >launch le program in terminal
+[16:46:32] <zetok> >it's killed along with the terminal
+[16:46:46] <sudden6> lol, good I didn't update yet^^
+[16:46:55] <zetok> frankly, I gotta admit, it lasted longer than I expected
+[16:47:50] <sudden6> hmm, I see nothing on reddit about an issue, I think it's not a common problem
+[16:47:59] <sudden6> did you do anything you shouldn't do?
+[16:48:33] <zetok> I use software.
+[16:49:10] <zetok> maybe
+[16:49:23] <sudden6> not using funky repos?
+[16:49:28] <zetok> I mean, I just use software for what it was intended to do
+[16:49:32] <zetok> just the qTox one
+[16:50:36] <sudden6> you can always try to fix it by doing a zypper dup and a reboot afterwards
+[16:51:01] <zetok> hmm
+[16:51:47] <zetok> "try turning it off and on again" ?
+[16:52:11] <sudden6> nope, getting the latest and greates and then turning it off and on again ;)
+[16:52:20] <sudden6> *greatest
+[16:52:32] <zetok> you mean broken
+[16:53:49] <sudden6> try and tell me if it's still broken
+[17:39:09] <zetok> gopull is almost ready
+[17:40:55] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[17:41:20] *** Joins: Lord_Vlad (~Vlad@ )
+[17:43:46] <zetok> ok, actually it's ready
+[17:44:00] <zetok> but I feel like there's still too much in main, so I'll refactor
+[18:20:06] *** Joins: LittleVulpix (~Miranda@ )
+[18:24:04] <zetok> sudden6: https://github.com/zetok/gopull
+[19:28:24] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 265 seconds)
+[19:29:17] *** Joins: Diadlo (~diadlo@ )
+[19:29:36] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[19:40:45] *** Joins: Diadl0 (~diadlo@ )
+[19:41:32] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 246 seconds)
+[19:47:25] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[19:48:46] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[19:48:46] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[20:17:32] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 258 seconds)
+[20:24:13] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[20:27:24] *** Joins: f10 (~flo@ )
+[20:27:39] *** Joins: f10__ (~flo@ )
+[20:31:55] *** Joins: Emcy (~MC@ )
+[21:48:02] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:01:18] *** Joins: cisc (~cisc@ )
+[22:07:01] *** Quits: cisc (~cisc@ ) (Ping timeout: 248 seconds)
+[22:08:02] *** Joins: cisc (~cisc@ )
+[22:51:15] *** Joins: DaSpirit (~DaSpirit@ )
