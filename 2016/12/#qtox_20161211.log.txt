@@ -1,0 +1,200 @@
+[00:01:21] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[01:22:30] *** Joins: vindelschtuffen (~vindelsch@ )
+[02:20:56] *** Joins: kadinparker[m] (kadinparke@ )
+[02:21:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[03:46:36] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[03:49:57] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:50:10] *** Joins: f10__ (~flo@ )
+[03:58:14] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[03:59:01] *** Joins: f10 (~flo@ )
+[05:10:21] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[05:10:44] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[09:21:12] *** Joins: sudden6 (~anonymous@ )
+[10:40:38] *** Joins: abbat (~Anton@ )
+[11:29:13] *** Joins: sudd3n6 (~anonymous@ )
+[11:33:02] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[12:04:50] *** Joins: bashrc (~motters@ )
+[12:11:08] *** Joins: f15h (~thomas@ )
+[12:25:02] *** sudd3n6 is now known as sudden6
+[12:51:30] *** Joins: peter (5817bfda@ )
+[12:53:28] *** Joins: peter_____ (5817bfda@ )
+[12:54:02] *** Quits: peter (5817bfda@ ) (Client Quit)
+[13:09:22] *** Quits: peter_____ (5817bfda@ ) (Quit: Page closed)
+[13:41:25] *** Joins: Bill_MI (~Bill@ )
+[14:03:37] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[14:23:57] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[14:24:35] *** Joins: Lord_Vlad (~Vlad@ )
+[14:47:05] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[14:47:11] *** Joins: f10 (~flo@ )
+[14:47:19] *** Joins: f10__ (~flo@ )
+[14:55:08] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1ogw
+[14:55:08] -qtox-git-spam- qTox/master 5455680 Zetok Zalbavar: chore(build): make sure that OSX building script cleans up files...
+[14:55:14] -qtox-git-spam- [qTox] zetok closed pull request #3949: chore(build): make sure that OSX building script cleans up files (master...chore-osx-clean) https://git.io/v1ug2
+[15:26:04] <sudden6> zetok: ping
+[15:26:10] <zetok> sudden6: pong
+[15:26:51] <sudden6> should I push my rebase of the toktok switch onto Diadl0's branch or create a new PR?
+[15:27:18] <zetok> sudden6: you probably should ask Diadl0
+[15:28:00] <zetok> hmm
+[15:28:36] <zetok> perhaps some guidelines are needed for that
+[15:28:40] <sudden6> I'm trying to reach him on qTox, if he doesn't respond I'll create a new PR
+[15:29:23] <sudden6> ><zetok> perhaps some guidelines are needed for that
+[15:29:55] <sudden6> I don't think so, if someone makes the PR branch accessible to maintainers he basically agreed to that IMO
+[15:30:12] <zetok> err
+[15:30:23] <zetok> [04:45:36] <zero-one> iphy: i'm confused, how did you commit to my branch?
+[15:30:23] <zetok> [04:49:12] <zetok> new gh feature
+[15:30:23] <zetok> [04:51:08] <zero-one> can you elaborate?
+[15:30:23] <zetok> [04:52:02] <zetok> checkbox on the right allows maintainers to push stuff to PR branches
+[15:30:23] <zetok> [04:54:48] <zero-one> i c
+[15:30:42] <sudden6> that feature isn't all that new lol
+[15:31:04] <zetok> the point is that people don't necessarily know about it
+[15:31:48] <sudden6> mhm, I'm just worried that qTox will get so much guidelines that nobody has time to do work or can even remember them
+[15:32:02] <sudden6> it's not easy to find the right balance for that
+[15:34:58] <sudden6> Diadl0 didn't answer, I'll create a new PR
+[15:35:31] <zetok> :|
+[15:35:34] <zetok> sudden6: I'd wait more
+[15:36:26] <sudden6> define "more"
+[15:36:45] <zetok> a few h?
+[15:37:03] <sudden6> don't have that much time
+[15:37:22] <zetok> ok
+[15:37:43] <sudden6> I'll create a new PR and Diadl0 can merge/rebase this back into the old one when he has time
+[15:38:09] <zetok> mm
+[15:38:38] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[15:38:38] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:41:49] -qtox-git-spam- [qTox] sudden6 opened pull request #3961: Toktok migration (master...toktokMigration) https://git.io/v1oax
+[15:41:51] <sudden6> lets see if Travis eats it^^
+[15:49:40] <sudden6> aw crap, I set the required version to 0.1.0, but it's not yet set in toxcore...
+[15:50:01] <zetok> that's good
+[15:50:21] <zetok> (i.e. setting it to what toxcore should have)
+[15:50:49] <zetok> btw, it probably should be >=0.1 <0.2
+[15:53:06] <sudden6> mhm, but then it would fall through to the old toxcore code and break compilation anyway
+[15:53:25] <zetok> um?
+[15:53:25] <sudden6> this needs some more thinking overall, but I don't have time/motivation right now
+[15:58:21] <iphy> zetok: I think sudden6 means when you try to compile with 0.2 it'll fail because it uses the old toxcore API
+[15:58:34] <sudden6> iphy: yes
+[15:58:54] <iphy> In reality, it'll fail regardless
+[15:59:00] <zetok> err
+[15:59:05] <iphy> Because 0.2 is going to break the API without fallback
+[15:59:12] <zetok> 0.x – 0.x.y
+[15:59:31] <sudden6> zetok: now the condition i >= 0.1.0
+[15:59:39] <sudden6> *condition is
+[15:59:47] <zetok> ok
+[16:00:23] <sudden6> at least that's what I hope the TOX_VERSION_IS_API_COMPATIBLE macro does
+[16:00:52] <iphy> The API compatible macro is wrong for 0.x
+[16:01:02] <iphy> We could fix that
+[16:01:31] <sudden6> that would be pretty helpful
+[16:01:51] <iphy> sudden6: make a PR :)
+[16:03:40] <iphy> It doesn't block your changes here though
+[16:03:55] <iphy> It only starts to matter once 0.2 is out
+[16:04:58] <sudden6> I don't see how it's wrong
+[16:06:14] <sudden6> wait, can a step from 0.1.0 to 0.2.0 break the API?
+[16:06:25] <iphy> Yes
+[16:06:47] <iphy> It's the same semantics as without the leading 0
+[16:07:46] <sudden6> so this comment: 
+[16:07:48] <sudden6>  * The minor version number. Incremented when functionality is added without
+[16:07:49] <sudden6>  * breaking the API or ABI. Set to 0 when the major version number is
+[16:07:50] <sudden6>  * incremented.
+[16:07:52] <sudden6> is wrong?
+[16:08:15] <iphy> It assumes 1.x.x
+[16:08:43] <iphy> So yes
+[16:09:17] <iphy> 0.0.x can break the API on patch increment
+[16:09:29] <iphy> Can and did
+[16:09:46] <sudden6> ah so 0.x.y is a special cas
+[16:09:53] <iphy> Leading zeroes are stripped
+[16:10:08] <iphy> After that, the comment is correct
+[16:10:21] <sudden6> I think I got it now
+[16:29:54] *** Joins: DaSpirit (~DaSpirit@ )
+[17:05:53] *** Joins: f10__ (~flo@ )
+[17:06:58] *** Joins: f10 (~flo@ )
+[17:37:26] *** Joins: Diadlo (~diadlo@ )
+[17:37:44] <Diadlo> Hello guys
+[17:38:02] <Diadlo> Sorry for my long inactivity
+[17:39:23] <zetok> hi
+[17:39:26] <zetok> no problem :)
+[17:40:42] <Diadlo> sudden6: Thank you for rebasing. As I said on github, I'm not rebase my toktok branch to avoid extra rebasing
+[17:42:03] <Diadlo> Also, today I have some time. I will fix my PRs
+[17:42:08] <Diadlo> *try to fix :)
+[17:57:09] <Emcy> qtox locks up pretty reliably when ending a vid call now
+[17:57:25] <zetok> Emcy: version?
+[17:57:52] <Emcy> fed3e1....
+[17:58:30] <zetok> Emcy: could you file an issue?
+[17:59:28] <Emcy> with what supplementary information
+[18:00:34] <zetok> all that you can get
+[18:00:59] <zetok> Emcy: https://github.com/qTox/qTox/wiki/Writing-Useful-Bug-Reports
+[18:01:02] <Emcy> ill try latest first
+[18:04:40] <Emcy> This page is taking way too long to load.
+[18:04:40] <Emcy> Sorry about that. Please try refreshing and contact us if the problem persists.
+[18:04:58] <Emcy> when i click report bug link in qtox lol. Is it me or gh
+[18:05:37] <zetok> probably on your side
+[18:06:31] <Emcy> sigh
+[18:07:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[18:31:16] *** Joins: cenysor (~cenysor@ )
+[18:32:21] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[18:32:53] *** Joins: f10 (~flo@ )
+[18:58:01] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 268 seconds)
+[18:58:09] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[18:58:40] *** Joins: f10 (~flo@ )
+[19:05:06] <iphy> zetok: that's a server error
+[19:05:16] <iphy> so almost definitely on their side
+[19:24:12] *** Joins: Diadlo (~diadlo@ )
+[19:48:34] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[19:48:34] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[19:49:55] <zetok> Diadlo: um, given that c-toxcore 0.1 is most likely going to be released today, there probably is no reason to change CMake PR
+[19:50:10] <zetok> Diadlo: https://github.com/TokTok/c-toxcore/pull/316
+[19:50:11] *** Joins: f10 (~flo@ )
+[19:50:13] *** Joins: f10__ (~flo@ )
+[19:50:21] <Diadlo> zetok: Ok
+[19:56:49] *** Joins: sudden6 (~anonymous@ )
+[19:57:04] <Diadlo> sudden6: Hi 
+[20:03:39] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[20:15:36] <sudden6> hi
+[20:16:23] <sudden6> Diadlo: hi :)
+[20:16:37] <sudden6> I didn't know you intentionally waited with rebasing...
+[20:17:08] <Diadlo> Yes. I forget to say it
+[20:17:38] <Diadlo> Do you want to continue maintain migration? Or I should take your changes?
+[20:18:46] <sudden6> i don't really care if you do or I do it
+[20:19:04] <sudden6> I just assumed you've run out of spare time
+[20:19:50] <Diadlo> Thank you :)
+[20:20:06] <Diadlo> It's partially true
+[20:26:46] *** Joins: f15h (~thomas@ )
+[20:39:15] <zetok> Emcy: ping?
+[20:39:41] <zetok> Emcy: did you manage to reproduce that on newest master?
+[20:48:06] <Emcy> dont know yet
+[20:48:09] <Diadlo> zetok: ping
+[20:48:18] <zetok> Diadlo: pong
+[20:48:45] <Diadlo> #3951 `feat(l10n): …` Why you are not specify what is `…`?
+[20:49:42] <zetok> Diadlo: what would be the use?
+[20:50:07] <Diadlo> Old commit text
+[20:50:20] <Diadlo> Or now here can be any text?
+[20:59:50] *** Joins: in1t3r_ (~LordShiva@ )
+[21:10:22] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[21:17:16] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 240 seconds)
+[21:17:41] *** Joins: sudden6 (~anonymous@ )
+[21:24:23] <zetok> Diadl0:  weblate is supposed to produce correct line, and all that is need to be done is removing duplicated lines
+[21:25:30] *** Quits: Lord_Vlad (~Vlad@ ) (Excess Flood)
+[21:25:53] *** Joins: Lord_Vlad (~Vlad@ )
+[21:36:19] *** Joins: Diadlo (~diadlo@ )
+[21:42:17] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:53:29] *** Quits: bashrc (~motters@ ) (Read error: Connection reset by peer)
+[21:57:44] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[22:11:12] -qtox-git-spam- [qTox] Diadlo opened pull request #3962: fix: Fixed compact layout (master...fixCompactLayout) https://git.io/v1obb
+[22:20:16] *** Quits: Lord_Vlad (~Vlad@ ) (Remote host closed the connection)
+[22:34:17] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[22:45:28] *** Joins: qTox_ (525405f1@ )
+[22:45:33] <qTox_> hello
+[22:46:17] <iphy> Hi
+[22:46:23] <qTox_> once "Allow a single toxcore instance to handle multiple keypairs (or 'clients')" is implemented, will i be able to use qTox multiprocess if i want? 
+[22:46:39] <qTox_> will there be a checkbox? 
+[22:57:50] *** Joins: qTox (525405f1@ )
+[22:57:56] *** Parts: qTox (525405f1@ ) ()
+[22:58:21] *** Joins: yournick|48754 (525405f1@ )
+[22:58:49] *** Quits: qTox_ (525405f1@ ) (Quit: Page closed)
+[22:58:57] *** Quits: yournick|48754 (525405f1@ ) (Client Quit)
+[22:59:32] *** Joins: qToxy (525405f1@ )
+[23:08:36] *** Joins: Chiitoo (~Chiitoo@ )
+[23:18:47] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[23:28:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[23:29:03] *** Joins: pcre (~quassel@ )
+[23:43:30] <qToxy> so? will i be able to use one process for every profile with qTox?
+[23:53:13] *** Joins: pcre_ (~quassel@ )
+[23:53:22] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[23:53:25] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
