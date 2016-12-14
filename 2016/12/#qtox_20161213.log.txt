@@ -1,0 +1,451 @@
+[00:19:49] *** Joins: f10 (~flo@ )
+[00:19:58] *** Joins: f10__ (~flo@ )
+[00:41:24] *** Joins: sudden6 (~anonymous@ )
+[00:59:15] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:59:38] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[01:20:41] <iphy> Diadl0: you there?
+[01:20:58] <iphy> or anybody else who can review a piece of boolean logic?
+[01:21:38] <iphy> https://github.com/TokTok/c-toxcore/pull/315
+[01:21:48] <iphy> zetok: ^?
+[01:22:16] <iphy> also, suggestions for additional tests that the version_test doesn't cover are very welcome
+[01:25:04] <zetok> iphy: sorry, no
+[01:37:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[02:18:28] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:30:04] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[02:30:55] *** Joins: cisc (~cisc@ )
+[02:36:43] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[02:36:59] *** Joins: cisc (~cisc@ )
+[04:21:23] *** Joins: f10 (~flo@ )
+[04:22:16] *** Joins: f10__ (~flo@ )
+[04:35:50] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[04:36:59] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[08:28:17] *** Joins: f10 (~flo@ )
+[08:28:24] *** Joins: f10__ (~flo@ )
+[10:09:08] *** Joins: cenysor (~cenysor@ )
+[10:34:48] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[10:35:48] *** Joins: cisc (~cisc@ )
+[10:53:17] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[11:11:51] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[11:11:51] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:32:51] *** Joins: sudden6 (~anonymous@ )
+[11:41:17] *** Joins: sudd3n6 (~anonymous@ )
+[11:41:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[11:51:18] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[12:12:57] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 265 seconds)
+[12:24:04] *** Joins: dardevelin (~dardeveli@ )
+[13:44:28] *** Joins: cenysor (~cenysor@ )
+[14:02:39] *** Joins: sudd3n6 (~anonymous@ )
+[14:47:41] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[15:31:05] *** Joins: f10 (~flo@ )
+[15:40:02] *** Joins: f10__ (~flo@ )
+[15:53:14] *** Joins: pcre (~quassel@ )
+[16:13:28] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[16:18:25] <zetok> fu fu. :3
+[16:20:04] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[16:37:13] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:39:01] *** Joins: cisc (~cisc@ )
+[16:42:27] *** Joins: sudden6 (~anonymous@ )
+[17:19:26] *** Joins: qTox (54dcea3b@ )
+[17:20:29] <qTox> once "Allow a single toxcore instance to handle multiple keypairs (or 'clients')" is implemented into toxcore, will qTox users be still able to use one process for every profile?
+[17:23:12] <zetok> qTox: that's not why qTox doesn't support the feature already
+[17:24:02] <qTox> what? i think u used one denial of too
+[17:24:38] <qTox> once the new toxcore is complete and impemented into qTox, will qTox users still be able to use one process for every open profile?
+[17:25:26] <zetok> no
+[17:25:46] <zetok> https://github.com/qTox/qTox/issues/1018#issuecomment-108584970 ← still applies to the "new" toxcore
+[17:26:07] <zetok> now, it's a problem of a technical nature
+[17:26:20] <zetok> meaning, if there would be enough of people to work on it, it wouldn't be a problem
+[17:26:33] <zetok> but there are not enough of people to work on stuff.
+[17:27:12] <zetok> afk, bbl &
+[17:27:56] <qTox> but toxcore devs said
+[17:28:04] <qTox> toxcore will always support multiprocess
+[17:30:48] <iphy> qTox: if qtox supports multiprocess now, toxcore won't do anything to make that support go away
+[17:31:14] <qTox> yes iphy, but will zetok do something to make it go away?
+[17:32:49] <qTox> and, btw, that link is about a different matter, i simply asked if for every profile there can be 1 process, that link deals with a request to make every profile consist of multiple processes (winwos and connections stuff)
+[17:33:02] <qTox> *window
+[17:34:22] <qTox> and that would be very complicated indeed
+[17:37:33] <iphy> and not very useful
+[17:37:45] <zetok> oh
+[17:37:57] <iphy> it would mitigate potential bugs
+[17:38:15] <zetok> qTox: "will qTox users be still able to use one process for every profile?" is precisely what this issue is about
+[17:38:19] <iphy> qTox: if you can run multiple qtox instances right now (I don't know if that is the case)
+[17:38:29] <iphy> qTox: then you will most likely be able to do that in the future as well
+[17:38:49] <qTox> but i want every profile to be handled by 1 process
+[17:38:53] <iphy> from toxcore's point of view, that's a client issue and it's fully supported and will always be supported
+[17:38:59] <iphy> qTox: you want 1 process per profile
+[17:39:27] <iphy> toxcore supports this, toxic probably supports this, qtox I don't know
+[17:39:34] <iphy> zetok: can you run multiple qtoxes at the same time?
+[17:39:51] * zetok has 4 instances running right now
+[17:40:00] <iphy> there you go
+[17:40:10] <iphy> qTox: it's supported, and I doubt that support will go away
+[17:40:14] <qTox> this is what i am talking about
+[17:40:27] <qTox> right now, qtox uses 1 instance for every profile
+[17:40:31] *** Joins: Yoshimo (~anything@ )
+[17:40:43] *** Quits: Yoshimo (~anything@ ) (Changing host)
+[17:40:43] *** Joins: Yoshimo (~anything@ )
+[17:40:47] <qTox> i want to know if we will be able to do the same thing with the new toxcore
+[17:40:53] <iphy> the answer is yes
+[17:40:58] <qTox> that link is not relevant to this question
+[17:41:44] <qTox> because that link deals with splitting the connection and window parts in multiple processes, you could even have 10 processes for only one profile
+[17:41:58] <zetok> no, the link is relevant to the question that you initially asked
+[17:42:30] <iphy> qTox: are you satisfied?
+[17:42:54] <qTox> and maybe handle some connections of all the profiles in the same process, same for the UIs
+[17:43:09] <qTox> ah
+[17:43:32] <zetok> >and maybe handle some connections of all the profiles in the same process
+[17:43:34] <qTox> zetok, you mean this "Allow a single toxcore instance to handle multiple keypairs (or 'clients')"? i must' ve misinterpreted it then
+[17:43:47] <zetok> that's not doable, and most likely won't be doable
+[17:43:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[17:44:10] <qTox> i though client = one process of the tox client = one profile
+[17:44:26] <zetok> not really
+[17:44:50] <zetok> each client instance spawns a separate toxcore instance
+[17:45:25] <qTox> very complex indeed
+[17:45:34] <qTox> ok, excuse my ignorance, so do not do it
+[17:46:16] <qTox> however, a feature i feel is missing from toxcore is contact block without deletion, any plans for it in the future?
+[17:46:43] <zetok> https://github.com/qTox/qTox/issues/1120
+[17:48:49] <zetok> right, missing info
+[17:55:11] <qTox> https://github.com/qTox/qTox/issues/1958
+[17:56:45] <qTox> it would be good to have the possibility to have an icon on the blocked contacts, without dedicated circles, for quick unblocking
+[18:00:54] <qTox> as i understand, there are some limitations with toxcore, this should be a feature of toxcore, quick block and unblock
+[18:11:04] <iphy> toxcore doesn't need extra features for that
+[18:18:22] <zetok> iphy: no, but it doesn't expose the functionality
+[18:18:47] <zetok> functionality that should be a standard for clients
+[18:18:52] <iphy> which functionality does it need?
+[18:19:16] <zetok> marking given friend as "blocked"
+[18:19:37] <zetok> (no connections made to them, no response to connections)
+[18:20:07] <iphy> how is that different from deleting the friend?
+[18:20:12] <zetok> ?
+[18:20:19] <iphy> in toxcore
+[18:20:28] <iphy> deleting the friend and adding them back when you unblock
+[18:20:36] <zetok> …
+[18:21:06] <zetok> once you delete the friend, you deleted them
+[18:21:11] <zetok> you have no friend
+[18:21:35] <zetok> iphy: how would one add them back?
+[18:21:57] <iphy> by saving the friend's public key in the client
+[18:22:16] <zetok> iphy: which part of that is standardised?
+[18:22:28] <zetok> deleting, ok
+[18:22:42] <zetok> iphy: but aside from removing friends, there's no support for blocking
+[18:22:54] <iphy> how many ways are there to block a friend?
+[18:22:58] <iphy> I can only see this one
+[18:22:59] <zetok> none
+[18:23:06] <iphy> well, one
+[18:23:16] <zetok> no, that's deleting a friend
+[18:23:16] <iphy> deleting the friend and adding them back later
+[18:23:25] <zetok> there's no adding them back
+[18:23:27] <iphy> yes, implementation detail
+[18:23:36] <zetok> no, there is no implementation to be used
+[18:23:45] <iphy> right, there is no implementation of any of this
+[18:23:55] <iphy> the question is, where should the support for that feature live
+[18:24:01] <zetok> no, there is an implementation in Toxic
+[18:24:05] <iphy> ok
+[18:24:10] <zetok> Non-standard.
+[18:24:19] <zetok> That can't be used by other clients.
+[18:24:33] <zetok> That makes one lose their friends if they switch clients from Toxic.
+[18:25:10] <zetok> iphy: you've voiced quite clearly that it shouldn't live in toxcore
+[18:25:31] <iphy> it can live in libtoxclient (which doesn't exist yet)
+[18:25:37] <zetok> ok
+[18:25:41] <iphy> together with a bunch of other higher level functionality
+[18:25:50] <iphy> tox*core* should become smaller over time
+[18:26:41] <iphy> it probably makes sense to implement that higher level functionality in a more appropriate language than C
+[18:26:44] <iphy> like rust
+[18:26:49] <zetok> :)
+[18:26:52] <iphy> exposing a C API all the same
+[18:27:04] <iphy> it doesn't really make sense to add more C code on top of the existing C code
+[18:27:08] <iphy> I'd rather reduce the amount of C code
+[18:27:23] <zetok> how it would work?
+[18:27:37] <iphy> clients would only link against libtoxclient
+[18:28:00] <zetok> hmm
+[18:28:04] <iphy> which itself links against the lower level libtoxcore, which only provides some simple primitives for establishing connections
+[18:28:08] <iphy> and sending messages
+[18:28:47] <iphy> basically reducing it to new, kill, bootstrap, send custom loss{less,y} packet
+[18:29:01] <iphy> and the receive loss{less,y} packet callbacks, and connection callbacks
+[18:29:09] <iphy> well, and adding/removing friends, etc.
+[18:29:35] <iphy> but nothing related to friend names or status messages, file transfers, text messages, typing status, etc.
+[18:29:38] <iphy> that should live in libtoxclient
+[18:34:31] <zetok> what would be the timeline?
+[18:35:40] <zetok> because the functionality is missing right now
+[18:36:48] <iphy> Not soon
+[18:37:35] <zetok> ok
+[19:01:50] *** Joins: sudden6 (~anonymous@ )
+[19:10:55] <qTox> iphy, instead of implementing complex add/store/delete code to emulate contact blocking, wouldn' t it be easier to add to toxcore a functionality in which you simply do not send packets to blocked contacts?
+[19:11:11] <qTox> this is a basic functionality
+[19:12:20] <iphy> Adding complexity to toxcore is something I'd like to avoid
+[19:12:49] <qTox> lol, this is basic, how would it take? maybe 3 or 4 lines of code?
+[19:13:04] <qTox> it is like AV calls
+[19:13:10] <qTox> file sending
+[19:13:13] <zetok> qTox: it's not about lines of code
+[19:14:39] <qTox> aren' t AV calls and file sending included into toxcore?
+[19:15:00] <qTox> contact blocking is more basic than file sending
+[19:16:16] <zetok> iphy: as you see, the problem with your idea is delayed time
+[19:17:15] <zetok> iphy: a lot of that time could be possibly shaved-off if requirement to link only against libtoxclient would be relaxed
+[19:17:40] <zetok> iphy: i.e. instead of switching completely, a gradual switch might be better
+[19:17:44] <qTox> yes, maybe first include it in toxcore, then split it into libtoxcore and libtoxclient
+[19:17:47] <zetok> or rather
+[19:18:00] <iphy> qTox: make a PR?
+[19:18:14] <qTox> not a programmer :D
+[19:18:26] <zetok> iphy: instead of requiring full switch at the step0, it could be moved to further point
+[19:18:52] <zetok> qTox: including it in toxcore doesn't really sound well
+[19:19:16] <qTox> yes, nobody wants to suddenly split toxcore, but at least add that basic functionality
+[19:19:24] <qTox> ok
+[19:20:08] <iphy> zetok: sure
+[19:20:17] <iphy> It would be a soft transition
+[19:20:29] <qTox> zetok i understand tox should only handle connections, but now we have it lso handling av calls, file transfers, maybe desktop sharing in the future, so why not contact block?
+[19:21:51] <zetok> qTox: ?
+[19:22:16] <qTox> tox = toxcore in this case
+[19:22:51] <zetok> qTox: because it doesn't have to
+[19:23:17] <qTox> ok
+[19:26:30] <qTox> i go now, bye
+[19:26:59] *** Quits: qTox (54dcea3b@ ) (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+[20:15:53] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 245 seconds)
+[20:39:57] <zetok> Diadl0: hi, are you around?
+[21:04:00] *** Joins: qTox-syncbot (~qTox-sync@ )
+[21:05:52] <iphy> is there anyone here who built qtox on debian stable?
+[21:10:47] * zetok , long time ago, in a far away (jenkins-)land
+[21:10:51] <zetok> iphy: https://github.com/qTox/qTox/blob/master/INSTALL.md#debian--ubuntu--mint ?
+[21:18:08] <qTox-syncbot> sudden6: aww crap, did I miss the action?
+[21:18:26] <qTox-syncbot> Zetok\0: not all of it
+[21:19:16] *** Joins: cenysor (~cenysor@ )
+[21:19:56] <qTox-syncbot> Zetok\0: Nils F.: what did you want to discuss more?
+[21:21:14] <iphy> zetok: ok, it might work, I'll wait for the qtox changes for TES
+[21:21:25] *** Joins: sudd3n6 (~anon@ )
+[21:22:05] <sudd3n6> hi, switching to mobile to follow the discussion
+[21:24:46] <qTox-syncbot> Nils F.: @sudden6 no, welcome to the group :)
+[21:26:19] <sudd3n6> @Nils F. thx :)
+[21:29:12] <qTox-syncbot> Nils F.: am happy to see you guys like discussing that topic, cause it might set direction for the future of qtox and the people involved
+[21:29:50] <sudd3n6> ok, what is your plan?
+[21:33:38] <qTox-syncbot> sudden6: Nils F., Zetok what exactly is this about?^^
+[21:34:10] <qTox-syncbot> Nils F.: sudden6 wait a second…
+[21:34:12] <qTox-syncbot> Zetok\0: Nils F.: perhaps I'll copypaste the discussion we had on gist?
+[21:34:26] <qTox-syncbot> sudden6: yeah, please :)
+[21:34:46] <qTox-syncbot> Nils F.: @zetok hm… but leave out the frustrating part!? :)
+[21:35:02] <qTox-syncbot> Zetok\0: :|
+[21:35:18] <qTox-syncbot> Zetok\0: sec, I forgot that qTox cannot into copying messages with my null
+[21:35:24] <qTox-syncbot> sudden6: you can also send it to me 1v1 if you don't want it public
+[21:37:42] <qTox-syncbot> Zetok\0: or maybe it's not qTox's fault, given that vim fails too -.-"
+[21:40:20] <qTox-syncbot> Nils F.: it's about changing the "gfx engine" - away from qwidget to qtquick/qml. this has the one major advantage over qwidget, that it becomes possible to actually design the UI greatly independent from the API functionality, which greatly helps to separate data and views.
+[21:41:06] <qTox-syncbot> sudden6: yeah, I'm familiar with this concept from C#
+[21:41:28] <qTox-syncbot> Zetok\0: https://gist.github.com/zetok/ad9adf619f5b6d8b4d8b34d55ef0d8ac the gist of it
+[21:41:38] <qTox-syncbot> sudden6: so you want to go to a MVVM design?
+[21:42:38] <qTox-syncbot> sudden6: hm read
+[21:42:40] <qTox-syncbot> sudden6: it
+[21:44:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:46:34] <qTox-syncbot> sudden6: Nils F.: so, if I read it right you basically want to do a complete rewrite of qTox in QML?
+[21:47:34] <qTox-syncbot> Zetok\0: sudden6: the UI part, which will allow addition of mobilie targets
+[21:47:38] <qTox-syncbot> Nils F.: exactly! but it's not that hard as one might think
+[21:47:52] <qTox-syncbot> sudden6: I don't think this is going to happen in < 6 months time, even if all current devs suddenly only did the rebase
+[21:48:12] <qTox-syncbot> sudden6: * this is not
+[21:48:32] <qTox-syncbot> sudden6: scrap that *
+[21:48:52] *** sudden6 is now known as _sudden6_
+[21:50:00] <qTox-syncbot> sudden6: I think however, that you're right with wanting to separate the UI more from the rest of the code
+[21:50:54] <qTox-syncbot> sudden6: currently we have toxcore, audio stuff, video stuff and database on one side and the UI on the other side
+[21:51:12] <qTox-syncbot> sudden6: but the UI is more than 50% of the code
+[21:52:10] <qTox-syncbot> sudden6: and all that is linked in some complicated ways, making changes in the base pretty hard
+[21:52:36] <qTox-syncbot> sudden6: I think if we can solve that, we can build a QML UI on top of the base basically for free
+[21:52:54] <qTox-syncbot> Nils F.: @sudden6 need to give some more info -> just compiled qTox with initial qml support few hours ago in a "test environment" -> works! plus, it almost instantaneously brings back android support!  |\n|  |\n| What does it mean: |\n| The core functionality stays completely intact (which is the classes: core, coreav, nexus, tox, some others), while the UI part (everything that uses or inherits QWidget) doesn't exist any longer and would
+[21:54:38] <qTox-syncbot> Nils F.: Unfortunately I cannot share my screen in a group session right? I'd like to show what I changed to give a better overview… do we have opportunity to stream my screen somehow?
+[21:55:02] <qTox-syncbot> Zetok\0: Nils F.: make a screenshot and upload it somewhere?
+[21:55:20] <qTox-syncbot> sudden6: Mhm, I believe that one can get a ~working application pretty quick with QML, but there's a lot of detail work in qTox that'll need more time I think
+[21:56:30] <qTox-syncbot> sudden6: theoretically we could split qTox in a core and an UI part, but this would cause overhead in defining the interfaces
+[21:56:50] <qTox-syncbot> sudden6: Zetok: btw, did you invite Diadlo too?
+[21:57:00] <qTox-syncbot> Zetok\0: yep
+[21:57:01] *** Joins: LittleVulpix (~Miranda@ )
+[21:57:06] <qTox-syncbot> sudden6: ok
+[21:58:38] <qTox-syncbot> sudden6: Zetok: what do you think of this?
+[21:58:56] <qTox-syncbot> Nils F.: >theoretically we could split qTox in a core and an UI part, but this would cause overhead in defining the interfaces |\n|  |\n| this is already the case. just the interfaces are "corrupted" (e.g. core includes `widget/widget.h`).
+[21:59:02] <iphy> what kind of overhead?
+[21:59:12] <qTox-syncbot> Zetok\0: sudden6: about what?
+[21:59:13] <iphy> maintenance overhead should be reduced with clear interfaces
+[21:59:24] <iphy> performance overhead should be negligible
+[21:59:48] <iphy> initial design, sure, but you build things to last, no? it'll amortise quickly
+[22:00:20] <qTox-syncbot> sudden6: iphy I meant maintenance overhead, because if you have to change the interfaces for a new feature you always have to do it on both sides
+[22:01:10] <qTox-syncbot> sudden6: [22:59:07] Zetok: sudden6: about what? <- writing a QML UI for qTox
+[22:01:54] <qTox-syncbot> Zetok\0: what I care about, is whether things work
+[22:02:30] <qTox-syncbot> Nils F.: @sudden6 @iphydf yep - especially widgets throwing a lot of events, which should be thrown by the "controller" layer. E.g. a button throws "friendNameChanged", which causes lots and lots of redundant connections (and code).
+[22:02:38] <qTox-syncbot> Zetok\0: sudden6: currently qTox doesn't work on android
+[22:03:04] <qTox-syncbot> sudden6: Zetok: ok, I thought you would say that ^^
+[22:03:09] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:03:44] <qTox-syncbot> sudden6: Zetok: Personally I don't strive for qTox to be an android client
+[22:04:00] <qTox-syncbot> Zetok\0: sudden6: no, but there's no good tox client for Android
+[22:04:03] <iphy> I don't think people would appreciate a 40 megabyte download
+[22:04:06] <qTox-syncbot> Zetok\0: (AFAIK)
+[22:04:12] <qTox-syncbot> Nils F.: @zetok Things will not work out-of-box, as the functionality is there, but "invisible". But, as @sudden6 stated correctly, it is possible to quickly catch up with the features and achieve parity soon
+[22:04:15] <iphy> zetok: so we should work on the toktok client :)
+[22:04:22] <iphy> it's good, except it's not finished
+[22:04:35] <zetok> iphy: in other words, it doesn't work
+[22:05:00] <iphy> it's not a tox client at this time
+[22:05:02] <qTox-syncbot> sudden6: Zetok: there are better ways to write an android app than porting a Qt application
+[22:05:06] <qTox-syncbot> Nils F.: It is crucial for me to have a tox client for android. So -> i'd have to strive for it :)
+[22:05:10] <iphy> but it can be used as a basis for one
+[22:05:34] <iphy> I'd like to avoid having to download 40MB of code on every update
+[22:05:45] <zetok> um
+[22:06:00] <zetok> qTox doesn't weight that much..
+[22:06:24] <iphy> it's something like that for a statically linked and stripped windows build
+[22:06:28] <iphy> I don't know about arm-android
+[22:06:37] <zetok> but sure, after stripping out most (all?) of the emoticons qTox would become a lot lighter on android
+[22:06:47] <iphy> ah maybe that's the reason
+[22:07:24] <zetok> (IIRC android has graphical support for unicode emoticons so we could strip them all for android)
+[22:07:38] <qTox-syncbot> sudden6: iphy if you want the toktok android client to grow you should switch it back to java
+[22:07:54] <qTox-syncbot> Zetok\0: sudden6: err
+[22:08:18] <zetok> du -hsx smileys/
+[22:08:18] <zetok> 13Msmileys/
+[22:08:22] <iphy> sudden6: maybe yes
+[22:09:07] <iphy> it's not "back", though
+[22:09:11] <iphy> it was scala from the start
+[22:09:38] <qTox-syncbot> sudden6: oh, it isn't an antox fork?
+[22:10:00] <iphy> no, it's from scratch
+[22:10:06] <iphy> antox is very hard to save
+[22:10:22] <iphy> antox is useful as lesson learnt: don't design like this
+[22:10:52] <qTox-syncbot> Zetok\0: screenshot from Nils F.: https://a.uguu.se/vjSVrdnBRdCF.png
+[22:11:08] <qTox-syncbot> Nils F.: thx @zetok
+[22:11:12] <qTox-syncbot> Zetok\0: np
+[22:11:14] <qTox-syncbot> sudden6: iphy: I stopped contributing to antox because of scala, maybe you're doing the same mistake again
+[22:12:00] <iphy> sudden6: would you join toktok development if I switched it to java?
+[22:12:36] <qTox-syncbot> Zetok\0: question is, why bother when qTox can work on android?
+[22:12:58] <qTox-syncbot> Zetok\0: and not only limited to android, but possibly other platroms that support QML as well?
+[22:13:02] <qTox-syncbot> sudden6: probably not, because of qTox now, but the thing I'm trying to say is, that scala is a pretty big entry hurdle
+[22:13:13] <iphy> if qtox can present a nice android UI and work reasonably efficiently, then that's good
+[22:13:36] <qTox-syncbot> Zetok\0: that's how things are supposed to be :)
+[22:13:53] <iphy> it's somewhat important to have the native android L&F
+[22:14:05] <iphy> I don't know how hard that is to do with qml
+[22:14:06] <qTox-syncbot> Zetok\0: mm :)
+[22:14:11] <iphy> maybe there are already some libraries for that
+[22:14:18] <qTox-syncbot> sudden6: because many people learn java sometime in the education process (like me) and find joy in actually using that sutf
+[22:14:35] <iphy> sudden6: makes sense
+[22:15:24] <qTox-syncbot> Zetok\0: Nils F.: ok, the agreement seems to be that it would be nice to have that in qTox
+[22:15:30] <qTox-syncbot> Zetok\0: Nils F.: does something else need discussing?
+[22:15:44] <qTox-syncbot> sudden6: btt, lets see what we would have to change for qTox to work on android: audio, video, database maybe
+[22:16:10] <qTox-syncbot> Zetok\0: sudden6: don't we need to change things regardless of android?
+[22:16:20] <qTox-syncbot> sudden6: Nils F.: I have to slightly disagree with Zetok, I'm not yet convinced of the idea
+[22:16:48] <qTox-syncbot> Zetok\0: sudden6: the idea is to have QML UI
+[22:17:02] <qTox-syncbot> Zetok\0: sudden6: additional platform is a bonus
+[22:17:22] <qTox-syncbot> Zetok\0: huge one, but still a bonus
+[22:17:26] <qTox-syncbot> sudden6: Zetok: to support android we would have to add another platform dependent layer for the things I mentioned, regardles of QML
+[22:17:52] <qTox-syncbot> Zetok\0: right
+[22:17:54] <qTox-syncbot> sudden6: I just don't think we have the manpower to handle and maintain it
+[22:18:20] <qTox-syncbot> Zetok\0: sudden6: Nils F. wants to be doing this
+[22:18:58] <qTox-syncbot> sudden6: so to summarise my opinion: separate base layer from UI -> yes, QML UI -> meh, Android -> no
+[22:19:36] <qTox-syncbot> Zetok\0: sudden6: to summarise, anything that you're not interested in doing should be "no" ?
+[22:20:11] <iphy> who wants to update qtox to the new toxencryptsave api?
+[22:20:44] <qTox-syncbot> sudden6: [23:18:16] Zetok: sudden6: Nils F. wants to be doing this <- I can't and won't stop him from doing this :) But I'm not yet convinced it will succeed
+[22:21:00] <qTox-syncbot> Zetok\0: sudden6: you don't need that
+[22:21:12] <qTox-syncbot> sudden6: Zetok: the only strong no IMO Android
+[22:21:20] <qTox-syncbot> Zetok\0: sudden6: and saying "no" because you're not convinced about success isn't quite right
+[22:21:40] <qTox-syncbot> Zetok\0: sudden6: there's nothing good for Android when it comes to Tox ecosystem
+[22:21:44] <qTox-syncbot> sudden6: you're misunderstanding me slightly
+[22:22:16] <qTox-syncbot> Zetok\0: sudden6: do I though :)
+[22:22:22] <qTox-syncbot> sudden6: for the QML part, it's more like "show me a plan and I'll agree"
+[22:22:25] <iphy> zetok: it is quite reasonable to say "no" if you think something won't succeed
+[22:22:45] <iphy> you should say no to wasting resources
+[22:23:01] <zetok> iphy: weren't you the one who said to me to not be negative about stuff like that?
+[22:23:18] <iphy> zetok: totally
+[22:23:22] <qTox-syncbot> sudden6: for Android I think qTox will only be another mediocre Tox Android client and the ressources would be better invested in a dedicated mobile client
+[22:23:30] <iphy> and I also told you to express concern where you have any
+[22:23:49] <zetok> right
+[22:23:58] <iphy> zetok: I didn't see sudden6 laughing at nils f. for having ridiculous ideas
+[22:24:05] <iphy> zetok: I didn't see <sudden6> ha ha
+[22:24:22] <qTox-syncbot> Nils F.: @sudden6 @iphydf QML can use google's style (how's the name again) and thus making it look "native" is pretty simple.
+[22:24:25] <iphy> I see sudden6 expressing concern in a professional manner
+[22:24:46] <iphy> nils f.: material design
+[22:25:12] <qTox-syncbot> Nils F.: thx, yep exactly!
+[22:25:34] <qTox-syncbot> sudden6: Nils F.: I don't think the UI and look and feel will be the problem, qTox is designed for the desktop from the ground up and I think this will bite us
+[22:25:41] <zetok> iphy: noted
+[22:26:00] <qTox-syncbot> Nils F.: further: it's JSON/JS syntax, uses HTML5 technologies, can render completely freely and is blazingly fast! :)
+[22:26:46] <qTox-syncbot> Zetok\0: hmm
+[22:27:03] <iphy> is it faster than qtwidget?
+[22:27:04] <qTox-syncbot> sudden6: Nils F.: If you can and will pull this off, you I think the steps would be as follows 1. cut core from UI, 2. start QML desktop UI, 3. Android
+[22:28:04] <qTox-syncbot> sudden6: 1. should be done regardless IMO, it's really neccessary by now
+[22:28:06] <qTox-syncbot> Zetok\0: sudden6: but there is already a working desktop UI, wouldn't it be better to first make an UI for the android?
+[22:28:38] <iphy> zetok: it's easier to test on the desktop
+[22:28:49] <iphy> dev cycles are quite a lot faster
+[22:28:52] <zetok> perhaps
+[22:28:58] <qTox-syncbot> Nils F.: @iphy It depends! It can easily handle 600000 plus items (I tested with Linux Git repo)… :)
+[22:29:00] <qTox-syncbot> sudden6: Zetok: nope, AFAICT you need a pretty clean signal/slot interface for QML to even work, we don't have that
+[22:29:11] <iphy> nils f.: and qtwidget can't?
+[22:29:34] <qTox-syncbot> Nils F.: @sudden6 we have that. it's called Core/CoreAV!
+[22:29:55] <zetok> iphy: provided that there are instructions on how to build, one can build & test stuff
+[22:29:58] <qTox-syncbot> Nils F.: The slots from those classes can be connected immediately to QML
+[22:30:15] <iphy> zetok: you need to upload to a device (phone or emulator) and test it there
+[22:30:19] <iphy> testing on a desktop is faster
+[22:30:22] <qTox-syncbot> sudden6: yeah, but there's more stuff than that |\n| also if we don't do this step, we'll have 2UIs intermixed with one core
+[22:31:02] <qTox-syncbot> Nils F.: @zetok build is a bit easier than with widget. in fact, the qml files don't have to be built at all!
+[22:31:14] <qTox-syncbot> sudden6: I don't think getting the Tox part to work in an android client is the hard part, it's the rest of it
+[22:31:33] <zetok> iphy: that sounds like something that can be ~automated
+[22:31:58] <iphy> sure
+[22:32:04] <iphy> it'll still take more time
+[22:32:16] <qTox-syncbot> sudden6: take a look at how long it took other popular messenger apps to get usable, and they have a lot of ressources dedicated to UI design and usability
+[22:32:22] <iphy> there is simply time involved in transferring data and restarting the client on a slower device
+[22:32:39] <zetok> :|
+[22:33:00] <iphy> sudden6: not that much actually
+[22:33:08] <qTox-syncbot> sudden6: ?
+[22:33:15] <zetok> a lot slower than starting qTox under gdb on a desktop?
+[22:33:15] <iphy> they have surprisingly few resources dedicated to that
+[22:33:21] <iphy> zetok: yes
+[22:33:22] <qTox-syncbot> Nils F.: @iphy why not simply scale the render area to something like 480x800 px and off we go??
+[22:33:24] <qTox-syncbot> Nils F.: :)
+[22:33:59] <iphy> zetok: also, you're not going to run under gdb while developing the UI, most of the time
+[22:34:18] <zetok> I've learned long time ago that qTox is to be run only under gdb
+[22:34:24] <qTox-syncbot> sudden6: btw, is there an open source messenger already for android? It would probably be easier to integrate tox into that
+[22:34:36] <iphy> yes, several, and they are all terrible
+[22:34:40] <iphy> really terrible
+[22:34:51] <iphy> at least all the ones I've tried
+[22:34:56] <qTox-syncbot> Zetok\0: sudden6: no, it wouldn't be a good idea
+[22:35:16] <qTox-syncbot> Zetok\0: sudden6: and not necessarily easier
+[22:36:50] <qTox-syncbot> Nils F.: @Relay You should try discordapp! :)
+[22:36:58] <qTox-syncbot> sudden6: Zetok: why not? Nearly all of the UI elements in a Tox messenger are identical to other messengers |\n| but iphy already killed my idea^^
+[22:36:59] <iphy> zetok: will there be time for TES before the release?
+[22:37:15] <zetok> iphy: no idea
+[22:37:15] <iphy> sudden6: perhaps you can find one that isn't terrible
+[22:37:36] <qTox-syncbot> Zetok\0: sudden6: it's not about the UI
+[22:38:32] <qTox-syncbot> Nils F.: @iphy again, try discordapp - no tox though.
+[22:38:42] <iphy> discordapp is really bad
+[22:38:50] <qTox-syncbot> sudden6: Nils F.: I can't find a source for it?
+[22:39:20] <qTox-syncbot> Zetok\0: sudden6: it's proprietary
+[22:39:32] <iphy> finding out where you were mentioned when you're not actively reading the channel is really hard
+[22:39:36] <qTox-syncbot> Nils F.: well, it works out of box in browser, android, ios, desktop, …
+[22:39:50] <iphy> discordapp UX is terrible
+[22:39:58] <qTox-syncbot> Nils F.: iphy: yep :)
+[22:40:04] <qTox-syncbot> Zetok\0: sudden6: btw, since you're suggesting integrating Tox into other mobile app, are you willing to be doing that?
+[22:41:52] <qTox-syncbot> sudden6: Nils F.: oh^^
+[22:42:16] <qTox-syncbot> sudden6: Zetok: no, I won't be doing any mobile developement in the foreseeable future
+[22:42:40] <qTox-syncbot> sudden6: this was just an idea to not reinvent the wheel
+[22:46:02] <qTox-syncbot> Zetok\0: sudden6: there's no wheel invented
+[22:47:20] <qTox-syncbot> sudden6: apparently not, I just assumed someone already invented a audio/video messenger wheel for android :P
+[22:47:52] <qTox-syncbot> Zetok\0: ?
+[22:48:04] <qTox-syncbot> Zetok\0: sudden6: it's called Tox
+[22:48:20] <qTox-syncbot> Zetok\0: sudden6: and currently people are limited to Antox
+[22:48:34] <qTox-syncbot> Zetok\0: which equals to "doesn't work" AFAIK
+[22:50:18] <qTox-syncbot> sudden6: yeah, sadly only text chat is usable
+[22:50:48] <qTox-syncbot> Zetok\0: no, even that doesn't work
+[22:50:54] <qTox-syncbot> Nils F.: well… why not "just do it" and create a nice qml file for the UI, which will later on work on desktop and android?
+[22:51:08] <qTox-syncbot> Zetok\0: Nils F.: :)
+[22:52:04] <qTox-syncbot> sudden6: Nils F.: well, then "just do it" :)
+[22:52:42] <qTox-syncbot> sudden6: hmm, reading this a second time this could be interpreted as pretty mean^^
+[22:53:52] <qTox-syncbot> sudden6: Nils F.: with all that input from now, what exactly is you'r plan?
+[22:54:28] <qTox-syncbot> sudden6: *your
+[22:57:58] <qTox-syncbot> Nils F.: @sudden6 I am :)
+[23:00:08] <qTox-syncbot> Nils F.: …doing it*
+[23:02:38] <qTox-syncbot> Nils F.: sudden6: you're right, sounds wrong somehow… ^^ Maybe "just start" sounds better :)
+[23:03:08] <qTox-syncbot> sudden6: Nils F.: one more thing, could you do me a favor and join our IRC chat sometimes?
+[23:04:40] <qTox-syncbot> sudden6: It would really help to coordinate everything better
+[23:05:34] <qTox-syncbot> Zetok\0: (or some other communication option?)
+[23:05:35] -qtox-git-spam- [qTox] iphydf opened pull request #3965: chore: Update qTox to the latest toxencryptsave API. (master...tes-api) https://git.io/v11Ei
+[23:07:04] <iphy> zetok: there
+[23:07:41] <zetok> iphy: thanks :)
+[23:07:53] <iphy> untested - someone else should test it
+[23:08:03] <iphy> I can't test it at the moment
+[23:08:04] <iphy> I can't even compile it, so I hope it compiles :)
+[23:09:02] <qTox-syncbot> sudden6: travis will tell us^^
+[23:10:10] <qTox-syncbot> Zetok\0: um.
+[23:10:22] <iphy> oh right
+[23:10:27] <iphy> it doesn't compile because it's based on master
+[23:12:01] -qtox-git-spam- [qTox] zetok closed pull request #3962: fix: Fixed compact layout (master...fixCompactLayout) https://git.io/v1obb
+[23:12:38] <iphy> oh jeez
+[23:12:54] <iphy> yeah, I'll leave the ifdefs up to someone else :)
+[23:15:36] <qTox-syncbot> Nils F.: sudden6: i'll try…
+[23:16:24] <qTox-syncbot> sudden6: Nils F.: thx :) the easiest would be to set an IRC client to autostart on #qtox ;)
+[23:26:14] <qTox-syncbot> Nils F.: So we do have kind of consensus and I can "officially" start work? Here's a possible plan: |\n|  |\n| 1. Implement a style selector logic (material design, "classic"??). This is important as basically "everything" in UX relies on that and it has to be done right from start. |\n| 2. Create Login/MainWindow "Loader" qml item in the "main qml file" and resize the view on desktop. (multi-window mode comes later in process) |\n| 3. Cre
+[23:27:12] <qTox-syncbot> Zetok\0: Nils F.: just keep the changeset PRs small and don't remove widget UI
+[23:27:30] <qTox-syncbot> sudden6: Nils F.: yes, about #1 why do we need different styles from the beginning?
+[23:27:44] <qTox-syncbot> sudden6: the rest of the plan looks good to me
+[23:28:20] <qTox-syncbot> sudden6: off for a second
+[23:37:17] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:38:07] *** Joins: VVD (~VVD@ )
+[23:47:28] <qTox-syncbot> sudden6: I'm going to sleep for tonight, see you :)
