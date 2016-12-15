@@ -1,0 +1,260 @@
+[00:01:38] <qTox-syncbot> Tox User: same here, cu :)
+[00:04:20] <qTox-syncbot> Tox User: sudden6: we need #1 because style matters and more than that differs on platforms! should not be that hard. i've seen it elsewhere…
+[00:08:36] <qTox-syncbot> Tox User: I will commit and push a branch without PR (so it is invisible for the moment). you will find it in my repo at https://github.com/antis81/qTox/tree/qml |\n|  |\n| zetok: you can check that out tonight or tomorrow. we can leave/undelete the widget stuff. this is more or less prove of concept.
+[00:10:36] <qTox-syncbot> Tox User: thanks to all for the discussion! closing from my side. @zetok could you save the log somewhere please?
+[00:11:22] <qTox-syncbot> Zetok\0: Nils F.: it will be on https://github.com/qTox/qtox-irc-logs
+[00:16:36] <qTox-syncbot> Tox User: ok, thanks! good night, bye
+[00:38:41] *** Quits: sudd3n6 (~anon@ ) (Quit: Bye)
+[00:43:34] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 265 seconds)
+[01:00:12] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[01:04:12] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[01:04:29] *** Joins: f10 (~flo@ )
+[01:04:49] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[01:16:02] *** Joins: f10__ (~flo@ )
+[01:46:58] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:48:07] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[02:13:50] *** Quits: Sephi (~me@ ) (Ping timeout: 268 seconds)
+[02:23:13] *** Joins: Sephi (~me@ )
+[03:12:05] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 248 seconds)
+[03:12:31] *** Joins: in1t3r_ (~LordShiva@ )
+[03:13:56] *** Joins: f10__ (~flo@ )
+[03:16:56] *** Joins: f10 (~flo@ )
+[03:19:56] *** Joins: dardevelin (~dardeveli@ )
+[03:36:59] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[03:36:59] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[04:42:56] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[04:48:51] *** Joins: cisc (~cisc@ )
+[05:57:07] <Diadl0> Again. I have skipped interesting part :(
+[06:05:40] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v11AS
+[06:05:40] -qtox-git-spam- qTox/master e9778e8 Zetok Zalbavar: feat(UI): make information text in settings selectable
+[06:05:52] -qtox-git-spam- [qTox] Diadlo closed pull request #3965: chore: Update qTox to the latest toxencryptsave API. (master...tes-api) https://git.io/v11Ei
+[06:07:13] <zetok> uhm
+[06:07:32] <zetok> if it's about voicing the opinion, there's always some next time
+[06:13:39] <zetok> Diadl0: what about https://github.com/qTox/qTox/pull/3935 ?
+[06:37:00] <Diadl0> antis81 idea seems not good. I will post screenshot later
+[06:37:05] <Diadl0> zetok: ^
+[06:37:42] <Diadl0> About opinion
+[06:38:44] <Diadl0> I'm not sure. But I think we "spread" "maintaining power" in many directions
+[06:38:56] <Diadl0> So we have unfinished audio PR
+[06:39:18] <Diadl0> Unit tests
+[06:39:29] <Diadl0> Documentation
+[06:39:52] <Diadl0> UI redesign (separating UI and logic)
+[06:40:04] <Diadl0> Now + QML migration
+[06:40:15] <zetok> right
+[06:40:46] <Diadl0> I'm nooby in project management. But IMO it's not best solution
+[06:40:56] <zetok> yes
+[06:41:11] <zetok> but thing is, one does not tell people what to do
+[06:41:23] <zetok> :|
+[06:42:40] <Diadl0> We should create clean plan with strict order
+[06:42:59] <zetok> which is not going to work :/
+[06:43:14] <zetok> (release milestones were supposed to be that)
+[06:43:31] <oranges> the best laid plans never survive contact with laziness
+[06:43:32] <Diadl0> May be to force this plan we should block PR if it's not bugfix or in the plan order?
+[06:43:43] <zetok> oranges: :D
+[06:43:44] * oranges hides tox packaging scripts from sight
+[06:43:49] <zetok> oh you
+[06:44:13] <zetok> oranges: I was just about to ask you to post them on https://github.com/qTox/qTox/issues/3963
+[06:44:30] <oranges> the jenkins config?
+[06:44:32] <oranges> can do
+[06:44:45] <zetok> oranges: thanks :)
+[06:45:01] <zetok> Diadl0: that's a good way to make sure that fork will be made
+[06:45:15] <Diadl0> :/
+[06:45:38] <Diadl0> Fork named `qTox-without-plan`
+[06:48:42] <zetok> Diadl0: I get what you mean
+[06:49:22] <zetok> Diadl0: and the only solution that I can think of is increasing contributors pool
+[06:49:37] <zetok> Diadl0: that can't be done though without help of maintainers
+[06:49:44] <Diadl0> Easy!
+[06:49:49] <Diadl0> (not)
+[06:49:50] <zetok> Diadl0: ok
+[06:49:52] <zetok> :f
+[06:50:07] <Diadl0> I agree with you
+[06:50:18] <Diadl0> But I have no idea how do it
+[06:50:26] <zetok> ok
+[06:50:31] <zetok> mentoring is the way
+[06:50:52] <Diadl0> We can give a cookie for every PR :)
+[06:50:55] <zetok> i.e. helping people do stuff in qTox (fixing stuff, perhaps some easy features, something)
+[06:51:04] <zetok> err
+[06:51:19] <zetok> >_>
+[06:51:21] <oranges> mm cookie
+[06:51:22] <zetok> anyway.
+[06:51:37] <Diadl0> zetok: ^ It's works! 
+[06:52:02] <zetok> Diadl0: if you're interested in mentoring people, I could point you to at least 2
+[06:52:45] <zetok> maybe 2, but one might have given up already :(
+[06:53:04] <zetok> or both of them, given that time passes :(
+[06:53:06] <Diadl0> Yes. But 1) Lately I have not so many time 2) My english is poor
+[06:53:14] <zetok> ok
+[06:53:40] <Diadl0> I am always happy to help
+[06:53:52] <zetok> about 1. – a few minutes a day should suffice, an hour or 2 on weekend also would be good
+[06:54:02] <Diadl0> Ok
+[06:54:08] <zetok> 2. can be improved as you go
+[06:54:16] <zetok> (although that will take time)
+[06:55:06] <zetok> vindelschtuffen: if you're interested in trying with some other issue, Diadl0 just volunteered to be there to help you with stuff :)
+[06:56:18] <zetok> Diadl0: https://github.com/qTox/qTox/pull/3750#issuecomment-252381180 ← that's the other person (given the amount of time that has passed, they might have given up)
+[06:57:19] <zetok> Diadl0: it would be good to know if you can be available at some time, so that people could ask at some precise time without waiting indefinitely and wondering if they'll get an answer
+[06:57:23] <Diadl0> zetok: Ok. I will try to contact him by email
+[06:57:28] <zetok> Diadl0: thanks :)
+[06:57:49] <zetok> that's a nice idea
+[06:58:02] * zetok wonders if qtox-dev ML could be used
+[06:58:13] <Diadl0> zetok: Yes
+[07:03:11] <Diadl0> vindelschtuffen: my tox: diadlo@toxme.io | my email: polsha3@gmail.com
+[07:17:22] <zetok> hmm
+[07:17:34] <zetok> oh, right
+[07:17:51] <zetok> mentoring should be mentioned in MAINTAINING.md
+[07:18:28] <zetok> and CONTRIBUTING.md should state that one is encouraged to ask for help if they're stuck when trying to make a change in qTox
+[07:18:46] <zetok> :|
+[08:16:43] *** Joins: f10 (~flo@ )
+[08:16:57] *** Joins: f10__ (~flo@ )
+[08:25:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:26:09] *** Joins: LittleVulpix (~Miranda@ )
+[09:31:11] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:31:57] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[09:54:35] *** Quits: cisc (~cisc@ ) (Ping timeout: 258 seconds)
+[09:55:50] *** Joins: cisc (~cisc@ )
+[10:04:53] *** Joins: f10 (~flo@ )
+[10:05:58] *** Joins: f10__ (~flo@ )
+[10:22:12] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[10:30:22] *** Joins: f10 (~flo@ )
+[11:30:30] *** Joins: sandrorso (~sandro@ )
+[11:33:53] *** Joins: Diadlo (5d588822@ )
+[11:35:08] <Diadlo> I'm here for few minutes. Seems toxcore will be builded successful in travis
+[11:36:09] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:36:35] *** Joins: f10 (~flo@ )
+[11:38:00] *** Joins: _sudden6_ (~anonymous@ )
+[11:38:13] <Diadlo> Green check mark. Congratulations!
+[11:38:55] <iphy> Diadlo: with toktok?
+[11:39:15] <Diadlo> iphy: Yes :)
+[11:39:19] <iphy> cool
+[11:41:47] -qtox-git-spam- [qTox] Diadlo closed pull request #3961: Toktok migration (master...toktokMigration) https://git.io/v1oax
+[11:50:36] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 256 seconds)
+[11:58:00] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:58:00] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[12:01:13] *** Quits: sandrorso (~sandro@ ) (Remote host closed the connection)
+[12:17:51] *** Joins: Ivan97 (~Ivan97@ )
+[12:20:10] <Ivan97> anyone here?I have a problem.I`m using macOS Sierra 10.12.2,I cannot open qtox.It just crush down.
+[12:31:48] <Diadlo> Ivan97: Hello. Can you post somewhere your log?
+[12:33:29] <Diadlo> You can start qTox from terminal to get debug log
+[12:34:45] <Ivan97> ok,let me try
+[12:34:48] <Ivan97> thx
+[12:35:49] <Diadlo> Also, logs saved somewhere on your disk. Try to find it here: ~/Library/Application Support/Tox/qtox.log
+[12:38:19] <Ivan97> :(
+[12:38:25] <Ivan97> cannot find it
+[12:40:34] <Diadlo> Does this directory exists?
+[12:43:51] <Ivan97> https://github.com/qTox/qTox/issues/3966
+[12:44:02] <Ivan97> no. doesn`t exist
+[12:46:05] <Diadlo> Thanks for creating issue
+[12:47:08] <Ivan97> Thank you for your kind help :)
+[12:54:28] *** Quits: Dragofix (Dragofix@ ) (Quit: Interrupting IRC session for a moment)
+[13:11:59] *** Joins: Dragofix (Dragofix@ )
+[13:14:10] *** Joins: _sudden6_ (~anonymous@ )
+[13:30:04] *** Joins: h4nt3r (5bd61c1a@ )
+[13:30:29] *** Parts: h4nt3r (5bd61c1a@ ) ()
+[13:58:40] *** Quits: Ivan97 (~Ivan97@ ) (Ping timeout: 256 seconds)
+[14:13:13] *** Joins: Ivan97 (~Ivan97@ )
+[14:13:33] *** Parts: Ivan97 (~Ivan97@ ) ()
+[14:50:22] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 265 seconds)
+[15:04:18] *** Quits: Darky (~Darky@ ) (Ping timeout: 258 seconds)
+[15:12:30] *** Joins: _sudden6_ (~anonymous@ )
+[15:42:35] *** Joins: abbat (~abbat@ )
+[15:55:31] *** Quits: Diadlo (5d588822@ ) (Quit: Page closed)
+[16:12:44] *** Joins: f10 (~flo@ )
+[16:13:53] *** Joins: f10__ (~flo@ )
+[16:32:51] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:50:40] *** Joins: cenysor (~cenysor@ )
+[17:19:57] *** Joins: f10 (~flo@ )
+[17:27:58] *** Joins: Yoshimo (~anything@ )
+[17:29:09] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[17:56:55] -qtox-git-spam- [qTox] zetok closed pull request #3951: docs(maint): remove obsolete part about translations from Weblate (master...docs-maint-webl) https://git.io/v1uXI
+[17:58:51] *** Quits: abbat (~abbat@ ) (Remote host closed the connection)
+[18:31:45] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[18:32:08] *** Joins: f10 (~flo@ )
+[19:40:20] <Diadl0> zetok: Are you here?
+[19:40:31] <zetok> yep
+[19:40:44] <zetok> Diadl0: regarding help, I'm not sure if that won't be a waste of time
+[19:41:12] <zetok> Diadl0: i.e. mentoring is for people who do want to learn in order to help
+[19:41:41] <zetok> I don't necessarily want to put any effort into learning C++/Qt
+[19:41:44] <Diadl0> No one want :)
+[19:42:58] <Diadl0> vindelschtuffen didn't answer. Neolex haven't time now
+[19:43:40] <Diadl0> But I believe, that Neolex will return
+[19:43:56] <zetok> :)
+[19:45:28] <vindelschtuffen> er, hello
+[19:45:33] <zetok> Diadl0: :D
+[19:46:18] <vindelschtuffen> Diadl0, I'd like to contribute to qTox and I'm willing to learn but I have very little experience, just so you know
+[19:46:57] <Diadl0> I still have a little experience :)
+[19:47:38] <Diadl0> Did you choose issue to work with?
+[19:49:51] <vindelschtuffen> are there particular issues which need help?
+[19:50:10] <iphy> vindelschtuffen: what OS are you on?
+[19:50:24] <vindelschtuffen> iphy, Debian
+[19:51:00] <zetok> well, there are plenty of issues that need help
+[19:51:12] <zetok> 316 of them right now
+[19:51:23] <Diadl0> 146
+[19:51:24] <Diadl0> https://github.com/qTox/qTox/issues?q=is%3Aissue%20is%3Aopen%20label%3AI-bug%20-label%3Aupstream%20-label%3AA-windows%20-label%3AA-osx
+[19:51:34] <zetok> I'd suggest to first take look at the https://github.com/qTox/qTox/issues?q=is%3Aopen+is%3Aissue+label%3AE-easy though
+[19:52:20] <Diadl0> Add Pirate translation < It's best :D
+[19:53:35] <vindelschtuffen> okay, I'd like to try the Pirate translation :)
+[19:53:48] <Diadl0> vindelschtuffen: Also https://github.com/qTox/qTox/issues/3875 should be easy to fix
+[19:54:15] <Diadl0> It help you to understand how translation works
+[19:54:41] <zetok> Diadl0: https://github.com/qTox/qTox/issues/3334 ← given the problems with the PR, this doesn't seem to be easy
+[19:55:40] <Diadl0> Yes. When I came to qTox `easy` issues was not easy for me :)
+[19:55:56] <zetok> well, labels should be adjusted then
+[19:56:05] <zetok> vindelschtuffen: for inspiration https://github.com/qTox/qTox-Website/blob/master/index.pr.json
+[19:56:48] <zetok> this too would need some improvement :|
+[19:58:05] * zetok wonders
+[20:00:12] <Diadl0> [22:39] <Diadl0> zetok: Are you here? < Lol. I forget to ask what I want
+[20:00:25] <Diadl0> About toxcore version
+[20:00:48] <Diadl0> Should it be `toxcore >= 0.1` or `toxcore = 0.1` ?
+[20:01:45] <zetok> = 0.1
+[20:01:55] *** Diadl0 is now known as Diadlo
+[20:02:01] <Diadlo> Ok
+[20:02:04] <zetok> perhaps 0.1.* would be more clear
+[20:03:01] <vindelschtuffen> zetok, I'm in weblate, do I need perms to make a new translation?
+[20:03:47] <zetok> vindelschtuffen: no?
+[20:03:55] <vindelschtuffen> okay
+[20:05:26] <zetok> not sure if that's doable via weblate though
+[20:05:42] <Diadlo> zetok: Seems, I found a potential contributor
+[20:05:49] <zetok> Diadlo: hm?
+[20:06:18] <Diadlo> It's one my friend
+[20:06:22] <zetok> :)
+[20:06:27] <zetok> nice
+[20:06:36] <Diadlo> <s>I placed an ad</s>
+[20:09:59] <Diadlo> zetok: Do you know structure of the project?
+[20:10:28] <zetok> nope?
+[20:10:36] <Diadlo> I.e. how classes interact between themselves
+[20:10:38] <Diadlo> Ok
+[20:10:59] <zetok> um, just to get things clear
+[20:11:05] <zetok> I don't know C++
+[20:11:13] <Diadlo> And what?)
+[20:11:19] <zetok> with that in mind, I don't even know what a class is
+[20:11:42] <Diadlo> So, you don't know OOP
+[20:11:47] <Diadlo> ?
+[20:11:55] * zetok shrugs
+[20:12:14] <Diadlo> It's better describe situation, that `I don't know C++` :)
+[20:12:57] <Diadlo> It's pity
+[20:13:56] <zetok> ><Diadlo> So, you don't know OOP
+[20:14:06] <zetok> I don't know the answer to this question :P
+[20:14:13] <Diadlo> :/
+[20:14:40] <zetok> which probably means that the answer is "no"
+[20:15:09] <Diadlo> I just wanted to ask your help with redesign
+[20:16:30] <Diadlo> Do you read my email in dev-qtox?
+[20:17:19] <zetok> just now
+[20:17:54] <zetok> perhaps it could be cached
+[20:18:20] <zetok> and iphy mentioned something about ffmpeg being available in some ppa
+[20:18:53] <Diadlo> The fact is that ffmpeg build take ~1/2 time
+[20:18:53] <iphy> https://github.com/TokTok/qTox/blob/master/.travis.yml#L8
+[20:19:24] <Diadlo> It looks good
+[20:20:58] <Diadlo> zetok: Can you add this?
+[20:21:44] <zetok> :f
+[20:23:27] <zetok> this needs a cleanup
+[20:34:09] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:37:48] *** Quits: tux3 (tux@ ) (Ping timeout: 258 seconds)
+[20:39:15] *** Joins: tux3 (tux@ )
+[20:40:36] <Diadlo> Good night everyone
+[20:42:35] *** Joins: reBrain (~quassel@ )
+[20:47:21] *** _sudden6_ is now known as sudden6
+[20:53:47] -qtox-git-spam- [qTox] zetok opened pull request #3967: chore(travis): add deployment of git stats to the github pages (master...chore-travis-stats) https://git.io/v1D1U
+[21:01:35] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:51:09] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:56:55] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 252 seconds)
+[22:24:37] *** Joins: jjuran (~jjuran@ )
+[22:52:44] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:31:14] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[23:42:36] *** Joins: f10 (~flo@ )
