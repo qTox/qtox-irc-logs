@@ -1,0 +1,151 @@
+[00:15:45] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[00:52:20] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[01:18:45] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[01:19:34] *** Joins: jjuran (~jjuran@ )
+[01:46:52] *** Joins: DaSpirit (~DaSpirit@ )
+[01:55:07] *** Joins: f10 (~flo@ )
+[02:01:47] *** Quits: DaSpirit (~DaSpirit@ ) (Remote host closed the connection)
+[02:07:24] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[02:07:50] *** Joins: in1t3r_ (~LordShiva@ )
+[02:25:02] *** Joins: shiva (~LordShiva@ )
+[02:27:53] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 252 seconds)
+[03:07:16] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[05:40:21] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 248 seconds)
+[05:47:37] *** Joins: f10 (~flo@ )
+[05:59:00] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[06:06:42] *** Joins: dardevelin (~dardeveli@ )
+[06:06:48] *** Joins: f10 (~flo@ )
+[06:32:49] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 252 seconds)
+[06:46:24] *** Quits: Emcy (~MC@ ) (Quit: Leaving)
+[06:46:55] *** Joins: Emcy (~MC@ )
+[06:47:13] *** Quits: Emcy (~MC@ ) (Remote host closed the connection)
+[06:47:37] *** Joins: Emcy (~MC@ )
+[06:47:37] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:47:37] *** Joins: Emcy (~MC@ )
+[07:30:29] *** Joins: lucktf (4c015e27@ )
+[07:34:16] *** Quits: lucktf (4c015e27@ ) (Client Quit)
+[07:48:48] *** Joins: Darky (~Darky@ )
+[08:02:33] *** Joins: LittleVulpix (~Miranda@ )
+[08:35:05] *** Joins: shiva__ (~LordShiva@ )
+[08:35:36] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 240 seconds)
+[08:37:24] *** Joins: shiva (~LordShiva@ )
+[08:39:32] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 246 seconds)
+[08:43:56] *** Joins: shiva__ (~LordShiva@ )
+[08:45:57] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 248 seconds)
+[09:00:19] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:13:16] *** Joins: Diadlo_ (5d588822@ )
+[09:13:26] <Diadlo_> zetok: ping
+[09:13:48] <Diadlo_> iphy: ping
+[09:25:30] <zetok> Diadlo_: pong
+[09:29:20] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:29:23] *** Joins: sudden6 (~anonymous@ )
+[09:29:46] *** Joins: LittleVulpix (~Miranda@ )
+[09:33:17] <Diadlo_> zetok: Do you have any idea, why it can be? https://travis-ci.org/qTox/qTox/jobs/184171105#L367
+[09:35:19] <zetok> oh
+[09:35:55] <zetok> Diadlo_: toxcore is initially cloned with `--depth=1`
+[09:36:17] * zetok wonders whether perhaps a tarball should be used
+[09:37:08] <zetok> it probably should
+[09:39:45] *** Joins: f10 (~flo@ )
+[09:40:47] <Diadlo_> Where I can found it?
+[09:44:11] <Diadlo_> Seems, I found it (https://github.com/TokTok/c-toxcore/archive/v0.1.0.tar.gz)
+[09:46:16] <Diadlo_> Should I use tarball only in osx build?
+[09:46:57] <zetok> it could be used everywhere
+[09:47:29] <zetok> Diadlo_: oh wait :/
+[09:47:46] <zetok> Diadlo_: sorry, I didn't think too well about that
+[09:48:14] <zetok> Diadlo_: the problem with osx script is that it allows for updating, and that includes also toxcore updates
+[09:48:27] <zetok> one does not have that with a tarball
+[09:49:43] <Diadlo_> May be just remove `--depth=1` ?
+[09:49:51] <zetok> mm
+[09:50:03] <zetok> that'll work, but it'll require more bandwidth
+[09:50:43] <Diadlo_> Ok. What about fetch/pull tags>
+[09:50:44] <Diadlo_> ,
+[09:50:46] <Diadlo_> *?
+[09:51:30] *** shiva__ is now known as in1t3r_
+[09:51:46] <zetok> how?
+[09:52:06] <Diadlo_> IDK, you are git gooru
+[09:52:07] <Diadlo_> guru
+[09:52:28] <zetok> AFAIK one does not do that
+[09:52:41] <Diadlo_> Ok
+[09:54:50] <Diadlo_> Done
+[09:55:05] <Diadlo_> git clone --branch v0.1.0 --depth=1
+[09:55:13] <Diadlo_> zetok: ^
+[09:55:31] <zetok> Of course it's a branch.
+[09:55:36] * zetok facepalms
+[09:55:49] <zetok> well, good to know :)
+[09:57:14] <Diadlo_> Could I do it in separate PR?
+[09:57:33] <Diadlo_> Oh.. no, sorry
+[10:09:25] <Chiitoo> zetok: There might be a bug for you to comment on.  :]  Here: https://bugs.gentoo.org/show_bug.cgi?id=590912
+[10:10:24] <zetok> Chiitoo: not assigned to me, I don't care
+[10:13:15] <Chiitoo> Okies.
+[10:13:52] <zetok> Chiitoo: the only bug that has been assigned to me and I didn't close yet has my comment on it :)
+[10:14:39] <iphy> --branch can clone tags as well
+[10:14:47] <Chiitoo> Mhm.  I did notice it wasn't assigned, but didn't want to comment on it myself at least before asking you.
+[10:20:49] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[10:43:30] *** Joins: cenysor (~cenysor@ )
+[10:48:53] *** Joins: st4ll1 (~st4ll1@ )
+[11:02:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[11:07:28] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[11:08:01] *** Joins: cisc (~cisc@ )
+[11:11:50] *** Joins: f10 (~flo@ )
+[11:30:35] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:46:47] *** Quits: Diadlo_ (5d588822@ ) (Quit: Page closed)
+[11:47:24] *** Quits: cenysor (~cenysor@ ) (Read error: Connection reset by peer)
+[11:50:17] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:54:20] *** Joins: cisc (~cisc@ )
+[15:08:06] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 265 seconds)
+[15:22:51] *** Joins: in1t3r_ (~LordShiva@ )
+[15:38:29] *** Joins: f10 (~flo@ )
+[16:11:49] *** Quits: f10 (~flo@ ) (Ping timeout: 248 seconds)
+[16:20:20] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 250 seconds)
+[16:31:20] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[16:31:40] *** Joins: cisc (~cisc@ )
+[17:05:46] *** Joins: f10 (~flo@ )
+[17:41:10] *** Joins: cenysor (~cenysor@ )
+[17:43:01] *** Joins: Yoshimo (~anything@ )
+[18:17:18] *** Joins: in1t3r_ (~LordShiva@ )
+[18:41:06] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[18:50:04] *** Joins: LittleVulpix (~Miranda@ )
+[19:19:05] *** Quits: NeaN (~elouin@ ) (Ping timeout: 260 seconds)
+[19:22:49] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 265 seconds)
+[19:30:09] *** Joins: in1t3r_ (~LordShiva@ )
+[19:32:22] *** Parts: kadinparker[m] (kadinparke@ ) ("User left")
+[19:39:31] *** Quits: st4ll1 (~st4ll1@ ) (Quit: WeeChat 1.6)
+[19:47:14] *** Joins: NeaN (~elouin@ )
+[19:47:22] <Diadlo> zetok: Does it lgty?
+[19:47:26] <Diadlo> https://github.com/qTox/qTox/pull/3736
+[19:47:53] <zetok> haven't tested yet aside from compiling
+[19:51:49] <zetok> btw, are all those ifdefs really needed?
+[19:52:34] <zetok> just something that I've been wondering about
+[19:52:52] <zetok> i.e. if API would not be compatible, it would fail to compile anyway, right?
+[19:58:18] <Diadlo> Hm... 
+[19:59:10] <Diadlo> 1) In theory, it should be compiled as well with old toxcore
+[19:59:25] <iphy> I gave up on that
+[19:59:27] <iphy> in tox4j
+[19:59:45] <Diadlo> 2) With full migration on new version we can remove it
+[20:03:22] <zetok> Diadlo: um?
+[20:03:31] <zetok> Diadlo: I don't understand point 1
+[20:03:59] <zetok> btw, I found a bug in that can result in making a video call without user's consent
+[20:04:36] <Diadlo> About 1. Nevermind
+[20:04:40] <zetok> what's interesting, I can reproduce it only on the TokTok migration PR
+[20:06:46] <iphy> that is interesting
+[20:06:46] <zetok> steps to reproduce: 1. Q1 makes an audio call to Q2; 2. Q2 picks up; 3. when audio call is ongoing, quickly end it on Q2 side and press video call button; 4. Q2 made a video call to Q1 without Q1's consent
+[20:09:41] <Diadlo> zetok: Can you test it with utox?
+[20:09:50] <zetok> nope
+[20:10:03] <Diadlo> Why?
+[20:10:36] <Diadlo> Ok. I will test it tomorrow
+[20:11:49] <zetok> Diadlo: https://gist.github.com/zetok/207747f7330be5592f82cae9300ee7bf
+[20:12:02] <zetok> because of µTox maintainer
+[20:12:16] <zetok> I don't want to use this software
+[20:12:23] <zetok> and I see no reason to do so
+[20:13:13] <Diadlo> "Perfect"
+[20:13:26] <Diadlo> Like a little babies
+[20:29:33] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[20:30:46] *** Joins: aSuggestion (18c640a3@ )
+[20:32:32] *** Quits: aSuggestion (18c640a3@ ) (Client Quit)
+[21:00:53] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:20:37] *** Joins: f10 (~flo@ )
+[21:46:25] <oranges> greyhatter has no chill
+[21:51:13] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:54:30] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[22:19:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[23:26:16] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
