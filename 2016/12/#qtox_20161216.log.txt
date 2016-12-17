@@ -1,0 +1,181 @@
+[00:55:32] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:05:07] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[01:05:46] *** Joins: VVD (~VVD@ )
+[01:18:43] *** Joins: cisc (~cisc@ )
+[01:38:26] <zetok> nurupo: https://a.uguu.se/srcGMTjFjIR7.png :)
+[03:15:38] <Chiitoo> Brave, or grave.  :V
+[04:26:14] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:26:36] *** Joins: VVD (~VVD@ )
+[04:56:44] *** Joins: albel727 (~albel727@ )
+[06:11:57] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[06:42:41] -qtox-git-spam- [qTox] zetok opened pull request #3970: fix(UI): remove unnecessary space between a word and colon (master...fix-colon) https://git.io/v1HW6
+[06:44:26] <zetok> Chiitoo: how's file transfer widget going?
+[06:45:16] <Chiitoo> Bad!
+[06:45:43] <Chiitoo> I noticed the mic etc. button things going off while doing it.
+[06:45:47] <Chiitoo> And I thought it was me.
+[06:46:07] <Chiitoo> But apparently it's some other change.
+[06:46:25] <zetok> https://github.com/qTox/qTox/pull/3935#issuecomment-267428684 hmm
+[06:46:31] <Chiitoo> I do have it in mind more or less daily.
+[06:47:19] <Chiitoo> yeah, that looks like it.
+[06:47:30] <Chiitoo> It's not in my builds either.
+[06:50:25] <zetok> the svg icons PR was the only time that I've run into this, I think
+[07:04:30] -qtox-git-spam- [qTox] zetok opened pull request #3971: chore(travis): use packages from ppas for ffmpeg and libsodium (master...chore-travis-packages) https://git.io/v1HlP
+[07:05:49] <zetok> Diadlo: if you have time now for LGTM translations from weblate, I'll pull them and make a PR
+[07:06:03] <Chiitoo> I should be able to find out the thing breaking it rather easy.
+[07:06:08] <zetok> and once that's merged I'll rebase #3970 with the change
+[07:06:11] <Chiitoo> Just'need the time!
+[07:06:23] <zetok> Chiitoo: sounds great :)
+[07:07:52] <Chiitoo> Hopes so.
+[07:54:26] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:54:37] <Diadlo> zetok: I shall be free at 10:25 in UTC
+[07:54:50] <zetok> ok
+[07:54:51] *** Joins: VVD (~VVD@ )
+[07:55:16] <Diadlo> And I can review translations
+[08:25:39] *** Joins: f10 (~flo@ )
+[08:35:25] -qtox-git-spam- [qTox] zetok opened pull request #3972: Update translations (master...tr) https://git.io/v1HEL
+[09:29:55] *** Joins: sudden6 (~anonymous@ )
+[09:39:30] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[10:24:27] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[10:40:02] *** Joins: abbat (~abbat@ )
+[10:48:38] *** Joins: Diadl0 (~diadlo@ )
+[10:48:46] <Diadl0> zetok: ping
+[10:49:06] <zetok> Diadl0: pong
+[10:49:56] <Diadl0> I think Russian translation has many language mistakes
+[10:50:27] <Diadl0> Can you revert it?
+[10:50:53] <Diadl0> Or I should fix it?
+[10:51:25] <zetok> is it really bad enough to throw away?
+[10:52:15] <Diadl0> Hm...
+[10:52:33] <zetok> I see the problems with lack of %1
+[10:52:55] <Diadl0> Yes
+[10:53:15] <Diadl0> It has many small mistakes
+[10:53:22] <Diadl0> IDK, what's better
+[10:54:24] * zetok sighs
+[10:54:37] <Diadl0> Imperative mood for "remove password" for example
+[10:55:04] <zetok> if there was an easy way to go over each line change changed by the commit and approve or dismiss
+[10:55:25] <zetok> actually
+[10:56:27] *** Joins: cenysor (~cenysor@ )
+[10:57:03] <zetok> yeah, that can work
+[10:57:29] <Diadl0> What?
+[10:58:48] <Diadl0> Ok. Let's merge
+[10:59:06] <zetok> um
+[10:59:36] <zetok> Diadl0: I meant that you could just go over the changes from commit and pick the ones that are correct, and discard the ones that are wrong
+[10:59:49] <zetok> unless you don't have time
+[11:00:47] <Diadl0> How? Locally?
+[11:01:13] <zetok> yep
+[11:01:23] <Diadl0> And how you apply my changes?
+[11:01:33] <zetok> Diadl0: you'll just push the changed stuff
+[11:01:49] <Diadl0> Hm...
+[11:01:51] <Diadl0> Ok
+[11:01:53] <Diadl0> I will try
+[11:02:13] <zetok> git remote add zetok https://github.com/zetok/qTox
+[11:02:32] <zetok> git fetch zetok
+[11:02:51] <zetok> git checkout zetok/tr -b tr
+[11:03:11] <zetok> git rebase -i e696d3e
+[11:03:22] <zetok> hmm
+[11:04:58] <zetok> ok
+[11:05:05] <zetok> git reset HEAD^
+[11:05:33] <zetok> Diadl0: with that you have non-committed changes
+[11:06:13] <zetok> Diadl0: git add --patch translations/ru.ts
+[11:06:21] <Diadl0> Yes. I know all this. But what next?
+[11:07:08] <zetok> once you've picked the changes, continue the rebase, and force push to my branch
+[11:07:33] <Diadl0> I can just push in you repo? O_o
+[11:07:35] <Diadl0> *your
+[11:08:11] <zetok> https://a.uguu.se/BLgJYChoYIiS.png
+[11:08:52] <zetok> btw, `git reset HEAD^` is after the translation commit is set to `edit` in rebase
+[11:09:43] <zetok> `git commit -c ORIG_HEAD` after the changes have been added
+[11:16:49] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[11:17:34] *** Joins: Diadl0 (~diadlo@ )
+[11:41:38] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[11:49:44] *** Joins: f10 (~flo@ )
+[11:54:23] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[12:00:30] *** Joins: f10 (~flo@ )
+[12:01:56] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:02:13] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 248 seconds)
+[12:21:00] *** Joins: f10 (~flo@ )
+[12:30:48] *** Joins: wop (4f0d8091@ )
+[12:50:49] *** Joins: f10_ (~flo@ )
+[13:02:10] *** Quits: wop (4f0d8091@ ) (Quit: Page closed)
+[13:08:53] *** Quits: tux3 (tux@ ) (Changing host)
+[13:08:53] *** Joins: tux3 (tux@ )
+[13:08:53] *** ChanServ sets mode: +o tux3
+[13:19:04] *** Quits: abbat (~abbat@ ) (Quit: Leaving)
+[13:20:05] <Diadlo> zetok: I pushed commits. But PR didn't change
+[13:22:19] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[13:27:13] *** Joins: Diadlo (~diadlo@ )
+[14:37:27] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[14:37:50] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[14:37:56] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[14:38:59] *** Joins: Diadlo (~diadlo@ )
+[14:40:54] *** Joins: f10 (~flo@ )
+[14:41:15] *** Joins: f10_ (~flo@ )
+[15:02:12] *** Joins: cenysor (~cenysor@ )
+[15:41:40] <Diadlo> zetok: ping
+[17:09:24] *** Joins: Diadl0 (~diadlo@ )
+[17:29:14] *** Quits: Dragofix (Dragofix@ ) (Quit: There's no place like ::1)
+[17:33:35] *** Joins: Dragofix (Dragofix@ )
+[17:36:19] *** Quits: Dragofix (Dragofix@ ) (Client Quit)
+[17:36:54] *** Joins: Dragofix (~Dragofix@ )
+[17:52:42] *** Quits: Dragofix (~Dragofix@ ) (Quit: Now if you all will excuse me, i have to throw myself out internet.)
+[17:56:29] *** Joins: Dragofix (Dragofix@ )
+[18:17:28] *** Joins: Yoshimo (~anything@ )
+[18:47:07] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 268 seconds)
+[20:01:51] <zetok> Diadlo: pushed? command?
+[20:17:31] <Diadlo> Here is new version https://github.com/qTox/qTox/tree/tr
+[20:17:43] <Diadlo> Here is old https://github.com/qTox/qTox/pull/3972
+[20:22:54] <zetok> Diadlo: `git push -f zetok tr`
+[20:24:52] <zetok> um, there was no need to fix the translation
+[20:25:13] <zetok> just picking parts that were good and discarding the rest would do
+[20:26:31] <zetok> btw, there is no tool that could be used to verify that there are no missing `%1`, right?
+[20:30:19] <Diadlo> zetok: IDK. But I tried to write one-line script. Unsuccessfully
+[20:31:06] <zetok> mm
+[20:32:05] <Diadlo> zetok: Why not no need to fix?
+[20:33:37] <zetok> you can if you want
+[20:34:21] <zetok> Diadlo: can you push the branch?
+[20:35:24] *** Joins: Diadl0 (~diadlo@ )
+[20:36:43] <Diadlo> Everything up-to-date
+[20:38:14] <zetok> Diadlo: did you push to `zetok` remote?
+[20:38:18] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[20:38:30] *** Joins: Diadl0 (~diadlo@ )
+[20:38:48] <Diadlo> Loool
+[20:39:07] <Diadlo> remote url zetok == origin
+[20:39:10] <Diadlo> Sorry
+[20:40:09] <Diadlo> Done
+[20:43:49] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 248 seconds)
+[20:44:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:47:45] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[20:49:55] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[20:50:57] *** Joins: f10 (~flo@ )
+[20:51:07] *** Joins: f10_ (~flo@ )
+[21:42:11] -qtox-git-spam- [qTox] zetok closed pull request #3972: Update translations (master...tr) https://git.io/v1HEL
+[21:50:33] <zetok> tux3: o/
+[21:50:43] <tux3> zetok, hai!
+[21:51:50] <zetok> tux3: https://github.com/qTox/qTox/issues/3968 ← seems like it would be good to have a portable zip with a settings files included that is already set to portable
+[21:51:55] <zetok> what do you think?
+[21:52:11] <zetok> file*
+[21:52:12] <tux3> Yeah, that sounds good. It shouldn't be hard to do either
+[21:52:40] <tux3> Probably, someone just needs to create a Jenkins job for it
+[21:53:06] <zetok> hmm
+[21:53:45] <tux3> Oh are there already qTox portable builds?
+[21:54:08] * zetok just had an idea how jenkins config could be made to be possible to contribute to by anyone
+[21:54:27] <zetok> tux3: there are .zip builds that people consider to be "portable"
+[21:54:43] <zetok> :|
+[21:55:11] <tux3> qTox should check on startup if there's a setting file in the local folder, and only if it isnt there create the settings in the user profile
+[21:55:37] <tux3> So that issue makes it sound like either that code is broken or the portable builds don't have a setting files with them ?
+[21:56:14] <zetok> yeah, zip builds don't have that file
+[21:56:38] <zetok> (+ there is a bug, but that's a separate issue)
+[21:56:42] <tux3> Who makes those portable builds?
+[21:56:50] <zetok> you tell me :)
+[21:56:54] <tux3> heh :)
+[22:00:04] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[22:01:26] <oranges> who makes portable builds
+[22:01:30] <oranges> I could use some
+[22:07:37] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:12:33] *** Joins: sudden6 (~anonymous@ )
+[22:34:46] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[23:15:18] *** Joins: DaSpirit (~DaSpirit@ )
+[23:18:04] <zetok> https://a.uguu.se/NQMlvW46yBCW.png :|
+[23:20:44] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v17tU
+[23:20:44] -qtox-git-spam- qTox/master fba5f8c Zetok Zalbavar: fix(UI): remove unnecessary space between a word and colon
+[23:56:23] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:57:01] *** Joins: VVD (~VVD@ )
+[23:58:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
