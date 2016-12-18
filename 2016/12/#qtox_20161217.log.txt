@@ -1,0 +1,311 @@
+[00:07:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[00:14:20] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[00:15:14] *** Joins: f10 (~flo@ )
+[00:59:58] <zetok> Diadlo: um, how is the videocall issue not reproducible?
+[01:04:23] *** Joins: f10_ (~flo@ )
+[01:13:26] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[01:14:01] *** Joins: VVD (~VVD@ )
+[02:34:23] <nurupo> zetok: the image you have linked has expired
+[02:34:40] <zetok> sec, I've added lots more of the content
+[02:35:48] <zetok> nurupo: https://a.uguu.se/1l7pLt2nH40K.png ← sorry, just a part is visible, but it gives you the taste :)
+[02:36:51] <zetok> 120 lines of post, and that's just the IRC part :D
+[02:37:35] <nurupo> oh
+[02:37:39] <nurupo> whatever
+[02:37:46] <zetok> :)
+[02:37:52] <nurupo> i thought you were posting something good for a change
+[02:37:58] <zetok> it is good :)
+[02:38:20] <zetok> it gives people what they need
+[02:41:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[02:41:57] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:52:03] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:49:28] <zetok> nurupo: https://zetok.github.io/2016/12/17/Tox-Considered-Harmful.html :)
+[04:52:08] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[05:03:33] *** Joins: zero-ghost (~0@ )
+[05:35:12] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:35:45] *** Joins: VVD (~VVD@ )
+[07:04:29] <Diadlo> zetok: When I click video-call button after stop audio-call it take at least few second to start video and it's works as usual
+[07:04:38] <zetok> hmm
+[07:04:45] <zetok> I don't have that delay
+[07:05:25] <Diadlo> Both clients on one machine
+[07:06:04] <zetok> yep
+[07:09:05] <zetok> Diadlo: if you want I can make a webm
+[07:09:32] <zetok> it's easily reproducible
+[07:09:57] <zetok> https://a.uguu.se/KvqzRZiVcnrM.png :D
+[07:11:37] <Diadlo> You can try. But I think I reproduce it correctly and problem with my PC/network/etc.
+[07:12:30] <Diadlo> Heeey
+[07:12:33] <Diadlo> zetok: 
+[07:12:34] <Diadlo> Ups
+[07:13:07] <Diadlo> zetok: I think, I know reason of issue
+[07:13:12] <zetok> har har.
+[07:13:16] <Diadlo> https://github.com/TokTok/c-toxcore/issues/221
+[07:13:23] * zetok "found" the package that was missing in travis config
+[07:13:38] <zetok> `libx264-dev` ?!
+[07:13:48] <Diadlo> May be
+[07:14:09] <zetok> hum
+[07:14:16] <Diadlo> i.e. it's not the reason of issue. But reason why I can't reproduse
+[07:14:20] <zetok> in any case, https://github.com/qTox/qTox/pull/3971 works now
+[07:14:27] <zetok> Diadlo: mm :)
+[07:14:56] <Diadlo> What version of toxcore are you use now?
+[07:15:28] <zetok> 0.1
+[07:15:50] <Diadlo> Lol
+[07:16:12] <Diadlo> What we should do?
+[07:16:51] <zetok> >bool local_discovery_enabled;
+[07:16:55] <zetok> check it?
+[07:17:04] <Diadlo> If you can
+[07:17:14] <zetok> >void tox_options_set_local_discovery_enabled(struct Tox_Options *options, bool local_discovery_enabled);
+[07:17:18] <zetok> err
+[07:17:22] <zetok> that is set by the client
+[07:17:41] <zetok> also, it should default to `enabled`, right?
+[07:17:56] <zetok> >options->local_discovery_enabled = true;
+[07:17:57] <zetok> yep
+[07:18:14] <zetok> Diadlo: unless you change that to `false`, it's enabled
+[07:18:29] <zetok> Diadlo: with that in mind, even if it's enabled clients can use TCP
+[07:19:32] <zetok> Diadlo: you could restart either client
+[07:19:43] <zetok> or perhaps `Reconnect`
+[07:20:41] <Diadlo> For what?
+[07:22:05] <zetok> to make an UDP connection
+[07:22:18] <zetok> technically, toxcore is supposed to make one by itself
+[07:22:38] <zetok> this might, or might not work automagically though
+[07:23:59] <Diadlo> So you can reproduce or not?
+[07:25:03] <zetok> yep
+[07:26:01] <Diadlo> Ok. I will try it later
+[07:40:00] <Diadlo> zetok: later it's ~tuesday
+[07:40:28] <zetok> ok
+[07:40:39] <zetok> so qTox 1.7 is going to stay on 0.0
+[07:41:19] <Diadlo> :/
+[07:41:38] <Diadlo> Next week -- week of testing?
+[07:41:43] <zetok> yep
+[07:43:08] <Diadlo> Seems, we have too small release circle
+[07:43:21] <zetok> cycle ?
+[07:43:28] <Diadlo> Yep
+[07:43:41] <zetok> well
+[07:43:49] <zetok> there are 5 weeks to get things merged
+[07:43:54] <Diadlo> Yes
+[07:44:18] <zetok> what is missing, is a clear calendar
+[07:46:40] <zetok> actually
+[07:46:46] <zetok> it could be redone
+[07:46:51] <Diadlo> `glog -n90 | grep "feat" | grep "l10n" -v | wc -l` -> 11
+[07:46:52] <Diadlo> :/
+[07:47:56] <zetok> we could extend merge window to the 7 weeks, while still having testing week
+[07:48:02] <Diadlo> The main features are accessibility and copy link
+[07:48:20] <Diadlo> IDK
+[07:48:21] <zetok> ¯\_(ツ)_/¯
+[07:48:35] <Diadlo> Sometimes we have a lot of changes
+[07:50:57] <Diadlo> You could ask other people
+[07:51:22] <Diadlo> But I think, we should increase release cycle
+[07:51:29] <zetok> :/
+[07:51:34] <Diadlo> Maybe 7:1, maybe 6:2
+[07:51:45] <zetok> I meant keeping 5:1
+[07:52:10] <zetok> but having 6/7 weeks of merges in there
+[07:52:18] <Diadlo> Yes. I understand what you meant
+[07:53:24] <Diadlo> What about release patch?
+[07:53:33] <Diadlo> 1.6.1
+[07:53:37] <zetok> um?
+[07:54:11] <Diadlo> 5 weeks + 1 week == new patch version
+[07:54:53] <zetok> err
+[07:55:25] <zetok> version number that is being bumped depends on what the release contains
+[07:55:42] <zetok> if there's something more in the release than fixes, that's not a patch version
+[07:58:16] <zetok> what do you think about having an rc0 after 5 weeks, and if there are no problems a release based on the rc0 + backported translations
+[07:58:29] <zetok> this won't be that good :s
+[07:58:51] <zetok> Diadlo: it's kinda better when there are more releases more quickly
+[07:59:25] <zetok> Diadlo: the problem is the non-merge window, right?
+[07:59:38] <zetok> s/quickly/often/
+[08:00:33] <Diadlo> rc0 seems good
+[08:01:03] <Diadlo> Why it's not good?
+[08:01:59] <Diadlo> Nevermind. Let's leave current cycle
+[08:03:27] <Diadlo> Also, what you think about revert changes in testing week if they are produce known issues?
+[08:04:00] <Diadlo> If they are not fixed
+[08:05:12] <zetok> yeah
+[08:05:38] <zetok> depends on how bad something is
+[08:05:53] <zetok> and what the change actually does
+[08:05:54] <Diadlo> Off course
+[08:07:53] <Diadlo> I have to go. Goodbye
+[08:15:12] *** Joins: f10 (~flo@ )
+[08:15:21] *** Joins: f10_ (~flo@ )
+[08:44:47] <zetok> cya
+[08:45:24] *** Joins: Diadl0 (~diadlo@ )
+[08:52:41] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 252 seconds)
+[08:58:45] *** Joins: Diadl0 (~diadlo@ )
+[09:02:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[09:02:59] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:09:32] *** Joins: sudden6 (~anonymous@ )
+[09:14:40] <zetok> sudden6: o/
+[09:20:13] <sudden6> zetok: o/
+[09:21:52] <zetok> sudden6: can you get initramfs' GPG key?
+[09:23:39] <sudden6> zetok: nope
+[09:23:50] *** Quits: cisc (~cisc@ ) (Ping timeout: 250 seconds)
+[09:23:55] <zetok> as in, doesn't work?
+[09:24:26] <sudden6> yeah, as in doesn't work, "no data found"
+[09:24:31] <zetok> fug.
+[09:24:42] <zetok> what is this shit
+[09:24:47] <zetok> it doesn't work on my Gentoo
+[09:24:53] <zetok> doesn't work on your opensuse
+[09:25:01] <zetok> but works on my debian 9 vm
+[09:25:09] <zetok> ?!?
+[09:25:18] <zetok> that's not how this is supposed to be
+[09:26:14] *** Joins: cisc (~cisc@ )
+[09:27:57] <sudden6> gpg --version on both systems?
+[09:28:12] <sudden6> gpg (GnuPG) 2.1.16 on mine
+[09:28:28] <zetok> gpg (GnuPG) 2.1.15
+[09:28:28] <zetok> libgcrypt 1.7.3
+[09:28:48] <zetok> ↑ Gentoo
+[09:28:50] <zetok> gpg (GnuPG) 2.1.16
+[09:28:50] <zetok> libgcrypt 1.7.3-beta
+[09:28:54] <zetok> ↑ debian vm
+[09:29:03] <sudden6> hmm
+[09:30:44] <sudden6> zetok: I can find it if I explicitely select sks-keyservers.net
+[09:31:01] <sudden6> but not on the default keys.gnupg.net
+[09:31:19] <zetok> that worked, thanks
+[09:31:45] <sudden6> aren't these servers supposed to sync the keys?
+[09:32:23] <zetok> supposed is the right word
+[09:35:16] <zetok> sudden6: btw, TokTok migration probably won't happen in time for 1.7
+[09:35:23] <zetok> unless you have some time?
+[09:35:31] <sudden6> :(
+[09:35:38] <zetok> I see.
+[09:35:39] <sudden6> I'll see what I can do
+[09:35:47] <sudden6> what's missing?
+[09:35:51] <zetok> sudden6: the problem is with the regression
+[09:36:09] <zetok> sudden6: https://github.com/qTox/qTox/pull/3736#issuecomment-267665213
+[09:37:20] <sudden6> zetok: technically what you're describing there should be impossible...
+[09:37:31] <zetok> "fun" :3
+[09:37:32] <sudden6> do this instructions work to reproduce?
+[09:37:37] <zetok> yep
+[09:37:45] <zetok> that is, I can easily reproduce
+[09:37:50] <sudden6> ok, I'll give it a try this weekend
+[09:37:51] <zetok> but Diadlo couldn't
+[09:38:38] <sudden6> zetok: If you have the time left, you could try using the debugger
+[09:39:22] <zetok> uh
+[09:39:32] <zetok> I cannot really into debugger
+[09:40:29] <sudden6> hmm, ok
+[09:44:03] *** Joins: Yoshimo (~anything@ )
+[10:31:27] *** Joins: oiyaer (68eea947@ )
+[10:38:51] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[10:39:07] *** Joins: Diadl0 (~diadlo@ )
+[10:44:04] <zetok> oiyaer: ok, I figured out how to get font to use size from settings
+[10:45:09] <oiyaer> zetok: please tell :)
+[10:45:23] <zetok> requires restarting qTox though
+[10:45:32] <oiyaer> that's not a problem
+[10:45:38] <oiyaer> (at least not for me)
+[10:45:49] <zetok> well, it's doable to make it not require restart
+[10:46:39] <oiyaer> still better than seeing what I typed only after sending the message :)
+[10:46:41] <zetok> I'll look into resizing without restart later
+[10:47:13] <zetok> oh wait
+[10:47:22] <zetok> :D
+[10:47:28] <zetok> it does work without restart
+[10:47:58] <zetok> changing size doesn't work if there's something already typed in though
+[10:49:19] <zetok> weird, works only sometimes
+[10:49:20] * zetok shrugs
+[10:55:10] -qtox-git-spam- [qTox] zetok opened pull request #3973: feat(UI): make font in message input field use font settings (master...feat-input-font-resize) https://git.io/v17oX
+[10:57:27] <zetok> ↑ should make it into 1.7 that is going to be released on 25 :)
+[10:57:42] <oiyaer> that's awesome news zetok, thank you very much :)
+[10:57:47] <zetok> np
+[11:20:15] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[11:20:42] <oiyaer> going through the buglist, I discovered some security features in qTox missing
+[11:20:44] <oiyaer> e.g. ASLR
+[11:20:46] <oiyaer> https://github.com/qTox/qTox/issues/3452
+[11:21:04] <oiyaer> could that make it to the next release too?
+[11:23:08] *** Joins: cisc (~cisc@ )
+[11:24:49] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 258 seconds)
+[11:27:50] <zetok> no
+[11:28:11] <zetok> ASLR is something that your OS is supposed to provide
+[11:29:57] <zetok> hmm
+[11:31:36] <zetok> weird, I thought that qTox does have at least some of the flags enabled
+[11:32:22] <oiyaer> that's the thing, qTox does not have the flags enabled
+[11:32:31] <oiyaer> also enforcing DEP
+[11:32:43] <oiyaer> kinda the same flags that for example Firefox uses
+[11:33:56] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[11:35:46] <zetok> ok
+[11:35:57] <zetok> I'll look into adding some flags later
+[11:36:21] <zetok> after that, flags that could cause builds to fail due to missing stuff
+[11:36:36] <zetok> latter might not make it into 1.7
+[11:38:21] *** Quits: oiyaer (68eea947@ ) (Quit: Page closed)
+[11:48:04] *** Joins: Diadl0 (~diadlo@ )
+[11:56:55] *** Joins: f10 (~flo@ )
+[12:05:04] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[13:04:41] *** Joins: f10 (~flo@ )
+[13:52:25] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 258 seconds)
+[13:58:45] *** Joins: Bill_MI (~Bill@ )
+[14:13:08] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[14:15:26] *** Joins: LittleVulpix (~Miranda@ )
+[14:18:56] *** Joins: pcre (~quassel@ )
+[14:38:23] *** Parts: robinli (robinli@ ) ("Getting coffee.")
+[14:50:50] *** Joins: cenysor (~cenysor@ )
+[15:06:25] *** Joins: cisc (~cisc@ )
+[15:19:42] *** Joins: abbat (~Anton@ )
+[15:50:00] *** Joins: sudd3n6 (~anonymous@ )
+[15:53:41] *** Quits: cisc (~cisc@ ) (Ping timeout: 248 seconds)
+[15:59:49] *** Joins: cisc (~cisc@ )
+[15:59:50] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[16:02:41] *** Quits: cisc (~cisc@ ) (Client Quit)
+[16:08:43] *** Joins: Diadl0 (~diadlo@ )
+[16:09:22] *** Joins: Yoshimo (~anything@ )
+[16:13:53] *** Joins: cisc (~cisc@ )
+[16:35:05] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 260 seconds)
+[16:35:56] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 240 seconds)
+[16:55:38] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:56:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[17:25:59] *** Joins: Diadl0 (~diadlo@ )
+[17:31:20] *** Quits: pcre (~quassel@ ) (Ping timeout: 246 seconds)
+[17:31:35] *** Joins: pcre (~quassel@ )
+[17:32:36] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[17:39:22] -qtox-git-spam- [qTox] zetok closed pull request #3967: chore(travis): add deployment of git stats to the github pages (master...chore-travis-stats) https://git.io/v1D1U
+[17:49:53] -qtox-git-spam- [qTox] zetok opened pull request #3974: chore(travis): properly indent lists of commands in after_success step (master...chore-trav-gitstat-indent) https://git.io/v17bw
+[17:51:02] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[17:51:18] *** Joins: cisc (~cisc@ )
+[18:14:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:33:18] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 250 seconds)
+[18:39:29] *** Joins: reBrain (~quassel@ )
+[18:39:33] *** Quits: reBrain (~quassel@ ) (Read error: Connection reset by peer)
+[18:44:07] *** Joins: Yoshimo (~anything@ )
+[18:48:46] *** Joins: f10 (~flo@ )
+[19:16:39] <zetok> iphy: https://github.com/qTox/qTox/pull/3971#issuecomment-267781485 ?
+[19:21:46] <iphy> zetok: I don't know
+[19:21:53] <iphy> that's using qmake
+[19:21:55] <iphy> I don't use qmake
+[19:22:03] <zetok> :/
+[19:22:07] <zetok> ok
+[19:22:12] <zetok> I guess that can wait
+[19:24:11] <iphy> https://github.com/TokTok/qTox/blob/master/.travis.yml#L7 works for me :)
+[19:38:37] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[19:39:43] *** Joins: f10 (~flo@ )
+[20:08:43] -qtox-git-spam- [qTox] zetok opened pull request #3975: chore(build): add hardening flags to default qTox builds (master...chore-build-hard) https://git.io/v17jm
+[20:10:45] -qtox-git-spam- [qTox] zetok opened pull request #3976: chore(build): enable ASLR and DEP protection for windows builds (master...chore-build-hard-win) https://git.io/v17jG
+[20:14:08] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[20:54:11] *** Joins: LittleVulpix (~Miranda@ )
+[21:06:04] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:27:32] * zetok wonders why osx is always so broken
+[21:50:31] *** Joins: makk (c81c7e48@ )
+[21:54:31] *** Quits: makk (c81c7e48@ ) (Client Quit)
+[22:09:53] -qtox-git-spam- [qTox] zetok opened pull request #3977: feat(UI): remove unnecessary header on the profile page (master...feat-rm-prof-head) https://git.io/v15Uw
+[22:10:16] *** Joins: vindelschtuffen (~vindelsch@ )
+[22:20:29] -qtox-git-spam- [qTox] zetok opened pull request #3978: feat(UI): add `My` to text labels on Profile page (master...feat-prof-rename-my) https://git.io/v15Tc
+[22:30:15] *** Joins: sudden6 (~anonymous@ )
+[22:45:00] -qtox-git-spam- [qTox] zetok closed pull request #3974: chore(travis): properly indent lists of commands in after_success step (master...chore-trav-gitstat-indent) https://git.io/v17bw
+[22:50:24] <sudden6> zetok: should it matter if it's ffmpegs libavformat?
+[22:50:39] * zetok sighs
+[22:51:18] <zetok> Yes.
+[22:51:52] <zetok> https://qtox.github.io/gitstats/authors.html ← looks a bit ugly, but it should do, right?
+[22:54:35] <sudden6> yeah, maybe we can adapt it with css to the rest of the site
+[22:55:06] <zetok> mm
+[22:58:53] <zetok> sudden6: btw, Diadlo was a bit unsatisfied about current release cycle being short
+[22:59:02] <sudden6> ?
+[22:59:12] <sudden6> he wants it to be longer?
+[22:59:27] <zetok> I think so
+[22:59:39] <sudden6> I wouldn't have any problems with that
+[22:59:54] <sudden6> would give us more time to polish toktok-migration
+[23:00:03] <zetok> hmm
+[23:00:07] <zetok> there's a whole week?
+[23:00:40] <zetok> + the last day on 24th, perfect time to fix last-moment bugs :D
+[23:00:41] <sudden6> yeah, but the week before christmas is alsways busy
+[23:04:41] <sudden6> zetok: about the libavformat thing, I'm not sure, but aren't libav and ffmpeg mostly compatible?
+[23:05:00] <sudden6> I don't think we use anything special not supported in libav
+[23:05:11] <zetok> Pls.
+[23:09:31] <sudden6> zetok: oh I just noticed there's no problem with toktok anymore?
+[23:10:24] <zetok> yeah :|
+[23:10:42] <zetok> yet another time that I forgot about some of qTox features
+[23:36:33] <zetok> sudden6: https://zetok.github.io/2016/12/17/Tox-Considered-Harmful.html ← thought food for why there will be no blog post about the 0.1 release
+[23:37:20] <sudden6> this has something to do with it? I don't think so
+[23:37:40] <zetok> plenty
+[23:38:22] <zetok> it quite well explains why you don't get posts about stuff
+[23:38:49] <sudden6> nah
+[23:39:31] <zetok> ?
