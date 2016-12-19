@@ -1,0 +1,526 @@
+[00:02:34] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[00:04:41] *** Joins: f10 (~flo@ )
+[00:14:32] *** Quits: abbat (~Anton@ ) (Remote host closed the connection)
+[00:37:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[00:38:42] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[00:40:26] *** Joins: DaSpirit (~DaSpirit@ )
+[01:05:55] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[01:11:18] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[01:20:56] *** Joins: cisc (~cisc@ )
+[01:51:54] *** Joins: Lord_Vlad (~Vlad@ )
+[02:14:46] *** Joins: dardevelin (~dardeveli@ )
+[02:39:50] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:59:50] -qtox-git-spam- [qTox] zetok opened pull request #3979: fix(UI): make link in `About` setting page point to all contributors (master...fix-about-link-contri) https://github.com/qTox/qTox/pull/3979
+[03:27:26] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:32:35] *** Joins: do_ (612080d4@ )
+[03:55:50] *** Quits: do_ (612080d4@ ) (Ping timeout: 260 seconds)
+[05:56:29] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:57:07] *** Joins: VVD (~VVD@ )
+[07:35:43] *** Joins: Yoshimo (~anything@ )
+[07:49:32] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[08:16:15] *** Joins: Chiitoo (~Chiitoo@ )
+[08:35:36] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 240 seconds)
+[08:35:37] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[08:35:56] *** Joins: VVD (~VVD@ )
+[08:39:02] *** Joins: Diadl0 (~diadlo@ )
+[09:25:23] *** Joins: Chiitoo (~Chiitoo@ )
+[09:54:09] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 258 seconds)
+[10:00:08] *** Joins: sudden6 (~anonymous@ )
+[10:03:37] *** Joins: Diadl0 (~diadlo@ )
+[10:07:32] *** Parts: Diadl0 (~diadlo@ ) ()
+[10:09:03] *** Joins: Diadl0 (~diadlo@ )
+[10:43:30] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:44:31] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:52:32] *** Joins: cisc (~cisc@ )
+[10:58:29] *** Joins: abbat (~Anton@ )
+[11:05:30] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 265 seconds)
+[11:24:58] *** Quits: tux3 (tux@ ) (Ping timeout: 250 seconds)
+[11:25:25] *** Joins: Diadl0 (~diadlo@ )
+[11:26:55] *** Joins: tux3 (~tux@ )
+[11:45:52] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[11:51:49] *** Joins: LittleVulpix (~Miranda@ )
+[12:18:28] *** Joins: f10 (~flo@ )
+[12:18:34] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:30:37] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[12:39:14] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[12:41:00] *** Joins: f10 (~flo@ )
+[12:46:54] <Diadlo> zetok: Did we plan to merge toktok today?
+[12:54:05] *** Quits: tux3 (~tux@ ) (Changing host)
+[12:54:05] *** Joins: tux3 (~tux@ )
+[12:54:05] *** ChanServ sets mode: +o tux3
+[13:01:31] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[13:15:02] <zetok> Diadlo: if it works :)
+[13:15:17] <zetok> Diadlo: and so far it has been working
+[13:44:11] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[13:44:48] *** Joins: Lord_Vlad (~Vlad@ )
+[13:46:13] *** Quits: Lord_Vlad (~Vlad@ ) (Client Quit)
+[13:46:31] *** Joins: Lord_Vlad (~Vlad@ )
+[13:47:54] *** Quits: Lord_Vlad (~Vlad@ ) (Client Quit)
+[13:48:36] *** Joins: Lord_Vlad (~Vlad@ )
+[13:57:51] <Diadlo> zetok: You are great tester :) Tell me. Does it work?
+[14:02:18] <zetok> so far I haven't found any problems
+[14:21:27] <cisc> on https://github.com/qTox/qTox/pull/3977 I think the header is too large and the icon of the 2 people is cheezy, but for new users and the less-tech savy that 'profile' dialoge should still have some sort of header aside from what is already displayed on the titlebar
+[14:21:52] <cisc> meaning, name it at least something
+[14:22:14] <cisc> how about "Profile"
+[14:27:25] <zetok> hmm
+[14:28:31] <cisc> you also have "add friends" "groups" and "transferred files", those have headers too, the one for settings doesn't at the top but does say "general settings" when on the first default tab
+[14:31:52] <cisc> you could match the header and font size of the  "add friends" etc.., name it "profile", so it's more uniform
+[14:35:12] <cisc> ive just seen new users lost in qtox and not all of them are going te be reading the title bar, not all of them know to click on their name to access the profile page, and once there they may have no clue what it is
+[14:38:20] <cisc> other suggestion, clicking on profile name opens up its own tab which is also accesible via clicking on gear icon. but I'm not sure I like that one or not
+[14:47:21] -qtox-git-spam- [qTox] zetok closed pull request #3978: feat(UI): add `My` to text labels on Profile page (master...feat-prof-rename-my) https://git.io/v15Tc
+[14:56:03] <zetok> opinions on a "link" from top right corner of general settings to the profile page?
+[15:02:58] <Diadlo> zetok: If I want to improve your #3977, should I push -f again?
+[15:03:26] <zetok> um
+[15:03:31] <Diadlo> It's about removing `head`
+[15:03:59] <Diadlo> Or add another commit? Or what?
+[15:04:22] <zetok> I usually don't have the checkbox enabled on PRs that I don't want to be touched
+[15:04:55] <Diadlo> If you want, I can open second PR
+[15:05:07] <zetok> Diadlo: what's the change compared to "original" ?
+[15:05:54] <zetok> Diadlo: the change might be obsolete now
+[15:06:06] <zetok> since `head` is going to stay :|
+[15:06:21] <zetok> >I usually don't have the checkbox enabled on PRs that I don't want to be touched
+[15:06:30] <Diadlo> zetok:  https://gist.github.com/Diadlo/070e1392f2e99f578b5e96dcf9e4004a
+[15:06:33] <zetok> regarding that, if you can push to the branch, feel free to do so
+[15:06:41] <Diadlo> Ok
+[15:08:07] <zetok> in this case I don't think that we should remove "header" completely
+[15:08:37] <zetok> >/home/travis/build/qTox/qTox/src/persistence/profile.cpp:170: warning: Example If was already documented. Ignoring documentation found here.
+[15:08:56] <zetok> Diadlo: ↑ what one is supposed to do with `@example` docs like that?
+[15:09:31] <zetok> i.e. it seems wrong to have that in `@example` ?
+[15:10:20] <Diadlo> 1) I can't push into your branch
+[15:10:55] <Diadlo> 2)  in this case I don't think that we should remove "header" completely   <-- Sorry, in what case?
+[15:11:19] <zetok> >(…)  for new users and the less-tech savy that 'profile' dialoge should still have some sort of header aside from what is already displayed on the titlebar
+[15:11:53] <zetok> now that I think about it, this probably should be added as a comment
+[15:12:06] <Diadlo> Ok
+[15:18:34] -qtox-git-spam- [qTox] Diadlo opened pull request #3981: docs(profile): Removed @example tag from createProfile method (master...removeExampleDoxygen) https://git.io/v15PQ
+[15:23:24] *** Joins: cenysor (~cenysor@ )
+[15:23:43] *** Joins: abbat (~Anton@ )
+[15:34:05] -qtox-git-spam- [qTox] zetok opened pull request #3982: fix: add missing Q_OBJECT macro to the PasswordEdit class (master...fix-missing-qobject) https://git.io/v15XP
+[15:35:15] -qtox-git-spam- [qTox] zetok closed pull request #3979: fix(UI): make link in `About` setting page point to all contributors (master...fix-about-link-contri) https://git.io/v15ZJ
+[15:35:44] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[15:37:28] *** Joins: f10 (~flo@ )
+[15:44:46] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:44:52] *** Joins: f10 (~flo@ )
+[16:31:33] <zetok> Diadlo: https://github.com/qTox/qTox/pull/3973 ?
+[16:55:00] <Diadlo> zetok: Are you sure, that it fix anything?
+[16:55:37] <sudden6> Diadlo, zetok o/
+[16:55:55] <Diadlo> sudden6: Hi :)
+[16:56:01] <zetok> Diadlo: it sets the font size to the same as font of received messages
+[16:56:22] <zetok> Diadlo: someone with 4k display said that they can read received/sent messages, but not the message input field
+[16:56:25] <Diadlo> Yes. But why they should be different?
+[16:56:33] <Diadlo> Ok
+[16:56:42] <zetok> >But why they should be different?
+[16:56:46] <zetok> they are different now
+[16:56:55] <zetok> the PR changes that
+[16:57:08] <Diadlo> lgtm
+[17:07:38] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v159z
+[17:07:38] -qtox-git-spam- qTox/master c14cbdf Zetok Zalbavar: feat(UI): make font in message input field use font settings...
+[17:09:29] <zetok> https://github.com/qTox/qTox/pull/3975 ?
+[17:10:32] <Diadlo> zetok: What flag specify qTox use ASLR?
+[17:10:41] <zetok> -fPIE
+[17:11:49] <zetok> other are just general hardening
+[17:12:26] <zetok> about -fstack-protector-all, it can slow down some things by ~20%
+[17:12:30] <zetok> (up to)
+[17:12:48] <Diadlo> Meh..
+[17:12:55] <zetok> well
+[17:13:19] <zetok> there is `-fstack-protector-strong` that doesn't have that kind of impact on performance
+[17:13:33] <zetok> https://github.com/qTox/qTox/pull/3856 :|
+[17:13:49] <Diadlo> No, better leave `all`
+[17:14:25] <Diadlo> Oh, yes, I remember
+[17:19:36] <Diadlo> https://github.com/qTox/qTox/pull/3981 Can you :lgtm_strong: ?)
+[17:23:07] <zetok> Diadlo: file disappeared
+[17:23:49] <zetok> rebase gone wrong
+[17:24:04] <zetok> Diadlo: if you want, I'll push correctly rebased file
+[17:24:14] <Diadlo> Ok
+[17:25:48] <zetok> ok, done
+[17:25:53] <Diadlo> Thanks
+[17:27:10] <Diadlo> zetok: I think antis81 and initramfs will not come today. So I will remove them from assignees. Ok?
+[17:27:15] <Diadlo> (about toktok migration)
+[17:27:30] <zetok> Diadlo: I'll asked initramfs whether he could comment
+[17:27:35] <Diadlo> Ok
+[17:28:01] <zetok> > if you have time, it would be good if you could look at https://github.com/qTox/qTox/pull/3736 , but if you don't have time just write that there and unassign yourself
+[17:28:19] <zetok> s/ll/ve/
+[17:29:30] <Diadlo> Are you sure, that you write it in correct place?)
+[17:30:02] <zetok> just copypasted what I've written 1.5h ago :)
+[17:30:17] <Diadlo> :/
+[17:33:59] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:36:12] <zetok> iphy: what is the license of the git-sync script?
+[17:36:49] * zetok wonders if it's included in some TokTok repo
+[17:37:29] <iphy> https://github.com/TokTok/toktok-stack/blob/master/tools/git-sync
+[17:39:11] <zetok> >[17:38:26] Amit Agnani: I'll be on in a few hours
+[17:39:13] <zetok> Diadlo: ↑
+[17:39:27] <Diadlo> zetok: Ok. Thanks
+[17:39:31] <zetok> Diadlo: if you don't use yet, you might want to start using git-sync for rebasing
+[17:39:45] <zetok> iphy: thanks
+[17:40:16] <Diadlo> What the difference with rebase?
+[17:40:52] <zetok> it allows for automation
+[17:40:58] <Diadlo> Ok. I will try
+[17:41:32] <zetok> Diadlo: https://gist.github.com/zetok/a054f6214439681969331f1cbf29c401 ← I use this to rebase all of my qTox PRs
+[17:41:52] <zetok> It's wonderful how 10+ PRs clogs up travis. :3
+[17:42:12] <Diadlo> Time to add it in crontab :)
+[17:42:17] <iphy> that's exactly why I don't rebase all my PRs at the same time
+[17:44:27] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v15HQ
+[17:44:27] -qtox-git-spam- qTox/master 32bbdb2 Diadlo: docs(profile): Removed @example tag from createProfile method
+[17:55:41] *** Quits: abbat (~Anton@ ) (Quit: Leaving)
+[17:56:00] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 258 seconds)
+[18:09:38] -qtox-git-spam- [qTox] zetok closed pull request #3975: chore(build): add hardening flags to default qTox builds (master...chore-build-hard) https://git.io/v17jm
+[18:13:57] -qtox-git-spam- [qTox] zetok closed pull request #3856: chore(build): compile with -fstack-protector-strong by default (master...chore-pro-stack) https://git.io/vX8xm
+[18:23:26] *** Joins: f10 (~flo@ )
+[18:25:30] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:27:37] -qtox-git-spam- [qTox] zetok closed pull request #3982: fix: add missing Q_OBJECT macro to the PasswordEdit class (master...fix-missing-qobject) https://git.io/v15XP
+[18:29:19] <Diadlo> zetok: Can you apply this patch https://gist.github.com/Diadlo/8319d1b248e70d2fddfc256f10a0a63e to this PR https://github.com/qTox/qTox/pull/3937 ?
+[18:30:39] <Diadlo> And you, probably, could close https://github.com/qTox/qTox/pull/3938
+[18:32:07] <zetok> hmm
+[18:35:54] <zetok> Diadlo: this patch doesn't make sense
+[18:37:17] <zetok> or maybe I'm just not getting something
+[18:38:44] <zetok> yeah, it doesn't make sense
+[18:44:08] <zetok> >ui->statusLabel->setToolTip(status);
+[18:44:14] <zetok> this probably should be statusMessage
+[18:44:35] <zetok> .toHtmlEscaped() I guess
+[18:46:01] <Diadlo> zetok: https://gist.github.com/Diadlo/8319d1b248e70d2fddfc256f10a0a63e#file-gistfile1-txt-L9
+[18:46:30] <zetok> Diadlo: um, it's probably better to open a PR
+[18:47:47] <zetok> Diadlo: regardless, that code introduces a regression
+[18:47:53] <Diadlo> Hm?
+[18:48:15] <zetok> tooltip should be set before the label content
+[18:48:23] <Diadlo> Why?
+[18:48:28] * zetok shrugs
+[18:48:54] <Diadlo> Here is no difference
+[18:49:04] <zetok> ok, use a longer message
+[18:49:23] <zetok> e.g. a few lines from IRC
+[18:50:02] <Diadlo> And what?
+[18:50:10] <zetok> not whole tooltip is shown
+[18:50:32] <Diadlo> Only first line
+[18:50:33] <Diadlo> Yes
+[18:50:43] <zetok> Yes, that's a regression.
+[18:50:49] <Diadlo> Hm...
+[18:50:51] <Diadlo> Ok
+[18:50:53] <Diadlo> Sorry
+[18:51:12] <Diadlo> I mixed them
+[18:51:26] <Diadlo> AFK 
+[19:04:44] *** Quits: Lord_Vlad (~Vlad@ ) (Ping timeout: 250 seconds)
+[19:05:10] *** Joins: Lord_Vlad (~Vlad@ )
+[19:11:04] *** Quits: Lord_Vlad (~Vlad@ ) (Quit: Konversation terminated!)
+[19:12:06] *** Joins: LordVlad (~Vlad@ )
+[19:26:43] *** Joins: initramfs (~initramfs@ )
+[19:39:04] *** Joins: f10 (~flo@ )
+[19:48:54] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:01:44] *** Joins: f10 (~flo@ )
+[20:05:16] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:05:57] *** Joins: f10 (~flo@ )
+[20:43:37] <Diadlo> No. Seems it provides some regression. So IDK how to make it works
+[20:43:40] <Diadlo> zetok: ^
+[20:48:56] -qtox-git-spam- [qTox] Diadlo opened pull request #3983: refactor(widget): Small refactoring (master...widgetRefactoring) https://git.io/v15hv
+[20:56:27] <zetok> me wonders what to do with https://github.com/qTox/qTox/pull/3977
+[20:56:48] <zetok> s,me,/me,
+[20:57:34] <Diadlo> IDK. Settings hasn't panel with title
+[21:02:47] *** Joins: Karpo (~Karpo@ )
+[21:04:36] <Karpo> does possible to send files in group?
+[21:04:46] <zetok> nope
+[21:05:07] <zetok> toxcore doesn't support yet that
+[21:05:13] <initramfs> Diadlo: I've reviewed the TokTok migration PR btw
+[21:05:57] <zetok> Karpo: once toxcore will support that, qTox should have it :)
+[21:06:51] <Diadlo> initramfs: It's old style. I didn't change it
+[21:06:56] <Diadlo> About _core
+[21:07:11] * zetok wonders about stylf
+[21:07:13] <zetok> style*
+[21:07:13] <initramfs> Well, yes
+[21:07:16] <initramfs> But this is not style
+[21:07:20] <initramfs> This is correctness
+[21:07:43] <zetok> wasn't it more correct to have pointer next to the value, rather than type?
+[21:07:45] * zetok ducks
+[21:08:08] <initramfs> That's a style question, and neither is more correct (with regard to the standard)
+[21:08:36] <Diadlo> core_ will be good?
+[21:08:37] <initramfs> But "_core", "_message" and so forth is against the C++ identifier restrictions
+[21:08:50] <Diadlo> Or void_core?
+[21:09:11] <initramfs> Well
+[21:09:28] <initramfs> I would argue it should be named after what it represents
+[21:09:54] <Diadlo> It's core pointer, but as (void*)
+[21:10:01] <initramfs> I know
+[21:10:10] <initramfs> so what's wrong with the name core?
+[21:10:30] <Diadlo> Becouse it's name fore `Core*`
+[21:10:33] <Diadlo> After cast
+[21:10:46] <Diadlo> *a
+[21:13:46] <Diadlo> initramfs: So what?
+[21:14:11] <initramfs> Ehh
+[21:14:30] <initramfs> I'm not saying my naming scheme is much better
+[21:15:07] <Diadlo> And what you suggest?
+[21:15:11] <initramfs> But I'd probably name it something like "core" and "corePtr" or "toxPayload" and "core" (for the void* and the casted pointer respectively)
+[21:16:02] <initramfs> Since the former need not be a core pointer, it merely is a core pointer because that was what was passed. In reality it's a context/payload/user pointer passed to toxcore that could be any arbitary thing
+[21:16:17] <oranges> you should use polish notation
+[21:18:06] <initramfs> ?
+[21:18:19] <Diadlo> oranges: AFAIK, it's algebra notation?
+[21:18:32] <initramfs> Do you mean Hungarian notation?
+[21:19:28] <Diadlo> If Hungarian then `void* vCore`. Right?
+[21:19:36] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:20:26] <initramfs> Ehh, that could work...
+[21:20:51] <Diadlo> Or `vpCore`?
+[21:20:51] <initramfs> And this is why I don't like dealing with C interfaces in C++, makes everything seem so unclean
+[21:21:29] <initramfs> Either seems fine, you can go even further with vPtrCore, but "vCore" seems sufficient
+[21:21:51] <Diadlo> Ok
+[21:21:57] <sudden6> in hungarian notation it would be pvCore if I read wikipedia right :)
+[21:22:01] <initramfs> It's not exactly too hard to decipher what is meant by that when the cast to the correctly-typed core object immediately follows
+[21:27:46] <initramfs> I can already imagine the nightmare it will be when 1.7 is released
+[21:27:53] <initramfs> For package maintainers
+[21:28:07] <initramfs> AFAIK not many distributions ship TokTok/toxcore
+[21:29:10] <zetok> fu fu.
+[21:29:22] * zetok pulls out his list of maintainers to ping
+[21:29:33] <sudden6> is there anybody else than abbat maintaining pkgs?
+[21:29:54] <initramfs> Well there is Gentoo and Arch
+[21:29:59] <zetok> sudden6: plenty
+[21:30:15] <zetok> some people aren't on my list (the ones that I haven't talked to)
+[21:30:46] <zetok> e.g. the guy who packages qTox for Void Linux
+[21:31:12] <sudden6> we have to definitely put a big message into the changelog and the release commit about the switch
+[21:31:30] <zetok> since I haven't talked to him yet, Void package is quite lacking
+[21:31:54] <Diadlo> initramfs: About uint8_t array to std::vector. Can I just add TODO? It's out of the scope of migration
+[21:32:01] <sudden6> zetok: maybe make a ML post prewarning people?
+[21:32:04] <initramfs> Yeah that's fine
+[21:32:24] <zetok> sudden6: yeah
+[21:32:33] <zetok> sudden6: blog post, changelog, ML
+[21:32:42] <sudden6> mhm
+[21:32:51] <sudden6> you mean a blogpost now?
+[21:33:04] <zetok> ~kinda
+[21:33:24] <zetok> we could start writing blog post ~now, with a release date on 25th
+[21:33:54] <sudden6> would be an idea
+[21:34:03] <sudden6> so release date is back to 25th?
+[21:34:05] <initramfs> Diadlo, sudden6: Also, I would like to apologize about my recent absence, I was swarmed with work and I failed to inform the rest of you guys.
+[21:34:11] <zetok> sudden6: "back" ?
+[21:34:31] <sudden6> yesterday we talked about postponing it 7 days
+[21:34:47] <sudden6> or was I misunderstanding you?
+[21:34:48] <Diadlo> initramfs: No problem :)
+[21:35:01] <sudden6> initramfs: no problem, happens to all of us sometimes :)
+[21:35:38] <Diadlo> initramfs: About qCritical() << "Fail send";
+[21:36:02] <zetok> sudden6: "SOMEBODY HAD TO PUT ALL OF THIS CONFUSION HERE!"
+[21:36:03] <Diadlo> What I should write, when error == TOX_ERR_CONFERENCE_INVITE_FAIL_SEND ?)
+[21:36:10] <zetok> :D
+[21:36:44] <zetok> sudden6: http://www.principiadiscordia.com/book/15.php ← sauce :D
+[21:37:22] <initramfs> "Conference invite failed to send"?
+[21:37:29] <Diadlo> Ok
+[21:37:36] <initramfs> I mean, if you think about this from a debugging perspective
+[21:37:41] *** Quits: LordVlad (~Vlad@ ) (Remote host closed the connection)
+[21:37:53] <initramfs> How helpful is a "Fail send" log message upon first glacne
+[21:38:03] <initramfs> s/glacne/glance/
+[21:38:11] <sudden6> zetok: wtf did I just read?
+[21:38:27] <zetok> the best stuff there is :3
+[21:38:44] <zetok> if you read carefully enough, everything starts to make sense :3
+[21:39:22] <sudden6> zetok: I think it would be best to send out a mail about qTox migrating to c-toxcore today/tomorrow, maybe it helps packagers
+[21:41:03] <zetok> sudden6: sure
+[21:41:13] <zetok> sudden6: mind sending it?
+[21:41:21] <sudden6> I'll do it
+[21:41:26] <zetok> thanks :)
+[21:42:47] <initramfs> Just my opinion: Everything I seem qtox code I get this irresistable urge to rewrite everything from scratch lol
+[21:43:27] <zetok> :D
+[21:43:30] <initramfs> My IDE is showing me about ~200 warnings or so just in the core.cpp class
+[21:43:41] <sudden6> initramfs: you're not alone with that, but that would take time and ressources we don't have^^
+[21:43:47] <initramfs> Yeah I know
+[21:44:05] <Diadlo> initramfs: PR fixed
+[21:44:38] <sudden6> initramfs: also, antis81 is starting a project to write the qTox UI in QML, so maybe if we can get the base fixed it'll help everybody
+[21:45:02] <initramfs> Lol I knew he would eventually do it
+[21:45:52] <initramfs> And yes, that would be a good thing
+[21:46:16] <initramfs> If qTox thought me anything it's that don't write a rapidly evolving UI in (pure) C++
+[21:46:40] <zetok> >.<
+[21:46:45] <initramfs> It's just a massive maintaince nightmare
+[21:47:04] <zetok> initramfs: https://github.com/qTox/qTox/milestone/11 ← is this still a thing?
+[21:47:14] <initramfs> Yep
+[21:47:18] <initramfs> Been working on that
+[21:47:21] <zetok> initramfs: if so, could you set target date on today+month?
+[21:47:31] <initramfs> Hmm
+[21:47:32] <initramfs> Okay
+[21:47:34] <zetok> (same goes for code formatting)
+[21:47:36] <zetok> thanks
+[21:47:42] <initramfs> Regarding code formatting
+[21:47:53] <initramfs> I might end up having it be based of the CMake migration
+[21:47:54] <zetok> initramfs: btw, I think that it would be more beneficial to use weblate after all
+[21:48:03] <initramfs> Lol
+[21:48:21] <zetok> initramfs: i.e. getting stuff in smaller chunks, but actually getting them
+[21:48:28] <initramfs> Right
+[21:48:35] <initramfs> Uhh
+[21:48:38] <initramfs> I've already begun doing it in a PR
+[21:48:42] <zetok> right
+[21:48:55] <zetok> with PRs there's a problem of getting conflicts
+[21:49:02] <initramfs> Oh yeah I know
+[21:49:09] <initramfs> I rebase quite often
+[21:49:19] <initramfs> I won't submit it if it has conflicts
+[21:49:45] <initramfs> Diadlo: You missed a "_message" variable
+[21:49:51] <zetok> I just think that it would be easier to do via weblate
+[21:50:05] <zetok> initramfs: i.e. send right ~now what you have, and then continue via weblate
+[21:50:28] <sudden6> should I add the release date of 25th to the mail?
+[21:50:49] <zetok> sudden6: why not
+[21:51:31] <initramfs> zetok: Maybe, because I'm corresponding with a friend (and they have no idea how to 'computer') and we're kinda making sure translations are correct
+[21:51:52] <initramfs> So it's beneficial for us to have the translation live-previewed
+[21:52:02] <initramfs> i.e. I can simply recompile and show them the changes
+[21:52:08] <zetok> initramfs: ok
+[21:52:21] <initramfs> I mean
+[21:52:34] <Diadlo> initramfs: Done
+[21:53:35] <initramfs> Unrelated but, is there a reason the minimum CMake version is 2.8.11?
+[21:53:43] <zetok> initramfs: I was just getting worried that you'd have a ton of conflicts when rebasing :)
+[21:54:03] *** Joins: sudd3n6 (~anonymous@ )
+[21:54:22] <initramfs> Yeah no, and even if I did, I'll deal with it
+[21:54:31] <zetok> ok
+[21:55:20] <initramfs> Diadlo: You ignored my comment on prefering {} over QString(), any reason? Or do you just not believe that's a concern?
+[21:55:42] <sudden6> email is out :)
+[21:55:47] <Diadlo> I replace it to QString{}
+[21:56:03] <Diadlo> It's not the same?
+[21:56:08] <Diadlo> With {}
+[21:56:37] <initramfs> Ah my bad
+[21:56:46] <initramfs> Good ol' Reviewable screwing me again
+[21:57:18] <zetok> you might want to turn file matrix on
+[21:57:28] <zetok> to make sure that you're looking at the latest revision
+[21:57:44] <initramfs> Yeah I have it on
+[21:57:58] <initramfs> Weird caching issue I guess?
+[21:58:04] <initramfs> Force refresh updated it
+[21:58:17] <zetok> hmm
+[21:58:21] <zetok> weird
+[21:58:25] <zetok> you could make an issue
+[21:59:35] <zetok> >refactor: Small fixes 
+[21:59:50] <Diadlo> zetok: What?)
+[22:00:48] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:00:51] <zetok> Diadlo: perhaps rename it to `refactor: rename args to conform to C++11 § 17.6.4.3.2` ? :D
+[22:01:08] <Diadlo> There some other fixes
+[22:01:17] <Diadlo> Typo, brackets
+[22:01:23] <zetok> right
+[22:01:31] <zetok> they can be mentioned in commit message below
+[22:01:36] <Diadlo> Ok
+[22:02:02] <initramfs> Diadlo: You still have a "_title" variable lol
+[22:03:03] <initramfs> I also added one more comment
+[22:04:52] <sudden6> going to sleep now, see you all tomorrow :)
+[22:05:07] <Diadlo> sudden6: Good night
+[22:05:49] <initramfs> Good night
+[22:09:02] <Diadlo> initramfs: Done
+[22:12:19] <initramfs> I don't get this CString class
+[22:12:25] <initramfs> What exactly is it's purpose
+[22:12:44] <zetok> :D
+[22:14:38] <zetok> initramfs: https://github.com/qTox/qtox-irc-logs/blob/52130115932f8b91229a3adb4fb4a12f90c949eb/2016/09/%23qtox_20160924.log.txt#L32,L36
+[22:15:10] <initramfs> Well
+[22:15:28] <initramfs> It's a weirdly written class that should really be a utility class at best
+[22:16:27] <initramfs> A lot of code in core.cpp seem to construct a CStrting from a const char* then promptly convert to a QString. when QString has a constructor that takes a const char* directly
+[22:18:29] *** Quits: Karpo (~Karpo@ ) (Quit: Leaving)
+[22:23:41] <initramfs> Diadlo: One more tiny comment
+[22:25:39] <Diadlo> What the problem with inconsistent variable names?
+[22:26:38] <initramfs> They're... inconsistent?
+[22:27:26] <initramfs> Well, okay. I mean code style is something that's holy to me so it's a grave offense if I ever did that. But then functionally it doesn't really matter... so your call
+[22:27:46] <initramfs> If you don't want to fix it I'll just lgtm now
+[22:28:26] <Diadlo> I just think, that it's more variable more unclear
+[22:28:31] <initramfs> Though I have to warn I haven't tested the PR mostly because I can't get my environment to recognize TokTok's toxcore atm (I'll get it sorted in these few days)
+[22:28:35] <Diadlo> Outsize
+[22:29:44] <zetok> initramfs: hold it
+[22:29:58] <initramfs> Hold it?
+[22:29:59] <zetok> initramfs: https://github.com/gentoo/gentoo/pull/3117
+[22:30:23] <zetok> initramfs: if you want, I'll add those ebuilds to my overlay (or add them to your local overlay)
+[22:30:37] <initramfs> Oh forgot to mention, switched back to Arch
+[22:30:44] <zetok> :|
+[22:30:46] <initramfs> Gentoo was just giving me too much trouble
+[22:30:49] <initramfs> I mean
+[22:30:49] <zetok> welp.
+[22:30:58] <initramfs> When you run emerge 3 times in a row
+[22:31:03] <initramfs> And it gives different output each time
+[22:31:06] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:31:07] <initramfs> Something is really wrong
+[22:31:12] <Diadlo> initramfs: c-toxcore exists in aur
+[22:31:16] <zetok> erm
+[22:31:38] <zetok> initramfs: "different output" ?
+[22:31:58] <initramfs> So I run emerge with a given set of flags
+[22:32:07] <initramfs> It tells me about x and y conflicting
+[22:32:09] *** Joins: cisc (~cisc@ )
+[22:32:13] <initramfs> I abort, run it again
+[22:32:17] <initramfs> Suddenly, no conflict
+[22:32:43] <zetok> hmm
+[22:32:49] <initramfs> Not just once
+[22:32:54] <zetok> that's weird
+[22:32:54] <initramfs> That happens quite often
+[22:33:06] <zetok> something like that didn't happen for me even once
+[22:33:08] <initramfs> And it's giving me senseless conflicts
+[22:33:16] <initramfs> I don't remember the specifics now
+[22:33:29] <zetok> >senseless conflicts
+[22:33:34] <zetok> they're usually not
+[22:33:43] <initramfs> I know
+[22:33:48] <initramfs> Most cases they're not
+[22:34:27] <initramfs> But I run it with --verbose-conflicts and a backtrace of 100 and it gives me nothing
+[22:35:07] <zetok> if it works with `--backtrace=666` there's no problem :)
+[22:35:21] <initramfs> Lol
+[22:35:28] <initramfs> Ain't nobody got time for that
+[22:35:40] <zetok> if you say so :)
+[22:36:03] <initramfs> I mean, there were too many packages that were badly maintained
+[22:36:20] <initramfs> I had to write a dozen patches myself to get things working
+[22:36:26] <zetok> ouch
+[22:36:30] <initramfs> Granted, I was running a mostly weird setup
+[22:36:34] <initramfs> Mostly due to hardware issues
+[22:37:22] <initramfs> The nividia drivers for example, the 370+ series ebuild was still configured to apply a 367 patch
+[22:37:27] <initramfs> Which would fail
+[22:37:54] <initramfs> And that problem (from the bug tracker) seem to have persisted for months
+[22:38:08] <zetok> > nvidia
+[22:38:24] <zetok> I was getting some random, weird crashes with nvidia GPU
+[22:38:34] <zetok> (in qTox)
+[22:38:39] <initramfs> Huh
+[22:38:43] <initramfs> Interesting
+[22:38:45] <zetok> moved to amd, problems magically disappeared
+[22:38:49] <initramfs> Lol
+[22:39:02] <initramfs> Well, nvidia has a history of bad drivers
+[22:40:10] <initramfs> Sadly my hardware is too new for mesa/nouveau to provide acceptable performance (it was something like 3 ~ 4x slower than the nvidia provided ones)
+[22:41:52] <zetok> that's not very bad
+[22:42:06] <initramfs> I know
+[22:42:14] <initramfs> But not acceptable for the things I need it for
+[22:42:20] <zetok> I see
+[22:42:31] <initramfs> Occasionally do some graphic programming
+[22:42:40] <initramfs> 5 fps is not fun
+[22:42:51] <zetok> >.<
+[22:43:08] <zetok> Diadlo: consistency?
+[22:44:49] * zetok wants to start testing CMake PR
+[22:45:07] <Diadlo> zetok: What?
+[22:46:10] <zetok> Diadlo: um, what with the consistency changes?
+[22:46:56] <Diadlo> It will hard :/
+[22:47:31] <zetok> I haven't looked at the code
+[22:47:45] <zetok> but it looks like something that can be done with ~sed ?
+[22:48:57] <initramfs> Umm
+[22:49:11] <Diadlo> I'm not sure. I should found method with `vCore` in cpp file, and change `s/core/vCore/` in .h file
+[22:49:16] <initramfs> I read about a PR to make the call icons vector
+[22:49:30] <initramfs> Was that merged already?
+[22:50:00] <zetok> initramfs: no, Diadlo proposed making that PR?
+[22:50:06] <initramfs> Huh
+[22:50:11] <zetok> (from what I understood)
+[22:50:14] <initramfs> My icons are messed up
+[22:50:23] <zetok> oh wait
+[22:50:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[22:50:28] <initramfs> And during a call the icons don't turn red
+[22:50:37] <zetok> vector, as in, svg
+[22:50:40] <initramfs> Yeah
+[22:50:53] <zetok> no, it's not merged yet
+[22:50:59] <zetok> initramfs: https://github.com/qTox/qTox/pull/3935
+[22:52:17] <initramfs> Huh
+[22:55:16] <initramfs> http://imgur.com/PiZWtxd
+[22:55:25] <initramfs> So... something broke it...
+[22:56:32] <zetok> hmm
+[22:57:26] <initramfs> Diadlo: I've lgtm'd your PR
+[22:58:04] <initramfs> I have also checked basic tox functionality still works (I finally got my build tools to link correctly)
+[22:58:43] <zetok> so, the file that needs adjusting to current naming is core.h ?
+[22:59:00] <initramfs> Well
+[22:59:04] <initramfs> It's not essential
+[22:59:13] <zetok> just asking
+[22:59:23] <zetok> Diadlo: if it's hard for you, I don't mind doing that
+[22:59:34] <initramfs> I'll probably do a few refactoring sweeps after 1.7
+[22:59:38] <zetok> so that migration PR could be merged already
+[22:59:48] <zetok> initramfs: oh, I plan to get that one in before 1.7 :P
+[23:00:12] <initramfs> Well yeah, I'm saying the migration PR can be merged without these fixes
+[23:00:19] <initramfs> As they don't affect functionality at all
+[23:00:32] <initramfs> They're pretty minor in terms of style as well
+[23:00:35] <zetok> on the other hand, https://github.com/qTox/qTox/pull/3977 is not going to make it into 1.7, since opinions
+[23:01:32] <initramfs> I say get rid of the header
+[23:01:43] <initramfs> Since it matches the settings tabs more
+[23:02:04] <initramfs> And, I think this was brought up before, but user profile should be accessible from settings
+[23:02:17] <initramfs> Once the header is stripped, they'll integrate better
+[23:02:22] <zetok> ><zetok> opinions on a "link" from top right corner of general settings to the profile page?
+[23:02:59] <initramfs> Ehh, I don't care too much about that
+[23:03:14] <initramfs> It's just too many times I had to tell my friends that clicking their name opens up the user profile
+[23:03:20] <initramfs> It's just not intuitive
+[23:03:34] <initramfs> It took me a while to figure that out initially as well
+[23:03:44] <zetok> right
+[23:10:00] <zetok> some graphical effect when hovering over avatar/name could help with that
+[23:12:59] <initramfs> Sure, though I still argue it needs to be reachable from settings somehow
+[23:13:06] <initramfs> Since that's the first place I looked
+[23:13:14] <initramfs> And the first place my friends looked too
+[23:13:46] <zetok> Diadlo: ping?
+[23:13:59] <zetok> Diadlo: if you don't mind, I'll push migration PR on master
+[23:16:58] <Diadlo> Of course
+[23:17:52] -qtox-git-spam- [qTox] zetok closed pull request #3736: Toktok migration (master...toktokMigration) https://git.io/vidPg
+[23:19:27] <Diadlo> Thanks. Good night everyone
+[23:19:44] <initramfs> Good night
+[23:44:16] -qtox-git-spam- [qTox] zetok opened pull request #3984: style: adjust function arg names in header to changes in core.cpp (master...style-core-name) https://git.io/v1dtd
+[23:44:22] <zetok> initramfs: ↑ that's it I think, or was there something else?
