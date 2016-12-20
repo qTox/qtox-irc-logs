@@ -1,0 +1,230 @@
+[00:15:30] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[00:22:58] <initramfs> zetok: For onGroupTitleChange() the title variable is also named differently
+[00:25:09] <zetok> initramfs: done
+[00:28:08] <initramfs> zetok: lgtm
+[00:53:27] <iphy> so
+[00:53:36] <iphy> who removed all the "src/" from the headers?
+[00:53:40] <iphy> includes
+[00:57:03] <iphy> Diadlo
+[00:57:53] <iphy> initramfs: you approved
+[00:58:02] <iphy> so, what is the reason for that change?
+[00:58:17] <iphy> apparently lots of people liked it
+[00:58:23] <iphy> sudd3n6: why do you like this change?
+[01:00:13] <iphy> I guess we're against checkable coding styles?
+[01:02:34] <initramfs> iphy: Ehh, I approved only because most people wanted it? It's project-level includes are still matchable via quote mark includes (i.e. #include "")
+[01:02:48] <iphy> yeah, except they are not
+[01:02:55] <initramfs> I personally didn't like it due to precisely the reason you specified
+[01:02:57] <iphy> because you can just #include <local/include.h>
+[01:03:03] <iphy> which you indeed do
+[01:03:29] <initramfs> Yeah I know
+[01:03:32] <iphy> and you have nothing in place to check this
+[01:03:40] <iphy> you also still have some #include <src/...>
+[01:05:36] <initramfs> Well, again. I didn't really approve, I just didn't want to cause a big fuss. I mean I was sruggling to explain to people in my coding guideline the importance of include sorting
+[01:06:11] <initramfs> Spending even more time explaining how having the src/... infront is better for style checking was really something I didn't want to do
+[01:06:14] <oranges> if you don't shout
+[01:06:18] <oranges> noone will hear you
+[01:06:25] *** Joins: vindelschtuffen (~vindelsch@ )
+[01:06:35] <initramfs> Well, unfornuately I don't like shouting
+[01:06:45] -qtox-git-spam- [qTox] zetok opened pull request #3985: style: `sort(1)` headers and sources in qtox.pro (master...style-sort-inc) https://git.io/v1d3J
+[01:07:59] <zetok> initramfs: thing is, the sorting rules in style guidelines were overcomplicated
+[01:08:14] <zetok> having `src/` before qTox includes is not
+[01:08:25] <initramfs> Okay, I'll admit initially there were too many categories
+[01:09:41] <initramfs> There are 5 now, and 2 of them aren't exactly categories
+[01:10:00] <initramfs> So effectively you need to know how to position 3 categories
+[01:10:07] <initramfs> Besides, clang-format can do it for you
+[01:10:22] <initramfs> I've written appropriate regular expressions that attempts to sort for you
+[01:11:01] <zetok> question is
+[01:11:17] <zetok> are we reverting back to includes with `src/` ?
+[01:11:45] <initramfs> I'd prefer that, but then again you probably should ask sudden6 and diadlo, since I believe they decided to do that
+[01:12:09] <zetok> IIRC they have a preference
+[01:12:26] <zetok> preference < missing feature
+[01:12:29] <zetok> (generally)
+[01:13:00] <initramfs> Sure
+[01:13:13] <zetok> I'd just make the PR and ask them how else automatic sorting could be done reliably
+[01:13:26] <initramfs> But if I can't convince people that said missing feature is useful/important, I'm usually ignored or dismissed
+[01:13:45] <zetok> but then again, my style of doing things includes "high fiction"
+[01:14:25] <initramfs> Yes, and I tend to attempt to cause the least conflict possible. Sure you may find this ineffective, but I don't like pissing people off.
+[01:15:45] <koshii> zetok: High fiction for real, or some sort of Freudian slip? :)
+[01:15:59] <zetok> friction*
+[01:16:04] <koshii> Alas. :)
+[01:18:18] <initramfs> iphy: Is c-toxcore going for a pure CMake build or is it planning to maintain autotools + cmake for the forseeable future?
+[01:22:40] <zetok> initramfs: it's going to maintain autotools as long as there's no docs for cmake stuff
+[01:23:22] <initramfs> Right
+[01:25:18] <iphy> initramfs: it's going to maintain autotools for the foreseeable future
+[01:26:19] <initramfs> Okay
+[01:27:45] <koshii> greyhatter made some claims in #tox that the qtox changelog is mostly translation/localization stuff. It doesn't look like that is true, and it isn't, right?
+[01:27:58] <zetok> koshii: yep
+[01:28:12] <koshii> This has appeared to me to be the most active tox project.
+[01:28:24] *** Joins: DiCE1904 (~textual@ )
+[01:28:35] <zetok> koshii: https://www.reddit.com/r/projecttox/comments/5hfrr3/prospective_user_utox_or_qtox/ ← this is probably what makes grayhatter sour :)
+[01:28:36] <initramfs> Well, the translation diffs are massive, but they don't take up many commits
+[01:29:25] <koshii> I see
+[01:30:01] <zetok> koshii: https://zetok.github.io/2016/12/17/Tox-Considered-Harmful.html ← he's also in the position where no one can say anything that would contradict his claims
+[01:31:13] <zetok> koshii: btw, I've added generation of some ~activity stats: https://qtox.github.io/gitstats/index.html
+[01:32:19] <koshii> zetok: That headline is a bit over-the-top considering your conclusion, isn't it?
+[01:32:24] <koshii> i.e. tox is dead, long live tox? :)
+[01:32:30] <oranges> tox is dead
+[01:32:33] <oranges> toktok is the future
+[01:32:39] <oranges> the only thing that remains from tox are the domains and servers
+[01:32:43] <oranges> and they are my absolute domain
+[01:32:46] <zetok> :)
+[01:33:17] <koshii> I thought toktok was just another toxcore implementation?
+[01:33:49] <oranges> it is
+[01:34:09] <koshii> Assuming that you are planning to continue to have a single product, I think you guys do a lot more harm than good in making posts like that.
+[01:34:14] <koshii> To users, it makes it look and feel like "tox" is dead.
+[01:34:28] <koshii> i.e. that they should not continue to add friends and family to their qtox contact list.
+[01:34:55] <koshii> In other words the technical distinction that you are making was pretty lost on me, and I follow this stuff reasonably closely.
+[01:35:12] <zetok> koshii: what I consider to be "Tox" is dead
+[01:35:23] <koshii> zetok: I understand. But please consider how that looks to users.
+[01:35:26] <zetok> or rather, still in a process of slow death
+[01:35:50] <zetok> users are the key point
+[01:36:09] <koshii> zetok: To users it appears that people are abandoning development of the Tox client, and that no further effort should sensibly be put into the (already very hard) work of bringing new users into this world.
+[01:36:10] <zetok> if there is enough pressure from users, things could get fixed
+[01:36:26] <koshii> Well, if you believe that, then please hear out what I am saying.
+[01:36:38] <koshii> Posts like that speak of chaotic fragmentation at *best*
+[01:36:50] <zetok> I know.
+[01:36:54] <koshii> At worst, they would leave a passerby not even bothering to try qtox.
+[01:36:58] <koshii> "Oh, it's dead anyway"
+[01:37:02] <koshii> "The developers said so."
+[01:37:04] <zetok> And I'm tired of pretending that things are ok.
+[01:37:08] <koshii> Even if that is a misunderstanding.
+[01:37:39] <koshii> Well, that's another matter. All I am saying now, is that posts like this don't give the message to the general public, that you might wish.
+[01:37:58] <oranges> they are pointless
+[01:38:04] <oranges> there have been many posts just like it
+[01:38:06] <oranges> all lost
+[01:38:12] <zetok> oranges: pls
+[01:38:21] <zetok> oranges: at the very least it gets onto your page
+[01:38:22] <oranges> they do not change anything
+[01:38:24] <koshii> oranges: It doesn't help the larger case, is my point.
+[01:38:35] <koshii> It may help to resolve some issue internally, but please, think of the children.
+[01:39:38] <zetok> >It doesn't help the larger case, is my point.
+[01:39:41] <zetok> I wonder about that
+[01:39:53] <koshii> I assume you all work on this project because you consider it very important -- as do I. It's easy to forget that it is the user that matters, and if we're scaring them away with things like that before they even try the app, well... I consider that very bad.
+[01:40:05] <koshii> zetok: I can see your point actually.
+[01:40:16] <koshii> zetok: It probably stirs some shit in a way that will ultimately be positive.
+[01:40:44] <koshii> zetok: But I am speaking from the perspective not of the developer or "tox scener", but of the ultimate end user.
+[01:40:59] <zetok> k
+[01:41:27] <koshii> If you get the uTox/toxcore people stirred up where they're like "oh fuck you, I'll show you", then that's awesome.
+[01:41:35] <koshii> Competition is (sometimes) good.
+[01:42:50] <koshii> I just know for sure that I tried to get some friends into this a while back, and they googled Tox and saw that (I don't know if it's still up) blog post about all kinds of problems in Toxland.
+[01:43:06] <koshii> And that was literally enough to cause them to go, meh, will check back in a year.
+[01:43:24] <koshii> So we don't need more of that. qTox works really well.
+[01:43:52] <zetok> so
+[01:43:55] <zetok> here's the thing
+[01:43:55] <iphy> I tend to take a less nuclear route
+[01:44:11] <iphy> => toktok
+[01:44:18] <zetok> koshii: redirect people to a place where they wouldn't be affected by what I've written in the post
+[01:44:36] <zetok> koshii: then they'll have nothing to worry about
+[01:44:42] <iphy> I don't think spitting venom in all directions is a constructive way to solve issues in the community
+[01:44:57] <zetok> koshii: otherwise, not informing people of the stuff that is going on looks like disservice
+[01:45:03] <koshii> zetok: It's not about a specific incident. There's always a workaround. It's just that, having material like that out there, even if it is true, doesn't make users go "Oh yeah, I want to try that out"
+[01:45:19] <zetok> koshii: yes, and I didn't post it due to specific event
+[01:45:26] <koshii> Yeah, I get your point. But at the new-user level it's far too esoteric a matter.
+[01:45:36] <zetok> koshii: that's a continuous thing
+[01:45:46] <zetok> https://gist.github.com/zetok/0b414e0a253464aabb7e4cf646513ac4 ← always charming™
+[01:45:51] <koshii> They're just debating whether or not they want to download an app, not necessarily wanting to get into the specifics of tox politics. :)
+[01:46:04] <koshii> Yes of course it is a continuous thing.
+[01:46:19] <koshii> Look zetok don't take what I'm saying as a personal criticism. I'm sure you had good reason to write what you wrote.
+[01:46:37] <zetok> koshii: I get that :)
+[01:46:37] <koshii> I'm just saying, I fear how this looks to the new user, who (as I said) doesn't care or have any reason to care about tox politics.
+[01:46:57] <zetok> hmm
+[01:46:59] <koshii> I just wanted to say this. I'll leave it there.
+[01:47:06] <zetok> from my PoV user is suffering anyway
+[01:47:19] <koshii> Heh yeah, forever and always. :)
+[01:47:27] <zetok> so I might as well at least try to do something to change the situation
+[01:48:05] <koshii> I'm with iphy on this personally. Better to extend an olive branch than spit venom. Even if the olive branch gets broken in half and trampled upon by the "other side"
+[01:48:30] <zetok> yes
+[01:48:35] <iphy> toktok was started as a friendly fork, with a positive message
+[01:48:41] <iphy> I think we've come a long way with it
+[01:48:45] <zetok> koshii: but iphy is a good person :)
+[01:49:11] <koshii> zetok: Well if you're implying something about yourself, I am thankful that you are at least self-reflective about it :)
+[01:49:37] <zetok> oh, I don't even need to self-reflect for that :|
+[01:49:40] <koshii> iphy: I'd try to keep that friendly message intact, even if it takes great pains.
+[01:51:59] <koshii> Anyway, as I said, nothing personal guys and gals. I appreciate your work. Quite a lot.
+[01:52:06] <koshii> I'm heading to bed. Cheers.
+[01:52:16] <iphy> goodnight
+[01:53:35] <zetok> koshii: https://gist.github.com/zetok/4c21fa5ee08a92f9c10d601c43214a24 :|
+[01:53:56] <vindelschtuffen> koshii, thank you 
+[02:10:58] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[02:31:35] -qtox-git-spam- [qTox] zetok opened pull request #3986: revert: "refactor: Added  to include path and exclude it from all includes" (master...revert-include-style) https://git.io/v1dZN
+[02:31:41] <zetok> initramfs: ↑ there we go :)
+[02:44:47] *** Quits: initramfs (~initramfs@ ) (Quit: Leaving)
+[02:56:55] <oranges> teh qtox updater vm has 375 days uptime
+[02:57:46] <zetok> ooh
+[02:57:54] <zetok> the vulnerable kernel :3
+[02:58:30] <oranges> I dunno
+[02:58:31] <oranges> ask tux3
+[03:20:16] *** Joins: Diadl0 (~diadlo@ )
+[03:23:57] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 240 seconds)
+[03:32:29] <nurupo> he didn't setup unattended-upgrades with automatic reboot when installed packages require it? .-.
+[03:35:05] <zetok> there might be unattended-upgrades
+[06:05:08] -qtox-git-spam- [qTox] zetok opened pull request #3987: Update translations from weblate (master...tr) https://git.io/v1d0s
+[06:16:41] -qtox-git-spam- [qTox] zetok opened pull request #3988: chore(tools): make deweblate script work with long commit messages (master...chore-deweblate-script) https://git.io/v1d01
+[06:18:58] *** Joins: sudd3n6 (~anonymous@ )
+[06:25:24] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[06:32:33] -qtox-git-spam- [qTox] zetok opened pull request #3989: docs(README): remove link to the experimental osx build (master...docs-readme-osxdl) https://git.io/v1d0j
+[07:01:43] -qtox-git-spam- [qTox] zetok closed pull request #3987: Update translations from weblate (master...tr) https://git.io/v1d0s
+[07:01:57] -qtox-git-spam- [qTox] zetok pushed 5 new commits to master: https://github.com/qTox/qTox/compare/4f9cb0b008eb...9c3256386d0b
+[07:01:57] -qtox-git-spam- qTox/master 10b0903 Viktar Vauchkevich: feat(l10n): update Belarusian translation from Weblate
+[07:01:57] -qtox-git-spam- qTox/master cdb47dc Balazs: feat(l10n): update Hungarian translation from Weblate
+[07:01:57] -qtox-git-spam- qTox/master 1969084 Alaa Issa: feat(l10n): update Arabic translation from Weblate
+[07:03:07] *** Joins: sudd3n6 (~anonymous@ )
+[07:17:13] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[08:00:01] *** Joins: sudd3n6 (~anonymous@ )
+[08:33:38] *** Joins: f10 (~flo@ )
+[09:34:23] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[09:54:44] *** Joins: cenysor (~cenysor@ )
+[10:39:27] *** Joins: f10 (~flo@ )
+[10:51:40] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[10:52:33] *** Joins: f10 (~flo@ )
+[11:01:06] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[11:14:04] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[12:07:16] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 268 seconds)
+[12:19:41] *** Joins: dardevelin (~dardeveli@ )
+[12:24:56] *** Joins: f10_ (~flo@ )
+[12:25:45] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:47:56] *** Joins: sudd3n6 (~anonymous@ )
+[14:32:04] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:39:41] *** Joins: f10 (~flo@ )
+[14:40:43] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[14:51:48] *** Joins: f10 (~flo@ )
+[14:54:00] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[15:04:20] *** Joins: f10 (~flo@ )
+[15:20:02] *** Joins: DaSpirit (~DaSpirit@ )
+[15:36:13] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[15:36:53] *** Joins: jjuran (~jjuran@ )
+[15:40:08] *** sudd3n6 is now known as sudden6
+[15:40:19] *** Joins: albel727 (~albel727@ )
+[15:42:47] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:59:35] *** Joins: f10 (~flo@ )
+[16:21:07] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[17:09:25] *** Joins: bennabiy (~bennabiy@ )
+[17:26:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:47:07] *** Joins: cisc (~cisc@ )
+[17:50:36] *** Joins: cenysor (~cenysor@ )
+[18:02:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[18:28:03] *** Joins: Diadlo (~diadlo@ )
+[18:35:54] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[18:35:59] *** Joins: Diadlo2 (~diadlo@ )
+[18:37:32] *** Joins: Yoshimo (~anything@ )
+[18:49:28] *** Quits: Diadlo2 (~diadlo@ ) (Ping timeout: 258 seconds)
+[18:54:12] *** Joins: profile486510354 (44039cb8@ )
+[18:58:08] *** Parts: profile486510354 (44039cb8@ ) ()
+[19:10:24] *** Joins: Dragofix- (Dragofix@ )
+[19:12:36] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[19:13:02] *** Joins: cisc (~cisc@ )
+[19:13:08] *** Quits: cenysor (~cenysor@ ) (Ping timeout: 248 seconds)
+[19:13:08] *** Joins: cenysor (~cenysor@ )
+[19:13:10] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 248 seconds)
+[19:13:10] *** Dragofix- is now known as Dragofix
+[19:25:02] *** Joins: sudden6 (~anonymous@ )
+[20:46:48] *** Diadl0 is now known as Diadlo
+[20:50:44] *** Joins: f10 (~flo@ )
+[20:50:48] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:53:53] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[20:58:59] *** Joins: f10 (~flo@ )
+[21:01:12] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[21:02:36] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:02:41] *** Joins: cisc (~cisc@ )
+[21:24:01] *** Joins: bennabiy (~bennabiy@ )
+[23:45:09] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 265 seconds)
