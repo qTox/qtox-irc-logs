@@ -1,0 +1,110 @@
+[00:59:55] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[01:19:14] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 264 seconds)
+[01:20:09] *** Joins: jjuran (~jjuran@ )
+[01:29:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[01:53:32] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[01:55:26] *** Joins: f10 (~flo@ )
+[03:34:28] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[05:29:19] <zetok> nurupo: https://github.com/qTox/qTox/pull/3994
+[05:29:19] -qtox-git-spam- [qTox] zetok opened pull request #3994: chore(build): use hardening linker flags only on Linux/*BSD (master...chore-no-win-harden) https://git.io/v1b2x
+[05:30:21] <nurupo> want me to approve it?
+[05:30:46] <nurupo> i'm not sure if it will fix the build or not
+[05:31:04] <nurupo> maybe some other flag added in meantime also breaks it
+[05:31:05] <zetok> um, just linked to you what probably will fix the windows build
+[05:31:12] <nurupo> ok
+[05:31:17] <zetok> um, ~nothing else was added
+[05:32:35] <zetok> and given that compiling failed at linking, that's the only change that could have broken it
+[06:13:07] *** Joins: MDrights (~MDrights@ )
+[06:26:19] <MDrights> Hello, I am wondering if there is still a tox specific debian repository for direct downloading on Debian-like OS ?
+[06:34:01] <zetok> yep
+[06:34:15] <zetok> MDrights: have you looked at README.md ?
+[06:38:17] <zetok> MDrights: https://github.com/qTox/qTox#qtox
+[06:43:24] <MDrights> zetok: I saw it. but I try to find out if there is a repo (a link in source.list on Debian) for `apt install` ...(thanks
+[07:02:24] <zetok> MDrights: have you clicked on the debian link in readme.md ?
+[07:12:12] <zetok> MDrights: https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox
+[07:12:34] <oranges> you should includ ea little quote saying instructions for package use are included in the repo link
+[07:16:09] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[07:16:50] *** Joins: f10 (~flo@ )
+[08:03:53] *** Joins: sudden6 (~anonymous@ )
+[08:10:52] <MDrights> Alright, it is inside the opensuse.org. ....okay...
+[08:11:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[08:30:05] *** Joins: sudden6 (~anonymous@ )
+[08:31:04] *** Joins: pcre (~quassel@ )
+[08:34:13] -qtox-git-spam- [qTox] zetok closed pull request #3941: [WIP] History autoload (master...feat-hist-auto) https://git.io/v1BuH
+[08:35:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[08:48:38] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 264 seconds)
+[08:55:14] *** Joins: MDrights (~MDrights@ )
+[09:27:38] -qtox-git-spam- [qTox] zetok opened pull request #3996: refactor(core): simplify code for tox interval during file transfer (master...refactor-simpl-ftinterv) https://git.io/v1b9w
+[09:54:23] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[10:04:16] *** Joins: LittleVulpix (~Miranda@ )
+[10:09:08] *** Joins: sudden6 (~anonymous@ )
+[10:36:11] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[10:37:03] *** Joins: f10 (~flo@ )
+[10:38:02] *** Joins: MDrights (~MDrights@ )
+[11:07:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[11:29:38] *** Joins: sudden6 (~anonymous@ )
+[11:38:13] *** Quits: pcre (~quassel@ ) (Quit: No Ping reply in 180 seconds.)
+[11:38:47] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[11:39:44] *** Joins: pcre (~quassel@ )
+[11:43:08] *** Quits: pcre (~quassel@ ) (Client Quit)
+[11:43:52] *** Joins: sudden6 (~anonymous@ )
+[11:44:24] *** Joins: pcre (~quassel@ )
+[11:54:18] *** Quits: pcre (~quassel@ ) (Quit: No Ping reply in 180 seconds.)
+[11:55:37] *** Joins: pcre (~quassel@ )
+[12:00:31] *** Quits: pcre (~quassel@ ) (Quit: No Ping reply in 180 seconds.)
+[12:02:38] *** Joins: pcre (~quassel@ )
+[12:13:00] *** Quits: pcre (~quassel@ ) (Ping timeout: 250 seconds)
+[12:13:17] *** Joins: pcre (~quassel@ )
+[12:18:16] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:22:55] *** Joins: f10 (~flo@ )
+[12:22:57] *** Joins: f10_ (~flo@ )
+[12:41:02] *** Quits: pcre (~quassel@ ) (Quit: No Ping reply in 180 seconds.)
+[12:42:21] *** Joins: pcre (~quassel@ )
+[13:13:15] *** Quits: pcre (~quassel@ ) (Quit: No Ping reply in 180 seconds.)
+[13:14:38] *** Joins: pcre (~quassel@ )
+[13:15:00] *** Quits: pcre (~quassel@ ) (Client Quit)
+[13:30:18] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[13:32:22] *** Joins: sudden6 (~anonymous@ )
+[13:48:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[14:52:56] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:57:31] *** Joins: cenysor (~cenysor@ )
+[15:01:20] *** Joins: sudden6 (~anonymous@ )
+[15:07:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[15:29:56] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[15:29:56] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:57:56] *** Joins: sudden6 (~anonymous@ )
+[16:03:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[16:03:25] *** Joins: sudden6 (~anonymous@ )
+[16:49:12] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[17:27:45] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:28:15] *** Joins: VVD (~VVD@ )
+[17:39:02] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:39:29] *** Joins: VVD (~VVD@ )
+[17:44:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:45:09] *** Joins: VVD (~VVD@ )
+[18:03:23] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[18:03:28] *** Joins: Yoshimo (~anything@ )
+[18:08:41] *** Joins: sudden6 (~anonymous@ )
+[18:17:08] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[19:37:55] *** Joins: Diadl0 (~diadlo@ )
+[19:37:55] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[19:52:55] *** Quits: Diadl0 (~diadlo@ ) (Quit: Konversation terminated!)
+[19:53:57] *** Joins: Diadlo (~diadlo@ )
+[20:40:16] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:51:59] *** Joins: reBrain (~quassel@ )
+[21:03:08] *** Joins: f10_ (~flo@ )
+[21:05:42] *** Joins: f10 (~flo@ )
+[21:08:21] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[21:15:42] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[21:17:28] *** Joins: f10_ (~flo@ )
+[21:27:28] *** Joins: f10 (~flo@ )
+[21:35:58] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[21:44:37] *** Joins: f10_ (~flo@ )
+[21:46:56] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[22:39:16] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[22:50:27] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[23:03:09] -qtox-git-spam- [qTox] iphydf opened pull request #3998: docs(INSTALL.md): Add note about deb-multimedia (master...patch-1) https://git.io/v1A1v
+[23:13:28] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/v1AMc
+[23:13:28] -qtox-git-spam- qTox/master 0a1a781 Zetok Zalbavar: chore(build): use hardening linker flags only on Linux/*BSD...
+[23:13:46] <zetok> nurupo: ↑ that should fix the windows build
+[23:37:49] *** Joins: dardevelin (~dardeveli@ )
