@@ -1,0 +1,174 @@
+[00:51:33] *** Quits: linxon (~lin@ ) (Ping timeout: 260 seconds)
+[01:14:15] *** Joins: linxon (~lin@ )
+[01:56:24] -qtox-git-spam- [qTox] iphydf closed pull request #3998: docs(INSTALL.md): Add note about deb-multimedia (master...patch-1) https://git.io/v1A1v
+[02:00:47] <zetok> iphy: um, why close the PR?
+[02:00:59] <iphy> because apparently it's supposed to work without that
+[02:01:09] <iphy> the packages are there
+[02:01:13] <zetok> dunno about that
+[02:29:47] <nurupo> zetok: now windows builds fail because of incorrect toktok toxcore linking
+[02:30:25] <nurupo> they either don't link to all of the static libs, or link in the wrong order (not sure if order actually matters for static linking)
+[02:31:36] <zetok> link to log?
+[02:33:23] <nurupo> https://build.tox.chat/job/qTox_build_windows_x86-64_release/954/console
+[02:35:48] <zetok> :/
+[02:38:59] *** Joins: MDrights (~MDrights@ )
+[03:02:29] <nurupo> zetok: does the qmake file link against libtoxfriends.a libtoxdht.a libtoxnetcrypto.a and other "layer" libraries toktok toxcore has introduced?
+[03:04:12] <nurupo> nope, it doesn't
+[03:04:48] <nurupo> *i think* the build will get fixed if we link against the rest of tox* static libs in here https://github.com/qTox/qTox/blob/master/qtox.pro#L181
+[03:06:00] <nurupo> the list of all missing libs is libtoxcrypto.a libtoxdht.a libtoxfriends.a libtoxgroup.a libtoxmessenger.a libtoxnetcrypto.a libtoxnetwork.a
+[03:06:16] <nurupo> not sure if order matters
+[03:07:09] <zetok> :s
+[03:07:18] <zetok> ok
+[03:07:41] <zetok> order probably doesn't matter
+[03:08:29] <zetok> hmm
+[03:08:46] <zetok> > /usr/lib64/libtoxav.a
+[03:08:50] <zetok> > /usr/lib64/libtoxcore.a
+[03:08:54] <nurupo> trying to patch qtox.pro to check it
+[03:09:09] <zetok> this is going to be fun.
+[03:09:44] <zetok> i.e. from what I understand, only cmake toxcore build has those libs split
+[03:10:20] <zetok> while autotools build still offers the "old" static libs
+[03:10:38] <nurupo> we use cmake on jenkins
+[03:10:42] <zetok> yes
+[03:10:52] <zetok> and I use autotools, since there are no docs for cmake
+[03:11:37] <nurupo> this affects only static linking, i think
+[03:11:57] <zetok> yeah
+[03:12:17] <zetok> iphy: 0.2 should remove autotools support
+[03:12:22] <nurupo> if you build toxcore as a shared library, do you still get .so for each toxcore layer? i'm not sure, but i think you don't
+[03:30:42] <iphy> nurupo: yes you do
+[03:38:51] <nurupo> zetok: qmake complains on https://github.com/qTox/qTox/blob/master/qtox.pro#L57
+[03:39:33] <zetok> hm?
+[03:39:49] <nurupo> Could not find qmake configuration directoryCould not find qmake configuration fileUsing OS scope before setting MAKEFILE_GENERATOR/home/jenkins/workspace/qTox_build_windows_x86-64_release/qtox/qtox.pro(57): Using OS scope before setting MAKEFILE_GENERATOR
+[03:41:40] <zetok> I see
+[03:43:07] <nurupo> seems like it should be fine
+[03:43:37] <nurupo> don't understand why qmake complains
+[03:43:50] <nurupo> those also seem to be several concurrent outputs
+[03:44:22] <nurupo> Could not find qmake configuration directory, Could not find qmake configuration file, Using OS scope before setting MAKEFILE_GENERATOR
+[03:45:29] <zetok> probably moving it under https://github.com/qTox/qTox/blob/master/qtox.pro#L190 would help
+[04:28:45] <nurupo> not sure how to fix it, it seems like it still doesn't link to those tox .a libraries even though i edited qtox.pro
+[04:29:29] <nurupo> i have undone all my changes i did now and emailing to tux3 :\
+[05:04:29] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 265 seconds)
+[05:28:00] *** Joins: MDrights (~MDrights@ )
+[07:44:11] *** Joins: sudden6 (~anonymous@ )
+[07:55:53] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[08:11:30] *** Joins: mitfree_ (~mit@ )
+[08:16:05] *** Quits: mitfree (~mit@ ) (*.net *.split)
+[08:59:07] *** Joins: parasite_ (~parasite@ )
+[09:08:07] <parasite_> Hello, since since qtox 1.4.1-4 i got a problem, the window size is huge and cant be resized smaller, the font size is correct but all icons are really big, I dont understand whats happens since nobody on the web seems to talk about it.
+[09:09:31] <parasite_> I currently need to downgrade to 1.4.1-4 to use it, what should i do to use the latest version correctly?
+[09:10:25] <zetok> os?
+[09:10:47] <parasite_> archlinux x64 4.4.39-1-lts
+[09:11:51] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[09:12:01] <zetok> you might have misconfigured DPI stuff
+[09:16:21] <parasite_> zetok, xdpyinfo:
+[09:16:28] <parasite_> dimensions:    1920x1080 pixels (508x285 millimeters)
+[09:16:28] <parasite_>   resolution:    96x96 dots per inch
+[09:16:50] <parasite_> does that seem correct to you?
+[09:17:16] <zetok> dunno
+[09:17:30] <zetok> that's just your X
+[09:18:05] <zetok> parasite_: https://blog.qt.io/blog/2016/01/26/high-dpi-support-in-qt-5-6/
+[09:18:21] *** Joins: sudden6 (~anonymous@ )
+[09:23:38] <zetok> hmm https://github.com/qTox/qTox/wiki/FAQ#high-dpi-support
+[09:25:09] <parasite_> zetok, the problem doesnt appear if I export QT_AUTO_SCREEN_SCALE_FACTOR=0
+[09:25:18] <zetok> there you go.
+[09:26:12] <zetok> parasite_: you might want to check if something in your env doesn't set incorrect variables, and if that's not the case, it would be good to make fill a bug against Qt
+[09:26:26] <zetok> s/make//
+[09:26:41] * zetok wonders
+[09:26:59] <zetok> Chiitoo: did you mention something about issues with size on newest Qt?
+[09:28:32] <parasite_> zetok, I dont see anything wrong in my env, Thanks you a lot for the help ! )
+[09:28:46] <zetok> you're welcome :)
+[09:40:55] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[09:54:54] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 250 seconds)
+[10:23:23] <Chiitoo> zetok: Size?  Hmmmm.  I think it was long loading times and profiling showed 'qtgui' maybe at the top..
+[10:23:52] <Chiitoo> Uh-oh, merge conflicts for my little changes.  That's new!
+[10:24:02] *** Joins: sudden6 (~anonymous@ )
+[10:24:16] <Chiitoo> Buttons!
+[10:30:00] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[10:32:02] *** Quits: linxon (~lin@ ) (Changing host)
+[10:32:02] *** Joins: linxon (~lin@ )
+[11:02:10] *** Quits: f10_ (~flo@ ) (Quit: Konversation terminated!)
+[11:02:12] *** Joins: sudden6 (~anonymous@ )
+[11:06:49] *** Joins: f10_ (~flo@ )
+[11:26:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[12:57:50] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:13:10] *** Joins: cisc (~cisc@ )
+[13:17:42] *** Joins: cenysor (~cenysor@ )
+[13:23:04] *** Joins: in1t3r_ (~LordShiva@ )
+[13:37:24] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[13:40:55] *** Joins: in1t3r_ (~LordShiva@ )
+[13:44:01] -qtox-git-spam- [qTox] wDraw opened pull request #3999: feat(l10n): update Bulgarian translation (master...master) https://github.com/qTox/qTox/pull/3999
+[14:04:01] *** Joins: dardevelin (~dardeveli@ )
+[14:22:13] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[14:51:00] *** Joins: shiva (~LordShiva@ )
+[16:15:07] *** Quits: parasite_ (~parasite@ ) (Remote host closed the connection)
+[16:16:04] *** Joins: reBrain (~quassel@ )
+[16:34:41] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:45:50] *** Joins: cenysor (~cenysor@ )
+[17:07:49] *** Joins: sudden6 (~anonymous@ )
+[17:29:37] *** Joins: Yoshimo (~anything@ )
+[18:18:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[18:42:10] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[18:47:09] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[18:59:27] *** Joins: parasite_ (~parasite@ )
+[19:10:40] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[19:28:52] *** Quits: DiCE1904 (~textual@ ) (Quit: Textual IRC Client: www.textualapp.com)
+[19:39:48] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[19:44:15] *** Joins: Diadlo (~diadlo@ )
+[19:49:24] -qtox-git-spam- [qTox] wDraw closed pull request #3999: feat(l10n): update Bulgarian translation (master...master) https://git.io/v1xNH
+[20:36:52] *** Joins: pcre (~quassel@ )
+[20:44:00] *** Joins: sudden6 (~anonymous@ )
+[20:54:58] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:07:50] *** Joins: jjuran (~jjuran@ )
+[21:36:58] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[21:40:02] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[21:43:59] *** Joins: LittleVulpix (~Miranda@ )
+[21:44:06] *** Joins: sudden6 (~anonymous@ )
+[21:50:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 250 seconds)
+[22:12:21] *** Joins: sudden6 (~anonymous@ )
+[22:19:10] *** Quits: anoa (~anoa@ ) (Disconnected by services)
+[22:19:50] *** Joins: anoa (~anoa@ )
+[22:27:38] *** Joins: Gottox (~Gottox@ )
+[22:27:54] <Gottox> Good evening.
+[22:28:25] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[22:28:34] <zetok> hello Gottox :)
+[22:28:46] <Gottox> zetok: s/o pointed me here, saying that the void linux template is 'quite lacking'. I'd like to improve the situation here :)
+[22:29:04] <zetok> awesome :)
+[22:29:25] <Gottox> (it is lacking, damn third party maintainers :D)
+[22:29:26] <zetok> Gottox: got a link to the template?
+[22:29:54] <Gottox> https://github.com/voidlinux/void-packages/blob/master/srcpkgs/qtox/template
+[22:30:51] <zetok> thanks
+[22:33:20] *** Joins: shiva__ (~LordShiva@ )
+[22:34:13] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 245 seconds)
+[22:34:24] *** Joins: shiva (~LordShiva@ )
+[22:34:46] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[22:35:27] <zetok> Gottox: it should be updated to at least 1.6 (or 1.7 in a week), description, website, distfiles link, `do_install()` should use `make install` with specified (IIRC) PREFIX
+[22:37:45] <zetok> Gottox: I could make a diff with changes, but someone would need to check & test it :)
+[22:39:26] <Gottox> feel free. I'm going to test/include it tomorrow.
+[22:40:23] <zetok> checksum is sha256 ?
+[22:40:53] <Gottox> yea
+[22:42:08] <zetok> actually
+[22:43:54] <zetok> Gottox: https://github.com/gentoo/gentoo/blob/master/net-im/qtox/qtox-1.6.0.ebuild
+[22:45:29] <zetok> Gottox: would that be enough?
+[22:45:35] <Gottox> yea :)
+[22:46:00] <Gottox> I'm going to include that tomorrow. it's nearly 12pm here and tomorrow is full of pre-chrismas stuff :)
+[22:46:09] <zetok> ok
+[22:46:25] <zetok> sounds great :)
+[22:47:40] <Gottox> thanks for your help! 
+[22:47:52] <zetok> btw, if you require in template a www instead of github, use https://qtox.github.io/
+[22:49:14] <zetok> and if you're interested in maintaining qTox template for Void, I could include you in a list of people to ping about breaking changes in qTox
+[22:49:34] <zetok> (subscribing to qTox-dev mailing list also would do)
+[22:52:07] <zetok> e.g. qTox 1.7 will depend on TokTok/c-toxcore
+[22:53:11] <Gottox> a ping of breaking changes would be awesome. We have a full automatic system for notifications on updates and we notice when a build breaks, but we won't notice removed dependencies.
+[22:54:10] <zetok> >filteraudio-devel-git
+[22:54:14] <zetok> that one is gone :)
+[22:54:22] <zetok> >libopencv-devel
+[22:54:22] <zetok> this too
+[22:54:58] <zetok> Gottox: your gh username?
+[22:55:23] <Gottox> Gottox
+[22:55:27] <oranges> rest in peace filteraudio
+[22:56:05] <Gottox> okay, I'm afk for now. will be back tomorrow. thanks for your helpful feedback :)
+[22:56:49] <zetok> Gottox: "you're on the list now" ;)
+[22:57:11] <Gottox> :D
+[23:38:04] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[23:40:53] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 248 seconds)
+[23:45:39] *** Joins: dardevelin (~dardeveli@ )
+[23:50:46] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[23:51:12] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
