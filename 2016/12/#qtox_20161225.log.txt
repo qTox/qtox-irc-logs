@@ -1,0 +1,349 @@
+[00:22:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[01:17:05] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[03:33:23] *** Joins: LittleVulpix (~Miranda@ )
+[03:39:20] *** Joins: MDrights (~MDrights@ )
+[04:17:39] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[04:17:54] *** Joins: f10 (~flo@ )
+[04:32:36] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 256 seconds)
+[04:41:29] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[05:30:27] *** Joins: DiCE1904 (~textual@ )
+[06:23:53] *** Joins: MDrights (~MDrights@ )
+[07:07:17] *** Joins: f10 (~flo@ )
+[07:15:26] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:16:08] *** Joins: LittleVulpix (~Miranda@ )
+[07:21:19] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[07:31:53] *** Joins: f10 (~flo@ )
+[07:39:43] *** Quits: DiCE1904 (~textual@ ) (Quit: Textual IRC Client: www.textualapp.com)
+[07:48:43] *** Joins: DiCE1904 (~textual@ )
+[07:50:28] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[07:51:40] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[09:02:54] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 256 seconds)
+[09:04:09] *** Joins: jjuran (~jjuran@ )
+[10:25:15] *** Joins: Yoshimo (~anything@ )
+[10:25:32] *** Joins: bashrc (~motters@ )
+[11:40:22] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[12:01:46] *** Joins: sudden6 (~anonymous@ )
+[12:01:54] <sudden6> hi all
+[12:20:59] <Diadlo> sudden6: Hi
+[12:21:04] <sudden6> hi :)
+[12:22:41] <Diadlo> sudden6: Can you test https://github.com/qTox/qTox/pull/3935 ?
+[12:22:51] <sudden6> I am already :)
+[12:23:08] <Diadlo> Thanks
+[12:24:31] <sudden6> commented
+[12:25:45] <sudden6> Diadlo: do you have an idea for 4004?
+[12:28:40] <Diadlo> I fix it in #3935
+[12:29:31] <Diadlo> Hm...
+[12:29:32] <sudden6> Diadlo: you fixed it or you are going to fix it?
+[12:29:50] <Diadlo> Fixed
+[12:30:04] <sudden6> then the fix didn't work for me
+[12:30:22] <sudden6> wait, I'm an idiot
+[12:30:28] <Diadlo> https://cloud.githubusercontent.com/assets/6306608/21471124/6d858448-cabf-11e6-8426-7e9b21cf9c0d.png
+[12:30:31] <sudden6> I tested with master *facepalm*
+[12:30:35] <Diadlo> :В
+[12:30:36] <Diadlo> :D
+[12:38:05] <sudden6> Diadlo: 4004 seems fixed for audio calls
+[12:38:30] <sudden6> but i think the icon should be a little bit smaller than the buttons
+[12:39:16] <Diadlo> About audio-call (both buttons are red). AFAIK, it's old behaviour
+[12:39:25] <Diadlo> Isn't it?
+[12:40:12] <sudden6> Idk to be honest^^ I just think it's somewhat odd, but if it's old behaviour we should leave it for now, what do you think?
+[12:40:39] <zetok> Diadlo: it's not
+[12:40:55] <Diadlo> Ok. I will change it
+[12:41:02] <zetok> in an audio call video button is greyed out
+[12:41:21] <sudden6> zetok: we're speaking about video calls
+[12:41:37] <zetok> same thing
+[12:41:56] <zetok> one day when qTox will support switching audio↔video call on the go, buttons instead of being greyed out should remain green
+[12:42:03] <sudden6> ok then go ahead :)
+[12:42:12] <sudden6> one day™
+[12:42:16] <sudden6> :D
+[12:42:58] <sudden6> has anyone ever seen antis81 in IRC?
+[12:43:07] <zetok> long time ago
+[12:44:56] <sudden6> :/
+[12:45:16] <sudden6> zetok Diadlo the plan about a release today still going?
+[12:45:39] <zetok> why wouldn't it?
+[12:46:08] <sudden6> dunno, I'm just out of the loop :)
+[12:49:28] <zetok> sudden6: why did you add stuff to 1.7 milestone long after the merge window?
+[12:50:00] <sudden6> i forgot about the "fixes only" rule, sorry
+[12:51:10] <zetok> Diadlo: did you fix the regression in the svg PR?
+[12:55:23] <Diadlo> zetok: What kind of regression?
+[12:55:46] <zetok> Diadlo: https://github.com/qTox/qTox/pull/3935#issuecomment-267428684
+[12:56:10] *** Joins: sudd3n6 (~anonymous@ )
+[12:56:34] <Diadlo> zetok: Yes. But I think, now it's same with https://github.com/qTox/qTox/pull/3935#issuecomment-266494453
+[12:56:43] <Diadlo> Can you check?
+[12:57:01] <zetok> yep
+[12:57:06] <zetok> first though translations
+[12:57:51] <Diadlo> Sorry, I don't understand
+[12:58:12] <Diadlo> What wrong with translations?
+[12:58:43] <sudden6> Diadlo: probably nothing, but they should be up to date for the release :)
+[12:58:51] <Diadlo> Ok
+[13:00:25] -qtox-git-spam- [qTox] zetok opened pull request #4005: Update translations from Weblate (master...tr) https://git.io/vMfBd
+[13:05:05] <iphy> Merry qTox release day
+[13:05:29] <Emcy> wat
+[13:06:33] <sudden6> iphy: thx :D
+[13:06:53] <iphy> Also Christmas
+[13:07:25] <sudden6> who cares about Christmas when it's qTox release day :P
+[13:08:23] <zetok> ;)
+[13:08:39] <Emcy> no release
+[13:08:59] <sudden6> also in my part of the world christmas was celebrated yesterday^^
+[13:09:43] <zetok> hmm
+[13:09:46] <Diadlo> zetok: What the situation with buttons?
+[13:09:54] <zetok> there's something broken
+[13:10:09] <zetok> probably not the buttons
+[13:10:22] <zetok> sudden6: fix your clients
+[13:11:10] <sudden6> better?
+[13:12:16] <Diadlo> If I haven't time now, should I create hotfix for #4004?
+[13:13:02] <zetok> https://a.uguu.se/LadnKsv362vq.png ← it's interesting how one side sees the contact as offline, while the other claims that they're online and actually in an audio call with them
+[13:13:18] <sudden6> Diadlo: You could also tell me where to look and I can try to fix it
+[13:13:28] <Diadlo> zetok: It's fixed in my PR
+[13:13:43] <zetok> Diadlo: um?
+[13:14:09] <Diadlo> sudden6: cherry-pick  ede128b
+[13:14:26] <Diadlo> zetok: https://a.uguu.se/LadnKsv362vq.png
+[13:14:35] <zetok> um
+[13:14:37] <Diadlo> It's fixed in #3935
+[13:15:13] <zetok> err
+[13:15:34] <Diadlo> Can not be
+[13:16:04] <zetok> the qTox instance that claims to have an active call is on your PR
+[13:16:47] <zetok> there's at least 1 bug in toxcore at play
+[13:17:11] <Diadlo> Sorry, misunderstand bug
+[13:17:27] <Diadlo> It's old bug, aren't it?
+[13:17:34] <zetok> no
+[13:17:35] <Diadlo> *isn't
+[13:18:24] <zetok> c-toxcore gained a new regression on top of the old one
+[13:18:29] <zetok> sudden6: still not fixed
+[13:18:32] <Diadlo> https://github.com/qTox/qTox/issues/2820
+[13:18:48] <Diadlo> zetok: ^
+[13:18:55] <zetok> yeah, that's an old bug
+[13:19:06] <zetok> and the new bug is a regression made on top of the old bug
+[13:19:40] <zetok> i.e. with the old bug both sides saw other party as 'offline'
+[13:19:49] <Diadlo> Nope
+[13:20:07] <sudden6> zetok: I only have one client running
+[13:20:24] <zetok> sudden6: hmm
+[13:20:51] <zetok> sudden6: oh, nvm
+[13:21:14] <sudden6> Diadlo: what is the commit you told me supposed to fix?
+[13:21:28] <zetok> sudden6: #4004 ?
+[13:21:30] <Diadlo> ede128b
+[13:21:42] <Diadlo> Oh, no
+[13:21:49] <Diadlo> https://github.com/qTox/qTox/pull/3935/commits/7190e173a3ecf1d0319731d7fc49eb801d14c47f
+[13:22:04] <Diadlo> It's the new one
+[13:22:50] <sudden6> ok
+[13:23:24] <iphy> zetok: is it consistently reproducible?
+[13:23:39] <zetok> iphy: probably no?
+[13:25:17] <zetok> I mean, it happens ~all the time
+[13:25:29] <zetok> but I don't know how to reliably reproduce it
+[13:25:43] <zetok> the call issue is new though
+[13:42:13] -qtox-git-spam- [qTox] sudden6 opened pull request #4006: fix(videoButton): Added disabling button while call is active (master...fix4004) https://git.io/vMf0q
+[13:42:42] <sudden6> 4004 should be fixed with this ↑
+[13:43:17] <iphy> zetok: what is the mean time to failure?
+[13:43:26] <iphy> zetok: i.e. how much time do you need to make it happen?
+[13:44:49] <zetok> call issue – <3 min perhaps if I'll be able to trigger it again
+[13:45:22] <zetok> people appearing as offline – dunno, I don't need to do anything, and it can happen almost any time
+[13:47:39] <zetok> latter one probably would happen within 30min-8h
+[13:48:35] <zetok> although it's hard to verify, since I don't really know how many of my contacts are actually offline, and how many toxcore shows as offline due to the bug :/
+[13:54:58] <sudden6> zetok: when you have time could you check if https://github.com/qTox/qTox/pull/4006 fixes the call buttons?
+[13:56:48] <zetok> :|
+[13:57:46] <zetok> sudden6: does it fix it?
+[13:57:58] <sudden6> zetok: for me it does
+[13:58:06] <zetok> there you go :)
+[14:07:16] <sudden6> ok, then I'll merge :)
+[14:08:24] <zetok> just make sure to test for regressions :)
+[14:24:32] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vMfET
+[14:24:32] -qtox-git-spam- qTox/master eff27f6 Diadlo: fix(videoButton): Added disabling button while call is active...
+[14:29:06] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[14:31:04] <Diadlo> sudden6, zetok: Merge https://github.com/qTox/qTox/pull/3989 ?
+[14:31:51] <zetok> yeah
+[14:34:18] *** Joins: Yoshimo (~anything@ )
+[14:36:24] *** Quits: Yoshimo (~anything@ ) (Client Quit)
+[14:39:27] <zetok> https://gist.github.com/zetok/630f5ff5ea2928eb2d3b8b235f22b4c0 ← for the blog post
+[14:40:51] <zetok> some stuff should be added to it
+[15:03:12] <sudden6> zetok: I've improved the grammar a bit https://gist.github.com/sudden6/3f41298cf707038c5f1e64ed7ad94a2f
+[15:07:22] *** Joins: Yoshimo (~anything@ )
+[15:21:39] <Diadlo> sudden6: Can you help me to fix icon size?
+[15:21:59] <sudden6> Diadlo: I can try, but I have no idea how to do it^^
+[15:22:11] <Diadlo> I'm too
+[15:22:55] <Diadlo> I tried add `setIconSize`, but it didn't help
+[15:22:58] <sudden6> well, let's take a look at how it's done for the phone and cam icon, there it seems to work
+[15:23:07] <Diadlo> Nope
+[15:23:12] <Diadlo> There is QPushButton
+[15:23:36] <Diadlo> But antis81 suggested to use QToolButtons
+[15:24:00] <sudden6> I'll take a look at what's the difference between them in a few min
+[15:24:16] <Diadlo> *They are
+[15:24:21] <Diadlo> Ok
+[15:25:43] <sudden6> zetok: I've added a section about TokTok to https://gist.github.com/sudden6/3f41298cf707038c5f1e64ed7ad94a2f
+[15:26:24] <Diadlo> sudden6: problem with TokTok link
+[15:26:44] <Diadlo> I.e. you are forgotten url :)
+[15:27:00] <sudden6> thx, fixed
+[15:27:25] <Diadlo> np
+[15:28:49] <Diadlo> Also, `copy link` action was added. Maybe we should mention this?
+[15:29:01] <Diadlo> It was `P-medium` :)
+[15:29:08] <sudden6> Diadlo: feel free to add it :)
+[15:29:23] <Diadlo> With my english? :D
+[15:29:27] <Diadlo> No, thanks
+[15:29:49] <sudden6> I'll fix the English for you^^
+[15:30:05] <sudden6> call it learning by making mistakes ;)
+[15:30:16] <Diadlo> Ok. After few hours I will try
+[15:30:48] -qtox-git-spam- [qTox] sudden6 opened pull request #4007: fix(warnings): fix some warnings about the stack protector not working (master...fix_stack_protector) https://git.io/vMfub
+[15:31:03] <sudden6> ok, now I'll take a look at the icon size issue
+[15:31:30] <Diadlo> Щл
+[15:32:27] <Diadlo> *Ok
+[15:53:58] <Diadlo> https://gist.github.com/Diadlo/f0981afb9e1799609ae7285530cd5f41
+[15:58:28] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:59:22] *** Joins: LittleVulpix (~Miranda@ )
+[15:59:44] <sudden6> updated https://gist.github.com/sudden6/3f41298cf707038c5f1e64ed7ad94a2f
+[16:01:49] <sudden6> Diadlo: I found a way to make the icon smaller, add "padding: 2px;" to the QAbstractButton part of the CSS
+[16:06:18] <Diadlo> sudden6: Thank you. Can you push it in your repo? I will cherry-pick it
+[16:06:44] <sudden6> I've not made a commit of it, it's just a one line change
+[16:07:01] <sudden6> also idk if 2px is a good value
+[16:07:29] <Diadlo> We can try 3px too :)
+[16:07:35] <sudden6> I used 6px to see a big effect and just guessed from there :D
+[16:11:41] <Diadlo> http://i.imgur.com/I8n7Sbn.png
+[16:11:56] <Diadlo> Seems icon a bit misplaced
+[16:12:24] <sudden6> I don't see anything
+[16:12:26] <Diadlo> Mic
+[16:12:38] <Diadlo> Not in the center
+[16:13:36] <Diadlo> http://i.imgur.com/SscUbwf.png
+[16:13:46] <Diadlo> Am I crazy?)
+[16:14:49] <sudden6> no, after getting a lineal I see it's out of center by 2px
+[16:15:49] <sudden6> maybe "icon-size" is the correct stylesheet property?
+[16:17:26] <Diadlo> `icon-size` didn't change anything for me
+[16:17:47] <Diadlo> button->setIconSize too
+[16:19:56] <sudden6> image-position: center center ?
+[16:20:54] <sudden6> I'm out of ideas now, https://doc.qt.io/qt-5/stylesheet-reference.html#image-prop doesn't have much more to offer :/
+[16:30:07] *** Joins: reBrain (~quassel@ )
+[16:32:54] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:54:14] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMf28
+[16:54:14] -qtox-git-spam- qTox/master 37b0ed0 Zetok Zalbavar: docs(README): remove link to the experimental osx build...
+[16:54:50] <zetok> sudden6, Diadlo: translations PR?
+[16:59:46] <zetok> >This gives us an actively maintained and tested base
+[16:59:50] * zetok sighs
+[17:00:04] <zetok> well, it's actively maintained
+[17:02:00] <sudden6> Diadlo: I still don't fully understand why using '=' is wrong in that context
+[17:02:20] <Diadlo> Because it will create copy
+[17:02:59] <Diadlo> And call copy constructor
+[17:03:59] <Diadlo> `A a(param)` will call only `A(param)` constructor
+[17:04:00] <Diadlo> But `A a = A(param)` will call `A(param)` + `A(const A&)`
+[17:04:02] <Diadlo> AFAIK
+[17:04:23] <sudden6> hmm, I'll look into the docs for that
+[17:05:22] <zetok> sudden6, Diadlo: what should I add in `authors` for the post?
+[17:05:49] <Diadlo> zetok: What you want)
+[17:05:58] <sudden6> if it supports 3 authors put all 3 else leave it like it is
+[17:06:15] <zetok> Diadlo: :|
+[17:06:26] <zetok> sudden6: it supports text
+[17:06:35] <Diadlo> sudden6: http://stackoverflow.com/questions/4470553/initialization-parenthesis-vs-equals-sign
+[17:07:10] <zetok> Diadlo: is `Diadlo` fine, or..?
+[17:07:16] <Diadlo> Yes
+[17:07:52] <sudden6> Diadlo: thx
+[17:13:33] *** Joins: bennabiy (~bennabiy@ )
+[17:20:15] *** Joins: f10 (~flo@ )
+[17:28:47] <qTox-Blog> [blog] zetok opened pull request #5: Add post for the 1.7 release (gh-pages...release-1.7) https://git.io/vMfas
+[17:30:31] -18WAA3NJR- [qTox] zetok pushed 6 new commits to master: https://git.io/vMfaW
+[17:30:31] -18WAA3NJR- qTox/master a3c876c Viktar Vauchkevich: feat(l10n): update Belarusian translation from Weblate
+[17:30:31] -18WAA3NJR- qTox/master e6bb215 Kaur Männamaa: feat(l10n): update Estonian translation from Weblate
+[17:30:31] -18WAA3NJR- qTox/master 0f5b215 Barnett Wong: feat(l10n): update Chinese translation from Weblate
+[17:30:31] -92AAATDPR- [qTox] zetok closed pull request #4005: Update translations from Weblate (master...tr) https://git.io/vMfBd
+[17:37:02] *** Joins: qtoxero (5aaa9e2d@ )
+[17:38:17] *** Parts: qtoxero (5aaa9e2d@ ) ()
+[17:47:12] -qtox-git-spam- [qTox] zetok opened pull request #4008: chore(CHANGELOG): add changelog for the v1.7.0 release (master...chore-changelog) https://git.io/vMfVv
+[17:48:40] <zetok> hmm
+[17:49:19] <zetok> what do you think about adding a list of contributors to the 1.7 release in the blog post?
+[17:49:40] <sudden6> zetok: would be a cool thing
+[17:49:57] <zetok> git log --format='%an' v1.6.0..master | sort -u
+[17:53:41] <zetok> added to the post
+[17:56:38] <zetok> sudden6: updated post again
+[18:01:25] <zetok> sudden6: https://github.com/qTox/qTox/pull/4008 ?
+[18:09:06] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMfVp
+[18:09:06] -qtox-git-spam- qTox/master 12c21b2 Zetok Zalbavar: chore(CHANGELOG): add changelog for the v1.7.0 release
+[18:10:38] <qTox-Blog> [blog] zetok pushed 1 new commit to gh-pages: https://git.io/vMfwe
+[18:10:38] <qTox-Blog> blog/gh-pages bfbc6b8 Zetok Zalbavar: Add post for the 1.7 release
+[18:11:58] <zetok> Diadlo, sudden6: thanks :)
+[18:12:04] <zetok> (1.7 released)
+[18:13:08] <Diadlo> Grazies :)
+[18:13:45] <sudden6> zetok: Thanks too :)
+[18:14:40] <sudden6> zetok: should I post on reddit or will you?
+[18:15:07] * zetok just logged in on reddit
+[18:15:34] <sudden6> ok :)
+[18:15:46] <Emcy> did yuou really break the updater
+[18:15:49] <sudden6> I'll be the first to upvote then ;)
+[18:15:57] <sudden6> Emcy: sadly yes
+[18:16:26] <Emcy> thats a big deal
+[18:17:30] <zetok> sudden6: sent
+[18:17:48] <sudden6> and upvoted ;)
+[18:18:42] <Diadlo> zetok, sudden6: AFAIR, it's possible to send update if size or checksum will be equal to some value?
+[18:19:08] <zetok> Diadlo: tux3 looked into that and it can't be done
+[18:19:13] <Diadlo> Ok
+[18:19:17] <sudden6> yep, sadly
+[18:22:18] <Emcy> toktok in this one?
+[18:22:23] <sudden6> yes
+[18:28:23] <Emcy> why is 1 5 1 marked as latest release on github
+[18:28:39] <zetok> because github
+[18:32:10] <Emcy> idk what nightly jenkins just built but its not the 1 7 0 tag lol
+[18:32:57] <Emcy> https://build.tox.chat/view/qtox/job/qTox_build_windows_x86-64_release/ maybe cos this is failing
+[18:50:33] <sudden6> Diadlo: I'm currently redoing toxid.cpp, is it generally better to access members directly or via getters setters?
+[18:52:07] <LittleVulpix> zetok: :p I was gonna update but the links and everything have 1.6.0 still
+[19:01:55] *** Quits: VVD (~VVD@ ) ()
+[19:25:46] *** Joins: Diadl0 (~Diadlo@ )
+[19:27:49] <Diadl0> sudden6: I don't know usecase when we need to set something in toxid
+[19:28:00] <Diadl0> So, we need only getters
+[19:28:33] <sudden6> Diadl0: yeah, I realized that and am implementing it now :)
+[19:29:28] <Diadl0> Good
+[19:29:45] <Diadl0> zetok: What with CMake
+[19:29:50] <Diadl0> ?
+[19:35:20] *** Quits: Diadl0 (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[20:21:09] <Diadlo> Also, zetok, what you think about testing https://github.com/TokTok/c-toxcore/pull/295 ?
+[20:23:32] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[20:27:41] *** Joins: cisc (~cisc@ )
+[21:02:25] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:08:34] <sudden6> zetok: any idea how I can easily verify if qTox-1.7.0.tar.gz contains the same stuff as the git repo?
+[21:08:55] <sudden6> and then how we could sign the release tarball?
+[21:53:34] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[21:55:52] *** Joins: VVD (~VVD@ )
+[21:56:52] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[21:58:07] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[22:04:30] <VVD> hi, just upgraded FreeBSD from 10.3 to 11.0, rebuild all ports and found that qTox 1.6.0 can't handle profiles with russian letters
+[22:06:50] <VVD> 1.5.1 on FreeBSD 10.3 work fine with profiles with russian letters
+[22:08:58] *** Joins: f10 (~flo@ )
+[22:10:23] <sudden6> VVD: could you also try with 1.7.0? we just released it today :)
+[22:11:13] <sudden6> Diadlo zetok who should sign releases?
+[22:11:24] <sudden6> can multiple people sign it?
+[22:14:31] <VVD> sudden6, building qTox from ports
+[22:15:10] <VVD> only 1.6.0 in ports now
+[22:15:20] <sudden6> is this something like the Arch AUR? sorry, I'm not familiar with BSDs
+[22:15:42] <sudden6> also what's the log output?
+[22:20:29] <VVD> sudden6, don't know that is Arch AUR :-D
+[22:20:59] -qtox-git-spam- [qTox] sudden6 opened pull request #4011: Remove cdata (master...remove_cdata) https://git.io/vMfPb
+[22:21:00] <VVD> https://www.freebsd.org/ports/
+[22:21:38] <sudden6> VVD: ok, can you try to compile it yourself?
+[22:21:49] <VVD> may be
+[22:21:52] <VVD> :-D
+[22:22:00] <VVD> url for sources?
+[22:22:08] <sudden6> https://github.com/qTox/qTox
+[22:22:40] <sudden6> VVD: but first give me the log output, maybe I'll be able to spot the problem
+[22:23:15] <VVD> there are a lot of patches for 1.6.0: https://svnweb.freebsd.org/ports/head/net-im/qTox/files/
+[22:23:29] <VVD> where I can find log?
+[22:23:44] <sudden6> run qTox from the terminal
+[22:24:09] <sudden6> ok, without these patches for 1.7.0 it'll probably not work
+[22:24:20] <VVD> 1st of all in window with list of profiles I don't see russian letters
+[22:25:12] <VVD> ����
+[22:25:20] <VVD> instead letters
+[22:25:38] <VVD> but files have correct names
+[22:25:55] <VVD> if I create new profile with name "Тест":
+[22:26:02] <sudden6> that's really strange, qTox uses Unicode throughout, so it shouldn't be a problem
+[22:26:29] <VVD> 1. files have names: ????.db ????.ini ????.tox Тест.db
+[22:26:56] <VVD> 2. in window pick profile I see: ????
+[22:27:11] <VVD> it work fine with 1.5
+[22:28:26] <sudden6> VVD: I don't think we can solve this right away, could you open a bug report here: https://github.com/qTox/qTox/issues
+[22:28:27] <VVD> [22:28:18.449 UTC] persistence/profile.cpp:117 : Debug: Loading tox save  "/home/vvd/.config/tox/��������������.tox"
+[22:28:27] <VVD> [22:28:18.450 UTC] persistence/profile.cpp:121 : Warning: The tox save file  "/home/vvd/.config/tox/��������������.tox"  was not found
+[22:28:50] <sudden6> also attach the full log output please
+[22:29:02] <sudden6> (in the bug report)
+[22:39:30] *** Joins: bennabiy (~bennabiy@ )
+[22:42:12] <VVD> sudden6, can I attach screenshot?
+[22:42:18] <VVD> can't find how
+[22:47:05] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[22:49:35] <VVD> https://github.com/qTox/qTox/issues/4012
+[22:49:39] <VVD> sudden6
+[22:50:13] <VVD> and can u add patches from https://svnweb.freebsd.org/ports/head/net-im/qTox/files/ to upstream?
+[23:06:21] *** Joins: dardevelin (~dardeveli@ )
+[23:07:27] <sudden6> VVD: sorry I was afk
+[23:07:54] <sudden6> you can drag and drop pictures into the text field on Github, they will be uploaded
+[23:08:06] <sudden6> I'll look into the patches
+[23:31:18] *** Joins: Diadl0 (~diadlo@ )
+[23:31:19] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
