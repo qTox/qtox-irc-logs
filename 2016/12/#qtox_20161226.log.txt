@@ -1,0 +1,564 @@
+[00:00:28] -qtox-git-spam- [qTox] sudden6 opened pull request #4013: chore: Make building for FreeBSD easier (master...freebsd) https://git.io/vMfM6
+[00:01:09] <sudden6> VVD: I ported the relevant stuff, could you try compiling qTox from this PR https://github.com/qTox/qTox/pull/4013
+[00:03:22] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:26:21] *** Joins: Emcy (~MC@ )
+[00:26:21] *** Quits: Emcy (~MC@ ) (Changing host)
+[00:26:21] *** Joins: Emcy (~MC@ )
+[00:49:59] *** Joins: x_ (~x@ )
+[00:50:28] <VVD> sudden6, how to get it? git clone https://github.com/qTox/???? ?
+[00:50:36] <x_> hello, i've posted in https://redd.it/5k9eg6 some feedback about the latest release
+[00:50:39] <x_> if i should add my comment somewhere else pls let me know
+[00:51:13] <sudden6> VVD: git clone https://github.com/qTox/qTox
+[00:52:14] <sudden6> VVD: https://github.com/qTox/qTox/blob/master/INSTALL.md contains all instructions/dependencies for Linux, should be similar for you
+[00:53:26] <sudden6> x_:  you shouldn't be even able to make it with qt4-qmake
+[00:53:40] <x_> yet it requires qt4 specifically
+[00:54:07] <x_> "/usr/lib/x86_64-linux-gnu/qt4/bin/qmake"
+[00:54:15] <x_> not sure why but hey
+[00:54:24] <sudden6> do you have qmake-qt5?
+[00:54:36] <x_> yes
+[00:54:48] <sudden6> try using that :)
+[00:56:45] <x_> http://imgur.com/a/vHZNz
+[00:56:51] <x_> tried using it
+[00:56:57] <x_> won't work
+[00:57:13] <sudden6> what's the error?
+[00:57:14] <x_> the qTox script still asks for qt4
+[00:57:24] <sudden6> which script?
+[00:58:41] <VVD> In file included from src/platform/camera/v4l2.cpp:23:
+[00:58:41] <VVD> src/platform/camera/v4l2.h:28:2: error: "This file is only meant to be compiled for Linux targets"
+[00:58:41] <VVD> #error "This file is only meant to be compiled for Linux targets"
+[00:59:27] <x_> http://pastebin.com/6786vH1e
+[00:59:40] <sudden6> VVD: execute ./test-pr.sh 4013 from the cloned directory
+[01:00:47] <sudden6> x_: try executing `whereis qmake-qt5`
+[01:00:59] <sudden6> ie calling the qt5 version explicitely
+[01:01:28] <x_> only got a manpage result
+[01:01:32] <sudden6> x_: 
+[01:01:33] <sudden6> qt5-default : Depends: qtbase5-dev but it is not going to be installed
+[01:01:35] <sudden6> E: Unable to correct problems, you have held broken packages.
+[01:01:51] <VVD> ./test-pr.sh: /bin/bash: неверный интерпретатор: No such file or directory
+[01:01:53] <VVD> :-D
+[01:01:59] <sudden6> have you tried installing qtbase5-dev and then the dependencies
+[01:02:10] <x_> yes, via aptitude
+[01:02:30] <x_> apt-get install gave problems, aptitude seemed to install all the dependencies required
+[01:02:47] <sudden6> VVD: you have to be inside the qTox source dir for it to work
+[01:03:07] <VVD> it's about no bash in /bin
+[01:03:27] <sudden6> oh, maybe you can rewrite the script then^^
+[01:03:31] <VVD> ye
+[01:03:32] <VVD> already
+[01:03:37] <sudden6> or do the actions manually :)
+[01:03:43] <VVD> I have bash in /usr/local/bin/bash
+[01:07:08] <VVD> src/core/core.h:84:28: error: use of undeclared identifier 'Tox_Pass_Key'
+[01:07:24] <VVD> toxcore-0.160924_3
+[01:07:32] <VVD> is toxcore too old?
+[01:07:37] <sudden6> VVD: we switched to https://github.com/TokTok/c-toxcore
+[01:08:25] <VVD> oh
+[01:11:25] <x_> sudden6: the only result from running whereis qmake-qt5 is this line: qmake-qt5: /usr/share/man/man1/qmake-qt5.1.gz
+[01:11:43] <sudden6> x_: that's very strange
+[01:11:59] <sudden6> I'm updating my debian vm currently to investigate
+[01:12:22] <VVD> sudden6, is this file correct to build toxcore: irungentoo-toxcore-0.160924-161ab46_GH0.tar.gz ?
+[01:12:43] <sudden6> VVD: no, you need the one from the link I gave you
+[01:12:56] <VVD> https://github.com/TokTok/c-toxcore/blob/master/INSTALL.md
+[01:13:06] <VVD> On FreeBSD 10+:
+[01:13:06] <VVD> pkg install net-im/tox
+[01:13:17] <VVD> net-im/tox have this one :-(
+[01:13:21] <sudden6> you probably have to build it from source
+[01:13:23] <VVD> outdated documentation
+[01:13:28] <sudden6> yeah
+[01:14:06] <sudden6> you could make a PR fixing that, iphy will be very happy to have someone try toxcore on FreeBSD^^
+[01:18:50] <VVD> builded fine
+[01:19:42] <VVD> but I don't know how to say qTox to search includes and libraries in custom place instead default /usr/local/include /usr/local/lib
+[01:20:20] <sudden6> can't you just install c-toxcore into /usr/local/?
+[01:20:28] <VVD> oh no
+[01:21:06] <VVD> don't want hell in /usr/local
+[01:21:22] <VVD> all files in /usr/local was installed from ports
+[01:21:27] <sudden6> oh
+[01:21:46] <VVD> all have checksum and etc
+[01:23:00] <sudden6> use qmake INCLUDEPATH += "path"
+[01:23:05] <sudden6> for the includes
+[01:23:30] <sudden6> VVD: and LIBS += "path" for the libraries
+[01:24:02] <VVD> in makefile?
+[01:24:13] <sudden6> no just call qmake with these options
+[01:24:25] <VVD> and for includes?
+[01:24:48] <sudden6> INCLUDEPATH and LIBS should be all you need
+[01:24:56] <sudden6> see https://doc.qt.io/qt-4.8/qmake-variable-reference.html#includepath
+[01:25:01] <sudden6> and a little bit below
+[01:28:45] *** Joins: kchz (~dschulz@ )
+[01:34:36] <x_> right, i think i passed the qmake step via installing libswscale-dev package and running /usr/lib/x86_64-linux-gnu/qt5/bin/qmake in the qTox dir, but now the make command is erroring out because of a missed dependency
+[01:35:00] <sudden6> x_: which missing dependency?
+[01:35:06] <x_> someone should add qtbase5-dev-tools
+[01:35:33] <x_> make needs /qt5/bin/uic
+[01:35:51] <sudden6> x_: mind making a PR with the needed adjustments to the install procedure?
+[01:36:29] <x_> sure, i'll be documenting the process as i go along.
+[01:36:46] <sudden6> perfect
+[01:36:51] <VVD> sudden6, warning: src/video/camerasource.cpp:295:42: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+[01:37:13] <sudden6> VVD: you can ignore that
+[01:37:17] <VVD> ye
+[01:37:21] <VVD> I know
+[01:37:25] <VVD> just inform u
+[01:37:34] <VVD> ffmpeg-3.2.2_2,1
+[01:37:56] <sudden6> yeah, we know that, but due to the wide range of ffmpeg we have to support, nobody bothered to update the code^^
+[01:38:08] <VVD> np
+[01:50:02] <sudden6> x_: for the dependencies simple_make.sh works without issues for Debian 8
+[01:50:20] <sudden6> it only has problems checking out the correct c-toxcore tag
+[01:50:24] <x_> right, i think i might have found the snag
+[01:50:57] <x_> it has to do with the mesa package
+[01:51:06] <x_> just a moment, i'll post details
+[01:52:26] <x_> http://pastebin.com/fBre3Mr9
+[01:52:29] <VVD> sudden6, /usr/local/lib/qt5/bin/qmake LIBS+=-L../c-toxcore INCLUDEPATH+=.
+[01:52:34] <VVD> gmake
+[01:53:18] <VVD> + move includes from /usr/local/include/tox + move libs from /usr/local/lib/libtox*
+[01:53:42] <VVD> then: LD_LIBRARY_PATH=../c-toxcore ./qtox
+[01:53:56] <VVD> and I got same ???? in file names
+[01:54:02] <VVD> as with 1.6.0
+[01:54:04] <VVD> :-(
+[01:56:50] <sudden6> VVD: but building on FreeBSD works?
+[01:56:57] <VVD> yes
+[01:57:19] <VVD> audio, video, files and messages not tested :-D
+[01:57:30] <VVD> just build and run
+[01:57:55] <sudden6> If you could add this to https://github.com/qTox/qTox/pull/4013 I'd be pretty happy :)
+[01:58:21] <sudden6> x_: I suppose you're using some additional repos?
+[02:00:53] <sudden6> Good night everybody :)
+[02:02:41] *** Joins: DaSpirit (~DaSpirit@ )
+[02:03:12] <x_> hey
+[02:03:30] <x_> i'm back
+[02:04:07] <x_> i was using backports for bbswitch, for my optimus laptop
+[02:04:27] <x_> so mesa was updated to backports latest version
+[02:04:58] <x_> yet the version required by qt5 and qTox is the stable version
+[02:05:16] <x_> this is why the dependency conflict popped up
+[02:05:33] <koshii> Is there a command-line parameter I can run to export my private keys from qtox?
+[02:05:39] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[02:05:40] <koshii> (Or a file I can simply backup)
+[02:11:05] <VVD> sudden6, done
+[02:11:18] <sudden6> VVD: thanks
+[02:12:52] <sudden6> koshii: click on your avatar, scroll down and click "Export"
+[02:18:32] <koshii> sudden6: Yes, but -- from the command line? :)
+[02:29:19] <x_> right, after repairing the dependency mishaps (reverted mesa to the req'd stable version), i've cleaned the directory and made a fresh clone of the qTox repo, yet i'm still getting errors. this time it's compiling errors, and this is where my troubleshooting skills run out this time: http://pastebin.com/fpD9aAmG
+[02:29:43] <x_> good night folks
+[02:32:37] <zetok> koshii: nope
+[02:33:43] <zetok> x_: could you paste that in gist?
+[02:34:11] <zetok> VVD: could you do a git bisect?
+[02:35:05] <zetok> VVD: `git bisect good v1.5.1 ; git bisect bad f5011cdb2feb2da042e373b4e4094e967bde8120`
+[02:35:31] <zetok> VVD: that will compile with the toxcore from ports, and should be the range that contains the regression
+[02:35:55] <zetok> VVD: https://github.com/qTox/qTox/wiki/Testing#regression-testing
+[02:40:57] <zetok> Diadl0: is there some problem with CMake?
+[02:43:12] *** Joins: MDrights (~MDrights@ )
+[02:43:20] <zetok> sudden6: `git archive -o 1.7.tar.gz`
+[02:43:34] <zetok> sudden6: `git archive -o 1.7.tar.gz v1.7.0` that is
+[02:44:19] <zetok> compare sha512 of it and the archive from gh, and if they match, make a detached GPG signature of gh tarball & upload it
+[03:05:08] *** Quits: kchz (~dschulz@ ) (Quit: Volveré)
+[03:06:51] <sudden6> zetok: will do tomorrow
+[03:07:07] <sudden6> also will it not be better if I compare the contents?
+[03:07:20] <zetok> why?
+[03:09:35] <zetok> i.e. when you have identical archives, how could they have different contents?
+[03:10:26] * zetok still thinks that doing all that manually is a waste of time
+[03:11:03] <sudden6> for example gh using different compression settings
+[03:11:14] <sudden6> anyway, gn8
+[03:14:31] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[03:15:28] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[03:20:48] *** Joins: cisc (~cisc@ )
+[03:51:14] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[03:54:22] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:58:21] *** Quits: x_ (~x@ ) (Ping timeout: 258 seconds)
+[04:10:14] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[04:16:14] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:18:57] *** Joins: cisc (~cisc@ )
+[04:50:26] *** Quits: cisc (~cisc@ ) (Ping timeout: 264 seconds)
+[04:55:22] *** Joins: cisc (~cisc@ )
+[05:35:00] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[05:53:54] <Diadl0> zetok: I.e. did you fix your problem https://github.com/qTox/qTox/pull/3913#issuecomment-267857698 ?
+[05:54:24] <zetok> Diadl0: the problem isn't on my end
+[05:54:39] <Diadl0> Do you build toxcore with cmake?
+[05:54:48] <zetok> why would I?
+[05:55:13] <Diadl0> Because it's required to build qtox with cmake
+[05:55:24] <Diadl0> => for tests
+[05:55:41] <zetok> it's a regression
+[05:55:47] <Diadl0> Nope
+[05:55:54] <zetok> qmake works just fine
+[05:55:55] <Diadl0> I didn't remove old build system
+[05:55:56] <zetok> cmake doesn't
+[05:56:14] <Diadl0> Ok. I can change docs
+[05:57:05] <Diadl0> Add `qtox cmake require to build toxcore with cmake`
+[05:58:59] <Diadl0> It's not regression because we add new build system with new requirements
+[05:59:53] <Diadl0> Why we add feature with dependency it's not regression?
+[06:17:27] <Diadl0> zetok: ^
+[06:18:03] <zetok> :/
+[06:19:44] <zetok> question is, do we need that dependency?
+[06:20:10] <zetok> i.e. why would cmake require other things to be build with cmake?
+[06:20:11] <Diadl0> Now it's optional dependency
+[06:20:20] <zetok> no, it's not an optional dep
+[06:20:23] <Diadl0> I write it in comment
+[06:20:35] <Diadl0> You still can build qTox with qmake
+[06:20:45] <Diadl0> So, why it's not optional?
+[06:21:12] <zetok> the moment qmake support is removed it would become a hard dependency
+[06:21:25] <Diadl0> Yes. But not now
+[06:21:38] * zetok shrugs
+[06:21:46] <zetok> just FYI, this is going to cause problems
+[06:21:55] <Diadl0> When we will remove qmake, maybe toxcore will be support only cmake build
+[06:22:23] <Diadl0> They want to remove autogen, aren't they?
+[06:22:45] <zetok> at some point
+[06:22:56] <Diadl0> So, what the problem?
+[06:23:23] <Diadl0> We can remove qmake after autogen removing
+[06:23:32] <Diadl0> i.e. qmake build system
+[06:23:48] <zetok> ><zetok> just FYI, this is going to cause problems
+[06:24:25] <Diadl0> Removing qmake of autogen?
+[06:24:46] <zetok> adding a "dependency" on cmake toxcore
+[06:26:43] <Diadl0> Ok. Either cmake dependency for qtox with few fixes/features or not dependence and no fixes/features?
+[06:26:58] <Diadl0> If the second one, I will close my PR
+[06:27:21] <zetok> um, I'm just informing that this will result in problems
+[06:28:09] <zetok> there are benefits, but there are also downsides that one should be aware of
+[06:28:39] <Diadl0> What downsides?
+[06:29:20] <Diadl0> Other than a new addiction
+[06:29:26] <Diadl0> dependecy
+[06:29:41] <zetok> from what I heard harder to build for android
+[06:29:49] <zetok> and the new "dependency" will cause problems
+[06:30:03] <Diadl0> So, it's toktok team scope. Right?
+[06:30:05] <zetok> because toxcore "supports" both build system
+[06:30:12] <zetok> yes
+[06:30:16] <Diadl0> We can support both too
+[06:30:24] <zetok> with cmake ?
+[06:30:35] <Diadl0> qmake and cmake, yes
+[06:30:51] <zetok> i.e. qTox cmake + toxcore autotools?
+[06:31:13] * zetok sighs
+[06:31:23] <Diadl0> Not
+[06:31:29] <zetok> this should be fixed in toxcore's autotools build system
+[06:31:37] <Diadl0> qTox cmake + toxcore cmake / qTox qmake + toxcore autotools
+[06:31:43] <Diadl0> Ok
+[06:31:48] <Diadl0> iphy: ^
+[06:31:58] <Diadl0> Is it possible?
+[06:32:25] <zetok> once that happens, there should be added note in the INSTALL.md that for toxcore's autotools only >=0.1.x versions are supported
+[06:33:01] <zetok> still will result in problem for people who would try to compile qTox against autotools toxcore <0.1.x
+[06:33:24] <zetok> but there probably could be added some ifdefs for that?
+[06:33:41] <Diadl0> We already didn't support toxcore <0.1.0
+[06:33:50] <zetok> so?
+[06:34:33] <zetok> 0.1.{0,1,2} autotools also wouldn't be supported with qTox's cmake
+[06:34:42] <Diadl0> Ok
+[06:39:17] <Diadl0> FYI: It's strange if someone want to build qTox with cmake, but toxcore without it
+[06:39:20] <Diadl0> zetok: ^
+[06:39:33] <zetok> no, it's not
+[06:39:43] <Diadl0> Usecase?
+[06:39:49] <zetok> toxcore has close to ~no docs for building with cmake
+[06:40:01] <Diadl0> Hm...
+[06:40:14] <Diadl0> cmake <path> && make
+[06:40:19] <zetok> + given that autotools are still supported, there's no reason to try and use cmake
+[06:40:31] <zetok> Diadl0: yeah, that's close to nothing
+[06:41:12] <zetok> btw, docs for cmake are required to remove qmake support in qTox
+[06:41:50] <Diadl0> Why?
+[06:41:56] <zetok> ?
+[06:42:05] <zetok> docs are simply a requirement
+[06:42:47] <zetok> i.e. without the docs, software is close to being useless
+[06:43:03] <Diadl0> Can I just add undocumented CMake support?
+[06:43:09] <Diadl0> Yes
+[06:43:13] <zetok> sure
+[06:43:14] <Diadl0> It will useful for me :)
+[06:43:32] <Diadl0> Also, for travis in the future
+[06:43:36] <Diadl0> For tests
+[06:43:41] <zetok> but as long as there will be no docs for cmake only qmake build will be supported
+[06:44:12] <Diadl0> Yes
+[06:44:17] <zetok> I don't see much point in keeping qmake if cmake is added, but.. :/
+[06:45:32] <Diadl0> Cmake support requires docs. If we have cmake support => there no reason to keep qmake. No reason for qmake => change travis config
+[06:45:43] <Diadl0> IMO To many changes for one PR
+[06:46:13] <Diadl0> I plan to do it in a few
+[06:46:40] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMfbU
+[06:46:40] -qtox-git-spam- qTox/master 4bcf57b Zetok Zalbavar: style: adjust function arg names in header to changes in core.cpp
+[06:46:48] <Diadl0> So, can you just test CMake?
+[06:46:51] <Diadl0> zetok: ^
+[06:46:53] <zetok> no
+[06:46:56] <Diadl0> Thanks
+[06:47:06] <zetok> I don't have toxcore build with cmake
+[06:47:16] <Diadl0> But you can build it with cmake
+[06:47:23] <zetok> too bothersome
+[06:48:31] <Diadl0> It's very useful decision to qTox
+[06:48:39] <Diadl0> *"useful"
+[06:48:47] <zetok> `emerge net-libs/tox` ← if more than that is required to get toxcore, it's too bothersome for me
+[06:49:35] <Diadl0> See above
+[06:49:49] <Diadl0> I should go away. Bye
+[06:50:30] *** Joins: mva_ (znc@ )
+[06:52:50] *** Joins: Gottox_ (~Gottox@ )
+[06:53:24] *** Quits: Gottox (~Gottox@ ) (Ping timeout: 252 seconds)
+[06:53:25] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 252 seconds)
+[06:53:26] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 252 seconds)
+[06:53:28] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 250 seconds)
+[06:53:30] *** Quits: mva (znc@ ) (Ping timeout: 250 seconds)
+[06:53:31] *** Quits: NeaN (~elouin@ ) (Ping timeout: 250 seconds)
+[06:56:01] *** Joins: NeaN (~elouin@ )
+[06:56:04] *** Joins: nurupo (~nurupo.ga@ )
+[06:56:45] *** Joins: dardevelin (~dardeveli@ )
+[06:56:54] *** Joins: f10 (~flo@ )
+[07:14:55] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[07:15:25] *** Joins: f10 (~flo@ )
+[07:27:35] *** Joins: Emcy (~MC@ )
+[07:27:35] *** Quits: Emcy (~MC@ ) (Changing host)
+[07:27:35] *** Joins: Emcy (~MC@ )
+[07:32:06] *** mva_ is now known as mva
+[07:39:55] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[07:42:34] *** Joins: f10 (~flo@ )
+[08:32:13] -qtox-git-spam- [qTox] zetok closed pull request #3985: style: `sort(1)` headers and sources in qtox.pro (master...style-sort-inc) https://git.io/v1d3J
+[08:35:56] *** Joins: Emcy_ (~MC@ )
+[08:35:56] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:35:56] *** Joins: Emcy_ (~MC@ )
+[08:38:57] *** Quits: Emcy (~MC@ ) (Ping timeout: 252 seconds)
+[08:48:53] *** Joins: vindelschtuffen (~vindelsch@ )
+[08:55:54] *** Joins: sudden6 (~anonymous@ )
+[09:39:06] *** Joins: bashrc (~motters@ )
+[10:01:22] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[10:02:32] *** Joins: Yoshimo (~anything@ )
+[10:21:29] <sudden6> <zetok> i.e. when you have identical archives, how could they have different contents? <- by using a different compression setting
+[10:21:39] <sudden6> same content but the binary is different
+[10:21:46] <zetok> then just use same setting :)
+[10:22:07] <zetok> or just loop over the files
+[10:22:07] <sudden6> we don't know which settings github uses
+[10:22:22] <sudden6> that's what I wanted from the beginning
+[10:22:43] <sudden6> but I can't get shasum to compute a hash over a directory
+[10:28:03] <zetok> hm.
+[10:28:14] <zetok> why would you do that?
+[10:28:57] <zetok> actually, there are 2 ways
+[10:29:20] <zetok> one is to iterate over files, the other one to just unpack & pack again
+[10:29:39] <zetok> ><sudden6> we don't know which settings github uses
+[10:29:42] <zetok> then just check it
+[10:29:52] <zetok> again, you can make a loop with it
+[10:32:17] <sudden6> I used diff
+[10:32:52] <sudden6> comparing the archives is wrong
+[10:33:03] <sudden6> we want to compare the content
+[10:42:55] <zetok> if you can compare the archives, comparing contents is wrong
+[10:44:28] <iphy> Diadl0: you can make qTox cmake work with both cmake and autotools toxcore
+[10:45:11] *** Joins: Emcy (~MC@ )
+[10:45:11] *** Quits: Emcy (~MC@ ) (Changing host)
+[10:45:11] *** Joins: Emcy (~MC@ )
+[10:45:50] <sudden6> zetok: you can't compare archives, because the files are ordered non deterministicaly 
+[10:46:18] <zetok> :/
+[10:46:33] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[10:46:39] <iphy> Diadl0: toxcore cmake now also installs compatibility PC files
+[10:48:40] <sudden6> zetok: I did it, can you try verifying?
+[10:51:29] <zetok> sudden6: yep
+[10:51:36] <sudden6> hooray :)
+[11:22:29] <sudden6> how long are we going to support ubuntu 14.04 ?
+[11:30:18] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[11:56:48] <zetok> dunno
+[11:57:15] *** Joins: robinli (robinli@ )
+[12:07:57] *** Joins: f10 (~flo@ )
+[12:08:17] <zetok> sudden6: is there a need to remove it?
+[12:09:45] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:37:27] <zetok> hmm, there's also a memleak
+[12:37:47] <zetok> after ~24h of an "audio call" qTox uses 1.6 GB ram
+[12:38:13] <zetok> and 100% CPU usage
+[12:47:06] <Emcy> lol
+[12:47:58] <Emcy> zetoks tag disappeared and a release under sudden 6 appeared
+[12:51:07] <sudden6> Emcy: that's just how GH displays things
+[12:53:13] <Emcy> ok
+[13:09:08] <Emcy> any chance of fixing https://build.tox.chat/view/uTox/job/uTox_build_windows_x86-64_release/
+[13:09:27] <Emcy> utox stopped building after switching to toktok also
+[13:13:06] <sudden6> Emcy: this is not #utox
+[13:17:31] <zetok> no, but it's interesting
+[13:17:50] <zetok> for both qTox and µTox to start failing to build for windows with c-toxcore
+[13:17:56] <zetok> iphy: ↑
+[13:18:56] <iphy> unzip:  cannot find or open ../libtoxcore-toktok_build_windows_x86-64_static_release.zip, ../libtoxcore-toktok_build_windows_x86-64_static_release.zip.zip or ../libtoxcore-toktok_build_windows_x86-64_static_release.zip.ZIP.
+[13:19:18] <iphy> looks like a configuration error
+[13:29:46] -qtox-git-spam- [qTox] zetok opened pull request #4015: chore(build): fix toxcore checkout in the bootstrap script (master...chore-build-bootstrap) https://git.io/vMJqa
+[13:39:03] <zetok> sudden6: https://github.com/qTox/qTox/pull/4007 ← merge?
+[13:39:37] <zetok> https://github.com/qTox/qTox/pull/3935 ← also could be merged
+[13:39:55] <iphy> heh
+[13:40:09] <iphy> fixing stack protector warnings by not using the stack
+[13:41:11] <iphy> but yes, that's a good change
+[13:41:31] <iphy> it was not a very useful use of stack
+[13:41:37] <sudden6> the only way to win is not to play ;)
+[13:59:42] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vMJm6
+[13:59:42] -qtox-git-spam- qTox/master e7276e7 sudden6: fix(warnings): fix some warnings about the stack protector not working
+[14:12:28] <zetok> sudden6: …
+[14:12:40] <zetok> sudden6: I didn't notice that it wasn't gpg-signed
+[14:16:39] <zetok> sudden6: could you sign commits in your other PRs?
+[14:16:46] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMJY3
+[14:16:46] -qtox-git-spam- qTox/master c27d809 Zetok Zalbavar: Merge pull request #4007...
+[14:25:01] <sudden6> zetok: what, it should have been, I configured it as default long ago
+[14:27:27] <sudden6> apparently I didn't set it globally....
+[14:30:02] <sudden6> zetok: does test-pr.sh explicitely need bash? and if not, could you make it not depend on it?
+[14:30:18] <zetok> why?
+[14:30:41] <sudden6> see VVDs comment in https://github.com/qTox/qTox/pull/4013
+[14:31:07] <sudden6> if it doesn't need bash we could just asume bin/sh
+[14:31:43] <zetok> ah
+[14:31:45] *** Joins: dardevelin (~dardeveli@ )
+[14:32:10] <zetok> #!/usr/bin/env bash
+[14:33:07] <zetok> ↑ that would do
+[14:46:55] <zetok> Diadl0: btw, nurupo was working on adding docs for toxcore's cmake
+[14:48:13] <zetok> no idea when a PR would be made though
+[14:58:50] <LittleVulpix> Is there a binary/installer for 1.7.0 for windows anywhere?
+[14:59:10] <zetok> nope
+[14:59:20] <LittleVulpix> Oh.
+[15:48:21] *** Joins: x_ (~x@ )
+[16:05:57] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[16:07:07] <x_> zetok: alright, got the pastebin thing in gist: https://gist.github.com/rcornea/51c463bdbbbdebed22ad30e14f5e567a
+[16:07:51] <zetok> x_: which ffmpeg version do you have?
+[16:11:39] <x_> zetok: synaptic says ffmpeg is version 7:3.2.2-1~bpo8+1
+[16:11:55] <x_> the latest i can get from the jessie-backports repo
+[16:12:01] <zetok> hmm
+[16:20:15] <zetok> x_: I'm not sure about this, but this is probably something with your ffmpeg
+[16:22:17] <x_> alright, i'll try to reinstall or downgrade it, see what happens
+[16:25:09] *** Joins: f10 (~flo@ )
+[16:43:19] *** Joins: purte (68eea96b@ )
+[16:43:52] <purte> when will qTox 1.7.0 be available for download for Windows?
+[16:46:43] <Emcy> when they fix the build
+[16:47:54] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[16:50:14] <purte> oh, is the problematic buildlog visible somewhere?
+[16:58:21] *** Joins: bashrc (~motters@ )
+[17:05:18] *** Quits: purte (68eea96b@ ) (Quit: Page closed)
+[17:19:41] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[18:19:35] <x_> nothing changed after reinstalling, purging and installing ffmpeg. I can't seem to find a downgrade for the ffmpeg package either, it seems to exist only in backports or testing/unstable (and I'm not sure I want to move to an unstable version of ffmpeg).
+[18:20:08] <x_> the same compilation errors spring up as before
+[18:23:55] <x_> if there's any more tests i can run, let me know. i'll just leave the 1.7.0 build install alone for now.
+[18:25:33] <x_> leave me a comment on the gist if you find something
+[19:09:13] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 245 seconds)
+[20:17:06] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:47:54] *** Joins: Yoshimo (~anything@ )
+[20:48:52] *** Joins: f10 (~flo@ )
+[21:03:02] *** Joins: dardevelin (~dardeveli@ )
+[21:06:25] *** Quits: bashrc (~motters@ ) (Quit: leaving)
+[21:07:15] *** Joins: bashrc (~motters@ )
+[21:22:14] <sudden6> VVD: I updated the PR, symlinking bash should now be unnecessary, could you test this?
+[21:22:42] <VVD> sudden6, hi
+[21:23:10] <sudden6> also could you send me some russian letters?^^
+[21:23:17] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 248 seconds)
+[21:23:20] *** Joins: vindelschtuffen (~vindelsch@ )
+[21:23:28] <sudden6> oh wait I saw some in the PR :)
+[21:23:42] <VVD> хехе
+[21:24:22] <VVD> абвгдеёжзийклмнопрстуфхцчшщьыъэюя
+[21:24:37] <VVD> get all alphabet :-D
+[21:24:49] <sudden6> thx^^
+[21:25:09] <sudden6> it's not that easy to find these on my keyboard :DD
+[21:29:17] <VVD> sudden6, in git clone https://github.com/qTox/qTox still /bin/bash :-]
+[21:29:43] <VVD> only after ./test-pr.sh 4013 it fixed
+[21:29:44] <VVD> :-D
+[21:29:56] <sudden6> oh, right, I forgot that^^
+[21:31:44] <VVD> np
+[21:31:52] <VVD> building…
+[21:32:36] <sudden6> VVD: I checked the problem with russian letters in the profile name, but it works here without issues
+[21:33:03] <sudden6> maybe you have qt without unicode support?
+[21:33:23] <VVD> how to check?
+[21:33:31] <sudden6> I have no idea
+[21:33:44] <sudden6> do other qt applications have problems with russian letters?
+[21:34:05] <VVD> qt5…
+[21:36:00] <VVD> vlc with qt5 work with russian letters in files
+[21:36:08] <sudden6> stupid question, does the filesystem you're trying to save to support unicode?
+[21:36:29] <VVD> ofc
+[21:36:43] <VVD> it work in qTox 1.5
+[21:36:50] <sudden6> oh right
+[21:36:54] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:37:15] <VVD> btw, Import dialog show ???? instead russian letters
+[21:37:21] <VVD> in qTox 1.6
+[21:38:45] <sudden6> hmm, also that works here
+[21:39:07] <sudden6> does importing work even if it shows ?????
+[21:43:11] <VVD> wireshark-qt5 in open file dialog show correct letters
+[21:44:32] <VVD> mkvtoolnix-gui work too
+[21:44:56] <sudden6> have you tried compiling qTox 1.5.1 yourself and see if it works?
+[21:45:23] <VVD> It work before upgrade to 1.5
+[21:45:25] <VVD> It work before upgrade to 1.7
+[21:45:27] <VVD> It work before upgrade to 1.6
+[21:45:28] <VVD> :-D
+[21:46:07] <sudden6> yeah, but maybe there's a difference between you building 1.5 and the packager building 1.5
+[21:46:32] <sudden6> some optional dependency, compiler switch, idk could be anything
+[21:47:50] <VVD> Import don't work too
+[21:48:02] <VVD> qTox 1.6, file with russian letters
+[21:48:14] <VVD> ��������_��������������.tox
+[21:48:14] <VVD> File not found.
+[21:48:14] <VVD> Please verify the correct file name was given.
+[21:48:26] <sudden6> mhm
+[21:51:06] <sudden6> I'm out of ideas of how to solve this...
+[21:51:35] <sudden6> you can always try to git bisect it though
+[21:51:40] <VVD> tested last 1.7 - same
+[21:51:54] <VVD> how to get 1.5?
+[21:52:17] <sudden6> git checkout v1.5.1
+[21:52:36] <VVD> oh, and need FreeBSD patches…
+[21:53:26] <sudden6> they should be in here https://svnweb.freebsd.org/ports/head/net-im/qTox/files/
+[21:54:14] <sudden6> just apply them manually after checkout
+[22:02:12] <VVD> I got old version of port
+[22:02:16] <VVD> with 1.5.2
+[22:07:12] <VVD> sudden6, just compiled and run 1.5.2 - I see russian letters in Import dialog and in pick profile dialog too
+[22:07:16] <VVD> all work fine
+[22:07:55] <sudden6> then you'll have to use git bisect between 1.5.2 and 1.6.0(this is the first broken, right?)
+[22:10:03] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:12:32] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 250 seconds)
+[22:13:27] <VVD> sudden6, I have both sources and use diff -ur :-D
+[22:13:46] <sudden6> That'll be a huge diff^^^
+[22:15:20] <sudden6> VVD I might have an idea
+[22:15:45] <sudden6> try to run qmake with -DUNICODE
+[22:15:54] <sudden6> and compile 1.7.0
+[22:17:24] <VVD> $ LANG=C gmake -DUNICODE
+[22:17:24] <VVD> gmake: invalid option -- D
+[22:17:24] <VVD> gmake: invalid option -- U
+[22:17:24] <VVD> gmake: invalid option -- N
+[22:17:24] <VVD> Usage: gmake [options] [target] ...
+[22:17:24] <VVD> Options:
+[22:17:42] <sudden6> qmake not dmake
+[22:18:16] <sudden6> or try qmake DEFINES+=UNICODE
+[22:19:54] <VVD> gmake, not dmake
+[22:20:00] <VVD> it's GNU make
+[22:20:04] <sudden6> oh
+[22:20:23] <sudden6> well, I just looked it up, qmake DEFINES+=UNICODE should be right
+[22:20:32] <VVD> compiling…
+[22:20:38] <VVD> 5 mins may be
+[22:27:32] <VVD> /usr/local/lib/qt5/bin/qmake LIBS+=-L../c-toxcore INCLUDEPATH+=. DEFINES+=UNICODE
+[22:27:37] <VVD> gmake
+[22:27:48] <VVD> nothing changes - ????? still
+[22:27:59] <sudden6> aw crap
+[22:28:50] <sudden6> I can't spot anything obvious in the git log
+[22:29:11] <VVD> check initializing qt5
+[22:29:37] <VVD> and check create file open dialog
+[22:34:58] <sudden6> IIRC the file open dialog was changed from native to qt
+[22:35:41] <sudden6> but that shouldn't cause problems when creating and reading files programmatically
+[22:38:27] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[22:43:44] <VVD> why not: file dialog send incorrect name to for open
+[22:44:35] <sudden6> yeah, but if you create a new profile there's no file dialog
+[22:56:09] -qtox-git-spam- [qTox] Diadlo closed pull request #3868: feat(toxid): Added correct checksum validation. (master...addToxIdCheck) https://git.io/vXz0z
+[23:11:58] <VVD> sudden6, it create 4 files instead 3: азаза.db ?????.db ?????.ini ?????.tox
+[23:13:50] <VVD> 1st one with correct name, but 3 other with ????
+[23:14:19] <VVD> it same as in 1.6 and in 1.7 without DEFINES+=UNICODE
+[23:17:10] <VVD> how can I get versions between 1.5.2 and 1.6.0?
+[23:17:48] <VVD> git clone <WHAT?> ?
+[23:18:03] <sudden6> when you have cloned the repo you just use git checkout
+[23:18:13] <VVD> start with middle by date may be…
+[23:18:19] <sudden6> no need to download everythin
+[23:18:25] <VVD> hm
+[23:18:30] <sudden6> VVD: use git bisect
+[23:18:51] <VVD> my git knowlege very poor - only basic…
+[23:19:05] <sudden6> read https://github.com/qTox/qTox/wiki/Testing#regression-testing
+[23:19:23] <sudden6> especially the top
+[23:19:33] <sudden6> link
+[23:20:10] <sudden6> good would be 1.5.2 bad would be 1.6.0
+[23:23:05] <VVD> $ LANG=C git bisect bad
+[23:23:05] <VVD> You need to start by "git bisect start"
+[23:23:05] <VVD> Do you want me to do it for you [Y/n]?
+[23:23:14] <VVD> what do he want from me?
+[23:23:15] <VVD> :-D
+[23:23:44] <sudden6> I think you have to run `git bisect start` first^^
+[23:24:34] <VVD> and then?
+[23:24:41] <VVD> my git knowlege very poor - only basic…
+[23:24:55] <sudden6> git bisect good v1.6.0
+[23:25:05] <sudden6> git bisect bad v1.5.2
+[23:25:06] <VVD> bad?
+[23:25:18] <VVD> 1.6.0 bad
+[23:25:22] <VVD> 1.5.2 good
+[23:25:26] <VVD> ?
+[23:25:31] <sudden6> oh, sorry my mistake
+[23:26:31] <VVD> and then?
+[23:26:57] <VVD> $ git bisect good v1.5.2
+[23:26:57] <VVD> Бинарный поиск: 122 редакции осталось проверить после этой (примерно 7 шагов)
+[23:26:57] <VVD> [febde259bc1b64694ea1dfaa23473579d9b1ba24] Merge pull request #3738
+[23:27:05] <VVD> just build and test?
+[23:27:22] <sudden6> yep
+[23:27:26] <VVD> it divide self?
+[23:27:50] <sudden6> essentially follow https://wiki.winehq.org/Regression_Testing#Running_the_Bisection
+[23:27:53] <VVD> and change
+[23:27:57] <VVD> and change version
+[23:28:13] <VVD> same as on ur 1st url
+[23:28:24] <VVD> same descrition
+[23:28:26] <sudden6> with `git bisect bad` you tell it the bug is still present
+[23:28:35] <VVD> ye
+[23:29:39] <sudden6> and at the end append the hash of the bad commit to the github issue so we can look into it
+[23:30:03] <sudden6> or better, the whole output
+[23:30:40] <VVD> but I need patches from 4013
+[23:30:53] <sudden6> you'll have to port them yourself...
+[23:31:04] <VVD> for every version…
+[23:32:19] <sudden6> probably, our you'll have to look into how to apply these patches with `patch`
+[23:32:47] <sudden6> but don't ask me how to do it, this tool always works against me xP
+[23:54:35] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[23:59:09] <VVD> sudden6, do ./test-pr.sh 4013 always broke bisect versions?
+[23:59:21] <sudden6> yes
+[23:59:24] <VVD> fuck
+[23:59:35] <sudden6> because it always checksout the what's in this PR
