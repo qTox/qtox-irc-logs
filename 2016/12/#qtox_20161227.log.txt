@@ -1,0 +1,420 @@
+[00:02:41] <VVD> middle version use different toxcore too
+[00:02:46] <VVD> it's so boring
+[00:05:50] <VVD> In file included from src/friend.cpp:26:
+[00:05:50] <VVD> ./src/core/core.h:83:28: error: use of undeclared identifier 'TOX_PASS_KEY'
+[00:05:50] <VVD>     static std::unique_ptr<TOX_PASS_KEY> createPasskey(const QString &password, uint8_t* salt = nullptr);
+[00:06:01] <VVD> sudden6, what version of toxcore I have to use?
+[00:06:17] <VVD> both don't work
+[00:06:19] <sudden6> VVD: irungentoos
+[00:06:48] <VVD> it's old or new?
+[00:07:04] <sudden6> you should only have to use the old one for the range 1.5.2 to 1.6.0
+[00:20:52] <VVD> 1st step is good
+[00:21:52] <VVD> compiling fd36bdc89f15c39dea1ec3362c14e7abb28fb837 now
+[00:25:16] <VVD> is bad
+[00:25:18] <VVD> 2nd
+[00:28:27] <VVD> 3rd bad
+[00:40:33] <VVD> sudden6
+[00:40:36] <VVD> $ git bisect good
+[00:40:36] <VVD> 29da2210c98a2f1bf2dcaf6af18ba818ceef5d2c is the first bad commit
+[00:40:36] <VVD> commit 29da2210c98a2f1bf2dcaf6af18ba818ceef5d2c
+[00:40:36] <VVD> Author: sudden6 <sudden6@gmx.at>
+[00:40:36] <VVD> Date:   Fri Sep 23 00:12:40 2016 +0200
+[00:40:36] <VVD>  
+[00:40:36] <VVD>     feat(smileys): try to load smileys from XDG_DATA_DIR directories
+[00:40:37] <VVD>     
+[00:40:37] <VVD>     This provides a location where users can store custom smiley packs
+[00:40:38] <VVD>  
+[00:40:38] <VVD> :040000 040000 fb3e0273179cbdab15cd3ed37e8ffcf43d8d82ab 47b533b457d3be80ba5429ef8bf5e243346ede1c M      src
+[00:41:06] <sudden6> ?!? very interesting
+[00:41:14] <VVD> it's ur commit :-D
+[00:41:30] <sudden6> yeah, but totally touching something different lol
+[00:41:33] <VVD> how I can see this commit?
+[00:41:41] <sudden6> please copy this to the GH issue too
+[00:42:01] <VVD> already commented
+[00:42:05] <VVD> and see url
+[00:43:42] <sudden6> VVD: can you revert the commit on 1.7.0?
+[00:43:48] <sudden6> git revert 29da2210c98a2f1bf2dcaf6af18ba818ceef5d2c
+[00:44:12] <VVD> how?
+[00:44:18] <VVD> manually?
+[00:44:23] <sudden6> nope
+[00:44:33] <VVD> ah
+[00:44:34] <VVD> see
+[00:55:20] <VVD> sudden6, work fine!
+[00:55:32] <VVD> 1.7.0 without this commit
+[00:55:41] <sudden6> ok, I'm pretty perplexed about this
+[00:55:55] <sudden6> I'll need some help to solve this mistery lol
+[01:00:20] <sudden6> VVD: thank you very much for helping to find the source of the problem
+[01:03:00] <VVD> thank u too :-]
+[01:29:22] *** Joins: dardevelin (~dardeveli@ )
+[01:43:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[01:47:36] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[01:51:31] *** Joins: LittleVulpix (~Miranda@ )
+[02:42:31] *** Joins: MDrights (~MDrights@ )
+[03:39:59] *** Joins: DaSpirit (~DaSpirit@ )
+[03:41:52] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[03:42:00] *** Quits: DaSpirit (~DaSpirit@ ) (Client Quit)
+[04:51:11] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 246 seconds)
+[04:58:25] *** Joins: Emcy_ (~MC@ )
+[04:58:25] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[04:58:25] *** Joins: Emcy_ (~MC@ )
+[05:00:39] *** Joins: DiCE1904 (~textual@ )
+[05:01:50] *** Quits: Emcy (~MC@ ) (Ping timeout: 264 seconds)
+[05:13:12] *** Joins: LittleVulpix (~Miranda@ )
+[05:27:05] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 252 seconds)
+[05:32:25] *** Quits: DiCE1904 (~textual@ ) (Quit: Textual IRC Client: www.textualapp.com)
+[05:36:59] *** Joins: vindelschtuffen (~vindelsch@ )
+[05:38:37] *** Joins: Emcy (~MC@ )
+[05:41:35] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 246 seconds)
+[05:42:39] *** Joins: MDrights (~MDrights@ )
+[05:44:10] *** Joins: Emcy_ (~MC@ )
+[05:45:45] <zetok> Hm.
+[05:47:21] *** Quits: Emcy (~MC@ ) (Ping timeout: 268 seconds)
+[06:13:31] *** Joins: Emcy (~MC@ )
+[06:16:34] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 265 seconds)
+[06:22:13] *** Joins: Diadlo (~diadlo@ )
+[06:22:13] *** Quits: Diadl0 (~diadlo@ ) (Read error: Connection reset by peer)
+[06:26:55] *** Joins: Emcy_ (~MC@ )
+[06:28:37] -qtox-git-spam- [qTox] zetok closed pull request #4015: chore(build): fix toxcore checkout in the bootstrap script (master...chore-build-bootstrap) https://git.io/vMJqa
+[06:28:49] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[06:28:52] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/1d98a97e3b8373d351f63d2da1fb3191d8f62690
+[06:28:52] -qtox-git-spam- qTox/master 1d98a97 Zetok Zalbavar: chore(build): fix toxcore checkout in the bootstrap script...
+[06:33:43] *** Joins: f10 (~flo@ )
+[06:51:41] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[06:53:31] *** anoa_ is now known as anoa
+[06:58:31] *** Joins: f10 (~flo@ )
+[07:04:47] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[07:06:16] -qtox-git-spam- [qTox] zetok opened pull request #4017: chore(build): slightly refactor bootstrap.sh (master...refactor-bootstrap) https://github.com/qTox/qTox/pull/4017
+[07:07:24] *** Joins: Emcy (~MC@ )
+[07:07:24] *** Quits: Emcy (~MC@ ) (Changing host)
+[07:07:24] *** Joins: Emcy (~MC@ )
+[07:08:53] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[07:12:31] *** Joins: f10 (~flo@ )
+[07:13:27] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[07:20:43] *** Joins: f10 (~flo@ )
+[07:22:05] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[07:26:42] <zetok> Gottox_: how's adding qTox 1.7 to Void going?
+[07:31:52] *** Joins: f10 (~flo@ )
+[07:50:46] <VVD> Diadlo, hi
+[07:50:52] <VVD> here?
+[07:51:00] <VVD> do u speak russian?
+[07:51:25] *** Joins: Emcy_ (~MC@ )
+[07:51:48] <VVD> You have russian name https://github.com/Diadlo
+[07:54:38] *** Quits: Emcy (~MC@ ) (Ping timeout: 264 seconds)
+[08:00:29] <VVD> Воронеж :-]
+[08:03:41] *** Joins: Emcy (~MC@ )
+[08:03:41] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:03:41] *** Joins: Emcy (~MC@ )
+[08:06:29] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[08:11:04] *** Joins: Yoshimo (~anything@ )
+[08:22:15] *** Joins: Emcy_ (~MC@ )
+[08:22:15] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:22:15] *** Joins: Emcy_ (~MC@ )
+[08:25:50] *** Quits: Emcy (~MC@ ) (Ping timeout: 268 seconds)
+[08:26:10] *** Joins: Emcy (~MC@ )
+[08:26:10] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:26:10] *** Joins: Emcy (~MC@ )
+[08:28:01] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[08:33:59] *** Quits: vindelschtuffen (~vindelsch@ ) (Quit: Leaving)
+[08:37:22] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[08:38:05] *** Joins: MDrights (~MDrights@ )
+[08:38:22] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:03:10] *** Joins: sudden6 (~anonymous@ )
+[09:11:41] *** Joins: ChubbyBreakfast1 (~MrNodeBot@ )
+[09:12:41] *** Parts: ChubbyBreakfast1 (~MrNodeBot@ ) ()
+[09:26:17] *** Joins: Emcy_ (~MC@ )
+[09:26:17] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[09:26:17] *** Joins: Emcy_ (~MC@ )
+[09:28:35] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[09:32:59] *** Joins: f10 (~flo@ )
+[09:33:12] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[09:34:22] *** Joins: bashrc (~motters@ )
+[10:05:05] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[10:09:53] *** Joins: zero-ghost (~0@ )
+[10:14:54] *** Joins: in1t3r_ (~LordShiva@ )
+[10:29:55] *** Joins: sudd3n6 (~anonymous@ )
+[11:22:04] <zetok> VVD: I've been wondering, isn't that a problem with FreeBSD?
+[11:22:24] <zetok> sudd3n6: https://github.com/qTox/qTox/pull/3986 ← thoughts?
+[11:27:51] <zetok> hmm.
+[12:53:55] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[13:13:32] *** Joins: Yoshimo (~anything@ )
+[13:28:39] *** Joins: x_ (~x@ )
+[14:09:17] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[14:09:42] *** Joins: in1t3r_ (~LordShiva@ )
+[14:20:26] *** Joins: Gedx11 (2e272410@ )
+[14:21:04] *** Quits: Gedx11 (2e272410@ ) (Client Quit)
+[14:33:40] *** Quits: bashrc (~motters@ ) (Quit: leaving)
+[14:33:55] *** Joins: bashrc (~motters@ )
+[14:40:03] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 245 seconds)
+[14:42:59] *** Joins: Yoshimo (~anything@ )
+[14:48:22] *** Quits: cisc (~cisc@ ) (Ping timeout: 256 seconds)
+[14:59:20] *** Quits: bashrc (~motters@ ) (Quit: leaving)
+[14:59:37] *** Joins: bashrc (~motters@ )
+[15:01:50] *** Joins: cisc (~cisc@ )
+[15:22:02] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 258 seconds)
+[15:27:17] <sudden6> zetok: sorry, I'm buxy watching CCC livestreams today
+[15:32:59] <zetok> anything interesting?
+[15:34:01] <sudden6> there was a talk about hacking wifi (again) which was interesting
+[15:34:13] <sudden6> but I don't think the video is online yet
+[15:34:59] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:35:28] *** Joins: f10 (~flo@ )
+[15:35:58] <sudden6> https://fahrplan.events.ccc.de/congress/2016/Fahrplan/schedule/0.html and https://streaming.media.ccc.de/33c3/ there you go
+[15:38:44] *** Quits: bashrc (~motters@ ) (Ping timeout: 268 seconds)
+[15:39:26] *** Joins: bashrc (~motters@ )
+[15:58:37] <zetok> thanks
+[15:58:52] <zetok> looks like there are recordings available
+[16:07:39] <sudden6> zetok: what about posting a qTox advertisement to https://33c3.infobeamer.com/ ?
+[16:15:29] <zetok> sudden6: what to post?
+[16:16:30] <sudden6> a slightly modified screenshot of qtox.github.io?
+[16:16:38] <zetok> :s
+[16:16:58] <sudden6> adding the github repo and the website address?
+[16:17:46] <zetok> um
+[16:18:00] <zetok> the problem is that this stuff looks ~bad
+[16:18:46] <cisc> tried compiling qTox on Debian 8.6 and it failed with a bunch of errors: https://hastebin.com/xeredijawa.vbs
+[16:19:46] <zetok> cisc: doesn't work without js
+[16:21:21] <cisc> is that listed in the install.md?
+[16:21:27] <sudden6> zetok: I don't think it looks bad
+[16:21:34] <zetok> :/
+[16:22:36] <sudden6> do you have something better in mind?
+[16:23:03] <bennabiy> Can someone tell me why my qtox would tell me it cannot open logs, so logs will be disabled?
+[16:23:35] <cisc> <zetok> cisc: doesn't work without js <--- what do you mean? I followed the install.md exactly
+[16:23:36] <sudden6> bennabiy: debug output?
+[16:24:05] <bennabiy> sudden6: best way to get you debug output?
+[16:24:29] <zetok> cisc: your paste doesn't work without js
+[16:24:51] <sudden6> bennabiy: run qTox from a terminal
+[16:24:57] <bennabiy> one moment
+[16:25:16] <zetok> bennabiy: are you sure that it's about logs and not the history?
+[16:25:16] <cisc> zetok: https://gist.github.com/anonymous/dffaa7d90ca9914c528cbce1990b32f1
+[16:25:43] <bennabiy> zetok: let me close and reopen
+[16:25:44] <zetok> cisc: ffmpeg 3.2 ?
+[16:26:00] <sudden6> cisc: something is wrong with your ffmpeg
+[16:27:04] <bennabiy> qTox couldn't open your chat logs, they will be disabled.
+[16:27:39] <cisc> I checked. ffmpeg 3.2.2
+[16:27:39] <bennabiy> failed to open history for profile
+[16:27:44] <bennabiy> in debug output
+[16:28:00] <sudden6> bennabiy: please post the full output to gist.github.com
+[16:28:20] <sudden6> xxx out confidential info
+[16:30:42] <bennabiy> sudden6: what is the IPC ID?
+[16:30:49] <bennabiy> is that confidential?
+[16:31:17] <sudden6> nothing important, just a random value for multiple qTox processes to communicate
+[16:31:23] <zetok> cisc: there's no way to try with 3.1 ?
+[16:31:25] <bennabiy> ok
+[16:32:11] <bennabiy> sudden6: https://gist.github.com/anonymous/1da43220b4165566841d6f06342c51cb
+[16:32:56] <bennabiy> It worked at one point, but has not worked in a long while
+[16:33:38] <bennabiy> I created the profile in uTox, and when I imported it to qTox, it worked and had the history, but after a few weeks, it decided to not work
+[16:33:46] <cisc> zetok: I can but I don't normally use Debian and am doing this because another user is saying that compile fails on Debian 8.6. I don't know how to downgrade ffmpeg on Debian
+[16:34:00] <zetok> cisc: mm
+[16:34:11] <cisc> in the install.md it said to add backports which I did
+[16:34:15] <zetok> yeah
+[16:34:25] <zetok> before backports provided older ffmpeg version
+[16:34:39] <sudden6> bennabiy: looks like the *.tox file got corrupted
+[16:34:47] <bennabiy> sudden6: the decryption failed came from my fingers fumbling
+[16:35:08] <bennabiy> sudden6: so it remembers my friends etc, just not the history
+[16:35:09] <cisc> so disable backports? apt-get --autoremove ffmpeg then try installing again?
+[16:35:47] <bennabiy> sudden6: is it just a table which is corrupt?
+[16:36:27] <sudden6> bennabiy: seems like your database is encrypted but failed to decrypt
+[16:36:40] <sudden6> did you at some time upgrade to 1.6 and then back down to 1.5.2
+[16:36:55] <bennabiy> sudden6: not sure
+[16:37:06] <bennabiy> sudden6: what all is in that database?
+[16:37:09] <sudden6> which version are you using right now?
+[16:37:19] <sudden6> bennabiy: only the chat logs atm
+[16:37:41] <sudden6> if you don't care about them, close qTox and remove the *.db file of that profile
+[16:37:51] <sudden6> or better rename it
+[16:37:59] <bennabiy> and then it will start new?
+[16:38:04] <sudden6> yes
+[16:38:09] <bennabiy> simple enough
+[16:38:15] <bennabiy> I have lived without them for this long :)
+[16:39:00] <bennabiy> where is the file located? /home/user/.config/tox/?
+[16:39:06] <sudden6> yes
+[16:39:15] <cisc> apt-cache showpkg ffmpeg: the only version listed is 3.2.2
+[16:40:33] <bennabiy> beautiful :)
+[16:41:09] <sudden6> bennabiy: it works again?
+[16:41:27] <bennabiy> sudden6: no error on startup..
+[16:41:35] <bennabiy> will send a message and then close and reopen 
+[16:41:49] <bennabiy> no one is on right now though
+[16:42:02] <sudden6> bennabiy: use echobot@toxme.io for test :)
+[16:43:20] <bennabiy> ok
+[16:43:28] <zetok> sudden6: https://a.uguu.se/ki7FbuGkr4UB.jpeg
+[16:44:02] <sudden6> zetok: very nice :)
+[16:44:50] <bennabiy> sudden6: worked great
+[16:45:14] <bennabiy> for email adding, it only works with toxme.io addresses?
+[16:45:39] <sudden6> yep, it's not email even though it looks like an email address
+[16:45:48] <sudden6> you have to register your name at toxme.io
+[16:45:53] <zetok> sudden6: ok, when it should be displayed?
+[16:46:26] <sudden6> what choices do you have?^^
+[16:46:43] <zetok> all
+[16:47:12] <sudden6> huh? I thought they are just cycled through?
+[16:47:30] <zetok> dunno
+[16:48:18] <bennabiy> sudden6: yes, I understand. Is it possible to set up a private server instead of toxme? I notice the qTox interface has a dropdown for server, but only 1 entry.
+[16:48:45] <sudden6> bennabiy: yes it is (I think) but no one did this until now^^
+[16:49:27] <bennabiy> sudden6: what would it take?
+[16:49:39] <sudden6> on how to do so you're best of contacting LittleVulpix
+[16:49:49] <bennabiy> sudden6: I am very interested in it for our group
+[16:49:50] <bennabiy> ok
+[16:49:53] <sudden6> IIRC he runs toxme.io
+[16:50:14] <sudden6> you could also ask in #toktok or #tox-dev
+[16:50:30] <zetok> sudden6: suggesting #tox channels is a bad idea
+[16:50:46] <bennabiy> LittleVulpix: Can you give me info on how to set up a service similar to toxme.io?
+[16:51:02] <zetok> bennabiy: https://github.com/LittleVulpix/toxme
+[16:51:23] <sudden6> zetok: I acknowledge your concerns, but choose to ignore them :)
+[16:51:50] <zetok> sudden6: closing your eyes to the problem won't fix it
+[16:52:12] <zetok> cisc: sadly, it looks like qTox on debian is now between rock and a hard place
+[16:52:27] <sudden6> I'm not closing my eyes, but I have a different view of the problem
+[16:52:49] * bennabiy sighs
+[16:52:57] <zetok> cisc: i.e. debian has in its stable repos libav, which doesn't provide needed featuers, and now they bumped ffmpeg in backports to version that qTox doesn't compile against
+[16:53:16] <sudden6> what version is backports?
+[16:53:21] <zetok> sudden6: 3.2
+[16:53:31] <sudden6> maybe they removed the deprecated apis we ignored lol
+[16:54:39] <zetok> we probably should make an issue for support for 3.2
+[16:55:16] <sudden6> zetok: yes
+[16:55:21] <bennabiy> that is great about toxme... so if I set up a server, it will not be broadcast on some list for spammers to just get to, correct?
+[16:55:39] <bennabiy> like it won't default to the server list unless someone types it in
+[16:55:40] <sudden6> yay more #ifdef
+[16:55:53] <cisc> other user on Debian 8.6 cant compile qtox either: https://gist.github.com/rcornea/51c463bdbbbdebed22ad30e14f5e567a
+[16:56:12] <bennabiy> cisc: does this affect ubuntu as well?
+[16:56:21] <cisc> how would I know
+[16:56:30] * bennabiy shrugs
+[16:57:03] <sudden6> cisc I think I reproduced this myself yesterday, I just thought I was doing things wrong
+[16:57:22] <bennabiy> If I rename the profile I am using, it will not affect the encryption as long as I do it through the qTox interface, correct?
+[16:57:46] <sudden6> bennabiy: yes
+[16:58:26] <bennabiy> thank you
+[16:58:32] <zetok> well, in any case for 33c3 "banner" probably will be displayed once some moderator approves it
+[16:58:37] <cisc> so qtox won't compile against ffmpeg 3.2.2?
+[16:59:28] <zetok> I guess
+[16:59:41] <zetok> I haven't tried with 3.2
+[17:00:04] <zetok> but IIRC ffmpeg was planning to deprecate some stuff in 3.2 that qTox depends on
+[17:00:15] <zetok> s/deprecate/rename/
+[17:00:27] <zetok> it was deprecated since at least 3.1, if not 3.0
+[17:06:37] <x_> a-HA! so that's what it was :D
+[17:06:48] <x_> thanks for the clarification, zetok
+[17:09:58] <x_> one solution could be to maintain a repo with prebuilt qTox binaries, like the opensuse one here https://build.opensuse.org/package/show/home:antonbatenev:tox/qtox
+[17:10:36] <x_> i've installed the binary from there and everything is running smoothly, although latest qTox is version 1.6
+[17:10:42] <x_> still good
+[17:10:52] <zetok> x_: you can install qtox-alpha
+[17:11:01] <zetok> not as new as 1.7, but newer
+[17:11:09] <zetok> newer than 1.6*
+[17:11:22] <x_> eh, i suppose it's a testing/unstable version :D
+[17:12:00] <x_> is there some benefit for you if i run the alpha/unstable version? does it supply any useful debug info?
+[17:12:16] <x_> if not, i'd rather use the stable version
+[17:13:25] <zetok> there is benefit if one makes issues about regressions/stuff
+[17:13:42] <sudden6> on to the next talk https://streaming.media.ccc.de/33c3/hallg
+[17:14:17] <x_> zetok: mmm. ok, i'll look into it.
+[17:15:48] <LittleVulpix> bennabiy: Yeah you can set up your own toxme clone, though you will also need to fork and compile your own tox client to add your new toxme clone into it. Other than that it should be pretty straightforward, the github link you got has all you need.
+[17:16:33] <bennabiy> LittleVulpix: thank you. I was just writing to you about a correction in your .MD file
+[17:16:41] <zetok> LittleVulpix: um, one doesn't need to compile qTox to be able to use other services
+[17:16:57] <LittleVulpix> zetok: My bad, I dunno how it is implemented there :3
+[17:17:24] <LittleVulpix> bennabiy: just create a ticket on the repo, I'll check it. Quite tired, taxing work @ christmas and even now
+[17:17:32] <bennabiy> LittleVulpix: you need to change it to read pip3 install -r ...  and right before that command, you need to cd toxme
+[17:17:42] <zetok> sudden6: "logo" will be displayed in ~40 min \o/
+[17:17:42] <bennabiy> LittleVulpix: will do
+[17:17:59] <sudden6> cool
+[17:22:20] <cisc> opensuse 42.2 also has ffmpeg 3.2 in the OSS repo, no 3.1
+[17:22:43] <cisc> so that means qtox won't compile on SuSE either?
+[17:24:17] <sudden6> cisc: after reading the ffmpeg source, the stuff should still be there and isn't marked as deprecated either
+[17:24:43] <sudden6> so it seems that's not the problem
+[17:24:51] <cisc> so then it's because of libav maybe
+[17:25:02] <zetok> hum
+[17:25:53] <bennabiy> LittleVulpix: just put a pull request in
+[17:26:21] <sudden6> hmm, I also use ffmpeg 3.2.2 and have no problem to compile, must be something else
+[17:27:43] <cisc> yeah it must be
+[17:38:33] <zetok> cisc: https://github.com/qTox/qTox/pull/3998 ?
+[17:55:39] <cisc> zetok: that could be the issue, i'll try
+[18:10:48] *** Joins: pcre_ (~quassel@ )
+[18:32:47] <bennabiy> LittleVulpix: Is there a reason you are using libsodium-1.0.3 as opposed to a later version? 1.0.3 is no longer available, so that portion fails
+[18:43:51] *** Joins: f15h (~thomas@ )
+[18:46:41] *** Joins: SylvieLorxu (~TheLastPr@ )
+[18:51:47] <SylvieLorxu> zetok: You nerd: https://lut.im/O9XhkCWVYh/KTCbjTW6BKGPgUsx.jpg
+[18:52:09] <zetok> :P
+[18:57:10] <zetok> SylvieLorxu: are you at 33c3?
+[19:00:09] <SylvieLorxu> zetok: Yes
+[19:00:18] <zetok> nice
+[19:01:03] <zetok> SylvieLorxu: https://lists.tox.chat/pipermail/general/2016-December/000107.html
+[19:03:01] <Emcy_> SylvieLorxu you gonna shill tox around at ccc
+[19:03:34] *** Joins: piatat (68eea905@ )
+[19:03:45] <piatat> Is qTox 1.7 available for Windows?
+[19:03:51] <zetok> not yet
+[19:03:52] <SylvieLorxu> Emcy_: Nah, I have pretty much given up on Tox, just wanted to remind zetok what a nerd he is
+[19:04:51] <Emcy_> why give up
+[19:06:05] <SylvieLorxu> Because Tox hasn't worked properly for me in over a year and actually got way worse after 2015 and I don't see it getting better anymore
+[19:06:20] <piatat> zetok: ok, thanks
+[19:06:36] <piatat> SylvieLorxu: what's the alternative?
+[19:07:01] <SylvieLorxu> piatat: I'm still not quite sure. XMPP + OMEMO works for me but is rather complex. Honestly everything sucks
+[19:07:13] <piatat> there is no chat software that would be opensource and only support an encrypted mode of communication.
+[19:08:20] <piatat> when you use tox, you know that everything is encrypted
+[19:08:28] <piatat> xmpp does not provide that certainty
+[19:08:39] <Diadlo> VVD: Hello
+[19:09:18] <Diadlo> And everybody too :)
+[19:12:29] <zetok> o/
+[19:12:33] <zetok> :)
+[19:12:57] <zetok> Diadlo: https://github.com/qTox/qTox/pull/3983 ← rebase & merge?
+[19:18:41] <zetok> SylvieLorxu: btw, stuff is slowly improving, Antox is now able to make working audio calls
+[19:22:30] <Diadlo> zetok: Ok
+[19:27:34] <piatat> zetok: antox-qtox can make audio calls, but the quality is atrocious
+[19:28:02] <piatat> and video just plain does not work in antox nor qtox, just a pixelated green screen
+[19:28:14] <piatat> but fortunately I only use tox clients for text
+[19:32:33] <zetok> quality is bad on both sides?
+[19:33:04] <piatat> yes, but I don't think there's much to be done about it
+[19:33:13] <zetok> um
+[19:33:24] <zetok> there is a lot that could/should be done
+[19:34:02] <piatat> I am just happy with text, voice & video are far too complicated to get right
+[19:34:21] <zetok> they're not too complicated :)
+[19:34:39] <piatat> well, realtime communication is tough, that's what I mean
+[19:34:45] <piatat> we don't have the computer power yet
+[19:35:09] <zetok> power for it has been available for quite a while
+[19:35:11] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 252 seconds)
+[19:35:44] <zetok> the missing part is people who would make the software
+[19:36:00] <piatat> really? I was told we would need CPUs with at least 20GHz to have good voice+video, but we're stuck at around 2GHz for many years now
+[19:36:39] <zetok> :D
+[19:36:46] <zetok> that depends on what you mean by "good"
+[19:37:14] <zetok> if you want 4k @ 60fps, then yeah, you'd need more processing power
+[19:37:41] <zetok> if you can be satisfied with something less, processing power ~is there
+[19:38:33] <zetok> granted, the quality with lower end hardware might not be the greatest, but it would be good enough to be usable
+[19:40:03] <zetok> e.g. right now even though toxcore supposedly supports adaptive bitrate, qTox doesn't
+[19:40:12] <zetok> one of things that need to be done
+[19:40:18] *** Joins: dardevelin (~dardeveli@ )
+[19:40:33] <Emcy_> ya heard wrong boyo
+[19:41:26] -qtox-git-spam- [qTox] Diadlo closed pull request #3983: refactor(widget): Small refactoring (master...widgetRefactoring) https://git.io/v15hv
+[19:56:27] *** Quits: SylvieLorxu (~TheLastPr@ ) (Ping timeout: 252 seconds)
+[20:01:08] *** Joins: SylvieLorxu (~TheLastPr@ )
+[20:15:16] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[20:16:41] -qtox-git-spam- [qTox] Diadlo opened pull request #4019: [WIP] fix: Fix problem with unicode symbols on FreeBSD (master...fixRusFreeBSD) https://github.com/qTox/qTox/pull/4019
+[20:33:59] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:34:45] *** Joins: in1t3r_ (~LordShiva@ )
+[20:43:34] *** Quits: piatat (68eea905@ ) (Quit: Page closed)
+[20:50:15] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[20:51:24] *** Joins: sockspls (~sockspls@ )
+[20:55:45] *** Quits: SylvieLorxu (~TheLastPr@ ) (Ping timeout: 265 seconds)
+[21:00:53] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[21:03:14] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[21:51:34] <VVD> Diadlo, hi!
+[21:51:44] <Diadlo> VVD: Hi
+[21:51:47] <Diadlo> Add me in tox
+[21:51:48] <VVD> just returned from work
+[22:00:15] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:00:19] <bennabiy> Looks like my toxme server works fine... just need to work out the qTox -> toxme server
+[22:02:30] *** Joins: cisc (~cisc@ )
+[22:25:47] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[22:26:53] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[22:28:03] *** Joins: cisc (~cisc@ )
+[23:05:17] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 246 seconds)
+[23:07:05] *** Joins: in1t3r_ (~LordShiva@ )
+[23:15:52] <sudden6> Diadlo: so the cast to (QString) was the source of the problem? o_O
+[23:16:02] <Diadlo> Nope :)
+[23:16:08] <Diadlo> DataLocation -> AppDataLocation
+[23:16:19] <sudden6> but why?
+[23:16:27] <Diadlo> http://doc.qt.io/qt-5/qstandardpaths.html
+[23:16:43] <Diadlo> > Returns the same value as AppLocalDataLocation. This enumeration value is deprecated. 
+[23:16:51] <Diadlo> It's not implemented for unix
+[23:17:59] <sudden6> that's still not a reason to barf on unicode^^
+[23:19:25] <Diadlo> https://code.qt.io/cgit/qt/qtbase.git/tree/src/corelib/io/qstandardpaths_unix.cpp?h=5.6#n313
+[23:19:37] <sudden6> Diadlo: I approved it, but seems reviewable is down
+[23:19:39] <Diadlo> And yes. I have not idea why unicode is broken
+[23:22:23] <sudden6> maybe we should also file a bug in qt?
+[23:22:45] <Diadlo> I was thinking about it
+[23:23:11] <Diadlo> I'm not sure, that we all do right :)
+[23:23:28] <Diadlo> But seems it's problem with `writableLocation`
+[23:23:40] <sudden6> well, if we did things wrong, they'll just close the bugreport
+[23:23:49] <Diadlo> Yes
+[23:25:15] <sudden6> I'll create an account there and report it
+[23:25:25] <Diadlo> Thank you
+[23:25:38] <Diadlo> Good night
+[23:25:59] <cisc> re: https://github.com/qTox/qTox/pull/3998 I checked and both libavdevice-dev & libavcodec-dev are installed on Debian 8.6, so I don't think that is the problem with compilation failing
