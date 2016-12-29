@@ -1,0 +1,483 @@
+[00:00:51] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:40:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[00:42:12] *** Joins: qTox (54dcc317@ )
+[00:45:05] *** Quits: qTox (54dcc317@ ) (Client Quit)
+[00:54:35] <LittleVulpix> bennabiy: libsodium 1.0.3 is used because that's what toxcore uses. I've amended the md to make it work using libtoxcore's build page, tested it just now and it works fine.
+[01:02:48] <LittleVulpix> bennabiy: let me know if you need help with it but I was able to compile and launch toxme locally using the updated readme, so it should work just fine for you as well.
+[01:24:28] <bennabiy> LittleVulpix: I got it working using the latest libsodium... the only thing which I might need some help with is setting up a production setup with certs etc
+[01:40:26] *** Joins: DiCE1904 (~textual@ )
+[01:47:23] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 246 seconds)
+[01:48:13] *** Joins: f10 (~flo@ )
+[02:03:38] *** Quits: x_ (~x@ ) (Ping timeout: 264 seconds)
+[02:39:38] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 245 seconds)
+[02:58:09] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[03:23:46] *** Joins: MDrights (~MDrights@ )
+[03:25:40] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[03:34:30] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 256 seconds)
+[03:38:29] *** Joins: jjuran (~jjuran@ )
+[03:47:19] *** Joins: bennabiy (~bennabiy@ )
+[04:57:44] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:59:56] *** Joins: sockspls (~sockspls@ )
+[05:02:04] *** Joins: cisc (~cisc@ )
+[05:50:37] <zetok> cisc: what debian provides by default is libav, not ffmpeg
+[05:52:52] <zetok> cisc: i.e. those 2 libs might be outdated
+[06:01:35] <Diadlo> sudd3n6, zetok: To make rewiewable avaliable, open your pr manually https://reviewable.io/reviews/qtox/qtox/<PR>
+[07:21:35] *** Joins: Yoshimo (~anything@ )
+[07:43:50] *** Joins: x_ (~x@ )
+[08:04:18] *** Joins: f10 (~flo@ )
+[08:25:05] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:29:49] *** Quits: x_ (~x@ ) (Ping timeout: 265 seconds)
+[08:31:41] *** Joins: LittleVulpix (~Miranda@ )
+[08:34:06] <LittleVulpix> bennabiy: I recommend using let's encrypt and setting up secure nginx + tornado reverse proxy
+[08:39:50] *** Joins: reBrain (~quassel@ )
+[08:44:39] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[08:59:48] *** Joins: sudden6 (~anonymous@ )
+[09:01:53] *** Joins: Emcy_ (~MC@ )
+[09:25:24] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[09:37:17] *** Joins: bashrc (~motters@ )
+[11:03:07] *** Joins: x_ (~x@ )
+[12:08:02] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:08:03] <sudden6> Diadlo: do you think it would be a good idea to stop passing ToxIDs as QString and use ToxID instead?
+[12:15:54] <cisc> zetok: ffmpeg on 8.6 comes from the backports repo
+[12:16:37] <cisc> the other 2 libraries in iphy's PR already were pulled in before I started compiling
+[12:25:13] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[12:25:51] *** Joins: in1t3r_ (~LordShiva@ )
+[12:38:30] *** Quits: bashrc (~motters@ ) (Ping timeout: 256 seconds)
+[12:42:02] *** Joins: bashrc (~motters@ )
+[12:45:56] *** Joins: dardevelin (~dardeveli@ )
+[13:09:10] *** Joins: Saamm (587d2b5e@ )
+[13:09:15] <Saamm> Hey everyone :)
+[13:10:47] <Saamm> Apparently, the v1.7. is released... I tried to get it (Windows, 64bits), but according to the software, the installed version is 1.6.... :3
+[13:15:51] <sudden6> Saamm: it's only released for Linux right now
+[13:16:14] <Saamm> Oh
+[13:16:36] <Saamm> Moreover, I noticed a little typo on French translation
+[13:16:46] <Saamm> https://github.com/qTox/qTox/blob/2519594aa2ec156bb6af3a192bdefe7a1ffa50f9/translations/fr.ts
+[13:16:48] <Saamm> Line 99
+[13:17:10] <sudden6> would be cool if you could fix that in Weblate
+[13:17:22] <Saamm> "Une liste de tout les..." should be replaced by "Une liste de tous les..."
+[13:17:46] <Saamm> yep, I know, I'd rather do it by myself
+[13:18:02] <Saamm> The big problem is that I don't fully understand how Github works
+[13:18:21] <sudden6> Saamm: you don't need to understand that for weblate ;)
+[13:19:36] <Saamm> Well
+[13:19:54] <Saamm> where's the "edit" button? :3
+[13:19:58] <sudden6> Saamm: just create a Github account and then correct it here https://hosted.weblate.org/projects/tox/qtox/
+[13:20:36] *** Joins: f10 (~flo@ )
+[13:22:13] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[13:22:50] <Saamm> hum
+[13:23:00] <Saamm> "No string found" >_>
+[13:26:00] <sudden6> that's not what should happen
+[13:26:36] <Saamm> (I used "substring" as criteria & even if it's not useful, I checked all the checkboxes)
+[13:27:51] <sudden6> maybe it looks for the english source string?
+[13:29:04] *** Joins: dardevelin (~dardeveli@ )
+[13:29:48] <Saamm> in the checkboxes, you indeed choose for the source string or the target string... both are selected
+[13:30:53] <Saamm> Hum, found it
+[13:31:01] <Saamm> Passing by the English translation
+[13:31:21] <Saamm> This is strange, apparently the typo has already been fixed
+[13:32:00] <Saamm> but it doesn't appears as well in the Github code... or maybe I don't understand, as usual :)
+[13:33:18] <sudden6> It could be that the typo was fixed in the time between the release and now
+[13:34:32] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[13:47:16] <Saamm> Oh, btw, how to go from this: http://d2.alternativeto.net/dist/s/tox_842433_full.png?format=jpg&width=1600&height=1600&mode=min&upscale=false   ... to this: http://d2.alternativeto.net/dist/s/tox_602375_full.png?format=jpg&width=1600&height=1600&mode=min&upscale=false  ?  :)
+[13:48:07] *** Joins: f10 (~flo@ )
+[13:48:20] <sudden6> where did you get the 2nd picture? :DD
+[13:48:41] <Saamm> http://alternativeto.net/software/tox/
+[13:48:52] <Saamm> the 3 pictures on the right-top ^^
+[13:49:35] <sudden6> this isn't any tox client I know lol
+[13:49:52] <sudden6> I think someone found a mockup and added it there
+[13:50:12] <Saamm> oh
+[13:50:41] <sudden6> you can find a list of clients here https://tox.chat/clients.html
+[13:50:48] <sudden6> but not all work on all platforms
+[13:50:58] <sudden6> or support all features of tox
+[13:51:02] <Saamm> yeah, qTox does, at leats ;)
+[13:51:25] <sudden6> yeah, but we struggle with Windows and Mac...
+[13:51:28] <zetok> Saamm: it was a mockup
+[13:51:54] <Saamm> hey zetok ^^
+[13:52:01] <zetok> o/ :)
+[13:52:54] <Saamm> If you guys manage to make qTox look like this (or another kind of nice-graphic software), that's gonna be royal :p
+[13:53:32] * zetok sight
+[13:53:36] <zetok> sighs*
+[13:54:00] <zetok> this mockup is not usable
+[13:54:04] <Saamm> I know that grahics may not be the 1st preoccupation for sure, but if one day there could be some improvements in that way...
+[13:55:00] <Saamm> That maybe sounds silly, but if I would make my little sister use qTox, she must find it look "cool"... if you see what I mean... ^^
+[13:55:19] <zetok> I've asked mockup author some basic questions regarding adding to the mockup stuff that could accommodate features, and the only reply that I got was silence
+[13:56:05] <Saamm> Hum... :/
+[13:58:18] <zetok> there are parts that could be reused though
+[13:58:29] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 265 seconds)
+[13:59:52] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/28c817d8536112c9724e11735210caae5d624a65
+[13:59:52] -qtox-git-spam- qTox/master 28c817d Zetok Zalbavar: chore(build): slightly refactor bootstrap.sh...
+[14:00:55] <zetok> Diadlo: https://github.com/qTox/qTox/pull/3935 ← rebase & merge?
+[14:02:37] <zetok> Saamm: I don't remember, have you tried e.g. https://try.github.io/ ?
+[14:04:05] <Saamm> Or maybe adding some options to what exists already... Like the background color (chosen in the Parameters), we are limited to 5 colors currently (black, blue, green, red, violet), it could be nice to use a color gradient, or or background picture. But I don't know how hard it is to write this kind of stuff...
+[14:04:40] <Saamm> zetok: yep, some months ago
+[14:05:01] <Saamm> but I got a bit lost
+[14:06:17] <Saamm> At the end, the changes I proposed for the website, I could only manage to upload them on a copy in my own Github account, you had to took it to put it on the real qTox website 
+[14:06:34] <Saamm> so that was no very efficient
+[14:08:14] <Saamm> thus I haven't come for a long time (heavy weeks...)... I shouldn't even be here right now, I've to work on 3 school projets for next week... ^^
+[14:09:57] <zetok> mm
+[14:10:43] <zetok> Saamm: btw, the correct way to do it is to click on `Fork` the repository that you want to change, make changes in your fork, and make a PR with the changes
+[14:13:09] <zetok> Saamm: https://help.github.com/articles/good-resources-for-learning-git-and-github/ might be helpful
+[14:14:01] <bennabiy> LittleVulpix: Thank you. 
+[14:17:15] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[14:18:41] *** Joins: in1t3r_ (~LordShiva@ )
+[14:19:16] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[14:19:41] *** Joins: in1t3r_ (~LordShiva@ )
+[14:26:58] *** Joins: dardevelin (~dardeveli@ )
+[14:41:26] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 264 seconds)
+[14:47:26] *** Joins: in1t3r_ (~LordShiva@ )
+[14:47:42] *** Quits: cisc (~cisc@ ) (Ping timeout: 256 seconds)
+[14:48:18] <Saamm> zetok: thanks  :)
+[14:48:26] <zetok> np
+[14:48:42] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[14:49:02] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[14:50:30] *** Joins: cisc (~cisc@ )
+[14:50:35] *** Joins: f10 (~flo@ )
+[15:05:21] *** Joins: in1t3r_ (~LordShiva@ )
+[15:48:54] <zetok> cisc, x_: ok, looks like debian backports cannot into packaging; libswscale4 doesn't provide the .pc file
+[15:49:49] <zetok> so someone should file a bug report against libswscale4 package
+[15:50:08] <zetok> on Gentoo: /usr/lib64/pkgconfig/libswscale.pc
+[15:55:01] -qtox-git-spam- [qTox] zetok opened pull request #4020: docs(INSTALL): add missing `pkg-config` package to Debian instructions (master...docs-install-dpkg) https://git.io/vMTa6
+[16:07:31] -qtox-git-spam- [qTox] zetok closed pull request #4020: docs(INSTALL): add missing `pkg-config` package to Debian instructions (master...docs-install-dpkg) https://git.io/vMTa6
+[16:07:46] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/c1c4632f5f962c5f0029b282b2da014e40dea615
+[16:07:46] -qtox-git-spam- qTox/master c1c4632 Zetok Zalbavar: docs(INSTALL): add missing `pkg-config` package to Debian instructions
+[16:20:56] *** Joins: pcre_ (~quassel@ )
+[16:28:48] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 265 seconds)
+[16:32:22] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:33:40] *** Joins: f10 (~flo@ )
+[17:11:43] *** Quits: f10 (~flo@ ) (Ping timeout: 245 seconds)
+[17:15:53] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 245 seconds)
+[17:25:16] *** Joins: dardevelin (~dardeveli@ )
+[18:08:44] <cisc> zetok: https://packages.debian.org/jessie/amd64/libswscale-dev/filelist
+[18:09:27] <cisc>  /usr/lib/x86_64-linux-gnu/pkgconfig/libswscale.pc
+[18:09:35] <zetok> cisc: you're amissing a `4` ;)
+[18:09:45] <zetok> s/a//
+[18:10:21] <zetok> ok, the conflict does explain things
+[18:12:15] <cisc> https://packages.debian.org/sid/libswscale4 <---- appears to only exist in sid aka Unstable
+[18:14:13] <zetok> stretch also has it
+[18:15:37] * zetok wonders what to do
+[18:17:49] <cisc> interestingly, SuSE 42.2 only has these 2 shared object files in the libswscale4 package: /usr/lib64/libswscale.so.4 & /usr/lib64/libswscale.so.4.2.100
+[18:18:10] <cisc> thats the entire contents
+[18:18:36] <cisc> "libswscale4 - FFmpeg image scaling and colorspace/pixel conversion library"
+[18:20:07] <zetok> ok, that explains it
+[18:20:40] <zetok> installing `libswscale-dev` makes qmake use libav instead of ffmpeg
+[18:21:04] <zetok> and since libav doesn't have the stuff, compiling fails
+[18:25:02] <zetok> x_: ↑
+[18:25:16] * zetok reproduced the error message
+[18:25:40] <cisc> you're talking about https://packages.debian.org/source/jessie/libav correct?
+[18:25:52] <zetok> yep
+[18:26:21] <cisc> I cant even find that on openSUSE... do you know if that a Debian-specific package
+[18:26:24] <zetok> all these problems just because debian cannot into packaging :/
+[18:26:32] <zetok> yeah, it is debian-specific
+[18:26:37] <cisc> FFS
+[18:27:01] <cisc> how does qmake know to use that?
+[18:27:25] <zetok> it asks pkg-config
+[18:27:28] <cisc> can't you force it not to with a switch and providing library path
+[18:27:32] <zetok> and pkg-config reads /usr/lib/x86_64-linux-gnu/pkgconfig/libswscale.pc
+[18:27:37] <zetok> which points to libav stuff
+[18:28:22] <zetok> deprecating support for debian <9 sounds simpler
+[18:29:04] <cisc> it does but that is what a huge % of Linux users use
+[18:29:13] <zetok> yeah
+[18:29:28] <zetok> large % of Linux users get fucked because of debian
+[18:29:54] <zetok> it's really interesting how debian uses libav, which has thousands of unfixed security issues :D
+[18:30:45] <cisc> maybe they were backported
+[18:30:54] <zetok> the alternative is to tell people to compile ffmpeg manually, like back in the day
+[18:30:58] <zetok> cisc: nah
+[18:31:07] <zetok> cisc: upstream libav doesn't have those fixes
+[18:31:23] <zetok> ffmpeg on the other hand does
+[18:31:42] <zetok> and no one is working on backporting thousands of things from ffmpeg to libav
+[18:33:14] <zetok> a48b424f111ce0f5190ae43b652dd842717923ed
+[18:33:21] <zetok> cisc: ↑
+[18:34:20] <cisc> what is thah hash
+[18:34:27] <cisc> *that
+[18:34:51] <zetok> commit that removed from INSTALL.md instructions for compiling/using ffmpeg
+[18:36:12] <cisc> there isn't a way to get qmake to force compile with ffmpeg not libav?
+[18:36:36] <zetok> one could manually supply path :/
+[18:37:00] <cisc> if that can work wouldn't that be more simple
+[18:37:51] <zetok> it would be a ~simple workaround
+[18:38:22] <cisc> it would take less time doing that than building all of ffmpeg from source
+[18:39:19] <cisc> think about it. the less time dealing with Debian the better. So a workaround that is a shortcut imo is a good thing
+[18:40:19] <zetok> Hmm.
+[18:40:44] <zetok> workarounds are a bad thing
+[18:41:32] <zetok> cisc: https://github.com/qTox/qTox/blob/master/qtox.pro#L172 ; also add includepath
+[18:41:43] <cisc> in install.md in a48b424f111ce0f5190ae43b652dd842717923ed was libav part of the instructions or not?
+[18:41:44] <zetok> `INCLUDEPATH`*
+[18:41:56] <zetok> cisc: nope
+[18:41:56] <cisc> or not neede b/c of ffmpeg
+[18:42:00] <cisc> ok..
+[18:44:09] <zetok> cisc: problem with workarounds is that they just won't work in the long term
+[18:44:29] <zetok> or will break in slightly different and unexpected ways
+[18:45:20] <zetok> e.g. to properly do the workaround you'd need to make sure that you've put correct path for the library on all architectures that debian supports
+[18:45:45] <zetok> next, you'd need to make sure that that also applies to *buntu
+[18:45:58] <zetok> s/that/it/2
+[18:46:34] <x_> that's true, yet the error needs to be documented and if a test+workaround exists, that needs to be documented publicly as well, for the sake of other people who are certain to bump into this problem right now or later
+[18:46:37] <zetok> on the other hand, compiling ffmpeg just works™
+[18:46:58] <zetok> x_: would you mind adding a wiki page?
+[18:47:11] <x_> sure, but i've got just a few details
+[18:47:17] <x_> where should i add it?
+[18:47:32] <zetok> x_: https://github.com/qTox/qTox/wiki
+[18:47:55] <zetok> `Compiling errors` or something?
+[18:48:38] <zetok> cisc: compiling ffmpeg is also a workaround, but it at least works ~everywhere
+[18:49:16] <cisc> so why was the section on ffmpeg removed if untested
+[18:49:35] <zetok> support for *buntu 14.04 was ~removed
+[18:49:44] <zetok> and at the time it was the only one that needed it
+[18:50:06] <zetok> now debian 8 decided that it's the time to break compiling of qTox
+[18:50:12] <cisc> Debian 8.x libav used to work?
+[18:50:18] <zetok> nope
+[18:50:33] <zetok> debian 8 + backports ffmpeg used to compile qTox just fine
+[18:51:08] <zetok> libav was *never* supported
+[18:51:08] <cisc> and now ffmpeg isn't in backports thats changed to libav?
+[18:51:22] <zetok> no, ffmpeg is still in backports
+[18:52:03] <cisc> then why cant we use that
+[18:52:12] <zetok> .pc is missing
+[18:52:45] <cisc> oh ok libswscale4 == ffmpeg library
+[18:52:48] <zetok> as for "why", it would conflict with debian's libav .pc
+[18:53:19] <cisc> but like I showed SuSE 42.2 doesn't have the .pc file either
+[18:53:33] <zetok> so?
+[18:53:54] <cisc> so are you saying it's not going to compile on SuSE either
+[18:54:12] <zetok> maybe it will, maybe it won't
+[18:54:30] <cisc> so then you don't know for sure if the .pc file is the reason..
+[18:54:31] <zetok> if nothing provides relevant .pc, it won't
+[18:54:42] <zetok> cisc: I know that
+[18:55:03] <zetok> cisc: what I don't know, is whether the suse package you've mentioned is the one that is supposed to provide it
+[18:55:25] <cisc> ok. well I may try compiling on Suse to see what happen, out of curiosity
+[18:56:47] <cisc> then I can write up my results and get back to my favorite distro, the one that is stable
+[18:59:09] <cisc> as far as "support for *buntu 14.04 was ~removed" removing that section affected Debian users now, that is if ffmpeg compiles, correct?
+[18:59:28] <cisc> so should we have 2 section..
+[18:59:37] <cisc> 1 for Ubuntu, 1 for Debian
+[19:00:13] <cisc> or break the install.md into more than 1 file so it's not so long
+[19:02:35] <cisc> well looks like it already exists
+[19:02:55] <cisc> but the sections are shared
+[19:04:01] <cisc> so when the ffmpeg instructions were removed, now all debian 8.6 users don't have the correct instructions to compile
+[19:13:45] -qtox-git-spam- [qTox] zetok opened pull request #4021: style(build): list linking libs vertically (master...style-pro-vert) https://github.com/qTox/qTox/pull/4021
+[19:14:48] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[19:15:13] *** Joins: Yoshimo (~anything@ )
+[19:19:31] <cisc> zetok: "Backports cannot be tested as extensively as Debian stable, and backports are provided on an as-is basis, with risk of incompatibilities with other components in Debian stable. Use with care!"
+[19:20:02] <zetok> compiling ffmpeg it is then :)
+[19:20:37] <cisc> I agree, at least for now until we find out more
+[19:20:52] <cisc> or they fix whatever bug
+[19:21:36] <zetok> they won't
+[19:21:42] <zetok> it's debian
+[19:25:25] <x_> ok
+[19:25:27] <x_> https://github.com/qTox/qTox/wiki/Troubleshooting-builds
+[19:25:35] <x_> check my writing
+[19:26:04] <x_> if you feel i have posted inaccurate info, pls edit
+[19:26:22] <x_> or if you can supply a workaround script
+[19:26:35] <zetok> >The required ffmpeg/libswscale4 (jessie-sid) package is currently provided only in Debian's sid/unstable branch.
+[19:26:42] <zetok> it's also in stretch
+[19:26:48] <x_> ok, editing
+[19:27:04] <zetok> >crashes 'make' when compiling
+[19:27:12] <zetok> it's not a crash, just a non-zero exit status
+[19:28:45] <cisc> you could include that libswscale3 is it libav
+[19:28:54] <cisc> not libav4
+[19:29:06] <cisc> I mean libswscale4
+[19:30:05] <cisc> libswscale3 may have no .pc file because it's 1 version older
+[19:33:06] <x_> hmm
+[19:41:42] <x_> i'm going to upgrade my libswscale4 to sid, see whether that can be a solution
+[19:43:58] <bennabiy> does the toxme interface in qTox support server:port addressing?
+[19:47:53] <zetok> sa.
+[19:47:53] -qtox-git-spam- [qTox] zetok opened pull request #4022: docs(INSTALL): add back instructions for compiling FFmpeg for Debian 8 (master...docs-install-debffmpeg) https://github.com/qTox/qTox/pull/4022
+[19:47:57] <zetok> bennabiy: probably?
+[19:48:03] <zetok> cisc, x_: ↑↑
+[19:48:43] <bennabiy> where is the code for the toxme register section?
+[19:49:03] <zetok> bennabiy: https://github.com/qTox/qTox/tree/master/src/net
+[19:50:32] *** Joins: Achylles (~Achylles@ )
+[19:51:15] <zetok> x_: after the #4022 gets merged, you could point wiki to the FFmpeg section
+[19:51:23] <bennabiy> zetok: thank you
+[19:51:27] <zetok> np
+[19:56:45] <x_> zetok: alright
+[20:03:01] <zetok> :s
+[20:03:13] <zetok> looks like instructions won't work :/
+[20:04:56] <Diadlo> Hi
+[20:05:01] <sudden6> o/
+[20:05:04] <zetok> hello
+[20:05:21] <oranges> look at this net
+[20:05:24] <Diadlo> sudden6: -- Correct include order. -- what's wrong with it?
+[20:05:28] <sudden6> Diadlo: I've been waiting for you ^^
+[20:05:36] <zetok> Diadlo: argument against merge commits for everything: reverting merges is hard
+[20:05:44] <Diadlo> Qt includes should be in the last
+[20:06:17] <Diadlo> zetok: It's still matter?
+[20:06:31] <zetok> ;)
+[20:06:53] <Diadlo> sudden6: Flattering, what are you waiting for?
+[20:07:33] <sudden6> You reviewing the PR you are currently reviewing :D
+[20:07:49] <sudden6> and also some things I want to discuss
+[20:07:51] <Diadlo> Ok)
+[20:08:27] <Diadlo> About include order: do you plan to change it? If yes I will wait a bit
+[20:08:56] <sudden6> Diadlo: yes, but I'd rather change all things you find at once
+[20:09:07] <Diadlo> Ok
+[20:18:32] <zetok> hmm
+[20:19:10] <zetok> why bother with changing include order manually if it can be done with the clang formatter stuff?
+[20:19:31] <zetok> (just a thought)
+[20:19:41] <Diadlo> Because it's not merged
+[20:20:51] <zetok> is there something that blocks merge?
+[20:21:05] <Diadlo> AFAIR, yes
+[20:21:21] <Diadlo> At least include order
+[20:22:08] <Diadlo> Also strange `for` loop
+[20:22:16] <zetok> ok
+[20:22:52] <Diadlo> But initramfs does't agree
+[20:25:44] <zetok> include order was simplified
+[20:25:51] <zetok> is there still something wrong with it?
+[20:26:00] <zetok> (there are no open comments for that)
+[20:26:31] <Diadlo> Please, wait a few minutes. I should finish review :)
+[20:29:32] <Diadlo> sudden6: Done
+[20:30:47] <Diadlo> zetok:  https://github.com/qTox/qTox/pull/3839#issuecomment-260800861
+[20:31:11] <Diadlo> I prefer old include order
+[20:32:46] <zetok> but there was no order?
+[20:33:05] <Diadlo> Ok. Another include order
+[20:34:13] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 245 seconds)
+[20:34:26] <zetok> Diadlo: could you make a comment with the include order that you'd prefer?
+[20:34:55] <Diadlo> I'm already
+[20:35:56] <Diadlo> https://reviewable.io/reviews/qtox/qtox/3839#-KVidGBfkSdT_ttiMFp6
+[20:36:48] <zetok> that's a "resolved" comment though..?
+[20:37:12] <zetok> um
+[20:37:26] <zetok> why 1 4 order though?
+[20:38:22] <zetok> the order proposed by initramfs could be reversed, but mixing it doesn't seem logical
+[20:39:00] <Diadlo> "file.h" <another> "local.h"
+[20:40:09] <zetok> right
+[20:40:16] <zetok> 2 could be removed then
+[20:40:32] <zetok> which would leave only 1 3 4 5
+[20:40:41] <Diadlo> No
+[20:41:09] <Diadlo> 1) Module should be higher, than other
+[20:41:16] <zetok> 1 and 2 should be separated by 2 newlines
+[20:41:29] <Diadlo> Why?
+[20:42:01] <zetok> is there a better way to separate them?
+[20:42:13] <Diadlo> 1 new line
+[20:42:43] <zetok> `#include "foo.h"\n\n#include "bar.h"`
+[20:42:48] <sudden6> Diadlo: updated
+[20:42:50] <Diadlo> Why 2?
+[20:42:55] <Diadlo> Jr
+[20:42:57] <Diadlo> Ок
+[20:42:59] <Diadlo> *Oh
+[20:44:25] <Diadlo> zetok: Feel free to use any order
+[20:44:55] <zetok> k
+[20:45:10] <zetok> so the only issue is `!=` instead of `<|>` ?
+[20:45:10] <Diadlo> IMO`2` should be leaved
+[20:45:17] <Diadlo> Yes
+[20:45:23] <zetok> hmm
+[20:45:42] <zetok> initramfs' argument does sound logical
+[20:46:06] <zetok> actually
+[20:46:10] * zetok goes to read it again
+[20:46:14] <Diadlo> <|> is standard de facto
+[20:46:27] <Diadlo> It's just break user experience
+[20:48:01] <zetok> ok
+[20:48:27] <zetok> on r8 it is now <|>
+[20:48:45] <Diadlo> sudden6: constructToxId name seems as reason to move it in constructor ;)
+[20:49:13] <sudden6> Diadlo: I would, but it's used in two constructors
+[20:49:20] <Diadlo> AFAIR c++11 allow to use another constructor
+[20:49:36] <sudden6> not in the way I intend...
+[20:49:39] <oranges> http://words.steveklabnik.com/rust-is-more-than-safety
+[20:49:48] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 256 seconds)
+[20:49:52] <Diadlo> http://stackoverflow.com/questions/308276/call-constructor-from-constructor-in-c#308318
+[20:49:56] <Diadlo> sudden6: ^
+[20:49:57] <sudden6> oranges: not you too nooooooooo
+[20:50:03] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[20:50:55] <oranges> no escape
+[20:51:04] <sudden6> Diadlo: I used #2 from that post, my init method just isn't named init
+[20:51:38] <Diadlo> You can use #0
+[20:51:44] <Diadlo> Foo(int y) : Foo('a', y) 
+[20:52:32] <Diadlo> But if you don't want -- leave it
+[20:52:41] <Diadlo> Just FYI
+[20:52:54] <sudden6> doesn't work, since I have QByteArray in one and uint8_t*, int in the other function
+[20:53:29] <Diadlo> ToxId(const uint8_t* rawId, int len) : ToxId(QByteArray(reinterpret_cast<const char *>(rawId), len)) {}
+[20:54:40] <Diadlo> sudden6: Done
+[20:54:44] <zetok> oranges: are you proposing to use Rust in qTox? :D
+[20:56:56] <Diadlo> zetok: #4021 Just IMO: Maybe use small variables? Like LIBS_TOXCORE = -ltoxav -ltoxcore ... and appent it to LIBS?
+[20:59:21] <zetok> Diadlo: right
+[20:59:40] <zetok> right now PR doesn't change order of how things are linked
+[20:59:59] <zetok> using vars would require to change the order
+[21:00:16] <Diadlo> Do you plan to do it in different PR?
+[21:00:20] <zetok> which could possibly break qTox building on windows
+[21:00:39] <Diadlo> We need travis to windows builds :/
+[21:00:45] <zetok> mm
+[21:00:55] <zetok> once we have, I plan to change the order
+[21:01:11] <Diadlo> Can you add it?
+[21:01:21] <zetok> TokTok/qTox has it
+[21:01:25] <zetok> but it requires cmake
+[21:01:27] <Diadlo> Ok
+[21:01:45] <zetok> and docker IIRC
+[21:02:05] <zetok> (docker also doesn't work for me)
+[21:03:48] <sudden6> hmm? are you sure the order of linking matters?
+[21:03:54] <zetok> Yes.
+[21:03:57] <sudden6> wouldn't make any sense to me
+[21:04:02] <oranges> make qtox great again
+[21:04:05] <oranges> build a rust core
+[21:04:09] <oranges> make utox pay for it
+[21:04:23] <Diadlo> zetok: What do you think about 1.7.1 release after merge PR with FreeBSD support?
+[21:04:39] <sudden6> Diadlo: +1
+[21:05:19] <zetok> Diadlo: sure
+[21:05:32] <zetok> only this fix gets backported, or something more?
+[21:06:03] <Diadlo> IDK
+[21:07:38] <zetok> https://github.com/qTox/qTox/compare/v1.7.0...master ← doesn't seem like there's anything else that would need to be backported, perhaps aside from sudden6's commit
+[21:08:04] <Diadlo> Yes
+[21:08:30] <sudden6> mhm
+[21:08:51] <Saamm> Hey guys :3   By chance, I read things about TokTok but I couldn't find what is it exactly... ? :x
+[21:09:23] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[21:09:41] <Diadlo> It's android tox client and github team, who fork irungentoo toxcore
+[21:10:24] <Diadlo> Saamm: https://blog.tox.chat/
+[21:10:51] <Saamm> Yup, that's where I first read about it
+[21:11:46] <Saamm> but it doesn't explain quickly what they do exactly
+[21:12:34] <Saamm> Or maybe it's only an useful info if you develop the softwares around Tox... :3
+[21:12:35] <Diadlo> In a short: they continue work
+[21:12:58] <Saamm> Okay ;p
+[21:14:16] <Diadlo> AFAIK: In old git-repository only irungentoo have push-access, but he haven't enough time
+[21:16:24] <zetok> also grayhatter has push access
+[21:16:55] <zetok> ↑ reason why some people quit developing Tox stuff
+[21:17:17] <Diadlo> "Sad but true"
+[21:18:07] <zetok> .mp3
+[21:18:13] <Diadlo> :)
+[21:18:13] <zetok> ;)
+[21:18:20] <Diadlo> .flac
+[21:18:32] * zetok has only mp3 :(
+[21:18:58] <sudden6> missing a whole 30MB of music per file ;)
+[21:19:10] <zetok> >only 30MB
+[21:21:03] <zetok> >not hundreds of MBs per song
+[21:23:40] <Diadlo> zetok: https://github.com/qTox/qTox/pull/3977
+[21:23:43] <Diadlo> Merge or close?
+[21:24:12] <zetok> Diadlo: I'll add some changes to it later
+[21:24:18] <Diadlo> Ok
+[21:24:22] <zetok> oh wait
+[21:24:40] <zetok> I thought it was the other PR
+[21:24:50] <zetok> as for this, I'm not quite sure what to do :s
+[21:25:06] <zetok> or rather
+[21:25:14] <zetok> I know what should be done, but I don't know how to do it
+[21:25:30] <Diadlo> And what?
+[21:25:38] <zetok> right now scrollbar is only for the "content" of the page
+[21:26:10] <Diadlo> Do you want to place header in "content"?
+[21:26:12] <zetok> original "header" should be restored, and moved to the "content", so that it could be scrolled away
+[21:26:17] <zetok> yep
+[21:26:24] <Diadlo> Ok
+[21:28:15] <zetok> going back to the topic, Pink Floyd with 5.5 Mbps bitrate is pure magic :3
+[21:29:55] <sudden6> zetok: your ffmpeg install script doesn't work :/
+[21:30:02] <Diadlo> s/qTox support channel/qTox music channel/ :3
+[21:30:08] <zetok> sudden6: it ~works
+[21:30:36] <Diadlo> `~works` describe qTox at all :)
+[21:30:47] <zetok> sudden6: it just needs a slight nudge
+[21:31:29] <zetok> sudden6: but yeah, even though script would ~work, qmake won't use it
+[21:31:33] <sudden6> that's not how scripts are supposed to work^^
+[21:31:39] <sudden6> zetok: it does use it
+[21:31:53] <sudden6> I just tested it 10min ago
+[21:31:57] <zetok> um
+[21:32:23] <zetok> are you sure that it didn't use stuff from your system?
+[21:32:45] <sudden6> it made qTox compile on Debian 8, which it didn't before
+[21:32:52] <sudden6> I'd consider that working
+[21:33:20] <zetok> >.<
+[21:33:25] <zetok> ok, that's new
+[21:33:43] <zetok> it didn't work on my debian vm
+[21:34:00] <sudden6> also you should use the ffmpeg configure command from jenkins
+[21:34:04] <sudden6> makes compiling faster
+[21:34:09] <zetok> >Project ERROR: libswscale development package not found
+[21:39:56] <cisc> did pulling in libav from sid work or was it something else?
+[21:40:00] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://github.com/qTox/qTox/commit/8d320ca3be01cdbb137c827df071ce4eebe44e4c
+[21:40:00] -qtox-git-spam- qTox/master 8d320ca sudden6: chore: Make building for FreeBSD easier...
+[21:45:22] <Diadlo> sudden6: #4019 rebased 
+[21:45:29] <Diadlo> Can you LGTM?
+[21:59:00] -qtox-git-spam- [qTox] Diadlo pushed 2 new commits to master: https://github.com/qTox/qTox/compare/8d320ca3be01...074f345b2e83
+[21:59:00] -qtox-git-spam- qTox/master 56d6565 Diadlo: fix: Fix problem with unicode symbols on FreeBSD...
+[21:59:00] -qtox-git-spam- qTox/master 074f345 Diadlo: style(smileypack): Small style improvements
+[22:30:06] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[22:44:12] *** Joins: dardevelin (~dardeveli@ )
+[23:04:14] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 264 seconds)
+[23:10:39] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[23:12:10] *** Quits: Saamm (587d2b5e@ ) (Ping timeout: 260 seconds)
+[23:13:12] *** Joins: Emcy (~MC@ )
+[23:13:12] *** Quits: Emcy (~MC@ ) (Changing host)
+[23:13:12] *** Joins: Emcy (~MC@ )
+[23:22:38] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[23:25:05] *** Joins: DiCE1904 (~textual@ )
