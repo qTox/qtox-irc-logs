@@ -1,0 +1,426 @@
+[00:02:48] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:07:31] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 252 seconds)
+[00:12:08] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[00:29:36] <sudden6> Diadlo: still around?
+[00:32:37] *** Joins: sudd3n6 (~anonymous@ )
+[01:08:23] *** Joins: jjuran (~jjuran@ )
+[01:20:03] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[01:20:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[02:11:46] *** Joins: MDrights (~MDrights@ )
+[02:19:18] *** Joins: f10 (~flo@ )
+[02:31:16] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[02:31:44] *** Joins: f10 (~flo@ )
+[03:35:03] *** Quits: jjuran (~jjuran@ ) (Quit: jjuran)
+[03:50:11] *** Joins: Emcy_ (~MC@ )
+[03:50:11] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[03:50:11] *** Joins: Emcy_ (~MC@ )
+[03:53:41] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[04:18:44] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[05:43:41] *** Joins: jjuran (~jjuran@ )
+[05:57:37] *** Joins: reBrain (~quassel@ )
+[06:03:30] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 258 seconds)
+[06:16:56] -qtox-git-spam- [qTox] zetok closed pull request #4021: style(build): list linking libs vertically (master...style-pro-vert) https://git.io/vMkEB
+[06:29:29] *** Joins: Diadlo (~diadlo@ )
+[06:31:58] <Diadlo> zetok: Can you test friendWidget_3 ?
+[06:32:13] <Diadlo> Problem with green name are fixed now
+[06:32:19] <zetok> mm
+[06:32:27] <zetok> yeah, in a moment
+[06:32:32] <Diadlo> Thanks
+[06:36:45] <zetok> https://github.com/qTox/qTox/pull/3938 ← I'd make the workaround generic, but I have no idea how to
+[06:37:04] <zetok> btw, C++ doesn't really have support for real™ macros, right?
+[06:37:36] <zetok> ↑ that's the conclusion that I came to, after seeing settings.cpp
+[06:38:10] <zetok> i.e. almost all of settings.cpp could be implemented using a single Rust macro
+[06:39:00] <Diadlo> C++ support C macro
+[06:39:04] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[06:39:20] <Diadlo> And yes, most part of settings can be replaced by macro
+[06:39:24] <Diadlo> I think
+[06:41:02] <Diadlo> Can you create issue `I-discussion`?
+[06:41:30] <Diadlo> Or wire it in maillist
+[06:41:48] <Diadlo> I should go away. Bye
+[06:43:38] <zetok> cya
+[06:44:01] *** Quits: x_ (~x@ ) (Ping timeout: 260 seconds)
+[06:57:16] *** Joins: dardevelin (~dardeveli@ )
+[07:03:03] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[07:07:16] *** Joins: in1t3r_ (~LordShiva@ )
+[08:51:19] *** Joins: x_ (~x@ )
+[09:26:11] -qtox-git-spam- [qTox] zetok opened pull request #4023: chore(travis): properly deploy a branch for jenkins (master...chore-travis-jenkins) https://git.io/vMk6d
+[09:40:29] *** Joins: bashrc (~motters@ )
+[09:45:38] *** Quits: x_ (~x@ ) (Ping timeout: 264 seconds)
+[09:55:02] *** Joins: x_ (~x@ )
+[10:09:13] *** Quits: bashrc (~motters@ ) (Ping timeout: 252 seconds)
+[10:10:07] *** Joins: bashrc (~motters@ )
+[10:17:56] *** Joins: Yoshimo (~anything@ )
+[10:30:53] *** Quits: albel727 (~albel727@ ) (*.net *.split)
+[10:30:56] *** Quits: VVD (~VVD@ ) (*.net *.split)
+[10:30:56] *** Quits: GGMethos (methos@ ) (*.net *.split)
+[10:30:57] *** Quits: Chiitoo (~Chiitoo@ ) (*.net *.split)
+[10:31:00] *** Quits: parasite_ (~parasite@ ) (*.net *.split)
+[10:31:01] *** Quits: Yoshimo (~anything@ ) (*.net *.split)
+[10:31:02] *** Quits: sockspls (~sockspls@ ) (*.net *.split)
+[10:31:04] *** Quits: Darky (~Darky@ ) (*.net *.split)
+[10:31:05] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[10:31:05] *** Quits: robinli (robinli@ ) (*.net *.split)
+[10:31:06] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[10:31:07] *** Quits: bkidwell (~bkidwell@ ) (*.net *.split)
+[10:31:09] *** Quits: ChanServ (ChanServ@ ) (*.net *.split)
+[10:31:10] *** Quits: dardevelin (~dardeveli@ ) (*.net *.split)
+[10:31:13] *** Quits: Curlybear (~Curlybear@ ) (*.net *.split)
+[10:31:14] *** Quits: arza (arza@ ) (*.net *.split)
+[10:31:17] *** Quits: Sephi (~me@ ) (*.net *.split)
+[10:31:17] *** Quits: qTox-syncbot (~qTox-sync@ ) (*.net *.split)
+[10:31:20] *** Quits: jjuran (~jjuran@ ) (*.net *.split)
+[10:31:22] *** Quits: mva (znc@ ) (*.net *.split)
+[10:31:22] *** Quits: koshii (~w@ ) (*.net *.split)
+[10:31:23] *** Quits: rysiek|pl (~quassel@ ) (*.net *.split)
+[10:31:25] *** Quits: in1t3r_ (~LordShiva@ ) (*.net *.split)
+[10:31:25] *** Quits: Emcy_ (~MC@ ) (*.net *.split)
+[10:31:26] *** Quits: linxon (~lin@ ) (*.net *.split)
+[10:31:28] *** Quits: hexadezimalion (sid85551@ ) (*.net *.split)
+[10:31:29] *** Quits: genesis (~genesis@ ) (*.net *.split)
+[10:31:31] *** Quits: bashrc (~motters@ ) (*.net *.split)
+[10:31:31] *** Quits: x_ (~x@ ) (*.net *.split)
+[10:31:32] *** Quits: f10 (~flo@ ) (*.net *.split)
+[10:31:33] *** Quits: Gottox_ (~Gottox@ ) (*.net *.split)
+[10:31:34] *** Quits: tux3 (~tux@ ) (*.net *.split)
+[10:31:36] *** Quits: worfox (~worfox@ ) (*.net *.split)
+[10:31:37] *** Quits: Impyy (~impy@ ) (*.net *.split)
+[10:31:39] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[10:31:41] *** Quits: oranges (oranges@ ) (*.net *.split)
+[10:31:42] *** Quits: Diadlo (~diadlo@ ) (*.net *.split)
+[10:31:42] *** Quits: DiCE1904 (~textual@ ) (*.net *.split)
+[10:31:42] *** Quits: cisc (~cisc@ ) (*.net *.split)
+[10:31:43] *** Quits: smaragdus2 (~omoo@ ) (*.net *.split)
+[10:31:45] *** Quits: dan- (~d@ ) (*.net *.split)
+[10:37:10] *** Joins: Yoshimo (~anything@ )
+[10:37:10] *** Joins: bashrc (~motters@ )
+[10:37:10] *** Joins: x_ (~x@ )
+[10:37:10] *** Joins: in1t3r_ (~LordShiva@ )
+[10:37:10] *** Joins: dardevelin (~dardeveli@ )
+[10:37:10] *** Joins: Diadlo (~diadlo@ )
+[10:37:10] *** Joins: jjuran (~jjuran@ )
+[10:37:10] *** Joins: Emcy_ (~MC@ )
+[10:37:10] *** Joins: f10 (~flo@ )
+[10:37:10] *** Joins: DiCE1904 (~textual@ )
+[10:37:10] *** Joins: cisc (~cisc@ )
+[10:37:10] *** Joins: LittleVulpix (~Miranda@ )
+[10:37:10] *** Joins: sockspls (~sockspls@ )
+[10:37:10] *** Joins: robinli (robinli@ )
+[10:37:10] *** Joins: Gottox_ (~Gottox@ )
+[10:37:10] *** Joins: mva (znc@ )
+[10:37:10] *** Joins: VVD (~VVD@ )
+[10:37:10] *** Joins: albel727 (~albel727@ )
+[10:37:10] *** Joins: parasite_ (~parasite@ )
+[10:37:10] *** Joins: smaragdus2 (~omoo@ )
+[10:37:10] *** Joins: GGMethos (methos@ )
+[10:37:10] *** Joins: koshii (~w@ )
+[10:37:10] *** Joins: linxon (~lin@ )
+[10:37:10] *** Joins: tux3 (~tux@ )
+[10:37:10] *** Joins: Chiitoo (~Chiitoo@ )
+[10:37:10] *** Joins: Darky (~Darky@ )
+[10:37:10] *** Joins: Sephi (~me@ )
+[10:37:10] *** Joins: qTox-syncbot (~qTox-sync@ )
+[10:37:10] *** Joins: hexadezimalion (sid85551@ )
+[10:37:10] *** Joins: iphy (uid67735@ )
+[10:37:10] *** Joins: oranges (oranges@ )
+[10:37:10] *** Joins: worfox (~worfox@ )
+[10:37:10] *** Joins: rysiek|pl (~quassel@ )
+[10:37:10] *** Joins: Impyy (~impy@ )
+[10:37:10] *** Joins: Curlybear (~Curlybear@ )
+[10:37:10] *** Joins: genesis (~genesis@ )
+[10:37:10] *** Joins: dongo (~dongo@ )
+[10:37:10] *** Joins: dan- (~d@ )
+[10:37:10] *** Joins: bkidwell (~bkidwell@ )
+[10:37:10] *** Joins: ChanServ (ChanServ@ )
+[10:37:10] *** Joins: arza (arza@ )
+[10:37:10] *** niven.freenode.net sets mode: +oo tux3 ChanServ  
+[10:37:11] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:20:27] *** Joins: sudd3n6 (~anonymous@ )
+[11:20:32] *** Joins: sudden6 (~anonymous@ )
+[11:54:02] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[12:05:57] *** Joins: reBrain (~quassel@ )
+[12:12:39] *** Joins: LittleVulpix (~Miranda@ )
+[12:16:10] *** Joins: uncut1964 (017d3106@ )
+[12:17:14] <uncut1964> new to this..totally lost
+[12:17:34] <Emcy_> what
+[12:18:29] <uncut1964> trying to enter qtox chat
+[12:18:49] <uncut1964> any one c2c
+[12:20:26] <Emcy_> you need friends
+[12:20:48] <uncut1964> yes..indeed
+[12:21:12] <uncut1964> might leave it..looks complicated!
+[12:21:33] <Emcy_> its not
+[12:21:44] <Emcy_> its easy
+[12:22:02] <uncut1964> can you help..what do i do
+[12:23:20] <Emcy_> click your name in the top left and give your toxid to a friend to add you
+[12:24:34] *** Quits: f10 (~flo@ ) (Quit: Konversation terminated!)
+[12:25:33] <uncut1964> tox id
+[12:26:25] <Emcy_> the serial number thing
+[12:27:28] <uncut1964> ok..dont have any friends
+[12:28:03] <Emcy_> add the groupbot then
+[12:28:45] <uncut1964> lost me
+[12:29:47] <Emcy_> 56A1ADE4B65B86BCD51CC73E2CD4E542179F47959FE3E0E21B4B0ACDADE51855D34D34D37CB5
+[12:29:52] <Emcy_> add this code
+[12:30:30] *** Joins: Avani (~Avani@ )
+[12:34:13] *** Joins: sudden6 (~anonymous@ )
+[12:35:10] *** Quits: Avani (~Avani@ ) (Read error: Connection reset by peer)
+[12:46:20] *** Joins: zetok (~zetok@ )
+[12:48:31] *** Quits: uncut1964 (017d3106@ ) (Quit: Page closed)
+[12:49:55] -qtox-git-spam- [qTox] sudden6 opened pull request #4025: fix(addfriend): do not load own Tox ID from clipboard (master...fix4024) https://git.io/vMkA3
+[12:57:00] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[12:59:07] *** Joins: kchz (~dschulz@ )
+[13:00:01] *** Joins: tracy1 (017d3106@ )
+[13:00:15] *** Joins: reBrain (~quassel@ )
+[13:01:36] *** Quits: tracy1 (017d3106@ ) (Client Quit)
+[13:07:04] *** Joins: Achylles (~Achylles@ )
+[13:11:08] *** Quits: kchz (~dschulz@ ) (Ping timeout: 246 seconds)
+[13:13:37] *** Joins: kchz (~dschulz@ )
+[13:17:37] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[13:33:16] *** Joins: MDrights (~MDrights@ )
+[13:35:03] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:35:55] *** Joins: cisc (~cisc@ )
+[13:36:51] *** Joins: f10_ (~flo@ )
+[13:51:59] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:52:33] *** Joins: VVD (~VVD@ )
+[14:05:52] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[14:08:37] -qtox-git-spam- [qTox] sudden6 pushed 4 new commits to master: https://github.com/qTox/qTox/compare/b9c1d59a074a...d196611ffeec
+[14:08:37] -qtox-git-spam- qTox/master 94ec561 sudden6: feat(toxid): Improve the ToxId class
+[14:08:37] -qtox-git-spam- qTox/master 152c134 sudden6: refactor(toxid): drop the cData class in favour of ToxId
+[14:08:37] -qtox-git-spam- qTox/master 3d0938a sudden6: refactor(toxid): improve code clarity and documentation
+[14:18:50] <sudden6> o/
+[14:20:31] -qtox-git-spam- [qTox] zetok opened pull request #4026: fix: fix warning about missing (removed) `cdata.h` (master...fix-warn-missing-cdata) https://git.io/vMIem
+[14:20:35] <zetok> \o
+[14:26:38] <zetok> sudden6: rebase https://github.com/qTox/qTox/pull/4025 ?
+[14:27:54] <sudden6> done
+[14:29:37] <zetok> thanks
+[14:29:46] <zetok> sudden6: https://github.com/qTox/qTox/pull/3986 ← opinion?
+[14:30:35] <sudden6> I liked the one without 'src' more
+[14:31:03] <sudden6> but if the tools are lacking this feature we have no choice anyway
+[14:37:37] <zetok> lgtm then?
+[14:38:51] <sudden6> yeah, done
+[14:39:38] <zetok> thanks
+[14:39:46] *** Joins: bennabiy (~bennabiy@ )
+[14:40:30] <sudden6> zetok: do you have 2 classes in zetox for PK and ToxID or one that does both?
+[14:40:54] <zetok> they're ~separate structs
+[14:41:33] <zetok> i.e. PublicKey is provided by sodiumoxide and I just reuse it
+[14:41:43] <sudden6> ah, ok
+[14:41:45] <zetok> and ToxId contains PublicKey
+[14:42:00] <sudden6> I think I'll introduce something similar for qTox
+[14:42:14] <sudden6> Right now everything is passed as string
+[14:42:17] <zetok> https://zetok.github.io/tox/tox/toxcore/toxid/struct.ToxId.html
+[14:42:19] * sudden6 shudders
+[14:42:48] *** Joins: Avani (~Avani@ )
+[14:46:44] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[14:46:44] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[14:47:49] -qtox-git-spam- [qTox] zetok closed pull request #4025: fix(addfriend): do not load own Tox ID from clipboard (master...fix4024) https://git.io/vMkA3
+[14:48:04] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/efcff57601a3dc04fc7376b6edbeff81487dc5b8
+[14:48:04] -qtox-git-spam- qTox/master efcff57 sudden6: fix(addfriend): do not load own Tox ID from clipboard...
+[14:52:09] <bennabiy> who implemented the toxme support?
+[14:52:21] <sudden6> bennabiy: I think it was Diadlo
+[14:52:29] <sudden6> what's wrong with it?
+[14:53:05] <bennabiy> Diadlo: I have some questions about how to get the qTox toxme section to work with a private server
+[14:53:19] <bennabiy> sudden6: it is not connecting or registering
+[14:53:25] <bennabiy> to a private server
+[14:53:35] <bennabiy> sudden6: are you also sudd3n6 ?
+[14:53:47] <sudden6> bennabiy: yes, that's my second pc
+[14:53:50] <bennabiy> ok
+[14:54:04] <bennabiy> so if I accidentally use one or the other, it will still reach you :)
+[14:54:46] <sudden6> ~yeah, mainly I tend to use sudden6 on the one I'm currently working with
+[14:55:20] <sudden6> if tox finally had multi device that problem wouldn't exist
+[14:55:30] <bennabiy> heh
+[14:55:47] <bennabiy> Any support for something like a tox based IRC?
+[14:56:15] <sudden6> that's basically the new groupchats everybody is talking about
+[14:56:21] <bennabiy> ah
+[14:56:26] <bennabiy> I need to brush up on it more
+[14:56:33] <sudden6> but that's two steps ahead of now
+[14:56:43] <sudden6> and WIP since atleas 1 year
+[14:57:08] <bennabiy> looking forward to it
+[14:57:13] <bennabiy> literally
+[14:57:33] <sudden6> If you want to read up on it, https://docs.google.com/document/d/1op6zGR0KYdF7tTWSSX79KQieJu30vLZ6XG327kIBhxQ/edit?usp=sharing
+[14:57:42] <sudden6> that's the proposed spec
+[14:58:15] <sudden6> oh, wait wrong thing, that's about multidevice
+[14:58:29] <sudden6> can't find the groupchat stuff atm
+[15:02:45] <zetok> bennabiy: are you interested in helping with new groupchats?
+[15:34:40] <bennabiy> zetok: I am not sure how much I would be able to help, but if there is a part which would help our group out, I may pitch in a little here or there
+[15:35:09] <bennabiy> zetok: I could possibly be available to test out features
+[15:35:25] <bennabiy> right now I have enough projects on my plate... :)
+[15:42:38] <zetok> bennabiy: https://github.com/TokTok/c-toxcore/pull/217
+[15:45:32] <bennabiy> zetok: will look over it
+[15:51:12] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:56:46] *** Joins: f10 (~flo@ )
+[16:10:41] *** Quits: VVD (~VVD@ ) (Ping timeout: 246 seconds)
+[16:10:55] -qtox-git-spam- [qTox] zetok closed pull request #4026: fix: fix warning about missing (removed) `cdata.h` (master...fix-warn-missing-cdata) https://git.io/vMIem
+[16:11:08] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/4972ac1d537bab37aa73635c49067d75913f5662
+[16:11:08] -qtox-git-spam- qTox/master 4972ac1 Zetok Zalbavar: fix: fix warning about missing (removed) `cdata.h`...
+[16:12:39] *** Joins: f10_ (~flo@ )
+[16:15:05] *** Joins: kchz (~dschulz@ )
+[16:27:56] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[16:28:19] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[16:34:58] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[16:42:33] *** Joins: bennabiy (~bennabiy@ )
+[16:45:57] *** Quits: Dragofix (Dragofix@ ) (Quit: Duck and cover!)
+[16:48:25] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[16:51:08] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/d4ac13dbf438c1337a2692e99af5026d215d724c
+[16:51:08] -qtox-git-spam- qTox/master d4ac13d Zetok Zalbavar: revert: "refactor: Added  to include path and exclude it from all includes"...
+[16:55:51] <zetok> sudden6: did you install compiled ffmpeg system-wide?
+[16:56:00] <sudden6> zetok: could be
+[16:56:08] <zetok> that would make it work
+[16:56:17] <zetok> but at the same time it messes up system libs :s
+[16:56:41] <zetok> anyway, I'll just point pkgconfig to the right .pc
+[16:57:06] <sudden6> :thumbsup:
+[16:59:22] <zetok> ok, it seems to work
+[17:03:33] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 252 seconds)
+[17:05:44] <zetok> cisc, x_: now instructions in the PR are correct
+[17:06:00] <bennabiy> what is going on with the qtox repo? 
+[17:06:05] <zetok> bennabiy: hm?
+[17:06:19] <bennabiy> zetok: getting gpg errors
+[17:06:32] <zetok> what errors?
+[17:06:53] <bennabiy> one mooment
+[17:07:06] <zetok> (gist)
+[17:07:24] <bennabiy> expired key
+[17:07:33] <zetok> oh
+[17:07:41] <zetok> bennabiy: https://qtox.github.io/blog/2016/11/13/Expired-GPG-and-v1.6.0-release.html
+[17:08:09] *** Joins: jjuran (~jjuran@ )
+[17:08:56] *** Joins: Dragofix (Dragofix@ )
+[17:09:59] <bennabiy> zetok: any way to get mention of that to tox.chat?
+[17:10:32] <zetok> bennabiy: https://qtox.github.io/blog/2016/08/10/Hello-World.html ← you can try
+[17:11:25] <sudden6> bennabiy: nurupo mentioned he will gladly accept guest texts
+[17:11:33] <sudden6> so if you write one
+[17:11:36] <sudden6> ;)
+[17:11:37] <zetok> har har.
+[17:12:15] * bennabiy sighs
+[17:15:28] <bennabiy> thanks for the link
+[17:15:37] <zetok> np
+[17:21:46] <bennabiy> hrm, qTox toxcore version: 0.0.0 ?
+[17:22:13] <bennabiy> You are using qTox version v1.6.0-obs.
+[17:22:24] <cisc> zetok: trying compiling of qtox on openSUSE atm, got this error: No provider of 'libffmpeg-devel' found.
+[17:22:42] <sudden6> cisc: try ffmpeg-devel
+[17:23:01] <sudden6> reminds me to recheck that
+[17:23:05] <cisc> k
+[17:23:39] <cisc> that exists
+[17:24:18] <zetok> bennabiy: https://github.com/abbat/tox.pkg ← one can make a PR :|
+[17:32:46] <cisc> zetok: also, qmake package isn't listed in install.md for opensuse
+[17:33:07] <zetok> cisc: would you mind adding it?
+[17:34:49] <cisc> yeah I cat
+[17:34:53] <cisc> *can
+[17:38:53] <cisc> cnf qmake: `Try installing with zypper install libqt4-devel`
+[17:39:06] <cisc> that is the wrong qmake
+[17:40:19] <cisc> libqt4-devel exists, libqt5-devel doesn't
+[17:48:48] <cisc> ahh its probably in libqt5-qtbase-devel
+[17:49:12] <cisc> nope
+[17:57:25] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 248 seconds)
+[17:59:07] *** Joins: DiCE1904 (~textual@ )
+[18:01:36] <cisc> zetok: https://gist.github.com/anonymous/874d9febfe8b9bec2e610d8370a8acb1
+[18:02:40] <cisc> I installed all the qt5 dev packages I could find so far, there is nothing that comes up when executing qmake. only `qmake-qt5` and that above is what comes up
+[18:03:17] *** Quits: Achylles (~Achylles@ ) (Quit: Leaving)
+[18:07:56] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[18:08:09] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[18:08:34] <cisc> oops im in the wrong dir, nvm
+[18:08:57] *** Joins: albel727 (~albel727@ )
+[18:09:48] <cisc> Info: creating stash file /home/test/qtox/qTox/.qmake.stash
+[18:09:50] <cisc> Project ERROR: glib-2.0 development package not found
+[18:09:59] <cisc> wtf
+[18:11:45] *** Quits: Avani (~Avani@ ) (Ping timeout: 252 seconds)
+[18:12:05] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 265 seconds)
+[18:13:14] <cisc> ok it compiling, those were in another dev repo. making a list of what was missing
+[18:26:02] *** Joins: DiCE1904 (~textual@ )
+[18:32:08] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 245 seconds)
+[18:36:20] *** Joins: DiCE1904 (~textual@ )
+[18:42:52] *** Quits: x_ (~x@ ) (Ping timeout: 258 seconds)
+[18:44:00] <cisc> alright, compiled successfully with toxcore 0.1.2, made a test call, both audio input & output works
+[18:54:12] *** Joins: x_ (~x@ )
+[19:04:50] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 264 seconds)
+[19:06:43] *** Joins: f10 (~flo@ )
+[19:31:07] <Diadlo> bennabiy: Hello\
+[19:31:30] <Diadlo> Just write your server address in `server` field
+[19:35:05] <bennabiy> I did, but it times out
+[19:35:17] <bennabiy> Diadlo: does it support server:port ?
+[19:35:37] <bennabiy> and does it default to port 8080?
+[19:36:09] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[19:37:52] <Diadlo> Hm... AFAIR, yes
+[19:38:14] <Diadlo> I will take a look after few minutes
+[19:39:19] <bennabiy> I was trying to track down where the default is set
+[19:39:30] <bennabiy> but did not honestly spend too much time looking into it
+[19:40:08] <bennabiy> now, for server, it must match the same as what is set in the toxme config file for registration domain?
+[19:41:15] <bennabiy> or put another way,  username@registration_domain ... registration_domain = server?
+[19:41:34] <bennabiy> which must match http://server/u/username?
+[19:41:57] <bennabiy> err https://
+[19:41:58] <Diadlo> bennabiy: Can you share your servername?
+[19:42:20] <Diadlo> I.e. address 
+[19:42:34] <bennabiy> Diadlo: one moment, I will fire up a different instance
+[19:42:40] <Diadlo> Ok
+[19:47:42] <bennabiy> Diadlo: actually, if I move the toxme.db and reinitialize the db, it will remove private data, correct?
+[19:48:10] <Diadlo> I don't know how toxme works inside
+[19:48:23] <Diadlo> But I think, you are right
+[19:52:30] <bennabiy> hmm
+[19:52:49] <bennabiy> old userinfo is still there
+[19:53:29] <Diadlo> Is it matter now?
+[19:55:45] <bennabiy> are you going to be around for a little bit?
+[19:56:08] <Diadlo> Yes
+[19:56:14] <Diadlo> I hope :|
+[19:57:18] <bennabiy> ok, I will message you when I am ready
+[19:57:26] <Diadlo> Ok
+[19:57:44] <bennabiy> I hope you do not mind, but I do not really want my production server to be known to the public, so I am spinning up a new one to test
+[19:58:39] <Diadlo> Do you understand, that to share your toxme in the future you will share your server address?
+[19:59:19] *** Joins: Dragofix- (Dragofix@ )
+[19:59:39] <Diadlo> There is no reason to have a toxme server and hide it
+[20:00:29] <Diadlo> It's like create site and don't tell anyone it's address :)
+[20:01:18] <bennabiy> Diadlo: it is for internal listings
+[20:01:30] <Diadlo> Ok
+[20:02:21] <bennabiy> Diadlo: I understand the principle behind toxme, but I would like to implement it for within our organization for being able to keep a private list of tox addresses, without making those addresses known to those outside our group
+[20:02:24] <bennabiy> make sense?
+[20:02:36] <bennabiy> otherwise I would just use the toxme.io
+[20:02:48] <Diadlo> Yes. It's make sense
+[20:03:07] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 268 seconds)
+[20:03:07] *** Dragofix- is now known as Dragofix
+[20:21:23] *** Joins: kchz (~dschulz@ )
+[20:30:13] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 258 seconds)
+[20:43:25] *** Quits: kchz (~dschulz@ ) (Quit: Volveré)
+[20:56:21] <sudden6> Diadlo: I just refactored 30% of Core :S
+[20:57:36] <bennabiy> when adding a friend from a private toxme server, does it have to be https?
+[20:57:51] <sudden6> bennabiy: yes
+[20:57:55] <bennabiy> ok
+[20:58:09] <sudden6> at least without it it would be very dangerous
+[20:58:31] <bennabiy> anyone with advice on how to set up nginx in front of tornado with ssl?
+[20:59:22] <sudden6> IDK what tornado is, but for nginx you can probably take the setup from letsencrypt with your own certificate
+[20:59:46] <bennabiy> sudden6: ok
+[21:00:50] <bennabiy> sudden6: best I can tell, a non-blocking web server
+[21:01:29] <bennabiy> it is what is used for the toxme frontend
+[21:06:28] <Diadlo> sudden6: :/
+[21:06:30] *** Joins: Achylles (~Achylles@ )
+[21:07:02] <Diadlo> sudden6: Do you understand, that we will have a problems?
+[21:07:09] <Diadlo> https://github.com/qTox/qTox/pull/4001
+[21:07:21] <sudden6> Yes
+[21:07:45] <sudden6> shouldn't be to much I think
+[21:07:50] <Diadlo> Ok
+[21:08:36] <sudden6> Also what I did will need at least 2-3 review passes, by then 4001 will already be merged
+[21:09:27] <Diadlo> I'm afraid of merging 4001
+[21:09:44] <sudden6> because?
+[21:10:10] <Diadlo> It has to many changes in important part of code
+[21:10:21] <sudden6> wait till you see my stuff lol
+[21:10:26] <Diadlo> :/
+[21:10:28] <Diadlo> #2
+[21:10:42] <Diadlo> I don't understand, why antis81 can't split in on small PR's
+[21:14:58] <Diadlo> sudden6: I need your help with review
+[21:15:20] <sudden6> I'll do, when I'm done with what I'm doing
+[21:15:26] <Diadlo> Ok
+[21:15:31] <Diadlo> Thanks
+[21:15:32] <sudden6> just assigne me to it
+[21:15:41] <Diadlo> Already :)
+[21:23:52] *** Joins: Dragofix (Dragofix@ )
+[21:31:32] *** Quits: bashrc (~motters@ ) (Ping timeout: 258 seconds)
+[21:32:32] *** Joins: bashrc (~motters@ )
+[21:39:32] <bennabiy> hrm, not too much of a fan of some other software controlling my certs
+[21:53:36] <oranges> https://github.com/hlandau/acme we use this in production anger at work
+[22:01:59] *** Joins: VVD (~VVD@ )
+[22:07:19] <Diadlo> zetok: What about 1.7.1?
+[22:07:23] <Diadlo> ~now
+[22:22:47] -qtox-git-spam- [qTox] sudden6 opened pull request #4027: [WIP][RFC] Cleanup core (master...cleanup_core) https://git.io/vMIV3
+[22:25:09] <sudden6> Diadlo: please don't kill me ^^
+[22:25:43] <Diadlo> :D
+[22:25:48] <Diadlo> :|
+[22:25:58] <Diadlo> I'll think about it
+[22:26:53] <sudden6> Diadlo: don't waste your time reviewing everything in this perfectly yet, just note stuff about the general idea
+[22:28:36] <Diadlo> I will take a look tomorrow
+[22:28:44] <sudden6> ok :)
+[22:33:03] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[23:46:06] *** Joins: hyp3rb3am (~hyp3rb3am@ )
+[23:47:23] *** Joins: df_ (7a3c552e@ )
