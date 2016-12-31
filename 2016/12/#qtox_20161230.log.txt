@@ -1,0 +1,431 @@
+[00:02:09] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:18:13] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 260 seconds)
+[00:22:55] *** Joins: DaSpirit (~DaSpirit@ )
+[00:31:45] *** Joins: Achylles (~Achylles@ )
+[00:32:52] *** Quits: hyp3rb3am (~hyp3rb3am@ ) (Quit: Leaving)
+[00:42:47] *** Quits: Achylles (~Achylles@ ) (Remote host closed the connection)
+[01:14:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[01:23:03] *** Quits: Dragofix (Dragofix@ ) (Quit: Wake up and dream!)
+[01:35:17] *** Joins: Dragofix (Dragofix@ )
+[02:39:44] *** Quits: x_ (~x@ ) (Ping timeout: 258 seconds)
+[02:46:09] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:46:20] *** Joins: MDrights (~MDrights@ )
+[02:55:00] *** Joins: x_ (~x@ )
+[03:09:21] *** Quits: oranges (oranges@ ) (Quit: leaving)
+[04:42:07] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[04:44:04] *** Joins: sockspls (~sockspls@ )
+[04:59:02] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:59:36] *** Joins: VVD (~VVD@ )
+[05:04:45] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:05:15] *** Joins: VVD (~VVD@ )
+[05:18:19] *** Joins: f10 (~flo@ )
+[05:18:25] *** Joins: f10_ (~flo@ )
+[05:50:08] <zetok> ><Diadlo> I don't understand, why antis81 can't split in on small PR's
+[05:50:13] <zetok> Diadlo: just ask him to do it then
+[05:50:23] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 246 seconds)
+[05:50:32] <zetok> Diadlo: as for 1.7.1, feel free to release it
+[05:51:53] <Diadlo> zetok: What I should do, in addition to creating tag?
+[05:57:45] <zetok> git checkout v1.7.0 -b for-1.7.1 && git cherry-pick e7276e7b43dd7b8631074866c27dfd70e40ae9f5 8d320ca3be01cdbb137c827df071ce4eebe44e4c 56d656502c82d81e5339fad7eb7bc77545adea8b && git tag -s v1.7.1
+[05:57:48] <zetok> Diadlo: ↑
+[06:01:38] <Diadlo> And git push --tags ?
+[06:01:38] <zetok> perhaps `cherry-pick -x`
+[06:01:49] <zetok> `git push upstream v1.7.1`
+[06:03:34] <Diadlo> zetok: Done
+[06:05:08] <Diadlo> It's all?
+[06:06:37] <zetok> ~yep
+[06:06:46] <Diadlo> Ok. Thanks
+[06:07:13] <zetok> perhaps we should ping yurivict to package it for FreeBSD
+[06:07:35] <Diadlo> Should I create an issue?
+[06:08:16] <zetok> you could comment on the https://github.com/qTox/qTox/commit/6f155d4db806a664d76457d42a20246ffbd5d1ac
+[06:08:49] * zetok wonders why there is no way to comment on tag
+[06:16:17] <Diadlo> zetok: Is it normal? https://travis-ci.org/qTox/qTox/builds/187630075
+[06:16:44] <zetok> >I don't know, how it works before. I.e. without git clone.
+[06:16:45] <zetok> about that
+[06:16:48] <zetok> it didn't
+[06:16:54] <Diadlo> Ok :)
+[06:17:50] <Diadlo> Hm.. It's the reason, why v1.7.1 failed?
+[06:18:01] <zetok> ~yep
+[06:18:04] <Diadlo> Ok
+[06:18:11] -qtox-git-spam- [qTox] zetok closed pull request #4023: chore(travis): properly deploy a branch for jenkins (master...chore-travis-jenkins) https://git.io/vMk6d
+[06:18:24] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/a444ee1fc272d122052e7b62ed224a782db75624
+[06:18:24] -qtox-git-spam- qTox/master a444ee1 Zetok Zalbavar: chore(travis): properly deploy a branch for jenkins...
+[06:19:21] <zetok> actually, I was wondering whether to not push the branch on every commit
+[06:19:44] <zetok> what do you think?
+[06:20:05] <Diadlo> If you will, it make nightly builds? Or what?
+[06:20:22] <zetok> it would push latest tag
+[06:20:42] <Diadlo> Every time push one tag? Right>
+[06:20:43] <Diadlo> ?
+[06:20:48] <zetok> ~yep
+[06:21:04] <Diadlo> For what?
+[06:21:16] <zetok> to ensure that it actually works :s
+[06:21:45] <zetok> e.g. for osx build scripts I've made a test that checks whether a .dmg binary has been produced
+[06:22:06] <zetok> and check runs every time osx build is ran
+[06:22:16] <zetok> pushing branch has no checks
+[06:22:55] <zetok> and it only runs when tag is pushed, which doesn't happen often
+[06:23:01] <Diadlo> If I understand correct, you can modify it in the PR, aren't you?
+[06:23:14] <zetok> um?
+[06:23:22] <zetok> modify what?
+[06:23:44] <Diadlo> .travis script
+[06:24:02] <zetok> yeah?
+[06:24:29] *** Joins: MDrights (~MDrights@ )
+[06:25:13] <Diadlo> I don't see the real reason to push the same tag on every commit. But you can do this changes in PR, which you want to test
+[06:25:24] <zetok> um, no
+[06:26:22] <zetok> while .travis stuff can be modified in a PR, all the stuff that requires oauth tokens won't work, since secret travis vars aren't available in PRs
+[06:27:17] <zetok> the workaround is to push to a branch under qTox/
+[06:30:03] <Diadlo> Ok. If you need it to tests -> just do it
+[06:46:01] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[06:46:26] *** Joins: f10_ (~flo@ )
+[06:54:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[06:56:33] *** Joins: f10_ (~flo@ )
+[07:02:43] *** Quits: x_ (~x@ ) (Ping timeout: 258 seconds)
+[07:03:38] *** Joins: f10__ (~flo@ )
+[07:05:00] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[07:07:32] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[07:07:57] *** Joins: f10 (~flo@ )
+[07:08:02] *** Joins: f10_ (~flo@ )
+[07:08:13] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[07:17:05] *** Joins: Yoshimo (~anything@ )
+[07:18:42] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://github.com/qTox/qTox/commit/335b408278808624a504079302c583fecd6ec07a
+[07:18:42] -qtox-git-spam- qTox/master 335b408 Zetok Zalbavar: chore(tools): make deweblate script work with long commit messages...
+[07:28:05] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[08:11:40] *** Joins: sudden6 (~anonymous@ )
+[08:15:21] *** Quits: df_ (7a3c552e@ ) (Quit: Page closed)
+[08:30:04] <LittleVulpix> So a friend of mine wants to try using tox (after watching the snowden documentary :P) and I can't recommend qtox because for the past X days the latest version released is not available for windows, and I don't want to discourage him by making him update manually after it's all fixed and then having to explain why :p c'mon guys, why you do dis.
+[08:32:16] * zetok doesn't
+[08:33:36] <zetok> i.e. I don't even have access to any of the windows building stuff ¯\_(ツ)_/¯
+[08:35:27] <LittleVulpix> zetok: what does that even mean
+[08:36:34] <zetok> jenkins → signing → update server
+[08:37:13] <zetok> access to those is fairly limited
+[08:37:57] <zetok> aside from jenkins, last 2 steps require tux3 to do things
+[08:38:02] <zetok> and he's MIA again
+[08:38:24] <zetok> as for jenkins, none of qTox devs aside from tux3 have access to it
+[08:38:35] <zetok> (look above)
+[08:41:31] <sudden6> zetok: btw, did anybody shoot him an email about releasing qTox for Windows?
+[08:41:42] <sudden6> maybe that could speed up things
+[08:42:09] <zetok> sudden6: I told him that release was going to be on 25th when he was online, and nurupo shot him an email about windows build failing on jenkins
+[08:42:38] <sudden6> also, we should start to include our signatures into qTox so this won't happen again
+[08:42:44] <sudden6> hm, ok
+[08:43:13] <zetok> right
+[08:43:21] <zetok> where to include pubkeys?
+[08:43:51] <sudden6> somewhere in the updater IIRc
+[08:45:04] <zetok> https://github.com/qTox/qTox/blob/master/updater/update.cpp#L30,L34
+[08:45:12] <sudden6> yep, also found it
+[08:58:44] <zetok> what do you think about replacing the C++ code used for signing/stuff with Rust?
+[08:58:58] <sudden6> not much atm
+[08:59:26] <zetok> I'll take that as a "yes"
+[09:08:25] <zetok> btw, how's rust-identicon is going?
+[09:37:53] <sudden6> zetok: you'd have to write an ui with Rust
+[09:38:03] <zetok> nope
+[09:38:47] <zetok> time is not ripe for it yet
+[09:38:50] <sudden6> then, have fun integrating Rust with qt
+[09:39:12] <zetok> no need :3
+[09:39:29] <sudden6> then how do you intend to do this?
+[09:39:53] <sudden6> rust-identicon is on ice for now
+[09:40:38] <zetok> I'm not replacing gui stuff
+[09:46:46] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:51:34] *** Joins: MDrights (~MDrights@ )
+[10:07:32] <zetok> tux3 wrote some weird stuff
+[10:08:55] <zetok> i.e. I don't get why there's a detached signature being made if he's appending the signed data after the signature, which is exactly what non-detached signing fn does -.-"
+[10:11:41] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[10:15:20] <sudden6> <zetok> I'm not replacing gui stuff <- then you have to integrate Rust stuff with C++ and Qt
+[10:15:27] <zetok> nah
+[10:16:00] <sudden6> then it's not clear to me what you're intending to do
+[10:17:14] <zetok> soon™
+[10:17:32] <zetok> (it's actually done, I just need to integrate it with travis and add README.md)
+[10:19:12] <sudden6> ???
+[10:38:36] *** sockspls is now known as SocksPls
+[10:43:50] -qtox-git-spam- [qTox] zetok opened pull request #4028: chore(tools): replace unsafe signing C++ code with Rust (master...chore-tool-rust-sign) https://git.io/vMLU8
+[10:43:57] <zetok> fu fu.
+[10:44:28] <zetok> sudden6: ↑
+[10:44:42] <zetok> I'll replace other tools too after this
+[10:46:31] <sudden6> Is this still RFC or am I supposed to critizise every minor thing I find?
+[10:48:12] <iphy> zetok: does qTox now depend on rust?
+[10:48:41] <zetok> sudden6: criticise all you want ;)
+[10:48:43] <iphy> Or just a tool?
+[10:48:48] <zetok> iphy: tooling
+[10:49:19] <iphy> Ok cool
+[10:50:45] <zetok> as for qTox itself, I'll look into that in the future
+[10:51:33] <zetok> i.e. IMO it would be preferable to have first solid base to build on (zetox), and from there parts in the clients could be improved/replaced
+[10:58:00] *** Joins: bashrc (~motters@ )
+[11:10:55] <sudden6> I'm not sure if I like this or not
+[11:11:27] <sudden6> I like it because of the promises Rust makes
+[11:12:10] <sudden6> I don't like it because it isn't clear if Rust can hold all the promises
+[11:12:24] <zetok> err
+[11:12:26] <zetok> that is clear
+[11:12:41] <sudden6> I don't like it because it makes us depend on even more stuff
+[11:21:40] *** Joins: x_ (~x@ )
+[11:26:10] <zetok> We already depend on Qt.
+[11:26:26] *** Quits: x_ (~x@ ) (Ping timeout: 258 seconds)
+[11:26:36] <zetok> and in the past qTox depended on opencv
+[11:26:43] *** Joins: x_ (~x@ )
+[11:35:46] <sudden6> yep, but Rust+libs is one magnitude bigger
+[11:51:17] <VVD> plz, no rust dependency!
+[11:51:18] <VVD> hi
+[11:51:37] <zetok> VVD: why?
+[11:52:23] <VVD> build one more monster only for building qtox
+[11:53:29] <VVD> perl and python on every host are too much already
+[11:53:55] <VVD> 2 different pythons!
+[11:54:00] <VVD> 2.7 and 3.5
+[11:54:09] <zetok> yeah
+[11:54:19] <zetok> and python still cannot into utf8
+[11:54:19] <VVD> and tcl+tk too
+[11:54:36] <VVD> and gcc + clang + llvm
+[11:55:02] <VVD> lua
+[11:55:09] <VVD> ruby
+[11:55:10] <VVD> lol
+[11:55:16] <VVD> it's all on my host
+[11:55:26] <sudden6> VVD: are you developing in all these languages? :DD
+[11:55:31] <VVD> but I don't use all that except gcc & clang
+[11:56:07] <VVD> ofc no - just dependencies (build, install and run)
+[11:56:42] <VVD> ocaml and vala
+[11:57:05] <zetok> good thing that Rust is going to deprecate Vala :3
+[11:57:12] <VVD> fuck this zoo of program languages and compillers
+[11:57:27] <zetok> yeah
+[11:57:36] <zetok> stuff just should be written in Rust
+[11:58:08] <sudden6> https://xkcd.com/927/
+[11:58:17] <VVD> vinagre-3.18.2_3 depends on telepathy-glib-0.24.1_1, that depends on vala-0.30.2 - I can't remove vala :-(
+[11:58:31] <zetok> sudden6: except that this isn't the case
+[11:58:50] <zetok> sudden6: i.e. one can compile rust to asmjs
+[11:59:04] <sudden6> one can also compile c to asmjs
+[11:59:07] <zetok> pff
+[11:59:12] <sudden6> ;)
+[11:59:27] <zetok> you've missed the point
+[11:59:45] <sudden6> this asmjs thing is by far the most ridicoulus one^^
+[11:59:58] <zetok> except that it's not :D
+[12:00:57] <zetok> frankly, I'd enjoy compiling perfectly fine Rust code to asmjs and make browsers slow down as much as possible :D
+[12:00:57] <sudden6> Rust/C -> Compiler -> Interpreter(Compiled C Code) -> Machine
+[12:01:41] <sudden6> btw, how far has formally verifying the Rust language gone?
+[12:01:44] <VVD> there are chances that in near feature u can't build Firefox without rust !!!!!!
+[12:01:58] <sudden6> VVD: you probably already can't
+[12:02:05] <VVD> I can
+[12:02:08] <VVD> I did it
+[12:02:09] <VVD> :-D
+[12:02:15] <sudden6> some parser is already written in Rust IIRC
+[12:02:19] <VVD> firefox-50.1.0_4,1
+[12:02:34] <sudden6> maybe it's optional
+[12:02:36] <VVD> but there is build option "RUST"
+[12:03:25] <VVD> but for 51 or 52 - may be not optional dependency…
+[12:04:08] <zetok> sudden6: I dunno about format verification
+[12:04:51] <zetok> and I'm not sure if that's even doable, given the rate of changes
+[12:06:30] <VVD> I have idea - rewrite qTox on https://en.wikipedia.org/wiki/Brainfuck :-D
+[12:06:39] <zetok> not doable
+[12:06:51] <sudden6> hmm, maybe there's a C++ to Brainfuck compiler :DD
+[12:06:54] <zetok> nope
+[12:07:04] <zetok> brainfuck doesn't support needed features
+[12:07:23] * zetok has looked into transpiling code to brainfuck
+[12:07:37] <sudden6> since when is sanity a needed feature for qTox? :DD
+[12:07:45] <zetok> not sanity
+[12:08:17] <VVD> there are no qt5 for Brainfuck bindings
+[12:09:06] <sudden6> aww
+[12:09:29] <sudden6> I always wanted to write some nice Qt GUI with Brainfuck
+[12:09:30] <zetok> one would need to expand branfuck language for the features that CPUs gained in the last ~30 years or so
+[12:09:38] <zetok> brainfuck*
+[12:10:31] <sudden6> zetok: since it seems to be turing complete, it should theoretically be doable
+[12:11:22] * zetok sighs
+[12:14:32] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[12:47:53] *** Joins: Yoshimo (~anything@ )
+[13:18:55] *** Joins: terwt (68eea924@ )
+[13:19:16] <terwt> When will qTox 1.7.0 be released for Windows?
+[13:23:06] <zetok> when tux3 wakes up from his eternal slumber and rises from the depths of the dark ocean…
+[13:25:50] <terwt> does that mean never? :(
+[13:26:03] <zetok> naw
+[13:26:15] <terwt> oh
+[13:26:54] <terwt> I am waiting for 1.7.0 so that I can deploy it on my friends' machines. The fixed autoupdater is extremely important in 1.7.0 - that's why I don't want to install 1.6.0 on their machines.
+[13:26:55] <zetok> no idea when tux3 would have time to update things
+[13:27:12] <zetok> sorry for the delay :/
+[13:28:49] <terwt> don't be sorry, not your fault, windows is a complicated platform but unfortunately the most prevalent :(
+[13:29:41] <Emcy_> i also know the pain of being 'that guy' who forces everyone to use tox then becomes responsible for stopping it fucking breaking all the time
+[13:30:11] <Emcy_> how could a project conceived on 4chan have lead to so much social awkwardness it is a mystery
+[13:30:13] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:31:29] *** Joins: cisc (~cisc@ )
+[13:32:11] <terwt> there's nothing that would compare to tox, so people will use it after explaining it to them
+[13:32:35] <terwt> tox is the only chat program that guarantees that the communication is encrypted - because it does not have an unencrypted mode of operation
+[13:32:46] <Emcy_> all of your friends are neckbeards then
+[13:33:31] <zetok> :D
+[13:34:26] <terwt> yup :)
+[13:36:57] <Emcy_> levity aside how can you make a 'release' without working bainaries, without even thinking about it until after the tag
+[13:37:25] <Emcy_> for linux its barely acceptable, if youve given up on the yotld completely. For windows users its a joke
+[13:39:03] <zetok> question is: what motivation is there to care?
+[13:40:18] <Emcy_> work that question back to first principles: what motivation is there to even work on tox if you dont care if anyone actually uses it
+[13:41:02] <zetok> >what motivation is there to even work on tox
+[13:41:16] <zetok> to make things work better for myself
+[13:41:24] <zetok> I don't need to care about others for that
+[13:41:54] <Emcy_> that was irgs attitude
+[13:41:59] <Emcy_> and it resulted in a dead project
+[13:42:09] <zetok> mm :)
+[13:42:09] <Emcy_> which would be the case still if not for iphy
+[13:43:12] <zetok> that's not irungentoo's attitude though :)
+[13:44:28] <zetok> anyway; I thought of setting up ~donations to create some motivation & help with things
+[13:45:13] <Emcy_> yeah it was. thats why the huge bulk of toktok work so far is refactoring and test coverage and having an actual documented api
+[13:45:34] <zetok> lol
+[13:46:16] <sudden6> Emcy_: don't make the mistake thinking money would make contributors suddenly appear
+[13:46:42] <Emcy_> i didnt mention money
+[13:46:59] <sudden6> what else did you mean by ~donations?^^
+[13:47:11] <Emcy_> wrong person
+[13:47:37] <sudden6> oops, sorry you both got the same color in my irc client
+[13:48:53] * zetok doesn't expect people to suddenly appear
+[13:49:05] <Emcy_> the only thing i think would make more contributors appear is apparent activity and an actual end product
+[13:49:24] <Emcy_> which is why i think having a release schedule from now on was a good thing
+[13:54:42] <Diadlo> sudden6: I'm start reviewing your PR. It's a great idea to separate ToxPK from ToxId!
+[13:55:01] <Diadlo> Thanks for implementation
+[13:57:15] -qtox-git-spam- [qTox] zetok closed pull request #3938: fix(UI): fix own status message not being properly displayed in tooltip (master...fix-stat-newline) https://git.io/v14Ps
+[14:15:59] <sudden6> Diadlo: what do you think of using ToxKey and ToxId in the high level classes?
+[14:16:06] <sudden6> ie the ui
+[14:16:43] <zetok> `ToxKey` ← what is it supposed to be?
+[14:17:26] <sudden6> I'm not quite sure this is a good idea, because it makes the UI rather unflexible, on the other hand, is qTox going to support anything other than Tox soon?
+[14:17:38] <zetok> no
+[14:17:49] <sudden6> zetok: see https://github.com/qTox/qTox/pull/4027
+[14:18:07] <sudden6> I split up ToxID and Public key handling
+[14:18:26] <zetok> sudden6: naming PK `ToxKey` doesn't seem right
+[14:18:44] <sudden6> what would be a better name?
+[14:18:50] <zetok> `ToxPk`
+[14:19:29] <zetok> or perhaps `ToxPubkey`
+[14:19:36] <sudden6> I named it ToxKey because it could theoretically also hold an SK, but that's never actually used
+[14:19:49] <zetok> >I named it ToxKey because it could theoretically also hold an SK
+[14:19:53] <zetok> that's a very bad idea
+[14:19:59] <sudden6> I know ;)
+[14:20:10] <zetok> um.
+[14:20:31] <sudden6> I was working on the details as I went^^
+[14:21:13] <sudden6> I'll rename it to ToxPk then :)
+[14:21:20] <zetok> thanks
+[14:22:45] <sudden6> so how do I rename it without having to redo everything?^^
+[14:23:17] <zetok> split PR into multiple ones
+[14:23:38] <zetok> then git rebase
+[14:23:53] <sudden6> this rebase is bugging me, it'll have a lot of conflicts
+[14:24:09] <sudden6> a lot > 50
+[14:24:26] <zetok> yeah
+[14:24:41] <zetok> would have been easier if PR was small to begin with :|
+[14:26:02] <sudden6> the only big thing is #2 and that can't be split in smaller parts, without breaking compiliation
+[14:28:44] <zetok> sudden6: btw, since you're going to edit things, could you sort(1) headers / sources ?
+[14:29:44] <sudden6> I did where I changed them, but IMO this is out scope
+[14:30:19] <zetok> err
+[14:30:34] <zetok> no, keeping things sorted is not out of the scope
+[14:30:42] <zetok> sudden6: I mean just the qtox.pro
+[14:31:12] <sudden6> oh, yep will do
+[14:31:46] -qtox-git-spam- [qTox] zetok closed pull request #3996: refactor(core): simplify code for tox interval during file transfer (master...refactor-simpl-ftinterv) https://git.io/v1b9w
+[14:32:25] <zetok> sudden6: and most (all?) of the commits are a `refactor`
+[14:33:28] *** Quits: mva (znc@ ) (Ping timeout: 265 seconds)
+[14:33:53] <sudden6> ok
+[14:34:15] <zetok> Diadlo: https://github.com/qTox/qTox/pull/4028 ← opinion?
+[14:39:55] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:54:14] *** Quits: terwt (68eea924@ ) (Quit: Page closed)
+[14:54:46] *** Quits: x_ (~x@ ) (Ping timeout: 252 seconds)
+[14:55:56] -qtox-git-spam- [qTox] sudden6 opened pull request #4029: Improve toxid (master...improve_toxid) https://git.io/vMLCk
+[15:09:33] *** Joins: x_ (~x@ )
+[15:19:35] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[15:34:35] <sudden6> was a bit less work than expected
+[15:34:52] <sudden6> bye :)
+[15:43:31] *** Quits: cisc (~cisc@ ) (Ping timeout: 252 seconds)
+[15:47:12] *** Joins: cisc (~cisc@ )
+[16:06:16] *** Quits: cisc (~cisc@ ) (Ping timeout: 256 seconds)
+[16:08:32] *** Quits: bashrc (~motters@ ) (Ping timeout: 256 seconds)
+[16:08:39] *** Joins: DiCE1904 (~textual@ )
+[16:09:16] *** Joins: bashrc (~motters@ )
+[16:09:59] *** Joins: cisc (~cisc@ )
+[16:19:41] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 258 seconds)
+[16:22:56] *** Joins: deathsbreed (~deathsbre@ )
+[16:23:21] *** Parts: deathsbreed (~deathsbre@ ) ()
+[16:23:29] *** Joins: DiCE1904 (~textual@ )
+[16:23:33] *** Joins: f10_ (~flo@ )
+[16:28:25] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 260 seconds)
+[16:28:50] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:28:55] *** Joins: DiCE1904 (~textual@ )
+[16:32:11] *** Joins: cisc (~cisc@ )
+[16:33:38] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 264 seconds)
+[16:36:34] *** Quits: cisc (~cisc@ ) (Client Quit)
+[16:36:37] *** Joins: DiCE1904 (~textual@ )
+[16:37:56] *** Joins: cisc (~cisc@ )
+[16:44:41] *** Joins: f10 (~flo@ )
+[16:48:04] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 258 seconds)
+[16:53:27] *** Joins: DiCE1904 (~textual@ )
+[16:54:02] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[16:54:12] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[16:57:51] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 246 seconds)
+[17:02:35] *** Joins: DiCE1904 (~textual@ )
+[17:07:17] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 248 seconds)
+[17:07:45] *** Joins: in1t3r_ (~LordShiva@ )
+[17:11:15] *** Joins: DiCE1904 (~textual@ )
+[17:39:29] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 246 seconds)
+[17:43:38] *** Joins: DiCE1904 (~textual@ )
+[17:43:40] *** Quits: DiCE1904 (~textual@ ) (Client Quit)
+[18:01:11] *** Quits: bashrc (~motters@ ) (Ping timeout: 246 seconds)
+[18:02:20] *** Joins: bashrc (~motters@ )
+[18:06:58] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 256 seconds)
+[18:11:55] *** Joins: dardevelin (~dardeveli@ )
+[18:18:33] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[18:34:52] *** Joins: Yoshimo (~anything@ )
+[18:36:55] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[18:40:53] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[18:40:58] *** Joins: f10 (~flo@ )
+[18:41:42] *** Joins: f10_ (~flo@ )
+[19:09:09] <Diadlo> zetok: I don't know Rust and can't review or maintain it. But if you can and want -> ok
+[19:22:32] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[19:28:39] <Diadlo> sudden6: Are you here?
+[19:32:13] *** Joins: f10 (~flo@ )
+[19:59:40] <zetok> Diadlo: I was (still am) hoping that maintainers who aren't familiar with Rust yet could start getting familiar :)
+[20:02:33] <Diadlo> I think, not me
+[20:03:13] <zetok> um, why not?
+[20:03:35] <Diadlo> I'm not interested
+[20:03:58] <zetok> err
+[20:04:42] <Diadlo> I'm better know, what i'm interested and what not. So not error
+[20:05:29] <zetok> how can you know that you're not interested in something that you don't know? :)
+[20:06:07] <Diadlo> Maybe word `interested` have a bit different meaning in english
+[20:06:58] <Diadlo> I meant something like "I don't want"
+[20:07:47] <zetok> yeah, you got that right
+[20:09:17] <zetok> e.g. how can one know that they don't like something if they haven't tasted it?
+[20:09:25] <Diadlo> Do I want to be able to play the domra? No
+[20:09:42] <Diadlo> I just don't want it
+[20:09:55] <zetok> >.<
+[20:10:01] <Diadlo> Do you want?
+[20:10:15] <Diadlo> Or, maybe, you already can?)
+[20:11:07] <zetok> I don't see why I wouldn't want to be able to play it :)
+[20:11:24] <zetok> play on it*
+[20:12:21] <Diadlo> You're just trying to impose Rust
+[20:13:18] <Diadlo> Ok
+[20:13:27] <Diadlo> I have an argument
+[20:13:31] <zetok> not just, and only slightly ;)
+[20:13:49] <zetok> there are actual benefits
+[20:13:50] <Diadlo> I have a lot of plans and I haven't time
+[20:15:09] <zetok> :)
+[20:16:50] <zetok> https://www.youtube.com/watch?v=er0rJr9-sbs
+[20:18:02] <Diadlo> Exactly
+[20:19:47] *** Joins: DaSpirit (~DaSpirit@ )
+[20:19:54] <zetok> DaSpirit: hi
+[20:20:15] <DaSpirit> Hello.
+[20:24:16] <zetok> DaSpirit: I've been wondering; there's no chance of you helping with qTox in any near future, right?
+[20:25:21] <DaSpirit> Likely not. I've been trying to get into game dev. I've done a lot of tinkering and I'm going to start making a serious indie game next.
+[20:25:46] <zetok> I see
+[20:25:50] <DaSpirit> And I've also been paying more attention to Matrix than Tox...
+[20:25:56] <zetok> :(
+[20:26:13] <zetok> you know that matrix is broken security-wise?
+[20:26:36] <DaSpirit> lol how?
+[20:26:44] <zetok> ?
+[20:26:48] <zetok> how it's not?
+[20:26:59] <zetok> it's has "security hole" written all over it
+[20:27:16] <zetok> it was made to be pwn3d
+[20:27:59] <zetok> granted, there are worse things out there
+[20:28:05] <zetok> still.
+[20:28:30] <DaSpirit> Yeah but last I seen a few months ago we still didn't have new group chats out yet.
+[20:28:32] <Emcy_> really how isit borken
+[20:28:33] <DaSpirit> Did that change yet?
+[20:28:57] <zetok> c-toxcore 0.3 most likely will have new groupchats
+[20:29:37] <Diadlo> DaSpirit: Hello. Also not toxcore has WIP persistent groupchat
+[20:34:25] <Diadlo> *now
+[20:37:30] <zetok> DaSpirit: ok then, there's no problem with removing you from qTox gh org, right?
+[20:37:48] <DaSpirit> Yeah go ahead and remove it then.
+[20:38:21] <zetok> ok, done
+[20:50:53] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:51:11] *** Joins: f10 (~flo@ )
+[21:19:27] *** Joins: Diadl0 (~diadlo@ )
+[21:21:09] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 248 seconds)
+[21:28:17] *** Quits: VVD (~VVD@ ) ()
+[21:40:22] *** Joins: LittleVulpix (~Miranda@ )
+[21:48:35] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[22:22:08] *** Diadl0 is now known as Diadlo
+[23:17:08] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[23:19:03] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[23:27:43] <koshii> Hey are you guys using Vagrant to build for different operating systems?
+[23:40:09] *** Quits: bashrc (~motters@ ) (Ping timeout: 258 seconds)
+[23:41:04] *** Joins: bashrc (~motters@ )
+[23:48:49] *** Joins: Diadl0 (~diadlo@ )
+[23:48:49] *** Quits: Diadl0 (~diadlo@ ) (Client Quit)
