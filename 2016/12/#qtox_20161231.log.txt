@@ -1,0 +1,105 @@
+[00:03:42] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:58:41] *** Joins: oranges (oranges@ )
+[02:13:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[03:33:18] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:03:07] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 258 seconds)
+[04:07:04] *** Joins: Chiitoo (~Chiitoo@ )
+[06:06:28] <zetok> koshii: nope
+[06:26:42] *** Joins: f10_ (~flo@ )
+[06:27:03] *** Joins: f10 (~flo@ )
+[07:20:31] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[07:20:54] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[07:20:54] *** Joins: f10 (~flo@ )
+[07:21:06] *** Joins: f10_ (~flo@ )
+[07:25:34] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[07:26:08] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[07:27:06] *** Joins: f10 (~flo@ )
+[07:27:07] *** Joins: f10_ (~flo@ )
+[09:05:18] *** Joins: sudden6 (~anonymous@ )
+[09:09:39] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vMtY9
+[09:09:39] -qtox-git-spam- qTox/master a223510 sudden6: fix(toxid): Tox ID construction from ToxMe
+[09:09:39] -qtox-git-spam- qTox/master 0b2f22d sudden6: refactor(toxid): improve checks for valid ToxIDs
+[09:25:18] *** Joins: Yoshimo (~anything@ )
+[09:26:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[09:55:52] *** Joins: reBrain (~quassel@ )
+[10:18:23] <reBrain> why's updating not working on Windows 7?
+[10:18:37] <reBrain> or any Windows actually?
+[10:54:56] -qtox-git-spam- [qTox] zetok opened pull request #4031: docs(INSTALL): correct instruction for toxcore tag checkout (master...docs-install-tagtox) https://git.io/vMts5
+[11:16:06] <robinli> zetok: ^
+[11:16:08] <robinli> Got any idea? :x
+[11:27:05] <zetok> yeah
+[11:27:08] <zetok> bug in updater
+[11:27:25] <zetok> + there's no 1.7 build for windows
+[11:27:57] <zetok> (it's written in blog post)
+[11:34:08] <robinli> Ah, okay.
+[11:34:14] <robinli> Got the bug fixed?
+[11:34:32] <robinli> Oh.
+[11:34:47] <robinli> reBrain: https://qtox.github.io/blog/2016/12/25/Autoupdater-bug-and-v1.7.0-release.html
+[12:17:15] <reBrain> oh thanks
+[12:19:51] <robinli> No worried. :)
+[12:20:06] <robinli> So it should be fine if you just manually download the latest version.
+[12:21:42] <robinli> s/worried/worries
+[12:28:54] *** Joins: MiokIry (~Miok@ )
+[13:26:07] *** Joins: mva (znc@ )
+[14:20:09] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:20:50] *** Joins: LittleVulpix (~Miranda@ )
+[14:47:38] *** Quits: genesis (~genesis@ ) (Quit: Leaving)
+[14:56:02] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 265 seconds)
+[14:58:59] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[14:58:59] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:05:46] *** Joins: f10 (~flo@ )
+[15:39:21] *** Quits: Gottox_ (~Gottox@ ) (Remote host closed the connection)
+[15:51:05] *** Joins: f10_ (~flo@ )
+[15:55:58] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[16:57:11] *** Joins: f10_ (~flo@ )
+[17:51:31] *** Joins: DaSpirit (~DaSpirit@ )
+[18:37:40] <cisc> when I compiled & ran qTox 1.7 with toxcore 0.0.2 & added echobot@toxme.io, and an offline contact showed up in the contact list as a string of zeros. any known issue?
+[18:39:24] <zetok> cisc: no
+[18:39:29] <zetok> cisc: you should open an issue
+[18:39:36] <zetok> on toktok
+[18:40:21] <cisc> however everything else worked fine including audio and video, and a test call
+[18:41:11] <cisc> well first I was gonna make a PR when I have the chance and make some mods to the install.md about installing on suse
+[18:42:15] <cisc> and try to reproduce on 42.2, the string of zeros being returned happened on a Tumblweed box
+[19:18:57] <zetok> os is irrelevant
+[19:19:10] <zetok> there was a change in toxcore that touched that area
+[19:56:38] <iphy> cisc: can you reproduce it?
+[20:38:31] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:11:13] *** Quits: GGMethos (methos@ ) (Ping timeout: 258 seconds)
+[21:19:44] <cisc> I didn't have notifications enabled on this tab accidentally. iphy: I will try again and see if I can reproduce
+[21:20:21] <iphy> string of zeroes?
+[21:20:31] <iphy> as in a string containing '0' characters?
+[21:20:40] <cisc> exactly
+[21:20:44] <iphy> how many?
+[21:20:46] <cisc> like 0000000000000000
+[21:20:51] <cisc> I am not sure exactly
+[21:21:01] <iphy> that's an odd bug
+[21:21:11] <iphy> would be nice if we can reproduce it
+[21:21:26] <cisc> I will try again and give a screenshot or whatever debug log needed
+[21:21:51] <iphy> a sequence of steps to reproduce would be most helpful
+[21:22:25] <cisc> I added groupbot@toxme.io, and what showed up on the list was an offline contact with the name `0000000000000000`
+[21:23:03] <cisc> can anyone else reproduce?
+[21:40:29] *** Joins: GGMethos (methos@ )
+[22:07:59] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[22:09:51] *** Joins: f10 (~flo@ )
+[22:14:13] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[22:14:23] *** Joins: f10__ (~flo@ )
+[22:14:44] *** Joins: f10 (~flo@ )
+[22:17:03] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[22:20:55] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[22:21:13] *** Joins: f10 (~flo@ )
+[22:23:08] *** Joins: noelr (68eea923@ )
+[22:31:17] <noelr> The binary download of qtox for windows is 1.6.0 instead of the newest 1.7.1. Somebody should update the link on the github page.
+[22:36:38] <Emcy_> there is no windows binary for it
+[23:30:24] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[23:34:07] <noelr> Emcy_: will there be one or is windows an abandoned platform?
+[23:39:10] <Emcy_> i doubt its abandoned
+[23:39:35] <Emcy_> but the main maintainter didnt seem to give much of a fuck when i asked him
+[23:40:00] <Emcy_> they use a different build system for everything apart from windows now
+[23:46:47] <noelr> I'd love to convince a bunch of people to use qTox as part of new year resolution. Would be handy if qTox for windows was updated...
+[23:46:57] <noelr> especially given that autoupdates dont work in qTox <1.7.0
+[23:48:59] <Emcy_> it will be done eventually
+[23:50:04] <Emcy_> we all wish tox wasnt still so shitty to present to friends
+[23:51:23] <noelr> tox is the best anyway
+[23:51:52] <noelr> just like we endure linux even though the UX is still crappy
+[23:52:15] <Emcy_> thats not a comforting comparison
+[23:52:29] <noelr> yeah I guess you're right
