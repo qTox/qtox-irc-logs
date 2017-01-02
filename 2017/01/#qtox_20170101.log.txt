@@ -1,0 +1,247 @@
+[00:09:00] *** Joins: Diadl0 (~Diadlo@ )
+[00:09:58] <Diadl0> Happy new year, guys
+[00:11:43] <iphy> Happy new year Diadl0 
+[00:33:01] *** Quits: Diadl0 (~Diadlo@ ) (Quit: AtomicIRC: The nuclear option.)
+[00:35:31] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[00:35:41] *** Quits: noelr (68eea923@ ) (Quit: Page closed)
+[00:35:54] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[03:18:23] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:19:45] *** Joins: DaSpirit (~DaSpirit@ )
+[03:20:56] *** Joins: DiCE1904 (~textual@ )
+[04:08:11] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[05:03:43] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[06:40:14] *** Quits: x_ (~x@ ) (Ping timeout: 264 seconds)
+[07:05:44] *** Joins: f10__ (~flo@ )
+[07:16:24] *** Joins: f10 (~flo@ )
+[09:32:34] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[09:32:34] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[09:42:11] *** Joins: f10__ (~flo@ )
+[10:02:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:03:20] *** Joins: cisc (~cisc@ )
+[10:05:26] *** Joins: MDrights (~MDrights@ )
+[10:05:51] *** Quits: cisc (~cisc@ ) (Client Quit)
+[10:06:37] *** Joins: cisc (~cisc@ )
+[10:25:19] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[10:26:10] *** Joins: f10__ (~flo@ )
+[10:35:02] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[10:35:37] *** Joins: f10__ (~flo@ )
+[10:51:28] *** Joins: f10 (~flo@ )
+[10:53:58] *** Joins: Yoshimo (~anything@ )
+[10:56:14] *** Joins: x_ (~x@ )
+[11:08:54] *** Joins: sudden6 (~anonymous@ )
+[11:10:07] <sudden6> Happy New Year everybody :)
+[11:14:04] <zetok> happy NY :)
+[11:25:45] <cisc> Happy GNU year
+[11:26:36] <sudden6> May 2017 be the year of the Linux Desktop ;)
+[11:29:07] <cisc> very likely, yes
+[11:51:50] <Emcy_> hahahaha
+[11:51:52] <Emcy_> never ever
+[11:54:41] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[11:55:42] <iphy> Year of the tox network
+[11:56:49] *** Joins: Diadlo (~diadlo@ )
+[12:02:01] <Emcy_> id be happy if you get avg concurrent nodes up to 5000
+[12:05:33] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[12:07:05] <zetok> sudden6: do you see what could be improved in the Rust code in the PR?
+[12:09:26] <sudden6> zetok: no, I don't see anything
+[12:09:38] <zetok> :|
+[12:10:13] <zetok> on what data kinds it operates and how that data should be treated?
+[12:10:47] <sudden6> I think it will be hard to for you to find someone knowledgeable enough in this channel
+[12:11:22] <zetok> :D
+[12:32:26] <zetok> sudden6: well, the point is to get people to know that stuff :)
+[12:33:19] <sudden6> people won't start to learn Rust just because you like it so much :)
+[12:34:01] <zetok> the thing that could be improved is not limited to Rust – it's just that making it work in Rust is really easy :)
+[12:34:33] <Emcy_> whats with the rust shilling
+[12:34:45] <zetok> "shilling" ?
+[12:35:59] <Emcy_> it happens so often its a meme
+[12:38:16] <Emcy_> https://infinow.net/.media/t_a3e4934a9b473b632526e22a84719d61-imagejpeg
+[12:45:13] <zetok> http://www.bbc.com/news/world-asia-34672926 there goes your meme
+[12:50:08] <Emcy_> meme magic is not to be trifled with
+[13:15:42] *** Joins: MDrights (~MDrights@ )
+[13:19:46] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[13:22:50] *** Joins: MDrights (~MDrights@ )
+[13:45:55] *** Joins: Mikaela[m] (cibliamatr@ )
+[14:49:41] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:50:03] *** Joins: MDrights (~MDrights@ )
+[15:00:43] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 265 seconds)
+[15:23:18] *** Joins: bashrc (~motters@ )
+[16:56:04] *** Joins: f10_ (~flo@ )
+[16:56:05] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[16:56:17] *** Joins: f10__ (~flo@ )
+[16:56:29] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[17:31:50] *** Joins: reBrain (~quassel@ )
+[17:49:53] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[18:21:14] <koshii> HNY folks yeah
+[18:26:48] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:27:19] *** Joins: LittleVulpix (~Miranda@ )
+[18:57:28] *** Joins: sudd3n6 (~anonymous@ )
+[19:00:49] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[19:02:41] *** Joins: sudden6 (~anonymous@ )
+[19:06:38] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[19:07:35] *** Joins: Yoshimo3743 (~anything@ )
+[19:07:36] *** Quits: Yoshimo3743 (~anything@ ) (Client Quit)
+[19:10:28] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 245 seconds)
+[19:31:58] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[19:31:59] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:32:24] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[19:32:28] *** Joins: f10_ (~flo@ )
+[19:32:43] *** Joins: f10__ (~flo@ )
+[19:36:23] *** Joins: cisc (~cisc@ )
+[19:48:40] *** Joins: Yoshimo (~anything@ )
+[20:14:14] *** Joins: bennabiy (~bennabiy@ )
+[20:20:20] <zetok> tux3: v1.7.0 ?
+[20:20:50] <tux3> zetok, hai!
+[20:20:51] <tux3> Sure
+[20:21:47] <tux3> zetok, do I just need to release the auto-updates, or also the windows stable versions?
+[20:22:03] <zetok> both?
+[20:22:10] <zetok> (is there a difference?)
+[20:22:56] <tux3> Yep
+[20:23:48] <tux3> The installers are built on Jenkins (any project member can trigger it), the auto-updates need Yours Truly's manual approval
+[20:24:02] <zetok> hmm
+[20:24:17] <zetok> 'bout the updates
+[20:24:22] <zetok> tux3: https://github.com/qTox/qTox/pull/4028 :3
+[20:24:53] <tux3> Hhmm
+[20:25:21] <zetok> tux3: just to make sure – signature+bytes are supposed to be just written to stdout, right?
+[20:25:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[20:25:57] <zetok> tux3: which makes me wonder, why did you use detached signature fn, since the signing function returns signature+bytes anyway
+[20:26:12] <tux3> Yep
+[20:26:56] <zetok> also regarding changes to update process https://github.com/qTox/qTox/issues/4032
+[20:28:20] *** Joins: sudden6 (~anonymous@ )
+[20:29:29] <tux3> Did you compare that your rust version gives the same output?
+[20:29:59] <zetok> kinda
+[20:30:18] <zetok> stdout output looked about the same
+[20:30:28] <sudden6> tux3: o/
+[20:30:32] * zetok didn't compare actual bytes
+[20:30:34] <tux3> sudden6, hi!
+[20:30:47] <sudden6> welcome to 2017 with qTox ;)
+[20:30:58] <tux3> zetok, I'd rather not break the updater because signature format changed slightly
+[20:31:03] <tux3> sudden6, happy new year!
+[20:31:48] <tux3> zetok, also, are we using toktok's toxcore now?
+[20:31:52] <zetok> tux3: yep
+[20:31:55] <tux3> Awesome
+[20:32:45] <zetok> ok, I'll compile bsdiff and see whether there's any difference in output
+[20:33:02] <zetok> actually, wait a sec
+[20:33:04] <sudden6> will there be a windows release in the near future? :)
+[20:33:10] <zetok> that probably can be done with bash
+[20:33:15] <sudden6> zetok: can't you just md5sum it?
+[20:33:21] <zetok> :f
+[20:33:40] <zetok> that's not the same
+[20:34:29] <tux3> Ok I fixed the stable builds, the new version should be ready in ~15 min
+[20:34:35] <zetok> \o/
+[20:34:38] <sudden6> \o/
+[20:35:29] <tux3> zetok, about #4032 multiple sources: why ?
+[20:36:03] <zetok> tux3: to not force users to manually install newer version if something happens with the domain
+[20:36:36] <tux3> You mean if we lose control of the domain for example?
+[20:36:41] <zetok> yep
+[20:36:52] <sudden6> good idea
+[20:36:56] <tux3> Meh :/
+[20:37:23] <zetok> + it might help with a situation where "main" domain is blocked
+[20:37:23] <tux3> If we lose control of the domain, then currently someone could do a replay attack to downgrade you to a previous version
+[20:37:32] <sudden6> is there a version number inside the updater format?
+[20:37:53] <tux3> Yes, but it's not used to determine wether to update
+[20:37:53] <zetok> as an extension of the idea, I'd want to have updater also check if .onion domain would be accessible when qTox uses socks5 proxy
+[20:38:08] <tux3> No no that's too dangerous
+[20:38:17] <tux3> Controlling the domain allows attacks
+[20:38:26] <zetok> err
+[20:38:35] <zetok> that kinda sounds wrong
+[20:38:42] <sudden6> tux3: including a monotonic build nr should help against that
+[20:39:07] <tux3> sudden6, yeah, the update code could use some improvements :)
+[20:39:21] <sudden6> mhm
+[20:39:31] <tux3> Right now it allows downgrades so if you have an alpha/nightly build you can go back to stable
+[20:39:45] <tux3> But that means if the domain is stolen, someone can push a forced downgrade
+[20:39:53] <sudden6> that's bad
+[20:40:05] <zetok> tux3: yep, Rust qtox-updater-sign produces same output as C++
+[20:40:20] <tux3> zetok, awesome
+[20:40:45] <sudden6> something like release channels would make sense, but complexity++
+[20:42:21] <zetok> would the complexity really go up that much?
+[20:43:00] <zetok> `qTox` `qTox Nightly` – 2 different programs, installed in 2 different locations
+[20:43:21] <zetok> or any other suffix
+[20:45:34] <sudden6> you mean switching a release = reinstall
+[20:45:44] <sudden6> *switching channel
+[20:46:56] <zetok> *install
+[20:47:19] <zetok> there's no reason to not have multiple channels installed concurrently
+[20:47:22] <tux3> Bad news, the stable builds failed and I don't kknow why :/
+[20:47:49] <zetok> probably the changes in qtox.pro
+[20:48:01] <zetok> or maybe not
+[20:48:10] <sudden6> `__stack_chk_guard'
+[20:48:15] <zetok> ah.
+[20:48:27] <sudden6> stack protection breaking things apparently
+[20:48:35] <zetok> :|
+[20:49:02] <sudden6> but there's more
+[20:49:31] <sudden6> seems like linking failed completely
+[20:50:17] <zetok> probably because libs aren't hardened
+[20:55:25] <sudden6> tux3: I think that could be the problem for windows https://github.com/qTox/qTox/blob/master/qtox.pro#L49
+[20:55:57] <sudden6> now we just need to find out which of the flags breaks things
+[20:56:14] <tux3> I'll remove the stack protector and see if that helps
+[20:56:46] <tux3> Oh wait no I don't have SSH to the build machine anymore -_-
+[20:57:11] <zetok> just patch the source
+[20:57:34] <sudden6> tux3: is there an easy way to reproduce the build environment somewhere? ie source of the build scripts?
+[20:58:00] <tux3> Not really, since there's a ton of Jenkins job you'd need to copy
+[20:58:16] <tux3> You can do it manually, but I wouldn't call that easy
+[20:58:41] <sudden6> Would it be feasible to put all the jenkins scripts into a GH repo so we at least have a point to start?
+[20:59:10] <sudden6> because right now, the only ~working windows build is the jenkins one
+[20:59:25] <tux3> I suppose, but there's a lot of other necessary configuration in Jenkins that isn't in the script
+[20:59:29] <zetok> or you could just use docker
+[20:59:30] <tux3> The scripts are just part of it
+[20:59:54] * zetok has started automating process of doing that
+[20:59:55] <tux3> We can sort-of export the Jenkins config as a big messy XML file, which sucks
+[21:00:42] <sudden6> that's bad
+[21:00:51] <tux3> Docker is an idea
+[21:01:17] <zetok> once I'm done, there should be a few scripts that together create a vm, configure docker in it, setup stuff for qTox & produce windows build
+[21:01:47] <sudden6> nice, what's the current state of it?
+[21:02:08] <zetok> just fixed installing kernel
+[21:02:52] <zetok> so now I'm waiting for when vm with installed kernel will build; once I have that I'll start automating docker stuff
+[21:03:54] <zetok> debian is really slow when it comes to installing stuff :/
+[21:04:42] <tux3> Especially on a spinning rust disk
+[21:04:55] <zetok> yeah.. but not only
+[21:05:16] <zetok> i.e. the bottleneck isn't really IO bound AFAICT
+[21:06:00] <tux3> It is for me :/
+[21:06:03] <sudden6> maybe someone sprinkled random sleep(50) somewhere :D
+[21:07:28] <tux3> Welp, I don't know how to fix this
+[21:07:35] <zetok> error?
+[21:08:33] <tux3> Still the linking error
+[21:09:04] <zetok> link?
+[21:09:08] <tux3> https://build.tox.chat/view/qtox/job/qTox-stable_build_windows_x86-64_release/112/console
+[21:09:31] <tux3> There's two things: Linking error with toxcore, and with the stack check
+[21:10:12] <tux3> Of course it works fine for me on Linux
+[21:10:53] <sudden6> disable the stack check for now?
+[21:12:05] <tux3> I'm not sure how to test that without making a new commit
+[21:12:18] <tux3> Adding a patch to the build script I guess
+[21:30:59] <zetok> g'night
+[21:31:08] <sudden6> night
+[21:34:39] <tux3> Night
+[21:34:59] <tux3> Ok so removing the stack protector fixes the stack check problem, but it still fails to link with toxcore..
+[21:36:09] <tux3> I'm going to give up for today, but here's the patch I used for reference: http://pastebin.com/x4y7ketq
+[21:36:26] <sudden6> does uTox have the same problem? maybe the tox build is borked...
+[21:44:13] *** Joins: _moep_ (~bla@ )
+[21:45:58] <Emcy_> utox had a problem building with toktok
+[21:46:07] <Emcy_> dno if its the same problem
+[21:46:39] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[21:52:37] <_moep_> hi
+[21:53:00] <_moep_> Im started to translate some parts of qTox
+[21:53:02] *** Joins: f10__ (~flo@ )
+[21:55:53] <_moep_> what with the meaning of %2 and how you add it? is it like e.g. in mediawiki [www.google.com Visit google here] 
+[22:04:00] <tux3> _moep_, the %1 and %2 mean some text will be inserted here, usually a number or the name of something
+[22:04:50] <tux3> You have to add them in the same place in the translation so things will be inserted correctly
+[22:06:43] <_moep_> ah ok
+[22:10:02] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[22:10:03] *** Quits: f10__ (~flo@ ) (Ping timeout: 245 seconds)
+[22:10:13] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[23:47:28] <_moep_> tux3: are you maybe still here?
+[23:47:40] <tux3> _moep_, yep
+[23:47:42] <_moep_> some english translations are confusing me
+[23:48:05] <tux3> Which one?
+[23:48:16] <_moep_> <source>Password input field, minimum 6 characters long</source>
+[23:48:39] <_moep_> somewhere below I was reading something like "it can be empthy or min 6 chars"
+[23:50:40] <tux3> Yes, you can either not use a password, of if you use one it must have 6 characters minimum
+[23:51:02] <tux3> This is the text that appears in a tool-tip when you hover over the password field
+[23:51:41] <_moep_> <source>Password input field, minimum 6 characters long</source> <- so this is the howertext?
+[23:52:10] <tux3> Techinically it's the "accessible description", it's used to describe what the password field does
+[23:52:24] <tux3> Probably, it will appear as a tooltip (but that's not guaranteed)
+[23:52:25] <Diadlo> _moep_: Is mostly for screen reader
+[23:52:38] <_moep_> ah ok
+[23:52:44] <tux3> Ah yes, screen readers
+[23:53:19] <_moep_> and why are there so many source like "bla bla page"?
+[23:55:40] <tux3> It's how we call the different screens, like the "profile page", the "add friend page"
+[23:56:12] <_moep_> I translated it now 1:1 
+[23:58:41] <_moep_> whats the difference between a circle and a group?
+[23:59:54] <tux3> A group is a chat room with people talking together, a circle is a set of contacts in your contact list
