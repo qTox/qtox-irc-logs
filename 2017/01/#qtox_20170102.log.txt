@@ -1,0 +1,340 @@
+[00:00:11] <tux3> Circles are just for organizing your contacts
+[00:00:30] <_moep_> ah ok
+[00:00:37] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:05:17] <_moep_> I hope you have language testers 
+[00:54:18] *** Joins: MDrights (~MDrights@ )
+[00:58:49] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[02:35:49] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 248 seconds)
+[02:46:26] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 258 seconds)
+[04:13:17] *** Joins: f10_ (~flo@ )
+[04:14:22] *** Joins: f10__ (~flo@ )
+[04:48:38] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:50:57] *** Joins: cisc (~cisc@ )
+[05:20:20] <nurupo> did tux3 fix the windows build?
+[05:20:22] <nurupo> it
+[05:20:44] <nurupo> it's not kind of thing you'd want to do right on new year eve
+[05:22:23] <zetok> removed some errors
+[05:23:43] <zetok> IIRC you've mentioned that the remaining error are due to not linking against each internal toxcore thing explicitly
+[05:23:49] <zetok> tux3: ↑
+[05:25:11] *** Joins: DiCE1904 (~textual@ )
+[05:27:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[05:28:34] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[05:32:23] *** Joins: MiokIry (~Miok@ )
+[06:34:57] *** Quits: x_ (~x@ ) (Ping timeout: 268 seconds)
+[06:42:32] *** Joins: f10_ (~flo@ )
+[06:43:27] *** Joins: f10__ (~flo@ )
+[07:11:41] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[07:12:04] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[07:39:42] *** Joins: f10__ (~flo@ )
+[07:47:08] *** Joins: f10_ (~flo@ )
+[09:33:44] *** Joins: Yoshimo (~anything@ )
+[09:51:29] *** Joins: genesis (~genesis@ )
+[10:29:11] *** Joins: x_ (~x@ )
+[10:41:01] *** Quits: x_ (~x@ ) (Ping timeout: 265 seconds)
+[10:50:25] *** Joins: df_ (7a39c0f7@ )
+[12:15:31] *** Joins: sudden6 (~anonymous@ )
+[12:21:56] *** Joins: sudd3n6 (~anonymous@ )
+[12:25:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[12:35:53] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMqDI
+[12:35:53] -qtox-git-spam- qTox/master e961904 Zetok Zalbavar: docs(INSTALL): correct instruction for toxcore tag checkout...
+[12:35:57] *** Joins: f15h (~thomas@ )
+[12:36:00] -qtox-git-spam- [qTox] zetok closed pull request #4031: docs(INSTALL): correct instruction for toxcore tag checkout (master...docs-install-tagtox) https://git.io/vMts5
+[14:03:03] *** Quits: f15h (~thomas@ ) (Quit: Konversation terminated!)
+[14:13:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:14:23] *** Joins: LittleVulpix (~Miranda@ )
+[14:28:01] <tux3> I didn't manage to fix it entirely yet
+[14:28:03] <tux3> nurupo, ^
+[14:28:17] <tux3> Everything's broken
+[14:43:36] <zetok> what probably would fix it is compiling toxcore with autotools instead of cmake
+[14:43:59] <tux3> Why would that change things?
+[14:44:21] <zetok> autotools don't split things
+[14:44:37] <zetok> i.e. old .a are in place
+[14:45:28] <iphy> tux3: cmake builds several smaller libraries and if you use pkg-config, everything will just continue to work
+[14:45:49] *** Joins: MDrights (~MDrights@ )
+[14:45:49] <iphy> tux3: the pkg-config file links to all the small libraries
+[14:45:56] <tux3> Oh
+[14:46:03] <iphy> if you just link to libtoxcore.a, it won't work
+[14:46:17] <tux3> I just pass -ltoxcore -ltoxav iirc
+[14:46:29] <tux3> What's the magic pkg-config invocation?
+[14:46:31] -qtox-git-spam- [qTox] Unterstrichmoepunterstrich opened pull request #4036: german translation fix (master...master) https://git.io/vMqFR
+[14:46:53] <zetok> :f
+[14:47:11] * zetok should have pulled translations yesterday :/
+[14:47:25] <zetok> iphy: where are docs for that?
+[14:48:04] <iphy> tux3: pkg-config --libs libtoxcore
+[14:48:09] <iphy> just like it was before
+[14:48:29] <iphy> zetok: they don't exist
+[14:48:43] <tux3> Alrighty, let's see what this does
+[14:49:04] <zetok> iphy: that links toxcore statically?
+[14:49:50] *** Joins: x_ (~x@ )
+[14:49:50] <iphy> zetok: it passes -ltoxcore -ltoxencryptsave -ltoxdns -ltoxcrypto -l... all the things except toxav
+[14:50:06] <iphy> like the autotools one
+[14:50:27] <zetok> so it doesn't link statically.
+[14:52:01] <zetok> _moep_: is #4036 yours?
+[14:52:08] <_moep_> ack
+[14:53:17] <iphy> 14:46 <@tux3> I just pass -ltoxcore -ltoxav iirc
+[14:53:33] <tux3> Well, or the .a rather
+[14:53:35] <iphy> it does that, but with the correct libraries
+[14:53:37] <iphy> aha
+[14:53:44] <iphy> well then it won't do the same thing
+[14:53:59] <iphy> if you pass the .a manually, pkg-config doesn't help
+[14:54:02] <tux3> I'm not actually sure, is the thing!
+[14:54:17] <zetok> _moep_: 1. it's going to fail on travis due to commit name; 2. there's a bit of a problem, i.e. it most likely will conflict with translations from weblate
+[14:54:24] <zetok> iphy: so it should be fixed
+[14:54:30] <iphy> if you want to link some libraries statically and some others dynamically, it'll be a bit of a mess
+[14:54:32] <iphy> zetok: how?
+[14:54:33] <tux3> iphy, There's one mode where we do -Wl,-BStatic and then just -ltoxcore -ltoxav etc
+[14:54:45] <zetok> iphy: do it with cmake like it was done with autotools
+[14:54:46] <tux3> And one mode where we link the .a directly, depending on env
+[14:55:04] <iphy> zetok: by having a single library?
+[14:55:12] <zetok> iphy: yep
+[14:55:18] <iphy> then no, it won't be fixed
+[14:55:28] <zetok> why are you making toxcore harder to use?
+[14:55:45] <iphy> to make it easier to maintain
+[14:56:32] <zetok> how exactly making current docs irrelevant while not adding docs for the current stuff is making toxcore easier to maintain?
+[14:56:54] <iphy> current docs are completely relevant
+[14:57:01] <iphy> you're free to keep using the autotools build
+[14:57:13] <iphy> it's part of the travis builds, so it'll keep working as it did
+[14:57:14] <zetok> ok, so the cmake shouldn't be used for builds that one wants to use
+[14:57:22] <zetok> good to know that
+[14:57:27] <iphy> right
+[14:57:38] <iphy> it's mostly useful for development
+[14:57:40] <tux3> iphy, so concretely what do I link with for my static build?
+[14:57:45] <zetok> I'll make a PR with fix to the docs, as they right now suggest that cmake is the way to go
+[14:57:57] <iphy> zetok: thanks
+[14:58:24] <tux3> pkg-config just fails with "Package libtoxcore was not found in the pkg-config search path."
+[14:58:40] <tux3> Of course. toxcore isn't installed
+[14:58:45] <zetok> nurupo: when toxcore can be switched to autotools back?
+[14:58:52] <_moep_> zetok: 1. how can I change the commit name? 2. what kind of problems? I didn't translated 1:1
+[14:59:23] <iphy> tux3: build with autotools or, if the environment doesn't permit that, link with all the libraries (toxcrypto toxnetwork toxdht toxnetcrypto toxfriends toxmessenger toxgroup)
+[14:59:59] <tux3> iphy, would it be stupid to link with tox*.a ?
+[15:00:16] <iphy> that might work, but they probably need to be in a certain order
+[15:00:21] <tux3> Right
+[15:00:38] <iphy> you could link with -( -) or something
+[15:00:44] <iphy> I forgot what the option was
+[15:00:56] <iphy> the "keep cycling through these libraries until you find all the symbols" option
+[15:01:20] <iphy> yeah, -( -) it was
+[15:01:28] <zetok> _moep_: 1. `git commit --amend && git push -f` ← assuming that you're currently on the branch used for PR; 2. there has been some work done on weblate, which when trying to merge stuff most likely would conflict: https://hosted.weblate.org/projects/tox/qtox/#history
+[15:03:09] <tux3> iphy, is there some doc for what lib depends on what?
+[15:03:42] <_moep_> zetok: whats PR?
+[15:03:48] <zetok> _moep_: pull request
+[15:03:48] *** Joins: sudden6 (~anonymous@ )
+[15:03:55] <_moep_> ah
+[15:04:13] <iphy> tux3: they depend on each other in this order: core -> group -> messenger -> friends -> netcrypto -> dht -> network -> crypto
+[15:04:26] <tux3> Thanks
+[15:05:42] <_moep_> zetok: so whats the best way to share my stuff in combination with weblate?
+[15:05:52] <zetok> :|
+[15:08:18] <zetok> _moep_: don't worry about that
+[15:08:35] *** Quits: Sephi (~me@ ) (Quit: Si tacuisses, philosophus mansisses!)
+[15:08:53] <zetok> _moep_: just in the future if you can it probably would be the best to just use weblate
+[15:09:43] * zetok wonders whether translating instructions should point only to weblate
+[15:09:54] <_moep_> ok
+[15:12:25] <sudd3n6> zetok: will probably easier
+[15:12:46] <sudd3n6> people knowing how to git will find the GH way anyway
+[15:12:54] <zetok> mm
+[15:13:21] <zetok> sudd3n6: do you have time for translation review & rebase of conflicting translation commit?
+[15:14:16] <zetok> unless the changes are redundant (not likely?)
+[15:19:00] <sudd3n6> not now, but tomorrow
+[15:20:57] <zetok> ok
+[15:22:25] <zetok> https://github.com/TokTok/c-toxcore/pull/376 there we go
+[15:28:07] <zetok> _moep_: https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#commit-message-format ← commit should be e.g. `feat(l10n): update .. translation`
+[15:33:14] <zetok> tux3: um, have you tested whether Rust signing works for you?
+[15:34:01] <tux3> zetok, I have not, but it LGTM so I expect to switch Soon™
+[15:34:08] <tux3> My current priority is fixing the build
+[15:34:13] <zetok> right
+[15:34:38] <zetok> `./test-pr.sh 4028` when you'll have the time :)
+[15:35:01] <tux3> Right :)
+[15:41:50] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:44:09] *** Quits: sudd3n6 (~anonymous@ ) (Remote host closed the connection)
+[15:44:34] *** Joins: sudd3n6 (~anonymous@ )
+[16:04:31] <anoa> Is there anywhere specific #defines should go?
+[16:06:35] <sudd3n6> anoa: what do you mean exactly?
+[16:07:31] <sudd3n6> if a define is needed outside it's class it should be in the *.h file, else in the *.cpp file
+[16:08:18] <anoa> 76 (the number of chars in a tox id) is used in chatmessage.cpp. I felt that should probably be defined globally.
+[16:09:20] <sudd3n6> anoa: I created a class toxid
+[16:09:32] <sudd3n6> it should go there
+[16:09:57] <sudd3n6> there's also a regex to parse toxids in it
+[16:10:07] <anoa> sudd3n6, ah perfect, thanks.
+[16:11:06] <nurupo> tux3: did you link against all of the .a libraries?
+[16:11:35] <tux3> nurupo, yeah, I just fixed it )
+[16:11:50] <nurupo> tux3: there are libraries for each level of toxcore, e.g. libnetcrypto.a, libmessenger.a, libnetwork.a, etc
+[16:12:10] <tux3> nurupo, iphy gave me the list earlier and I linked to that explicitely
+[16:12:19] <nurupo> in theory all you need to do is just to link to them
+[16:12:33] <nurupo> good, i tried to do that with no success
+[16:14:36] <nurupo> tux3: the nihtly builds are still red though
+[16:14:40] <nurupo> *nightly
+[16:14:55] <tux3> zetok, I take it back, the rust sign tool doesn't work!
+[16:15:07] <tux3> nurupo, yeah I need to fix those too when I have the time
+[16:15:17] <zetok> tux3: oh?
+[16:15:21] <tux3> Or rather I should make a qtox.pro patch and commit that
+[16:15:52] <zetok> tux3: what doesn't work?
+[16:16:20] <tux3> zetok, zetok https://pastebin.mozilla.org/8957957
+[16:17:18] <tux3> Expected result: v
+[16:17:19] <tux3> https://pastebin.mozilla.org/8957958
+[16:18:23] <zetok> huh
+[16:18:48] <zetok> tux3: you have a file named "Test" there, right?
+[16:19:07] <tux3> zetok, nope! It should take the argument as data, not open a file
+[16:19:20] <zetok> uh
+[16:19:34] <zetok> ok
+[16:19:39] <tux3> The update server invokes it like that: ./qtox-updater-sign `date +%s`!`cat gitversion` >> win32/version
+[16:20:17] <sudd3n6> tux3: how in hell is that secure?
+[16:20:25] <tux3> sudd3n6, what do you mean?
+[16:20:43] <zetok> sudd3n6: it's not supposed to be
+[16:20:47] <sudd3n6> afaict this doesn't involve signing the binary
+[16:21:30] <tux3> No, the binary is signed separately
+[16:21:40] <tux3> That's just the version file
+[16:21:48] <sudd3n6> ok
+[16:24:09] <tux3> I sent out 1.7.0
+[16:24:44] <zetok> tux3: pushed fixed version
+[16:24:53] <tux3> zetok, testing
+[16:25:43] <_moep_> zetok: ok…
+[16:26:36] <tux3> zetok, ok, works perflectly for me :)
+[16:27:44] <zetok> tux3: great to hear :)
+[16:33:20] <Emcy_> huh qtox just updated itself into the same version
+[16:35:43] -qtox-git-spam- [qTox] tux3 opened pull request #4037: Fix Jenkins Windows builds (master...fix-win-build) https://git.io/vMmvE
+[16:38:10] <tux3> Emcy_, what version does it say after you restart it?
+[16:39:05] <Emcy_> commit 12c21.....updated itself to commit 12c21....
+[16:39:16] <Emcy_> didnt seem to actually download anything either
+[16:40:06] <tux3> So you were already on v1.7.0 then :) ?
+[16:40:06] <Emcy_> i mean i just got it from tox.chat/downloads 10 mins ago and it did that when i ran it
+[16:41:08] <anoa> Using something that was introduced in Qt >= 5.0 is fine, correct?
+[16:41:10] <tux3> Ah. There was a new build a couple minutes later, it's the same but I was fixing some Jenkins config
+[16:41:35] <tux3> anoa, up to 5.3.0 is fine
+[16:41:51] <tux3> According to INSTALL.md
+[16:41:52] <Emcy_> ok then
+[16:42:02] <anoa> tux3, great thanks.
+[16:42:24] <Emcy_> thanks for fixing windows build tux3 
+[16:42:33] <tux3> np
+[17:02:31] <cisc> whats the ETA for 1.7 on https://build.opensuse.org/package/show/home:antonbatenev:tox/qtox ?
+[17:03:14] -qtox-git-spam- [qTox] tux3 pushed 1 new commit to master: https://git.io/vMmJs
+[17:03:14] -qtox-git-spam- qTox/master 123785c tux3: Merge pull request #4037...
+[17:09:48] <zetok> cisc: no ETA AFAIK, you could ask abbat
+[17:10:03] <zetok> or make a PR to the repo
+[17:10:23] <zetok> https://github.com/abbat/tox.pkg
+[17:11:28] <cisc> so there's only 1 person that repo is controlled by and without him, it doesn't get updated?
+[17:14:00] <x_> alright, i can confirm that it works. i've just finished compiling qTox 1.7 (successfully) from source on my debian 8.6 via compiling ffmpeg from source: https://github.com/qTox/qTox/pull/4022#issuecomment-269660143
+[17:14:22] <zetok> cisc: ~yep
+[17:14:53] <cisc> zetok: doesn't seem like a very good system to me
+[17:15:01] * zetok shrugs
+[17:15:35] <zetok> cisc: would you be interested in doing something about it?
+[17:17:17] <cisc> if you need a second maintainer I could, but I have no experience building anything on OBS
+[17:22:01] <zetok> experience should be easyt to get :)
+[17:22:09] -qtox-git-spam- [qTox] tux3 opened pull request #4038: fix: Further Windows Jenkins link errors (master...fix-win-build) https://git.io/vMmU9
+[17:22:13] <zetok> easy*
+[17:22:37] <zetok> cisc: AFAIK one should be able to "fork" repos on OBS – you can build stuff in your forked repo
+[17:22:46] <zetok> :)
+[17:25:08] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[17:28:55] *** Joins: f10__ (~flo@ )
+[17:30:15] <cisc> looking at https://build.opensuse.org/package/view_file/home:antonbatenev:tox/qtox/qtox.spec?expand=1 how is toxcore being built into qtox?
+[17:33:23] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[17:33:49] *** Joins: f10__ (~flo@ )
+[17:37:52] <anoa> Is this expected behavior? http://imgur.com/a/3oej1 (with the spaces and all?)
+[17:38:26] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[17:39:32] <zetok> maybe?
+[17:39:38] <zetok> IIRC there was an issue about that
+[17:39:47] <zetok> (or a PR)
+[17:40:19] <anoa> Just seems odd for "file://herp/derp contains what you're looking for!" to all turn into a uri.
+[17:40:35] <anoa> Oh, probably for folders/files with a space in them, huh.
+[17:40:56] <anoa> Suppose we can't do anything about that.
+[17:41:13] *** Joins: f10 (~flo@ )
+[17:46:04] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:49:24] *** Joins: f10 (~flo@ )
+[17:50:28] *** Joins: reBrain (~quassel@ )
+[17:51:45] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[17:52:18] <x_> zetok, should i mark the PR (https://reviewable.io/reviews/qtox/qtox/4022) as reviewed? since qTox compiled successfully using the instructions given
+[17:52:22] -qtox-git-spam- [qTox] tux3 pushed 1 new commit to master: https://git.io/vMmkN
+[17:52:22] -qtox-git-spam- qTox/master bffb173 tux3: Merge pull request #4038...
+[17:52:58] *** Quits: iphy (uid67735@ ) (Ping timeout: 245 seconds)
+[17:53:24] <zetok> x_: sure, + `:lgtm:`
+[17:53:32] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:53:49] <x_> okay, moment
+[17:56:00] <zetok> thanks :)
+[17:56:43] *** Joins: iphy (uid67735@ )
+[17:57:54] *** Joins: f10__ (~flo@ )
+[18:11:16] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:13:19] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[18:13:37] *** Joins: f10__ (~flo@ )
+[18:21:53] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:22:12] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMmLy
+[18:22:12] -qtox-git-spam- qTox/master f041522 Zetok Zalbavar: docs(INSTALL): add back instructions for compiling FFmpeg for Debian 8...
+[18:32:29] *** Joins: LittleVulpix (~Miranda@ )
+[18:45:47] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMmqy
+[18:45:47] -qtox-git-spam- qTox/master b5af649 Zetok Zalbavar: chore(tools): replace unsafe signing C++ code with Rust
+[18:48:55] <Emcy_> hm "stable" build still failing on jenkins
+[18:49:26] <Emcy_> i cant remember what stable is meant to be now
+[18:51:16] <zetok> "no changed code"
+[18:51:21] <Emcy_> logic would dictat the stables are built from release tags and not stables from master commits
+[18:51:40] <Emcy_> jenkins is not very easy to comprehend
+[19:35:46] <Emcy_> qtox is downloading something every time i start it
+[19:35:55] <Emcy_> but its not an update notification
+[19:37:21] <Emcy_> sigh wtf
+[19:38:42] <tux3> Emcy_, where is it downloading something?
+[19:38:55] <tux3> And I fixed jenkins.
+[19:39:23] <tux3> I love jenkins. Everytime I fix something, another thing breaks :)
+[19:40:04] <Emcy_> the about page says downlaoding update
+[19:40:08] <Emcy_> but theres no notification
+[19:40:24] <Emcy_> and i can see where its downloading, and nothing happens anyway
+[19:40:34] <Emcy_> it gets to about 50% and stops
+[19:40:42] <Emcy_> cant'
+[19:40:43] <tux3> Emcy_, can you post the qtox.log?
+[19:45:22] <Emcy_> sanitising this is going to be anightmare
+[19:46:13] <Emcy_> [19:37:12.912 UTC] net/autoupdate.cpp:514 : Critical: downloadUpdate: Can't save new update file, aborting...
+[19:48:58] <Emcy_> [19:47:22.179 UTC] :0 : Warning: QFile::open: File (C:/Users//AppData/Roaming/tox//update/./qtox.exe) already open
+[19:48:58] <Emcy_> [19:47:22.179 UTC] net/autoupdate.cpp:514 : Critical: downloadUpdate: Can't save new update file, aborting...
+[19:49:26] <Emcy_> thats from a fresh log
+[19:55:27] <Emcy_> i guess its possible its always done that and i didnt notice because i never went to the about page immediately after starting qtox before
+[19:55:44] <Emcy_> but i thought it asks first and then only downloads stuff
+[20:06:52] <tux3> It does ask first, except if it finds it's part-way through downloading, then that means it already asked and you said yes, but didn't finish
+[20:07:17] <tux3> Do you have multiple qtox.exe or qtox-updater.exe running in the task manager?
+[20:07:40] <Emcy_> no
+[20:07:47] <tux3> It's failing to download the update because the file is already open for some reason
+[20:07:56] <Emcy_> hm
+[20:08:03] <Emcy_> where are updates downloaded to
+[20:08:18] <tux3> C:/Users/<you>/AppData/Roaming/tox//update/./qtox.exe
+[20:08:35] <Emcy_> ill delete that folder and see what happens
+[20:08:50] <tux3> It looks as if that file is open (running). Or maybe it's your antivirus scanning it and taking a long time?
+[20:10:00] <Emcy_> ok now its asking permission about an update from 20:04
+[20:10:52] <Emcy_> looks like the update file was locked somehow but windows didnt complain about any locks when i deleted it
+[20:11:09] <tux3> Strange.
+[20:11:22] <tux3> Maybe the antivirus if you have one
+[20:11:55] <Emcy_> [20:11:32.985 UTC] net/autoupdate.cpp:514 : Critical: downloadUpdate: Can't save new update file, aborting...
+[20:12:11] <Emcy_> well its doing it again. But it definitely did complete download last time
+[20:12:20] <Emcy_> it said restart qtox to update
+[20:15:36] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[20:16:15] <Emcy_> [20:10:45.556 UTC] net/autoupdate.cpp:523 : Debug: downloadUpdate: The update is ready, it'll be installed on the next restart
+[20:16:52] *** Joins: f10__ (~flo@ )
+[20:20:04] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:20:57] <Emcy_> there are definitely no locks on the update folder and it happens every time
+[20:21:38] <Emcy_> mbam was disabled also
+[20:31:11] *** Joins: LittleVulpix (~Miranda@ )
+[20:41:07] *** Joins: cisc (~cisc@ )
+[20:58:50] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:05:58] <x_> right, i see the INSTALL.md docs have been updated with ffmpeg info. will now edit the Troubleshooting builds wiki page to point people towards the ffmpeg build steps
+[21:08:58] <zetok> thanks :)
+[21:09:46] <x_> np, also won't people compiling ffmpeg need to install the ffmpeg dependencies?
+[21:09:56] <x_> i think we'll have to point that out 
+[21:26:02] <zetok> I'm not sure if I remember correctly, but the dependencies that are listed for toxcore are probably enough to compile ffmpeg
+[21:30:37] <x_> i'll check
+[21:31:39] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:32:46] <x_> newp, it misses a few
+[21:32:49] <x_> i'll just include a link to the ffmpeg compilation guide (https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)
+[21:33:09] <x_> with a WARNING sign next to it :D
+[21:34:22] <x_> that should make people extra careful
+[22:03:53] *** Joins: LittleVulpix (~Miranda@ )
+[22:04:56] <x_> alright, updated https://github.com/qTox/qTox/wiki/Troubleshooting-builds
+[22:05:40] *** Joins: _sudden6_ (~anonymous@ )
+[22:09:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[22:09:41] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[22:10:10] *** Joins: sudd3n6 (~anonymous@ )
+[22:23:09] *** _sudden6_ is now known as sudden6
+[22:52:45] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[22:52:59] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:53:13] *** Joins: f10__ (~flo@ )
+[22:53:45] *** Joins: f10_ (~flo@ )
+[23:21:21] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[23:21:24] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[23:22:02] *** Joins: f10__ (~flo@ )
+[23:22:04] *** Joins: f10_ (~flo@ )
+[23:28:17] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:28:49] *** Joins: LittleVulpix (~Miranda@ )
+[23:58:54] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:59:28] *** Joins: LittleVulpix (~Miranda@ )
