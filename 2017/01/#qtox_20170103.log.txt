@@ -1,0 +1,353 @@
+[00:43:20] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[00:50:46] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[01:12:19] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[01:12:42] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[01:16:18] <Emcy_> whats with the 1.7.1 tag
+[01:23:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[02:20:05] <anoa> Was qDebug() output disabled?
+[02:55:33] *** Quits: df_ (7a39c0f7@ ) (Quit: Page closed)
+[03:09:47] *** Joins: kchz (~dschulz@ )
+[03:14:13] -qtox-git-spam- [qTox] wdbm opened pull request #4039: docs: fix table syntax and minor tidy (master...docs/fix-table-syntax-and-minor-tidy) https://git.io/vMmiq
+[03:25:11] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[03:34:46] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[03:35:06] *** Joins: LittleVulpix (~Miranda@ )
+[04:29:57] *** Quits: smaragdus2 (~omoo@ ) (Ping timeout: 248 seconds)
+[04:55:32] *** Joins: Emcy (~MC@ )
+[04:55:47] *** Quits: Emcy (~MC@ ) (Changing host)
+[04:55:47] *** Joins: Emcy (~MC@ )
+[04:58:45] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[05:13:40] *** Joins: Emcy_ (~MC@ )
+[05:13:40] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[05:13:40] *** Joins: Emcy_ (~MC@ )
+[05:15:20] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[05:35:02] *** Joins: Emcy (~MC@ )
+[05:35:02] *** Quits: Emcy (~MC@ ) (Changing host)
+[05:35:02] *** Joins: Emcy (~MC@ )
+[05:38:38] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 272 seconds)
+[05:46:21] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 260 seconds)
+[05:46:46] *** Joins: jjuran (~jjuran@ )
+[06:00:35] *** Joins: MDrights (~MDrights@ )
+[06:17:16] *** Joins: Emcy_ (~MC@ )
+[06:17:16] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:17:16] *** Joins: Emcy_ (~MC@ )
+[06:21:04] *** Quits: Emcy (~MC@ ) (Ping timeout: 272 seconds)
+[06:27:21] *** Joins: smaragdus (~omoo@ )
+[07:19:24] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[07:41:21] *** Joins: f10__ (~flo@ )
+[07:44:32] *** Joins: f10_ (~flo@ )
+[08:14:57] *** Joins: pcre_ (~quassel@ )
+[08:18:16] *** Joins: Yoshimo (~anything@ )
+[08:35:47] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[08:46:04] *** Joins: Emcy (~MC@ )
+[08:46:04] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:46:04] *** Joins: Emcy (~MC@ )
+[08:49:06] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 246 seconds)
+[08:57:59] *** Joins: cisc (~cisc@ )
+[09:00:19] *** Quits: cisc (~cisc@ ) (Client Quit)
+[09:03:47] -qtox-git-spam- [qTox] zetok opened pull request #4040: chore(tools): rewrite C++ tool for generating PK/SK keypair in Rust (master...chore-tools-rust-gen) https://github.com/qTox/qTox/pull/4040
+[09:04:49] *** Joins: cisc (~cisc@ )
+[09:44:36] *** Quits: pcre_ (~quassel@ ) (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+[09:47:30] *** Joins: bashrc (~motters@ )
+[09:49:34] *** Joins: pcre (~quassel@ )
+[09:49:40] *** Quits: pcre (~quassel@ ) (Client Quit)
+[10:14:28] *** Joins: Emcy_ (~MC@ )
+[10:17:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[10:58:54] *** Joins: nosdt (68eea95f@ )
+[10:59:35] <nosdt> Why are you using "--param ssp-buffer-size=1" when you are already using "-fstack-protector-all"? Afaik, using the latter makes the former pointless.
+[11:03:01] <nosdt> also, for ASLR, don't you need "-pie -fPIE" instead of just "-fPIE"?
+[11:14:31] *** Joins: kchz (~dschulz@ )
+[11:14:53] *** Joins: Emcy (~MC@ )
+[11:14:53] *** Quits: Emcy (~MC@ ) (Changing host)
+[11:14:53] *** Joins: Emcy (~MC@ )
+[11:16:47] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 246 seconds)
+[11:44:04] <zetok> nosdt: would you be interested in making a PR to correct that?
+[11:44:49] <nosdt> zetok: I don't want to make a PR for something that I am not sure about. I just always use the same switches and noticed qTox does something unusual (to me).
+[11:46:07] <zetok> well, the internet (GCC docs) tells me that you're correct about -fstack-protector-all's behaviour
+[11:53:35] <zetok> `-pie` too
+[11:56:38] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[12:04:19] *** Joins: Emcy_ (~MC@ )
+[12:04:19] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[12:04:19] *** Joins: Emcy_ (~MC@ )
+[12:04:28] *** Joins: x__ (~x@ )
+[12:07:14] *** Quits: Emcy (~MC@ ) (Ping timeout: 264 seconds)
+[12:09:52] *** Joins: Emcy (~MC@ )
+[12:09:52] *** Quits: Emcy (~MC@ ) (Changing host)
+[12:09:52] *** Joins: Emcy (~MC@ )
+[12:11:03] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[12:19:24] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[12:19:24] *** Quits: SocksPls (~sockspls@ ) (*.net *.split)
+[12:19:24] *** Quits: albel727 (~albel727@ ) (*.net *.split)
+[12:19:25] *** Quits: _moep_ (~bla@ ) (*.net *.split)
+[12:19:31] *** Joins: sockspls (~sockspls@ )
+[12:22:39] *** Joins: iphy (uid67735@ )
+[12:22:45] *** Joins: Emcy_ (~MC@ )
+[12:22:45] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[12:22:45] *** Joins: Emcy_ (~MC@ )
+[12:24:19] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[12:28:03] *** Joins: sudden6 (~anonymous@ )
+[12:48:48] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[12:49:09] *** Joins: f10_ (~flo@ )
+[13:00:00] *** Joins: Emcy (~MC@ )
+[13:00:00] *** Quits: Emcy (~MC@ ) (Changing host)
+[13:00:00] *** Joins: Emcy (~MC@ )
+[13:03:14] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 272 seconds)
+[13:16:49] -qtox-git-spam- [qTox] sudden6 opened pull request #4041: chore(style): add coding style file for Qt Creator (master...autocomplete) https://github.com/qTox/qTox/pull/4041
+[13:19:08] <nosdt> zetok: I don't know how to do a PR
+[13:19:28] <nosdt> but those flags should probably be changed anyway if I am right
+[13:19:44] <zetok> right
+[13:20:36] <zetok> would you want to learn how to make a PR?
+[13:22:21] <nosdt> doing that now
+[13:35:13] *** Joins: sudd3n6 (~anonymous@ )
+[13:44:50] *** Quits: x__ (~x@ ) (Ping timeout: 246 seconds)
+[13:57:29] *** Joins: x__ (~x@ )
+[14:02:41] <nosdt> zetok: hopefully it worked https://github.com/qTox/qTox/pull/4042
+[14:02:53] -qtox-git-spam- [qTox] tepin opened pull request #4042: Update qtox.pro (master...patch-1) https://github.com/qTox/qTox/pull/4042
+[14:04:00] <zetok> nosdt: https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#commit-message-format
+[14:05:50] <nosdt> oh wow, yeah, I'll have to read through that but it does not look easily digestible :(
+[14:07:04] <zetok> yeah, it needs to be improved
+[14:08:07] <nosdt> is it possible to edit a PR?
+[14:08:21] <zetok> not via gh interface
+[14:08:51] <zetok> um, contributing.md should have something on editing PRs
+[14:09:55] <zetok> nosdt: https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#pull-request
+[14:10:16] <nosdt> so much effort for changing 2 lines :( I liked it better when one would just paste the patch onto a mailing list
+[14:10:18] <zetok> `git commit --amend`
+[14:10:22] <nosdt> thank you for walking me through it
+[14:11:35] <zetok> well, technically patches from ML are an acceptable form of contribution
+[14:11:54] <zetok> it's just that so far no one ever sent even a single patch to the ML
+[14:12:39] <zetok> with current workflow patch from a ML would land in a PR anyway
+[14:14:29] <zetok> nosdt: btw, while amending commit, would you mind putting separate args on separate lines?
+[14:16:50] <nosdt> I thought the -pie and -fPIE should go together
+[14:17:03] <nosdt> because they affect the same functionality
+[14:17:35] <zetok> um, it's purely a style change
+[14:17:46] <zetok> it doesn't affect how things are parsed
+[14:18:06] * zetok wonders
+[14:18:23] <nosdt> yes, you're right
+[14:19:48] <sudden6> nosdt: also, move things that are the same for all platforms outside the condition
+[14:21:27] *** Quits: GGMethos (methos@ ) (Quit: WeeChat 1.1.1)
+[14:21:31] <nosdt> I'll read up a bit on all the style guidelines and edit the PR or make a new one, but not today
+[14:21:43] <nosdt> I am also wondering whether I should include -Wl,dynamicbase and -Wl,nxcompat for windows platform
+[14:29:16] <nosdt> ok github is too complicated for me, and I am too old for this. I should be enjoying my retirement instead.
+[14:29:29] *** Joins: GGMethos (~methos@ )
+[14:29:41] *** Quits: GGMethos (~methos@ ) (Client Quit)
+[14:31:08] *** Joins: GGMethos (~methos@ )
+[14:44:54] *** Quits: nosdt (68eea95f@ ) (Quit: Page closed)
+[16:03:59] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[16:23:02] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[16:26:03] *** Joins: Yoshimo (~anything@ )
+[16:57:45] *** Joins: in1t3r_ (~LordShiva@ )
+[17:09:08] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 240 seconds)
+[17:12:11] *** Joins: Yoshimo (~anything@ )
+[17:15:14] *** Quits: tux3 (~tux@ ) (Ping timeout: 258 seconds)
+[17:19:07] * zetok wonders how this could be improved
+[17:20:17] *** Joins: tux3 (~tux@ )
+[17:20:43] *** Quits: tux3 (~tux@ ) (Changing host)
+[17:20:43] *** Joins: tux3 (~tux@ )
+[17:20:43] *** ChanServ sets mode: +o tux3
+[17:27:01] <sudden6> Diadlo: regarding #3881 what do you think of adding FIXME to the parts where we emit signals from other widgets?
+[17:39:35] <Diadlo> Yes. I planned to do it
+[17:45:37] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 256 seconds)
+[17:45:57] *** Joins: jjuran (~jjuran@ )
+[18:11:49] *** Joins: albel727 (~albel727@ )
+[18:12:38] *** Quits: parasite_ (~parasite@ ) (Ping timeout: 264 seconds)
+[18:15:44] *** Joins: kchz (~dschulz@ )
+[18:15:44] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[18:16:32] *** Joins: kchz (~dschulz@ )
+[18:26:49] *** Joins: parasite_ (~parasite@ )
+[18:41:20] *** Joins: tssx (3e41329f@ )
+[18:41:43] <tssx> so qTox still can be built without rust as update server is optional component? Qt, GCC/MinGW
+[18:43:01] <sudden6> tssx: yes, these are only needed to deploy updates
+[18:44:26] <sudden6> zetok: what do you think about moving the updater + tools into a different repo?
+[18:44:39] <zetok> I don't
+[18:44:51] <zetok> i.e. I don't really care where it's located
+[18:45:09] <sudden6> ok
+[18:45:21] <tssx> sudden6: thanks good to know that it wont be requirement at least for basic building
+[18:45:51] <zetok> the thing that I'm interested in is how convenient it is to use – if it doesn't make things harder for tux3 then why not
+[18:46:29] <sudden6> mhm
+[18:48:12] <sudden6> I'd like to move it because it's really only a helper to create the update
+[18:48:43] <tux3> I don't mind personally
+[18:49:01] <tux3> Those tools are of the "install once and put in a crontab" kind
+[18:49:08] <sudden6> and this way we could keep the Rust stuff in an extra location
+[18:49:46] <zetok> "Oh noes, Rust infected our tissue! Quick, cut it out and throw away before it spreads any further!" :D
+[18:49:48] <sudden6> so the main repo just needs qt, bash and gcc
+[18:50:32] <zetok> s/cut it/cut that limb/
+[18:59:35] <Diadlo> zetok: Exactly :)
+[19:08:04] <tssx> 3 main reasons i have seen why people have chose qtox is multi window mode and different image formats support and ton of emoticons. This is only my sighting of persons who chose qtox.
+[19:08:38] <tssx> multi window reminds Skype for someone
+[19:14:17] <zetok> do you know by any chance what people would want to see in qTox?
+[19:15:14] <sudden6> didn't think multiwindow is that popular, I never use it for example
+[19:23:52] *** Joins: f10 (~flo@ )
+[19:24:57] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[19:31:47] <tssx> I have sadly not asked what someone want for qtox yet. Current trend is that utox users are minimalists like me and qtox users who have mostly Skype and old time MSN users. One elder person uses qtox to chat and "bomb" emoticons with his young 8 year old relative just for fun.
+[19:35:26] <zetok> I see
+[19:35:42] <zetok> what makes qTox not usable for minimalists?
+[19:35:44] *** Quits: f10_ (~flo@ ) (*.net *.split)
+[19:36:10] *** Joins: f10_ (~flo@ )
+[19:39:21] <tssx> i can only comment myself that ultra small binary, minimal dependencies, runs fast even when hdd is in full activity, survises memory full situations when something fills memory to max, dark theme. Like i said different people need different client, both are needed
+[19:40:49] <zetok> how much µTox weights?
+[19:42:09] <zetok> currently qTox (on my system, not optimized size-wise build) weights 7M
+[19:42:14] <tssx> 2.5mb unpacked and .7z fle 961kb
+[19:42:29] <zetok> more than half of qTox's weight are emoticons
+[19:42:51] <zetok> ~recently there was added an option to disable emoticons
+[19:43:09] <zetok> (when building)
+[19:44:18] * zetok goes to disable emoticons
+[19:51:17] <zetok> optimized build, 3,2M :f
+[19:54:57] <x__> umm i could suggest a few improvements, but it's only my opinion
+[19:55:23] <zetok> x__: hm?
+[19:56:17] <x__> i noticed the video frame is not resizable when chatting
+[19:56:42] <zetok> it should be
+[19:56:55] <zetok> (if your window size is big enough)
+[20:02:21] <x__> hmm it does resize with the window indeed
+[20:02:33] <x__> i tried resizing it inside the window
+[20:02:37] <x__> ok
+[20:03:21] <x__> also, the picture-in-picture feature: the video frame for yourself inside the big video frame cannot be hidden
+[20:03:47] <x__> you cannot turn off your own video stream inside the bigger video frame
+[20:04:52] <zetok> x__: could you open an issue for that?
+[20:05:08] <x__> hmm i'll read the docs first :D
+[20:05:13] <x__> so i open it properly
+[20:05:35] <zetok> um, reading docs isn't really needed for that
+[20:06:38] <x__> alright
+[20:06:50] <x__> btw
+[20:07:27] <x__> i am willing to test stuff for you guys on my windows 7 machine and debian machine, if you need stuff tested
+[20:07:43] <zetok> that would be awesome
+[20:07:53] <x__> more than happy to
+[20:08:00] <x__> but i don't want to get in your way
+[20:08:12] <zetok> don't worry about that :)
+[20:11:06] *** Parts: tssx (3e41329f@ ) ()
+[20:16:48] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[20:17:31] *** Joins: f10 (~flo@ )
+[20:18:42] *** Joins: Karpo (~Karpo@ )
+[20:24:03] *** Quits: Karpo (~Karpo@ ) (Quit: Leaving)
+[20:25:07] *** Joins: Karpo (~Karpo@ )
+[20:26:53] *** Quits: Karpo (~Karpo@ ) (Client Quit)
+[20:28:08] *** Joins: Karpo (~Karpo@ )
+[21:02:11] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[21:02:25] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:03:19] *** Joins: cisc (~cisc@ )
+[21:04:25] *** Joins: kchz (~dschulz@ )
+[21:27:29] *** Quits: kchz (~dschulz@ ) (Quit: Volveré)
+[21:42:48] *** Joins: dardevelin (~dardeveli@ )
+[22:11:46] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[22:12:09] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[22:14:22] *** Quits: Karpo (~Karpo@ ) (Quit: Leaving)
+[22:15:48] *** Joins: _sudden6_ (~anonymous@ )
+[22:16:40] *** Joins: sudden6_ (~anonymous@ )
+[22:19:34] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[22:19:41] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 246 seconds)
+[22:39:38] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 246 seconds)
+[22:42:57] *** Joins: dardevelin (~dardeveli@ )
+[22:48:36] <Diadlo> zetok, sudden6_: Seems, we need a large refactoring and qTox 2.0
+[22:49:00] <sudden6_> Diadlo: ?  you have my interest^^
+[22:49:38] <Diadlo> qTox code is ... shitty?
+[22:49:51] <sudden6_> ~yep
+[22:50:22] <Diadlo> sudden6_: Do you use KDE4 and KDE5?
+[22:50:36] <sudden6_> I only use KDE5 since >6months
+[22:51:02] <Diadlo> But you know, that it was ~released some time ago. Aren't you?
+[22:51:21] <sudden6_> yeah, but what does that have to do with qTox?
+[22:53:35] <Diadlo> Idea: create `refactor` branch and start merge huge refactoring there. (And test it). All non-refactoring PR should be merged in both branches (`master` and `refactor`)
+[22:54:10] *** sudden6_ is now known as sudden6
+[22:55:13] <Diadlo> I'm not sure
+[22:55:25] <Diadlo> But step-by-step refactoring is really hard
+[22:55:41] <sudden6> I don't think this is going to work out, because merging PRs in two branches in parallel is difficult
+[22:55:49] <sudden6> especially if they are going to diverge
+[22:56:04] <Diadlo> GUI refactoring is more difficult :/
+[22:56:17] <Diadlo> *UI
+[22:56:33] <sudden6> Also I'll take ui/redesign as an example why big refactorings aren't going to work
+[22:56:48] <sudden6> it's very difficult to keep that in sync
+[22:57:30] <Diadlo> Becouse antis81 rebase his branch
+[22:57:39] <Diadlo> It's more difficult
+[22:57:46] <sudden6> also, no refactoring anymore without atleast some sort of plan
+[22:58:08] <Diadlo> Plan doesn't works here
+[22:58:27] <sudden6> I think it does
+[22:58:40] <Diadlo> I will try to find. Wait a minute
+[22:59:20] <sudden6> we design new clean interfaces between the components and then we can try to reduce the differences step by step
+[23:00:03] <Diadlo> Starts here: https://github.com/qTox/qtox-irc-logs/blob/5c48bda0ca2b54c82fade5d2a37acb072de53907/2016/12/%23qtox_20161214.log.txt#L48
+[23:01:44] <Diadlo> sudden6: `grep -r "getChatForm()" `
+[23:02:04] <Diadlo> `| wc -l` == 36
+[23:02:16] <Diadlo> 36 places, Karl!
+[23:02:45] <sudden6> what does that mean?
+[23:02:58] <Diadlo> We in the ass
+[23:03:12] <Diadlo> Friend class contains ChatForm pointer
+[23:03:34] <sudden6> lol I really like english with a russian accent
+[23:03:41] <Diadlo> :[
+[23:03:51] <sudden6> that's what I mean by "a plan"
+[23:04:09] <sudden6> not a plan on how we do things, but a plan how it should turn out at the end
+[23:04:42] <Diadlo> Milestones
+[23:04:46] <sudden6> no
+[23:04:58] <Diadlo> What the difference?
+[23:05:24] <sudden6> a document describing the interfaces between classes BEFORE we start to implement/refactor them
+[23:05:43] <sudden6> what we do now is only planless refactoring
+[23:06:14] <sudden6> everybody changing stuff here and there which leads in a direction, but not necessarily in a good one
+[23:07:15] <Diadlo> Problem not only with interfaces. But with interaction
+[23:07:26] <Diadlo> For example problem with `emit` in my PR
+[23:07:40] <sudden6> I count that as an interface
+[23:08:04] <sudden6> every way a class interacts with another one -> interface
+[23:08:31] <Diadlo> Ok
+[23:08:36] <sudden6> Also a plan allows us to better communicate things
+[23:08:40] <Diadlo> New repository?)
+[23:08:42] <Diadlo> With plan
+[23:09:19] <sudden6> I'd suggest something lighter like etherpad for the initial planning
+[23:10:00] *** Quits: x__ (~x@ ) (Quit: Leaving)
+[23:10:19] <Diadlo> AFAIR etherpad required a server
+[23:10:25] <Diadlo> I.e. out own server
+[23:10:29] <Diadlo> *our
+[23:10:40] <Diadlo> Isn't it?
+[23:11:12] <sudden6> then the next point what kind of "format" will the plan have? TBH I don't have an idea how to represent classes efficiently
+[23:11:16] <sudden6> in text
+[23:11:31] <sudden6> I just asked iphy if we can borrow the one from last time
+[23:11:40] <Diadlo> QML
+[23:12:12] <sudden6> what's that?
+[23:12:44] <Diadlo> *UML
+[23:12:46] <Diadlo> Sorry
+[23:12:54] <Diadlo> http://agilemodeling.com/images/models/classDiagramInheritance.jpg
+[23:13:40] <sudden6> yeah I remember that from school^^ ok, QML it is then, do you know of any good tools for that?
+[23:14:17] <Diadlo> Umbrello
+[23:14:54] <Diadlo> AFAIK good enough
+[23:16:17] <sudden6> etherpad, sponsored by grayhatter https://devbot.cmdline.org:9001/p/qtox-plan
+[23:19:09] <Diadlo> sudden6: Fix your PR and I will LGTM it
+[23:20:50] <sudden6> done, I think
+[23:21:54] <Diadlo> Yes
+[23:23:17] *** Joins: _moep_ (~bla@ )
+[23:32:26] <sudden6> Diadlo: how does that dependency injection thing work in practice?
+[23:32:56] <Diadlo> Put pointer in constructor
+[23:33:38] <sudden6> can you give me a short example?
+[23:34:01] <sudden6> or point me to one
+[23:34:04] <Diadlo> main.cpp: Settings s; Core c; Profile p(&c); Widget w(&s, &p)
+[23:34:22] <sudden6> ah, thx
+[23:34:44] <Diadlo> np :)
+[23:34:51] <sudden6> so everything that needs Settings, is constructed with a pointer to it?
+[23:35:29] <Diadlo> But DI is a special case of `Inversion of control`. We can use any case
+[23:35:42] <Diadlo> Something like that
+[23:35:55] <Diadlo> Also we need a parent class
+[23:36:25] <sudden6> why?
+[23:36:28] <Diadlo> I thought about split settings interface on UISettings, NetworkSettings
+[23:36:56] <Diadlo> Because we should be able to create different implementation (for tests, for example)
+[23:37:26] <sudden6> ok, I'd only split it into global and per profile settings
+[23:37:35] <Diadlo> Tests should not use Settings, which reads settings from file
+[23:37:58] <Diadlo> What do you think about scope-split?
+[23:38:03] <sudden6> ?
+[23:38:06] <sudden6> what's that
+[23:38:09] <Diadlo> UI, Network
+[23:38:11] <Diadlo> etc.
+[23:38:28] <sudden6> ok, hmm, wouldn't be to bad either
+[23:38:53] <sudden6> what about global, UI, network,...
+[23:39:04] <Diadlo> Non-widget modules don't need UI settings, for example
+[23:39:06] <Diadlo> Yes
+[23:39:19] <Diadlo> It's what I meant
+[23:40:17] <sudden6> how would we do serialization/deserialization on that?
+[23:42:49] <Diadlo> Same as now?
+[23:43:03] <Diadlo> But maybe create ISerializable
+[23:43:19] <sudden6> does qt have something like that?
+[23:43:44] <Diadlo> QSettings?
+[23:44:57] <sudden6> oh, nice one
+[23:45:31] <Diadlo> https://github.com/qTox/qTox/blob/master/src/persistence/settings.cpp#L116
+[23:45:32] <Diadlo> :)
+[23:46:19] <sudden6> never needed to change something in that area :DD
+[23:50:29] <Diadlo> sudden6: Where should be toxsave? Persistence vs Core?
+[23:50:48] <sudden6> Core I think
+[23:51:00] <sudden6> no wait
+[23:51:20] <sudden6> ok, well core
+[23:51:44] <sudden6> because of compatibility with other clients we have to store .tox files as they are
+[23:52:04] <sudden6> Ideally Core would allow to implement a simple client
+[23:52:23] <Diadlo> Logically
+[23:58:25] <sudden6> Diadlo: move friendlist and grouplist also to core?
+[23:58:45] <Diadlo> Agree
