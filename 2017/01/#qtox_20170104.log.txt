@@ -1,0 +1,521 @@
+[00:02:06] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:04:58] <Diadlo> sudden6: ipc and nexus already non-module
+[00:05:09] <sudden6> ops, sorry
+[00:05:10] <Diadlo> :)
+[00:11:22] <sudden6> tux3: if you have time take a look at https://devbot.cmdline.org:9001/p/qtox-plan
+[00:12:03] <sudden6> Diadlo: split form/ dialog into two things?
+[00:13:00] <Diadlo> AFAIK it's the same
+[00:13:00] *** Joins: MDrights (~MDrights@ )
+[00:13:15] <Diadlo> Oh.. No
+[00:13:16] <sudden6> Diadlo: also 'ui' doesn't exist und src
+[00:13:17] <Diadlo> You a right
+[00:13:25] <Diadlo> Lol?
+[00:13:37] <Diadlo> Oh
+[00:13:41] <Diadlo> Under src -- yes
+[00:14:26] <sudden6> Do you know if it's common to store the ui files separate fromt their classes?
+[00:16:37] <Diadlo> IDK
+[00:16:56] <sudden6> I'll look it up then
+[00:17:09] <Diadlo> Ok
+[00:21:52] <sudden6> qt creator seems to store the .ui files with the classes
+[00:22:11] <sudden6> also it seems to be recommended to use subprojects
+[00:22:30] <sudden6> Diadlo: ↑
+[00:22:38] <Diadlo> We plan to migrate on CMake
+[00:22:51] <sudden6> CMake also supports subprojects
+[00:22:54] <Diadlo> Yes
+[00:23:10] <sudden6> what's the problem then?
+[00:23:31] <Diadlo> I don't know real reason to make `core` (for example) as subproject
+[00:24:07] <sudden6> IMO Core is the best example for a subproject
+[00:24:08] <Diadlo> I feel, that my opinion is wrong. But don't know an arguments
+[00:24:16] <Diadlo> Why?
+[00:25:07] <sudden6> when copying Core it should be possible to build for example a QML qTox without much work (antis81 is trying this)
+[00:25:33] <Diadlo> Agree
+[00:25:46] <sudden6> it's (should be) totally independent
+[00:26:13] <Diadlo> Seems most part of our modules should be a subprojects
+[00:26:22] <Diadlo> May be all
+[00:26:26] <sudden6> mhm
+[00:26:34] <sudden6> I agree
+[00:27:00] <sudden6> but maybe make that after the cmake transistion?
+[00:27:31] <Diadlo> Yes
+[00:30:03] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[00:31:47] <Diadlo> sudden6: Does etherpad save file history?
+[00:31:59] <sudden6> ~yes
+[00:32:04] <Diadlo> I.e. if someone delete all content, can we restore it?
+[00:32:14] <sudden6> there's a button on the top right
+[00:32:27] <sudden6> also import export is possible
+[00:32:49] <sudden6> we'll export it when we're finished for today
+[00:33:31] <Diadlo> I think we should share plan in out qTox site/blog
+[00:33:37] <Diadlo> *our
+[00:34:03] <sudden6> would be a good idea
+[00:34:26] <sudden6> but I think we should work on it for a bit, before doing that
+[00:35:00] <Diadlo> Of course
+[00:36:31] <Diadlo> Timeline seems not good. Because many things can be made parallel
+[00:37:24] <sudden6> we missed a module "chatlog"
+[00:37:58] <sudden6> seems like the only well designed UI class^^
+[00:38:06] <Diadlo> I never understand what is it :/
+[00:38:11] <Diadlo> Yes
+[00:38:58] *** Joins: shiva (~LordShiva@ )
+[00:39:43] <Diadlo> sudden6: What about timeline?
+[00:40:03] <sudden6> I've no exact idea yet
+[00:41:27] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 248 seconds)
+[00:45:02] <sudden6> Diadlo: what about namespaces?
+[00:45:09] <sudden6> for now we use them inconsistently
+[00:45:21] <Diadlo> Where we use it?
+[00:45:41] <Diadlo> Or you talk about `std`?
+[00:46:01] <Diadlo> Oh.. Seems we have namespaces
+[00:46:12] <Diadlo> Never seen it before
+[00:46:20] <Diadlo> *them
+[00:46:37] <Diadlo> I'm not against
+[00:47:06] <sudden6> IIRC in initramfs PR they were forbidden
+[00:47:26] <sudden6> For now I don't see an advantage of using them
+[00:47:29] <Diadlo> AFAIK, usually use namespace for avoiding name conflicts
+[00:47:49] <Diadlo> Between projects
+[00:48:09] <sudden6> ok, so don't use them?
+[00:48:47] <Diadlo> Ok
+[00:48:54] <sudden6> I think it won't be hard to introduce them if we need it
+[00:49:47] <Diadlo> namespace-per-module
+[00:50:02] <sudden6> what do you think about starting this with Core?
+[00:50:39] <Diadlo> You are reading my mind :)
+[00:51:56] -qtox-git-spam- [qTox] sudden6 closed pull request #4027: Cleanup core (master...cleanup_core) https://github.com/qTox/qTox/pull/4027
+[01:09:11] *** Quits: cisc (~cisc@ ) (Ping timeout: 248 seconds)
+[01:31:27] <Diadlo> sudden6: Does server are available?
+[01:31:34] <sudden6> Diadlo: nope
+[01:31:38] <Diadlo> Lool
+[01:32:00] <sudden6> don't worry, I copied the text
+[01:32:05] <sudden6> I'll post a gist
+[01:32:19] <Diadlo> Thanks :)
+[01:32:47] <sudden6> https://gist.github.com/sudden6/9b0885c6c07510a1e1c94b6b2d733960
+[01:33:00] <sudden6> sadly it misses the formatting :/
+[01:33:19] <sudden6> but maybe it's time now to convert it to MD and use GH
+[01:34:42] <sudden6> maybe it was even me who crashed the etherpad^^ I clicked export->etherpad and it was gone
+[01:56:04] <Diadlo> https://gist.github.com/Diadlo/108f5675848d7e0e51287792b657f3ea
+[01:56:10] <Diadlo> sudden6: Markdowned ^
+[01:59:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[02:25:00] *** Quits: f10_ (~flo@ ) (Ping timeout: 241 seconds)
+[02:25:23] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[03:41:41] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 246 seconds)
+[03:48:01] -qtox-git-spam- [qTox] Diadlo opened pull request #4044: fix(nexus): Add qRegisterMetaType call for ToxPk (master...fixNexust) https://github.com/qTox/qTox/pull/4044
+[04:50:52] *** Joins: cisc (~cisc@ )
+[05:25:00] <anoa> Where does qTox save stuff on Windows? Friend just upgraded to nightly build from 1.5.0 and lost all his contacts.
+[05:34:01] *** Quits: Mikaela[m] (cibliamatr@ ) (Read error: Connection reset by peer)
+[05:58:04] *** Joins: Mikaela[m] (cibliamatr@ )
+[06:28:49] <cisc> in AppData
+[08:04:45] <zetok> https://github.com/qTox/qTox/wiki/Profile
+[08:05:37] <zetok> Diadlo: just some thought food
+[08:06:42] <zetok> Diadlo: KDE in general is crappy when it comes to stability/usability, KDE4 → KDE5 made it even worse; this is not what one would want qTox to take inspiration from
+[08:07:50] <zetok> Diadlo: as for big refactor branches, aside from looking above, this idea was tried several times already for qTox, not just by antis81, but before that by DaSpirit – none of the attempts were successfully merged.
+[08:08:44] <zetok> if you want to go with big refactoring, it's not like there something stopping you from doing that
+[08:10:05] <zetok> there's a problem though with simple physical limitations of human brain, that simply increase chance of bugs – the more code you change, the higher chance that something will be done wrong, since one is not able to keep all the relevant things in memory at the same time
+[08:10:29] <zetok> in other words, huge refactoring branches will introduce regressions, and a lot of them at that
+[08:11:02] <zetok> with that in mind, it might be *very* hard to fix all the regressions and end up merging the code
+[08:11:55] <zetok> the worst case might be that all the regressions will be too much to get things merged, and story of big refactoring changes will repeat itself, and another attempt will end up not getting merged
+[08:12:38] <zetok> on the other hand, small changesets might take some time to get merged, but they are getting merged
+[08:12:51] <zetok> now, the current process of merging things is far from being efficient
+[08:13:18] <zetok> so if things are too slow, you might want to look into a way to speed things up
+[08:13:25] <zetok> Just some though food.
+[08:14:01] <zetok> (btw, 2.0 is not needed even with a huge refactor)
+[08:30:48] *** Joins: Yoshimo (~anything@ )
+[08:39:02] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:39:32] *** Joins: LittleVulpix (~Miranda@ )
+[08:40:53] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[09:04:30] *** Quits: nurupo (~nurupo.ga@ ) (Remote host closed the connection)
+[09:05:01] *** Joins: nurupo (~nurupo.ga@ )
+[09:11:37] *** Joins: f10_ (~flo@ )
+[09:11:56] *** Joins: f10 (~flo@ )
+[10:00:35] *** Joins: sudden6 (~anonymous@ )
+[10:01:00] *** Joins: x_ (~x@ )
+[10:06:58] *** Joins: f10__ (~flo@ )
+[10:07:20] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[10:15:54] <Chiitoo> zetok: I imagine that would mean there is no qTox 2 if it were to take inspiration from KDE5, heh...
+[10:16:04] <zetok> there will be
+[10:16:24] <zetok> just refactoring the code is not a reason to bump major version number
+[10:16:27] <Chiitoo> (Was just jokingly referring to the 'there is no KDE5' thing.)
+[10:17:10] <Chiitoo> (So qTox would probably be split into different parts with their own versions.)
+[10:17:30] <Chiitoo> Seen anything like this before?  https://bugs.gentoo.org/show_bug.cgi?id=594162
+[10:17:34] <zetok> also, KDE3 is still alive AFAIK
+[10:17:39] <Chiitoo> I have a feeling I had, but couldn't find anything.
+[10:17:52] <Chiitoo> (Or they were related to USB cameras.)
+[10:18:08] <Chiitoo> I believe it's available, yeah.
+[10:18:29] <zetok> right, time to remove 1.5 from Gentoo
+[10:18:49] <Chiitoo> They also seem to have issues with 1.6.
+[10:19:05] <zetok> mm
+[10:19:08] <zetok> what about 1.7 ?
+[10:20:04] <zetok> error seems familiar
+[10:21:53] <Chiitoo> I'll probably ask them, and if it's still happening, maybe suggest they open an issue about it.
+[10:22:55] <zetok> there were people with that in logs (on distros other than Gentoo), but I couldn't reproduce
+[10:23:18] <Chiitoo> Never had the issue either, as far as I can remember.
+[10:23:23] <sudden6> hi all
+[10:23:40] <zetok> hello :)
+[10:23:45] <Chiitoo> Ho.
+[10:24:34] <sudden6> Diadlo and I did some planning yesterday, maybe you want to take a look?
+[10:24:37] <sudden6> https://devbot.cmdline.org:9001/p/qtox-plan
+[10:36:35] <Diadlo> Hello
+[10:37:54] <Diadlo> sudden6: I had just finished markdown converting
+[10:37:59] <Diadlo> https://gist.github.com/Diadlo/108f5675848d7e0e51287792b657f3ea
+[10:38:18] <sudden6> oh, nice :)
+[10:46:39] <sudden6> Diadlo: how much is left of merging ui/redesign?
+[10:47:16] <Diadlo> sudden6: About ~90%
+[10:47:31] <sudden6> that's a lot O_o
+[10:48:48] <Diadlo> 97%
+[10:48:53] <Diadlo> ui/refactoring has 61 commit 2 of them are merged now
+[10:49:58] <Diadlo> 4 cherry-picked in PRs
+[10:51:18] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vMO9p
+[10:51:18] -qtox-git-spam- qTox/master 328d0b6 Diadlo: fix(nexus): Add qRegisterMetaType call for ToxPk...
+[11:23:38] *** Joins: pcre_ (~quassel@ )
+[11:33:48] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[11:43:31] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[11:44:01] *** Joins: f10__ (~flo@ )
+[11:51:25] *** Joins: f10 (~flo@ )
+[11:52:40] <Diadlo> sudden6 zetok: Please, test CMake PR, should be fixed
+[11:52:47] <zetok> tested :3
+[11:52:55] <zetok> Diadlo: I've commented on the PR
+[11:52:56] <Diadlo> Wow
+[11:53:02] <Diadlo> You are fast :)
+[11:53:08] <zetok> that's what automation does :)
+[11:54:42] <Diadlo> Are you sure, that you didn't remove translations/zh.ts ?(
+[11:54:53] <zetok> yep
+[11:55:07] <Diadlo> I have no idea how it appear and how to fix it
+[11:55:40] <zetok> I've just `./test-pr.sh && copy.sh && cd qTox && cmake -H. -B_build && cd _build && cmake`
+[11:55:54] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:56:05] <zetok> copy.sh just copies qTox dir to another location, so that I always have clean source directory
+[11:56:09] <Diadlo> Do you have any ideas?
+[11:56:31] <zetok> cmake stuff doesn't generate .qm even though it should
+[11:56:43] <Diadlo> Only 1 language
+[11:56:44] *** Joins: LittleVulpix (~Miranda@ )
+[11:57:17] <Diadlo> Or not...
+[11:58:26] <iphy> [ 21%] Generating tr.qm
+[11:58:33] <iphy> toktok/qtox' cmake stuff does
+[12:03:47] <Diadlo> Lol. Have no idea, why I've used .qm instead of .ts
+[12:03:56] <zetok> Diadlo: um, push the commits to the PR?
+[12:04:07] <Diadlo> Done
+[12:05:28] <Diadlo> zetok: Wait a sec
+[12:05:35] <Diadlo> I make a mistake
+[12:05:45] <zetok> too late :f
+[12:05:53] <zetok> >add_custom_command called with OUTPUT containing a ">".  This character is
+[12:06:10] <sudden6> Diadlo: it fails for me https://gist.github.com/sudden6/88d3cc271a17381e74611d2642dc093f
+[12:06:17] <Diadlo> Yep
+[12:06:20] <sudden6> seems like it's not linking against toxencryptsave
+[12:08:03] <Diadlo> Fixed
+[12:09:44] <iphy> how does this happen?
+[12:10:20] <Diadlo> iphy: .qm instead of .ts?
+[12:10:22] <iphy> yes
+[12:10:30] <iphy> I had .ts in my cmake file
+[12:10:43] <Diadlo> Have no idea
+[12:11:13] <Diadlo> iphy: AFAIR, I just cherry-pick your commit
+[12:12:24] <sudden6> Diadlo: for me it still fails to link
+[12:12:28] <Diadlo> 82% fail
+[12:12:29] <Diadlo> Oh..
+[12:12:41] <Diadlo> Build is too long :/
+[12:12:53] <sudden6> ?
+[12:13:28] <Diadlo> Nevermind. I should go away. I will try to fix it ~tomorrow
+[12:13:45] <sudden6> ok, see you then
+[12:13:59] <Diadlo> Bye
+[12:14:17] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[12:28:07] *** Joins: _sudden6_ (~anonymous@ )
+[12:52:32] *** Quits: pcre_ (~quassel@ ) (Ping timeout: 256 seconds)
+[12:52:47] *** Joins: pcre_ (~quassel@ )
+[13:06:46] <iphy> "raise to 3.1 or later"
+[13:07:22] <iphy> as usual, antis81 gives zero shits about anyone's not-bleeding-edge installations
+[13:08:17] <iphy> I'm looking forward to qtox requiring qt 5.7
+[13:53:02] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:54:01] *** Joins: cisc (~cisc@ )
+[13:55:44] *** Quits: pcre_ (~quassel@ ) (Remote host closed the connection)
+[13:58:11] <nurupo> heh
+[14:02:17] *** Joins: Emcy (~MC@ )
+[14:02:17] *** Quits: Emcy (~MC@ ) (Changing host)
+[14:02:17] *** Joins: Emcy (~MC@ )
+[14:09:28] -qtox-git-spam- [qTox] zetok opened pull request #4046: docs(README): list GPG fingerprints of qTox maintainers & packagers (master...docs-readme-gpgprint) https://git.io/vMOhV
+[14:29:31] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 258 seconds)
+[14:31:21] *** Joins: Yoshimo (~anything@ )
+[14:53:14] *** Quits: cisc (~cisc@ ) (Ping timeout: 256 seconds)
+[14:56:28] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[14:56:44] *** Quits: x_ (~x@ ) (Ping timeout: 258 seconds)
+[14:56:49] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[14:56:59] *** Joins: f10 (~flo@ )
+[14:57:52] *** Joins: cisc (~cisc@ )
+[15:03:16] -qtox-git-spam- [qTox] zetok closed pull request #4046: docs(README): list GPG fingerprints of qTox maintainers & packagers (master...docs-readme-gpgprint) https://git.io/vMOhV
+[15:03:23] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vM3J4
+[15:03:23] -qtox-git-spam- qTox/master 03fe946 Zetok Zalbavar: docs(README): list GPG fingerprints of qTox maintainers & packagers...
+[15:13:19] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 258 seconds)
+[15:22:25] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[15:25:47] *** Quits: Impyy (~impy@ ) (Ping timeout: 258 seconds)
+[15:26:51] *** Joins: f10__ (~flo@ )
+[15:28:16] *** Joins: Impyy (~impy@ )
+[15:29:54] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[15:31:10] *** Joins: f10__ (~flo@ )
+[15:43:06] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[15:44:30] *** Joins: f10__ (~flo@ )
+[15:48:12] *** Joins: f10 (~flo@ )
+[16:00:51] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[16:02:12] *** Joins: bennabiy (~bennabiy@ )
+[16:05:40] *** Joins: Achylles (~Achylles@ )
+[16:06:55] <Achylles> I am trying to enable this program with "systemctl enable sxhkd", but it fails :(
+[16:07:04] <Achylles> sorry
+[16:07:10] <Achylles> wrong channel...
+[16:12:05] *** Quits: cisc (~cisc@ ) (Ping timeout: 246 seconds)
+[16:13:11] *** Joins: cisc (~cisc@ )
+[16:26:26] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 258 seconds)
+[16:27:35] <sudden6> zetok: could you lgtm https://github.com/qTox/qTox/pull/4041 again?
+[16:28:31] <zetok> sudden6: um, it's not needed?
+[16:28:53] <sudden6> zetok: oh, sorry looked at the wrong line..
+[16:29:45] <zetok> what do you think about using `lzip` for releases?
+[16:29:50] <zetok> https://github.com/NicoHood/gpgit/issues/1#issuecomment-270415332
+[16:30:55] <sudden6> zetok: IMO we should stick with tar.gz
+[16:30:59] <zetok> :|
+[16:31:01] <sudden6> it's very common
+[16:31:19] <sudden6> or atleast provide tar.gz and zip
+[16:31:23] <zetok> um
+[16:31:30] <zetok> they're provided by github anyway
+[16:31:57] <sudden6> ok, if you want to provide additonal stuff -> do it
+[16:32:01] <zetok> ok
+[16:32:13] <zetok> I'll make a PR with a script for it later
+[16:32:16] <sudden6> but I think nobody really cares about that
+[16:32:34] <zetok> well
+[16:32:42] <zetok> I'm going to use it in Gentoo ebuild
+[16:32:52] <zetok> :3
+[16:33:14] <sudden6> ok, then apparently I was not quite right
+[16:34:19] <sudden6> but I've yet to see someone complain "I use only OSS in tar.exotic format" ;)
+[16:34:50] <zetok> >exotic
+[16:34:58] <zetok> um, tar supports it natively
+[16:35:33] *** Joins: cenysor (~cenysor@ )
+[16:36:33] <sudden6> that wasn't meant for lzip specifically
+[16:37:25] <sudden6> travis osx builds are slow :/
+[16:38:18] *** Joins: Achylles (~Achylles@ )
+[16:40:03] <zetok> ~/git_zetok/gentoo/gentoo $ git grep -E '\.tar\.lz' | grep -v lzma | wc -l
+[16:40:03] <zetok> 175
+[16:43:38] *** Joins: Yoshimo (~anything@ )
+[16:51:24] *** Quits: f10 (~flo@ ) (Ping timeout: 272 seconds)
+[16:51:44] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[17:12:52] *** shiva is now known as in1t3r_
+[17:13:18] *** Joins: f10__ (~flo@ )
+[17:27:09] *** Joins: f10 (~flo@ )
+[17:45:57] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 248 seconds)
+[17:46:28] *** Joins: jjuran (~jjuran@ )
+[17:55:18] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[17:55:23] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 272 seconds)
+[17:55:31] *** Joins: f10 (~flo@ )
+[17:57:47] -qtox-git-spam- [qTox] zetok opened pull request #4047: chore(tools): add a script for creating and signing release tarballs (master...chore-tarball-sign) https://github.com/qTox/qTox/pull/4047
+[18:01:05] *** Quits: Achylles (~Achylles@ ) (Remote host closed the connection)
+[18:01:17] *** Joins: LittleVulpix (~Miranda@ )
+[18:03:00] *** Joins: jjuran (~jjuran@ )
+[18:51:08] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:52:24] *** Joins: f10 (~flo@ )
+[18:57:39] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[19:02:00] *** Joins: cenysor (~cenysor@ )
+[19:22:57] *** Joins: Diadlo (~diadlo@ )
+[19:25:42] *** Joins: x_ (~x@ )
+[19:36:04] *** Quits: Chiitoo (~Chiitoo@ ) (*.net *.split)
+[19:36:05] *** Quits: dan- (~d@ ) (*.net *.split)
+[19:36:19] *** Joins: dan- (~d@ )
+[19:38:25] *** Quits: dan- (~d@ ) (Changing host)
+[19:38:25] *** Joins: dan- (~d@ )
+[19:48:49] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 240 seconds)
+[19:50:06] *** Joins: Yoshimo (~anything@ )
+[19:58:04] *** Joins: Chiitoo (~Chiitoo@ )
+[20:14:32] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://github.com/qTox/qTox/commit/6bad4ad3baa12405da25528c8052b6b28cca52c9
+[20:14:32] -qtox-git-spam- qTox/master 6bad4ad sudden6: chore(style): add coding style file for Qt Creator
+[20:28:07] <cenysor> the gpg key of the opensuse respository is expired. what should I do?
+[20:31:39] <robinli> cenysor: https://qtox.github.io/blog/2016/11/13/Expired-GPG-and-v1.6.0-release.html
+[20:31:48] <robinli> There's a fix there. :)
+[20:34:00] <cenysor> robinli: thak you!
+[20:34:10] <cenysor> *thank
+[20:36:36] <robinli> Anytime. :)
+[20:45:41] *** Quits: x_ (~x@ ) (Ping timeout: 248 seconds)
+[20:50:25] <cenysor> robinli: ah, I have two further questions: Is it possible to automatically log in on startup? And why do I not get automatic group invites from some bots?
+[20:55:13] <robinli> cenysor: As far as I know, you can't automatically log in on startup. Maybe without a password and with the start on boot option? It does say "(current profile)" in the tooltip.
+[20:55:40] <robinli> 2nd, I've no idea. Hang around and wait for a different dev to answer. Sounds like a problem with the bots to me, but I really don't know.
+[20:56:00] <cenysor> robinli: ok, thanks!
+[20:56:32] <sudden6> cenysor: If you have no password set you can enable automatic login through the checkbox in the login window
+[20:56:49] <robinli> sudden6: Cool. I didn't know that. :)
+[20:57:11] <robinli> Always used a password. :P
+[20:57:16] <zetok> wiki & bot
+[20:57:23] <zetok> bot could make things better
+[20:57:28] <cenysor> sudden6: ah, ok, thanks!
+[20:57:31] <sudden6> for the second question, I don't think anybody has programmed their bots to send automatic group invites
+[20:58:28] * zetok sighs
+[20:58:29] <cenysor> sudden6: mh, I get invited to a group chat on startup by one bot :/
+[20:58:50] <sudden6> ok, that's new to me^^ which one is it?
+[20:59:13] <zetok> the successor of /g/punk probably
+[20:59:26] <cenysor> sudden6: LainBot
+[20:59:32] <zetok> that's the one then
+[21:00:08] <sudden6> oh ok, didn't know of it until now^^
+[21:00:40] <zetok> WTF
+[21:00:46] <zetok> why did qTox remove my avatar
+[21:00:51] <cenysor> btw the qGroupbot doesn't have an active groupchat
+[21:01:21] <zetok> regression is between 335b408278808624a504079302c583fecd6ec07a and 03fe946c2a06b0ad49e38c30e907a35bc243ee92
+[21:01:35] <sudden6> zetok: that could be fallout from introducing toxpk and toxid
+[21:01:45] <zetok> -.-
+[21:01:51] <zetok> how it was even tested?
+[21:03:07] <sudden6> probably the avatar cache is different because different data is hashed...
+[21:03:35] <sudden6> zetok: does it work if you set the avatar again?
+[21:03:48] <zetok> I'm not going to set my avatar again
+[21:04:59] <zetok> first I'd need to find it
+[21:05:53] <zetok> it was removed from `avatars` dir -.-"
+[21:05:56] <sudden6> it's probably still in the cache
+[21:06:13] <sudden6> ok? that shouldn't happen
+[21:08:12] * zetok sighs
+[21:08:20] <zetok> time to restore stuff from backup
+[21:19:03] <sudden6> zetok: does the encrypted db still work?
+[21:19:12] <zetok> no idea
+[21:19:17] <sudden6> I can't spot anything obvious in the commits
+[21:19:53] <zetok> ha
+[21:20:03] <zetok> 2 regressions in price of 1
+[21:20:36] <sudden6> what's the second?
+[21:21:04] <zetok> second was fixed
+[21:21:12] <zetok> (the missing friendlist)
+[21:22:25] <zetok> sudden6: e07d8d358f6fc890a77e029aa230b69bdecd325e ← offending commit
+[21:22:29] <zetok> (via bisect)
+[21:22:38] <zetok> do you want me to make an issue?
+[21:23:26] <sudden6> I'll see if I can find something right now
+[21:24:03] <zetok> uh
+[21:24:08] <sudden6> so does it work if you set a new avatar? ie does it stay?
+[21:24:09] <zetok> that's a 800+ lines diff
+[21:24:44] <sudden6> yes, it wasn't really possible to split it
+[21:27:23] <zetok> nope
+[21:27:42] <zetok> sudden6: avatar gets successfully erased every time
+[21:27:58] <zetok> just from settings though
+[21:28:03] <sudden6> thanks, that's something I can debug
+[21:35:33] <zetok> made an issue
+[21:39:59] <Diadlo> What do you think about glob'ing in CMake?
+[21:40:22] <zetok> "can we not" ← first thought, but I don't really know
+[21:40:39] <sudden6> what's glob'ing ?
+[21:40:46] <zetok> sudden6: *
+[21:41:08] <Diadlo> *.cpp
+[21:41:41] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 248 seconds)
+[21:41:41] *** Joins: x_ (~x@ )
+[21:41:51] <zetok> g'night :)
+[21:42:04] <Diadlo> zetok: Good night
+[21:42:11] <sudden6> night :)
+[21:46:32] *** Joins: in1t3r_ (~LordShiva@ )
+[21:48:22] -qtox-git-spam- [qTox] sudden6 opened pull request #4049: fix(avatar): wrong conversion of own ToxId (master...fix4048) https://github.com/qTox/qTox/pull/4049
+[21:48:22] <sudden6> Diadlo: how do you want to proceed with The Plan™
+[21:50:57] <Diadlo> IDK :(
+[21:52:14] <sudden6> do you have a little bit of time to talk about it now?
+[21:52:23] <Diadlo> Yes
+[21:52:35] <sudden6> ok, me too
+[21:52:48] <Diadlo> But I haven't plan to proceed The Plan :)
+[21:52:58] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:53:01] <sudden6> ok, what was your plan?
+[21:53:59] <Diadlo> We have already laid out my plan 
+[21:54:15] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[21:54:29] <sudden6> also you didn't tell me what "glob'ing" means^^
+[21:54:35] <Diadlo> *.cpp
+[21:54:39] <Diadlo> Is glob'ing
+[21:54:42] <Diadlo> *.h
+[21:54:49] <sudden6> so you're working on the cmake stuff now
+[21:54:53] <sudden6> ok
+[21:54:58] <Diadlo> Yes
+[21:55:16] <Diadlo> antis81 suggest to use glob'ing
+[21:55:27] <sudden6> well, why not
+[21:55:39] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:55:40] <sudden6> also I think you can merge 3881 now
+[21:56:03] <Diadlo> Oh.. Thanks
+[21:56:06] *** Joins: Emcy (~MC@ )
+[21:56:06] *** Quits: Emcy (~MC@ ) (Changing host)
+[21:56:06] *** Joins: Emcy (~MC@ )
+[21:56:12] <Diadlo> I forget it
+[21:56:41] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[21:59:11] <sudden6> If you're working on the cmake, I'll start with designing a new interface for Core
+[21:59:56] <Diadlo> Ok
+[22:00:19] *** Joins: cisc (~cisc@ )
+[22:24:13] <Diadlo> friendWidget_3 PR running for 26 min 20 sec :/
+[22:24:20] <Diadlo> travis
+[22:25:14] <Diadlo> Lol xcode build isn't started at all
+[22:25:33] <sudden6> yeah, they have a huge osx backlog depending on the time of the day
+[22:25:51] <sudden6> seems like osx vms are expensive
+[22:35:24] *** Quits: Emcy (~MC@ ) (Quit: Leaving)
+[22:37:38] *** Joins: Emcy (~MC@ )
+[22:37:38] *** Quits: Emcy (~MC@ ) (Changing host)
+[22:37:38] *** Joins: Emcy (~MC@ )
+[22:43:36] <Diadlo> sudden6: Where and how do you desigin new Core interface?
+[22:43:46] <Diadlo> UML class diagram?
+[22:43:48] <sudden6> I just made a gist
+[22:43:56] <sudden6> writing the header file
+[22:44:02] <Diadlo> Why not UML?
+[22:44:11] <sudden6> couldn't download umbrello, opensuse repo is down...
+[22:44:24] <Diadlo> Wow
+[22:44:44] <sudden6> or atleast the one I configured
+[22:45:26] <sudden6> ok, it's up again
+[22:47:18] <Diadlo> Also, we can create block-schema to show classes interaction
+[22:48:22] -qtox-git-spam- [qTox] Diadlo closed pull request #3881: Friend widget 3 (master...friendWidget_3) https://github.com/qTox/qTox/pull/3881
+[22:49:16] <sudden6> ok, I got Umbrello up and running
+[22:49:27] <sudden6> I'll start with ToxPk as warmup
+[22:49:39] <Diadlo> Ok
+[22:50:30] <sudden6> seems like I need a tutorial for this...
+[22:51:05] <Diadlo> Click `class` button on the top panel
+[22:51:19] <Diadlo> Click on the white space
+[22:51:25] <sudden6> yep I already have the class there
+[22:51:33] <sudden6> how do I add a function?
+[22:51:41] <Diadlo> Select `pointer` (1st tool)
+[22:51:47] <Diadlo> And double click on class
+[22:52:07] <Diadlo> Or double click in `Tree view`
+[22:52:18] <sudden6> ah, thx I think I got it :)
+[22:52:25] <Diadlo> np :)
+[22:52:43] <Diadlo> AFAIR Umbrello can generate code
+[22:53:09] <sudden6> can it also read in existing code?
+[22:53:18] <Diadlo> IDK
+[22:54:04] <sudden6> apparantly it can :D
+[22:54:33] <Diadlo> How?
+[22:54:40] <Diadlo> Code -> Import ?
+[22:54:52] <sudden6> crap, it segfaults for me :/
+[22:55:04] <Diadlo> +1
+[22:55:06] <Diadlo> :D
+[22:55:15] <Diadlo> Debug time!
+[22:56:11] <sudden6> I'll first try to get the newest updates^^
+[22:56:18] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[22:56:42] <Diadlo> I have `umbrello 2.21.0`
+[22:57:03] *** Joins: f10 (~flo@ )
+[22:57:23] <sudden6> me too
+[22:59:48] <sudden6> hmm, on a different pc it works
+[23:02:09] <Diadlo> With qTox?
+[23:02:15] <Diadlo> I.e. you import qTox code
+[23:02:17] <Diadlo> ?
+[23:02:21] <Diadlo> *Do you
+[23:02:35] <sudden6> yes, that's amazing :D
+[23:03:23] <Diadlo> Can you share it?)
+[23:03:46] <Diadlo> As a project or as a screenshot
+[23:04:14] <_sudden6_> give me a minute
+[23:04:36] <Diadlo> Ok :)
+[23:06:20] <_sudden6_> Diadlo: http://imgur.com/a/1q52V
+[23:06:38] <_sudden6_> note, that I didn't do anything yet
+[23:07:04] <Diadlo> I was hoping that it imported ~connection
+[23:07:38] <_sudden6_> maybe it can but I can't display it yet
+[23:07:51] <_sudden6_> I've to play a little bit with the program :)
+[23:08:22] <Diadlo> It displayed by default (you can create it by red lines on the top)
+[23:08:54] <Diadlo> Maybe Code haven't connections
+[23:08:56] <Diadlo> *Core
+[23:09:48] <_sudden6_> it does
+[23:10:07] <_sudden6_> I just dragged CoreAv into the diagram and it made a connection
+[23:10:36] <_sudden6_> but the connection is only on members
+[23:38:49] <sudden6> Diadlo: could there be problems if multiple classes call functions of c-toxcore?
+[23:40:02] <Diadlo> What kind of `problems`?
+[23:40:41] <sudden6> I don't know, race conditions, deadlocks, pointer dereferences...
+[23:40:51] <sudden6> but I think it will be save
+[23:41:23] <Diadlo> It depend not of classes, but of usage :)
+[23:41:28] <Diadlo> I think it can't
+[23:42:47] <sudden6> I imagine something like Core->getFriendList()-
+[23:43:08] <sudden6> >FindFriend(friendId)
+[23:44:53] -qtox-git-spam- [qTox] Diadlo opened pull request #4050: Friend widget 4 (master...friendWidget_4) https://github.com/qTox/qTox/pull/4050
+[23:47:33] -qtox-git-spam- [qTox] Diadlo opened pull request #4051: [Not for merge] Ui/redesign (master...ui/redesign) https://github.com/qTox/qTox/pull/4051
+[23:48:29] <Diadlo> It's should work without c-toxcore. Isn't it?
+[23:48:32] <Diadlo> sudden6: ^
+[23:48:46] <Diadlo> Also, merge #4049 ?
+[23:48:58] <Diadlo> Or need zetok test?
+[23:49:06] <sudden6> Diadlo: I don't understand "It's should work without c-toxcore. Isn't it?" please reword
+[23:49:17] <sudden6> I want to wait for zetok
+[23:50:02] <Diadlo> > I imagine something like Core->getFriendList()->FindFriend(friendId)      <- Is it related to previous message about `problems`?
+[23:50:26] <Diadlo> > could there be problems if multiple classes call functions of c-toxcore?
+[23:50:31] <sudden6> yes
+[23:50:48] <sudden6> I'm currently drawing something up
+[23:51:01] <sudden6> I'll send you a screenshot in ~10min
+[23:51:14] <Diadlo> > call functions of c-toxcore?       > Core->getFriendList()->FindFriend(friendId)
+[23:51:38] <Diadlo> FindFriend is not related with c-toxcore
+[23:51:59] <Diadlo> It shouldn't call c-toxcore functions, etc.
+[23:55:06] <Diadlo> sudden6: Do you understand me now?
+[23:56:13] <_sudden6_> Diadlo: see http://imgur.com/a/A3Vx3
+[23:56:50] <_sudden6_> same would be for groups
+[23:57:45] <Diadlo> Ok. I think it's good enough
+[23:58:22] <_sudden6_> notice I removed all getFriendXXX() style functions from core
+[23:58:33] <_sudden6_> all this should be represented by Friend
+[23:58:44] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[23:59:29] <Diadlo> _sudden6_: Logically :)
+[23:59:47] <_sudden6_> now the only thing I don't know how to do is, how can we make it that only Core can set ie FriendPk, FriendName...
