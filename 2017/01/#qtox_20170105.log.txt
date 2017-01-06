@@ -1,0 +1,326 @@
+[00:00:43] <_sudden6_> and the other thing is, how can we extend Friend, that it can for example hold an Alias?
+[00:00:59] <_sudden6_> because that's not a thing in c-toxcore
+[00:01:37] <Diadlo> Core store list<Friend> friendlist
+[00:01:42] <Diadlo> *should store
+[00:02:16] <Diadlo> And we can get an access through core->getFriendList()
+[00:02:51] <Diadlo> About alias -- good question
+[00:03:11] <_sudden6_> mhm, but can we make it so, that everything besides Core only has read access?
+[00:03:21] <_sudden6_> or is that impossible with C++?
+[00:03:45] <Diadlo> Return all by const
+[00:04:01] <Diadlo> const list<const Friend&> getFriendList()
+[00:04:19] <_sudden6_> ah :)
+[00:04:20] <Diadlo> Forgot one &
+[00:06:14] <_sudden6_> ok, I think the overal direction is clear, I'll refine this tomorrow and upload it to GH
+[00:06:47] <Diadlo> Do you have an idea how resolve problem with extending?
+[00:07:13] *** Joins: sudden6 (~anonymous@ )
+[00:07:19] <_sudden6_> not really
+[00:07:27] <Diadlo> We can create extra layer
+[00:07:35] <_sudden6_> Create another class that holds a pointer to Friend?
+[00:07:37] <Diadlo> ToxCore -> Core -> qTox
+[00:07:52] <Diadlo> ToxCore have list<Friend>
+[00:08:03] <Diadlo> Core have list<qFriend>
+[00:08:19] <Diadlo> Where qFriend has an alias
+[00:08:39] <Diadlo> But I'm not sure
+[00:08:56] <Diadlo> I will think about it\
+[00:09:00] <Diadlo> Good night
+[00:09:01] <_sudden6_> I think it would be better to create qFriend with a pointer to Friend
+[00:09:10] <_sudden6_> ok, night :)
+[00:25:25] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 248 seconds)
+[00:31:48] *** Joins: MDrights (~MDrights@ )
+[01:07:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[01:08:06] *** Quits: x_ (~x@ ) (Ping timeout: 245 seconds)
+[01:08:06] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 245 seconds)
+[01:23:10] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[02:15:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[02:15:29] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[02:37:30] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[02:39:05] *** Joins: Emcy (~MC@ )
+[02:39:05] *** Quits: Emcy (~MC@ ) (Changing host)
+[02:39:05] *** Joins: Emcy (~MC@ )
+[02:48:16] *** Quits: Emcy (~MC@ ) (Quit: Leaving)
+[02:48:39] *** Joins: Emcy (~MC@ )
+[02:48:39] *** Quits: Emcy (~MC@ ) (Changing host)
+[02:48:39] *** Joins: Emcy (~MC@ )
+[03:05:21] *** Quits: NeaN (~elouin@ ) (*.net *.split)
+[03:05:21] *** Quits: anoa (~anoa@ ) (*.net *.split)
+[03:05:22] *** Quits: e0f (~e0f@ ) (*.net *.split)
+[03:06:03] *** Joins: e0f (~e0f@ )
+[03:06:20] *** Joins: anoa (~anoa@ )
+[03:06:57] *** Joins: NeaN (~elouin@ )
+[05:49:42] *** Joins: MDrights (~MDrights@ )
+[06:58:39] *** Joins: dardevelin (~dardeveli@ )
+[08:06:59] *** Joins: f10__ (~flo@ )
+[08:10:14] *** Joins: f10 (~flo@ )
+[08:41:56] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[08:49:53] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[08:50:52] *** Joins: in1t3r_ (~LordShiva@ )
+[09:21:09] *** Joins: sudden6 (~anonymous@ )
+[09:27:58] *** Joins: zero-ghost (~0@ )
+[09:35:17] *** Joins: Yoshimo (~anything@ )
+[10:24:26] *** Joins: x_ (~x@ )
+[10:29:40] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[10:29:40] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[10:29:54] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vMsPq
+[10:29:54] -qtox-git-spam- qTox/master 0e4cff8 sudden6: fix(avatar): wrong conversion of own ToxId...
+[10:39:26] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[10:42:47] *** Joins: MDrights (~MDrights@ )
+[10:43:00] -GitHub2- [qtox-updater-tools] zetok created master (+1 new commit): https://git.io/vMsXu
+[10:43:00] -GitHub2- qtox-updater-tools/master a0e1523 Zetok Zalbavar: feat: Initial commit with `qtox-updater-sign` added...
+[10:47:45] -GitHub179- [qtox-updater-tools] zetok force-pushed master from a0e1523 to acd3f0f: https://git.io/vMsXX
+[10:47:45] -GitHub179- qtox-updater-tools/master acd3f0f Zetok Zalbavar: feat: Initial commit with `qtox-updater-sign` added...
+[10:54:03] -GitHub138- [qtox-updater-tools] zetok opened pull request #1: chore(README): add travis build status badge to README.md (master...readme) https://git.io/vMs1Z
+[11:12:53] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 240 seconds)
+[11:42:04] *** Joins: MDrights (~MDrights@ )
+[11:54:50] *** Joins: Yoshimo (~anything@ )
+[11:55:44] *** Quits: mva (znc@ ) (*.net *.split)
+[11:55:45] *** Quits: Curlybear (~Curlybear@ ) (*.net *.split)
+[11:55:45] *** Quits: arza (arza@ ) (*.net *.split)
+[11:55:53] *** Joins: arza- (~arza@ )
+[11:55:55] *** Quits: arza- (~arza@ ) (Changing host)
+[11:55:55] *** Joins: arza- (~arza@ )
+[11:56:28] *** Quits: in1t3r_ (~LordShiva@ ) (Excess Flood)
+[11:56:52] *** Joins: mva (znc@ )
+[11:58:04] *** arza- is now known as arza
+[12:00:09] *** Joins: f10__ (~flo@ )
+[12:00:37] *** Joins: f10 (~flo@ )
+[12:14:22] *** Joins: in1t3r_ (~LordShiva@ )
+[12:27:30] *** Joins: _sudden6_ (~anonymous@ )
+[12:40:55] -qtox-git-spam- [qTox] zetok closed pull request #4047: chore(tools): add a script for creating and signing release tarballs (master...chore-tarball-sign) https://git.io/vMsFV
+[12:41:26] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 245 seconds)
+[12:45:56] *** Joins: Achylles (~Achylles@ )
+[13:38:32] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:39:26] *** Joins: cisc (~cisc@ )
+[13:57:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[14:03:27] *** Joins: cenysor (~cenysor@ )
+[14:04:47] *** Joins: MDrights (~MDrights@ )
+[14:11:15] *** Joins: sudden6 (~anonymous@ )
+[14:36:54] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:56:35] <_sudden6_> Hi Diadlo, I went ahead and drew a fancy diagram of Core+surroundings
+[14:57:01] <_sudden6_> http://imgur.com/a/I2gHe
+[14:57:24] <_sudden6_> and I think we're ~fucked xD
+[14:59:07] <sudden6> zetok: you're also invited to take a look of course
+[15:15:47] *** Quits: in1t3r_ (~LordShiva@ ) (Excess Flood)
+[15:16:14] *** Joins: in1t3r_ (~LordShiva@ )
+[15:19:59] <zetok> https://qtox.github.io/doxygen/classFriend.html ← a bit more to look at
+[15:23:37] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[15:26:38] *** Joins: f10__ (~flo@ )
+[15:29:11] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[15:38:07] <sudden6> zetok: that's an amazing display of unstructured programming :DD
+[15:38:29] <zetok> Always inspiring.
+[15:39:13] <sudden6> what do you think of the stuff i did?
+[15:40:30] <zetok> >ToxId → publicKey → QString
+[15:40:32] <zetok> hmm.
+[15:41:50] <zetok> sudden6: that would be the next step for refactoring?
+[15:45:49] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[15:46:19] <zetok> sudden6: regarding ToxPk, that's a step in the right direction; regarding diagram, I'm don't know what it actually shows
+[15:47:20] *** Joins: f10__ (~flo@ )
+[15:48:28] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[15:49:57] *** Joins: f10__ (~flo@ )
+[16:08:31] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 245 seconds)
+[16:10:49] <sudden6> zetok: the diagram shows the public interface that's accessible outside of Core, minus all the Signal-Slot stuff of Qt
+[16:11:37] <sudden6> the next step, would be to decide wether we start fresh and build qTox2 or how to divide the work so we can merge it on the fly
+[16:12:14] <zetok> that decision depends on the question what is achievable
+[16:12:46] <sudden6> it's a hard question I agree
+[16:12:57] <zetok> not really
+[16:13:17] <sudden6> ??
+[16:14:26] <zetok> $resources, $properties_to_uphold, $end_result
+[16:16:23] <sudden6> ressources are hard to plan in our case
+[16:16:27] <zetok> right now there are not enough of "resources" to make qTox2 while upholding property of something that works
+[16:16:41] <sudden6> mhm
+[16:17:09] <sudden6> but refactoring on the fly will also bind lots of resources, for long periods of time
+[16:17:16] <sudden6> (my guess)
+[16:17:27] <zetok> ~yeah
+[16:17:40] <zetok> I mean
+[16:18:19] <zetok> with how things are being done currently, things would go slow
+[16:18:43] <sudden6> what would you change to speed it up?
+[16:19:14] <zetok> awareness
+[16:19:47] <zetok> i.e. there's currently a pattern where people forget about the PRs they've made/are reviewing
+[16:19:57] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[16:20:14] <zetok> which leads to a situation where things are stalled for no good reason
+[16:21:25] *** Joins: f10__ (~flo@ )
+[16:21:25] <sudden6> mhm, I think the rules here are very strict and slow stuff down
+[16:21:36] <zetok> that too
+[16:21:39] <sudden6> for example all the rebasing
+[16:22:15] <zetok> um?
+[16:23:04] <sudden6> if I have >1 PR open, i have to 1. get it reviewed, 2. pass travis, 3 merge it and repeat that with the second PR
+[16:24:31] <sudden6> I mean, a PR review is always good and Travis as a very good thing, but in combination with the rebasing it increases the work by a lot
+[16:25:07] <zetok> we can switch to `:lgtm_strong:` by default, like it's done in TokTok
+[16:25:46] <sudden6> also if I rebased a PR and don't have time to wait + merge, it's very possible some other PR got merged and the work was useless
+[16:26:17] <zetok> sleep && gmq $branch
+[16:27:12] <zetok> 1 additional command for rebasing
+[16:27:26] <zetok> and on top of that, you can put it in a loop
+[16:27:52] <zetok> e.g. `loop rebase-my-prs && sleep 1h && gmq $branch`
+[16:28:15] <zetok> or, you could just make it a single function
+[16:28:26] <zetok> `lgtm $branch`
+[16:29:10] <zetok> ↑ note that the loop would stop if rebasing would fail
+[16:29:21] <zetok> perhaps s/1h/30m/
+[16:30:51] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[16:31:47] <sudden6> yeah, but during this time I can't work on the repo, because it's blocked by the program
+[16:32:04] *** Joins: f10__ (~flo@ )
+[16:32:07] <zetok> right
+[16:32:17] <sudden6> see, I don't think there are no solution to this, but the current ones are unergonomic
+[16:33:17] <zetok> um, by throwing in a single `cp -a && cd` in there you'd get a workable repo
+[16:35:07] <sudden6> maybe we should create a script like, merge-pr.sh for that
+[16:35:18] <zetok> https://gist.github.com/zetok/75d0f1cee17dfb8a5b39a584385db255
+[16:36:42] <sudden6> you should really make your scripts public somewhere, I think they'd be helpful for many
+[16:37:41] <sudden6> btt, do you have any other ideas how to speadup the development process?
+[16:38:21] <zetok> by removing GPG-signatures requirement from commits
+[16:38:47] <zetok> this way one could use `merge & rebase` button on gh
+[16:38:58] <zetok> alternatively, one could use mergebot like Rust does
+[16:39:26] <zetok> i.e. you write just `r+` and bot takes care of merging the PR
+[16:40:39] <sudden6> yeah, but that'd be a pretty big security throwback :/
+[16:40:47] * sudden6 doesn't like it
+[16:41:22] <zetok> ok, then "emulating" mergebot locally
+[16:42:00] *** Joins: Achylles (~Achylles@ )
+[16:45:48] <zetok> sudden6: it'll depend on gopull
+[16:53:27] <sudden6> better than nothing, I think
+[16:53:51] <sudden6> but can't this be done with the bash snippet you wrote?
+[17:00:50] <zetok> not really
+[17:01:07] <zetok> I mean, it can
+[17:01:36] <zetok> brainfart :|
+[17:08:47] *** Joins: pcre (~quassel@ )
+[17:08:47] *** Quits: pcre (~quassel@ ) (Client Quit)
+[17:43:14] *** Joins: pcre (~quassel@ )
+[17:45:49] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[17:48:06] *** Joins: f10__ (~flo@ )
+[18:03:31] *** Quits: e0f (~e0f@ ) (Changing host)
+[18:03:31] *** Joins: e0f (~e0f@ )
+[19:09:35] -qtox-git-spam- [qTox] sudden6 opened pull request #4053: fix(icons): install icons for linux (master...fix4052) https://git.io/vMGDF
+[19:20:26] *** Joins: reBrain (~quassel@ )
+[19:28:36] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 258 seconds)
+[19:31:25] *** Joins: Yoshimo (~anything@ )
+[19:41:35] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[19:41:53] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[19:44:52] *** Quits: Achylles (~Achylles@ ) (Quit: Leaving)
+[19:45:18] *** Joins: bennabiy (~bennabiy@ )
+[19:51:20] *** Joins: Yoshimo (~anything@ )
+[19:53:39] <zetok> sudden6: we're switching to `lgtm_strong` by default, right?
+[19:55:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[19:58:25] -GitHub63- [qtox-updater-tools] zetok pushed 1 new commit to master: https://git.io/vMGdh
+[19:58:25] -GitHub63- qtox-updater-tools/master d873b11 Zetok Zalbavar: chore(README): add travis build status badge to README.md
+[19:58:27] -GitHub173- [qtox-updater-tools] zetok closed pull request #1: chore(README): add travis build status badge to README.md (master...readme) https://git.io/vMs1Z
+[20:02:53] *** Quits: koshii (~w@ ) (Quit: ZNC - http://znc.in)
+[20:06:14] -GitHub51- [qtox-updater-tools] zetok opened pull request #2: feat: add rust version of qtox-updater-genkeys (master...genkeys) https://git.io/vMGbO
+[20:15:21] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[20:18:59] -qtox-git-spam- [qTox] sudden6 closed pull request #4053: fix(icons): install icons for linux (master...fix4052) https://git.io/vMGDF
+[20:26:22] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 265 seconds)
+[20:26:51] *** Joins: MiokIry (~Miok@ )
+[20:27:22] *** Joins: koshii (~w@ )
+[20:28:21] *** Joins: f10__ (~flo@ )
+[20:38:18] *** Joins: helios21 (~quassel@ )
+[21:09:28] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:26:17] *** oranges is now known as zero-two
+[21:26:47] *** zero-two is now known as helen
+[21:39:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:49:33] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:49:39] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[22:02:37] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[22:03:57] *** Joins: f10__ (~flo@ )
+[22:08:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[22:09:29] <sudden6> zetok: yeah, I think this will improve things
+[22:11:24] <zetok> sudden6: ok, default switched to `lgtm_strong`
+[22:11:30] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 258 seconds)
+[22:11:34] <sudden6> thx :)
+[22:11:36] *** Joins: f10__ (~flo@ )
+[22:12:34] <sudden6> Diadlo: did you have time to take a look at my masterous UML skills? ;P
+[22:12:42] <iphy> zetok: good call
+[22:12:51] <iphy> grayhatter has started explicitly :lgtm:'ing things
+[22:13:00] <iphy> because he's against lgtm_strong
+[22:13:18] <iphy> result: I can't merge two things that touch independent parts of the same file
+[22:13:44] <zetok> well
+[22:13:54] <zetok> I also don't like lgtm_strong
+[22:14:04] <zetok> but your point about trusting people is valid
+[22:14:39] <iphy> the person merging it should take a quick look to see if the PR needs another round of review
+[22:15:02] <iphy> shit happens anyway
+[22:15:08] <iphy> we broke osx compatibility on toxcore today
+[22:15:15] <iphy> and unbroke it just now
+[22:15:46] *** Joins: _sudden6_ (~anonymous@ )
+[22:20:44] <Diadlo> sudden6: Not today. But you can publish it
+[22:26:18] <_moep_> hi
+[22:27:56] *** Joins: bashrc (~motters@ )
+[22:28:18] <zetok> hello _moep_
+[22:31:26] <Diadlo> Good night everyone
+[22:32:57] <zetok> good night :)
+[22:36:54] * helios21 waves hello
+[22:37:11] <helios21> zetok: sorry, [qTox/qTox] segmentation fault on startup after showing profile (main) window (#4055) is not solved
+[22:37:36] <helios21> was my mistake. I just opened uTox profile with it and it had no password. Setting a password => crash
+[22:37:47] <zetok> huh
+[22:38:30] <helios21> I have no idea whats going on there, but I spend 3 hours in a row on all of this, and now just installed utox in order to be able to use tox again
+[22:39:28] <zetok> tomorrow I'll see if I can reproduce
+[22:40:09] <helios21> I will add libssl versions to bug report
+[22:40:43] <zetok> actually, I probably could try to reproduce right now
+[22:42:04] <helios21> martin@merkaba:~/Kommunikation/Tox/qtox> ldd qtox | grep ssl
+[22:42:05] <helios21> martin@merkaba:~/Kommunikation/Tox/qtox#1>
+[22:42:08] <helios21> huh?
+[22:43:25] <helios21> ./build/.libs/ of toxcore also do not dynamically link libssl
+[22:43:31] <zetok> yeah
+[22:43:31] <helios21> is it statically linked?
+[22:43:33] <zetok> no
+[22:43:48] <zetok> qTox doesn't link against openssl directly
+[22:43:53] <helios21> hmmm.
+[22:43:55] <zetok> it links against sqlcipher
+[22:43:58] <helios21> I see
+[22:44:02] <zetok> which then links against openssl
+[22:44:19] <zetok> it was supposed to crash when setting password?
+[22:45:01] <zetok> if so, I can't reproduce
+[22:45:14] <zetok> and I also don't have the errors about the db thing
+[22:45:38] <zetok> I don't even have openssl on my system though, so.
+[22:45:47] <helios21> Depends: libc6 (>= 2.14), libssl1.1 (>= 1.1.0)
+[22:46:07] <helios21> this is depends of libsqlcipher package
+[22:46:18] <zetok> version 3.2 ?
+[22:46:55] <helios21> merkaba:~> dpkg -l | grep libssl1.1 | cut -c-72
+[22:46:55] <helios21> ii  libssl1.1:amd64                               1.1.0c-2              
+[22:46:55] <helios21> merkaba:~> rmadison libssl1.1 | cut -c1-72     
+[22:46:55] <helios21> libssl1.1  | 1.1.0c-2      | testing    | amd64, arm64, armel, armhf, i3
+[22:46:55] <helios21> libssl1.1  | 1.1.0c-2      | unstable   | amd64, arm64, armel, armhf, hu
+[22:47:14] <zetok> of libsqlcipher
+[22:47:30] <helios21> 3.2.0-2
+[22:48:16] <zetok> that seems old, if not outdated?
+[22:48:32] <zetok> e.g. Gentoo doesn't even have 3.2 anymore
+[22:48:44] <zetok> there's only 3.3 in stable, and 3.4 in testing
+[22:50:12] <helios21> https://github.com/qTox/qTox/issues/4054#issuecomment-270780708
+[22:50:48] <helios21> nothing newer available in Debian:
+[22:50:50] <helios21> ~> rmadison libsqlcipher0 | cut -c1-72
+[22:50:50] <helios21> libsqlcipher0 | 3.2.0-1.1~bpo80+1 | jessie-backports | amd64, arm64, arm
+[22:50:50] <helios21> libsqlcipher0 | 3.2.0-2           | testing          | amd64, arm64, arm
+[22:50:50] <helios21> libsqlcipher0 | 3.2.0-2           | unstable         | amd64, arm64, arm
+[22:50:57] <helios21> nothing newer in Debian experimental
+[22:51:26] <zetok> yeah, debian tends to be outdated
+[22:52:16] <helios21> https://bugs.debian.org/libsqlcipher0 => shows no known bug, but well
+[22:52:46] <helios21> https://tracker.debian.org/pkg/sqlcipher => but well yeah, its outdated
+[22:54:20] <helios21> hmmm, maybe its still some distro issue, as there is an ongoing transition related to ssl1.1: https://release.debian.org/transitions/html/ssl1.1.html
+[22:54:48] <helios21> but as libsqlcipher already depends on libssl1.1 it should have already been transitioned
+[22:54:59] <zetok> sqlcipher is in green though?
+[22:55:29] <helios21> I do not find it at all in the table
+[22:55:56] <zetok>  /sqlcipher
+[22:56:43] <helios21> I only find it in this line
+[22:56:45] <helios21> readline7 through amanda, bobcat, cardpeek, edbrowse, freeradius, glusterfs, lnav, profanity, python2.7, python3.5, slurm-llnl, sqlcipher, tarantool, virtuoso-opensource, wpa, xmms2, yuma123
+[22:58:02] <helios21> https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=827061 <= release transition bug doesn´t mention libsqlcipher
+[22:59:16] <helios21> anyway... it may be a distro issue as qtox worked before, but I am not sure about it
+[22:59:41] <helios21> I might need to manually compile libsqlcipher to verify, but this is getting out of hand.
+[23:00:08] <helios21> So I may just use utox for now or well qtox with that password less profile that utox created
+[23:00:46] <helios21> utox doesn´t seem to use sqlciper, but also not libssl
+[23:00:49] <helios21> merkaba:~> ldd /usr/bin/utox | grep ssl
+[23:00:49] <helios21> merkaba:~#1> ldd /usr/bin/utox | grep sqlcipher
+[23:01:06] <helen> use toxic
+[23:02:24] <zetok> helen: `bootstrap.sh` can compile & install sqlcipher
+[23:02:29] <zetok> helios21: ↑
+[23:02:34] <zetok> tabfail
+[23:02:43] <helen> I forgive you
+[23:03:06] <helios21> its time for bed for me...
+[23:03:30] <zetok> good night :)
+[23:04:05] <helios21> I could report a debian bug and refer to the github issue and copy one of the backtraces there, that might clear up whether thats an Debian related issue
+[23:09:38] <helios21> hmmm, trying bootstrap.sh but likely will report tomorrow
+[23:14:10] <helios21> https://paste.kde.org/pjkqcetzm
+[23:14:26] <helios21> sqlcipher0 does´nt compile out of the box on my Debian Sid machine
+[23:15:13] <helios21> okay, thats it for today...
+[23:15:27] <helios21> hope some time to just have qtox as standard package in Debian
+[23:15:29] <helios21> :)
+[23:15:31] <helios21> Goodnight
+[23:17:43] <helios21> and thx for your help/answers to my reports
+[23:19:49] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 248 seconds)
+[23:27:02] *** Joins: MiokIry_ (~Miok@ )
+[23:28:21] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 248 seconds)
+[23:48:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[23:48:07] *** Joins: DaSpirit (~DaSpirit@ )
+[23:59:57] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
