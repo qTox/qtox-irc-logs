@@ -1,0 +1,384 @@
+[00:29:19] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 246 seconds)
+[01:11:51] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[01:13:52] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[01:13:52] *** Quits: sockspls (~sockspls@ ) (*.net *.split)
+[01:13:53] *** Quits: helen (oranges@ ) (*.net *.split)
+[01:13:54] *** Quits: qTox-syncbot (~qTox-sync@ ) (*.net *.split)
+[01:13:59] *** Quits: DiCE1904 (~textual@ ) (*.net *.split)
+[01:14:01] *** Quits: Darky (~Darky@ ) (*.net *.split)
+[01:14:02] *** Quits: robinli (robinli@ ) (*.net *.split)
+[01:14:02] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[01:14:02] *** Quits: bkidwell (~bkidwell@ ) (*.net *.split)
+[01:14:04] *** Joins: helen (oranges@ )
+[01:14:10] *** Joins: sockspls (~sockspls@ )
+[01:14:16] *** Joins: robinli (~robinli@ )
+[01:14:29] *** Joins: bkidwell (~bkidwell@ )
+[01:15:41] *** Quits: robinli (~robinli@ ) (Changing host)
+[01:15:41] *** Joins: robinli (~robinli@ )
+[01:16:11] *** Joins: dongo (~dongo@ )
+[01:16:54] *** Joins: DiCE1904 (~textual@ )
+[01:21:44] *** Joins: iphy (uid67735@ )
+[02:00:57] <koshii> Does anyone here experience an issue with responsiveness on macOS/OSX?
+[02:01:05] <koshii> Like, typing is really slow, sometimes doesn't take input at all
+[02:19:33] *** Quits: cisc (~cisc@ ) (Ping timeout: 248 seconds)
+[02:26:54] *** Joins: dardevelin (~dardeveli@ )
+[02:47:51] *** Joins: cisc (~cisc@ )
+[03:00:16] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[03:04:07] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:25:47] *** helen is now known as citril__
+[04:43:09] *** Joins: MDrights (~MDrights@ )
+[05:25:45] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[06:42:40] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Lost terminal)
+[06:47:45] *** Joins: Chiitoo (~Chiitoo@ )
+[07:13:14] *** Joins: reBrain (~quassel@ )
+[07:15:27] *** Quits: x_ (~x@ ) (Ping timeout: 272 seconds)
+[07:18:09] *** Joins: f10__ (~flo@ )
+[07:20:14] *** Joins: LittleVulpix (~Miranda@ )
+[07:51:14] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[08:22:36] <zetok> koshii: https://github.com/qTox/qTox/issues/3158
+[08:31:34] *** Quits: LittleVulpix (~Miranda@ ) (*.net *.split)
+[08:31:35] *** Quits: bkidwell (~bkidwell@ ) (*.net *.split)
+[08:31:37] *** Quits: f10__ (~flo@ ) (*.net *.split)
+[08:31:37] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[08:31:37] *** Quits: robinli (~robinli@ ) (*.net *.split)
+[08:31:38] *** Quits: sockspls (~sockspls@ ) (*.net *.split)
+[08:31:38] *** Quits: mva (znc@ ) (*.net *.split)
+[08:31:38] *** Quits: arza (~arza@ ) (*.net *.split)
+[08:31:38] *** Quits: anoa (~anoa@ ) (*.net *.split)
+[08:31:40] *** Quits: Mikaela[m] (cibliamatr@ ) (*.net *.split)
+[08:31:40] *** Quits: Chiitoo (~Chiitoo@ ) (*.net *.split)
+[08:31:41] *** Quits: in1t3r_ (~LordShiva@ ) (*.net *.split)
+[08:31:42] *** Quits: Emcy (~MC@ ) (*.net *.split)
+[08:31:42] *** Quits: jjuran (~jjuran@ ) (*.net *.split)
+[08:31:42] *** Quits: Impyy (~impy@ ) (*.net *.split)
+[08:31:45] *** Quits: albel727 (~albel727@ ) (*.net *.split)
+[08:31:45] *** Quits: _moep_ (~bla@ ) (*.net *.split)
+[08:31:45] *** Quits: cisc (~cisc@ ) (*.net *.split)
+[08:31:45] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[08:31:47] *** Quits: nurupo (~nurupo.ga@ ) (*.net *.split)
+[08:31:47] *** Quits: GGMethos (~methos@ ) (*.net *.split)
+[08:31:50] *** Quits: koshii (~w@ ) (*.net *.split)
+[08:31:50] *** Quits: bennabiy (~bennabiy@ ) (*.net *.split)
+[08:31:50] *** Quits: NeaN (~elouin@ ) (*.net *.split)
+[08:31:51] *** Quits: Diadlo (~diadlo@ ) (*.net *.split)
+[08:31:52] *** Quits: dardevelin (~dardeveli@ ) (*.net *.split)
+[08:31:52] *** Quits: MiokIry_ (~Miok@ ) (*.net *.split)
+[08:31:53] *** Quits: e0f (~e0f@ ) (*.net *.split)
+[08:31:54] *** Quits: DiCE1904 (~textual@ ) (*.net *.split)
+[08:31:54] *** Quits: citril__ (oranges@ ) (*.net *.split)
+[08:31:55] *** Quits: dan- (~d@ ) (*.net *.split)
+[08:31:55] *** Quits: parasite_ (~parasite@ ) (*.net *.split)
+[08:31:55] *** Quits: tux3 (~tux@ ) (*.net *.split)
+[08:37:35] *** Joins: Emcy (~MC@ )
+[08:37:35] *** Joins: LittleVulpix (~Miranda@ )
+[08:37:35] *** Joins: f10__ (~flo@ )
+[08:37:35] *** Joins: cisc (~cisc@ )
+[08:37:35] *** Joins: dardevelin (~dardeveli@ )
+[08:37:35] *** Joins: iphy (uid67735@ )
+[08:37:35] *** Joins: DiCE1904 (~textual@ )
+[08:37:35] *** Joins: dongo (~dongo@ )
+[08:37:35] *** Joins: bkidwell (~bkidwell@ )
+[08:37:35] *** Joins: robinli (~robinli@ )
+[08:37:35] *** Joins: sockspls (~sockspls@ )
+[08:37:35] *** Joins: citril__ (oranges@ )
+[08:37:35] *** Joins: MiokIry_ (~Miok@ )
+[08:37:35] *** Joins: koshii (~w@ )
+[08:37:35] *** Joins: bennabiy (~bennabiy@ )
+[08:37:35] *** Joins: in1t3r_ (~LordShiva@ )
+[08:37:35] *** Joins: mva (znc@ )
+[08:37:35] *** Joins: arza (~arza@ )
+[08:37:35] *** Joins: NeaN (~elouin@ )
+[08:37:35] *** Joins: anoa (~anoa@ )
+[08:37:35] *** Joins: e0f (~e0f@ )
+[08:37:35] *** Joins: dan- (~d@ )
+[08:37:35] *** Joins: Diadlo (~diadlo@ )
+[08:37:35] *** Joins: Impyy (~impy@ )
+[08:37:35] *** Joins: nurupo (~nurupo.ga@ )
+[08:37:35] *** Joins: Mikaela[m] (cibliamatr@ )
+[08:37:35] *** Joins: _moep_ (~bla@ )
+[08:37:35] *** Joins: parasite_ (~parasite@ )
+[08:37:35] *** Joins: albel727 (~albel727@ )
+[08:37:35] *** Joins: tux3 (~tux@ )
+[08:37:35] *** Joins: GGMethos (~methos@ )
+[08:37:35] *** adams.freenode.net sets mode: +o tux3   
+[08:39:16] *** Emcy is now known as Guest91529
+[08:39:51] *** Joins: Chiitoo (~Chiitoo@ )
+[09:12:37] *** Joins: Yoshimo (~anything@ )
+[09:27:07] <LittleVulpix> Thanks for releasing 1.7 for windows (finally) :p now I can tell a friend to install that. He uses utox and it literally crashes all the time. Even when chatting :p Always when sending a file etc. Interesting situation tbh, both of the clients being borked on windows temporarily :p
+[09:50:23] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 256 seconds)
+[10:04:13] *** Joins: Darky (~Darky@ )
+[10:13:36] *** Joins: x_ (~x@ )
+[10:14:41] <helios21> zetok: I will try something else, I will try downgrading libsqlcipher0 package to 3.2.0-1.1, i.e. before its maintainer adapter it for openssl 1.1 => https://tracker.debian.org/media/packages/s/sqlcipher/changelog-3.2.0-2
+[10:15:46] <helios21> he did so on 23-12-2016 and that may have just be around the time when qTox started crashing. I will try to receive an older package from snapshot.debian.org
+[10:23:39] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[10:24:20] *** Joins: f10__ (~flo@ )
+[10:42:43] *** Mikaela[m] is now known as Ciblia
+[10:48:25] <helios21> okay, thats it
+[10:52:25] <helios21> zetok: downgrading sqlcipher0 package to http://snapshot.debian.org/archive/debian/20161011T120354Z/pool/main/s/sqlcipher/libsqlcipher0_3.2.0-1.1%2Bb2_amd64.deb
+[10:53:35] <helios21> fixes the issue, upgrading  segmentation fault on startup #4054 
+[10:58:10] <zetok> ok, so it's a debian issue
+[10:58:38] <helios21> yes, reporting there as well and adding link once I got back URL of debian bug report
+[10:58:51] <zetok> helios21: thanks :)
+[11:03:41] <zetok> ><helios21> hope some time to just have qtox as standard package in Debian
+[11:03:48] <zetok> regarding that, it wouldn't be a good idea
+[11:04:30] <zetok> at least not if it was included on debian stable
+[11:05:09] <helios21> you´d fear it would become to outdated and not receive security fixes? (maintainers usually backport security fixes if its doable easily enough)
+[11:05:35] <zetok> that's a part of the problem
+[11:05:46] <zetok> the more important thing is whether it would work at all
+[11:05:56] <helios21> for borgbackup or wordpress which are quite actively developers there are backports of recent versions, but thats something someone would have to do
+[11:06:07] <zetok> given debian politics, it would sooner or later end up being broken
+[11:06:29] <helios21> zetok: please remember I am using Debian Sid aka unstable, I am pretty sure with Debian stable libsqlcipher0 just works okay
+[11:06:51] <zetok> it's not about dependencies
+[11:06:57] <zetok> (and it works on debian stable)
+[11:07:18] <zetok> it's about debian politics that explicitly prohibit changing software
+[11:07:57] <zetok> i.e. qTox/$any_other_client depend on tox network to work
+[11:08:26] <zetok> the very moment there will be a breaking protocol change, things will ~stop working on debian
+[11:08:49] <zetok> (the "moment" might take a week or 2 to take effect, but still)
+[11:09:03] <helios21> zetok: I think I would also accept an official upstream repo, I am just somewhat vary of open build service ones, i.e. I would prefer https://pkg.tox.chat/debian (repo that contains uTox) over  http://download.opensuse.org/repositories/home:/antonbatenev:/tox/Debian_Stretch/ (for qTox)
+[11:09:32] <zetok> tox.chat has a long history of messing things up for clients
+[11:09:48] <helios21> zetok: well if tox protocol is that unstable / in flux at the moment it might be too early for an official Debian package
+[11:09:57] <helios21> zetok: hmm okay
+[11:10:16] <helios21> well, its not Anton who messed something up there, so… 
+[11:10:39] <helios21> (and I am still using his repo)
+[11:10:44] <helios21> with qtox-alpha package for now
+[11:11:45] <zetok> helios21: https://qtox.github.io/blog/2016/08/10/Hello-World.html ← you might be interested in reading :)
+[11:12:01] <helios21> https://bugs.debian.org/850421
+[11:12:24] <helios21> https://github.com/qTox/qTox/issues/4054#issuecomment-270883481
+[11:12:57] <helios21> I was tempted to set bug report to grave, but as I didn´t test other apps using sqlcipher I am not sure whether other apps also crash
+[11:13:22] <helios21> I hope Hans-Christoph is one of the more responsive maintainers :)
+[11:15:28] <helios21> zetok: Ok, shall I remove tox.chat repo to avoid having mixed packages. I.e. does qtox repo also contain all the toxcore base packages? – hmm, does not seem to matter, appears that qtox is linked statically against toxcore libs
+[11:22:08] <helios21> regarding stability of Debian packages: They are usually pretty stable in Debian Stable. And things usually just work. But if an app depends on an upstream protocol that may change often in a incompatible way, then… its difficult to sustain one version for the support duration for Debian stable. Yet… at least for some packages Debian steps beyond the do not change version for stable policy, most notably firefox-esr. Once old Enterprise Service Release 
+[11:22:08] <helios21> becomes unsupported upstream, they just upgrade for stable. However they do so, cause its not viable to backport security fixes for such an complex application.
+[11:23:43] <helios21> (but I understand your concern and its good to raise it early. There have been a similar issue regarding official Owncloud packages, but for that it was that upstream didn´t support skipping major upstream versions on upgrade... like for example seafile does by providing version-to-version upgrade scripts)
+[11:24:09] <helios21> good enough of that, for now all is handled, lets hope Hans-Christoph will react soon
+[11:26:48] <helios21> zetok: added blog to my newsreader :)
+[11:27:50] <zetok> >(…) upstream didn´t support skipping major upstream versions on upgrade...
+[11:27:57] <zetok> btw, about upgrades in qTox
+[11:28:45] <zetok> it's preferable if one doesn't skip too many versions when upgrading, otherwise their history DB might end up being wiped out
+[11:29:13] <helios21> hmmm, okay, well I hope Anton will update qtox packages often enough.
+[11:29:55] <helios21> (and I still would like to have qTox as official Debian package at some point… maybe when Tox protocol matured enough to guarentee compatibility for a long enough time)
+[11:30:05] <zetok> qTox tries to maintain compatibility with past x minor versions released, but it's not tested well
+[11:30:41] <zetok> tox protocol will be mature in 20 years :D
+[11:30:48] <helios21> (its just that I like the apt install something => just works experience I usally have on Debian… often even on Debian Sid which I use as a kind of rolling distro for my laptop)
+[11:31:36] <helios21> zetok: Okay, well then I deal with that extra repo for now, as I think I don´t want to compile stuff from Git all the time… but well, maybe I even do that, I did so with parts of Plasma and KDE Frameworks using kdesrc-build some time ago
+[11:31:41] <zetok> btw, Arch & Gentoo have properly packaged qTox in "repos"
+[11:32:28] <helios21> I think I am not willing to switch distros for that reason… even tough I had some interest for Arch in the past. :)
+[11:33:28] <helios21> but sometimes I wonder whether Debian needs some more use of their volatile repo stuff, they have a volatile stuff for virus scanner signatures and other stuff that changes often… but I think its not used for whole applications so far.
+[11:33:59] <helios21> well… probably just providing qtox *only* via backports would work, cause there you can update versions during stable support time
+[11:34:24] <helios21> so if its not in stable, no one can install and outdated version accidentally
+[11:35:09] <zetok> yeah, providing only via backports is an idea
+[11:35:45] <helios21> but thats not easily possible within backport rules either... I think, cause the package must be in testing in order to be considerable for backports, yet, if its in testing, it will also be taken for stable, unless one finds  way to avoid that
+[11:35:47] <zetok> helios21: koshii was looking into that
+[11:36:03] <zetok> I see
+[11:36:08] <helios21> would make an interesting discussion on debian-backports mailing list
+[11:36:20] <helios21> https://backports.debian.org/FAQ/
+[11:36:29] <helios21> see Q about Mozilla products
+[11:37:17] <helios21> what I think is that Debian needs something like PPAs (and on Debconf 2015 and I think also after that there have been discussions to just provide that)
+[11:37:30] <helios21> but in a way thats suitable for Debian needs
+[11:39:25] <helios21> I may resubscribe to debian-devel (I left during heated systemd-discussions) and ask about the state for that and argue for the need of something that… I sure see that there are apps that do not fit well into current Debian rulings and I think it would be good to at least have something like PPAs for those, instead of relying on a service that is completely external to Debian infrastructure
+[11:39:42] <helios21> Should I decide to bring this up, I will give you a pointer to the discussion :)
+[11:40:25] <helios21> (BTW I do maintain an own Debian package and may be able to help a bit with packaging, but my little package (fio - flexible I/O tester) is no GUI app and GUI apps are more complicated usually)
+[11:42:24] <zetok> sounds good :)
+[11:43:13] <zetok> btw, have you looked into making a PR for the tox.pkg for newer qTox version?
+[11:43:24] <zetok> https://github.com/abbat/tox.pkg
+[11:44:09] <zetok> toxcore, qTox and Toxic would need to be bumped
+[11:46:29] *** Joins: MiokIry_ (~Miok@ )
+[11:46:29] <helios21> hmm, not yet.
+[11:47:39] <helios21> zetok: Maybe a temporary workaround would be to also build libsqlchiper0 into qTox repo itself… but for any serious consideration for Debian, one needs to split libraries into different packages, to me it appears all toxcore libs are just linked statically into qtox at the moment
+[11:48:14] <helios21> Hmmm, I never did a pull request before in Github, lets see.
+[11:49:11] <helios21> Hmm, I don´t get the github interface
+[11:49:28] <zetok> > (…) it appears all toxcore libs are just linked statically into qtox at the moment
+[11:49:33] <helios21> I.e. don´t know what branches to compare to what
+[11:49:56] <zetok> well, it works just fine without static linking – static linking is used only for convenience
+[11:50:44] <zetok> helios21: you click on fork → you clone your fork, make changes locally in a branch, push the branch to your fork, and you make a PR from that branch to "original" repo
+[11:51:08] <zetok> helios21: at the last step, github should show you a nice "make a PR" button
+[11:52:29] <helios21> zetok: yes, but in case it would ever be possible to have qTox either in backports… or in some kind of Debian PPA alike thing, I think it would be required to have split packages *and* use as much as possible from the distro, cause if you do not do this, you have to provide security support for anything you statically link into qTox, but well as its just packages that are not available in Debian anyway… but still in Debian split-packages is the way to go
+[11:53:31] <helios21> zetok: (fork) Well, I think thats too much for me at the moment, especially when looking at the nice sun outside
+[11:53:32] <Diadlo> zetok: Do you plan to create new qTox repo for tools?
+[11:53:58] <zetok> Diadlo: already did
+[11:54:12] <zetok> helios21: heh :D
+[11:54:54] <zetok> Diadlo: https://github.com/qTox/qtox-updater-tools
+[11:54:55] <Diadlo> zetok: I seen only qtox-updater-tools
+[11:54:59] <helios21> zetok: heh, I already spend ton of time into all of this :)
+[11:55:10] <zetok> Diadlo: oh, you mean whole tools/ dir?
+[11:55:16] <Diadlo> Yes
+[11:55:35] <Diadlo> What do you think about it?
+[11:55:51] <zetok> not sure
+[11:56:06] <Diadlo> Why?
+[11:59:30] <zetok> almost all tools are qTox-specific
+[11:59:43] <zetok> and there should be an easy way for everyone to use them
+[12:00:25] <zetok> putting them in a separate repo doesn't help with ease of use
+[12:00:37] <Diadlo> If someone can clone qTox repro he can clone qTox/tools repo too
+[12:00:50] <zetok> yes, but they can't use tools as easily
+[12:01:12] <Diadlo> ../tools/name instead of ./tools/name
+[12:01:17] <Diadlo> It's too hard
+[12:01:24] <zetok> a lot more bothersome
+[12:01:45] <Diadlo> IIRC git supports submodules
+[12:01:50] <Diadlo> Or something like this
+[12:01:52] <Diadlo> Right?
+[12:02:08] <Diadlo> Yes
+[12:02:11] <Diadlo> git submodule
+[12:02:28] <Diadlo> We can make tools submodule of qTox repo
+[12:02:38] <zetok> the downside to submodules is that we'd need to make "update tools submodule" commits ~every time tools get updated
+[12:02:55] <Diadlo> tools is not part of qTox
+[12:03:07] <zetok> no, but git submodule would be
+[12:03:37] <Diadlo> I think we should move tools out of qTox repo
+[12:04:01] <zetok> 1. update tools repo; 2. update qTox repo to point to newest tools submodule revision
+[12:04:32] <Diadlo> submodule was just suggestion
+[12:04:36] <zetok> ok, but why do they need to be moved out?
+[12:04:55] <Diadlo> Because it's not part of qTox
+[12:06:02] <Diadlo> IMO, of course
+[12:06:18] <zetok> it kinda is though
+[12:06:51] <zetok> i.e. the parts of tools that aren't needed for qTox development could (and probably should) be moved out
+[12:07:06] <zetok> things that are needed for development IMO shouldn't be moved out
+[12:07:16] <Diadlo> Ok
+[12:17:40] *** Joins: sudden6 (~anonymous@ )
+[12:24:34] *** Joins: _sudden6_ (~anonymous@ )
+[12:48:29] *** Joins: sandrorso (~sandro@ )
+[12:51:02] *** Quits: sandrorso (~sandro@ ) (Client Quit)
+[13:05:03] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 272 seconds)
+[14:11:45] *** Joins: Achylles (~Achylles@ )
+[14:26:10] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 246 seconds)
+[14:42:09] *** Joins: cenysor (~cenysor@ )
+[14:56:26] *** Joins: jjuran (~jjuran@ )
+[15:31:21] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 272 seconds)
+[15:46:33] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 272 seconds)
+[15:49:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[16:48:21] *** rysiek|pl is now known as wzjp2
+[16:48:38] *** wzjp2 is now known as rysiek|pl
+[16:55:23] *** Joins: MiokIry_ (~Miok@ )
+[17:31:23] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[17:32:51] *** Joins: f10__ (~flo@ )
+[17:36:31] *** Joins: _sudden6_ (~anonymous@ )
+[17:38:44] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[17:52:58] *** Joins: Yoshimo (~anything@ )
+[19:02:11] *** Quits: _sudden6_ (~anonymous@ ) (Ping timeout: 248 seconds)
+[19:03:31] *** Joins: Curlybear (~Curlybear@ )
+[20:01:44] *** Joins: _sudden6_ (~anonymous@ )
+[20:06:50] *** _sudden6_ is now known as sudden6
+[20:38:04] *** Joins: pcre (~quassel@ )
+[20:40:37] *** Quits: pcre (~quassel@ ) (Client Quit)
+[20:44:42] <Diadlo> zetok: Seems correct logs shown only in debug build
+[20:45:04] <Diadlo> Tomorrow I will try to read it more
+[20:45:20] <sudden6> Diadlo: this could be a qt option
+[20:45:39] <sudden6> IIRC when I introduced it I had to explicitely enable file numbers
+[20:45:44] <sudden6> *line numbers
+[20:46:18] <sudden6> DEFINES += QT_MESSAGELOGCONTEXT
+[20:46:28] <sudden6> Diadlo: ↑
+[20:46:29] <Diadlo> Ok. I will try it
+[20:52:03] <Diadlo> sudden6: Thanks. It works :)
+[20:52:07] <sudden6> np
+[20:52:27] <sudden6> Diadlo: maybe you should take a close look at the other DEFINE+= lines too
+[20:52:36] <Diadlo> Yep
+[20:57:29] *** Quits: DiCE1904 (~textual@ ) (Quit: Textual IRC Client: www.textualapp.com)
+[21:13:43] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[21:16:47] *** Joins: f10__ (~flo@ )
+[21:17:35] *** Joins: bennabiy (~bennabiy@ )
+[21:19:22] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 245 seconds)
+[21:20:01] *** Joins: in1t3r_ (~LordShiva@ )
+[21:20:40] *** Joins: DiCE1904 (~textual@ )
+[21:23:53] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[21:24:28] *** Joins: f10__ (~flo@ )
+[21:32:24] *** Quits: Guest91529 (~MC@ ) (Quit: Leaving)
+[21:32:42] *** Joins: Emcy (~MC@ )
+[21:32:42] *** Quits: Emcy (~MC@ ) (Changing host)
+[21:32:42] *** Joins: Emcy (~MC@ )
+[21:41:30] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:49:03] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:49:57] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[21:51:17] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[21:51:47] *** Joins: f10__ (~flo@ )
+[21:57:00] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:57:50] *** Joins: Emcy_ (~MC@ )
+[21:57:50] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[21:57:50] *** Joins: Emcy_ (~MC@ )
+[21:57:58] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[22:03:16] *** Joins: Emcy (~MC@ )
+[22:03:16] *** Quits: Emcy (~MC@ ) (Changing host)
+[22:03:16] *** Joins: Emcy (~MC@ )
+[22:04:32] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[22:05:37] <sudden6> Diadlo: I think I'm done with the design
+[22:05:38] <sudden6> http://imgur.com/a/zbSmE
+[22:08:46] <Diadlo> sudden6: Cool
+[22:09:04] <sudden6> btw, how should we proceed?
+[22:09:06] <Diadlo> Hm.. Why ToxId use QString to strore data
+[22:09:10] <Diadlo> ?
+[22:09:40] <sudden6> ugh, it seems I imported from an old revision
+[22:10:22] <Diadlo> Why you don't create git-repo for this?
+[22:10:36] <sudden6> that was my plan
+[22:10:48] <sudden6> I wanted to create something ~presentable at first
+[22:11:44] *** Joins: Emcy_ (~MC@ )
+[22:11:44] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[22:11:44] *** Joins: Emcy_ (~MC@ )
+[22:12:55] <sudden6> I'll create qTox/Planning
+[22:13:28] <sudden6> Diadlo: can you send me the link to your Markdown version of the plan?
+[22:13:34] <Diadlo> https://gist.github.com/Diadlo/108f5675848d7e0e51287792b657f3ea
+[22:13:50] <Diadlo> I waited this moment :D
+[22:14:45] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[22:16:21] <Diadlo> sudden6: Why FileList use uint32_t as key instead of ToxFriend?
+[22:16:40] <sudden6> probably a mistake^^
+[22:16:40] <Diadlo> It's alright. I'm just interested in
+[22:16:59] <Diadlo> I think it will works fine
+[22:17:15] <sudden6> I'm also not sure where to use *ToxFriend and where to use ToxFriend
+[22:17:29] <sudden6> ie when passing to a constructor
+[22:17:57] <Diadlo> s/ToxFriend/ToxFriend&/
+[22:18:07] <Diadlo> const ToxFriend& :)
+[22:18:13] <Diadlo> In most cases
+[22:19:15] <Diadlo> What do you think about swap ToxGroup and ToxId places?
+[22:19:47] <sudden6> good idea
+[22:20:42] <Diadlo> That's wonderful!
+[22:22:14] <Diadlo> Infinite can look at three things : As the fire burns, how water flows, and on UML diagram :)
+[22:22:46] <sudden6> You sound like someone who just found Nirvanna
+[22:23:28] <Diadlo> Exactly :)
+[22:26:13] <Diadlo> Why we use `timeoutTime` for call?
+[22:26:21] <Diadlo> ToxFriendCall
+[22:26:40] <Diadlo> I'm not sure, but I think toxcore provide some callback, when call is finished
+[22:26:57] <sudden6> at the moment it's used when a call fails because of network errors I think
+[22:27:01] <sudden6> basically a hack
+[22:27:17] <Diadlo> Ok
+[22:27:20] <Diadlo> We should test it
+[22:27:59] <Diadlo> It's not normal if we have a hack in plan 
+[22:28:07] <sudden6> this class diagramm is also missing all the signal slot stuff yet
+[22:28:14] <sudden6> agreed
+[22:28:31] <sudden6> the hacks allways appear by themself xD
+[22:30:08] <Diadlo> I can't find `addFriend` method
+[22:30:32] <Diadlo> Only `removeFriend`
+[22:30:41] *** Joins: bennabiy (~bennabiy@ )
+[22:30:53] <sudden6> ToxFriendList.sendFriendRequest
+[22:31:24] <Diadlo> Ok. Seems it's non-static
+[22:31:39] <Diadlo> Why?
+[22:31:41] <sudden6> I pushed the first version + source feel free to PR
+[22:31:46] <Diadlo> Ok
+[22:32:10] <Diadlo> Fix conflicts will be hard :/
+[22:32:15] <sudden6> [23:31] <Diadlo> Ok. Seems it's non-static <- I don't understand what you mean
+[22:32:34] <Diadlo> `sendFriendRequest` is non-static method
+[22:32:44] <Diadlo> Right?
+[22:33:13] <sudden6> um, it's called on ToxFriendList, so I'd say so
+[22:34:21] <sudden6> btw I think you can merge #4050
+[22:35:13] <Diadlo> sudden6: Yep. Thanks
+[22:35:14] <sudden6> for the diagram, I didn't pay a lot of attention to all the possibilities of UML, the only things I cared for are members and functions
+[22:35:27] <sudden6> the rest can still be wrong 
+[22:35:28] -qtox-git-spam- [qTox] Diadlo pushed 3 new commits to master: https://git.io/vMczL
+[22:35:28] -qtox-git-spam- qTox/master 4d806a3 Diadlo: refactor: Remove using getFriendWidget from FriendListWidget
+[22:35:28] -qtox-git-spam- qTox/master 7d1564e Diadlo: refactor: Remove using getFriendWidget from FriendWidget
+[22:35:28] -qtox-git-spam- qTox/master fcd8eed Diadlo: style: Fix style of a lot of pointers
+[22:35:37] <sudden6> but I think it gets the message across for now
+[22:36:01] <Diadlo> Who gets the message?
+[22:45:53] <Diadlo> zetok: It you are still there, test cmake PR, please
+[22:49:33] <zetok> Diadlo: works
+[22:50:25] <sudden6> Diadlo: you should get the message xD
+[22:51:03] <zetok> Diadlo: I'll look at it more tomorrow
+[22:51:16] <Diadlo> zetok: Ok
+[22:51:38] <Diadlo> sudden6: No. I haven't but I found the repo manually :)
+[22:52:12] <Diadlo> And... my umbrello crash, when I try to open the diagram :(
+[22:52:42] <sudden6> Diadlo: I think you missunderstood me, "Getting the message accross" is an english saying
+[22:54:09] <Diadlo> sudden6: Ok
+[23:02:40] *** Joins: Emcy (~MC@ )
+[23:02:40] *** Quits: Emcy (~MC@ ) (Changing host)
+[23:02:40] *** Joins: Emcy (~MC@ )
+[23:04:53] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[23:25:20] *** Joins: LittleVulpix (~Miranda@ )
+[23:26:22] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[23:26:41] *** Joins: f10__ (~flo@ )
+[23:35:09] *** Joins: DaSpirit (~DaSpirit@ )
+[23:47:44] *** Joins: Achylles (~Achylles@ )
