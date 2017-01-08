@@ -1,0 +1,231 @@
+[00:08:31] <Diadlo> sudden6: > linking still fails, although with a different error message
+[00:08:37] <Diadlo> sudden6: > different error message
+[00:08:58] <Diadlo> I don't change anything related with tox
+[00:09:15] <Diadlo> Can you check, do you install toxcore correct?
+[00:09:49] <sudden6> what should I check?
+[00:09:57] <Diadlo> IDK
+[00:10:05] <sudden6> I just did the normal cmake and make -j4 dance
+[00:10:38] <Diadlo> and make install ?
+[00:10:38] <sudden6> yes
+[00:10:42] <Diadlo> Do you specify correct prefix?
+[00:10:56] <sudden6> no prefix, default location
+[00:11:03] <Diadlo> :(
+[00:12:05] <sudden6> apparently everything is installed to /usr/local/lib/
+[00:12:51] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[00:13:12] *** Joins: f10__ (~flo@ )
+[00:13:50] <Diadlo> sudden6: find /usr/lib -name "libtox*"
+[00:14:29] <sudden6> nothing
+[00:14:49] <Diadlo> Oh.. /usr/local/lib -name "libtox*"
+[00:16:06] <sudden6> Diadlo: https://gist.github.com/sudden6/5ad47361d6889dd0eb1d848ada530d29
+[00:17:30] <Diadlo> sudden6: Do you have any ideas?)
+[00:18:03] <sudden6> nope
+[00:18:45] <sudden6> but I suspect something with cmake, because it works when I use qmake
+[00:20:39] <Diadlo> I have an idea
+[00:22:46] <Diadlo> Ok. It's wrong
+[00:25:12] <Diadlo> sudden6: Can you try TokTok/qTox ?
+[00:28:36] <sudden6> no problem there
+[00:29:06] <Diadlo> Hm...
+[00:31:03] <Diadlo> sudden6: Can you replace this lines https://github.com/TokTok/qTox/blob/master/cmake/Dependencies.cmake#L92:L94 on this https://github.com/Diadlo/qTox/blob/cmakemigration/cmake/Dependencies.cmake#L97:L98
+[00:31:04] <Diadlo> ?
+[00:31:15] <Diadlo> And try again
+[00:31:19] *** Joins: nehik (68eea902@ )
+[00:32:01] <nehik> I compiled and tested qTox with this PR https://github.com/qTox/qTox/pull/3976 and everything appears to work.
+[00:32:55] <Diadlo> Can you write it on github?
+[00:33:29] <nehik> Can do sir :)
+[00:33:37] <Diadlo> Also, do you use cross-platform compiling? Or you compile it on windows?
+[00:34:59] <nehik> mingw on win
+[00:37:32] *** Quits: nehik (68eea902@ ) (Quit: Page closed)
+[00:37:40] <Diadlo> Super. I'm not sure, but maybe you can help us with this? https://github.com/qTox/qTox/issues/3372
+[00:37:47] <Diadlo> Come on!
+[00:38:24] <Diadlo> sudden6: Any success?
+[00:38:34] <sudden6> compiling
+[00:39:58] <sudden6> no success
+[00:40:12] <sudden6> will go afk for now
+[00:40:18] <Diadlo> Perfecto
+[00:40:47] <Diadlo> `libtoxcore` doesn't works for you, `toxcore` doesn't works for zetok :/
+[00:41:11] <sudden6> The systems where it's not working are both openSUSE
+[00:41:19] <sudden6> maybe that's a hint
+[00:41:54] <Diadlo> s/hint/riddle/
+[00:42:17] <Diadlo> I should go. Good night
+[01:03:14] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[01:10:10] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 246 seconds)
+[01:27:37] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[01:28:35] *** Joins: f10__ (~flo@ )
+[01:33:13] *** Quits: x_ (~x@ ) (Ping timeout: 259 seconds)
+[01:36:38] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[01:37:03] *** Joins: f10__ (~flo@ )
+[01:50:12] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[01:50:41] *** Joins: f10__ (~flo@ )
+[01:57:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 248 seconds)
+[02:01:39] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 256 seconds)
+[02:06:13] *** Joins: dardevelin (~dardeveli@ )
+[02:51:09] *** Joins: zero-ghost (~0@ )
+[02:53:59] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[05:03:29] -GitHub109- [qtox-updater-tools] zetok pushed 1 new commit to master: https://git.io/vMc57
+[05:03:29] -GitHub109- qtox-updater-tools/master 3fe8cb2 Zetok Zalbavar: feat: add rust version of qtox-updater-genkeys...
+[05:03:29] -GitHub97- [qtox-updater-tools] zetok closed pull request #2: feat: add rust version of qtox-updater-genkeys (master...genkeys) https://git.io/vMGbO
+[05:29:20] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 258 seconds)
+[05:46:36] *** Joins: DiCE1904 (~textual@ )
+[06:02:28] -qtox-git-spam- [qTox] zetok closed pull request #3976: chore(build): enable ASLR and DEP protection for windows builds (master...chore-build-hard-win) https://git.io/v17jG
+[06:30:13] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[06:52:59] *** Joins: cisc (~cisc@ )
+[06:53:04] *** Quits: cisc (~cisc@ ) (Client Quit)
+[07:00:57] *** Joins: cisc (~cisc@ )
+[07:27:06] *** Joins: reBrain (~quassel@ )
+[07:57:01] *** Joins: x_ (~x@ )
+[08:08:45] *** Joins: f10__ (~flo@ )
+[08:12:06] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[08:16:58] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[08:18:54] *** Joins: Diadlo (~diadlo@ )
+[08:19:07] *** Quits: Diadlo (~diadlo@ ) (Client Quit)
+[08:20:14] *** Joins: Diadlo (~diadlo@ )
+[08:46:27] *** Quits: f10__ (~flo@ ) (Ping timeout: 245 seconds)
+[09:20:14] *** Joins: reBrain (~quassel@ )
+[09:24:09] *** Joins: Karpo (~Karpo@ )
+[09:27:21] *** Joins: f10__ (~flo@ )
+[09:33:42] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[09:51:15] *** citril__ is now known as orangesnz
+[09:51:20] *** orangesnz is now known as oranges
+[09:53:20] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 272 seconds)
+[09:59:43] *** Quits: f10__ (~flo@ ) (Ping timeout: 246 seconds)
+[10:25:43] *** Joins: f10__ (~flo@ )
+[10:49:44] *** Joins: sudden6 (~anonymous@ )
+[10:54:42] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 248 seconds)
+[10:59:43] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[11:34:54] *** Joins: Achylles (~Achylles@ )
+[11:51:16] *** Joins: f10 (~flo@ )
+[12:07:57] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[12:07:58] *** Joins: MiokIry_ (~Miok@ )
+[12:09:54] *** Quits: cisc (~cisc@ ) (Ping timeout: 248 seconds)
+[12:10:38] *** Joins: f10 (~flo@ )
+[12:26:09] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[12:26:38] *** Joins: f10 (~flo@ )
+[12:45:08] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 248 seconds)
+[12:47:04] *** Joins: f10_ (~flo@ )
+[12:47:28] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[12:51:27] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[12:54:24] *** Joins: f10_ (~flo@ )
+[13:12:32] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[13:12:51] *** Joins: f10_ (~flo@ )
+[13:24:30] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[13:27:19] *** Joins: f10_ (~flo@ )
+[13:34:39] *** Joins: f10 (~flo@ )
+[13:35:38] *** Quits: f10_ (~flo@ ) (Ping timeout: 272 seconds)
+[14:14:36] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[14:18:50] *** Joins: cisc (~cisc@ )
+[14:20:20] *** Joins: f10 (~flo@ )
+[14:24:40] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[14:25:00] *** Joins: f10 (~flo@ )
+[14:31:40] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[14:32:12] *** Joins: f10 (~flo@ )
+[14:37:40] *** Quits: MiokIry_ (~Miok@ ) (Read error: Connection reset by peer)
+[14:38:07] *** Joins: MiokIry_ (~Miok@ )
+[14:38:27] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[14:39:05] *** Joins: f10 (~flo@ )
+[14:42:04] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:42:27] *** Joins: LittleVulpix (~Miranda@ )
+[14:42:37] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[14:43:07] *** Joins: LittleVulpix (~Miranda@ )
+[14:45:46] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[14:46:17] *** Joins: f10 (~flo@ )
+[14:59:03] *** Joins: MDrights (~MDrights@ )
+[15:00:56] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:01:18] *** Joins: f10 (~flo@ )
+[15:13:03] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:19:23] *** Joins: Achylles (~Achylles@ )
+[15:28:01] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:28:22] *** Joins: cenysor (~cenysor@ )
+[15:28:23] *** Joins: f10 (~flo@ )
+[15:42:00] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[15:42:57] *** Joins: f10 (~flo@ )
+[15:45:52] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 246 seconds)
+[15:56:02] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 245 seconds)
+[16:00:49] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[16:01:45] *** Joins: f10 (~flo@ )
+[16:06:24] *** Joins: reBrain (~quassel@ )
+[16:17:27] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[16:18:21] *** Joins: f10 (~flo@ )
+[16:23:55] *** Joins: Achylles (~Achylles@ )
+[17:03:33] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 265 seconds)
+[17:09:31] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 246 seconds)
+[17:22:36] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:23:16] *** Joins: f10 (~flo@ )
+[17:28:13] *** Joins: smaragdus (~omoo@ )
+[17:33:56] *** Joins: smaragdus2 (~omoo@ )
+[17:34:47] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 245 seconds)
+[17:51:22] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:51:59] *** Joins: smaragdus (~omoo@ )
+[17:52:12] *** Quits: smaragdus2 (~omoo@ ) (Ping timeout: 240 seconds)
+[17:58:01] *** Joins: smaragdus2 (~omoo@ )
+[17:58:36] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 240 seconds)
+[18:02:42] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[18:03:18] *** Joins: f10 (~flo@ )
+[18:03:49] *** Joins: Achylles (~Achylles@ )
+[18:06:05] *** Joins: smaragdus (igneus@ )
+[18:06:27] *** Quits: smaragdus2 (~omoo@ ) (Ping timeout: 245 seconds)
+[18:08:24] *** Joins: Yoshimo (~anything@ )
+[18:08:57] *** Joins: smaragdus2 (igneus@ )
+[18:11:52] *** Quits: smaragdus (igneus@ ) (Ping timeout: 245 seconds)
+[18:12:03] *** Joins: smaragdus (~omoo@ )
+[18:13:07] *** Quits: smaragdus2 (igneus@ ) (Ping timeout: 245 seconds)
+[18:25:55] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[18:29:04] *** Joins: cisc (~cisc@ )
+[18:35:40] *** Joins: f10_ (~flo@ )
+[18:36:40] *** Quits: f10 (~flo@ ) (Ping timeout: 258 seconds)
+[19:33:11] *** Joins: in1t3r_ (~LordShiva@ )
+[19:36:25] *** Joins: kchz (~dschulz@ )
+[19:39:09] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 272 seconds)
+[20:27:08] <sudden6> hi all :)
+[20:32:37] <reBrain> hey
+[20:40:03] <sudden6> _moep_: are you still working on the translation?
+[20:41:02] *** Quits: Karpo (~Karpo@ ) (Quit: Leaving)
+[20:42:08] <_moep_> sudden6: I didnt received an e-mail today whats still to do
+[20:43:22] <sudden6> _moep_: are you still using the PR to translate or are you doing stuff on weblate now?
+[20:44:24] <_moep_> no I used weblate and answered/acknowleded there
+[20:44:54] <sudden6> oh, and I was wondering why you didn't answer to my comment in the PR^^
+[20:45:00] <sudden6> could you close the PR then?
+[20:46:15] <_moep_> sure I do it in few minutes
+[20:46:31] <sudden6> ok, thx :)
+[20:49:52] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[20:51:57] <_moep_> sudden6: how can I do it in gh?
+[20:52:18] <sudden6> do what? close the PR?
+[20:52:30] <_moep_> yes
+[20:53:09] <sudden6> there's a button under the comment field that says "Close Pull Request"
+[20:54:06] <_moep_> ah lol
+[20:54:30] -qtox-git-spam- [qTox] Unterstrichmoepunterstrich closed pull request #4036: german translation fix (master...master) https://git.io/vMqFR
+[20:55:01] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[21:01:22] *** Quits: reBrain (~quassel@ ) (Read error: Connection reset by peer)
+[21:02:17] <Diadlo> sudden6: What do you think, if I will replace SMILEYS=NO on SMILEYS=DISABLED ?)
+[21:02:33] <sudden6> +1
+[21:02:51] <Diadlo> I have a lot of problems with CMAKE and string "NO"
+[21:03:12] <Diadlo> It interpret it as empty string
+[21:03:22] <sudden6> interesting^^
+[21:05:43] <robinli> Could go with something like SMILEYS_ENABLED=True/False?
+[21:06:18] <zetok> not really
+[21:07:41] <robinli> Yeah, just an idea. I don't mess around with CMake much.
+[21:19:22] <Diadlo> Good night
+[21:19:38] <zetok> good night )
+[21:20:39] <Diadlo> zetok: CMake PR should be fixed now
+[21:22:22] <Diadlo> sudden6: test it too
+[21:29:57] <sudden6> will do
+[21:32:38] <zetok> https://gist.github.com/zetok/95b1ddbcc4b1870cb69ef88d331a2e9d ← is it supposed to be ~repeated?
+[21:43:05] <sudden6> zetok: This also happens with non cmake builds, so it's not introduced with the PR
+[21:43:23] <zetok> mm
+[21:43:36] <zetok> just wondering if it is supposed to work likethat
+[21:43:46] <zetok> like that*
+[21:47:53] <sudden6> I guess not
+[21:48:16] <sudden6> Diadlo zetok: I uploaded new class diagrams
+[21:48:42] <sudden6> I'll probably start to upgrade ToxEncrypt the next time
+[22:09:15] *** Joins: Emcy_ (~MC@ )
+[22:09:15] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[22:09:15] *** Joins: Emcy_ (~MC@ )
+[22:12:36] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[22:19:22] *** Joins: pcre (~quassel@ )
+[22:43:08] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[22:43:37] *** Joins: f10_ (~flo@ )
+[22:47:49] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 255 seconds)
+[22:49:16] *** Joins: dardevelin (~dardeveli@ )
+[23:18:35] <iphy> zetok: so antis81 is going his own way
+[23:18:52] <iphy> the plot thickens
+[23:37:49] <sudden6> iphy: ~yep
+[23:45:47] *** Joins: kchz (~dschulz@ )
