@@ -1,0 +1,422 @@
+[00:00:37] *** Quits: kchz (~dschulz@ ) (Ping timeout: 245 seconds)
+[00:06:28] *** Joins: Achylles (~Achylles@ )
+[00:31:12] <sudden6> iphy: what do you think of this structure for a c-toxcore abstraction https://github.com/qTox/planning/blob/master/Core-Classdiagram.png
+[00:36:05] <iphy> sudden6: would be nice to remove the garbage entries
+[00:36:53] <sudden6> iphy: which garbage entries for example?
+[00:37:02] <iphy> constructor, copy constructor
+[00:37:08] <iphy> they are in everything
+[00:37:18] <iphy> except toxcore
+[00:37:43] <sudden6> IIRC constructors are supposed to be in a class diagram
+[00:38:03] <iphy> fine
+[00:38:40] <sudden6> but I agree with you that it's not yet perfect
+[00:39:32] <sudden6> this one https://github.com/qTox/planning/blob/master/ToxEncrypt-Classdiagram.png on the other hand, I consider done
+[00:41:22] *** Joins: MiokIry_ (~Miok@ )
+[00:41:37] <iphy> toxSave?
+[00:41:44] <iphy> you don't mean salt?
+[00:43:17] <nurupo> ><Diadlo> sudden6: What do you think, if I will replace SMILEYS=NO on SMILEYS=DISABLED ?)  <-- why not use the BOOL options?
+[00:43:27] <nurupo> cmake bools take on ON/OFF
+[00:43:36] <sudden6> nurupo: because it's not bool
+[00:43:53] <sudden6> it's NO, MIN, ALL
+[00:44:22] <nurupo> e.g. `cmake .. -D OPTIONS_NAME=ON` or `cmake .. -D OPTIONS_NAME:BOOL=ON` if you want to be explicit
+[00:45:33] <sudden6> iphy: yes, I mean toxSave, it should read the salt from the datastream
+[00:46:04] <sudden6> If I read the api correctly this should be possible
+[00:47:45] <nurupo> well, in cmake variablres are generally (always?) strings, the BOOL and other types are used primarly for cmake-gui, so that i would show a checkbox for that option
+[00:48:34] <sudden6> yeah, but we'd need a dropdown with three choices
+[00:49:31] <nurupo> i see, you need three values. a string it is then
+[00:50:13] <nurupo> i'm curious, does anyone here actually use cmake-gui and find it useful?
+[00:50:38] <sudden6> I tried it, but didn't find it very useful
+[00:51:12] <sudden6> have to sleep now, see you :)
+[00:52:48] <iphy> sudden6: I see
+[00:52:52] <iphy> sure
+[00:53:16] <iphy> nurupo: I don't use it
+[00:55:45] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[00:56:30] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 255 seconds)
+[01:48:29] *** Joins: MDrights (~MDrights@ )
+[01:57:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:05:48] *** Joins: cisc (~cisc@ )
+[02:10:35] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[02:10:47] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[02:13:32] *** Joins: f10_ (~flo@ )
+[02:20:32] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 240 seconds)
+[02:39:16] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[02:41:27] *** Joins: LittleVulpix (~Miranda@ )
+[02:42:38] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[02:43:02] *** Joins: f10_ (~flo@ )
+[02:59:17] *** Quits: MiokIry_ (~Miok@ ) (Read error: Connection reset by peer)
+[02:59:49] *** Joins: MiokIry_ (~Miok@ )
+[03:21:46] *** Joins: barmaley (~barmaley@ )
+[03:22:28] *** barmaley is now known as barmaley-afk
+[03:22:46] *** barmaley-afk is now known as barmaley
+[03:33:49] *** Joins: f10 (~flo@ )
+[03:34:04] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[03:36:35] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[03:37:21] *** Joins: f10 (~flo@ )
+[03:38:10] *** Quits: pcre (~quassel@ ) (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+[03:47:57] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 255 seconds)
+[03:53:58] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[03:54:45] *** Joins: f10 (~flo@ )
+[03:58:39] *** Joins: MDrights (~MDrights@ )
+[03:58:39] *** Quits: MDrights (~MDrights@ ) (Read error: Connection reset by peer)
+[03:58:57] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 245 seconds)
+[04:11:09] *** Joins: Emcy (~MC@ )
+[04:11:09] *** Quits: Emcy (~MC@ ) (Changing host)
+[04:11:09] *** Joins: Emcy (~MC@ )
+[05:09:22] *** Quits: f10 (~flo@ ) (Ping timeout: 245 seconds)
+[05:10:29] *** Joins: f10 (~flo@ )
+[05:22:49] *** Joins: f10_ (~flo@ )
+[05:23:07] *** Quits: f10 (~flo@ ) (Ping timeout: 245 seconds)
+[05:28:52] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[05:29:11] *** Joins: f10_ (~flo@ )
+[05:37:52] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[05:45:51] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 255 seconds)
+[05:46:19] *** Joins: jjuran (~jjuran@ )
+[06:32:21] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[07:31:53] *** Joins: reBrain (~quassel@ )
+[07:50:28] *** Joins: Yoshimo (~anything@ )
+[08:10:45] <Diadlo> Hello
+[08:11:48] <Diadlo> zetok: What did antis81 mean? "I can only strongly advice to not setup qmake and cmake in parallel -> ditch qmake in favour of cmake."
+[08:40:10] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[08:59:13] <zetok> Diadlo: that we shouldn't maintain both
+[09:00:42] <Diadlo> Why?
+[09:01:52] <zetok> because that would unnecessarily drain resources & qmake would prevent things from being done
+[09:02:09] <Diadlo> Ok
+[09:02:33] <zetok> antis81 probably misunderstood and thought that we're planning to keep both qmake and cmake support long-term
+[09:02:54] <Diadlo> I think we can drop qmake when we will have well-documented cmake
+[09:03:01] <zetok> yeah
+[09:08:45] *** Joins: Yoshimo (~anything@ )
+[09:16:13] <Diadlo> zetok: Is cmake LGTY?
+[09:27:15] *** Quits: reBrain (~quassel@ ) (Read error: Connection reset by peer)
+[09:47:08] <zetok> Diadlo: looks good to me
+[09:47:24] <zetok> I haven't tested building without support for GTK though
+[09:47:35] <zetok> or X stuff
+[10:10:58] *** Joins: reBrain (~quassel@ )
+[10:29:51] *** Joins: Achylles (~Achylles@ )
+[10:32:11] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 240 seconds)
+[10:34:32] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[10:36:52] *** Joins: sudden6 (~anonymous@ )
+[10:40:06] *** Joins: dardevelin (~dardeveli@ )
+[10:46:44] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[10:51:09] <Diadlo> zetok: Can you add LGTM ?
+[10:51:24] <Diadlo> I'm added comment
+[11:12:41] <sudden6> Diadlo: so it's done? :D
+[11:13:04] <Diadlo> cmake?
+[11:13:08] <sudden6> yes
+[11:13:25] <Diadlo> Seems, yes
+[11:13:34] <sudden6> \o/
+[11:14:27] <sudden6> Diadlo: I plan to start implementing https://github.com/qTox/planning/blob/master/ToxEncrypt-Classdiagram.png the next time, what do you think?
+[11:15:47] <Diadlo> About plan
+[11:16:19] <Diadlo> 1) I builded umbrello and it's opens the diagram
+[11:16:30] <Diadlo> 2) Why ToxFriend has `call` and `files`?
+[11:16:55] <Diadlo> Does ToxFriend user (i.e. code) need to know Friend calls and files?
+[11:17:00] <Diadlo> I don't think so
+[11:17:06] <sudden6> because technically they belong to it
+[11:17:28] <Diadlo> Technically widget and chatform belong to it too
+[11:17:36] <Diadlo> Right?
+[11:18:07] <sudden6> ie ToxCore recieves the callback from toxcore, looks up friendId, looks up callId and calls a function that emits a signall or whatever
+[11:18:15] <sudden6> Diadlo: nope
+[11:18:37] <Diadlo> I think, call should be stored in coreav
+[11:18:41] <sudden6> FriendWidget connects to the signals and slots of ToxFriend
+[11:18:51] <Diadlo> coreav.getCall(friendId)
+[11:19:15] <Diadlo> I'm not sure
+[11:19:19] <Diadlo> Just IMO
+[11:19:28] <sudden6> Diadlo: I had this design before, but this introduces a second list where ToxFriend has to be managed in another thread -> problems
+[11:21:04] <Diadlo> Current design don't help to avoid of multi-tread Friend using
+[11:22:38] <sudden6> yep, but the only thing where it's critical is with the friendlist in Toxcore, if I'm right
+[11:23:11] <sudden6> ie when ToxCore removes a friend, but ToxCoreAv tries to look it up
+[11:24:49] <sudden6> but feel free to draw up different solutions so we can discuss them
+[11:24:58] <Diadlo> And it's will not find and return => no problem. Problem will be if we remove friend while it used in another thread
+[11:26:04] <sudden6> mhm
+[11:26:23] <sudden6> I don't have time right now to discuss it, but I'll think about it
+[11:26:31] <oranges> activate it
+[11:26:58] <Diadlo> We can use shared_ptr. But antis81 or initramfs said, that it's not a best solution
+[11:27:36] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[11:28:42] <sudden6> I don't really know^^ I don't have that much experience designing multithreaded applications, I just went ahead and did :)
+[11:31:43] <sudden6> btw, I hit a 10 year old bug in Umbrello apparantly https://bugs.kde.org/show_bug.cgi?id=110232 :DD
+[11:32:29] <zetok> classic KDE app
+[11:35:18] <Diadlo> zetok: It isn't depend of KDE. I.e. if qTox will be alive after 10 years, I think we will have 10-years old bugs too :)
+[11:35:36] * zetok hopes not
+[11:36:02] <sudden6> software is never complete ;)
+[11:36:14] <zetok> btw, there's ~1 regression 1.6→1.7 that no one seems to be working on
+[11:36:28] <sudden6> which one?
+[11:36:30] <zetok> sec
+[11:37:00] <zetok> https://github.com/qTox/qTox/issues/4016
+[11:37:22] <zetok> it would be nice to have at least regression fixed between releases
+[11:37:48] <zetok> right now all regressions 1.6→1.7 are assigned to 1.8 milestone
+[11:39:04] <zetok> there's also https://github.com/qTox/qTox/issues/4010 , if there's no response in a ~week someone will need to look into fixing it
+[11:40:04] <sudden6> zetok: now, that you remind me, I think I've seen a piece of code responsible for this, that right now does nothing
+[11:40:17] <zetok> >.<
+[11:40:19] <sudden6> must have been some refactoring gone wrong
+[11:42:38] <Diadlo> I just hope, that someone new come into qtox and will start with `E-easy`
+[11:42:48] <sudden6> yep
+[11:42:54] <zetok> about that
+[11:43:09] <zetok> you've mentioned before that some E-easy aren't actually easy
+[11:43:17] <Diadlo> Yes
+[11:43:20] <zetok> is that still the case?
+[11:43:21] <sudden6> or that some of the older devs will become active again
+[11:43:39] <zetok> sudden6: not very likely
+[11:43:51] <sudden6> I know
+[11:44:06] <Diadlo> IDK. You should start to fix, to know, is it really easy, or not
+[11:44:17] <zetok> :|
+[11:44:51] <Diadlo> > older devs   I don't think, that they start with easy issues :)
+[11:45:11] <zetok> ok
+[11:45:29] <Diadlo> So... I mere cmake?
+[11:45:37] <Diadlo> *merge
+[11:45:41] <sudden6> +1
+[11:46:16] <sudden6> cmake doesn't build for osx or windows yet, or does it?
+[11:46:20] <zetok> the E-easy label should be assigned if you roughly ~know what needs to be done in order to fix the issue, and it is indeed easy
+[11:46:38] <zetok> if that's not the case, it most likely should not be assigned
+[11:46:49] <sudden6> maybe with writing down what needs to be done
+[11:47:18] <zetok> sudden6: yeah, cmake is not yet "supported"
+[11:49:38] <Diadlo> AFAIR osx and windows should be works
+[11:50:06] <sudden6> tested or guessed? :DD
+[11:50:08] <zetok> https://github.com/qTox/qTox/issues/2425 ← does that sound easy?
+[11:50:49] <sudden6> haha, no
+[11:51:06] <sudden6> maybe we should limit the number of E-easy to ~10?
+[11:51:38] <zetok> um
+[11:51:44] <zetok> the number is not relevant
+[11:52:32] <sudden6> I think it is, see yourself as a new contributor, now there are >50 issues recommended to work on, which one do you take?
+[11:52:50] <sudden6> now rethink the scenario with only 10 recommended
+[11:53:08] <sudden6> I could be wrong, but I think the later is more motivating
+[11:53:13] <zetok> >50 means a lot of choice when it comes to area to work on
+[11:53:24] <zetok> which is a nice thing
+[11:53:59] <sudden6> I think it can also cause confusion or a feeling helpless
+[11:54:24] <sudden6> especially if you're new into software, I think this can happen
+[11:54:47] <zetok> um
+[11:55:25] <zetok> we have <20 issues that are marked as easy
+[11:55:48] <zetok> sudden6: https://github.com/qTox/qTox/issues/3334 ← is this really easy?
+[11:56:15] <Diadlo> sudden6: For example, one `E-easy`. Do you agree, that it's wrong?)
+[11:56:35] <sudden6> yes
+[11:56:53] <Diadlo> Why 10 better then 1?
+[11:57:28] <Diadlo> I think we shouldn't have a limit of easy issues
+[11:57:36] <zetok> sudden6: https://github.com/qTox/qTox/pull/3750#issuecomment-266987320 ← ?
+[11:58:09] <zetok> sudden6: I think that focusing on quality, rather than numbers is more important
+[11:58:18] <sudden6> ok
+[11:58:49] <zetok> i.e. if only the issues that are actually easy will be labelled with `E-easy`, their number naturally will be kept low
+[11:59:43] <sudden6> yeah, I should have looked at the actual numbers before, I thought there were more
+[12:00:14] <zetok> so, #3334 needs `E-easy` removed?
+[12:00:34] <sudden6> +1
+[12:01:18] <zetok> and I think that either someone should help the guy with the PR, or take over and finish it (or at least keep rebasing)
+[12:01:42] <sudden6> does toxcore even have upnp support yet?
+[12:01:50] <zetok> no
+[12:02:00] <zetok> the PR is about UDP port only
+[12:02:37] <zetok> and we're down to 16 E-easy
+[12:03:22] <zetok> https://github.com/qTox/qTox/issues/3159 ← not something that can be done ATM, removed label
+[12:07:32] <Diadlo> I think https://github.com/qTox/qTox/issues/3159 should be closed
+[12:07:53] <Diadlo> It's a long discussion about default settings
+[12:08:10] <zetok> well
+[12:08:17] <zetok> it's waiting for more feedback
+[12:08:25] <Diadlo> How many?
+[12:08:42] <Diadlo> If I will write something do we close it? ^^
+[12:09:15] <zetok> well, the default should be set to what most people prefer
+[12:10:09] <zetok> right now it seems like ~ 50/50 split :/
+[12:10:41] <Diadlo> sudden6: Do you want `close to tray` by default?
+[12:15:38] <sudden6> Diadlo: no
+[12:15:47] <sudden6> close means close for me
+[12:17:15] <Diadlo> Let's write it
+[12:18:24] <sudden6> done
+[12:18:44] <Diadlo> zetok: Done :)
+[12:18:49] <Diadlo> Can we close it?)
+[12:19:26] <zetok> no :)
+[12:19:59] <zetok> not at this very moment at least
+[12:20:05] *** Joins: MDrights (~MDrights@ )
+[12:23:06] <zetok> I'll probably close it, but I have to go through the comments on the issue again
+[12:28:35] *** Quits: Achylles (~Achylles@ ) (Ping timeout: 255 seconds)
+[12:32:48] *** Joins: Achylles (~Achylles@ )
+[12:48:54] *** Quits: Achylles (~Achylles@ ) (Remote host closed the connection)
+[12:53:46] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[12:55:46] -qtox-git-spam- [qTox] Diadlo closed pull request #3913: CMake migration (master...cmakemigration) https://git.io/vXjbL
+[13:01:35] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[13:12:37] *** Joins: cisc (~cisc@ )
+[13:18:34] <zetok> closed :|
+[13:23:37] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:25:06] *** Joins: cisc (~cisc@ )
+[13:27:52] <iphy> merged
+[13:28:18] <zetok> #3159
+[13:35:01] *** Joins: dardevelin (~dardeveli@ )
+[13:35:06] *** mva is now known as MajorTom
+[13:36:23] *** Joins: sudden6 (~anonymous@ )
+[13:38:08] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[13:39:27] *** Quits: dardevelin (~dardeveli@ ) (Client Quit)
+[13:40:08] -qtox-git-spam- [qTox] zetok opened pull request #4057: chore(build): make cmake use ccache when it's available (master...chore-cmake-ccache) https://git.io/vMCjF
+[13:40:10] *** Joins: dardevelin (~dardeveli@ )
+[13:40:39] <iphy> zetok: qtox#3159 (qtox needs a devbot :)
+[13:40:51] <zetok> mm
+[13:41:00] <zetok> I was thinking of writing a bot in rust for stuff
+[13:41:19] <zetok> but then again, I don't really feel like writing a bot for deprecated IRC
+[13:41:41] <zetok> and zetox doesn't provide the functionality yet
+[13:43:01] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[13:43:29] <sudden6> Diadlo: I've time now to discuss The Plan, you too?
+[13:49:00] *** Joins: Diadl0 (~Diadlo@ )
+[13:50:06] <zetok> :|
+[13:50:17] *** Joins: Yoshimo (~anything@ )
+[13:50:39] <Diadl0> zetok: Is it possible to make qtox-ccache repo for travis? And update it sometime?
+[13:51:03] <zetok> um, why though?
+[13:52:04] <Diadl0> To speed up compilation
+[13:52:21] <zetok> oh, that way
+[13:52:30] <zetok> it's not needed for travis
+[13:52:50] <Diadl0> Why?
+[13:53:09] <zetok> travis has feature called `cache`, we can use it to cache ccache stuff across builds
+[13:53:10] *** Joins: cisc (~cisc@ )
+[13:53:50] <zetok> $HOME/.ccache
+[13:54:03] <zetok> ↑ dir for caching
+[13:54:20] <sudden6> is ccache safe to not cause problems?
+[13:54:27] <zetok> yes/no
+[13:55:02] <zetok> depends on whom you ask
+[13:55:15] <zetok> with that in mind; I've always have been using ccache to compile qTox
+[13:55:32] <zetok> yet I haven't seen any problems what could be attributed to ccache
+[13:55:44] <zetok> s/what/that/
+[13:57:02] <zetok> Diadl0: https://docs.travis-ci.com/user/caching/#ccache-cache
+[13:57:26] <zetok> oh, travis added cargo caching
+[13:57:27] <Diadl0> zetok: Why we don't use it before?
+[13:57:40] <zetok> ¯\_(ツ)_/¯
+[13:58:01] <Diadl0> Is cargo better?
+[13:58:17] <zetok> ~yep
+[13:58:31] <sudden6> cargo is specific for Rust, isn't it?
+[13:58:42] <zetok> ~yep
+[14:00:21] *** Parts: Diadl0 (~Diadlo@ ) ()
+[14:04:48] -qtox-git-spam- [qTox] zetok opened pull request #4058: docs(INSTALL): fix table formatting (master...docs-install-bfmt) https://git.io/vMWvY
+[14:12:13] <sudden6> zetok: could we also enable ccache for the ffmpeg build?
+[14:12:31] <iphy> you could also not build ffmpeg yourself
+[14:12:32] <zetok> ~yep
+[14:12:35] <iphy> (why are you doing that?)
+[14:12:35] <sudden6> should be less problematic since we never change anything
+[14:13:06] <zetok> iphy: that's the only thing that can be done when provided packages don't work
+[14:13:18] <iphy> in what way don't they work?
+[14:13:49] <zetok> https://github.com/qTox/qTox/pull/3971
+[14:14:04] <sudden6> ubuntu 14.04 doesn't provide ffmpeg
+[14:14:37] <iphy> https://github.com/TokTok/qTox/blob/master/.travis.yml#L8
+[14:14:44] <iphy> I use this
+[14:17:20] <sudden6> zetok: I think you can close #4040
+[14:25:42] -GitHub126- [qtox-updater-tools] zetok opened pull request #3: Add remaining updates tools from qTox repo (master...feat-genflist) https://git.io/vMWfT
+[14:29:31] -qtox-git-spam- [qTox] zetok opened pull request #4059: chore(tools): remove from qTox repo tools for creating updates (master...chore-rm-update-server-tools) https://git.io/vMWfO
+[14:30:05] <zetok> Yeah.
+[14:30:07] -qtox-git-spam- [qTox] zetok closed pull request #4040: chore(tools): rewrite C++ tool for generating PK/SK keypair in Rust (master...chore-tools-rust-gen) https://git.io/vMmAU
+[14:38:09] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMWfP
+[14:38:09] -qtox-git-spam- qTox/master c584685 Zetok Zalbavar: docs(INSTALL): fix table formatting...
+[14:42:48] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[14:43:06] *** Joins: MDrights (~MDrights@ )
+[14:43:39] <zetok> iphy: yeah, that doesn't seem to work
+[14:54:32] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[14:56:02] *** Joins: MDrights (~MDrights@ )
+[14:56:25] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[15:02:11] *** Joins: MDrights (~MDrights@ )
+[15:11:49] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[15:12:08] *** Joins: MDrights (~MDrights@ )
+[15:16:45] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[15:17:04] *** Joins: MDrights (~MDrights@ )
+[15:17:43] *** Joins: f10_ (~flo@ )
+[15:31:25] *** Joins: x_ (~x@ )
+[15:44:05] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[15:44:22] *** Joins: MDrights (~MDrights@ )
+[15:48:45] *** Joins: cenysor (~cenysor@ )
+[15:50:30] *** Joins: MiokIry_ (~Miok@ )
+[16:05:36] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 240 seconds)
+[16:08:08] *** Joins: in1t3r_ (~LordShiva@ )
+[16:19:41] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 260 seconds)
+[16:29:51] <Diadlo> sudden6: Sorry, I missed your message about plan. I can talk about it after ~4.5 hours
+[16:30:30] <sudden6> Diadlo: I already started implementing ToxEncrypt
+[16:31:06] <sudden6> it's possible that I won't be online anymore in 4.5h
+[16:31:14] <Diadlo> :(
+[16:33:00] <Diadlo> sudden6: But, please, don't implement Core now. We should continue discuss
+[16:40:26] <sudden6> Diadlo: no, I won't :)
+[16:40:55] *** Joins: DaSpirit (~DaSpirit@ )
+[16:59:14] *** Joins: MiokIry__ (~Miok@ )
+[16:59:31] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 248 seconds)
+[17:25:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 258 seconds)
+[17:30:09] *** Joins: f10_ (~flo@ )
+[17:56:09] *** Joins: reBrain (~quassel@ )
+[17:56:48] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[17:57:47] *** Joins: f10_ (~flo@ )
+[18:01:43] *** Joins: pcre (~quassel@ )
+[18:51:44] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[18:57:48] -qtox-git-spam- [qTox] sudden6 opened pull request #4060: refactor(core): Introduce new class ToxEncrypt to interface with toxe… (master...refactor_toxencrypt) https://git.io/vMWGE
+[18:57:54] <sudden6> Code is out, I'll take a break
+[19:02:51] <zetok> err
+[19:05:23] <nurupo> sudden6: why are there 3 of `tox_pass_key_free(passKey);`?
+[19:05:32] <nurupo> having one in the destructor is enough
+[19:06:58] <nurupo> oh, i see, you want to set it to null
+[19:11:40] <nurupo> if you are trying to avoid using exceptions and your constructor may fail, i find it better to use a static method that constructs the object (i.e. a factory method) rather than have this isValid() you have or alternativly rather than have init()
+[19:12:26] <nurupo> a static method which returns a unique_ptr on the object on successful construction or nullptr on the failure
+[19:13:46] <nurupo> that way you can't end up with an inproperly initialized class insstance -- isValid() == false, or forget to initialize it -- forget to call the init()
+[19:14:06] <nurupo> if you have the class instance, you know that it's properly initialized
+[19:14:08] *** Quits: x_ (~x@ ) (Ping timeout: 240 seconds)
+[19:16:21] <nurupo> the downsides are that it's a bit cubersome to write the factory method and it would do heap allocation (unless make_unique does some black magic that i forgot about)
+[19:23:52] *** MajorTom is now known as mva
+[19:51:19] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[20:08:17] *** Joins: x_ (~x@ )
+[20:11:27] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 245 seconds)
+[20:12:08] *** Joins: in1t3r_ (~LordShiva@ )
+[20:14:44] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:20:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 260 seconds)
+[21:07:48] <Emcy> guys how about making it slightly difficult to exit the qtox program by default
+[21:08:07] <zetok> :D
+[21:08:12] <Emcy> like enable 'close to tray' and autostart by default
+[21:09:02] <Emcy> because i have some normy family members who are on my ass because qtox exists when they click the x button which is not how most messenging things behave today
+[21:09:27] <Emcy> zetok what does ':D' mean
+[21:09:33] <zetok> https://github.com/qTox/qTox/issues/3159#issuecomment-271150645
+[21:10:35] <Emcy> well this will continue to be a problem then
+[21:10:49] <zetok> well, you can ask reddit & places for help
+[21:11:18] <Emcy> what?
+[21:12:04] <zetok> make a public poll on what IM program should do when clicked on `x` or something
+[21:13:02] <Emcy> id say people should learn what the goddamn window buttons do. But thats not going to happen and its unrealistic to expect it to happen
+[21:14:21] <zetok> ok
+[21:14:49] <zetok> then there's no problem with making a poll that will support the claim that most people expect `x` button to just minimize the window, right?
+[21:15:52] <Emcy> the decision has been made so why would i bother
+[21:16:02] <zetok> um?
+[21:16:32] <zetok> Emcy: the decision to close the issue was made
+[21:16:49] <zetok> since clearly majority doesn't want defaults to be changed
+[21:17:21] <zetok> Emcy: if you have data that proves otherwise, default obviously can be changed
+[21:17:22] <Emcy> majority of people in that thread maybe
+[21:17:32] <zetok> :)
+[21:17:44] <zetok> I don't have any other proper data points
+[21:17:57] <Emcy> so your development is a direct democracy?
+[21:18:08] <zetok> more or less
+[21:18:54] <Emcy> im not here trying to legislate changes. Its anecdote from the extreme normie end of the UX
+[21:19:18] <Emcy> its mostly skypes fault. You have to really try to exit skype.
+[21:19:44] <Emcy> that has driven expectations i think
+[21:19:56] <zetok> most likely
+[21:21:25] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:21:26] <zetok> although I wonder about that
+[21:21:36] <zetok> is skype really that hard to close?
+[21:22:26] <Emcy> iirc by default you have to dig the try icon out of the tray and right click it and say exit and then confirm
+[21:22:28] *** Joins: barmaley (~barmaley@ )
+[21:23:25] <zetok> doesn't sound very hard
+[21:23:57] <Emcy> its not 'hard' but you cant do it by accident
+[21:25:02] <zetok> anyway
+[21:25:26] <zetok> Emcy: could you get more people to support changing defaults?
+[21:26:03] <Emcy> i dont have social media accounts
+[21:26:44] <zetok> tor → make some?
+[21:26:44] <Emcy> a compromise would be a simple confirmation dialogue when exiting the program with the x button
+[21:26:48] <Emcy> surely that would be reasonable
+[21:27:04] <Emcy> if people still fuck up after that, not much you can do
+[21:31:42] <Emcy> zetok if i make a github account and open an issue with that suggestion, are you likely to just close it
+[21:32:25] <zetok> not just
+[21:32:37] <zetok> but chances are that it could get closed
+[21:33:26] <Emcy> so is that yes or no
+[21:33:51] <zetok> um, switching the default is easier than making qTox always display confirmation window every time `x` is pressed, both code-wise and convincing-people-wise
+[21:34:13] <Emcy> ill take that as no
+[22:04:39] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:26:05] *** Joins: DaSpirit (~DaSpirit@ )
+[23:00:23] <sudden6> nurupo: interesting idea, but I don't if it's the "right" thing for qTox... Diadlo?
+[23:02:27] <Diadlo> I'm think a bit about it. I'm not sure, but idea looks good. This way guarantees, than every created instance is correct
+[23:03:02] <Diadlo> But we have a problem with static method
+[23:03:15] <sudden6> which problem?
+[23:03:30] <Diadlo> If we use static method => we can't mock or face instance
+[23:03:36] <Diadlo> *fake
+[23:04:20] <Diadlo> For tests we don't want work with real tox profile
+[23:04:43] <Diadlo> Just instance, which implement same interface
+[23:05:01] <Diadlo> sudden6: Do you understand?
+[23:05:34] <sudden6> ~somewhat, I've to search for some stuff while you're explaining it
+[23:06:19] <sudden6> Diadlo: what speaks against using different methods for testing/running like in http://stackoverflow.com/a/6542335?
+[23:07:05] <sudden6> also, for this particular class, it hasn't anything to do with the Pofile
+[23:07:15] <sudden6> we could just test this class standalone
+[23:07:44] <Diadlo> Yes, it's one of the way. But if we will go this way, we need to build different clients for different tests
+[23:07:50] <Diadlo> At least 2 build
+[23:08:53] <Diadlo> And we will have build-related tests
+[23:09:36] <Diadlo> This is the way that toktok have chosen
+[23:10:09] <Diadlo> *plan to choose
+[23:15:18] *** Joins: LittleVulpix (~Miranda@ )
+[23:22:36] <sudden6> nurupo: I think another idea would be to leave it like it is, because the encryption and decryption will just fail, which must be expected anyway
+[23:30:00] <Diadlo> Good night
+[23:31:00] <sudden6> good night
+[23:50:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
