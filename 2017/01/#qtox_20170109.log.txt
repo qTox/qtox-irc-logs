@@ -1,0 +1,162 @@
+[00:15:12] *** Quits: x_ (~x@ ) (Ping timeout: 245 seconds)
+[00:27:53] *** Joins: x_ (~x@ )
+[01:12:29] *** Quits: worfox (~worfox@ ) (*.net *.split)
+[01:12:29] *** Quits: helios21 (~quassel@ ) (*.net *.split)
+[01:13:50] *** Joins: helios21 (~quassel@ )
+[01:14:20] *** Joins: worfox (~worfox@ )
+[01:24:08] *** Joins: zetok (~zetok@ )
+[01:28:16] *** Joins: hexadezimalion (sid85551@ )
+[01:41:47] *** Quits: Darky (~Darky@ ) (Remote host closed the connection)
+[02:42:43] *** Quits: mva (znc@ ) (Quit: ZNC - http://znc.in)
+[02:42:48] *** Quits: arza (~arza@ ) (Ping timeout: 258 seconds)
+[02:42:49] *** Quits: iphy (uid67735@ ) (Read error: Connection reset by peer)
+[02:42:56] *** Joins: mva (znc@ )
+[02:43:25] *** Quits: worfox (~worfox@ ) (Quit: No Ping reply in 180 seconds.)
+[02:43:57] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 258 seconds)
+[02:45:01] *** Joins: worfox (~worfox@ )
+[02:45:06] *** Quits: Ciblia (cibliamatr@ ) (Ping timeout: 258 seconds)
+[02:45:34] *** Joins: iphy (uid67735@ )
+[02:45:42] *** Joins: arza (arza@ )
+[02:45:45] *** Joins: sockspls (~sockspls@ )
+[02:50:24] *** Joins: Ciblia (cibliamatr@ )
+[03:05:44] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[04:05:04] *** oranges is now known as MagiKMirror
+[04:05:10] *** MagiKMirror is now known as oranges
+[05:58:45] *** Quits: MiokIry__ (~Miok@ ) (Read error: Connection reset by peer)
+[05:59:09] *** Joins: MiokIry__ (~Miok@ )
+[06:18:57] *** Quits: barmaley (~barmaley@ ) (Quit: Leaving)
+[06:34:32] *** Quits: x_ (~x@ ) (Ping timeout: 240 seconds)
+[06:41:23] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 248 seconds)
+[06:52:57] *** Joins: jjuran (~jjuran@ )
+[07:08:08] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 240 seconds)
+[07:09:55] *** Joins: in1t3r_ (~LordShiva@ )
+[07:12:44] *** Joins: sudden6 (~anonymous@ )
+[07:22:40] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[07:38:45] *** Joins: f10_ (~flo@ )
+[07:44:03] *** Joins: sudden6 (~anonymous@ )
+[08:19:30] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:20:13] *** Joins: LittleVulpix (~Miranda@ )
+[08:38:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[08:46:53] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[09:19:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:28:18] *** Joins: LittleVulpix (~Miranda@ )
+[09:47:33] *** Joins: x_ (~x@ )
+[10:03:25] *** Joins: pcre (~quassel@ )
+[10:19:03] *** Quits: jjuran (~jjuran@ ) (Read error: Connection reset by peer)
+[10:20:15] *** Joins: jjuran (~jjuran@ )
+[11:05:23] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[11:28:45] *** Joins: sudden6 (~anonymous@ )
+[11:29:03] *** Joins: f10 (~flo@ )
+[11:56:35] *** Joins: MDrights (~MDrights@ )
+[12:32:32] *** Joins: f10_ (~flo@ )
+[12:36:56] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[12:39:12] *** Joins: LittleVulpix (~Miranda@ )
+[12:48:21] *** Joins: f10__ (~flo@ )
+[12:49:48] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[12:50:47] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[12:53:41] *** Joins: LittleVulpix (~Miranda@ )
+[13:04:30] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 260 seconds)
+[13:17:47] *** Joins: f10_ (~flo@ )
+[13:19:05] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[13:24:23] *** Joins: MDrights (~MDrights@ )
+[13:46:36] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[13:46:51] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:47:28] *** Joins: LittleVulpix (~Miranda@ )
+[13:52:37] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[13:53:29] *** Joins: f10_ (~flo@ )
+[14:02:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[14:03:10] *** Quits: albel727 (~albel727@ ) (Remote host closed the connection)
+[14:04:20] *** Joins: sudden6 (~anonymous@ )
+[14:13:09] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[14:15:56] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[14:30:51] *** Joins: MDrights (~MDrights@ )
+[14:38:39] *** Joins: sudden6 (~anonymous@ )
+[14:44:37] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[14:47:18] *** Joins: DaSpirit (~DaSpirit@ )
+[14:49:04] *** Joins: f10__ (~flo@ )
+[14:49:29] *** Joins: dardevelin (~dardeveli@ )
+[14:49:56] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[14:52:35] *** Joins: pcre (~quassel@ )
+[14:58:35] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:01:42] *** Joins: albel727 (~albel727@ )
+[15:08:44] *** Joins: cenysor (~cenysor@ )
+[15:29:09] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[15:29:27] *** Joins: f10__ (~flo@ )
+[15:34:19] *** Joins: f10_ (~flo@ )
+[15:35:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[15:53:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[15:58:57] *** Joins: sudden6 (~anonymous@ )
+[16:19:00] *** Quits: Ciblia (cibliamatr@ ) (Write error: Connection reset by peer)
+[16:29:40] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[16:33:22] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[16:33:40] *** Joins: f10_ (~flo@ )
+[16:38:08] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[16:38:28] *** Joins: f10_ (~flo@ )
+[16:52:24] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[16:52:56] *** Joins: f10 (~flo@ )
+[16:54:44] *** Joins: Ciblia (cibliamatr@ )
+[16:55:49] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[17:12:27] *** Joins: reBrain (~quassel@ )
+[17:20:48] *** Joins: Yoshimo (~anything@ )
+[17:24:10] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[17:26:32] *** Joins: Yoshimo (~anything@ )
+[17:30:49] -GitHub152- [qtox-updater-tools] zetok closed pull request #3: Add remaining updates tools from qTox repo (master...feat-genflist) https://github.com/qTox/qtox-updater-tools/pull/3
+[17:30:49] -GitHub193- [qtox-updater-tools] zetok pushed 2 new commits to master: https://github.com/qTox/qtox-updater-tools/compare/3fe8cb2dbf73...bf76fde71062
+[17:30:49] -GitHub193- qtox-updater-tools/master 1567b3d Zetok Zalbavar: feat: move qtox-updater-genflis from qTox repository...
+[17:30:49] -GitHub193- qtox-updater-tools/master bf76fde Zetok Zalbavar: feat: add scripts for creating updates for qTox
+[17:35:47] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[17:41:26] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMlxx
+[17:41:26] -qtox-git-spam- qTox/master 3b56a6e Zetok Zalbavar: chore(tools): remove from qTox repo tools for creating updates...
+[17:43:57] <zetok> >Failed to get list of PRs: Codec(Syntax(InvalidType(Unit), 1, 46171))
+[17:43:58] <zetok> ha.
+[17:44:19] <zetok> looks like my rebasing automation broke
+[17:44:57] -GitHub121- [qtox-updater-tools] zetok opened pull request #4: chore(travis): cache cargo dependencies on travis to speed up builds (master...chore-travis-cache) https://git.io/vMlp7
+[17:45:39] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[17:59:22] * zetok wonders what has github changed to make things fail
+[18:05:33] <iphy> zetok: they change stuff all the time
+[18:05:45] <zetok> :|
+[18:05:53] <zetok> I see
+[18:05:55] <iphy> that's why the git-critique webhook constantly checks whether something changed
+[18:06:04] <iphy> resulting in various small "fix this, fix that" PRs on github-tools
+[18:06:06] * zetok goes to see if updated version of hubcaps has been published
+[18:06:30] <iphy> https://github.com/TokTok/github-tools/blob/master/src/GitHub/WebHook/Handler.hs#L88
+[18:13:20] *** Quits: linxon (~lin@ ) (Changing host)
+[18:13:20] *** Joins: linxon (~lin@ )
+[18:18:27] *** Joins: f10_ (~flo@ )
+[18:19:34] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[18:23:14] *** Joins: f10 (~flo@ )
+[18:24:06] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[18:26:54] <zetok> https://github.com/softprops/hubcaps/issues/62 welp, made an issue
+[18:30:10] *** Joins: Yoshimo (~anything@ )
+[18:58:34] *** Joins: f10_ (~flo@ )
+[18:59:06] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[19:12:18] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[20:04:49] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[20:06:37] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[20:07:30] *** Joins: dardevelin (~dardeveli@ )
+[20:08:26] -qtox-git-spam- [qTox] Diadlo opened pull request #4064: chore(osx): Added macos instalation script (master...fix/mac-build) https://git.io/vM8n5
+[20:08:50] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[20:08:58] *** Quits: MiokIry__ (~Miok@ ) (Ping timeout: 256 seconds)
+[20:38:55] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[20:39:36] *** Joins: dardevelin (~dardeveli@ )
+[21:27:00] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:29:56] -qtox-git-spam- [qTox] Diadlo opened pull request #4065: fix(chatform): Add ability to cancel call (master...fix/stopCall) https://git.io/vM8z6
+[21:45:39] *** Joins: sudden6 (~anonymous@ )
+[21:57:09] -qtox-git-spam- [qTox] Diadlo opened pull request #4066: fix: Remove old ChatForm code from Widget (master...fix/statusDuplication) https://git.io/vM8wI
+[21:57:19] <Diadlo> zetok: ping
+[21:57:25] <zetok> Diadlo: pong
+[21:57:34] <sudden6> hey ho
+[21:57:38] <Diadlo> What kind of docs do you want?
+[21:57:42] <Diadlo> Hello
+[21:57:45] <zetok> Diadlo: any related
+[21:58:16] <Diadlo> This script added in `CMakeList.txt` it's not required to run manually
+[21:58:26] <zetok> ok
+[21:58:36] <zetok> then there should be a comment in the script about that
+[21:58:38] <Diadlo> I'm forget to remove it from CMakeList.txt in CMake_PR
+[21:58:43] <Diadlo> Ok
+[21:58:56] <zetok> (I haven't actually looked whether there is a comment for that in the script)
+[22:03:47] <Diadlo> And good night
+[23:36:09] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 252 seconds)
+[23:40:49] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 255 seconds)
+[23:43:19] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[23:48:27] *** Joins: dardevelin (~dardeveli@ )
