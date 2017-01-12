@@ -1,0 +1,124 @@
+[00:01:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[00:01:31] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[00:01:39] *** Joins: toweI_ (~toweI@ )
+[00:12:08] *** Joins: x__ (~x@ )
+[00:12:32] *** Quits: sockspls (~sockspls@ ) (Ping timeout: 240 seconds)
+[00:14:29] *** Quits: x__ (~x@ ) (Client Quit)
+[00:17:41] *** Joins: sockspls (~sockspls@ )
+[00:25:20] *** Quits: pcre (~quassel@ ) (Ping timeout: 258 seconds)
+[00:25:22] *** Quits: toweI_ (~toweI@ ) (Quit: Leaving)
+[01:20:07] *** Joins: dardevelin (~dardeveli@ )
+[04:54:57] <zero-ghost> http://www.nakedcapitalism.com/2017/01/gauis-publius-best-buy-national-repair-techs-routinely-search-customer-devices-act-paid-informers-fbi.html
+[05:06:36] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:07:20] *** Joins: sudden6 (~anonymous@ )
+[07:22:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[07:35:13] *** Joins: x_ (~x@ )
+[07:46:12] *** Joins: f10_ (~flo@ )
+[07:50:58] *** Joins: sudden6 (~anonymous@ )
+[07:53:49] *** Joins: f10 (~flo@ )
+[07:54:25] *** Quits: f10_ (~flo@ ) (Ping timeout: 248 seconds)
+[07:57:37] *** Quits: f10 (~flo@ ) (Excess Flood)
+[07:58:36] *** Joins: f10 (~flo@ )
+[08:04:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[08:07:19] *** Joins: sudden6 (~anonymous@ )
+[08:21:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[08:31:01] *** Joins: sudden6 (~anonymous@ )
+[08:42:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 255 seconds)
+[09:25:38] *** Quits: zero-ghost (~0@ ) (Ping timeout: 245 seconds)
+[09:28:52] *** Joins: zero-ghost (~0@ )
+[09:42:32] *** Joins: barmaley (~barmaley@ )
+[09:50:45] *** Joins: f10_ (~flo@ )
+[09:51:59] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[10:04:00] *** Joins: bashrc (~motters@ )
+[10:14:03] *** Joins: pcre (~quassel@ )
+[10:14:15] *** Joins: LittleVulpix (~Miranda@ )
+[10:26:18] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[10:46:42] -qtox-git-spam- [qTox] lopachecoc opened pull request #4069: fix(build): fix ASLR and DEP protection for windows builds (master...patch-2) https://github.com/qTox/qTox/pull/4069
+[10:58:33] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 245 seconds)
+[11:24:44] *** Joins: sandrorso (~sandro@ )
+[11:37:53] *** Quits: sandrorso (~sandro@ ) (Quit: Ciao. Sto andando via)
+[11:50:40] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[11:52:01] *** Joins: f10_ (~flo@ )
+[11:53:56] *** Joins: cenysor (~cenysor@ )
+[11:55:48] *** Joins: barmaley (~barmaley@ )
+[13:36:00] *** Joins: reBrain (~quassel@ )
+[13:48:48] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[13:50:34] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[14:15:51] *** Joins: sudden6 (~anonymous@ )
+[14:23:58] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[14:24:09] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[14:24:18] *** Joins: sudden6 (~anonymous@ )
+[14:36:24] *** Joins: MDrights (~MDrights@ )
+[14:52:32] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[15:02:53] *** Joins: sandrorso (~sandro@ )
+[15:09:13] *** Joins: pcre (~quassel@ )
+[15:14:14] *** Joins: MDrights (~MDrights@ )
+[15:27:52] *** Quits: sandrorso (~sandro@ ) (Quit: Ciao. Sto andando via)
+[15:35:13] *** Quits: f10_ (~flo@ ) (Ping timeout: 245 seconds)
+[15:37:51] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[15:39:12] -qtox-git-spam- [qTox] zetok opened pull request #4070: Update translations from Weblate (master...tr) https://git.io/vM0hg
+[15:44:52] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[15:47:06] -qtox-git-spam- [qTox] zetok opened pull request #4071: chore: bump copyright date in About settings tab to 2017 (master...chore-cdate) https://git.io/vM0j2
+[15:47:54] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[16:23:09] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vMEIt
+[16:23:09] -qtox-git-spam- qTox/master ce0590d lopachecoc: fix(build): fix ASLR and DEP protection for windows builds
+[16:23:09] -qtox-git-spam- qTox/master c4fb84e Zetok Zalbavar: Merge pull request #4069...
+[16:23:42] <zetok> huh
+[16:23:53] <zetok> looks like gh fixed their stuff
+[16:24:06] <zetok> and my rebase automation works again \o/
+[16:25:35] *** Joins: tssx (3e41329f@ )
+[16:26:06] <tssx> zetok: is this already known graphic bug, too many bugs on github to find it http://pasteboard.co/kQgRWig6o.png
+[16:26:38] <tssx> microphone and speaker icon not fully displayed
+[16:28:47] <zetok> https://github.com/qTox/qTox/issues/4009
+[16:30:14] <tssx> glad i asked, no need to create bug then
+[16:30:56] <tssx> some qtox user told me and then i noticed this myself so i asked
+[16:34:49] *** Joins: cenysor (~cenysor@ )
+[16:41:02] *** Parts: tssx (3e41329f@ ) ()
+[17:22:40] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[17:26:54] *** Joins: dardevelin (~dardeveli@ )
+[17:44:45] *** Quits: in1t3r_ (~LordShiva@ ) (Excess Flood)
+[17:46:31] *** Joins: pcre (~quassel@ )
+[17:51:28] *** Quits: pcre (~quassel@ ) (Ping timeout: 245 seconds)
+[18:27:02] *** Joins: Yoshimo (~anything@ )
+[18:27:59] *** Joins: f10_ (~flo@ )
+[18:28:30] *** Joins: f10 (~flo@ )
+[18:36:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[19:00:20] *** Joins: sudden6 (~anonymous@ )
+[19:26:49] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[19:27:45] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 248 seconds)
+[19:29:59] *** Joins: cenysor (~cenysor@ )
+[20:12:55] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[20:16:40] *** Joins: bennabiy (~bennabiy@ )
+[20:54:19] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vME9K
+[20:54:19] -qtox-git-spam- qTox/master a143cf3 Zetok Zalbavar: chore(build): make cmake use ccache when it's available...
+[20:54:56] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[20:57:24] -GitHub149- [qtox-updater-tools] zetok closed pull request #4: chore(travis): cache cargo dependencies on travis to speed up builds (master...chore-travis-cache) https://git.io/vMlp7
+[20:57:24] -GitHub51- [qtox-updater-tools] zetok pushed 1 new commit to master: https://git.io/vMEHT
+[20:57:24] -GitHub51- qtox-updater-tools/master eb0484b Zetok Zalbavar: chore(travis): cache cargo dependencies on travis to speed up builds
+[21:08:10] <sudden6> Diadlo: are you here? :)
+[21:08:48] -qtox-git-spam- [qTox] zetok opened pull request #4072: chore(travis): make travis cache ccache and use it for all compiling (master...chore-travis-ccache) https://git.io/vMEQP
+[21:37:34] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:51:18] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[22:18:36] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[22:19:36] *** Joins: LittleVulpix (~Miranda@ )
+[22:19:48] <zetok> sudden6: I heard somewhere that MLs are better suited for asynchronous communication
+[22:28:49] -qtox-git-spam- [qTox] HascoetKevin closed pull request #3750: feat(settings): add possibility to change the UDP port range (master...udp_port) https://git.io/vij33
+[22:33:14] *** Joins: x_ (~x@ )
+[22:39:30] <sudden6> zetok: what are MLs?
+[22:50:46] <sudden6> oh, MailingLists^^
+[22:50:50] <sudden6> in what context?
+[22:59:28] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[23:01:24] *** Joins: albel727 (~albel727@ )
+[23:06:36] *** Joins: f10__ (~flo@ )
+[23:06:48] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[23:12:08] *** Joins: in1t3r_ (~LordShiva@ )
+[23:15:01] *** Joins: f10 (~flo@ )
+[23:16:22] *** Joins: dardevelin (~dardeveli@ )
+[23:18:27] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[23:19:32] *** Joins: f10__ (~flo@ )
+[23:19:35] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[23:22:43] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[23:23:58] *** Joins: f10 (~flo@ )
+[23:24:41] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[23:37:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[23:43:26] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
