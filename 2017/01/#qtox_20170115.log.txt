@@ -1,0 +1,110 @@
+[00:19:50] *** Joins: albel727 (~albel727@ )
+[00:44:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[00:45:10] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[00:58:21] *** Quits: bkidwell (~bkidwell@ ) (Quit: ZNC - http://znc.in)
+[01:02:00] *** Joins: bkidwell (~bkidwell@ )
+[01:30:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[01:37:15] *** Joins: DiCE1904 (~textual@ )
+[02:13:11] *** Joins: MDrights (~MDrights@ )
+[02:24:31] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[04:21:54] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[06:38:28] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[06:52:29] *** Joins: zero-ghost (~0@ )
+[07:09:25] *** Joins: Yoshimo (~anything@ )
+[07:11:56] *** Quits: cali (~user@ ) (Ping timeout: 255 seconds)
+[08:59:08] *** Quits: in1t3r_ (~LordShiva@ ) (Read error: Connection reset by peer)
+[09:00:41] *** Joins: in1t3r_ (~LordShiva@ )
+[09:14:25] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:14:54] *** Joins: VVD (~VVD@ )
+[09:18:19] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[09:19:51] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:20:35] *** Joins: VVD (~VVD@ )
+[09:20:49] *** Joins: LittleVulpix (~Miranda@ )
+[09:37:13] *** Joins: sudden6 (~anonymous@ )
+[09:42:55] *** Joins: sudd3n6 (~anonymous@ )
+[09:46:40] *** Joins: f10 (~flo@ )
+[09:46:52] *** Joins: f10_ (~flo@ )
+[09:53:08] *** Joins: danzsd (~danzsd@ )
+[09:54:31] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[09:56:39] *** Quits: danzsd (~danzsd@ ) (Read error: Connection reset by peer)
+[10:03:43] *** Joins: cali (~user@ )
+[10:13:48] -qtox-git-spam- [qTox] sudden6 opened pull request #4076: fix(build): add an option to compile with autotools toxcore on Windows (master...fix_win_build) https://git.io/vMw2T
+[10:53:38] -qtox-git-spam- [qTox] sudden6 opened pull request #4077: chore(travis): make ccache for OSX work (master...speedup_mac_build) https://git.io/vMwaW
+[11:10:19] <sudden6> zetok: I got ccache with OSX to work
+[11:10:23] <sudden6> ↑
+[11:10:32] <sudden6> can you review?
+[11:17:42] <Emcy> is there any known problem with qtox not saving preferences on windows 10
+[11:27:29] <sudden6> Emcy: not that I know of?
+[11:27:40] <sudden6> what exactly doesn't work?
+[11:27:59] <Emcy> my bro is complaining it wont save his preferences
+[11:28:17] <Emcy> hes never online becuase autostart is not default
+[11:28:36] <Emcy> hm. when exactly does qtox write preferences to disk
+[11:29:02] <sudden6> at least before shutdown
+[11:30:03] <Emcy> shutdown meaning?
+[11:30:12] <sudden6> if you close qTox
+[11:30:22] <Emcy> hm
+[11:30:25] <sudden6> or logout of the profile
+[11:30:44] <Emcy> i wonder how fast windows likes killing processes when shutting down the os
+[11:30:58] <sudden6> that could be a problem
+[12:47:43] *** Joins: x_ (~x@ )
+[12:51:16] *** Joins: f10__ (~flo@ )
+[12:52:16] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[13:29:42] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vMwPL
+[13:29:42] -qtox-git-spam- qTox/master eb2af79 sudden6: chore(travis): make ccache for OSX work on Travis
+[13:47:30] *** Joins: cenysor (~cenysor@ )
+[13:52:51] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[13:53:49] *** Joins: sudd3n6 (~anonymous@ )
+[13:55:01] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[14:07:21] *** Joins: f10 (~flo@ )
+[15:19:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:31:31] *** Joins: sudden6 (~anonymous@ )
+[16:29:35] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:29:53] *** Joins: [0xAA] (~ThisIsZen@ )
+[16:38:19] *** Quits: x_ (~x@ ) (Ping timeout: 256 seconds)
+[16:50:58] <zetok> sudd3n6: https://github.com/qTox/qTox/pull/3977 ← are you ok with the change?
+[16:51:47] *** Joins: x_ (~x@ )
+[17:01:38] *** Joins: cisc (~cisc@ )
+[17:27:11] <sudden6> zetok: yes
+[17:33:14] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vMwd6
+[17:33:14] -qtox-git-spam- qTox/master 1fc412d Zetok Zalbavar: feat(UI): remove unnecessary spacings on the Profile page...
+[17:51:33] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[17:56:43] <zetok> hm
+[17:57:18] <zetok> I've been trying to figure out how to remove unnecessary spacings in settings
+[17:57:54] <zetok> no dice so far
+[17:58:12] <zetok> >SettingsWidget::SettingsWidget
+[17:58:20] <zetok> am I even looking in the right place?
+[17:59:55] *** Joins: cisc (~cisc@ )
+[18:12:30] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 248 seconds)
+[18:17:38] <sudden6> zetok: contentlayout.cpp is also worth a look
+[18:18:19] <sudden6> But this is used nearly everywhere, so changes could be difficult
+[18:19:00] <zetok> mm
+[18:21:41] *** Quits: parasite_ (~parasite@ ) (Read error: Connection reset by peer)
+[18:26:51] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[18:27:21] <zetok> :/
+[18:40:45] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[19:11:58] *** Joins: reBrain (~quassel@ )
+[19:22:05] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[19:33:56] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[19:34:59] *** Quits: DiCE1904 (~textual@ ) (Quit: Textual IRC Client: www.textualapp.com)
+[19:43:10] *** Joins: albel727 (~albel727@ )
+[19:52:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[20:04:18] *** Joins: pcre (~quassel@ )
+[20:04:57] *** Joins: sudd3n6 (~anonymous@ )
+[20:20:27] *** Quits: MiokIry__ (~Miok@ ) (Ping timeout: 256 seconds)
+[20:22:19] *** Joins: MiokIry (~Miok@ )
+[20:30:11] *** Quits: x_ (~x@ ) (Ping timeout: 240 seconds)
+[20:34:42] *** Joins: x_ (~x@ )
+[20:35:34] *** sudd3n6 is now known as sudden6
+[20:35:56] *** Joins: DaSpirit (~DaSpirit@ )
+[20:38:22] *** Quits: helios21 (~quassel@ ) (Remote host closed the connection)
+[20:38:30] *** Joins: helios21 (~quassel@ )
+[20:44:24] *** Joins: f10 (~flo@ )
+[20:56:50] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:08:26] *** Joins: albel727 (~albel727@ )
+[21:26:11] *** Quits: x_ (~x@ ) (Ping timeout: 240 seconds)
+[21:31:45] *** Joins: DiCE1904 (~textual@ )
+[21:40:23] *** Joins: x_ (~x@ )
+[21:51:15] *** Joins: DavidF (7a3aecc6@ )
+[21:53:56] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:49:33] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[23:13:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
