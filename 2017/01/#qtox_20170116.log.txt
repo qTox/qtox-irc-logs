@@ -1,0 +1,260 @@
+[00:09:04] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[00:37:44] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[00:37:44] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[00:54:41] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[01:03:35] *** Joins: f10__ (~flo@ )
+[01:08:44] *** Joins: f10 (~flo@ )
+[01:09:28] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[01:51:16] *** Quits: DiCE1904 (~textual@ ) (Quit: Textual IRC Client: www.textualapp.com)
+[02:34:28] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[03:13:50] *** Joins: MDrights (~MDrights@ )
+[04:21:06] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 240 seconds)
+[04:54:44] *** Joins: reBrain (~quassel@ )
+[05:01:07] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[05:03:31] *** Joins: MDrights (~MDrights@ )
+[05:04:55] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[05:05:18] *** Joins: MDrights (~MDrights@ )
+[05:26:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[05:32:14] *** Joins: albel727 (~albel727@ )
+[07:02:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[07:03:59] *** Joins: albel727 (~albel727@ )
+[07:11:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[07:12:00] *** Joins: albel727 (~albel727@ )
+[07:15:57] *** Quits: albel727 (~albel727@ ) (Max SendQ exceeded)
+[07:16:17] *** Joins: albel727 (~albel727@ )
+[07:40:53] *** Joins: sudden6 (~anonymous@ )
+[07:41:43] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[07:42:16] *** Joins: sudden6 (~anonymous@ )
+[08:03:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[08:06:42] *** Joins: albel727 (~albel727@ )
+[08:16:16] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[08:23:42] *** Joins: albel727 (~albel727@ )
+[08:30:56] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[08:31:53] *** Joins: albel727 (~albel727@ )
+[09:01:31] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 240 seconds)
+[09:07:28] *** Joins: MDrights (~MDrights@ )
+[09:34:36] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[09:40:22] *** Joins: albel727 (~albel727@ )
+[09:45:58] *** Joins: sdsd (7ccde53e@ )
+[09:46:55] *** Quits: sdsd (7ccde53e@ ) (Client Quit)
+[09:49:58] *** Joins: pcre (~quassel@ )
+[10:03:40] *** Joins: f10__ (~flo@ )
+[10:43:06] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[10:44:45] *** Joins: f10 (~flo@ )
+[11:02:41] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[11:09:49] *** Quits: pcre (~quassel@ ) (Ping timeout: 245 seconds)
+[11:19:33] *** Quits: f10 (~flo@ ) (Ping timeout: 252 seconds)
+[11:30:27] *** Joins: sudden6 (~anonymous@ )
+[11:37:18] *** Joins: f10 (~flo@ )
+[12:11:07] *** Joins: f10_ (~flo@ )
+[12:12:37] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[12:23:24] *** Joins: r00tobo (~r00tobo@ )
+[12:23:30] <r00tobo> hi 😃
+[12:23:41] <r00tobo> can I kick people out of a group?
+[12:28:12] *** Joins: reBrain (~quassel@ )
+[12:36:18] <zetok> r00tobo: not in current groupchats
+[12:37:39] <r00tobo> zetok, so each person have to quit himself of the group 
+[12:37:46] <r00tobo> no administration
+[12:38:05] <zetok> new groupchats have that
+[12:38:13] <r00tobo> wut o.o
+[12:38:21] <r00tobo> how can I make one?
+[12:38:37] <zetok> https://github.com/TokTok/c-toxcore/pull/217
+[12:39:27] <r00tobo> so it's a going process 
+[12:39:38] <r00tobo> not submitted yet
+[12:41:11] <r00tobo> I can see there is a toxbot o.o https://github.com/JFreegman/ToxBot
+[12:42:03] <r00tobo> so this is have to be installed on a server?
+[12:44:17] *** Joins: [0xAA] (~ThisIsZen@ )
+[12:45:23] <zetok> depends on what you want
+[12:48:38] <r00tobo> I meant the creator of the group can kick and ban and such
+[12:48:42] <r00tobo> not through bots 
+[12:50:21] <zetok> bot doesn't change anything in that regard
+[12:55:58] *** Joins: MDrights (~MDrights@ )
+[13:18:09] *** Joins: f10__ (~flo@ )
+[13:19:09] *** Quits: f10_ (~flo@ ) (Ping timeout: 248 seconds)
+[13:23:27] *** Joins: x_ (~x@ )
+[13:38:53] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 248 seconds)
+[13:46:32] <r00tobo> I see
+[13:52:34] *** Joins: in1t3r_ (~LordShiva@ )
+[14:00:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[14:04:00] *** Quits: reBrain (~quassel@ ) (Read error: Connection reset by peer)
+[14:06:59] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 240 seconds)
+[14:20:06] *** Joins: MDrights (~MDrights@ )
+[14:24:48] *** Quits: Ciblia (cibliamatr@ ) (Write error: Connection reset by peer)
+[14:36:04] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[14:45:38] *** Joins: sudden6 (~anonymous@ )
+[14:55:07] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[14:58:34] *** Joins: Ciblia (cibliamatr@ )
+[15:09:29] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:46:29] <LittleVulpix> tux3: what's wrong with qtox update again? :o
+[15:46:51] <tux3> LittleVulpix, what, is it broken again? :/
+[15:47:12] <LittleVulpix> it keeps redownloading every time I start qtox
+[15:47:27] <LittleVulpix> log says it needs to update 2 files
+[15:47:36] <LittleVulpix> but then
+[15:47:59] <LittleVulpix> :0 : Warning: QFile::open: File (C:/Users/<pix>/AppData/Roaming/tox//update/./qtox.exe) already open
+[15:47:59] <LittleVulpix> net/autoupdate.cpp:514 : Critical: downloadUpdate: Can't save new update file, aborting...
+[15:48:53] <tux3> That is extra weird
+[15:49:02] <LittleVulpix> Windows 7, UAC disabled
+[15:49:10] <tux3> I remember someone had the same problem
+[15:49:22] <tux3> Check in task manager if you don't have a second qtox instance running?
+[15:49:31] <LittleVulpix> no qtox process running
+[15:49:46] <LittleVulpix> I'd notice, it wouldn't let me start it since I'd have no profile for it
+[15:53:04] <LittleVulpix> tux3: checking for the handle in process explorer, there is nothing holding it
+[15:54:13] <tux3> Do you have an antivirus running by any chance?
+[15:54:26] <LittleVulpix> tux3: yes, you don't ?
+[15:54:56] <tux3> Nope, but maybe it's the antivirus keeping it open and preventing the updater from replacing it
+[15:55:09] <tux3> I don't really know though, it's very strange
+[15:55:14] <LittleVulpix> tux3: Maybe, but this is a company laptop, can't turn the AV off.
+[15:55:41] <tux3> Either way we need to fix this in qTox, but it would be good to know the cause
+[15:55:55] <tux3> Can you reproduce it?
+[15:56:04] <LittleVulpix> tux3: literally every start
+[15:59:05] <tux3> If process explorer says it's not open and Windows says it's open, I'm not sure what to make of it
+[15:59:21] <tux3> Does it still happen after a reboot?
+[15:59:40] <LittleVulpix> tux3: it's been happening the past week
+[15:59:44] <LittleVulpix> I only just now noticed
+[16:06:00] <LittleVulpix> tux3: Lucky for you it also happens on my home PC where I can disable the AV. Let's see.
+[16:06:15] <tux3> Lucky me :)
+[16:07:09] <LittleVulpix> Nop
+[16:07:11] <LittleVulpix> Same problem
+[16:07:14] <LittleVulpix> AV disabled
+[16:08:15] <LittleVulpix> inb4 it's _yet another_ problem that you cannot resolve via update and people must redownload and reinstall qtox again
+[16:08:17] <LittleVulpix> :D
+[16:12:10] <LittleVulpix> It just sounds like the updater doesn't close the file before trying to do <whatever> with it :p
+[16:12:42] <LittleVulpix> If you watch the interface of qtox, you see the progressbar go, then - for a split second - you see "restart qtox to apply update", but then it disappears and nothing happens when you restart qtox
+[16:13:15] <LittleVulpix> other than the same thing repeating itself.
+[16:18:02] <tux3> But then processexplorer should pick it up, so I'm not sure what's happening here
+[16:19:07] *** Joins: f10 (~flo@ )
+[16:21:59] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[16:25:38] *** Joins: [0xAA] (~ThisIsZen@ )
+[16:38:42] <LittleVulpix> tux3: Well I'm at your disposal, I can reproduce it on two completely different systems
+[16:38:54] <LittleVulpix> Though I have to travel home in about 30 minutes
+[16:39:05] <zetok> LittleVulpix: update from which version to which?
+[16:39:14] <tux3> LittleVulpix, thanks a lot. I'll have to think about it because right now I have no idea
+[16:39:27] <LittleVulpix> zetok: from 1.7.0 to... whatever it gives me.
+[16:39:34] <zetok> Hmm.
+[16:39:53] <LittleVulpix> Interestingly one of them says toxcore version 1.3.0, the other says 1.2.0
+[16:40:07] <LittleVulpix> both can't update with the same issue though.
+[16:44:13] <sudden6> zetok: what should I add to the docs to make the use case more clear? "
+[16:44:14] <sudden6> use a ToxEncrypt object and
+[16:44:16] <sudden6>   * encrypt() or decrypt() when you have to encrypt or decrypt more than once
+[16:44:17] <sudden6> "
+[16:44:27] <sudden6> is a pretty clear hint on the use case IMO
+[16:44:36] <zetok> sudden6: yes, but not an exact use case
+[16:45:32] <sudden6> I don't know any exact use case
+[16:45:43] <sudden6> as the answer is "it depends" :/
+[16:45:49] <zetok> ok
+[16:45:56] <zetok> so the answer is "there are no use cases"
+[16:46:21] <sudden6> there are use cases for both
+[16:46:50] <zetok> there is a use case for password-based, and there is a possibility of use-case for derived key
+[16:46:52] <sudden6> if you need to encrypt/decrypt often it's better to use the object, else the static functions
+[16:47:06] <zetok> yes
+[16:47:13] <zetok> question is: do you need to?
+[16:47:30] <zetok> and if you need to, why?
+[16:47:33] <LittleVulpix> tux3: alright. Well you know where to find me if you need anything from me. I can also probably set up a virtual machine for you with teamviewer or something of the sort :D Anyway, gonna be afk for like 2hrs now
+[16:47:35] <sudden6> ???
+[16:47:45] <tux3> LittleVulpix, thanks!
+[16:47:52] <sudden6> zetok: do I need to what?
+[16:48:01] <zetok> >if you need to encrypt/decrypt often (…)
+[16:48:38] <sudden6> well when saving the *.tox save you need to encrypt on every change
+[16:48:56] <zetok> That's how it should be done..?
+[16:49:18] <sudden6> yes
+[16:49:48] <zetok> How is password not sufficient?
+[16:49:59] <sudden6> derived key == password
+[16:50:16] <zetok> not quite
+[16:50:18] <sudden6> only that password derivation is computing power intensive
+[16:50:26] <zetok> it's a lot easier to mess up when using derived key
+[16:50:44] <sudden6> and by using the object you cache the derived key in RAM
+[16:50:50] <sudden6> to save computation power
+[16:51:10] <zetok> yeah, that doesn't sound good
+[16:51:22] <sudden6> that's how it's donw
+[16:51:26] <zetok> sudden6: how much of the computation power is saved?
+[16:51:45] <zetok> sudden6: yeah, I've heard that you were interested in refactoring ;)
+[16:52:13] <sudden6> password derivation has to be in the order of 10ms - 100ms to be effective
+[16:52:34] <sudden6> (really slow for computers)
+[16:53:09] <zetok> doesn't really sound like a problem
+[16:53:51] *** Joins: f10__ (~flo@ )
+[16:54:21] <sudden6> well, if you're concerned that the key could stay in RAM, there's a deleter that will clear(?) + free it
+[16:54:27] <sudden6> every time
+[16:54:46] <sudden6> I'll be away for ~1h
+[16:55:19] <zetok> I'm more concerned about messing things up
+[16:55:41] <zetok> password is easier to use, so it has smaller chance of messing up
+[16:56:40] <nurupo> lol
+[16:59:27] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[17:03:31] *** Joins: f10_ (~flo@ )
+[17:04:42] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[17:23:34] *** Joins: sudden6 (~anonymous@ )
+[17:31:05] *** Joins: cenysor (~cenysor@ )
+[17:55:52] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[17:56:11] *** Joins: x_ (~x@ )
+[17:58:24] *** Quits: x_ (~x@ ) (Client Quit)
+[17:58:42] *** Joins: x_ (~x@ )
+[17:58:59] *** Quits: x_ (~x@ ) (Remote host closed the connection)
+[17:59:18] *** Joins: x_ (~x@ )
+[18:00:20] *** Quits: x_ (~x@ ) (Client Quit)
+[18:01:20] *** Joins: x_ (~x@ )
+[18:14:48] *** Joins: reBrain (~quassel@ )
+[18:31:19] *** Joins: Yoshimo (~anything@ )
+[18:31:35] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[18:31:35] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[18:42:26] <sudden6> zetok: back to discussing?
+[19:01:13] *** Joins: barmaley (~barmaley@ )
+[19:03:59] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[19:05:32] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[19:09:35] *** Quits: DavidF (7a3aecc6@ ) (Ping timeout: 260 seconds)
+[19:09:53] *** Joins: DaSpirit (~DaSpirit@ )
+[19:33:26] *** Joins: f10 (~flo@ )
+[19:33:44] *** Joins: f10_ (~flo@ )
+[19:49:15] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:49:33] *** Joins: f10_ (~flo@ )
+[19:52:39] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[19:53:04] *** Joins: f10_ (~flo@ )
+[20:18:11] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[20:23:25] *** Joins: f10__ (~flo@ )
+[20:24:21] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[20:28:28] *** Quits: Diadlo (~diadlo@ ) (Remote host closed the connection)
+[20:28:55] *** Joins: Diadlo (~diadlo@ )
+[20:41:39] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[20:42:46] *** Joins: f10__ (~flo@ )
+[20:45:31] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:49:34] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[20:57:11] <r00tobo> does c-toxcore working with qtox? 
+[21:01:49] *** Joins: stuck_ (b2a2cd1e@ )
+[21:01:51] <stuck_> hoy
+[21:03:06] <stuck_> so is there any developments on qtox?
+[21:03:33] <stuck_> judging by the master branch I can only see commits on languages
+[21:03:44] <stuck_> has the project reached a halt?
+[21:10:49] <zetok> stuck_: interested in helping?
+[21:11:03] <stuck_> nop
+[21:11:06] <stuck_> just curious
+[21:11:55] <zetok> stuck_: https://github.com/qTox/qTox/pulse
+[21:15:37] <stuck_> uhm
+[21:16:13] <stuck_> these include updates of the mainpage as well 
+[21:17:53] <stuck_> I thought this repo was specific for the client
+[21:24:05] *** Quits: stuck_ (b2a2cd1e@ ) (Quit: Page closed)
+[21:43:45] <r00tobo> small question why groups keeps disappearing when I re-login ?
+[21:45:50] <zetok> they're not persistent
+[21:45:56] <r00tobo> I see
+[21:46:08] <zetok> new groupchats have that feature
+[21:46:50] <r00tobo> so the groupchat bot is meant for this? or what?
+[21:47:41] <zetok> kinda
+[21:48:12] <zetok> bot is used as a temporary thing that emulates missing feature
+[21:48:42] <r00tobo> I see
+[21:48:54] <r00tobo> so does qtox supporting the new c-toxcore? o.o
+[21:53:18] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:54:36] <zetok> yes
+[22:00:04] *** Joins: fred_barclay (~fred@ )
+[22:08:50] *** Joins: f10_ (~flo@ )
+[22:09:48] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[22:15:54] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[22:16:44] *** Quits: VVD (~VVD@ ) (Ping timeout: 255 seconds)
+[22:23:35] *** Joins: VVD (~VVD@ )
+[22:41:58] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[22:45:28] *** Joins: f10_ (~flo@ )
+[22:50:50] *** Joins: f10__ (~flo@ )
+[22:52:10] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[22:56:19] *** Quits: x_ (~x@ ) (Remote host closed the connection)
+[22:58:51] *** Joins: f10_ (~flo@ )
+[22:59:06] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[23:04:25] *** Joins: f10__ (~flo@ )
+[23:04:33] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[23:31:22] *** Joins: f10_ (~flo@ )
+[23:32:30] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
