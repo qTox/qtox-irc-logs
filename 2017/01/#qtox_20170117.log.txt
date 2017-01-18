@@ -1,0 +1,160 @@
+[00:08:46] *** Quits: VVD (~VVD@ ) (Ping timeout: 260 seconds)
+[00:09:12] *** Joins: VVD (~VVD@ )
+[00:29:09] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[00:52:33] *** Joins: in1t3r_ (~LordShiva@ )
+[01:38:51] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[01:38:51] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[01:48:01] *** Joins: sudden6 (~anonymous@ )
+[01:49:37] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vMKi7
+[01:49:37] -qtox-git-spam- qTox/master 482757e sudden6: fix(build): add an option to compile with autotools toxcore on Windows
+[02:08:33] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[02:14:46] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[02:29:54] *** Joins: MDrights (~MDrights@ )
+[03:34:24] *** Joins: f10 (~flo@ )
+[03:43:03] *** Joins: f10_ (~flo@ )
+[03:47:30] *** Joins: f10__ (~flo@ )
+[03:48:27] *** Quits: f10_ (~flo@ ) (Ping timeout: 252 seconds)
+[04:40:28] *** Joins: vindelschtuffen (~vindelsch@ )
+[04:45:27] <vindelschtuffen> zetok, were you the one who made a program to explore tox save files?
+[05:10:57] *** Quits: albel727 (~albel727@ ) (Remote host closed the connection)
+[05:13:56] *** Joins: albel727 (~albel727@ )
+[05:48:36] *** Joins: x_ (~x@ )
+[05:52:44] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[05:53:18] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[06:02:57] *** Joins: DiCE1904 (~textual@ )
+[07:34:11] *** Joins: parasite_ (~parasite@ )
+[07:37:41] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[07:41:37] *** Joins: DiCE1904 (~textual@ )
+[08:56:50] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[10:32:45] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 248 seconds)
+[10:35:31] *** Joins: sudden6 (~anonymous@ )
+[11:10:04] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[11:27:24] *** Joins: sudden6 (~anonymous@ )
+[11:35:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[11:39:22] *** Joins: sudden6 (~anonymous@ )
+[11:58:00] *** Joins: f10 (~flo@ )
+[12:04:23] *** Joins: f10__ (~flo@ )
+[12:49:28] <zetok> vindelschtuffen: https://github.com/zetok/tox-add-pubkey https://zetok.github.io/tox/tox/toxcore/state_format/old/index.html
+[13:14:21] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[14:11:45] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[14:12:09] *** Joins: cisc (~cisc@ )
+[14:12:18] *** Joins: DiCE1904 (~textual@ )
+[14:19:36] *** Joins: sandrorso (~sandro@ )
+[14:20:14] *** Quits: cisc (~cisc@ ) (Ping timeout: 245 seconds)
+[14:21:07] *** Quits: sandrorso (~sandro@ ) (Client Quit)
+[14:31:03] *** Joins: cenysor (~cenysor@ )
+[14:35:34] *** Joins: cisc (~cisc@ )
+[14:42:55] *** Joins: x_ (~x@ )
+[14:46:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[14:58:56] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[15:10:00] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[15:10:57] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[15:13:23] *** Joins: DiCE1904 (~textual@ )
+[15:15:24] <zetok> vindelschtuffen: that's ~all that I've made for save files
+[15:16:09] <zetok> vindelschtuffen: using zetox you ~could make an explorer for the saves
+[15:17:06] <zetok> vindelschtuffen: aside from that, I'm not sure if I remember correctly, but if I do, Impyy might have made what you're looking for
+[15:23:52] *** Joins: f10_ (~flo@ )
+[15:24:22] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[15:32:10] *** Joins: f10__ (~flo@ )
+[15:33:03] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[15:36:30] *** Joins: bennabiy (~bennabiy@ )
+[15:42:27] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[15:43:36] *** Joins: f10_ (~flo@ )
+[15:51:19] *** Joins: cisc (~cisc@ )
+[15:53:24] <Emcy> are you really calling it zetox
+[15:54:04] *** Quits: cenysor (~cenysor@ ) (Quit: Leaving)
+[15:59:08] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[16:13:49] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[16:18:19] *** Joins: f10_ (~flo@ )
+[16:27:08] *** Joins: sudden6 (~anonymous@ )
+[16:33:23] -qtox-git-spam- [qTox] sudden6 opened pull request #4081: fix(jenkins): preserve the correct linking order (master...fix_win_build) https://git.io/vMiIq
+[16:49:22] *** Joins: [0xAA] (~ThisIsZen@ )
+[16:50:17] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[16:52:11] *** Quits: [0xAA] (~ThisIsZen@ ) (Max SendQ exceeded)
+[16:55:17] -qtox-git-spam- [qTox] zetok opened pull request #4082: Update translations from Weblate and rename translation (master...tr) https://git.io/vMimq
+[16:58:55] *** Joins: [0xAA] (~ThisIsZen@ )
+[17:06:41] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[17:22:15] *** Joins: fred_barclay (~fred@ )
+[17:23:49] *** Joins: Yoshimo (~anything@ )
+[17:25:33] *** Joins: in1t3r_ (~LordShiva@ )
+[17:26:28] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[17:26:55] *** Joins: f10 (~flo@ )
+[17:26:59] *** Joins: in1t3r_ (~LordShiva@ )
+[17:33:17] *** Quits: fred_barclay (~fred@ ) (Ping timeout: 255 seconds)
+[18:10:04] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[18:10:32] *** Joins: DiCE1904 (~textual@ )
+[18:12:05] *** Joins: sudden6 (~anonymous@ )
+[18:50:47] *** Quits: [0xAA] (~ThisIsZen@ ) (Quit: Leaving)
+[19:18:02] *** Joins: cenysor (~cenysor@ )
+[19:28:57] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 240 seconds)
+[19:31:41] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 240 seconds)
+[19:37:43] <vindelschtuffen> zetok, thanks, I have a corrupted save and I'm trying to rescue it
+[19:37:51] <zetok> oh, I see
+[19:37:58] <vindelschtuffen> it might be a qtox bug actually, all my qtox-created saves are corrupted now and crash every client I try
+[19:38:52] <zetok> huh
+[19:38:57] <zetok> "corrupted" ?
+[19:39:13] <zetok> what hardware / qTox version / OS ?
+[19:40:08] <zetok> are the clients that you're trying using irungentoo's toxcore?
+[19:41:00] <vindelschtuffen> thinkpad, Git commit: c4fb84e83e1d674f5bf63772e596b0a3b4ed927a, debian testing
+[19:41:15] <vindelschtuffen> my system tox lib is c-toxcore
+[19:41:42] <zetok> i386 ?
+[19:41:44] <vindelschtuffen> and I use qtox, utox, and toxic from git
+[19:41:53] <vindelschtuffen> amd64
+[19:42:25] <zetok> ok, that's weird
+[19:42:52] <vindelschtuffen> qtox gives me a database error in gdb when loading the profile before segfaulting, utox segfaults with "Avatars:Saved avatar file for friend (<some hex here>) too large for tox" 
+[19:43:42] <zetok> do you have a working backup?
+[19:43:52] <vindelschtuffen> no
+[19:44:02] <zetok> :|
+[19:44:10] <vindelschtuffen> all the profiles I was using act the same way
+[19:44:24] <vindelschtuffen> if I make a new profile with utox and open it in qtox it works
+[19:45:49] <zetok> what is the DB error?
+[19:47:50] <vindelschtuffen> Thread 9 "qTox Database" received signal SIGSEGV, Segmentation fault.
+[19:48:01] <vindelschtuffen> [Switching to Thread 0x7fffb2301700 (LWP 12597)]
+[19:48:13] <vindelschtuffen> 0x00007fffee1ceb77 in EVP_DecryptUpdate () from /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+[19:51:17] <zetok> ah
+[19:51:34] <zetok> vindelschtuffen: https://github.com/qTox/qTox/issues/4054
+[19:53:36] <vindelschtuffen> Ah, good to know, thanks :)
+[20:05:57] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vMiSl
+[20:05:57] -qtox-git-spam- qTox/master 5d4609b sudden6: fix(jenkins): preserve the correct linking order...
+[20:28:44] *** Quits: zero-ghost (~0@ ) (Ping timeout: 255 seconds)
+[20:29:29] *** Joins: Yoshimo (~anything@ )
+[20:30:39] <sudden6> zetok: I found the use case
+[20:35:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[20:36:39] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:43:27] <zetok> :)
+[20:43:41] <zetok> avatars?
+[20:45:30] <sudden6> zetok: look at the updated PR
+[20:46:07] <sudden6> basically if you want to do it your way you'd have to keep the password in memory in clear text
+[20:46:50] <sudden6> with the object there's only the key, which can't be computed back to the pw
+[20:47:28] <zetok> um
+[20:47:45] <zetok> there's no difference though?
+[20:48:04] <sudden6> significant difference
+[20:53:53] <zetok> sudden6: ok, what difference?
+[20:54:34] <sudden6> pw -> key works, key -> pw doesn't
+[20:56:10] <sudden6> zetok: simply put if you get the key stolen you can encrypt/decrypt that one file
+[20:56:32] <sudden6> if you get the pw stolen and it's used elsewhere you're fucked
+[20:56:49] <zetok> right
+[21:01:42] <_moep_> sudden6: did you added with your pq also the new german version to main?
+[21:02:27] *** Joins: MiokIry (~Miok@ )
+[21:07:36] <sudden6> _moep_: ???
+[21:07:40] <sudden6> pq?
+[21:07:57] <sudden6> I didn't write any new german translations
+[21:08:48] *** Joins: f10_ (~flo@ )
+[21:09:59] <_moep_> sudden6: no, if its in the main tree
+[21:22:05] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[21:27:28] *** Joins: f10_ (~flo@ )
+[21:55:18] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:07:13] *** Joins: pcre (~quassel@ )
+[22:18:29] *** Joins: zero-ghost (~0@ )
+[22:35:50] *** Joins: f10__ (~flo@ )
+[22:35:53] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:38:20] *** Quits: pcre (~quassel@ ) (Ping timeout: 255 seconds)
+[22:59:03] *** Quits: x_ (~x@ ) (Ping timeout: 258 seconds)
+[23:20:15] <nurupo> utox got new domains, one of which is qtox.rip ( http://qtox.rip )
+[23:21:55] <nurupo> sounds like utox acknowledges only qtox as its competitor, to the point of paying for the domain and configuring webserver
+[23:36:41] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 240 seconds)
+[23:43:57] <sudden6> uTox is a waste of money clearly ;)
+[23:45:23] <sudden6> nurupo: can you tell me if I implemented the factory method stuff correctly?
+[23:45:39] <sudden6> https://github.com/qTox/qTox/pull/4060/commits/bb4f0c32c080b76712e8121f6098f9a8b83ff20e
+[23:45:49] <sudden6> if you have time of course
+[23:59:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
