@@ -1,0 +1,124 @@
+[01:01:35] *** Joins: MDrights (~MDrights@ )
+[01:10:52] *** Joins: f10 (~flo@ )
+[01:11:29] *** Quits: f10__ (~flo@ ) (Ping timeout: 245 seconds)
+[01:22:51] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[01:23:10] *** Joins: f10 (~flo@ )
+[01:34:03] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 252 seconds)
+[01:55:24] *** Joins: MDrights (~MDrights@ )
+[02:00:56] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[02:01:30] *** Joins: MDrights (~MDrights@ )
+[02:19:01] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[02:35:13] *** Joins: worfox_ (~worfox@ )
+[02:35:29] *** Joins: bennabiy (~bennabiy@ )
+[02:40:48] *** Joins: arza- (arza@ )
+[02:40:49] *** Quits: arza- (arza@ ) (Changing host)
+[02:40:49] *** Joins: arza- (arza@ )
+[02:41:57] *** Quits: bkidwell (~bkidwell@ ) (*.net *.split)
+[02:41:57] *** Quits: Ciblia (cibliamatr@ ) (*.net *.split)
+[02:41:58] *** Quits: arza (arza@ ) (*.net *.split)
+[02:41:58] *** Quits: worfox (~worfox@ ) (*.net *.split)
+[02:42:57] *** arza- is now known as arza
+[02:47:45] *** Quits: parasite_ (~parasite@ ) (Remote host closed the connection)
+[02:49:40] *** Joins: Ciblia (cibliamatr@ )
+[02:50:20] *** Joins: parasite_ (~parasite@ )
+[03:01:40] *** Joins: bkidwell (~bkidwell@ )
+[03:11:14] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:30:31] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[03:36:00] *** Quits: bennabiy (~bennabiy@ ) (Remote host closed the connection)
+[03:42:14] *** Joins: f10__ (~flo@ )
+[03:42:16] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[03:42:59] *** Joins: f10_ (~flo@ )
+[03:43:13] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[04:08:35] *** Joins: f10 (~flo@ )
+[04:08:53] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[04:16:33] *** Joins: f10__ (~flo@ )
+[04:19:23] *** Quits: f10 (~flo@ ) (Ping timeout: 248 seconds)
+[04:21:11] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[04:22:56] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 240 seconds)
+[04:41:29] *** Joins: Se7en (~Se7en@ )
+[04:41:47] <Se7en> Who is the moderator in #tox
+[04:42:01] <Emcy> no one
+[04:42:06] <Se7en> I wish to ask for help, but I am still banned after posting a joke over a year ago...
+[04:42:07] <Emcy> its like somaila in there
+[04:42:53] <Se7en> I've switched to toxic
+[04:43:01] <Se7en> And I am having problems with the repo
+[04:43:12] <Se7en> Using the nightly
+[04:43:16] <Se7en> pkg.tox.chat
+[04:43:26] <Se7en> Newest update of ToxAv results in a segfault
+[04:43:37] <Se7en> se7en@workstation:~$ tox
+[04:43:39] <Se7en> toxic: error while loading shared libraries: libtoxav.so.0: cannot open shared object file: No such file or directory
+[04:43:41] <Se7en> se7en@workstation:~$ 
+[04:44:28] <Se7en> Tox is actually a script I made which allows me to not need to enter the proxy informatiuon each time
+[04:46:10] <robinli> Try running `sudo ldconfig`
+[04:46:10] <Se7en> Does anyone have information to give me on this
+[04:46:23] <Se7en> Nope, did not change anything
+[04:46:37] <Se7en> I also thoufght that apt runs it itself 
+[04:49:00] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[04:55:49] *** Joins: MDrights (~MDrights@ )
+[05:07:19] <nurupo> Se7en: what distribution version?
+[05:07:30] <Se7en> I am using Devuan Jessie
+[05:07:50] <Se7en> Devuan is a beta fork of Debian which is focused on minimalism and removes Systemd completely
+[05:14:59] <nurupo> Se7en: just installed toxic on my debian jessie system, don't have any issue running it
+[05:15:07] <Se7en> I'm using the nightly repo
+[05:15:12] <Se7en> Did you add the nightly repo?
+[05:17:47] *** Joins: [0xAA] (~ThisIsZen@ )
+[05:20:24] <nurupo> hm
+[05:20:46] <nurupo> it looks like it was using previously installed toxcore, i removed that and can reproduce the issue
+[05:22:18] *** Quits: x_ (~x@ ) (Remote host closed the connection)
+[05:22:56] <nurupo> Se7en: i have unbanned you in #tox
+[05:23:00] <Se7en> So the issue is in the latest Toxcor
+[05:43:42] *** Joins: jjuran_ (~jjuran@ )
+[05:45:06] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 240 seconds)
+[05:45:06] *** jjuran_ is now known as jjuran
+[06:22:38] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[07:17:26] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 240 seconds)
+[08:03:53] *** Joins: LittleVulpix (~Miranda@ )
+[08:15:47] <oranges> tox should require systemd
+[08:40:20] *** Quits: cisc (~cisc@ ) (Ping timeout: 256 seconds)
+[08:41:29] *** Joins: cisc (~cisc@ )
+[09:24:26] <Se7en> Gross, oranges 
+[09:26:58] *** Joins: MDrights (~MDrights@ )
+[09:35:17] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[09:38:33] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[09:39:03] *** Joins: LittleVulpix (~Miranda@ )
+[09:47:38] *** Joins: Chiitoo (~Chiitoo@ )
+[10:17:17] *** Joins: sudden6 (~anonymous@ )
+[10:41:02] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[11:13:09] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 276 seconds)
+[11:27:11] *** Joins: [0xAA] (~ThisIsZen@ )
+[11:28:27] *** Joins: sudden6 (~anonymous@ )
+[12:34:09] *** Joins: f10_ (~flo@ )
+[12:54:49] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[13:28:46] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[13:29:24] *** Joins: f10_ (~flo@ )
+[13:34:26] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[13:34:35] *** Quits: helios21 (~quassel@ ) (Remote host closed the connection)
+[13:35:30] *** Joins: helios21 (~quassel@ )
+[13:42:36] *** Joins: f10_ (~flo@ )
+[13:57:17] *** Joins: pcre (~quassel@ )
+[14:23:37] *** Joins: MDrights (~MDrights@ )
+[15:00:59] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[15:05:23] *** Quits: Diadlo (~diadlo@ ) (Quit: Konversation terminated!)
+[15:06:53] *** Joins: Diadlo (~diadlo@ )
+[15:07:01] *** Quits: Diadlo (~diadlo@ ) (Client Quit)
+[15:10:23] *** Joins: sudden6 (~anonymous@ )
+[15:48:15] *** Joins: reBrain (~quassel@ )
+[15:59:36] *** Joins: cenysor (~cenysor@ )
+[16:02:26] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:11:57] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[16:12:48] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[16:37:42] *** Joins: x_ (~x@ )
+[17:25:13] *** Joins: Yoshimo (~anything@ )
+[18:15:00] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[18:15:32] *** Joins: f10_ (~flo@ )
+[18:20:38] *** Quits: x_ (~x@ ) (Ping timeout: 260 seconds)
+[18:33:00] *** Joins: x_ (~x@ )
+[18:52:08] *** Joins: reBrain (~quassel@ )
+[19:31:32] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[20:53:11] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:24:49] *** Quits: pcre (~quassel@ ) (Ping timeout: 245 seconds)
+[21:36:21] *** Quits: parasite_ (~parasite@ ) (Read error: Connection reset by peer)
+[21:49:54] *** Joins: sudden6 (~anonymous@ )
+[21:55:36] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:32:40] *** Joins: parasite_ (~parasite@ )
+[23:09:29] *** Joins: Darky (~Darky@ )
