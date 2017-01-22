@@ -1,0 +1,81 @@
+[00:29:59] *** Joins: DaSpirit (~DaSpirit@ )
+[01:29:44] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[01:41:31] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[02:12:01] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[02:15:58] *** Quits: DiCE1904 (~textual@ ) (Quit: Textual IRC Client: www.textualapp.com)
+[02:20:19] *** Joins: f10__ (~flo@ )
+[04:36:58] *** Quits: parasite_ (~parasite@ ) (Ping timeout: 248 seconds)
+[04:40:19] *** Joins: parasite_ (~parasite@ )
+[04:48:59] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[04:49:33] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[06:27:33] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[08:24:20] *** Joins: Yoshimo (~anything@ )
+[08:34:06] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[08:34:58] *** Joins: LittleVulpix (~Miranda@ )
+[08:57:40] *** Quits: parasite_ (~parasite@ ) (Read error: Connection reset by peer)
+[09:07:12] *** Joins: parasite_ (~parasite@ )
+[09:07:31] *** Quits: parasite_ (~parasite@ ) (Remote host closed the connection)
+[09:11:08] *** Joins: parasite_ (~parasite@ )
+[09:30:38] *** Quits: parasite_ (~parasite@ ) (Read error: Connection reset by peer)
+[10:27:10] *** Joins: sudden6 (~anonymous@ )
+[10:49:04] *** Joins: [0xAA] (~ThisIsZen@ )
+[10:50:15] *** Joins: _Olaf (~quassel@ )
+[11:10:21] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vMHjV
+[11:10:21] -qtox-git-spam- qTox/master a5d2c57 sudden6: fix(addfriend): create ToxId from QString before emitting the signal...
+[11:52:46] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[11:54:15] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[13:32:20] *** Joins: cenysor (~cenysor@ )
+[13:41:21] *** Joins: f10 (~flo@ )
+[13:53:12] *** Joins: f10__ (~flo@ )
+[14:44:29] *** Joins: DaSpirit (~DaSpirit@ )
+[14:53:53] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[15:39:36] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:53:17] *** Joins: MDrights (~MDrights@ )
+[16:01:51] *** Joins: bashrc (~motters@ )
+[16:18:23] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[16:42:41] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 240 seconds)
+[17:11:34] *** Joins: in1t3r_ (~LordShiva@ )
+[18:27:51] *** Joins: vindelschtuffen (~vindelsch@ )
+[18:29:38] *** Joins: DiCE1904 (~textual@ )
+[18:42:27] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 255 seconds)
+[18:47:58] *** Joins: vindelschtuffen (~vindelsch@ )
+[18:51:29] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[18:55:22] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[19:08:06] *** Quits: bashrc (~motters@ ) (Ping timeout: 255 seconds)
+[19:08:21] *** Joins: bashrc (~motters@ )
+[20:42:14] *** Joins: Yoshimo (~anything@ )
+[20:47:15] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[21:10:57] *** Joins: Bill_MI (~Bill@ )
+[21:42:12] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[21:44:07] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[21:45:40] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[21:46:32] *** Joins: f10 (~flo@ )
+[21:48:46] *** Joins: f10__ (~flo@ )
+[22:21:28] <VVD> hi
+[22:21:44] <VVD> zetok, https://github.com/qTox/qTox/issues/4012#issuecomment-273962027
+[22:22:26] <zetok> VVD: hm?
+[22:23:13] <VVD> read comment, plz
+[22:23:26] <VVD> last comment
+[22:23:32] <zetok> yeah, I've read it
+[22:24:04] <VVD> bug in ICU
+[22:24:31] <VVD> now workaround in qt5
+[22:24:35] <VVD> no workaround in qt5
+[23:12:46] <VVD> zetok, can you commit this workaround?
+[23:12:59] <zetok> can you make a PR?
+[23:13:01] <VVD> may be with #ifdef __FreeBSD__
+[23:13:36] <VVD> diff in my last comment
+[23:13:44] <VVD> added 2 lines
+[23:13:49] <VVD> include and setlocale
+[23:14:50] *** Quits: Darky (~Darky@ ) (Ping timeout: 245 seconds)
+[23:17:15] *** Quits: Bill_MI (~Bill@ ) (Quit: Bye...)
+[23:35:33] *** Joins: Emcy_ (~MC@ )
+[23:35:33] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[23:35:33] *** Joins: Emcy_ (~MC@ )
+[23:38:57] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[23:40:24] *** Joins: Emcy (~MC@ )
+[23:40:24] *** Quits: Emcy (~MC@ ) (Changing host)
+[23:40:24] *** Joins: Emcy (~MC@ )
+[23:42:59] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 264 seconds)
+[23:57:54] *** Joins: Emcy_ (~MC@ )
+[23:57:54] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[23:57:54] *** Joins: Emcy_ (~MC@ )
