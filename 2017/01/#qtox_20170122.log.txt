@@ -1,0 +1,369 @@
+[00:00:59] *** Quits: Emcy (~MC@ ) (Ping timeout: 264 seconds)
+[00:06:23] *** Joins: Darky (~Darky@ )
+[00:08:27] *** Joins: Emcy (~MC@ )
+[00:08:27] *** Quits: Emcy (~MC@ ) (Changing host)
+[00:08:27] *** Joins: Emcy (~MC@ )
+[00:10:44] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[00:17:20] <VVD> zetok, what is PR for qTox?
+[00:17:29] <zetok> pull request
+[00:18:57] <VVD> zetok, I don't know how…
+[00:30:40] *** Joins: Emcy_ (~MC@ )
+[00:30:40] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[00:30:40] *** Joins: Emcy_ (~MC@ )
+[00:33:30] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[00:45:23] *** Joins: Emcy (~MC@ )
+[00:45:23] *** Quits: Emcy (~MC@ ) (Changing host)
+[00:45:23] *** Joins: Emcy (~MC@ )
+[00:47:45] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 245 seconds)
+[00:48:30] *** Joins: Emcy_ (~MC@ )
+[00:48:30] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[00:48:30] *** Joins: Emcy_ (~MC@ )
+[00:50:49] *** Quits: Emcy (~MC@ ) (Ping timeout: 248 seconds)
+[01:13:08] *** Joins: apollo11w__ (~apollo11w@ )
+[01:24:53] <zetok> VVD: https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#how-to-start-contributing
+[01:28:41] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 248 seconds)
+[01:29:19] *** Quits: f10__ (~flo@ ) (Ping timeout: 258 seconds)
+[01:29:20] *** Joins: f10_ (~flo@ )
+[01:38:42] *** Joins: Emcy (~MC@ )
+[01:38:42] *** Quits: Emcy (~MC@ ) (Changing host)
+[01:38:42] *** Joins: Emcy (~MC@ )
+[01:42:02] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[01:47:19] *** Joins: Emcy_ (~MC@ )
+[01:47:19] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[01:47:19] *** Joins: Emcy_ (~MC@ )
+[01:49:23] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[01:55:23] *** Joins: Emcy (~MC@ )
+[01:55:23] *** Quits: Emcy (~MC@ ) (Changing host)
+[01:55:23] *** Joins: Emcy (~MC@ )
+[01:58:11] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[01:58:26] *** Joins: Emcy_ (~MC@ )
+[01:58:26] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[01:58:26] *** Joins: Emcy_ (~MC@ )
+[02:01:45] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[02:10:06] *** apollo11w__ is now known as apollo11w
+[02:10:46] *** Quits: apollo11w (~apollo11w@ ) (Changing host)
+[02:10:46] *** Joins: apollo11w (~apollo11w@ )
+[02:11:47] <apollo11w> zetok, I noticed your article on how evil #tox is. But you founded #qtox. Isn't this self promotion?
+[02:12:57] *** Joins: Emcy (~MC@ )
+[02:12:57] *** Quits: Emcy (~MC@ ) (Changing host)
+[02:12:57] *** Joins: Emcy (~MC@ )
+[02:15:59] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 264 seconds)
+[02:18:24] <zetok> apollo11w: #qtox was made long before the post
+[02:19:41] <apollo11w> Ah okay. So why should I use tox over jabber?
+[02:20:14] <zetok> encryption
+[02:20:29] <apollo11w> But jabber has onemo or otr
+[02:20:39] <apollo11w> How does tox encrypt its traffic?
+[02:21:29] <zetok> NaCl/libsodium
+[02:22:50] <zetok> dunno about onemo, but otr implementation that (all/most?) jabber clients used had this wonderful security vulnerability that allowed remote code execution
+[02:24:26] <apollo11w> I for one use gajim
+[02:29:53] *** Joins: Emcy_ (~MC@ )
+[02:32:41] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[02:33:37] *** Joins: Emcy (~MC@ )
+[02:33:37] *** Quits: Emcy (~MC@ ) (Changing host)
+[02:33:37] *** Joins: Emcy (~MC@ )
+[02:35:14] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[02:41:24] *** Joins: Emcy_ (~MC@ )
+[02:41:24] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[02:41:24] *** Joins: Emcy_ (~MC@ )
+[02:44:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[02:53:57] *** Joins: Emcy (~MC@ )
+[02:56:30] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[03:06:43] *** Joins: MiokIry (~Miok@ )
+[03:15:41] *** Joins: Emcy_ (~MC@ )
+[03:15:41] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[03:15:41] *** Joins: Emcy_ (~MC@ )
+[03:17:41] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[03:18:15] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[03:18:36] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[03:22:02] *** Joins: f10_ (~flo@ )
+[03:22:15] *** Joins: f10 (~flo@ )
+[03:26:19] *** Joins: Emcy (~MC@ )
+[03:26:19] *** Quits: Emcy (~MC@ ) (Changing host)
+[03:26:19] *** Joins: Emcy (~MC@ )
+[03:28:11] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[03:34:48] *** Quits: cisc (~cisc@ ) (Ping timeout: 276 seconds)
+[03:38:58] *** Joins: Emcy_ (~MC@ )
+[03:38:58] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[03:38:58] *** Joins: Emcy_ (~MC@ )
+[03:41:30] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[03:45:10] <VVD> zetok, "1. Fork the qTox repository on Github to your existing account."
+[03:45:17] <VVD> I don't want new fork
+[03:45:28] <VVD> just 2 lines patch
+[03:51:06] *** Joins: Emcy (~MC@ )
+[03:51:06] *** Quits: Emcy (~MC@ ) (Changing host)
+[03:51:06] *** Joins: Emcy (~MC@ )
+[03:54:14] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 255 seconds)
+[04:02:50] *** Joins: Emcy_ (~MC@ )
+[04:02:50] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[04:02:50] *** Joins: Emcy_ (~MC@ )
+[04:05:11] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[04:08:22] *** Joins: Emcy (~MC@ )
+[04:10:50] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 260 seconds)
+[04:18:57] *** Joins: Emcy_ (~MC@ )
+[04:18:57] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[04:18:57] *** Joins: Emcy_ (~MC@ )
+[04:21:35] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[04:31:53] *** Quits: apollo11w (~apollo11w@ ) (Read error: Connection reset by peer)
+[04:45:57] *** Joins: Emcy (~MC@ )
+[04:45:57] *** Quits: Emcy (~MC@ ) (Changing host)
+[04:45:57] *** Joins: Emcy (~MC@ )
+[04:48:30] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[05:00:27] *** Joins: Emcy_ (~MC@ )
+[05:00:27] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[05:00:27] *** Joins: Emcy_ (~MC@ )
+[05:03:05] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[05:13:39] *** Joins: Emcy (~MC@ )
+[05:15:23] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[05:15:53] *** Joins: Emcy_ (~MC@ )
+[05:18:55] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[05:45:58] *** Joins: Emcy (~MC@ )
+[05:45:58] *** Quits: Emcy (~MC@ ) (Changing host)
+[05:45:58] *** Joins: Emcy (~MC@ )
+[05:48:26] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 255 seconds)
+[05:52:04] *** Joins: Emcy_ (~MC@ )
+[05:52:04] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[05:52:04] *** Joins: Emcy_ (~MC@ )
+[05:54:50] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[06:07:35] *** Joins: Emcy (~MC@ )
+[06:07:35] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:07:35] *** Joins: Emcy (~MC@ )
+[06:10:17] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[06:15:18] *** Joins: Emcy_ (~MC@ )
+[06:15:18] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:15:18] *** Joins: Emcy_ (~MC@ )
+[06:17:06] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[06:22:27] *** Joins: Emcy (~MC@ )
+[06:22:27] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:22:27] *** Joins: Emcy (~MC@ )
+[06:25:15] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 245 seconds)
+[06:26:25] *** Joins: Emcy_ (~MC@ )
+[06:26:25] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:26:25] *** Joins: Emcy_ (~MC@ )
+[06:29:06] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[06:49:56] *** Joins: Emcy (~MC@ )
+[06:52:47] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 255 seconds)
+[06:57:20] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[06:57:33] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[07:15:27] *** Joins: Emcy_ (~MC@ )
+[07:15:27] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[07:15:27] *** Joins: Emcy_ (~MC@ )
+[07:18:30] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[07:42:32] *** Joins: Emcy (~MC@ )
+[07:42:32] *** Quits: Emcy (~MC@ ) (Changing host)
+[07:42:32] *** Joins: Emcy (~MC@ )
+[07:46:06] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[08:01:27] *** Joins: Emcy_ (~MC@ )
+[08:01:27] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:01:27] *** Joins: Emcy_ (~MC@ )
+[08:03:35] *** Quits: Emcy (~MC@ ) (Ping timeout: 245 seconds)
+[08:17:34] *** Joins: Emcy (~MC@ )
+[08:17:34] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:17:34] *** Joins: Emcy (~MC@ )
+[08:20:59] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[08:31:53] *** Joins: Diadlo (~diadlo@ )
+[08:38:10] *** Quits: koshii (~w@ ) (Ping timeout: 245 seconds)
+[08:41:17] *** Joins: koshii (~w@ )
+[09:31:39] *** Joins: [0xAA] (~ThisIsZen@ )
+[09:48:02] *** Quits: [0xAA] (~ThisIsZen@ ) (Quit: Leaving)
+[09:48:18] *** Joins: [0xAA] (~ThisIsZen@ )
+[09:54:19] *** Quits: helios21 (~quassel@ ) (Remote host closed the connection)
+[09:54:28] *** Joins: helios21 (~quassel@ )
+[10:08:38] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[10:09:05] *** Joins: VVD (~VVD@ )
+[10:18:35] *** Joins: Yoshimo (~anything@ )
+[10:21:04] *** Joins: bashrc (~motters@ )
+[10:24:18] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[10:45:16] *** Joins: cisc (~cisc@ )
+[10:50:17] *** Quits: cisc (~cisc@ ) (Ping timeout: 248 seconds)
+[10:52:00] *** Joins: cisc (~cisc@ )
+[11:28:59] *** Parts: mva (znc@ ) ()
+[12:31:21] *** Joins: cenysor (~cenysor@ )
+[12:43:22] *** Quits: Emcy (~MC@ ) (Quit: Leaving)
+[12:44:02] *** Joins: Emcy (~MC@ )
+[12:44:02] *** Quits: Emcy (~MC@ ) (Changing host)
+[12:44:02] *** Joins: Emcy (~MC@ )
+[12:49:48] *** Joins: sudden6 (~anonymous@ )
+[13:50:21] *** Joins: f10 (~flo@ )
+[13:54:13] *** Joins: f10_ (~flo@ )
+[14:06:05] *** Joins: f10__ (~flo@ )
+[14:06:32] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[14:08:16] *** Quits: f10__ (~flo@ ) (Excess Flood)
+[14:10:49] *** Joins: f10__ (~flo@ )
+[14:15:01] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[14:20:11] *** Joins: f10__ (~flo@ )
+[14:22:30] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[14:29:26] *** Quits: [0xAA] (~ThisIsZen@ ) (Quit: Leaving)
+[14:56:53] <sudden6> nurupo: is std::make_unique optional in C++11?
+[14:57:24] <sudden6> because I can't use it, even though we set CONFIG   += c++11 in qmake
+[15:17:45] *** Joins: sudd3n6 (~anonymous@ )
+[15:20:55] <iphy> sudden6: it doesn't exist
+[15:21:01] <iphy> it's C++14
+[15:21:10] <sudden6> oh, ok thx then
+[15:26:15] *** Joins: f10 (~flo@ )
+[15:38:54] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[15:44:37] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[15:45:04] *** Joins: f10__ (~flo@ )
+[15:58:10] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[15:59:46] *** Joins: f10 (~flo@ )
+[16:05:02] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:05:31] *** Joins: f10 (~flo@ )
+[16:11:50] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:11:54] *** Joins: f10_ (~flo@ )
+[16:30:09] *** Joins: DaSpirit (~DaSpirit@ )
+[16:31:32] *** Joins: MiokIry_ (~Mutter@ )
+[16:33:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[16:35:18] *** Quits: MiokIry_ (~Mutter@ ) (Client Quit)
+[16:41:24] *** Joins: f10_ (~flo@ )
+[16:46:46] *** Joins: f10 (~flo@ )
+[16:49:10] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[16:56:13] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[16:57:16] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[16:58:06] *** Joins: Emcy (~MC@ )
+[16:58:06] *** Quits: Emcy (~MC@ ) (Changing host)
+[16:58:06] *** Joins: Emcy (~MC@ )
+[16:58:30] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[16:59:15] *** Joins: Emcy (~MC@ )
+[17:00:40] *** Joins: f10_ (~flo@ )
+[17:02:57] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[17:05:36] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[17:08:08] *** Joins: f10_ (~flo@ )
+[17:15:01] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[17:15:55] *** Joins: albel727 (~albel727@ )
+[17:21:28] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[17:22:05] *** Joins: f10_ (~flo@ )
+[17:22:41] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[17:30:00] *** Joins: albel727 (~albel727@ )
+[17:34:17] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[17:34:41] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[17:34:41] *** Joins: f10_ (~flo@ )
+[17:39:46] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[17:40:22] *** Joins: f10_ (~flo@ )
+[17:53:10] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[17:53:19] *** Joins: f10_ (~flo@ )
+[17:53:43] *** Joins: albel727 (~albel727@ )
+[18:06:22] *** Joins: [0xAA] (~ThisIsZen@ )
+[18:16:21] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[18:34:36] <zetok> Diadlo: hi
+[18:35:06] <sudden6> zetok: hi :)
+[18:35:09] <sudden6> how are you?
+[18:35:21] <zetok> ~fine, how about you?
+[18:35:31] <sudden6> ~busy
+[18:35:36] <zetok> :)
+[18:36:07] <zetok> Diadlo: what's the status with merging the UI/redesign stuff?
+[18:36:10] <sudden6> you probably already noticed by the reduced activity^^
+[18:36:20] <zetok> yeah :)
+[18:36:29] <zetok> ~kinda
+[18:36:35] <zetok> also been busy
+[18:37:11] <sudden6> also university exams?
+[18:37:46] <zetok> ~freeze for 1.8 is in a week
+[18:38:22] <sudden6> yep
+[18:39:22] <sudden6> is there any urgent stuff you think should be fixed?
+[18:39:57] <zetok> regression stuff in https://github.com/qTox/qTox/milestone/13
+[18:40:21] <zetok> 4 top on the list
+[18:41:43] <zetok> https://github.com/qTox/qTox/issues/4009 should have been fixed for 1.7, but it wasn't
+[18:43:14] <sudden6> for 4009 I don't really know where the problem comes from
+[18:43:15] <zetok> https://github.com/qTox/qTox/pull/3935 is fixing it, but.. :/
+[18:46:23] <sudden6> zetok: the conflicts are minor, should I create a new PR?
+[18:46:35] <zetok> sudden6: I guess?
+[18:46:36] <sudden6> (didn't go over the comments for any issues)
+[18:47:21] <sudden6> ok
+[18:47:43] *** Joins: bennabiy (~bennabiy@ )
+[18:52:24] <Diadlo> Hi guys
+[18:52:48] *** Joins: f10 (~flo@ )
+[18:53:00] <sudden6> Diadlo: o////
+[18:53:28] <Diadlo> Sorry. I had an exams
+[18:53:52] <Diadlo> Now I'm more free
+[18:54:30] <sudden6> lucky you, my exams aren't over^^
+[18:55:24] <sudden6> Diadlo: do you want to rebase https://github.com/qTox/qTox/pull/3935 or should I?
+[18:55:29] <Diadlo> sudden6: My too :)
+[18:56:02] <Diadlo> sudden6: Rebasing is not problem. I have no idea how fix problem with icon size
+[18:57:12] <Diadlo> Are we plan to merge https://github.com/qTox/qTox/pull/4065 ?
+[18:57:53] <sudden6> Diadlo: don't know
+[18:58:05] <zetok> :/
+[18:58:33] <sudden6> I think we can ignore superhuman 7 calls per second for now, but should make an issue about it
+[18:59:41] <sudden6> > core/coreav.cpp:766 : Warning: Call with friend 10 died of unnatural causes! <- that's worrying though
+[19:00:50] <Diadlo> I'm don't think, that this PR produce this bug. It's just open way to produce it
+[19:01:44] <sudden6> +1
+[19:03:33] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 255 seconds)
+[19:10:37] <sudden6> is there an easy way in qtcreator to debug layout and widget stuff?
+[19:13:54] <sudden6> Diadlo: do you still agree with "The plan" ? :)
+[19:21:03] <Diadlo> ~Yes
+[19:21:40] <Diadlo> But IMO we need someone more experienced
+[19:22:29] *** Joins: antis (~nils@ )
+[19:23:22] <sudden6> if this is your only concern I'm pretty happy ;)
+[19:24:05] <Diadlo> Also, I'm not agree with last core class diagram
+[19:24:16] <antis> Ok… I made it. Though I currently am missing the chat in the buddy list… anyway. Hi mates!
+[19:24:26] <sudden6> hi antis :)
+[19:24:26] <Diadlo> Hi
+[19:25:18] <sudden6> Diadlo: feel free to critize everything in it, I can only learn from that :)
+[19:25:47] <antis> @diadlo how was that uml editor called again? might need it to visualize something for ya :)
+[19:26:03] *** Quits: vindelschtuffen (~vindelsch@ ) (Remote host closed the connection)
+[19:26:04] <sudden6> antis: you mean Umbrello?
+[19:26:44] <Diadlo> antis: Umbrello
+[19:26:50] <antis> yep, does it run on linux (debian)?
+[19:27:02] <sudden6> make sure to get a recent release or git if you want to open the diagrams in planning
+[19:27:50] <antis> ah have a better idea -> actually qt creator has a builtin tool :)
+[19:28:46] <zetok> >core/coreav.cpp:299 : Debug: CoreAV::cancelCall: Backed off of thread-switch lock
+[19:28:54] * zetok wonders
+[19:28:56] <Diadlo> antis: Where?
+[19:29:23] <zetok> Diadlo: ok, it's reproducible when one switches clicking between audio and video call buttons
+[19:29:47] <antis> wait: It's a plugin called ModelEditor - and it actually can do reverse engineering AFIAK it is somewhat beta, but it works stable… :)
+[19:30:20] <zetok> also, an interesting thing – qTox uses 600% CPU
+[19:30:45] <Diadlo> zetok: AFAIR it's old issue. Isn't it?
+[19:31:08] <zetok> yeah
+[19:31:12] <antis> https://wiki.qt.io/ModelEditor
+[19:31:47] <antis> @zetok you have that many cores? then it's normal…
+[19:32:00] <Diadlo> antis: I prefer to use separate tools :)
+[19:32:01] <zetok> antis: https://a.uguu.se/RqZwer8b5rcI.png ← normal?
+[19:32:10] <Diadlo> But I will try
+[19:32:35] <antis> @diadlo same here - usually i use umlet but it's been looooooong time i drew my last uml…
+[19:33:55] <zetok> Diadlo: well, the issue is reproducible on master with lots of calls :/
+[19:33:57] <antis> anyway that's not the point… i rather like to show what's available and how it works in the hope to increase a better understanding…
+[19:34:38] <zetok> load average is 12, nice way to DoS someone's box that doesn't have as much CPU power
+[19:35:33] <sudden6> does anyone know if it's possible to run mac os in kvm?
+[19:35:41] <zetok> sudden6: it is
+[19:35:49] <zetok> sudden6: but AFAIK license doesn't allow for it
+[19:36:00] <sudden6> :/
+[19:37:20] <antis> zetok: yes, normal. if your htop shows it, it means qTox is using 6 cores at 100% => 600% (it is historically, because back then there were only single-cores).
+[19:39:38] <zetok> oh, and what's better, qTox can't even close itself
+[19:39:49] <zetok> >main.cpp:312 : Debug: Clean exit with status 0
+[19:39:55] <zetok> and it's still running :D
+[19:42:26] <antis> hm… topic??
+[19:42:27] *** Joins: vindelschtuffen (~vindelsch@ )
+[19:43:31] <sudden6> antis: this PR https://github.com/qTox/qTox/pull/4065
+[19:43:41] <antis> not interested, sorry :)
+[19:43:44] <sudden6> or a bug that it uncovers :)
+[19:49:17] <sudden6> zetok: maybe you somehow managed to flood the event queue of qt^^
+[19:53:55] <zetok> hmm, interesting
+[19:54:15] <zetok> looks like system was also heavily loaded
+[19:55:10] <zetok> usr sys
+[19:55:10] <zetok>  61  39
+[19:55:37] <sudden6> hehe, qtox benching the kernel ;)
+[19:56:02] <zetok> at least it doesn't cause kernel panics like µTox :|
+[19:57:21] <sudden6> I'd be pretty proud if qTox caused a kernel panic
+[20:35:41] <sudden6> zetok: do you have a conclusion for #4065?
+[20:35:59] <sudden6> is it responsible for the problems you mentioned or not?
+[20:36:24] <sudden6> and can you add that to the PR?
+[20:42:37] <zetok> the CPU usage thing is not related to the PR
+[20:42:48] *** Parts: antis (~nils@ ) ()
+[20:51:18] *** Joins: x_ (~x@ )
+[20:54:41] *** Quits: x_ (~x@ ) (Client Quit)
+[21:02:33] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[21:03:02] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[21:03:11] *** Joins: f10 (~flo@ )
+[21:03:30] *** Joins: f10_ (~flo@ )
+[21:09:02] *** Parts: bennabiy (~bennabiy@ ) ("http://www.twelvetribes.org")
+[21:21:44] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[21:33:53] *** Joins: f10__ (~flo@ )
+[21:47:34] <VVD> Diadlo, hi
+[21:47:50] <VVD> https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=216372
+[21:48:04] <VVD> как твоя сессия?
+[22:27:01] *** Joins: x_ (~x@ )
+[22:31:38] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:40:08] *** Joins: bennabiy (~bennabiy@ )
+[22:50:50] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[23:23:20] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[23:23:37] *** Joins: cisc (~cisc@ )
+[23:25:15] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[23:25:34] *** Joins: cisc (~cisc@ )
+[23:59:52] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
