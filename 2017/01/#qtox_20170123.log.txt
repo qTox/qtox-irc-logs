@@ -1,0 +1,176 @@
+[01:51:29] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[01:51:38] *** Joins: f10_ (~flo@ )
+[01:52:03] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[01:58:55] *** Joins: f10 (~flo@ )
+[02:22:35] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 264 seconds)
+[02:39:57] *** Joins: DiCE1904 (~textual@ )
+[02:42:07] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[02:43:16] *** Joins: f10_ (~flo@ )
+[02:52:55] *** Quits: DaSpirit (~DaSpirit@ ) (Quit: Leaving)
+[03:26:49] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:27:16] *** Joins: VVD (~VVD@ )
+[04:25:21] *** Quits: x_ (~x@ ) (Ping timeout: 240 seconds)
+[04:57:08] *** Joins: apollo11w (~apollo11w@ )
+[04:57:35] <apollo11w> How much do you have to trust someone before you confide your tox ID to them?
+[05:12:00] <nurupo> just treat it like a regular handle, i.e. email address or reddit account name
+[05:17:45] <apollo11w> Lol
+[05:35:21] *** Quits: sudden6 (~anonymous@ ) (Quit: Konversation terminated!)
+[05:48:00] *** Joins: MDrights (~MDrights@ )
+[06:01:27] *** Quits: f10 (~flo@ ) (Ping timeout: 276 seconds)
+[06:01:57] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[06:02:46] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[07:32:17] *** Joins: jklyay (~a@ )
+[07:33:02] *** Quits: jklyay (~a@ ) (Client Quit)
+[07:35:19] *** Joins: jklyay (~a@ )
+[07:36:13] <jklyay> hi, my friends and me want a groupbot which invites us all the time to a group chat. is there groupbot which is easy to install? :))
+[07:39:51] <zetok> jklyay: there's https://github.com/JFreegman/ToxBot
+[07:40:29] <zetok> you'll need to patch it to make it work though
+[07:40:48] <jklyay> i'm not a programmer.. how do i use this? :s
+[07:41:01] <zetok> https://github.com/JFreegman/ToxBot/pull/11
+[07:44:28] <zetok> if it's not clear how to use it, you probably should make an issue about it
+[07:44:30] <jklyay> i try this but i think i'm doing something horribly wrong
+[07:44:32] <jklyay> http://imgur.com/gReuyWu
+[07:45:04] <zetok> oh, windows
+[07:45:10] <zetok> it's probably not supported
+[07:45:25] <jklyay> oh it's linux only u-u
+[07:45:41] <jklyay> well i have a raspberry pi
+[07:45:59] <jklyay> does it work on that?
+[07:48:49] *** Joins: sudd3n6 (~anonymous@ )
+[07:54:39] <oranges> yes
+[07:54:40] <oranges> sure
+[07:54:44] <oranges> probably
+[07:57:12] <jklyay> ok i will try, need to install raspbian first ungh
+[08:45:37] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[08:54:35] *** Joins: sudd3n6 (~anonymous@ )
+[09:01:30] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[09:02:50] *** Joins: sudd3n6 (~anonymous@ )
+[09:05:45] *** Quits: cali (~user@ ) (Ping timeout: 252 seconds)
+[09:40:33] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:06:57] <jklyay> i need to install c-toxcore for ToxBot, right? :s
+[10:17:36] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[10:17:58] *** Joins: Emcy (~MC@ )
+[10:27:23] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 264 seconds)
+[10:28:00] *** Joins: sudd3n6 (~anonymous@ )
+[10:42:13] *** Joins: in1t3r_ (~LordShiva@ )
+[10:49:12] *** Joins: [0xAA] (~ThisIsZen@ )
+[10:50:21] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[11:01:06] *** Joins: Emcy_ (~MC@ )
+[11:01:07] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[11:01:07] *** Joins: Emcy_ (~MC@ )
+[11:01:48] *** Quits: Emcy_ (~MC@ ) (Remote host closed the connection)
+[11:02:46] *** Joins: Emcy_ (~MC@ )
+[11:02:47] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[11:02:47] *** Joins: Emcy_ (~MC@ )
+[11:03:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[11:17:08] *** Quits: Emcy_ (~MC@ ) (Quit: Leaving)
+[11:23:29] *** Joins: LittleVulpix (~Miranda@ )
+[11:23:55] *** Joins: bashrc (~motters@ )
+[11:50:21] <jklyay> hi, i successfully compiled toxcore and toxbot on raspberry pi, and added my tox-id to masterkeys, how do i run it? when i execute toxbot nothing happens
+[11:56:26] <jklyay> or am i running it wrong? i'm a casual windows user pls bear with me
+[12:01:22] *** Quits: apollo11w (~apollo11w@ ) (Quit: Leaving)
+[12:02:06] <jklyay> if i run "./toxbot" in terminal i get an error: tox_new failed with error 3
+[12:08:26] *** Joins: Emcy (~MC@ )
+[12:08:26] *** Quits: Emcy (~MC@ ) (Changing host)
+[12:08:26] *** Joins: Emcy (~MC@ )
+[12:17:23] <jklyay> pls help
+[12:17:28] <jklyay> ;_;
+[12:19:16] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[12:28:24] *** Joins: Emcy (~MC@ )
+[12:28:24] *** Quits: Emcy (~MC@ ) (Changing host)
+[12:28:24] *** Joins: Emcy (~MC@ )
+[13:29:11] *** Quits: in1t3r_ (~LordShiva@ ) (Quit: Leaving)
+[13:30:20] *** Joins: in1t3r_ (~LordShiva@ )
+[13:31:21] <jklyay> http://imgur.com/qpfKqgL ;_;
+[13:52:13] *** Joins: sudd3n6 (~anonymous@ )
+[13:52:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:53:04] *** Joins: LittleVulpix (~Miranda@ )
+[14:01:10] *** Joins: f10 (~flo@ )
+[14:04:27] *** Joins: f10_ (~flo@ )
+[14:09:44] *** Joins: cali (~user@ )
+[14:14:00] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 245 seconds)
+[14:15:34] *** Quits: bennabiy (~bennabiy@ ) (Read error: Connection reset by peer)
+[14:16:10] *** Joins: bennabiy (~bennabiy@ )
+[14:22:25] *** Joins: MDrights (~MDrights@ )
+[14:28:34] *** Quits: bashrc (~motters@ ) (Ping timeout: 256 seconds)
+[14:28:50] *** Joins: bashrc (~motters@ )
+[14:39:09] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:42:53] *** Joins: MDrights (~MDrights@ )
+[15:01:52] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:11:05] <jklyay> hmm i found out the error doesnt come from toxbot
+[15:11:16] <jklyay> it comes from toxcore itself
+[15:11:49] *** Quits: jjuran (~jjuran@ ) (Remote host closed the connection)
+[15:12:35] *** Joins: jjuran (~jjuran@ )
+[15:13:28] <jklyay> https://github.com/TokTok/c-toxcore/blob/master/toxcore/tox.h#L764 this is the corresponding error to "tox_new failed with error 3", right?
+[15:19:00] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[15:19:00] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[15:22:43] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:23:40] *** Joins: VVD (~VVD@ )
+[15:26:33] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[15:28:29] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:29:19] *** Joins: VVD (~VVD@ )
+[15:38:48] *** Joins: sudd3n6 (~anonymous@ )
+[16:02:40] <iphy> jklyay: yes
+[16:05:41] <jklyay> iphy, ok, but how do i find out what causes that error? do i need specific port settings?
+[16:07:12] <iphy> jklyay: it usually means you have more than 100 toxes open
+[16:08:00] <jklyay> but how can that be, i run toxbot right after restart, iphy
+[16:08:53] <jklyay> also the cpu would go crazy if there were multiple clients open
+[16:12:15] <jklyay> oh damn, i "sudo make install"ed toxcore two times, first time without libtoxav and after seeing that toxbot needs that (for whatever reason) i compiled it with libtoxav and installed again
+[16:12:33] <jklyay> can that be the problem? wouldnt it just overwrite the old one, though?
+[16:16:34] <cisc> how is https://github.com/qTox/qTox/pull/3935 going?
+[16:22:59] *** Joins: ben_nabiy (~bennabiy@ )
+[16:34:59] *** Joins: fred_barclay (~fred@ )
+[16:34:59] *** Quits: fred_barclay (~fred@ ) (Changing host)
+[16:34:59] *** Joins: fred_barclay (~fred@ )
+[16:36:16] <zetok> jklyay: did you run ldconfig ?
+[16:36:29] <jklyay> i did, zetok
+[16:36:42] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[16:40:22] *** Joins: sudd3n6 (~anonymous@ )
+[16:45:18] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[16:49:40] *** Joins: f10 (~flo@ )
+[16:50:43] *** Joins: f10_ (~flo@ )
+[17:08:16] *** Joins: cenysor (~cenysor@ )
+[17:25:56] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[17:41:50] *** Joins: in1t3r_ (~LordShiva@ )
+[17:42:46] *** Joins: jjuran_ (~jjuran@ )
+[17:43:08] *** Quits: in1t3r_ (~LordShiva@ ) (Read error: Connection reset by peer)
+[17:43:35] *** Joins: in1t3r_ (~LordShiva@ )
+[17:43:51] *** Quits: jjuran (~jjuran@ ) (Ping timeout: 252 seconds)
+[17:43:51] *** jjuran_ is now known as jjuran
+[17:47:36] <zetok> tux3: would you perhaps have time to write down how genflist is supposed to work?
+[17:51:12] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[17:55:54] *** Joins: sudd3n6 (~anonymous@ )
+[18:08:37] *** Quits: fred_barclay (~fred@ ) (Ping timeout: 255 seconds)
+[18:09:02] *** Joins: fred_barclay (~fred@ )
+[18:09:02] *** Quits: fred_barclay (~fred@ ) (Changing host)
+[18:09:02] *** Joins: fred_barclay (~fred@ )
+[18:13:28] *** Joins: x_ (~x@ )
+[18:15:34] *** Parts: bennabiy (~bennabiy@ ) ("http://www.twelvetribes.org")
+[18:20:51] *** Quits: in1t3r_ (~LordShiva@ ) (Remote host closed the connection)
+[18:21:26] *** Joins: in1t3r_ (~LordShiva@ )
+[18:28:50] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 256 seconds)
+[18:36:05] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[19:01:08] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[20:24:55] *** Joins: MiokIry (~Miok@ )
+[20:59:50] *** Parts: ben_nabiy (~bennabiy@ ) ("http://www.twelvetribes.org")
+[21:01:21] *** Joins: cenysor (~cenysor@ )
+[21:33:32] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 255 seconds)
+[21:41:21] *** Quits: f10_ (~flo@ ) (Ping timeout: 276 seconds)
+[21:43:31] *** Joins: f10__ (~flo@ )
+[21:45:52] *** Quits: f10__ (~flo@ ) (Excess Flood)
+[21:50:37] *** Joins: f10__ (~flo@ )
+[21:55:46] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:00:55] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[22:01:09] *** Joins: f10__ (~flo@ )
+[22:03:49] *** Joins: smaragdus (~omoo@ )
+[22:04:25] *** Quits: f10__ (~flo@ ) (Excess Flood)
+[22:05:58] *** Joins: f10__ (~flo@ )
+[22:08:21] *** Quits: f10__ (~flo@ ) (Excess Flood)
+[22:10:02] *** Joins: f10__ (~flo@ )
+[22:14:01] *** Quits: f10__ (~flo@ ) (Excess Flood)
+[22:20:00] *** Joins: f10__ (~flo@ )
+[22:41:26] *** Joins: f10_ (~flo@ )
+[22:42:27] *** Quits: f10__ (~flo@ ) (Ping timeout: 276 seconds)
+[22:48:35] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[22:48:57] *** Joins: f10_ (~flo@ )
+[23:56:40] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:57:45] *** Joins: VVD (~VVD@ )
