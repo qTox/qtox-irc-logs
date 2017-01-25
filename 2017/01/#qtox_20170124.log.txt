@@ -1,0 +1,182 @@
+[00:01:13] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:04:26] *** Joins: sudd3n6 (~anonymous@ )
+[00:13:06] *** sudd3n6 is now known as sudden6
+[00:59:52] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[01:28:10] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[01:28:44] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[02:03:11] *** Quits: x_ (~x@ ) (Remote host closed the connection)
+[02:49:27] *** Joins: albel727 (~albel727@ )
+[04:15:20] *** Joins: MDrights (~MDrights@ )
+[04:46:29] *** Joins: [0xAA] (~ThisIsZen@ )
+[05:24:51] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 258 seconds)
+[05:47:31] *** Quits: jklyay (~a@ ) (Quit: meow)
+[05:58:35] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 258 seconds)
+[06:05:14] *** Joins: [0xAA] (~ThisIsZen@ )
+[07:02:59] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 258 seconds)
+[07:04:36] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:05:10] *** Joins: VVD (~VVD@ )
+[07:14:42] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[07:16:29] *** Joins: albel727 (~albel727@ )
+[07:20:32] *** Joins: [0xAA] (~ThisIsZen@ )
+[07:27:02] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[07:40:53] *** Joins: albel727 (~albel727@ )
+[08:03:38] *** Joins: f10 (~flo@ )
+[08:22:42] *** Joins: f10_ (~flo@ )
+[08:25:11] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 240 seconds)
+[09:05:06] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 240 seconds)
+[09:06:37] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[09:12:43] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[09:12:44] *** Joins: f10_ (~flo@ )
+[09:13:03] *** Joins: f10 (~flo@ )
+[09:33:08] *** Joins: in1t3r_ (~LordShiva@ )
+[09:59:18] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[10:00:04] *** Joins: VVD (~VVD@ )
+[10:05:16] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[10:05:45] *** Joins: VVD (~VVD@ )
+[10:20:26] *** Joins: sudden6 (~anonymous@ )
+[10:21:05] *** Joins: cenysor (~cenysor@ )
+[10:21:45] *** Joins: x_ (~x@ )
+[10:32:50] *** Quits: sudden6 (~anonymous@ ) (Read error: Connection reset by peer)
+[10:39:17] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[10:57:29] *** Joins: sudden6 (~anonymous@ )
+[11:02:14] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[11:10:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[11:11:08] *** Joins: f10__ (~flo@ )
+[11:11:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 255 seconds)
+[11:25:53] *** Joins: sudden6 (~anonymous@ )
+[11:31:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 255 seconds)
+[11:32:35] *** Joins: sudden6 (~anonymous@ )
+[12:22:41] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[12:36:21] *** Joins: [0xAA] (~ThisIsZen@ )
+[12:49:56] *** Quits: [0xAA] (~ThisIsZen@ ) (Quit: Leaving)
+[12:56:39] *** Joins: MDrights (~MDrights@ )
+[13:02:13] *** Joins: Saamm (587d2b5e@ )
+[13:02:26] <Saamm> Hey everybody :)
+[13:03:22] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:03:50] *** Joins: VVD (~VVD@ )
+[13:35:56] *** Joins: [0xAA] (~ThisIsZen@ )
+[14:01:17] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[14:01:51] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[14:06:44] *** Joins: x_ (~x@ )
+[14:06:45] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[14:07:14] *** Joins: cisc (~cisc@ )
+[14:11:42] *** Joins: cenysor (~cenysor@ )
+[14:18:20] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[14:25:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[14:31:15] *** Joins: cisc (~cisc@ )
+[15:02:43] *** Joins: f10 (~flo@ )
+[15:08:03] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:25:59] *** Joins: f10__ (~flo@ )
+[15:43:17] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[15:43:52] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[15:45:06] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[16:17:49] *** Joins: fred_barclay (~fred@ )
+[16:30:25] *** Quits: fred_barclay (~fred@ ) (Quit: Leaving)
+[17:07:30] *** Joins: f10 (~flo@ )
+[17:08:02] *** Joins: f10__ (~flo@ )
+[17:27:27] *** Joins: [0xAA] (~ThisIsZen@ )
+[17:28:53] *** Joins: sudden6 (~anonymous@ )
+[17:55:20] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[18:06:19] *** Joins: f10 (~flo@ )
+[18:07:04] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[18:07:40] *** Joins: VVD (~VVD@ )
+[18:09:00] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:12:30] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[18:13:20] *** Joins: VVD (~VVD@ )
+[18:17:10] *** Joins: f10 (~flo@ )
+[18:18:27] *** Joins: sandrorso (~sandro@ )
+[18:22:28] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[18:22:33] *** Quits: sandrorso (~sandro@ ) (Client Quit)
+[18:31:31] *** Joins: f10 (~flo@ )
+[18:35:32] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[18:46:36] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[19:23:13] *** Joins: dardevelin (~dardeveli@ )
+[19:23:35] *** Joins: f10 (~flo@ )
+[19:50:02] -qtox-git-spam- [qTox] Diadlo opened pull request #4090: fix: Add workaround for FreeBSD and ICU (master...fix/freebsd_locale) https://git.io/vMN2X
+[20:19:40] <zetok> Diadlo, sudden6: what do you think about closing inactive for months PRs?
+[20:19:50] <zetok> Diadlo: btw, commented on the PR ↑
+[20:19:57] <Diadlo> Agree
+[20:22:57] <Diadlo> zetok: https://github.com/qTox/qtox-irc-logs/blob/d31e9058d9a2c58d77848db3b124225df0575258/2016/10/%23qtox_20161015.log.txt#L162:L175
+[20:22:58] <Diadlo> :)
+[20:23:14] <zetok> yeah, I remember :)
+[20:23:29] <zetok> just making sure that you didn't change your mind like I did ;)
+[20:23:39] <Diadlo> Ok
+[20:31:03] <Diadlo> zetok: https://github.com/qTox/qTox/pull/4065
+[20:31:06] <Diadlo> LGTM?
+[20:31:09] -qtox-git-spam- [qTox] zetok opened pull request #4091: docs(MAINTAINING): add info about pull request "expiration date" (master...docs-maint-prclose) https://git.io/vMN65
+[20:32:55] <Diadlo> Also, what do you think about merge https://github.com/qTox/qTox/pull/4064 without test? Why? 1) it's not breaking change 2) -1 PR 3) not sure, that it will be tested in near future
+[20:33:44] <zetok> sure
+[20:40:53] -qtox-git-spam- [qTox] zetok closed pull request #3876: docs(user manual): mention ability to remove entry on ToxMe service (master...docs-man-toxme) https://git.io/vX6KE
+[20:42:29] <zetok> Diadlo: perhaps ask in #4064 for someone who has tested to LGTM it?
+[20:43:38] <Diadlo> No one test it :)
+[20:44:17] <Diadlo> Seems, we need travis with mac os build
+[20:45:36] <zetok> build gets tested
+[20:45:42] <zetok> but not cmake one
+[20:45:55] <zetok> and this script is(?) used only by cmake
+[20:46:43] <Diadlo> Yes
+[20:46:55] <Diadlo> Time to add docs
+[20:47:02] <Diadlo> To cmake
+[20:47:24] <zetok> ok
+[20:47:53] <zetok> hmm
+[20:47:58] <zetok> :s
+[20:48:17] <zetok> I wonder what will happen to instructions for windows
+[20:49:38] <Diadlo> If I will have enough time I will try to build qTox on windows
+[21:05:10] <Saamm> Yaaay o/
+[21:06:12] <Saamm> windows version of qTox still isn't the 1.7?
+[21:22:58] -qtox-git-spam- [qTox] Diadlo opened pull request #4092: CMake docs & scripts (master...chore/cmakeDocs) https://git.io/vMNHG
+[21:25:13] <zetok> Diadlo: aren't switches in INSTALL.md invalid?
+[21:25:38] <Diadlo> IDK, but it shouldn't :)
+[21:25:47] <zetok> err
+[21:26:11] <Diadlo> Which one?
+[21:27:13] <Diadlo> Better write it to reviewable
+[21:27:13] <zetok> Diadlo: https://gist.github.com/zetok/73f0e61ff65d6bf503de93367bf5f0cc
+[21:28:11] <Diadlo> What exactly wrong?
+[21:28:29] <zetok> cmake switches
+[21:28:36] <Diadlo> :|
+[21:28:39] <Diadlo> Why?
+[21:28:55] <zetok> they differ from qmake ones
+[21:30:38] <Diadlo> https://github.com/qTox/qTox/pull/4092/files#diff-7d442b7eb49f5fc377f51e74b291cfc1L54
+[21:30:47] <Diadlo> Sorry
+[21:31:02] <Diadlo> 54 line
+[21:31:49] <Diadlo> It's same. Isn't it?
+[21:32:23] <zetok> um, I mean switches, not passing them to the cmake
+[21:33:16] <zetok> e.g. `-D DISABLE_PLATFORM_EXT=YES` ← cmake doesn't even have that
+[21:33:33] <Diadlo> Hm.. It have
+[21:34:07] <zetok> where?
+[21:35:07] <Diadlo> Ok. Only `DISABLE_PLATFORM_EXT`
+[21:36:04] <Diadlo> It have `SMILEYS`
+[21:36:19] <zetok> err, no
+[21:36:25] <Diadlo> Yes
+[21:36:28] <zetok> `SMILEYS` is the only switch that doesn't differ
+[21:36:38] <zetok> everything aside from it differs
+[21:37:17] <zetok> and even then, `SMILEYS` was modified in qmake to adjust to cmake AFAIR
+[21:37:37] <Diadlo> SMILEYS is undocumented
+[21:37:56] <zetok> yeah, time to add the documentation :)
+[21:38:08] <Diadlo> Out of the scope
+[21:38:13] <Diadlo> Later
+[21:38:16] * zetok shrugs
+[21:38:25] <Diadlo> IDK where I should specify it
+[21:38:27] <Diadlo> etc.
+[21:38:29] <Diadlo> Also
+[21:38:33] <Diadlo> Good night :)
+[21:38:42] <zetok> good night :)
+[21:38:43] <Diadlo> I will try tomorrow
+[21:48:11] *** Quits: cisc (~cisc@ ) (Ping timeout: 240 seconds)
+[21:49:29] *** Quits: cenysor (~cenysor@ ) (Read error: Connection reset by peer)
+[21:58:25] <sudden6> zetok> what do you think about closing inactive for months PRs? <- I agree too
+[22:12:48] *** Quits: Saamm (587d2b5e@ ) (Quit: Page closed)
+[23:02:39] *** Quits: tux3 (~tux@ ) (Quit: Quitting)
+[23:02:39] *** Quits: robinli (~robinli@ ) (Quit: Fetching coffee or something.)
+[23:03:07] *** Joins: robinli (~robinli@ )
+[23:03:07] *** Quits: robinli (~robinli@ ) (Changing host)
+[23:03:07] *** Joins: robinli (~robinli@ )
+[23:03:17] *** Joins: tux3 (~tux@ )
+[23:10:27] *** Quits: tux3 (~tux@ ) (Ping timeout: 258 seconds)
+[23:12:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 255 seconds)
+[23:12:23] *** Joins: tux3 (tux@ )
+[23:13:35] *** Joins: cisc (~cisc@ )
+[23:29:25] *** Quits: robinli (~robinli@ ) (Ping timeout: 255 seconds)
+[23:29:43] *** Joins: robinli (robinli@ )
+[23:29:43] *** Quits: robinli (robinli@ ) (Changing host)
+[23:29:43] *** Joins: robinli (robinli@ )
+[23:39:44] *** Joins: parasite_ (~parasite@ )
