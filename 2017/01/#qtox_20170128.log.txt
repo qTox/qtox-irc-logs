@@ -1,0 +1,402 @@
+[00:16:53] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[00:18:43] *** Joins: kchz (~dschulz@ )
+[00:39:34] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[00:44:16] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[00:44:50] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[01:35:15] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[01:40:30] *** Joins: LuMint (~LuMint@ )
+[01:41:10] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[01:48:11] *** Joins: LittleVulpix (~Miranda@ )
+[02:37:05] *** Joins: dardevelin (~dardeveli@ )
+[02:46:28] *** Quits: x_ (~x@ ) (Ping timeout: 260 seconds)
+[03:37:36] -qtox-git-spam- [qTox] zetok opened pull request #4097: CMake docs & scripts (master...chore-cmake-switch) https://git.io/vDJRc
+[03:38:52] *** Quits: helios21 (~quassel@ ) (Remote host closed the connection)
+[03:39:02] *** Joins: helios21 (~quassel@ )
+[04:34:39] *** Quits: parasite_ (~parasite@ ) (Remote host closed the connection)
+[04:37:51] *** Joins: parasite_ (~parasite@ )
+[05:56:52] *** Joins: Emcy (~MC@ )
+[05:56:52] *** Quits: Emcy (~MC@ ) (Changing host)
+[05:56:52] *** Joins: Emcy (~MC@ )
+[05:59:30] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[06:14:08] *** Joins: Emcy_ (~MC@ )
+[06:14:08] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:14:08] *** Joins: Emcy_ (~MC@ )
+[06:15:59] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[06:45:16] *** Joins: Emcy (~MC@ )
+[06:45:17] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:45:17] *** Joins: Emcy (~MC@ )
+[06:45:41] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 245 seconds)
+[06:55:52] *** Joins: Emcy_ (~MC@ )
+[06:55:52] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:55:52] *** Joins: Emcy_ (~MC@ )
+[06:57:29] *** Joins: [0xAA] (~ThisIsZen@ )
+[06:59:01] *** Quits: Emcy (~MC@ ) (Ping timeout: 245 seconds)
+[07:06:41] *** Joins: Emcy (~MC@ )
+[07:06:41] *** Quits: Emcy (~MC@ ) (Changing host)
+[07:06:41] *** Joins: Emcy (~MC@ )
+[07:08:27] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 276 seconds)
+[07:08:36] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[07:10:20] *** Joins: Emcy_ (~MC@ )
+[07:10:20] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[07:10:20] *** Joins: Emcy_ (~MC@ )
+[07:13:29] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[07:35:28] *** Joins: [0xAA] (~ThisIsZen@ )
+[07:40:56] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 258 seconds)
+[07:59:58] *** Joins: [0xAA] (~ThisIsZen@ )
+[08:00:43] *** Joins: Emcy (~MC@ )
+[08:00:43] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:00:43] *** Joins: Emcy (~MC@ )
+[08:03:39] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[08:13:39] *** Joins: Emcy_ (~MC@ )
+[08:13:39] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:13:39] *** Joins: Emcy_ (~MC@ )
+[08:16:08] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[08:30:57] *** Joins: Emcy (~MC@ )
+[08:30:57] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:30:57] *** Joins: Emcy (~MC@ )
+[08:34:13] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 255 seconds)
+[08:36:35] *** Quits: LuMint (~LuMint@ ) (Remote host closed the connection)
+[08:39:49] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[08:40:41] *** Joins: Emcy_ (~MC@ )
+[08:40:46] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:40:46] *** Joins: Emcy_ (~MC@ )
+[08:42:41] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[08:47:45] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 240 seconds)
+[08:49:45] *** Quits: anoa (~anoa@ ) (Quit: bye)
+[08:49:48] *** Joins: [0xAA] (~ThisIsZen@ )
+[08:49:51] *** Joins: Diadl0 (~diadlo@ )
+[09:02:30] *** Joins: anoa (~anoa@ )
+[09:07:36] *** Quits: anoa (~anoa@ ) (Remote host closed the connection)
+[09:10:06] *** Joins: anoa (~anoa@ )
+[09:12:55] *** Quits: anoa (~anoa@ ) (Remote host closed the connection)
+[09:15:19] *** Joins: Emcy (~MC@ )
+[09:15:19] *** Quits: Emcy (~MC@ ) (Changing host)
+[09:15:19] *** Joins: Emcy (~MC@ )
+[09:17:45] *** Joins: anoa (~anoa@ )
+[09:18:41] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 255 seconds)
+[09:19:03] *** Joins: Emcy_ (~MC@ )
+[09:19:03] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[09:19:03] *** Joins: Emcy_ (~MC@ )
+[09:20:13] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[09:38:21] *** Joins: Emcy (~MC@ )
+[09:41:18] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[09:56:09] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 276 seconds)
+[09:56:26] *** Joins: FederationOfNULL (~ThisIsZen@ )
+[10:04:35] *** FederationOfNULL is now known as [0xAA]
+[10:09:52] *** Joins: Emcy_ (~MC@ )
+[10:13:13] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[10:18:03] *** Joins: Emcy (~MC@ )
+[10:18:03] *** Quits: Emcy (~MC@ ) (Changing host)
+[10:18:03] *** Joins: Emcy (~MC@ )
+[10:18:31] *** Joins: Yoshimo (~anything@ )
+[10:20:06] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[10:20:42] *** Joins: Emcy_ (~MC@ )
+[10:23:48] *** Quits: Emcy (~MC@ ) (Ping timeout: 260 seconds)
+[10:29:06] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:32:43] *** Joins: Emcy (~MC@ )
+[10:32:43] *** Quits: Emcy (~MC@ ) (Changing host)
+[10:32:43] *** Joins: Emcy (~MC@ )
+[10:35:49] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[11:02:43] *** Joins: Emcy_ (~MC@ )
+[11:02:43] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[11:02:43] *** Joins: Emcy_ (~MC@ )
+[11:05:24] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[11:05:26] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[11:16:19] *** Quits: [0xAA] (~ThisIsZen@ ) (Quit: Leaving)
+[11:16:35] *** Joins: Emcy (~MC@ )
+[11:16:35] *** Quits: Emcy (~MC@ ) (Changing host)
+[11:16:35] *** Joins: Emcy (~MC@ )
+[11:16:54] *** Joins: [0xAA] (~ThisIsZen@ )
+[11:17:01] *** Quits: [0xAA] (~ThisIsZen@ ) (Max SendQ exceeded)
+[11:18:06] *** Joins: [0xAA] (~ThisIsZen@ )
+[11:18:54] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 252 seconds)
+[11:30:28] *** Joins: f10__ (~flo@ )
+[11:32:16] *** Joins: f10 (~flo@ )
+[11:36:49] *** Joins: Emcy_ (~MC@ )
+[11:36:49] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[11:36:49] *** Joins: Emcy_ (~MC@ )
+[11:38:45] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[12:20:12] *** Joins: x_ (~x@ )
+[12:22:16] *** Quits: x_ (~x@ ) (Remote host closed the connection)
+[12:31:42] *** Joins: MDrights (~MDrights@ )
+[12:38:33] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[12:39:26] *** Joins: f10__ (~flo@ )
+[12:44:16] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[12:44:36] *** Joins: f10_ (~flo@ )
+[12:45:48] *** Joins: Emcy (~MC@ )
+[12:48:36] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[13:14:05] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[13:14:45] *** Joins: MDrights (~MDrights@ )
+[13:28:44] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[13:28:44] *** Joins: LittleVulpix (~Miranda@ )
+[13:29:12] *** Joins: MDrights (~MDrights@ )
+[13:36:33] *** Joins: Emcy_ (~MC@ )
+[13:36:33] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[13:36:33] *** Joins: Emcy_ (~MC@ )
+[13:40:13] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[13:55:41] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 240 seconds)
+[14:01:16] *** Joins: Diadlo (~diadlo@ )
+[14:01:22] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:02:09] *** Quits: Diadl0 (~diadlo@ ) (Ping timeout: 256 seconds)
+[14:03:59] *** Joins: MDrights (~MDrights@ )
+[14:04:27] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[14:17:26] *** Joins: MDrights (~MDrights@ )
+[14:50:35] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[14:59:09] *** Joins: LittleVulpix (~Miranda@ )
+[15:13:37] *** Joins: cenysor (~cenysor@ )
+[15:17:13] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:38:06] *** Joins: Emcy (~MC@ )
+[15:38:06] *** Quits: Emcy (~MC@ ) (Changing host)
+[15:38:06] *** Joins: Emcy (~MC@ )
+[15:40:11] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[16:13:56] *** Joins: sudden6 (~anonymous@ )
+[16:24:58] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[16:25:47] *** Joins: f10_ (~flo@ )
+[17:11:07] *** Joins: sudd3n6 (~anonymous@ )
+[17:26:11] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[17:27:44] *** Joins: dardevelin (~dardeveli@ )
+[17:34:25] *** Joins: [0xAA] (~ThisIsZen@ )
+[17:38:13] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[17:58:27] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[18:00:54] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[18:11:09] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[18:12:13] *** Joins: dardevelin (~dardeveli@ )
+[18:28:28] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[18:29:28] *** Joins: Diadlo (~diadlo@ )
+[19:00:32] *** Quits: [0xAA] (~ThisIsZen@ ) (Remote host closed the connection)
+[20:04:27] *** Joins: f10 (~flo@ )
+[20:16:41] *** Joins: barmaley (~barmaley@ )
+[20:16:44] <barmaley> hello
+[20:16:58] <barmaley> anybody want to test qtox?
+[20:18:23] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 255 seconds)
+[20:20:58] <zetok> yes
+[20:22:29] <zetok> https://github.com/qTox/qTox/pull/4064 needs to be tested
+[20:29:59] *** Joins: LittleVulpix (~Miranda@ )
+[20:38:17] <Diadlo> zetok: Hi :)
+[20:38:28] <zetok> hello Diadlo :)
+[20:38:41] <Diadlo> sudden6: Hello, too)
+[20:38:47] <Diadlo> CMake supports `YES` and `NO` as bool value too
+[20:39:14] <Diadlo> But feel free to leave it as `True/False`
+[20:39:25] <zetok> but that's not what CMakeLists.txt checks for?
+[20:40:14] <Diadlo> CMake check only SMILES manualy
+[20:40:29] <zetok> oh, I see
+[20:41:28] <Diadlo> Also, why sometimes you use `2016-2017` and sometimes `2017`?
+[20:41:33] <zetok> ah
+[20:41:36] <Diadlo> In copyright
+[20:41:37] <zetok> typo
+[20:41:44] <Diadlo> Ok
+[20:41:51] <zetok> should have been changed to `2016-2017`
+[20:42:33] <Diadlo> Why do you delete `export CC="ccache $CC"`? 
+[20:42:54] <Diadlo> *replace on inline definition
+[20:43:45] <zetok> cmake doesn't work with overridden CC/CXX
+[20:43:56] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[20:44:26] <Diadlo> Hm...
+[20:49:01] -qtox-git-spam- [qTox] Diadlo closed pull request #4092: CMake docs & scripts (master...chore/cmakeDocs) https://git.io/vMNHG
+[20:49:04] <zetok> ok, pushed fixed copyright date
+[20:53:21] <zetok> sudden6: would you have time to review things for 1.8 ?
+[21:03:27] <sudden6> zetok: hi, what needs review?
+[21:04:13] <zetok> quite a lot of PRs
+[21:05:59] <zetok> no, wait, just a few
+[21:06:46] <zetok> someone needs to review https://github.com/qTox/qTox/pull/3971
+[21:07:18] <zetok> sudden6: aside from ↑, top 3 yellow PRs
+[21:08:09] <zetok> Diadlo: https://github.com/qTox/qTox/pull/4060 ?
+[21:09:02] <zetok> Diadlo: also, your green PRs can be merged, right?
+[21:11:02] <Diadlo> Seems that the travis change worsen build time: https://travis-ci.org/qTox/qTox/builds/195733955 https://travis-ci.org/qTox/qTox/builds/194222312
+[21:11:34] <zetok> :|
+[21:11:51] <Diadlo> zetok: Yes, they can be merged
+[21:12:11] <zetok> sudden6: ↑ mind merging?
+[21:13:37] <sudden6> will do when done reviewing
+[21:13:46] <sudden6> also hi Diadlo :)
+[21:13:53] <Diadlo> o/
+[21:15:19] <sudden6> does 4094 now work?
+[21:15:30] *** Joins: x_ (~x@ )
+[21:18:25] <Diadlo> It has ugly mic and vol icons. But it better, than master version :)
+[21:18:34] <sudden6> ok :)
+[21:19:17] *** Joins: f10 (~flo@ )
+[21:19:47] -qtox-git-spam- [qTox] sudden6 closed pull request #4090: fix: Add workaround for FreeBSD and ICU (master...fix/freebsd_locale) https://git.io/vMN2X
+[21:20:53] <Diadlo> https://i.imgur.com/HkiuVYM.png
+[21:20:55] <Diadlo> sudden6: ^
+[21:21:29] <sudden6> doesn't seem that bad^^
+[21:21:34] <Diadlo> :/
+[21:21:45] <sudden6> only the margins are missing
+[21:21:49] <Diadlo> Yes
+[21:22:54] <Diadlo> zetok: Is CMake PR last step of CMake migration?
+[21:23:08] <zetok> Diadlo: yep
+[21:23:22] <Diadlo> You should remove `.pro` file :)
+[21:23:34] <zetok> Diadlo: I was thinking that qmake support should be removed after 1.8, to give people some time to switch
+[21:23:42] <Diadlo> Ok
+[21:23:54] <Diadlo> Agree
+[21:24:10] <sudden6> now we can cross of one point of The Plan :D
+[21:24:42] <Diadlo> Yeeey
+[21:27:04] <Diadlo> zetok: Wait a bit for #4094
+[21:27:09] <Diadlo> I want to fix padding
+[21:27:33] <zetok> ok
+[21:28:15] <zetok> Diadlo: actually
+[21:28:24] <zetok> Diadlo: I think that it should be done in a separate PR?
+[21:28:44] <Diadlo> Hm... Ok
+[21:29:10] <zetok> sudden6: merge #4094 ?
+[21:29:30] <sudden6> ok
+[21:31:48] -qtox-git-spam- [qTox] Diadlo closed pull request #3935: Svg mic and vol buttons (master...svgButtons) https://git.io/v1WQM
+[21:33:10] -qtox-git-spam- [qTox] sudden6 closed pull request #4094: Svg mic and vol buttons (master...rebase-3935-svg) https://git.io/vDej3
+[21:34:25] <Emcy> you know what would help qtox maintain its ux lead
+[21:34:28] <sudden6> zetok: in 4065, have you created the issue for the problme?
+[21:34:39] <zetok> sudden6: not yet
+[21:35:12] <zetok> Emcy: "DEVELOPERS DEVELOPER DEVELOPERS"
+[21:36:01] <Emcy> implement a thing similar to nick colours on irc
+[21:36:04] <sudden6> or someone who likes to design UI?^^
+[21:36:39] <sudden6> zetok: I think when the issue is created we can merge 4065
+[21:36:40] <Emcy> the background of the current chat window lightly coloured deterministically from the toxid of the contact
+[21:36:50] <Diadlo> I will merge 4065 now
+[21:36:52] <Emcy> or maybe just the tab
+[21:37:04] <zetok> sudden6: feel free to merge, I'm creating issue right now
+[21:37:59] <sudden6> ok, Diadlo is doing it already^^
+[21:38:08] <zetok> Emcy: I think I know where it's going
+[21:38:16] <zetok> lemme see if I still have that code
+[21:39:16] *** Quits: x_ (~x@ ) (Remote host closed the connection)
+[21:41:24] <zetok> aw, no
+[21:41:42] <sudden6> we could use the color producing code of https://github.com/sudden6/rust-identicon/blob/master/src/lib.rs
+[21:42:17] <sudden6> should give still readable nicks with PK specific background and foreground colors
+[21:44:34] *** Joins: kchz (~dschulz@ )
+[21:48:09] <Emcy> not just for group chats
+[21:48:17] <Emcy> for when you hasve many contacts
+[21:50:51] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vDUkt
+[21:50:51] -qtox-git-spam- qTox/master 320099f Diadlo: fix(chatform): Add ability to cancel call...
+[21:51:10] <Diadlo> sudden6: Please, fix #4060 and I will LGTM it
+[21:52:17] <sudden6> ok, I'll fix it right now :)
+[21:52:26] <Diadlo> Thanks
+[21:54:29] <Diadlo> sudden6, zetok: What do you think about separate qtox launcher (login screen) and qtox client in different apps?
+[21:54:42] <zetok> :D
+[21:55:12] <Diadlo> What?
+[21:55:50] <zetok> well, if a separate app, it would be good to rewrite it in Rust
+[21:55:58] <Diadlo> :/
+[21:56:00] <zetok> :D
+[21:56:06] <sudden6> lol
+[21:56:14] <Diadlo> It's time to write tox client in Rust
+[21:56:14] <sudden6> one could see that coming^^
+[21:56:17] <Diadlo> rTox
+[21:56:29] <zetok> retox ;)
+[21:56:32] <sudden6> ReTox
+[21:56:35] <Diadlo> Ok
+[21:56:41] <Diadlo> Is it already exist?
+[21:56:56] <zetok> nah
+[21:56:58] <sudden6> IDK, was just suggesting a name^^
+[21:57:10] <Diadlo> So, what do you think?
+[21:57:27] <zetok> with what would separating launcher help?
+[21:58:21] <iphy> make one process per conversation, chromium style, and IPC to them to insert widgets into the main window
+[21:58:51] <sudden6> Diadlo: fixed
+[21:59:12] <Diadlo> iphy: How do you have time to read all the channels? :D
+[21:59:25] <sudden6> > process per conversation <- do you want to kill us with work?^^
+[22:00:19] <sudden6> I also don't see a real benefit in separating the launcher from the rest
+[22:01:38] <Diadlo> For example, qtox will have only one settings instance => we can pass settings by reference without standalone `Settings`
+[22:02:34] <Diadlo> I will help to avoid some kind of use-after-free
+[22:03:04] <sudden6> I think this is better solved by moving the settings into the database
+[22:03:09] <Diadlo> "Click 'Register', fast logout and login again and it will crash" (c) zetok
+[22:03:49] <Diadlo> DB reqest per settings read?
+[22:04:07] <Diadlo> Or one read in standalone Settings instance?
+[22:04:40] <sudden6> zetok: do you intend to comment on #4060? if not I'll unassign you
+[22:05:09] <sudden6> Diadlo: read all settings @login and write them on change
+[22:05:14] <zetok> sudden6: no idea
+[22:05:27] <sudden6> then the problem reduces to syncing global settings
+[22:05:31] <zetok> sudden6: do you think that I should look at it?
+[22:05:46] <sudden6> zetok: that's why I assigned you :)
+[22:05:55] <zetok> oh, ok >.<
+[22:05:56] <Diadlo> read all settings < where it will stored?
+[22:06:13] <zetok> sudden6: I'll look at it
+[22:06:23] <sudden6> thx
+[22:06:36] <zetok> sudden6: I mean, I've started looking at it some time ago, but I got distracted
+[22:07:17] <sudden6> Diadlo: In memory
+[22:07:39] <Diadlo> I.e. how code will get access to settings?
+[22:07:41] <Diadlo> sudden6: ^
+[22:08:21] <sudden6> Nexus or Profile will hold a reference to it
+[22:08:30] <sudden6> or is this a bad idea?
+[22:09:02] <sudden6> the better thing would probably be Profil
+[22:09:04] <sudden6> e
+[22:09:19] <Diadlo> IDK. But I want to avout IoC of bug classes
+[22:09:35] <Diadlo> And of cause, avoid of standalone
+[22:10:30] <Diadlo> For example: chatform use one settings field. Why it required Nexus instance?
+[22:10:39] <sudden6> true
+[22:10:52] <sudden6> but it'll require Profile, right?
+[22:11:00] <Diadlo> chatform just example
+[22:11:27] <Diadlo> But profile seems better
+[22:11:52] <Diadlo> Does qTox have class, who need settings, but don't need profile?
+[22:12:51] <Diadlo> *has
+[22:13:13] <sudden6> 'have' was actually correct^^
+[22:13:28] <iphy> what is a nexus?
+[22:13:30] <Diadlo> Why?
+[22:13:41] <Diadlo> iphy: AFAIK god-class
+[22:13:56] <iphy> cool.
+[22:13:59] <Diadlo> Yep
+[22:14:02] <sudden6> Diadlo: the 3rd person 's' is in 'Does'
+[22:14:18] <iphy> did you guys take the "anti-design-patterns" book and implemented all of them?
+[22:14:20] <Diadlo> It store Core, Profile, Main widget
+[22:14:52] <Diadlo> iphy: WE didn't implement it :/
+[22:14:57] <iphy> :)
+[22:15:02] <iphy> Diadlo: I know, sorry
+[22:15:06] <Diadlo> np :)
+[22:15:08] <sudden6> ^^
+[22:15:17] <zetok> iphy: AFAIR nexus was supposed to be a platform abstraction, so that qTox could work not only on desktop, but also on android
+[22:15:20] <iphy> you're sitting on a pile of old code, just like toktok
+[22:15:32] <iphy> zetok: I see
+[22:15:41] <sudden6> Our pile is bigger than yours
+[22:15:45] <iphy> sudden6: yeah
+[22:15:45] * sudden6 bragging
+[22:15:47] <iphy> I don't envy you
+[22:15:50] <sudden6> :P
+[22:16:00] <Diadlo> Lol
+[22:16:02] <Diadlo> QString Nexus::getSupportedImageFilter()
+[22:16:16] <Diadlo> It's should be exetly in Nexus :)
+[22:16:54] <sudden6> Diadlo: the thing with where to store settings
+[22:17:14] <iphy> this is a nexus: https://usercontent.irccloud-cdn.com/file/lAcjfpSj/nexus.jpg
+[22:17:21] <sudden6> is a problem I face every time I do a bigger programm, but I haven't found a clean solution yet :/
+[22:17:35] <iphy> nexus 6 to be precise
+[22:17:46] <Diadlo> iphy: http://lh4.ggpht.com/hbj7xrKA2EAB_iobckhciNIVgKeaGLBpaNmFtVorM8-cj4lJK_01k9yJeHIqndtxr7FPNREt2s2-C7dNRMdgx71tQgytraLZDAg=s0
+[22:18:00] <iphy> Diadlo: yeah, that too
+[22:18:31] <Diadlo> sudden6: I talk not about place to store it
+[22:18:36] <Diadlo> settings i.e.
+[22:18:53] <Diadlo> But about way to access to it
+[22:19:20] <sudden6> yeah, I meant "store in the program structure", that was badly worded
+[22:19:30] <Diadlo> Ok
+[22:19:46] <Diadlo> It should be stored in Settings class, I think
+[22:20:51] <sudden6> In my last project I used also a singleton, but as you mentioned it has problems
+[22:20:55] <Diadlo> But code (instead of settings form) will access to settings by const reference
+[22:21:48] <Diadlo> I.e. `int& Settings::getVolume()`
+[22:22:13] <Diadlo> `Form* form = new Form(s.getVolume())`
+[22:22:29] <Diadlo> class Form { private: const int& volume }
+[22:22:51] <Diadlo> *`const int& Settings::getVolume()` 
+[22:23:42] <Diadlo> Or use small interfaces, as I suggest before
+[22:24:32] <Diadlo> May be it will better
+[22:24:37] <Diadlo> iphy: What do you think?
+[22:25:29] <Diadlo> How code should access to Settings?
+[22:25:39] <iphy> no opinion at the moment
+[22:25:46] <Diadlo> Ok
+[22:26:16] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[22:32:56] <zetok> sudden6: briefly looked at the #4060, I didn't check if tox_{encrypt,decrypt} arguments are positioned correctly
+[22:34:47] <sudden6> zetok: thank you :)
+[22:36:12] -qtox-git-spam- [qTox] zetok closed pull request #4097: CMake docs & scripts (master...chore-cmake-switch) https://git.io/vDJRc
+[22:43:22] -qtox-git-spam- [qTox] Diadlo opened pull request #4099: Friend widget final (master...friendWidget_final) https://git.io/vDULb
+[22:47:16] <Diadlo> Good night, everyone)
+[22:47:32] <zetok> good night :)
+[22:47:46] <zetok> https://www.youtube.com/watch?v=9jK-NcRmVcw
+[22:50:25] <sudden6> good night
+[22:51:46] *** Quits: barmaley (~barmaley@ ) (Quit: Leaving)
+[22:59:45] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[22:59:52] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[23:03:23] *** Joins: f10 (~flo@ )
+[23:04:40] <zetok> Emcy: would you mind making an issue about colourful nicks?
+[23:04:54] <zetok> and perhaps link in the issue to the https://github.com/qTox/qTox/issues/1307
+[23:06:54] *** Joins: f10_ (~flo@ )
+[23:08:03] *** Joins: f10__ (~flo@ )
+[23:08:59] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[23:14:11] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[23:14:28] *** Joins: f10 (~flo@ )
+[23:21:28] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[23:22:18] *** Joins: f10_ (~flo@ )
+[23:44:03] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 258 seconds)
+[23:46:52] <Emcy> i said nothing about nicks
+[23:47:19] <Emcy> make at least the entire text input box a deterministic colour
+[23:47:51] <Emcy> the goal is to have a solid visual cue for not sending things to the wrong people
+[23:48:07] <Emcy> especially when youre talking to multiple at once
+[23:50:07] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[23:50:25] *** Joins: cisc (~cisc@ )
+[23:50:49] *** Quits: cisc (~cisc@ ) (Client Quit)
+[23:52:43] *** Joins: cisc (~cisc@ )
