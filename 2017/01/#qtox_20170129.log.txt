@@ -1,0 +1,307 @@
+[00:04:02] *** Joins: kchz (~dschulz@ )
+[00:24:45] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[01:43:08] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[01:49:22] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[02:29:16] *** Joins: kchz (~dschulz@ )
+[03:36:07] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[03:56:30] *** Joins: dardevelin (~dardeveli@ )
+[03:56:36] *** Quits: VVD (~VVD@ ) (Ping timeout: 252 seconds)
+[03:57:08] *** Joins: MDrights (~MDrights@ )
+[03:58:08] *** Quits: kchz (~dschulz@ ) (Quit: Volveré)
+[04:04:17] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 260 seconds)
+[04:06:34] *** Joins: MDrights (~MDrights@ )
+[05:08:09] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 240 seconds)
+[05:15:24] *** Joins: Emcy_ (~MC@ )
+[05:15:24] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[05:15:24] *** Joins: Emcy_ (~MC@ )
+[05:16:57] *** Quits: Emcy (~MC@ ) (Ping timeout: 245 seconds)
+[05:42:23] *** Joins: Emcy (~MC@ )
+[05:42:23] *** Quits: Emcy (~MC@ ) (Changing host)
+[05:42:23] *** Joins: Emcy (~MC@ )
+[05:45:42] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 245 seconds)
+[06:00:08] *** Joins: Emcy_ (~MC@ )
+[06:00:08] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:00:08] *** Joins: Emcy_ (~MC@ )
+[06:01:42] <zetok> Diadlo: could you rebase https://github.com/qTox/qTox/pull/4064 ?
+[06:02:06] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[06:08:19] *** Joins: Emcy (~MC@ )
+[06:08:19] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:08:19] *** Joins: Emcy (~MC@ )
+[06:11:16] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 248 seconds)
+[06:24:21] *** Joins: Emcy_ (~MC@ )
+[06:26:49] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[06:33:47] *** Joins: Emcy (~MC@ )
+[06:33:47] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:33:47] *** Joins: Emcy (~MC@ )
+[06:35:06] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[06:48:15] *** Joins: reBrain (~quassel@ )
+[07:01:12] *** Joins: Emcy_ (~MC@ )
+[07:01:12] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[07:01:12] *** Joins: Emcy_ (~MC@ )
+[07:03:05] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[07:07:22] <Diadlo> zetok: Done
+[07:08:35] *** Joins: Emcy (~MC@ )
+[07:08:35] *** Quits: Emcy (~MC@ ) (Changing host)
+[07:08:35] *** Joins: Emcy (~MC@ )
+[07:10:22] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[07:11:46] *** Joins: [0xAA] (~ThisIsZen@ )
+[07:18:18] *** Joins: Emcy_ (~MC@ )
+[07:18:18] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[07:18:18] *** Joins: Emcy_ (~MC@ )
+[07:21:14] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[07:24:50] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[07:36:04] <zetok> Diadlo: doesn't look like anyone is going to test this PR, I think that it should be merged anyway
+[07:36:09] *** Joins: Emcy (~MC@ )
+[07:36:09] *** Quits: Emcy (~MC@ ) (Changing host)
+[07:36:09] *** Joins: Emcy (~MC@ )
+[07:38:11] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[07:40:50] *** Joins: Emcy_ (~MC@ )
+[07:42:28] <Diadlo> Agree. As I said before, it can't provide regression :)
+[07:43:21] <Diadlo> Should I merge it now?
+[07:43:44] <zetok> yep
+[07:44:11] *** Quits: Emcy (~MC@ ) (Ping timeout: 255 seconds)
+[07:44:23] <Diadlo> Done
+[07:44:27] <zetok> https://github.com/qTox/qTox/pull/3971 ← compilation time doesn't really differ from master
+[07:44:29] <zetok> thanks
+[07:44:35] -qtox-git-spam- [qTox] Diadlo closed pull request #4064: chore(osx): Added macos instalation script (master...fix/mac-build) https://git.io/vM8n5
+[07:45:01] <zetok> ok, so the only remaining part from TokTok fork is windows cross-compilation
+[07:45:34] <zetok> Diadlo: do you think that you could get https://github.com/qTox/qTox/issues/4100 to work before 1.8 release?
+[07:47:04] <Diadlo> I will try fix it today
+[07:47:26] <zetok> awesome
+[08:09:45] *** Joins: vit9696 (~vit9696@ )
+[08:10:19] <vit9696> Hello
+[08:10:48] <vit9696> I have just received an email that you merged the new script to "fix" macOS builds.
+[08:11:30] <vit9696> Are you sure it works? Last time I saw it it lacked fixing plugin paths and ffmpeg libraries, which makes it very likely to fail.
+[08:12:01] <vit9696> ping zetok
+[08:12:24] <zetok> yes?
+[08:13:50] <zetok> >Are you sure it works?
+[08:13:54] <zetok> No.
+[08:13:56] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 248 seconds)
+[08:14:04] <zetok> No one tested the PR, so I have no idea whether it works.
+[08:14:05] <vit9696> Sigh… 
+[08:15:01] <vit9696> I will try to find some time to get it work on macos.
+[08:17:20] <zetok> awesome
+[08:17:24] <vit9696> When do you plan the next release?
+[08:18:17] <vit9696> as in soon or in months, if the question made you anyhow uncomfy :)
+[08:20:34] <zetok> ~week
+[08:20:43] <zetok> https://github.com/qTox/release-schedule
+[08:22:05] <zetok> also https://github.com/qTox/qTox/milestone/13
+[08:22:35] <vit9696> mh… kk, will do it now
+[08:39:36] *** Quits: vit9696 (~vit9696@ ) (Quit: Leaving.)
+[08:42:24] *** Joins: vit9696 (~vit9696@ )
+[08:44:48] *** Joins: [0xAA] (~ThisIsZen@ )
+[09:10:42] *** Joins: Emcy (~MC@ )
+[09:10:47] *** Quits: Emcy (~MC@ ) (Changing host)
+[09:10:47] *** Joins: Emcy (~MC@ )
+[09:13:47] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 255 seconds)
+[09:27:20] -qtox-git-spam- [qTox] Diadlo opened pull request #4102: chore(cmake): Add icons, desktop, appdata installation (master...fix/cmake_install) https://git.io/vDUEc
+[09:28:15] <Diadlo> zetok: https://github.com/qTox/qTox/pull/4102
+[09:28:27] <Diadlo> Works for me. Can you test it?
+[09:29:44] <zetok> yep, in a moment
+[09:32:42] <zetok> btw
+[09:32:57] <zetok> with gtk stuff disabled cmake still tries to link to it
+[09:34:00] <zetok> and it looks like it's being compiled :/
+[09:37:23] *** Joins: Emcy_ (~MC@ )
+[09:37:23] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[09:37:23] *** Joins: Emcy_ (~MC@ )
+[09:39:59] <Diadlo> zetok: Yep. Seems, we have one mistake in CMake
+[09:40:04] <Diadlo> I will check it now
+[09:40:50] *** Quits: Emcy (~MC@ ) (Ping timeout: 256 seconds)
+[09:41:33] *** Joins: Emcy (~MC@ )
+[09:41:33] *** Quits: Emcy (~MC@ ) (Changing host)
+[09:41:33] *** Joins: Emcy (~MC@ )
+[09:43:20] <Diadlo> Seems cmake link gtk, but qTox will don't use it
+[09:43:40] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 256 seconds)
+[09:54:39] <Diadlo> We should move optional `search_dependecy` under `if (ENABLE...)`
+[09:54:52] <zetok> yeah
+[10:07:08] <Diadlo> zetok: I can't found how qmake install `README.md.bz2`
+[10:08:12] <Diadlo> Ok I can ignore wrong README place
+[10:08:14] <Diadlo> ?
+[10:08:16] <Diadlo> *Or
+[10:22:01] <zetok> Diadlo: yeah, ignore it
+[10:24:27] <Diadlo> zetok: Thanks, for ccache. It's awesome :)
+[10:28:12] -qtox-git-spam- [qTox] Diadlo opened pull request #4103: fix(cmake): Add ability to real disable optional dependency (master...fix/cmake_switch) https://git.io/vDUzP
+[10:36:27] *** Quits: anoa (~anoa@ ) (Ping timeout: 252 seconds)
+[10:43:15] *** Joins: f10_ (~flo@ )
+[10:43:18] *** Joins: f10 (~flo@ )
+[10:58:44] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 248 seconds)
+[11:03:40] -qtox-git-spam- [qTox] Diadlo opened pull request #4104: Refactor/small (master...refactor/small) https://git.io/vDU2m
+[11:24:29] *** Joins: anoa (~anoa@ )
+[11:41:50] *** Joins: x_ (~x@ )
+[11:42:55] *** Joins: MiokIry_ (~Miok@ )
+[11:44:22] *** Quits: MiokIry (~Miok@ ) (Ping timeout: 256 seconds)
+[11:46:14] *** Quits: anoa (~anoa@ ) (Quit: bye)
+[11:46:22] <Diadlo> zetok: Yes. wrong version. I think, we can bump it on 1.8 release. Are you ok with it?
+[11:47:15] <zetok> yeah
+[11:48:19] <Diadlo> I merge?
+[11:48:20] <zetok> actually
+[11:48:23] <zetok> yeah
+[11:48:38] <zetok> can cmake determine the version using git?
+[11:48:51] <zetok> (in a new PR is it's possible)
+[11:49:41] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vDUab
+[11:49:41] -qtox-git-spam- qTox/master f054210 Diadlo: chore(cmake): Add icons, desktop, appdata installation...
+[11:49:52] <zetok> https://github.com/qTox/qTox/blob/master/tools/lib/git.source#L26,L27
+[11:50:44] <Diadlo> I will try
+[11:51:02] <zetok> thanks
+[11:51:08] <Diadlo> Np :)
+[11:54:23] *** Joins: LittleVulpix (~Miranda@ )
+[11:59:21] *** Joins: anoa (~anoa@ )
+[12:02:41] *** Joins: MDrights (~MDrights@ )
+[12:03:49] *** Quits: anoa (~anoa@ ) (Client Quit)
+[12:11:30] <zetok> Diadlo: uh, I'm not sure if I'm doing something wrong, or if the PR doesn't work, but #4103 doesn't change anything
+[12:12:05] <Diadlo> How do you check it?
+[12:12:18] <zetok> with `-DENABLE_STATUSNOTIFIER=False -DENABLE_GTK_SYSTRAY=False` passed to cmake qTox is supposed to be build without support for gtk stuff, right?
+[12:12:39] <zetok> ccache /usr/lib64/ccache/bin/x86_64-pc-linux-gnu-gcc  -DENABLE_SYSTRAY_GTK_BACKEND=1 -DENABLE_SYSTRAY_STA
+[12:12:39] <zetok> TUSNOTIFIER_BACKEND=1 -DGIT_DESCRIBE=\"v1.7.0-106-gf054210\" -DGIT_VERSION=\"f054210a03dc23f3e088052d4e78ad1ad9aa84eb\" -DLOG_TO_FILE=1 -DQTOX_PLATFORM_EXT=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MESSAGELOGCONTEXT=1 -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB -DTIMESTAMP=1485691028 -I/var/tmp/portage/net-im/qtox-9999/work/qtox-9999_build -I/var/tmp/portage/net-im/qtox-9999/work/qtox-9999 
+[12:12:39] <zetok> -I/usr/include/sqlcipher -I/usr/include/AL -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gtk-2.0 -I/usr/lib64/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/harfbuzz -I/usr/include/freetype2 -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/mkspecs/li
+[12:12:42] <zetok> nux-g++ -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtXml   -DNDEBUG -ggdb -Og -pipe -Wall -Wextra -pedantic -fstack-protector-strong -Wformat -Wformat-security   -fPIC -o CMakeFiles/qtox_static.dir/src/platform/statusnotifier/closures.c.o -c /var/tmp/portage/net-im/qtox-999
+[12:12:49] <zetok> 9/work/qtox-9999/src/platform/statusnotifier/closures.c
+[12:13:00] <zetok> whoops
+[12:13:42] <zetok> I just look at the cmake output
+[12:14:32] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[12:14:37] <zetok> Diadlo: and while at that, I think that cmake should explicitly say whether give feature was enabled or disabled
+[12:14:47] <zetok> given*
+[12:15:08] <zetok> because right now one has to increase its verbosity to check that
+[12:15:47] <Diadlo> zetok: I should go away. I'll be back in the evening
+[12:16:10] <zetok> see you later
+[12:21:36] *** Joins: LittleVulpix (~Miranda@ )
+[12:45:43] *** Joins: sudden6 (~anonymous@ )
+[12:50:39] *** Joins: sudd3n6 (~anonymous@ )
+[13:09:35] -qtox-git-spam- [qTox] sudden6 closed pull request #4060: refactor(core): Introduce new class ToxEncrypt to interface with toxe… (master...refactor_toxencrypt) https://git.io/vMWGE
+[13:13:25] *** Quits: Impyy (~impy@ ) (Quit: Death)
+[13:18:44] *** Joins: bashrc (~motters@ )
+[13:22:59] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 256 seconds)
+[13:49:17] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:08:18] <vit9696> всех ненавижу
+[14:08:45] <vit9696> oops
+[14:08:48] <vit9696> wrong chat
+[14:09:07] <vit9696> yet this was caused by improperly written qTox build scripts :/
+[14:10:25] <vit9696> Could anyone explain why qTox bootstrap script does not install libtoxav?
+[14:10:34] <vit9696> this was the last error I got
+[14:10:38] <vit9696> -- Checking for one of the modules 'libtoxav'
+[14:10:39] <vit9696> CMake Error at cmake/Dependencies.cmake:72 (message):
+[14:10:39] <vit9696>   TOXAV package, library or framework not found
+[14:12:08] <sudden6> vit9696: what were the commands you used?
+[14:12:25] <vit9696> followed the wiki basically
+[14:12:33] <sudden6> and please upload the rest of the build output to gist.github.com
+[14:12:54] <vit9696> ./osx/qTox-Mac-Deployer-ULTIMATE.sh -i
+[14:12:55] <vit9696> ./osx/qTox-Mac-Deployer-ULTIMATE.sh -b
+[14:13:57] <vit9696> it is going to be a bit problematic because I had to fix the script and did not store the output.
+[14:14:28] <vit9696> the question is pretty straightforward, why ToxAV is not installed 
+[14:14:45] <vit9696> it is not mentioned in any of the scripts but cmake from what I could see
+[14:15:11] <vit9696> in CMakeLists it is marked as optional but the builder ignores it.
+[14:16:01] <vit9696> https://ghostbin.com/paste/byvpz that is the cmake output, but I doubt you would see anything here
+[14:16:50] <sudden6> did the installation of toxcore succeed?
+[14:17:18] <sudden6> there should be some output that it was compiled with toxav
+[14:18:02] <vit9696> it did
+[14:18:10] <vit9696> let me rebuild from scratch I guess… 
+[14:18:15] <vit9696> so that I could inspect the logs
+[14:18:32] <vit9696> perhaps it did build itself without toxav for some reason
+[14:19:07] <sudden6> yeah, if it still doesn't work, please create a new issue on github
+[14:19:37] <sudden6> and upload the logs there
+[14:20:00] <vit9696> xdddd
+[14:20:02] <vit9696> on mac?
+[14:20:16] <vit9696> you never fix the issues there, and I am actually trying to help you solve them… 
+[14:20:17] <vit9696> sigh
+[14:20:55] <vit9696> toxav is part of toxcore, right?
+[14:20:59] <sudden6> yes
+[14:21:17] <sudden6> nobody of the devs owns a mac, so we are basically doing blind coding^^
+[14:21:28] <vit9696> you could have used a vm :)
+[14:21:32] *** Joins: reBrain (~quassel@ )
+[14:21:45] <sudden6> also needs a mac for some keys
+[14:22:06] *** Joins: VVD (~VVD@ )
+[14:22:07] <vit9696> really? VMware runs it just fine once patched...
+[14:22:45] <sudden6> that was what came up after reading some site
+[14:23:21] <sudden6> actually the Travis CI config could provide you with valuable input what goes wrong
+[14:23:35] <sudden6> because it works there
+[14:23:44] <vit9696> oho, a second time it worked 
+[14:24:25] <vit9696> I wonder if the first time it failed because of the delinquent qTox desire to build from ~/ 
+[14:25:04] <sudden6> maybe
+[14:27:48] <vit9696> oh, great, now I see why deploying fails… 
+[14:27:53] <vit9696> $MACDEPLOYQT which is nowhere defined
+[14:28:10] <vit9696> hm...
+[14:28:11] <vit9696> no
+[14:28:13] <vit9696> it is
+[14:37:39] <vit9696> ok, the good news is that ./osx/macfixrpath works
+[14:37:48] <vit9696> although is not called
+[14:52:33] *** Joins: cenysor (~cenysor@ )
+[14:54:02] <vit9696> Alright, it is as simple as this. Fortunately and thankfully fixrpath works.
+[14:54:03] <vit9696> https://ghostbin.com/paste/jzq7w
+[14:54:36] <vit9696> fixed icon addition, fixed missing rpath call, fixed not installed pkgconfig
+[14:55:07] <vit9696> I could have made a pull request but the changes are very minor, could somebody with commit access push that in?
+[14:55:18] <vit9696> ping zetok
+[15:06:41] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[15:10:05] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[15:11:28] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[15:19:20] *** Joins: MiokIry_ (~Miok@ )
+[15:22:53] *** Quits: vit9696 (~vit9696@ ) (Quit: Leaving.)
+[15:25:23] *** Quits: bashrc (~motters@ ) (Ping timeout: 256 seconds)
+[15:26:58] *** Joins: vit9696 (~vit9696@ )
+[15:34:09] *** Joins: Impyy (~impy@ )
+[15:35:30] *** Quits: Impyy (~impy@ ) (Client Quit)
+[15:35:49] *** Joins: Impyy (~impy@ )
+[15:37:16] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[15:56:56] -qtox-git-spam- [qTox] sudden6 opened pull request #4107: chore(macdeploy): make qtox build with cmake and mac os (master...fix_macos_cmake) https://git.io/vDUMP
+[16:54:43] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:55:52] *** Joins: VVD (~VVD@ )
+[17:00:24] *** Joins: anoa (~anoa@ )
+[17:00:26] *** Quits: anoa (~anoa@ ) (K-Lined)
+[17:00:31] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[17:03:12] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[17:19:17] *** Quits: parasite_ (~parasite@ ) (Ping timeout: 256 seconds)
+[17:54:30] *** Joins: parasite_ (~parasite@ )
+[18:03:29] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 256 seconds)
+[18:05:48] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 252 seconds)
+[18:06:45] *** Joins: dardevelin (~dardeveli@ )
+[18:26:31] *** Quits: parasite_ (~parasite@ ) (Quit: Leaving)
+[18:28:20] *** Joins: parasite_ (~parasite@ )
+[18:39:09] <vit9696> sudden6 your cmake script for macOS is pretty much dead
+[18:39:15] <vit9696> are you sure you would like to use it?
+[18:39:41] <vit9696> nothing else relies on it, and it even has the version outdated from what I could tell
+[18:46:02] <sudden6> vit9696: we are in the process to only use cmake, so everything has to be moved sooner or later anyway
+[18:53:40] *** Joins: [0xAA] (~ThisIsZen@ )
+[18:54:27] <vit9696> hmmm… ok.
+[18:55:07] <sudden6> bye all :)
+[18:55:16] <Diadlo> By
+[18:55:18] <Diadlo> e
+[18:56:39] <vit9696> bye~
+[18:59:35] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[19:03:28] *** Joins: jan (~jan@ )
+[19:03:28] *** jan is now known as kameo
+[19:04:07] *** Quits: kameo (~jan@ ) (Client Quit)
+[19:13:38] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[19:14:14] *** Joins: VVD (~VVD@ )
+[19:19:39] *** Quits: [0xAA] (~ThisIsZen@ ) (Quit: Leaving)
+[19:25:03] <zetok> vit9696: could you make a PR?
+[19:26:03] <zetok> >+MACFIXRPATH="${QTOX_DIR}/osx/macfixrpath" 
+[19:26:24] <zetok> this should be done by cmake, if it doesn't do that, it's a bug
+[19:30:25] <zetok> oh, there is PR already
+[19:33:28] <vit9696> I am fixing the stuff now
+[19:51:52] *** Joins: f10_ (~flo@ )
+[19:56:45] *** Joins: f10 (~flo@ )
+[20:39:40] *** Joins: sudd3n6 (~anonymous@ )
+[20:48:53] *** sudd3n6 is now known as sudden6
+[21:08:16] *** Quits: MiokIry_ (~Miok@ ) (Read error: Connection reset by peer)
+[21:08:42] *** Joins: MiokIry_ (~Miok@ )
+[21:10:06] -qtox-git-spam- [qTox] vit9696 opened pull request #4108: Deployment fixes for macOS (master...master) https://git.io/vDUjr
+[21:10:18] <vit9696> ok… here we go
+[21:10:52] <vit9696> I do not have much time to deal with qTox, but I hope this will be enough for you.
+[21:11:13] <zetok> vit9696: https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md#commit-message-format
+[21:11:21] <vit9696> I think I fixed all the known deploy issues—
+[21:11:31] <vit9696> ngh…. 
+[21:12:24] <vit9696> Alright, you are welcome to close pull request and make it the way it conforms to the project needs.
+[21:13:25] <vit9696> Sorry, but it will be quicker for you than for me to follow your contribution guides, and I am very short on time 
+[21:17:00] <zetok> um
+[21:17:35] <vit9696> hm… and it looks like travis-ci dislikes something
+[21:17:44] <vit9696> fatal: No names found, cannot describe anything.
+[21:22:58] <vit9696> it probably is related to some weird git issues, but I have no time to play with travis, works just fine locally.
+[21:23:18] <vit9696> enabled maintainer changes, so that hopefully someone could figure this out
+[21:23:38] <vit9696> gl & sorry for some extra work ;)
+[21:23:51] *** Parts: vit9696 (~vit9696@ ) ()
+[21:47:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[21:48:30] *** Joins: f10_ (~flo@ )
+[21:59:58] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[22:21:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[22:34:50] *** Joins: f10_ (~flo@ )
+[22:43:16] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[23:08:27] *** Joins: x_ (~x@ )
