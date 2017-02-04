@@ -1,0 +1,265 @@
+[00:00:20] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:16:51] *** Quits: MiokIry_ (~Miok@ ) (Read error: Connection reset by peer)
+[00:17:17] *** Joins: MiokIry_ (~Miok@ )
+[00:31:23] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[00:36:52] *** Joins: Chiitoo (~Chiitoo@ )
+[01:13:59] *** Joins: sudden6 (~anonymous@ )
+[01:26:42] <sudden6> hi all ::
+[01:27:56] <VVD> hi
+[02:09:05] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 248 seconds)
+[02:10:11] -qtox-git-spam- [qTox] Dako300 opened pull request #4123: added Opus bitrate to AV settings (master...master) https://git.io/vDGUQ
+[02:10:21] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 258 seconds)
+[02:25:59] -qtox-git-spam- [qTox] Dako300 closed pull request #4123: added Opus bitrate to AV settings (master...master) https://git.io/vDGUQ
+[02:28:35] *** Joins: sudden6 (~anonymous@ )
+[02:29:58] *** Joins: shiva (~LordShiva@ )
+[02:38:44] <nurupo> not sure if i reported on it or not, but i bumped ffmpeg on jenkins from 3.1.3 to 3.2.2 the other day
+[02:39:22] <nurupo> 3.2.x includes the fix that we applied on top of 3.1.3 (zetok should remember that one)
+[02:39:49] <nurupo> (this fix https://github.com/qTox/qTox/issues/3612 https://github.com/FFmpeg/FFmpeg/commit/18ce63a60e1bffc35b4df5d8a4f9a1ff1a96cb9a)
+[02:49:45] <Emcy_> wut fix
+[02:50:16] <Emcy_> does qtox use ffmpeg to encode vp8
+[02:53:46] <nurupo> no
+[03:07:16] <Emcy_> hm
+[03:07:35] <Emcy_> i was hoping for something to fix the second call audio bug
+[03:14:00] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[03:37:34] -qtox-git-spam- [qTox] yurivict opened pull request #4124: fix(font): Fixed the editbox font reset problem (master...font-css) https://git.io/vDGtX
+[04:18:47] -qtox-git-spam- [qTox] zetok closed pull request #4116: fix(icon): correct the shape of the logo (master...icon_fix) https://git.io/vDOat
+[05:45:53] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[05:46:27] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[06:06:43] *** Joins: vFSgrcFGBJHg (~rYUtdcvYT@ )
+[06:28:42] *** Quits: vFSgrcFGBJHg (~rYUtdcvYT@ ) (Quit: Leaving)
+[06:29:08] *** Joins: vFSgrcFGBJHg (~rYUtdcvYT@ )
+[06:36:08] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 240 seconds)
+[06:42:04] *** Joins: bennabiy (~bennabiy@ )
+[07:24:40] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[07:25:45] *** Joins: LittleVulpix (~Miranda@ )
+[07:25:46] *** Quits: LittleVulpix (~Miranda@ ) (Changing host)
+[07:25:46] *** Joins: LittleVulpix (~Miranda@ )
+[07:43:56] *** Joins: MDrights (~MDrights@ )
+[08:01:05] *** Joins: MiokIry__ (~Miok@ )
+[08:01:53] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 256 seconds)
+[08:55:09] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[08:55:33] *** Joins: VVD (~VVD@ )
+[09:15:03] *** Quits: vFSgrcFGBJHg (~rYUtdcvYT@ ) (Quit: Leaving)
+[09:15:38] *** Joins: vFSgrcFGBJHg (~rYUtdcvYT@ )
+[09:18:34] -qtox-git-spam- [qTox] pascalberger opened pull request #4126: Add link to Chocolatey package (master...chocolatey) https://git.io/vDG2X
+[09:31:50] *** Joins: dardevelin (~dardeveli@ )
+[10:17:38] -qtox-git-spam- [qTox] Vort opened pull request #4127: fix(icon): add more size versions to qtox.ico (master...svg_to_ico) https://git.io/vDGKn
+[10:25:56] *** Joins: barmaley (~barmaley@ )
+[10:42:00] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 252 seconds)
+[10:47:25] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[10:50:02] *** Joins: haavard (root@ )
+[10:50:27] <haavard> How come the ubuntu repos (14.04) installs libtoxcore under /usr/tox? 
+[10:50:43] <haavard> And not spread out under /usr/include /usr/lib etc. like a normal package
+[10:51:08] <nurupo> hm, abbat is not here
+[10:52:20] *** Joins: barmaley (~barmaley@ )
+[10:55:22] *** Joins: shiva (~LordShiva@ )
+[11:12:15] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 252 seconds)
+[11:26:20] *** Joins: shiva (~LordShiva@ )
+[11:42:33] *** shiva is now known as in1t3r
+[11:49:35] *** Quits: barmaley (~barmaley@ ) (Quit: Leaving)
+[11:55:30] *** Quits: vFSgrcFGBJHg (~rYUtdcvYT@ ) (Quit: Leaving)
+[11:57:29] *** Joins: vFSgrcFGBJHg (~rYUtdcvYT@ )
+[11:58:25] *** Joins: sudden6 (~anonymous@ )
+[12:00:45] *** Joins: barmaley (~barmaley@ )
+[12:13:19] *** Joins: voidead (~voidead@ )
+[12:15:03] *** Joins: [0xAA] (~ThisIsZen@ )
+[12:17:38] *** Quits: vFSgrcFGBJHg (~rYUtdcvYT@ ) (Quit: Leaving)
+[12:19:15] *** Quits: [0xAA] (~ThisIsZen@ ) (Max SendQ exceeded)
+[12:19:42] *** Joins: [0xAA] (~ThisIsZen@ )
+[12:19:50] *** Quits: [0xAA] (~ThisIsZen@ ) (Remote host closed the connection)
+[12:20:11] *** Joins: [0xAA] (~ThisIsZen@ )
+[12:21:23] *** Joins: bashrc (~motters@ )
+[12:23:28] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[12:48:48] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[12:57:46] *** Parts: voidead (~voidead@ ) ("WeeChat 1.8-dev")
+[13:04:29] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[13:09:03] *** Joins: shiva (~LordShiva@ )
+[13:09:36] *** Joins: Chiitoo (~Chiitoo@ )
+[13:10:43] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 245 seconds)
+[13:13:13] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 245 seconds)
+[13:17:20] *** Joins: shiva (~LordShiva@ )
+[13:44:37] *** Joins: barmaley (~barmaley@ )
+[13:51:17] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[14:03:38] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 240 seconds)
+[14:07:31] *** Joins: bennabiy (~bennabiy@ )
+[14:11:34] *** Joins: f10 (~flo@ )
+[14:12:06] *** Joins: cenysor (~cenysor@ )
+[14:15:56] *** Joins: shiva__ (~LordShiva@ )
+[14:16:33] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 248 seconds)
+[14:29:22] *** Joins: f10_ (~flo@ )
+[14:33:50] *** Joins: f10__ (~flo@ )
+[14:34:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 252 seconds)
+[14:51:45] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:57:58] *** Joins: grin (grin@ )
+[14:58:14] <grin> good localtime
+[14:58:43] <grin> is it normal that qtox don't show join/leave activity? can it be made shown? 
+[14:59:44] <grin> is it a known bug that if there are more than one group chat and they're leaving/joining then the history may end up in another group chat "tab"?
+[15:02:10] *** Joins: pcre (~quassel@ )
+[15:07:15] <grin> (feel free to answer as you can, I log the traffic and read it back :-))
+[15:50:24] *** Joins: barmaley (~barmaley@ )
+[15:56:25] *** Quits: barmaley (~barmaley@ ) (Quit: Leaving)
+[16:05:36] *** Joins: sudden6 (~anonymous@ )
+[16:30:06] *** Quits: Chiitoo (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[16:33:02] <zetok> grin: not a known bug
+[16:33:11] *** Joins: Chiitoo (~Chiitoo@ )
+[16:34:03] <zetok> grin: as for join/leave, yeah, someone would have to implement that
+[16:38:07] <grin> zetok, thanks. it's a surprise nobody was complaining loudly about it so far
+[16:38:20] <sudden6> hi zetok :)
+[16:43:39] <zetok> sudden6: hello
+[16:44:11] <zetok> sudden6: do you have time to review & possibly merge PRs that are ready for 1.8 ?
+[16:44:17] <sudden6> sorry about my lack of communication the last days, was very busy with another project
+[16:44:24] <sudden6> zetok: yeah
+[16:44:30] * zetok just looked at gh
+[16:44:45] <sudden6> anything happened that I should now about? :)
+[16:45:19] <sudden6> also where do all the new contributors come from? I looked at GH and there are new names everywhere :D
+[16:46:02] <zetok> the internet :D
+[16:46:38] <grin> oh sorry for the last 2 issues then
+[16:46:44] <grin> I'm not even here ;)
+[16:46:53] <grin> btw I come from the tox public chat
+[16:47:19] <grin> where Mr. Unicode Name got bored with me and sent to the he^H^channel
+[16:48:56] <grin> and the chain was antox->toxic->uTox->qTox [in the direction from not working to working]
+[16:49:11] * zetok wonders
+[16:49:14] <sudden6> nice to hear qTox is on the working end^^
+[16:49:21] <grin> it seems to be
+[16:49:40] <grin> full of problems, but magnitudes less than the others :-)
+[16:50:05] <grin> toxic is nice but pretty limited, and I didn't even mention non-working ones like that python thingy
+[16:50:21] <grin> toxygen yeah
+[16:50:34] <grin> not up to the task yet
+[16:51:15] <Chiitoo> sudden6: I think I just remembered why I ended up with 'left' and 'right'.  It made more sense due to the fact that the same buttons are used for 'Open File' and other things that are not just 'accept' and 'decline/cancel'...  Did you think of that?
+[16:51:32] * grin secretly missing internal statistics about traffix and network and dht and stuff
+[16:52:16] <sudden6> Chiitoo: yes, I thought that's probably the case, but IMO left/right is worse, because it gives absolutely no idea what the click events are supposed to do
+[16:52:49] <sudden6> and if we decide to move the buttons, we would have to reorder them again
+[16:52:54] <Chiitoo> Hmmm.
+[16:53:17] <sudden6> Chiitoo: maybe you can find better names than accept/decline that include all use cases for the buttons
+[16:53:54] <Chiitoo> Mmmh.
+[16:54:34] <zetok> sudden6: https://github.com/qTox/qTox/pulls?q=is%3Aopen+is%3Apr+milestone%3Av1.8.0 ← is a fix? ready? merge?
+[16:55:33] <Chiitoo> swissArmyKnifeOfButtonsForTheFileTransferWidget{One,Two}
+[16:55:33] <zetok> https://github.com/qTox/qTox/pull/4119 ← not sure if 1.8/1.9
+[16:55:41] <sudden6> for 4120, research is still ongoing, doesn't fix anything
+[16:55:56] *** Joins: Rain (~Rain@ )
+[16:56:04] <Chiitoo> I'll ponder upon it.  Thanks.
+[16:56:11] <Rain> hi
+[16:56:42] <sudden6> I'll move 4120 to 1.9
+[16:57:28] <sudden6> 4107 is superseeded by 4108 I think, I just didn't have the time to close it
+[16:57:40] *** Parts: Rain (~Rain@ ) ("Leaving")
+[16:57:46] <sudden6> 4115 is ready to merge
+[16:57:55] <sudden6> (will do in a few min)
+[17:00:06] <sudden6> zetok: I didn't move 4120, it's not clear if it's a fix or just cleanup
+[17:02:15] -qtox-git-spam- [qTox] sudden6 closed pull request #4107: chore(macdeploy): make qtox build with cmake and mac os (master...fix_macos_cmake) https://git.io/vDUMP
+[17:19:02] <sudden6> zetok: what do you think about https://github.com/qTox/qTox/pull/4126
+[17:21:13] <zetok> sudden6: not sure about the README.md, but there's no reason to not link to it from community builds section in INSTALL.md
+[17:21:55] <sudden6> ok
+[17:30:06] <sudden6> zetok: I'm not sure how to answer to the PR
+[17:31:05] <sudden6> the guy proposing the PR seems to be directly from the repository team, so I think he can be counted as reliable
+[17:31:43] <sudden6> and they only seem to download the binaries from tox.chat
+[17:33:26] <zetok> depends on how paranoid you are
+[17:34:14] <sudden6> depends on how paranoid we are ;)
+[17:34:41] <zetok> not really
+[17:36:16] <zetok> sudden6: "Ok, that sounds like something that should be added to the community builds section in INSTALL.md" ?
+[17:36:28] <zetok> sudden6: how does that sound as an answer?
+[17:37:27] <sudden6> zetok: good, I think :)
+[17:37:32] <sudden6> thx
+[17:37:34] <zetok> sudden6: technically, the binaries section in README.md isn't as "paranoid" as it should be, since that would hurt the project
+[17:38:01] <sudden6> yeah, I'm actually more worried about reliability anyway
+[17:38:04] <zetok> same goes for "community builds" section in INSTALL.md, to even greater degree
+[17:38:43] <sudden6> the things we list as the recommended sources should get regular updates
+[17:39:30] <zetok> mm
+[17:39:40] <zetok> there's a slight problem with linux repos
+[17:40:29] <zetok> I haven't talked to abbat yet, but he seems to have lost interest in maintaining stuff after toktok migration
+[17:42:08] <zetok> then again, it's not like anyone actually has bothered to even make a PR to the tox.pkg repo to bump qTox version to 1.7
+[17:42:51] <zetok> someone should make a PR
+[17:42:52] <sudden6> yep
+[17:43:38] <sudden6> last time I talked to him, he didn't want to maintain two versions of toxcore, maybe now that everyone is on toktok he might move everything to it
+[17:44:10] <zetok> um, there's no need to maintain 2 versions though?
+[17:45:02] <sudden6> maybe he didn't know that
+[17:45:16] <zetok> um
+[17:45:31] <sudden6> or he didn't trust toktok to stay alive, IDK
+[17:46:13] <zetok> or that both trees would remain alive
+[17:46:28] <zetok> which would be problematic
+[17:54:18] *** Quits: bennabiy (~bennabiy@ ) (Ping timeout: 252 seconds)
+[17:54:47] *** Joins: bennabiy (~bennabiy@ )
+[17:56:11] *** Quits: Se7en (~Se7en@ ) (*.net *.split)
+[17:56:11] *** Quits: NeaN (~elouin@ ) (*.net *.split)
+[17:56:22] *** Quits: e0f (~e0f@ ) (*.net *.split)
+[17:56:32] *** Quits: oranges (oranges@ ) (*.net *.split)
+[17:56:32] *** Quits: dan- (~d@ ) (*.net *.split)
+[17:56:40] *** Joins: oranges (oranges@ )
+[17:56:57] *** Joins: dan- (~d@ )
+[17:56:57] *** Quits: dan- (~d@ ) (Changing host)
+[17:56:57] *** Joins: dan- (~d@ )
+[17:57:06] *** Joins: e0f (~e0f@ )
+[17:57:19] *** Joins: Se7en (~Se7en@ )
+[17:57:47] *** Joins: NeaN (~elouin@ )
+[18:08:17] <sudden6> zetok: I changed stuff for 1.8 are you ok with it?
+[18:08:34] <sudden6> btw, do you know the status of initramfs?
+[18:08:48] <sudden6> haven't heard of him for ages
+[18:11:22] <sudden6> https://github.com/qTox/qTox/issues/4128 proposal-accepted?
+[18:13:19] <zetok> #4128 – yeah, but there should be an option to turn it off, as some people don't like that
+[18:13:32] <sudden6> agreed
+[18:14:08] <zetok> >I changed stuff for 1.8 are you ok with it?
+[18:14:09] <zetok> sure
+[18:14:34] <zetok> regarding initramfs, I don't know
+[18:15:36] <sudden6> mhm, I'd really like to start merging his coding style PR
+[18:15:52] <zetok> a couple of weeks ago initramfs wrote that he'd continue working on the clang format stuff
+[18:16:05] <sudden6> define "a couple of weeks ago"
+[18:16:21] <zetok> >2
+[18:17:02] <zetok> :|
+[18:17:07] <sudden6> that's an eternity in internet time...
+[18:17:13] <zetok> right
+[18:17:27] <zetok> if there's stuff missing in the PR/changes needed, a new PR probably should be opened
+[18:17:28] <sudden6> idk if we should start to consider him MIA or something
+[18:17:36] <zetok> ~yeah
+[18:17:51] <zetok> not MIA, just busy
+[18:18:08] <zetok> (not that it changes much)
+[18:18:12] <sudden6> yeah, could also be
+[18:18:43] <sudden6> maybe we should send an email to him to query for an update?
+[18:18:59] <sudden6> anything agains merging #4115
+[18:19:02] <sudden6> ?
+[18:19:21] <zetok> dunno, didn't test
+[18:19:32] <sudden6> me neither
+[18:20:44] <zetok> >if(
+[18:20:47] <zetok> coding style ;)
+[18:21:21] * sudden6 wonders how that got into the coding style
+[18:22:43] <sudden6> hmm, qtcreator seems to have that in the config, interesting
+[18:31:34] <zetok> um?
+[18:32:16] <zetok> #4115 is missing spaces between `if`s and parentheses
+[18:33:53] <sudden6> right
+[18:40:48] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:41:24] *** Joins: LittleVulpix (~Miranda@ )
+[18:41:50] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[19:02:38] *** Quits: [0xAA] (~ThisIsZen@ ) (Remote host closed the connection)
+[19:06:27] <grin> have a nice time guys
+[19:06:38] <sudden6> bye
+[19:06:42] *** Parts: grin (grin@ ) ("cu")
+[19:06:52] *** Joins: LittleVulpix (~Miranda@ )
+[19:17:09] *** Joins: grin (grin@ )
+[19:17:33] <grin> sudden6, is it comprehensible what I wrote into 4129? ;)
+[19:18:26] <sudden6> grin: yes, thx :)
+[19:19:06] <grin> it's still open, so I can try some magic on it, but looks like it's nothing exceptional, just bad content in a bad array or so
+[19:19:27] <grin> like someone put history in an array indexed by groupchat number
+[19:19:44] <grin> then the chats were joined differently and the history stayed there
+[19:20:28] * grin don't understand himself, that probably wasn't english
+[19:20:48] <grin> anyway, back to sleep. :)
+[19:21:06] *** Parts: grin (grin@ ) ("i'm not offline, just offchan ;)")
+[19:21:58] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[19:23:11] *** Joins: f10 (~flo@ )
+[19:45:06] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[21:01:15] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:02:17] *** Joins: LittleVulpix (~Miranda@ )
+[21:19:07] *** Joins: Yoshimo (~anything@ )
+[21:30:07] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[21:40:55] *** Joins: Chiitoo (~Chiitoo@ )
+[21:52:07] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[21:55:32] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:57:17] *** Quits: e0f (~e0f@ ) (Changing host)
+[21:57:17] *** Joins: e0f (~e0f@ )
+[22:06:35] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[22:18:59] *** Joins: x_ (~x@ )
+[22:46:58] *** Quits: genesis (~genesis@ ) (Read error: Connection timed out)
+[22:49:12] *** Joins: genesis (~genesis@ )
+[23:05:53] *** Parts: haavard (root@ ) ("WeeChat 1.5")
+[23:06:42] *** Quits: genesis (~genesis@ ) (Ping timeout: 252 seconds)
+[23:17:00] *** Joins: genesis (~genesis@ )
+[23:23:12] *** Quits: genesis (~genesis@ ) (Ping timeout: 252 seconds)
+[23:37:40] *** Joins: genesis (~genesis@ )
+[23:44:47] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
