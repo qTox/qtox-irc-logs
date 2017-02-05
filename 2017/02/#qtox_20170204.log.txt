@@ -1,0 +1,351 @@
+[00:07:55] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:40:16] *** Joins: dardevelin (~dardeveli@ )
+[00:57:30] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 276 seconds)
+[01:32:11] *** Quits: x_ (~x@ ) (Ping timeout: 240 seconds)
+[01:44:55] *** Joins: LittleVulpix (~Miranda@ )
+[02:11:19] *** Joins: MDrights (~MDrights@ )
+[02:43:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[03:26:16] *** Joins: barmaley (~barmaley@ )
+[06:26:35] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[06:27:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[06:59:43] *** Joins: [0xAA] (~ThisIsZen@ )
+[06:59:46] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[07:00:38] *** Joins: MDrights (~MDrights@ )
+[07:16:55] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[07:17:33] *** Joins: MDrights (~MDrights@ )
+[07:43:30] -qtox-git-spam- [qTox] Diadlo closed pull request #4115: fix: Now cannot send party invite to a friend which has "Offline" status (master...fix-offline-invite) https://git.io/vDYpN
+[07:43:52] *** Parts: jjuran (~jjuran@ ) ()
+[07:44:26] <nurupo> what is "party invite"?
+[07:56:07] <zetok> groupchat
+[07:58:26] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 255 seconds)
+[08:00:59] *** Joins: IWishThisWereA (~chatzilla@ )
+[08:01:05] <IWishThisWereA> hi
+[08:01:22] <IWishThisWereA> does qtox encrypt the audio & video streams?
+[08:10:23] *** Joins: shiva__ (~LordShiva@ )
+[08:15:23] *** Quits: MiokIry__ (~Miok@ ) (Ping timeout: 256 seconds)
+[08:19:18] *** Joins: Yoshimo (~anything@ )
+[08:33:28] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[09:07:04] *** Quits: IWishThisWereA (~chatzilla@ ) (Quit: ChatZilla 0.9.93 [Firefox 45.5.1/20161129180326])
+[09:07:07] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:08:08] *** Joins: VVD (~VVD@ )
+[09:41:41] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[09:46:08] *** Joins: Yoshimo (~anything@ )
+[09:54:40] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:55:04] *** Joins: VVD (~VVD@ )
+[09:59:25] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:59:48] *** Joins: VVD (~VVD@ )
+[10:02:58] <shiva__> anyone want to chat on tox?
+[10:03:04] *** shiva__ is now known as in1t3r
+[10:08:03] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[10:11:22] *** Joins: bashrc (~motters@ )
+[10:11:26] *** Joins: MiokIry__ (~Miok@ )
+[10:27:05] *** Joins: Yoshimo (~anything@ )
+[10:41:09] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[10:42:08] *** Joins: VVD (~VVD@ )
+[10:53:31] *** Quits: [0xAA] (~ThisIsZen@ ) (Remote host closed the connection)
+[10:53:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[10:53:57] *** Joins: [0xAA] (~ThisIsZen@ )
+[10:54:13] *** Joins: VVD (~VVD@ )
+[11:02:15] *** Joins: sudden6 (~anonymous@ )
+[11:04:04] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 245 seconds)
+[11:12:29] *** Joins: [0xAA] (~ThisIsZen@ )
+[11:16:00] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[11:23:43] *** Joins: sudden6 (~anonymous@ )
+[11:43:29] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[12:01:01] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[12:01:49] *** Joins: LittleVulpix (~Miranda@ )
+[12:14:59] *** Joins: zero-ghost (~0@ )
+[12:16:55] <sudden6> zetok Diadlo what about removing old historykeeper?
+[12:17:03] <sudden6> in 1.9
+[12:17:39] <Diadlo> Agree. But `TODO: remove backwards compatibility in 2018`
+[12:17:43] <Diadlo> :/
+[12:18:05] <sudden6> yep, that's why I'm asking...
+[12:20:55] <sudden6> Diadlo: what do you mean with https://github.com/qTox/planning/issues/1 ?
+[12:21:29] <Diadlo> I mean, that we should move user aliases from settings to db :)
+[12:22:05] <sudden6> ok, I think it's a good idea :)
+[12:22:24] <sudden6> what do you think of the UML model i did?
+[12:22:39] <sudden6> you mentioned something, but we didn't talk afterwards
+[12:24:02] <zetok> sudden6: when was historykeeper deprecated?
+[12:24:11] <zetok> (version, that is)
+[12:24:15] <sudden6> I don't remember
+[12:24:22] <Diadlo> I think it can be better
+[12:24:25] <Diadlo> UML
+[12:24:42] <Diadlo> But haven't good ideas
+[12:25:12] <sudden6> I also think it could be better, but didn't have time to improve it
+[12:25:16] <Diadlo> +
+[12:25:22] <Diadlo> Ok. I will try improve
+[12:25:24] <Diadlo> *to
+[12:25:27] <sudden6> great :)
+[12:25:51] <zetok> sudden6: is it really troublesome to keep that code?
+[12:26:16] <Diadlo> zetok: It's garbage
+[12:26:21] <sudden6> zetok: yes, it prevents the removal of some very bad code
+[12:26:26] <Diadlo> +
+[12:26:53] <zetok> well then, remove it if you need to
+[12:27:06] <sudden6> ok, will submit a PR shortly
+[12:28:23] <Diadlo> Also, I'm tried to integrate QML in our code :)
+[12:28:33] <sudden6> how was it?
+[12:29:19] <sudden6> I'll merge https://github.com/qTox/qTox/pull/4127 ok?
+[12:29:46] <Diadlo> 1) It's very hard to write QML code, when you can't do it. So I still haven't 'Settings About' form
+[12:30:07] <Diadlo> 2) But I successfully integrate red box :)
+[12:30:13] <zetok> sudden6: script is missing a copyright header
+[12:31:45] <sudden6> ok, wait I found another thing
+[12:32:00] <zetok> also missing `#!/bin/bash`
+[12:32:36] <sudden6> shouldn't that be irrelevant if he doesn't use bash specific stuff?
+[12:33:55] <Diadlo> https://i.imgur.com/LwsQYuf.png
+[12:34:02] <Diadlo> Umbrello sucks
+[12:34:30] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[12:34:37] <sudden6> lol
+[12:34:48] <sudden6> Diadlo: are you using the latest git version?
+[12:34:58] <Diadlo> Hm...
+[12:35:02] <Diadlo> Not sure
+[12:35:11] <sudden6> because I had to, to fix some bugs
+[12:35:11] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[12:35:54] <Diadlo> Yes, I use not git version. Thanks :)
+[12:36:08] *** Joins: VVD (~VVD@ )
+[12:45:54] *** Joins: Yoshimo (~anything@ )
+[12:50:39] <sudden6> Diadlo zetok was there a PR for that https://github.com/qTox/qTox/blob/master/src/persistence/settings.cpp#L177 ?
+[12:51:33] <Diadlo> Nope :)
+[12:57:10] <sudden6> I think we need a grep with all TODOs^^
+[12:57:52] <zetok> doesn't qt creator do that?
+[13:01:31] <sudden6> not that I know of
+[13:03:10] <zetok> IIRC tux3 said something like that
+[13:05:06] *** Quits: genesis (~genesis@ ) (Quit: Leaving)
+[13:05:33] -qtox-git-spam- [qTox] sudden6 opened pull request #4130: refactor(history): remove deprecated historykeeper (master...remove_historykeeper) https://git.io/vDcvY
+[13:19:22] *** Quits: zero-ghost (~0@ ) (Quit: Leaving.)
+[13:25:55] <Diadlo> Ctrl + Shift + F + "TODO" :)
+[13:27:05] <Diadlo> sudden6: I will remove ToxFileList and ToxFriendCall from Friend
+[13:27:20] <sudden6> ok, why?
+[13:27:21] <Diadlo> It's shouldn't be a part of Friend
+[13:27:33] <sudden6> why?
+[13:27:45] <Diadlo> Name of your friend is part of your friend?
+[13:27:51] <sudden6> yes
+[13:27:58] <Diadlo> This face?
+[13:28:01] <Diadlo> *His
+[13:28:01] <sudden6> calls are associated with a friend
+[13:28:11] <Diadlo> Associated != contains
+[13:28:39] <sudden6> mhm, I see your reasons
+[13:28:39] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:28:41] <sudden6> +1
+[13:29:29] *** Joins: VVD (~VVD@ )
+[13:29:51] <Diadlo> I plan to move it to Core now
+[13:29:59] <sudden6> meh
+[13:30:15] <sudden6> wouldn't it belong more to toxav?
+[13:30:40] <sudden6> imo Core should be as small as possible
+[13:31:05] <Diadlo> Calls -- yes, and I meant ToxAV, sorry
+[13:31:16] <sudden6> ok
+[13:31:25] <sudden6> yeah, files could be in Core
+[13:31:36] <Diadlo> May be create ToxFiles?
+[13:31:45] <sudden6> would be better I think
+[13:31:49] <Diadlo> Ok
+[13:50:21] *** Joins: f10 (~flo@ )
+[13:50:50] *** Joins: f10__ (~flo@ )
+[14:33:20] <sudden6> zetok: is 4127 now ok?
+[14:33:21] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[14:34:08] -qtox-git-spam- [qTox] sudden6 opened pull request #4131: feat(toxencrypt): add function to get min length for isEncrypted() to (master...update_toxencrypt) https://git.io/vDcTV
+[14:34:23] *** Joins: VVD (~VVD@ )
+[14:36:39] -qtox-git-spam- [qTox] sudden6 opened pull request #4132: Refactor toxencrypt2 (master...refactor_toxencrypt2) https://git.io/vDcTo
+[14:43:49] *** Quits: VVD (~VVD@ ) (Ping timeout: 240 seconds)
+[14:55:27] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[14:58:47] -qtox-git-spam- [qTox] sudden6 closed pull request #4127: fix(icon): add more size versions to qtox.ico (master...svg_to_ico) https://git.io/vDGKn
+[15:04:39] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:07:59] *** Joins: cenysor (~cenysor@ )
+[15:11:52] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:12:56] *** Joins: LittleVulpix (~Miranda@ )
+[15:17:26] *** Joins: f10 (~flo@ )
+[15:17:56] *** Joins: barmaley (~barmaley@ )
+[15:20:02] *** Joins: VVD (~VVD@ )
+[15:38:33] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[16:49:05] *** Joins: Yoshimo (~anything@ )
+[17:19:23] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[17:19:57] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[17:26:52] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[17:28:44] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[17:30:41] *** Joins: bashrc (~motters@ )
+[17:39:03] *** Joins: f10 (~flo@ )
+[17:39:16] *** Joins: f10__ (~flo@ )
+[17:47:51] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:48:22] *** Joins: LittleVulpix (~Miranda@ )
+[17:57:13] *** Joins: DiCE1904 (~textual@ )
+[18:45:54] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 260 seconds)
+[19:02:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[19:03:06] *** Joins: VVD (~VVD@ )
+[19:04:57] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[19:16:41] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[19:17:01] *** Joins: VVD (~VVD@ )
+[19:44:55] <Diadlo> sudden6: Are you here?
+[19:54:47] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[19:55:53] *** Joins: VVD (~VVD@ )
+[20:06:05] *** Joins: Yoshimo (~anything@ )
+[20:45:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[20:46:31] *** Joins: VVD (~VVD@ )
+[20:53:38] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[21:17:28] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:37:22] <sudden6> Diadlo: now, yes :)
+[21:50:41] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:51:55] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vDc0o
+[21:51:55] -qtox-git-spam- qTox/master c84837d Yuri: fix(font): Fixed the editbox font reset problem...
+[21:51:55] -qtox-git-spam- qTox/master 5a04359 sudden6: Merge pull request #4124...
+[21:56:49] <Diadlo> About unsigned (-1)
+[21:57:02] <Diadlo> Here should be ssize_t, but it's unsupported by windows
+[22:00:46] <Diadlo> sudden6: I suggest to use size_t and -1. Are you ok with it?
+[22:01:02] <sudden6> I don't really know if that's a good way or a bad way, what would be the alternatives?
+[22:01:14] <Diadlo> 0 is a valid result
+[22:01:44] <Diadlo> We can use MAX_UINT. But it's more unintuitive, than -1
+[22:01:46] <Diadlo> IMO
+[22:02:31] <sudden6> can't the function not just return 0 if there was an error? since it seems to be a valid result it can just print an error message to the log
+[22:03:23] <Diadlo> Caller, can't validate result
+[22:04:13] <Diadlo> In this case
+[22:05:02] <Diadlo> Also, `network` shouldn't print anything
+[22:08:48] <sudden6> well, when using 0 as invalid value, you'd just use the information of what kind of problem happened
+[22:09:05] <Diadlo> 0 is valid value
+[22:09:09] <Diadlo> It empty array
+[22:09:15] <Diadlo> *It's
+[22:09:25] <sudden6> because if you pass valid data it will result in a non empty array
+[22:09:42] <Diadlo> Where you found this information?
+[22:10:11] <sudden6> that's what I would expect from the function
+[22:10:36] <Diadlo> It's wrong
+[22:10:41] <sudden6> why?
+[22:12:16] <Diadlo> sudden6: https://github.com/TokTok/c-toxcore/pull/461/files#diff-585a09a7eea194bebb4c25786e4a0cd1R1222
+[22:12:25] <Diadlo> + 10 lines
+[22:13:41] <Diadlo> Ok, you are won. I will change it on int
+[22:14:32] <sudden6> lol, don't forget to put a protection against overflow in place
+[22:15:05] <Diadlo> What kind of protection do you want?
+[22:16:01] <sudden6> count has to be limited to < INT_MAX
+[22:16:18] <sudden6> because signed overflow is undefined in C
+[22:16:28] <sudden6> (I read the standard this morning)
+[22:16:35] <Diadlo> Gtz
+[22:16:50] <sudden6> unsigned int overflow is actually defined by the standard
+[22:16:58] <sudden6> I was wrong on this one
+[22:23:53] <Diadlo> sudden6: Done
+[22:31:39] <sudden6> Diadlo: if I read that correctly, you only resolve the hostname, is this on purpose?
+[22:33:21] <sudden6> also what do you think of the cleanup PRs I sent to qTox?
+[22:49:20] <Diadlo> Not yet, I plan to review tomorrow
+[22:49:48] <Diadlo> you only resolve the hostname, is this on purpose? <- Sorry, what do you mean?
+[22:49:52] <Diadlo> Where?
+[22:51:47] <Diadlo> Also, seems your htonl implementation is wrong
+[22:51:58] <Diadlo> https://circleci.com/gh/TokTok/c-toxcore/288
+[22:52:07] <sudden6> https://github.com/TokTok/c-toxcore/pull/461/files#diff-585a09a7eea194bebb4c25786e4a0cd1R1215 here
+[22:52:29] <sudden6> first parameter to getaddrinfo is the hostname, second the port
+[22:52:39] <Diadlo> And here https://travis-ci.org/TokTok/c-toxcore/jobs/198427286#L1413
+[22:53:13] <Diadlo> I just move this code from another part of toxcore
+[22:53:58] <Diadlo> This parameter was unsed before
+[22:55:22] <sudden6> > Also, seems your htonl implementation is wrong <- you forgot one line
+[22:56:17] <sudden6> ok, I forgot one line
+[22:56:18] <sudden6> sorry
+[22:57:20] <Diadlo> Do you really think, that 4 AND with different shift duration is more readable?
+[22:58:01] <Diadlo> I'm still not fully understand how it works
+[22:59:02] <sudden6> Diadlo: I updated the comments
+[22:59:11] <sudden6> I forgot to copy one line somehow
+[22:59:19] <sudden6> maybe that makes it more clear
+[22:59:33] <Diadlo> Nope
+[23:00:20] <sudden6> basically you shift the uint32 to the position where the byte should be and the mask out the others
+[23:00:30] <sudden6> pretty standard code in the embedded world
+[23:00:36] <Diadlo> Yes. I know
+[23:01:04] <Diadlo> It's hard to describe, nevermind
+[23:01:18] <sudden6> what exactly don't you understand?
+[23:01:21] <Diadlo> Done
+[23:01:33] <Diadlo> > It's hard to describe, nevermind
+[23:04:16] <sudden6> Diadlo: in the last line there are some backticks that don't belong there
+[23:05:18] <Diadlo> Also, you may be interested in, that both solution in most cases will be compiled to `bswap`
+[23:05:27] <sudden6> Diadlo: I know
+[23:05:52] <Diadlo> backticks removed
+[23:06:14] <Diadlo> Good night
+[23:06:27] <sudden6> it's just that these shifts are well defined everywhere, but not all computer architectures can address bytes like in your variant
+[23:06:30] *** Quits: cisc (~cisc@ ) (Remote host closed the connection)
+[23:06:56] *** Joins: cisc (~cisc@ )
+[23:07:02] <Diadlo> ^ Proofs?
+[23:07:17] <sudden6> wait a min
+[23:13:14] <Diadlo> sudden6: I will read your link tomorrow. Bye
+[23:13:19] <sudden6> ok, bye
+[23:15:08] *** Joins: Dako300 (~daniel@ )
+[23:16:30] <sudden6> Diadlo: http://stackoverflow.com/a/99010 this basically explains it
+[23:17:53] <Dako300> I have qTox, and group calls with more than three people keep dropping people out and cutting each other off randomly. I forked qTox and added a bitrate slider for individual and group calls (modified c-toxcore to have changeable group bitrates), and the problem persists down to the lowest bitrate possible (6kbps). Would this be a problem with qTox or with c-toxcore?
+[23:18:17] <sudden6> Dako300: that's hard to answer
+[23:18:25] <sudden6> do you have the needed bandwith?
+[23:18:33] <sudden6> upload and download?
+[23:18:34] <Dako300> I should
+[23:18:42] <sudden6> all of your people?
+[23:19:12] <Dako300> Yeah, they all run the fork at 6kbps
+[23:19:25] <sudden6> what's the bandwith of everyones internet connection up and down?
+[23:19:26] <Dako300> Except for the group bot, but that shouldn't matter, right
+[23:20:12] <Dako300> I don't know his, but it is good enough for an individual call at 64kbps to work just fine
+[23:20:26] <Dako300> Mine is 20 down 3 up, and the bot is on my LAN
+[23:20:47] <sudden6> yeah, but for a groupchat, I think everybody needs the upload to stream the audio to everybody else
+[23:20:57] <sudden6> (I'm not 100% sure on this though)
+[23:21:34] <Dako300> That makes sense, but I can't imagine bandwidth is the problem here at 6kbps
+[23:21:48] <sudden6> that said we have tested qTox with 3-4 people on one groupchat and streaming audio
+[23:22:08] <Dako300> what was the network topology there?
+[23:22:39] <sudden6> three connections over the internet and one person running two qTox instances locally
+[23:23:06] <sudden6> I think all with >2Mbit up and down, around the world
+[23:23:23] <Dako300> that's weird then...
+[23:24:35] <sudden6> do you use Wifi?
+[23:24:41] <Dako300> Do you know what the ping times were for each of them?
+[23:24:46] <sudden6> because I had problems with it
+[23:24:56] <sudden6> nope, don't know
+[23:25:03] <Dako300> I used both WiFi and a wired connection, and they both are very choppy
+[23:25:22] <sudden6> have you tried other clients than qTox?
+[23:25:40] <Dako300> No, can you recommend a client that supports Tox group chats?
+[23:26:43] <sudden6> I think uTox and toxic would be the ones to test
+[23:27:07] <Dako300> I will check out uTox, Toxic doesn't support audio chats (only text)
+[23:27:13] <Dako300> *group chats
+[23:27:21] <Dako300> from what I read at least
+[23:27:22] <sudden6> please report back what you find out
+[23:27:24] <Dako300> ok
+[23:27:51] <sudden6> also, if your PR makes it into toxcore, it would be nice if you could submit the qTox part
+[23:28:20] <sudden6> to the qTox repo
+[23:28:36] <Dako300> I will, but i'm having some trouble with the default settings
+[23:29:01] <sudden6> what troubles?
+[23:29:44] <Dako300> The value that a new (tacky) function returns is different than what the bitrate slider is set to in the settings. I have to change it and change it back for it to take effect
+[23:30:15] <Dako300> I haven't developed in Qt before, so i'm just feeling my way around at this point
+[23:31:23] <sudden6> feel free to ask questions here :)
+[23:31:32] <Dako300> I will
+[23:32:07] <Dako300> How are default settings managed in Qt?
+[23:32:41] <Dako300> I have a bit of a problem with locks
+[23:33:02] <sudden6> I don't think they are managed, we do it manually in qTox I think
+[23:33:09] <sudden6> will have to take a look though
+[23:33:27] <Dako300> ok, I think I found something like that somewhere
+[23:34:13] <sudden6> src/persitence/settings.cpp is the file you need
+[23:34:18] <Dako300> ok
+[23:34:52] <Dako300> I already have something there
+[23:34:58] <sudden6> for example, L366
+[23:35:15] <sudden6> "typingNotification", true <- true is the default value
+[23:35:18] <Dako300> on line 298 (on my end)
+[23:35:24] <Dako300>         audioBitRate = s.value("bitRateSlider", 64).toInt();
+[23:35:46] <Dako300> oh wait, I think I'm stupid
+[23:35:46] <sudden6> yep, that's the right way
+[23:35:47] <Dako300> ...
+[23:36:00] <sudden6> but 64 sounds low
+[23:36:13] <Dako300> 64kbps is the default compression level for qTox
+[23:36:28] <Dako300> Group chats are even lower at 32 for mono and 16 for setero
+[23:36:30] <Dako300> *stereo
+[23:36:35] <sudden6> oh, it's in kbps
+[23:36:54] <sudden6> I thought it's bps
+[23:37:02] <Dako300> nah
+[23:37:40] <sudden6> would be interesting if 512bps Opus is still understandable
+[23:37:51] <Dako300> Opus doesn't work below 6kbps
+[23:38:07] <sudden6> mhm
+[23:38:08] <Dako300> Although speech doesn't sound too bad at that level
+[23:41:10] <Dako300> Turns out I have completely forgot to import the settings from the Settings namespace
+[23:42:49] <Dako300> that should fix it...
+[23:43:33] <Dako300> sudden6: I can't submit the pull request yet because the group bit rate functio isn't implemented outside of my fork, but I will if and when the c-toxcore pull request is accepted
+[23:43:52] <sudden6> I didn't expect anything else :)
+[23:43:58] <Dako300> good
+[23:47:11] <Dako300> This might be more of a question for toktok, but is it possible to speed up the discovery of new nodes?
+[23:47:45] <sudden6> idk, do you mean connecting to the DHT or to your friends?
+[23:47:54] <Dako300> DHT
+[23:48:27] <Dako300> I saw an open issue on the c-toxcore github about connecting to and bootstrapping from local instances of Tox, which would be pretty cool since I run a dedicated ToxBot
+[23:48:36] <sudden6> If I shutdown qTox cleanly, I'm connected again in a few seconds
+[23:49:07] <sudden6> LAN discovery is automatically used in qTox, that should work if you're in the same subnet
+[23:49:12] <Dako300> weird then, it takes me around five or ten
+[23:49:24] <sudden6> seconds or minutes?
+[23:49:30] <Dako300> seconds
+[23:49:42] <sudden6> ok, i still wouldn't call that long
+[23:49:46] <Dako300> didn't know LAN discovery was a thing in qTox, it would work with any instance of Tox right?
+[23:50:04] <sudden6> it should™
+[23:50:06] <Dako300> yeah, well it gets pretty annoying when I have to keep restarting it to try a new test build
+[23:50:26] <Dako300> probably not a big deal tho
+[23:50:45] <sudden6> try adding echobot@toxme.io to the testing account, maybe that helps
+[23:51:15] <sudden6> since tox tries to connect to friends, this should speed things up
+[23:51:29] <sudden6> and echobot runs on a server
+[23:51:35] <Dako300> nice, thanks
+[23:52:59] <Dako300> most of my testing happens in group chats, so it might not work
