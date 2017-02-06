@@ -1,0 +1,774 @@
+[00:02:21] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[01:00:20] *** Quits: anoa (~anoa@ ) (Ping timeout: 240 seconds)
+[01:00:44] *** Joins: anoa (~anoa@ )
+[01:04:28] *** Quits: Dako300 (~daniel@ ) (Read error: Connection reset by peer)
+[01:43:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[02:32:49] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[02:32:51] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[02:33:37] *** Joins: f10 (~flo@ )
+[02:35:52] *** Joins: f10__ (~flo@ )
+[02:41:22] *** Joins: MDrights (~MDrights@ )
+[02:42:04] *** Joins: Dako300 (~daniel@ )
+[02:42:14] <Dako300> hey, we found a fix for that group audio problem
+[02:42:31] <Dako300> turns out more OpenAL outputs were needed to facilitate all of the peers at one time
+[02:43:44] *** Joins: agrecascino (~agrecasci@ )
+[02:43:54] <Dako300> yo agrecascino, hows it goin?
+[02:44:27] <Dako300> he took care of the OpenAL stuff, and i'm working on the bit rate stuff
+[02:44:30] <Dako300> the github URL is https://github.com/Dako300/qTox
+[02:44:40] <agrecascino> ^we fixed a thing
+[02:45:23] * Dako300 high five
+[02:45:25] <Emcy_> there is a codec that works with a few hundred bits ps
+[02:45:35] <Dako300> Emcy_: which one?
+[02:45:45] <Emcy_> 'codec2'
+[02:46:18] <Dako300> sounds cool. I wanted to go balls to the wall with a personal project with just simulating a vocoder
+[02:47:35] <Emcy_> i bet you could go really low if your codec is just reproducing phonemes
+[02:48:10] <Dako300> Recording would be pretty hard (maybe)
+[02:49:54] <Emcy_> you gonna submit your findings are a pr?
+[02:50:27] <Emcy_> i doubt the slider would make it in. Normies hate sliders.
+[02:51:55] <Emcy_> openal causes lots of problems for tox it seems
+[02:52:09] <agrecascino> can anyone here build windows qtox?
+[02:53:46] <Dako300> Emcy_: the pull is a two part system
+[02:54:37] <Dako300> The group bit rate isn't actually configurable by vanilla Tox, so I had to fork Tox to make a function to change the bitrate, and I will make a PR for the group chat bitrate for qTox when that gets accepted
+[02:54:51] <Dako300> however, it all works from c-toxcore and qTox on my GitHub
+[02:55:21] <Dako300> I'm thinking about changing the slider tho, but it fits in fine with the volume slider so I doubt they would mind (too much)
+[02:57:03] <Emcy_> toxcore should handle bitrates itself
+[02:57:26] <Emcy_> it has a function to iirc but its broken so clients disable it
+[02:58:01] <Dako300> it only has a function for calls to a person, group calls don't have such a function (that's the only function my pull request creates)
+[02:58:02] <Emcy_> tox users should absolutely not be expected to fuck around with bitrates are stuff normally
+[02:58:41] <Dako300> yeah, but i'm hoping a tox client would have a place where the "max" bandwidth for a stream is, and adjust the bitrate automatically from that
+[02:59:20] <Dako300> Emcy_: the c-toxcore pull request is https://github.com/TokTok/c-toxcore/pull/464
+[02:59:34] <Emcy_> its locked at 64kpbs iirc
+[02:59:42] <Dako300> The qTox doesn't have a pull (c-toxcore deps), but the fork is Dako300/c-toxcore
+[03:00:06] <Dako300> Emcy_: group calls were either locked at 32kbps for mono or 16kbps for stereo input
+[03:00:20] <Emcy_> if the bandwidth recommendations actually worked and the next opus version which is supposed to sounds a lot better at 32kpbs
+[03:00:26] <Emcy_> it would be pretty good
+[03:00:56] <Emcy_> you have to consider tox can only use constand bitrate modes also
+[03:01:18] <Emcy_> so it should just step up and down through them
+[03:01:37] <Dako300> I used every bitrate from 6 to 64 in the groupcall and it seemed to work just fine
+[03:01:52] <Dako300> I even switched them on the fly during a call (which was pretty dank)
+[03:02:17] <Emcy_> audio is rarely goning to be a problem
+[03:02:21] <Emcy_> video is different tho
+[03:02:55] <Dako300> I can see valid use cases for slow data connections, large group calls, and bad wifi
+[03:03:20] <Dako300> of course the changes would be abstracted out by the client, but it still needs the infrastructure
+[03:05:51] <Emcy_> the repo maintainer is harcore about code review and also is away for 2 weeks
+[03:07:26] <Dako300> I can tell the former from other pull requests
+[03:08:52] <Dako300> Emcy_: are you a maintainer yourself? If so, would you support this PR?
+[03:09:13] <Emcy_> i dont write code
+[03:09:30] <Dako300> Do you like the idea at least?
+[03:09:58] <Emcy_> what exactly is the idea
+[03:10:16] <Dako300> the pull request
+[03:10:26] <Dako300> adding a bit rate slider (and also fixing group calls)
+[03:10:38] <Dako300> "fixing" is allowing more than one person to speak at a time
+[03:11:34] <Emcy_> the slider i wouldnt support. Toxcore should tell the client whats going on there instead
+[03:11:50] -qtox-git-spam- [qTox] yurivict opened pull request #4137: fix(font): Made font changes in settings apply on screen instantly. (master...font-update) https://git.io/vDc65
+[03:11:57] <Emcy_> the fixes i dont see why not
+[03:12:13] <Emcy_> i think they were gonna replace openal anyway
+[03:12:20] <Emcy_> for a good reason
+[03:13:52] <Dako300> Emcy_: toxcore doesn't tell qTox about which bitrate to use on standard calls (set as a constant in qTox), is there a reason why group calls are an exception I'm not thinking about
+[03:19:49] <Emcy_> it should and it tried. But the bitrate recommendations in toxcore are broke.
+[03:19:55] <Emcy_> i didnt know group audio was different
+[03:20:55] <Dako300> individual calls with different bitrates work fine, and the bitrates there are specified in toxav_answer or toxav_call (I think that's the function name)
+[03:21:28] <Dako300> Those seem to work fine, but there isn't an OTF method of changing that (maybe it shouldn't be implemented as OTF in the first place?)
+[03:23:20] <Emcy_> isnt that handled by opus
+[03:24:17] <Dako300> Bitrate is handled by Opus, but the toxav_ calls are essentially just wrappers to Opus functions with sanity checks, and that seems to work fine
+[03:25:09] <Emcy_> hm ok
+[03:27:19] -qtox-git-spam- [qTox] 007-agent opened pull request #4138: fix(audio): Fix ugly conference audio with 3<= speakers (master...fix-group-audio) https://git.io/vDcim
+[03:27:49] <Dako300> agrecascino: oh fug m8
+[03:27:52] <Dako300> agrecascino: https://github.com/qTox/qTox/pull/4138
+[03:28:05] <Dako300> that pull request might be a problem
+[03:30:30] <agrecascino> cheeky fuck
+[03:30:35] <agrecascino> 3 minutes ago
+[03:30:45] <Dako300> srsly would there be a merge problem?
+[03:30:53] <agrecascino> it literally did what i did
+[03:31:16] <Dako300> how "literally" are we talking here?
+[03:31:20] <agrecascino> as in
+[03:31:25] <agrecascino> it's like the same patch
+[03:31:26] <agrecascino> but not
+[03:31:36] <Dako300> is it plagiarism?
+[03:32:09] <agrecascino> no
+[03:32:15] <Dako300> okay
+[03:32:21] <agrecascino> it's just someone who read IRC chat
+[03:32:35] <Dako300> that makes sense
+[03:32:41] <agrecascino> and finally made a pull request for the same thing
+[03:32:43] <Dako300> I want to push what changes I did make, but just comment out the group bit rate stuff
+[03:32:51] <agrecascino> no seriously who are you
+[03:32:58] <Dako300> me?
+[03:33:45] <Dako300> oh, the github guy
+[03:33:47] <Dako300> SHOW YOURSELVES
+[03:35:39] <agrecascino> the account was made 2 hours ago
+[03:35:44] <Dako300> oh weird
+[03:35:49] <agrecascino> and the name 007-agent
+[03:36:11] <Dako300> any PGP key, email, or identifiable information
+[03:36:51] <agrecascino> it's literally just made to troll us
+[03:36:55] <Dako300> dick
+[03:36:55] <agrecascino> i kind of love it
+[03:37:09] <agrecascino> though i feel kind of disappointed now
+[03:37:12] <Dako300> yeah
+[03:37:22] *** Quits: worfox (~worfox@ ) (Quit: No Ping reply in 180 seconds.)
+[03:37:24] <Dako300> don't worry, we can make the case that our commits are older
+[03:37:28] *** Joins: worfox (~worfox@ )
+[03:37:33] <Dako300> worfox: was it you?
+[03:38:21] * agrecascino pulls a gun out
+[03:38:25] <agrecascino> ANSWER US
+[03:38:35] <Dako300> worfox: jk, here's some context
+[03:38:42] <Dako300> somebody plagiarised our code on GitHub
+[03:39:25] <agrecascino> ^ not really
+[03:39:31] <Dako300> okay, maybe not that
+[03:39:31] <worfox> Haha
+[03:39:33] <agrecascino> they just took our idea
+[03:39:39] <Dako300> and our implementation
+[03:40:07] <agrecascino> well
+[03:40:10] <agrecascino> not really
+[03:40:20] <agrecascino> i think it's less elegant
+[03:40:26] <Dako300> well of course
+[03:40:28] <agrecascino> because it uses a vector instead of a map
+[03:40:29] <Dako300> can't beat the original
+[03:44:13] *** Joins: mutin-s (~s-mutin@ )
+[03:45:30] <Emcy_> this is the most petty shit lol
+[03:46:00] <Emcy_> nothing nice gets merged anyway so w/e
+[03:46:08] <Dako300> 3
+[03:46:10] <Dako300> 2
+[03:46:12] <Dako300> 1
+[03:46:14] -qtox-git-spam- [qTox] Dako300 opened pull request #4139: Added bitrate slider for qTox (master...master) https://git.io/vDci9
+[03:49:45] *** Quits: mutin-s (~s-mutin@ ) (Remote host closed the connection)
+[03:50:10] *** Joins: mutin-s (~s-mutin@ )
+[03:50:19] <Dako300> agrecascino: well i'm glad that's pushed
+[03:52:31] <agrecascino> SHOW YOURSELF, EVIL DEMON!
+[03:53:34] *** Quits: mutin-s (~s-mutin@ ) (Remote host closed the connection)
+[03:55:15] *** Joins: Emcy (~MC@ )
+[03:55:15] *** Quits: Emcy (~MC@ ) (Changing host)
+[03:55:15] *** Joins: Emcy (~MC@ )
+[03:57:15] <Dako300> I don't want to doxx him, but i'd like to know who he is
+[03:57:17] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[03:58:18] <Dako300> i'm just wondering if he does the same thing to my fork, but at least my PR was first
+[03:58:34] <Dako300> SHOW YOURSELF
+[04:00:32] <Emcy> FACE ME COWARD
+[04:01:39] <worfox> His commit is from the future. 2 hours from now
+[04:05:00] <agrecascino> ck2 is a really good black death simulator
+[04:05:23] <agrecascino> >"you know, this canidate for court physician looks good!"
+[04:05:28] <agrecascino> >oh wait he's dead
+[04:07:03] <agrecascino> i'm suspicious that 007-agent is actually Dako300 
+[04:07:25] <Dako300> agrecascino: i'm not a dick m8
+[04:07:44] <agrecascino> double agent!
+[04:07:50] <agrecascino> how could you betray me!
+[04:08:15] <agrecascino> guards, send him off to the gallows!
+[04:08:23] * Dako300 is carried away
+[04:09:08] <agrecascino> *and then promptly killed for his actions
+[04:11:07] <Dako300> agrecascino: do you have any idea how to squash multiple commits in Git?
+[04:11:19] <agrecascino> nope i'm too stupid for that
+[04:11:59] <zetok> Dako300: git rebase -i <commit before what you want to squash>
+[04:12:12] <zetok> Dako300: make sure to make a backup branch before though
+[04:12:21] <Dako300> I backed everything up
+[04:12:57] <Dako300> zetok: from there would I just push the changes?
+[04:13:13] <zetok> ~yep
+[04:13:21] <zetok> push -f
+[04:14:15] <Dako300> does GitHub take a while to update rebases?
+[04:14:55] <Dako300> zetok: because I did it but it isn't updating anything on the website
+[04:15:27] <zetok> Dako300: usually no
+[04:15:40] <zetok> Dako300: did you do `git push -f` ?
+[04:15:43] <Dako300> oh darn, well it didn't work then
+[04:15:48] <Dako300> yeah, I did git push -f
+[04:15:54] <zetok> hmm
+[04:16:01] <Dako300> git push -f origin master
+[04:16:05] <Dako300> or should that be reversed?
+[04:16:15] <zetok> `git log` ?
+[04:16:53] <Dako300> the only relevant part (what I did) is this
+[04:16:55] <Dako300> commit e0d7cabbc4b352eaeeee54660315d89427c93a6a
+[04:16:55] <Dako300> Author: Daniel Hoffman <danielhoffman699@gmail.com>
+[04:16:55] <Dako300> Date:   Thu Feb 2 20:07:04 2017 -0600
+[04:16:55] <Dako300>     added Opus bitrate to AV settings
+[04:16:55] <Dako300>     
+[04:16:56] <Dako300>     forgot what I did
+[04:16:58] <Dako300>     
+[04:17:00] <Dako300>     tied settings and audio subsystems together
+[04:17:02] <Dako300>     
+[04:17:04] <Dako300>     Fixes group calls.
+[04:17:06] <Dako300>     World officially saved.
+[04:17:08] <Dako300>     
+[04:17:10] <Dako300>     polished up some stuff
+[04:17:12] <Dako300>     
+[04:17:14] <Dako300>     fix cmakelist
+[04:17:29] <Dako300> oh crap
+[04:17:35] <Dako300> I think I lost some changes before I backed up
+[04:17:43] <Dako300> agrecascino: I dun goofed m8
+[04:17:48] <Dako300> i need your version
+[04:17:54] <Dako300> maybe
+[04:17:59] <agrecascino> ?
+[04:18:27] <zetok> Dako300: just pull from the gh
+[04:18:46] <Dako300> I did that
+[04:18:58] <Dako300> nevermind, I don't think I committed what I was comparing it again
+[04:18:59] <Dako300> *against
+[04:19:15] <Dako300> agrecascino: nevermind about that
+[04:19:43] <Dako300> nevermind, everything is here
+[04:21:36] <Dako300> I might leave this for tomorrow
+[04:28:05] <Dako300> i'm going to take care of this tomorror
+[04:33:54] <agrecascino> this cheeky fucker is going to die
+[04:41:30] <zetok> agrecascino: pls
+[04:43:44] *** Joins: Dako300_ (~daniel@ )
+[04:43:47] <Dako300_> back
+[04:44:03] <Dako300_> okay, so I think I did everything right, but it doesn't reflect on the page
+[04:44:13] <Dako300_> commit fa7f1fce9de12efdd6f2facef1416c742d9d7688
+[04:44:14] <Dako300_> Author: Daniel Hoffman <danielhoffman699@gmail.com>
+[04:44:14] <Dako300_> Date:   Thu Feb 2 20:07:04 2017 -0600
+[04:44:14] <Dako300_>     Rebased bitrate slider and group audio fix
+[04:44:14] <Dako300_>     added Opus bitrate to AV settings
+[04:44:14] <Dako300_>     
+[04:44:16] <Dako300_>     forgot what I did
+[04:44:18] <Dako300_>     
+[04:44:20] <Dako300_>     tied settings and audio subsystems together
+[04:44:22] <Dako300_>     
+[04:44:24] <Dako300_>     added bitrate slider and fixed multiple speakers with OpenAL
+[04:44:26] <Dako300_>     
+[04:44:28] <Dako300_>     Fixes group calls.
+[04:44:30] <Dako300_>     World officially saved.
+[04:44:32] <Dako300_>     
+[04:44:36] <Dako300_>     polished up some stuff
+[04:44:38] <Dako300_>     
+[04:44:40] <Dako300_>     fix cmakelist
+[04:44:42] <Dako300_> everything after that is before I forked, I pushed everything with git push -f origin master
+[04:46:48] <zetok> Dako300_: um, could you put stuff that is longer than 2-3 lines in a gist?
+[04:47:02] <Dako300_> ok
+[04:47:50] <zetok> Dako300_: could you list all of your steps?
+[04:48:30] <zetok> actually
+[04:48:48] <Dako300_> go on
+[04:48:49] <zetok> Dako300_: your backup branch is intact, right?
+[04:49:04] <Dako300_> I copied the entire directory
+[04:49:10] <zetok> ok
+[04:49:16] <zetok> restore that version
+[04:49:32] <Dako300_> Actually, there is no second branch
+[04:49:48] <Dako300_> The older commits are still there, so it git --reset hard to the latest relevant version
+[04:50:38] <zetok> do you have upstream remote added?
+[04:51:05] <Dako300_> what does that mean?
+[04:51:15] <zetok> git remote add upstream https://github.com/qTox/qTox.git
+[04:51:39] <zetok> now that you do, backup your current branch: `git branch master-backup`
+[04:52:02] <Dako300_> done
+[04:52:22] <zetok> you did that on restored version, right?
+[04:52:34] <Dako300_> I did that on my main version
+[04:52:43] <zetok> "main" is broken
+[04:53:01] <Dako300_> i git reset hard to the last relevant commit I had made on my fork
+[04:53:29] <Dako300_> I didn't go to the backup directory to do this is what I meant (probably not what you meant)
+[04:54:00] <zetok> well
+[04:54:30] <zetok> it doesn't really matter
+[04:54:38] <Dako300_> give it to me straight doc
+[04:54:49] <zetok> it's just simpler to restore from backup
+[04:55:02] <Dako300_> ok
+[04:55:42] <zetok> is the `trying to rebase` commit included in your current `git log` ?
+[04:55:53] <Dako300_> no
+[04:55:59] <zetok> ok
+[04:56:02] <Dako300_> the top most commit is "fix cmakelist"
+[04:56:10] <zetok> ok
+[04:56:31] <zetok> is the 72af4b56875199fd975020e8424bec5e14491970 commit included in `git log` ?
+[04:56:48] <Dako300_> "added Opus bitrate to AV settings"
+[04:56:49] <Dako300_> yep
+[04:56:53] <zetok> ok
+[04:57:09] <zetok> git rebase -i 72af4b56875199fd975020e8424bec5e14491970^1
+[04:57:23] <zetok> Dako300_: squash everything aside from the first commit
+[04:57:27] <Dako300_> okay, i got nano
+[04:57:41] <Dako300_> my understanding is I replace pick with sqash for every listing except the first one
+[04:57:47] <zetok> yeah
+[04:57:53] <Dako300_> the first one being "added Opus..."
+[04:58:22] <Dako300_> one more question
+[04:58:40] <Dako300_> I did that just fine, but what do I do with the commit names?
+[04:58:55] <Dako300_> This is going to be one large one, right?
+[04:59:59] <Dako300_> zetok: how would I name this commit? just put it wherever?
+[05:00:31] <zetok> Dako300_: name the commit after what it does
+[05:00:39] <Dako300_> okay
+[05:00:57] <zetok> `feat: some new feature`
+[05:02:44] <Dako300_> zetok: git push -f origin master just says Everything is up-to-date
+[05:02:51] <Dako300_> and nothing changes on the GitHub page either
+[05:03:11] <zetok> `git branch` ?
+[05:03:47] <Dako300_> what about it?
+[05:03:53] <zetok> what does it say?
+[05:04:02] <Dako300_> * (HEAD detached from 6ae9f58)
+[05:04:02] <Dako300_>   master
+[05:04:02] <Dako300_>   master-backup
+[05:04:15] <zetok> ok, you're not on master
+[05:04:26] <Dako300_> git checkout master?
+[05:04:32] <zetok> git branch -D master && git checkout -b master && git push -u origin master -f
+[05:05:10] <Dako300_> it's beautiful
+[05:05:19] <Dako300_> what did the -D in git branch do?
+[05:05:33] <zetok> forcefully deletes branch that hasn't been merged
+[05:06:08] <zetok> generally, `-d` should be used, unless you do want to delete non-merged branches
+[05:06:30] <Dako300_> oh fug
+[05:06:41] <Dako300_> I didn't follow the git commit specification
+[05:06:50] <zetok> don't worry
+[05:06:55] <Dako300_> ok
+[05:06:57] <zetok> do you have now a single commit?
+[05:07:00] <Dako300_> yeah
+[05:07:03] <zetok> ok
+[05:07:06] <Dako300_> https://github.com/qTox/qTox/pull/4139
+[05:07:16] <zetok> `git commit --amend`
+[05:08:48] <Dako300_> ok, that's taken care of
+[05:08:54] <Dako300_> zetok: quick question
+[05:09:12] <zetok> just ask, don't ask to ask ;)
+[05:09:41] <Dako300_> I have some code commented out there that only works on a forked (and staging PR) version of c-toxcore. Would there be a problem with that commented code being there even though c-toxcore hasn't pulled it?
+[05:10:24] <Dako300_> It works and compiles fine with the standard version of c-toxcore, but the commented code is technically incorrect
+[05:10:30] <zetok> Dako300_: it would be the best to move that code to a separate PR
+[05:12:53] <Dako300_> zetok: ok
+[05:13:44] <zetok> btw, `git commit -a --amend` can be used to add changes to your latest commit
+[05:13:55] <Dako300_> oh, that's cool
+[05:15:25] <Dako300_> zetok: are there any other standards I should meet for code contribution?
+[05:15:37] <Dako300_> besides gitting gud
+[05:17:41] <Dako300_> zetok: thanks for the help
+[05:17:45] <Dako300_> do you use Bitcoin?
+[05:18:03] <zetok> kinda
+[05:18:16] <Dako300_> well you deserve at least some of it for the help IMHO
+[05:18:58] <zetok> regarding guidelines, there's https://github.com/qTox/qTox/blob/master/CONTRIBUTING.md , and https://github.com/qTox/qTox/pull/3839
+[05:19:27] <Dako300_> I took a look at CONTRIBUTING.md and it seems to be inline (except the one PR has both a feature and a fix)
+[05:21:04] *** Quits: anoa (~anoa@ ) (Remote host closed the connection)
+[05:21:33] *** Joins: anoa (~anoa@ )
+[05:24:31] <Dako300_> so what's the best way to search for tabs?
+[05:28:16] <Dako300_> nevermind, perl and rgrep worked fine
+[05:36:59] *** Quits: Dako300_ (~daniel@ ) (Quit: Ex-Chat)
+[05:39:26] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[05:40:35] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[05:47:41] *** Quits: Diadlo (~diadlo@ ) (Read error: Connection reset by peer)
+[05:48:15] *** Joins: Diadlo (~diadlo@ )
+[05:51:50] *** Joins: Dako300_ (~daniel@ )
+[05:52:13] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:52:20] <Dako300_> agrecascino: anything new on the perp?
+[05:52:47] *** Joins: VVD (~VVD@ )
+[05:58:06] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:58:26] *** Joins: VVD (~VVD@ )
+[06:01:15] <agrecascino> Dako300, you there
+[06:03:58] <agrecascino> Dako300_, you there^2?
+[06:07:30] *** Quits: Dako300_ (~daniel@ ) (Ping timeout: 240 seconds)
+[07:06:56] *** Joins: Yoshimo (~anything@ )
+[07:13:22] *** Joins: reBrain (~quassel@ )
+[07:13:22] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:13:41] *** Joins: VVD (~VVD@ )
+[07:18:23] -qtox-git-spam- [qTox] zetok opened pull request #4140: Update translations from Weblate (master...tr) https://git.io/vDcyd
+[07:21:40] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:22:06] *** Joins: VVD (~VVD@ )
+[07:24:53] *** Joins: s-mutin (~s-mutin@ )
+[07:27:50] *** Quits: s-mutin (~s-mutin@ ) (Remote host closed the connection)
+[07:28:18] *** Joins: s-mutin (~s-mutin@ )
+[07:31:38] *** Quits: s-mutin (~s-mutin@ ) (Remote host closed the connection)
+[07:32:04] *** Joins: s-mutin (~s-mutin@ )
+[07:45:35] *** Joins: Chiitoo (~Chiitoo@ )
+[08:29:46] *** Joins: sudden6 (~anonymous@ )
+[08:39:32] -qtox-git-spam- [qTox] yurivict opened pull request #4141: feat(shortcut): Implemented F11 shortcut for toggling fullscreen. (master...f11-fullscreen) https://git.io/vDcHF
+[08:57:47] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[09:09:27] <sudden6> zetok: is there reason why some of the translations are moved, but still need to be retranslated?
+[09:09:53] <zetok> lupdate
+[09:10:24] <sudden6> yeah, but why does it delete perfectly fine translations?
+[09:10:46] <zetok> they're no longer used
+[09:11:43] <sudden6> https://github.com/qTox/qTox/pull/4140/files#diff-c549f0d2748e2c7d228fa9fb32faeeafL2646 removed
+[09:12:08] <sudden6> https://github.com/qTox/qTox/pull/4140/files#diff-c549f0d2748e2c7d228fa9fb32faeeafR2807 added again as unfinished
+[09:12:29] <zetok> ah
+[09:12:31] <zetok> code moved
+[09:13:03] <zetok> current .ts files aren't really what lupdate/lrelease work on
+[09:14:07] <zetok> .ts are stripped, so that diffs would be smaller, without stripping they would include some other data that refers to position of the translation in the code
+[09:14:30] <sudden6> aha
+[09:14:48] <zetok> "unfinished" is simply added to translations that probably are still correct, but since code has been moved/altered they should be re-checked
+[09:15:00] <sudden6> ah, ok :)
+[09:17:21] <sudden6> is there anything that needs to be done for 1.8?
+[09:17:43] <sudden6> I think we need a changelog + blog post
+[09:17:50] <zetok> I was wondering about https://github.com/qTox/qTox/pull/4138
+[09:18:03] <sudden6> me too
+[09:18:31] <sudden6> I have no idea what it does
+[09:18:36] -qtox-git-spam- [qTox] zetok pushed  new commits to master: https://git.io/vDc7e
+[09:18:36] -qtox-git-spam- qTox/master 1494fbe Viktar Vauchkevich: feat(l10n): update Belarusian translation from Weblate
+[09:18:36] -qtox-git-spam- qTox/master 65f2981 cnzhx: feat(l10n): update Chinese (China) translation from Weblate
+[09:18:36] -qtox-git-spam- qTox/master 5e04b72 shinodem: feat(l10n): update Russian translation from Weblate
+[09:19:08] <zetok> it's supposed to fix audio issues when there are >=3 participants in an audio groupchat
+[09:19:29] <zetok> IIRC it has been broken for quite some time
+[09:20:11] <sudden6> did you test this?
+[09:20:28] <zetok> no
+[09:21:20] <zetok> I wonder how it would work in a scenario where you have more than one audio groupchat, each with >=3 active audio participants.
+[09:35:40] <zetok> sudden6: do we want to play "better safe than sorry" with that PR?
+[09:35:52] <sudden6> what do you mean?
+[09:36:22] <zetok> well, there's no real harm if it gets merged for 1.9, given that stuff has been broken for so long
+[09:36:44] <sudden6> yeah, I wouldn't merge it for 1.8
+[09:36:52] <zetok> ok
+[09:36:58] <sudden6> probably won't pass review that fast anyway
+[09:37:26] <sudden6> I think the sudden influx of PRs is very interesting
+[09:38:23] <zetok> well
+[09:38:30] <zetok> it just means that qTox is alive and well
+[09:39:00] <sudden6> yep, and I like that :)
+[09:39:17] <zetok> i.e. getting back where it was before tux3 got MIA
+[09:39:56] <zetok> oh, there's also https://github.com/qTox/qTox/pull/4108
+[09:40:30] <sudden6> what's the problem with it?
+[09:40:47] <zetok> generally looks ok, but version updating seems to be now limited to osx
+[09:41:17] <sudden6> limited to or limited on?
+[09:41:33] <zetok> limited to
+[09:41:49] <sudden6> that's not good
+[09:42:04] <sudden6> it shouldn't break things for already working platforms
+[09:42:16] <zetok> there's dev-ruby/plist that I can install, so I'll see if it provides what is needed
+[09:44:11] <sudden6> I don't see where this PR removes version update support from windows and linux
+[09:45:02] <zetok> >defaults
+[09:46:47] <sudden6> still don't get it
+[09:48:09] <zetok> isn't that a osx-only thing?
+[09:48:21] <sudden6> do you think #4119 is ready?
+[09:49:02] <sudden6> it's also in an osx only script, so I see no problem
+[09:49:28] <zetok> #4119 seems to be ready
+[09:49:36] <zetok> script though is not osx-only
+[09:49:50] <sudden6> ah, that's what you mean
+[09:50:12] <zetok> https://github.com/qTox/qTox/pull/4108/files#diff-5c14beea957fcf1edaa6f63c76eecd4eR24 ← no os requirements
+[09:50:44] <sudden6> will it ever be ran on non osx?
+[09:50:53] <zetok> err
+[09:51:02] <zetok> how else would you update version?
+[09:52:07] <sudden6> so you want to be able to cross compile qTox for osx?
+[09:52:21] <zetok> yes, but that's not relevant right now
+[09:52:48] <zetok> originally script was supposed to update the version just before compiling on target os, so it would have been fine to keep it osx-only, but that didn't work too well
+[09:54:04] <zetok> instead, version would be duplicated in files, and updated just before the release, and for that script would need to work on at least linux
+[09:54:18] -qtox-git-spam- [qTox] sudden6 closed pull request #4119: Made clipboard operations work the same on all OSes. (master...clipboard) https://git.io/vDsuY
+[09:54:21] <zetok> right now it's osx-only
+[09:54:22] <sudden6> but, wasn't that the thing vit fixed?
+[09:54:36] <sudden6> (updating on target osx)
+[09:55:46] <zetok> it was part of changes
+[09:57:07] <zetok> if cmake stuff from the PR is good, it's good to merge, and then eventually I'll make it work the way it should
+[09:57:40] <sudden6> I'll leave this one up to you to decide
+[10:20:13] -qtox-git-spam- [qTox] zetok pushed 8 new commits to master: https://git.io/vDcF4
+[10:20:13] -qtox-git-spam- qTox/master 8912e9e vit9696: fix(build): correct macOS deployment
+[10:20:13] -qtox-git-spam- qTox/master 3a88abd vit9696: fix(build): set generic macOS Info.plist version by default
+[10:20:13] -qtox-git-spam- qTox/master 0a53331 vit9696: style(build): conform to guidelines
+[10:20:56] <zetok> sudden6: https://github.com/qTox/qTox/issues/4010 ← is it actually easy?
+[10:29:45] *** Joins: bashrc (~motters@ )
+[10:39:00] *** Joins: [0xAA] (~ThisIsZen@ )
+[10:42:25] -qtox-git-spam- [qTox] zetok opened pull request #4142: chore(CHANGELOG): add changelog for the v1.8.0 release (master...chore-changelog) https://git.io/vDcbY
+[10:46:11] *** Joins: MiokIry_ (~Miok@ )
+[10:47:43] *** Quits: MiokIry__ (~Miok@ ) (Ping timeout: 256 seconds)
+[10:57:25] *** Joins: reBrain (~quassel@ )
+[11:00:24] <zetok> ok, only blog post is missing
+[11:00:35] <zetok> anyone wants to write one?
+[11:07:19] <oranges> you should point out the fact that the word woman is only one letter away from two-man
+[11:09:37] * zetok points out that english is a horrible language to express things
+[11:12:19] <oranges> well we can't exactly express it all in haskell 
+[12:22:12] <sudden6> zetok: I can't think of many things for a blog post, this is mostly a cleanup and modernize release...
+[12:22:33] <sudden6> maybe mention qTox/planning
+[12:22:42] <zetok> yeah
+[12:22:50] <sudden6> ohter than that idk what things to point out
+[12:23:11] <zetok> cmake switch, contributors list, pointing out that linux community builds need help
+[12:23:34] <zetok> and linking to changelog
+[12:24:09] <sudden6> yeah
+[12:27:57] *** Quits: bashrc (~motters@ ) (Ping timeout: 252 seconds)
+[12:31:25] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[12:44:08] *** Joins: Chiitoo (~Chiitoo@ )
+[12:52:18] *** Joins: bashrc (~motters@ )
+[12:52:48] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vDcj3
+[12:52:48] -qtox-git-spam- qTox/master 01397f4 Zetok Zalbavar: chore(CHANGELOG): add changelog for the v1.8.0 release
+[12:55:49] <zetok> v1.8.0 tag made
+[12:56:36] <reBrain> yay
+[12:56:46] <reBrain> happy realease day
+[12:56:50] <reBrain> *release
+[12:57:34] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[12:58:31] *** Joins: LittleVulpix (~Miranda@ )
+[13:01:59] <zetok> it'll be happy one if osx deploy script will work
+[13:02:15] <zetok> https://travis-ci.org/qTox/qTox/builds/198547661
+[13:04:02] <zetok> at least deplying branch for jenkins works
+[13:05:13] <reBrain> yeah just saw the osx build
+[13:05:48] <zetok> failed :/
+[13:06:23] <Diadlo> Hello
+[13:06:27] <Diadlo> sudden6: Thanks, for link
+[13:07:04] <reBrain> problem at jenkins as well
+[13:07:16] *** Joins: f10 (~flo@ )
+[13:07:16] <sudden6> Diadlo: hi, np
+[13:08:14] <Diadlo> > Also mention that only hostname lookup is done and the port is ignored.
+[13:08:27] <reBrain> zetok: https://build.tox.chat/view/qtox/job/qTox-stable_build_windows_x86-64_release/174/
+[13:08:29] <Diadlo> As I said before, it's unused
+[13:08:35] <reBrain> zetok: https://build.tox.chat/view/qtox/job/qTox-stable_build_windows_x86_release/153/
+[13:08:49] <reBrain> oh both are old
+[13:08:54] <reBrain> sorry
+[13:09:15] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[13:09:26] <sudden6> Diadlo: yes, but even if it's unused it should be noted in the function documentation that it doesn't do it
+[13:10:03] <sudden6> because someone might later think "hey I need that, to get ip+port" and wonders why it won't work
+[13:11:03] <Diadlo> > High-level getaddrinfo implementation.   AFAIR, getaddrinfo didn't work port
+[13:11:46] <sudden6> Diadlo: http://man7.org/linux/man-pages/man3/getaddrinfo.3.html
+[13:11:55] <sudden6> second parameter "service" is the port
+[13:12:37] <sudden6> It CAN do service lookup, you don't have to use it though
+[13:13:12] <Diadlo> Done
+[13:13:39] <Diadlo> I think we are engaged in some kind of garbage
+[13:14:09] -qtox-git-spam- [qTox] zetok opened pull request #4144: chore(travis): fix `.travis.yml` deploy syntax for multiple providers (master...chore-travis-deploy) https://git.io/vDCeJ
+[13:14:37] <sudden6> what garbage?
+[13:14:52] * zetok knows of garbage
+[13:14:55] <zetok> it's called osx
+[13:15:05] <sudden6> +1
+[13:15:33] <zetok> ↑ PR should fix deployment for osx
+[13:16:58] <Diadlo> I don't really implement this function. It's just moved and generalized from another part of project. 99% guarantee, that it will unused in other places.
+[13:17:23] <sudden6> Diadlo: I agree, but when you already touch it, why not fix it?
+[13:17:29] *** Joins: f10__ (~flo@ )
+[13:17:50] <Diadlo> Nevermind. Aleady pushed
+[13:25:33] <sudden6> Diadlo: "not contains port" is, ahem, russian english... I would suggest to write ", the port is ignored"
+[13:26:55] <Diadlo> Done
+[13:28:47] <sudden6> perfect
+[13:29:04] <sudden6> back to qTox :)
+[13:29:43] <Diadlo> Yep
+[13:44:50] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vDCvz
+[13:44:50] -qtox-git-spam- qTox/master bdbf2b4 Zetok Zalbavar: chore(travis): fix `.travis.yml` deploy syntax for multiple providers...
+[13:45:04] <zetok> do we do 1.8.1 release, or 1.8.0 again?
+[13:45:37] <sudden6> 1.8.1 as is tradition for mac? :p
+[13:46:09] <zetok> :s
+[13:46:55] <sudden6> special versions for special snowflakes ;)
+[13:47:21] *** Quits: MiokIry_ (~Miok@ ) (Ping timeout: 256 seconds)
+[13:47:50] <zetok> v1.8.1 pushed
+[13:48:42] <zetok> https://travis-ci.org/qTox/qTox/builds/198556642
+[13:49:01] <sudden6> watching intensivies
+[13:49:15] <sudden6> *intensifies
+[13:53:21] <sudden6> zetok: fatal: destination path 'qTox' already exists and is not an empty directory.
+[13:53:23] <sudden6> :/
+[13:53:32] <zetok> yeah
+[13:54:03] <zetok> https://github.com/qTox/qTox/blob/master/.travis/build-gitstats.sh#L31 && https://github.com/qTox/qTox/blob/master/.travis/deploy-jenkins-branch.sh#L27
+[14:00:01] <zetok> osx deployed successfully \o/
+[14:03:41] <Diadlo> zetok: Close https://github.com/qTox/qTox/issues/4063 ?
+[14:04:51] <Diadlo> Is dmg installer?
+[14:05:00] <zetok> I guess
+[14:12:56] <zetok> sudden6: um, are you writing the blog post?
+[14:16:16] <Diadlo> Did we start week of merging?
+[14:16:33] <zetok> since 1.8.{0,1} is released, yep
+[14:16:37] <zetok> :D
+[14:16:46] <Diadlo> :)
+[14:18:00] <zetok> Diadlo: https://github.com/qTox/qTox/pull/4104 ?
+[14:18:28] <Diadlo> Yes. rebasing in process :)
+[14:18:31] <zetok> :)
+[14:18:32] <Diadlo> Should I rebase?
+[14:19:37] <zetok> well, with rebase there would be no unnecessary merge commit
+[14:22:12] *** Joins: reBrain (~quassel@ )
+[14:24:34] <Diadlo> I know :|
+[14:27:30] *** Joins: Dako300_ (~daniel@ )
+[14:27:55] <Dako300_> agrecascino: i'm back
+[14:30:16] *** Quits: Dako300_ (~daniel@ ) (Client Quit)
+[14:34:26] <sudden6> zetok: not yet
+[14:34:30] <Diadlo> zetok: Retest #4103 please
+[14:34:32] <sudden6> should I?
+[14:34:54] <zetok> sudden6: I was hoping that you would :|
+[14:35:21] <zetok> sudden6: if you don't have time I'll write it in a few hours
+[14:35:30] <sudden6> ok, I'll start, but I can't guarantee that I can finish it today
+[14:36:30] -qtox-git-spam- [qTox] Diadlo closed pull request #4104: Refactor/small (master...refactor/small) https://git.io/vDU2m
+[14:41:09] *** Quits: bashrc (~motters@ ) (Ping timeout: 245 seconds)
+[14:41:16] -qtox-git-spam- [qTox] zetok opened pull request #4145: chore(travis): fix jenkins branch deploy error on deploy-gitstats job (master...chore-travis-nodlq) https://git.io/vDCUP
+[14:41:29] <sudden6> zetok: sorry, I can't start right now, have something to do
+[14:41:35] <zetok> sudden6: ok
+[14:43:14] *** Joins: bashrc (~motters@ )
+[14:59:53] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:00:55] <Diadlo> zetok: Sorry, I'm don't understand your message: "I.e. right now when one disables GTK stuff they still can have appindicator stuff "enabled", and it seems like it would cause compilation to fail?"
+[15:01:06] <Diadlo> We haven't ENABLE_GTK switch
+[15:01:35] <Diadlo> User can't directly dispable GTK
+[15:01:52] <zetok> no, but those deps are being searched for only if ENABLE_STATUSNOTIFIER is defined
+[15:02:21] <Diadlo> Ok, seems, I understand
+[15:03:03] <Diadlo> glib and gtk+
+[15:03:05] <Diadlo> Right?
+[15:03:45] <zetok> Diadlo: https://github.com/qTox/qTox/blob/master/INSTALL.md#unity-tray-backend
+[15:04:05] <Diadlo> Oh.. Thanks :)
+[15:04:20] <zetok> np :)
+[15:05:40] <Diadlo> Done
+[15:09:35] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[15:10:57] <zetok> Diadlo: I wonder if those things really should be optional
+[15:11:25] <zetok> I mean
+[15:11:25] <Diadlo> I.e. you want to enable it if it's possible?
+[15:11:54] <zetok> regarding unity tray, if someone explicitly enables it, they probably want to build with it
+[15:12:19] *** Joins: Dako300_PHONE (~Dako300@ )
+[15:12:20] <zetok> and right now even if it's enabled, qtox would build without support for it if dependency is not found
+[15:12:33] <zetok> I think that it would be better if qTox failed to compile instead
+[15:14:05] *** Joins: albel727 (~albel727@ )
+[15:14:10] <Diadlo> Add "REQUIRED"?
+[15:14:25] <Diadlo> I'm agree with you
+[15:14:27] <zetok> yeah, but only for unity stuff
+[15:14:34] <Diadlo> Why?
+[15:14:51] <zetok> because it takes effort to enable it
+[15:14:58] <Diadlo> Right
+[15:15:00] <zetok> i.e. someone wants to build with support for GTK
+[15:16:10] <zetok> since qTox is Qt, the default is that people don't want to build with GTK stuff enabled, but if they have required deps on their system, there's little to no reason to not build it with GTK support
+[15:16:17] <zetok> ldd /usr/bin/qtox | wc -l
+[15:16:17] <zetok> 124
+[15:16:22] <zetok> ldd /usr/bin/qtox | wc -l
+[15:16:22] <zetok> 146
+[15:16:34] <zetok> Guess which one was build with GTK support. :|
+[15:17:09] <Diadlo> Hm.. same file, different ldd output? WHAT?
+[15:17:48] <zetok> um, I ran that command before and after rebuilding qTox
+[15:17:53] <Diadlo> Ok
+[15:18:32] <zetok> >libncursesw.so.6
+[15:18:43] <zetok> Makes one wonder why qTox links to that.
+[15:18:57] <Diadlo> ldd /usr/local/bin/qtox | wc -l
+[15:18:58] <Diadlo> 184
+[15:19:02] <Diadlo> Lol :)
+[15:19:07] <zetok> bloat :P
+[15:20:25] <Diadlo> libssh.so.4
+[15:21:21] <Diadlo> What the fuck is this?
+[15:22:42] <zetok> one of dependencies on your system is build with support for that
+[15:23:05] <zetok> ldd /usr/bin/qtox | grep ssh -c
+[15:23:05] <zetok> 0
+[15:23:06] <zetok> :P
+[15:40:12] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:40:53] *** Joins: VVD (~VVD@ )
+[15:55:53] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:56:39] *** Joins: VVD (~VVD@ )
+[15:57:48] -qtox-git-spam- [qTox] Diadlo closed pull request #4103: fix(cmake): Add ability to real disable optional dependency (master...fix/cmake_switch) https://git.io/vDUzP
+[16:27:43] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[16:27:43] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[16:28:05] *** Joins: f10__ (~flo@ )
+[17:19:50] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:20:33] *** Joins: VVD (~VVD@ )
+[17:23:33] <Diadlo> zetok: Do you have any ideas, how to fix problem with gtest + cmake + travis ?
+[17:24:03] <zetok> what is the problem/
+[17:24:04] <zetok> ?
+[17:24:27] <Diadlo> cmake can't found gtest package
+[17:24:39] <Diadlo> But it works fine on my machine
+[17:25:09] <zetok> you're using arch, right?
+[17:25:17] <Diadlo> Yes
+[17:26:22] <zetok> >search_dependency(GTEST PACKAGE GTest OPTIONAL)
+[17:26:29] <zetok> shouldn't that be required?
+[17:26:47] <Diadlo> If I make it required cmake just will fail
+[17:30:03] <Diadlo> Is it working on your local machine?
+[17:34:41] <Diadlo> If we will can't fix it, I will rewrite it for ctest
+[17:35:06] <Diadlo> It works at least for toktok
+[17:35:13] <zetok> which package is supposed to provide `gtest` ?
+[17:36:25] <zetok> http://packages.ubuntu.com/trusty/amd64/google-mock/filelist
+[17:43:32] <Diadlo> Yes. I have it in install-list
+[17:44:23] <Diadlo> https://github.com/qTox/qTox/pull/4110/files#diff-bb12e4f9ffac2ee8421553bc4d5423dcR34
+[17:47:01] *** Joins: f10 (~flo@ )
+[17:47:42] <zetok> well, dunno
+[17:47:49] <Diadlo> :/
+[17:48:04] <zetok> it looks to me like `gtest` is not provided
+[17:48:16] <Diadlo> gmock too
+[17:48:41] <zetok> there is `gmock_gen`
+[17:49:25] <Diadlo> Where?
+[17:49:35] <zetok> http://packages.ubuntu.com/trusty/amd64/google-mock/filelist
+[17:49:45] <Diadlo> Hm...
+[17:51:03] <Diadlo> What do you think, which way is better. Add travis gtest build or change test system?)
+[17:51:49] <Diadlo> http://manpages.ubuntu.com/manpages/xenial/man1/gmock_gen.1.html
+[17:52:35] <zetok> if the test system is simply better, then adding it to travis is the way to go
+[17:57:57] <Diadlo> IDK
+[17:58:22] <Diadlo> It has useful mock system
+[18:03:58] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:03:59] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:04:09] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:04:09] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:04:46] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:04:46] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:05:00] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:05:00] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:06:00] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:06:00] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:06:16] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:06:16] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:06:41] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:07:04] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:07:16] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:07:28] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:07:39] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:07:39] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:07:44] *** Quits: Dako300_PHONE (~Dako300@ ) (Ping timeout: 255 seconds)
+[18:08:04] *** Joins: Dako300_PHONE2 (~Dako300@ )
+[18:08:19] *** Quits: Dako300_PHONE2 (~Dako300@ ) (Client Quit)
+[18:08:28] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:08:30] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:08:39] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:09:00] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:09:24] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:09:24] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:10:13] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:10:15] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:11:26] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:12:03] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[18:12:47] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:13:23] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:13:40] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:13:50] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:13:50] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:13:50] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[18:14:11] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:14:11] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:14:30] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:14:32] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:14:42] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:14:42] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:14:48] *** Joins: VVD (~VVD@ )
+[18:15:26] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:15:43] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:16:20] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:16:52] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:17:58] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:18:22] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:18:47] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:18:47] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:19:34] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:19:39] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:20:07] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:20:07] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:20:07] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[18:20:28] *** Joins: VVD (~VVD@ )
+[18:21:21] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:21:21] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:22:27] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:22:27] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:23:03] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:23:04] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:24:18] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:24:18] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:24:28] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:24:28] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:26:31] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:26:32] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:26:45] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:26:46] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:27:37] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:27:38] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:27:47] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:27:47] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:27:57] *** Joins: Dako300_PHONE (~Dako300@ )
+[18:27:57] *** Quits: Dako300_PHONE (~Dako300@ ) (Client Quit)
+[18:28:05] <Dako300> oh crap, sorry about that guyus
+[18:28:43] *** Joins: cenysor (~cenysor@ )
+[18:39:02] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:39:40] *** Joins: LittleVulpix (~Miranda@ )
+[18:45:21] *** Joins: Yoshimo (~anything@ )
+[18:52:10] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[18:58:20] *** Parts: Ciblia (cibliamatr@ ) ("User left")
+[19:00:01] *** Quits: [0xAA] (~ThisIsZen@ ) (Remote host closed the connection)
+[19:06:02] *** Joins: albel727 (~albel727@ )
+[19:22:58] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[19:38:51] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[19:39:28] *** Joins: VVD (~VVD@ )
+[20:32:52] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:38:14] *** Joins: LittleVulpix (~Miranda@ )
+[20:40:20] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[20:50:50] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:00:01] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[21:06:38] <sudden6> zetok: now I have time for the blog post
+[21:10:00] *** Joins: LittleVulpix (~Miranda@ )
+[21:17:32] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[21:18:08] *** Joins: VVD (~VVD@ )
+[21:22:42] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[21:44:29] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vDC0d
+[21:44:29] -qtox-git-spam- qTox/master 38cecdc sudden6: refactor(history): remove deprecated historykeeper...
+[21:48:08] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[21:48:40] *** Joins: VVD (~VVD@ )
+[21:52:13] *** Joins: LittleVulpix (~Miranda@ )
+[22:03:30] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:04:25] *** Joins: VVD (~VVD@ )
+[22:09:34] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:10:15] *** Joins: VVD (~VVD@ )
+[22:20:38] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:21:25] *** Joins: VVD (~VVD@ )
+[22:26:12] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:27:05] *** Joins: VVD (~VVD@ )
+[22:41:22] <sudden6> Diadlo zetok my draft for the blog post https://gist.github.com/sudden6/11721cd25a7995743263a943ac729028
+[22:49:50] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:50:10] *** Joins: VVD (~VVD@ )
+[22:55:52] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:00:05] *** Joins: LittleVulpix (~Miranda@ )
+[23:14:09] *** Joins: sxsa (9f087d17@ )
+[23:14:43] <sxsa> I am using qtox 1.7.1 on ArchLinux, and a friend is using qTox 1.7.0 on Windows 10
+[23:14:56] <sxsa> He can see me and himself, but I can only see myself. Audio works both ways
+[23:15:25] <Emcy> you have to wait
+[23:15:48] <sudden6> sxsa: do you use high fps and resolution?
+[23:15:56] <sudden6> maybe bandwidth is not enough
+[23:16:30] <sxsa> We are using 240p resolution
+[23:17:03] <sudden6> then that's not the problem...
+[23:17:53] <sudden6> best way to solve this then would probably be to create an issue on github with both logs
+[23:23:03] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:23:03] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:23:25] *** Joins: VVD (~VVD@ )
+[23:27:20] *** Joins: LittleVulpix (~Miranda@ )
+[23:28:23] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:29:20] *** Joins: VVD (~VVD@ )
+[23:32:50] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[23:33:21] *** Joins: LittleVulpix (~Miranda@ )
+[23:33:51] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[23:39:16] -qtox-git-spam- [qTox] agrecascino opened pull request #4146: fix(audio): alternate audio fix implementation from #4139 (master...master) https://git.io/vDCai
+[23:40:41] <sxsa> https://github.com/qTox/qTox/issues/4147
+[23:50:03] *** Parts: sxsa (9f087d17@ ) ()
+[23:50:52] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[23:53:11] *** Joins: LittleVulpix (~Miranda@ )
+[23:57:50] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
