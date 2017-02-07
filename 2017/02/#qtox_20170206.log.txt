@@ -1,0 +1,267 @@
+[01:21:35] *** Joins: Chiitoo (~Chiitoo@ )
+[01:26:21] <Dako300> All of the sudden I can't compile qTox and I don't know why
+[01:26:35] <Dako300> I'll post the output in a pastebin
+[01:27:17] <Dako300> while it is compiling, it says it can't find a lot of libraries like -ltoxcrypto, -ltoxgroup and others
+[01:28:54] <Dako300>  First question: are toxcrypto, toxnetwork, toxdht toxnetcrypto, toxfriends, toxmessenger and toxgroup supposed to be built libraries?
+[01:58:38] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[02:02:48] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[02:02:48] <Dako300> Okay, that was c-toxcore's fault and that's fixed
+[02:03:22] <Dako300> Now it is complaining about no rule to make target ar.qm needed by qrc_translations.cpp
+[02:03:56] <Dako300> any ideas?
+[02:05:27] <Dako300> nevermind
+[02:07:57] *** Joins: LittleVulpix (~Miranda@ )
+[02:08:47] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[02:11:39] *** Joins: LittleVulpix (~Miranda@ )
+[02:19:12] <Dako300> One more question. I can't call myself individually on vanilla qTox and c-toxcore (different IDs on the same LAN)
+[02:19:30] <Dako300> I was able to do it earlier today, but everything just fell apart after around 4:00 local time
+[02:43:07] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[02:43:12] *** Quits: f10__ (~flo@ ) (Ping timeout: 252 seconds)
+[03:27:16] *** Joins: MDrights (~MDrights@ )
+[03:27:26] *** Quits: MDrights (~MDrights@ ) (Read error: Connection reset by peer)
+[03:28:28] *** Joins: MDrights (~MDrights@ )
+[03:29:15] *** Joins: vindelschtuffen (~vindelsch@ )
+[03:29:36] *** Quits: MDrights (~MDrights@ ) (Client Quit)
+[03:29:54] *** Joins: MDrights (~MDrights@ )
+[03:33:59] *** Quits: MDrights (~MDrights@ ) (Read error: Connection reset by peer)
+[03:37:39] *** Joins: MDrights (~MDrights@ )
+[03:45:26] <vindelschtuffen> hello
+[03:52:36] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[03:52:59] *** Joins: MDrights (~MDrights@ )
+[03:53:03] *** Quits: MDrights (~MDrights@ ) (Client Quit)
+[03:54:04] <vindelschtuffen> is anyone working on https://github.com/qTox/qTox/issues/4128
+[04:03:22] *** oranges is now known as beerobot
+[04:03:42] *** Joins: f10__ (~flo@ )
+[04:06:54] *** Joins: f10 (~flo@ )
+[04:14:35] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:15:25] *** Joins: VVD (~VVD@ )
+[04:20:35] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[04:20:35] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[05:24:17] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:24:47] *** Joins: VVD (~VVD@ )
+[05:27:25] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:27:45] *** Joins: VVD (~VVD@ )
+[05:33:01] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:33:30] *** Joins: VVD (~VVD@ )
+[05:36:18] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:36:38] *** Joins: VVD (~VVD@ )
+[05:41:50] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:42:20] *** Joins: VVD (~VVD@ )
+[07:33:35] *** Joins: reBrain (~quassel@ )
+[07:39:00] <zetok> vindelschtuffen: `help wanted` means that no one works on it
+[07:39:12] <zetok> perhaps it should be renamed to `up for grabs` ?
+[07:40:41] *** Joins: MDrights (~MDrights@ )
+[07:40:57] <zetok> Dako300: https://github.com/qTox/qTox/issues/4098 ?
+[07:54:23] *** Joins: dfgzdfgS (0819ec34@ )
+[07:56:26] <dfgzdfgS> going thru skype alternatives...came across this one...how does this one fare even though it can be used on windows os? thanks...
+[08:01:41] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[08:07:33] <zetok> dfgzdfgS: just try it
+[08:10:26] <dfgzdfgS> k
+[08:10:37] *** Quits: dfgzdfgS (0819ec34@ ) (Quit: Page closed)
+[08:18:20] *** Parts: cisc (~cisc@ ) ("Konversation terminated!")
+[08:31:08] *** Joins: cisc (~cisc@ )
+[08:36:13] *** Joins: Chiitoo (~Chiitoo@ )
+[10:01:26] *** Joins: sudden6 (~anonymous@ )
+[10:20:52] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vDWUU
+[10:20:52] -qtox-git-spam- qTox/master a5955c6 sudden6: feat(toxencrypt): add function to get min length for isEncrypted() to...
+[10:24:01] *** Joins: genesis (~genesis@ )
+[10:32:05] *** Joins: f10 (~flo@ )
+[10:45:24] *** Joins: f10__ (~flo@ )
+[11:12:53] *** Joins: sudd3n6 (~anonymous@ )
+[11:20:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[11:40:54] *** Joins: sudden6 (~anonymous@ )
+[11:41:02] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[12:21:48] *** Quits: sudd3n6 (~anonymous@ ) (Quit: Konversation terminated!)
+[12:47:48] <Dako300> zetok: I only click on them once when the program starts, and I can make a call perfectly fine when one of the clients is Toxic
+[12:48:14] <Dako300> I'm running it on my laptop over SSHFS, if that helps (makes distributing builds easier)
+[12:49:09] <Dako300> zetok: i'm going to file this as a new issue and see if anybody can help or guide me from there.
+[12:54:15] <reBrain> sooo what happened with the blog post?
+[13:43:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:43:49] *** Joins: VVD (~VVD@ )
+[13:52:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:53:10] *** Joins: VVD (~VVD@ )
+[13:58:04] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:58:50] *** Joins: VVD (~VVD@ )
+[14:05:28] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[14:08:26] *** Joins: LittleVulpix (~Miranda@ )
+[14:09:27] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:14:18] *** Joins: sudden6 (~anonymous@ )
+[14:16:40] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vDWEb
+[14:16:40] -qtox-git-spam- qTox/master 2340a74 Yuri: style(video): Simplified ifdefs, made them USING_V4L to be explicit....
+[14:16:40] -qtox-git-spam- qTox/master a6bc9db sudden6: Merge pull request #4121...
+[14:19:27] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vDWuZ
+[14:19:27] -qtox-git-spam- qTox/master 742583b Yuri: fix(font): Made font changes in settings apply on screen instantly....
+[14:19:27] -qtox-git-spam- qTox/master d320b1f sudden6: Merge pull request #4137...
+[14:24:05] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[14:24:05] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[14:35:41] <sudden6> Diadlo: which is better #4146 or #4138?
+[14:36:59] <sudden6> I prefer 4138 for now, becaues it doesn't need widget
+[14:51:36] <agrecascino> i wiil fight for the right to maps!
+[14:51:53] <sudden6> agrecascino: ?!?
+[14:52:52] <agrecascino> the only differences between my pr and his is that his doesn't mess with widget and uses vectors
+[14:53:09] <agrecascino> and i've been using maps a lot lately
+[14:53:42] <sudden6> yeah, maps are not the problem in this case, but going over widget is a bad idea
+[15:10:01] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:10:25] *** Joins: VVD (~VVD@ )
+[15:32:13] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:32:35] *** Joins: VVD (~VVD@ )
+[16:26:12] *** Joins: f10 (~flo@ )
+[16:56:21] *** Joins: f10__ (~flo@ )
+[17:14:05] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:14:30] *** Joins: VVD (~VVD@ )
+[17:23:22] <Diadlo> Hello, guys
+[17:23:46] <Diadlo> It's too hard: select which PR better :)
+[17:24:18] <Diadlo> 4138 has some problem, which should be fixed
+[17:25:02] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:25:20] <Diadlo> Same for #4146
+[17:25:51] *** Joins: VVD (~VVD@ )
+[17:26:17] <Diadlo> agrecascino: Are you here?
+[17:28:32] <Diadlo> 1) Why do you make this comment. Is there any valuable reason? https://github.com/qTox/qTox/pull/4138#issuecomment-277495160
+[17:29:05] <Diadlo> 2) Why do you call `CoreAV::groupNameListChanged` from widget, instead of `Core::onGroupNamelistChange`?
+[17:36:03] *** Joins: sandrorso (~sandro@ )
+[17:37:40] *** Joins: cenysor (~cenysor@ )
+[17:42:43] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:43:25] *** Joins: VVD (~VVD@ )
+[17:43:38] <agrecascino> Diadlo, ?
+[17:43:40] <agrecascino> the second thing is a spelling mistake
+[17:43:44] <agrecascino> the first was because i'm pretty sure the guy was trolling me with the pr
+[17:43:47] <agrecascino> oh wait
+[17:43:49] <agrecascino> nvm
+[17:43:51] <agrecascino> sorry i get what you meant now
+[17:43:53] <agrecascino> so
+[17:44:51] <agrecascino> i created that function to remove a peer from a groupcall, since i don't think either of those can access groupcalls from coreav
+[17:44:51] <Diadlo> His PR appear first. How he can trolling you?)
+[17:45:04] <agrecascino> okay
+[17:45:14] <agrecascino> so we talked about it in #qtox for about an hour
+[17:45:26] <agrecascino> and right before we were going to make our pr
+[17:45:28] <Diadlo> Ok
+[17:45:30] <agrecascino> he creates his
+[17:45:35] <Diadlo> I didn't know it
+[17:45:40] <agrecascino> with a sock account '007-agent'
+[17:46:02] <agrecascino> the account had been created like only a little before the commit
+[17:46:32] <agrecascino> that commit was also originally included with #4139
+[17:47:26] <agrecascino> is Core a friend class of CoreAV?
+[17:47:28] *** Quits: sandrorso (~sandro@ ) (Quit: Ciao. Sto andando via)
+[17:47:32] <agrecascino> or something like that?
+[17:47:43] <Diadlo> Core contains CoreAv instance
+[17:48:14] <agrecascino> but i assume i can't access the groupcalls variable inside it?
+[17:48:18] <agrecascino> since it's private
+[17:48:34] <Diadlo> Nope. I mean, you can call your function
+[17:48:37] <Diadlo> Like in widget
+[17:48:47] <Diadlo> But not from widget :)
+[17:48:58] <agrecascino> so move the call into core?
+[17:49:33] <Diadlo> Ask yourself: does it really matter to widget?
+[17:49:48] <Diadlo> Updateing core namelist
+[17:50:45] <Diadlo> Widget::onGroupNamelistChange connected with Core::groupNamelistChanged
+[17:50:58] <Diadlo> *conversely
+[17:51:06] <Diadlo> I.e. it start from core
+[17:51:12] <Diadlo> Why it should come to widget?
+[17:52:21] <Diadlo> I hope you understand what I mean?)
+[17:52:30] <agrecascino> yes, the call is misplaced
+[17:53:12] <agrecascino> is calling it from Core::onGroupNameListChange okay?
+[17:53:40] <Diadlo> I this so
+[17:53:45] <Diadlo> *think
+[17:54:08] <agrecascino> a simple if and call should be fine?
+[17:54:26] <agrecascino> like
+[17:54:35] <agrecascino> i know these functions block
+[17:54:41] <Diadlo> If you need `if` use it :)
+[17:57:10] <agrecascino> actually there was pretty big bug in there i just noticed
+[17:57:27] <Diadlo> ?
+[17:57:33] <agrecascino> in the widget call
+[17:57:49] <agrecascino> i call it on TOX_CONFERENCE_STATE_CHANGE_PEER_JOIN
+[17:57:54] <agrecascino> instead of EXIT
+[17:58:22] <Diadlo> :)
+[18:01:19] <agrecascino> sometimes git hurts me inside
+[18:01:24] <agrecascino> >squash to commits
+[18:01:27] <agrecascino> >push
+[18:01:34] <agrecascino> >you need to merge with master!
+[18:01:36] <agrecascino> >merge
+[18:01:48] <agrecascino> >reverted
+[18:01:51] <Diadlo> And what?
+[18:02:15] <agrecascino> Diadlo, git did a really dumb thing
+[18:02:27] <Diadlo> Hm.. I don't understand
+[18:03:33] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:04:20] <agrecascino> it wiped my most recent changes to my fork
+[18:04:42] *** Joins: LittleVulpix (~Miranda@ )
+[18:04:46] <Diadlo> git reflog
+[18:35:56] *** Joins: pmav99 (~feanor@ )
+[18:43:09] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[18:47:37] *** Joins: cisc (~cisc@ )
+[18:56:05] <agrecascino> should be fixed now
+[19:04:08] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[19:05:40] *** Joins: Chiitoo (~Chiitoo@ )
+[19:06:21] -qtox-git-spam- [qTox] Diadlo opened pull request #4149: Add CTest (master...tests/first_ctest) https://git.io/vDlGb
+[19:13:00] *** Joins: toweI (~toweI@ )
+[19:13:26] <toweI> why are you using cmake now instead of qmake?
+[19:35:19] <Diadlo> toweI: https://github.com/qTox/qTox/pull/3913
+[19:37:23] <Diadlo> First two comments
+[19:39:33] *** Joins: Yoshimo (~anything@ )
+[19:42:06] <toweI> I personally like the progress overview by cmake when compiling ^^
+[19:51:52] <sudden6> hi
+[19:51:59] <sudden6> zetok: blog post?
+[19:52:00] <Diadlo> sudden6: o/
+[19:53:58] <sudden6> Diadlo: so we're going with agrecascino s PR?
+[19:54:19] <Diadlo> I want to take a look on both after review
+[19:54:31] *** Quits: pmav99 (~feanor@ ) (Ping timeout: 240 seconds)
+[19:54:48] <sudden6> if his story is correct, I think it would be fair
+[19:55:33] <Diadlo> And what, if it isn't?)
+[19:55:43] <sudden6> that's the problem^^
+[19:55:49] <sudden6> but we could check our IRC logs
+[19:55:51] <Diadlo> I will select best
+[19:55:54] <sudden6> ok
+[19:56:07] <sudden6> I'll leave those two to you then :)
+[19:56:18] <Diadlo> But agrecascino PR looks better now
+[19:56:21] <Diadlo> For me
+[19:56:50] <sudden6> also, when will we remove qmake support?
+[19:57:11] <sudden6> IIRC it was to be removed in 1.9
+[19:57:21] <Diadlo> IIRC too
+[19:57:47] <sudden6> are you going to do it?
+[19:58:15] <Diadlo> I think it will be done in the last week
+[19:58:33] <sudden6> I think we should do it soon
+[19:58:50] <sudden6> so everyone is ready when 1.9 is released
+[20:03:35] *** Joins: noavarice (5f201fe5@ )
+[20:03:41] <agrecascino> sudden6: i moved the call out of widget and into core
+[20:03:55] <sudden6> good
+[20:08:31] *** Quits: noavarice (5f201fe5@ ) (Quit: Page closed)
+[20:10:32] -qtox-git-spam- [qTox] Diadlo closed pull request #4110: First qTox unit test! (master...tests/first_test) https://git.io/vDInt
+[20:32:37] <Diadlo> sudden6: About utils
+[20:32:54] <Diadlo> I don't think, that we will add another `utils`
+[20:40:31] <sudden6> yeah, but core also isn't the best place
+[20:42:26] <Diadlo> Yes. My was misplaced. Fixed
+[20:42:40] <Diadlo> *Was my
+[20:42:51] <Diadlo> *without my
+[20:42:53] <Diadlo> :D
+[20:44:42] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[20:46:08] <agrecascino> Diadlo, fixed stuff from review
+[20:46:14] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[20:47:04] *** Quits: toweI (~toweI@ ) (Quit: Leaving)
+[20:51:00] <Diadlo> agrecascino: Seems you have not confirmed github email
+[20:51:07] <agrecascino> Diadlo, ?
+[20:51:19] <Diadlo> Or local git email not match with any from github
+[20:51:31] <Diadlo> https://github.com/qTox/qTox/pull/4146/commits
+[20:51:45] <Diadlo> There is no avatar for commit author
+[20:51:50] <agrecascino> oh yeah
+[20:52:04] <agrecascino> my git settings vary from computer to computer
+[20:52:30] <Diadlo> You can add many hidden emails to account
+[20:52:57] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:54:21] <Diadlo> But feel free to ignore it
+[20:54:37] <agrecascino> yeah it's not an issue to me
+[21:13:43] <Diadlo> Good night
+[21:46:00] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:25:16] *** Joins: DiCE1904 (~textual@ )
+[23:25:03] *** Joins: mutin-s (~s-mutin@ )
+[23:27:26] *** Joins: iphy_ (uid67735@ )
+[23:27:36] *** Joins: Diadl0 (~diadlo@ )
+[23:27:44] *** Joins: Se78en (~Se7en@ )
+[23:33:35] *** Joins: koshii_ (~w@ )
+[23:34:26] *** Quits: albel727 (~albel727@ ) (*.net *.split)
+[23:34:26] *** Quits: s-mutin (~s-mutin@ ) (*.net *.split)
+[23:34:26] *** Quits: Diadlo (~diadlo@ ) (*.net *.split)
+[23:34:27] *** Quits: Se7en (~Se7en@ ) (*.net *.split)
+[23:34:27] *** Quits: iphy (uid67735@ ) (*.net *.split)
+[23:34:27] *** Quits: GGMethos (methos@ ) (*.net *.split)
+[23:34:27] *** Quits: koshii (~w@ ) (*.net *.split)
+[23:34:29] *** koshii_ is now known as koshii
+[23:35:09] *** iphy_ is now known as iphy
+[23:43:14] *** Joins: GGMethos (methos@ )
+[23:46:28] <Dako300> Dialdo: reading the chat history. The #4138 (the openal stuff from agrecascino) was originally written in my fork of qTox (to handle the bitrate). I had to collapse the git history to fit the contribution requirement of just sone commit, but the code existed there before the fork was created (but I can't prove it because of timestamps and a lack of separate commits)
+[23:47:03] <Dako300> oh darn, he isn't even here
