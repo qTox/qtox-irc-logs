@@ -1,0 +1,437 @@
+[01:28:13] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[01:54:51] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[01:55:25] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[02:07:41] *** Quits: DiCE1904 (~textual@ ) (Remote host closed the connection)
+[02:08:14] *** Joins: DiCE1904 (~textual@ )
+[02:52:02] *** Joins: MDrights (~MDrights@ )
+[03:23:36] *** Quits: Dako300 (~daniel@ ) (Remote host closed the connection)
+[03:32:03] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[03:55:16] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:55:54] *** Joins: VVD (~VVD@ )
+[05:25:06] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 260 seconds)
+[05:25:33] *** Joins: MDrights (~MDrights@ )
+[05:51:12] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[05:51:34] *** Joins: VVD (~VVD@ )
+[05:59:39] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 256 seconds)
+[06:11:11] *** Joins: albel727 (~albel727@ )
+[06:18:32] -qtox-git-spam- [qTox] Diadlo closed pull request #3579: Add avatarsPath GUI option (master...bashrc/avatars) https://git.io/vD8Rj
+[06:21:32] -qtox-git-spam- [qTox] Diadlo closed pull request #3734: fix: send offline message history once (master...fix/double-sent-messages) https://git.io/vi5JF
+[07:41:37] *** Joins: Chiitoo (~Chiitoo@ )
+[08:06:07] *** Joins: vindelschtuffen (~vindelsch@ )
+[08:08:12] *** Joins: f10 (~flo@ )
+[08:08:45] *** Joins: f10__ (~flo@ )
+[08:56:39] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vD8oe
+[08:56:39] -qtox-git-spam- qTox/master 5e69449 Zetok Zalbavar: chore(travis): fix jenkins branch deploy error on deploy-gitstats job...
+[09:28:10] *** Joins: reBrain (~quassel@ )
+[09:35:18] *** Joins: cenysor (~cenysor@ )
+[10:17:31] -qtox-git-spam- [qTox] Diadlo opened pull request #4151: chore: Remove qtox.pro and it's mention (master...chore/remove_qmake) https://git.io/vD8DZ
+[10:26:51] *** Joins: sudden6 (~anonymous@ )
+[11:35:23] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[11:50:07] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[11:52:14] -qtox-git-spam- [qTox] zetok opened pull request #4152: revert: "docs(README): remove link to the experimental osx build" (master...docs-readme-osxlink) https://git.io/vD8Ar
+[11:55:19] -qtox-git-spam- [qTox] zetok opened pull request #4153: docs(INSTALL): fix link in dependencies to CMake website (master...docs-install-link) https://git.io/vD8xT
+[11:57:48] -qtox-git-spam- [qTox] zetok opened pull request #4154: docs(CONTRIBUTING): reword `revert` section to use the default message (master...docs-contrib-reword) https://git.io/vD8xB
+[12:01:12] *** Joins: MDrights (~MDrights@ )
+[12:51:03] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[12:51:37] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[13:18:57] *** Joins: pcre (~quassel@ )
+[13:30:39] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[13:38:44] *** Joins: Chiitoo (~Chiitoo@ )
+[13:47:34] <sudden6> zetok: ping?
+[13:47:41] <zetok> sudden6: pong
+[13:48:02] <sudden6> how can I get the list of contributors for this release?
+[13:48:19] <sudden6> also we need a cat for this release
+[13:49:07] <sudden6> and a random quote if there's a good one
+[13:50:28] <zetok> sudden6: `git log --format='%an' v1.7.0..v1.8.0 | sort -fu`
+[13:51:23] <sudden6> zetok: that doesn't work
+[13:51:34] <zetok> do you have the tag?
+[13:51:48] <sudden6> it tries to execute the names 
+[13:52:00] <zetok> um
+[13:52:01] <sudden6> ie Zetok command not found
+[13:52:20] <zetok> $() = ``
+[13:53:27] <sudden6> nope
+[13:53:36] <sudden6> also doesn't work
+[13:53:58] <zetok> just copypaste it without the backticks
+[13:54:22] <sudden6> ah 
+[13:54:25] <sudden6> sorry
+[13:57:43] <sudden6> zetok: can you think of a random quote for the blog post?
+[13:57:50] <zetok> nah
+[13:57:57] <sudden6> then I'll leave it
+[13:58:33] <sudden6> but I'm sure you can supply a good cat pic?
+[13:59:19] <zetok> https://i.imgur.com/KSKw2l.jpg https://i.imgur.com/ZoMYf.jpg ?
+[13:59:46] <sudden6> I think the first one is good
+[14:03:39] <sudden6> zetok: PR submitted please review and merge
+[14:08:19] <zetok> sudden6: done; I wonder if the order of contributors should be random
+[14:08:36] <sudden6> why?
+[14:10:31] <zetok> looks more pleasant to the eye?
+[14:11:23] <qTox-Website> [qTox-Website] sudden6 opened pull request #24: Add GitStats page to developer links (master...sudden6-patch-1) https://git.io/vD4OK
+[14:11:47] <sudden6> meh, I think random is a nice choice because everytime different people get visibilty :)
+[14:12:08] <sudden6> alphabetic would always be the same and by commit ~the same
+[14:17:42] <sudden6> zetok: https://github.com/qTox/qTox-Website/issues/17 is done, isn't it?
+[14:18:07] <reBrain> btw why is the "for-jenkins-release" 11 commits behind master?
+[14:18:43] <zetok> sudden6: thanks for reminding, closed
+[14:20:05] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vD43X
+[14:20:05] -qtox-git-spam- qTox/master 5873a04 Zetok Zalbavar: revert: "docs(README): remove link to the experimental osx build"...
+[14:20:17] <sudden6> reBrain: because this branch is only updated on release tags
+[14:20:28] <reBrain> oh
+[14:21:56] <zetok> sudden6: https://a.uguu.se/4gU1LJwNifPr_tmpSpectacle.Qb3580.png
+[14:22:10] <sudden6> oh
+[14:22:41] <zetok> sudden6: https://a.uguu.se/zunO8JhOW44J_tmpSpectacle.Bz3580.png
+[14:25:08] <sudden6> zetok: should be fixed
+[14:27:48] <zetok> oh wait
+[14:30:31] <qTox-Blog> [blog] zetok merged sudden6-patch-1 into gh-pages: https://git.io/vD4GB
+[14:30:57] <sudden6> thx, can you also review the website PR I made?
+[14:32:36] <zetok> :|
+[14:34:18] <zetok> sudden6: it doesn't add it to translations
+[14:34:27] <zetok> sudden6: and translations need to be pulled from weblate
+[14:35:11] <sudden6> I have no idea how to add it to the translations :/
+[14:35:35] <zetok> the simple way is to use sed in a bash `for` loop
+[14:35:49] <sudden6> "simple"
+[14:38:04] <zetok> something like `for f in *.json; do sed -i '/some line/a\    "text": "",' $f`
+[14:45:53] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:51:13] <Chiitoo> Speaking of translations... if there's is something that would change in all(?) the .ts and .qm files, would I be touching those at all?
+[14:52:51] <Chiitoo> That said, they probably don't even have a translation, as it's only shown in the code.
+[14:53:23] <sudden6> the .ts and .qm files are "automatically" generated from the code
+[14:53:40] <Chiitoo> Okies, yeah, something I was suspecting.
+[15:23:36] *** Quits: Dragofix (Dragofix@ ) (Ping timeout: 260 seconds)
+[15:25:20] *** Joins: Dragofix (Dragofix@ )
+[15:35:51] *** Quits: LittleVulpix (~Miranda@ ) (Ping timeout: 252 seconds)
+[15:36:01] *** Joins: cenysor (~cenysor@ )
+[15:52:46] *** Joins: LittleVulpix (~Miranda@ )
+[16:06:12] *** Quits: Dragofix (Dragofix@ ) (Quit: Game over. Continue?)
+[16:10:07] *** Joins: Dragofix (Dragofix@ )
+[16:17:57] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:18:45] *** Joins: VVD (~VVD@ )
+[16:28:35] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:29:00] *** Joins: VVD (~VVD@ )
+[16:33:03] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:42:18] *** Joins: x_ (~x@ )
+[16:43:10] <Diadl0> Hello
+[16:43:23] <Diadl0> sudden6, zetok: I merge tests?
+[16:43:28] <Diadl0> (without docs now)
+[16:43:48] <sudden6> Hi :)
+[16:43:50] <sudden6> yes
+[16:43:55] <sudden6> merge them :)
+[16:44:13] <sudden6> also how about The Plan™?
+[16:44:40] <Diadl0> It's one of The Plan step
+[16:44:44] <Diadl0> Isn't it?
+[16:44:48] <sudden6> (I should add a paragraph that it should only be refered to as "The Plan™" :D
+[16:44:51] <zetok> Diadl0: testing is not optional?
+[16:45:07] <sudden6> yeah, but you mentioned something about the diagrams
+[16:45:12] <Diadl0> zetok: It should be :)
+[16:45:13] <sudden6> have you had time for that?
+[16:45:33] <Diadl0> 1) I start changing diagram
+[16:45:46] <Diadl0> 2) But here is too many things to change
+[16:45:52] <zetok> oh, right, one has to run `make check` for tests to run, right?
+[16:46:00] <Diadl0> Yes
+[16:46:21] <Diadl0> sudden6: Why do you move "sendMessage" to Friend?
+[16:46:21] <zetok> then sure, go ahead
+[16:46:23] <sudden6> so tests are built every time, but only run with make check
+[16:46:48] <sudden6> because it's an action you do "on" the friend
+[16:47:07] <Diadl0> It's wrong
+[16:47:18] <sudden6> don't think so
+[16:47:24] <Diadl0> Do you understand, why we remove widget from Friend?
+[16:47:46] <sudden6> yes, because UI has nothing to do with the friend itself
+[16:47:55] <Diadl0> Yes. Core too
+[16:48:11] <sudden6> not in the way I imagined it
+[16:48:17] <Diadl0> Friend should is a structure with signals
+[16:48:33] <Diadl0> *without should
+[16:49:05] <sudden6> ie, what do you need to send a message? Right, a Friend (or Group)
+[16:49:21] <Diadl0> Otherwise you will have a spaghetti of dependency
+[16:49:26] *** Quits: bennabiy (~bennabiy@ ) (Quit: http://www.yellowdeli.com)
+[16:49:52] <sudden6> I don't think so, UI depends on Friend which depends on Core
+[16:50:11] <Diadl0> Profile form wants to show friend info -> take core dependency
+[16:50:13] *** Joins: f10 (~flo@ )
+[16:50:18] <sudden6> no
+[16:50:20] <Diadl0> Yees
+[16:50:22] <Diadl0> Exectly
+[16:50:31] <Diadl0> It's your vision
+[16:50:31] <sudden6> Profile form only depends on Friend then
+[16:50:42] <Diadl0> Friend depencs on Core
+[16:51:00] <sudden6> yes, but Profileform doesn't need to know about that
+[16:51:07] <Diadl0> "SendMessage"
+[16:51:23] <Diadl0> I'm absolutely don't know it... yes
+[16:51:47] <Diadl0> Profile form shouldn't has an ability to do it
+[16:51:56] <sudden6> you mean because of "TOX_MESSAGE_TYPE?
+[16:52:17] <Diadl0> No. Because of logic
+[16:52:26] <Diadl0> Ok
+[16:52:47] <Diadl0> Should the profile be able to send a message?
+[16:52:56] <Diadl0> Friend profile form
+[16:53:18] <sudden6> no, but it's included in Friends abilities
+[16:53:27] <Diadl0> Yes. It's wrong
+[16:53:37] <sudden6> just because Friend can send messages you don't have to do it
+[16:54:10] <Diadl0> Why we use `const`?
+[16:54:24] <Diadl0> We can simply do not modify it
+[16:54:26] *** Joins: f10__ (~flo@ )
+[16:54:38] <sudden6> because I didn't exactly know what it did when I drew the UML
+[16:54:57] <sudden6> as I said it needs work in the details
+[16:55:13] <Diadl0> No
+[16:55:19] <Diadl0> I'm not about The Plan now
+[16:55:24] <Diadl0> I'm about code at all
+[16:55:47] <sudden6> why not use it?
+[16:56:07] <sudden6> it's a feature of C++ that can prevent errors
+[16:56:18] <Diadl0> Exactly
+[16:56:20] <Diadl0> Same here
+[16:56:43] <Diadl0> You shouldn't provide ability to do something, logically different
+[16:57:20] <sudden6> I have a different view of this, let me explain
+[16:57:38] <sudden6> You have a ToxFriend, what can you do with it?
+[16:57:48] <Diadl0> In your vision?
+[16:57:57] <sudden6> check if he's online -> getStatus()
+[16:58:14] <sudden6> call him -> startCall(...)
+[16:58:25] *** Joins: [0xAA] (~ThisIsZen@ )
+[16:58:26] <Diadl0> It's not how OOP works
+[16:58:27] <sudden6> send him a message -> sendMessage()
+[16:58:35] <sudden6> that's exactly how OOP works
+[16:58:42] <Diadl0> You simply can move all methods, thich have "Firned*" or "friendId" as first parameter
+[16:58:51] <Diadl0> Do you think it's right?
+[16:59:09] <sudden6> yep, because that's ~what I did :)
+[16:59:14] <Diadl0> Lol?
+[16:59:18] <Diadl0> Are you kidding me?
+[16:59:34] <sudden6> no, I'm serious
+[16:59:49] <Diadl0> I don't know what to say
+[17:00:17] <sudden6> Maybe we have different thoughts about how OOP works? lol
+[17:00:41] <sudden6> then, draw up your vision and show me^^
+[17:00:55] <Diadl0> My vision not so different from current one
+[17:01:17] <sudden6> yeah, but a picture is worth more than 1000 IRC lines ;)
+[17:01:45] <sudden6> to save time, do it only for ToxCore, ToxFriend and ToxCall
+[17:03:09] <sudden6> also with pictures it's easier to ask others for help on this
+[17:06:38] *** Quits: [0xAA] (~ThisIsZen@ ) (Read error: Connection reset by peer)
+[17:08:06] *** Joins: [0xAA] (~ThisIsZen@ )
+[17:08:26] * sudden6 afk 1.5h
+[17:08:27] *** Quits: [0xAA] (~ThisIsZen@ ) (Max SendQ exceeded)
+[17:34:32] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[17:41:54] *** Joins: [0xAA] (~ThisIsZen@ )
+[17:42:34] *** Joins: Yoshimo (~anything@ )
+[18:01:02] <Diadl0> sudden6: Seems, I can formulate my idea. What design pattern you plan to use?
+[18:05:11] <Diadl0> I plan to use one of Model-based
+[18:05:44] <Diadl0> And Friend is model
+[18:23:41] *** Quits: [0xAA] (~ThisIsZen@ ) (Ping timeout: 256 seconds)
+[18:33:36] <sudden6> Diadl0: I think qt+QML encourages MVVM
+[18:33:52] <Diadl0> First M in MVVM is Model
+[18:34:00] <sudden6> I know
+[18:34:08] <Diadl0> You Friend is Service
+[18:34:18] <Diadl0> *Your
+[18:35:00] <sudden6> I have to do some reading, how would Friend look if you would desing it?
+[18:35:11] *** Joins: [0xAA] (~ThisIsZen@ )
+[18:35:17] *** Quits: [0xAA] (~ThisIsZen@ ) (Max SendQ exceeded)
+[18:35:50] <Diadl0> Like now, but without chatform and + "note" from friend profile form
+[18:36:15] <Diadl0> And, I think, without signals
+[18:36:47] <Diadl0> Not sure, about it
+[18:39:28] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[18:40:04] <sudden6> I can't seem to find any information if a model should contain methods or not
+[18:40:44] <sudden6> but I think it has to, because how would you modify it's state
+[18:47:04] <sudden6> Diadl0: In https://github.com/qTox/qTox/pull/4132 what do you mean by "use early break"?
+[18:59:22] <Diadl0> if (a) reutnr
+[18:59:26] <Diadl0> *retun
+[18:59:27] <Diadl0> afk
+[18:59:37] <Diadl0> Model has get/set
+[19:01:31] <sudden6> Diadl0: if you're speaking about 4132, the function is not supposed to return on empty password, only if key derivation fails
+[19:02:27] <Diadl0> Sorry, my mistake
+[19:02:36] <sudden6> np
+[19:02:41] <Diadl0> I'm a bit misread code
+[19:03:20] *** Joins: Yoshimo (~anything@ )
+[19:03:28] -qtox-git-spam- [qTox] Diadlo closed pull request #4149: Add CTest (master...tests/first_ctest) https://git.io/vDlGb
+[19:03:36] <Diadl0> Let's make qTox great again!
+[19:03:49] <sudden6> yes!
+[19:05:48] *** Joins: [0xAA] (~ThisIsZen@ )
+[20:06:51] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:10:31] <Diadl0> sudden: So, what do you decide about `Friend`?
+[20:28:40] *** Joins: bennabiy (~bennabiy@ )
+[20:31:56] <Diadl0> sudden6: ^
+[20:32:51] <Diadl0> Also, I think you describe FriendChat class
+[20:32:56] *** Quits: [0xAA] (~ThisIsZen@ ) (Remote host closed the connection)
+[20:38:49] <agrecascino> Diadl0, where do i document ToxGroupCall?
+[20:39:37] <agrecascino> nvm
+[20:40:09] <Diadl0> Hello
+[20:40:11] <Diadl0> In cpp file :)
+[20:41:19] <Diadl0> On the top
+[20:46:20] <agrecascino> everything should be fixed now
+[20:46:27] <Diadl0> Ok
+[21:12:05] <sudden6> Diadl0: I've yet to see your alternative suggestion
+[21:12:50] <sudden6> IMO having a the function sendMessage or whatever belong to the Model is correct
+[21:13:38] <agrecascino> sudden6, thanks for helping me learn not to rely on change symbol name under cursor
+[21:13:48] <sudden6> > The view model is an abstraction of the view exposing public properties and commands
+[21:14:02] <sudden6> sendMessage is a command
+[21:14:24] <sudden6> and it belongs to ToxFriend
+[21:14:29] <Diadl0> Do whatever you whant
+[21:15:02] <sudden6> agrecascino: yeah, it's best to try compiling before pushing ^^
+[21:16:18] <sudden6> Diadl0: so you're now ok with it?
+[21:16:58] <agrecascino> is it me or are travis ci builds taking ages
+[21:17:17] <sudden6> their macos infrastructure is always overloaded
+[21:17:22] <Diadl0> I don't know how describe it to you. Let's try and after some time I will say: "I told yourself"
+[21:17:47] <sudden6> Then draw a f***** diagram, it'll explain everything
+[21:18:14] <Diadl0> Build diagram from current source code
+[21:18:34] <Diadl0> *Only Core part
+[21:19:37] *** Joins: reBrain (~quassel@ )
+[21:20:08] <Diadl0> In this diagram shouldn't be `Friend`
+[21:23:30] <Diadl0> Core can give Friend as parameter
+[21:24:02] <Diadl0> Friend is a simplest structure
+[21:24:17] <Diadl0> Core -- service
+[21:24:41] <sudden6> so you want to do it like c-toxcore does it?
+[21:25:15] <sudden6> where all functions have as first parameter a "this" parameter specifying the struct they operate on?
+[21:26:18] <Diadl0> Yes
+[21:26:45] <sudden6> and you want only Core to have all the functions?
+[21:26:54] <sudden6> and only Core to emit all the signals?
+[21:26:59] <Diadl0> No
+[21:27:09] <Diadl0> Here is difference
+[21:27:11] <Diadl0> Can be
+[21:27:40] <Diadl0> We can create FriendChat
+[21:27:49] <Diadl0> Is a service, which store friend
+[21:27:54] <Diadl0> And have sendMessage
+[21:27:55] <Diadl0> call
+[21:27:57] <Diadl0> etc.
+[21:29:34] <sudden6> what would the benefit of this be?
+[21:30:14] <Diadl0> Some class can give the access to the simple `Friend` structure, without chat logic
+[21:30:42] <Diadl0> Why we don't store all information and methods in one big class?
+[21:30:49] <Diadl0> We split it on small parts
+[21:31:32] <sudden6> That's exactly what I'm trying to achieve "split it into independent parts"
+[21:31:43] <Diadl0> Too big parts
+[21:32:06] <Diadl0> Your `ToxFriend` is `FriendChat`
+[21:32:19] <Diadl0> It have `Chat` interface
+[21:32:21] <Diadl0> *has
+[21:32:39] <sudden6> The only drawback I see with my approach is, that somehow ToxFriend needs to be able to call into ToxCore for sending messages, for example
+[21:32:57] <sudden6> I tried to model it like libtoxcore does it
+[21:34:31] <Diadl0> Your `ToxFriend` depend of Core
+[21:34:55] <Diadl0> Do you agree?
+[21:35:03] <sudden6> Yes
+[21:35:24] <Diadl0> Does FriendWidget should depend of Core?
+[21:35:31] <sudden6> no
+[21:35:35] <Diadl0> *on
+[21:35:50] <Diadl0> In your model it depend
+[21:36:12] <sudden6> In my model it would depend on ToxFriend
+[21:36:27] <Diadl0> You are forget about transitivity?
+[21:36:58] <sudden6> I don't know that word, link?
+[21:37:08] <Diadl0> A => B => C
+[21:37:09] <Diadl0> A => C
+[21:37:35] <sudden6> ok, it depends on Core through ToxFriend got it
+[21:37:35] <Diadl0> https://en.wikipedia.org/wiki/Transitive_relation
+[21:38:05] <sudden6> but I don't see why that's a bad thing and how your approach solves this
+[21:38:07] <Diadl0> Why FriendWidget should depend of Core?
+[21:38:26] <Diadl0> In my model FriendWidget has Friend
+[21:38:53] <Diadl0> Friend independent on Core
+[21:39:23] <Diadl0> Core =(depend)=> Friend  |   FriendWidget =(depend)=> Friend
+[21:39:31] <Diadl0> FriendWidget (not depend) Core
+[21:40:06] <sudden6> ok, so you're "Inverting" the structure a bit
+[21:40:44] <Diadl0> Yes. But it change the root of idea
+[21:40:54] <sudden6> question then, how would I send message then?
+[21:40:56] <agrecascino> did someone say object diagram
+[21:40:56] <agrecascino> https://a.pomf.cat/tychbi.png
+[21:41:12] <agrecascino> i say object DIEAGRAM
+[21:41:15] <Diadl0> friendChat.sendMessage()
+[21:41:36] <Diadl0> Friend* f;  FriendChat friendChat(f, core);
+[21:41:39] <Diadl0> Something like this
+[21:41:41] <sudden6> agrecascino: pf, UML is all the hottest stuff now ;;)
+[21:41:51] <sudden6> https://raw.githubusercontent.com/qTox/planning/master/Core-Classdiagram.png
+[21:42:02] <agrecascino> does UML have nuclear functions
+[21:42:06] <agrecascino> i thought not
+[21:42:35] <sudden6> Diadl0: I see
+[21:43:39] <sudden6> so would, FriendChat call directly into the library then?
+[21:43:46] <sudden6> (c-toxcore)
+[21:43:59] <Diadl0> Maybe. It's another question
+[21:44:08] <sudden6> or would Core expose all that
+[21:44:12] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:44:38] <Diadl0> I think, it can be part of core module => call c-toxcore function directly
+[21:44:50] <Diadl0> BUT
+[21:44:59] <Diadl0> FriendChat depend on History
+[21:45:10] <Diadl0> It's not good
+[21:45:18] <sudden6> can't we introduce that one level higher?
+[21:45:26] <Diadl0> I.e. not good, that core depend on History
+[21:45:30] <sudden6> and call it ToxChat
+[21:45:42] <sudden6> so that it would be responsible for groups and friends?
+[21:45:55] <sudden6> btw, you convinced me, your approach is better
+[21:46:12] <sudden6> you just have to get better at explaining ;)
+[21:46:40] <agrecascino> explain it using gimp and explosions
+[21:46:43] <Diadl0> Hooray)
+[21:46:44] <Diadl0> It's a bit hard on not native language
+[21:46:58] <sudden6> -> use f******* pictures
+[21:47:09] <zetok> sudden6: pls
+[21:47:10] <agrecascino> 3 minutes of battery left
+[21:47:44] <sudden6> sorry, I was getting a bit frustrated^^
+[21:48:08] <agrecascino> see you guys later
+[21:48:13] <sudden6> see you
+[21:48:18] <Diadl0> Bye
+[21:48:57] <agrecascino> powertop stopped reporting charge
+[21:50:18] <sudden6> doing this refactoring will be hard work
+[21:50:38] <Diadl0> https://i.imgur.com/JwxWf0X.png
+[21:50:45] <Diadl0> 4 minutes
+[21:50:59] <Diadl0> Instead of 
+[21:51:02] <Diadl0> [00:39] <Diadl0> Core =(depend)=> Friend  |   FriendWidget =(depend)=> Friend
+[21:51:03] <Diadl0> [00:39] <Diadl0> FriendWidget (not depend) Core
+[21:51:09] <sudden6> shouldn't the arrows be the other direction
+[21:51:18] <Diadl0> :/
+[21:51:21] <Diadl0> +4 min
+[21:51:46] <sudden6> Diadl0: you forgot, the 15min conversation we had before...
+[21:51:57] <Diadl0> :)
+[21:52:03] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 240 seconds)
+[21:52:09] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:53:55] <Diadl0> You are right: `ToxChat + History ~ FriendChat` is a good idea
+[21:55:02] <Diadl0> s/~/+ ... =/
+[21:56:02] <sudden6> https://i.imgur.com/dNvHnTz.png
+[21:56:06] <sudden6> like this?
+[21:56:11] <sudden6> 5min ;)
+[21:56:24] <Diadl0> Exectly!
+[21:56:33] <Diadl0> Thanks :)
+[21:56:56] <Diadl0> Maybe it's not the best design. But it's my vision
+[21:57:51] <Diadl0> I can't draw, because I haven't this image in my mind
+[21:57:53] <sudden6> the problem I see is, how do we handle removal of a friend?
+[21:59:00] <sudden6> also, drawing gets easier after a while, when I did the first few versions of the UML stuff it was horrible, but now it's pretty easy :)
+[22:00:01] <Diadl0> I draw only 1 UML. "You have not enough diagram"
+[22:00:14] <sudden6> I have quite the opposite problem, when you tell me something with words, I can't imagine it and not see it's beauty or failures
+[22:00:35] <Diadl0> 1) We can add to friend "bool removed". Seems, most horrible solution
+[22:00:42] <sudden6> +1
+[22:01:00] <Diadl0> 2) We can do it like it's implemented now. I.e. store not friend, but friendId
+[22:01:07] <sudden6> can we return Friend as const shared_ptr ?
+[22:01:48] <Diadl0> Yes. But when you remove it somewhere, shared_ptr still available
+[22:02:09] <sudden6> I want to avoid using friendId, that's not how an high-level API should work
+[22:02:38] <sudden6> exactly, but ToxFriend would for example emit a signal that it's invalid now
+[22:02:59] <Diadl0> Hm
+[22:03:09] <Diadl0> 1) Too many signals
+[22:03:09] <sudden6> this way it would be thread safe and null pointer dereference safe
+[22:03:12] <Diadl0> But I have an idea
+[22:03:32] <Diadl0> ToxChat will validate incoming Friend
+[22:03:45] <Diadl0> And just ignore removed
+[22:03:51] <Diadl0> What do you think?
+[22:04:15] <sudden6> 1) what happens, if the friend gets invalidated after ToxChat is constructed?
+[22:04:31] <sudden6> 2) with a signal, ToxChat could just reemit it
+[22:05:14] <Diadl0> I talk not about construction, but about every method call
+[22:05:59] <Diadl0> No one know, when signal will come to slot
+[22:06:03] <sudden6> hmm, don't really now, signals sound more elegant to me
+[22:06:14] <sudden6> yes
+[22:06:35] <Diadl0> AFAIK, Qt does not guarantee, that it will come at all
+[22:06:52] <sudden6> that would be pretty bad
+[22:07:00] <Diadl0> Yep
+[22:07:51] <Diadl0> Mutex?
+[22:08:09] <sudden6> get's complicated soon
+[22:08:32] <sudden6> I'm still looking for a doc about signal delivery guarantee
+[22:08:49] <sudden6> I can't believe that signals won't get deliverd
+[22:10:00] <Diadl0> 1:100000 chance. Qt randomly drop signal ;)
+[22:10:27] <sudden6> sounds like a bug or a very bad implementation
+[22:10:35] <Diadl0> It was a joke
+[22:10:45] <sudden6> -_- sorry^^
+[22:11:05] <Diadl0> But AFAIK docs really don't guarantee delivery
+[22:11:55] <Diadl0> Not enough process time for this thread
+[22:11:58] <Diadl0> For exmaple
+[22:12:23] <sudden6> then it will be delivered the next event loop iteration
+[22:12:42] <Diadl0> Lol. You never get freeze?
+[22:13:08] <sudden6> ?
+[22:13:11] <Diadl0> Application / Windows manager / OS
+[22:13:39] <sudden6> yeah, but how ist that qts fault or responsibility?
+[22:14:11] <Diadl0> I never said, that it's Qt's fault
+[22:15:15] <Diadl0> Nevermind. I just think, that signal can let us down
+[22:16:01] <Diadl0> emit signal + delete | Friend using | receive signal
+[22:16:05] <Diadl0> ------time line-------------->
+[22:16:45] <sudden6> ok but that can also happen for the invalid flag, imagine you have ToxChat check for a valid Friend and the ToxCore thread invalidates it after the check
+[22:16:53] <Diadl0> Mutex
+[22:17:57] <Diadl0> Need to think
+[22:18:03] <sudden6> yep, me too
+[22:18:08] <Diadl0> Good night
+[22:18:16] <sudden6> can you update the UML with the stuff?
+[22:18:21] <sudden6> good night :)
+[22:18:34] <Diadl0> Someday :)
+[22:18:39] <Diadl0> But without methods
+[22:18:59] <sudden6> just the general structure will already be helpful :)
+[22:19:31] <Diadl0> Here is problem: you are draw UML. And after this discussion we should rewrite it
+[22:19:55] <sudden6> I uploaded the source, modifying it is pretty easy :)
+[22:20:04] <Diadl0> Hoho
+[22:20:18] <sudden6> Don't try to import it from the code, that's a huge mess
+[22:36:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
