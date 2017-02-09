@@ -1,0 +1,205 @@
+[00:09:17] *** Joins: sudden6 (~anonymous@ )
+[00:46:23] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[00:53:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[02:00:20] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[02:05:09] *** Joins: Emcy (~MC@ )
+[02:05:09] *** Quits: Emcy (~MC@ ) (Changing host)
+[02:05:09] *** Joins: Emcy (~MC@ )
+[02:10:03] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[02:10:37] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[02:12:55] *** Joins: f10 (~flo@ )
+[02:16:29] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[02:16:33] *** Se78en is now known as Se7en
+[03:09:36] <agrecascino> Se7en, oh shit it's you
+[03:09:48] <Se7en> Huh
+[03:10:17] <agrecascino> you had the website on neocities and were frequently on #/tech/
+[03:11:01] <Se7en> yes
+[03:11:28] <agrecascino> wait
+[03:11:40] <agrecascino> are you 'agent-007' on github
+[03:11:46] <Se7en> No
+[03:11:48] <agrecascino> okay
+[03:26:44] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[03:30:20] *** Joins: DiCE1904 (~textual@ )
+[04:15:01] <vindelschtuffen> that's exactly what an agent would say
+[04:31:08] *** Joins: MDrights (~MDrights@ )
+[05:17:53] *** Quits: DiCE1904 (~textual@ ) (Remote host closed the connection)
+[05:21:11] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[05:57:42] *** Joins: reBrain (~quassel@ )
+[05:59:00] *** Joins: Holly (uid146926@ )
+[06:14:54] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[06:50:57] *** Joins: in1t3r (~LordShiva@ )
+[06:54:32] *** Quits: cisc (~cisc@ ) (Read error: Connection reset by peer)
+[07:13:44] *** Joins: cisc (~cisc@ )
+[07:34:20] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:35:10] *** Joins: VVD (~VVD@ )
+[07:48:24] -qtox-git-spam- [qTox] noavarice opened pull request #4158: Refactor: improved HTML-formatting mechanism for text messages (master...fix-text-formatting) https://git.io/vDRWB
+[08:08:37] *** Quits: Holly (uid146926@ ) (Quit: Connection closed for inactivity)
+[08:13:09] *** Joins: Emcy_ (~MC@ )
+[08:13:09] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[08:13:09] *** Joins: Emcy_ (~MC@ )
+[08:14:41] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[08:49:25] *** Joins: Emcy (~MC@ )
+[08:49:25] *** Quits: Emcy (~MC@ ) (Changing host)
+[08:49:25] *** Joins: Emcy (~MC@ )
+[08:51:10] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 245 seconds)
+[09:09:18] *** Joins: Emcy_ (~MC@ )
+[09:09:18] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[09:09:18] *** Joins: Emcy_ (~MC@ )
+[09:11:25] *** Quits: Emcy (~MC@ ) (Ping timeout: 258 seconds)
+[09:13:56] *** Joins: Emcy (~MC@ )
+[09:13:56] *** Quits: Emcy (~MC@ ) (Changing host)
+[09:13:56] *** Joins: Emcy (~MC@ )
+[09:16:12] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 240 seconds)
+[09:35:32] *** Joins: Chiitoo (~Chiitoo@ )
+[09:44:20] *** Joins: agrecascino_ (~agrecasci@ )
+[09:44:31] *** Joins: nurupo_ (~nurupo.ga@ )
+[09:45:50] *** Quits: dongo (~dongo@ ) (*.net *.split)
+[09:45:50] *** Quits: nurupo (~nurupo.ga@ ) (*.net *.split)
+[09:45:50] *** Quits: agrecascino (~agrecasci@ ) (*.net *.split)
+[09:45:50] *** nurupo_ is now known as nurupo
+[09:48:13] *** Joins: dongo (~dongo@ )
+[09:54:22] *** Joins: sudden6 (~anonymous@ )
+[10:18:48] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vDRwc
+[10:18:48] -qtox-git-spam- qTox/master 7cd8003 sudden6: refactor(encryption): move everything to ToxEncrypt...
+[11:07:40] *** Joins: f10 (~flo@ )
+[11:08:13] *** Joins: f10__ (~flo@ )
+[11:08:47] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[11:09:30] *** Joins: VVD (~VVD@ )
+[11:37:29] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[11:38:05] *** Joins: VVD (~VVD@ )
+[12:14:12] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[12:19:07] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[12:19:20] <sudden6> Diadl0: merge #4146 ?
+[12:19:45] *** Joins: VVD (~VVD@ )
+[12:27:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[12:27:12] <zetok> https://github.com/qTox/qTox/pull/3309 ?
+[12:31:13] <sudden6> zetok: I think it can be merged?
+[12:31:42] <zetok> sudden6: um, didn't you LGTM it?
+[12:32:32] <sudden6> sorry, the `?` was not intended to appear
+[12:32:59] <zetok> if it's good for merge it should be merged
+[12:33:36] <sudden6> done
+[12:33:39] *** Joins: albel727 (~albel727@ )
+[12:33:42] -qtox-git-spam- [qTox] sudden6 closed pull request #3309: refactor(audio): remove obsolete signal "groupAudioPlayed" (master...audio/refactor) https://git.io/vDRH7
+[12:33:47] <sudden6> I'll also merge 4146 now
+[12:35:10] -qtox-git-spam- [qTox] sudden6 pushed 2 new commits to master: https://git.io/vDRQf
+[12:35:10] -qtox-git-spam- qTox/master 62ac480 agrecascino: fix(audio): alternate audio fix implementation from #4139
+[12:35:10] -qtox-git-spam- qTox/master 01b9327 sudden6: Merge pull request #4146...
+[12:36:08] <sudden6> merde, I think I shouldn't have done that
+[12:36:18] <sudden6> sorry Diadl0
+[12:36:47] <sudden6> I just remembered we agreed to leave them to you...
+[12:48:08] <sudden6> zetok: do you think we need a new OBS maintainer?
+[12:48:22] <zetok> I guess
+[12:48:47] <sudden6> mhmm, I also think so
+[12:48:55] <sudden6> are you interested in doing it?
+[12:49:58] <zetok> No.
+[12:50:08] <sudden6> I also guessed that^^
+[12:50:23] <zetok> I can help with that, but I'm not going to be maintaining it
+[12:50:28] <sudden6> then we need to find someone who is interested
+[12:50:59] <sudden6> blog post?^^
+[12:51:22] <sudden6> I left it out of the release annoucement on purpose
+[12:52:01] <zetok> yeah, sounds good
+[12:53:06] <sudden6> ok, I'll do it until end of the week
+[12:53:21] <zetok> thanks
+[12:54:37] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[12:55:11] *** Joins: VVD (~VVD@ )
+[12:59:32] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[12:59:53] *** Joins: x_ (~x@ )
+[13:12:25] *** Joins: MDrights (~MDrights@ )
+[13:16:56] *** Joins: reBrain (~quassel@ )
+[13:17:37] <reBrain> who or what manages https://qtox-win.pkg.tox.chat/ ?
+[13:41:11] *** Joins: Seppel (d95b4cca@ )
+[13:41:14] <Seppel> Hey
+[13:41:19] <Seppel> I'm not sure if I should use Tox
+[13:41:30] <Seppel> I've read on the internet that it is not as secure as we think
+[13:41:45] <Seppel> because some 4chan things (I'm not excactly sure)
+[13:41:50] <Seppel> what are your thoughts?
+[13:43:46] <sudden6> Seppel: there's a known security weakness see https://github.com/TokTok/c-toxcore/issues/426 that affects you if your secret key get stolen
+[13:43:51] <sudden6> which should not happen
+[13:48:55] <Seppel> well it may be a stupid question but
+[13:49:05] <Seppel> I thought your private key will not leave the computer?
+[13:49:10] <Seppel> how can other people get it then?
+[13:50:25] *** Joins: f10__ (~flo@ )
+[13:51:03] <sudden6> Seppel: it should not, it can get stolen though
+[13:51:19] <zetok> Seppel: easily
+[13:51:35] <zetok> Seppel: using technology called pendrive
+[13:55:08] <Seppel> zetok: so it looks like a ordinary usb device
+[13:55:19] <Seppel> zetok: can that also happen if you use disk encryption?
+[13:55:53] <sudden6> Seppel: everybody that can get the unencrypted *.tox file can do it
+[13:56:09] <sudden6> may it be malware or tricking you
+[13:56:15] <Seppel> sudden6: 
+[13:56:30] <Seppel> sudden6: isn't it encrypted by default in like qtox or utox with a password?
+[13:56:49] <sudden6> only with a password, which is not the default
+[13:57:17] <Seppel> well I've read that it is still experimental. 
+[13:57:30] <sudden6> Seppel: it is
+[13:57:33] <Seppel> so I assume you do not recommend it for sensitive information?
+[13:57:52] <sudden6> exactly, you're better of with proven things like PGP for that
+[13:58:11] <sudden6> for home use, I would highly recommend it
+[13:58:24] <Seppel> well PGP does not support IM. I do not trust mail services so that is not a good alternative I guess?
+[13:58:43] <Seppel> looking for some secure IM possibilities. 
+[13:58:56] <zetok> just use it
+[14:02:23] <Seppel> I'm using qtox it shows ToxCore version 0.1.0
+[14:02:37] <Seppel> on the Toxcore Github it shows 0.1.6 is available if I'm right
+[14:02:45] <Seppel> seems like I'm using an old version
+[14:09:52] *** Joins: Redlook (~gre@ )
+[14:12:00] *** Joins: cenysor (~cenysor@ )
+[14:14:20] *** Quits: Seppel (d95b4cca@ ) (Ping timeout: 260 seconds)
+[14:35:26] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[14:57:09] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:11:20] *** Quits: vindelschtuffen (~vindelsch@ ) (Ping timeout: 255 seconds)
+[15:23:56] *** Quits: anoa (~anoa@ ) (Ping timeout: 240 seconds)
+[15:29:22] *** Joins: anoa (~anoa@ )
+[15:55:08] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:56:06] *** Joins: LittleVulpix (~Miranda@ )
+[16:32:09] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[17:14:32] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[17:22:49] *** Joins: Yoshimo (~anything@ )
+[17:24:17] *** Joins: cenysor (~cenysor@ )
+[18:03:54] -qtox-git-spam- [qTox] zetok closed pull request #4153: docs(INSTALL): fix link in dependencies to CMake website (master...docs-install-link) https://git.io/vD8xT
+[18:10:02] *** Quits: in1t3r (~LordShiva@ ) (Ping timeout: 240 seconds)
+[18:58:09] *** Joins: shiva (~LordShiva@ )
+[19:04:33] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[19:05:42] *** Joins: LittleVulpix (~Miranda@ )
+[19:11:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[19:16:52] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[19:25:36] *** Joins: LittleVulpix (~Miranda@ )
+[19:25:47] *** Quits: LittleVulpix (~Miranda@ ) (Changing host)
+[19:25:47] *** Joins: LittleVulpix (~Miranda@ )
+[19:40:30] *** Quits: genesis (~genesis@ ) (Ping timeout: 252 seconds)
+[19:58:46] *** Joins: genesis (~genesis@ )
+[20:41:13] *** Joins: reBrain (~quassel@ )
+[20:43:00] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[20:44:25] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[20:45:15] *** Joins: VVD (~VVD@ )
+[21:07:51] *** Joins: f10 (~flo@ )
+[21:10:38] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[22:23:32] *** Quits: Redlook (~gre@ ) (Ping timeout: 240 seconds)
+[23:03:45] *** Joins: sudden6 (~anonymous@ )
+[23:07:27] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:07:45] *** Joins: VVD (~VVD@ )
+[23:28:08] *** Joins: smaragdus2 (~omoo@ )
+[23:29:48] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 276 seconds)
+[23:39:26] <anoa> What do you guys use for automatic changelogs again?
+[23:41:32] <nurupo> tux3: i see a signature file being linked for widnows downloads in https://github.com/qTox/qTox/blob/master/README.md
+[23:41:55] <nurupo> but theinstaller file it links to gets rebuilt on every qtox commit https://build.tox.chat/view/qtox/job/qTox_pkg_windows_x86-64_stable_release/
+[23:42:34] <tux3> nurupo, The stable job should only get triggered on new stable releases, I'll fix it
+[23:43:08] <nurupo> i assume the signature file is static, so does it still work correctly despite the installer updating more frequently than the signature file is?
+[23:43:20] <nurupo> tux3: oh, okay
+[23:43:28] <tux3> Nope, I'll have to re-sign
+[23:43:50] <tux3> The signature is normally updated at the same time the new releases are sent to the auto-update servers
+[23:44:05] <nurupo> breaking news: tux3 is resigning from qtox! :P
+[23:44:32] <tux3> Wat :) ?
+[23:45:02] <nurupo> just a joke on ><tux3> Nope, I'll have to re-sign
+[23:45:12] <anoa> You heard it here first, folks.
+[23:45:17] <tux3> Heh, I'm a bit slow tonight :)
+[23:47:13] <anoa> tux3: >What do you guys use for automatic changelogs again?
+[23:47:42] <tux3> anoa, Oh I know this one, but I forgot lemme check
+[23:48:05] <nurupo> anoa: clog https://github.com/qTox/qTox/blob/master/.clog.toml
+[23:48:20] <nurupo> i guess it's this https://github.com/clog-tool/clog-cli
+[23:48:34] <tux3> Right
+[23:48:43] <anoa> lol, thanks nurupo
+[23:52:28] *** Joins: Dako300 (~daniel@ )
+[23:53:06] <Dako300> So i'm working on the bit rate PR, and I have everything taken care of except for the persistence
+[23:53:21] <Dako300> I can't seem to get the values to load from qtox.ini, even though it is being saved properly
+[23:53:56] <Dako300> The PR is https://github.com/qTox/qTox/pull/4139
+[23:54:08] <Dako300> Does anybody have any suggestions?
+[23:58:20] *** agrecascino_ is now known as agrecascino
