@@ -1,0 +1,164 @@
+[01:18:12] *** Joins: SSBN-731 (~Alabama@ )
+[01:35:15] *** Quits: x_ (~x@ ) (Ping timeout: 276 seconds)
+[02:04:34] *** Joins: MDrights (~MDrights@ )
+[03:02:05] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[03:23:00] *** Quits: Dako300 (~daniel@ ) (Quit: Ex-Chat)
+[04:07:14] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[04:10:23] *** Joins: f10 (~flo@ )
+[04:16:19] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[05:24:33] -qtox-git-spam- [qTox] yurivict opened pull request #4161: fix(font): Made the font combobox not editable. (master...font-cb-editable-fix) https://git.io/vDuUW
+[05:48:54] <Diadl0> sudden6: ping
+[05:48:59] *** Diadl0 is now known as Diadlo
+[06:11:11] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[06:25:02] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[06:28:01] *** Joins: Emcy_ (~MC@ )
+[06:28:01] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[06:28:01] *** Joins: Emcy_ (~MC@ )
+[06:30:40] *** Joins: MDrights (~MDrights@ )
+[06:33:09] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[06:33:10] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[06:33:55] *** Joins: albel727 (~albel727@ )
+[06:48:08] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[06:56:14] <Diadlo> sudden6: WIP https://i.imgur.com/UPDvtFF.png
+[07:08:45] *** Joins: MDrights (~MDrights@ )
+[07:13:30] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 252 seconds)
+[08:07:48] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[08:08:25] *** Joins: VVD (~VVD@ )
+[08:16:57] *** Joins: f10 (~flo@ )
+[08:24:03] *** Joins: sudden6 (~anonymous@ )
+[08:24:18] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[08:27:50] <sudden6> Diadlo: nice :)
+[08:36:49] *** Joins: f10 (~flo@ )
+[08:36:52] *** Joins: f10_ (~flo@ )
+[09:12:36] *** Joins: reBrain (~quassel@ )
+[09:24:46] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[10:12:11] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[10:12:36] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[10:28:43] *** Joins: reBrain (~quassel@ )
+[10:38:00] *** Joins: x_ (~x@ )
+[10:39:20] *** Quits: reBrain (~quassel@ ) (Quit: Porn.)
+[10:39:31] *** Joins: reBrain (~quassel@ )
+[10:48:29] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[10:50:25] *** Joins: sudden6 (~anonymous@ )
+[10:54:17] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[10:58:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[11:14:59] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vDuan
+[11:14:59] -qtox-git-spam- qTox/master 8c1632d Zetok Zalbavar: docs(CONTRIBUTING): reword `revert` section to use the default message
+[11:25:46] -qtox-git-spam- [qTox] zetok closed pull request #4138: fix(audio): Fix ugly conference audio with 3<= speakers (master...fix-group-audio) https://git.io/vDcim
+[11:40:20] <qTox-Website> [qTox-Website] zetok closed pull request #25: Update translations from Weblate (master...tr) https://git.io/vD0DF
+[11:40:20] <7JTAAH9NN> [qTox-Website] zetok pushed 8 new commits to master: https://git.io/vDuwo
+[11:40:20] <7JTAAH9NN> qTox-Website/master 0f5eac6 Balazs: Translated using Weblate (Hungarian)...
+[11:40:20] <7JTAAH9NN> qTox-Website/master a9979d8 Barnett Wong: Translated using Weblate (Chinese (China))...
+[11:40:20] <7JTAAH9NN> qTox-Website/master 07a4539 shinodem: Translated using Weblate (Russian)...
+[11:42:01] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[11:42:50] <travis-ci> qTox/qTox-Website (68b4042): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/199945734 / Changes: https://github.com/qTox/qTox-Website/compare/e088b626e6d0...68b404298fa8
+[11:44:48] *** Joins: albel727 (~albel727@ )
+[11:49:40] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:50:21] *** Joins: LittleVulpix (~Miranda@ )
+[12:05:54] *** Joins: sudden6 (~anonymous@ )
+[12:20:19] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[12:22:43] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[12:23:15] *** Joins: VVD (~VVD@ )
+[12:37:48] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[12:40:59] *** Joins: LittleVulpix (~Miranda@ )
+[13:04:33] *** Quits: albel727 (~albel727@ ) (Ping timeout: 240 seconds)
+[13:05:18] *** Joins: albel727 (~albel727@ )
+[13:13:51] *** Joins: f10_ (~flo@ )
+[13:14:02] *** Joins: f10 (~flo@ )
+[13:23:22] *** Joins: f10__ (~flo@ )
+[13:23:31] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[13:27:28] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[13:28:15] *** Joins: f10__ (~flo@ )
+[13:33:41] *** Joins: reBrain (~quassel@ )
+[13:36:40] *** Joins: f10 (~flo@ )
+[13:36:59] *** Quits: f10__ (~flo@ ) (Ping timeout: 264 seconds)
+[13:42:53] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[13:44:47] <qTox-Website> [qTox-Website] zetok force-pushed sudden6-patch-1 from 5c3f6c1 to 870f900: https://git.io/vDuSp
+[13:44:48] <qTox-Website> qTox-Website/sudden6-patch-1 e25c0e7 sudden6: Add GitStats page to developer links
+[13:44:48] <qTox-Website> qTox-Website/sudden6-patch-1 870f900 Zetok Zalbavar: Add `GitStats` to translation files
+[13:49:43] <travis-ci> qTox/qTox-Website (870f900): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/199979173 / Changes: https://github.com/qTox/qTox-Website/compare/5c3f6c1b9705...870f9006caaa
+[14:05:39] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[14:07:21] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[14:23:47] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 255 seconds)
+[14:27:21] *** Joins: shiva (~LordShiva@ )
+[14:40:51] *** Joins: dan300 (54787b81@ )
+[14:46:12] <dan300> Hello. I have a problem. I read that qTox v1.8.0 is available but I don't receive new versions in my Debian 8 and I still use version 1.6.0. I check the repos but I think are OK. What can be the problem? Thanks.
+[14:49:17] <zetok> well, the repo maintainer no longer maintains it
+[14:50:05] <zetok> we're looking for someone willing to maintain it
+[14:51:50] <dan300> But in another distros updates are available?
+[14:52:35] *** Joins: sudden6 (~anonymous@ )
+[14:52:51] <zetok> yeah, distros that have ~proper packaging usually have up-to-date qTox
+[14:55:44] <zetok> with that being said, it's interesting to see that e.g. nixos which seems to have proper packaging not only has only very outdated qTox version, but it's also horribly packaged
+[14:58:43] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:00:05] *** Joins: f10 (~flo@ )
+[15:00:38] *** Joins: f10_ (~flo@ )
+[15:03:54] <dan300> OK. Thanks zetok. I don't have the knowledge for maintain Debian repos but if I learn someday I could do it.
+[15:04:08] <zetok> sounds good :)
+[15:04:24] <zetok> btw, the best way to learn is to just try and do it :)
+[15:14:23] <dan300> I only know at moment a few commands for use at terminal. I study computers and I hope with time can learn a lot.
+[15:18:36] <sudden6> zetok: we have to spin a 1.8.3 release :/
+[15:18:47] <zetok> s/3/2/
+[15:18:51] <zetok> sudden6: what's up?
+[15:19:02] <sudden6> decryption is broken
+[15:19:19] <zetok> on 1.8.0 ?
+[15:20:04] <zetok> IIRC the reported issue happened on something after 1.8.0
+[15:21:04] <sudden6> hmm, I didn't look that close
+[15:21:44] <zetok> I'll check with 1.8.1 in a moment
+[15:22:51] <sudden6> zetok: I think you're right, 1.8 doesn't use toxencrypt yet, phew
+[15:24:20] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[15:24:58] -qtox-git-spam- [qTox] sudden6 opened pull request #4163: fix(toxencrypt): return the plaintext after decryption (master...fix_decryption) https://git.io/vDzv5
+[15:24:59] <sudden6> the fix is actually trivial
+[15:25:20] <zetok> 1.8.1 works
+[15:25:56] *** Joins: LittleVulpix (~Miranda@ )
+[15:28:29] *** Parts: dan300 (54787b81@ ) ()
+[15:35:54] -qtox-git-spam- [qTox] sudden6 closed pull request #4141: feat(shortcut): Implemented F11 shortcut for toggling fullscreen. (master...f11-fullscreen) https://git.io/vDcHF
+[16:04:48] <sudden6> nurupo: ping
+[16:11:14] <sudden6> nurupo: I don't think https://www.reddit.com/r/projecttox/comments/5sp8k4/qtox_v180_released/ddic3os/ is correct, they are both built form stable_src
+[16:31:56] *** Quits: anoa (~anoa@ ) (Ping timeout: 240 seconds)
+[16:33:25] *** Joins: anoa (~anoa@ )
+[16:46:10] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 245 seconds)
+[17:20:26] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[17:24:26] *** Quits: SSBN-731 (~Alabama@ ) (Read error: Connection reset by peer)
+[17:27:32] *** Joins: sudden6 (~anonymous@ )
+[17:35:11] *** Joins: Yoshimo (~anything@ )
+[18:33:09] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[18:41:49] *** Joins: Yoshimo (~anything@ )
+[19:15:33] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:39:14] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[19:45:08] *** Joins: Yoshimo (~anything@ )
+[19:46:29] *** Quits: Yoshimo (~anything@ ) (Client Quit)
+[19:48:38] *** Joins: Yoshimo (~anything@ )
+[19:56:45] *** Quits: bennabiy (~bennabiy@ ) (Read error: Connection reset by peer)
+[20:03:49] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[20:04:08] *** Joins: f10_ (~flo@ )
+[20:04:49] *** Joins: LittleVulpix (~Miranda@ )
+[20:17:05] *** Joins: reBrain (~quassel@ )
+[20:26:10] <beerobot> ( ͡ʘ ͜ʖ ͡ʘ)
+[20:28:43] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[20:28:43] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[20:38:21] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[20:55:04] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[20:56:20] *** Joins: LittleVulpix (~Miranda@ )
+[21:01:26] <Diadlo> Hi
+[21:01:28] <Diadlo> sudden6: ping
+[21:17:29] *** Joins: bennabiy (~bennabiy@ )
+[21:27:42] *** Joins: f10_ (~flo@ )
+[21:27:43] *** Joins: f10 (~flo@ )
+[21:41:03] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[22:03:12] *** Joins: Dako300 (~daniel@ )
+[22:51:50] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[22:52:16] *** Joins: LittleVulpix (~Miranda@ )
+[23:10:30] *** Quits: genesis (~genesis@ ) (Ping timeout: 252 seconds)
+[23:10:58] *** Joins: shiva__ (~LordShiva@ )
+[23:13:40] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 245 seconds)
+[23:18:35] *** Joins: genesis (~genesis@ )
+[23:29:04] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:29:45] *** Joins: VVD (~VVD@ )
+[23:32:36] *** Quits: Dako300 (~daniel@ ) (Ping timeout: 240 seconds)
+[23:32:53] *** Joins: Dako300 (~daniel@ )
+[23:33:56] <sudden6> Diadlo: I have time starting tomorrow evening
+[23:37:27] *** Quits: genesis (~genesis@ ) (Ping timeout: 252 seconds)
+[23:37:48] *** Joins: genesis (~genesis@ )
+[23:43:05] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[23:43:05] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[23:57:01] *** beerobot is now known as oranges
