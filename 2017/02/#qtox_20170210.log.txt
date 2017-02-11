@@ -1,0 +1,319 @@
+[00:11:09] *** Joins: mutin-sa (~s-mutin@ )
+[00:14:11] *** Quits: mutin-s (~s-mutin@ ) (Ping timeout: 255 seconds)
+[00:15:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[00:29:09] *** Quits: genesis (~genesis@ ) (Ping timeout: 252 seconds)
+[00:29:30] *** Joins: genesis (~genesis@ )
+[00:31:49] *** Quits: mutin-sa (~s-mutin@ ) (Quit: Leaving)
+[00:32:08] *** Joins: mutin-sa (~s-mutin@ )
+[00:32:21] *** Quits: mutin-sa (~s-mutin@ ) (Remote host closed the connection)
+[00:32:38] *** Joins: mutin-sa (~s-mutin@ )
+[01:12:33] *** Quits: mutin-sa (~s-mutin@ ) (Quit: Leaving)
+[01:12:57] *** Joins: s-mutin (~s-mutin@ )
+[01:14:16] <nurupo> ><sudden6> nurupo: I don't think https://www.reddit.com/r/projecttox/comments/5sp8k4/qtox_v180_released/ddic3os/ is correct, they are both built form stable_src <-- no, they are not built off qtox-stable_src, they are built off qtox_src, which is the nightly one
+[01:14:30] <nurupo> so these are nightly builds
+[01:15:16] <nurupo> moreover, the only portable thing about them is that there is no installer, the files are just in the .zip
+[01:16:21] <nurupo> it still creates profile on the system, e.g. $XDG_DATA_HOME/tox/, %APPDATA%/tox/
+[01:17:16] <nurupo> when you'd expect a portable version to create it in the directory the binary is located, so that if you put qtox on a usb stick and run on one machine, you'd be able to access the same tox profile on another machine with the same usb stick
+[01:18:29] <nurupo> so it's nightly, not stable, and it's not really portable, just distributed as a "preinstalled" zip archive
+[02:41:08] *** Joins: dardevelin (~dardeveli@ )
+[03:05:53] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:06:55] *** Joins: VVD (~VVD@ )
+[03:53:42] *** Joins: MDrights (~MDrights@ )
+[04:29:32] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:30:31] *** Joins: VVD (~VVD@ )
+[04:35:44] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:36:10] *** Joins: VVD (~VVD@ )
+[05:08:42] *** Joins: DiCE1904 (~textual@ )
+[05:21:45] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[05:28:37] *** Quits: s-mutin (~s-mutin@ ) (Quit: Leaving)
+[05:29:10] *** Joins: s-mutin (~s-mutin@ )
+[05:49:04] *** Joins: Emcy (~MC@ )
+[06:41:58] *** Joins: reBrain (~quassel@ )
+[07:16:21] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:16:45] *** Joins: VVD (~VVD@ )
+[08:01:31] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[08:01:49] *** Joins: MDrights (~MDrights@ )
+[08:03:01] *** Quits: MDrights (~MDrights@ ) (Read error: Connection reset by peer)
+[08:03:27] *** Joins: MDrights (~MDrights@ )
+[08:16:18] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[08:16:42] *** Joins: MDrights (~MDrights@ )
+[08:36:18] *** Joins: f10 (~flo@ )
+[08:36:18] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[08:36:40] *** Joins: VVD (~VVD@ )
+[08:44:36] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[09:00:05] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:00:40] *** Joins: VVD (~VVD@ )
+[09:04:05] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:04:29] *** Joins: VVD (~VVD@ )
+[09:21:40] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[09:30:12] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[09:30:17] *** Joins: sudden6 (~anonymous@ )
+[09:41:13] *** Joins: Emcy (~MC@ )
+[09:41:13] *** Quits: Emcy (~MC@ ) (Changing host)
+[09:41:13] *** Joins: Emcy (~MC@ )
+[09:41:22] *** Quits: Emcy (~MC@ ) (Remote host closed the connection)
+[09:42:27] *** Joins: Emcy (~MC@ )
+[09:42:27] *** Quits: Emcy (~MC@ ) (Changing host)
+[09:42:27] *** Joins: Emcy (~MC@ )
+[09:42:27] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:43:10] *** Joins: VVD (~VVD@ )
+[09:48:52] *** Joins: MDrights (~MDrights@ )
+[09:49:07] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:49:45] *** Joins: VVD (~VVD@ )
+[09:58:10] *** Quits: Emcy (~MC@ ) (Quit: Leaving)
+[09:58:32] *** Joins: Emcy (~MC@ )
+[10:03:15] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[10:04:25] *** Joins: VVD (~VVD@ )
+[10:06:37] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:07:35] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[10:10:11] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[10:13:57] *** Joins: x_ (~x@ )
+[10:18:09] *** Joins: Emcy (~MC@ )
+[10:20:08] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[10:20:56] *** Joins: x_ (~x@ )
+[10:21:03] *** Quits: sockspls (~sockspls@ ) (Remote host closed the connection)
+[10:23:13] *** Joins: sockspls (~sockspls@ )
+[10:23:19] *** Joins: x_2 (~x_@ )
+[10:23:32] *** Quits: x_2 (~x_@ ) (Client Quit)
+[10:26:28] *** Joins: cisc (~cisc@ )
+[10:40:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[10:52:48] *** Joins: cisc (~cisc@ )
+[12:05:29] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 255 seconds)
+[12:15:58] *** Joins: reBrain (~quassel@ )
+[12:53:45] *** Joins: MDrights (~MDrights@ )
+[13:07:37] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[13:12:49] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[13:13:38] *** Joins: MDrights (~MDrights@ )
+[13:14:59] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[13:15:03] *** Joins: user_ (~MDrights@ )
+[13:15:55] *** Quits: user_ (~MDrights@ ) (Remote host closed the connection)
+[13:45:37] *** Joins: cenysor (~cenysor@ )
+[13:48:47] *** Joins: MDrights (~MDrights@ )
+[14:04:27] *** Joins: f10_ (~flo@ )
+[14:07:35] *** Joins: noavarice (5f209c02@ )
+[14:10:02] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:10:31] <noavarice> current message text formatting like *text* interferes user input, so i have a suggestion about including some sort of escape symbol, e.g. !*text!* for bold or !`code!` for code. please tell your opinion
+[14:23:03] <zetok> noavarice: there's a config option
+[14:23:04] *** Quits: noavarice (5f209c02@ ) (Quit: Page closed)
+[14:23:19] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[14:23:42] *** Joins: LittleVulpix (~Miranda@ )
+[14:24:12] *** Joins: noavarice (5f209c02@ )
+[14:24:56] <zetok> noavarice: not sure if you received my message
+[14:24:59] <zetok> noavarice: there's a config option
+[14:25:47] <zetok> noavarice: btw, could you rebase PR on top of master?
+[14:36:37] *** Joins: Diadl0 (6dc33589@ )
+[14:37:32] <noavarice> zetok: for what? i decided to rework it, too complicated and hard for testing, that's why i offers another solution
+[14:47:17] <noavarice> and i didn't receive your message, sry :)
+[14:49:17] <zetok> noavarice: what you're proposing is not a solution
+[14:55:35] <zetok> your proposal is a workaround, and not a good one
+[14:56:11] *** Joins: sudden6 (~anonymous@ )
+[14:56:22] <zetok> now, the option in settings is also a workaround, but it's better, since it more or less offers to people what they need
+[14:57:27] <zetok> the actual fix would be adding needed stuff to the protocol (which I've proposed long time ago), but since no one was interested in doing that (or cooperating), all that is left are workarounds
+[14:58:12] <zetok> possibly protocol extensions could help, but given the pace at which toxcore is being changed they won't happen for at least 5 years
+[14:59:23] <zetok> noavarice: as for rebasing the PR, it fixes a bug right? so it would be good to get it merged
+[15:01:19] <noavarice> zetok: it does, but it needs more rigorous testing, so i don't actually sure that it will correctly work at all possible cases
+[15:01:36] <noavarice> in simple cases it works well
+[15:05:35] <noavarice> zetok: and i don't want to create a workarounds, it's just was a proposal, as you say, if you have more suitable ideas - i will be glad to cooperate with you and anyone else
+[15:07:22] <zetok> the idea is to have more than one type of message, which then would be parsed accordingly
+[15:08:18] <zetok> base type (the one that is used right now) would be plaintext, which would be mandatory to support for clients, and as for other types (markdown, etc) client could signal whether they're supported or not, and act accordingly
+[15:09:20] <zetok> so e.g. users of a client that supports plaintext+markdown can send messages in markdown or plaintext, depending on their needs
+[15:10:15] <zetok> so if one wanted to send a plaintext message, they would send a plaintext message and it would be correctly displayed on the other end
+[15:11:51] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[15:16:08] <noavarice> zetok: will message type be chosen in settings? or somewhere in the form? and how do you want to implement markdown?
+[15:16:32] *** Quits: Diadl0 (6dc33589@ ) (Quit: Page closed)
+[15:16:51] <zetok> first you would want to get protocol extensions done
+[15:17:35] <zetok> as for the client implementation, not sure yet
+[15:22:25] *** Quits: x_ (~x@ ) (Ping timeout: 245 seconds)
+[15:29:09] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:36:42] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:45:12] *** Joins: f10 (~flo@ )
+[15:54:15] *** Joins: sudden6 (~anonymous@ )
+[15:54:38] *** Joins: f10_ (~flo@ )
+[15:55:29] *** Joins: sharonlyu (8061f443@ )
+[15:58:31] <sudden6> hi everybody
+[16:00:19] *** Joins: shiva (~LordShiva@ )
+[16:02:02] <noavarice> hi yourself
+[16:02:17] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 256 seconds)
+[16:19:29] *** Quits: sharonlyu (8061f443@ ) (Quit: Page closed)
+[16:28:13] *** Joins: x_ (~x@ )
+[17:47:32] *** sudden6 is now known as sudd3n6
+[17:51:42] *** Joins: sudden6 (~anonymous@ )
+[18:45:28] *** Joins: Yoshimo (~anything@ )
+[18:48:58] *** Quits: noavarice (5f209c02@ ) (Quit: Page closed)
+[20:00:06] *** Joins: f10__ (~flo@ )
+[20:00:17] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[20:00:48] <sudden6> Diadlo: you wanted something?
+[20:02:27] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[20:02:46] *** Joins: f10__ (~flo@ )
+[20:06:35] <Diadlo> Hi
+[20:07:51] <Diadlo> I feel so stupid
+[20:08:13] <Diadlo> I can't understand, who will create services and controllers
+[20:19:55] <sudd3n6> Diadlo: does MVVM even contain controllers?
+[20:20:20] <Diadlo> MVVM -- not, MVC -- yes
+[20:20:46] <sudd3n6> aren't we using MVVM or are we mixing?
+[20:21:04] *** Joins: barmaley (~barmaley@ )
+[20:21:08] <sudd3n6> also can you post the current status so I have something to picture?
+[20:21:13] <Diadlo> Now we use SSS (Shit Shit Shit)
+[20:21:44] <sudd3n6> I was talking about the new design^^
+[20:22:02] <Diadlo> It's ~didn't change from the last time
+[20:22:09] <Diadlo> When I share the picture
+[20:22:35] <sudd3n6> I don't have the link on this computer, can you upload it again please?
+[20:22:54] <Diadlo> Of course. Wait a sec
+[20:23:02] <sudd3n6> thx a lot :)
+[20:23:41] <Diadlo> https://i.imgur.com/qHdFYGB.png\
+[20:23:42] <Diadlo> https://i.imgur.com/qHdFYGB.png
+[20:27:31] <sudd3n6> hmm, I think it could be like this: Main creates a profile, profile loads a toxsave and creates a core, then the callbacks from core are handled to create the friends 
+[20:28:00] <Diadlo> I'm mostly about `Inviter`
+[20:28:12] <sudd3n6> ok?
+[20:28:20] <Diadlo> What is ok?)
+[20:28:22] <sudd3n6> what's the problem with it?
+[20:29:01] <Diadlo> I renamed FriendWidget -> FriendPreview
+[20:29:19] <Diadlo> FriendPreview has context menu
+[20:29:28] <Diadlo> And `invite in group`
+[20:29:57] <Diadlo> Of course FriendPreview shouldn't know about Inviter
+[20:30:12] <Diadlo> So somebody should connect it's signal to the Inviter slot
+[20:30:24] <Diadlo> Who?
+[20:30:31] <sudd3n6> I see
+[20:31:16] <sudd3n6> FriendPreview is the item in the friendlist, right?
+[20:31:30] <Diadlo> Exectly
+[20:32:20] <sudd3n6> we can't implement it in IPreview or above, because GroupPreview doesn't have that
+[20:32:22] <sudd3n6> hmm
+[20:32:43] <Diadlo> Implement what?
+[20:33:05] <sudd3n6> connection of the signals
+[20:33:24] <Diadlo> Only FriendPreview will has `onInviteCliced`
+[20:33:30] <Diadlo> *Clicked
+[20:34:44] <sudd3n6> Everything in the Controller namespace is derived from QWidget, right?
+[20:35:06] <Diadlo> Not necessary
+[20:35:28] <Diadlo> It's just idea, interacting
+[20:35:33] <sudd3n6> ok
+[20:36:07] <Diadlo> It can be just a class, who handle signals from View and call specific service
+[20:36:33] <sudd3n6> I can't really come up, with an idea that would make FriendPreview independent of Inviter :/
+[20:37:39] <Diadlo> Ok. Suppose, it will depend. Who will create service and inject it?
+[20:38:22] <sudd3n6> I would do it in the constructor of FriendPreview
+[20:38:37] <Diadlo> FriendPreview will create Inviter?
+[20:38:41] <sudd3n6> yes
+[20:38:46] <Diadlo> Ok. Inviter need Core
+[20:38:54] <Diadlo> FriendPreview will create core?
+[20:39:00] <sudd3n6> crap^^
+[20:39:13] <Diadlo> Execly
+[20:39:17] <Diadlo> *Exectly
+[20:39:37] <Diadlo> Something should create FriendPreview and inject Inviter
+[20:40:06] <Diadlo> In this case it's easy to avoid dependency by not injecting :)
+[20:40:15] <sudd3n6> Profile? doesn't sound that good either...
+[20:40:37] <Diadlo> Long reflection led me to `main`
+[20:40:37] <sudd3n6> Profile will need core, so it wouldn't be an additional dependency
+[20:41:04] <sudd3n6> that's at least two levels to high IMO
+[20:41:22] <Diadlo> What and what?
+[20:41:40] <Diadlo> What higher than what?
+[20:42:02] <sudd3n6> main is some levels to high to connect the signal
+[20:42:27] <Diadlo> Maybe to low?)
+[20:42:41] <sudd3n6> what do you define as high and low^^
+[20:42:54] <sudd3n6> main is the highest level in my world^^
+[20:42:59] <Diadlo> Hm...
+[20:43:05] <Diadlo> Maybe
+[20:43:07] <Diadlo> Sorrty
+[20:43:09] <Diadlo> *Sorry
+[20:43:21] <sudd3n6> Idk if that's correct, but I assumed
+[20:43:42] <sudd3n6> since it's called "calling into a library" -> going down
+[20:44:35] <sudd3n6> btw, why is github black today?
+[20:44:43] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[20:44:44] <Diadlo> IDK
+[20:44:56] <Diadlo> Maybe new theme?)
+[20:45:02] *** Joins: f10 (~flo@ )
+[20:45:41] <sudd3n6> don't know
+[20:47:36] *** Joins: f10_ (~flo@ )
+[20:47:38] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[20:53:26] <sudd3n6> Diadlo: maybe, GroupChat should have the invite() function?
+[20:54:18] <Diadlo> Do you understand, that you answer on different question?)
+[20:54:21] <Diadlo> Ok
+[20:54:24] <Diadlo> Who will create GroupChat?
+[20:55:26] <sudd3n6> The same entity that creates friends?
+[20:57:03] <Diadlo> IDK. It seems as overload for GroupChat
+[20:57:30] <sudd3n6> I don't understand "as overload"
+[20:57:31] <Diadlo> Single responsability princliple
+[20:58:34] <Diadlo> I.e. violation of SRP
+[20:59:15] <sudd3n6> ok
+[21:02:15] <sudd3n6> IMO, Profile should contain a list of Friend and a list of Group
+[21:02:42] <Diadlo> Maybe. But in my vision it should be in Core
+[21:02:51] <Diadlo> But Profile seems ok
+[21:02:54] <sudd3n6> FriendList should only do the things necessary to display that list to the user
+[21:03:22] <sudd3n6> also I think we need some class like Core::Core
+[21:03:35] <sudd3n6> where friend adding and the own status is handled
+[21:03:50] <Diadlo> Yes
+[21:03:51] <sudd3n6> maybe the later could be Core::Self
+[21:04:24] <Diadlo> Here I create only parts, which used now 
+[21:04:33] <sudd3n6> ah, ok
+[21:06:17] <sudd3n6> another thing, I think Model::Friend should be an extension of Model::Peer
+[21:07:20] <Diadlo> I thought about it. But I decided, that it's really useless
+[21:07:31] <sudd3n6> ok, what was the reason?
+[21:07:54] <Diadlo> Rather, the question is why should we do it?
+[21:08:51] <sudd3n6> well, if I look at it, Friend is a Peer, with the addition of an avatar, status and an alias
+[21:09:06] <sudd3n6> for me the "is a" is a strong hint for extension
+[21:09:15] <Diadlo> AFAIK, we haven't any method, who have the same behaviour for friend and group peers
+[21:09:45] <Diadlo> Inheritance is very powerful and dangerous tool
+[21:10:42] <Diadlo> Inheritance is expansion of BEHAVIOUR
+[21:10:42] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[21:10:45] <Diadlo> Mostly
+[21:10:56] <sudd3n6> mhm, you probably spent more time thinking on that than me :)
+[21:11:00] *** Joins: VVD (~VVD@ )
+[21:11:15] <Diadlo> It's not the argument
+[21:11:21] <Diadlo> > [00:10] <sudd3n6> mhm, you probably spent more time thinking on that than me :)
+[21:12:35] *** Quits: barmaley (~barmaley@ ) (Remote host closed the connection)
+[21:14:04] <sudd3n6> ok, I thought about it again, -> groupchat member list, we want to print the nickname by default, but the alias if we have it
+[21:14:24] <sudd3n6> same behaviour in the contact list
+[21:14:37] <Diadlo> Hm..
+[21:14:44] <Diadlo> It seems better
+[21:15:02] <Diadlo> Any other extensions?
+[21:15:12] <sudd3n6> on the other hand, peer would have to be extended with "alias" for that
+[21:15:25] <Diadlo> No
+[21:15:39] <Diadlo> virtual Peer::getDisplayedName()
+[21:15:42] <sudd3n6> ok, only internally
+[21:15:45] <sudd3n6> yep
+[21:17:55] <sudd3n6> I think Peer should have the following: getDisplayedName(), setAlias(), getAlias(), getName()
+[21:17:58] <sudd3n6> do you agree?
+[21:18:02] <Diadlo> Nope
+[21:18:11] <Diadlo> Peer haven't alias
+[21:18:16] <sudd3n6> or are we putting to much UI stuff into the low level stuff
+[21:19:19] <sudd3n6> right, in reality even Friend doesn't have an alias on the core level
+[21:19:36] <Diadlo> I think, `Displayed` should be renamed on something more... Non-ui
+[21:20:39] <sudd3n6> I think we have to answer the question "Are our Models models of the Tox world or the qTox world?"
+[21:21:00] <sudd3n6> because in the Tox world, there's no such thing as "Alias"
+[21:21:01] <Diadlo> qTox
+[21:21:15] <sudd3n6> in the qTox world there is
+[21:21:35] <sudd3n6> and a peer can have an alias in some circumstances
+[21:21:36] <Diadlo> Models used by qTox, so why we should care about the core?)
+[21:21:47] <sudd3n6> reusability?
+[21:22:02] <sudd3n6> Core::* as abstraction of Tox
+[21:22:11] <Diadlo> Maybe. But we a tolking about implementation again
+[21:22:22] <Diadlo> Not about architecture
+[21:23:47] <sudd3n6> IMO the "alias" thing is not an implementation detail
+[21:24:27] <Diadlo> We don't know, how should interact View, Services, Controls, etc.
+[21:31:00] <sudd3n6> If I look at this picture https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel#/media/File:MVVMPattern.png
+[21:31:12] <sudd3n6> we could either start from the left or the right
+[21:31:38] <sudd3n6> ie either the View creates the viewmodel
+[21:31:54] <sudd3n6> or the model is created and the viewmodel is then connected to it
+[21:33:25] <Diadlo> Good night
+[21:33:34] <sudd3n6> good night
+[21:33:42] <sudd3n6> let sleep bring ideas^^
+[21:39:58] <Diadlo> sudd3n6: http://www.ics.com/blog/multilayered-architecture-qt-quick
+[21:40:13] <sudd3n6> thx, will read :)
+[21:40:25] <Diadlo> Me too :)
+[21:50:34] <sudd3n6> afaict now, our problems don't really have anything to do with MVVM or the ui stuff at all, but with the Model
+[21:53:07] <sudd3n6> zetok: do you have any idea about what to write in the blog for new package maintainer?
+[21:56:01] <zetok> maybe
+[21:56:32] <zetok> but that requires at least attempting to contact abbat before the blog post
+[21:57:00] <sudd3n6> well, I opened an issue in his repo about upgrading to 1.8
+[21:57:10] <sudd3n6> don't know if that counts as "attempting to contact"
+[21:57:27] <sudd3n6> email would be better I think
+[21:58:38] <zetok> hmm
+[21:58:49] <zetok> yeah
+[21:59:39] <sudd3n6> do you have his email?
+[21:59:59] <zetok> only from commits
+[22:00:45] <zetok> which should work just fine
+[22:01:02] <zetok> well, g'night
+[22:01:23] <sudd3n6> are you going to send the mail?
+[22:01:25] <sudd3n6> night
+[22:58:16] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[23:30:31] *** Quits: x_ (~x@ ) (Ping timeout: 256 seconds)
+[23:45:48] *** Joins: x_ (~x@ )
+[23:57:04] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
