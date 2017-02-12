@@ -1,0 +1,130 @@
+[00:04:29] *** Quits: Dako300 (~daniel@ ) (Quit: Ex-Chat)
+[01:11:23] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vDVgo
+[01:11:23] -qtox-git-spam- qTox/master 14ee8af sudden6: fix(toxencrypt): return the plaintext after decryption...
+[01:12:29] -qtox-git-spam- [qTox] sudden6 closed pull request #4161: fix(font): Made the font combobox not editable. (master...font-cb-editable-fix) https://git.io/vDuUW
+[01:12:39] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[01:54:59] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[01:57:12] *** Quits: Dragofix (Dragofix@ ) (Quit: Idle time limit exceeded)
+[02:36:57] *** Quits: f10 (~flo@ ) (Quit: Konversation terminated!)
+[02:42:48] *** Joins: Dako300 (~daniel@ )
+[02:44:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[02:45:22] *** Joins: Dragofix (Dragofix@ )
+[02:50:59] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 240 seconds)
+[03:01:35] *** Quits: x_ (~x@ ) (Ping timeout: 264 seconds)
+[04:55:16] *** Joins: dardevelin (~dardeveli@ )
+[05:50:08] *** Joins: MDrights (~MDrights@ )
+[05:58:02] -qtox-git-spam- [qTox] zetok opened pull request #4166: chore(build): adjust version updating script to not rely on git (master...chore-version) https://git.io/vDVXt
+[06:07:03] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[06:10:52] *** Joins: LittleVulpix (~Miranda@ )
+[06:12:51] *** Quits: Se7en (~Se7en@ ) (Ping timeout: 256 seconds)
+[06:15:51] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[06:16:18] *** Joins: VVD (~VVD@ )
+[06:18:48] *** Quits: Emcy (~MC@ ) (Read error: Connection reset by peer)
+[06:19:40] *** Joins: Se7en (~Se7en@ )
+[06:28:33] *** Joins: Emcy (~MC@ )
+[06:28:33] *** Quits: Emcy (~MC@ ) (Changing host)
+[06:28:33] *** Joins: Emcy (~MC@ )
+[06:34:21] -qtox-git-spam- [qTox] zetok opened pull request #4167: chore(build): make cmake update version (master...chore-version-cmake) https://git.io/vDV1E
+[07:10:33] <zetok> :|
+[07:22:55] -qtox-git-spam- [qTox] zetok opened pull request #4168: Update translations from Weblate (master...tr) https://git.io/vDVMH
+[08:06:41] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 255 seconds)
+[08:19:46] *** Joins: shiva (~LordShiva@ )
+[10:27:26] *** Joins: f10_ (~flo@ )
+[10:29:55] *** Joins: sudden6 (~anonymous@ )
+[10:32:52] *** iphy is now known as iphy__
+[10:32:55] *** iphy__ is now known as iphy
+[10:32:59] *** iphy is now known as iphy_
+[10:33:05] *** iphy_ is now known as iphy
+[11:50:33] *** Joins: f10 (~flo@ )
+[11:56:14] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[12:05:01] *** Joins: Emcy_ (~MC@ )
+[12:05:01] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[12:05:01] *** Joins: Emcy_ (~MC@ )
+[12:06:36] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[12:41:46] *** Joins: x_ (~x@ )
+[13:18:53] *** Joins: f10 (~flo@ )
+[13:23:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:29:14] *** Joins: LittleVulpix (~Miranda@ )
+[13:48:41] *** Quits: VVD (~VVD@ ) (Ping timeout: 240 seconds)
+[13:52:49] * zetok found a workaround for https://xkcd.com/1172/
+[13:52:59] <zetok> one just needs to use st :3
+[13:57:06] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:05:13] *** Joins: f10__ (~flo@ )
+[14:05:14] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[14:05:40] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[14:06:20] *** Joins: f10 (~flo@ )
+[14:10:22] *** Joins: VVD (~VVD@ )
+[14:11:05] *** Joins: cenysor (~cenysor@ )
+[14:17:54] *** Joins: noavarice (5f208068@ )
+[14:30:06] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[14:40:07] *** Joins: sudden6 (~anonymous@ )
+[14:40:22] *** Quits: sudden6 (~anonymous@ ) (Client Quit)
+[14:48:47] *** Joins: sudden6 (~anonymous@ )
+[14:50:04] *** Joins: sudd3n6 (~anonymous@ )
+[15:30:25] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[15:32:09] *** Joins: f10 (~flo@ )
+[15:44:58] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[15:52:29] *** Joins: reBrain (~quassel@ )
+[16:11:25] <zetok> Diadlo, sudden6: anything against renaming label `help wanted` → `up for grabs` ? https://github.com/qTox/qTox/issues/4074#issuecomment-279155634
+[16:42:21] <sudd3n6> zetok: if you think so
+[16:42:45] <sudd3n6> zetok: should I write the mail to abbat or will you do it?
+[16:45:26] *** Parts: zetok (~zetok@ ) ("Leaving")
+[16:45:32] *** Joins: zetok (~zetok@ )
+[16:45:45] <zetok> fug, wrong window
+[16:45:56] <zetok> sudd3n6: feel free to write it
+[16:55:43] <sudd3n6> I've sent an email
+[16:57:47] <zetok> thanks
+[17:08:32] <zetok> sudd3n6: btw, an example is in https://github.com/qTox/qTox/pull/4167
+[17:08:59] <sudd3n6> didn't see that
+[17:09:16] <sudd3n6> but I think it's good practise to include the example in the script directly
+[17:09:33] <zetok> right
+[17:28:28] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[17:38:36] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[17:38:45] *** Joins: f10__ (~flo@ )
+[17:46:38] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:55:33] *** sockspls is now known as SocksPls
+[18:24:30] *** Quits: noavarice (5f208068@ ) (Quit: Page closed)
+[18:38:38] *** Joins: LittleVulpix (~Miranda@ )
+[18:40:14] *** Joins: Yoshimo (~anything@ )
+[18:56:21] *** Joins: f10 (~flo@ )
+[19:25:27] *** Joins: noavarice (5f208068@ )
+[19:39:26] <sudd3n6> Diadlo: can you upload your UML work somewhere? I want to toy with it maybe
+[19:46:26] <Diadlo> I can send PR
+[19:46:32] <Diadlo> Are you ok with it?
+[19:46:45] <sudd3n6> you could just overwrite my stuff too
+[19:46:58] <sudd3n6> since we're going with your way
+[19:47:04] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[19:50:49] <Diadlo> Ок
+[19:57:09] <Diadlo> sudd3n6: Done
+[19:57:28] <sudd3n6> thx, will we work on this today?
+[19:58:08] <Diadlo> I don't think, that I have enough strength
+[19:58:23] <sudd3n6> ok, then I'll try some stuff
+[19:58:38] <Diadlo> A bit tired and still didn't read article, that I share tonight
+[19:58:54] <sudd3n6> no problem, get your sleep
+[19:59:25] <Diadlo> Not time to sleep, I need to read some books :)
+[20:00:02] <sudd3n6> interesting, science or fiction?^^
+[20:01:33] <Diadlo> IDK. Seems, it's named "De Oratore" in english
+[20:02:18] <Diadlo> I'm not sure about the genre
+[20:02:26] <sudd3n6> looks latin not english to me^^
+[20:03:04] <Diadlo> Seems English guys don't translate latin names
+[20:03:29] <sudd3n6> mhm
+[20:03:37] <Diadlo> https://en.wikipedia.org/wiki/De_Oratore
+[20:04:25] <Diadlo> Seems "On the Orator" is translation
+[20:04:58] <sudd3n6> interesting, but not really my style of books
+[20:05:28] <Diadlo> I'd never try this style. First experience
+[20:05:59] <sudd3n6> then have fun reading :)
+[20:06:04] <Diadlo> Thanks)
+[20:39:27] *** Joins: barmaley (~barmaley@ )
+[20:47:05] *** Quits: noavarice (5f208068@ ) (Ping timeout: 260 seconds)
+[21:10:35] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:31:24] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[21:37:12] *** Quits: barmaley (~barmaley@ ) (Quit: Leaving)
+[21:44:19] *** Quits: sudd3n6 (~anonymous@ ) (Remote host closed the connection)
+[21:44:46] *** Joins: sudd3n6 (~anonymous@ )
+[21:53:14] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[22:16:35] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[22:16:43] *** Joins: x_ (~x@ )
+[23:52:46] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[23:53:18] *** Joins: Emcy (~MC@ )
+[23:53:18] *** Quits: Emcy (~MC@ ) (Changing host)
+[23:53:18] *** Joins: Emcy (~MC@ )
