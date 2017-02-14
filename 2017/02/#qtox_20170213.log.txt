@@ -1,0 +1,181 @@
+[00:07:59] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[00:43:41] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[00:45:31] *** Joins: DiCE1904 (~textual@ )
+[01:20:09] *** Quits: Dako300 (~daniel@ ) (Ping timeout: 240 seconds)
+[01:20:27] *** Joins: Dako300 (~daniel@ )
+[02:04:57] *** Joins: DiCE1904_ (~textual@ )
+[02:06:12] *** Quits: DiCE1904 (~textual@ ) (Ping timeout: 252 seconds)
+[02:17:11] *** Joins: MDrights (~MDrights@ )
+[02:21:27] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[02:22:01] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[02:32:14] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[02:37:27] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[02:59:06] <anoa> Friend's computer is prevented from going into sleep mode while qTox is running but not uTox. Windows 10.
+[03:30:58] *** Joins: cisc (~cisc@ )
+[05:38:43] *** Quits: dardevelin (~dardeveli@ ) (Quit: Leaving)
+[05:46:57] *** Joins: dardevelin (~dardeveli@ )
+[06:19:08] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 255 seconds)
+[06:19:35] *** Joins: MDrights (~MDrights@ )
+[07:48:10] *** Quits: Chiitoo (~Chiitoo@ ) (Read error: Connection reset by peer)
+[08:28:53] *** MDrights is now known as mdrights
+[08:30:56] *** mdrights is now known as mdright
+[08:31:38] *** mdright is now known as mdrights
+[09:20:01] *** Joins: genesis (~genesis@ )
+[09:26:00] *** mdrights is now known as MDrights
+[09:46:04] *** Joins: f10 (~flo@ )
+[09:48:57] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[09:50:39] *** Joins: f10__ (~flo@ )
+[09:56:41] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[10:22:45] *** Joins: f10 (~flo@ )
+[10:24:30] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[10:43:35] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[10:44:14] *** Joins: f10__ (~flo@ )
+[10:51:39] *** Joins: f10 (~flo@ )
+[10:54:50] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[11:15:14] *** Joins: f10 (~flo@ )
+[11:22:58] *** Joins: cenysor (~cenysor@ )
+[11:49:18] *** Joins: MDrights (~MDrights@ )
+[12:09:09] *** Joins: Emcy_ (~MC@ )
+[12:10:27] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[12:17:44] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[12:42:10] *** Joins: ChatSharp (~ChatSharp@ )
+[12:43:00] *** Joins: sudden6 (~anonymous@ )
+[12:45:13] *** Parts: ChatSharp (~ChatSharp@ ) ()
+[12:49:26] *** Joins: sudd3n6 (~anonymous@ )
+[12:50:15] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[12:58:21] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[13:03:05] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[13:03:31] *** Joins: f10__ (~flo@ )
+[13:03:36] *** Joins: f10 (~flo@ )
+[13:18:09] *** Joins: iphy (uid67735@ )
+[13:24:04] *** Joins: mutin-sa (~s-mutin@ )
+[13:27:15] *** Quits: mutin-s (~s-mutin@ ) (Ping timeout: 240 seconds)
+[13:30:23] *** Joins: cali_ (~user@ )
+[13:32:10] *** Quits: parasite_ (~parasite@ ) (Excess Flood)
+[13:32:19] *** Quits: cali (~user@ ) (Remote host closed the connection)
+[13:32:28] *** Joins: parasite_ (~parasite@ )
+[14:01:17] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[14:01:31] *** Joins: f10__ (~flo@ )
+[14:01:47] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[14:02:20] *** Joins: f10 (~flo@ )
+[14:02:42] *** Joins: Emcy (~MC@ )
+[14:02:42] *** Quits: Emcy (~MC@ ) (Changing host)
+[14:02:42] *** Joins: Emcy (~MC@ )
+[14:02:49] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[14:04:03] *** Quits: Emcy_ (~MC@ ) (Ping timeout: 258 seconds)
+[14:04:27] *** Joins: bennabiy (~bennabiy@ )
+[14:45:26] *** Joins: VVD39105 (~VVD@ )
+[14:45:51] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[14:56:11] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[15:09:32] *** Joins: Chiitoo (~Chiitoo@ )
+[15:13:45] *** Joins: cenysor (~cenysor@ )
+[15:13:49] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[15:14:23] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[15:34:06] *** Joins: shiva__ (~LordShiva@ )
+[15:36:39] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 276 seconds)
+[15:53:01] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[15:53:45] *** Joins: LittleVulpix (~Miranda@ )
+[16:20:15] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 240 seconds)
+[16:33:30] *** Joins: shiva (~LordShiva@ )
+[17:20:06] *** Joins: Emcy_ (~MC@ )
+[17:20:06] *** Quits: Emcy_ (~MC@ ) (Changing host)
+[17:20:06] *** Joins: Emcy_ (~MC@ )
+[17:21:06] *** Quits: Emcy (~MC@ ) (Ping timeout: 240 seconds)
+[17:54:19] *** Quits: worfox (~worfox@ ) (Changing host)
+[17:54:19] *** Joins: worfox (~worfox@ )
+[18:02:37] *** Joins: f10 (~flo@ )
+[18:04:50] *** Joins: f10__ (~flo@ )
+[18:17:11] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[19:04:06] *** Joins: Yoshimo (~anything@ )
+[19:34:54] *** Joins: reBrain (~quassel@ )
+[19:41:24] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[19:42:41] *** Joins: reBrain (~quassel@ )
+[20:01:01] *** Joins: sudd3n6 (~anonymous@ )
+[20:07:52] <sudd3n6> zetok: Diadlo: abbat answered my mail and said he's not going to maintain any new qtox releases
+[20:08:11] <zetok> I see
+[20:08:21] *** sudd3n6 is now known as sudden6
+[20:08:48] <sudden6> I think the best would be to fork his tox.pkg repo and continue from there
+[20:08:58] <zetok> yep
+[20:09:01] <sudden6> also we need a new maintainer :/
+[20:10:57] <zetok> while at it, perhaps fork could be used to package not only qTox
+[20:11:31] <zetok> since at least earlier also e.g. Toxic was being packaged on OBS
+[20:11:51] <sudden6> zetok: but then it would be a good idea to ~coordinate with the tox.chat people
+[20:12:21] <zetok> not really
+[20:12:32] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:13:13] <sudden6> ok
+[20:13:29] <sudden6> but duplicating all the packaging work isn't that good imo
+[20:13:32] <zetok> s/tox.chat/toktok/
+[20:13:37] <sudden6> ok
+[20:14:01] <sudden6> anyway, first we have to find a maintainer^^
+[20:17:19] <sudden6> zetok: about https://github.com/qTox/qTox-Website/pull/24 I think it can be merged, right?
+[20:17:57] <zetok> uhm
+[20:18:36] <zetok> it would be good to pull first translations from weblate, so that there would be no conflicts
+[20:19:24] <sudden6> ok, I thought it wouldn't be that easy :)
+[20:20:11] *** Parts: bennabiy (~bennabiy@ ) ("http://www.twelvetribes.org")
+[20:20:59] *** Joins: f10 (~flo@ )
+[20:22:00] <sudden6> zetok: is there a script how to pull the translations?
+[20:22:11] <zetok> no
+[20:22:23] <sudden6> instructions? :/
+[20:22:24] <zetok> `git fetch; git cherry-pick`
+[20:22:59] <zetok> oh
+[20:23:14] <zetok> right, before that I usually do `wlc commit && wlc lock`
+[20:23:31] <sudden6> sorry, I don't really know how weblate works :/
+[20:23:56] <sudden6> what's wlc?
+[20:23:57] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[20:24:21] <zetok> cli tool for managing repo(s) on weblate
+[20:25:02] <zetok> i.e. instead of spending time on its web UI one can just quickly type a command
+[20:25:25] <sudden6> can you pull the translations and I'll merge the stuff then?
+[20:25:47] <zetok> ok
+[20:25:54] <sudden6> thx
+[20:26:10] <zetok> https://github.com/zetok/zetok-overlay/tree/master/dev-util/wlc ← if someone is interested in ebuild for Gentoo
+[20:30:03] <qTox-Website> [qTox-Website] zetok opened pull request #26: Update translations from Weblate (master...tr) https://git.io/vDKiL
+[20:31:26] <zetok> sudden6: ok, I've rebased #24 on top of translations
+[20:31:28] <qTox-Website> [qTox-Website] zetok force-pushed sudden6-patch-1 from 870f900 to c1f87b4: https://git.io/vDuSp
+[20:31:28] <qTox-Website> qTox-Website/sudden6-patch-1 d017fca Viktar Vauchkevich: Translated using Weblate (Belarusian)...
+[20:31:28] <qTox-Website> qTox-Website/sudden6-patch-1 c0b29ca LNDDYL: Translated using Weblate (Chinese (Taiwan))...
+[20:31:28] <qTox-Website> qTox-Website/sudden6-patch-1 40ae074 sudden6: Add GitStats page to developer links
+[20:32:08] <qTox-Website> [qTox-Website] zetok closed pull request #26: Update translations from Weblate (master...tr) https://git.io/vDKiL
+[20:32:29] <sudden6> zetok: lgtm
+[20:32:36] <travis-ci> qTox/qTox-Website (c1f87b4): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/201262088 / Changes: https://github.com/qTox/qTox-Website/compare/870f9006caaa...c1f87b4de072
+[20:33:11] <travis-ci> qTox/qTox-Website (c0b29ca): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/201262274 / Changes: https://github.com/qTox/qTox-Website/compare/68b404298fa8...c0b29ca55aeb
+[20:33:13] <qTox-Website> [qTox-Website] zetok merged sudden6-patch-1 into master: https://git.io/vDKiz
+[20:33:59] <qTox-Website> [qTox-Website] sudden6 deleted sudden6-patch-1 at c1f87b4: https://git.io/vDKiw
+[20:34:07] <sudden6> zetok: thank you very much :)
+[20:34:12] <zetok> np
+[20:35:10] <Chiitoo> Heh... “sudden patch”.  I like it.
+[20:35:11] *** Joins: x_ (~x@ )
+[20:35:37] <sudden6> yeah, it's the GH automatic name :)
+[20:36:41] <sudden6> zetok: I'll write a draft for a blog post for a new maintainer
+[20:36:52] <zetok> sounds good
+[20:39:34] <zetok> sudden6: btw, regarding instructions, there is https://github.com/qTox/qTox/blob/master/MAINTAINING.md#translations-from-weblate , but the website only needs a simplified stuff from it
+[20:40:10] <sudden6> ah, ok
+[20:40:27] <zetok> in case of qTox translations, stuff pulled from weblate needs to be "cleaned up" by lupdate
+[20:41:10] <zetok> as for website, usually `git merge --ff-only` is good enough
+[20:41:48] <zetok> although sometimes I still cherry-pick stuff for website since there are some "translations" that aren't correct
+[20:42:11] *** Joins: LittleVulpix (~Miranda@ )
+[20:44:33] <sudden6> zetok: I'll open an issue about the new maintainer on GH, so we have a place to discuss with potential new maintainers
+[20:44:44] <zetok> ok
+[20:45:22] <Diadlo> sudden6: Why abbat not going to maintain qtox?
+[20:45:50] <sudden6> Diadlo: he has no interest in maintaining a Toktok based qTox
+[20:46:02] <Diadlo> Lol
+[20:46:34] <sudden6> > 
+[20:46:35] <sudden6> there is no way
+[20:46:37] <sudden6> to compile qTox with original (iru) toxcore and I have no motivation to
+[20:46:38] <sudden6> support another package which brings no new except breaking
+[20:46:40] <sudden6> compatibility.
+[20:46:43] <sudden6> quote
+[20:47:06] *** Joins: noavarice (5f20048d@ )
+[20:56:58] *** Quits: noavarice (5f20048d@ ) (Quit: Page closed)
+[21:02:05] <sudden6> zetok: Diadlo https://gist.github.com/sudden6/e802266b8fbd23db984e943ec239d938 draft
+[21:02:13] <sudden6> see you later
+[21:02:29] <Diadlo> Bye
+[21:04:18] <zetok> sudden6: perhaps it should be mentioned that releases happen every 6 weeks, and their dates are listed on https://github.com/qTox/qTox/milestones
+[21:12:14] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[21:57:49] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[21:58:10] *** VVD39105 is now known as VVD
+[22:23:20] *** Quits: DiCE1904_ (~textual@ ) (Read error: Connection reset by peer)
+[22:37:35] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[22:37:55] *** Joins: Yoshimo (~anything@ )
+[22:46:57] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[23:49:20] *** Quits: koshii (~w@ ) (Read error: Connection reset by peer)
+[23:51:01] *** Joins: koshii (~w@ )
