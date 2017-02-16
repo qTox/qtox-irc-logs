@@ -1,0 +1,189 @@
+[00:30:31] *** Joins: bkidwell (~bkidwell@ )
+[00:50:13] *** Joins: LittleVulpix (~Miranda@ )
+[01:13:59] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[01:33:05] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[01:33:24] *** Joins: f10_ (~flo@ )
+[01:40:49] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[01:40:52] *** Joins: f10__ (~flo@ )
+[01:46:48] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[01:59:25] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[02:00:20] *** Joins: f10__ (~flo@ )
+[02:13:28] *** Quits: f10__ (~flo@ ) (Read error: No route to host)
+[02:13:47] *** Joins: f10__ (~flo@ )
+[02:19:45] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[02:20:16] *** Joins: f10__ (~flo@ )
+[02:20:48] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[02:21:47] *** Joins: f10 (~flo@ )
+[02:26:09] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[02:29:16] *** Joins: f10 (~flo@ )
+[02:32:01] *** Quits: f10__ (~flo@ ) (Ping timeout: 256 seconds)
+[02:33:01] *** smaragdus2 is now known as smaragdus
+[02:34:05] *** Joins: f10_ (~flo@ )
+[02:34:41] *** Joins: f10__ (~flo@ )
+[02:35:16] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[02:37:21] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[02:37:23] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[02:40:18] *** Joins: f10 (~flo@ )
+[02:45:09] *** Joins: f10_ (~flo@ )
+[02:48:45] *** Joins: f10__ (~flo@ )
+[02:48:59] *** Quits: f10 (~flo@ ) (Ping timeout: 264 seconds)
+[02:54:57] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[02:55:58] *** Joins: f10_ (~flo@ )
+[03:08:08] *** Joins: zetok (~zetok@ )
+[03:08:23] *** iphy_ is now known as iphy
+[03:09:36] *** Joins: MDrights (~MDrights@ )
+[03:43:06] *** Joins: f10 (~flo@ )
+[03:44:46] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[03:50:02] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[03:51:58] *** Joins: MDrights (~MDrights@ )
+[03:52:04] *** Joins: f10__ (~flo@ )
+[03:53:37] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[04:07:35] *** Joins: f10 (~flo@ )
+[04:08:13] *** Quits: f10__ (~flo@ ) (Ping timeout: 268 seconds)
+[04:23:22] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[04:24:41] *** Joins: cisc (~cisc@ )
+[04:34:49] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[04:38:20] *** Joins: f10 (~flo@ )
+[04:39:23] *** Quits: Diadlo (~diadlo@ ) (Ping timeout: 264 seconds)
+[04:41:09] *** Joins: Diadlo (~diadlo@ )
+[05:23:15] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[05:24:13] *** Joins: f10 (~flo@ )
+[06:13:07] *** Joins: Yoshimo (~anything@ )
+[06:33:06] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 240 seconds)
+[06:56:27] *** Joins: shiva (~LordShiva@ )
+[08:10:19] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[08:10:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[08:29:21] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[08:30:12] *** Joins: LittleVulpix (~Miranda@ )
+[08:32:02] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[08:32:53] *** Joins: LittleVulpix (~Miranda@ )
+[09:39:08] *** Joins: sudden6 (~anonymous@ )
+[09:39:13] *** Quits: sudden6 (~anonymous@ ) (Remote host closed the connection)
+[10:05:20] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[10:21:12] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:21:54] *** Joins: LittleVulpix (~Miranda@ )
+[10:59:36] *** Joins: SkyzohKey (~SkyzohKey@ )
+[12:30:10] *** Joins: noavarice (3e4ca8f9@ )
+[12:41:46] *** Joins: Chiitoo (~Chiitoo@ )
+[12:50:37] *** Quits: noavarice (3e4ca8f9@ ) (Quit: Page closed)
+[12:59:25] *** Joins: sudden6 (~anonymous@ )
+[13:35:02] *** Joins: cenysor (~cenysor@ )
+[14:21:33] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[15:10:44] *** Quits: anoa (~anoa@ ) (Ping timeout: 240 seconds)
+[15:11:41] *** Joins: MDrights (~MDrights@ )
+[15:12:00] *** Joins: anoa (~anoa@ )
+[15:12:56] *** Quits: dan- (~d@ ) (Excess Flood)
+[15:15:25] *** Joins: dan- (~d@ )
+[15:15:25] *** Quits: dan- (~d@ ) (Changing host)
+[15:15:25] *** Joins: dan- (~d@ )
+[15:19:54] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 276 seconds)
+[15:22:34] *** Joins: Yoshimo (~anything@ )
+[15:37:35] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[15:38:34] *** Joins: MDrights (~MDrights@ )
+[15:53:27] *** Joins: pcre (~quassel@ )
+[16:02:12] *** Joins: f10 (~flo@ )
+[16:11:26] *** Joins: f10_ (~flo@ )
+[16:21:50] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[16:25:11] *** Joins: f10 (~flo@ )
+[16:29:19] *** Quits: f10_ (~flo@ ) (Read error: No route to host)
+[16:29:23] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[16:29:48] *** Joins: f10_ (~flo@ )
+[16:30:44] *** Joins: f10 (~flo@ )
+[16:35:26] *** Joins: f10__ (~flo@ )
+[16:35:54] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[16:40:50] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[16:46:03] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[16:58:16] *** Joins: f10 (~flo@ )
+[17:34:50] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:35:21] *** Joins: LittleVulpix (~Miranda@ )
+[17:38:19] *** Joins: noavarice (5f20424b@ )
+[17:42:43] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[17:44:20] *** Joins: LittleVulpix (~Miranda@ )
+[17:54:18] *** Joins: f10_ (~flo@ )
+[17:55:00] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[17:56:27] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[17:56:29] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[17:57:08] *** Joins: f10_ (~flo@ )
+[17:58:37] *** Joins: f10 (~flo@ )
+[17:59:51] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:03:16] *** Joins: f10__ (~flo@ )
+[18:04:45] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[18:09:42] *** Joins: LittleVulpix (~Miranda@ )
+[18:10:39] *** Joins: f10_ (~flo@ )
+[18:10:54] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[18:10:58] *** Quits: LittleVulpix (~Miranda@ ) (Client Quit)
+[18:12:11] *** Joins: sudden6 (~anonymous@ )
+[18:14:22] <sudden6> zetok: Diadlo I've updated the blog post https://gist.github.com/sudden6/e802266b8fbd23db984e943ec239d938
+[18:16:21] *** Joins: cheyt (68eea951@ )
+[18:17:02] <zetok> s/abbat/`abbat`/ ?
+[18:17:24] <zetok> sudden6: btw, wouldn't it be better to do review on reviewable?
+[18:18:08] <sudden6> I like to do the rough drafts with gists, but I can move it
+[18:18:09] <zetok> s/The reason is, that abbat, our long time maintainer/Our long time maintainer, abbat,/
+[18:19:49] <zetok> perhaps `s/,//g`
+[18:21:03] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[18:22:35] <cheyt> when will qTox 1.8 be available for windows?
+[18:22:47] <zetok> sudden6: `s/, most of them have already been written, but things tend to break every now and then and will need fixing./. Every now and then things can break, and scripts would require adjustments./` ?
+[18:23:37] <zetok> cheyt: whenever tux3 has the time to release it
+[18:24:38] <zetok> sudden6: `s/Open Source Software/FOSS/` ?
+[18:24:54] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[18:25:08] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[18:25:34] <zetok> also, formatting of the post looks a bit off, i.e. lines seem to have >80 chars
+[18:25:51] *** Quits: cheyt (68eea951@ ) (Quit: Page closed)
+[18:26:36] <sudden6> zetok: I made a PR
+[18:26:36] <qTox-Blog> [blog] sudden6 opened pull request #7: Create 2017-02-15-Maintainer-Wanted.md (gh-pages...sudden6-patch-2) https://git.io/vDMWk
+[18:26:43] <sudden6> will adjust formatting soon
+[18:35:17] <sudden6> zetok: formatting corrected
+[18:37:41] <zetok> commented
+[18:38:23] <zetok> sudden6: perhaps something should be added in the blog post whom to ping on IRC?
+[18:38:35] <sudden6> good idea
+[18:38:49] <sudden6> who would that be? you, Diadlo and me?
+[18:39:23] <zetok> yep
+[18:44:16] <tux3> qTox 1.8 is compiling, release Soontm
+[18:44:25] <zetok> \o/
+[18:45:14] <zetok> tux3: btw, next release date: https://github.com/qTox/qTox/milestone/14
+[18:45:50] <tux3> Gotcha
+[18:45:55] <tux3> (If I fon't forget!)
+[18:52:37] <tux3> And it's ive
+[18:52:38] <tux3> live*
+[18:56:22] <sudden6> zetok: everything should be fixed
+[18:56:27] <sudden6> tux3: nice ;)
+[18:56:47] <sudden6> now I'm waiting for new windows bug reports, to confirm :D
+[18:59:41] <sudden6> zetok: fixed again
+[19:06:00] <tux3> I'm trying to see if I can fix https://github.com/qTox/qTox/issues/4112 with some symlink magic
+[19:06:09] <tux3> Otherwise we'll have to fix the links every release
+[19:13:35] *** Quits: noavarice (5f20424b@ ) (Ping timeout: 260 seconds)
+[19:16:24] <qTox-Blog> [blog] sudden6 closed pull request #7: Create 2017-02-15-Maintainer-Wanted.md (gh-pages...sudden6-patch-2) https://git.io/vDMWk
+[19:17:51] *** Joins: f10_ (~flo@ )
+[19:17:56] *** Joins: f10 (~flo@ )
+[19:19:16] <sudden6> zetok: can you link the post on reddit?
+[19:23:20] *** Joins: LittleVulpix (~Miranda@ )
+[19:26:13] <zetok> sudden6: `qTox Package Maintainer WANTED ALIVE` ?
+[19:26:37] <sudden6> zetok: ???
+[19:26:49] <zetok> ok, maybe not
+[19:27:13] <sudden6> oh, you mean in the dead or alive sense^^
+[19:28:37] <zetok> would the above work for the reddit post title?
+[19:32:24] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[19:33:45] <sudden6> zetok: don't think so
+[19:33:52] <zetok> :F
+[19:34:41] <sudden6> I've to go now, see you :)
+[19:35:44] <zetok> cya
+[19:36:22] <zetok> posted on reddit
+[19:39:03] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 258 seconds)
+[20:18:04] <tux3> When downloading the setup-qtox.exe.asc signature, should I make it show the text file in the browser like now, or download the file?
+[20:18:46] <tux3> Aka, do I set the mimetype to text/plain or octet-stream
+[20:28:31] <zetok> just displaying it wouldn't be really useful, people would need to save it as a file anyway
+[20:32:29] -qtox-git-spam- [qTox] tux3 opened pull request #4177: feat: Add version numbers in windows installer download links (master...versionned-links) https://git.io/vDMQR
+[20:32:31] <tux3> Alrighty.
+[20:34:20] *** Joins: reBrain (~quassel@ )
+[20:40:07] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[20:40:49] *** Joins: LittleVulpix (~Miranda@ )
+[20:50:11] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:14:49] *** Joins: rogra (05357115@ )
+[21:26:00] *** Quits: rogra (05357115@ ) (Ping timeout: 260 seconds)
+[21:43:51] *** Quits: SkyzohKey (~SkyzohKey@ ) (Remote host closed the connection)
+[21:44:21] *** Joins: SkyzohKey (~SkyzohKey@ )
+[22:18:17] *** Quits: SkyzohKey (~SkyzohKey@ ) (Remote host closed the connection)
+[22:24:14] *** Joins: SkyzohKey (~SkyzohKey@ )
+[22:24:55] -qtox-git-spam- [qTox] tux3 pushed 1 new commit to master: https://git.io/vDDLl
+[22:24:55] -qtox-git-spam- qTox/master b937d28 tux3: Merge pull request #4177...
+[22:38:03] *** Joins: Yoshimo (~anything@ )
