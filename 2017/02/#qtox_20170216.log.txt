@@ -1,0 +1,205 @@
+[00:38:00] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[00:47:56] <nurupo> ><tux3> qTox 1.8 is compiling, release Soontm <-- does it still use Qt 5.5 instead of the 5.6 LTS?
+[00:48:26] <nurupo> the nightly qTox builds use 5.6.2 but the release builds use (used?) 5.5.1
+[00:49:01] <tux3> Yes, I didn't change anything this time
+[00:49:28] <nurupo> does it use cmake?
+[00:49:33] <tux3> Nope
+[00:49:39] <tux3> I still have to prepare for that..
+[00:49:55] <tux3> Next release is going to be fun :)
+[00:50:11] <nurupo> well, did you at least stop the release builds rebuiling every time a push is made to the master branch?
+[00:50:49] <tux3> Yeah
+[00:51:17] <tux3> nurupo, what do you think of switching directly to Qt 5.8 since we're going to be shaking things up a little?
+[00:51:20] <nurupo> okay, that's a point :P
+[00:51:22] <nurupo> also, i remember some windows builds failing recently. qtox.pro patch was failing to apply
+[00:51:30] <tux3> Yeah, I fixed that
+[00:51:39] <tux3> Those were temporary patches, not needed anymore
+[00:52:07] <nurupo> tux3: i don't really advise using Qt versions with 0 patch version
+[00:52:34] <nurupo> there tend to be some regressions and broken things, which get fixed in 1 patch
+[00:52:51] <tux3> Fair enough
+[00:53:37] <nurupo> version 5.6 is LTS, it has prolonged life time and gets patches backported, so why not stick with it?
+[00:53:56] <nurupo> does 5.8 fix something for windows?
+[00:54:41] <tux3> It certainly doesn't fix anything that the LTS doesn't fix
+[00:55:09] <nurupo> http://blog.qt.io/blog/2015/12/18/introducing-long-term-support/
+[00:55:12] <tux3> But it does have shiny new features like HTTP2 and better TLS crypto code
+[00:56:11] <tux3> Yeah, like the blog post says they're modernising Qt internally, hence the need to do a LTS before the break
+[00:56:57] <nurupo> tux3: our Qt build uses our own openssl
+[00:57:55] <nurupo> does Qt bundle openssl with it just for the case someone cross-compiles it?
+[00:58:30] <tux3> Pretty sure you have the choice to bundle or not when compiling Qt
+[01:00:01] <nurupo> i can setup a newer Qt if you really want to, it just will be a bit of a pain as we'd have to update to never Qt versions more often than if we have stayed on 5.6
+[01:00:47] <tux3> No, you're right, I think the LTS is fine.
+[01:01:01] <nurupo> tux3: do you have access to the openssl jenkins job?
+[01:01:18] <tux3> Yes, about that, we might want to move to 1.1 eventually
+[01:01:33] <nurupo> yeah, you do https://build.tox.chat/job/libopenssl_src/configure
+[01:02:07] <nurupo> tux3: as long as Qt and sqlcipher are compatible with openssl 1.1
+[01:02:24] <nurupo> (i'm not sure they are, but we won't know if we don't try)
+[01:02:25] <tux3> I'm not positive they are.
+[01:03:45] <tux3> Hm, no not even Qt is compatible yet
+[01:03:50] <nurupo> openssl 1.0.2 is also LTS, but i guess using 1.1 might be better as i have read they have removed a lot of unused and not secure things (such removal might ironically result in bugs too though)
+[01:05:14] <nurupo> https://wiki.qt.io/Qt_5.8_Tools_and_Versions
+[01:05:21] <nurupo> yeah, i don't see them using openssl 1.1
+[01:05:28] <tux3> https://bugreports.qt.io/browse/QTBUG-52905
+[01:05:33] <tux3> "In progress"
+[01:06:23] <tux3> Oh also I added version numbers to the qtox windows artifacts
+[01:07:19] <tux3> So if you have links pointing to the artifacts, point them to the qtox-win.pkg.tox.chat server instead, which has some magic to generate the right download links...
+[01:07:40] <tux3> Because Jenkins can't link to the last artifact if the name isn't know..
+[01:09:01] <nurupo> tux3: uh? can you give an example?
+[01:09:30] <tux3> nurupo, If you want to link to the latest version of this: https://build.tox.chat/view/qtox/job/qTox_pkg_windows_x86_stable_release/lastSuccessfulBuild/artifact/setup-qtox-1*.exe
+[01:09:59] <tux3> Jenkins can't link to that, because the name changes every version
+[01:10:14] <tux3> Instead link to this: https://qtox-win.pkg.tox.chat/qtox/win32/download
+[01:10:22] <nurupo> well, jenkins acts as a regular static file web server would
+[01:10:57] <tux3> The annoying thing is it almost supports it, if you link to /*zip*/setup-qtox*.exe it'll serve it to you in a zip file
+[01:11:00] <nurupo> why change the name every version though?
+[01:11:23] <nurupo> eh? i didn't know that
+[01:11:31] <tux3> It was requested in an issue. People want the installer to have a friendly name with a version number
+[01:12:35] <oranges> is that a redirect to build.tox. chat?
+[01:12:40] <tux3> Yep
+[01:12:42] <oranges> why not just server it direct from qtox
+[01:13:08] <nurupo> didn't know you can download zipped artifacts from jenkins
+[01:13:11] <tux3> No reason, should I?
+[01:13:19] <nurupo> https://build.tox.chat/view/qtox/job/qTox_pkg_windows_x86-64_stable_release/lastSuccessfulBuild/artifact/*zip*/qtox.zip
+[01:13:30] <tux3> nurupo, there's a "all files in zip" link
+[01:13:33] <nurupo> tux3: i will correct links on tox.chat then
+[01:13:38] <tux3> nurupo, thanks
+[01:13:42] <nurupo> oh, right
+[01:13:59] <oranges> redirect tox.chat to my website when
+[01:14:05] <nurupo> do you have qtox.exe and qtox-version.exe just to keep the links on tox.chat alive?
+[01:14:22] <tux3> Yeah, I didn't know how many old links were still there
+[01:14:48] <nurupo> tux3: what about nightly qtox?
+[01:14:59] <nurupo> still link to it from jenkins?
+[01:15:13] <tux3> Yeah
+[01:15:29] <nurupo> also, the nightly qtox is advertised as portable stable qtox in qtox's download.md file
+[01:15:54] <nurupo> i guess it's readme.md
+[01:16:01] <tux3> I should fix that
+[01:16:31] <nurupo> it's not really portable as it still stores profile data system-wide instead in qtox's workind directoy (which could be a usb stick)
+[01:16:58] <nurupo> it's also nightly when people probably expect stable
+[01:17:12] <tux3> Oh yeah it's not even a real portable build, even
+[01:17:17] <nurupo> https://github.com/qTox/qTox/blob/master/README.md
+[01:17:40] <tux3> Well I'll just change the links to the stable version, and we'll make a real portable version some time Later
+[01:18:43] <tux3> nurupo, since it's going to be a stable build too, I'll add version numbers to the portable builds, so update the links to https://qtox-win.pkg.tox.chat/qtox/win32/download-portabe for the portable version please
+[01:20:00] <nurupo> tux3: what portable version?
+[01:20:19] <nurupo> tux3: tox.chat links to stable qTox and nightly qTox. there is no portable
+[01:20:28] <tux3> Oh my bad!
+[01:20:31] <tux3> I though you did
+[01:20:38] <tux3> Carry on then
+[01:20:59] <nurupo> it's fine, i would get confused too :P
+[01:21:46] * nurupo works on updating links on tox.chat before he forgets
+[01:22:08] <oranges> should we put the qtox updater vm under the DO account? right now it still lives in my linode account, but is pretty crucial for qtox
+[01:24:20] <tux3> oranges, I'm not opposed to it, what would change concretely?
+[01:24:35] <nurupo> we'd run out of DO credits faster
+[01:26:08] <nurupo> it would make more sense to move it to tux3's personal DO account so that he would have full control over it rather than move it to Tox's DO account
+[01:26:23] <nurupo> but then who would will be paying for it, oranges?
+[01:27:00] <oranges> me
+[01:27:04] <oranges> just like everything else
+[01:27:09] <tux3> I have PTSD from paying the AWS bandwith bill, I'm looking to avoid that!
+[01:27:25] <nurupo> heh
+[01:32:46] <nurupo> tux3: https://github.com/Tox/tox.chat/pull/154
+[01:33:02] -qtox-git-spam- [qTox] tux3 opened pull request #4179: feat: Switch windows portable links to stable versions (master...portable_links) https://git.io/vDDrz
+[01:33:28] <tux3> nurupo, LGTM
+[01:33:37] <tux3> Although you're not linking to the signatures
+[01:33:43] <tux3> Think of the crypto nerds!
+[01:33:55] <tux3> They're gonna think we're not serious
+[01:34:10] <nurupo> we'd need a guide on how to verify the signatures then, won't we?
+[01:34:37] <nurupo> should i link to the sigs?
+[01:35:14] <tux3> If that's not too much work, it's always an improvement
+[01:35:39] <tux3> The link is the same but /downoad-sig instead of /download
+[01:35:49] <nurupo> also, doesn't one need to import your public key in order to verify the file against the signature?
+[01:35:56] <tux3> Yep
+[01:36:34] <nurupo> so just linking to the signatures won't really do any good without knowing which key to pull, huh
+[01:36:56] <tux3> It says so inside the sig :)
+[01:37:03] <tux3> It'll say "unknown key blablabla"
+[01:37:06] <nurupo> we really need someone to work on our website :\
+[01:37:23] <tux3> You can always throw people at the README.md if you want, all the info is in there
+[01:37:24] <tux3> Mostly
+[02:17:52] *** Joins: MDrights (~MDrights@ )
+[02:56:06] -qtox-git-spam- [qTox] tux3 opened pull request #4180: Undeprecate video (master...undeprecate_video) https://git.io/vDDPp
+[03:09:28] *** Joins: f10_ (~flo@ )
+[03:18:23] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
+[03:25:02] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[07:09:37] *** Joins: barmaley (~barmaley@ )
+[07:10:09] *** Quits: barmaley (~barmaley@ ) (Client Quit)
+[07:31:19] *** Joins: MDrights (~MDrights@ )
+[07:34:20] *** Quits: anoa (~anoa@ ) (Ping timeout: 240 seconds)
+[07:35:02] *** Joins: anoa (~anoa@ )
+[07:35:10] <zetok> tux3: btw, you can merge stuff that you've gpg-signed with just `--ff`, no need to add merge commits
+[07:48:20] *** Joins: reBrain (~quassel@ )
+[08:17:51] *** Joins: Yoshimo (~anything@ )
+[08:17:56] *** Quits: Yoshimo (~anything@ ) (Client Quit)
+[08:47:03] *** Quits: f10 (~flo@ ) (Ping timeout: 256 seconds)
+[09:15:24] *** Joins: kfkf (b9418654@ )
+[09:15:43] *** Quits: kfkf (b9418654@ ) (Client Quit)
+[09:24:55] *** Joins: bashrc (~motters@ )
+[09:47:52] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[09:53:57] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[09:54:30] *** Joins: MDrights (~MDrights@ )
+[09:56:21] *** Joins: f10 (~flo@ )
+[09:56:43] *** Joins: f10_ (~flo@ )
+[10:00:14] *** Quits: f10_ (~flo@ ) (Excess Flood)
+[10:21:48] *** Quits: albel727 (~albel727@ ) (Quit: KVIrc 4.9.2 Aria http://www.kvirc.net/)
+[10:40:19] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[11:36:25] *** Joins: f10_ (~flo@ )
+[11:40:53] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[11:53:05] *** Joins: albel727 (~albel727@ )
+[12:11:09] *** Joins: Yoshimo (~anything@ )
+[12:57:53] *** Quits: pcre (~quassel@ ) (Ping timeout: 240 seconds)
+[12:59:24] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[13:00:07] *** Joins: LittleVulpix (~Miranda@ )
+[13:13:26] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[13:16:43] *** Joins: f10_ (~flo@ )
+[13:34:38] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[14:10:21] <tux3> zetok, noted
+[14:32:03] -qtox-git-spam- [qTox] tux3 closed pull request #4179: feat: Switch windows portable links to stable versions (master...portable_links) https://git.io/vDDrz
+[14:40:54] *** Joins: sudden6 (~anonymous@ )
+[14:43:44] *** Joins: DiCE1904 (~textual@ )
+[14:58:50] <SkyzohKey> https://a.doko.moe/jsfcgo.ogv
+[15:30:59] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 264 seconds)
+[16:22:19] *** Joins: sudden6 (~anonymous@ )
+[16:31:43] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 256 seconds)
+[16:42:18] *** Joins: shiva__ (~LordShiva@ )
+[16:42:59] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 264 seconds)
+[16:54:41] *** Joins: shiva (~LordShiva@ )
+[16:54:47] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 258 seconds)
+[17:17:29] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 240 seconds)
+[17:28:10] *** Joins: shiva (~LordShiva@ )
+[17:37:19] *** Joins: reBrain (~quassel@ )
+[17:39:57] *** Quits: f10_ (~flo@ ) (Ping timeout: 245 seconds)
+[17:41:07] *** Joins: f10_ (~flo@ )
+[17:42:06] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[17:44:55] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[17:47:00] *** Joins: f10_ (~flo@ )
+[18:19:35] *** Parts: SkyzohKey (~SkyzohKey@ ) ()
+[18:20:20] *** Joins: SkyzohKey (~SkyzohKey@ )
+[18:20:48] *** Parts: SkyzohKey (~SkyzohKey@ ) ()
+[18:24:46] *** Joins: skyzohkey_ (~SkyzohKey@ )
+[18:26:58] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[18:28:06] *** Joins: skyzohkey__ (~SkyzohKey@ )
+[18:28:18] *** Quits: skyzohkey_ (~SkyzohKey@ ) (Client Quit)
+[18:28:21] *** Quits: skyzohkey__ (~SkyzohKey@ ) (Remote host closed the connection)
+[18:28:55] *** Joins: skyzohkey_ (~SkyzohKey@ )
+[18:31:00] *** skyzohkey_ is now known as skyzohkey
+[18:32:24] *** Joins: f10_ (~flo@ )
+[18:50:57] *** Joins: sudden6 (~anonymous@ )
+[18:51:51] <sudden6> hi all
+[19:02:48] <zetok> hello
+[19:23:54] <sudden6> not much happening right now, huh?
+[19:55:52] *** Joins: reBrain (~quassel@ )
+[20:16:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 276 seconds)
+[20:44:21] *** Joins: shiva__ (~LordShiva@ )
+[20:45:06] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 240 seconds)
+[20:49:02] *** Joins: shiva (~LordShiva@ )
+[20:51:12] *** Quits: shiva__ (~LordShiva@ ) (Ping timeout: 252 seconds)
+[21:48:29] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[22:12:27] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[22:12:45] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[22:13:37] *** Joins: pcre (~quassel@ )
+[22:15:38] *** Joins: f10 (~flo@ )
+[22:20:04] *** Joins: f10_ (~flo@ )
+[22:20:52] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[22:38:49] *** Joins: Yoshimo (~anything@ )
+[22:40:53] *** Joins: f10 (~flo@ )
+[22:45:48] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[23:25:53] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[23:28:37] *** Joins: Guest13355 (~flo@ )
+[23:46:10] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[23:55:55] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[23:55:57] *** Quits: Guest13355 (~flo@ ) (Ping timeout: 240 seconds)
+[23:56:33] *** Quits: f10_ (~flo@ ) (Ping timeout: 256 seconds)
