@@ -1,0 +1,99 @@
+[01:09:55] *** Joins: sudden6 (~anonymous@ )
+[01:14:25] *** Joins: kchz (~dschulz@ )
+[01:15:25] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[01:54:17] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[02:00:55] *** Joins: limerence (~limerence@ )
+[02:00:59] <limerence> hey
+[02:01:02] <limerence> I need some help
+[02:01:08] <limerence> everytime I try to enter in qtox
+[02:01:11] <limerence> my internet goes down
+[02:01:30] <limerence> i can't get online and I don't know why, I am running in Linux mint, is someone out there who could explain to me?
+[02:01:36] <limerence> Need to talk to a friend and I am lost.
+[02:02:57] *** Quits: limerence (~limerence@ ) (Quit: Leaving)
+[02:16:34] -qtox-git-spam- [qTox] tux3 opened pull request #4182: feat: UI to import a list of contacts from a file (master...import_contacts) https://git.io/vD9zR
+[03:01:23] -qtox-git-spam- [qTox] tux3 opened pull request #4183: fix: Accept IDs as tox URIs, not just ToxDNS addresses (master...fix_toxuri) https://git.io/vD9aT
+[04:05:28] *** Joins: deepbook5broo (~gk.1wm.su@ )
+[04:13:47] *** Parts: deepbook5broo (~gk.1wm.su@ ) ()
+[05:30:06] *** Joins: kchz (~dschulz@ )
+[05:33:09] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[06:09:00] *** Joins: barmaley (~barmaley@ )
+[06:09:04] *** Quits: barmaley (~barmaley@ ) (Client Quit)
+[07:25:54] *** Joins: reBrain (~quassel@ )
+[07:33:13] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:33:36] *** Joins: VVD (~VVD@ )
+[07:51:18] *** Joins: Yoshimo (~anything@ )
+[08:45:16] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[09:32:03] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[10:06:29] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:08:18] *** Joins: LittleVulpix (~Miranda@ )
+[11:01:17] *** Joins: Yoshimo (~anything@ )
+[11:48:12] *** Joins: Guest13355 (~flo@ )
+[11:49:49] *** Quits: anoa (~anoa@ ) (Remote host closed the connection)
+[11:50:11] *** Joins: anoa (~anoa@ )
+[11:51:02] *** Joins: f10_ (~flo@ )
+[12:20:36] *** Joins: sudden6 (~anonymous@ )
+[12:37:58] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[12:38:40] *** Joins: VVD (~VVD@ )
+[12:47:48] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[12:48:21] *** Joins: VVD (~VVD@ )
+[13:15:05] *** Joins: x_ (~x@ )
+[13:15:14] <x_> hey cisc
+[13:15:48] <x_> how is the OSR environment coming along?
+[13:16:40] <x_> is there any chance of getting a good .deb repo for qTox there?
+[13:17:15] <x_> (on opensuse.org, i mean)
+[13:18:43] <x_> antonbatenev's repo is lagging behind
+[13:33:58] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[13:42:22] *** Joins: pcre (~quassel@ )
+[13:44:12] *** Quits: pcre (~quassel@ ) (Client Quit)
+[13:51:52] *** Quits: mutin-sa (~s-mutin@ ) (Read error: Connection reset by peer)
+[13:52:10] *** Joins: s-mutin (~s-mutin@ )
+[14:08:33] *** Joins: mutin-s (~s-mutin@ )
+[14:11:46] *** Quits: s-mutin (~s-mutin@ ) (Ping timeout: 268 seconds)
+[14:24:46] *** Joins: sudden6 (~anonymous@ )
+[14:37:32] <cisc> x_: https://github.com/qTox/qTox/issues/4174
+[14:39:31] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 268 seconds)
+[14:43:51] <x_> alright, i'll look into it
+[14:43:51] <x_> thank you
+[15:09:59] *** Quits: dardevelin_ (~dardeveli@ ) (Ping timeout: 264 seconds)
+[15:14:18] <cisc> np
+[15:43:34] -qtox-git-spam- [qTox] tux3 opened pull request #4184: fix: Friend list avatars not updating (master...fix_avatar_update) https://git.io/vDHDt
+[15:45:53] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[15:46:20] *** Joins: VVD (~VVD@ )
+[15:59:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:00:15] *** Joins: VVD (~VVD@ )
+[16:02:32] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:03:08] *** Joins: VVD (~VVD@ )
+[16:10:22] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:10:52] *** Joins: VVD (~VVD@ )
+[16:18:38] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[16:19:04] *** Joins: f10 (~flo@ )
+[16:19:30] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:20:16] *** Joins: VVD (~VVD@ )
+[16:31:27] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:32:20] *** Joins: VVD (~VVD@ )
+[16:46:28] -qtox-git-spam- [qTox] tux3 opened pull request #4185: fix: Autoupdater trying to open files twice could fail (master...more_often_broken_than_not) https://git.io/vDHbV
+[16:57:18] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 240 seconds)
+[17:06:38] *** Quits: anoa (~anoa@ ) (Remote host closed the connection)
+[17:22:14] *** Joins: anoa (~anoa@ )
+[17:22:53] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[17:23:50] *** Joins: VVD (~VVD@ )
+[17:36:50] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[18:23:58] <zetok> tux3: https://github.com/qTox/qTox/issues/3460 ?
+[18:24:59] <tux3> zetok, why not. The link is dynamic now, so it won't break anyways.
+[18:25:04] *** Joins: Yoshimo (~anything@ )
+[18:25:10] <tux3> download link*
+[18:31:08] <tux3> Done, new builds are on the way.
+[18:34:13] *** Joins: dardevelin_ (~dardeveli@ )
+[18:55:03] <zetok> awesome
+[19:07:18] *** Quits: Yoshimo (~anything@ ) (Ping timeout: 240 seconds)
+[19:52:31] *** Quits: skyzohkey (~SkyzohKey@ ) (Remote host closed the connection)
+[21:02:18] *** Joins: Yoshimo (~anything@ )
+[21:40:35] *** Joins: SkyzohKey (~SkyzohKey@ )
+[22:09:29] *** Joins: f10_ (~flo@ )
+[22:09:46] *** Quits: SkyzohKey (~SkyzohKey@ ) (Quit: Leaving)
+[22:10:06] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[22:52:32] *** Quits: Yoshimo (~anything@ ) (Read error: Connection reset by peer)
+[23:25:02] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[23:25:13] *** Joins: f10_ (~flo@ )
+[23:26:54] *** Quits: x_ (~x@ ) (Quit: Leaving)
+[23:52:10] *** Joins: barmaley (~barmaley@ )
