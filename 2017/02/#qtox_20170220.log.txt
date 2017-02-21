@@ -1,0 +1,222 @@
+[00:02:19] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[00:04:35] *** Joins: f10 (~flo@ )
+[00:07:29] *** Quits: f10 (~flo@ ) (Excess Flood)
+[00:07:56] *** Joins: f10 (~flo@ )
+[01:24:08] *** Joins: IRCFrEAK (~gk.1wm.su@ )
+[01:24:10] *** Parts: IRCFrEAK (~gk.1wm.su@ ) ()
+[01:34:03] *** Quits: s-mutin (~s-mutin@ ) (Remote host closed the connection)
+[01:34:23] *** Joins: s-mutin (~s-mutin@ )
+[01:43:19] *** Quits: VVD (~VVD@ ) (Ping timeout: 240 seconds)
+[01:57:53] *** Joins: f10_ (~flo@ )
+[01:57:59] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[02:02:41] *** Joins: MDrights (~MDrights@ )
+[02:02:59] *** Quits: f10_ (~flo@ ) (Ping timeout: 240 seconds)
+[02:18:14] *** Joins: f10_ (~flo@ )
+[02:23:22] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[02:25:16] *** Joins: f10_ (~flo@ )
+[02:36:44] *** Joins: f10 (~flo@ )
+[02:37:15] *** Quits: f10_ (~flo@ ) (Read error: Connection reset by peer)
+[02:40:59] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[03:19:14] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[03:38:19] *** Joins: VVD (~VVD@ )
+[03:56:16] *** Joins: goody2shoes (~goody2sho@ )
+[03:59:26] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[04:30:37] *** Joins: madgoat (~gk.1wm.su@ )
+[04:30:38] *** Parts: madgoat (~gk.1wm.su@ ) ()
+[05:12:37] *** Parts: goody2shoes (~goody2sho@ ) ("Leaving")
+[05:23:40] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[05:48:59] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[05:51:44] *** Quits: diadlo (~diadlo@ ) (Quit: diadlo)
+[05:52:09] *** Joins: diadlo (~diadlo@ )
+[06:15:26] *** Joins: reBrain (~quassel@ )
+[06:21:06] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[06:21:33] *** Joins: VVD (~VVD@ )
+[06:27:23] *** Quits: reBrain (~quassel@ ) (Quit: Porn.)
+[06:28:17] *** Joins: reBrain (~quassel@ )
+[06:28:26] *** Joins: MDrights (~MDrights@ )
+[06:32:15] *** Quits: iphy (uid67735@ ) (Quit: Connection closed for inactivity)
+[06:51:32] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[06:51:58] *** Joins: VVD (~VVD@ )
+[06:55:09] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[06:55:57] *** Joins: VVD (~VVD@ )
+[07:08:21] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:08:58] *** Joins: VVD (~VVD@ )
+[07:16:48] *** Joins: iphy (uid67735@ )
+[07:31:20] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[07:53:08] *** Joins: SkyzohKey (~SkyzohKey@ )
+[08:22:41] *** Joins: noavarice (5f2043a6@ )
+[08:41:29] *** Joins: georgios (~george@ )
+[08:41:58] <georgios> good morning
+[08:42:26] <georgios> is there a way to auto-login without having to authenticate?
+[08:52:55] <nurupo> that should be possible if you don't password-protect your profile
+[08:54:13] <nurupo> not sure if qtox implements auto login though
+[08:56:03] <SkyzohKey> it could auto-login with password using gnome-keyring i guess
+[08:56:08] <SkyzohKey> or some lib like that
+[08:56:58] <nurupo> wouldn't that require you to input the keyring password every time you try to login instead?
+[09:17:20] <georgios> it is a qt application and i have kwallet. i think i have gnome-keyring as well because some gnome application spawns a prompt asking for a password
+[09:17:21] <zetok> nurupo: yes
+[09:18:03] <zetok> georgios: https://github.com/qTox/qTox/pull/3332
+[09:18:05] <georgios> authenticating once per session is not a problem
+[09:18:58] <georgios> but right now i have to auth 3 times! (mail-gnome-keyring,chromium-kwallet,qtox)
+[09:20:51] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:20:58] <zetok> well, someone would need to make the code from PR that I've linked to work, then qTox could support using keychain
+[09:21:13] *** Joins: VVD (~VVD@ )
+[09:29:03] <georgios> for the moment i found out that deleting my password will give me the option to auto-login. what security implications does that have?
+[09:31:22] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:31:49] <nurupo> the password is used to encrypt your profile file
+[09:32:07] <nurupo> without password the file is unencrypted
+[09:32:18] *** Joins: VVD (~VVD@ )
+[09:32:32] <nurupo> the file contains your permanent tox keypair: secret and public keys
+[09:33:51] <nurupo> that's along with other information, like your friend list and other things
+[09:35:15] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:36:08] *** Joins: VVD (~VVD@ )
+[09:38:30] <georgios> i dont have local adversaries but for remote ones... stricter attributes shouldn't help... mmm
+[09:45:20] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:46:09] *** Joins: VVD (~VVD@ )
+[09:46:11] *** Joins: Yoshimo (~anything@ )
+[09:46:32] *** Joins: reBrain (~quassel@ )
+[09:49:01] -qtox-git-spam- [qTox] zetok opened pull request #4190: Update translations from Weblate (master...tr2) https://git.io/vDd2b
+[09:49:40] -qtox-git-spam- [qTox] zetok closed pull request #4168: Update translations from Weblate (master...tr) https://git.io/vDVMH
+[09:58:20] *** Quits: noavarice (5f2043a6@ ) (Ping timeout: 260 seconds)
+[10:20:09] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[11:39:06] *** Joins: sudden6 (~anonymous@ )
+[11:58:43] <sudden6> diadlo zetok we should really merge the coding style PR
+[12:02:53] <zetok> mm
+[12:05:22] <zetok> I still think that omitting curly braces for the single statement `if`s is the way to go
+[12:09:11] <sudden6> If it means progress I could live with it
+[12:18:28] <zetok> :D
+[12:24:36] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[12:37:09] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[12:37:44] *** Joins: VVD (~VVD@ )
+[12:41:43] *** Joins: x_ (~x@ )
+[12:43:50] *** Joins: sudden6 (~anonymous@ )
+[12:54:09] <zetok> sudden6: with current .clang-format, e.g.: https://gist.github.com/zetok/eecb7abc5415de628e33630949e21cf0
+[12:54:14] <zetok> full diff: https://gist.github.com/zetok/d7791fde843accc9b3c2aeae14fa7bad
+[13:00:40] *** Joins: kchz (~dschulz@ )
+[13:09:59] *** Quits: SkyzohKey (~SkyzohKey@ ) (Ping timeout: 255 seconds)
+[13:13:15] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:13:39] *** Joins: VVD (~VVD@ )
+[13:30:02] *** Joins: SkyzohKey (~SkyzohKey@ )
+[13:30:14] <SkyzohKey> eheh! https://chat.konv.im/home
+[13:41:18] <sudden6> file:///home/christoph/ownCloud/Schule/FH/3. Semester/HST/Simulationen/lab1/pic/1_2_1 Bipolartransistor als Schalter.PNG
+[13:41:19] <sudden6> file:///home/christoph/ownCloud/Schule/FH/3. Semester/HST/Simulationen/lab1/pic/1_2_2 MOSFET als Schalter.PNG
+[13:41:27] <sudden6> oops
+[13:41:27] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[13:42:13] *** Joins: VVD (~VVD@ )
+[13:43:14] <sudden6> [13:18] <zetok> :D ... [13:54] <zetok> sudden6: with current ..... <- I don't understand I'm missing some messages
+[13:49:09] <zetok> sudden6: with current .clang-format, e.g.: https://gist.github.com/zetok/eecb7abc5415de628e33630949e21cf0
+[13:49:14] <zetok> full diff: https://gist.github.com/zetok/d7791fde843accc9b3c2aeae14fa7bad
+[13:50:13] <zetok> sudden6: that's the diff of changes done by clang-format using the .clang-format config from initramfs' PR
+[13:50:24] <sudden6> ahhh
+[13:52:28] <sudden6> zetok: looks pretty good to me at first glance, care to submit an updated PR?
+[13:52:57] <zetok> um, the first gist shows stuff that doesn't look too good
+[13:55:50] <SkyzohKey> You guys should be able to login with GitHub now: https://chat.konv.im - It's waiting for users in the #qtox chan ;)
+[14:04:16] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[14:08:28] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 240 seconds)
+[14:08:56] <SkyzohKey> Come on guys, let's give it a try, you can login with github and it's fun to use :(
+[14:10:56] *** Joins: in1t3r_ (~LordShiva@ )
+[14:20:04] <sudden6> zetok: oh, ok
+[14:20:55] <sudden6> SkyzohKey: it would help if you explain what it is and what it does instead of just throwing around links all the time
+[14:23:52] -qtox-git-spam- [qTox] zetok opened pull request #4191: Implement clang-format and updated coding style document (master...rebase-coding-style) https://git.io/vDFeY
+[14:26:10] *** Joins: DiCE1904 (~textual@ )
+[14:39:48] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 240 seconds)
+[14:53:15] <SkyzohKey> sudden6, That's a slack-like open-source with OTR
+[14:53:22] <SkyzohKey> i hope it'll replace irc
+[14:54:38] *** Joins: f10 (~flo@ )
+[14:55:01] *** Joins: f10__ (~flo@ )
+[15:07:59] <zetok> SkyzohKey: is it mattermost ?
+[15:09:42] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:10:24] *** Joins: GNUrights (~MDrights@ )
+[15:11:57] <SkyzohKey> Nope, rocket.chat
+[15:12:08] <SkyzohKey> slack-like open-source, self-hosted and OTR encrypted
+[15:12:36] <SkyzohKey> come on zetok, tux3 in order for me to defines you as channel owners
+[15:12:51] *** Quits: GNUrights (~MDrights@ ) (Client Quit)
+[15:27:26] *** Joins: in1t3r_ (~LordShiva@ )
+[15:54:04] *** Joins: noavarice (5f2043a6@ )
+[16:15:00] *** Quits: f10 (~flo@ ) (Ping timeout: 240 seconds)
+[16:15:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[16:25:26] <sudden6> SkyzohKey: I don't think it'll replace IRC if you have to login
+[16:26:20] <SkyzohKey> github login eh
+[16:26:31] <SkyzohKey> i can easily add facebook/twitter login too
+[16:26:31] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:26:39] <zetok> that's even worse
+[16:26:42] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[16:27:23] *** Joins: VVD (~VVD@ )
+[16:40:17] *** Quits: SkyzohKey (~SkyzohKey@ ) (Remote host closed the connection)
+[17:03:57] *** Quits: nurupo (~nurupo.ga@ ) (Ping timeout: 276 seconds)
+[17:09:20] *** Quits: dan- (~d@ ) (Ping timeout: 240 seconds)
+[17:10:04] *** Joins: dan- (~d@ )
+[17:10:04] *** Quits: dan- (~d@ ) (Changing host)
+[17:10:04] *** Joins: dan- (~d@ )
+[17:13:30] *** Quits: noavarice (5f2043a6@ ) (Ping timeout: 260 seconds)
+[17:29:33] *** Joins: kchz (~dschulz@ )
+[17:35:49] *** Quits: x_ (~x@ ) (Remote host closed the connection)
+[18:00:01] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[18:05:04] *** Joins: f10__ (~flo@ )
+[18:05:25] *** Joins: f10 (~flo@ )
+[18:36:01] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[18:55:32] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[19:09:52] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[19:11:11] *** Joins: DiCE1904 (~textual@ )
+[19:32:09] *** Quits: GGMethos (methos@ ) (Ping timeout: 252 seconds)
+[19:42:57] *** Joins: kchz (~dschulz@ )
+[19:43:27] *** Joins: sudden6 (~anonymous@ )
+[19:45:30] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[19:48:16] *** Joins: kchz (~dschulz@ )
+[20:05:04] *** Joins: reBrain (~quassel@ )
+[20:33:05] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[20:40:16] <diadlo> sudden6, zetok: Hi
+[20:41:17] <diadlo> What do you think about K&R braces style + braces everywhere?
+[20:41:20] <sudden6> diadlo: hi :)
+[20:41:51] <diadlo> Also, sudden6, any progress with UML?
+[20:42:15] <sudden6> diadlo: nope, didn't have time
+[20:42:20] <sudden6> you?
+[20:42:27] <diadlo> Me too :/
+[20:43:15] <sudden6> about k&r brace style, I don't like it
+[20:44:33] <diadlo> I don't like Allman style, but I use it because it's our standard
+[20:45:00] <diadlo> ¯\_(ツ)_/¯
+[20:45:02] <sudden6> yeah, the debate about coding style can be endless
+[20:45:33] <diadlo> I'm agree, that better use K&R with braces everywhere or Allman without it
+[20:46:25] <sudden6> you mean allman without braces for single line statements?
+[20:46:30] <diadlo> +
+[20:46:44] <sudden6> I can live with that
+[20:46:57] <diadlo> But can't with K&R? :D
+[20:47:01] <sudden6> no
+[20:47:03] <sudden6> :P
+[20:47:18] <diadlo> IDK
+[20:47:22] <diadlo> Wht to say
+[20:47:26] <diadlo> *What
+[20:48:41] <sudden6> ok, can anyone not live with allman style and no braces for single line stuff?
+[20:50:03] <diadlo> It seems that we are only here :)
+[20:50:28] <sudden6> yeah
+[20:55:32] *** Joins: kchz (~dschulz@ )
+[20:56:50] <diadlo> Good night
+[20:56:55] <sudden6> good night
+[21:04:31] *** Joins: f10_ (~flo@ )
+[21:06:21] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[21:06:31] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[21:06:52] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[21:09:13] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[21:11:38] *** Joins: kchz (~dschulz@ )
+[21:20:40] *** Joins: GGMethos (methos@ )
+[21:29:25] *** Quits: smaragdus (~omoo@ ) (Quit: Nettalk6 - www.ntalk.de)
+[21:50:38] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[21:51:03] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[21:51:08] *** Joins: VVD (~VVD@ )
+[21:57:52] *** Joins: nurupo (~nurupo.ga@ )
+[22:11:57] *** Joins: f10_ (~flo@ )
+[22:12:42] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:13:18] *** Joins: VVD (~VVD@ )
+[22:18:54] *** Joins: smaragdus (~omoo@ )
+[22:56:48] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:57:38] *** Joins: VVD (~VVD@ )
+[23:11:17] *** Joins: cenysor (~cenysor@ )
+[23:18:26] *** Quits: georgios (~george@ ) (Quit: WeeChat 1.7)
+[23:33:42] *** dan- is now known as dan_
+[23:34:12] *** dan_ is now known as Guest62944
+[23:38:44] *** Guest62944 is now known as dan-
+[23:49:18] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[23:51:59] <nurupo> ommiting braces is error-prone when refactoring code
+[23:53:57] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:55:03] *** Joins: VVD (~VVD@ )
+[23:59:34] *** Joins: sudden6 (~anonymous@ )
