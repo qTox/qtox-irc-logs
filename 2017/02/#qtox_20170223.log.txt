@@ -1,0 +1,177 @@
+[00:01:12] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[00:40:13] *** Joins: kchz (~dschulz@ )
+[00:57:22] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[00:57:51] *** Joins: VVD (~VVD@ )
+[00:59:56] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[01:01:07] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[01:01:45] *** Joins: VVD (~VVD@ )
+[01:15:42] *** Joins: kchz (~dschulz@ )
+[01:27:18] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[02:21:58] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[02:22:43] *** Quits: f10_ (~flo@ ) (Ping timeout: 268 seconds)
+[03:05:11] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:05:56] *** Joins: VVD (~VVD@ )
+[03:16:21] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:17:05] *** Joins: VVD (~VVD@ )
+[03:35:59] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:36:30] *** Joins: VVD (~VVD@ )
+[04:36:22] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:37:10] *** Joins: VVD (~VVD@ )
+[04:42:05] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:42:50] *** Joins: VVD (~VVD@ )
+[04:47:56] *** Joins: MDrights (~MDrights@ )
+[05:45:17] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[06:43:15] -qtox-git-spam- [qTox] Diadlo closed pull request #4099: Friend widget 4 (final) (master...friendWidget_final) https://git.io/vDULb
+[06:44:51] <diadlo> zetok: ping
+[07:00:18] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[07:01:02] *** Joins: LittleVulpix (~Miranda@ )
+[07:01:21] *** Joins: DiCE1904 (~textual@ )
+[07:06:12] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[07:06:55] *** Joins: VVD (~VVD@ )
+[08:16:40] *** Joins: noavarice (5f2055ff@ )
+[08:27:09] *** Joins: reBrain (~quassel@ )
+[08:27:44] *** Joins: f10_ (~flo@ )
+[08:30:14] *** Joins: f10__ (~flo@ )
+[08:30:25] *** Quits: noavarice (5f2055ff@ ) (Ping timeout: 260 seconds)
+[08:30:43] *** Quits: f10_ (~flo@ ) (Excess Flood)
+[08:32:01] *** Joins: f10_ (~flo@ )
+[08:37:18] <zetok> diadlo: pong
+[08:37:42] <diadlo> Hi
+[08:38:43] <diadlo> A found a ~mistake: run cmake from non qTox dir => you will have an error `osx directory not found`
+[08:39:23] <diadlo> Because cmake/Installation.cmake call update-version script, which try to `cd osx`
+[08:39:54] <zetok> right
+[08:52:45] -qtox-git-spam- [qTox] zetok opened pull request #4197: chore(build): fix version script failure when called from non-based dir (master...chore-cmake-version) https://git.io/vyeJz
+[08:52:47] <zetok> diadlo: ↑
+[09:18:54] *** Joins: mutin-s (~s-mutin@ )
+[09:22:05] *** Quits: s-mutin (~s-mutin@ ) (Ping timeout: 260 seconds)
+[09:24:50] *** Quits: f10_ (~flo@ ) (Remote host closed the connection)
+[09:49:05] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vyeLo
+[09:49:05] -qtox-git-spam- qTox/master 63ace85 Zetok Zalbavar: chore(build): use `-pie` flag only when linking...
+[09:54:15] *** Joins: CraZy_DeveLopeR (528760d2@ )
+[10:01:59] *** Quits: CraZy_DeveLopeR (528760d2@ ) (Quit: Page closed)
+[10:01:59] *** Quits: DiCE1904 (~textual@ ) (Read error: Connection reset by peer)
+[10:03:16] *** Joins: pcre (~quassel@ )
+[10:45:21] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[10:49:29] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[10:50:00] *** Joins: LittleVulpix (~Miranda@ )
+[10:52:01] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[10:52:36] *** Joins: VVD (~VVD@ )
+[11:19:50] *** Quits: diadlo (~diadlo@ ) (Ping timeout: 268 seconds)
+[11:27:09] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 260 seconds)
+[11:27:31] *** Joins: in1t3r_ (~LordShiva@ )
+[11:33:47] *** Joins: diadlo (~diadlo@ )
+[11:38:08] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vyeCB
+[11:38:08] -qtox-git-spam- qTox/master a2aaff1 Zetok Zalbavar: chore(build): fix version script failure when called from non-base dir...
+[11:54:07] *** Quits: diadlo (~diadlo@ ) (Remote host closed the connection)
+[11:57:56] *** Joins: sudden6 (~anonymous@ )
+[11:59:03] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[11:59:48] *** Joins: kchz (~dschulz@ )
+[12:59:33] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[13:02:43] *** Joins: kchz (~dschulz@ )
+[13:25:23] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 260 seconds)
+[13:32:53] *** Joins: in1t3r_ (~LordShiva@ )
+[13:55:29] *** Joins: shiva (~LordShiva@ )
+[13:56:29] *** Quits: in1t3r_ (~LordShiva@ ) (Ping timeout: 260 seconds)
+[14:26:34] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[14:27:10] *** Joins: VVD (~VVD@ )
+[14:34:13] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[14:38:37] *** Joins: pcre (~quassel@ )
+[14:51:39] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[14:52:24] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 256 seconds)
+[14:53:53] *** Joins: Chiitoo (~Chiitoo@ )
+[15:14:16] *** Quits: LittleVulpix (~Miranda@ ) (Read error: Connection reset by peer)
+[15:29:06] *** Joins: kchz (~dschulz@ )
+[15:33:36] *** Joins: LittleVulpix (~Miranda@ )
+[15:34:45] *** Joins: Calavera (96d6b21f@ )
+[15:38:50] *** Quits: Calavera (96d6b21f@ ) (Client Quit)
+[15:49:54] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[15:53:40] *** Joins: f10__ (~flo@ )
+[16:40:02] *** Quits: f10__ (~flo@ ) (Ping timeout: 240 seconds)
+[16:40:47] *** Quits: pcre (~quassel@ ) (Ping timeout: 260 seconds)
+[16:46:01] *** Joins: cisc (~cisc@ )
+[16:46:40] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:47:36] *** Joins: VVD (~VVD@ )
+[17:13:42] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[17:16:08] *** Joins: noavarice (5f20424f@ )
+[17:32:20] *** Quits: noavarice (5f20424f@ ) (Ping timeout: 260 seconds)
+[17:58:59] *** Joins: f10__ (~flo@ )
+[18:51:15] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[18:52:52] *** Joins: f10__ (~flo@ )
+[19:07:11] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[19:08:40] *** Joins: cisc (~cisc@ )
+[19:27:24] *** Joins: julmae (~kraq@ )
+[19:31:19] *** Joins: bashrc (~motters@ )
+[19:36:41] *** Quits: shiva (~LordShiva@ ) (Ping timeout: 260 seconds)
+[19:39:27] *** Joins: kchz (~dschulz@ )
+[19:43:59] *** Joins: in1t3r_ (~LordShiva@ )
+[19:44:07] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[20:01:40] *** Joins: MamaClau (d5e10521@ )
+[20:03:17] <MamaClau> Hallo zusammen 
+[20:08:59] *** Quits: bashrc (~motters@ ) (Remote host closed the connection)
+[20:11:00] *** Quits: MamaClau (d5e10521@ ) (Ping timeout: 260 seconds)
+[20:55:43] *** Joins: Diadlo (~Diadlo@ )
+[21:07:27] <Diadlo> zetok: ping
+[21:12:34] *** Joins: f10 (~flo@ )
+[21:12:50] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[21:17:48] <zetok> Diadlo: pong
+[21:19:13] <Diadlo> Do you prefer K&R braces style?
+[21:19:47] <oranges> yes
+[21:20:05] <Diadlo> oranges: Hm?
+[21:20:19] <oranges> yeeeeeeeeeeeeeeeeeeeees
+[21:20:24] <Diadlo> -_-
+[21:21:16] <zetok> Diadlo: ~yep
+[21:22:05] <Diadlo> What do you think about change the brace style?
+[21:23:38] *** Joins: noavarice (5f20424f@ )
+[21:25:42] <zetok> dunno, sudden6 might get upset about that
+[21:27:50] <Diadlo> Current style upset me :/
+[21:28:03] <noavarice> me too - http://pastebin.com/R6sBP5Hc
+[21:29:06] <Chiitoo> I guess my favourite is Allman.  That is, braces always lined up.
+[21:30:56] <zetok> Chiitoo: um, what about the stuff noavarice just linked to?
+[21:31:33] <Chiitoo> Yeah, that looks like what I'm thinking of.
+[21:31:51] <zetok> um
+[21:31:57] <Diadlo> Lol?)
+[21:32:17] <zetok> the only thing that it makes me think of is "yeah, no, time to change the style"
+[21:32:43] <noavarice> Chiitoo: what does actually this alignment gain for you?
+[21:32:52] <Chiitoo> Feels easiest to read to me.
+[21:33:21] <Diadlo> zetok: AFAIR clang generate patch to fix style
+[21:33:35] <zetok> it does?
+[21:33:44] <Diadlo> Hm..
+[21:33:53] <zetok> I was planning to just use `find src/ -iname '*.cpp' -o -iname '*.h' -exec clang-format -i -style=file {} +`
+[21:33:54] <noavarice> Chiitoo: there's already a spacing and closing bracket
+[21:34:07] <Diadlo> Which script used by toktok?
+[21:35:03] *** Joins: f10 (~flo@ )
+[21:35:13] <Chiitoo> Only thing I'm talking about, is where the braces are.  Not sure the example code there requires that many of them.  :D
+[21:36:00] <zetok> current style requires them
+[21:36:02] <noavarice> Chiitoo: It's about code convention, all this brackets
+[21:36:51] <Chiitoo> Mhm.
+[21:41:28] <Diadlo> Also, because we have two ways: allman without one line if block VS K&R with braces everywhere => I think `braces everywhere` is a good rule
+[21:42:03] <Diadlo> It can help to avoid mistakes with writing code with indentation and without braces
+[21:48:27] <noavarice> that's all? we're done?)
+[21:49:12] <zetok> :s
+[21:49:46] <zetok> K&R with braces everywhere requires custom style
+[21:54:07] <zetok> or maybe not :/
+[21:54:47] *** Quits: noavarice (5f20424f@ ) (Quit: Page closed)
+[21:55:36] <zetok> ok, nvm, clang-format cannot into that stuff
+[21:57:21] *** Quits: Emcy_ (~MC@ ) (Read error: Connection reset by peer)
+[22:02:51] <Diadlo> clang-format can't K&R?
+[22:03:20] <Diadlo> Or can't require braces for every if statement?
+[22:03:34] <zetok> can't require braces
+[22:03:40] <Diadlo> Lol
+[22:04:32] <Diadlo> http://stackoverflow.com/questions/26111162/can-clang-format-add-braces-to-single-line-if-statements-etc#28437960
+[22:07:13] <zetok> `enum Foo {` or `enum Bar\n{` ?
+[22:09:30] <Diadlo> AFAIK, the second one. Like with functions
+[22:09:52] <Chiitoo> If I were to decide, { under e, but so far I'm doing so little code yet that my opinion shouldn't matter that much.  :D
+[22:09:55] <Diadlo> Not that important
+[22:10:16] <zetok> um
+[22:17:13] <Diadlo> I think we should discuss about it with sudden6
+[22:17:26] <Diadlo> Maybe tomorrow
+[22:21:07] <Diadlo> Good night
+[22:22:29] <Chiitoo> NightZzz
+[22:40:36] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:41:32] *** Joins: VVD (~VVD@ )
+[23:01:25] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[23:01:54] *** Joins: VVD (~VVD@ )
+[23:08:47] *** Joins: cenysor (~cenysor@ )
+[23:12:03] *** Joins: x_ (~x@ )
+[23:20:35] <oranges> qtox updater server almost at 450 days uptime!
+[23:22:31] *** Quits: x_ (~x@ ) (Quit: Leaving)
