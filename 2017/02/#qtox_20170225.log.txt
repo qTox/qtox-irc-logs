@@ -1,0 +1,386 @@
+[00:04:56] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:28:32] *** Quits: f10__ (~flo@ ) (Remote host closed the connection)
+[00:29:50] *** Joins: f10__ (~flo@ )
+[01:25:09] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[01:26:05] *** Joins: VVD (~VVD@ )
+[01:52:32] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[02:19:28] *** Quits: f10 (~flo@ ) (Ping timeout: 268 seconds)
+[02:20:05] *** Quits: f10__ (~flo@ ) (Ping timeout: 268 seconds)
+[03:13:51] *** Joins: f10__ (~flo@ )
+[03:13:52] *** Joins: f10 (~flo@ )
+[03:22:52] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[03:25:36] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[03:26:20] *** Joins: VVD (~VVD@ )
+[03:36:07] *** Joins: f10 (~flo@ )
+[03:36:47] *** Quits: f10 (~flo@ ) (Read error: Connection reset by peer)
+[03:38:11] *** Joins: dropkick (~dropkick@ )
+[03:39:57] <dropkick> me and my friends are trying to do a group voice call but whenever we have more than 2 people the audio goes completely glitchy
+[03:50:59] *** Joins: f10 (~flo@ )
+[04:25:24] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:26:01] *** Joins: VVD (~VVD@ )
+[04:56:21] *** Quits: f10 (~flo@ ) (Ping timeout: 260 seconds)
+[04:56:43] *** Quits: f10__ (~flo@ ) (Ping timeout: 268 seconds)
+[05:16:42] *** Quits: Chiitoo (~Chiitoo@ ) (Ping timeout: 260 seconds)
+[05:16:44] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 260 seconds)
+[05:16:45] *** Joins: smaragdus (~omoo@ )
+[05:16:46] *** Quits: arza (arza@ ) (Ping timeout: 240 seconds)
+[05:16:49] *** Quits: r00tobo (~r00tobo@ ) (Ping timeout: 240 seconds)
+[05:17:18] *** Joins: r00tobo (~r00tobo@ )
+[05:17:22] *** Joins: arza (znc@ )
+[05:20:35] *** Joins: gk\`_^{1wm (~su@ )
+[05:21:14] *** Parts: gk\`_^{1wm (~su@ ) ()
+[05:24:00] *** Joins: gk`____^1wm (~su@ )
+[05:24:00] *** Parts: gk`____^1wm (~su@ ) ()
+[05:26:59] *** Joins: gk^_^1wm (~su@ )
+[05:28:09] *** Quits: gk^_^1wm (~su@ ) (K-Lined)
+[05:31:35] -qtox-git-spam- [qTox] Diadlo closed pull request #4202: chore(cmake): Add windows cmake toolchain (master...chore/windows-toolchain) https://git.io/vyU11
+[05:32:35] *** Joins: Chiitoo_ (~Chiitoo@ )
+[05:33:02] *** Quits: Chiitoo_ (~Chiitoo@ ) (Quit: Sayonara sandwich!)
+[05:33:10] *** Joins: gk^___^1wm (~su@ )
+[05:34:14] *** Quits: gk^___^1wm (~su@ ) (K-Lined)
+[05:34:38] *** Joins: Chiitoo (~Chiitoo@ )
+[05:36:08] *** Joins: gk^______^1wm (~su@ )
+[05:36:59] *** Quits: gk^______^1wm (~su@ ) (K-Lined)
+[05:41:01] *** Joins: arza- (~arza@ )
+[05:41:16] *** Quits: smaragdus (~omoo@ ) (Ping timeout: 260 seconds)
+[05:41:16] *** Quits: arza (znc@ ) (Ping timeout: 260 seconds)
+[05:41:27] *** Joins: smaragdus (~omoo@ )
+[05:43:15] *** arza- is now known as arza
+[06:45:54] *** Joins: f10 (~flo@ )
+[06:56:58] *** Joins: f10__ (~flo@ )
+[07:18:36] *** Joins: MDrights (~MDrights@ )
+[07:28:50] *** Joins: reBrain (~quassel@ )
+[08:19:53] *** Quits: dropkick (~dropkick@ ) (Quit: Leaving)
+[09:47:23] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[09:47:55] *** Joins: VVD (~VVD@ )
+[10:27:04] *** Joins: bashrc (~motters@ )
+[10:27:23] *** Joins: Yoshimo (~anything@ )
+[10:54:22] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[11:05:37] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[12:12:58] *** Joins: noavarice (5f20808a@ )
+[12:22:45] *** Joins: LittleVulpix (~Miranda@ )
+[12:48:41] *** Joins: dardevelin (~dardeveli@ )
+[13:16:19] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[13:48:55] *** Quits: cisc (~cisc@ ) (Quit: Konversation terminated!)
+[13:54:10] *** Joins: vFSgrcFGBJHg (~rYUtdcvYT@ )
+[14:01:40] *** Joins: reBrain (~quassel@ )
+[14:39:46] *** Joins: Yoshimo (~anything@ )
+[14:41:31] -qtox-git-spam- [qTox] noavarice opened pull request #4203: fix: changed incorrect videocall button offline tooltip (master...fix-videobutton-tooltip) https://git.io/vyTRJ
+[15:05:06] -qtox-git-spam- [qTox] zetok pushed 2 new commits to master: https://git.io/vyTRh
+[15:05:06] -qtox-git-spam- qTox/master 0effac2 noavarice: fix: changed incorrect videocall button offline tooltip
+[15:05:06] -qtox-git-spam- qTox/master 3dcb8a6 Zetok Zalbavar: Merge pull request #4203...
+[15:07:00] *** Quits: Yoshimo (~anything@ ) (Quit: Yoshimo)
+[15:24:45] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:27:04] *** Joins: LittleVulpix (~Miranda@ )
+[15:37:55] *** Quits: noavarice (5f20808a@ ) (Ping timeout: 260 seconds)
+[15:39:19] *** Joins: noavarice (5f20c8d1@ )
+[15:42:40] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[15:43:45] *** Quits: noavarice (5f20c8d1@ ) (Ping timeout: 260 seconds)
+[15:43:48] *** Joins: LittleVulpix (~Miranda@ )
+[15:48:03] *** Joins: f10 (~flo@ )
+[16:28:57] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[16:56:30] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[16:57:25] *** Joins: VVD (~VVD@ )
+[17:42:10] -qtox-git-spam- [qTox] Diadlo closed pull request #4194: Fix incorrect groupname, group invite form refactored and added docs for it (master...fix-incorrect-groupname) https://git.io/vDhBW
+[17:57:16] <zetok> >We don't have strict rule about initialize list format, but we use rule: one per line (like with variable declaration)
+[17:58:30] <zetok> Diadlo: about that ↑, current .clang-format changes formatting from vertical to horizontal
+[17:59:05] <zetok> I haven't seen an option to change that behaviour
+[17:59:57] <zetok> or maybe there is
+[18:01:35] <zetok> ok, found an option for it
+[18:08:29] -qtox-git-spam- [qTox] zetok pushed 1 new commit to master: https://git.io/vyToc
+[18:08:29] -qtox-git-spam- qTox/master f057416 Zetok Zalbavar: test(build): check whether code/files have been processed by CMake
+[18:09:14] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 255 seconds)
+[18:14:30] <zetok> Diadlo: https://github.com/qTox/qTox/pull/4200 rebase needed
+[18:23:27] *** Joins: sudden6 (~anonymous@ )
+[18:29:13] *** Joins: dardevelin (~dardeveli@ )
+[18:29:17] *** Quits: bashrc (~motters@ ) (Ping timeout: 260 seconds)
+[18:30:12] *** Joins: bashrc (~motters@ )
+[19:04:01] -qtox-git-spam- [qTox] sudden6 closed pull request #4120: fix(icons): Removed unnecessary icon preparation. (master...icons) https://git.io/vDszM
+[19:04:11] <sudden6> hi everybody
+[19:17:40] <zetok> hello
+[19:17:46] <Diadlo> o/
+[19:17:48] *** Joins: kchz (~dschulz@ )
+[19:18:25] <sudden6> I commented on the coding style PR
+[19:19:15] <sudden6> it seems to be impossible to tell qtcreator to put the braces on the same line as the control structure
+[19:20:01] <Diadlo> zetok: Rebased
+[19:20:51] <Diadlo> > <zetok> ok, found an option for it
+[19:21:13] <Diadlo> glad to know)
+[19:32:25] <Diadlo> > <sudden6> it seems to be impossible to tell qtcreator to put the braces on the same line as the control structure
+[19:32:26] <Diadlo> Lol
+[19:32:53] <sudden6> yeah, that's what I thought too
+[19:33:02] <sudden6> but I couldn't find an option :/
+[19:33:13] <Diadlo> I'm too
+[19:35:25] <Diadlo> sudden6: http://stackoverflow.com/questions/22846739/full-customization-of-qt-creator-coding-style#24756329
+[19:35:54] <Diadlo> Seems it's better replacement for default QtCreator style
+[19:36:02] <sudden6> Diadlo: nice, that would make the file obsolete
+[19:36:37] <Diadlo> So we should add it to the docs and remove xml
+[19:36:59] <sudden6> yep
+[19:37:21] <sudden6> didn't know that qtcreator had a plugin system O_o
+[19:37:47] <Diadlo> I'm hear about it, but never seen before :)
+[19:39:39] *** Joins: cenysor (~cenysor@ )
+[19:40:02] <zetok> sudden6: what is the urgent issue with #4122 ?
+[19:40:18] *** Joins: pcre (~quassel@ )
+[19:40:20] <sudden6> zetok: accidentally clicking cancel
+[19:40:41] <zetok> that doesn't sound urgent
+[19:41:06] <sudden6> urgent, as in more important than the style
+[19:41:10] <zetok> i.e. right now qTox is not even able to transfer files bigger than just a few MB
+[19:41:43] <zetok> so even if there is an accidental cancel, it's not a big problem
+[19:42:09] <sudden6> yeah, but the current stuff works, why not merge it and then improve the style
+[19:42:16] <sudden6> gradually improving
+[19:42:32] <zetok> gradual improvement would have buttons with proper size
+[19:42:40] <zetok> not a regression
+[19:43:16] <Diadlo> We need to migrate from sqlchipher :/
+[19:43:32] <zetok> :D
+[19:43:38] <zetok> Diadlo: to TES ?
+[19:43:44] <Diadlo> Cross compilation of it -- go through the hell
+[19:43:47] <sudden6> noooooooo
+[19:43:48] <Diadlo> What is TES?
+[19:43:55] <zetok> toxencryptsave
+[19:43:58] <Diadlo> The Elder Scrolls?)
+[19:44:03] <zetok> also ;)
+[19:44:14] <sudden6> old historykeeper used that approach, it's horrible
+[19:44:19] <Diadlo> Lol?
+[19:44:26] <Diadlo> It's only for old historykeeper?
+[19:44:32] <sudden6> no
+[19:44:41] <zetok> Diadlo: the problem with TES is that data was being lost constantly
+[19:44:54] <sudden6> but it created an sql database which was then encrypted using TES
+[19:44:57] <zetok> at least that's what tux3 said as a reason to move to sqlcipher
+[19:45:03] <sudden6> loose power loose everything
+[19:45:21] <zetok> actually
+[19:45:36] <zetok> sudden6: this could be worked around by having backups of the DB
+[19:45:45] <Diadlo> I'm start from a ~joke
+[19:46:04] <zetok> and while at it, there should be also backups of the profile
+[19:46:06] <Diadlo> Because I think it's not the first problem
+[19:46:07] <sudden6> zetok: a backup of every write?
+[19:46:35] <zetok> https://github.com/qTox/qTox/issues/1534
+[19:47:52] <zetok> what do you think about keeping last 10 "versions" as backups?
+[19:48:04] <Diadlo> For me issue unclear. Is backup before every change?
+[19:48:15] <Diadlo> *is unclear
+[19:49:05] <zetok> mv profile.tox profile.tox.bak-$(unix_timestamp) && touch profile.tox
+[19:49:15] <zetok> ~kinda
+[19:49:32] <Diadlo> It seems like wipe of profile
+[19:49:58] <zetok> "backup" shouldn't constitute a new write, just rename current "working" files, and new files would be created on write
+[19:50:02] <Diadlo> AFAIR, backup is `cp`
+[19:50:27] <Diadlo> Hm...
+[19:50:45] <Diadlo> <zetok> Diadlo: the problem with TES is that data was being lost constantly
+[19:50:51] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[19:50:52] <Diadlo> > constantly
+[19:51:14] <zetok> yeah, there were quite a lot of bug reports about lost history
+[19:51:38] <Diadlo> But history saved out of the profile
+[19:52:13] <zetok> well
+[19:52:20] <zetok> I just know about bug reports
+[19:52:25] <Diadlo> Ok
+[19:52:29] <zetok> before migration, there were a lot of them
+[19:52:41] <zetok> after, almost none, or none
+[19:53:27] <Diadlo> sqlchipher used to store history
+[19:53:41] <Diadlo> So profile backup is unrelated issue
+[19:54:03] <zetok> um
+[19:54:19] <zetok> "profile" is about user data, not just the .tox files
+[19:54:26] <Diadlo> Ok
+[19:54:38] <sudden6> see you later
+[19:55:04] <Diadlo> Bye
+[19:55:36] <zetok> cya
+[19:58:33] <Diadlo> zetok: #4135 and #1025 ~same?
+[19:58:41] <Diadlo> Can we close one?
+[19:59:57] <zetok> um, #1025 is about font
+[20:00:09] <Diadlo> Font is part of the style
+[20:00:12] <Diadlo> Isn't it?
+[20:00:22] <zetok> um
+[20:00:29] <zetok> I don't think so
+[20:00:32] <Diadlo> Ok
+[20:01:06] <zetok> regardless, I was wondering whether #4135 should be closed
+[20:01:25] <zetok> i.e. qTox should have support for themes
+[20:01:37] <zetok> question is, how the theming should be done?
+[20:02:41] <Diadlo> I'm not sure, that qTox should/could support system themes
+[20:02:56] <Diadlo> But could use it own themes
+[20:03:03] <Diadlo> Like plugins)
+[20:03:06] <zetok> ok
+[20:03:34] <zetok> so supporting system themes is out of question
+[20:03:50] <zetok> as for supporting qTox-specific themes, why not
+[20:04:03] <Diadlo> I'm not sure, that it's right
+[20:04:38] <zetok> um?
+[20:04:45] <Diadlo> Ignore system theme
+[20:05:09] <zetok> we do what we can
+[20:05:17] <zetok> if we can't support system themes, we don't
+[20:05:32] <Diadlo> I'm not sure, that we can't
+[20:05:37] <zetok> oh, ok
+[20:05:51] <Diadlo> But not sure, that we can ;)
+[20:05:58] <zetok> :D
+[20:06:15] <Diadlo> 1) qTox use non-standart widgets
+[20:06:40] <Diadlo> I.e. list of friend != list of any other QWidgets in another Qt applications
+[20:07:28] <Diadlo> 2) I theory we can drop own styles and use system ones, but...
+[20:07:35] <Diadlo> https://cloud.githubusercontent.com/assets/2612812/22854464/d5c8bfa6-f077-11e6-9f70-822bc7a3c02b.png
+[20:07:50] <Diadlo> That's why I do not want)
+[20:08:09] <zetok> user(s) want :D
+[20:08:34] <Diadlo> What do you think?
+[20:09:25] <zetok> I think that this should be looked at from maintenance PoV, i.e. what would be easier to maintain
+[20:09:30] <Diadlo> As far as I can imagine, we can select one of the 2 ways: only system theme / only own theme (exclude simple UI elements)
+[20:09:41] <zetok> but I don't know anything about that stuff
+[20:09:46] <Diadlo> What is PoV?
+[20:09:51] <Diadlo> Point of view?
+[20:09:51] <zetok> point of view
+[20:09:53] <Diadlo> Ok
+[20:10:43] <Diadlo> We can use reference to the Tox UI guidelines
+[20:11:12] <Diadlo> Do we have official guidelines?
+[20:11:20] <zetok> https://github.com/Tox-Clients/Tox-UI
+[20:11:31] *** Joins: bashrc (~motters@ )
+[20:11:39] <Diadlo> Perfectly!
+[20:12:10] <Diadlo> Can you close the issue?
+[20:14:51] <zetok> so using system theme is too hard?
+[20:15:42] <Diadlo> It's out of the Tox UI guidelines. Isn't it?
+[20:15:55] <zetok> yeah, like some other things
+[20:16:11] <Diadlo> :)
+[20:16:27] <zetok> UI guidelines are only as good as long there is a designer working on them
+[20:16:51] <zetok> Tox UI haven't had a designer working on them for years
+[20:17:21] <Diadlo> Ok
+[20:17:31] <zetok> the situation with themes is that people will want them in qTox, and will want to customize themes
+[20:18:39] <zetok> and when it comes to customized themes, people usually want themes to apply to their whole system, instead of every application separately
+[20:18:54] <Diadlo> Yes...
+[20:19:11] <zetok> so it's a question of whether we can support that
+[20:19:53] <zetok> if we can't support system themes, "next best thing" would be used, i.e. qTox-specific themes
+[20:20:47] <zetok> the reason why I would want to close #4135 is because I think that supporting system themes would be too hard
+[20:21:20] <Diadlo> Honestly, I do not know
+[20:22:34] *** Joins: reBrain (~quassel@ )
+[20:24:41] *** Quits: MDrights (~MDrights@ ) (Ping timeout: 255 seconds)
+[20:30:13] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[20:39:03] *** Joins: noavarice (5f202352@ )
+[20:48:24] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[21:07:44] *** Quits: noavarice (5f202352@ ) (Quit: Page closed)
+[21:47:07] *** Joins: cba123 (b204de76@ )
+[21:58:54] *** Quits: dardevelin (~dardeveli@ ) (Remote host closed the connection)
+[21:59:16] *** Joins: dardevelin (~dardeveli@ )
+[22:08:27] -qtox-git-spam- [qTox] Diadlo opened pull request #4204: fix: Add splitter restorer (master...fix/splitter) https://git.io/vyT7x
+[22:14:43] *** Quits: cba123 (b204de76@ ) (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+[22:27:41] *** Joins: f10 (~flo@ )
+[22:31:58] *** Quits: f10 (~flo@ ) (Remote host closed the connection)
+[22:33:55] *** Quits: kchz (~dschulz@ ) (Quit: ZZzzz…)
+[22:54:27] *** Joins: f10 (~flo@ )
+[22:55:51] <Diadlo> What do you think, should we fix `easy` issues, or leave it for somebody else?
+[23:05:10] <sudden6> Diadlo: I think we should also fix those
+[23:05:28] <Diadlo> sudden6: Hi again :)
+[23:05:36] <sudden6> hi
+[23:10:16] <zetok> https://github.com/qTox/qTox/issues/4010 ← I think that it should be fixed
+[23:12:19] -qtox-git-spam- [qTox] Diadlo pushed 1 new commit to master: https://git.io/vyTbC
+[23:12:19] -qtox-git-spam- qTox/master 4b7fc57 Nils Fenner: refactor: use enum class
+[23:14:53] *** Quits: f10 (~flo@ ) (Read error: No route to host)
+[23:15:12] *** Quits: f10__ (~flo@ ) (Read error: Connection reset by peer)
+[23:16:43] *** Joins: f10__ (~flo@ )
+[23:16:43] *** Joins: f10 (~flo@ )
+[23:18:32] <sudden6> zetok: I suggest removing the custom coding style file from 4191
+[23:19:02] <sudden6> When I've time I'll write instructions on how to include the clang-format in qtcreator
+[23:19:23] <sudden6> but this could take some time and I don't want the PR to be blocked because of this
+[23:19:26] <zetok> um?
+[23:19:41] <zetok> sudden6: you mean the .clang-format file?
+[23:20:03] <sudden6> no, the qTox-coding-style.xml from /tools/
+[23:20:33] <zetok> it never got to be a part of the PR
+[23:20:58] <sudden6> yeah, but after the PR it's wrong -> remove
+[23:21:24] <zetok> oh, so you mean remove as a part of the PR
+[23:21:29] <sudden6> yes
+[23:22:31] <zetok> I can remove it as a part of #4191, but it can be done in a separate PR, perhaps the one with instructions for using clang-format in qtcreator ?
+[23:23:07] <zetok> unless you want the repo to be atomic
+[23:26:08] <sudden6> zetok: I probably won't have time to write that up and test it for this week, so I think it's better to remove it now and add it later
+[23:26:09] <zetok> removed
+[23:26:36] <sudden6> also, it's not exactly the most important thing
+[23:27:03] <zetok> btw
+[23:27:49] <zetok> Diadlo, sudden6: you might want to run `find src/ -iname '*.cpp' -o -iname '*.h' -exec clang-format -i -style=file {} +` with the #4191 applied to make sure that you're ok with the changes
+[23:30:46] <zetok> after #4191 there will be 2 PRs, first one with those changes, and the second one with a change to travis to check whether clang-format was run before committing
+[23:30:47] <sudden6> zetok: I think the find command doesn't work
+[23:31:04] <zetok> um?
+[23:31:50] <sudden6> or clang-format doesn't work
+[23:32:00] <zetok> what's the error?
+[23:32:06] <sudden6>     if (sodium_init() < 0) // For the auto-updater
+[23:32:07] <sudden6>     {
+[23:32:09] <sudden6>         qCritical() << "Can't init libsodium";
+[23:32:10] <sudden6>         return EXIT_FAILURE;
+[23:32:12] <sudden6>     }
+[23:32:31] <sudden6> I thought braces should be on the same line?
+[23:32:47] <sudden6> maybe it doesn't work with comments?
+[23:32:47] <zetok> yeah, it doesn't restructure those braces :|
+[23:33:27] <zetok> it's not about comments
+[23:33:44] <zetok> (perhaps in this case it is)
+[23:34:16] <zetok> but from what I've seen, clang-format doesn't affect braces in control statements
+[23:34:18] <sudden6> also the find command doesn't execute clang-format for me
+[23:34:54] <sudden6> Profile::~Profile()
+[23:34:55] <sudden6> {
+[23:34:57] <sudden6>     if (!isRemoved && core->isReady()) {
+[23:34:58] <sudden6>         saveToxSave();
+[23:35:00] <sudden6>     }
+[23:35:01] <sudden6> here it worked
+[23:35:10] <zetok> huh, weird
+[23:35:35] <sudden6> I think the find command is the problem, and maybe comments on the same line as if's
+[23:36:26] <zetok> I don't think that it's about `find` command
+[23:36:49] <sudden6> yeah, not the problem with the if
+[23:37:05] <sudden6> but the command you posted doesn't change any source file for me
+[23:37:24] <zetok> ?!
+[23:37:31] <zetok> this is weird
+[23:37:35] -qtox-git-spam- [qTox] Diadlo opened pull request #4205: fix(core): Ignore online connection status (master...fix/status-spam) https://git.io/vyTNy
+[23:37:38] <zetok> it does change stuff for me
+[23:38:24] <zetok> but the weird thing is, clang-format doesn't change all the relevant stuff when ran via find
+[23:38:38] <zetok> i.e. it didn't change braces for control statement
+[23:38:55] <zetok> but I've just run it directly on a file and it changed them
+[23:38:59] <sudden6> zetok: maybe it doesn't find the config file?
+[23:39:11] <zetok> well
+[23:39:24] <zetok> I only ran clang-format via find before today
+[23:39:33] <zetok> and config changes were being reflected
+[23:40:27] <sudden6> ok, I have to manually run it for files to see changes
+[23:40:48] <zetok> :/
+[23:40:56] <zetok> apparently `find` doesn't find all the files
+[23:42:13] <Diadlo> Why column limit is 100?
+[23:42:50] <zetok> IIRC initramfs said that 80 would result in a lot of code being reformatted
+[23:42:57] <sudden6> Diadlo: in initramfs PR it was agreed that 80 is narrow for todays screens
+[23:43:31] <Diadlo> 100 is too many for split-screen :/
+[23:43:35] <Diadlo> Nevermind
+[23:43:49] <sudden6> dual screen ftw :P
+[23:44:03] <Diadlo> Already
+[23:44:11] <Diadlo> One scree for browser
+[23:44:25] <zetok> ok, `clang-format -i -style=file $(git ls-files src/)` works
+[23:44:26] <Diadlo> Why we indent case in switch?
+[23:45:01] <zetok> ok, so can we revert to 80 chars per line?
+[23:45:14] <Diadlo> Feel free to leave it 100
+[23:45:25] <sudden6> I also like 100 more
+[23:45:45] <zetok> 251 files changed, 7046 insertions(+), 9461 deletions(-)
+[23:45:53] <Diadlo> :/
+[23:45:54] <zetok> this is going to conflict with everything :3
+[23:45:58] <sudden6> but the "case" inteded really doesn't look that good
+[23:46:06] <sudden6> *intended
+[23:46:15] <Diadlo> Can we disable it?
+[23:47:06] <zetok> yes
+[23:47:42] <Diadlo> Lol https://github.com/qTox/qTox/blob/master/src/chatlog/chatlog.cpp#L812
+[23:47:49] <Diadlo> Top-comment
+[23:48:07] <zetok> > IndentCaseLabels: true
+[23:48:29] <zetok> perhaps `// maybe` should be added below
+[23:48:41] <Diadlo> :D
+[23:50:23] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[23:50:27] *** Joins: sudd3n6 (~anonymous@ )
+[23:50:34] <sudd3n6> sorry, got disconnected, what did I miss?
+[23:50:51] *** sudd3n6 is now known as sudden6
+[23:51:28] <zetok> ok, now `case` is no longer indented
+[23:51:33] <Diadlo> <Diadlo> Can we disable it?
+[23:51:33] <Diadlo> <zetok> yes
+[23:51:33] <Diadlo> <Diadlo> Lol https://github.com/qTox/qTox/blob/master/src/chatlog/chatlog.cpp#L812
+[23:51:33] <Diadlo> <Diadlo> Top-comment
+[23:51:33] <Diadlo> <zetok> > IndentCaseLabels: true
+[23:51:33] <Diadlo> <zetok> perhaps `// maybe` should be added below
+[23:51:35] <Diadlo> <Diadlo> :D
+[23:52:05] <sudden6> lol
+[23:53:22] <Diadlo> zetok: Please, don't forget update updater/
+[23:53:40] <sudden6> zetok: was 2 spaces indent intended?
+[23:54:25] <zetok> sudden6: where?
+[23:54:55] <Diadlo> Wow
+[23:55:08] <sudden6> zetok: everywhere it seems
+[23:55:17] <Diadlo> Be careful with `clang-format -i -style=file $(git ls-files src/)`
+[23:55:27] <Diadlo> It updates .ui
+[23:55:32] <zetok> oh
+[23:55:44] <Diadlo> And .rc
+[23:56:33] *** Quits: bashrc (~motters@ ) (Quit: Lost terminal)
+[23:56:45] <sudden6> it didn't do anything to the .pro file for me
+[23:56:56] <zetok> clang-format -i -style=file $(git ls-files *.cpp *.h)
+[23:57:17] <Diadlo> http://pastebin.com/h7wTgnjJ
+[23:57:44] <Diadlo> Is it possible to ignore formatting like this?
+[23:58:02] <zetok> ~yeah
+[23:58:38] <zetok> https://clang.llvm.org/docs/ClangFormatStyleOptions.html#disabling-formatting-on-a-piece-of-code
+[23:58:49] <zetok> :|
+[23:59:18] <Diadlo> Not so bad
+[23:59:26] <zetok> well
+[23:59:40] <Diadlo> It's possible => good :)
+[23:59:43] <zetok> the diff has >30k lines
