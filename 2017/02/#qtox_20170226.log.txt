@@ -1,0 +1,212 @@
+[00:00:06] <Diadlo> This blocks is less part of code
+[00:00:29] <Diadlo> So it can be fixed manually later
+[00:03:56] <Diadlo> clang-format -i -style=file $(git ls-files | grep "\(\.h\|\.cpp\)")
+[00:04:23] <zetok> why grep if glob does the job?
+[00:04:39] <Diadlo> It doesn't for me
+[00:04:55] <zetok> have you tried to escape it?
+[00:05:08] <Diadlo> zsh
+[00:05:14] <zetok> eh
+[00:05:28] <zetok> dunno then
+[00:05:48] <Diadlo> But if you will write script `#!/bin/bash` should solve the problem
+[00:07:49] <Diadlo> http://pastebin.com/DfhT8qXe
+[00:07:54] <Diadlo> It should be `clang-format off` too?
+[00:10:28] <zetok> echo -e '#!'"/bin/bash\nclang-format -i -style=file \$(git ls-files *.cpp *.h)" > script
+[00:10:30] <zetok> yeah
+[00:10:47] <Diadlo> :/
+[00:11:43] <Diadlo> Seems it doesn't enforce braces
+[00:13:18] <Diadlo> Good night
+[00:14:15] <zetok> g'night
+[00:14:40] <sudden6> night
+[00:21:49] *** Quits: cenysor (~cenysor@ ) (Remote host closed the connection)
+[00:28:04] *** Joins: kchz (~dschulz@ )
+[00:29:36] *** Quits: kchz (~dschulz@ ) (Client Quit)
+[00:30:01] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 260 seconds)
+[00:53:32] <SSBN-731> Hey guys. I'm backing up my Private Key again, and I've been wondering...
+[00:54:19] <SSBN-731> How long do you think these USB sticks will last? They're quite new, but if I unplug them and leave them somewhere, will they start to degrade without being written to? 
+[00:55:12] <sudden6> I wouldn't trust an usb-stick for more than 5 years
+[00:55:51] <SSBN-731> Okay!
+[01:00:29] <SSBN-731> I'm wondering what I should do about my Tox private key then... since I don't want to lose it. 
+[01:01:58] <sudden6> good old cd?
+[01:03:12] <sudden6> night all
+[01:03:22] *** Quits: pcre (~quassel@ ) (Remote host closed the connection)
+[01:59:25] *** Joins: gk^__-__^1wm (~su@ )
+[02:00:17] *** Quits: gk^__-__^1wm (~su@ ) (K-Lined)
+[02:09:32] *** Joins: gk^_-_^1wm (~su@ )
+[02:11:30] *** Quits: gk^_-_^1wm (~su@ ) (K-Lined)
+[02:19:23] *** Quits: f10 (~flo@ ) (Ping timeout: 268 seconds)
+[02:20:09] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
+[02:20:12] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 240 seconds)
+[02:27:21] *** SocksPls is now known as MrBrobot
+[02:27:29] *** MrBrobot is now known as SocksPls
+[02:37:42] *** Joins: gk[]\`_^{}1wm (~su@ )
+[02:39:05] *** Quits: gk[]\`_^{}1wm (~su@ ) (K-Lined)
+[02:43:02] *** Joins: gk[]\`_^{1wm (~su@ )
+[02:45:33] *** Quits: gk[]\`_^{1wm (~su@ ) (K-Lined)
+[03:47:37] *** Joins: MDrights (~MDrights@ )
+[04:07:03] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:07:41] *** Joins: VVD (~VVD@ )
+[04:13:05] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[04:13:40] *** Joins: VVD (~VVD@ )
+[04:32:35] *** Joins: dardevelin (~dardeveli@ )
+[05:26:01] *** Joins: linxon_new (~lin@ )
+[05:32:48] *** Joins: genesis_ (~genesis@ )
+[05:32:48] *** Quits: genesis (~genesis@ ) (Killed (hobana.freenode.net (Nickname regained by services)))
+[05:32:48] *** genesis_ is now known as genesis
+[05:33:29] *** Quits: linxon (~lin@ ) (Ping timeout: 252 seconds)
+[05:33:29] *** Quits: M-gdr (gdrmatrixo@ ) (Ping timeout: 252 seconds)
+[05:34:07] *** Joins: M-gdr (gdrmatrixo@ )
+[06:11:26] *** Quits: SocksPls (~sockspls@ ) (Remote host closed the connection)
+[06:13:40] *** Joins: sockspls (~sockspls@ )
+[07:43:08] *** Joins: Guest10699 (~asdf@ )
+[07:45:34] -qtox-git-spam- [qTox] Diadlo closed pull request #4204: fix: Add splitter restorer (master...fix/splitter) https://git.io/vyT7x
+[07:53:23] *** Quits: MDrights (~MDrights@ ) (Remote host closed the connection)
+[07:54:01] *** Joins: MDrights (~MDrights@ )
+[08:00:00] *** Parts: Guest10699 (~asdf@ ) ()
+[08:07:58] *** Joins: reBrain (~quassel@ )
+[09:04:59] *** Joins: f10 (~flo@ )
+[09:05:05] *** Joins: cisc (~cisc@ )
+[09:20:22] *** Joins: f10__ (~flo@ )
+[09:27:41] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[10:03:44] -qtox-git-spam- [qTox] zetok opened pull request #4206: Update translations from Weblate (master...tr) https://git.io/vykZc
+[10:31:11] *** Quits: vFSgrcFGBJHg (~rYUtdcvYT@ ) (Quit: Leaving)
+[10:57:20] *** Joins: pcre (~quassel@ )
+[11:09:32] *** Quits: anoa (~anoa@ ) (Ping timeout: 240 seconds)
+[11:10:03] <qTox-Website> [qTox-Website] zetok opened pull request #27: Update translations from Weblate (master...tr) https://git.io/vykcP
+[11:11:37] *** Joins: anoa (~anoa@ )
+[11:14:27] <qTox-Website> [qTox-Website] zetok pushed 7 new commits to master: https://git.io/vykc5
+[11:14:27] <qTox-Website> qTox-Website/master c087d73 Α Ω: Translated using Weblate (Greek)...
+[11:14:27] <qTox-Website> qTox-Website/master fc9b13a Viktar Vauchkevich: Translated using Weblate (Belarusian)...
+[11:14:27] <qTox-Website> qTox-Website/master c7236c8 Α Ω: Translated using Weblate (Greek)...
+[11:15:10] <travis-ci> qTox/qTox-Website (ae8e32a): The build passed. Build: https://travis-ci.org/qTox/qTox-Website/builds/205484116 / Changes: https://github.com/qTox/qTox-Website/compare/c1f87b4de072...ae8e32a5e9d9
+[11:18:10] *** Joins: sudden6 (~anonymous@ )
+[11:42:48] <Diadlo> Hi
+[11:43:00] <Diadlo> What do you think about using `astyle` instead of `clang-format`? It support `add-brackets` option
+[11:46:29] <zetok> clang-tidy also can do it
+[11:46:41] <Diadlo> 2 tools VS 1 tool
+[11:46:53] <Diadlo> But ok
+[11:48:31] <zetok> we can try with astyle
+[11:48:44] <Diadlo> Just if you want :)
+[11:51:38] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[11:52:23] *** Joins: LittleVulpix (~Miranda@ )
+[11:52:26] -qtox-git-spam- [qTox] zetok pushed 8 new commits to master: https://git.io/vykWZ
+[11:52:26] -qtox-git-spam- qTox/master c32a44b initramfs: style(clangformat): add clang-format support to qTox
+[11:52:26] -qtox-git-spam- qTox/master e4d40f1 initramfs: docs(clangformat): add documentation on coding style with respect to clang-format
+[11:52:26] -qtox-git-spam- qTox/master 21195d3 Zetok Zalbavar: docs: slightly improve link formatting and remove trailing whitespaces
+[11:54:18] -qtox-git-spam- [qTox] zetok opened pull request #4207: style: reformat current C++ codebase using clang-format (master...style-reformat) https://git.io/vykWC
+[12:04:01] *** Joins: noavarice (5f202352@ )
+[12:17:49] -qtox-git-spam- [qTox] zetok closed pull request #4207: style: reformat current C++ codebase using clang-format (master...style-reformat) https://git.io/vykWC
+[12:18:11] <sudden6> zetok: can #3839 now be closed?
+[12:18:28] <zetok> yep
+[12:19:24] -qtox-git-spam- [qTox] zetok opened pull request #4208: chore(build): integrate clang-format with build system and travis (master...chore-tools-reformat) https://git.io/vyklo
+[12:19:54] -qtox-git-spam- [qTox] sudden6 closed pull request #3839: Implement clang-format and updated coding style document (master...chore-clang-format) https://git.io/vXTnn
+[12:22:08] <zetok> it would be good to merge #4208 before other PRs get rebased, so that there would be no problems with travis builds
+[12:23:12] <sudden6> zetok: wouldn't it be better to run code formatting in the verify-commit travis job?
+[12:24:51] <zetok> perhaps
+[12:26:05] <zetok> hmm
+[12:26:38] <zetok> checking whether version is up-to-date also would be moved then
+[12:27:35] <sudden6> mhm
+[12:44:03] <zetok> great
+[12:44:24] <zetok> clang-format on travis cannot into indentation
+[12:45:50] -qtox-git-spam- [qTox] zetok pushed 9 new commits to master: https://git.io/vyk8r
+[12:45:50] -qtox-git-spam- qTox/master bb3ee7d cnzhx: feat(l10n): update Chinese (China) translation from Weblate
+[12:45:50] -qtox-git-spam- qTox/master 77ee178 Moo: feat(l10n): update Lithuanian translation from Weblate
+[12:45:50] -qtox-git-spam- qTox/master f92bbbb Viktar Vauchkevich: feat(l10n): update Belarusian translation from Weblate
+[12:49:50] <zetok> sudden6: `clang-format --version` ?
+[12:50:21] <sudden6> clang-format version 3.9.1 (tags/RELEASE_391/final 289600)
+[12:52:02] <zetok> I have 3.8.1
+[12:52:26] <sudden6> what does travis have?
+[12:52:52] <zetok> -3.4 probably means 3.4
+[13:05:38] <zetok> moved to verify-commit job, but I don't know what to do with clang-format on travis
+[13:06:19] <zetok> sudden6: you've said that clang-format for you also didn't work as it should?
+[13:10:19] *** Joins: dolohow (~tacajushi@ )
+[13:11:29] <dolohow> hi guys, I just noticed that on repository the latest version for ubuntu 16.04 is 1.6 
+[13:14:08] *** Quits: linxon_new (~lin@ ) (Changing host)
+[13:14:08] *** Joins: linxon_new (~lin@ )
+[13:14:13] *** linxon_new is now known as linxon
+[13:16:58] <zetok> yeah
+[13:17:20] <zetok> dolohow: https://qtox.github.io/blog/2017/02/15/Maintainer-Wanted.html
+[13:20:02] <zetok> sudden6: https://travis-ci.org/qTox/qTox/jobs/205503367 ← looks like Qt is required
+[13:21:44] *** Joins: bashrc (~motters@ )
+[13:25:10] <sudden6> zetok: it was only the find command that didn't work
+[13:25:20] <zetok> :/
+[13:26:25] <sudden6> zetok: can't we just call the format source script from travis without cmake?
+[13:26:40] <zetok> :f
+[13:27:02] <zetok> one of them, yes
+[13:30:18] *** Quits: dolohow (~tacajushi@ ) (Quit: leaving)
+[13:31:07] *** Joins: dolohow (~tacajushi@ )
+[13:31:51] *** sockspls is now known as SocksPls
+[13:34:07] *** Quits: dolohow (~tacajushi@ ) (Client Quit)
+[13:38:30] *** Joins: dolohow (~dolohow@ )
+[13:48:10] *** Joins: dardevelin_ (~dardeveli@ )
+[13:49:26] *** Quits: dardevelin (~dardeveli@ ) (Ping timeout: 268 seconds)
+[13:58:18] *** Joins: reBrain (~quassel@ )
+[14:06:58] -qtox-git-spam- [qTox] sudden6 opened pull request #4209: chore(font): update default font and add its license (master...update_font) https://git.io/vyk0I
+[14:15:24] *** Quits: reBrain (~quassel@ ) (Remote host closed the connection)
+[14:59:54] *** Quits: MDrights (~MDrights@ ) (Quit: MDrights)
+[15:03:13] <Chiitoo> sudden6, et al., what do you think of a comment bit, somewhere above drawing the buttons, explaining all the things they do?
+[15:07:12] <sudden6> Chiitoo: sounds good to me
+[15:09:01] <Chiitoo> Okipoki.
+[15:09:56] *** Joins: sudd3n6 (~anonymous@ )
+[15:16:41] *** Quits: noavarice (5f202352@ ) (Quit: Page closed)
+[15:40:30] <Chiitoo> sudden6: They are first mentioned in 'setBackgroundColor'.  Would that be a better place, or rather do it where they're drawn?
+[15:46:44] <Chiitoo> I guess I should also move the brace here: https://github.com/qTox/qTox/pull/4122/files#diff-a775ed8850c5781a2c749c3cafbe4e10L210
+[16:32:07] <sudden6> Chiitoo: IMO, it should be either at the top of the file or in the constructor
+[16:44:53] *** Quits: sudd3n6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[16:46:36] <Chiitoo> Yeah, agreed.
+[16:46:45] *** Quits: sudden6 (~anonymous@ ) (Ping timeout: 260 seconds)
+[17:35:05] *** Joins: deva (~deva@ )
+[17:36:08] <deva> I am having linker issues with current git head: http://pastebin.com/ZV9R1gt0
+[17:36:22] <deva> Missing file in a commit perhaps?
+[17:39:44] *** Quits: cali (~user@ ) (Ping timeout: 240 seconds)
+[17:41:23] <deva> Commit adba773c6dca3a294207a54ef647c11c23036d8e seem to be the culprit. The commit before that (bf4259b22996ebd96db81fbc10bd49c0aaa487c6) works flawlessly.
+[17:54:06] *** Joins: cali (~user@ )
+[18:02:13] *** Joins: SpEcHiDe (spechideri@ )
+[18:03:38] <zetok> deva: did you do 'make clean' ?
+[18:04:01] <zetok> oh, right
+[18:04:03] <deva> zetok, yes
+[18:04:04] <zetok> deva: use cmake
+[18:04:43] <dolohow> will you guys update qtox to latest version for ubuntu 16.04 on opensuse repo
+[18:04:59] <deva> Shouldn't that happen automatically when the CMakeList.txt changes?
+[18:06:37] <zetok> dolohow: right now no one (AFAIK) works on that, so the answer is "no"
+[18:07:03] <zetok> deva: you've usec qmake to compile qTox, right?
+[18:07:16] <dolohow> zetok: how much work is needed to update to latest version?
+[18:07:22] <deva> I honostly can't remember
+[18:07:35] <deva> Did you change thew build system recently?
+[18:07:46] <deva> I usually just do git pull; make :-)
+[18:07:47] <zetok> dolohow: not much I think
+[18:07:53] <zetok> deva: yep
+[18:08:03] <deva> zetok, That seemed to work :-) Thanks for the help
+[18:08:09] <zetok> np
+[18:09:10] <zetok> dolohow: ATM it should be mostly just bumping the version in scripts and changing toxcore source link to TokTok release
+[18:09:30] <zetok> dolohow: are you interested?
+[18:11:47] <dolohow> if its no more than one hour i can try tomorrow 
+[18:12:16] <zetok> well, the first time setting things probably will take longer
+[18:32:43] *** Joins: sudd3n6 (~anonymous@ )
+[18:45:52] <dolohow> zetok: can I reuse existing repository or do I need to recreate everythin from scratch?
+[19:15:46] <zetok> dolohow: you would need to make a new repo
+[19:15:50] <zetok> https://github.com/abbat/tox.pkg ← scripts
+[20:10:50] -qtox-git-spam- [qTox] sudden6 pushed 1 new commit to master: https://git.io/vyk9s
+[20:10:50] -qtox-git-spam- qTox/master ffd7d0e sudden6: chore(font): update default font and add its license...
+[20:40:04] *** Quits: bashrc (~motters@ ) (Ping timeout: 240 seconds)
+[20:41:28] *** Joins: bashrc (~motters@ )
+[20:58:03] *** Quits: deva (~deva@ ) (Quit: Konversation terminated!)
+[21:19:26] <Diadlo> sudd3n6: ping
+[21:29:27] *** Joins: cenysor (~cenysor@ )
+[21:39:57] *** Quits: dardevelin_ (~dardeveli@ ) (Ping timeout: 268 seconds)
+[21:59:47] *** Quits: LittleVulpix (~Miranda@ ) (Quit: Miranda NG rocks. Trust the Vulpix. http://miranda-ng.org/)
+[22:01:44] *** Joins: LittleVulpix (~Miranda@ )
+[22:07:01] <sudd3n6> Diadlo: pong
+[22:08:05] <Diadlo> sudd3n6: > also rewriting the last function call.
+[22:08:13] <Diadlo> What do you mean?
+[22:08:31] <sudd3n6> I think it can be joined with the if
+[22:09:31] <Diadlo> Hm... Ok. I will take a look
+[22:09:41] <sudd3n6> if(status == TOX_CONNECTION_NONE) call it with `false`
+[22:09:51] <sudd3n6> as last argument
+[22:10:19] <sudd3n6> I hope I didn't make a mistake while resolving the logic
+[22:10:42] * sudd3n6 afk again
+[22:10:48] <Diadlo> So we will not call it for Online?
+[22:35:11] *** Quits: VVD (~VVD@ ) (Read error: Connection reset by peer)
+[22:36:11] *** Joins: VVD (~VVD@ )
+[22:58:44] <sudd3n6> Diadlo: online goes into the else branch
+[23:23:47] *** Quits: f10 (~flo@ ) (Ping timeout: 255 seconds)
+[23:23:59] *** Quits: f10__ (~flo@ ) (Ping timeout: 260 seconds)
